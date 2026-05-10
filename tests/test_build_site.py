@@ -160,6 +160,13 @@ atlases:
     assert (docs_dir / "atlases" / "index.html").exists()
     assert (docs_dir / "historical" / "index.html").exists()
     assert (docs_dir / "app_exports" / "posts.json").exists()
+    home_text = (docs_dir / "index.html").read_text()
+    assert "Devin Teichrow" in home_text
+    assert "Read the essays" in home_text
+    assert "Unified site" not in home_text
+    about_text = (docs_dir / "about" / "index.html").read_text()
+    assert "About Devin Teichrow and The Edge of Epidemiology" in about_text
+    assert "diseases do not move only through bodies" in about_text
 
 
 def test_import_external_pathogen_writes_js_payload(tmp_path, monkeypatch) -> None:

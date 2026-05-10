@@ -194,13 +194,13 @@ def render_home(posts: list[dict[str, Any]], atlases: list[dict[str, Any]], late
     references = latest.get("reference", [])[:3]
     hero = f"""
       <section class="hero">
-        <p class="kicker">Unified site</p>
-        <h2 class="hero-title">Live disease desk, atlases, and published writing in one public system.</h2>
-        <p class="subtitle">This umbrella site turns Edge of Epidemiology into one navigable publication: daily outbreak tracking, historical and geographic atlas work, field guides, and your essay archive in the same place.</p>
+        <p class="kicker">Devin Teichrow</p>
+        <h2 class="hero-title">I&apos;m an epidemiologist building outbreak reporting, disease atlases, and historical epidemiology in public.</h2>
+        <p class="subtitle">The Edge of Epidemiology is my home for source-first infectious-disease reporting, geography-first atlas work, field guides, and essays about how disease moves through history, place, and power.</p>
         <div class="hero-actions">
           <a class="button primary" href="{html.escape(link_for(base_url, 'newsdesk/'))}">Open the newsdesk</a>
           <a class="button secondary" href="{html.escape(link_for(base_url, 'atlases/'))}">Browse the atlases</a>
-          <a class="button secondary" href="{html.escape(link_for(base_url, 'essays/'))}">Read the archive</a>
+          <a class="button secondary" href="{html.escape(link_for(base_url, 'essays/'))}">Read the essays</a>
         </div>
       </section>
     """
@@ -214,10 +214,10 @@ def render_home(posts: list[dict[str, Any]], atlases: list[dict[str, Any]], late
         active="home",
         base_url=base_url,
         body=hero
-        + f'<section class="panel"><div class="section-head"><p class="kicker">Live desk</p><h2>The Pathogen Dispatch</h2><p class="muted-note">The current outbreak files and the newsroom subsystem imported from the live infectious-disease desk.</p></div><div class="card-grid three-up">{newsdesk_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "newsdesk/"))}">Go to the full newsdesk</a></div></section>'
-        + f'<section class="panel"><div class="section-head"><p class="kicker">Atlas family</p><h2>Geography-first disease interactives</h2><p class="muted-note">The atlas layer pulls together the new pathogen atlas, the maritime atlas, and historically focused regional builds.</p></div><div class="card-grid two-up">{atlas_cards}</div></section>'
-        + f'<section class="panel"><div class="section-head"><p class="kicker">Published writing</p><h2>Recent essays</h2><p class="muted-note">Every published post appears here automatically as a local library entry, with room to promote selected pieces into fully mirrored pages later.</p></div><div class="card-grid three-up">{post_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "essays/"))}">Browse all essays</a></div></section>'
-        + f'<section class="panel"><div class="section-head"><p class="kicker">Field guides</p><h2>Reference layer</h2><p class="muted-note">Disease sheets stay close to the live reporting and atlas work instead of living in a separate dead-end section.</p></div><div class="card-grid three-up">{ref_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "reference/"))}">Open the reference desk</a></div></section>',
+        + f'<section class="panel"><div class="section-head"><p class="kicker">Live desk</p><h2>The Pathogen Dispatch</h2><p class="muted-note">Current outbreak files, follow-up reporting, and source-first tracking for major infectious-disease stories.</p></div><div class="card-grid three-up">{newsdesk_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "newsdesk/"))}">Go to the full newsdesk</a></div></section>'
+        + f'<section class="panel"><div class="section-head"><p class="kicker">Atlas family</p><h2>Geography-first disease interactives</h2><p class="muted-note">Interactive atlas work on pathogen origins, spread routes, maritime disease ecology, and historical outbreak worlds.</p></div><div class="card-grid two-up">{atlas_cards}</div></section>'
+        + f'<section class="panel"><div class="section-head"><p class="kicker">Published writing</p><h2>Recent essays</h2><p class="muted-note">Longer-form writing on outbreaks, evidence, history, ecology, and the politics of public health.</p></div><div class="card-grid three-up">{post_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "essays/"))}">Browse all essays</a></div></section>'
+        + f'<section class="panel"><div class="section-head"><p class="kicker">Field guides</p><h2>Reference layer</h2><p class="muted-note">Practical disease briefings on transmission, diagnostics, severity, and what matters when a pathogen reappears.</p></div><div class="card-grid three-up">{ref_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "reference/"))}">Open the reference desk</a></div></section>',
     )
 
 
@@ -423,12 +423,13 @@ def render_about_page(base_url: str) -> str:
         body=f"""
       <section class="hero">
         <p class="kicker">About</p>
-        <h2 class="hero-title">Edge of Epidemiology</h2>
-        <p class="subtitle">Where epidemiology meets history: outbreak reporting, disease geography, and public-facing methods work tied together in one publication shell.</p>
+        <h2 class="hero-title">About Devin Teichrow and The Edge of Epidemiology</h2>
+        <p class="subtitle">A public-facing epidemiology project built around outbreak reporting, disease geography, historical epidemiology, and clear methods writing.</p>
       </section>
       <section class="panel prose">
-        <p>Edge of Epidemiology is the umbrella home for The Pathogen Dispatch, curated pathogen atlases, historical disease writing, and working disease-reference material.</p>
-        <p>The point of the umbrella site is not to flatten those into one format. The newsdesk stays fast and source-driven. The atlases stay spatial and evidentiary. The essay archive stays browsable and durable.</p>
+        <p>Devin Teichrow is an epidemiologist, statistician, and science writer. He publishes The Edge of Epidemiology as a place for infectious-disease reporting, atlas work, historical epidemiology, and public methods writing.</p>
+        <p>The site brings together several distinct layers: The Pathogen Dispatch for live outbreak tracking, atlas projects for geography-first and history-first arguments, field guides for quick disease briefings, and the essay archive for longer-form work.</p>
+        <p>The through-line is simple: diseases do not move only through bodies. They move through ports, wars, empires, ecologies, institutions, and memory. This project is built to follow those routes.</p>
       </section>
     """,
     )
