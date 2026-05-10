@@ -1,0 +1,16 @@
+{
+  "mode": "incremental",
+  "generated_at": "2026-05-10T22:29:57+00:00",
+  "candidate_source": "manifest_only",
+  "candidate_count": 0,
+  "archive_api_count": 0,
+  "rss_entry_count": 0,
+  "sitemap_fallback_count": 0,
+  "total_manifest_records": 87,
+  "created_records": 0,
+  "updated_records": 0,
+  "enriched_from_post_pages": 0,
+  "degraded": true,
+  "fallback_reason": "archive_api=HTTP Error 403: Forbidden; rss=HTTP Error 403: Forbidden; sitemap=HTTP Error 403: Forbidden",
+  "enrichment_failures": []
+}
