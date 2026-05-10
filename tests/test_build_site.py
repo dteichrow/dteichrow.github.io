@@ -1,0 +1,156 @@
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+from src import build_site
+
+
+def test_transform_imported_html_rewrites_known_paths() -> None:
+    html_text = """
+    <html>
+      <head></head>
+      <body>
+        <a href="./index.html">Home</a>
+        <a href="./watch.html">Watch</a>
+        <a href="../reference/thing.html">Ref</a>
+        <script>fetch("../app_exports/manifest.json")</script>
+      </body>
+    </html>
+    """
+    transformed = build_site.transform_imported_html(html_text, active="newsdesk", base_url="/")
+    assert 'href="/newsdesk/"' in transformed
+    assert 'href="/newsdesk/watch/"' in transformed
+    assert 'href="/reference/thing.html"' in transformed
+    assert 'fetch("/app_exports/manifest.json")' in transformed
+    assert "Edge of Epidemiology" in transformed
+
+
+def test_build_site_writes_core_routes(tmp_path, monkeypatch) -> None:
+    content_dir = tmp_path / "content"
+    assets_dir = tmp_path / "assets"
+    docs_dir = tmp_path / "docs"
+    content_dir.mkdir()
+    assets_dir.mkdir()
+    (assets_dir / "site.css").write_text("body{}")
+    (assets_dir / "site.js").write_text("console.log('ok');")
+    (content_dir / "posts.yml").write_text(
+        """
+posts:
+  - substack_id: 1
+    slug: first-post
+    title: First post
+    date: 2026-05-10
+    canonical_url: https://theedgeofepidemiology.substack.com/p/first-post
+    excerpt: First excerpt
+    cover_image: https://images.example/cover.jpg
+    upstream_tags: [History]
+    source_mode: substack_page
+    first_seen_at: 2026-05-10T00:00:00+00:00
+    last_synced_at: 2026-05-10T00:00:00+00:00
+    status: summary_only
+    dek: ""
+    topics: [History]
+    series: []
+    related_atlases: [revolutionary-war-atlas]
+    related_reference_slugs: []
+    related_story_ids: []
+    search_excerpt: First excerpt
+    local_body_path: ""
+    hero_mode: cover
+    notes: ""
+"""
+    )
+    (content_dir / "atlases.yml").write_text(
+        """
+atlases:
+  - atlas_id: revolutionary-war-atlas
+    title: Revolutionary War Disease Atlas
+    status_label: Curated section
+    summary: Colonial and Revolutionary-era disease ecology.
+    evidence_model: Historical synthesis
+    public_route: atlases/revolutionary-war/
+    launch_priority: next up
+    keywords: [revolution]
+    long_note: Built from related essays first.
+  - atlas_id: maritime-disease-atlas
+    title: Maritime Disease Atlas
+    status_label: Live atlas
+    summary: Sea routes and disease ecology.
+    evidence_model: Curated scenarios
+    public_route: atlases/maritime/
+    launch_priority: flagship
+    keywords: [maritime]
+"""
+    )
+
+    monkeypatch.setattr(build_site, "CONTENT_DIR", content_dir)
+    monkeypatch.setattr(build_site, "ASSETS_DIR", assets_dir)
+
+    def fake_copy_static_assets(target_docs: Path) -> None:
+        (target_docs / "assets").mkdir(parents=True, exist_ok=True)
+        (target_docs / "assets" / "site.css").write_text("body{}")
+        (target_docs / "assets" / "site.js").write_text("console.log('ok');")
+        (target_docs / ".nojekyll").write_text("")
+
+    def fake_import_epidossier_public(target_docs: Path, base_url: str) -> dict:
+        app_exports = target_docs / "app_exports"
+        app_exports.mkdir(parents=True, exist_ok=True)
+        latest = {
+            "generated_at": "2026-05-10T00:00:00",
+            "stories": [
+                {
+                    "display_title": "Demo story",
+                    "latest_update_summary": "A major live file.",
+                    "story_web_path": "stories/demo-story.html",
+                    "status": "active_investigation",
+                    "primary_region": "North America",
+                    "country": "United States",
+                }
+            ],
+            "reference": [
+                {
+                    "name": "Yellow fever",
+                    "reference_web_path": "reference/yellow-fever.html",
+                    "why_reporters_care": "A classic port-city disease.",
+                    "categories": ["Vector-borne"],
+                    "evidence_type": "reference",
+                }
+            ],
+        }
+        (app_exports / "latest.json").write_text(json.dumps(latest))
+        (app_exports / "manifest.json").write_text(json.dumps({"latest_run_id": "demo"}))
+        (target_docs / "newsdesk").mkdir(parents=True, exist_ok=True)
+        (target_docs / "newsdesk" / "index.html").write_text("<html><body>Newsdesk</body></html>")
+        (target_docs / "notebook").mkdir(parents=True, exist_ok=True)
+        (target_docs / "notebook" / "index.html").write_text("<html><body>Notebook</body></html>")
+        (target_docs / "atlases" / "pathogen").mkdir(parents=True, exist_ok=True)
+        (target_docs / "atlases" / "pathogen" / "index.html").write_text("<html><body>Pathogen atlas</body></html>")
+        (target_docs / "stories").mkdir(parents=True, exist_ok=True)
+        (target_docs / "stories" / "demo-story.html").write_text("<html><body>Story</body></html>")
+        (target_docs / "reference").mkdir(parents=True, exist_ok=True)
+        (target_docs / "reference" / "yellow-fever.html").write_text("<html><body>Ref</body></html>")
+        return latest
+
+    def fake_import_external_maritime(target_docs: Path, base_url: str) -> None:
+        path = target_docs / "atlases" / "maritime" / "index.html"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text("<html><body>Maritime</body></html>")
+
+    def fake_import_external_viking(target_docs: Path, base_url: str) -> None:
+        path = target_docs / "atlases" / "viking" / "index.html"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text("<html><body>Viking</body></html>")
+
+    monkeypatch.setattr(build_site, "copy_static_assets", fake_copy_static_assets)
+    monkeypatch.setattr(build_site, "import_epidossier_public", fake_import_epidossier_public)
+    monkeypatch.setattr(build_site, "import_external_maritime", fake_import_external_maritime)
+    monkeypatch.setattr(build_site, "import_external_viking", fake_import_external_viking)
+
+    result = build_site.build_site(docs_dir=docs_dir, base_url="/")
+    assert result["posts"] == 1
+    assert (docs_dir / "index.html").exists()
+    assert (docs_dir / "essays" / "first-post" / "index.html").exists()
+    assert (docs_dir / "atlases" / "index.html").exists()
+    assert (docs_dir / "historical" / "index.html").exists()
+    assert (docs_dir / "app_exports" / "posts.json").exists()

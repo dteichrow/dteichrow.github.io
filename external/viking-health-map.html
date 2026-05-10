@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Norse World Health Atlas — Viking Age</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+/* ─── TOKENS ─── */
+:root {
+  --font-display: 'Cinzel', 'Georgia', serif;
+  --font-body:    'EB Garamond', 'Georgia', serif;
+  --text-xs:   clamp(0.75rem,  0.7rem + 0.25vw, 0.875rem);
+  --text-sm:   clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+  --text-base: clamp(1rem,     0.95rem + 0.25vw, 1.125rem);
+  --text-lg:   clamp(1.125rem, 1rem   + 0.75vw, 1.5rem);
+  --text-xl:   clamp(1.5rem,   1.2rem + 1.25vw, 2.25rem);
+  --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem;
+  --space-4: 1rem;    --space-5: 1.25rem; --space-6: 1.5rem;
+  --space-8: 2rem;
+  --radius-sm: 0.375rem; --radius-md: 0.5rem; --radius-lg: 0.75rem;
+  --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+[data-theme="dark"] {
+  --bg:           #0f0e0c;
+  --surface:      #181714;
+  --surface-2:    #1e1d1a;
+  --surface-3:    #252320;
+  --border:       rgba(255,255,255,0.10);
+  --divider:      rgba(255,255,255,0.06);
+  --text:         #d8d3c8;
+  --text-muted:   #7a7570;
+  --text-faint:   #454240;
+  --accent:       #c9a84c;
+  --accent-hover: #e0c06a;
+  --accent-glow:  rgba(201,168,76,0.15);
+  --shadow:       0 8px 32px rgba(0,0,0,0.6);
+  --shadow-sm:    0 2px 8px rgba(0,0,0,0.4);
+}
+[data-theme="light"] {
+  --bg:           #f4f0e8;
+  --surface:      #f9f7f2;
+  --surface-2:    #ffffff;
+  --surface-3:    #eeebe2;
+  --border:       rgba(0,0,0,0.12);
+  --divider:      rgba(0,0,0,0.07);
+  --text:         #1e1c17;
+  --text-muted:   #6b6560;
+  --text-faint:   #b0aa9e;
+  --accent:       #8a6314;
+  --accent-hover: #6b4c10;
+  --accent-glow:  rgba(138,99,20,0.10);
+  --shadow:       0 8px 32px rgba(0,0,0,0.12);
+  --shadow-sm:    0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* ─── RESET ─── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  height: 100%; overflow: hidden;
+  font-family: var(--font-body); font-size: var(--text-base);
+  background: var(--bg); color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── MAP ─── */
+#map {
+  position: fixed; inset: 0; z-index: 0;
+}
+.leaflet-container {
+  background: #0a0907 !important;
+  font-family: var(--font-body) !important;
+}
+
+/* ─── HEADER BAR ─── */
+#header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  display: flex; align-items: center; gap: var(--space-4);
+  padding: var(--space-3) var(--space-6);
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+#logo-wrap {
+  display: flex; align-items: center; gap: var(--space-3);
+  flex-shrink: 0;
+}
+#logo-wrap svg { width: 36px; height: 36px; color: var(--accent); }
+#title-block { line-height: 1.1; }
+#title-block h1 {
+  font-family: var(--font-display);
+  font-size: var(--text-lg); font-weight: 600;
+  color: var(--text); letter-spacing: 0.02em;
+}
+#title-block p {
+  font-size: var(--text-xs); color: var(--text-muted);
+  letter-spacing: 0.06em; text-transform: uppercase;
+  font-family: var(--font-display);
+}
+#header-spacer { flex: 1; }
+
+/* Region filters */
+#filters {
+  display: flex; align-items: center; gap: var(--space-2);
+  flex-wrap: wrap;
+}
+#filters-label {
+  font-size: var(--text-xs); color: var(--text-muted);
+  text-transform: uppercase; letter-spacing: 0.08em;
+  font-family: var(--font-display); margin-right: var(--space-1);
+  white-space: nowrap;
+}
+.filter-btn {
+  font-family: var(--font-display); font-size: var(--text-xs);
+  padding: var(--space-1) var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent; color: var(--text-muted);
+  cursor: pointer; white-space: nowrap;
+  transition: all var(--transition);
+  letter-spacing: 0.04em;
+}
+.filter-btn:hover { color: var(--text); border-color: var(--accent); }
+.filter-btn.active {
+  background: var(--accent-glow);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Theme toggle */
+#theme-toggle {
+  width: 36px; height: 36px; border-radius: 50%;
+  border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  background: transparent; color: var(--text-muted);
+  cursor: pointer; flex-shrink: 0;
+  transition: all var(--transition);
+}
+#theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ─── SIDE PANEL ─── */
+#panel {
+  position: fixed; top: 68px; right: 0; bottom: 0; z-index: 800;
+  width: 340px;
+  background: var(--surface);
+  border-left: 1px solid var(--border);
+  display: flex; flex-direction: column;
+  box-shadow: var(--shadow);
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.16,1,0.3,1);
+}
+#panel.open { transform: translateX(0); }
+#panel-close {
+  position: absolute; top: var(--space-3); right: var(--space-4);
+  background: none; border: none; color: var(--text-muted);
+  cursor: pointer; font-size: 1.2rem; line-height: 1;
+  transition: color var(--transition);
+}
+#panel-close:hover { color: var(--text); }
+#panel-header {
+  padding: var(--space-5) var(--space-6) var(--space-4);
+  border-bottom: 1px solid var(--divider);
+  flex-shrink: 0;
+}
+#panel-region-badge {
+  font-family: var(--font-display);
+  font-size: var(--text-xs); letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: var(--space-2);
+}
+#panel-title {
+  font-family: var(--font-display); font-size: var(--text-lg);
+  font-weight: 600; line-height: 1.2; color: var(--text);
+  margin-bottom: var(--space-1);
+}
+#panel-subregion {
+  font-size: var(--text-xs); color: var(--text-muted);
+}
+#panel-body {
+  flex: 1; overflow-y: auto; padding: var(--space-5) var(--space-6);
+  display: flex; flex-direction: column; gap: var(--space-5);
+}
+#panel-body::-webkit-scrollbar { width: 4px; }
+#panel-body::-webkit-scrollbar-track { background: transparent; }
+#panel-body::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+.detail-block { display: flex; flex-direction: column; gap: var(--space-2); }
+.detail-label {
+  font-family: var(--font-display); font-size: var(--text-xs);
+  text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted);
+}
+.detail-value {
+  font-size: var(--text-sm); color: var(--text); line-height: 1.5;
+}
+.detail-value em { color: var(--text-muted); font-style: italic; }
+
+.evidence-bar {
+  display: flex; gap: 4px; align-items: center;
+}
+.evidence-pip {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--border);
+  transition: background var(--transition);
+}
+.evidence-pip.filled { background: var(--accent); }
+.evidence-label {
+  font-size: var(--text-xs); color: var(--text-muted);
+  margin-left: var(--space-2);
+}
+
+.tag {
+  display: inline-block;
+  font-family: var(--font-display); font-size: var(--text-xs);
+  letter-spacing: 0.05em;
+  padding: 2px 10px;
+  border-radius: 999px;
+  border: 1px solid;
+  margin: 2px;
+}
+.tag.pathogen { color: #dd6974; border-color: rgba(221,105,116,0.4); background: rgba(221,105,116,0.08); }
+.tag.diet     { color: #6daa45; border-color: rgba(109,170,69,0.4);  background: rgba(109,170,69,0.08);  }
+.tag.violence { color: #fdab43; border-color: rgba(253,171,67,0.4);  background: rgba(253,171,67,0.08);  }
+.tag.evidence { color: var(--accent); border-color: rgba(201,168,76,0.4); background: rgba(201,168,76,0.08); }
+
+.divider-line {
+  border: none; border-top: 1px solid var(--divider);
+  margin: 0;
+}
+
+/* ─── LEGEND ─── */
+#legend {
+  position: fixed; bottom: var(--space-6); left: var(--space-6); z-index: 900;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-5);
+  box-shadow: var(--shadow-sm);
+  min-width: 200px;
+}
+#legend h3 {
+  font-family: var(--font-display); font-size: var(--text-xs);
+  text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--text-muted); margin-bottom: var(--space-3);
+}
+.legend-section { margin-bottom: var(--space-3); }
+.legend-section-title {
+  font-size: var(--text-xs); color: var(--text-faint);
+  text-transform: uppercase; letter-spacing: 0.08em;
+  font-family: var(--font-display);
+  margin-bottom: var(--space-2);
+}
+.legend-row {
+  display: flex; align-items: center; gap: var(--space-3);
+  margin-bottom: var(--space-2);
+}
+.legend-dot {
+  width: 12px; height: 12px; border-radius: 50%;
+  flex-shrink: 0; border: 1.5px solid rgba(255,255,255,0.2);
+}
+.legend-text {
+  font-size: var(--text-xs); color: var(--text-muted);
+}
+.legend-size-row {
+  display: flex; align-items: center; gap: var(--space-3);
+  margin-bottom: var(--space-2);
+}
+.legend-circle {
+  border-radius: 50%; border: 2px solid var(--accent);
+  background: var(--accent-glow); flex-shrink: 0;
+}
+.legend-divider { border: none; border-top: 1px solid var(--divider); margin: var(--space-3) 0; }
+
+/* ─── CLICK HINT ─── */
+#hint {
+  position: fixed; bottom: var(--space-6); left: 50%;
+  transform: translateX(-50%);
+  z-index: 900;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: var(--space-2) var(--space-5);
+  font-size: var(--text-xs); color: var(--text-muted);
+  font-family: var(--font-display); letter-spacing: 0.06em;
+  pointer-events: none;
+  transition: opacity 0.4s;
+}
+#hint.hidden { opacity: 0; }
+
+/* ─── CUSTOM MARKERS ─── */
+.site-marker {
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  border: 2.5px solid rgba(255,255,255,0.25);
+  transition: transform 0.15s, box-shadow 0.15s;
+  cursor: pointer;
+}
+.site-marker:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 12px rgba(201,168,76,0.4);
+}
+.site-marker svg {
+  fill: none; stroke: rgba(255,255,255,0.8); stroke-width: 1.5;
+}
+
+/* ─── POPUP OVERRIDE ─── */
+.leaflet-popup-content-wrapper {
+  background: var(--surface-2) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: var(--shadow) !important;
+  padding: 0 !important;
+}
+.leaflet-popup-content {
+  margin: 0 !important;
+  width: 240px !important;
+}
+.leaflet-popup-tip {
+  background: var(--surface-2) !important;
+}
+.leaflet-popup-close-button {
+  color: var(--text-muted) !important;
+  font-size: 16px !important;
+  padding: 4px 8px !important;
+}
+.popup-inner {
+  padding: var(--space-4);
+}
+.popup-region-tag {
+  font-family: var(--font-display);
+  font-size: 0.65rem; letter-spacing: 0.1em;
+  text-transform: uppercase; margin-bottom: var(--space-2);
+  font-weight: 600;
+}
+.popup-name {
+  font-family: var(--font-display); font-size: 1rem;
+  font-weight: 600; color: var(--text); margin-bottom: var(--space-2);
+  line-height: 1.2;
+}
+.popup-finding {
+  font-size: 0.82rem; color: var(--text-muted);
+  line-height: 1.45; margin-bottom: var(--space-3);
+}
+.popup-pills { display: flex; flex-wrap: wrap; gap: 4px; }
+.popup-pill {
+  font-size: 0.65rem; font-family: var(--font-display);
+  letter-spacing: 0.05em; text-transform: uppercase;
+  padding: 1px 8px; border-radius: 999px; border: 1px solid;
+}
+.popup-cta {
+  display: block; margin-top: var(--space-3);
+  font-family: var(--font-display); font-size: 0.7rem;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--accent); cursor: pointer;
+  background: none; border: none; padding: 0;
+  text-align: left;
+}
+.popup-cta:hover { color: var(--accent-hover); }
+
+/* Panel open shifts map */
+.map-shifted #map {
+  right: 340px;
+  transition: right 0.35s cubic-bezier(0.16,1,0.3,1);
+}
+
+@media (max-width: 768px) {
+  #panel { width: 100%; top: 68px; }
+  .map-shifted #map { right: 0; }
+  #filters { display: none; }
+  #legend { bottom: var(--space-4); left: var(--space-4); min-width: 160px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header id="header">
+  <div id="logo-wrap">
+    <!-- SVG Logo: Viking compass rose / vegvísir-inspired mark -->
+    <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Norse Health Atlas">
+      <circle cx="18" cy="18" r="16" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 2" opacity="0.4"/>
+      <circle cx="18" cy="18" r="3" fill="currentColor"/>
+      <line x1="18" y1="2" x2="18" y2="10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="18" y1="26" x2="18" y2="34" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" opacity="0.6"/>
+      <line x1="2" y1="18" x2="10" y2="18" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" opacity="0.6"/>
+      <line x1="26" y1="18" x2="34" y2="18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="6.1" y1="6.1" x2="11.6" y2="11.6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" opacity="0.5"/>
+      <line x1="24.4" y1="24.4" x2="29.9" y2="29.9" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" opacity="0.5"/>
+      <line x1="29.9" y1="6.1" x2="24.4" y2="11.6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" opacity="0.5"/>
+      <line x1="11.6" y1="24.4" x2="6.1" y2="29.9" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" opacity="0.5"/>
+      <!-- north arrow pointer -->
+      <polygon points="18,2 16,9 18,7 20,9" fill="currentColor"/>
+    </svg>
+    <div id="title-block">
+      <h1>Norse World Health Atlas</h1>
+      <p>Viking Age · ca. 750–1050 CE</p>
+    </div>
+  </div>
+
+  <div id="header-spacer"></div>
+
+  <div id="filters" role="group" aria-label="Filter by region">
+    <span id="filters-label">Region</span>
+    <button class="filter-btn active" data-region="all">All</button>
+    <button class="filter-btn" data-region="Core Scandinavia">Scandinavia</button>
+    <button class="filter-btn" data-region="Iceland">Iceland</button>
+    <button class="filter-btn" data-region="Greenland">Greenland</button>
+    <button class="filter-btn" data-region="North Atlantic">N. Atlantic</button>
+    <button class="filter-btn" data-region="British Isles">British Isles</button>
+    <button class="filter-btn" data-region="Eastern Routes">Eastern Routes</button>
+    <button class="filter-btn" data-region="Western Europe">Normandy</button>
+    <button class="filter-btn" data-region="Iberian Peninsula">Iberia</button>
+  </div>
+
+  <button id="theme-toggle" aria-label="Switch theme" data-theme-toggle>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+    </svg>
+  </button>
+</header>
+
+<!-- ── MAP ── -->
+<div id="map" role="main" aria-label="Interactive map of Viking Age health sites"></div>
+
+<!-- ── SIDE PANEL ── -->
+<aside id="panel" aria-label="Site details" role="complementary">
+  <button id="panel-close" aria-label="Close panel">✕</button>
+  <div id="panel-header">
+    <div id="panel-region-badge">Region</div>
+    <div id="panel-title">Site Name</div>
+    <div id="panel-subregion">Subregion</div>
+  </div>
+  <div id="panel-body">
+    <div class="detail-block">
+      <div class="detail-label">Evidence Density</div>
+      <div class="evidence-bar" id="panel-evidence-bar">
+        <div class="evidence-pip" data-pip="1"></div>
+        <div class="evidence-pip" data-pip="2"></div>
+        <div class="evidence-pip" data-pip="3"></div>
+        <div class="evidence-pip" data-pip="4"></div>
+        <div class="evidence-pip" data-pip="5"></div>
+        <span class="evidence-label" id="panel-evidence-text"></span>
+      </div>
+    </div>
+    <hr class="divider-line">
+    <div class="detail-block">
+      <div class="detail-label">Key Health Finding</div>
+      <div class="detail-value" id="panel-finding"></div>
+    </div>
+    <div class="detail-block" id="panel-pathogen-block">
+      <div class="detail-label">Notable Pathogen / Condition</div>
+      <div class="detail-value" id="panel-pathogen"></div>
+    </div>
+    <hr class="divider-line">
+    <div class="detail-block">
+      <div class="detail-label">Dietary Profile</div>
+      <div class="detail-value" id="panel-diet"></div>
+    </div>
+    <div class="detail-block">
+      <div class="detail-label">Violence Level</div>
+      <div class="detail-value" id="panel-violence"></div>
+    </div>
+    <hr class="divider-line">
+    <div class="detail-block">
+      <div class="detail-label">Period Active</div>
+      <div class="detail-value" id="panel-period"></div>
+    </div>
+    <div class="detail-block" id="panel-pop-block">
+      <div class="detail-label">Population Estimate</div>
+      <div class="detail-value" id="panel-pop"></div>
+    </div>
+    <hr class="divider-line">
+    <div class="detail-block">
+      <div class="detail-label">Primary Evidence Type</div>
+      <div id="panel-tags"></div>
+    </div>
+    <div class="detail-block">
+      <div class="detail-label">Research Notes</div>
+      <div class="detail-value" id="panel-notes"></div>
+    </div>
+  </div>
+</aside>
+
+<!-- ── LEGEND ── -->
+<div id="legend" role="note" aria-label="Map legend">
+  <h3>Map Key</h3>
+
+  <div class="legend-section">
+    <div class="legend-section-title">Region</div>
+    <div class="legend-row"><div class="legend-dot" style="background:#c9a84c"></div><span class="legend-text">Core Scandinavia</span></div>
+    <div class="legend-row"><div class="legend-dot" style="background:#4f98a3"></div><span class="legend-text">Iceland</span></div>
+    <div class="legend-row"><div class="legend-dot" style="background:#5591c7"></div><span class="legend-text">Greenland</span></div>
+    <div class="legend-row"><div class="legend-dot" style="background:#a86fdf"></div><span class="legend-text">North Atlantic</span></div>
+    <div class="legend-row"><div class="legend-dot" style="background:#6daa45"></div><span class="legend-text">British Isles</span></div>
+    <div class="legend-row"><div class="legend-dot" style="background:#fdab43"></div><span class="legend-text">Western Europe</span></div>
+    <div class="legend-row"><div class="legend-dot" style="background:#dd6974"></div><span class="legend-text">Eastern Routes</span></div>
+    <div class="legend-row"><div class="legend-dot" style="background:#e05c3a"></div><span class="legend-text">Iberian Peninsula</span></div>
+  </div>
+
+  <div class="legend-divider"></div>
+
+  <div class="legend-section">
+    <div class="legend-section-title">Evidence Density</div>
+    <div class="legend-size-row">
+      <div class="legend-circle" style="width:10px;height:10px"></div>
+      <span class="legend-text">1 — Minimal</span>
+    </div>
+    <div class="legend-size-row">
+      <div class="legend-circle" style="width:16px;height:16px"></div>
+      <span class="legend-text">3 — Moderate</span>
+    </div>
+    <div class="legend-size-row">
+      <div class="legend-circle" style="width:24px;height:24px"></div>
+      <span class="legend-text">5 — Extensive</span>
+    </div>
+  </div>
+</div>
+
+<!-- ── HINT ── -->
+<div id="hint" role="status">Click any site for detailed health data</div>
+
+<script>
+// ─── SITE DATA ───
+const SITES = [
+  { name:"Ribe", region:"Core Scandinavia", subregion:"Denmark", lat:55.33, lon:8.77, type:"Emporium/Urban", density:5, finding:"943-skeleton paleodemographic study; mean adult age at death 38.5M / 38.6F — the most rigorous Viking Age demographic dataset available.", evidence:"Osteology / Paleodemography", diet:"Terrestrial / Mixed", violence:"Moderate (judicial focus)", pathogen:null, pop:"400–800", period:"700–1100 CE", notes:"Best diachronic dataset; spans Viking, medieval, post-medieval periods." },
+  { name:"Birka", region:"Core Scandinavia", subregion:"Sweden", lat:59.33, lon:17.55, type:"Emporium/Urban", density:5, finding:"3,000+ graves; confirmed female warrior Bj 581 (no combat trauma); major aDNA and isotope work on geographic mobility.", evidence:"Osteology / aDNA / Isotope", diet:"Mixed", violence:"Low–Moderate (few combat injuries)", pathogen:null, pop:"700–1000", period:"750–975 CE", notes:"Bj 581 confirmed female by aDNA — reshapes warrior burial interpretation." },
+  { name:"Varnhem", region:"Core Scandinavia", subregion:"Sweden", lat:58.38, lon:13.68, type:"Rural / Monastic Transition", density:5, finding:"49% of individuals had carious lesions; 13% of adult teeth affected; CT scans reveal sinusitis, ear infection, and osteoarthritis throughout.", evidence:"Osteology / Dental / CT Scan", diet:"Terrestrial / Grain-heavy", violence:"Low–Moderate", pathogen:"Dental abscess; Chronic sinusitis", pop:null, period:"900–1200 CE", notes:"Bertilsson et al. 2023 (PLoS ONE); 2025 CT skull study (BDJ Open)." },
+  { name:"Hedeby (Haithabu)", region:"Core Scandinavia", subregion:"Denmark / Germany border", lat:54.49, lon:9.57, type:"Emporium/Urban", density:4, finding:"One of the largest Norse emporia; dense human-animal cohabitation creates ideal conditions for zoonotic disease and intestinal parasite transmission.", evidence:"Settlement Archaeology", diet:"Mixed", violence:"Moderate", pathogen:"Intestinal parasites (inferred from ecology)", pop:"1000–1500", period:"770–1050 CE", notes:"Crossroads between Scandinavian and Frankish disease environments." },
+  { name:"Kaupang", region:"Core Scandinavia", subregion:"Norway", lat:59.06, lon:10.30, type:"Emporium/Urban", density:3, finding:"Cemetery revisited with isotope analysis; evidence of high geographic mobility in the trading population; trade-route pathogen exposure.", evidence:"Burial Archaeology / Isotope", diet:"Marine / Mixed", violence:"Moderate", pathogen:null, pop:"200–500", period:"800–950 CE", notes:"Smallest major emporium; Vestfold, Norway." },
+  { name:"Kopparsvik", region:"Core Scandinavia", subregion:"Sweden (Gotland)", lat:57.64, lon:18.29, type:"Cemetery", density:3, finding:"14 out of 18 individuals with carious lesions — confirms the dental disease pattern documented at Varnhem across multiple sites.", evidence:"Osteology / Dental", diet:"Mixed / Marine", violence:"Low–Moderate", pathogen:"Dental caries; Abscess", pop:null, period:"900–1100 CE", notes:"Gotland — major Viking Age trading island in the Baltic." },
+  { name:"Trondheim (Nidaros)", region:"Core Scandinavia", subregion:"Norway", lat:63.43, lon:10.39, type:"Urban / Royal Center", density:3, finding:"Skeletal evidence of treponemal disease; TB documented in medieval Norwegian sample; high-violence regional context.", evidence:"Osteology", diet:"Marine / Mixed", violence:"High (Norwegian context — Jacobson et al.)", pathogen:"Treponemal disease; Tuberculosis", pop:null, period:"900–1200 CE", notes:"Norway had 50× more weapon burials than contemporary Denmark." },
+  { name:"Hrísbrú (Mosfell Valley)", region:"Iceland", subregion:"Iceland", lat:64.15, lon:-21.70, type:"Farmstead", density:4, finding:"~25% skeletal prevalence of TB lesions — consistent with epidemic-level transmission in a population exposed to a novel pathogen in an isolated environment.", evidence:"Osteology / Isotope / aDNA", diet:"Terrestrial / Marine Mixed", violence:"Low–Moderate", pathogen:"Tuberculosis (epidemic-level)", pop:"50–200 (valley)", period:"874–1200 CE", notes:"Mosfell Archaeological Project — best-studied Icelandic Viking Age site." },
+  { name:"Western Settlement (Sandnes)", region:"Greenland", subregion:"Greenland", lat:64.80, lon:-51.40, type:"Colony / Farmstead", density:3, finding:"Abandoned ca. 1350–1400 CE; climate cooling drove collapse; isotope evidence of increasing reliance on seal diet as pastoral farming failed.", evidence:"Isotope / Zooarchaeology", diet:"Marine-dominant (50–80% seal)", violence:"Low (internal)", pathogen:null, pop:"400–700", period:"985–1400 CE", notes:"First Greenlandic settlement to collapse; Little Ice Age context." },
+  { name:"Eastern Settlement (Brattahlíð)", region:"Greenland", subregion:"Greenland", lat:61.12, lon:-45.51, type:"Colony / Farmstead", density:4, finding:"80 skeletons isotope-analyzed; 50–80% of diet from marine sources (primarily seal) despite the settlers' pastoral identity as farmers.", evidence:"Isotope / Osteology", diet:"Marine-dominant (50–80% seal)", violence:"Low", pathogen:null, pop:"2000–4000 (peak)", period:"985–1450 CE", notes:"Arneborg et al. isotope study; largest Greenlandic Norse settlement." },
+  { name:"Faroe Islands", region:"North Atlantic", subregion:"Faroe Islands", lat:62.00, lon:-6.80, type:"Settlement", density:2, finding:"Stepping-stone settlement between Norway and Iceland; limited osteological study to date; pastoral and marine mixed subsistence.", evidence:"Settlement Archaeology", diet:"Marine / Pastoral Mixed", violence:"Low", pathogen:null, pop:"500–2000", period:"800–1100 CE", notes:"Norse colonization ca. 800 CE, likely replacing earlier Irish hermit settlers." },
+  { name:"L'Anse aux Meadows", region:"North Atlantic", subregion:"Vinland (Newfoundland)", lat:51.60, lon:-55.52, type:"Temporary Settlement", density:1, finding:"Short-lived Norse occupation ca. 1000 CE; no skeletal record; the only confirmed Norse site in the Americas. Disease exposure from ocean crossing documented elsewhere.", evidence:"Settlement Archaeology", diet:"Unknown", violence:"Unknown (saga conflict with Indigenous peoples)", pathogen:null, pop:"30–100 (temporary)", period:"1000–1020 CE", notes:"UNESCO World Heritage Site; confirms the Vinland sagas." },
+  { name:"Dublin (Dyflin)", region:"British Isles", subregion:"Ireland", lat:53.33, lon:-6.25, type:"Emporium/Urban", density:4, finding:"Norse-origin M. leprae strains confirmed by aDNA; isotope evidence confirms two Dublin leprosy cases grew up in Scandinavia — direct evidence of disease vectoring.", evidence:"aDNA / Isotope (leprosy)", diet:"Mixed", violence:"High (Viking raiding base)", pathogen:"Leprosy — Scandinavian Type 3 strain (M. leprae)", pop:"2000–5000", period:"841–1170 CE", notes:"QUB / Southampton leprosy origins study; key evidence for Norse disease dispersal." },
+  { name:"York (Jorvik)", region:"British Isles", subregion:"England", lat:53.96, lon:-1.08, type:"Emporium/Urban", density:4, finding:"Coppergate excavations: intestinal parasites (whipworm, roundworm) recovered directly from Viking Age latrine deposits — some of the best parasitological evidence in the Norse world.", evidence:"Environmental Archaeology / Parasitology", diet:"Mixed / Terrestrial", violence:"Moderate", pathogen:"Intestinal parasites (whipworm, roundworm — direct aDNA evidence)", pop:"10000–15000", period:"866–954 CE", notes:"Jorvik Viking Centre; Coppergate excavation is a landmark of urban Viking archaeology." },
+  { name:"Orkney Islands", region:"British Isles", subregion:"Scotland", lat:59.00, lon:-3.00, type:"Settlement / Farming", density:3, finding:"Highest marine isotope values of any post-Mesolithic UK population; clear sex-differentiated diet with males consuming significantly more marine protein.", evidence:"Isotope", diet:"Marine-dominant (extreme)", violence:"Low–Moderate", pathogen:null, pop:null, period:"800–1150 CE", notes:"Norse settlers replaced Pictish population; extreme marine dietary profile." },
+  { name:"Oxford (St. Brice's Day)", region:"British Isles", subregion:"England", lat:51.75, lon:-1.25, type:"Massacre Burial", density:3, finding:"Smallpox (VARV) aDNA recovered from massacre victims (1002 CE); these Danish men carried an extinct clade of smallpox virus — pushing confirmed smallpox back 1,000 years.", evidence:"aDNA (Variola virus)", diet:"Mixed", violence:"High (massacre site — 1002 CE)", pathogen:"Variola virus — extinct Viking Age clade (Mühlemann et al. 2020, Science)", pop:null, period:"1002 CE (single event)", notes:"Æthelred II's St. Brice's Day massacre; most dramatic aDNA pathogen finding in Norse archaeology." },
+  { name:"Rouen (Normandy)", region:"Western Europe", subregion:"France", lat:49.44, lon:1.10, type:"Settlement / Duchy", density:2, finding:"Norse settler integration post-911 CE; limited Viking Age osteological study; leprosy well-documented in Norman period as Norse disease vectors dispersed westward.", evidence:"Historical / Limited Osteology", diet:"Mixed / Terrestrial", violence:"Moderate", pathogen:"Leprosy (Norman period)", pop:null, period:"911–1066 CE", notes:"Duchy of Normandy founded 911 CE by Rollo." },
+  { name:"Staraya Ladoga (Aldeigja)", region:"Eastern Routes", subregion:"Russia", lat:60.00, lon:32.30, type:"Trade Route Node", density:2, finding:"Earliest confirmed Scandinavian presence in the east (ca. 750 CE); crossroads pathogen exposure from steppe, Baltic, and Nordic disease environments.", evidence:"Settlement Archaeology", diet:"Mixed", violence:"Moderate", pathogen:null, pop:null, period:"750–950 CE", notes:"First major Rus settlement; gateway to eastern trade routes and steppe ecologies." },
+  { name:"Novgorod (Holmgarðr)", region:"Eastern Routes", subregion:"Russia", lat:58.52, lon:31.28, type:"Trade Route Node / Urban", density:2, finding:"Hub of the Volga and Dnieper trade routes; systematic contact with steppe zoonotic disease ecology including potential brucellosis and plague reservoir zones.", evidence:"Settlement Archaeology", diet:"Mixed / Terrestrial", violence:"Moderate", pathogen:"Zoonotic disease (inferred from steppe ecology)", pop:null, period:"859–1100 CE", notes:"Major Rus trade city; Varangian Guard recruitment hub." },
+  { name:"Kyiv (Kœnugarðr)", region:"Eastern Routes", subregion:"Ukraine", lat:50.45, lon:30.52, type:"Trade Route Node / Capital", density:2, finding:"Capital of Kievan Rus; diverse disease ecology from steppe, Byzantine, and Scandinavian contact zones; highest-risk environment on the eastern route.", evidence:"Historical / Settlement Archaeology", diet:"Mixed", violence:"High", pathogen:null, pop:null, period:"880–1100 CE", notes:"Varangian-Slavic ruling class; contact zone between multiple disease ecologies." },
+  { name:"Constantinople (Miklagarðr)", region:"Eastern Routes", subregion:"Byzantine Empire", lat:41.01, lon:28.98, type:"Trade / Military Destination", density:1, finding:"Destination of the Varangian Guard; Norse traders and soldiers exposed to Mediterranean disease ecology: plague, malaria, dysentery, typhoid fever.", evidence:"Historical Sources", diet:"Mediterranean", violence:"High (military service)", pathogen:"Plague; Malaria (Mediterranean exposure)", pop:null, period:"860–1100 CE", notes:"End point of the eastern routes; Varangian Guard formed 988 CE under Basil II." }
+  ,
+  { name:"A Coruña / Galicia Coast", region:"Iberian Peninsula", subregion:"Kingdom of Asturias (Spain)", lat:43.37, lon:-8.40, type:"Raid Target / Coastal", density:2, finding:"First recorded Viking raid in Iberia, 844 CE; fleet repulsed by Ramiro I near the Tower of Hercules with heavy Norse losses. Raids continued into the 10th–11th century including the 968 CE sacking of Santiago de Compostela (Bishop Sisnando killed).", evidence:"Galician & Asturian Chronicles", diet:"Unknown (raid context)", violence:"High (military raid)", pathogen:"Dysentery; enteric disease (inferred — summer campaign, unfamiliar water sources)", pop:null, period:"844–1015 CE", notes:"Multiple raid waves documented in Galician charters. No Norse skeletal evidence from this region — evidence density reflects chronicle quality only." },
+  { name:"Lisbon (al-Ushbuna)", region:"Iberian Peninsula", subregion:"al-Andalus (Portugal)", lat:38.72, lon:-9.14, type:"Raid Target / Occupied", density:2, finding:"Occupied for 13 days in 844 CE during the raid en route to Seville; raided again in subsequent Norse campaigns. Norse crews exposed to Iberian summer disease ecology, unfamiliar enteric pathogens, and intense heat.", evidence:"Arab Chronicles (Ibn Hayyan; al-Ya'qubi)", diet:"Unknown (raid context)", violence:"High (military occupation)", pathogen:"Enteric disease; dysentery (inferred from hot-season campaign and unfamiliar water)", pop:null, period:"844–966 CE", notes:"Al-Ya'qubi recorded the 844 raid; Ibn al-Qutiya gave a detailed account of Seville. No Norse osteological evidence from Iberia." },
+  { name:"Seville — Guadalquivir Marshes", region:"Iberian Peninsula", subregion:"al-Andalus (Spain)", lat:37.39, lon:-5.99, type:"Raid Target / Occupied", density:2, finding:"Sacked Oct. 844 CE; Norse base established on Isla Menor in the Guadalquivir marshes — an endemic malaria zone. Norse crews with no prior Plasmodium exposure camped in marshland through autumn. Retaken by Umayyad forces Nov. 844 CE.", evidence:"Arab Chronicles / Disease Ecology Inference", diet:"Unknown (raid context)", violence:"High (intense urban combat; heavy Norse losses)", pathogen:"Malaria — Plasmodium (endemic Guadalquivir wetlands; immunologically naive Norse hosts)", pop:null, period:"844 CE; 859–860 CE (Björn Ironside expedition)", notes:"The marsh encampment is the most epidemiologically vivid moment of the Iberian raids. Malaria well-documented as endemic in Guadalquivir wetlands throughout the medieval period (Newfield 2017, Early Medieval Europe)." },
+  { name:"Strait of Gibraltar / Björn Ironside", region:"Iberian Peninsula", subregion:"al-Andalus coast / Maghreb approaches", lat:35.90, lon:-5.60, type:"Expedition / Raid", density:1, finding:"859–860 CE expedition by Björn Ironside and Hastein passed the Strait of Gibraltar, raided the North African coast (Nekor, Morocco) and reached the western Mediterranean — the farthest Norse penetration into the Mediterranean disease world.", evidence:"Norse Sagas / Arab Chronicles", diet:"Unknown (expedition context)", violence:"High (raid)", pathogen:"Malaria; North African enteric pathogens (inferred from Mediterranean/North African ecology)", pop:null, period:"859–860 CE", notes:"Reached North Africa and possibly the Rhône delta and Catalonia. Maximum Norse exposure to Mediterranean disease environments — completely outside their immunological experience." }
+
+];
+
+// ─── REGION COLORS ───
+const REGION_COLORS = {
+  "Core Scandinavia": "#c9a84c",
+  "Iceland":           "#4f98a3",
+  "Greenland":         "#5591c7",
+  "North Atlantic":    "#a86fdf",
+  "British Isles":     "#6daa45",
+  "Western Europe":    "#fdab43",
+  "Eastern Routes":    "#dd6974",
+  "Iberian Peninsula": "#e05c3a"
+};
+
+const EVIDENCE_LABELS = {1:"Minimal",2:"Limited",3:"Moderate",4:"Good",5:"Extensive"};
+
+// ─── MAP TILES ───
+const TILE_DARK  = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png', {
+  attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+  subdomains:'abcd', maxZoom:19
+});
+const TILE_LIGHT = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
+  attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+  subdomains:'abcd', maxZoom:19
+});
+const LABEL_LAYER = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png', {
+  subdomains:'abcd', maxZoom:19, opacity:0.5
+});
+
+// Init map
+const map = L.map('map', {
+  center: [58, 10], zoom: 4,
+  zoomControl: false, attributionControl: false
+});
+TILE_DARK.addTo(map);
+LABEL_LAYER.addTo(map);
+L.control.zoom({ position:'bottomright' }).addTo(map);
+L.control.attribution({ position:'bottomleft', prefix:false }).addTo(map).addAttribution('© OpenStreetMap © CARTO');
+
+// ─── MARKER CREATION ───
+function markerSize(density) {
+  return 8 + density * 4;   // 12 to 28px diameter
+}
+
+function createMarker(site) {
+  const color = REGION_COLORS[site.region] || "#aaa";
+  const sz    = markerSize(site.density);
+  const icon  = L.divIcon({
+    className: '',
+    iconSize:  [sz, sz],
+    iconAnchor:[sz/2, sz/2],
+    popupAnchor:[0, -(sz/2 + 4)],
+    html: `<div class="site-marker" style="
+      width:${sz}px;height:${sz}px;
+      background:${color}22;
+      border-color:${color};
+      border-width:2px;
+      box-shadow:0 0 ${sz/2}px ${color}44;
+    "><svg width="${sz*0.45}" height="${sz*0.45}" viewBox="0 0 12 12">
+      <circle cx="6" cy="6" r="3" fill="${color}" opacity="0.9"/>
+    </svg></div>`
+  });
+
+  const marker = L.marker([site.lat, site.lon], { icon });
+  marker.siteData = site;
+
+  // Build popup HTML
+  const colorStyle = `color:${color}`;
+  const pillsHtml  = [
+    site.diet     ? `<span class="popup-pill" style="color:${color};border-color:${color}44;background:${color}11">${site.diet}</span>` : '',
+    site.pathogen ? `<span class="popup-pill" style="color:#dd6974;border-color:#dd697444;background:#dd697411">${site.pathogen.split(';')[0].split('—')[0].trim()}</span>` : ''
+  ].filter(Boolean).join('');
+
+  const popupContent = `
+    <div class="popup-inner">
+      <div class="popup-region-tag" style="${colorStyle}">${site.region}</div>
+      <div class="popup-name">${site.name}</div>
+      <div class="popup-finding">${site.finding.substring(0,110)}${site.finding.length>110?'…':''}</div>
+      <div class="popup-pills">${pillsHtml}</div>
+      <button class="popup-cta" onclick="openPanel(${SITES.indexOf(site)})">Full health data →</button>
+    </div>`;
+
+  marker.bindPopup(popupContent, { maxWidth:260, className:'', autoPanPaddingTopLeft:[20,80] });
+  return marker;
+}
+
+// ─── MARKERS LAYER GROUP ───
+let allMarkers = [];
+const markerGroup = L.layerGroup().addTo(map);
+
+SITES.forEach(site => {
+  const m = createMarker(site);
+  m.addTo(markerGroup);
+  allMarkers.push(m);
+});
+
+// Trade route lines (approximate)
+const tradeRoutes = [
+  // Western route
+  [[63.43,10.39],[59.33,17.55],[55.33,8.77],[54.49,9.57],[53.33,-6.25],[53.96,-1.08],[49.44,1.10]],
+  // North Atlantic
+  [[63.43,10.39],[62.0,-6.80],[64.15,-21.70],[64.80,-51.40],[61.12,-45.51]],
+  // Vinland spur
+  [[64.15,-21.70],[51.60,-55.52]],
+  // Eastern route
+  [[59.33,17.55],[60.00,32.30],[58.52,31.28],[50.45,30.52],[41.01,28.98]],
+  // Iberian raid route
+  [[49.44,1.10],[43.37,-8.40],[38.72,-9.14],[37.39,-5.99],[35.90,-5.60]]
+];
+
+tradeRoutes.forEach(pts => {
+  L.polyline(pts, {
+    color:'rgba(201,168,76,0.20)',
+    weight:1.5,
+    dashArray:'6 5',
+    smoothFactor:1
+  }).addTo(map);
+});
+
+// ─── PANEL ───
+const panel      = document.getElementById('panel');
+const panelClose = document.getElementById('panel-close');
+const hint       = document.getElementById('hint');
+let hintHidden   = false;
+
+function openPanel(idx) {
+  const s = SITES[idx];
+  const color = REGION_COLORS[s.region] || '#c9a84c';
+
+  document.getElementById('panel-region-badge').textContent  = s.region;
+  document.getElementById('panel-region-badge').style.color  = color;
+  document.getElementById('panel-title').textContent         = s.name;
+  document.getElementById('panel-subregion').textContent     = `${s.subregion} · ${s.type}`;
+
+  // Evidence pips
+  document.querySelectorAll('.evidence-pip').forEach(pip => {
+    pip.classList.toggle('filled', parseInt(pip.dataset.pip) <= s.density);
+    if (parseInt(pip.dataset.pip) <= s.density) pip.style.background = color;
+    else pip.style.background = '';
+  });
+  document.getElementById('panel-evidence-text').textContent = EVIDENCE_LABELS[s.density];
+
+  document.getElementById('panel-finding').textContent  = s.finding;
+  document.getElementById('panel-diet').textContent     = s.diet;
+  document.getElementById('panel-violence').textContent = s.violence;
+  document.getElementById('panel-period').textContent   = s.period;
+  document.getElementById('panel-notes').textContent    = s.notes;
+
+  const pathBlock = document.getElementById('panel-pathogen-block');
+  if (s.pathogen) {
+    document.getElementById('panel-pathogen').textContent = s.pathogen;
+    pathBlock.style.display = '';
+  } else {
+    pathBlock.style.display = 'none';
+  }
+
+  const popBlock = document.getElementById('panel-pop-block');
+  if (s.pop) {
+    document.getElementById('panel-pop').textContent = s.pop;
+    popBlock.style.display = '';
+  } else {
+    popBlock.style.display = 'none';
+  }
+
+  // Evidence type tags
+  const tagsEl = document.getElementById('panel-tags');
+  tagsEl.innerHTML = s.evidence.split('/').map(t =>
+    `<span class="tag evidence">${t.trim()}</span>`
+  ).join('');
+
+  panel.classList.add('open');
+  document.body.classList.add('map-shifted');
+
+  if (!hintHidden) { hint.classList.add('hidden'); hintHidden = true; }
+}
+
+window.openPanel = openPanel;  // expose for popup onclick
+
+panelClose.addEventListener('click', () => {
+  panel.classList.remove('open');
+  document.body.classList.remove('map-shifted');
+});
+
+// Click marker to open popup and panel
+allMarkers.forEach((m, idx) => {
+  m.on('click', () => {
+    map.closePopup();
+    setTimeout(() => openPanel(idx), 50);
+  });
+  m.on('popupopen', () => {
+    if (!hintHidden) { hint.classList.add('hidden'); hintHidden = true; }
+  });
+});
+
+// ─── FILTERS ───
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const region = btn.dataset.region;
+    allMarkers.forEach((m, idx) => {
+      const site = SITES[idx];
+      const show = region === 'all' || site.region === region;
+      if (show) markerGroup.addLayer(m);
+      else markerGroup.removeLayer(m);
+    });
+  });
+});
+
+// ─── THEME TOGGLE ───
+const themeToggle = document.getElementById('theme-toggle');
+let isDark = true;
+let currentLabelLayer = LABEL_LAYER;
+
+themeToggle.addEventListener('click', () => {
+  isDark = !isDark;
+  document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+  if (isDark) {
+    map.removeLayer(TILE_LIGHT);
+    TILE_DARK.addTo(map);
+    map.removeLayer(currentLabelLayer);
+    currentLabelLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png',{subdomains:'abcd',maxZoom:19,opacity:0.5});
+    currentLabelLayer.addTo(map);
+    themeToggle.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+  } else {
+    map.removeLayer(TILE_DARK);
+    TILE_LIGHT.addTo(map);
+    map.removeLayer(currentLabelLayer);
+    currentLabelLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png',{subdomains:'abcd',maxZoom:19,opacity:0.8});
+    currentLabelLayer.addTo(map);
+    themeToggle.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
+  }
+  // Re-add routes on top
+  tradeRoutes.forEach(pts => {
+    L.polyline(pts, { color:'rgba(201,168,76,0.20)', weight:1.5, dashArray:'6 5' }).addTo(map);
+  });
+  markerGroup.bringToFront();
+});
+
+// ─── HINT TIMEOUT ───
+setTimeout(() => { if(!hintHidden){ hint.classList.add('hidden'); hintHidden=true; }}, 5000);
+</script>
+</body>
+</html>

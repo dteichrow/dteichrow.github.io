@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Search | Edge of Epidemiology</title>
+    <meta name="description" content="Search across essays, atlases, stories, and reference pages." />
+    <link rel="stylesheet" href="/assets/site.css" />
+    
+  </head>
+  <body>
+    <main class="page">
+      <header class="site-header"><div class="site-header-copy"><p class="kicker">The Edge of Epidemiology</p><h1 class="site-brand"><a href="/">The Edge of Epidemiology</a></h1><p class="site-header-title">History-haunted epidemiology, live reporting, and atlas work in one place.</p></div><nav class="site-nav" aria-label="Primary navigation"><a class="site-nav-link" href="/">Home</a><a class="site-nav-link" href="/newsdesk/">Newsdesk</a><a class="site-nav-link" href="/atlases/">Atlases</a><a class="site-nav-link" href="/essays/">Essays</a><a class="site-nav-link" href="/historical/">Historical</a><a class="site-nav-link" href="/reference/">Reference</a><a class="site-nav-link" href="/methods/">Methods</a><a class="site-nav-link" href="/about/">About</a><a class="site-nav-link active" href="/search/" aria-current="page">Search</a></nav></header>
+      
+      <section class="hero">
+        <p class="kicker">Search</p>
+        <h2 class="hero-title">Search the umbrella site</h2>
+        <p class="subtitle">Essays, atlases, references, and live outbreak files share one static search index.</p>
+      </section>
+      <section class="panel">
+        <div class="search-shell" data-search-source="/app_exports/search-index.json">
+          <div class="search-controls">
+            <input class="filter-input" type="search" data-search-input placeholder="Search titles, tags, places, pathogens, or phrases" />
+            <select class="filter-select" data-search-filter>
+              <option value="all">All sections</option>
+              <option value="Essay">Essays</option>
+              <option value="Atlas">Atlases</option>
+              <option value="Newsdesk">Newsdesk</option>
+              <option value="Reference">Reference</option>
+            </select>
+          </div>
+          <div class="card-grid three-up" data-search-results></div>
+        </div>
+      </section>
+    
+    </main>
+    <script src="/assets/site.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,634 @@
+{
+  "type": "FeatureCollection",
+  "name": "maritime_disease_ecology_atlas",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "west_africa",
+        "feature_type": "site",
+        "group": "Fevers and Vectors",
+        "name": "West African Coast",
+        "scenario": "yellow_fever",
+        "caption": "Yellow fever is a mosquito-borne viral disease with African roots; Atlantic shipping carried infected people and vector conditions toward the Americas.",
+        "mechanism": "Warm ports, stored water, Aedes mosquitoes, people, and non-human primate cycles made this a vector ecology shaped by maritime movement."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2,
+          5.55
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "west_africa_malaria",
+        "feature_type": "site",
+        "group": "Malaria and Mosquitoes",
+        "name": "West Africa / Malarial Fevers",
+        "scenario": "malaria",
+        "caption": "Malaria is a parasitic disease; this route follows tropical mosquito ecology before reaching Caribbean waters.",
+        "mechanism": "Malaria is caused by Plasmodium parasites transmitted by infected Anopheles mosquitoes. Warm climates, water storage, and uneven immunity shape risk."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.5,
+          6.2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "saint_domingue",
+        "feature_type": "site",
+        "group": "Fevers and Vectors",
+        "name": "Saint-Domingue / Caribbean Fever Ecology",
+        "scenario": "yellow_fever",
+        "caption": "The Caribbean shows yellow fever as port-and-plantation ecology: mosquitoes, stored water, dense movement, and non-immune arrivals.",
+        "mechanism": "Ships carried infected people, Aedes mosquitoes, water containers, and port conditions into places where yellow fever transmission could restart."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.3,
+          18.95
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "philadelphia_1793",
+        "feature_type": "site",
+        "group": "Fevers and Vectors",
+        "name": "Philadelphia, 1793",
+        "scenario": "yellow_fever",
+        "caption": "A port-city endpoint where ship movement, refugees, summer heat, urban density, and mosquito habitat converged.",
+        "mechanism": "Maritime disease ecology reached beyond the dock."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1652,
+          39.9526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "hms_salisbury",
+        "feature_type": "site",
+        "group": "Scurvy and Provisions",
+        "name": "HMS Salisbury",
+        "scenario": "scurvy",
+        "caption": "James Lind's 1747 scurvy trial gives the scurvy route a concrete shipboard case.",
+        "mechanism": "Scurvy is a logistics disease: time at sea, preserved food, and missing vitamin C."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5,
+          49.8
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "north_atlantic_crossing",
+        "feature_type": "site",
+        "group": "Scurvy and Provisions",
+        "name": "North Atlantic Crossing",
+        "scenario": "scurvy",
+        "caption": "The open ocean turns provisioning into a clock. The longer the crossing, the more the ship's diet becomes a biological trap.",
+        "mechanism": "A route between fresh-food departure and deficiency arrival."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38,
+          43.5
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "nassau",
+        "feature_type": "site",
+        "group": "Pirate Network",
+        "name": "Nassau, New Providence",
+        "scenario": "pirate_network",
+        "alwaysShow": true,
+        "caption": "The pirate republic sits inside a wider port network where epidemiological risk accumulates.",
+        "mechanism": "Pirate crews moved through places where food, water, mosquito vectors, infected people, injuries, and provisions mixed."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.3504,
+          25.0443
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "port_royal",
+        "feature_type": "site",
+        "group": "Pirate Network",
+        "name": "Port Royal, Jamaica",
+        "scenario": "pirate_network",
+        "alwaysShow": true,
+        "caption": "A tropical port is an ecological exchange point with pirate history around it.",
+        "mechanism": "Sailors, merchants, enslaved people, stored water, mosquitoes, wounds, alcohol, and provisions overlapped."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.8411,
+          17.9376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tortuga",
+        "feature_type": "site",
+        "group": "Pirate Network",
+        "name": "Tortuga",
+        "scenario": "pirate_network",
+        "alwaysShow": true,
+        "caption": "Island bases let crews reprovision, recruit, recover, and carry risk into the next voyage.",
+        "mechanism": "Pirate geography matters because ports reset the ship ecology."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.7925,
+          20.042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "london_naval",
+        "feature_type": "site",
+        "group": "Crowding and Flux",
+        "name": "London / Naval Hospitals",
+        "scenario": "ship_fever",
+        "caption": "A practical hygiene point: bathing, clean clothes, delousing, ventilation, and bedding.",
+        "mechanism": "Epidemic typhus is caused by Rickettsia prowazekii and spread by infected body lice, especially where people cannot bathe or change clothes regularly."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1276,
+          51.5072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "below_deck",
+        "feature_type": "site",
+        "group": "Ship Interior",
+        "name": "Below Deck",
+        "scenario": "ship_fever",
+        "caption": "This is the shipboard disease machine: bunks, bedding, clothing, lice, bad air, dirty water, and no escape from exposure.",
+        "mechanism": "Typhus, flux, and other shipboard illnesses shared this confined environment, but they moved through different mechanisms: lice, contaminated food or water, wounds, and respiratory spread."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -50,
+          32
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "port_arrival",
+        "feature_type": "site",
+        "group": "Respiratory Viruses",
+        "name": "Port Arrival / Quarantine",
+        "scenario": "smallpox_measles",
+        "caption": "Smallpox and measles move through close quarters aboard ship, then into susceptible populations ashore.",
+        "mechanism": "Voyage length, isolation, bedding, clothes, and port quarantine shaped whether measles virus or variola virus cases burned out aboard ship or spread after arrival."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.5,
+          41.8
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ship_surgery",
+        "feature_type": "site",
+        "group": "Wounds and Sepsis",
+        "name": "Ship Surgery / Wound Care",
+        "scenario": "wounds_sepsis",
+        "caption": "Injury became infectious inside the ship environment.",
+        "mechanism": "Cuts, fractures, stab wounds, burns, unwashed tools, dirty bandages, bedding, and delayed care created infection risk. Sepsis is the dangerous systemic response, not a single pathogen."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42,
+          28
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "water_cask",
+        "feature_type": "site",
+        "group": "Flux and Enteric Disease",
+        "name": "Water Cask / Latrine Boundary",
+        "scenario": "flux",
+        "caption": "Contaminated food and water formed the route of exposure.",
+        "mechanism": "Flux and dysentery are syndromic labels. Bacteria such as Shigella, and sometimes protozoal parasites, spread through fecally contaminated water, food, hands, and surfaces."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46,
+          21
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "food_water_typhi",
+        "feature_type": "site",
+        "group": "Food and Water",
+        "name": "Food and Water Contamination",
+        "scenario": "typhoid",
+        "caption": "Typhoid fever sits beside flux: contaminated food and water, overlapping symptoms, and hygiene interventions before germ theory.",
+        "mechanism": "Typhoid fever is caused by Salmonella Typhi. Water casks, hands, food, and fecal contamination define this food-water ecology."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43,
+          24.5
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "brookes_middle_passage",
+        "feature_type": "site",
+        "group": "Extreme Burden",
+        "name": "Brookes / Middle Passage",
+        "scenario": "middle_passage",
+        "caption": "Maritime disease ecology under coercion, violence, dehydration, malnutrition, crowding, and no meaningful agency.",
+        "mechanism": "The Middle Passage is the catastrophic extreme case."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -35,
+          12
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cape_fear",
+        "feature_type": "site",
+        "group": "Pirate Network",
+        "name": "Cape Fear / Carolina Coast",
+        "scenario": "pirate_network",
+        "alwaysShow": true,
+        "caption": "A Blackbeard-adjacent coastal endpoint for pirate movement along Atlantic ports.",
+        "mechanism": "Pirates make the geography visible, but the route is the epidemiological unit."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.02,
+          33.9
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "route_yellow_fever",
+        "feature_type": "route",
+        "group": "Fevers and Vectors",
+        "name": "Yellow Fever Atlantic Route",
+        "scenario": "yellow_fever",
+        "caption": "Africa to Caribbean to North American port city: ecology, movement, and port conditions."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.2,
+            5.55
+          ],
+          [
+            -25,
+            9
+          ],
+          [
+            -52,
+            15
+          ],
+          [
+            -72.3,
+            18.95
+          ],
+          [
+            -75.1652,
+            39.9526
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "route_malaria",
+        "feature_type": "route",
+        "group": "Malaria and Mosquitoes",
+        "name": "Malaria Tropical Route",
+        "scenario": "malaria",
+        "caption": "A tropical route for mosquito breeding, water storage, and exposure in West Africa and the Caribbean."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -4.5,
+            6.2
+          ],
+          [
+            -30,
+            9
+          ],
+          [
+            -61,
+            14.5
+          ],
+          [
+            -76.8411,
+            17.9376
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "route_scurvy",
+        "feature_type": "route",
+        "group": "Scurvy and Provisions",
+        "name": "Scurvy Provisioning Clock",
+        "scenario": "scurvy",
+        "caption": "The route is a timer: as fresh foods disappear, deficiency risk rises."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -5.5,
+            49.8
+          ],
+          [
+            -38,
+            43.5
+          ],
+          [
+            -77.3504,
+            25.0443
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "route_ship_fever",
+        "feature_type": "route",
+        "group": "Crowding and Flux",
+        "name": "Ship Fever Crowding Route",
+        "scenario": "ship_fever",
+        "caption": "The route matters less than the interior ecology: lice, clothes, bedding, and ventilation travel with the crew."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.1276,
+            51.5072
+          ],
+          [
+            -50,
+            32
+          ],
+          [
+            -76.8411,
+            17.9376
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "route_flux",
+        "feature_type": "route",
+        "group": "Flux and Enteric Disease",
+        "name": "Flux Ship-Interior Route",
+        "scenario": "flux",
+        "caption": "A schematic below-deck route between bodies, water storage, latrine boundaries, food, and waste."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -50,
+            32
+          ],
+          [
+            -48.4,
+            27.6
+          ],
+          [
+            -46,
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "route_typhoid",
+        "feature_type": "route",
+        "group": "Food and Water",
+        "name": "Typhoid Food-Water Route",
+        "scenario": "typhoid",
+        "caption": "A food-and-water route for Salmonella Typhi exposure, ship hygiene, and contaminated provisions."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.1276,
+            51.5072
+          ],
+          [
+            -43,
+            24.5
+          ],
+          [
+            -76.8411,
+            17.9376
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "route_smallpox_measles",
+        "feature_type": "route",
+        "group": "Respiratory Viruses",
+        "name": "Smallpox and Measles Port Route",
+        "scenario": "smallpox_measles",
+        "caption": "A respiratory-virus route for close quarters, isolation, bedding, clothing, and port arrival."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -50,
+            32
+          ],
+          [
+            -59.5,
+            37.1
+          ],
+          [
+            -69.5,
+            41.8
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "route_wounds_sepsis",
+        "feature_type": "route",
+        "group": "Wounds and Sepsis",
+        "name": "Wound Infection Route",
+        "scenario": "wounds_sepsis",
+        "caption": "A ship-interior route for injury, wound care, gangrene, amputation, and sepsis."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -50,
+            32
+          ],
+          [
+            -42,
+            28
+          ],
+          [
+            -76.8411,
+            17.9376
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "route_middle_passage",
+        "feature_type": "route",
+        "group": "Extreme Burden",
+        "name": "Middle Passage Burden Route",
+        "scenario": "middle_passage",
+        "caption": "A forced route where confinement, malnutrition, dehydration, violence, and infection compounded."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.2,
+            5.55
+          ],
+          [
+            -35,
+            12
+          ],
+          [
+            -72.3,
+            18.95
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "route_pirate_network",
+        "feature_type": "route",
+        "group": "Pirate Network",
+        "name": "Pirate Caribbean Network",
+        "scenario": "pirate_network",
+        "alwaysShow": true,
+        "caption": "The pirate route sits beneath the disease routes as geographic context."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -77.3504,
+            25.0443
+          ],
+          [
+            -76.8411,
+            17.9376
+          ],
+          [
+            -72.7925,
+            20.042
+          ],
+          [
+            -78.02,
+            33.9
+          ],
+          [
+            -77.3504,
+            25.0443
+          ]
+        ]
+      }
+    }
+  ]
+}

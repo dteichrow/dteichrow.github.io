@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maritime Disease Ecology Atlas</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="data/maritime_disease_atlas_data.js"></script>
+<style>
+:root {
+  --bg: #0d0c0a;
+  --panel: rgba(20, 19, 16, 0.95);
+  --panel-2: rgba(32, 29, 24, 0.94);
+  --border: rgba(255, 255, 255, 0.13);
+  --text: #efe4d2;
+  --muted: #aaa298;
+  --faint: #746c61;
+  --gold: #c9a84c;
+  --brass: #a8864a;
+  --fever: #d86a4f;
+  --teal: #5d958c;
+  --blue: #5a9bd4;
+  --rose: #dd6974;
+  --violet: #9b7bd8;
+  --green: #7aa96b;
+  --copper: #bd7b45;
+  --display: Georgia, "Times New Roman", serif;
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  color: var(--text);
+  background: var(--bg);
+  font-family: var(--display);
+}
+#map {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: #080806;
+}
+.leaflet-container { background: #080806 !important; }
+.leaflet-control-attribution {
+  background: rgba(0, 0, 0, 0.4) !important;
+  color: #8f887f !important;
+}
+#chrome {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: grid;
+  grid-template-columns: minmax(320px, 470px) 1fr;
+  gap: 16px;
+  padding: 14px 22px;
+  background: linear-gradient(180deg, rgba(14,13,11,0.97), rgba(14,13,11,0.88));
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.48);
+}
+#brand h1 {
+  margin: 0;
+  font-size: clamp(28px, 3vw, 46px);
+  line-height: 0.95;
+}
+#brand p {
+  margin: 7px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+#scenario-bar {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 9px;
+  flex-wrap: wrap;
+  overflow-x: visible;
+  padding: 0 4px 8px;
+  scroll-padding-inline: 8px;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+.scenario-btn,
+#pause-btn,
+#recording-btn,
+#reset-btn {
+  flex: 0 0 auto;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.035);
+  color: var(--muted);
+  padding: 8px 13px;
+  font: 700 12px/1 var(--display);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.scenario-btn:hover,
+.scenario-btn.active,
+#pause-btn:hover,
+#pause-btn.active,
+#recording-btn:hover,
+#recording-btn.active {
+  color: var(--text);
+  border-color: currentColor;
+  background: color-mix(in srgb, currentColor 16%, transparent);
+}
+#pause-btn {
+  color: var(--gold);
+}
+#recording-btn {
+  color: #88a7bd;
+}
+#pause-btn[aria-disabled="true"] {
+  color: #5e584f;
+  cursor: default;
+  opacity: 0.58;
+}
+#reset-btn { color: #8f887f; }
+#story-panel {
+  position: fixed;
+  top: 120px;
+  left: 22px;
+  z-index: 900;
+  width: 410px;
+  max-width: calc(100vw - 44px);
+  max-height: calc(100vh - 188px);
+  overflow-y: auto;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  box-shadow: 0 16px 50px rgba(0,0,0,0.5);
+  padding: 18px 20px 20px;
+}
+#story-kicker {
+  color: var(--gold);
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+#story-title {
+  margin: 8px 0 8px;
+  font-size: 29px;
+  line-height: 1.08;
+}
+#story-copy {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.38;
+}
+#timeline {
+  display: grid;
+  gap: 8px;
+  margin-top: 18px;
+}
+.step-chip {
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  align-items: start;
+  gap: 10px;
+  color: #8b857b;
+  font-size: 14px;
+}
+.step-dot {
+  width: 22px;
+  height: 22px;
+  border: 2px solid currentColor;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+}
+.step-chip.active {
+  color: var(--text);
+}
+.step-chip.active .step-dot {
+  color: var(--active-color, var(--gold));
+  box-shadow: 0 0 24px color-mix(in srgb, var(--active-color, var(--gold)) 70%, transparent);
+}
+#mechanism-card {
+  position: fixed;
+  right: 24px;
+  top: 132px;
+  z-index: 920;
+  width: 400px;
+  max-height: calc(100vh - 170px);
+  overflow-y: auto;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 58px rgba(0,0,0,0.55);
+  padding: 18px 20px;
+  transform: translateY(18px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 260ms ease, transform 260ms ease;
+}
+#mechanism-card.open {
+  opacity: 1;
+  transform: translateY(0);
+}
+#context-card {
+  position: fixed;
+  right: 24px;
+  top: 132px;
+  z-index: 910;
+  width: 400px;
+  max-height: calc(100vh - 170px);
+  overflow: hidden;
+  background: rgba(24, 22, 18, 0.94);
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 58px rgba(0,0,0,0.55);
+  transform: translateY(18px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 260ms ease, transform 260ms ease;
+}
+#context-card.open {
+  opacity: 1;
+  transform: translateY(0);
+}
+#context-image {
+  width: 100%;
+  height: 230px;
+  display: block;
+  object-fit: var(--context-fit, cover);
+  object-position: var(--context-position, center center);
+  background: #f6efdE;
+  filter: sepia(0.18) contrast(1.08) brightness(0.92);
+}
+#context-card-body {
+  padding: 13px 16px 15px;
+  background: linear-gradient(180deg, rgba(18,16,13,0.84), rgba(18,16,13,0.96));
+}
+#context-kicker {
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+#context-title {
+  margin-top: 5px;
+  font-size: 22px;
+  line-height: 1.04;
+}
+#context-credit {
+  margin-top: 7px;
+  color: #91887e;
+  font-size: 11px;
+  line-height: 1.25;
+}
+#plot-card {
+  position: fixed;
+  right: 24px;
+  top: 132px;
+  z-index: 930;
+  width: 460px;
+  max-height: calc(100vh - 170px);
+  overflow-y: auto;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 58px rgba(0,0,0,0.55);
+  padding: 16px 18px 18px;
+  transform: translateY(18px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 260ms ease, transform 260ms ease;
+}
+#plot-card.open {
+  opacity: 1;
+  transform: translateY(0);
+}
+#plot-art {
+  border-radius: 18px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 72% 20%, color-mix(in srgb, var(--active-color, var(--gold)) 18%, transparent), transparent 35%),
+    linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.018));
+  border: 1px solid rgba(255,255,255,0.09);
+}
+#plot-art svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#plot-title {
+  margin: 13px 0 8px;
+  font-size: 24px;
+  line-height: 1.08;
+}
+#plot-copy {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.34;
+}
+#plot-note {
+  margin-top: 10px;
+  color: #91887e;
+  font-size: 11px;
+  line-height: 1.3;
+}
+#mechanism-card h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  line-height: 1.08;
+}
+#mechanism-card p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  line-height: 1.34;
+}
+#mechanism-art {
+  height: 168px;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 50% 45%, rgba(255,255,255,0.07), transparent 62%),
+    linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.08);
+  overflow: hidden;
+}
+.asset-card {
+  position: relative;
+  width: 100%;
+  height: 168px;
+  overflow: hidden;
+  background: #12100d;
+}
+.asset-card::before,
+.asset-card::after {
+  content: "";
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  border-top: 3px dashed var(--asset-color);
+  opacity: 0.16;
+  transform: rotate(-9deg);
+}
+.asset-card::before { top: 42px; }
+.asset-card::after { bottom: 42px; transform: rotate(-13deg); }
+.asset-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: var(--asset-width, 210px);
+  height: var(--asset-height, 118px);
+  transform: translate(-50%, -50%) rotate(var(--asset-rotate, 0deg));
+  object-fit: contain;
+  opacity: 0.96;
+  filter:
+    brightness(0)
+    saturate(100%)
+    invert(84%)
+    sepia(28%)
+    saturate(520%)
+    hue-rotate(351deg)
+    brightness(94%)
+    contrast(92%)
+    drop-shadow(0 0 13px color-mix(in srgb, var(--asset-color) 48%, transparent));
+}
+.asset-img.secondary {
+  opacity: 0.44;
+  width: var(--secondary-width, 86px);
+  height: var(--secondary-height, 86px);
+  transform: translate(var(--secondary-x, 52px), var(--secondary-y, -54px)) rotate(var(--secondary-rotate, 0deg));
+}
+.site-marker {
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  border: 2px solid currentColor;
+  border-radius: 999px;
+  background: rgba(12, 11, 9, 0.82);
+  box-shadow: 0 0 20px currentColor;
+}
+.site-marker::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  background: currentColor;
+}
+.pirate-marker {
+  width: 31px;
+  height: 31px;
+  display: grid;
+  place-items: center;
+  color: var(--pirate-color, #c9a84c);
+  border: 2px solid currentColor;
+  border-radius: 999px;
+  background: rgba(12, 11, 9, 0.88);
+  box-shadow: 0 0 22px currentColor;
+}
+.pirate-marker svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+.pirate-marker.active {
+  width: 48px;
+  height: 48px;
+  animation: pulse 1.35s ease-in-out infinite;
+}
+.pirate-marker.active svg {
+  width: 34px;
+  height: 34px;
+}
+.pulse-marker {
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  border: 2px solid currentColor;
+  animation: pulse 1.35s ease-in-out infinite;
+}
+.pulse-marker::after {
+  content: "";
+  display: block;
+  margin: 14px;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: currentColor;
+}
+.atlas-route {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.active-route {
+  animation: dash 1.4s linear infinite;
+  filter: drop-shadow(0 0 9px currentColor);
+}
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: rgba(20, 19, 16, 0.96);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.recording-mode {
+  --bg: #efe4cf;
+  --panel: rgba(252, 247, 236, 0.96);
+  --panel-2: rgba(250, 244, 232, 0.96);
+  --border: rgba(58, 42, 24, 0.24);
+  --text: #20170f;
+  --muted: #4f4337;
+  --faint: #746655;
+  --gold: #927034;
+}
+.recording-mode #map,
+.recording-mode .leaflet-container {
+  background: #e8ddc9 !important;
+}
+.recording-mode #chrome {
+  background: linear-gradient(180deg, rgba(245,238,222,0.98), rgba(245,238,222,0.9));
+  box-shadow: 0 16px 42px rgba(80, 52, 21, 0.22);
+}
+.recording-mode #story-panel,
+.recording-mode #mechanism-card,
+.recording-mode #plot-card,
+.recording-mode #context-card {
+  box-shadow: 0 18px 52px rgba(72, 44, 20, 0.24);
+}
+.recording-mode #context-card {
+  background: rgba(252, 247, 236, 0.96);
+}
+.recording-mode #context-card-body {
+  background: linear-gradient(180deg, rgba(252,247,236,0.86), rgba(252,247,236,0.98));
+}
+.recording-mode #context-image {
+  filter: sepia(0.07) contrast(1.05) brightness(1.03);
+}
+.recording-mode .site-marker,
+.recording-mode .pirate-marker {
+  background: rgba(255, 250, 235, 0.9);
+}
+.recording-mode .leaflet-control-attribution {
+  background: rgba(255,255,255,0.72) !important;
+  color: #625646 !important;
+}
+.recording-mode .leaflet-popup-content-wrapper,
+.recording-mode .leaflet-popup-tip {
+  background: rgba(252, 247, 236, 0.98);
+}
+.popup-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+.popup-meta {
+  color: var(--muted);
+  line-height: 1.35;
+}
+@keyframes dash {
+  from { stroke-dashoffset: 120; }
+  to { stroke-dashoffset: 0; }
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(0.74); opacity: 0.45; }
+  50% { transform: scale(1.08); opacity: 1; }
+}
+@media (max-width: 950px) {
+  #chrome { grid-template-columns: 1fr; }
+  #story-panel { top: 172px; width: 380px; }
+  #mechanism-card { right: 18px; top: 172px; width: 360px; }
+  #plot-card { right: 18px; top: 172px; width: 400px; }
+  #context-card { right: 18px; top: 172px; width: 360px; }
+}
+@media (max-width: 700px) {
+  #scenario-bar {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  #story-panel { top: 184px; }
+  #mechanism-card { top: 184px; }
+  #plot-card { top: 184px; width: 360px; }
+  #context-card { top: 184px; }
+}
+</style>
+</head>
+<body>
+<main id="map" aria-label="Maritime disease ecology atlas"></main>
+
+<header id="chrome">
+  <section id="brand">
+    <h1>Maritime Disease Ecology Atlas</h1>
+    <p>Routes | disease mechanisms | age-of-sail ecology</p>
+  </section>
+  <nav id="scenario-bar" aria-label="Disease animations">
+    <button class="scenario-btn" style="color:#d86a4f" data-scenario="yellow_fever">Yellow Fever</button>
+    <button class="scenario-btn" style="color:#9b7bd8" data-scenario="malaria">Malaria</button>
+    <button class="scenario-btn" style="color:#a8864a" data-scenario="scurvy">Scurvy</button>
+    <button class="scenario-btn" style="color:#5d958c" data-scenario="ship_fever">Ship Fever</button>
+    <button class="scenario-btn" style="color:#5a9bd4" data-scenario="flux">Flux</button>
+    <button class="scenario-btn" style="color:#7aa96b" data-scenario="typhoid">Typhoid</button>
+    <button class="scenario-btn" style="color:#e1bf66" data-scenario="smallpox">Smallpox</button>
+    <button class="scenario-btn" style="color:#d6c06a" data-scenario="measles">Measles</button>
+    <button class="scenario-btn" style="color:#bd7b45" data-scenario="wounds_sepsis">Wounds + Sepsis</button>
+    <button class="scenario-btn" style="color:#dd6974" data-scenario="middle_passage">Middle Passage</button>
+    <button class="scenario-btn" style="color:#c9a84c" data-scenario="pirate_network">Pirate Ports</button>
+    <button id="pause-btn" aria-pressed="false" aria-disabled="true">Pause</button>
+    <button id="recording-btn" aria-pressed="false">Record Mode</button>
+    <button id="reset-btn">Reset</button>
+  </nav>
+</header>
+
+<aside id="story-panel">
+  <div id="story-kicker">Click a disease route</div>
+  <h2 id="story-title">A ship was a moving disease ecosystem.</h2>
+  <div id="story-copy">Pick a disease button. The map moves through origin ecology, mechanism, route, and endpoint.</div>
+  <div id="timeline"></div>
+</aside>
+
+<section id="mechanism-card">
+  <div id="mechanism-art"></div>
+  <h2 id="mechanism-title">Mechanism</h2>
+  <p id="mechanism-copy"></p>
+</section>
+
+<section id="context-card" aria-label="Context art">
+  <img id="context-image" alt="">
+  <div id="context-card-body">
+    <div id="context-kicker">Context art</div>
+    <div id="context-title"></div>
+    <div id="context-credit"></div>
+  </div>
+</section>
+
+<section id="plot-card" aria-label="Simulated transmission plot">
+  <div id="plot-art"></div>
+  <h2 id="plot-title">Transmission plot</h2>
+  <p id="plot-copy"></p>
+  <div id="plot-note"></div>
+</section>
+
+<script>
+const COLORS = {
+  "Pirate Network": "#c9a84c",
+  "Scurvy and Provisions": "#a8864a",
+  "Fevers and Vectors": "#d86a4f",
+  "Malaria and Mosquitoes": "#9b7bd8",
+  "Crowding and Flux": "#5d958c",
+  "Flux and Enteric Disease": "#5a9bd4",
+  "Ship Interior": "#8f887f",
+  "Food and Water": "#7aa96b",
+  "Respiratory Viruses": "#e1bf66",
+  "Wounds and Sepsis": "#bd7b45",
+  "Extreme Burden": "#dd6974"
+};
+
+const map = L.map("map", {
+  center: [22, -43],
+  zoom: 4,
+  zoomControl: false,
+  attributionControl: false
+});
+
+const tileOptions = {
+  attribution: "OpenStreetMap / CARTO",
+  subdomains: "abcd",
+  maxZoom: 19
+};
+const labelTileOptions = {
+  subdomains: "abcd",
+  maxZoom: 19,
+  opacity: 0.58
+};
+const darkBaseLayer = L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png", tileOptions);
+const darkLabelLayer = L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png", labelTileOptions);
+const lightBaseLayer = L.tileLayer("https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png", tileOptions);
+const lightLabelLayer = L.tileLayer("https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png", {
+  ...labelTileOptions,
+  opacity: 0.76
+});
+darkBaseLayer.addTo(map);
+darkLabelLayer.addTo(map);
+L.control.zoom({ position: "bottomright" }).addTo(map);
+L.control.attribution({ position: "bottomleft", prefix: false }).addTo(map).addAttribution("OpenStreetMap / CARTO");
+
+const atlas = window.MARITIME_DISEASE_ATLAS_GEOJSON;
+const scenarios = window.MARITIME_DISEASE_SCENARIOS;
+const featureById = new Map(atlas.features.map(feature => [feature.properties.id, feature]));
+let geoLayer;
+let activePulse;
+let activeScenario = null;
+let runToken = 0;
+let isPaused = false;
+let isRecordingMode = false;
+let pauseResolvers = [];
+
+const CONTEXT_ART = {
+  nassau: {
+    src: "assets/context/nassau_harbor.jpg",
+    title: "Nassau Harbor, Bahama Islands",
+    kicker: "Port visual",
+    credit: "Library of Congress via Wikimedia Commons, public domain",
+    position: "center 48%"
+  },
+  port_royal: {
+    src: "assets/context/port_royal_paton.jpg",
+    title: "View of Port Royal, Jamaica",
+    kicker: "Port visual",
+    credit: "Richard Paton / Royal Museums Greenwich via Wikimedia Commons, public domain",
+    position: "center center"
+  },
+  tortuga: {
+    src: "assets/context/tortuga_map.jpg",
+    title: "Map of Île de la Tortue",
+    kicker: "Island visual",
+    credit: "USGS via Wikimedia Commons, public domain",
+    position: "center center",
+    fit: "contain"
+  },
+  west_africa: {
+    src: "assets/context/guinea_coast_1736.jpg",
+    title: "Guinea Coast map, 1736",
+    kicker: "Atlantic origin context",
+    credit: "Wikimedia Commons, public domain",
+    position: "center 46%",
+    fit: "contain"
+  },
+  west_africa_malaria: {
+    src: "assets/context/guinea_coast_1736.jpg",
+    title: "Guinea Coast map, 1736",
+    kicker: "Tropical ecology context",
+    credit: "Wikimedia Commons, public domain",
+    position: "center 46%",
+    fit: "contain"
+  },
+  saint_domingue: {
+    src: "assets/context/cap_francais_1728.jpg",
+    title: "Cap-Français, Saint-Domingue, 1728",
+    kicker: "Caribbean port visual",
+    credit: "Wikimedia Commons, public domain",
+    position: "center 42%",
+    fit: "contain"
+  },
+  smallpox_origin_camel: {
+    src: "assets/context/camel_from_nubia_1838.jpg",
+    title: "Dromedary camel from the coast of Nubia",
+    kicker: "Origin hypothesis visual",
+    credit: "J. R. Wellsted, 1838, via Wikimedia Commons, public domain",
+    position: "center center",
+    fit: "contain"
+  },
+  measles_origin_rinderpest: {
+    src: "assets/context/rinderpest_1896.jpg",
+    title: "Rinderpest outbreak, South Africa, 1896",
+    kicker: "Morbillivirus ancestry visual",
+    credit: "Wikimedia Commons, public domain",
+    position: "center center",
+    fit: "contain"
+  },
+  london_naval: {
+    src: "assets/context/royal_naval_hospital_greenwich_1720.jpg",
+    title: "Royal Naval Hospital, Greenwich, 1720",
+    kicker: "Naval medicine visual",
+    credit: "Wellcome Collection via Wikimedia Commons, CC BY 4.0",
+    position: "center 48%",
+    fit: "contain"
+  },
+  below_deck: {
+    src: "assets/context/emigrants_lower_deck_crowded.jpg",
+    title: "Crowded lower deck of an emigrant ship",
+    kicker: "Below-deck crowding",
+    credit: "Library of Congress via Wikimedia Commons, public domain",
+    position: "center center",
+    fit: "contain"
+  },
+  water_cask: {
+    src: "assets/context/emigrant_ship_breakfast_bell.jpg",
+    title: "On board an emigrant ship: the breakfast bell",
+    kicker: "Food-water context",
+    credit: "Library of Congress via Wikimedia Commons, public domain",
+    position: "center 45%",
+    fit: "contain"
+  },
+  food_water_typhi: {
+    src: "assets/context/typhoid_prevention_1908.jpg",
+    title: "Typhoid fever mortality map, 1908",
+    kicker: "Food-water disease visual",
+    credit: "Internet Archive Book Images via Wikimedia Commons, no known restrictions",
+    position: "center center",
+    fit: "contain"
+  },
+  hms_salisbury: {
+    src: "assets/context/lind_scurvy_treatise.jpg",
+    title: "James Lind, A Treatise on the Scurvy",
+    kicker: "Source visual",
+    credit: "Wellcome Collection via Wikimedia Commons, CC BY 4.0",
+    position: "center 18%",
+    fit: "contain"
+  },
+  philadelphia_1793: {
+    src: "assets/context/philadelphia_yellow_fever_1793.gif",
+    title: "Carey's 1793 yellow-fever account",
+    kicker: "Outbreak source",
+    credit: "College of Physicians of Philadelphia via Wikimedia Commons, public domain",
+    position: "center 20%",
+    fit: "contain"
+  },
+  port_arrival: {
+    src: "assets/context/quarantine_guardship_rhin_1830.jpg",
+    title: "Quarantine guardship Rhin, 1830",
+    kicker: "Quarantine visual",
+    credit: "Royal Museums Greenwich via Wikimedia Commons, public domain",
+    position: "center center"
+  },
+  smallpox_hulks: {
+    src: "assets/context/smallpox_hospital_ships_atlas_endymion.jpg",
+    title: "Smallpox hospital hulks Atlas and Endymion",
+    kicker: "Maritime isolation",
+    credit: "Wellcome Collection via Wikimedia Commons, CC BY 4.0",
+    position: "center center",
+    fit: "contain"
+  },
+  grosse_ile_quarantine: {
+    src: "assets/context/grosse_ile_quarantine_1850.jpg",
+    title: "Grosse Île quarantine station, 1850",
+    kicker: "Fever-ship endpoint",
+    credit: "Library and Archives Canada via Wikimedia Commons, public domain",
+    position: "center center",
+    fit: "contain"
+  },
+  ship_surgery: {
+    src: "assets/context/naval_surgeon_instruments.jpg",
+    title: "Naval surgeon's amputation instruments",
+    kicker: "Surgery visual",
+    credit: "Wellcome Collection via Wikimedia Commons, CC BY 4.0",
+    position: "center 46%"
+  },
+  route_wounds_sepsis: {
+    src: "assets/context/naval_surgeon_instruments.jpg",
+    title: "Naval surgeon's amputation instruments",
+    kicker: "Surgery visual",
+    credit: "Wellcome Collection via Wikimedia Commons, CC BY 4.0",
+    position: "center 46%"
+  },
+  cape_fear: {
+    src: "assets/context/cape_fear_map.jpg",
+    title: "Cape Fear River map",
+    kicker: "Coastal endpoint",
+    credit: "Library of Congress via Wikimedia Commons, public domain",
+    position: "center 48%",
+    fit: "contain"
+  },
+  brookes_middle_passage: {
+    src: "assets/context/brookes_slave_ship.jpg",
+    title: "Diagram of the Brookes slave ship",
+    kicker: "Confinement visual",
+    credit: "British Library via Wikimedia Commons, public domain",
+    position: "center center",
+    fit: "contain"
+  }
+};
+
+function setRecordingMode(nextValue) {
+  isRecordingMode = nextValue;
+  document.documentElement.classList.toggle("recording-mode", isRecordingMode);
+  document.getElementById("recording-btn").classList.toggle("active", isRecordingMode);
+  document.getElementById("recording-btn").setAttribute("aria-pressed", String(isRecordingMode));
+
+  if (isRecordingMode) {
+    map.removeLayer(darkBaseLayer);
+    map.removeLayer(darkLabelLayer);
+    lightBaseLayer.addTo(map);
+    lightLabelLayer.addTo(map);
+  } else {
+    map.removeLayer(lightBaseLayer);
+    map.removeLayer(lightLabelLayer);
+    darkBaseLayer.addTo(map);
+    darkLabelLayer.addTo(map);
+  }
+
+  if (geoLayer) geoLayer.bringToFront();
+  if (activePulse) activePulse.addTo(map);
+}
+
+function featureColor(feature) {
+  return COLORS[feature.properties.group] || "#c9a84c";
+}
+
+function pirateSvg() {
+  return `<svg viewBox="0 0 510 490" aria-hidden="true" focusable="false">
+    <path fill="#fff" stroke="#080806" stroke-width="12.5" d="M335.4 412.27l63.28 32.9c14.98 13.03 11.24 21.9 21.65 29.96 10.26 9.43 16.8 10.96 22.9 2.08 4.85-10.1 3.88-20.2 5.4-31.2 7.08-6.8 12.9-10.2 18.74-17 6.38-7.1 6.1-14.1-3.75-19.1-8.2-3.3-15.96-5-25.8-2.1-6.26 2-12.92 3.1-21.24-.4l-68.28-31.7-194-67.3c-26.1-12.7-47.78-22.2-73.6-36.5-14.02-11.1-9.5-23.8-26.48-34.1-7.47-3.7-12.87-5.4-18.85 4.8-3.82 9-3.52 18.6-4.1 27.9-6.68 7.2-14.24 11.4-19.73 20.3-7.95 12.8 4.1 17 10.6 18.6 18.44 4.6 25.1-3.7 42.1-.3 33.05 15.4 66.4 31.4 98.3 47.1z" stroke-linejoin="round"/>
+    <path fill="#fff" stroke="#080806" stroke-width="12.5" d="M349.56 354.82l94.5-44.54c17.9-7.08 20.4 2.9 36.2 0 12.08-.14 22.07-4.86 21.24-16.23-6.1-9.03-11.8-14.7-22.48-24.57.56-10.54-1.4-20.67-5.4-30.8-4.17-5.97-11.67-8.6-22.9 2.08-11.38 8.6-7.78 20.12-22.07 32.05-23.3 11.6-44.54 21.8-70.35 34.6l-196.5 67.9c-22.75 12.1-43.42 23.3-69.5 33.3-21.24 5.3-20.4-7.7-46.2.9-7.37 5.8-7.23 14.2-1.26 20.4 6.93 6.8 11.8 11.1 17.9 17.1 1.94 8.6 2.22 16 3.33 26.3 4.16 12.6 13.33 11.9 21.23 5.8 3.47-4.3 7.77-8.2 10.4-12.9 3.6-6.2 7.64-13.3 12.5-19.1l62.85-33.3z" stroke-linejoin="round"/>
+    <path fill="#fff" stroke="#080806" stroke-width="12.5" d="M128.5 221.56c-19.14-18.6-32.5-50.9-34.37-85.75-2-38.4 18.22-76.5 48.54-98.3C176.64 13.6 233.43 7 268.75 8.8c23.92.02 77.2 12.42 96.02 26.43 33 24 50.68 58.04 51.9 96.85 1.82 38.98-14.6 68.68-34.7 87.2"/>
+    <path fill="#fff" d="M130.4 215s-23.13 70.03 21.44 81.97l16.25 93.66c17.1 73.72 154.4 73.77 174.6 0l16.2-93.66c45.7-12.2 22.5-82 22.5-82z"/>
+    <path fill="none" stroke="#080806" stroke-width="12.5" d="M129.66 112.27c-7.75 6.78-6.77 16.97-5.38 32.2 1.1 11.55 8.48 22.93 8.87 33.5 2.7 22.27-3.88 44.56-6.98 62.78-2.13 20.92 3.88 38.95 11.63 45.92 7.75 6.88 17.76 9.73 28.27 12.94 9.55 2.5 14.5 6.9 21.73 12.3 8.6 9.2 10.66 16.7 10.46 26m183.8-226.1c7.75 6.8 6.77 17 5.38 32.2-1.1 11.6-8.48 23-8.87 33.5-2.7 22.3 3.88 44.6 6.98 62.8 2.13 21-3.88 39-11.63 46-7.75 6.9-21.94 10.6-28.27 12.9-7.37 2.6-14.92 7.3-21.72 12.7-8.2 7.9-10.66 16.3-10.47 25.6"/>
+    <path fill="none" stroke="#080806" stroke-width="12.5" d="M151.82 296.96c6.94 16.8 14.3 33.16 15 50.37-3.2 13.88-2.23 30.25 1.24 43.3 4.44 17.9 21.78 39.12 39.13 46.2 17.7 6.45 28.8 8.12 48.7 8.12"/>
+    <path fill="none" stroke="#080806" stroke-width="12.5" d="M358.92 296.96c-6.94 16.8-14.3 33.16-14.98 50.37 3.2 13.87 2.22 30.25-1.25 43.3-4.5 17.9-22 38.5-39.4 45.58-17.4 7.1-28.5 8.8-48.3 8.8"/>
+    <path fill="#080806" stroke="#080806" stroke-width="1.25" d="M251.9 245.7c-9.7 7.38-11.86 9.86-17.22 18.02-1.94 3.15-5.56 10.5-6.55 15.44-1 4.94-1.73 12.1-1.72 15.9.1 12.85 4.1 20.9 8.6 20.63 4-.5 9.1-4.7 16.8-14.1m7.1-55.7c9.7 7.3 11.9 9.8 17.2 18 2 3.1 5.6 10.5 6.6 15.4s1.8 12.1 1.7 15.9c0 12.8-4.1 20.9-8.5 20.6-4-.5-9.1-4.7-16.8-14.1m-89.5-112.3c13.5-2.4 26.5-3.9 40-5.4 17.6-4.5 26.5 15.6 21.7 30.8-6.1 13.4-14.7 25.2-24.5 36.6-7.6 8.6-16.7 9.9-25.4 7-7-2-13.4-6.3-20.4-16.3-3-8.6-5.6-13.1-9.5-23.7-3.02-9.9 1.7-24.6 18.3-29.2zm172.1 0c-13.4-2.4-26.5-3.9-39.9-5.4-17.6-4.5-26.5 15.6-21.6 30.8 6.1 13.4 14.7 25.2 24.6 36.6 7.7 8.6 16.8 9.9 25.4 7 7-2 13.5-6.3 20.4-16.3 3.1-8.6 5.7-13.1 9.6-23.7 3.1-9.9-1.7-24.6-18.3-29.2z"/>
+    <path fill="none" stroke="#080806" stroke-width="6.25" d="M169.23 304.53c5.7 13.34 7.45 18.4 11.55 31.72 3.5 12.3 4.8 19.8 6.95 37.26m153.37-69.7c-5.7 13.4-7.46 18.4-11.57 31.7-3.5 12.3-4.78 19.8-6.94 37.3"/>
+    <path fill="none" stroke="#080806" stroke-width="5" d="M193.52 335.73c14.7 9.03 40.16 10.42 62.95 10 25.4-.12 47.13-1.95 61.4-10.6m-119.2 24.15c16.23 10.2 35.33 13.7 57.32 12.88 22.8-.56 40.3-2.48 56-13.17"/>
+    <path fill="none" stroke="#080806" stroke-width="6.25" d="M186.9 371.64c17.36 20.95 41.6 24.6 69.17 25.32 29.5 1.08 59.16-10.65 66.8-25.3"/>
+    <path fill="#080806" stroke="#080806" stroke-width="5" d="M198.44 340.26l-.4 41.2m13.93-36.83l-.2 44.12m15.2-42.25l-.43 46.2m13.96-45.16l-.22 46.83m15.4-46.4v46.82m14.57-47.1l.2 46.8m12.92-48.1l.4 46m14.8-48.5l.2 44.1m13.53-49.6l.4 41.6"/>
+  </svg>`;
+}
+
+function pointIcon(feature, active = false, colorOverride = null) {
+  const color = colorOverride || featureColor(feature);
+  const size = active ? 46 : 25;
+  if (feature.properties.group === "Pirate Network") {
+    const pirateSize = active ? 48 : 31;
+    return L.divIcon({
+      className: "",
+      iconSize: [pirateSize, pirateSize],
+      iconAnchor: [pirateSize / 2, pirateSize / 2],
+      popupAnchor: [0, -pirateSize / 2],
+      html: `<div class="pirate-marker ${active ? "active" : ""}" style="--pirate-color:${color}">${pirateSvg()}</div>`
+    });
+  }
+  return L.divIcon({
+    className: "",
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2],
+    popupAnchor: [0, -size / 2],
+    html: active
+      ? `<div class="pulse-marker" style="color:${color}"></div>`
+      : `<div class="site-marker" style="color:${color}"></div>`
+  });
+}
+
+function drawAtlas(scenarioId = null) {
+  if (geoLayer) geoLayer.remove();
+  const scenario = scenarioId ? scenarios[scenarioId] : null;
+  const activeIds = new Set(scenario ? scenario.featureIds : []);
+
+  geoLayer = L.geoJSON(atlas, {
+    filter: feature => {
+      if (!scenario) return true;
+      return activeIds.has(feature.properties.id) || feature.properties.alwaysShow;
+    },
+    pointToLayer: (feature, latlng) => {
+      const active = activeIds.has(feature.properties.id);
+      const colorOverride = active && scenario ? scenario.color : null;
+      return L.marker(latlng, { icon: pointIcon(feature, false, colorOverride) });
+    },
+    style: feature => {
+      const active = activeIds.has(feature.properties.id);
+      const color = active && scenario ? scenario.color : featureColor(feature);
+      return {
+        className: active ? "atlas-route active-route" : "atlas-route",
+        color,
+        weight: feature.properties.feature_type === "route" ? (active ? 4.8 : 2.2) : 2,
+        opacity: feature.properties.feature_type === "route" ? (active ? 0.88 : 0.33) : 0.86,
+        dashArray: feature.properties.feature_type === "route" ? "10 10" : null
+      };
+    },
+    onEachFeature: (feature, layer) => {
+      const props = feature.properties;
+      layer.bindPopup(`<div class="popup-title">${props.name}</div><div class="popup-meta">${props.caption || props.mechanism || ""}</div>`);
+      layer.on("click", () => {
+        if (props.scenario) playScenario(props.scenario);
+        else openFeature(props);
+      });
+    }
+  }).addTo(map);
+}
+
+function setStory(kicker, title, copy, color) {
+  document.getElementById("story-kicker").textContent = kicker;
+  document.getElementById("story-title").textContent = title;
+  document.getElementById("story-copy").textContent = copy;
+  document.documentElement.style.setProperty("--active-color", color || "var(--gold)");
+}
+
+function renderTimeline(scenario, activeIndex = -1) {
+  const timeline = document.getElementById("timeline");
+  timeline.innerHTML = scenario.steps.map((step, index) => `
+    <div class="step-chip ${index === activeIndex ? "active" : ""}">
+      <span class="step-dot">${index + 1}</span>
+      <span>${step.label}</span>
+    </div>
+  `).join("");
+}
+
+function mechanismArt(kind, color) {
+  const assetCard = (asset, label, styles = "", extra = "") => `
+    <div class="asset-card" role="img" aria-label="${label}" style="--asset-color:${color}">
+      <img class="asset-img" src="assets/${asset}" alt="" style="${styles}">
+      ${extra}
+    </div>`;
+
+  if (kind === "mosquito") {
+    return assetCard("mosquito.svg", "Mosquito vector illustration", "--asset-width:245px; --asset-height:138px; --asset-rotate:-7deg;");
+  }
+  if (kind === "louse") {
+    return assetCard("louse.svg", "Body louse vector illustration", "--asset-width:180px; --asset-height:140px; --asset-rotate:88deg;");
+  }
+  if (kind === "barrel") {
+    return assetCard("barrel.svg", "Water cask contamination illustration", "--asset-width:245px; --asset-height:128px;");
+  }
+  if (kind === "rash") {
+    return assetCard("virus.svg", "Respiratory virus spread illustration", "--asset-width:126px; --asset-height:126px;", `
+      <img class="asset-img secondary" src="assets/virus.svg" alt="" style="--secondary-x:-160px; --secondary-y:-64px; --secondary-width:68px; --secondary-height:68px;">
+      <img class="asset-img secondary" src="assets/virus.svg" alt="" style="--secondary-x:86px; --secondary-y:-72px; --secondary-width:76px; --secondary-height:76px;">
+    `);
+  }
+  if (kind === "wound") {
+    return assetCard("bandage.svg", "Wound care and infection risk illustration", "--asset-width:230px; --asset-height:126px; --asset-rotate:-10deg;", `
+      <img class="asset-img secondary" src="assets/surgery.svg" alt="" style="--secondary-x:52px; --secondary-y:-86px; --secondary-width:104px; --secondary-height:104px; --secondary-rotate:18deg;">
+    `);
+  }
+  return assetCard("clock.svg", "Provisioning clock and citrus illustration", "--asset-width:112px; --asset-height:112px; --asset-rotate:0deg;", `
+    <img class="asset-img secondary" src="assets/lemon.svg" alt="" style="--secondary-x:48px; --secondary-y:-74px; --secondary-width:106px; --secondary-height:106px; --secondary-rotate:-12deg;">
+  `);
+}
+
+function showMechanism(step, color) {
+  const card = document.getElementById("mechanism-card");
+  document.getElementById("mechanism-art").innerHTML = mechanismArt(step.visual, color);
+  document.getElementById("mechanism-title").textContent = step.title;
+  document.getElementById("mechanism-copy").textContent = step.copy;
+  card.classList.add("open");
+}
+
+function hideMechanism() {
+  document.getElementById("mechanism-card").classList.remove("open");
+}
+
+function showContextArt(art) {
+  const card = document.getElementById("context-card");
+  const image = document.getElementById("context-image");
+  image.src = art.src;
+  image.alt = art.title;
+  image.style.setProperty("--context-position", art.position || "center center");
+  image.style.setProperty("--context-fit", art.fit || "cover");
+  document.getElementById("context-kicker").textContent = art.kicker || "Context art";
+  document.getElementById("context-title").textContent = art.title;
+  document.getElementById("context-credit").textContent = art.credit || "";
+  card.classList.add("open");
+}
+
+function hideContextArt() {
+  document.getElementById("context-card").classList.remove("open");
+}
+
+function simulateClosedShip({ population, initial, rEff, latentDays, infectiousDays, days }) {
+  let susceptible = population - initial;
+  let exposed = 0;
+  let infected = initial;
+  let removed = 0;
+  const sigma = 1 / latentDays;
+  const gamma = 1 / infectiousDays;
+  const beta = rEff * gamma;
+  const rows = [];
+
+  for (let day = 0; day <= days; day++) {
+    rows.push({ day, susceptible, exposed, infected, removed });
+    const force = beta * infected / population;
+    const newExposed = Math.min(susceptible, susceptible * (1 - Math.exp(-force)));
+    const newInfectious = exposed * sigma;
+    const newRemoved = infected * gamma;
+    susceptible -= newExposed;
+    exposed += newExposed - newInfectious;
+    infected += newInfectious - newRemoved;
+    removed += newRemoved;
+    if (exposed < 0.01) exposed = 0;
+    if (infected < 0.01) infected = 0;
+  }
+  return rows;
+}
+
+function linePath(points, key, width, height, pad, maxY) {
+  return points.map((point, index) => {
+    const x = pad.left + (point.day / points[points.length - 1].day) * (width - pad.left - pad.right);
+    const y = height - pad.bottom - (point[key] / maxY) * (height - pad.top - pad.bottom);
+    return `${index === 0 ? "M" : "L"} ${x.toFixed(1)} ${y.toFixed(1)}`;
+  }).join(" ");
+}
+
+function burnoutPlot(kind, color) {
+  const configs = {
+    smallpox_burnout: {
+      heading: "Smallpox burnout model",
+      subtitle: "Closed-ship SEIR simulation | N=120 | illustrative R_eff=4.5 | latent=12 days | infectious=18 days",
+      population: 120,
+      initial: 1,
+      rEff: 4.5,
+      latentDays: 12,
+      infectiousDays: 18,
+      days: 90,
+      accent: color,
+      secondary: "#d9a36c"
+    },
+    measles_burnout: {
+      heading: "Measles burnout model",
+      subtitle: "Closed-ship SEIR simulation | N=120 | illustrative R_eff=14 | latent=10 days | infectious=8 days",
+      population: 120,
+      initial: 1,
+      rEff: 14,
+      latentDays: 10,
+      infectiousDays: 8,
+      days: 50,
+      accent: color,
+      secondary: "#e6c86f"
+    }
+  };
+  const config = configs[kind] || configs.smallpox_burnout;
+  const rows = simulateClosedShip(config);
+  const width = 560;
+  const height = 330;
+  const pad = { top: 54, right: 34, bottom: 52, left: 54 };
+  const maxY = config.population;
+  const activePeak = rows.reduce((best, row) => row.infected > best.infected ? row : best, rows[0]);
+  const finalRow = rows[rows.length - 1];
+  const attackRate = Math.round((finalRow.removed / config.population) * 100);
+  const activePath = linePath(rows, "infected", width, height, pad, maxY);
+  const exposedPath = linePath(rows, "exposed", width, height, pad, maxY);
+  const susceptiblePath = linePath(rows, "susceptible", width, height, pad, maxY);
+  const removedPath = linePath(rows, "removed", width, height, pad, maxY);
+
+  return `
+    <svg viewBox="0 0 ${width} ${height}" role="img" aria-label="${config.heading}">
+      <rect width="${width}" height="${height}" fill="rgba(18,16,13,0.78)"/>
+      <text x="28" y="30" fill="var(--text)" font-size="24" font-weight="700">${config.heading}</text>
+      <text x="28" y="50" fill="var(--muted)" font-size="13">${config.subtitle}</text>
+      <g stroke="rgba(255,255,255,0.12)" stroke-width="1">
+        <line x1="${pad.left}" y1="${height - pad.bottom}" x2="${width - pad.right}" y2="${height - pad.bottom}"/>
+        <line x1="${pad.left}" y1="${pad.top}" x2="${pad.left}" y2="${height - pad.bottom}"/>
+        <line x1="${pad.left}" y1="${pad.top + 56}" x2="${width - pad.right}" y2="${pad.top + 56}"/>
+        <line x1="${pad.left}" y1="${pad.top + 112}" x2="${width - pad.right}" y2="${pad.top + 112}"/>
+        <line x1="${pad.left}" y1="${pad.top + 168}" x2="${width - pad.right}" y2="${pad.top + 168}"/>
+      </g>
+      <path d="${susceptiblePath}" fill="none" stroke="rgba(239,228,210,0.52)" stroke-width="3.5"/>
+      <path d="${removedPath}" fill="none" stroke="rgba(145,136,126,0.7)" stroke-width="3.5"/>
+      <path d="${exposedPath}" fill="none" stroke="${config.secondary}" stroke-width="4" stroke-linecap="round" stroke-dasharray="7 7"/>
+      <path d="${activePath}" fill="none" stroke="${config.accent}" stroke-width="5" stroke-linecap="round"/>
+      <g font-size="12" fill="var(--muted)">
+        <text x="${pad.left}" y="${height - 18}">Day 0</text>
+        <text x="${width - pad.right - 55}" y="${height - 18}">Day ${config.days}</text>
+        <text x="16" y="${pad.top + 5}">${config.population}</text>
+        <text x="24" y="${height - pad.bottom + 4}">0</text>
+      </g>
+      <g transform="translate(322 78)" font-size="13">
+        <circle cx="0" cy="0" r="5" fill="${config.accent}"/><text x="13" y="5" fill="var(--text)">active infectious</text>
+        <circle cx="0" cy="23" r="5" fill="${config.secondary}"/><text x="13" y="28" fill="var(--text)">exposed / incubating</text>
+        <circle cx="0" cy="46" r="5" fill="rgba(239,228,210,0.52)"/><text x="13" y="51" fill="var(--text)">susceptible left</text>
+        <circle cx="0" cy="69" r="5" fill="rgba(145,136,126,0.7)"/><text x="13" y="74" fill="var(--text)">removed / no longer infectious</text>
+      </g>
+      <g transform="translate(72 82)">
+        <rect width="190" height="72" rx="14" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)"/>
+        <text x="16" y="25" fill="${config.accent}" font-size="18" font-weight="700">Peak active: ${Math.round(activePeak.infected)}</text>
+        <text x="16" y="47" fill="var(--text)" font-size="14">Peak day: ${Math.round(activePeak.day)}</text>
+        <text x="16" y="64" fill="var(--muted)" font-size="12">Final attack: about ${attackRate}%</text>
+      </g>
+    </svg>
+  `;
+}
+
+function showPlot(step, color) {
+  const card = document.getElementById("plot-card");
+  document.getElementById("plot-art").innerHTML = burnoutPlot(step.plot, color);
+  document.getElementById("plot-title").textContent = step.title;
+  document.getElementById("plot-copy").textContent = step.copy;
+  document.getElementById("plot-note").textContent = step.note || "Simulated model for narration. Measured historical transmission estimates would need voyage-specific source data.";
+  card.classList.add("open");
+}
+
+function hidePlot() {
+  document.getElementById("plot-card").classList.remove("open");
+}
+
+function artForStep(step) {
+  if (step.art) return step.art;
+  if (step.featureId && CONTEXT_ART[step.featureId]) return CONTEXT_ART[step.featureId];
+  return null;
+}
+
+function setPulse(featureId) {
+  if (activePulse) {
+    activePulse.remove();
+    activePulse = null;
+  }
+  const feature = featureById.get(featureId);
+  if (!feature || feature.geometry.type !== "Point") return;
+  const [lon, lat] = feature.geometry.coordinates;
+  const colorOverride = activeScenario && scenarios[activeScenario] ? scenarios[activeScenario].color : null;
+  activePulse = L.marker([lat, lon], { icon: pointIcon(feature, true, colorOverride), interactive: false }).addTo(map);
+}
+
+function boundsForFeatureIds(ids) {
+  const coords = [];
+  ids.forEach(id => {
+    const feature = featureById.get(id);
+    if (!feature) return;
+    if (feature.geometry.type === "Point") coords.push([feature.geometry.coordinates[1], feature.geometry.coordinates[0]]);
+    if (feature.geometry.type === "LineString") feature.geometry.coordinates.forEach(([lon, lat]) => coords.push([lat, lon]));
+  });
+  return L.latLngBounds(coords);
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function updatePauseButton() {
+  const button = document.getElementById("pause-btn");
+  button.textContent = isPaused ? "Resume" : "Pause";
+  button.classList.toggle("active", isPaused);
+  button.setAttribute("aria-pressed", String(isPaused));
+  button.setAttribute("aria-disabled", String(!activeScenario));
+}
+
+function setPaused(nextValue) {
+  if (!activeScenario && nextValue) return;
+  isPaused = nextValue;
+  if (isPaused) {
+    map.stop();
+  } else {
+    pauseResolvers.splice(0).forEach(resolve => resolve());
+  }
+  updatePauseButton();
+}
+
+function waitWhilePaused(token) {
+  if (!isPaused || token !== runToken) return Promise.resolve();
+  return new Promise(resolve => pauseResolvers.push(resolve));
+}
+
+async function pausableSleep(ms, token) {
+  let elapsed = 0;
+  while (elapsed < ms) {
+    if (token !== runToken) return;
+    if (isPaused) {
+      await waitWhilePaused(token);
+      continue;
+    }
+    const tick = Math.min(120, ms - elapsed);
+    const started = performance.now();
+    await sleep(tick);
+    elapsed += performance.now() - started;
+  }
+}
+
+async function playScenario(id) {
+  const scenario = scenarios[id];
+  if (!scenario) return;
+  const token = ++runToken;
+  activeScenario = id;
+  setPaused(false);
+  updatePauseButton();
+  if (activePulse) {
+    activePulse.remove();
+    activePulse = null;
+  }
+  document.querySelectorAll(".scenario-btn").forEach(btn => btn.classList.toggle("active", btn.dataset.scenario === id));
+  drawAtlas(id);
+  hideMechanism();
+  hideContextArt();
+  hidePlot();
+  renderTimeline(scenario);
+  setStory(scenario.kicker, scenario.title, scenario.summary, scenario.color);
+  map.fitBounds(boundsForFeatureIds(scenario.featureIds), { paddingTopLeft: [450, 135], paddingBottomRight: [70, 70], animate: true, duration: 1 });
+  await pausableSleep(900, token);
+
+  for (let i = 0; i < scenario.steps.length; i++) {
+    if (token !== runToken) return;
+    await waitWhilePaused(token);
+    const step = scenario.steps[i];
+    renderTimeline(scenario, i);
+    setStory(step.kicker, step.title, step.copy, scenario.color);
+    if (step.kind === "point") {
+      hideMechanism();
+      hidePlot();
+      const art = artForStep(step);
+      if (art) showContextArt(art);
+      else hideContextArt();
+      setPulse(step.featureId);
+      const feature = featureById.get(step.featureId);
+      const [lon, lat] = feature.geometry.coordinates;
+      map.flyTo([lat, lon], step.zoom || 6, { duration: 1.45 });
+    }
+    if (step.kind === "route") {
+      hideMechanism();
+      hidePlot();
+      const art = artForStep(step);
+      if (art) showContextArt(art);
+      else hideContextArt();
+      if (activePulse) {
+        activePulse.remove();
+        activePulse = null;
+      }
+      map.fitBounds(boundsForFeatureIds([step.featureId]), { paddingTopLeft: [460, 130], paddingBottomRight: [120, 120], animate: true, duration: 1.45 });
+    }
+    if (step.kind === "mechanism") {
+      if (activePulse) {
+        activePulse.remove();
+        activePulse = null;
+      }
+      hideContextArt();
+      hidePlot();
+      showMechanism(step, scenario.color);
+    }
+    if (step.kind === "plot") {
+      if (activePulse) {
+        activePulse.remove();
+        activePulse = null;
+      }
+      hideContextArt();
+      hideMechanism();
+      showPlot(step, scenario.color);
+    }
+    await pausableSleep(step.hold || 2600, token);
+  }
+  if (token === runToken) {
+    activeScenario = null;
+    setPaused(false);
+    updatePauseButton();
+  }
+}
+
+function openFeature(props) {
+  setStory(props.group, props.name, props.caption || props.mechanism || "", COLORS[props.group]);
+}
+
+function resetAtlas() {
+  ++runToken;
+  activeScenario = null;
+  setPaused(false);
+  pauseResolvers.splice(0).forEach(resolve => resolve());
+  if (activePulse) {
+    activePulse.remove();
+    activePulse = null;
+  }
+  hideMechanism();
+  hideContextArt();
+  hidePlot();
+  drawAtlas();
+  document.querySelectorAll(".scenario-btn").forEach(btn => btn.classList.remove("active"));
+  document.getElementById("timeline").innerHTML = "";
+  setStory("Click a disease route", "A ship was a moving disease ecosystem.", "Pick a disease button. The map moves through origin ecology, mechanism, route, and endpoint.", "#c9a84c");
+  map.setView([22, -43], 4, { animate: true });
+  updatePauseButton();
+}
+
+document.querySelectorAll(".scenario-btn").forEach(button => {
+  button.addEventListener("click", () => playScenario(button.dataset.scenario));
+});
+document.getElementById("pause-btn").addEventListener("click", () => setPaused(!isPaused));
+document.getElementById("recording-btn").addEventListener("click", () => setRecordingMode(!isRecordingMode));
+document.getElementById("reset-btn").addEventListener("click", resetAtlas);
+document.addEventListener("keydown", event => {
+  if (event.code === "Space" && activeScenario) {
+    event.preventDefault();
+    setPaused(!isPaused);
+  }
+});
+
+drawAtlas();
+updatePauseButton();
+</script>
+</body>
+</html>
