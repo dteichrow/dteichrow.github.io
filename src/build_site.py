@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import re
 import shutil
 import subprocess
 from pathlib import Path
@@ -134,54 +135,107 @@ def render_card(title: str, href: str, kicker: str, summary: str, meta: list[str
     )
 
 
+def css_token(value: str | None, default: str = "unknown") -> str:
+    if not value:
+        return default
+    token = re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
+    return token or default
+
+
 def render_atlas_card(entry: dict[str, Any], base_url: str) -> str:
     route = entry.get("public_route", "")
     href = link_for(base_url, route)
-    return render_card(
-        title=entry.get("title", "Untitled atlas"),
-        href=href,
-        kicker=entry.get("status_label", "Atlas"),
-        summary=entry.get("summary", ""),
-        meta=[entry.get("evidence_model", ""), entry.get("launch_priority", "")],
+    coordinate_hint = " / ".join(keyword.upper() for keyword in entry.get("keywords", [])[:2]) or "CURATED ATLAS FILE"
+    meta = canonical_meta([entry.get("status_label"), entry.get("evidence_model"), entry.get("launch_priority")])
+    badges = "".join(f'<span class="badge">{html.escape(item)}</span>' for item in meta)
+    return (
+        '<article class="site-card atlas-card">'
+        '<div class="card-utility-row">'
+        '<span class="card-utility-label">Atlas file</span>'
+        f'<span class="card-utility-meta">{html.escape(coordinate_hint)}</span>'
+        "</div>"
+        f'<p class="kicker">{html.escape(entry.get("status_label", "Atlas"))}</p>'
+        f'<h3><a href="{html.escape(href)}">{html.escape(entry.get("title", "Untitled atlas"))}</a></h3>'
+        f'<p class="muted-note">{html.escape(entry.get("summary", ""))}</p>'
+        f'<div class="meta-row">{badges}</div>'
+        "</article>"
     )
 
 
 def render_post_card(post: dict[str, Any], base_url: str) -> str:
     href = link_for(base_url, f"essays/{post.get('slug', '')}/")
-    meta = [format_display_date(post.get("date")), post.get("status", "summary_only").replace("_", " ")]
+    meta = [post.get("status", "summary_only").replace("_", " ")]
     if post.get("topics"):
         meta.extend(post["topics"][:2])
-    return render_card(
-        title=post.get("title", "Untitled post"),
-        href=href,
-        kicker="Essay",
-        summary=post.get("dek") or post.get("excerpt") or "Published writing from The Edge of Epidemiology.",
-        meta=meta,
+    badges = "".join(f'<span class="badge">{html.escape(item)}</span>' for item in canonical_meta(meta))
+    return (
+        '<article class="site-card essay-card">'
+        '<div class="card-utility-row">'
+        '<span class="card-utility-label">Essay folio</span>'
+        f'<span class="card-utility-meta">{html.escape(format_display_date(post.get("date")))}</span>'
+        "</div>"
+        '<p class="kicker">Essay</p>'
+        f'<h3><a href="{html.escape(href)}">{html.escape(post.get("title", "Untitled post"))}</a></h3>'
+        f'<p class="muted-note">{html.escape(post.get("dek") or post.get("excerpt") or "Published writing from The Edge of Epidemiology.")}</p>'
+        f'<div class="meta-row">{badges}</div>'
+        "</article>"
     )
 
 
 def render_story_card(story: dict[str, Any], base_url: str) -> str:
     href = link_for(base_url, story.get("story_web_path", ""))
-    meta = [story.get("status", "").replace("_", " "), story.get("primary_region", ""), story.get("country", "")]
-    meta = [item for item in meta if item]
-    return render_card(
-        title=story.get("display_title", "Untitled story"),
-        href=href,
-        kicker="Newsdesk",
-        summary=story.get("latest_update_summary") or story.get("why_it_matters") or "",
-        meta=meta,
+    status = story.get("status", "monitoring")
+    status_class = css_token(status)
+    region_line = " / ".join(item for item in [story.get("primary_region", ""), story.get("country", "")] if item)
+    meta = canonical_meta(
+        [
+            region_line,
+            f"{story.get('item_count')} items" if story.get("item_count") else "",
+            f"{story.get('source_count')} sources" if story.get("source_count") else "",
+        ]
+    )
+    badges = "".join(f'<span class="badge">{html.escape(item)}</span>' for item in meta)
+    updated_value = story.get("latest_updated_at") or story.get("updated_at") or story.get("latest_timestamp")
+    utility_meta = f'Updated {format_display_date(updated_value)}' if updated_value else "Current file"
+    lead_source = story.get("lead_source") or ""
+    footer = (
+        f'<p class="card-footnote">Lead source: {html.escape(lead_source)}</p>'
+        if lead_source
+        else ""
+    )
+    return (
+        f'<article class="site-card story-card status-{status_class}">'
+        '<div class="card-utility-row">'
+        '<span class="card-utility-label">Pathogen Dispatch</span>'
+        f'<span class="card-utility-meta">{html.escape(utility_meta)}</span>'
+        "</div>"
+        f'<div class="story-status-line"><span class="story-status-pill">{html.escape(status.replace("_", " ").upper())}</span></div>'
+        f'<h3><a href="{html.escape(href)}">{html.escape(story.get("display_title", "Untitled story"))}</a></h3>'
+        f'<p class="muted-note">{html.escape(story.get("latest_update_summary") or story.get("why_it_matters") or "")}</p>'
+        f'<div class="meta-row">{badges}</div>'
+        f"{footer}"
+        "</article>"
     )
 
 
 def render_reference_card(reference: dict[str, Any], base_url: str) -> str:
     href = link_for(base_url, reference.get("reference_web_path", ""))
-    meta = canonical_meta([reference.get("evidence_type"), *reference.get("categories", [])[:2]])
-    return render_card(
-        title=reference.get("name", "Untitled reference"),
-        href=href,
-        kicker="Reference",
-        summary=reference.get("why_reporters_care") or reference.get("atlas_summary") or "",
-        meta=meta,
+    meta = canonical_meta(reference.get("categories", [])[:3])
+    badges = "".join(f'<span class="badge">{html.escape(item)}</span>' for item in meta)
+    taxonomic_line = " · ".join(
+        canonical_meta([reference.get("pathogen"), reference.get("evidence_type")])
+    )
+    return (
+        '<article class="site-card reference-card">'
+        '<div class="card-utility-row">'
+        '<span class="card-utility-label">Field guide</span>'
+        f'<span class="card-utility-meta">{html.escape(taxonomic_line or "Disease briefing")}</span>'
+        "</div>"
+        '<p class="kicker">Reference</p>'
+        f'<h3><a href="{html.escape(href)}">{html.escape(reference.get("name", "Untitled reference"))}</a></h3>'
+        f'<p class="muted-note">{html.escape(reference.get("why_reporters_care") or reference.get("atlas_summary") or "")}</p>'
+        f'<div class="meta-row">{badges}</div>'
+        "</article>"
     )
 
 
@@ -192,16 +246,50 @@ def canonical_meta(values: list[str]) -> list[str]:
 def render_home(posts: list[dict[str, Any]], atlases: list[dict[str, Any]], latest: dict[str, Any], base_url: str) -> str:
     stories = latest.get("stories", [])[:4]
     references = latest.get("reference", [])[:3]
+    generated_at = format_display_date(latest.get("generated_at"))
+    story_count = latest.get("story_count") or len(latest.get("stories", []))
+    topic_count = latest.get("topic_count") or 0
+    item_count = latest.get("item_count") or 0
+    search_window = latest.get("search_window") or "Current surveillance window"
+    live_count = (latest.get("freshness_summary") or {}).get("live", 0)
     hero = f"""
-      <section class="hero">
-        <p class="kicker">Devin Teichrow</p>
-        <h2 class="hero-title">I&apos;m an epidemiologist building public-facing outbreak reporting, disease atlases, and historical epidemiology.</h2>
-        <p class="subtitle">I&apos;m Devin Teichrow, a UCLA-trained epidemiologist and neuroscience researcher at UC Irvine working on migraine and Alzheimer&apos;s Disease and Related Dementias. My public-facing work focuses on how disease moves through populations, history, war, ecology, and infrastructure, including everything from modern outbreak reporting to historical epidemic reconstruction and interactive disease mapping.</p>
-        <p class="subtitle">The Edge of Epidemiology is my home for longform essays, live outbreak coverage, disease atlases, methodological explainers, and projects exploring the intersection of epidemiology, geography, and history.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="{html.escape(link_for(base_url, 'newsdesk/'))}">Open the newsdesk</a>
-          <a class="button secondary" href="{html.escape(link_for(base_url, 'atlases/'))}">Browse the atlases</a>
-          <a class="button secondary" href="{html.escape(link_for(base_url, 'essays/'))}">Read the essays</a>
+      <section class="hero hero-home">
+        <div class="hero-home-grid">
+          <div class="hero-main">
+            <p class="kicker">Devin Teichrow</p>
+            <h2 class="hero-title">I&apos;m an epidemiologist building public-facing outbreak reporting, disease atlases, and historical epidemiology.</h2>
+            <p class="subtitle">I&apos;m Devin Teichrow, a UCLA-trained epidemiologist and neuroscience researcher at UC Irvine working on migraine and Alzheimer&apos;s Disease and Related Dementias. My public-facing work focuses on how disease moves through populations, history, war, ecology, and infrastructure, including everything from modern outbreak reporting to historical epidemic reconstruction and interactive disease mapping.</p>
+            <p class="subtitle">The Edge of Epidemiology is my home for longform essays, live outbreak coverage, disease atlases, methodological explainers, and projects exploring the intersection of epidemiology, geography, and history.</p>
+            <p class="hero-thesis">Most disease reporting treats outbreaks as isolated events. This project follows how pathogens move through geography, infrastructure, ecology, war, and time.</p>
+            <div class="hero-actions">
+              <a class="button primary" href="{html.escape(link_for(base_url, 'newsdesk/'))}">Open the newsdesk</a>
+              <a class="button secondary" href="{html.escape(link_for(base_url, 'atlases/'))}">Browse the atlases</a>
+              <a class="button secondary" href="{html.escape(link_for(base_url, 'essays/'))}">Read the essays</a>
+            </div>
+          </div>
+          <aside class="hero-notebook" aria-label="Field notebook">
+            <div class="hero-notebook-head">
+              <p class="kicker">Field notebook</p>
+              <span class="hero-coordinate">SURVEILLANCE / ARCHIVE / ATLAS</span>
+            </div>
+            <div class="notebook-tags">
+              <span class="badge accent">Outbreak Reporting</span>
+              <span class="badge">Disease Atlases</span>
+              <span class="badge">Historical Epidemiology</span>
+              <span class="badge">Methods</span>
+              <span class="badge">Field Notes</span>
+              <span class="badge">Active Tracking</span>
+            </div>
+            <div class="notebook-rule"></div>
+            <dl class="notebook-metadata">
+              <div><dt>Surveillance cycle</dt><dd>{html.escape(search_window)}</dd></div>
+              <div><dt>Latest public update</dt><dd>{html.escape(generated_at)}</dd></div>
+              <div><dt>Active outbreak files</dt><dd>{html.escape(str(story_count))}</dd></div>
+              <div><dt>Tracked source items</dt><dd>{html.escape(str(item_count))}</dd></div>
+              <div><dt>Live source pulls</dt><dd>{html.escape(str(live_count))}</dd></div>
+              <div><dt>Major topic clusters</dt><dd>{html.escape(str(topic_count))}</dd></div>
+            </dl>
+          </aside>
         </div>
       </section>
     """
@@ -215,10 +303,10 @@ def render_home(posts: list[dict[str, Any]], atlases: list[dict[str, Any]], late
         active="home",
         base_url=base_url,
         body=hero
-        + f'<section class="panel"><div class="section-head"><p class="kicker">Live desk</p><h2>The Pathogen Dispatch</h2><p class="muted-note">Current outbreak files, follow-up reporting, and source-first tracking for major infectious-disease stories.</p></div><div class="card-grid three-up">{newsdesk_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "newsdesk/"))}">Go to the full newsdesk</a></div></section>'
-        + f'<section class="panel"><div class="section-head"><p class="kicker">Atlas family</p><h2>Geography-first disease interactives</h2><p class="muted-note">Interactive atlas work on pathogen origins, spread routes, maritime disease ecology, and historical outbreak worlds.</p></div><div class="card-grid two-up">{atlas_cards}</div></section>'
-        + f'<section class="panel"><div class="section-head"><p class="kicker">Published writing</p><h2>Recent essays</h2><p class="muted-note">Longer-form writing on outbreaks, evidence, history, ecology, and the politics of public health.</p></div><div class="card-grid three-up">{post_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "essays/"))}">Browse all essays</a></div></section>'
-        + f'<section class="panel"><div class="section-head"><p class="kicker">Field guides</p><h2>Reference layer</h2><p class="muted-note">Practical disease briefings on transmission, diagnostics, severity, and what matters when a pathogen reappears.</p></div><div class="card-grid three-up">{ref_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "reference/"))}">Open the reference desk</a></div></section>',
+        + f'<section class="panel home-section newsdesk-panel"><div class="section-head section-head-split"><div><p class="kicker">Live desk</p><h2>The Pathogen Dispatch</h2><p class="muted-note">Current outbreak files, follow-up reporting, and source-first tracking for major infectious-disease stories.</p></div><aside class="section-sidecar"><p class="section-sidecar-label">Currently tracking</p><p>{html.escape(str(story_count))} active files<br />{html.escape(str(item_count))} source items<br />Updated {html.escape(generated_at)}</p></aside></div><div class="card-grid three-up">{newsdesk_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "newsdesk/"))}">Go to the full newsdesk</a></div></section>'
+        + f'<section class="panel home-section atlas-panel"><div class="section-head section-head-split"><div><p class="kicker">Atlas family</p><h2>Geography-first disease interactives</h2><p class="muted-note">Interactive atlas work on pathogen origins, spread routes, maritime disease ecology, and historical outbreak worlds.</p></div><aside class="section-sidecar"><p class="section-sidecar-label">Atlas modes</p><p>Origin claims<br />Route histories<br />Historical geographies</p></aside></div><div class="card-grid two-up">{atlas_cards}</div></section>'
+        + f'<section class="panel home-section essay-panel"><div class="section-head"><p class="kicker">Published writing</p><h2>Recent essays</h2><p class="muted-note">Longer-form writing on outbreaks, evidence, history, ecology, and the politics of public health.</p></div><div class="card-grid three-up">{post_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "essays/"))}">Browse all essays</a></div></section>'
+        + f'<section class="panel home-section reference-panel"><div class="section-head"><p class="kicker">Field guides</p><h2>Reference layer</h2><p class="muted-note">Practical disease briefings on transmission, diagnostics, severity, and what matters when a pathogen reappears.</p></div><div class="card-grid three-up">{ref_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "reference/"))}">Open the reference desk</a></div></section>',
     )
 
 

@@ -164,6 +164,13 @@ atlases:
     assert "Devin Teichrow" in home_text
     assert "public-facing outbreak reporting, disease atlases, and historical epidemiology" in home_text
     assert "UCLA-trained epidemiologist and neuroscience researcher at UC Irvine" in home_text
+    assert "hero-notebook" in home_text
+    assert "newsdesk-panel" in home_text
+    assert "atlas-panel" in home_text
+    assert "story-card" in home_text
+    assert "atlas-card" in home_text
+    assert "essay-card" in home_text
+    assert "reference-card" in home_text
     assert "Read the essays" in home_text
     assert "Unified site" not in home_text
     about_text = (docs_dir / "about" / "index.html").read_text()
