@@ -24,6 +24,7 @@ def test_transform_imported_html_rewrites_known_paths() -> None:
     assert 'href="/reference/thing.html"' in transformed
     assert 'fetch("/app_exports/manifest.json")' in transformed
     assert "Edge of Epidemiology" in transformed
+    assert "touch-action: pan-x" in transformed
 
 
 def test_build_site_writes_core_routes(tmp_path, monkeypatch) -> None:

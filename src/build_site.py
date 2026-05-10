@@ -545,6 +545,7 @@ def shell_wrapper_css(base_url: str) -> str:
   .eoe-shell-brand:hover {{ text-decoration: none; }}
   .eoe-shell-links {{ display: flex; flex-wrap: wrap; gap: 8px; }}
   .eoe-shell-links a {{
+    flex: 0 0 auto;
     padding: 8px 12px;
     border-radius: 999px;
     border: 1px solid rgba(187,169,143,0.78);
@@ -552,6 +553,7 @@ def shell_wrapper_css(base_url: str) -> str:
     text-decoration: none;
     background: rgba(255,252,245,0.94);
     font-size: 0.92rem;
+    white-space: nowrap;
   }}
   .eoe-shell-links a.active {{
     background: rgba(31,91,137,0.10);
@@ -561,7 +563,18 @@ def shell_wrapper_css(base_url: str) -> str:
   @media (max-width: 760px) {{
     body {{ padding-top: 118px !important; }}
     .eoe-shell-nav {{ align-items: flex-start; flex-direction: column; }}
-    .eoe-shell-links {{ flex-wrap: nowrap; overflow-x: auto; width: 100%; padding-bottom: 2px; }}
+    .eoe-shell-links {{
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+      width: 100%;
+      padding-bottom: 2px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      touch-action: pan-x;
+      overscroll-behavior-x: contain;
+    }}
+    .eoe-shell-links::-webkit-scrollbar {{ display: none; }}
   }}
 </style>
 """
