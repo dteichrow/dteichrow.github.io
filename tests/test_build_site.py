@@ -119,18 +119,22 @@ atlases:
             ],
         }
         (app_exports / "latest.json").write_text(json.dumps(latest))
+        (app_exports / "atlas.json").write_text(json.dumps({"atlas": []}))
         (app_exports / "manifest.json").write_text(json.dumps({"latest_run_id": "demo"}))
         (target_docs / "newsdesk").mkdir(parents=True, exist_ok=True)
         (target_docs / "newsdesk" / "index.html").write_text("<html><body>Newsdesk</body></html>")
         (target_docs / "notebook").mkdir(parents=True, exist_ok=True)
         (target_docs / "notebook" / "index.html").write_text("<html><body>Notebook</body></html>")
-        (target_docs / "atlases" / "pathogen").mkdir(parents=True, exist_ok=True)
-        (target_docs / "atlases" / "pathogen" / "index.html").write_text("<html><body>Pathogen atlas</body></html>")
         (target_docs / "stories").mkdir(parents=True, exist_ok=True)
         (target_docs / "stories" / "demo-story.html").write_text("<html><body>Story</body></html>")
         (target_docs / "reference").mkdir(parents=True, exist_ok=True)
         (target_docs / "reference" / "yellow-fever.html").write_text("<html><body>Ref</body></html>")
         return latest
+
+    def fake_import_external_pathogen(target_docs: Path, base_url: str) -> None:
+        path = target_docs / "atlases" / "pathogen" / "index.html"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text("<html><body>Pathogen atlas</body></html>")
 
     def fake_import_external_maritime(target_docs: Path, base_url: str) -> None:
         path = target_docs / "atlases" / "maritime" / "index.html"
@@ -144,6 +148,7 @@ atlases:
 
     monkeypatch.setattr(build_site, "copy_static_assets", fake_copy_static_assets)
     monkeypatch.setattr(build_site, "import_epidossier_public", fake_import_epidossier_public)
+    monkeypatch.setattr(build_site, "import_external_pathogen", fake_import_external_pathogen)
     monkeypatch.setattr(build_site, "import_external_maritime", fake_import_external_maritime)
     monkeypatch.setattr(build_site, "import_external_viking", fake_import_external_viking)
 
@@ -154,3 +159,48 @@ atlases:
     assert (docs_dir / "atlases" / "index.html").exists()
     assert (docs_dir / "historical" / "index.html").exists()
     assert (docs_dir / "app_exports" / "posts.json").exists()
+
+
+def test_import_external_pathogen_writes_js_payload(tmp_path, monkeypatch) -> None:
+    project_root = tmp_path / "project"
+    src_root = project_root / "external" / "pathogen_atlas"
+    docs_dir = tmp_path / "docs"
+    src_root.mkdir(parents=True)
+    (src_root / "index.html").write_text("<html><head></head><body><main id='map'></main></body></html>")
+
+    app_exports = docs_dir / "app_exports"
+    app_exports.mkdir(parents=True)
+    (app_exports / "atlas.json").write_text(
+        json.dumps(
+            {
+                "generated_at": "2026-05-10T00:00:00",
+                "atlas": [
+                    {
+                        "slug": "yellow-fever",
+                        "name": "Yellow fever",
+                        "status": "consensus",
+                        "writing_state": "direct",
+                        "reference_web_path": "reference/yellow-fever.html",
+                        "related_stories": [
+                            {
+                                "display_title": "Demo story",
+                                "story_web_path": "stories/demo-story.html",
+                            }
+                        ],
+                    }
+                ],
+            }
+        )
+    )
+
+    monkeypatch.setattr(build_site, "PROJECT_ROOT", project_root)
+    build_site.import_external_pathogen(docs_dir, "/")
+
+    built_index = docs_dir / "atlases" / "pathogen" / "index.html"
+    built_data = docs_dir / "atlases" / "pathogen" / "data" / "pathogen_atlas_data.js"
+    assert built_index.exists()
+    assert built_data.exists()
+    data_text = built_data.read_text()
+    assert 'window.PATHOGEN_ATLAS_BASE_URL = "/"' in data_text
+    assert '"reference_href": "../../reference/yellow-fever.html"' in data_text
+    assert '"story_href": "../../stories/demo-story.html"' in data_text

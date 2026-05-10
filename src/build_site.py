@@ -27,6 +27,26 @@ from .common import (
 
 
 DEFAULT_EPI_DOSSIER_REPO = "https://github.com/dteichrow/epi-dossier.git"
+PATHOGEN_ATLAS_COLORS = {
+    "yellow-fever": "#d86a4f",
+    "cholera": "#5a9bd4",
+    "measles": "#d6c06a",
+    "mpox": "#dd6974",
+    "avian-influenza-h5n1": "#9b7bd8",
+    "hantavirus": "#7aa96b",
+    "dengue": "#c9a84c",
+}
+PATHOGEN_STATUS_LABELS = {
+    "consensus": "Consensus",
+    "mixed": "Mixed / debated",
+    "contested": "Contested",
+    "weak": "Weakly supported",
+}
+PATHOGEN_WRITING_LABELS = {
+    "direct": "Written here directly",
+    "adjacent": "Adjacent writing",
+    "none": "No dedicated post yet",
+}
 
 
 def site_nav(active: str, base_url: str) -> str:
@@ -638,7 +658,6 @@ def import_epidossier_public(docs_dir: Path, base_url: str) -> dict[str, Any]:
         (source_docs / "historical.html", docs_dir / "newsdesk" / "historical" / "index.html", "newsdesk"),
         (source_docs / "archive" / "index.html", docs_dir / "newsdesk" / "archive" / "index.html", "newsdesk"),
         (source_docs / "notebook.html", docs_dir / "notebook" / "index.html", "notebook"),
-        (source_docs / "atlas.html", docs_dir / "atlases" / "pathogen" / "index.html", "atlases"),
     ]
     for src, dest, active in html_pages:
         transformed = transform_imported_html(src.read_text(), active=active, base_url=base_url)
@@ -706,9 +725,107 @@ def import_external_maritime(docs_dir: Path, base_url: str) -> None:
 """
     nav = (
         '<div id="eoe-atlas-overlay">'
-        f'<a href="{html.escape(link_for(base_url, ""))}">Home</a>'
-        f'<a href="{html.escape(link_for(base_url, "atlases/"))}" class="active">Atlases</a>'
-        f'<a href="{html.escape(link_for(base_url, "essays/"))}">Essays</a>'
+        '<a href="../../">Home</a>'
+        '<a href="../" class="active">Atlases</a>'
+        '<a href="../../essays/">Essays</a>'
+        "</div>"
+    )
+    html_text = html_text.replace("</head>", f"{overlay}</head>")
+    html_text = html_text.replace("<body>", f"<body>{nav}", 1)
+    index_path.write_text(html_text)
+
+
+def import_external_pathogen(docs_dir: Path, base_url: str) -> None:
+    src_root = PROJECT_ROOT / "external" / "pathogen_atlas"
+    dest_root = docs_dir / "atlases" / "pathogen"
+    if dest_root.exists():
+        shutil.rmtree(dest_root)
+    shutil.copytree(src_root, dest_root)
+
+    atlas_export_path = docs_dir / "app_exports" / "atlas.json"
+    atlas_export = load_json(atlas_export_path)
+    raw_entries = atlas_export.get("atlas", [])
+    prepared_entries = []
+    for entry in raw_entries:
+        prepared = dict(entry)
+        prepared["color"] = PATHOGEN_ATLAS_COLORS.get(prepared.get("slug"), "#c9a84c")
+        prepared["status_label"] = PATHOGEN_STATUS_LABELS.get(prepared.get("status"), "Curated")
+        prepared["writing_state_label"] = PATHOGEN_WRITING_LABELS.get(prepared.get("writing_state"), "Writing state pending")
+        reference_path = prepared.get("reference_web_path") or prepared.get("reference_url")
+        if reference_path:
+            prepared["reference_href"] = f"../../{reference_path.lstrip('/')}"
+        related_stories = []
+        for story in prepared.get("related_stories", []):
+            story_copy = dict(story)
+            story_path = story_copy.get("story_web_path")
+            if story_path:
+                story_copy["story_href"] = f"../../{story_path.lstrip('/')}"
+            related_stories.append(story_copy)
+        prepared["related_stories"] = related_stories
+        prepared_entries.append(prepared)
+
+    data_dir = dest_root / "data"
+    ensure_dir(data_dir)
+    data_payload = {
+        "entries": prepared_entries,
+        "generated_at": atlas_export.get("generated_at"),
+        "atlas_count": len(prepared_entries),
+    }
+    data_text = (
+        f"window.PATHOGEN_ATLAS_BASE_URL = {json.dumps(base_url)};\n"
+        f"window.PATHOGEN_ATLAS_DATA = {json.dumps(data_payload, indent=2)};\n"
+    )
+    (data_dir / "pathogen_atlas_data.js").write_text(data_text)
+
+    index_path = dest_root / "index.html"
+    html_text = index_path.read_text()
+    overlay = f"""
+<style id="eoe-atlas-overlay-style">
+  #eoe-atlas-overlay {{
+    position: fixed;
+    top: 14px;
+    right: 18px;
+    z-index: 1200;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    max-width: calc(100vw - 36px);
+    justify-content: flex-end;
+  }}
+  #eoe-atlas-overlay a {{
+    padding: 8px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.18);
+    background: rgba(12, 12, 10, 0.85);
+    color: #efe4d2;
+    text-decoration: none;
+    font: 700 12px/1 "Avenir Next", "Helvetica Neue", sans-serif;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    backdrop-filter: blur(12px);
+  }}
+  #eoe-atlas-overlay a.active {{ color: #c9a84c; border-color: rgba(201,168,76,0.38); }}
+  @media (max-width: 1180px) {{
+    #eoe-atlas-overlay {{ top: 68px; }}
+  }}
+  @media (max-width: 980px) {{
+    #eoe-atlas-overlay {{
+      position: absolute;
+      top: 14px;
+      left: 18px;
+      right: auto;
+      justify-content: flex-start;
+      max-width: calc(100vw - 36px);
+    }}
+  }}
+</style>
+"""
+    nav = (
+        '<div id="eoe-atlas-overlay">'
+        '<a href="../../">Home</a>'
+        '<a href="../" class="active">Atlases</a>'
+        '<a href="../../newsdesk/">Newsdesk</a>'
+        '<a href="../../essays/">Essays</a>'
         "</div>"
     )
     html_text = html_text.replace("</head>", f"{overlay}</head>")
@@ -751,9 +868,9 @@ def import_external_viking(docs_dir: Path, base_url: str) -> None:
 """
     nav = (
         '<div id="eoe-atlas-overlay">'
-        f'<a href="{html.escape(link_for(base_url, ""))}">Home</a>'
-        f'<a href="{html.escape(link_for(base_url, "atlases/"))}" class="active">Atlases</a>'
-        f'<a href="{html.escape(link_for(base_url, "historical/"))}">Historical</a>'
+        '<a href="../../">Home</a>'
+        '<a href="../" class="active">Atlases</a>'
+        '<a href="../../historical/">Historical</a>'
         "</div>"
     )
     html_text = html_text.replace("</head>", f"{overlay}</head>")
@@ -777,6 +894,7 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
 
     copy_static_assets(docs_dir)
     latest = import_epidossier_public(docs_dir, base_url)
+    import_external_pathogen(docs_dir, base_url)
     import_external_maritime(docs_dir, base_url)
     import_external_viking(docs_dir, base_url)
 

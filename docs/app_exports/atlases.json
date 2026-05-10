@@ -10,7 +10,7 @@
       "summary": "A curated origin-and-spread atlas that links geography, uncertainty, papers, and prior writing instead of flattening pathogens into another story stream.",
       "evidence_model": "Curated origin claims, route confidence, and linked papers",
       "public_route": "atlases/pathogen/",
-      "source_path": "imported from epi-dossier/docs/atlas.html",
+      "source_path": "external/pathogen_atlas/index.html + docs/app_exports/atlas.json",
       "launch_priority": "flagship",
       "keywords": [
         "pathogen",
@@ -19,7 +19,7 @@
         "infectious disease",
         "spread"
       ],
-      "long_note": "The pathogen atlas is already live as a dedicated desk and is imported into the umbrella site as a first-class atlas surface."
+      "long_note": "The pathogen atlas now runs as a dedicated dark atlas app, using the same product class as the maritime build while still drawing from the curated epi-dossier atlas export."
     },
     {
       "atlas_id": "maritime-disease-atlas",
