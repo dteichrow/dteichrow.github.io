@@ -77,12 +77,14 @@ def site_nav(active: str, base_url: str) -> str:
         )
     return (
         '<header class="site-header">'
+        '<div class="site-header-inner">'
         '<div class="site-header-copy">'
         '<p class="kicker">The Edge of Epidemiology</p>'
         '<h1 class="site-brand"><a href="{home}">The Edge of Epidemiology</a></h1>'
         '<p class="site-header-title">History-haunted epidemiology, live reporting, and atlas work in one place.</p>'
         "</div>"
         '<nav class="site-nav" aria-label="Primary navigation">{links}</nav>'
+        "</div>"
         "</header>"
     ).format(home=html.escape(link_for(base_url, "")), links="".join(nav_links))
 
@@ -110,8 +112,8 @@ def base_html(
     {extra_head}
   </head>
   <body>
-    <main class="page">
       {site_nav(active, base_url)}
+    <main class="page">
       {body}
     </main>
     <script src="{js_href}"></script>
@@ -163,8 +165,7 @@ def render_atlas_card(entry: dict[str, Any], base_url: str) -> str:
     )
 
 
-def render_post_card(post: dict[str, Any], base_url: str) -> str:
-    href = link_for(base_url, f"essays/{post.get('slug', '')}/")
+def post_folio_meta(post: dict[str, Any]) -> tuple[str, str]:
     date_text = format_display_date(post.get("date"))
     category_text = ""
     if post.get("series"):
@@ -173,15 +174,34 @@ def render_post_card(post: dict[str, Any], base_url: str) -> str:
         category_text = str(post["topics"][0])
     status_label = "Local stub" if post.get("status") != "mirrored" else "Mirrored"
     utility_meta = " · ".join(item for item in [category_text, status_label] if item)
+    return date_text, utility_meta
+
+
+def render_post_card(post: dict[str, Any], base_url: str, *, featured: bool = False) -> str:
+    href = link_for(base_url, f"essays/{post.get('slug', '')}/")
+    date_text, utility_meta = post_folio_meta(post)
+    summary = post.get("dek") or post.get("excerpt") or "Published writing from The Edge of Epidemiology."
+    feature_image = post.get("cover_image") if featured and post.get("cover_image") else ""
+    feature_class = " essay-card-featured" if feature_image else ""
+    media = (
+        f'<a class="essay-card-media" href="{html.escape(href)}" aria-hidden="true" tabindex="-1">'
+        f'<img src="{html.escape(feature_image)}" alt="" loading="lazy" decoding="async" />'
+        "</a>"
+        if feature_image
+        else ""
+    )
     return (
-        '<article class="site-card essay-card">'
+        f'<article class="site-card essay-card{feature_class}">'
+        f"{media}"
+        '<div class="essay-card-copy">'
         '<div class="card-utility-row">'
         f'<span class="card-utility-label">{html.escape(date_text)}</span>'
         f'<span class="card-utility-meta">{html.escape(utility_meta)}</span>'
         "</div>"
         '<p class="kicker">Essay</p>'
         f'<h3><a href="{html.escape(href)}">{html.escape(post.get("title", "Untitled post"))}</a></h3>'
-        f'<p class="muted-note">{html.escape(post.get("dek") or post.get("excerpt") or "Published writing from The Edge of Epidemiology.")}</p>'
+        f'<p class="muted-note">{html.escape(summary)}</p>'
+        "</div>"
         "</article>"
     )
 
@@ -250,22 +270,23 @@ def render_home(posts: list[dict[str, Any]], atlases: list[dict[str, Any]], late
       <section class="hero hero-home hero-open">
         <div class="hero-main">
           <p class="kicker">Devin Teichrow</p>
-          <h2 class="hero-title">I&apos;m an epidemiologist building public-facing outbreak reporting, disease atlases, and historical epidemiology.</h2>
-          <p class="subtitle">I&apos;m Devin Teichrow, a UCLA-trained epidemiologist and neuroscience researcher at UC Irvine working on migraine and Alzheimer&apos;s Disease and Related Dementias. My public-facing work focuses on how disease moves through populations, history, war, ecology, and infrastructure, including everything from modern outbreak reporting to historical epidemic reconstruction and interactive disease mapping.</p>
-          <p class="subtitle">The Edge of Epidemiology is my home for longform essays, live outbreak coverage, disease atlases, methodological explainers, and projects exploring the intersection of epidemiology, geography, and history.</p>
-          <p class="hero-thesis">Most disease reporting treats outbreaks as isolated events. This project follows how pathogens move through geography, infrastructure, ecology, war, and time.</p>
+          <h2 class="hero-title">Most disease reporting treats outbreaks as isolated events. This project follows how pathogens move through geography, infrastructure, ecology, war, and time.</h2>
+          <div class="hero-prose">
+            <p class="subtitle">I&apos;m Devin Teichrow, a UCLA-trained epidemiologist and neuroscience researcher at UC Irvine working on migraine and Alzheimer&apos;s Disease and Related Dementias. My public-facing work focuses on how disease moves through populations, history, war, ecology, and infrastructure, including everything from modern outbreak reporting to historical epidemic reconstruction and interactive disease mapping.</p>
+            <p class="subtitle">The Edge of Epidemiology is my home for longform essays, live outbreak coverage, disease atlases, methodological explainers, and projects exploring the intersection of epidemiology, geography, and history.</p>
+          </div>
           <div class="hero-actions">
             <a class="button secondary" href="{html.escape(link_for(base_url, 'newsdesk/'))}">Open the newsdesk</a>
             <a class="button secondary" href="{html.escape(link_for(base_url, 'atlases/'))}">Browse the atlases</a>
             <a class="button secondary" href="{html.escape(link_for(base_url, 'essays/'))}">Read the essays</a>
           </div>
-          <p class="hero-status-line">Updated {html.escape(generated_at)} · {html.escape(str(story_count))} active files · {html.escape(str(item_count))} tracked items · {html.escape(str(live_count))} live pulls</p>
+          <p class="hero-status-line"><span class="hero-status-label">Live desk</span> Updated {html.escape(generated_at)} · {html.escape(str(story_count))} active files · {html.escape(str(item_count))} tracked items · {html.escape(str(live_count))} live pulls</p>
         </div>
       </section>
     """
     newsdesk_cards = "".join(render_story_card(story, base_url) for story in stories)
     atlas_cards = "".join(render_atlas_card(atlas, base_url) for atlas in atlases[:4])
-    post_cards = "".join(render_post_card(post, base_url) for post in posts[:6])
+    post_cards = "".join(render_post_card(post, base_url, featured=index == 0) for index, post in enumerate(posts[:6]))
     ref_cards = "".join(render_reference_card(ref, base_url) for ref in references)
     return base_html(
         title="Edge of Epidemiology",
@@ -275,13 +296,16 @@ def render_home(posts: list[dict[str, Any]], atlases: list[dict[str, Any]], late
         body=hero
         + f'<section class="home-section newsdesk-panel"><div class="section-head section-head-split"><div><p class="kicker">Live desk</p><h2>The Pathogen Dispatch</h2><p class="muted-note">Current outbreak files, follow-up reporting, and source-first tracking for major infectious-disease stories.</p></div><aside class="section-sidecar"><p class="section-sidecar-label">Currently tracking</p><p>{html.escape(str(story_count))} active files · {html.escape(str(item_count))} source items · Updated {html.escape(generated_at)}</p></aside></div><div class="card-grid three-up">{newsdesk_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "newsdesk/"))}">Go to the full newsdesk</a></div></section>'
         + f'<section class="home-section atlas-panel"><div class="section-head"><p class="kicker">Atlas family</p><h2>Geography-first disease interactives</h2><p class="muted-note">Interactive atlas work on pathogen origins, spread routes, maritime disease ecology, and historical outbreak worlds.</p></div><div class="card-grid two-up">{atlas_cards}</div></section>'
-        + f'<section class="home-section essay-panel"><div class="section-head"><p class="kicker">Published writing</p><h2>Recent essays</h2><p class="muted-note">Longer-form writing on outbreaks, evidence, history, ecology, and the politics of public health.</p></div><div class="card-grid three-up">{post_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "essays/"))}">Browse all essays</a></div></section>'
+        + f'<section class="home-section essay-panel"><div class="section-head"><p class="kicker">Published writing</p><h2>Recent essays</h2><p class="muted-note">Longer-form writing on outbreaks, evidence, history, ecology, and the politics of public health.</p></div><div class="card-grid three-up essays-grid">{post_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "essays/"))}">Browse all essays</a></div></section>'
         + f'<section class="home-section reference-panel"><div class="section-head"><p class="kicker">Field guides</p><h2>Reference layer</h2><p class="muted-note">Practical disease briefings on transmission, diagnostics, severity, and what matters when a pathogen reappears.</p></div><div class="card-grid three-up">{ref_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "reference/"))}">Open the reference desk</a></div></section>',
     )
 
 
 def render_essays_index(posts: list[dict[str, Any]], base_url: str) -> str:
-    cards = "".join(render_post_card(post, base_url) for post in posts)
+    cards = "".join(
+        render_post_card(post, base_url, featured=index % 6 == 0)
+        for index, post in enumerate(posts)
+    )
     return base_html(
         title="Essays | Edge of Epidemiology",
         description="Published work from The Edge of Epidemiology with automatic Substack ingestion and local stub pages.",
@@ -299,7 +323,7 @@ def render_essays_index(posts: list[dict[str, Any]], base_url: str) -> str:
           <h2>{len(posts)} essay page(s)</h2>
           <p class="muted-note">Entries default to local stub pages with canonical outbound links. Curated mirrors can replace the stub state later without breaking the public URL.</p>
         </div>
-        <div class="card-grid three-up">{cards}</div>
+        <div class="card-grid three-up essays-grid">{cards}</div>
       </section>
     """,
     )
@@ -608,42 +632,59 @@ def import_copy(src: Path, dest: Path) -> None:
 def shell_wrapper_css(base_url: str) -> str:
     return f"""
 <style id="eoe-shell-import-style">
-  body {{ padding-top: 78px !important; }}
+  body {{ padding-top: 112px !important; }}
   .eoe-shell-nav {{
     position: fixed;
     inset: 0 0 auto 0;
     z-index: 10000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    padding: 14px 18px;
-    background: rgba(248, 243, 233, 0.96);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(187,169,143,0.84);
-    box-shadow: 0 10px 28px rgba(49, 36, 22, 0.10);
+    background: linear-gradient(180deg, rgba(15, 20, 27, 0.98), rgba(21, 29, 39, 0.98));
+    color: #efe6d6;
+    border-bottom: 1px solid rgba(214, 202, 183, 0.2);
+    box-shadow: 0 14px 34px rgba(4, 7, 10, 0.28);
+  }}
+  .eoe-shell-nav-inner {{
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 18px 18px 16px;
+    display: grid;
+    gap: 12px;
     font-family: "Avenir Next", "Helvetica Neue", sans-serif;
   }}
-  .eoe-shell-brand {{ color: #173046; font-weight: 700; text-decoration: none; }}
+  .eoe-shell-brand {{
+    color: #f5ecdd;
+    font: 700 clamp(1.2rem, 2vw, 1.65rem)/1.05 "Iowan Old Style", Georgia, serif;
+    text-decoration: none;
+    letter-spacing: -0.02em;
+  }}
   .eoe-shell-brand:hover {{ text-decoration: none; }}
-  .eoe-shell-links {{ display: flex; flex-wrap: wrap; gap: 8px; }}
+  .eoe-shell-links {{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(214, 202, 183, 0.18);
+  }}
   .eoe-shell-links a {{
     flex: 0 0 auto;
-    padding: 8px 12px;
-    border-radius: 999px;
-    border: 1px solid rgba(187,169,143,0.72);
-    color: #1b2836;
+    padding: 0 0 6px;
+    border-bottom: 2px solid transparent;
+    color: rgba(239, 230, 214, 0.76);
     text-decoration: none;
-    background: rgba(255,252,245,0.76);
-    font-size: 0.92rem;
+    background: transparent;
+    font-size: 0.95rem;
     font-weight: 500;
     white-space: nowrap;
+    transition: color 180ms ease, border-color 180ms ease;
   }}
   .eoe-shell-links a.active {{
-    background: rgba(255,252,245,0.88);
-    border-color: rgba(160,145,121,0.72);
-    color: #173046;
+    border-color: rgba(201, 168, 76, 0.88);
+    color: #f8f1e6;
     font-weight: 700;
+  }}
+  .eoe-shell-links a:hover {{
+    color: #f8f1e6;
+    text-decoration: none;
+    border-color: rgba(201, 168, 76, 0.52);
   }}
   /* Cleaner fix would live in the Pathogen Dispatch renderer, but this import-layer pass
      keeps the simplification isolated to the umbrella site. */
@@ -657,21 +698,23 @@ def shell_wrapper_css(base_url: str) -> str:
     box-shadow: none !important;
   }}
   .site-header {{
-    padding: 0 0 10px !important;
+    padding: 0 0 12px !important;
     gap: 12px !important;
   }}
   .site-header-title {{
-    font-size: 0.94rem !important;
+    font-size: 1rem !important;
     color: #42515e !important;
   }}
   .site-nav,
   .section-nav-links {{
-    gap: 8px !important;
+    gap: 14px !important;
   }}
   .site-nav-link,
   .section-nav-link {{
-    padding: 0 !important;
+    padding: 0 0 5px !important;
     border: 0 !important;
+    border-radius: 0 !important;
+    border-bottom: 2px solid transparent !important;
     background: transparent !important;
     box-shadow: none !important;
     color: #42515e !important;
@@ -687,6 +730,7 @@ def shell_wrapper_css(base_url: str) -> str:
     color: #173046 !important;
     font-weight: 700 !important;
     text-decoration: none !important;
+    border-color: rgba(141, 63, 47, 0.48) !important;
   }}
   .hero {{
     padding: 0 0 6px !important;
@@ -738,8 +782,7 @@ def shell_wrapper_css(base_url: str) -> str:
     background: rgba(255,252,245,0.92) !important;
   }}
   @media (max-width: 760px) {{
-    body {{ padding-top: 118px !important; }}
-    .eoe-shell-nav {{ align-items: flex-start; flex-direction: column; }}
+    body {{ padding-top: 148px !important; }}
     .eoe-shell-links {{
       flex-wrap: nowrap;
       overflow-x: auto;
@@ -775,8 +818,10 @@ def imported_shell_nav(active: str, base_url: str) -> str:
         link_html.append(f'<a class="{cls}" href="{html.escape(link_for(base_url, path))}">{html.escape(label)}</a>')
     return (
         '<div class="eoe-shell-nav">'
-        f'<a class="eoe-shell-brand" href="{html.escape(link_for(base_url, ""))}">Edge of Epidemiology</a>'
+        '<div class="eoe-shell-nav-inner">'
+        f'<a class="eoe-shell-brand" href="{html.escape(link_for(base_url, ""))}">The Edge of Epidemiology</a>'
         f'<nav class="eoe-shell-links" aria-label="Umbrella navigation">{"".join(link_html)}</nav>'
+        "</div>"
         "</div>"
     )
 

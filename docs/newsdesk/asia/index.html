@@ -99,42 +99,59 @@
     </style>
   
 <style id="eoe-shell-import-style">
-  body { padding-top: 78px !important; }
+  body { padding-top: 112px !important; }
   .eoe-shell-nav {
     position: fixed;
     inset: 0 0 auto 0;
     z-index: 10000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    padding: 14px 18px;
-    background: rgba(248, 243, 233, 0.96);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(187,169,143,0.84);
-    box-shadow: 0 10px 28px rgba(49, 36, 22, 0.10);
+    background: linear-gradient(180deg, rgba(15, 20, 27, 0.98), rgba(21, 29, 39, 0.98));
+    color: #efe6d6;
+    border-bottom: 1px solid rgba(214, 202, 183, 0.2);
+    box-shadow: 0 14px 34px rgba(4, 7, 10, 0.28);
+  }
+  .eoe-shell-nav-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 18px 18px 16px;
+    display: grid;
+    gap: 12px;
     font-family: "Avenir Next", "Helvetica Neue", sans-serif;
   }
-  .eoe-shell-brand { color: #173046; font-weight: 700; text-decoration: none; }
+  .eoe-shell-brand {
+    color: #f5ecdd;
+    font: 700 clamp(1.2rem, 2vw, 1.65rem)/1.05 "Iowan Old Style", Georgia, serif;
+    text-decoration: none;
+    letter-spacing: -0.02em;
+  }
   .eoe-shell-brand:hover { text-decoration: none; }
-  .eoe-shell-links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .eoe-shell-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(214, 202, 183, 0.18);
+  }
   .eoe-shell-links a {
     flex: 0 0 auto;
-    padding: 8px 12px;
-    border-radius: 999px;
-    border: 1px solid rgba(187,169,143,0.72);
-    color: #1b2836;
+    padding: 0 0 6px;
+    border-bottom: 2px solid transparent;
+    color: rgba(239, 230, 214, 0.76);
     text-decoration: none;
-    background: rgba(255,252,245,0.76);
-    font-size: 0.92rem;
+    background: transparent;
+    font-size: 0.95rem;
     font-weight: 500;
     white-space: nowrap;
+    transition: color 180ms ease, border-color 180ms ease;
   }
   .eoe-shell-links a.active {
-    background: rgba(255,252,245,0.88);
-    border-color: rgba(160,145,121,0.72);
-    color: #173046;
+    border-color: rgba(201, 168, 76, 0.88);
+    color: #f8f1e6;
     font-weight: 700;
+  }
+  .eoe-shell-links a:hover {
+    color: #f8f1e6;
+    text-decoration: none;
+    border-color: rgba(201, 168, 76, 0.52);
   }
   /* Cleaner fix would live in the Pathogen Dispatch renderer, but this import-layer pass
      keeps the simplification isolated to the umbrella site. */
@@ -148,21 +165,23 @@
     box-shadow: none !important;
   }
   .site-header {
-    padding: 0 0 10px !important;
+    padding: 0 0 12px !important;
     gap: 12px !important;
   }
   .site-header-title {
-    font-size: 0.94rem !important;
+    font-size: 1rem !important;
     color: #42515e !important;
   }
   .site-nav,
   .section-nav-links {
-    gap: 8px !important;
+    gap: 14px !important;
   }
   .site-nav-link,
   .section-nav-link {
-    padding: 0 !important;
+    padding: 0 0 5px !important;
     border: 0 !important;
+    border-radius: 0 !important;
+    border-bottom: 2px solid transparent !important;
     background: transparent !important;
     box-shadow: none !important;
     color: #42515e !important;
@@ -178,6 +197,7 @@
     color: #173046 !important;
     font-weight: 700 !important;
     text-decoration: none !important;
+    border-color: rgba(141, 63, 47, 0.48) !important;
   }
   .hero {
     padding: 0 0 6px !important;
@@ -229,8 +249,7 @@
     background: rgba(255,252,245,0.92) !important;
   }
   @media (max-width: 760px) {
-    body { padding-top: 118px !important; }
-    .eoe-shell-nav { align-items: flex-start; flex-direction: column; }
+    body { padding-top: 148px !important; }
     .eoe-shell-links {
       flex-wrap: nowrap;
       overflow-x: auto;
@@ -246,7 +265,7 @@
   }
 </style>
 </head>
-  <body><div class="eoe-shell-nav"><a class="eoe-shell-brand" href="/">Edge of Epidemiology</a><nav class="eoe-shell-links" aria-label="Umbrella navigation"><a class="" href="/">Home</a><a class="active" href="/newsdesk/">Newsdesk</a><a class="" href="/notebook/">Notebook</a><a class="" href="/atlases/pathogen/">Pathogen Atlas</a><a class="" href="/atlases/maritime/">Maritime Atlas</a><a class="" href="/essays/">Essays</a><a class="" href="/historical/">Historical</a><a class="" href="/reference/">Reference</a><a class="" href="/search/">Search</a></nav></div>
+  <body><div class="eoe-shell-nav"><div class="eoe-shell-nav-inner"><a class="eoe-shell-brand" href="/">The Edge of Epidemiology</a><nav class="eoe-shell-links" aria-label="Umbrella navigation"><a class="" href="/">Home</a><a class="active" href="/newsdesk/">Newsdesk</a><a class="" href="/notebook/">Notebook</a><a class="" href="/atlases/pathogen/">Pathogen Atlas</a><a class="" href="/atlases/maritime/">Maritime Atlas</a><a class="" href="/essays/">Essays</a><a class="" href="/historical/">Historical</a><a class="" href="/reference/">Reference</a><a class="" href="/search/">Search</a></nav></div></div>
     <main class="page">
       <header class="site-header"><div class="site-header-copy"><div class="kicker">The Pathogen Dispatch</div><p class="site-header-title">Source-first newsroom desks</p></div><nav class="site-nav" aria-label="Site navigation"><a class="site-nav-link" href="/newsdesk/">Home</a><a class="site-nav-link" href="/notebook/">Notebook</a><a class="site-nav-link" href="/atlases/pathogen/">Atlas</a><a class="site-nav-link" href="/newsdesk/watch/">Global watch</a><a class="site-nav-link" href="/newsdesk/africa/">Africa</a><a class="site-nav-link active" href="/newsdesk/asia/" aria-current="page">Asia</a><a class="site-nav-link" href="/newsdesk/research/">Research</a><a class="site-nav-link" href="/newsdesk/official/">Official alerts</a><a class="site-nav-link" href="/newsdesk/archive/">Archive</a></nav></header>
       <section class="live-update-banner panel utility-panel" id="live-update-banner" hidden aria-live="polite" role="status" data-live-update-banner="true"><div class="live-update-copy"><div class="section-nav-label">New edition available</div><p class="live-update-text" id="live-update-text">An updated edition is available. Load the latest run when you are ready.</p></div><div class="live-update-actions"><button class="live-update-dismiss" id="live-update-dismiss" type="button" onclick="(function(btn){const banner=btn.closest('[data-live-update-banner]');if(banner){banner.hidden=true;banner.style.display='none';const runId=(banner.dataset&&banner.dataset.pendingRunId)||'';const key=(banner.dataset&&banner.dataset.dismissKey)||('pathogen-dispatch-live-update-dismissed:'+window.location.pathname);try{window.sessionStorage.setItem(key, window.location.pathname+'::'+(runId||'unknown'));}catch(error){}}return false;})(this)">Keep reading</button><button class="live-update-button" id="live-update-refresh" type="button" onclick="(function(btn){const banner=btn.closest('[data-live-update-banner]');if(banner){banner.hidden=true;banner.style.display='none';}const url=new URL(window.location.href);url.searchParams.set('_edition', String(Date.now()));window.location.replace(url.toString());return false;})(this)">Load latest</button></div></section>
@@ -261,7 +280,7 @@
       </section>
       <section class="panel" id="latest-signals">
         <h2>Latest Signals</h2>
-        <div class="card-grid"><article class="site-card"><div class="kicker">Metadata-only signal</div><h3><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNWnNDUGRsdW1KUHBpYUJOMkY0UzlfN05SRUwwNEVnbVh3TzVISXZsMXF1NFIxRWF2SnpoMnZnX24tS3BVSW5ocGw4dHRSREV4bnI1RExteTJ3WV9FaUpWTF9ZTTMwMm03dm9IUmYxQ1k0SVhITDZDUEpzX0F4UFR6cA?oc=5">From US to Singapore, countries race to track hantavirus</a></h3><p>Limited detail was available from feed metadata alone.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Metadata-only signal</span><span class="meta-inline">CNN · 2026-05-07T12:53+00:00</span></div></article><article class="site-card"><div class="kicker">Metadata-only signal</div><h3><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxPdFhzWGZXNnRfTkQ3a3hMY2ZwNkZoY0YwMnJOeUpLaU9JdE85M1dRYWx3ZWktTE5TekU3eFRmNFdnMy1ZUGlVbzZrUVlqYTdsUmFDUTdTeEJjSm5pb0J6ZjRka3d1LXRRSnF3T2hzVnhxMkJDdnBnQVZ4VnhWSlViZVpn?oc=5">Dengue fever in Sri Lanka: More than 25,000 cases reported in 2026 to date</a></h3><p>Limited detail was available from feed metadata alone.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Metadata-only signal</span><span class="meta-inline">Outbreak News Today · 2026-05-02T15:24+00:00</span></div></article><article class="site-card"><div class="kicker">Metadata-only signal</div><h3><a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxNRGZNVngzSUJRSno3bmpxMkR6MC1HcHNNWnBraGtTRE0yZXN3TGFwNDQ3RTJsYzg5dHE1T2xRd2JvWEZ4dk9VU3QtWUdraWJCNk1lWmd6T3J0VmtOT2praGNkUjUtTWdzUGc1VG5SX1VWUXdRcGdyaDVNV0F0VnM3am5TTkt3SzI1SXBZQ2txMy03VDNhMDdSTHFZTnBVOU1saC0zbUdmdVJGcGRzTk5uRkN2TFU3ZVNxWjFicEk2LW5QTXZXRm9qYVF1b2NKdw?oc=5">Japan's measles outbreak surges past 360 cases - Tokyo and Kanto region worst hit</a></h3><p>Limited detail was available from feed metadata alone.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Metadata-only signal</span><span class="meta-inline">The Standard (HK) · 2026-05-09T04:00+00:00</span></div></article><article class="site-card"><div class="kicker">Metadata-only signal</div><h3><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPakt0SjBhU2kyRDNFenJfdHlLV25waUgycTJqZkNvRnpiMjNOZWwzT3ZFXzkxWlNPT0dqYU1nV2NmbVVzNmEwQUM3ZHAxVXdFZlVpM2RBNEpaRF8zTl9NeC1PM042VTY3ZllDd3E0Qm9KdEZrQVVXWFRBZDBDM0p0aW53QkRqbmsyY1A4OTRGcEtqWnhyLW9vbllETS0wWndqZ0RpZjRUd2tRVFE?oc=5">Measles case confirmed in Buckingham County</a></h3><p>Limited detail was available from feed metadata alone.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Metadata-only signal</span><span class="meta-inline">The Daily Progress · 2026-05-09T01:27+00:00</span></div></article></div>
+        <div class="card-grid"><article class="site-card"><div class="kicker">Publisher coverage</div><h3><a href="https://outbreaknewstoday.substack.com/p/dengue-fever-in-sri-lanka-more-than">Dengue fever in Sri Lanka: More than 25,000 cases reported in 2026 to date</a></h3><p>In addition, there has been 12 dengue related deaths reported this year. According to the National Dengue Control Unit (NDCU) in Colombo, Sri Lanka, a total of 25,082 dengue cases have been reported across Sri Lanka so far in 2026. In all of 2025, the country saw 51,000 cases.</p><div class="meta-row meta-row-plain"><span class="meta-inline">Outbreak News Today · 2026-05-02T15:24+00:00</span></div></article><article class="site-card"><div class="kicker">Publisher coverage</div><h3><a href="https://observerid.com/80-of-areas-free-of-malaria-indonesia-on-track-to-achieve-elimination-target-by-2030/">80% of areas free of malaria, Indonesia on track to achieve elimination target by 2030</a></h3><p>According to data from the Ministry of Health (Kemenkes), the number of reported malaria cases in 2025 was 706,297, marking a 30 percent increase compared to 2024, which recorded 543,965 cases. Jakarta, IO – By the end of 2025, 412 out of 514 regencies and cities (80 percent) and seven provinces in Indonesia are expected to be officially declared free of malaria transmission. “Regionally, 95 percent of all malaria cases in Indonesia—totaling 674,046 cases—were concentrated in Papua, which is composed of six provinces.</p><div class="meta-row meta-row-plain"><span class="meta-inline">Independent Observer · 2026-05-10T02:00+00:00</span></div></article><article class="site-card"><div class="kicker">Metadata-only signal</div><h3><a href="https://www.cnn.com/2026/05/07/world/hantavirus-ship-tenerife-outbreak-intl">From US to Singapore, countries race to track hantavirus</a></h3><p>Limited detail was available from feed metadata alone.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Metadata-only signal</span><span class="meta-inline">CNN · 2026-05-07T12:53+00:00</span></div></article><article class="site-card"><div class="kicker">Publisher coverage</div><h3><a href="https://www.thestandard.com.hk/wellness/article/330831/Japans-measles-outbreak-surges-past-360-cases-Tokyo-and-Kanto-region-worst-hit">Japan's measles outbreak surges past 360 cases - Tokyo and Kanto region worst hit</a></h3><p>"However, in cases in Yamanashi Prefecture, the patients were all people whose history of having received two vaccine doses could not be confirmed." Professor Tsuyoshi Terashima from Tokyo Dental University points out that the measles virus is extremely contagious, with one infected person potentially spreading it to 12-14 others, compared to influenza which typically spreads to only 2-3 people. Of the 57 new cases reported this week, Tokyo accounted for 40, with the remaining sporadic cases in Kagoshima, Kanagawa, and other areas. As of mid-April, the cumulative number of infections nationwide had already surpassed 299, exceeding the total of 265 cases for all of last year.</p><div class="meta-row meta-row-plain"><span class="meta-inline">The Standard (HK) · 2026-05-09T04:00+00:00</span></div></article><article class="site-card"><div class="kicker">Metadata-only signal</div><h3><a href="https://dailyprogress.com/news/local/business/health-care/article_5a28324d-d284-4675-b94a-3c51876cdeb2.html">Measles case confirmed in Buckingham County</a></h3><p>Limited detail was available from feed metadata alone.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Metadata-only signal</span><span class="meta-inline">The Daily Progress · 2026-05-09T01:27+00:00</span></div></article></div>
       </section>
       <section class="panel-grid">
         <section class="panel" id="reference-links">
@@ -279,8 +298,8 @@
       const liveUpdateButton = document.getElementById("live-update-refresh");
       const liveUpdateDismiss = document.getElementById("live-update-dismiss");
       const liveUpdateText = document.getElementById("live-update-text");
-      const currentRunId = 'run_fefa441d9960399a';
-      const currentGeneratedAt = '2026-05-10T07:24:34';
+      const currentRunId = 'run_f1996c5d598f8746';
+      const currentGeneratedAt = '2026-05-10T14:50:13';
       const manifestPath = './app_exports/manifest.json';
       const liveUpdateStorageKey = `pathogen-dispatch-live-update-dismissed:${window.location.pathname}`;
       const liveUpdateStart = Date.now();

@@ -30,6 +30,7 @@ def test_transform_imported_html_rewrites_known_paths() -> None:
     assert 'fetch("/app_exports/manifest.json")' in transformed
     assert "Edge of Epidemiology" in transformed
     assert "touch-action: pan-x" in transformed
+    assert "The Edge of Epidemiology" in transformed
     assert "On this page" not in transformed
     assert "56 item(s)" not in transformed
     assert "26 source(s)" not in transformed
@@ -171,19 +172,27 @@ atlases:
     assert (docs_dir / "app_exports" / "posts.json").exists()
     home_text = (docs_dir / "index.html").read_text()
     assert "Devin Teichrow" in home_text
-    assert "public-facing outbreak reporting, disease atlases, and historical epidemiology" in home_text
+    assert "Most disease reporting treats outbreaks as isolated events." in home_text
     assert "UCLA-trained epidemiologist and neuroscience researcher at UC Irvine" in home_text
     assert "hero-notebook" not in home_text
     assert "hero-status-line" in home_text
+    assert "hero-status-label" in home_text
     assert "newsdesk-panel" in home_text
     assert "atlas-panel" in home_text
     assert "story-card" in home_text
     assert "atlas-card" in home_text
     assert "essay-card" in home_text
+    assert "essay-card-featured" in home_text
+    assert "https://images.example/cover.jpg" in home_text
     assert "reference-card" in home_text
     assert "Read the essays" in home_text
     assert "Unified site" not in home_text
     assert 'button primary' not in home_text
+    assert "site-header-inner" in home_text
+    assert home_text.index('<header class="site-header">') < home_text.index('<main class="page">')
+    essays_text = (docs_dir / "essays" / "index.html").read_text()
+    assert "essay-card-featured" in essays_text
+    assert "https://images.example/cover.jpg" in essays_text
     about_text = (docs_dir / "about" / "index.html").read_text()
     assert "About Devin Teichrow and The Edge of Epidemiology" in about_text
     assert "[Bio paragraph placeholder for manual editing.]" in about_text

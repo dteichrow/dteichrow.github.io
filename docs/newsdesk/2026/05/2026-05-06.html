@@ -447,42 +447,59 @@
     </style>
   
 <style id="eoe-shell-import-style">
-  body { padding-top: 78px !important; }
+  body { padding-top: 112px !important; }
   .eoe-shell-nav {
     position: fixed;
     inset: 0 0 auto 0;
     z-index: 10000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    padding: 14px 18px;
-    background: rgba(248, 243, 233, 0.96);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(187,169,143,0.84);
-    box-shadow: 0 10px 28px rgba(49, 36, 22, 0.10);
+    background: linear-gradient(180deg, rgba(15, 20, 27, 0.98), rgba(21, 29, 39, 0.98));
+    color: #efe6d6;
+    border-bottom: 1px solid rgba(214, 202, 183, 0.2);
+    box-shadow: 0 14px 34px rgba(4, 7, 10, 0.28);
+  }
+  .eoe-shell-nav-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 18px 18px 16px;
+    display: grid;
+    gap: 12px;
     font-family: "Avenir Next", "Helvetica Neue", sans-serif;
   }
-  .eoe-shell-brand { color: #173046; font-weight: 700; text-decoration: none; }
+  .eoe-shell-brand {
+    color: #f5ecdd;
+    font: 700 clamp(1.2rem, 2vw, 1.65rem)/1.05 "Iowan Old Style", Georgia, serif;
+    text-decoration: none;
+    letter-spacing: -0.02em;
+  }
   .eoe-shell-brand:hover { text-decoration: none; }
-  .eoe-shell-links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .eoe-shell-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(214, 202, 183, 0.18);
+  }
   .eoe-shell-links a {
     flex: 0 0 auto;
-    padding: 8px 12px;
-    border-radius: 999px;
-    border: 1px solid rgba(187,169,143,0.72);
-    color: #1b2836;
+    padding: 0 0 6px;
+    border-bottom: 2px solid transparent;
+    color: rgba(239, 230, 214, 0.76);
     text-decoration: none;
-    background: rgba(255,252,245,0.76);
-    font-size: 0.92rem;
+    background: transparent;
+    font-size: 0.95rem;
     font-weight: 500;
     white-space: nowrap;
+    transition: color 180ms ease, border-color 180ms ease;
   }
   .eoe-shell-links a.active {
-    background: rgba(255,252,245,0.88);
-    border-color: rgba(160,145,121,0.72);
-    color: #173046;
+    border-color: rgba(201, 168, 76, 0.88);
+    color: #f8f1e6;
     font-weight: 700;
+  }
+  .eoe-shell-links a:hover {
+    color: #f8f1e6;
+    text-decoration: none;
+    border-color: rgba(201, 168, 76, 0.52);
   }
   /* Cleaner fix would live in the Pathogen Dispatch renderer, but this import-layer pass
      keeps the simplification isolated to the umbrella site. */
@@ -496,21 +513,23 @@
     box-shadow: none !important;
   }
   .site-header {
-    padding: 0 0 10px !important;
+    padding: 0 0 12px !important;
     gap: 12px !important;
   }
   .site-header-title {
-    font-size: 0.94rem !important;
+    font-size: 1rem !important;
     color: #42515e !important;
   }
   .site-nav,
   .section-nav-links {
-    gap: 8px !important;
+    gap: 14px !important;
   }
   .site-nav-link,
   .section-nav-link {
-    padding: 0 !important;
+    padding: 0 0 5px !important;
     border: 0 !important;
+    border-radius: 0 !important;
+    border-bottom: 2px solid transparent !important;
     background: transparent !important;
     box-shadow: none !important;
     color: #42515e !important;
@@ -526,6 +545,7 @@
     color: #173046 !important;
     font-weight: 700 !important;
     text-decoration: none !important;
+    border-color: rgba(141, 63, 47, 0.48) !important;
   }
   .hero {
     padding: 0 0 6px !important;
@@ -577,8 +597,7 @@
     background: rgba(255,252,245,0.92) !important;
   }
   @media (max-width: 760px) {
-    body { padding-top: 118px !important; }
-    .eoe-shell-nav { align-items: flex-start; flex-direction: column; }
+    body { padding-top: 148px !important; }
     .eoe-shell-links {
       flex-wrap: nowrap;
       overflow-x: auto;
@@ -594,7 +613,7 @@
   }
 </style>
 </head>
-  <body><div class="eoe-shell-nav"><a class="eoe-shell-brand" href="/">Edge of Epidemiology</a><nav class="eoe-shell-links" aria-label="Umbrella navigation"><a class="" href="/">Home</a><a class="active" href="/newsdesk/">Newsdesk</a><a class="" href="/notebook/">Notebook</a><a class="" href="/atlases/pathogen/">Pathogen Atlas</a><a class="" href="/atlases/maritime/">Maritime Atlas</a><a class="" href="/essays/">Essays</a><a class="" href="/historical/">Historical</a><a class="" href="/reference/">Reference</a><a class="" href="/search/">Search</a></nav></div>
+  <body><div class="eoe-shell-nav"><div class="eoe-shell-nav-inner"><a class="eoe-shell-brand" href="/">The Edge of Epidemiology</a><nav class="eoe-shell-links" aria-label="Umbrella navigation"><a class="" href="/">Home</a><a class="active" href="/newsdesk/">Newsdesk</a><a class="" href="/notebook/">Notebook</a><a class="" href="/atlases/pathogen/">Pathogen Atlas</a><a class="" href="/atlases/maritime/">Maritime Atlas</a><a class="" href="/essays/">Essays</a><a class="" href="/historical/">Historical</a><a class="" href="/reference/">Reference</a><a class="" href="/search/">Search</a></nav></div></div>
     <main class="page">
       <section class="hero">
         <div class="brand-row">
@@ -894,8 +913,8 @@
     const button = document.getElementById("public-live-update-refresh");
     const dismiss = document.getElementById("public-live-update-dismiss");
     const text = document.getElementById("public-live-update-text");
-    const currentRunId = 'run_fefa441d9960399a';
-    const currentGeneratedAt = '2026-05-10T07:24:34';
+    const currentRunId = 'run_f1996c5d598f8746';
+    const currentGeneratedAt = '2026-05-10T14:50:13';
     const manifestPath = '../../app_exports/manifest.json';
     const storageKey = `pathogen-dispatch-live-update-dismissed:${window.location.pathname}`;
     const liveUpdateStart = Date.now();

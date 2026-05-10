@@ -99,42 +99,59 @@
     </style>
   
 <style id="eoe-shell-import-style">
-  body { padding-top: 78px !important; }
+  body { padding-top: 112px !important; }
   .eoe-shell-nav {
     position: fixed;
     inset: 0 0 auto 0;
     z-index: 10000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    padding: 14px 18px;
-    background: rgba(248, 243, 233, 0.96);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(187,169,143,0.84);
-    box-shadow: 0 10px 28px rgba(49, 36, 22, 0.10);
+    background: linear-gradient(180deg, rgba(15, 20, 27, 0.98), rgba(21, 29, 39, 0.98));
+    color: #efe6d6;
+    border-bottom: 1px solid rgba(214, 202, 183, 0.2);
+    box-shadow: 0 14px 34px rgba(4, 7, 10, 0.28);
+  }
+  .eoe-shell-nav-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 18px 18px 16px;
+    display: grid;
+    gap: 12px;
     font-family: "Avenir Next", "Helvetica Neue", sans-serif;
   }
-  .eoe-shell-brand { color: #173046; font-weight: 700; text-decoration: none; }
+  .eoe-shell-brand {
+    color: #f5ecdd;
+    font: 700 clamp(1.2rem, 2vw, 1.65rem)/1.05 "Iowan Old Style", Georgia, serif;
+    text-decoration: none;
+    letter-spacing: -0.02em;
+  }
   .eoe-shell-brand:hover { text-decoration: none; }
-  .eoe-shell-links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .eoe-shell-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(214, 202, 183, 0.18);
+  }
   .eoe-shell-links a {
     flex: 0 0 auto;
-    padding: 8px 12px;
-    border-radius: 999px;
-    border: 1px solid rgba(187,169,143,0.72);
-    color: #1b2836;
+    padding: 0 0 6px;
+    border-bottom: 2px solid transparent;
+    color: rgba(239, 230, 214, 0.76);
     text-decoration: none;
-    background: rgba(255,252,245,0.76);
-    font-size: 0.92rem;
+    background: transparent;
+    font-size: 0.95rem;
     font-weight: 500;
     white-space: nowrap;
+    transition: color 180ms ease, border-color 180ms ease;
   }
   .eoe-shell-links a.active {
-    background: rgba(255,252,245,0.88);
-    border-color: rgba(160,145,121,0.72);
-    color: #173046;
+    border-color: rgba(201, 168, 76, 0.88);
+    color: #f8f1e6;
     font-weight: 700;
+  }
+  .eoe-shell-links a:hover {
+    color: #f8f1e6;
+    text-decoration: none;
+    border-color: rgba(201, 168, 76, 0.52);
   }
   /* Cleaner fix would live in the Pathogen Dispatch renderer, but this import-layer pass
      keeps the simplification isolated to the umbrella site. */
@@ -148,21 +165,23 @@
     box-shadow: none !important;
   }
   .site-header {
-    padding: 0 0 10px !important;
+    padding: 0 0 12px !important;
     gap: 12px !important;
   }
   .site-header-title {
-    font-size: 0.94rem !important;
+    font-size: 1rem !important;
     color: #42515e !important;
   }
   .site-nav,
   .section-nav-links {
-    gap: 8px !important;
+    gap: 14px !important;
   }
   .site-nav-link,
   .section-nav-link {
-    padding: 0 !important;
+    padding: 0 0 5px !important;
     border: 0 !important;
+    border-radius: 0 !important;
+    border-bottom: 2px solid transparent !important;
     background: transparent !important;
     box-shadow: none !important;
     color: #42515e !important;
@@ -178,6 +197,7 @@
     color: #173046 !important;
     font-weight: 700 !important;
     text-decoration: none !important;
+    border-color: rgba(141, 63, 47, 0.48) !important;
   }
   .hero {
     padding: 0 0 6px !important;
@@ -229,8 +249,7 @@
     background: rgba(255,252,245,0.92) !important;
   }
   @media (max-width: 760px) {
-    body { padding-top: 118px !important; }
-    .eoe-shell-nav { align-items: flex-start; flex-direction: column; }
+    body { padding-top: 148px !important; }
     .eoe-shell-links {
       flex-wrap: nowrap;
       overflow-x: auto;
@@ -246,7 +265,7 @@
   }
 </style>
 </head>
-  <body><div class="eoe-shell-nav"><a class="eoe-shell-brand" href="/">Edge of Epidemiology</a><nav class="eoe-shell-links" aria-label="Umbrella navigation"><a class="" href="/">Home</a><a class="active" href="/newsdesk/">Newsdesk</a><a class="" href="/notebook/">Notebook</a><a class="" href="/atlases/pathogen/">Pathogen Atlas</a><a class="" href="/atlases/maritime/">Maritime Atlas</a><a class="" href="/essays/">Essays</a><a class="" href="/historical/">Historical</a><a class="" href="/reference/">Reference</a><a class="" href="/search/">Search</a></nav></div>
+  <body><div class="eoe-shell-nav"><div class="eoe-shell-nav-inner"><a class="eoe-shell-brand" href="/">The Edge of Epidemiology</a><nav class="eoe-shell-links" aria-label="Umbrella navigation"><a class="" href="/">Home</a><a class="active" href="/newsdesk/">Newsdesk</a><a class="" href="/notebook/">Notebook</a><a class="" href="/atlases/pathogen/">Pathogen Atlas</a><a class="" href="/atlases/maritime/">Maritime Atlas</a><a class="" href="/essays/">Essays</a><a class="" href="/historical/">Historical</a><a class="" href="/reference/">Reference</a><a class="" href="/search/">Search</a></nav></div></div>
     <main class="page">
       <header class="site-header"><div class="site-header-copy"><div class="kicker">The Pathogen Dispatch</div><p class="site-header-title">Source-first newsroom desks</p></div><nav class="site-nav" aria-label="Site navigation"><a class="site-nav-link" href="../index.html">Home</a><a class="site-nav-link" href="../notebook.html">Notebook</a><a class="site-nav-link" href="../atlas.html">Atlas</a><a class="site-nav-link" href="../watch.html">Global watch</a><a class="site-nav-link" href="../africa.html">Africa</a><a class="site-nav-link" href="../asia.html">Asia</a><a class="site-nav-link" href="../research.html">Research</a><a class="site-nav-link" href="../official.html">Official alerts</a><a class="site-nav-link" href="../archive/index.html">Archive</a></nav></header>
       <section class="live-update-banner panel utility-panel" id="live-update-banner" hidden aria-live="polite" role="status" data-live-update-banner="true"><div class="live-update-copy"><div class="section-nav-label">New edition available</div><p class="live-update-text" id="live-update-text">An updated edition is available. Load the latest run when you are ready.</p></div><div class="live-update-actions"><button class="live-update-dismiss" id="live-update-dismiss" type="button" onclick="(function(btn){const banner=btn.closest('[data-live-update-banner]');if(banner){banner.hidden=true;banner.style.display='none';const runId=(banner.dataset&&banner.dataset.pendingRunId)||'';const key=(banner.dataset&&banner.dataset.dismissKey)||('pathogen-dispatch-live-update-dismissed:'+window.location.pathname);try{window.sessionStorage.setItem(key, window.location.pathname+'::'+(runId||'unknown'));}catch(error){}}return false;})(this)">Keep reading</button><button class="live-update-button" id="live-update-refresh" type="button" onclick="(function(btn){const banner=btn.closest('[data-live-update-banner]');if(banner){banner.hidden=true;banner.style.display='none';}const url=new URL(window.location.href);url.searchParams.set('_edition', String(Date.now()));window.location.replace(url.toString());return false;})(this)">Load latest</button></div></section>
@@ -281,7 +300,7 @@
       <section class="panel utility-panel" id="story-filters">
         <h2>Filter This Story File</h2>
         <p class="muted-note">Use this desk bar to cut the outbreak file down by source quality, freshness, region, or link fidelity before you scan the cards.</p>
-        <div class="story-filter-shell"><div class="story-filter-grid"><label class="filter-group filter-search-wide"><span class="filter-label">Search</span><input id="story-filter-search" class="filter-input" type="search" placeholder="Search titles, publishers, places, or phrases" /></label><label class="filter-group"><span class="filter-label">Source type</span><select class="filter-select" data-story-filter="source-kind"><option value="all">All</option><option value="official">Official</option><option value="specialist_health">Specialist health</option></select></label><label class="filter-group"><span class="filter-label">Freshness</span><select class="filter-select" data-story-filter="freshness"><option value="all">All</option><option value="retained">Retained</option></select></label><label class="filter-group"><span class="filter-label">Link quality</span><select class="filter-select" data-story-filter="link-quality"><option value="all">All</option><option value="aggregator_only">Aggregator Only</option><option value="direct">Direct</option></select></label><label class="filter-group"><span class="filter-label">Region</span><select class="filter-select" data-story-filter="region"><option value="all">All</option><option value="cross-region_/_unassigned">Cross-region / unassigned</option><option value="latin_america_and_caribbean">Latin America and Caribbean</option><option value="north_america">North America</option></select></label><label class="filter-group"><span class="filter-label">Access</span><select class="filter-select" data-story-filter="access"><option value="all">All</option><option value="unknown">Access unknown</option><option value="open">Open access</option></select></label><label class="filter-group"><span class="filter-label">Date range</span><select class="filter-select" data-story-filter="date-window"><option value="all">All</option><option value="3">Past 3 days</option><option value="7">Past 7 days</option></select></label><label class="filter-group"><span class="filter-label">Story status</span><select class="filter-select" data-story-filter="story-status"><option value="all">All</option><option value="active_investigation">Active investigation</option></select></label><label class="filter-group"><span class="filter-label">Claim type</span><select class="filter-select" data-story-filter="claim-type"><option value="all">All</option><option value="general_update">General update</option></select></label></div><p id="story-filter-status" class="muted-note">Showing all story-file cards.</p></div>
+        <div class="story-filter-shell"><div class="story-filter-grid"><label class="filter-group filter-search-wide"><span class="filter-label">Search</span><input id="story-filter-search" class="filter-input" type="search" placeholder="Search titles, publishers, places, or phrases" /></label><label class="filter-group"><span class="filter-label">Source type</span><select class="filter-select" data-story-filter="source-kind"><option value="all">All</option><option value="official">Official</option><option value="specialist_health">Specialist health</option></select></label><label class="filter-group"><span class="filter-label">Freshness</span><select class="filter-select" data-story-filter="freshness"><option value="all">All</option><option value="retained">Retained</option></select></label><label class="filter-group"><span class="filter-label">Link quality</span><select class="filter-select" data-story-filter="link-quality"><option value="all">All</option><option value="aggregator_only">Aggregator Only</option><option value="direct">Direct</option></select></label><label class="filter-group"><span class="filter-label">Region</span><select class="filter-select" data-story-filter="region"><option value="all">All</option><option value="cross-region_/_unassigned">Cross-region / unassigned</option><option value="latin_america_and_caribbean">Latin America and Caribbean</option><option value="north_america">North America</option></select></label><label class="filter-group"><span class="filter-label">Access</span><select class="filter-select" data-story-filter="access"><option value="all">All</option><option value="unknown">Access unknown</option><option value="open">Open access</option></select></label><label class="filter-group"><span class="filter-label">Date range</span><select class="filter-select" data-story-filter="date-window"><option value="all">All</option><option value="7">Past 7 days</option></select></label><label class="filter-group"><span class="filter-label">Story status</span><select class="filter-select" data-story-filter="story-status"><option value="all">All</option><option value="active_investigation">Active investigation</option></select></label><label class="filter-group"><span class="filter-label">Claim type</span><select class="filter-select" data-story-filter="claim-type"><option value="all">All</option><option value="general_update">General update</option></select></label></div><p id="story-filter-status" class="muted-note">Showing all story-file cards.</p></div>
       </section>
 
       <section class="panel-grid">
@@ -295,7 +314,7 @@
           <h2>Publisher Coverage</h2>
           
           <div class="sort-bar"><label class="sort-control">Sort by <select class="sort-select" data-sort-target="publisher-coverage"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="source">Source A-Z</option></select></label></div>
-          <div id="publisher-coverage" class="card-grid sortable-grid" data-default-sort="newest"><article class="site-card sortable-card searchable-card" data-sort-ts="1778178540" data-sort-source="CIDRAP" data-sort-title="Lawmakers ask Kennedy about blocked COVID vaccine study" data-search="Lawmakers ask Kennedy about blocked COVID vaccine study Democratic lawmakers sent a letter to the HHS secretary demanding answers on why the study was blocked from appearing in the CDC’s flagship publication. CIDRAP North America https://www.cidrap.umn.edu/adult-non-flu-vaccines/lawmakers-ask-kennedy-about-blocked-covid-vaccine-study" data-source-kind="specialist_health" data-freshness="retained" data-link-quality="aggregator_only" data-region="North America" data-access="open" data-date-window="3" data-scope="publisher" data-official="false" data-story-status="active_investigation" data-claim-type="general_update"><div class="kicker">Publisher coverage</div><h3><a href="https://www.cidrap.umn.edu/adult-non-flu-vaccines/lawmakers-ask-kennedy-about-blocked-covid-vaccine-study">Lawmakers ask Kennedy about blocked COVID vaccine study</a></h3><p>Democratic lawmakers sent a letter to the HHS secretary demanding answers on why the study was blocked from appearing in the CDC’s flagship publication.</p><div class="meta-row"><span class="badge">CIDRAP</span><span class="badge tone-specialist">Specialist health</span><span class="badge">Open access</span><span class="badge">Retained</span><span class="badge">North America</span><span class="badge">2026-05-07T13:29-05:00</span><span class="badge">aggregator only</span></div></article></div>
+          <div id="publisher-coverage" class="card-grid sortable-grid" data-default-sort="newest"><article class="site-card sortable-card searchable-card" data-sort-ts="1778178540" data-sort-source="CIDRAP" data-sort-title="Lawmakers ask Kennedy about blocked COVID vaccine study" data-search="Lawmakers ask Kennedy about blocked COVID vaccine study Democratic lawmakers sent a letter to the HHS secretary demanding answers on why the study was blocked from appearing in the CDC’s flagship publication. CIDRAP North America https://www.cidrap.umn.edu/adult-non-flu-vaccines/lawmakers-ask-kennedy-about-blocked-covid-vaccine-study" data-source-kind="specialist_health" data-freshness="retained" data-link-quality="aggregator_only" data-region="North America" data-access="open" data-date-window="7" data-scope="publisher" data-official="false" data-story-status="active_investigation" data-claim-type="general_update"><div class="kicker">Publisher coverage</div><h3><a href="https://www.cidrap.umn.edu/adult-non-flu-vaccines/lawmakers-ask-kennedy-about-blocked-covid-vaccine-study">Lawmakers ask Kennedy about blocked COVID vaccine study</a></h3><p>Democratic lawmakers sent a letter to the HHS secretary demanding answers on why the study was blocked from appearing in the CDC’s flagship publication.</p><div class="meta-row"><span class="badge">CIDRAP</span><span class="badge tone-specialist">Specialist health</span><span class="badge">Open access</span><span class="badge">Retained</span><span class="badge">North America</span><span class="badge">2026-05-07T13:29-05:00</span><span class="badge">aggregator only</span></div></article></div>
         </section>
       </section>
 
@@ -387,8 +406,8 @@
       const liveUpdateButton = document.getElementById("live-update-refresh");
       const liveUpdateDismiss = document.getElementById("live-update-dismiss");
       const liveUpdateText = document.getElementById("live-update-text");
-      const currentRunId = 'run_fefa441d9960399a';
-      const currentGeneratedAt = '2026-05-10T07:24:34';
+      const currentRunId = 'run_f1996c5d598f8746';
+      const currentGeneratedAt = '2026-05-10T14:50:13';
       const manifestPath = '../app_exports/manifest.json';
       const liveUpdateStorageKey = `pathogen-dispatch-live-update-dismissed:${window.location.pathname}`;
       const liveUpdateStart = Date.now();
