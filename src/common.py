@@ -21,7 +21,11 @@ DOCS_DIR = PROJECT_ROOT / "docs"
 ASSETS_DIR = PROJECT_ROOT / "assets"
 NOTES_DIR = PROJECT_ROOT / "notes"
 DEFAULT_BASE_URL = "/"
-USER_AGENT = "Mozilla/5.0 (compatible; EdgeOfEpidemiologyBot/1.0; +https://theedgeofepidemiology.substack.com)"
+USER_AGENT = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/136.0.0.0 Safari/537.36"
+)
 
 UPSTREAM_FIELDS = [
     "substack_id",
@@ -90,8 +94,24 @@ def write_json(path: Path, data: Any) -> None:
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False))
 
 
-def fetch_text(url: str, timeout: int = 30, attempts: int = 4) -> str:
-    request = Request(url, headers={"User-Agent": USER_AGENT})
+def fetch_text(
+    url: str,
+    timeout: int = 30,
+    attempts: int = 4,
+    headers: dict[str, str] | None = None,
+) -> str:
+    parsed = urlparse(url)
+    default_headers = {
+        "User-Agent": USER_AGENT,
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache",
+        "Referer": f"{parsed.scheme}://{parsed.netloc}/",
+    }
+    if headers:
+        default_headers.update(headers)
+    request = Request(url, headers=default_headers)
     for attempt in range(1, attempts + 1):
         try:
             with urlopen(request, timeout=timeout) as response:

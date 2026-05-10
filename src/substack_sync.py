@@ -144,6 +144,26 @@ def _write_report(mode: str, report: dict[str, Any]) -> None:
     write_json(NOTES_DIR / f"substack-sync-{mode}.json", report)
 
 
+def _recent_posts_from_archive() -> list[dict[str, Any]]:
+    archive_html = fetch_text(ARCHIVE_URL)
+    recent_posts = _extract_recent_archive_posts(archive_html)
+    return list(recent_posts.values())
+
+
+def _load_incremental_candidates() -> tuple[list[dict[str, Any]], str, str | None]:
+    try:
+        rss_xml = fetch_text(
+            RSS_URL,
+            headers={"Accept": "application/rss+xml, application/xml;q=0.9, text/xml;q=0.8, */*;q=0.5"},
+        )
+        return _parse_rss_feed(rss_xml), "rss", None
+    except Exception as rss_exc:  # noqa: BLE001
+        try:
+            return _recent_posts_from_archive(), "archive_fallback", str(rss_exc)
+        except Exception as archive_exc:  # noqa: BLE001
+            return [], "manifest_only", f"rss={rss_exc}; archive={archive_exc}"
+
+
 def backfill_posts(manifest_path: Path | None = None) -> dict[str, Any]:
     posts = load_posts_manifest(manifest_path)
     existing_by_url = {post.get("canonical_url"): post for post in posts if post.get("canonical_url")}
@@ -198,12 +218,12 @@ def incremental_sync(manifest_path: Path | None = None) -> dict[str, Any]:
     merged: dict[str, dict[str, Any]] = {
         post["canonical_url"]: post for post in posts if post.get("canonical_url")
     }
-    rss_xml = fetch_text(RSS_URL)
-    feed_posts = _parse_rss_feed(rss_xml)
+    feed_posts, source_mode, fallback_reason = _load_incremental_candidates()
 
     created = 0
     updated = 0
     enriched = 0
+    failures: list[dict[str, str]] = []
     for incoming in feed_posts:
         url = incoming["canonical_url"]
         existing = merged.get(url)
@@ -211,8 +231,8 @@ def incremental_sync(manifest_path: Path | None = None) -> dict[str, Any]:
             try:
                 incoming = _extract_post_record_from_page(fetch_text(url), url)
                 enriched += 1
-            except Exception:  # noqa: BLE001
-                pass
+            except Exception as exc:  # noqa: BLE001
+                failures.append({"url": url, "error": str(exc)})
         merged_record = merge_post_record(existing, incoming)
         merged[url] = merged_record
         if existing is None:
@@ -225,11 +245,17 @@ def incremental_sync(manifest_path: Path | None = None) -> dict[str, Any]:
     report = {
         "mode": "incremental",
         "generated_at": now_iso(),
-        "rss_entry_count": len(feed_posts),
+        "candidate_source": source_mode,
+        "candidate_count": len(feed_posts),
+        "rss_entry_count": len(feed_posts) if source_mode == "rss" else 0,
+        "archive_fallback_count": len(feed_posts) if source_mode == "archive_fallback" else 0,
         "total_manifest_records": len(final_posts),
         "created_records": created,
         "updated_records": updated,
         "enriched_from_post_pages": enriched,
+        "degraded": source_mode != "rss",
+        "fallback_reason": fallback_reason or "",
+        "enrichment_failures": failures,
     }
     _write_report("incremental", report)
     return report

@@ -1,8 +1,10 @@
 from __future__ import annotations
 
 import json
+from urllib.error import HTTPError
 
-from src.common import decode_substack_json_payload, merge_post_record
+from src.common import merge_post_record
+from src import substack_sync
 from src.substack_sync import _extract_post_record_from_page, _parse_rss_feed, _parse_sitemap_urls
 
 
@@ -100,3 +102,73 @@ def test_merge_post_record_preserves_curated_fields() -> None:
     assert merged["topics"] == ["History"]
     assert merged["related_atlases"] == ["maritime-disease-atlas"]
     assert merged["status"] == "mirrored"
+
+
+def test_incremental_sync_falls_back_to_archive_when_rss_is_blocked(tmp_path, monkeypatch) -> None:
+    manifest_path = tmp_path / "posts.yml"
+    manifest_path.write_text("posts: []\n")
+
+    archive_record = {
+        "substack_id": 101,
+        "slug": "fallback-post",
+        "title": "Fallback post",
+        "date": "2026-05-10",
+        "canonical_url": "https://theedgeofepidemiology.substack.com/p/fallback-post",
+        "excerpt": "Fallback excerpt",
+        "cover_image": "",
+        "upstream_tags": [],
+        "source_mode": "substack_archive",
+        "wordcount": 800,
+    }
+
+    def fake_fetch_text(url: str, *args, **kwargs) -> str:
+        if url == substack_sync.RSS_URL:
+            raise HTTPError(url, 403, "Forbidden", hdrs=None, fp=None)
+        if url == substack_sync.ARCHIVE_URL:
+            return "<html></html>"
+        if url == archive_record["canonical_url"]:
+            return "<html></html>"
+        raise AssertionError(f"Unexpected fetch for {url}")
+
+    monkeypatch.setattr(substack_sync, "fetch_text", fake_fetch_text)
+    monkeypatch.setattr(substack_sync, "_extract_recent_archive_posts", lambda html_text: {archive_record["canonical_url"]: archive_record})
+    monkeypatch.setattr(substack_sync, "_extract_post_record_from_page", lambda html_text, url: archive_record)
+
+    report = substack_sync.incremental_sync(manifest_path)
+    saved_manifest = manifest_path.read_text()
+
+    assert report["candidate_source"] == "archive_fallback"
+    assert report["archive_fallback_count"] == 1
+    assert report["created_records"] == 1
+    assert report["degraded"] is True
+    assert "403" in report["fallback_reason"]
+    assert "fallback-post" in saved_manifest
+
+
+def test_incremental_sync_preserves_manifest_when_both_upstreams_fail(tmp_path, monkeypatch) -> None:
+    manifest_path = tmp_path / "posts.yml"
+    manifest_path.write_text(
+        """
+posts:
+  - canonical_url: https://theedgeofepidemiology.substack.com/p/existing-post
+    slug: existing-post
+    title: Existing post
+    date: 2026-05-09
+    status: summary_only
+"""
+    )
+
+    def fake_fetch_text(url: str, *args, **kwargs) -> str:
+        raise HTTPError(url, 403, "Forbidden", hdrs=None, fp=None)
+
+    monkeypatch.setattr(substack_sync, "fetch_text", fake_fetch_text)
+
+    report = substack_sync.incremental_sync(manifest_path)
+    saved_manifest = manifest_path.read_text()
+
+    assert report["candidate_source"] == "manifest_only"
+    assert report["candidate_count"] == 0
+    assert report["created_records"] == 0
+    assert report["updated_records"] == 0
+    assert report["degraded"] is True
+    assert "existing-post" in saved_manifest

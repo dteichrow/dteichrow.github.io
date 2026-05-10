@@ -725,9 +725,9 @@ def import_external_maritime(docs_dir: Path, base_url: str) -> None:
 """
     nav = (
         '<div id="eoe-atlas-overlay">'
-        '<a href="../../">Home</a>'
-        '<a href="../" class="active">Atlases</a>'
-        '<a href="../../essays/">Essays</a>'
+        '<a href="../../index.html">Home</a>'
+        '<a href="../index.html" class="active">Atlases</a>'
+        '<a href="../../essays/index.html">Essays</a>'
         "</div>"
     )
     html_text = html_text.replace("</head>", f"{overlay}</head>")
@@ -822,10 +822,10 @@ def import_external_pathogen(docs_dir: Path, base_url: str) -> None:
 """
     nav = (
         '<div id="eoe-atlas-overlay">'
-        '<a href="../../">Home</a>'
-        '<a href="../" class="active">Atlases</a>'
-        '<a href="../../newsdesk/">Newsdesk</a>'
-        '<a href="../../essays/">Essays</a>'
+        '<a href="../../index.html">Home</a>'
+        '<a href="../index.html" class="active">Atlases</a>'
+        '<a href="../../newsdesk/index.html">Newsdesk</a>'
+        '<a href="../../essays/index.html">Essays</a>'
         "</div>"
     )
     html_text = html_text.replace("</head>", f"{overlay}</head>")
@@ -868,9 +868,9 @@ def import_external_viking(docs_dir: Path, base_url: str) -> None:
 """
     nav = (
         '<div id="eoe-atlas-overlay">'
-        '<a href="../../">Home</a>'
-        '<a href="../" class="active">Atlases</a>'
-        '<a href="../../historical/">Historical</a>'
+        '<a href="../../index.html">Home</a>'
+        '<a href="../index.html" class="active">Atlases</a>'
+        '<a href="../../historical/index.html">Historical</a>'
         "</div>"
     )
     html_text = html_text.replace("</head>", f"{overlay}</head>")

@@ -200,6 +200,9 @@ def test_import_external_pathogen_writes_js_payload(tmp_path, monkeypatch) -> No
     built_data = docs_dir / "atlases" / "pathogen" / "data" / "pathogen_atlas_data.js"
     assert built_index.exists()
     assert built_data.exists()
+    index_text = built_index.read_text()
+    assert 'href="../../index.html"' in index_text
+    assert 'href="../index.html"' in index_text
     data_text = built_data.read_text()
     assert 'window.PATHOGEN_ATLAS_BASE_URL = "/"' in data_text
     assert '"reference_href": "../../reference/yellow-fever.html"' in data_text
