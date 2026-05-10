@@ -188,6 +188,21 @@ def test_import_external_pathogen_writes_js_payload(tmp_path, monkeypatch) -> No
                                 "story_web_path": "stories/demo-story.html",
                             }
                         ],
+                        "variants": [
+                            {
+                                "slug": "urban-yellow-fever",
+                                "name": "Urban yellow fever",
+                                "status": "mixed",
+                                "writing_state": "adjacent",
+                                "reference_web_path": "reference/yellow-fever.html",
+                                "related_stories": [
+                                    {
+                                        "display_title": "Variant story",
+                                        "story_web_path": "stories/demo-story.html",
+                                    }
+                                ],
+                            }
+                        ],
                     }
                 ],
             }
@@ -208,3 +223,5 @@ def test_import_external_pathogen_writes_js_payload(tmp_path, monkeypatch) -> No
     assert 'window.PATHOGEN_ATLAS_BASE_URL = "/"' in data_text
     assert '"reference_href": "../../reference/yellow-fever.html"' in data_text
     assert '"story_href": "../../stories/demo-story.html"' in data_text
+    assert '"slug": "urban-yellow-fever"' in data_text
+    assert '"writing_state_label": "Adjacent writing"' in data_text

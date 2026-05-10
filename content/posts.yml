@@ -15,7 +15,7 @@ posts:
   - news
   - hantavirus
   - MV Hondius
-  source_mode: substack_archive
+  source_mode: substack_archive_api
   wordcount: 2440
   status: summary_only
   dek: ''
@@ -38,7 +38,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-10T15:47:22+00:00'
+  last_synced_at: '2026-05-10T21:44:18+00:00'
 - substack_id: 196225500
   slug: the-new-fungal-sti-hiding-in-plain
   title: 'The New Fungal STI Hiding in Plain Sight (Pathogen Dispatch #1)'
@@ -52,7 +52,7 @@ posts:
   - MSMs
   - LGBTQ
   - STIs
-  source_mode: substack_archive
+  source_mode: substack_archive_api
   wordcount: 1301
   status: summary_only
   dek: ''
@@ -72,7 +72,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-10T15:47:22+00:00'
+  last_synced_at: '2026-05-10T21:44:18+00:00'
 - substack_id: 195413363
   slug: how-changing-disease-environments
   title: How Changing Disease Environments Drove Genomic Selection in West Eurasians
@@ -86,7 +86,7 @@ posts:
   - Genetics
   - epidemiology
   - Reich Lab 2026
-  source_mode: substack_archive
+  source_mode: substack_archive_api
   wordcount: 2593
   status: summary_only
   dek: ''
@@ -106,7 +106,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-10T15:47:22+00:00'
+  last_synced_at: '2026-05-10T21:44:18+00:00'
 - substack_id: 193856306
   slug: big-epidemiology-disease-at-the-scale
   title: 'Big Epidemiology: Disease at the Scale of Civilization'
@@ -121,7 +121,7 @@ posts:
   - big History
   - Big Epidemiology
   - history of medicine
-  source_mode: substack_archive
+  source_mode: substack_archive_api
   wordcount: 1947
   status: summary_only
   dek: ''
@@ -142,7 +142,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-10T15:47:22+00:00'
+  last_synced_at: '2026-05-10T21:44:18+00:00'
 - substack_id: 193176173
   slug: the-first-american-epidemic-how-yellow
   title: 'The First American Epidemic: How Yellow Fever Exposed the Fault Lines of
@@ -160,7 +160,7 @@ posts:
   - yellow fever
   - Big Epidemiology
   - '1793'
-  source_mode: substack_archive
+  source_mode: substack_archive_api
   wordcount: 2993
   status: summary_only
   dek: ''
@@ -183,7 +183,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-10T15:47:22+00:00'
+  last_synced_at: '2026-05-10T21:44:18+00:00'
 - substack_id: 192444219
   slug: did-the-vikings-bring-plague-across
   title: Did the Vikings Bring Plague Across the North Sea? Norse Voyages, Infectious
@@ -200,7 +200,7 @@ posts:
   - Vikings
   - big History
   - Big Epidemiology
-  source_mode: substack_archive
+  source_mode: substack_archive_api
   wordcount: 2316
   status: summary_only
   dek: ''
@@ -223,7 +223,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-10T15:47:22+00:00'
+  last_synced_at: '2026-05-10T21:44:18+00:00'
 - substack_id: 192334500
   slug: the-white-plague-returns-tuberculosis
   title: 'The White Plague Returns?: Tuberculosis and the Fragility of Public Health
@@ -237,7 +237,7 @@ posts:
   - History
   - public health
   - tuberculosis
-  source_mode: substack_archive
+  source_mode: substack_archive_api
   wordcount: 1692
   status: summary_only
   dek: ''
@@ -256,7 +256,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-10T15:47:22+00:00'
+  last_synced_at: '2026-05-10T21:44:18+00:00'
 - substack_id: 191686346
   slug: who-died-of-what-in-the-american
   title: Who Died of What in the American Revolutionary War? Disease, Battle, and
@@ -271,7 +271,7 @@ posts:
   - History
   - american revolution
   - revolutionary war
-  source_mode: substack_archive
+  source_mode: substack_archive_api
   wordcount: 3042
   status: summary_only
   dek: ''
@@ -292,7 +292,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-10T15:47:22+00:00'
+  last_synced_at: '2026-05-10T21:44:18+00:00'
 - substack_id: 191075721
   slug: invisible-killers-of-the-oregon-trail
   title: 'Invisible Killers of the Oregon Trail: Disease and Death on the Overland
@@ -309,7 +309,7 @@ posts:
   - Oregon Trail
   - History
   - Pacific North West
-  source_mode: substack_archive
+  source_mode: substack_archive_api
   wordcount: 1707
   status: summary_only
   dek: ''
@@ -332,7 +332,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-10T15:47:22+00:00'
+  last_synced_at: '2026-05-10T21:44:18+00:00'
 - substack_id: 190210122
   slug: how-mosquitos-killed-napoleons-north
   title: How Mosquitos Killed Napoleon’s North American Empire Dream
@@ -350,7 +350,7 @@ posts:
   - Vector Ecology
   - Military History
   - Medical History
-  source_mode: substack_archive
+  source_mode: substack_archive_api
   wordcount: 1611
   status: summary_only
   dek: ''
@@ -374,7 +374,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-10T15:47:22+00:00'
+  last_synced_at: '2026-05-10T21:44:18+00:00'
 - substack_id: 189373631
   slug: the-american-revolution-was-nearly
   title: The American Revolution Was Nearly Lost to Smallpox
@@ -388,7 +388,7 @@ posts:
   - History
   - Medical History
   - revolutionary war
-  source_mode: substack_archive
+  source_mode: substack_archive_api
   wordcount: 2128
   status: summary_only
   dek: ''
@@ -408,7 +408,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-10T15:47:22+00:00'
+  last_synced_at: '2026-05-10T21:44:18+00:00'
 - substack_id: 187959272
   slug: disease-in-the-early-colonies-pre
   title: 'Disease in the Early Colonies: Pre-Revolutionary War Disease Ecology and
@@ -425,7 +425,7 @@ posts:
   - History
   - malaria
   - colonial era
-  source_mode: substack_archive
+  source_mode: substack_archive_api
   wordcount: 1726
   status: summary_only
   dek: ''
@@ -448,7 +448,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-10T15:47:22+00:00'
+  last_synced_at: '2026-05-10T21:44:18+00:00'
 - substack_id: 186425026
   slug: why-europeans-didnt-get-hit-by-disease
   title: Why Europeans Didn’t Die of New World Diseases (but did from diseases in
@@ -466,7 +466,7 @@ posts:
   - epidemiology
   - colonial era
   - Medical History
-  source_mode: substack_page
+  source_mode: substack_archive_api
   wordcount: 1534
   status: summary_only
   dek: ''
@@ -490,7 +490,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-10T15:47:22+00:00'
+  last_synced_at: '2026-05-10T21:44:18+00:00'
 - substack_id: 184989953
   slug: they-came-from-the-steppe-the-genetic
   title: 'They Came from the Steppe: The Genetic Legacy of Plague and Steppe Migrations'
@@ -506,7 +506,7 @@ posts:
   - Yamnaya
   - epidemiology
   - Steppe
-  source_mode: substack_page
+  source_mode: substack_archive_api
   wordcount: 1489
   status: summary_only
   dek: ''
@@ -527,7 +527,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:49+00:00'
-  last_synced_at: '2026-05-10T15:47:22+00:00'
+  last_synced_at: '2026-05-10T21:44:18+00:00'
 - substack_id: 184243719
   slug: when-worlds-collided-disease-and
   title: 'When Worlds Collided: Disease and Population Collapse in the Americas After
@@ -544,7 +544,7 @@ posts:
   - History
   - Americas
   - '1493'
-  source_mode: substack_page
+  source_mode: substack_archive_api
   wordcount: 2044
   status: summary_only
   dek: ''
@@ -566,7 +566,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:49+00:00'
-  last_synced_at: '2026-05-10T15:47:22+00:00'
+  last_synced_at: '2026-05-10T21:44:18+00:00'
 - substack_id: 183258463
   slug: disease-on-the-high-seas-early-maritime
   title: 'Scourges of the High Seas: Early Maritime Disease Ecology'
@@ -583,7 +583,7 @@ posts:
   - medicine
   - epidemiology
   - pirates
-  source_mode: substack_page
+  source_mode: substack_archive_api
   wordcount: 2105
   status: summary_only
   dek: ''
@@ -604,7 +604,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:50+00:00'
-  last_synced_at: '2026-05-10T15:47:22+00:00'
+  last_synced_at: '2026-05-10T21:44:18+00:00'
 - substack_id: 182976217
   slug: mexicos-mystery-epidemics-of-the
   title: 'Mexico’s Mystery Epidemics of the 16th Century: Cocoliztli and the Limits
@@ -620,7 +620,7 @@ posts:
   - cocoliztli
   - History
   - Mexico
-  source_mode: substack_page
+  source_mode: substack_archive_api
   wordcount: 1325
   status: summary_only
   dek: ''
@@ -641,7 +641,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:50+00:00'
-  last_synced_at: '2026-05-10T15:47:22+00:00'
+  last_synced_at: '2026-05-10T21:44:18+00:00'
 - substack_id: 182520634
   slug: inherited-infections-what-our-oldest
   title: 'Inherited Infections: What Our Oldest Diseases Reveal About Human Prehistory'
@@ -656,7 +656,7 @@ posts:
   - evolution
   - History
   - human origins
-  source_mode: substack_page
+  source_mode: substack_archive_api
   wordcount: 1361
   status: summary_only
   dek: ''
@@ -677,7 +677,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:51+00:00'
-  last_synced_at: '2026-05-10T15:47:23+00:00'
+  last_synced_at: '2026-05-10T21:44:18+00:00'
 - substack_id: 181844122
   slug: the-disease-ecology-of-the-pre-contact
   title: 'The Disease Ecology of the Pre-Contact Americas (Part 2: South America)'
@@ -692,7 +692,7 @@ posts:
   - anthropology
   - History
   - pre-colonial era
-  source_mode: substack_page
+  source_mode: substack_archive_api
   wordcount: 2027
   status: summary_only
   dek: ''
@@ -714,7 +714,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:51+00:00'
-  last_synced_at: '2026-05-10T15:47:23+00:00'
+  last_synced_at: '2026-05-10T21:44:18+00:00'
 - substack_id: 181195168
   slug: the-disease-ecology-of-pre-contact
   title: 'The Disease Ecology of Pre-Contact Americas (Part 1: North and Central America)'
@@ -729,7 +729,7 @@ posts:
   - disease ecology
   - History
   - Medical History
-  source_mode: substack_page
+  source_mode: substack_archive_api
   wordcount: 1653
   status: summary_only
   dek: ''
@@ -750,7 +750,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:51+00:00'
-  last_synced_at: '2026-05-10T15:47:23+00:00'
+  last_synced_at: '2026-05-10T21:44:18+00:00'
 - substack_id: 180554125
   slug: when-did-syphilis-enter-europe-the
   title: When Did Syphilis Enter Europe? The Origins Debate
@@ -765,7 +765,7 @@ posts:
   - syphilis
   - medicine
   - epidemiology
-  source_mode: substack_page
+  source_mode: substack_archive_api
   wordcount: 1693
   status: summary_only
   dek: ''
@@ -785,7 +785,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:52+00:00'
-  last_synced_at: '2026-05-10T15:47:23+00:00'
+  last_synced_at: '2026-05-10T21:44:18+00:00'
 - substack_id: 179321195
   slug: the-mystery-of-hookworm-in-ancient
   title: 'The Mystery of Hookworm in Ancient America: A Parasite Found When and Where
@@ -802,7 +802,7 @@ posts:
   - History
   - paleontology
   - paleopathology
-  source_mode: substack_page
+  source_mode: substack_archive_api
   wordcount: 1344
   status: summary_only
   dek: ''
@@ -824,7 +824,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:52+00:00'
-  last_synced_at: '2026-05-10T15:47:24+00:00'
+  last_synced_at: '2026-05-10T21:44:18+00:00'
 - substack_id: 178663608
   slug: the-ghosts-of-meals-past-what-weve
   title: 'The Ghosts of Meals Past: What We’ve Learned from Fossilized Poop'
@@ -839,7 +839,7 @@ posts:
   - anthropology
   - Scatology
   - History
-  source_mode: substack_page
+  source_mode: substack_archive_api
   wordcount: 1269
   status: summary_only
   dek: ''
@@ -859,7 +859,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:53+00:00'
-  last_synced_at: '2026-05-10T15:47:24+00:00'
+  last_synced_at: '2026-05-10T21:44:18+00:00'
 - substack_id: 177940071
   slug: the-oldest-diseases-we-know-of
   title: The Oldest Diseases We Know Of

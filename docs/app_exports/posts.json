@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T07:24:34",
+  "generated_at": "2026-05-10T14:50:13",
   "count": 87,
   "posts": [
     {
@@ -17,7 +17,7 @@
         "hantavirus",
         "MV Hondius"
       ],
-      "source_mode": "substack_archive",
+      "source_mode": "substack_archive_api",
       "wordcount": 2440,
       "status": "summary_only",
       "dek": "",
@@ -40,7 +40,7 @@
       "hero_mode": "cover",
       "notes": "",
       "first_seen_at": "2026-05-10T15:45:48+00:00",
-      "last_synced_at": "2026-05-10T15:47:22+00:00"
+      "last_synced_at": "2026-05-10T21:44:18+00:00"
     },
     {
       "substack_id": 196225500,
@@ -57,7 +57,7 @@
         "LGBTQ",
         "STIs"
       ],
-      "source_mode": "substack_archive",
+      "source_mode": "substack_archive_api",
       "wordcount": 1301,
       "status": "summary_only",
       "dek": "",
@@ -79,7 +79,7 @@
       "hero_mode": "cover",
       "notes": "",
       "first_seen_at": "2026-05-10T15:45:48+00:00",
-      "last_synced_at": "2026-05-10T15:47:22+00:00"
+      "last_synced_at": "2026-05-10T21:44:18+00:00"
     },
     {
       "substack_id": 195413363,
@@ -96,7 +96,7 @@
         "epidemiology",
         "Reich Lab 2026"
       ],
-      "source_mode": "substack_archive",
+      "source_mode": "substack_archive_api",
       "wordcount": 2593,
       "status": "summary_only",
       "dek": "",
@@ -118,7 +118,7 @@
       "hero_mode": "cover",
       "notes": "",
       "first_seen_at": "2026-05-10T15:45:48+00:00",
-      "last_synced_at": "2026-05-10T15:47:22+00:00"
+      "last_synced_at": "2026-05-10T21:44:18+00:00"
     },
     {
       "substack_id": 193856306,
@@ -135,7 +135,7 @@
         "Big Epidemiology",
         "history of medicine"
       ],
-      "source_mode": "substack_archive",
+      "source_mode": "substack_archive_api",
       "wordcount": 1947,
       "status": "summary_only",
       "dek": "",
@@ -157,7 +157,7 @@
       "hero_mode": "cover",
       "notes": "",
       "first_seen_at": "2026-05-10T15:45:48+00:00",
-      "last_synced_at": "2026-05-10T15:47:22+00:00"
+      "last_synced_at": "2026-05-10T21:44:18+00:00"
     },
     {
       "substack_id": 193176173,
@@ -175,7 +175,7 @@
         "Big Epidemiology",
         "1793"
       ],
-      "source_mode": "substack_archive",
+      "source_mode": "substack_archive_api",
       "wordcount": 2993,
       "status": "summary_only",
       "dek": "",
@@ -198,7 +198,7 @@
       "hero_mode": "cover",
       "notes": "",
       "first_seen_at": "2026-05-10T15:45:48+00:00",
-      "last_synced_at": "2026-05-10T15:47:22+00:00"
+      "last_synced_at": "2026-05-10T21:44:18+00:00"
     },
     {
       "substack_id": 192444219,
@@ -216,7 +216,7 @@
         "big History",
         "Big Epidemiology"
       ],
-      "source_mode": "substack_archive",
+      "source_mode": "substack_archive_api",
       "wordcount": 2316,
       "status": "summary_only",
       "dek": "",
@@ -240,7 +240,7 @@
       "hero_mode": "cover",
       "notes": "",
       "first_seen_at": "2026-05-10T15:45:48+00:00",
-      "last_synced_at": "2026-05-10T15:47:22+00:00"
+      "last_synced_at": "2026-05-10T21:44:18+00:00"
     },
     {
       "substack_id": 192334500,
@@ -256,7 +256,7 @@
         "public health",
         "tuberculosis"
       ],
-      "source_mode": "substack_archive",
+      "source_mode": "substack_archive_api",
       "wordcount": 1692,
       "status": "summary_only",
       "dek": "",
@@ -277,7 +277,7 @@
       "hero_mode": "cover",
       "notes": "",
       "first_seen_at": "2026-05-10T15:45:48+00:00",
-      "last_synced_at": "2026-05-10T15:47:22+00:00"
+      "last_synced_at": "2026-05-10T21:44:18+00:00"
     },
     {
       "substack_id": 191686346,
@@ -294,7 +294,7 @@
         "american revolution",
         "revolutionary war"
       ],
-      "source_mode": "substack_archive",
+      "source_mode": "substack_archive_api",
       "wordcount": 3042,
       "status": "summary_only",
       "dek": "",
@@ -317,7 +317,7 @@
       "hero_mode": "cover",
       "notes": "",
       "first_seen_at": "2026-05-10T15:45:48+00:00",
-      "last_synced_at": "2026-05-10T15:47:22+00:00"
+      "last_synced_at": "2026-05-10T21:44:18+00:00"
     },
     {
       "substack_id": 191075721,
@@ -334,7 +334,7 @@
         "History",
         "Pacific North West"
       ],
-      "source_mode": "substack_archive",
+      "source_mode": "substack_archive_api",
       "wordcount": 1707,
       "status": "summary_only",
       "dek": "",
@@ -357,7 +357,7 @@
       "hero_mode": "cover",
       "notes": "",
       "first_seen_at": "2026-05-10T15:45:48+00:00",
-      "last_synced_at": "2026-05-10T15:47:22+00:00"
+      "last_synced_at": "2026-05-10T21:44:18+00:00"
     },
     {
       "substack_id": 190210122,
@@ -376,7 +376,7 @@
         "Military History",
         "Medical History"
       ],
-      "source_mode": "substack_archive",
+      "source_mode": "substack_archive_api",
       "wordcount": 1611,
       "status": "summary_only",
       "dek": "",
@@ -400,7 +400,7 @@
       "hero_mode": "cover",
       "notes": "",
       "first_seen_at": "2026-05-10T15:45:48+00:00",
-      "last_synced_at": "2026-05-10T15:47:22+00:00"
+      "last_synced_at": "2026-05-10T21:44:18+00:00"
     },
     {
       "substack_id": 189373631,
@@ -417,7 +417,7 @@
         "Medical History",
         "revolutionary war"
       ],
-      "source_mode": "substack_archive",
+      "source_mode": "substack_archive_api",
       "wordcount": 2128,
       "status": "summary_only",
       "dek": "",
@@ -439,7 +439,7 @@
       "hero_mode": "cover",
       "notes": "",
       "first_seen_at": "2026-05-10T15:45:48+00:00",
-      "last_synced_at": "2026-05-10T15:47:22+00:00"
+      "last_synced_at": "2026-05-10T21:44:18+00:00"
     },
     {
       "substack_id": 187959272,
@@ -455,7 +455,7 @@
         "malaria",
         "colonial era"
       ],
-      "source_mode": "substack_archive",
+      "source_mode": "substack_archive_api",
       "wordcount": 1726,
       "status": "summary_only",
       "dek": "",
@@ -477,7 +477,7 @@
       "hero_mode": "cover",
       "notes": "",
       "first_seen_at": "2026-05-10T15:45:48+00:00",
-      "last_synced_at": "2026-05-10T15:47:22+00:00"
+      "last_synced_at": "2026-05-10T21:44:18+00:00"
     },
     {
       "substack_id": 186425026,
@@ -495,7 +495,7 @@
         "colonial era",
         "Medical History"
       ],
-      "source_mode": "substack_page",
+      "source_mode": "substack_archive_api",
       "wordcount": 1534,
       "status": "summary_only",
       "dek": "",
@@ -519,7 +519,7 @@
       "hero_mode": "cover",
       "notes": "",
       "first_seen_at": "2026-05-10T15:45:48+00:00",
-      "last_synced_at": "2026-05-10T15:47:22+00:00"
+      "last_synced_at": "2026-05-10T21:44:18+00:00"
     },
     {
       "substack_id": 184989953,
@@ -536,7 +536,7 @@
         "epidemiology",
         "Steppe"
       ],
-      "source_mode": "substack_page",
+      "source_mode": "substack_archive_api",
       "wordcount": 1489,
       "status": "summary_only",
       "dek": "",
@@ -556,7 +556,7 @@
       "hero_mode": "cover",
       "notes": "",
       "first_seen_at": "2026-05-10T15:45:49+00:00",
-      "last_synced_at": "2026-05-10T15:47:22+00:00"
+      "last_synced_at": "2026-05-10T21:44:18+00:00"
     },
     {
       "substack_id": 184243719,
@@ -573,7 +573,7 @@
         "Americas",
         "1493"
       ],
-      "source_mode": "substack_page",
+      "source_mode": "substack_archive_api",
       "wordcount": 2044,
       "status": "summary_only",
       "dek": "",
@@ -595,7 +595,7 @@
       "hero_mode": "cover",
       "notes": "",
       "first_seen_at": "2026-05-10T15:45:49+00:00",
-      "last_synced_at": "2026-05-10T15:47:22+00:00"
+      "last_synced_at": "2026-05-10T21:44:18+00:00"
     },
     {
       "substack_id": 183258463,
@@ -615,7 +615,7 @@
         "epidemiology",
         "pirates"
       ],
-      "source_mode": "substack_page",
+      "source_mode": "substack_archive_api",
       "wordcount": 2105,
       "status": "summary_only",
       "dek": "",
@@ -638,7 +638,7 @@
       "hero_mode": "cover",
       "notes": "",
       "first_seen_at": "2026-05-10T15:45:50+00:00",
-      "last_synced_at": "2026-05-10T15:47:22+00:00"
+      "last_synced_at": "2026-05-10T21:44:18+00:00"
     },
     {
       "substack_id": 182976217,
@@ -655,7 +655,7 @@
         "History",
         "Mexico"
       ],
-      "source_mode": "substack_page",
+      "source_mode": "substack_archive_api",
       "wordcount": 1325,
       "status": "summary_only",
       "dek": "",
@@ -677,7 +677,7 @@
       "hero_mode": "cover",
       "notes": "",
       "first_seen_at": "2026-05-10T15:45:50+00:00",
-      "last_synced_at": "2026-05-10T15:47:22+00:00"
+      "last_synced_at": "2026-05-10T21:44:18+00:00"
     },
     {
       "substack_id": 182520634,
@@ -695,7 +695,7 @@
         "History",
         "human origins"
       ],
-      "source_mode": "substack_page",
+      "source_mode": "substack_archive_api",
       "wordcount": 1361,
       "status": "summary_only",
       "dek": "",
@@ -718,7 +718,7 @@
       "hero_mode": "cover",
       "notes": "",
       "first_seen_at": "2026-05-10T15:45:51+00:00",
-      "last_synced_at": "2026-05-10T15:47:23+00:00"
+      "last_synced_at": "2026-05-10T21:44:18+00:00"
     },
     {
       "substack_id": 181844122,
@@ -735,7 +735,7 @@
         "History",
         "pre-colonial era"
       ],
-      "source_mode": "substack_page",
+      "source_mode": "substack_archive_api",
       "wordcount": 2027,
       "status": "summary_only",
       "dek": "",
@@ -758,7 +758,7 @@
       "hero_mode": "cover",
       "notes": "",
       "first_seen_at": "2026-05-10T15:45:51+00:00",
-      "last_synced_at": "2026-05-10T15:47:23+00:00"
+      "last_synced_at": "2026-05-10T21:44:18+00:00"
     },
     {
       "substack_id": 181195168,
@@ -775,7 +775,7 @@
         "History",
         "Medical History"
       ],
-      "source_mode": "substack_page",
+      "source_mode": "substack_archive_api",
       "wordcount": 1653,
       "status": "summary_only",
       "dek": "",
@@ -797,7 +797,7 @@
       "hero_mode": "cover",
       "notes": "",
       "first_seen_at": "2026-05-10T15:45:51+00:00",
-      "last_synced_at": "2026-05-10T15:47:23+00:00"
+      "last_synced_at": "2026-05-10T21:44:18+00:00"
     },
     {
       "substack_id": 180554125,
@@ -814,7 +814,7 @@
         "medicine",
         "epidemiology"
       ],
-      "source_mode": "substack_page",
+      "source_mode": "substack_archive_api",
       "wordcount": 1693,
       "status": "summary_only",
       "dek": "",
@@ -834,7 +834,7 @@
       "hero_mode": "cover",
       "notes": "",
       "first_seen_at": "2026-05-10T15:45:52+00:00",
-      "last_synced_at": "2026-05-10T15:47:23+00:00"
+      "last_synced_at": "2026-05-10T21:44:18+00:00"
     },
     {
       "substack_id": 179321195,
@@ -852,7 +852,7 @@
         "paleontology",
         "paleopathology"
       ],
-      "source_mode": "substack_page",
+      "source_mode": "substack_archive_api",
       "wordcount": 1344,
       "status": "summary_only",
       "dek": "",
@@ -875,7 +875,7 @@
       "hero_mode": "cover",
       "notes": "",
       "first_seen_at": "2026-05-10T15:45:52+00:00",
-      "last_synced_at": "2026-05-10T15:47:24+00:00"
+      "last_synced_at": "2026-05-10T21:44:18+00:00"
     },
     {
       "substack_id": 178663608,
@@ -891,7 +891,7 @@
         "Scatology",
         "History"
       ],
-      "source_mode": "substack_page",
+      "source_mode": "substack_archive_api",
       "wordcount": 1269,
       "status": "summary_only",
       "dek": "",
@@ -910,7 +910,7 @@
       "hero_mode": "cover",
       "notes": "",
       "first_seen_at": "2026-05-10T15:45:53+00:00",
-      "last_synced_at": "2026-05-10T15:47:24+00:00"
+      "last_synced_at": "2026-05-10T21:44:18+00:00"
     },
     {
       "substack_id": 177940071,

@@ -5,7 +5,12 @@ from urllib.error import HTTPError
 
 from src.common import merge_post_record
 from src import substack_sync
-from src.substack_sync import _extract_post_record_from_page, _parse_rss_feed, _parse_sitemap_urls
+from src.substack_sync import (
+    _extract_post_record_from_page,
+    _extract_recent_archive_api_posts,
+    _parse_rss_feed,
+    _parse_sitemap_urls,
+)
 
 
 def test_parse_sitemap_urls_filters_to_post_urls() -> None:
@@ -41,6 +46,26 @@ def test_parse_rss_feed_extracts_recent_items() -> None:
     assert records[0]["slug"] == "test-post"
     assert records[0]["date"] == "2026-05-04"
     assert records[0]["cover_image"] == "https://images.example/test.jpg"
+
+
+def test_extract_recent_archive_api_posts_extracts_records() -> None:
+    payload = [
+        {
+            "id": 456,
+            "slug": "archive-post",
+            "title": "Archive post",
+            "post_date": "2026-05-10T08:00:00.000Z",
+            "canonical_url": "https://theedgeofepidemiology.substack.com/p/archive-post",
+            "description": "Archive excerpt",
+            "cover_image": "https://images.example/archive.png",
+            "postTags": [{"name": "History"}],
+            "wordcount": 900,
+        }
+    ]
+    records = _extract_recent_archive_api_posts(payload)
+    assert list(records) == ["https://theedgeofepidemiology.substack.com/p/archive-post"]
+    assert records["https://theedgeofepidemiology.substack.com/p/archive-post"]["source_mode"] == "substack_archive_api"
+    assert records["https://theedgeofepidemiology.substack.com/p/archive-post"]["date"] == "2026-05-10"
 
 
 def test_extract_post_record_from_page_reads_structured_payload() -> None:
@@ -104,48 +129,126 @@ def test_merge_post_record_preserves_curated_fields() -> None:
     assert merged["status"] == "mirrored"
 
 
-def test_incremental_sync_falls_back_to_archive_when_rss_is_blocked(tmp_path, monkeypatch) -> None:
+def test_incremental_sync_uses_archive_api_without_degraded_mode(tmp_path, monkeypatch) -> None:
     manifest_path = tmp_path / "posts.yml"
     manifest_path.write_text("posts: []\n")
 
     archive_record = {
         "substack_id": 101,
-        "slug": "fallback-post",
-        "title": "Fallback post",
+        "slug": "api-post",
+        "title": "API post",
         "date": "2026-05-10",
-        "canonical_url": "https://theedgeofepidemiology.substack.com/p/fallback-post",
-        "excerpt": "Fallback excerpt",
+        "canonical_url": "https://theedgeofepidemiology.substack.com/p/api-post",
+        "excerpt": "API excerpt",
         "cover_image": "",
         "upstream_tags": [],
-        "source_mode": "substack_archive",
+        "source_mode": "substack_archive_api",
         "wordcount": 800,
     }
 
     def fake_fetch_text(url: str, *args, **kwargs) -> str:
-        if url == substack_sync.RSS_URL:
-            raise HTTPError(url, 403, "Forbidden", hdrs=None, fp=None)
-        if url == substack_sync.ARCHIVE_URL:
-            return "<html></html>"
         if url == archive_record["canonical_url"]:
             return "<html></html>"
         raise AssertionError(f"Unexpected fetch for {url}")
 
     monkeypatch.setattr(substack_sync, "fetch_text", fake_fetch_text)
-    monkeypatch.setattr(substack_sync, "_extract_recent_archive_posts", lambda html_text: {archive_record["canonical_url"]: archive_record})
+    monkeypatch.setattr(substack_sync, "_recent_posts_from_archive_api", lambda: [archive_record])
     monkeypatch.setattr(substack_sync, "_extract_post_record_from_page", lambda html_text, url: archive_record)
 
     report = substack_sync.incremental_sync(manifest_path)
     saved_manifest = manifest_path.read_text()
 
-    assert report["candidate_source"] == "archive_fallback"
-    assert report["archive_fallback_count"] == 1
+    assert report["candidate_source"] == "archive_api"
+    assert report["archive_api_count"] == 1
+    assert report["created_records"] == 1
+    assert report["degraded"] is False
+    assert report["fallback_reason"] == ""
+    assert "api-post" in saved_manifest
+
+
+def test_incremental_sync_falls_back_to_sitemap_when_primary_sources_fail(tmp_path, monkeypatch) -> None:
+    manifest_path = tmp_path / "posts.yml"
+    manifest_path.write_text("posts: []\n")
+
+    sitemap_candidate = {
+        "substack_id": None,
+        "slug": "sitemap-post",
+        "title": "",
+        "date": "2026-05-10",
+        "canonical_url": "https://theedgeofepidemiology.substack.com/p/sitemap-post",
+        "excerpt": "",
+        "cover_image": "",
+        "upstream_tags": [],
+        "source_mode": "substack_sitemap",
+        "wordcount": None,
+    }
+    enriched = dict(sitemap_candidate)
+    enriched["title"] = "Sitemap post"
+
+    def fake_fetch_text(url: str, *args, **kwargs) -> str:
+        if url == substack_sync.RSS_URL:
+            raise HTTPError(url, 403, "Forbidden", hdrs=None, fp=None)
+        if url == sitemap_candidate["canonical_url"]:
+            return "<html></html>"
+        raise AssertionError(f"Unexpected fetch for {url}")
+
+    monkeypatch.setattr(substack_sync, "_recent_posts_from_archive_api", lambda: (_ for _ in ()).throw(HTTPError(substack_sync.ARCHIVE_API_URL, 403, "Forbidden", hdrs=None, fp=None)))
+    monkeypatch.setattr(substack_sync, "fetch_text", fake_fetch_text)
+    monkeypatch.setattr(substack_sync, "_recent_posts_from_sitemap", lambda existing_posts: [sitemap_candidate])
+    monkeypatch.setattr(substack_sync, "_extract_post_record_from_page", lambda html_text, url: enriched)
+
+    report = substack_sync.incremental_sync(manifest_path)
+    saved_manifest = manifest_path.read_text()
+
+    assert report["candidate_source"] == "sitemap_fallback"
+    assert report["sitemap_fallback_count"] == 1
     assert report["created_records"] == 1
     assert report["degraded"] is True
-    assert "403" in report["fallback_reason"]
-    assert "fallback-post" in saved_manifest
+    assert "archive_api=" in report["fallback_reason"]
+    assert "rss=" in report["fallback_reason"]
+    assert "sitemap-post" in saved_manifest
 
 
-def test_incremental_sync_preserves_manifest_when_both_upstreams_fail(tmp_path, monkeypatch) -> None:
+def test_incremental_sync_skips_unchanged_records_without_manifest_churn(tmp_path, monkeypatch) -> None:
+    manifest_path = tmp_path / "posts.yml"
+    manifest_path.write_text(
+        """
+posts:
+  - canonical_url: https://theedgeofepidemiology.substack.com/p/existing-post
+    slug: existing-post
+    title: Existing post
+    date: 2026-05-09
+    excerpt: Existing excerpt
+    source_mode: substack_archive_api
+    last_synced_at: 2026-05-10T00:00:00+00:00
+    status: summary_only
+"""
+    )
+
+    same_record = {
+        "substack_id": None,
+        "slug": "existing-post",
+        "title": "Existing post",
+        "date": "2026-05-09",
+        "canonical_url": "https://theedgeofepidemiology.substack.com/p/existing-post",
+        "excerpt": "Existing excerpt",
+        "cover_image": "",
+        "upstream_tags": [],
+        "source_mode": "substack_archive_api",
+        "wordcount": None,
+    }
+
+    monkeypatch.setattr(substack_sync, "_recent_posts_from_archive_api", lambda: [same_record])
+
+    report = substack_sync.incremental_sync(manifest_path)
+    saved_manifest = manifest_path.read_text()
+
+    assert report["candidate_source"] == "archive_api"
+    assert report["updated_records"] == 0
+    assert "2026-05-10T00:00:00+00:00" in saved_manifest
+
+
+def test_incremental_sync_preserves_manifest_when_all_upstreams_fail(tmp_path, monkeypatch) -> None:
     manifest_path = tmp_path / "posts.yml"
     manifest_path.write_text(
         """
@@ -161,7 +264,9 @@ posts:
     def fake_fetch_text(url: str, *args, **kwargs) -> str:
         raise HTTPError(url, 403, "Forbidden", hdrs=None, fp=None)
 
+    monkeypatch.setattr(substack_sync, "_recent_posts_from_archive_api", lambda: (_ for _ in ()).throw(HTTPError(substack_sync.ARCHIVE_API_URL, 403, "Forbidden", hdrs=None, fp=None)))
     monkeypatch.setattr(substack_sync, "fetch_text", fake_fetch_text)
+    monkeypatch.setattr(substack_sync, "_recent_posts_from_sitemap", lambda existing_posts: (_ for _ in ()).throw(HTTPError(substack_sync.SITEMAP_URL, 403, "Forbidden", hdrs=None, fp=None)))
 
     report = substack_sync.incremental_sync(manifest_path)
     saved_manifest = manifest_path.read_text()

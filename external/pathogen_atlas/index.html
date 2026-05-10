@@ -243,6 +243,26 @@ a {
 .panel-section:first-of-type {
   margin-top: 14px;
 }
+.variant-label {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.3;
+}
+#variant-select {
+  width: 100%;
+  margin-top: 8px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.05);
+  color: var(--text);
+  padding: 10px 12px;
+  font: 600 14px/1.2 var(--display);
+}
+#variant-note {
+  margin: 8px 0 0;
+}
 .panel-section ul {
   margin: 10px 0 0;
   padding-left: 18px;
@@ -449,6 +469,12 @@ a {
     <div class="subsection-kicker">Why this one matters</div>
     <p class="panel-copy" id="why-matters-copy"></p>
   </div>
+  <div class="panel-section" id="variant-shell" hidden>
+    <div class="subsection-kicker">Variant / strain lens</div>
+    <label class="variant-label" for="variant-select">Switch the active lineage or syndrome view without leaving the family entry.</label>
+    <select id="variant-select"></select>
+    <p class="panel-copy" id="variant-note"></p>
+  </div>
   <div class="panel-section">
     <div class="subsection-kicker">Route sequence</div>
     <div id="route-list"></div>
@@ -521,7 +547,10 @@ const PALETTE = {
   "mpox": "#dd6974",
   "avian-influenza-h5n1": "#9b7bd8",
   "hantavirus": "#7aa96b",
-  "dengue": "#c9a84c"
+  "dengue": "#c9a84c",
+  "malaria": "#5abf7c",
+  "tuberculosis": "#d98e5f",
+  "plague": "#b9754f"
 };
 const STATUS_LABELS = {
   consensus: "Consensus",
@@ -539,7 +568,7 @@ const CONFIDENCE_LABELS = {
 const WRITING_LABELS = {
   direct: "Written here directly",
   adjacent: "Adjacent writing",
-  none: "No dedicated post yet"
+  not_yet_written: "No dedicated post yet"
 };
 const map = L.map("map", {
   center: [18, 5],
@@ -567,6 +596,7 @@ const storyMeta = document.getElementById("story-meta");
 const evidenceLinks = document.getElementById("evidence-links");
 let currentIndex = 0;
 let currentSlug = null;
+let currentVariantSlug = null;
 let isPaused = false;
 let rotationTimer = null;
 let originMarker = null;
@@ -586,6 +616,23 @@ function escapeHtml(value) {
 
 function colorFor(entry) {
   return entry.color || PALETTE[entry.slug] || "#c9a84c";
+}
+
+function variantsFor(entry) {
+  return Array.isArray(entry?.variants) ? entry.variants : [];
+}
+
+function resolveActiveEntry(entry) {
+  const variants = variantsFor(entry);
+  if (!variants.length) {
+    return entry;
+  }
+  const fallback = entry.default_variant_slug || variants[0].slug;
+  const resolvedSlug = variants.some((variant) => variant.slug === currentVariantSlug)
+    ? currentVariantSlug
+    : fallback;
+  currentVariantSlug = resolvedSlug;
+  return variants.find((variant) => variant.slug === resolvedSlug) || variants[0];
 }
 
 function confidenceLabel(value) {
@@ -702,26 +749,49 @@ function fitCurrentEntry() {
   map.fitBounds(currentFeatureGroup.getBounds().pad(0.18), { maxZoom: 4 });
 }
 
-function renderMeta(entry) {
-  const statusLabel = STATUS_LABELS[entry.status] || "Curated";
-  const writingLabel = WRITING_LABELS[entry.writing_state] || "Writing state pending";
+function renderMeta(entry, activeEntry) {
+  const variants = variantsFor(entry);
+  const statusLabel = STATUS_LABELS[activeEntry.status] || "Curated";
+  const writingLabel = WRITING_LABELS[activeEntry.writing_state] || "Writing state pending";
   const badges = [
     `<span class="badge accent">${escapeHtml(statusLabel)}</span>`,
-    `<span class="badge signal">${escapeHtml(entry.pathogen_type || "Pathogen")}</span>`,
+    `<span class="badge signal">${escapeHtml(activeEntry.pathogen_type || entry.pathogen_type || "Pathogen")}</span>`,
     `<span class="badge">${escapeHtml(writingLabel)}</span>`,
-    entry.atlas_scope ? `<span class="badge">${escapeHtml(entry.atlas_scope)}</span>` : ""
+    (activeEntry.atlas_scope || entry.atlas_scope) ? `<span class="badge">${escapeHtml(activeEntry.atlas_scope || entry.atlas_scope)}</span>` : "",
+    variants.length ? `<span class="badge">${escapeHtml(activeEntry.name || "Variant view")}</span>` : ""
   ].filter(Boolean);
   storyMeta.innerHTML = badges.join("");
 }
 
-function renderStoryPanel(entry) {
-  document.getElementById("story-kicker").textContent = entry.atlas_scope || "Curated atlas";
-  document.getElementById("story-title").textContent = entry.name || "Untitled pathogen";
-  document.getElementById("story-copy").textContent = entry.summary || "";
-  document.getElementById("why-matters-copy").textContent = entry.why_it_matters || "This pathogen entry is still being expanded.";
-  renderMeta(entry);
+function renderVariantSelector(entry, activeEntry) {
+  const variants = variantsFor(entry);
+  const shell = document.getElementById("variant-shell");
+  const select = document.getElementById("variant-select");
+  const note = document.getElementById("variant-note");
+  if (!variants.length) {
+    shell.hidden = true;
+    select.innerHTML = "";
+    note.textContent = "";
+    return;
+  }
+  shell.hidden = false;
+  select.innerHTML = variants.map((variant) => `
+    <option value="${escapeHtml(variant.slug)}"${variant.slug === activeEntry.slug ? " selected" : ""}>${escapeHtml(variant.name)}</option>
+  `).join("");
+  note.textContent = activeEntry.subtitle || activeEntry.summary || "";
+  select.onchange = () => selectVariant(select.value);
+}
 
-  const routeHtml = (entry.spread_routes || []).map((route, index) => `
+function renderStoryPanel(entry, activeEntry) {
+  const variants = variantsFor(entry);
+  document.getElementById("story-kicker").textContent = variants.length ? "Pathogen family atlas" : (entry.atlas_scope || "Curated atlas");
+  document.getElementById("story-title").textContent = entry.name || "Untitled pathogen";
+  document.getElementById("story-copy").textContent = variants.length ? (entry.summary || "") : (activeEntry.summary || entry.summary || "");
+  document.getElementById("why-matters-copy").textContent = activeEntry.why_it_matters || entry.why_it_matters || "This pathogen entry is still being expanded.";
+  renderMeta(entry, activeEntry);
+  renderVariantSelector(entry, activeEntry);
+
+  const routeHtml = (activeEntry.spread_routes || []).map((route, index) => `
     <button class="route-step ${index === 0 ? "active" : ""}" type="button" data-route-id="${escapeHtml(route.route_id)}">
       <div class="route-head">
         <div>
@@ -739,30 +809,30 @@ function renderStoryPanel(entry) {
   });
 }
 
-function renderEvidencePanel(entry) {
-  document.getElementById("evidence-title").textContent = entry.subtitle || entry.name || "Evidence panel";
-  document.getElementById("origin-copy").textContent = entry.origin_claim?.narrative || "";
-  document.getElementById("origin-label").textContent = entry.origin_claim?.label || "Origin claim";
-  document.getElementById("origin-narrative").textContent = entry.origin_claim?.narrative || "";
+function renderEvidencePanel(entry, activeEntry) {
+  document.getElementById("evidence-title").textContent = activeEntry.subtitle || activeEntry.name || entry.subtitle || entry.name || "Evidence panel";
+  document.getElementById("origin-copy").textContent = activeEntry.origin_claim?.narrative || "";
+  document.getElementById("origin-label").textContent = activeEntry.origin_claim?.label || "Origin claim";
+  document.getElementById("origin-narrative").textContent = activeEntry.origin_claim?.narrative || "";
   document.getElementById("origin-meta").innerHTML = [
-    `<span class="badge accent">${escapeHtml(confidenceLabel(entry.origin_claim?.confidence))}</span>`,
-    entry.origin_claim?.date_or_era ? `<span class="badge">${escapeHtml(entry.origin_claim.date_or_era)}</span>` : ""
+    `<span class="badge accent">${escapeHtml(confidenceLabel(activeEntry.origin_claim?.confidence))}</span>`,
+    activeEntry.origin_claim?.date_or_era ? `<span class="badge">${escapeHtml(activeEntry.origin_claim.date_or_era)}</span>` : ""
   ].filter(Boolean).join("");
 
   const links = [];
-  if (entry.reference_href) {
-    links.push(`<a class="panel-link" href="${escapeHtml(entry.reference_href)}">Disease sheet</a>`);
+  if (activeEntry.reference_href || entry.reference_href) {
+    links.push(`<a class="panel-link" href="${escapeHtml(activeEntry.reference_href || entry.reference_href)}">Disease sheet</a>`);
   }
-  if (entry.related_stories && entry.related_stories.length) {
-    links.push(`<a class="panel-link" href="${escapeHtml(entry.related_stories[0].story_href)}">Active story file</a>`);
+  if (activeEntry.related_stories && activeEntry.related_stories.length) {
+    links.push(`<a class="panel-link" href="${escapeHtml(activeEntry.related_stories[0].story_href)}">Active story file</a>`);
   }
   evidenceLinks.innerHTML = links.join("");
 
-  renderBulletList("framing-trap-list", entry.framing_traps, "No major framing trap notes are attached yet.");
-  renderBulletList("modern-echo-list", entry.modern_echoes, "No modern-echo notes are attached yet.");
+  renderBulletList("framing-trap-list", activeEntry.framing_traps, "No major framing trap notes are attached yet.");
+  renderBulletList("modern-echo-list", activeEntry.modern_echoes, "No modern-echo notes are attached yet.");
 
   document.getElementById("blog-list").innerHTML = renderLinkedCards(
-    entry.linked_blog_posts,
+    activeEntry.linked_blog_posts,
     (post) => `
       <article class="list-card">
         <a class="blog-title" href="${escapeHtml(post.url || "#")}">${escapeHtml(post.title || "Untitled writing link")}</a>
@@ -773,7 +843,7 @@ function renderEvidencePanel(entry) {
   );
 
   document.getElementById("citation-list").innerHTML = renderLinkedCards(
-    entry.citations,
+    activeEntry.citations,
     (citation) => `
       <article class="list-card">
         <a class="citation-title" href="${escapeHtml(citation.url || "#")}">${escapeHtml(citation.short_citation || "Untitled source")}</a>
@@ -784,7 +854,7 @@ function renderEvidencePanel(entry) {
   );
 
   document.getElementById("story-list").innerHTML = renderLinkedCards(
-    entry.related_stories,
+    activeEntry.related_stories,
     (story) => `
       <article class="list-card">
         <a class="story-title-link" href="${escapeHtml(story.story_href || "#")}">${escapeHtml(story.display_title || "Story file")}</a>
@@ -873,7 +943,8 @@ function focusRoute(routeId) {
   if (!layer) {
     return;
   }
-  const entry = ENTRY_BY_SLUG.get(currentSlug);
+  const familyEntry = ENTRY_BY_SLUG.get(currentSlug);
+  const entry = familyEntry ? resolveActiveEntry(familyEntry) : null;
   const route = (entry?.spread_routes || []).find((item) => item.route_id === routeId);
   layer.setStyle({
     opacity: 0.98,
@@ -885,9 +956,14 @@ function focusRoute(routeId) {
   layer.openPopup();
 }
 
-function updateUrl(slug) {
+function updateUrl(slug, variantSlug) {
   const url = new URL(window.location.href);
   url.searchParams.set("pathogen", slug);
+  if (variantSlug) {
+    url.searchParams.set("variant", variantSlug);
+  } else {
+    url.searchParams.delete("variant");
+  }
   window.history.replaceState({}, "", url.toString());
 }
 
@@ -900,18 +976,45 @@ function selectIndex(nextIndex, options = {}) {
   const entry = ATLAS_ENTRIES[normalizedIndex];
   currentIndex = normalizedIndex;
   currentSlug = entry.slug;
+  const variants = variantsFor(entry);
+  if (variants.length) {
+    const requestedVariant = options.variantSlug || entry.default_variant_slug || variants[0].slug;
+    currentVariantSlug = variants.some((variant) => variant.slug === requestedVariant)
+      ? requestedVariant
+      : (entry.default_variant_slug || variants[0].slug);
+  } else {
+    currentVariantSlug = null;
+  }
+  const activeEntry = resolveActiveEntry(entry);
   scenarioBar.querySelectorAll(".scenario-btn").forEach((button) => {
     button.classList.toggle("active", button.dataset.pathogen === entry.slug);
   });
-  renderStoryPanel(entry);
-  renderEvidencePanel(entry);
-  drawEntry(entry);
-  if (entry.spread_routes?.length) {
-    focusRoute(entry.spread_routes[0].route_id);
+  renderStoryPanel(entry, activeEntry);
+  renderEvidencePanel(entry, activeEntry);
+  drawEntry(activeEntry);
+  if (activeEntry.spread_routes?.length) {
+    focusRoute(activeEntry.spread_routes[0].route_id);
   }
-  if (!options.fromRotation) {
-    updateUrl(entry.slug);
+  if (!options.fromRotation && !options.suppressUrl) {
+    updateUrl(entry.slug, currentVariantSlug);
   }
+  scheduleRotation();
+}
+
+function selectVariant(variantSlug) {
+  const entry = ENTRY_BY_SLUG.get(currentSlug);
+  if (!entry || !variantsFor(entry).length) {
+    return;
+  }
+  currentVariantSlug = variantSlug;
+  const activeEntry = resolveActiveEntry(entry);
+  renderStoryPanel(entry, activeEntry);
+  renderEvidencePanel(entry, activeEntry);
+  drawEntry(activeEntry);
+  if (activeEntry.spread_routes?.length) {
+    focusRoute(activeEntry.spread_routes[0].route_id);
+  }
+  updateUrl(entry.slug, currentVariantSlug);
   scheduleRotation();
 }
 
@@ -927,6 +1030,11 @@ function initialIndex() {
   return 0;
 }
 
+function initialVariantSlug() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get("variant");
+}
+
 function init() {
   if (!ATLAS_ENTRIES.length) {
     document.getElementById("story-title").textContent = "No atlas entries available";
@@ -935,7 +1043,7 @@ function init() {
     return;
   }
   renderScenarioButtons();
-  selectIndex(initialIndex());
+  selectIndex(initialIndex(), { variantSlug: initialVariantSlug(), suppressUrl: true });
 }
 
 document.addEventListener("visibilitychange", () => {

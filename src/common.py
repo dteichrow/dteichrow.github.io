@@ -126,6 +126,15 @@ def fetch_text(
     raise RuntimeError(f"Failed to fetch {url}")
 
 
+def fetch_json(
+    url: str,
+    timeout: int = 30,
+    attempts: int = 4,
+    headers: dict[str, str] | None = None,
+) -> Any:
+    return json.loads(fetch_text(url, timeout=timeout, attempts=attempts, headers=headers))
+
+
 def clean_text(value: str | None) -> str:
     if not value:
         return ""

@@ -35,6 +35,9 @@ PATHOGEN_ATLAS_COLORS = {
     "avian-influenza-h5n1": "#9b7bd8",
     "hantavirus": "#7aa96b",
     "dengue": "#c9a84c",
+    "malaria": "#5abf7c",
+    "tuberculosis": "#d98e5f",
+    "plague": "#b9754f",
 }
 PATHOGEN_STATUS_LABELS = {
     "consensus": "Consensus",
@@ -45,7 +48,7 @@ PATHOGEN_STATUS_LABELS = {
 PATHOGEN_WRITING_LABELS = {
     "direct": "Written here directly",
     "adjacent": "Adjacent writing",
-    "none": "No dedicated post yet",
+    "not_yet_written": "No dedicated post yet",
 }
 
 
@@ -759,9 +762,10 @@ def import_external_pathogen(docs_dir: Path, base_url: str) -> None:
     atlas_export = load_json(atlas_export_path)
     raw_entries = atlas_export.get("atlas", [])
     prepared_entries = []
-    for entry in raw_entries:
+
+    def rewrite_entry_links(entry: dict[str, Any], color: str) -> dict[str, Any]:
         prepared = dict(entry)
-        prepared["color"] = PATHOGEN_ATLAS_COLORS.get(prepared.get("slug"), "#c9a84c")
+        prepared["color"] = color
         prepared["status_label"] = PATHOGEN_STATUS_LABELS.get(prepared.get("status"), "Curated")
         prepared["writing_state_label"] = PATHOGEN_WRITING_LABELS.get(prepared.get("writing_state"), "Writing state pending")
         reference_path = prepared.get("reference_web_path") or prepared.get("reference_url")
@@ -775,6 +779,12 @@ def import_external_pathogen(docs_dir: Path, base_url: str) -> None:
                 story_copy["story_href"] = f"../../{story_path.lstrip('/')}"
             related_stories.append(story_copy)
         prepared["related_stories"] = related_stories
+        prepared["variants"] = [rewrite_entry_links(variant, color) for variant in prepared.get("variants", [])]
+        return prepared
+
+    for entry in raw_entries:
+        color = PATHOGEN_ATLAS_COLORS.get(entry.get("slug"), "#c9a84c")
+        prepared = rewrite_entry_links(entry, color)
         prepared_entries.append(prepared)
 
     data_dir = dest_root / "data"
