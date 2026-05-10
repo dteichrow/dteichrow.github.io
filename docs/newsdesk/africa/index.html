@@ -122,17 +122,111 @@
     flex: 0 0 auto;
     padding: 8px 12px;
     border-radius: 999px;
-    border: 1px solid rgba(187,169,143,0.78);
+    border: 1px solid rgba(187,169,143,0.72);
     color: #1b2836;
     text-decoration: none;
-    background: rgba(255,252,245,0.94);
+    background: rgba(255,252,245,0.76);
     font-size: 0.92rem;
+    font-weight: 500;
     white-space: nowrap;
   }
   .eoe-shell-links a.active {
-    background: rgba(31,91,137,0.10);
-    border-color: rgba(31,91,137,0.24);
-    color: #1f5b89;
+    background: rgba(255,252,245,0.88);
+    border-color: rgba(160,145,121,0.72);
+    color: #173046;
+    font-weight: 700;
+  }
+  /* Cleaner fix would live in the Pathogen Dispatch renderer, but this import-layer pass
+     keeps the simplification isolated to the umbrella site. */
+  .site-header,
+  .hero,
+  .panel,
+  .section-nav {
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  .site-header {
+    padding: 0 0 10px !important;
+    gap: 12px !important;
+  }
+  .site-header-title {
+    font-size: 0.94rem !important;
+    color: #42515e !important;
+  }
+  .site-nav,
+  .section-nav-links {
+    gap: 8px !important;
+  }
+  .site-nav-link,
+  .section-nav-link {
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #42515e !important;
+    font-weight: 500 !important;
+  }
+  .site-nav-link:hover,
+  .section-nav-link:hover {
+    background: transparent !important;
+    color: #173046 !important;
+    text-decoration: underline !important;
+  }
+  .site-nav-link.active {
+    color: #173046 !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+  }
+  .hero {
+    padding: 0 0 6px !important;
+    overflow: visible !important;
+  }
+  .hero::before,
+  .hero::after,
+  .panel::before,
+  .panel::after,
+  .site-header::before,
+  .site-header::after {
+    display: none !important;
+  }
+  .panel,
+  .panel-grid {
+    gap: 16px !important;
+  }
+  .panel > h2:first-child,
+  .panel > .muted-note:first-child {
+    margin-top: 0 !important;
+  }
+  .section-nav {
+    display: none !important;
+  }
+  .meta-row-plain {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .meta-inline,
+  .card-meta-text {
+    color: #42515e;
+    font: 500 0.86rem/1.55 "Avenir Next", "Helvetica Neue", sans-serif;
+  }
+  .card-meta-text {
+    margin: 0;
+  }
+  .atlas-status-pill,
+  .story-status-pill {
+    letter-spacing: 0.08em !important;
+    text-transform: uppercase !important;
+  }
+  .site-card .meta-row .badge {
+    max-width: none;
+  }
+  .link-pill {
+    background: rgba(255,252,245,0.92) !important;
   }
   @media (max-width: 760px) {
     body { padding-top: 118px !important; }
@@ -161,14 +255,13 @@
         <h1>Africa Watch</h1>
         <p class="subtitle">Outbreak developments across Africa, with regional signal prioritized over generic system context.</p>
       </section>
-      <nav class="section-nav panel utility-panel" aria-label="Section navigation"><div class="section-nav-label">On this page</div><div class="section-nav-links"><a class="section-nav-link" href="#tracked-files">Tracked Files</a><a class="section-nav-link" href="#latest-signals">Latest Signals</a><a class="section-nav-link" href="#reference-links">Reference</a><a class="section-nav-link" href="#archive-links">Archive</a></div></nav>
       <section class="panel" id="tracked-files">
         <h2>Tracked Files</h2>
-        <div class="story-grid"><article class="site-card feature-card"><div class="kicker">Outbreak file</div><h3><a href="/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html">Measles transmission and vaccination</a></h3><p>arabnews.jp now foregrounds vaccination or vaccine policy in the story.</p><div class="meta-row"><span class="badge accent">5 item(s)</span><span class="badge">5 source(s)</span><span class="badge">Expanding coverage</span><span class="badge">Africa</span></div></article></div>
+        <div class="story-grid"><article class="site-card feature-card"><div class="kicker">Outbreak file</div><h3><a href="/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html">Measles transmission and vaccination</a></h3><p>arabnews.jp now foregrounds vaccination or vaccine policy in the story.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Expanding coverage</span><span class="meta-inline">Africa</span></div></article></div>
       </section>
       <section class="panel" id="latest-signals">
         <h2>Latest Signals</h2>
-        <div class="card-grid"><article class="site-card"><div class="kicker">Publisher coverage</div><h3><a href="https://www.goodthingsguy.com/malaria-south-africa-goodbye-festive/">South Africans urged to take extra precautions against malaria when travelling over the festive season</a></h3><p>“While the number of malaria cases reported in 2018 to date from South Africa are down compared to 2017, and malaria transmissions remain low in Swaziland, Namibia and Botswana, malaria still remains a year-round risk in countries like Mozambique and their surrounding areas.” Says Blumberg. Goodbye Malaria , an organisation fighting malaria in Southern Africa has consulted with Professor Lucille Blumberg, Deputy Director at the National Institute of Communicable Diseases ( NICD ) to impart some wisdom for those travelling through Southern Africa this month. Malaria season in Southern Africa is from September to the end of May – the height of which is January to March.</p><div class="meta-row"><span class="badge">Good Things Guy</span><span class="badge">Africa</span><span class="badge">2026-05-10T05:19+00:00</span><span class="badge">General outlet</span><span class="badge">Live fetch</span><span class="badge">Resolved article</span></div></article><article class="site-card"><div class="kicker">Official update</div><h3><a href="https://www.afro.who.int/publications/webinar-listening-communities-through-ai-cholera-response">Webinar | Listening to communities through AI for cholera response</a></h3><p>During this session, AIRA will share how AI-supported social listening is used to: Track infodemic trends across countries Identify key drivers such as trust, water and sanitation concerns, and vaccine perceptions Inform evidence-based risk communication and community engagement (RCCE) strategies Support countries with actionable insights and ready-to-use content This webinar will also highlight experiences from country and regional levels, demonstrating how data-driven listening can strengthen public health responses . 👉 Join us and be part of the conversation.</p><div class="meta-row"><span class="badge">WHO Regional Office for Africa</span><span class="badge">Africa</span><span class="badge">2026-05-05T10:17+00:00</span><span class="badge">Official agency</span><span class="badge">Live fetch</span><span class="badge">Wrapper only</span></div></article><article class="site-card"><div class="kicker">Publisher coverage</div><h3><a href="https://www.arabnews.jp/en/middle-east/article_169830/">How conflict is driving measles outbreaks in the Middle East and North Africa</a></h3><p>Save the Children says ongoing conflict across the Middle East and North Africa is pushing that number higher at a frightening rate and increasing the risk of preventable deaths. Limited detail was available from feed metadata alone.</p><div class="meta-row"><span class="badge">arabnews.jp</span><span class="badge">Africa</span><span class="badge">2026-05-10T01:05+00:00</span><span class="badge">General outlet</span><span class="badge">Live fetch</span><span class="badge">Resolved article</span></div></article><article class="site-card"><div class="kicker">Publisher coverage</div><h3><a href="https://www.cbs19news.com/news/officials-investigate-case-of-measles-in-the-central-region/article_e6b1c226-cf11-49ac-9d83-f3c3eec360b9.html">Officials investigate case of measles in the Central Region</a></h3><p>Updated: May 10, 2026 @ 5:10 pm Full Forecast Charlottesville, VA (22901) Today A steady rain early...then remaining cloudy with a few showers. Limited detail was available from feed metadata alone.</p><div class="meta-row"><span class="badge">CBS 19 News</span><span class="badge">Africa</span><span class="badge">2026-05-09T02:57+00:00</span><span class="badge">General outlet</span><span class="badge">Live fetch</span><span class="badge">Resolved article</span></div></article></div>
+        <div class="card-grid"><article class="site-card"><div class="kicker">Publisher coverage</div><h3><a href="https://www.goodthingsguy.com/malaria-south-africa-goodbye-festive/">South Africans urged to take extra precautions against malaria when travelling over the festive season</a></h3><p>“While the number of malaria cases reported in 2018 to date from South Africa are down compared to 2017, and malaria transmissions remain low in Swaziland, Namibia and Botswana, malaria still remains a year-round risk in countries like Mozambique and their surrounding areas.” Says Blumberg. Goodbye Malaria , an organisation fighting malaria in Southern Africa has consulted with Professor Lucille Blumberg, Deputy Director at the National Institute of Communicable Diseases ( NICD ) to impart some wisdom for those travelling through Southern Africa this month. Malaria season in Southern Africa is from September to the end of May – the height of which is January to March.</p><div class="meta-row meta-row-plain"><span class="meta-inline">Good Things Guy · 2026-05-10T05:19+00:00</span></div></article><article class="site-card"><div class="kicker">Official update</div><h3><a href="https://www.afro.who.int/publications/webinar-listening-communities-through-ai-cholera-response">Webinar | Listening to communities through AI for cholera response</a></h3><p>During this session, AIRA will share how AI-supported social listening is used to: Track infodemic trends across countries Identify key drivers such as trust, water and sanitation concerns, and vaccine perceptions Inform evidence-based risk communication and community engagement (RCCE) strategies Support countries with actionable insights and ready-to-use content This webinar will also highlight experiences from country and regional levels, demonstrating how data-driven listening can strengthen public health responses . 👉 Join us and be part of the conversation.</p><div class="meta-row meta-row-plain"><span class="meta-inline">WHO Regional Office for Africa · 2026-05-05T10:17+00:00</span></div></article><article class="site-card"><div class="kicker">Publisher coverage</div><h3><a href="https://www.arabnews.jp/en/middle-east/article_169830/">How conflict is driving measles outbreaks in the Middle East and North Africa</a></h3><p>Save the Children says ongoing conflict across the Middle East and North Africa is pushing that number higher at a frightening rate and increasing the risk of preventable deaths. Limited detail was available from feed metadata alone.</p><div class="meta-row meta-row-plain"><span class="meta-inline">arabnews.jp · 2026-05-10T01:05+00:00</span></div></article><article class="site-card"><div class="kicker">Publisher coverage</div><h3><a href="https://www.cbs19news.com/news/officials-investigate-case-of-measles-in-the-central-region/article_e6b1c226-cf11-49ac-9d83-f3c3eec360b9.html">Officials investigate case of measles in the Central Region</a></h3><p>Updated: May 10, 2026 @ 5:10 pm Full Forecast Charlottesville, VA (22901) Today A steady rain early...then remaining cloudy with a few showers. Limited detail was available from feed metadata alone.</p><div class="meta-row meta-row-plain"><span class="meta-inline">CBS 19 News · 2026-05-09T02:57+00:00</span></div></article></div>
       </section>
       <section class="panel-grid">
         <section class="panel" id="reference-links">

@@ -122,17 +122,111 @@
     flex: 0 0 auto;
     padding: 8px 12px;
     border-radius: 999px;
-    border: 1px solid rgba(187,169,143,0.78);
+    border: 1px solid rgba(187,169,143,0.72);
     color: #1b2836;
     text-decoration: none;
-    background: rgba(255,252,245,0.94);
+    background: rgba(255,252,245,0.76);
     font-size: 0.92rem;
+    font-weight: 500;
     white-space: nowrap;
   }
   .eoe-shell-links a.active {
-    background: rgba(31,91,137,0.10);
-    border-color: rgba(31,91,137,0.24);
-    color: #1f5b89;
+    background: rgba(255,252,245,0.88);
+    border-color: rgba(160,145,121,0.72);
+    color: #173046;
+    font-weight: 700;
+  }
+  /* Cleaner fix would live in the Pathogen Dispatch renderer, but this import-layer pass
+     keeps the simplification isolated to the umbrella site. */
+  .site-header,
+  .hero,
+  .panel,
+  .section-nav {
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  .site-header {
+    padding: 0 0 10px !important;
+    gap: 12px !important;
+  }
+  .site-header-title {
+    font-size: 0.94rem !important;
+    color: #42515e !important;
+  }
+  .site-nav,
+  .section-nav-links {
+    gap: 8px !important;
+  }
+  .site-nav-link,
+  .section-nav-link {
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #42515e !important;
+    font-weight: 500 !important;
+  }
+  .site-nav-link:hover,
+  .section-nav-link:hover {
+    background: transparent !important;
+    color: #173046 !important;
+    text-decoration: underline !important;
+  }
+  .site-nav-link.active {
+    color: #173046 !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+  }
+  .hero {
+    padding: 0 0 6px !important;
+    overflow: visible !important;
+  }
+  .hero::before,
+  .hero::after,
+  .panel::before,
+  .panel::after,
+  .site-header::before,
+  .site-header::after {
+    display: none !important;
+  }
+  .panel,
+  .panel-grid {
+    gap: 16px !important;
+  }
+  .panel > h2:first-child,
+  .panel > .muted-note:first-child {
+    margin-top: 0 !important;
+  }
+  .section-nav {
+    display: none !important;
+  }
+  .meta-row-plain {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .meta-inline,
+  .card-meta-text {
+    color: #42515e;
+    font: 500 0.86rem/1.55 "Avenir Next", "Helvetica Neue", sans-serif;
+  }
+  .card-meta-text {
+    margin: 0;
+  }
+  .atlas-status-pill,
+  .story-status-pill {
+    letter-spacing: 0.08em !important;
+    text-transform: uppercase !important;
+  }
+  .site-card .meta-row .badge {
+    max-width: none;
+  }
+  .link-pill {
+    background: rgba(255,252,245,0.92) !important;
   }
   @media (max-width: 760px) {
     body { padding-top: 118px !important; }
@@ -161,11 +255,10 @@
         <h1>Research Brief</h1>
         <p class="subtitle">Papers, preprints, and research-linked reporting that adds context beyond the daily outbreak stream.</p>
       </section>
-      <nav class="section-nav panel utility-panel" aria-label="Section navigation"><div class="section-nav-label">On this page</div><div class="section-nav-links"><a class="section-nav-link" href="#latest-papers">Latest Papers And Preprints</a><a class="section-nav-link" href="#virology-evolution">Virology + Evolution</a><a class="section-nav-link" href="#research-linked-files">Research-Linked Active Files</a><a class="section-nav-link" href="#reference-links">Disease Sheets</a><a class="section-nav-link" href="#archive-links">Archive</a></div></nav>
       <section class="panel" id="latest-papers">
         <h2>Latest Papers And Preprints</h2>
         <p class="muted-note">Research that adds mechanism, surveillance, transmission, or outbreak context beyond the daily news stream.</p>
-        <div class="card-grid"><article class="site-card"><div class="kicker">Journal article</div><h3><a href="https://pubmed.ncbi.nlm.nih.gov/42089435/">Recalcitrant tinea infections due to Trichophyton indotineae in the United States (2025-2026): a retrospective case series identified by real-time PCR.</a></h3><p>These gaps include the use of topical corticosteroids, lack of itraconazole use (100-200 mg/day for 6-8 weeks or longer) as first-line treatment, and prescribing fixed, short treatment durations. All patients (median age: 54; 3 males and 2 females) reported recent travel to India or Nepal, except one, who was the spouse of a patient who had traveled to India. Two different SQLE substitutions were detected, F397L ( N = 2) and L393F ( N = 1), which are common among terbinafine-resistant T.</p><p><strong>Source:</strong> The Journal of dermatological treatment</p><p><strong>Why it matters:</strong> Useful for mechanism, transmission, or surveillance context beyond the daily story file.</p><p><strong>Evidence caveat:</strong> Interpret in light of study design, setting, sample size, and how directly the findings travel to the current outbreak picture.</p><div class="meta-row"><span class="badge">2026-05-06T00:00</span><span class="badge">Live fetch</span><span class="badge">DOI: 10.1080/09546634.2026.2663646</span><a class="link-pill" href="https://pubmed.ncbi.nlm.nih.gov/42089435/">Abstract</a></div></article><article class="site-card"><div class="kicker">Journal article</div><h3><a href="https://pubmed.ncbi.nlm.nih.gov/42100896/">Comparative analysis of viral biological characteristics and pathogenicity of representative prevalent avian reovirus strains from genotypes I to V.</a></h3><p>This points to severe immune activation and a high risk of joint injury. Immunologically, genotypes I and IV triggered strong early pro-inflammatory cytokine responses and significantly upregulated MMP13 and Wnt14 at 7 dpi. Phylogenetic analysis of these isolates and field strains in China based on the σC gene revealed co-circulation of multiple genotypes (predominantly I and II), with epidemic strains actively evolving and genetically distant from the S1133 vaccine.</p><p><strong>Source:</strong> Virulence</p><p><strong>Why it matters:</strong> Useful for mechanism, transmission, or surveillance context beyond the daily story file.</p><p><strong>Evidence caveat:</strong> Interpret in light of study design, setting, sample size, and how directly the findings travel to the current outbreak picture.</p><div class="meta-row"><span class="badge">2026-05-08T00:00</span><span class="badge">Live fetch</span><span class="badge">DOI: 10.1080/21505594.2026.2670070</span><a class="link-pill" href="https://pubmed.ncbi.nlm.nih.gov/42100896/">Abstract</a></div></article></div>
+        <div class="card-grid"><article class="site-card"><div class="kicker">Journal article</div><h3><a href="https://pubmed.ncbi.nlm.nih.gov/42089435/">Recalcitrant tinea infections due to Trichophyton indotineae in the United States (2025-2026): a retrospective case series identified by real-time PCR.</a></h3><p>These gaps include the use of topical corticosteroids, lack of itraconazole use (100-200 mg/day for 6-8 weeks or longer) as first-line treatment, and prescribing fixed, short treatment durations. All patients (median age: 54; 3 males and 2 females) reported recent travel to India or Nepal, except one, who was the spouse of a patient who had traveled to India. Two different SQLE substitutions were detected, F397L ( N = 2) and L393F ( N = 1), which are common among terbinafine-resistant T.</p><p><strong>Source:</strong> The Journal of dermatological treatment</p><p><strong>Why it matters:</strong> Useful for mechanism, transmission, or surveillance context beyond the daily story file.</p><p><strong>Evidence caveat:</strong> Interpret in light of study design, setting, sample size, and how directly the findings travel to the current outbreak picture.</p><div class="meta-row meta-row-plain"><span class="meta-inline">2026-05-06T00:00</span></div><p class="card-meta-text">DOI: 10.1080/09546634.2026.2663646</p><div class="meta-row"><a class="link-pill" href="https://pubmed.ncbi.nlm.nih.gov/42089435/">Abstract</a></div></article><article class="site-card"><div class="kicker">Journal article</div><h3><a href="https://pubmed.ncbi.nlm.nih.gov/42100896/">Comparative analysis of viral biological characteristics and pathogenicity of representative prevalent avian reovirus strains from genotypes I to V.</a></h3><p>This points to severe immune activation and a high risk of joint injury. Immunologically, genotypes I and IV triggered strong early pro-inflammatory cytokine responses and significantly upregulated MMP13 and Wnt14 at 7 dpi. Phylogenetic analysis of these isolates and field strains in China based on the σC gene revealed co-circulation of multiple genotypes (predominantly I and II), with epidemic strains actively evolving and genetically distant from the S1133 vaccine.</p><p><strong>Source:</strong> Virulence</p><p><strong>Why it matters:</strong> Useful for mechanism, transmission, or surveillance context beyond the daily story file.</p><p><strong>Evidence caveat:</strong> Interpret in light of study design, setting, sample size, and how directly the findings travel to the current outbreak picture.</p><div class="meta-row meta-row-plain"><span class="meta-inline">2026-05-08T00:00</span></div><p class="card-meta-text">DOI: 10.1080/21505594.2026.2670070</p><div class="meta-row"><a class="link-pill" href="https://pubmed.ncbi.nlm.nih.gov/42100896/">Abstract</a></div></article></div>
       </section>
       <section class="panel" id="virology-evolution">
         <h2>Virology + Pathogen Evolution</h2>

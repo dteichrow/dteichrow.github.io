@@ -14,6 +14,11 @@ def test_transform_imported_html_rewrites_known_paths() -> None:
         <a href="./index.html">Home</a>
         <a href="./watch.html">Watch</a>
         <a href="../reference/thing.html">Ref</a>
+        <nav class="section-nav panel utility-panel"><div class="section-nav-links"><a href="#one">One</a></div></nav>
+        <article class="site-card feature-card">
+          <h3>Story</h3>
+          <div class="meta-row"><span class="badge accent">56 item(s)</span><span class="badge">26 source(s)</span><span class="badge">Expanding coverage</span><span class="badge">Global / Maritime</span></div>
+        </article>
         <script>fetch("../app_exports/manifest.json")</script>
       </body>
     </html>
@@ -25,6 +30,10 @@ def test_transform_imported_html_rewrites_known_paths() -> None:
     assert 'fetch("/app_exports/manifest.json")' in transformed
     assert "Edge of Epidemiology" in transformed
     assert "touch-action: pan-x" in transformed
+    assert "On this page" not in transformed
+    assert "56 item(s)" not in transformed
+    assert "26 source(s)" not in transformed
+    assert "Expanding coverage" in transformed
 
 
 def test_build_site_writes_core_routes(tmp_path, monkeypatch) -> None:
@@ -164,7 +173,8 @@ atlases:
     assert "Devin Teichrow" in home_text
     assert "public-facing outbreak reporting, disease atlases, and historical epidemiology" in home_text
     assert "UCLA-trained epidemiologist and neuroscience researcher at UC Irvine" in home_text
-    assert "hero-notebook" in home_text
+    assert "hero-notebook" not in home_text
+    assert "hero-status-line" in home_text
     assert "newsdesk-panel" in home_text
     assert "atlas-panel" in home_text
     assert "story-card" in home_text
@@ -173,8 +183,10 @@ atlases:
     assert "reference-card" in home_text
     assert "Read the essays" in home_text
     assert "Unified site" not in home_text
+    assert 'button primary' not in home_text
     about_text = (docs_dir / "about" / "index.html").read_text()
     assert "About Devin Teichrow and The Edge of Epidemiology" in about_text
+    assert "[Bio paragraph placeholder for manual editing.]" in about_text
     assert "diseases do not move only through bodies" in about_text
 
 

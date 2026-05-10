@@ -122,17 +122,111 @@
     flex: 0 0 auto;
     padding: 8px 12px;
     border-radius: 999px;
-    border: 1px solid rgba(187,169,143,0.78);
+    border: 1px solid rgba(187,169,143,0.72);
     color: #1b2836;
     text-decoration: none;
-    background: rgba(255,252,245,0.94);
+    background: rgba(255,252,245,0.76);
     font-size: 0.92rem;
+    font-weight: 500;
     white-space: nowrap;
   }
   .eoe-shell-links a.active {
-    background: rgba(31,91,137,0.10);
-    border-color: rgba(31,91,137,0.24);
-    color: #1f5b89;
+    background: rgba(255,252,245,0.88);
+    border-color: rgba(160,145,121,0.72);
+    color: #173046;
+    font-weight: 700;
+  }
+  /* Cleaner fix would live in the Pathogen Dispatch renderer, but this import-layer pass
+     keeps the simplification isolated to the umbrella site. */
+  .site-header,
+  .hero,
+  .panel,
+  .section-nav {
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  .site-header {
+    padding: 0 0 10px !important;
+    gap: 12px !important;
+  }
+  .site-header-title {
+    font-size: 0.94rem !important;
+    color: #42515e !important;
+  }
+  .site-nav,
+  .section-nav-links {
+    gap: 8px !important;
+  }
+  .site-nav-link,
+  .section-nav-link {
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #42515e !important;
+    font-weight: 500 !important;
+  }
+  .site-nav-link:hover,
+  .section-nav-link:hover {
+    background: transparent !important;
+    color: #173046 !important;
+    text-decoration: underline !important;
+  }
+  .site-nav-link.active {
+    color: #173046 !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+  }
+  .hero {
+    padding: 0 0 6px !important;
+    overflow: visible !important;
+  }
+  .hero::before,
+  .hero::after,
+  .panel::before,
+  .panel::after,
+  .site-header::before,
+  .site-header::after {
+    display: none !important;
+  }
+  .panel,
+  .panel-grid {
+    gap: 16px !important;
+  }
+  .panel > h2:first-child,
+  .panel > .muted-note:first-child {
+    margin-top: 0 !important;
+  }
+  .section-nav {
+    display: none !important;
+  }
+  .meta-row-plain {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .meta-inline,
+  .card-meta-text {
+    color: #42515e;
+    font: 500 0.86rem/1.55 "Avenir Next", "Helvetica Neue", sans-serif;
+  }
+  .card-meta-text {
+    margin: 0;
+  }
+  .atlas-status-pill,
+  .story-status-pill {
+    letter-spacing: 0.08em !important;
+    text-transform: uppercase !important;
+  }
+  .site-card .meta-row .badge {
+    max-width: none;
+  }
+  .link-pill {
+    background: rgba(255,252,245,0.92) !important;
   }
   @media (max-width: 760px) {
     body { padding-top: 118px !important; }
@@ -161,14 +255,13 @@
         <h1>Asia Watch</h1>
         <p class="subtitle">South Asia, Southeast Asia, and East Asia outbreak monitoring with broader horizon than the front page.</p>
       </section>
-      <nav class="section-nav panel utility-panel" aria-label="Section navigation"><div class="section-nav-label">On this page</div><div class="section-nav-links"><a class="section-nav-link" href="#tracked-files">Tracked Files</a><a class="section-nav-link" href="#latest-signals">Latest Signals</a><a class="section-nav-link" href="#reference-links">Reference</a><a class="section-nav-link" href="#archive-links">Archive</a></div></nav>
       <section class="panel" id="tracked-files">
         <h2>Tracked Files</h2>
         <div class="story-grid"><p class="empty-note">No tracked story files matched this desk in the current run.</p></div>
       </section>
       <section class="panel" id="latest-signals">
         <h2>Latest Signals</h2>
-        <div class="card-grid"><article class="site-card"><div class="kicker">Publisher coverage</div><h3><a href="https://outbreaknewstoday.substack.com/p/dengue-fever-in-sri-lanka-more-than">Dengue fever in Sri Lanka: More than 25,000 cases reported in 2026 to date</a></h3><p>In addition, there has been 12 dengue related deaths reported this year. According to the National Dengue Control Unit (NDCU) in Colombo, Sri Lanka, a total of 25,082 dengue cases have been reported across Sri Lanka so far in 2026. In all of 2025, the country saw 51,000 cases.</p><div class="meta-row"><span class="badge">Outbreak News Today</span><span class="badge">South Asia</span><span class="badge">2026-05-02T15:24+00:00</span><span class="badge">General outlet</span><span class="badge">Live fetch</span><span class="badge">Resolved article</span></div></article><article class="site-card"><div class="kicker">Publisher coverage</div><h3><a href="https://observerid.com/80-of-areas-free-of-malaria-indonesia-on-track-to-achieve-elimination-target-by-2030/">80% of areas free of malaria, Indonesia on track to achieve elimination target by 2030</a></h3><p>According to data from the Ministry of Health (Kemenkes), the number of reported malaria cases in 2025 was 706,297, marking a 30 percent increase compared to 2024, which recorded 543,965 cases. Jakarta, IO – By the end of 2025, 412 out of 514 regencies and cities (80 percent) and seven provinces in Indonesia are expected to be officially declared free of malaria transmission. “Regionally, 95 percent of all malaria cases in Indonesia—totaling 674,046 cases—were concentrated in Papua, which is composed of six provinces.</p><div class="meta-row"><span class="badge">Independent Observer</span><span class="badge">Southeast Asia</span><span class="badge">2026-05-10T02:00+00:00</span><span class="badge">General outlet</span><span class="badge">Live fetch</span><span class="badge">Resolved article</span></div></article><article class="site-card"><div class="kicker">Metadata-only signal</div><h3><a href="https://www.cnn.com/2026/05/07/world/hantavirus-ship-tenerife-outbreak-intl">From US to Singapore, countries race to track hantavirus</a></h3><p>Limited detail was available from feed metadata alone.</p><div class="meta-row"><span class="badge">CNN</span><span class="badge">Southeast Asia</span><span class="badge">2026-05-07T12:53+00:00</span><span class="badge">Metadata-only signal</span><span class="badge">Live fetch</span><span class="badge">Metadata only</span></div></article><article class="site-card"><div class="kicker">Publisher coverage</div><h3><a href="https://www.thestandard.com.hk/wellness/article/330831/Japans-measles-outbreak-surges-past-360-cases-Tokyo-and-Kanto-region-worst-hit">Japan's measles outbreak surges past 360 cases - Tokyo and Kanto region worst hit</a></h3><p>"However, in cases in Yamanashi Prefecture, the patients were all people whose history of having received two vaccine doses could not be confirmed." Professor Tsuyoshi Terashima from Tokyo Dental University points out that the measles virus is extremely contagious, with one infected person potentially spreading it to 12-14 others, compared to influenza which typically spreads to only 2-3 people. Of the 57 new cases reported this week, Tokyo accounted for 40, with the remaining sporadic cases in Kagoshima, Kanagawa, and other areas. As of mid-April, the cumulative number of infections nationwide had already surpassed 299, exceeding the total of 265 cases for all of last year.</p><div class="meta-row"><span class="badge">The Standard (HK)</span><span class="badge">East Asia</span><span class="badge">2026-05-09T04:00+00:00</span><span class="badge">General outlet</span><span class="badge">Live fetch</span><span class="badge">Resolved article</span></div></article><article class="site-card"><div class="kicker">Metadata-only signal</div><h3><a href="https://dailyprogress.com/news/local/business/health-care/article_5a28324d-d284-4675-b94a-3c51876cdeb2.html">Measles case confirmed in Buckingham County</a></h3><p>Limited detail was available from feed metadata alone.</p><div class="meta-row"><span class="badge">The Daily Progress</span><span class="badge">South Asia</span><span class="badge">2026-05-09T01:27+00:00</span><span class="badge">Metadata-only signal</span><span class="badge">Live fetch</span><span class="badge">Metadata only</span></div></article></div>
+        <div class="card-grid"><article class="site-card"><div class="kicker">Publisher coverage</div><h3><a href="https://outbreaknewstoday.substack.com/p/dengue-fever-in-sri-lanka-more-than">Dengue fever in Sri Lanka: More than 25,000 cases reported in 2026 to date</a></h3><p>In addition, there has been 12 dengue related deaths reported this year. According to the National Dengue Control Unit (NDCU) in Colombo, Sri Lanka, a total of 25,082 dengue cases have been reported across Sri Lanka so far in 2026. In all of 2025, the country saw 51,000 cases.</p><div class="meta-row meta-row-plain"><span class="meta-inline">Outbreak News Today · 2026-05-02T15:24+00:00</span></div></article><article class="site-card"><div class="kicker">Publisher coverage</div><h3><a href="https://observerid.com/80-of-areas-free-of-malaria-indonesia-on-track-to-achieve-elimination-target-by-2030/">80% of areas free of malaria, Indonesia on track to achieve elimination target by 2030</a></h3><p>According to data from the Ministry of Health (Kemenkes), the number of reported malaria cases in 2025 was 706,297, marking a 30 percent increase compared to 2024, which recorded 543,965 cases. Jakarta, IO – By the end of 2025, 412 out of 514 regencies and cities (80 percent) and seven provinces in Indonesia are expected to be officially declared free of malaria transmission. “Regionally, 95 percent of all malaria cases in Indonesia—totaling 674,046 cases—were concentrated in Papua, which is composed of six provinces.</p><div class="meta-row meta-row-plain"><span class="meta-inline">Independent Observer · 2026-05-10T02:00+00:00</span></div></article><article class="site-card"><div class="kicker">Metadata-only signal</div><h3><a href="https://www.cnn.com/2026/05/07/world/hantavirus-ship-tenerife-outbreak-intl">From US to Singapore, countries race to track hantavirus</a></h3><p>Limited detail was available from feed metadata alone.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Metadata-only signal</span><span class="meta-inline">CNN · 2026-05-07T12:53+00:00</span></div></article><article class="site-card"><div class="kicker">Publisher coverage</div><h3><a href="https://www.thestandard.com.hk/wellness/article/330831/Japans-measles-outbreak-surges-past-360-cases-Tokyo-and-Kanto-region-worst-hit">Japan's measles outbreak surges past 360 cases - Tokyo and Kanto region worst hit</a></h3><p>"However, in cases in Yamanashi Prefecture, the patients were all people whose history of having received two vaccine doses could not be confirmed." Professor Tsuyoshi Terashima from Tokyo Dental University points out that the measles virus is extremely contagious, with one infected person potentially spreading it to 12-14 others, compared to influenza which typically spreads to only 2-3 people. Of the 57 new cases reported this week, Tokyo accounted for 40, with the remaining sporadic cases in Kagoshima, Kanagawa, and other areas. As of mid-April, the cumulative number of infections nationwide had already surpassed 299, exceeding the total of 265 cases for all of last year.</p><div class="meta-row meta-row-plain"><span class="meta-inline">The Standard (HK) · 2026-05-09T04:00+00:00</span></div></article><article class="site-card"><div class="kicker">Metadata-only signal</div><h3><a href="https://dailyprogress.com/news/local/business/health-care/article_5a28324d-d284-4675-b94a-3c51876cdeb2.html">Measles case confirmed in Buckingham County</a></h3><p>Limited detail was available from feed metadata alone.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Metadata-only signal</span><span class="meta-inline">The Daily Progress · 2026-05-09T01:27+00:00</span></div></article></div>
       </section>
       <section class="panel-grid">
         <section class="panel" id="reference-links">
