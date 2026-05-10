@@ -195,8 +195,9 @@ def render_home(posts: list[dict[str, Any]], atlases: list[dict[str, Any]], late
     hero = f"""
       <section class="hero">
         <p class="kicker">Devin Teichrow</p>
-        <h2 class="hero-title">I&apos;m an epidemiologist building outbreak reporting, disease atlases, and historical epidemiology in public.</h2>
-        <p class="subtitle">The Edge of Epidemiology is my home for source-first infectious-disease reporting, geography-first atlas work, field guides, and essays about how disease moves through history, place, and power.</p>
+        <h2 class="hero-title">I&apos;m an epidemiologist building public-facing outbreak reporting, disease atlases, and historical epidemiology.</h2>
+        <p class="subtitle">I&apos;m Devin Teichrow, a UCLA-trained epidemiologist and neuroscience researcher at UC Irvine working on migraine and Alzheimer&apos;s Disease and Related Dementias. My public-facing work focuses on how disease moves through populations, history, war, ecology, and infrastructure, including everything from modern outbreak reporting to historical epidemic reconstruction and interactive disease mapping.</p>
+        <p class="subtitle">The Edge of Epidemiology is my home for longform essays, live outbreak coverage, disease atlases, methodological explainers, and projects exploring the intersection of epidemiology, geography, and history.</p>
         <div class="hero-actions">
           <a class="button primary" href="{html.escape(link_for(base_url, 'newsdesk/'))}">Open the newsdesk</a>
           <a class="button secondary" href="{html.escape(link_for(base_url, 'atlases/'))}">Browse the atlases</a>

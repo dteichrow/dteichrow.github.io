@@ -162,6 +162,8 @@ atlases:
     assert (docs_dir / "app_exports" / "posts.json").exists()
     home_text = (docs_dir / "index.html").read_text()
     assert "Devin Teichrow" in home_text
+    assert "public-facing outbreak reporting, disease atlases, and historical epidemiology" in home_text
+    assert "UCLA-trained epidemiologist and neuroscience researcher at UC Irvine" in home_text
     assert "Read the essays" in home_text
     assert "Unified site" not in home_text
     about_text = (docs_dir / "about" / "index.html").read_text()
