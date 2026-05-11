@@ -447,6 +447,48 @@ def render_stories_index(stories: list[dict[str, Any]], base_url: str) -> str:
     )
 
 
+def title_from_story_filename(filename: str) -> str:
+    stem = Path(filename).stem
+    slug = re.sub(r"^story_[0-9a-f]+-?", "", stem)
+    if not slug:
+        return "Archived story file"
+    return slug.replace("-", " ").title()
+
+
+def render_archived_story_placeholder(filename: str, base_url: str) -> str:
+    story_title = title_from_story_filename(filename)
+    return base_html(
+        title=f"{story_title} | Archived story file",
+        description="Archived Pathogen Dispatch story reference.",
+        active="newsdesk",
+        base_url=base_url,
+        body=f"""
+      <section class="hero">
+        <p class="kicker">Archived story file</p>
+        <h2 class="hero-title">{html.escape(story_title)}</h2>
+        <p class="subtitle">This story appeared in an earlier Pathogen Dispatch archive snapshot, but it is not part of the current active story export. The archive link is preserved so older daily pages do not break.</p>
+        <div class="hero-actions">
+          <a class="button secondary" href="{html.escape(link_for(base_url, "stories/"))}">Current story files</a>
+          <a class="button secondary" href="{html.escape(link_for(base_url, "newsdesk/archive/"))}">Newsdesk archive</a>
+        </div>
+      </section>
+    """,
+    )
+
+
+def ensure_archived_story_placeholders(docs_dir: Path, base_url: str) -> None:
+    story_hrefs: set[str] = set()
+    for page in (docs_dir / "newsdesk").rglob("*.html"):
+        page_text = page.read_text()
+        story_hrefs.update(re.findall(r'href="[^"]*/stories/([^"#?]+\.html)', page_text))
+    for filename in sorted(story_hrefs):
+        dest = docs_dir / "stories" / filename
+        if dest.exists():
+            continue
+        ensure_dir(dest.parent)
+        dest.write_text(render_archived_story_placeholder(filename, base_url))
+
+
 def render_historical_page(posts: list[dict[str, Any]], atlases: list[dict[str, Any]], base_url: str) -> str:
     selected = [
         post for post in posts
@@ -862,25 +904,39 @@ def rewrite_imported_paths(html_text: str, base_url: str) -> str:
     replacements = {
         './index.html': link_for(base_url, "newsdesk/"),
         './notebook.html': link_for(base_url, "notebook/"),
+        '../notebook.html': link_for(base_url, "notebook/"),
         './atlas.html': link_for(base_url, "atlases/pathogen/"),
+        '../atlas.html': link_for(base_url, "atlases/pathogen/"),
         './watch.html': link_for(base_url, "newsdesk/watch/"),
+        '../watch.html': link_for(base_url, "newsdesk/watch/"),
         './africa.html': link_for(base_url, "newsdesk/africa/"),
+        '../africa.html': link_for(base_url, "newsdesk/africa/"),
         './asia.html': link_for(base_url, "newsdesk/asia/"),
+        '../asia.html': link_for(base_url, "newsdesk/asia/"),
         './research.html': link_for(base_url, "newsdesk/research/"),
+        '../research.html': link_for(base_url, "newsdesk/research/"),
         './official.html': link_for(base_url, "newsdesk/official/"),
+        '../official.html': link_for(base_url, "newsdesk/official/"),
         './historical.html': link_for(base_url, "newsdesk/historical/"),
+        '../historical.html': link_for(base_url, "newsdesk/historical/"),
         './archive/index.html': link_for(base_url, "newsdesk/archive/"),
+        '../archive/index.html': link_for(base_url, "newsdesk/archive/"),
         './stories/': link_for(base_url, "stories/"),
         '../stories/': link_for(base_url, "stories/"),
+        '../../stories/': link_for(base_url, "stories/"),
         './reference/': link_for(base_url, "reference/"),
         '../reference/': link_for(base_url, "reference/"),
+        '../../reference/': link_for(base_url, "reference/"),
         './app_exports/': link_for(base_url, "app_exports/"),
         '../app_exports/': link_for(base_url, "app_exports/"),
+        '../../app_exports/': link_for(base_url, "app_exports/"),
         './2026/': link_for(base_url, "newsdesk/2026/"),
         '../2026/': link_for(base_url, "newsdesk/2026/"),
+        '../../2026/': link_for(base_url, "newsdesk/2026/"),
         './latest.html': link_for(base_url, "newsdesk/latest.html"),
         './latest.md': link_for(base_url, "newsdesk/latest.md"),
         '../latest.html': link_for(base_url, "newsdesk/latest.html"),
+        '../../latest.html': link_for(base_url, "newsdesk/latest.html"),
     }
     for needle, replacement in replacements.items():
         html_text = html_text.replace(f'href="{needle}', f'href="{replacement}')
@@ -1057,10 +1113,26 @@ def remove_imported_section_nav(html_text: str) -> str:
     return re.sub(r'\s*<nav class="section-nav panel utility-panel".*?</nav>', "", html_text, flags=re.S)
 
 
+def ensure_meta_description(html_text: str, description: str) -> str:
+    if '<meta name="description"' in html_text:
+        return html_text
+    return html_text.replace(
+        "</head>",
+        f'<meta name="description" content="{html.escape(description)}" /></head>',
+        1,
+    )
+
+
 def transform_imported_html(html_text: str, *, active: str, base_url: str) -> str:
     html_text = rewrite_imported_paths(html_text, base_url)
     html_text = remove_imported_section_nav(html_text)
     html_text = simplify_imported_cards(html_text)
+    description = (
+        "Source-first outbreak reporting from The Pathogen Dispatch."
+        if active == "newsdesk"
+        else "Edge of Epidemiology publication page."
+    )
+    html_text = ensure_meta_description(html_text, description)
     html_text = html_text.replace("</head>", f"{shell_wrapper_css(base_url)}</head>")
     html_text = html_text.replace("<body>", f"<body>{imported_shell_nav(active, base_url)}", 1)
     return html_text
@@ -1075,12 +1147,11 @@ def import_epidossier_public(docs_dir: Path, base_url: str) -> dict[str, Any]:
         shutil.rmtree(app_exports_dest)
     shutil.copytree(app_exports_src, app_exports_dest)
 
-    direct_copy = {
-        source_docs / "latest.html": docs_dir / "newsdesk" / "latest.html",
-        source_docs / "latest.md": docs_dir / "newsdesk" / "latest.md",
-    }
-    for src, dest in direct_copy.items():
-        import_copy(src, dest)
+    latest_html_dest = docs_dir / "newsdesk" / "latest.html"
+    latest_html = transform_imported_html((source_docs / "latest.html").read_text(), active="newsdesk", base_url=base_url)
+    ensure_dir(latest_html_dest.parent)
+    latest_html_dest.write_text(latest_html)
+    import_copy(source_docs / "latest.md", docs_dir / "newsdesk" / "latest.md")
 
     html_pages = [
         (source_docs / "index.html", docs_dir / "newsdesk" / "index.html", "newsdesk"),
@@ -1117,6 +1188,7 @@ def import_epidossier_public(docs_dir: Path, base_url: str) -> dict[str, Any]:
             ensure_dir(dest.parent)
             dest.write_text(transformed)
 
+    ensure_archived_story_placeholders(docs_dir, base_url)
     latest = load_json(source_docs / "app_exports" / "latest.json")
     return latest
 
@@ -1238,6 +1310,10 @@ def inject_atlas_overlay(
     links_top: str | None = None,
 ) -> None:
     html_text = ATLAS_OVERLAY_RE.sub("", index_path.read_text())
+    html_text = ensure_meta_description(
+        html_text,
+        "Interactive atlas from The Edge of Epidemiology.",
+    )
     overlay, nav = atlas_overlay_html(
         home_href=home_href,
         atlases_href=atlases_href,

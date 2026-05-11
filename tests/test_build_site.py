@@ -14,6 +14,10 @@ def test_transform_imported_html_rewrites_known_paths() -> None:
         <a href="./index.html">Home</a>
         <a href="./watch.html">Watch</a>
         <a href="../reference/thing.html">Ref</a>
+        <a href="../../reference/deep.html">Deep Ref</a>
+        <a href="../../stories/deep-story.html">Deep Story</a>
+        <a href="../atlas.html?pathogen=cholera">Atlas Query</a>
+        <a href="../archive/index.html">Archive</a>
         <nav class="section-nav panel utility-panel"><div class="section-nav-links"><a href="#one">One</a></div></nav>
         <article class="site-card feature-card">
           <h3>Story</h3>
@@ -27,7 +31,12 @@ def test_transform_imported_html_rewrites_known_paths() -> None:
     assert 'href="/newsdesk/"' in transformed
     assert 'href="/newsdesk/watch/"' in transformed
     assert 'href="/reference/thing.html"' in transformed
+    assert 'href="/reference/deep.html"' in transformed
+    assert 'href="/stories/deep-story.html"' in transformed
+    assert 'href="/atlases/pathogen/?pathogen=cholera"' in transformed
+    assert 'href="/newsdesk/archive/"' in transformed
     assert 'fetch("/app_exports/manifest.json")' in transformed
+    assert '<meta name="description"' in transformed
     assert "Edge of Epidemiology" in transformed
     assert "touch-action: pan-x" in transformed
     assert "The Edge of Epidemiology" in transformed
@@ -274,3 +283,20 @@ def test_import_external_pathogen_writes_js_payload(tmp_path, monkeypatch) -> No
     assert '"story_href": "../../stories/demo-story.html"' in data_text
     assert '"slug": "urban-yellow-fever"' in data_text
     assert '"writing_state_label": "Adjacent writing"' in data_text
+
+
+def test_archived_story_placeholders_cover_stale_archive_links(tmp_path) -> None:
+    docs_dir = tmp_path / "docs"
+    archive_page = docs_dir / "newsdesk" / "2026" / "05" / "2026-05-08.html"
+    archive_page.parent.mkdir(parents=True)
+    archive_page.write_text(
+        '<a href="/stories/story_abc123-tuberculosis-and-antimicrobial-resistance.html">Old story</a>'
+    )
+
+    build_site.ensure_archived_story_placeholders(docs_dir, "/")
+
+    placeholder = docs_dir / "stories" / "story_abc123-tuberculosis-and-antimicrobial-resistance.html"
+    assert placeholder.exists()
+    text = placeholder.read_text()
+    assert "Archived story file" in text
+    assert "Tuberculosis And Antimicrobial Resistance" in text
