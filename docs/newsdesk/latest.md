@@ -1,40 +1,37 @@
 # Daily Infectious Disease & Epidemiology Dossier
-Date: 2026-05-10
-Generated at: 2026-05-10T22:21
-Search window: 7 day(s) ending 2026-05-10
+Date: 2026-05-11
+Generated at: 2026-05-11T06:35
+Search window: 7 day(s) ending 2026-05-11
 
 ## Executive scan
 - [ECDC publishes guidance for the management of passengers linked to the Andes hantavirus outbreak on cruise ship](https://www.ecdc.europa.eu/en/news-events/ecdc-publishes-guidance-management-passengers-linked-andes-hantavirus-outbreak-cruise) (ECDC News; 2026-05-09T15:10+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
 - [Fatal Human Case of Highly Pathogenic Avian Influenza A(H5N5) in a Backyard Flock Owner](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765373) (CDC MMWR; 2026-05-07T17:00+00:00; Occupational and environmental epidemiology; relevance 5/5)
 - [Serologic Evidence of Highly Pathogenic Avian Influenza A(H5N1) Virus Infection in a Veterinary Professional Exposed to an Infected Domestic Cat - Los Angeles County, California, December 2024-January 2025](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765372) (CDC MMWR; 2026-05-07T17:00+00:00; Occupational and environmental epidemiology; relevance 5/5)
-- [59 000 deaths: Europe off track for Sustainable Development Goal targets for HIV, tuberculosis, viral hepatitis, and STIs](https://www.ecdc.europa.eu/en/news-events/59-000-deaths-europe-track-sustainable-development-goal-targets-hiv-tuberculosis-viral) (ECDC News; 2026-05-07T09:57+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
 - [Cruise ship hantavirus outbreak: ECDC response activated](https://www.ecdc.europa.eu/en/news-events/cruise-ship-hantavirus-outbreak-ecdc-response-activated) (ECDC News; 2026-05-06T18:39+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
+- [Hantavirus outbreak on cruise ship under investigation: risk for Europe very low](https://www.ecdc.europa.eu/en/news-events/hantavirus-outbreak-cruise-ship-under-investigation-risk-europe-very-low) (ECDC News; 2026-05-05T15:17+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
 - [Webinar | Listening to communities through AI for cholera response](https://www.afro.who.int/publications/webinar-listening-communities-through-ai-cholera-response) (WHO Regional Office for Africa; 2026-05-05T10:17+00:00; Outbreaks and emerging infections; relevance 5/5)
-- [Suspected hantavirus outbreak on cruise ship under investigation: risk for Europeans very low](https://www.ecdc.europa.eu/en/news-events/suspected-hantavirus-outbreak-cruise-ship-under-investigation-risk-europeans-very-low) (ECDC News; 2026-05-04T19:33+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
-- [ECDC monitoring outbreak associated with cruise ship](https://www.ecdc.europa.eu/en/news-events/ecdc-monitoring-outbreak-associated-cruise-ship) (ECDC News; 2026-05-04T11:42+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (60), Policy, surveillance, and public health infrastructure (5), Major epidemiology studies (2)
+- [Health: Uganda to roll out fractional dosing of Mpox vaccine](https://www.newvision.co.ug/category/health/uganda-to-roll-out-fractional-dosing-of-mpox-NV_216573_052026) (NewVision.co.ug; 2026-05-10T14:00+00:00; Outbreaks and emerging infections; relevance 5/5)
+- [Dengue fever in Sri Lanka: More than 25,000 cases reported in 2026 to date](https://outbreaknewstoday.substack.com/p/dengue-fever-in-sri-lanka-more-than) (Outbreak News Today; 2026-05-02T15:24+00:00; Outbreaks and emerging infections; relevance 5/5)
+- Category mix: Outbreaks and emerging infections (77), Policy, surveillance, and public health infrastructure (3), Occupational and environmental epidemiology (2)
 - Source health: 2 source(s) failed during collection: Nigeria Centre for Disease Control, USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
-### Hantavirus and cruise-ship outbreak
-- Lead item: [ECDC publishes guidance for the management of passengers linked to the Andes hantavirus outbreak on cruise ship](https://www.ecdc.europa.eu/en/news-events/ecdc-publishes-guidance-management-passengers-linked-andes-hantavirus-outbreak-cruise) (ECDC News)
-- Story volume increased from 52 to 53 clustered item(s) in the current window.
-
+- No multi-item story clusters produced concrete update bullets in this run.
 
 ## Major topics
 ### Hantavirus and cruise-ship outbreak
-- Topic size: 53 item(s) across 23 source(s); 4 official/primary-source item(s).
+- Topic size: 69 item(s) across 38 source(s); 3 official/primary-source item(s).
 - Lead item: [ECDC publishes guidance for the management of passengers linked to the Andes hantavirus outbreak on cruise ship](https://www.ecdc.europa.eu/en/news-events/ecdc-publishes-guidance-management-passengers-linked-andes-hantavirus-outbreak-cruise) (ECDC News, 2026-05-09T15:10+02:00)
-- Detailed note: ECDC is aware of suspected cases of hantavirus infection, including three deaths, associated with a cruise ship travelling in the Atlantic. A cluster of severe acute respiratory illness, including three deaths and one severely ill individual, has been reported among passengers on a cruise ship travelling in the Atlantic and registered in the Netherlands. The ship is currently located off the coast of Cabo Verde,...
-- Evidence notes: [ECDC publishes guidance for the management of passengers linked to the Andes hantavirus outbreak on cruise ship](https://www.ecdc.europa.eu/en/news-events/ecdc-publishes-guidance-management-passengers-linked-andes-hantavirus-outbreak-cruise) (ECDC News); [Cruise ship hantavirus outbreak: ECDC response activated](https://www.ecdc.europa.eu/en/news-events/cruise-ship-hantavirus-outbreak-ecdc-response-activated) (ECDC News); [Suspected hantavirus outbreak on cruise ship under investigation: risk for Europeans very low](https://www.ecdc.europa.eu/en/news-events/suspected-hantavirus-outbreak-cruise-ship-under-investigation-risk-europeans-very-low) (ECDC News); [ECDC monitoring outbreak associated with cruise ship](https://www.ecdc.europa.eu/en/news-events/ecdc-monitoring-outbreak-associated-cruise-ship) (ECDC News); [From US to Singapore, countries race to track hantavirus](https://www.cnn.com/2026/05/07/world/hantavirus-ship-tenerife-outbreak-intl) (CNN)
+- Detailed note: Hantavirus infection has been laboratory-confirmed in two individuals in connection with the cluster of illness reported on a cruise ship. ECDC has deployed an expert from the EU Health Task Force to the cruise ship affected by the Andes hantavirus outbreak, as part of a joint effort to investigate the outbreak... The guidance published today by ECDC provides advice for public health professionals in the EU/EEA...
+- Evidence notes: [ECDC publishes guidance for the management of passengers linked to the Andes hantavirus outbreak on cruise ship](https://www.ecdc.europa.eu/en/news-events/ecdc-publishes-guidance-management-passengers-linked-andes-hantavirus-outbreak-cruise) (ECDC News); [Cruise ship hantavirus outbreak: ECDC response activated](https://www.ecdc.europa.eu/en/news-events/cruise-ship-hantavirus-outbreak-ecdc-response-activated) (ECDC News); [Hantavirus outbreak on cruise ship under investigation: risk for Europe very low](https://www.ecdc.europa.eu/en/news-events/hantavirus-outbreak-cruise-ship-under-investigation-risk-europe-very-low) (ECDC News); [From US to Singapore, countries race to track hantavirus](https://www.cnn.com/2026/05/07/world/hantavirus-ship-tenerife-outbreak-intl) (CNN); [US and French nationals test positive for hantavirus after leaving ship](https://www.bbc.com/news/articles/cjep78l5835o) (BBC)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Miscellaneous signals
-- Topic size: 6 item(s) across 5 source(s); 3 official/primary-source item(s).
+- Topic size: 5 item(s) across 4 source(s); 3 official/primary-source item(s).
 - Lead item: [Webinar | Listening to communities through AI for cholera response](https://www.afro.who.int/publications/webinar-listening-communities-through-ai-cholera-response) (WHO Regional Office for Africa, 2026-05-05T10:17+00:00)
 - Detailed note: Several lower-volume signals passed the filters, but they do not resolve into one coherent topic cluster. Use the linked evidence notes directly rather than reading this as a single story.
-- Evidence notes: [Webinar | Listening to communities through AI for cholera response](https://www.afro.who.int/publications/webinar-listening-communities-through-ai-cholera-response) (WHO Regional Office for Africa); [Health: Uganda to roll out fractional dosing of Mpox vaccine](https://www.newvision.co.ug/category/health/uganda-to-roll-out-fractional-dosing-of-mpox-NV_216573_052026) (NewVision.co.ug); [Recalcitrant tinea infections due to Trichophyton indotineae in the United States (2025-2026): a retrospective case series identified by real-time PCR.](https://pubmed.ncbi.nlm.nih.gov/42089435/) (PubMed Infectious Disease Search); [80% of areas free of malaria, Indonesia on track to achieve elimination target by 2030](https://observerid.com/80-of-areas-free-of-malaria-indonesia-on-track-to-achieve-elimination-target-by-2030/) (Independent Observer); [Comparative analysis of viral biological characteristics and pathogenicity of representative prevalent avian reovirus strains from genotypes I to V.](https://pubmed.ncbi.nlm.nih.gov/42100896/) (PubMed Infectious Disease Search)
+- Evidence notes: [Webinar | Listening to communities through AI for cholera response](https://www.afro.who.int/publications/webinar-listening-communities-through-ai-cholera-response) (WHO Regional Office for Africa); [Health: Uganda to roll out fractional dosing of Mpox vaccine](https://www.newvision.co.ug/category/health/uganda-to-roll-out-fractional-dosing-of-mpox-NV_216573_052026) (NewVision.co.ug); [Recalcitrant tinea infections due to Trichophyton indotineae in the United States (2025-2026): a retrospective case series identified by real-time PCR.](https://pubmed.ncbi.nlm.nih.gov/42089435/) (PubMed Infectious Disease Search); [Comparative analysis of viral biological characteristics and pathogenicity of representative prevalent avian reovirus strains from genotypes I to V.](https://pubmed.ncbi.nlm.nih.gov/42100896/) (PubMed Infectious Disease Search); [Florida: Additional chikungunya case reported in Miami-Dade County, Country of origin is Bolivia](https://outbreaknewstoday.substack.com/p/florida-additional-chikungunya-case) (Outbreak News Today)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
@@ -42,17 +39,9 @@ Search window: 7 day(s) ending 2026-05-10
 - Topic size: 3 item(s) across 2 source(s); 2 official/primary-source item(s).
 - Lead item: [Fatal Human Case of Highly Pathogenic Avian Influenza A(H5N5) in a Backyard Flock Owner](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765373) (CDC MMWR, 2026-05-07T17:00+00:00)
 - Detailed note: Oltean, PhD 1 ,2 ; Lisa Leitz 3 ; Emma Krause 3 ; Debra Barrett 3 ; Anna Halloran, MHPA 1 ; Kyle Yomogida, PhD 1 ; Beth Lipton, DVM 1 ; Keely Paris, MPH 1 ; Jared Keirn, MS 1 ; Minden Buswell, DVM 1 ; Allison Black, PhD 1 ; Pauline Trinh, PhD 1 ; Theresa Murray, MT 1 ; Roberto Bonaccorso 1 ; Leticia Banuelos 1 ; Ethan Dieringer 1 ; Jennifer Lenahan, MPH 4 ; Emily Spence Davizon, MPH 4 ; Ellyn P. Greninger, MD,...
-- Evidence notes: [Fatal Human Case of Highly Pathogenic Avian Influenza A(H5N5) in a Backyard Flock Owner](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765373) (CDC MMWR); [Serologic Evidence of Highly Pathogenic Avian Influenza A(H5N1) Virus Infection in a Veterinary Professional Exposed to an Infected Domestic Cat - Los Angeles County, California, December 2024-January 2025](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765372) (CDC MMWR); [Fox Tests Positive for Avian Influenza in Tioga County - WIVT](https://www.binghamtonhomepage.com/news/top-stories/fox-tests-positive-for-avian-influenza-in-tioga-county/) (WIVT - News 34)
+- Evidence notes: [Fatal Human Case of Highly Pathogenic Avian Influenza A(H5N5) in a Backyard Flock Owner](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765373) (CDC MMWR); [Serologic Evidence of Highly Pathogenic Avian Influenza A(H5N1) Virus Infection in a Veterinary Professional Exposed to an Infected Domestic Cat - Los Angeles County, California, December 2024-January 2025](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765372) (CDC MMWR); [LA Vet Tests Positive After Handling H5N1-Infected Cat](https://hoodline.com/2026/05/la-vet-tests-positive-after-treating-raw-milk-fed-cat-in-bird-flu-scare/) (Hoodline)
 - Why this topic matters now: It is one of the clearer recurring signals in today’s source set.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
-
-### Tuberculosis and antimicrobial resistance
-- Topic size: 1 item(s) across 1 source(s); 1 official/primary-source item(s).
-- Lead item: [59 000 deaths: Europe off track for Sustainable Development Goal targets for HIV, tuberculosis, viral hepatitis, and STIs](https://www.ecdc.europa.eu/en/news-events/59-000-deaths-europe-track-sustainable-development-goal-targets-hiv-tuberculosis-viral) (ECDC News, 2026-05-07T09:57+02:00)
-- Detailed note: More action remains necessary to prevent thousands of annual deaths and slow the rising number of STI diagnoses across Europe. Despite advancements in detection and treatment, a new report reveals severe shortfalls in reaching the indicators for the Sustainable Development Goal target for HIV, tuberculosis, viral hepatitis and sexually transmitted infections (STIs) by 2030.
-- Evidence notes: [59 000 deaths: Europe off track for Sustainable Development Goal targets for HIV, tuberculosis, viral hepatitis, and STIs](https://www.ecdc.europa.eu/en/news-events/59-000-deaths-europe-track-sustainable-development-goal-targets-hiv-tuberculosis-viral) (ECDC News)
-- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
-- Caveats / uncertainty: Source diversity is limited so corroboration is thin.
 
 ### Dengue and arboviruses
 - Topic size: 1 item(s) across 1 source(s); 0 official/primary-source item(s).
@@ -65,10 +54,18 @@ Search window: 7 day(s) ending 2026-05-10
 ### Measles transmission and vaccination
 - Topic size: 5 item(s) across 5 source(s); 0 official/primary-source item(s).
 - Lead item: [How conflict is driving measles outbreaks in the Middle East and North Africa](https://www.arabnews.jp/en/middle-east/article_169830/) (arabnews.jp, 2026-05-10T01:05+00:00)
-- Detailed note: Japan health officials reported 74 additional measles cases since our last report , bringing the total cases to 436 as of April 30. This is a 354 percent increase compared to the same time in 2025 when 96 measles cases were reported. Save the Children says ongoing conflict across the Middle East and North Africa is pushing that number higher at a frightening rate and increasing the risk of preventable deaths.
-- Evidence notes: [How conflict is driving measles outbreaks in the Middle East and North Africa](https://www.arabnews.jp/en/middle-east/article_169830/) (arabnews.jp); [Japan reports more than 400 measles cases in first four months of 2026](https://outbreaknewstoday.substack.com/p/japan-reports-more-than-400-measles) (Outbreak News Today); [Confirmed measles cases grow to 12 in Pa.’s Lebanon County](https://www.post-gazette.com/news/health/2026/05/06/lebanon-county-pa-measles/stories/202605060063) (Pittsburgh Post-Gazette); [Measles case confirmed in Buckingham County](https://dailyprogress.com/news/local/business/health-care/article_5a28324d-d284-4675-b94a-3c51876cdeb2.html) (The Daily Progress); [Lebanon city and county officials await more information on measles outbreak](https://lebtown.com/2026/05/08/lebanon-city-and-county-officials-await-more-information-on-measles-outbreak/) (LebTown)
+- Detailed note: Save the Children says ongoing conflict across the Middle East and North Africa is pushing that number higher at a frightening rate and increasing the risk of preventable deaths. The highest total in the past 10 years was 744 in 2019. According to the Japan Institute for Health Security, the cumulative number of patients had climbed to 299 by April 12.
+- Evidence notes: [How conflict is driving measles outbreaks in the Middle East and North Africa](https://www.arabnews.jp/en/middle-east/article_169830/) (arabnews.jp); [Measles cases surge across Japan despite elimination status](https://mainichi.jp/english/articles/20260508/p2a/00m/0na/010000c) (毎日新聞); [Confirmed measles cases grow to 12 in Pa.’s Lebanon County](https://www.post-gazette.com/news/health/2026/05/06/lebanon-county-pa-measles/stories/202605060063) (Pittsburgh Post-Gazette); [Measles case confirmed in Buckingham County](https://dailyprogress.com/news/local/business/health-care/article_5a28324d-d284-4675-b94a-3c51876cdeb2.html) (The Daily Progress); [Lebanon city and county officials await more information on measles outbreak](https://lebtown.com/2026/05/08/lebanon-city-and-county-officials-await-more-information-on-measles-outbreak/) (LebTown)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
+
+### Polio and wastewater surveillance
+- Topic size: 1 item(s) across 1 source(s); 0 official/primary-source item(s).
+- Lead item: [EXPERT REACTION: Poliovirus detected in WA wastewater](https://www.scimex.org/newsfeed/expert-reaction-poliovirus-detected-in-wa-wastewater) (Scimex, 2026-05-01T02:44+00:00)
+- Detailed note: Cluster remains active across 1 related item(s), but usable factual summary text was limited after cleanup.
+- Evidence notes: [EXPERT REACTION: Poliovirus detected in WA wastewater](https://www.scimex.org/newsfeed/expert-reaction-poliovirus-detected-in-wa-wastewater) (Scimex)
+- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
+- Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Source diversity is limited so corroboration is thin.
 
 
 ## Last major outbreaks on file
@@ -329,16 +326,6 @@ Search window: 7 day(s) ending 2026-05-10
 - Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
 - Relevance score: 5/5
 
-### 59 000 deaths: Europe off track for Sustainable Development Goal targets for HIV, tuberculosis, viral hepatitis, and STIs
-- Source: ECDC News
-- Date: 2026-05-07T09:57+02:00
-- URL: https://www.ecdc.europa.eu/en/news-events/59-000-deaths-europe-track-sustainable-development-goal-targets-hiv-tuberculosis-viral
-- Category: Policy, surveillance, and public health infrastructure
-- Summary: More action remains necessary to prevent thousands of annual deaths and slow the rising number of STI diagnoses across Europe. Despite advancements in detection and treatment, a new report reveals severe shortfalls in reaching the indicators for the Sustainable Development Goal target for HIV, tuberculosis, viral hepatitis and sexually transmitted infections (STIs) by 2030.
-- Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.
-- Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
-- Relevance score: 5/5
-
 ### Cruise ship hantavirus outbreak: ECDC response activated
 - Source: ECDC News
 - Date: 2026-05-06T18:39+02:00
@@ -349,32 +336,22 @@ Search window: 7 day(s) ending 2026-05-10
 - Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
 - Relevance score: 5/5
 
+### Hantavirus outbreak on cruise ship under investigation: risk for Europe very low
+- Source: ECDC News
+- Date: 2026-05-05T15:17+02:00
+- URL: https://www.ecdc.europa.eu/en/news-events/hantavirus-outbreak-cruise-ship-under-investigation-risk-europe-very-low
+- Category: Policy, surveillance, and public health infrastructure
+- Summary: Hantavirus infection has been laboratory-confirmed in two individuals in connection with the cluster of illness reported on a cruise ship.
+- Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.
+- Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
+- Relevance score: 5/5
+
 ### Webinar | Listening to communities through AI for cholera response
 - Source: WHO Regional Office for Africa
 - Date: 2026-05-05T10:17+00:00
 - URL: https://www.afro.who.int/publications/webinar-listening-communities-through-ai-cholera-response
 - Category: Outbreaks and emerging infections
 - Summary: During this session, AIRA will share how AI-supported social listening is used to: Track infodemic trends across countries Identify key drivers such as trust, water and sanitation concerns, and vaccine perceptions Inform evidence-based risk communication and community engagement (RCCE) strategies Support countries with actionable insights and ready-to-use content This webinar will also highlight experiences from country and regional levels, demonstrating how data-driven listening can strengthen public health responses . 👉 Join us and be part of the conversation.
-- Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.
-- Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
-- Relevance score: 5/5
-
-### Suspected hantavirus outbreak on cruise ship under investigation: risk for Europeans very low
-- Source: ECDC News
-- Date: 2026-05-04T19:33+02:00
-- URL: https://www.ecdc.europa.eu/en/news-events/suspected-hantavirus-outbreak-cruise-ship-under-investigation-risk-europeans-very-low
-- Category: Policy, surveillance, and public health infrastructure
-- Summary: A cluster of severe acute respiratory illness, including three deaths and one severely ill individual, has been reported among passengers on a cruise ship travelling in the Atlantic and registered in the Netherlands. The ship is currently located off the coast of Cabo Verde, with 149 people on board.
-- Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.
-- Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
-- Relevance score: 5/5
-
-### ECDC monitoring outbreak associated with cruise ship
-- Source: ECDC News
-- Date: 2026-05-04T11:42+02:00
-- URL: https://www.ecdc.europa.eu/en/news-events/ecdc-monitoring-outbreak-associated-cruise-ship
-- Category: Policy, surveillance, and public health infrastructure
-- Summary: ECDC is aware of suspected cases of hantavirus infection, including three deaths, associated with a cruise ship travelling in the Atlantic.
 - Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.
 - Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
 - Relevance score: 5/5
@@ -399,47 +376,67 @@ Search window: 7 day(s) ending 2026-05-10
 - Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
 - Relevance score: 5/5
 
+### Recalcitrant tinea infections due to Trichophyton indotineae in the United States (2025-2026): a retrospective case series identified by real-time PCR.
+- Source: PubMed Infectious Disease Search
+- Date: 2026-05-06T00:00
+- URL: https://pubmed.ncbi.nlm.nih.gov/42089435/
+- Category: Major epidemiology studies
+- Summary: These gaps include the use of topical corticosteroids, lack of itraconazole use (100-200 mg/day for 6-8 weeks or longer) as first-line treatment, and prescribing fixed, short treatment durations. All patients (median age: 54; 3 males and 2 females) reported recent travel to India or Nepal, except one, who was the spouse of a patient who had traveled to India. Two different SQLE substitutions were detected, F397L ( N = 2) and L393F ( N = 1), which are common among terbinafine-resistant T.
+- Why it matters: Comes from an official or primary-source channel.
+- Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
+- Relevance score: 4/5
+
+### How conflict is driving measles outbreaks in the Middle East and North Africa
+- Source: arabnews.jp
+- Date: 2026-05-10T01:05+00:00
+- URL: https://www.arabnews.jp/en/middle-east/article_169830/
+- Category: Outbreaks and emerging infections
+- Summary: Save the Children says ongoing conflict across the Middle East and North Africa is pushing that number higher at a frightening rate and increasing the risk of preventable deaths. Limited detail was available from feed metadata alone.
+- Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response.
+- Caveats / uncertainty: Usable source detail was limited after cleanup.
+- Relevance score: 4/5
+
 
 ## Other notable readings
-- [Recalcitrant tinea infections due to Trichophyton indotineae in the United States (2025-2026): a retrospective case series identified by real-time PCR.](https://pubmed.ncbi.nlm.nih.gov/42089435/) | PubMed Infectious Disease Search | 2026-05-06T00:00 | Major epidemiology studies
-  These gaps include the use of topical corticosteroids, lack of itraconazole use (100-200 mg/day for 6-8 weeks or longer) as first-line treatment, and prescribing fixed, short treatment durations. All patients (median age: 54; 3 males and 2 females) reported recent travel to India or Nepal, except one, who was the spouse of a patient who had traveled to India. Two different SQLE substitutions were detected, F397L ( N = 2) and L393F ( N = 1), which are common among terbinafine-resistant T.
-- [80% of areas free of malaria, Indonesia on track to achieve elimination target by 2030](https://observerid.com/80-of-areas-free-of-malaria-indonesia-on-track-to-achieve-elimination-target-by-2030/) | Independent Observer | 2026-05-10T02:00+00:00 | Outbreaks and emerging infections
-  According to data from the Ministry of Health (Kemenkes), the number of reported malaria cases in 2025 was 706,297, marking a 30 percent increase compared to 2024, which recorded 543,965 cases. Jakarta, IO – By the end of 2025, 412 out of 514 regencies and cities (80 percent) and seven provinces in Indonesia are expected to be officially declared free of malaria transmission. “Regionally, 95 percent of all malaria cases in Indonesia—totaling 674,046 cases—were concentrated in Papua, which is composed of six provinces.
-- [How conflict is driving measles outbreaks in the Middle East and North Africa](https://www.arabnews.jp/en/middle-east/article_169830/) | arabnews.jp | 2026-05-10T01:05+00:00 | Outbreaks and emerging infections
-  Save the Children says ongoing conflict across the Middle East and North Africa is pushing that number higher at a frightening rate and increasing the risk of preventable deaths. Limited detail was available from feed metadata alone.
 - [From US to Singapore, countries race to track hantavirus](https://www.cnn.com/2026/05/07/world/hantavirus-ship-tenerife-outbreak-intl) | CNN | 2026-05-07T12:53+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [EXPERT REACTION: Poliovirus detected in WA wastewater](https://www.scimex.org/newsfeed/expert-reaction-poliovirus-detected-in-wa-wastewater) | Scimex | 2026-05-01T02:44+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Comparative analysis of viral biological characteristics and pathogenicity of representative prevalent avian reovirus strains from genotypes I to V.](https://pubmed.ncbi.nlm.nih.gov/42100896/) | PubMed Infectious Disease Search | 2026-05-08T00:00 | Major epidemiology studies
   This points to severe immune activation and a high risk of joint injury. Immunologically, genotypes I and IV triggered strong early pro-inflammatory cytokine responses and significantly upregulated MMP13 and Wnt14 at 7 dpi. Phylogenetic analysis of these isolates and field strains in China based on the σC gene revealed co-circulation of multiple genotypes (predominantly I and II), with epidemic strains actively evolving and genetically distant from the S1133 vaccine.
+- [US and French nationals test positive for hantavirus after leaving ship](https://www.bbc.com/news/articles/cjep78l5835o) | BBC | 2026-05-11T13:13+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [One American tests positive for hantavirus as cruise ship passengers arrive in U.S.](https://www.washingtonpost.com/health/2026/05/09/hantavirus-us-cruise-cdc/) | The Washington Post | 2026-05-11T13:09+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Evacuated US and French MV Hondius passengers test positive for hantavirus](https://www.theguardian.com/world/2026/may/11/evacuated-us-and-french-mv-hondius-cruise-ship-passengers-test-positive-for-hantavirus) | The Guardian | 2026-05-11T12:32+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [WHO says seven cases of hantavirus confirmed from cruise ship](https://www.reuters.com/business/healthcare-pharmaceuticals/who-says-seven-cases-hantavirus-confirmed-cruise-ship-2026-05-11/) | Reuters | 2026-05-11T12:25+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [2 passengers test positive for hantavirus as a third shows symptoms after cruise ship evacuation](https://apnews.com/article/hantavirus-outbreak-hondius-cruise-ship-df0e7e1fb9c7fd3e4092be06e684f644) | AP News | 2026-05-11T12:08+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [3 passengers, French and American, test positive or have symptoms of hantavirus after evacuation](https://www.cbc.ca/news/world/hantavirus-cruise-ship-evacuation-9.7194723) | CBC | 2026-05-11T10:58+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [What comes next for US passengers evacuated from hantavirus-hit cruise ship](https://www.bbc.com/news/articles/cn4pq1y1zjgo) | BBC | 2026-05-11T10:32+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Two cruise ship evacuees test positive for hantavirus](https://www.ft.com/content/6793c1a0-9b84-43ba-a639-1e4706900d8a?syn-25a6b1a6\=1) | Financial Times | 2026-05-11T09:21+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Hantavirus cruise ship passengers enter isolation facility after evacuation to UK](https://www.theguardian.com/world/2026/may/11/mv-hondius-passengers-from-hantavirus-cruise-ship-enter-isolation-facility-in-wirral) | The Guardian | 2026-05-11T08:57+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Hantavirus outbreak latest: Two more cases confirmed amongst evacuees](https://www.euronews.com/health/2026/05/11/hantavirus-outbreak-latest-france-confirms-new-case-in-a-woman-evacuated-from-the-ship) | Euronews.com | 2026-05-11T08:15+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Americans evacuated from virus cruise ship arrive back in US](https://news.sky.com/video/americans-evacuated-from-virus-cruise-ship-arrive-back-in-us-13542606) | Sky News | 2026-05-11T06:12+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [One evacuated passenger tests positive for hantavirus and another develops symptoms on flight home](https://apnews.com/article/hantavirus-cruise-ship-hondius-tenerife-1c43c66d2b0555cf946d9e57fc65f1d4) | AP News | 2026-05-11T04:32+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Americans evacuated from hantavirus-stricken cruise ship off Spanish island](https://www.nbcnews.com/health/health-news/hantavirus-stricken-cruise-ship-arrives-tenerife-rcna344318) | NBC News | 2026-05-11T02:46+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - [May 10: Hantavirus cruise ship evacuated; Iran war](https://www.nbcnews.com/nightly-news-netcast/video/nbc-nightly-news-full-episode-may-10-263077957641) | NBC News | 2026-05-10T23:52+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Cruise Ship Linked to Hantavirus Outbreak Arrives in Spain’s Canary Islands for Disembarking](https://www.nytimes.com/2026/05/10/world/europe/hantavirus-cruise-ship-canary-islands.html) | The New York Times | 2026-05-10T22:27+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [What comes next for US passengers evacuated from hantavirus-hit cruise ship](https://www.bbc.com/news/articles/cn4pq1y1zjgo) | BBC | 2026-05-10T21:29+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Video: Passengers and Crew Are Evacuated From Ship at Center of Hantavirus Outbreak](https://www.nytimes.com/video/world/europe/100000010894758/passengers-and-crew-are-evacuated-from-ship-at-center-of-hantavirus-outbreak.html) | The New York Times | 2026-05-10T21:18+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Evacuation of hantavirus-hit cruise ship gets under way in Tenerife](https://www.ft.com/content/b5fdd84f-69bd-47ae-bd7b-df30ba3d758c?syn-25a6b1a6\=1) | Financial Times | 2026-05-10T18:38+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Evacuations begin for passengers on MV Hondius cruise ship following hantavirus outbreak](https://www.pbs.org/newshour/world/evacuations-begin-for-passengers-on-mv-hondius-cruise-ship-following-hantavirus-outbreak) | PBS | 2026-05-10T17:03+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Hantavirus cruise ship: Evacuation begins](https://www.newsnationnow.com/health/mv-hondius-canary-islands-passengers-wait-to-leave/) | NewsNation | 2026-05-10T14:59+00:00 | Outbreaks and emerging infections
+- [Americans onboard hantavirus cruise ship to be repatriated to US as one tests positive](https://www.theguardian.com/us-news/2026/may/10/americans-hantavirus-cruise-ship-repatriated) | The Guardian | 2026-05-10T16:20+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [French passenger of hantavirus cruise ship starts showing symptoms on evacuation flight, prime minister says](https://www.cbsnews.com/news/cruise-ship-stricken-by-hantavirus-reaches-canary-islands/) | CBS News | 2026-05-10T04:57+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Evacuation flights leave Tenerife after cruise ship virus outbreak](https://www.reuters.com/business/healthcare-pharmaceuticals/cruise-ship-hit-by-hantavirus-outbreak-arrives-tenerife-2026-05-10/) | Reuters | 2026-05-10T04:36+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Waves of passengers evacuated from cruise ship hit by deadly hantavirus](https://www.cnn.com/2026/05/10/europe/hantavirus-cruise-ship-tenerife-arrive-hnk-intl) | CNN | 2026-05-10T04:20+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Countries prepare to evacuate hantavirus ship passengers](https://www.reuters.com/world/europe/germany-france-belgium-ireland-netherlands-send-planes-passengers-hantavirus-hit-2026-05-09/) | Reuters | 2026-05-09T22:38+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [WHO director arrives in Canary Islands to oversee hantavirus cruise evacuation: "This disease is not COVID"](https://www.cbsnews.com/news/hantavirus-cruise-evacuation-world-health-organization-hondius-canary-islands/) | CBS News | 2026-05-09T14:36+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Spain to evacuate cruise ship with hantavirus outbreak](https://www.nbcnews.com/video/shorts/spain-to-evacuate-cruise-ship-with-hantavirus-outbreak-263047749642) | NBC News | 2026-05-09T14:05+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Spain readies for evacuations as a hantavirus-hit cruise ship heads for the Canary Islands](https://apnews.com/article/hantavirus-cruise-ship-e5b35d12be9dc30213d7a2b8b4955a88) | AP News | 2026-05-09T05:49+00:00 | Outbreaks and emerging infections
+- [Cruise Ship Linked to Hantavirus Outbreak Arrives in Spain’s Canary Islands for Disembarking](https://www.nytimes.com/2026/05/10/world/europe/hantavirus-cruise-ship-canary-islands.html) | The New York Times | 2026-05-10T06:50+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
