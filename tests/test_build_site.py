@@ -195,8 +195,10 @@ atlases:
     assert "https://images.example/cover.jpg" in essays_text
     about_text = (docs_dir / "about" / "index.html").read_text()
     assert "About Devin Teichrow and The Edge of Epidemiology" in about_text
-    assert "[Bio paragraph placeholder for manual editing.]" in about_text
-    assert "diseases do not move only through bodies" in about_text
+    assert "I’m Devin Teichrow, an epidemiologist based at the University of California, Irvine" in about_text
+    assert "plague outbreaks during war" in about_text
+    assert "The Edge of Epidemiology on Substack" in about_text
+    assert "diseases do not move only through bodies" not in about_text
 
 
 def test_import_external_pathogen_writes_js_payload(tmp_path, monkeypatch) -> None:

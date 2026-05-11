@@ -507,31 +507,49 @@ def render_about_page(base_url: str) -> str:
       <section class="hero hero-open about-hero">
         <p class="kicker">About</p>
         <h2 class="hero-title">About Devin Teichrow and The Edge of Epidemiology</h2>
-        <p class="subtitle">A public-facing epidemiology project built around outbreak reporting, disease geography, historical epidemiology, and clear methods writing.</p>
+        <p class="subtitle">A public-facing epidemiology project built around outbreak reporting, disease geography, historical epidemiology, and science communication.</p>
       </section>
       <section class="about-layout">
         <div class="about-block">
           <p class="kicker">Bio</p>
-          <h3>Author bio slot</h3>
-          <p class="placeholder-copy">[Bio paragraph placeholder for manual editing.]</p>
+          <h3>Research and public work</h3>
+          <p>I’m Devin Teichrow, an epidemiologist based at the University of California, Irvine, where I am an epidemiology specialist in the lab of Dr. Ali Ezzati. My public-facing work sits at the intersection of infectious disease, historical analysis, and public science communication.</p>
+          <p>I received my training in epidemiology at UCLA and currently work in neurology research, where my projects have focused on cognition, migraine, aging, ecological momentary assessment, and digital health methods. Alongside my academic work, I’ve developed a growing interest in how disease moves through populations beyond the clinic or dataset: through war, migration, infrastructure, ecology, trade, and geography.</p>
+          <p>That broader perspective is what led to my <a href="https://theedgeofepidemiology.substack.com">Substack, The Edge of Epidemiology</a>.</p>
         </div>
         <div class="about-block">
-          <p class="kicker">Project lineage</p>
-          <h3>Lineage slot</h3>
-          <p class="placeholder-copy">[Project lineage placeholder for manual editing.]</p>
+          <p class="kicker">Project</p>
+          <h3>What this site became</h3>
+          <p>This site began as a place to write about historical epidemics and overlooked disease stories, but it has gradually expanded into something wider: a hybrid of outbreak reporting, historical epidemiology, disease atlases, methodological explainers, and longform essays about how pathogens shape societies over time.</p>
+          <p>Much of modern disease reporting treats outbreaks as isolated events. I’m more interested in the long view of how epidemics recur, how institutions respond, how public fear evolves, and how the same epidemiologic patterns reappear across centuries under different names. I’m also interested in the biological, genetic, and societal changes that occur as a result of infectious disease epidemics.</p>
         </div>
-        <blockquote class="about-pullquote">"diseases do not move only through bodies - they move through ports, wars, empires, ecologies, institutions, and memory"</blockquote>
         <div class="about-block">
-          <p class="kicker">Intellectual framing</p>
-          <h3>Framing slot</h3>
-          <p class="placeholder-copy">[Intellectual framing placeholder for manual editing.]</p>
+          <p class="kicker">Interests</p>
+          <h3>Current areas of focus</h3>
+          <ul class="link-list about-topic-list">
+            <li>plague outbreaks during war</li>
+            <li>vector-borne disease and climate</li>
+            <li>misinformation and risk communication</li>
+            <li>ancient infectious disease</li>
+            <li>neuroscience and cognition</li>
+            <li>outbreak surveillance and preparedness</li>
+            <li>the hidden ecological consequences of conflict and migration</li>
+          </ul>
+        </div>
+        <div class="about-block">
+          <p class="kicker">Framing</p>
+          <h3>Why geography matters here</h3>
+          <p>The site’s atlas projects and interactive maps grew out of a belief that epidemiology is fundamentally geographic. Disease is biological, spatial, political, ecological, economic, cultural, and historical. Pathogens move along trade routes, through armies, across borders, inside housing systems, and within the infrastructure societies build for themselves.</p>
+          <p>My goal is to make epidemiology feel legible, historically grounded, and intellectually honest for a broader audience without flattening uncertainty or complexity. Outside of research and writing, I build interactive disease atlases, public-facing epidemiology tools, and science communication projects focused on making complex public health topics more understandable and visually intuitive.</p>
         </div>
         <div class="about-block">
           <p class="kicker">Links</p>
-          <h3>Project links</h3>
+          <h3>Elsewhere</h3>
           <ul class="link-list about-links">
-            <li><a href="https://theedgeofepidemiology.substack.com">Substack</a> <span class="placeholder-copy">[Add preferred link note.]</span></li>
-            <li><a href="{html.escape(link_for(base_url, "methods/"))}">Methods</a> <span class="placeholder-copy">[Add methods framing note.]</span></li>
+            <li><a href="https://theedgeofepidemiology.substack.com">The Edge of Epidemiology on Substack</a></li>
+            <li><a href="{html.escape(link_for(base_url, "methods/"))}">Methods</a></li>
+            <li><a href="{html.escape(link_for(base_url, "atlases/"))}">Atlas family</a></li>
+            <li><a href="{html.escape(link_for(base_url, "newsdesk/"))}">The Pathogen Dispatch</a></li>
           </ul>
         </div>
       </section>
@@ -1101,7 +1119,7 @@ def import_external_maritime(docs_dir: Path, base_url: str) -> None:
 <style id="eoe-atlas-overlay-style">
   #eoe-atlas-overlay {{
     position: fixed;
-    top: 14px;
+    top: 84px;
     right: 18px;
     z-index: 1200;
     display: flex;
@@ -1215,7 +1233,7 @@ def import_external_pathogen(docs_dir: Path, base_url: str) -> None:
   }}
   #eoe-atlas-overlay a.active {{ color: #c9a84c; border-color: rgba(201,168,76,0.38); }}
   @media (max-width: 1180px) {{
-    #eoe-atlas-overlay {{ top: 68px; }}
+    #eoe-atlas-overlay {{ top: 96px; }}
   }}
   @media (max-width: 980px) {{
     #eoe-atlas-overlay {{
