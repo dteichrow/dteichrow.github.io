@@ -891,6 +891,30 @@ h3 {
   font-size: 1.08rem;
 }
 
+.about-portrait {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 6px;
+}
+
+.about-portrait .kicker {
+  margin-bottom: 7px;
+}
+
+.about-portrait-image {
+  width: 104px;
+  height: 104px;
+  flex: 0 0 104px;
+  border: 3px solid rgba(255, 250, 240, 0.92);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow:
+    0 0 0 1px rgba(178, 139, 62, 0.48),
+    0 14px 28px rgba(36, 26, 17, 0.16);
+}
+
 .about-block p,
 .about-block li,
 .placeholder-copy {
@@ -1375,6 +1399,10 @@ h3 {
   .about-layout {
     grid-template-columns: 1fr;
   }
+
+  .about-portrait {
+    align-items: flex-start;
+  }
 }
 
 @media (max-width: 760px) {
@@ -1408,6 +1436,17 @@ h3 {
 
   .newsdesk-panel {
     padding: 24px 18px;
+  }
+
+  .about-portrait {
+    display: grid;
+    gap: 12px;
+  }
+
+  .about-portrait-image {
+    width: 96px;
+    height: 96px;
+    flex-basis: 96px;
   }
 
   .essay-card-featured {
