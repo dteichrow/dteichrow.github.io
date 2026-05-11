@@ -181,8 +181,9 @@ def render_post_card(post: dict[str, Any], base_url: str, *, featured: bool = Fa
     href = link_for(base_url, f"essays/{post.get('slug', '')}/")
     date_text, utility_meta = post_folio_meta(post)
     summary = post.get("dek") or post.get("excerpt") or "Published writing from The Edge of Epidemiology."
-    feature_image = post.get("cover_image") if featured and post.get("cover_image") else ""
-    feature_class = " essay-card-featured" if feature_image else ""
+    feature_image = post.get("cover_image") or ""
+    feature_class = " essay-card-featured" if featured and feature_image else ""
+    image_class = " essay-card-has-media" if feature_image else ""
     media = (
         f'<a class="essay-card-media" href="{html.escape(href)}" aria-hidden="true" tabindex="-1">'
         f'<img src="{html.escape(feature_image)}" alt="" loading="lazy" decoding="async" />'
@@ -191,7 +192,7 @@ def render_post_card(post: dict[str, Any], base_url: str, *, featured: bool = Fa
         else ""
     )
     return (
-        f'<article class="site-card essay-card{feature_class}">'
+        f'<article class="site-card essay-card{feature_class}{image_class}">'
         f"{media}"
         '<div class="essay-card-copy">'
         '<div class="card-utility-row">'
@@ -270,7 +271,7 @@ def render_home(posts: list[dict[str, Any]], atlases: list[dict[str, Any]], late
       <section class="hero hero-home hero-open">
         <div class="hero-main">
           <p class="kicker">Devin Teichrow</p>
-          <h2 class="hero-title">Most disease reporting treats outbreaks as isolated events. This project follows how pathogens move through geography, infrastructure, ecology, war, and time.</h2>
+          <h2 class="hero-title">Disease travels with people and the things people build: ships, barracks, markets, wells, mosquitoes, rats, crowded rooms, and decisions made too late.</h2>
           <div class="hero-prose">
             <p class="subtitle">I&apos;m Devin Teichrow, a UCLA-trained epidemiologist and neuroscience researcher at UC Irvine working on migraine and Alzheimer&apos;s Disease and Related Dementias. My public-facing work focuses on how disease moves through populations, history, war, ecology, and infrastructure, including everything from modern outbreak reporting to historical epidemic reconstruction and interactive disease mapping.</p>
             <p class="subtitle">The Edge of Epidemiology is my home for longform essays, live outbreak coverage, disease atlases, methodological explainers, and projects exploring the intersection of epidemiology, geography, and history.</p>
@@ -1155,15 +1156,7 @@ def import_external_maritime(docs_dir: Path, base_url: str) -> None:
     index_path.write_text(html_text)
 
 
-def import_external_pathogen(docs_dir: Path, base_url: str) -> None:
-    src_root = PROJECT_ROOT / "external" / "pathogen_atlas"
-    dest_root = docs_dir / "atlases" / "pathogen"
-    if dest_root.exists():
-        shutil.rmtree(dest_root)
-    shutil.copytree(src_root, dest_root)
-
-    atlas_export_path = docs_dir / "app_exports" / "atlas.json"
-    atlas_export = load_json(atlas_export_path)
+def prepared_pathogen_atlas_data(atlas_export: dict[str, Any], *, link_prefix: str) -> dict[str, Any]:
     raw_entries = atlas_export.get("atlas", [])
     prepared_entries = []
 
@@ -1174,13 +1167,13 @@ def import_external_pathogen(docs_dir: Path, base_url: str) -> None:
         prepared["writing_state_label"] = PATHOGEN_WRITING_LABELS.get(prepared.get("writing_state"), "Writing state pending")
         reference_path = prepared.get("reference_web_path") or prepared.get("reference_url")
         if reference_path:
-            prepared["reference_href"] = f"../../{reference_path.lstrip('/')}"
+            prepared["reference_href"] = f"{link_prefix}{reference_path.lstrip('/')}"
         related_stories = []
         for story in prepared.get("related_stories", []):
             story_copy = dict(story)
             story_path = story_copy.get("story_web_path")
             if story_path:
-                story_copy["story_href"] = f"../../{story_path.lstrip('/')}"
+                story_copy["story_href"] = f"{link_prefix}{story_path.lstrip('/')}"
             related_stories.append(story_copy)
         prepared["related_stories"] = related_stories
         prepared["variants"] = [rewrite_entry_links(variant, color) for variant in prepared.get("variants", [])]
@@ -1191,18 +1184,36 @@ def import_external_pathogen(docs_dir: Path, base_url: str) -> None:
         prepared = rewrite_entry_links(entry, color)
         prepared_entries.append(prepared)
 
-    data_dir = dest_root / "data"
-    ensure_dir(data_dir)
-    data_payload = {
+    return {
         "entries": prepared_entries,
         "generated_at": atlas_export.get("generated_at"),
         "atlas_count": len(prepared_entries),
     }
+
+
+def write_pathogen_atlas_payload(target_root: Path, atlas_export: dict[str, Any], *, base_url: str, link_prefix: str) -> None:
+    data_dir = target_root / "data"
+    ensure_dir(data_dir)
+    data_payload = prepared_pathogen_atlas_data(atlas_export, link_prefix=link_prefix)
     data_text = (
         f"window.PATHOGEN_ATLAS_BASE_URL = {json.dumps(base_url)};\n"
         f"window.PATHOGEN_ATLAS_DATA = {json.dumps(data_payload, indent=2)};\n"
     )
     (data_dir / "pathogen_atlas_data.js").write_text(data_text)
+
+
+def import_external_pathogen(docs_dir: Path, base_url: str) -> None:
+    src_root = PROJECT_ROOT / "external" / "pathogen_atlas"
+    dest_root = docs_dir / "atlases" / "pathogen"
+    atlas_export_path = docs_dir / "app_exports" / "atlas.json"
+    atlas_export = load_json(atlas_export_path)
+
+    write_pathogen_atlas_payload(src_root, atlas_export, base_url="/", link_prefix="../../docs/")
+
+    if dest_root.exists():
+        shutil.rmtree(dest_root)
+    shutil.copytree(src_root, dest_root)
+    write_pathogen_atlas_payload(dest_root, atlas_export, base_url=base_url, link_prefix="../../")
 
     index_path = dest_root / "index.html"
     html_text = index_path.read_text()
@@ -1210,14 +1221,15 @@ def import_external_pathogen(docs_dir: Path, base_url: str) -> None:
 <style id="eoe-atlas-overlay-style">
   #eoe-atlas-overlay {{
     position: fixed;
-    top: 14px;
-    right: 18px;
+    top: 132px;
+    left: 50%;
     z-index: 1200;
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
     max-width: calc(100vw - 36px);
-    justify-content: flex-end;
+    justify-content: center;
+    transform: translateX(-50%);
   }}
   #eoe-atlas-overlay a {{
     padding: 8px 12px;
@@ -1232,9 +1244,6 @@ def import_external_pathogen(docs_dir: Path, base_url: str) -> None:
     backdrop-filter: blur(12px);
   }}
   #eoe-atlas-overlay a.active {{ color: #c9a84c; border-color: rgba(201,168,76,0.38); }}
-  @media (max-width: 1180px) {{
-    #eoe-atlas-overlay {{ top: 96px; }}
-  }}
   @media (max-width: 980px) {{
     #eoe-atlas-overlay {{
       position: absolute;
@@ -1243,6 +1252,7 @@ def import_external_pathogen(docs_dir: Path, base_url: str) -> None:
       right: auto;
       justify-content: flex-start;
       max-width: calc(100vw - 36px);
+      transform: none;
     }}
   }}
 </style>

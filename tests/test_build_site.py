@@ -172,7 +172,7 @@ atlases:
     assert (docs_dir / "app_exports" / "posts.json").exists()
     home_text = (docs_dir / "index.html").read_text()
     assert "Devin Teichrow" in home_text
-    assert "Most disease reporting treats outbreaks as isolated events." in home_text
+    assert "Disease travels with people and the things people build" in home_text
     assert "UCLA-trained epidemiologist and neuroscience researcher at UC Irvine" in home_text
     assert "hero-notebook" not in home_text
     assert "hero-status-line" in home_text
@@ -253,11 +253,16 @@ def test_import_external_pathogen_writes_js_payload(tmp_path, monkeypatch) -> No
 
     built_index = docs_dir / "atlases" / "pathogen" / "index.html"
     built_data = docs_dir / "atlases" / "pathogen" / "data" / "pathogen_atlas_data.js"
+    source_data = src_root / "data" / "pathogen_atlas_data.js"
     assert built_index.exists()
     assert built_data.exists()
+    assert source_data.exists()
     index_text = built_index.read_text()
     assert 'href="../../index.html"' in index_text
     assert 'href="../index.html"' in index_text
+    source_text = source_data.read_text()
+    assert '"reference_href": "../../docs/reference/yellow-fever.html"' in source_text
+    assert '"story_href": "../../docs/stories/demo-story.html"' in source_text
     data_text = built_data.read_text()
     assert 'window.PATHOGEN_ATLAS_BASE_URL = "/"' in data_text
     assert '"reference_href": "../../reference/yellow-fever.html"' in data_text
