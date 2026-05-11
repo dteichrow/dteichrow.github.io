@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-05-11
-Generated at: 2026-05-11T13:54
+Generated at: 2026-05-11T14:56
 Search window: 7 day(s) ending 2026-05-11
 
 ## Executive scan
@@ -12,27 +12,27 @@ Search window: 7 day(s) ending 2026-05-11
 - [Malaria vaccine cuts child deaths by 13% in Africa, offering fresh hope: The Lancet](https://indianexpress.com/article/health-wellness/malaria-vaccine-child-mortality-lancet-study-india-elimination-10683903/) (The Indian Express; 2026-05-11T10:54+00:00; Outbreaks and emerging infections; relevance 5/5)
 - [Dengue fever in Sri Lanka: More than 25,000 cases reported in 2026 to date](https://outbreaknewstoday.substack.com/p/dengue-fever-in-sri-lanka-more-than) (Outbreak News Today; 2026-05-02T15:24+00:00; Outbreaks and emerging infections; relevance 5/5)
 - [Bangladesh: H5N1 avian influenza fatality in Chattogram child](https://outbreaknewstoday.substack.com/p/bangladesh-h5n1-avian-influenza-fatality) (Outbreak News Today; 2026-05-02T07:00+00:00; Outbreaks and emerging infections; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (71), Policy, surveillance, and public health infrastructure (4), Major epidemiology studies (1)
+- Category mix: Outbreaks and emerging infections (68), Policy, surveillance, and public health infrastructure (4), Major epidemiology studies (1)
 - Source health: 2 source(s) failed during collection: Nigeria Centre for Disease Control, USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
 ### Hantavirus and cruise-ship outbreak
 - Lead item: [Andes hantavirus outbreak: ECDC continues working on the frontline to support EU Member States](https://www.ecdc.europa.eu/en/news-events/andes-hantavirus-outbreak-ecdc-continues-working-frontline-support-eu-member-states) (ECDC News)
-- New publisher/source coverage joined this story cluster: Al Jazeera, Anadolu Ajansı, CTV News.
-- Story volume increased from 61 to 64 clustered item(s) in the current window.
-- 1 newly observed linked item(s) were added since the last saved snapshot.
+- New publisher/source coverage joined this story cluster: EL PAÍS English, NTD News, WCTI.
+- 6 newly observed linked item(s) were added since the last saved snapshot.
 
 ### Measles transmission and vaccination
-- Lead item: [How conflict is driving measles outbreaks in the Middle East and North Africa](https://www.arabnews.jp/en/middle-east/article_169830/) (arabnews.jp)
-- New publisher/source coverage joined this story cluster: cbs19news.com.
+- Lead item: [Officials investigate case of measles in the Central Region](https://www.cbs19news.com/news/officials-investigate-case-of-measles-in-the-central-region/article_e6b1c226-cf11-49ac-9d83-f3c3eec360b9.html) (cbs19news.com)
+- The lead item has changed to [Officials investigate case of measles in the Central Region](https://www.cbs19news.com/news/officials-investigate-case-of-measles-in-the-central-region/article_e6b1c226-cf11-49ac-9d83-f3c3eec360b9.html) from cbs19news.com.
+- 3 newly observed linked item(s) were added since the last saved snapshot.
 
 
 ## Major topics
 ### Hantavirus and cruise-ship outbreak
-- Topic size: 64 item(s) across 32 source(s); 4 official/primary-source item(s).
+- Topic size: 63 item(s) across 31 source(s); 4 official/primary-source item(s).
 - Lead item: [Andes hantavirus outbreak: ECDC continues working on the frontline to support EU Member States](https://www.ecdc.europa.eu/en/news-events/andes-hantavirus-outbreak-ecdc-continues-working-frontline-support-eu-member-states) (ECDC News, 2026-05-11T16:39+02:00)
 - Detailed note: Hantavirus infection has been laboratory-confirmed in two individuals in connection with the cluster of illness reported on a cruise ship. Passengers and crew continue to disembark and to be medically evacuated to their countries of origin. On 10 May, the cruise ship MV Hondius arrived at the port of Granadilla, Tenerife, Canary Islands.
-- Evidence notes: [Andes hantavirus outbreak: ECDC continues working on the frontline to support EU Member States](https://www.ecdc.europa.eu/en/news-events/andes-hantavirus-outbreak-ecdc-continues-working-frontline-support-eu-member-states) (ECDC News); [ECDC publishes guidance for the management of passengers linked to the Andes hantavirus outbreak on cruise ship](https://www.ecdc.europa.eu/en/news-events/ecdc-publishes-guidance-management-passengers-linked-andes-hantavirus-outbreak-cruise) (ECDC News); [Cruise ship hantavirus outbreak: ECDC response activated](https://www.ecdc.europa.eu/en/news-events/cruise-ship-hantavirus-outbreak-ecdc-response-activated) (ECDC News); [Hantavirus outbreak on cruise ship under investigation: risk for Europe very low](https://www.ecdc.europa.eu/en/news-events/hantavirus-outbreak-cruise-ship-under-investigation-risk-europe-very-low) (ECDC News); [From US to Singapore, countries race to track hantavirus](https://www.cnn.com/2026/05/07/world/hantavirus-ship-tenerife-outbreak-intl) (CNN)
+- Evidence notes: [Andes hantavirus outbreak: ECDC continues working on the frontline to support EU Member States](https://www.ecdc.europa.eu/en/news-events/andes-hantavirus-outbreak-ecdc-continues-working-frontline-support-eu-member-states) (ECDC News); [ECDC publishes guidance for the management of passengers linked to the Andes hantavirus outbreak on cruise ship](https://www.ecdc.europa.eu/en/news-events/ecdc-publishes-guidance-management-passengers-linked-andes-hantavirus-outbreak-cruise) (ECDC News); [Cruise ship hantavirus outbreak: ECDC response activated](https://www.ecdc.europa.eu/en/news-events/cruise-ship-hantavirus-outbreak-ecdc-response-activated) (ECDC News); [Hantavirus outbreak on cruise ship under investigation: risk for Europe very low](https://www.ecdc.europa.eu/en/news-events/hantavirus-outbreak-cruise-ship-under-investigation-risk-europe-very-low) (ECDC News); [Hantavirus misinformation runs rampant as the US is unequipped to respond to infectious disease health scare](https://www.theguardian.com/science/2026/may/08/hantavirus-global-heath-scare) (The Guardian)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
@@ -40,9 +40,9 @@ Search window: 7 day(s) ending 2026-05-11
 - Topic size: 4 item(s) across 4 source(s); 2 official/primary-source item(s).
 - Lead item: [Nigeria strengthens outbreak preparedness through €4.2 million EU WHO programme](https://www.afro.who.int/countries/nigeria/publication/nigeria-strengthens-outbreak-preparedness-through-eu42-million-eu-who-programme) (WHO Regional Office for Africa, 2026-05-11T16:57+00:00)
 - Detailed note: Several lower-volume signals passed the filters, but they do not resolve into one coherent topic cluster. Use the linked evidence notes directly rather than reading this as a single story.
-- Evidence notes: [Nigeria strengthens outbreak preparedness through €4.2 million EU WHO programme](https://www.afro.who.int/countries/nigeria/publication/nigeria-strengthens-outbreak-preparedness-through-eu42-million-eu-who-programme) (WHO Regional Office for Africa); [Malaria vaccine cuts child deaths by 13% in Africa, offering fresh hope: The Lancet](https://indianexpress.com/article/health-wellness/malaria-vaccine-child-mortality-lancet-study-india-elimination-10683903/) (The Indian Express); [Comparative analysis of viral biological characteristics and pathogenicity of representative prevalent avian reovirus strains from genotypes I to V.](https://pubmed.ncbi.nlm.nih.gov/42100896/) (PubMed Infectious Disease Search); [Florida: Additional chikungunya case reported in Miami-Dade County, Country of origin is Bolivia](https://outbreaknewstoday.substack.com/p/florida-additional-chikungunya-case) (Outbreak News Today)
+- Evidence notes: [Nigeria strengthens outbreak preparedness through €4.2 million EU WHO programme](https://www.afro.who.int/countries/nigeria/publication/nigeria-strengthens-outbreak-preparedness-through-eu42-million-eu-who-programme) (WHO Regional Office for Africa); [Malaria vaccine cuts child deaths by 13% in Africa, offering fresh hope: The Lancet](https://indianexpress.com/article/health-wellness/malaria-vaccine-child-mortality-lancet-study-india-elimination-10683903/) (The Indian Express); [Africa CDC raises alarm as mpox, cholera spread across borders](https://pmnewsnigeria.com/2026/05/01/africa-cdc-raises-alarm-as-mpox-cholera-spread-across-borders/) (P.M. News); [Comparative analysis of viral biological characteristics and pathogenicity of representative prevalent avian reovirus strains from genotypes I to V.](https://pubmed.ncbi.nlm.nih.gov/42100896/) (PubMed Infectious Disease Search)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
-- Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
+- Caveats / uncertainty: These notes are limited to source text collected in this run.
 
 ### Dengue and arboviruses
 - Topic size: 1 item(s) across 1 source(s); 0 official/primary-source item(s).
@@ -61,10 +61,10 @@ Search window: 7 day(s) ending 2026-05-11
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Source diversity is limited so corroboration is thin.
 
 ### Measles transmission and vaccination
-- Topic size: 5 item(s) across 5 source(s); 0 official/primary-source item(s).
-- Lead item: [How conflict is driving measles outbreaks in the Middle East and North Africa](https://www.arabnews.jp/en/middle-east/article_169830/) (arabnews.jp, 2026-05-10T01:05+00:00)
-- Detailed note: Updated: May 11, 2026 @ 4:30 pm Limited detail was available from feed metadata alone. Save the Children says ongoing conflict across the Middle East and North Africa is pushing that number higher at a frightening rate and increasing the risk of preventable deaths.
-- Evidence notes: [How conflict is driving measles outbreaks in the Middle East and North Africa](https://www.arabnews.jp/en/middle-east/article_169830/) (arabnews.jp); [Officials investigate case of measles in the Central Region](https://www.cbs19news.com/news/officials-investigate-case-of-measles-in-the-central-region/article_e6b1c226-cf11-49ac-9d83-f3c3eec360b9.html) (cbs19news.com); [Confirmed measles cases grow to 12 in Pa.’s Lebanon County](https://www.post-gazette.com/news/health/2026/05/06/lebanon-county-pa-measles/stories/202605060063) (Pittsburgh Post-Gazette); [Measles case confirmed in Buckingham County](https://dailyprogress.com/news/local/business/health-care/article_5a28324d-d284-4675-b94a-3c51876cdeb2.html) (The Daily Progress); [Lebanon city and county officials await more information on measles outbreak](https://lebtown.com/2026/05/08/lebanon-city-and-county-officials-await-more-information-on-measles-outbreak/) (LebTown)
+- Topic size: 3 item(s) across 3 source(s); 0 official/primary-source item(s).
+- Lead item: [Officials investigate case of measles in the Central Region](https://www.cbs19news.com/news/officials-investigate-case-of-measles-in-the-central-region/article_e6b1c226-cf11-49ac-9d83-f3c3eec360b9.html) (cbs19news.com, 2026-05-09T02:57+00:00)
+- Detailed note: Updated: May 11, 2026 @ 5:30 pm Limited detail was available from feed metadata alone.
+- Evidence notes: [Officials investigate case of measles in the Central Region](https://www.cbs19news.com/news/officials-investigate-case-of-measles-in-the-central-region/article_e6b1c226-cf11-49ac-9d83-f3c3eec360b9.html) (cbs19news.com); [Measles case confirmed in Buckingham County](https://dailyprogress.com/news/local/business/health-care/article_5a28324d-d284-4675-b94a-3c51876cdeb2.html) (The Daily Progress); [Lebanon city and county officials await more information on measles outbreak](https://lebtown.com/2026/05/08/lebanon-city-and-county-officials-await-more-information-on-measles-outbreak/) (LebTown)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting.
 
@@ -385,35 +385,35 @@ Search window: 7 day(s) ending 2026-05-11
 - Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
 - Relevance score: 5/5
 
-### How conflict is driving measles outbreaks in the Middle East and North Africa
-- Source: arabnews.jp
-- Date: 2026-05-10T01:05+00:00
-- URL: https://www.arabnews.jp/en/middle-east/article_169830/
+### Africa CDC raises alarm as mpox, cholera spread across borders
+- Source: P.M. News
+- Date: 2026-05-01T07:42+00:00
+- URL: https://pmnewsnigeria.com/2026/05/01/africa-cdc-raises-alarm-as-mpox-cholera-spread-across-borders/
 - Category: Outbreaks and emerging infections
-- Summary: Save the Children says ongoing conflict across the Middle East and North Africa is pushing that number higher at a frightening rate and increasing the risk of preventable deaths. Limited detail was available from feed metadata alone.
+- Summary: 2027 hopes in jeopardy as Governor storms out of APC screening “The transmission is increasingly being driven by a few member states, but what is more concerning is the cross-border movement of cases, especially from high-burden areas,” he said. Cho said that the recent surveillance data showed that transmission was no longer confined to single countries but was spreading across regions through human movement and weak cross-border monitoring systems. Cho, Intelligence and Data Analyst, Africa CDC, Division of Surveillance and Disease Intelligence, said this during the agency’s weekly outbreak briefing on Thursday.
 - Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response.
-- Caveats / uncertainty: Usable source detail was limited after cleanup.
-- Relevance score: 4/5
+- Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
+- Relevance score: 5/5
 
 ### Officials investigate case of measles in the Central Region
 - Source: cbs19news.com
 - Date: 2026-05-09T02:57+00:00
 - URL: https://www.cbs19news.com/news/officials-investigate-case-of-measles-in-the-central-region/article_e6b1c226-cf11-49ac-9d83-f3c3eec360b9.html
 - Category: Outbreaks and emerging infections
-- Summary: Updated: May 11, 2026 @ 4:30 pm Limited detail was available from feed metadata alone.
+- Summary: Updated: May 11, 2026 @ 5:30 pm Limited detail was available from feed metadata alone.
 - Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response.
 - Caveats / uncertainty: Usable source detail was limited after cleanup.
 - Relevance score: 4/5
 
 
 ## Other notable readings
+- [Hantavirus misinformation runs rampant as the US is unequipped to respond to infectious disease health scare](https://www.theguardian.com/science/2026/may/08/hantavirus-global-heath-scare) | The Guardian | 2026-05-08T18:13+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - [From US to Singapore, countries race to track hantavirus](https://www.cnn.com/2026/05/07/world/hantavirus-ship-tenerife-outbreak-intl) | CNN | 2026-05-07T12:53+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Comparative analysis of viral biological characteristics and pathogenicity of representative prevalent avian reovirus strains from genotypes I to V.](https://pubmed.ncbi.nlm.nih.gov/42100896/) | PubMed Infectious Disease Search | 2026-05-08T00:00 | Major epidemiology studies
   This points to severe immune activation and a high risk of joint injury. Immunologically, genotypes I and IV triggered strong early pro-inflammatory cytokine responses and significantly upregulated MMP13 and Wnt14 at 7 dpi. Phylogenetic analysis of these isolates and field strains in China based on the σC gene revealed co-circulation of multiple genotypes (predominantly I and II), with epidemic strains actively evolving and genetically distant from the S1133 vaccine.
-- [Cruise Ship Hit by Hantavirus Leaves Canary Islands and Sails Toward Netherlands](https://www.nytimes.com/2026/05/11/world/europe/hantavirus-cruise-ship-canary-islands.html) | The New York Times | 2026-05-11T19:54+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [2 more passengers, French and American, evacuated from cruise ship test positive for hantavirus](https://www.cbc.ca/news/world/hantavirus-cruise-ship-evacuation-9.7194723) | CBC | 2026-05-11T15:55+00:00 | Outbreaks and emerging infections
+- [3 more passengers, Spanish, French and American, evacuated from cruise ship test positive for hantavirus](https://www.cbc.ca/news/world/hantavirus-cruise-ship-evacuation-9.7194723) | CBC | 2026-05-11T20:48+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [What comes next for US and Canada passengers evacuated from hantavirus-hit cruise ship](https://www.bbc.com/news/articles/cn4pq1y1zjgo) | BBC | 2026-05-11T15:07+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
@@ -426,6 +426,8 @@ Search window: 7 day(s) ending 2026-05-11
 - [Hantavirus cruise ship passengers enter isolation facility after evacuation to UK](https://www.theguardian.com/world/2026/may/11/mv-hondius-passengers-from-hantavirus-cruise-ship-enter-isolation-facility-in-wirral) | The Guardian | 2026-05-11T08:57+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Hantavirus outbreak latest: Two more cases confirmed amongst evacuees](https://www.euronews.com/health/2026/05/11/hantavirus-outbreak-latest-france-confirms-new-case-in-a-woman-evacuated-from-the-ship) | Euronews.com | 2026-05-11T08:15+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Passengers evacuated from hantavirus cruise ship](https://www.nbcnews.com/video/shorts/passengers-evacuated-from-hantavirus-cruise-ship-263088709635) | NBC News | 2026-05-11T07:39+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Americans evacuated from virus cruise ship arrive back in US](https://news.sky.com/video/americans-evacuated-from-virus-cruise-ship-arrive-back-in-us-13542606) | Sky News | 2026-05-11T06:12+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
@@ -444,8 +446,6 @@ Search window: 7 day(s) ending 2026-05-11
 - [Cruise Ship Linked to Hantavirus Outbreak Arrives in Spain’s Canary Islands for Disembarking](https://www.nytimes.com/2026/05/10/world/europe/hantavirus-cruise-ship-canary-islands.html) | The New York Times | 2026-05-10T06:50+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Evacuation flights leave Tenerife after cruise ship virus outbreak](https://www.reuters.com/business/healthcare-pharmaceuticals/cruise-ship-hit-by-hantavirus-outbreak-arrives-tenerife-2026-05-10/) | Reuters | 2026-05-10T04:36+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Countries prepare to evacuate hantavirus ship passengers](https://www.reuters.com/world/europe/germany-france-belgium-ireland-netherlands-send-planes-passengers-hantavirus-hit-2026-05-09/) | Reuters | 2026-05-09T22:38+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
