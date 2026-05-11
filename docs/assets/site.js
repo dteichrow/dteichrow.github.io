@@ -58,4 +58,28 @@
   }
 
   document.querySelectorAll("[data-search-source]").forEach(initSearchShell);
+
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!reduceMotion) {
+    const hero = document.querySelector(".hero-home");
+    if (hero) {
+      let ticking = false;
+      const updateHeroDepth = () => {
+        const offset = Math.min(36, Math.max(0, window.scrollY * 0.035));
+        hero.style.backgroundPosition = `center calc(50% + ${offset}px)`;
+        ticking = false;
+      };
+      window.addEventListener(
+        "scroll",
+        () => {
+          if (!ticking) {
+            window.requestAnimationFrame(updateHeroDepth);
+            ticking = true;
+          }
+        },
+        { passive: true }
+      );
+      updateHeroDepth();
+    }
+  }
 })();

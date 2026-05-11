@@ -1,28 +1,31 @@
 :root {
-  --bg: #e8e1d3;
-  --bg-deep: #d8cebc;
-  --surface: #f8f4ea;
-  --surface-alt: #f2ebde;
-  --paper: #fffdf8;
+  --bg: #f2ede2;
+  --bg-deep: #dcc8a1;
+  --surface: #f7f0e4;
+  --surface-alt: #eadfca;
+  --paper: #fffaf0;
   --paper-cool: #fbfcfd;
-  --ink: #1b2836;
+  --ink: #1a1a1a;
   --ink-soft: #42515e;
   --line: #d6cab7;
   --line-strong: rgba(150, 130, 103, 0.38);
-  --accent: #8d3f2f;
-  --accent-soft: rgba(141, 63, 47, 0.1);
-  --signal: #1f5b89;
+  --accent: #6b1e23;
+  --accent-soft: rgba(107, 30, 35, 0.1);
+  --signal: #1e3a4d;
   --signal-soft: rgba(31, 91, 137, 0.12);
+  --oxidized-teal: #2f6f6d;
+  --quiet-gold: #b28b3e;
   --teal-soft: rgba(75, 112, 115, 0.12);
   --clay-soft: rgba(172, 121, 87, 0.12);
   --amber-soft: rgba(176, 138, 68, 0.11);
-  --navy-deep: #111823;
-  --navy-mid: #182433;
-  --masthead-accent: #c9a84c;
+  --navy-deep: #0b1d2a;
+  --navy-mid: #1e3a4d;
+  --masthead-accent: #b28b3e;
   --shadow: 0 24px 56px rgba(49, 36, 22, 0.1);
   --shadow-soft: 0 16px 32px rgba(49, 36, 22, 0.06);
   --mono: "SFMono-Regular", Menlo, Consolas, monospace;
-  --sans: "Avenir Next", "Helvetica Neue", sans-serif;
+  --display: "Fraunces", "Libre Baskerville", "Iowan Old Style", Georgia, serif;
+  --sans: "Inter", "IBM Plex Sans", "Avenir Next", "Helvetica Neue", sans-serif;
 }
 
 * {
@@ -37,10 +40,23 @@ body {
 }
 
 body {
-  background: linear-gradient(180deg, #f3eee5 0%, var(--bg) 44%, var(--bg-deep) 100%);
+  background:
+    radial-gradient(circle at 12% 0%, rgba(178, 139, 62, 0.13), transparent 34%),
+    linear-gradient(180deg, #f6f0e5 0%, var(--bg) 42%, #e2d5bf 100%);
   color: var(--ink);
-  font-family: "Iowan Old Style", Georgia, serif;
+  font-family: var(--display);
   line-height: 1.6;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image: url("visuals/paper-grain.svg");
+  background-size: 260px 260px;
+  opacity: 0.32;
+  pointer-events: none;
 }
 
 img {
@@ -68,13 +84,17 @@ a:focus-visible,
 
 .site-header {
   position: relative;
-  background: linear-gradient(180deg, rgba(15, 20, 27, 0.98), rgba(21, 29, 39, 0.98));
+  background:
+    linear-gradient(180deg, rgba(9, 18, 27, 0.98), rgba(14, 23, 31, 0.98)),
+    url("visuals/atlantic-ocean-1788.jpg") center 44% / cover no-repeat;
   color: #f3eadc;
   border-bottom: 1px solid rgba(214, 202, 183, 0.18);
   box-shadow: 0 18px 40px rgba(4, 7, 10, 0.22);
 }
 
 .site-header-inner {
+  position: relative;
+  z-index: 1;
   width: 100%;
   max-width: 1160px;
   margin: 0 auto;
@@ -912,6 +932,391 @@ h3 {
   grid-column: 1 / -1;
 }
 
+/* Premium historical-atlas direction */
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(220, 200, 161, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(220, 200, 161, 0.06) 1px, transparent 1px);
+  background-size: 44px 44px;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.site-header-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1240px;
+}
+
+.site-brand,
+.hero-title,
+.section-head h2,
+.site-card h3,
+.about-block h3,
+.detail-block h3 {
+  font-family: var(--display);
+  font-weight: 700;
+}
+
+.site-brand {
+  font-size: 3rem;
+}
+
+.page {
+  max-width: 1240px;
+  gap: 56px;
+}
+
+.hero {
+  overflow: hidden;
+  padding: 46px 42px;
+  min-height: 320px;
+  display: grid;
+  align-content: end;
+  border: 1px solid rgba(98, 82, 58, 0.25);
+  background:
+    linear-gradient(90deg, rgba(247, 240, 228, 0.96), rgba(247, 240, 228, 0.78), rgba(247, 240, 228, 0.38)),
+    url("visuals/atlantic-ocean-1788.jpg") center / cover no-repeat;
+  box-shadow: 0 32px 82px rgba(49, 36, 22, 0.10);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(30, 58, 77, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 58, 77, 0.06) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(90deg, transparent, #000 42%, #000);
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  right: 32px;
+  bottom: 26px;
+  width: 180px;
+  height: 180px;
+  border: 1px solid rgba(178, 139, 62, 0.25);
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 0 36px rgba(178, 139, 62, 0.035),
+    inset 0 0 0 72px rgba(47, 111, 109, 0.035);
+  opacity: 0.64;
+  pointer-events: none;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  max-width: 18ch;
+  font-size: 3rem;
+  color: var(--navy-deep);
+}
+
+.hero-home {
+  min-height: 500px;
+  padding: 52px 54px 40px;
+  align-content: end;
+  border: 1px solid rgba(216, 201, 170, 0.18);
+  background:
+    radial-gradient(circle at 72% 34%, rgba(178, 139, 62, 0.18), transparent 28%),
+    linear-gradient(90deg, rgba(7, 15, 23, 0.98) 0%, rgba(9, 21, 32, 0.92) 40%, rgba(10, 24, 35, 0.58) 70%, rgba(10, 24, 35, 0.34) 100%),
+    url("visuals/north-atlantic-1893.jpg") center / cover no-repeat;
+  box-shadow: 0 38px 92px rgba(7, 10, 15, 0.28);
+}
+
+.hero-home::before {
+  background:
+    linear-gradient(rgba(216, 201, 170, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(216, 201, 170, 0.10) 1px, transparent 1px);
+  background-size: 54px 54px;
+  mask-image: linear-gradient(90deg, transparent 0, #000 38%, transparent 100%);
+}
+
+.hero-home::after {
+  right: 58px;
+  bottom: 52px;
+  border-color: rgba(216, 201, 170, 0.25);
+  opacity: 0.52;
+}
+
+.hero-home .kicker,
+.hero-home .hero-status-label {
+  color: rgba(220, 200, 161, 0.92);
+}
+
+.hero-home .hero-title {
+  max-width: 23ch;
+  color: #f8efe0;
+  font-size: 2.9rem;
+  line-height: 1.04;
+  text-shadow: 0 16px 42px rgba(0, 0, 0, 0.34);
+}
+
+.hero-home .hero-main {
+  max-width: 900px;
+}
+
+.hero-home .subtitle,
+.hero-home .hero-status-line {
+  color: rgba(242, 237, 226, 0.82);
+}
+
+.hero-home .hero-prose {
+  max-width: 86ch;
+}
+
+.hero-home .button.secondary {
+  background: rgba(242, 237, 226, 0.10);
+  border-color: rgba(242, 237, 226, 0.28);
+  color: #fff8ed;
+  backdrop-filter: blur(10px);
+}
+
+.hero-home .button.secondary:hover {
+  background: rgba(242, 237, 226, 0.16);
+  border-color: rgba(220, 200, 161, 0.58);
+  box-shadow: 0 18px 32px rgba(0, 0, 0, 0.18);
+}
+
+.hero-home .hero-status-line {
+  border-top-color: rgba(242, 237, 226, 0.18);
+}
+
+.page-historical .hero,
+.page-atlases .hero {
+  background:
+    linear-gradient(90deg, rgba(242, 237, 226, 0.96), rgba(242, 237, 226, 0.74), rgba(242, 237, 226, 0.30)),
+    url("visuals/broad-street-cholera-map.jpg") center / cover no-repeat;
+}
+
+.page-about .hero {
+  color: #f7f0e4;
+  background:
+    linear-gradient(90deg, rgba(8, 12, 16, 0.96), rgba(10, 17, 23, 0.72), rgba(10, 17, 23, 0.22)),
+    url("visuals/old-congressional-reading-room-1897.jpg") center / cover no-repeat;
+}
+
+.page-about .hero-title,
+.page-about .subtitle {
+  color: #f7f0e4;
+}
+
+.page-methods .hero,
+.page-search .hero,
+.page-reference .hero {
+  background:
+    linear-gradient(90deg, rgba(11, 29, 42, 0.96), rgba(11, 29, 42, 0.80), rgba(11, 29, 42, 0.36)),
+    url("visuals/wellcome-microscope-m0010657.jpg") center / cover no-repeat;
+}
+
+.page-methods .hero-title,
+.page-search .hero-title,
+.page-reference .hero-title,
+.page-methods .subtitle,
+.page-search .subtitle,
+.page-reference .subtitle {
+  color: #f7f0e4;
+}
+
+.home-section {
+  position: relative;
+  padding: 34px 0 0;
+}
+
+.home-section::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto auto;
+  width: min(420px, 44vw);
+  height: 180px;
+  background: url("visuals/john-lea-cholera-map-1850.jpg") center / cover no-repeat;
+  opacity: 0.075;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.newsdesk-panel {
+  overflow: hidden;
+  padding: 38px 34px;
+  background:
+    linear-gradient(180deg, rgba(11, 29, 42, 0.95), rgba(10, 18, 27, 0.98)),
+    url("visuals/plague-ship-hoffman-island.jpg") center / cover no-repeat;
+}
+
+.newsdesk-panel::after {
+  background: url("visuals/quarantine-notice-1878.jpg") center / cover no-repeat;
+  opacity: 0.10;
+  mix-blend-mode: screen;
+}
+
+.atlas-panel {
+  padding-top: 34px;
+}
+
+.atlas-panel .section-head::after {
+  background: url("visuals/atlantic-ocean-1788.jpg") center / cover no-repeat;
+  opacity: 0.16;
+  border-radius: 6px;
+}
+
+.site-card {
+  isolation: isolate;
+  border-color: rgba(98, 82, 58, 0.22);
+  box-shadow: 0 18px 38px rgba(36, 26, 17, 0.08);
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease,
+    filter 220ms ease;
+}
+
+.site-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(178, 139, 62, 0.42);
+  box-shadow: 0 28px 56px rgba(36, 26, 17, 0.14);
+}
+
+.atlas-card {
+  padding: 0;
+  gap: 0;
+  background: #0b1d2a;
+  color: #f2ede2;
+  min-height: 420px;
+}
+
+.atlas-card::before,
+.atlas-card::after {
+  display: none;
+}
+
+.atlas-card > :not(.atlas-card-visual) {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.atlas-card > :last-child {
+  margin-bottom: 20px;
+}
+
+.atlas-card .card-utility-row {
+  margin-top: 18px;
+}
+
+.atlas-card h3,
+.atlas-card h3 a,
+.atlas-card .muted-note,
+.atlas-card .card-meta-text,
+.atlas-card .card-utility-row {
+  color: #f2ede2;
+}
+
+.atlas-card .muted-note,
+.atlas-card .card-meta-text,
+.atlas-card .card-utility-row {
+  color: rgba(242, 237, 226, 0.76);
+}
+
+.atlas-card .kicker,
+.atlas-card .card-utility-label {
+  color: rgba(220, 200, 161, 0.94);
+}
+
+.atlas-card .story-status-pill,
+.atlas-card .badge {
+  border-color: rgba(178, 139, 62, 0.34);
+  background: rgba(178, 139, 62, 0.12);
+  color: rgba(242, 237, 226, 0.88);
+}
+
+.atlas-card-visual {
+  position: relative;
+  display: block;
+  min-height: 210px;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 1px solid rgba(242, 237, 226, 0.14);
+}
+
+.atlas-card-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 36%, rgba(7, 12, 18, 0.72));
+}
+
+.atlas-card-visual span {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  z-index: 1;
+  padding: 7px 10px;
+  border: 1px solid rgba(242, 237, 226, 0.22);
+  border-radius: 999px;
+  background: rgba(7, 12, 18, 0.46);
+  color: #f2ede2;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
+}
+
+.atlas-card-visual-pathogen-atlas {
+  background-image: url("visuals/plague-ship-hoffman-island.jpg");
+}
+
+.atlas-card-visual-maritime-disease-atlas {
+  background-image: url("visuals/north-atlantic-1893.jpg");
+}
+
+.atlas-card-visual-revolutionary-war-atlas {
+  background-image: url("visuals/quarantine-notice-1878.jpg");
+}
+
+.atlas-card-visual-viking-health-atlas {
+  background-image: url("visuals/atlantic-ocean-1788.jpg");
+}
+
+.essay-card {
+  background:
+    linear-gradient(180deg, rgba(255, 250, 240, 0.95), rgba(247, 240, 228, 0.97)),
+    url("visuals/broad-street-cholera-map.jpg") center / cover no-repeat;
+  background-blend-mode: normal, multiply;
+}
+
+.essay-card:not(.essay-card-has-media)::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 250, 240, 0.84);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.essay-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.about-block {
+  background:
+    linear-gradient(180deg, rgba(255, 250, 240, 0.92), rgba(247, 240, 228, 0.88)),
+    url("visuals/paper-grain.svg");
+  box-shadow: 0 16px 34px rgba(36, 26, 17, 0.06);
+}
+
 @media (max-width: 980px) {
   .site-header-inner {
     padding: 24px 14px 18px;
@@ -920,6 +1325,20 @@ h3 {
   .page {
     padding: 28px 14px 48px;
     gap: 36px;
+  }
+
+  .hero,
+  .hero-home {
+    min-height: auto;
+    padding: 38px 24px;
+  }
+
+  .hero-title {
+    font-size: 2.35rem;
+  }
+
+  .hero-home .hero-title {
+    font-size: 2.75rem;
   }
 
   .section-head-split {
@@ -977,7 +1396,7 @@ h3 {
 
   .hero-home .hero-title {
     max-width: none;
-    font-size: clamp(2rem, 7.8vw, 3.1rem);
+    font-size: 2.55rem;
   }
 
   .hero-actions,

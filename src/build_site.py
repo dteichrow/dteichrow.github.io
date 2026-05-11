@@ -111,7 +111,7 @@ def base_html(
     <link rel="stylesheet" href="{css_href}" />
     {extra_head}
   </head>
-  <body>
+  <body class="site-page page-{html.escape(active)}">
       {site_nav(active, base_url)}
     <main class="page">
       {body}
@@ -150,8 +150,12 @@ def render_atlas_card(entry: dict[str, Any], base_url: str) -> str:
     coordinate_hint = " / ".join(keyword.upper() for keyword in entry.get("keywords", [])[:2]) or "CURATED ATLAS"
     status = entry.get("status_label", "Atlas")
     feature_line = entry.get("evidence_model", "")
+    atlas_token = css_token(entry.get("atlas_id"), "atlas")
     return (
-        '<article class="site-card atlas-card">'
+        f'<article class="site-card atlas-card atlas-card-{html.escape(atlas_token)}">'
+        f'<a class="atlas-card-visual atlas-card-visual-{html.escape(atlas_token)}" href="{html.escape(href)}" aria-hidden="true" tabindex="-1">'
+        f'<span>{html.escape(status)}</span>'
+        "</a>"
         '<div class="card-utility-row">'
         '<span class="card-utility-label">Atlas</span>'
         f'<span class="card-utility-meta">{html.escape(coordinate_hint)}</span>'
