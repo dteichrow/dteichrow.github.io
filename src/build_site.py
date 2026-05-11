@@ -80,7 +80,7 @@ def site_nav(active: str, base_url: str) -> str:
         '<div class="site-header-inner">'
         '<div class="site-header-copy">'
         '<p class="kicker">The Edge of Epidemiology</p>'
-        '<h1 class="site-brand"><a href="{home}">The Edge of Epidemiology</a></h1>'
+        '<h1 class="site-brand"><a href="{home}"><span>The Edge of Epidemiology</span> <span class="site-brand-byline">by Devin Teichrow</span></a></h1>'
         '<p class="site-header-title">History-haunted epidemiology, live reporting, and atlas work in one place.</p>'
         "</div>"
         '<nav class="site-nav" aria-label="Primary navigation">{links}</nav>'

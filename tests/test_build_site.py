@@ -186,6 +186,8 @@ atlases:
     assert "https://images.example/cover.jpg" in home_text
     assert "reference-card" in home_text
     assert "Read the essays" in home_text
+    assert "site-brand-byline" in home_text
+    assert "by Devin Teichrow" in home_text
     assert "Unified site" not in home_text
     assert 'button primary' not in home_text
     assert "site-header-inner" in home_text

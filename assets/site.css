@@ -104,8 +104,21 @@ a:focus-visible,
 }
 
 .site-brand a {
+  display: inline-flex;
+  flex-wrap: wrap;
+  column-gap: 0.32em;
+  row-gap: 0.12em;
+  align-items: baseline;
   color: #f7f0e4;
   text-decoration: none;
+}
+
+.site-brand-byline {
+  color: #8fb8d8;
+  font-family: var(--sans);
+  font-size: 0.42em;
+  font-weight: 600;
+  line-height: 1;
 }
 
 .site-header-title,
