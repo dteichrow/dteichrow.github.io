@@ -31,6 +31,7 @@ def test_transform_imported_html_rewrites_known_paths() -> None:
     assert "Edge of Epidemiology" in transformed
     assert "touch-action: pan-x" in transformed
     assert "The Edge of Epidemiology" in transformed
+    assert "by Devin Teichrow" in transformed
     assert "On this page" not in transformed
     assert "56 item(s)" not in transformed
     assert "26 source(s)" not in transformed
@@ -260,6 +261,8 @@ def test_import_external_pathogen_writes_js_payload(tmp_path, monkeypatch) -> No
     assert built_data.exists()
     assert source_data.exists()
     index_text = built_index.read_text()
+    assert "eoe-atlas-overlay-brand" in index_text
+    assert "by Devin Teichrow" in index_text
     assert 'href="../../index.html"' in index_text
     assert 'href="../index.html"' in index_text
     source_text = source_data.read_text()

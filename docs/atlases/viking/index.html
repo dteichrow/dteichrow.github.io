@@ -378,16 +378,45 @@ html, body {
 <style id="eoe-atlas-overlay-style">
   #eoe-atlas-overlay {
     position: fixed;
+    inset: 0;
+    z-index: 1200;
+    pointer-events: none;
+  }
+  #eoe-atlas-overlay a {
+    pointer-events: auto;
+  }
+  #eoe-atlas-overlay-brand {
+    position: fixed;
+    top: 14px;
+    left: 18px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    column-gap: 0.32em;
+    row-gap: 0.12em;
+    align-items: baseline;
+    padding: 7px 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.18);
+    background: rgba(12, 12, 10, 0.86);
+    color: #f5ecdd;
+    text-decoration: none;
+    font: 700 clamp(15px, 1.45vw, 20px)/1 "Iowan Old Style", Georgia, serif;
+    backdrop-filter: blur(12px);
+  }
+  #eoe-atlas-overlay-brand .byline {
+    color: #8fb8d8;
+    font: 600 0.52em/1 "Avenir Next", "Helvetica Neue", sans-serif;
+  }
+  #eoe-atlas-overlay-links {
+    position: fixed;
     top: 14px;
     right: 18px;
-    z-index: 1200;
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
-    max-width: calc(100vw - 36px);
     justify-content: flex-end;
   }
-  #eoe-atlas-overlay a {
+  #eoe-atlas-overlay-links a {
     padding: 8px 12px;
     border-radius: 999px;
     border: 1px solid rgba(255,255,255,0.18);
@@ -399,10 +428,29 @@ html, body {
     text-transform: uppercase;
     backdrop-filter: blur(12px);
   }
-  #eoe-atlas-overlay a.active { color: #c9a84c; border-color: rgba(201,168,76,0.38); }
+  #eoe-atlas-overlay-links a.active { color: #c9a84c; border-color: rgba(201,168,76,0.38); }
+  @media (max-width: 980px) {
+    #eoe-atlas-overlay {
+      position: absolute;
+      top: 14px;
+      left: 18px;
+      right: 18px;
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: start;
+      gap: 8px;
+    }
+    #eoe-atlas-overlay-brand,
+    #eoe-atlas-overlay-links {
+      position: static;
+    }
+    #eoe-atlas-overlay-links {
+      justify-content: flex-start;
+    }
+  }
 </style>
 </head>
-<body><div id="eoe-atlas-overlay"><a href="../../index.html">Home</a><a href="../index.html" class="active">Atlases</a><a href="../../historical/index.html">Historical</a></div>
+<body><div id="eoe-atlas-overlay"><a id="eoe-atlas-overlay-brand" href="../../index.html"><span>The Edge of Epidemiology</span> <span class="byline">by Devin Teichrow</span></a><nav id="eoe-atlas-overlay-links" aria-label="Atlas navigation"><a href="../../index.html">Home</a><a href="../index.html" class="active">Atlases</a><a href="../../newsdesk/index.html">Newsdesk</a><a href="../../essays/index.html">Essays</a></nav></div>
 
 <!-- ── HEADER ── -->
 <header id="header">

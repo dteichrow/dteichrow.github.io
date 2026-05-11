@@ -118,10 +118,19 @@
     font-family: "Avenir Next", "Helvetica Neue", sans-serif;
   }
   .eoe-shell-brand {
+    display: inline-flex;
+    flex-wrap: wrap;
+    column-gap: 0.32em;
+    row-gap: 0.12em;
+    align-items: baseline;
     color: #f5ecdd;
     font: 700 clamp(1.2rem, 2vw, 1.65rem)/1.05 "Iowan Old Style", Georgia, serif;
     text-decoration: none;
-    letter-spacing: -0.02em;
+    letter-spacing: 0;
+  }
+  .eoe-shell-byline {
+    color: #8fb8d8;
+    font: 600 0.48em/1 "Avenir Next", "Helvetica Neue", sans-serif;
   }
   .eoe-shell-brand:hover { text-decoration: none; }
   .eoe-shell-links {
@@ -265,7 +274,7 @@
   }
 </style>
 </head>
-  <body><div class="eoe-shell-nav"><div class="eoe-shell-nav-inner"><a class="eoe-shell-brand" href="/">The Edge of Epidemiology</a><nav class="eoe-shell-links" aria-label="Umbrella navigation"><a class="" href="/">Home</a><a class="active" href="/newsdesk/">Newsdesk</a><a class="" href="/notebook/">Notebook</a><a class="" href="/atlases/pathogen/">Pathogen Atlas</a><a class="" href="/atlases/maritime/">Maritime Atlas</a><a class="" href="/essays/">Essays</a><a class="" href="/historical/">Historical</a><a class="" href="/reference/">Reference</a><a class="" href="/search/">Search</a></nav></div></div>
+  <body><div class="eoe-shell-nav"><div class="eoe-shell-nav-inner"><a class="eoe-shell-brand" href="/"><span>The Edge of Epidemiology</span> <span class="eoe-shell-byline">by Devin Teichrow</span></a><nav class="eoe-shell-links" aria-label="Umbrella navigation"><a class="" href="/">Home</a><a class="active" href="/newsdesk/">Newsdesk</a><a class="" href="/notebook/">Notebook</a><a class="" href="/atlases/pathogen/">Pathogen Atlas</a><a class="" href="/atlases/maritime/">Maritime Atlas</a><a class="" href="/essays/">Essays</a><a class="" href="/historical/">Historical</a><a class="" href="/reference/">Reference</a><a class="" href="/search/">Search</a></nav></div></div>
     <main class="page">
       <header class="site-header"><div class="site-header-copy"><div class="kicker">The Pathogen Dispatch</div><p class="site-header-title">Source-first newsroom desks</p></div><nav class="site-nav" aria-label="Site navigation"><a class="site-nav-link active" href="/newsdesk/" aria-current="page">Home</a><a class="site-nav-link" href="/notebook/">Notebook</a><a class="site-nav-link" href="/atlases/pathogen/">Atlas</a><a class="site-nav-link" href="/newsdesk/watch/">Global watch</a><a class="site-nav-link" href="/newsdesk/africa/">Africa</a><a class="site-nav-link" href="/newsdesk/asia/">Asia</a><a class="site-nav-link" href="/newsdesk/research/">Research</a><a class="site-nav-link" href="/newsdesk/official/">Official alerts</a><a class="site-nav-link" href="/newsdesk/archive/">Archive</a></nav></header>
       <section class="live-update-banner panel utility-panel" id="live-update-banner" hidden aria-live="polite" role="status" data-live-update-banner="true"><div class="live-update-copy"><div class="section-nav-label">New edition available</div><p class="live-update-text" id="live-update-text">An updated edition is available. Load the latest run when you are ready.</p></div><div class="live-update-actions"><button class="live-update-dismiss" id="live-update-dismiss" type="button" onclick="(function(btn){const banner=btn.closest('[data-live-update-banner]');if(banner){banner.hidden=true;banner.style.display='none';const runId=(banner.dataset&&banner.dataset.pendingRunId)||'';const key=(banner.dataset&&banner.dataset.dismissKey)||('pathogen-dispatch-live-update-dismissed:'+window.location.pathname);try{window.sessionStorage.setItem(key, window.location.pathname+'::'+(runId||'unknown'));}catch(error){}}return false;})(this)">Keep reading</button><button class="live-update-button" id="live-update-refresh" type="button" onclick="(function(btn){const banner=btn.closest('[data-live-update-banner]');if(banner){banner.hidden=true;banner.style.display='none';}const url=new URL(window.location.href);url.searchParams.set('_edition', String(Date.now()));window.location.replace(url.toString());return false;})(this)">Load latest</button></div></section>

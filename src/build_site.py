@@ -670,10 +670,19 @@ def shell_wrapper_css(base_url: str) -> str:
     font-family: "Avenir Next", "Helvetica Neue", sans-serif;
   }}
   .eoe-shell-brand {{
+    display: inline-flex;
+    flex-wrap: wrap;
+    column-gap: 0.32em;
+    row-gap: 0.12em;
+    align-items: baseline;
     color: #f5ecdd;
     font: 700 clamp(1.2rem, 2vw, 1.65rem)/1.05 "Iowan Old Style", Georgia, serif;
     text-decoration: none;
-    letter-spacing: -0.02em;
+    letter-spacing: 0;
+  }}
+  .eoe-shell-byline {{
+    color: #8fb8d8;
+    font: 600 0.48em/1 "Avenir Next", "Helvetica Neue", sans-serif;
   }}
   .eoe-shell-brand:hover {{ text-decoration: none; }}
   .eoe-shell-links {{
@@ -838,7 +847,7 @@ def imported_shell_nav(active: str, base_url: str) -> str:
     return (
         '<div class="eoe-shell-nav">'
         '<div class="eoe-shell-nav-inner">'
-        f'<a class="eoe-shell-brand" href="{html.escape(link_for(base_url, ""))}">The Edge of Epidemiology</a>'
+        f'<a class="eoe-shell-brand" href="{html.escape(link_for(base_url, ""))}"><span>The Edge of Epidemiology</span> <span class="eoe-shell-byline">by Devin Teichrow</span></a>'
         f'<nav class="eoe-shell-links" aria-label="Umbrella navigation">{"".join(link_html)}</nav>'
         "</div>"
         "</div>"
@@ -1108,28 +1117,65 @@ def import_epidossier_public(docs_dir: Path, base_url: str) -> dict[str, Any]:
     return latest
 
 
-def import_external_maritime(docs_dir: Path, base_url: str) -> None:
-    src_root = PROJECT_ROOT / "external" / "maritime_disease_atlas"
-    dest_root = docs_dir / "atlases" / "maritime"
-    if dest_root.exists():
-        shutil.rmtree(dest_root)
-    shutil.copytree(src_root, dest_root)
-    index_path = dest_root / "index.html"
-    html_text = index_path.read_text()
+ATLAS_OVERLAY_RE = re.compile(
+    r'\s*<style id="eoe-atlas-overlay-style">.*?</style>|\s*<div id="eoe-atlas-overlay">.*?</div>',
+    re.S,
+)
+
+
+def atlas_overlay_html(
+    *,
+    home_href: str,
+    atlases_href: str,
+    newsdesk_href: str,
+    essays_href: str,
+    top: str = "18px",
+    links_top: str | None = None,
+) -> tuple[str, str]:
+    links_top = links_top or top
     overlay = f"""
 <style id="eoe-atlas-overlay-style">
   #eoe-atlas-overlay {{
     position: fixed;
-    top: 84px;
-    right: 18px;
+    inset: 0;
     z-index: 1200;
+    pointer-events: none;
+  }}
+  #eoe-atlas-overlay a {{
+    pointer-events: auto;
+  }}
+  #eoe-atlas-overlay-brand {{
+    position: fixed;
+    top: {top};
+    left: 18px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    column-gap: 0.32em;
+    row-gap: 0.12em;
+    align-items: baseline;
+    padding: 7px 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.18);
+    background: rgba(12, 12, 10, 0.86);
+    color: #f5ecdd;
+    text-decoration: none;
+    font: 700 clamp(15px, 1.45vw, 20px)/1 "Iowan Old Style", Georgia, serif;
+    backdrop-filter: blur(12px);
+  }}
+  #eoe-atlas-overlay-brand .byline {{
+    color: #8fb8d8;
+    font: 600 0.52em/1 "Avenir Next", "Helvetica Neue", sans-serif;
+  }}
+  #eoe-atlas-overlay-links {{
+    position: fixed;
+    top: {links_top};
+    right: 18px;
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
-    max-width: calc(100vw - 36px);
     justify-content: flex-end;
   }}
-  #eoe-atlas-overlay a {{
+  #eoe-atlas-overlay-links a {{
     padding: 8px 12px;
     border-radius: 999px;
     border: 1px solid rgba(255,255,255,0.18);
@@ -1141,19 +1187,80 @@ def import_external_maritime(docs_dir: Path, base_url: str) -> None:
     text-transform: uppercase;
     backdrop-filter: blur(12px);
   }}
-  #eoe-atlas-overlay a.active {{ color: #c9a84c; border-color: rgba(201,168,76,0.38); }}
+  #eoe-atlas-overlay-links a.active {{ color: #c9a84c; border-color: rgba(201,168,76,0.38); }}
+  @media (max-width: 980px) {{
+    #eoe-atlas-overlay {{
+      position: absolute;
+      top: 14px;
+      left: 18px;
+      right: 18px;
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: start;
+      gap: 8px;
+    }}
+    #eoe-atlas-overlay-brand,
+    #eoe-atlas-overlay-links {{
+      position: static;
+    }}
+    #eoe-atlas-overlay-links {{
+      justify-content: flex-start;
+    }}
+  }}
 </style>
 """
     nav = (
         '<div id="eoe-atlas-overlay">'
-        '<a href="../../index.html">Home</a>'
-        '<a href="../index.html" class="active">Atlases</a>'
-        '<a href="../../essays/index.html">Essays</a>'
+        f'<a id="eoe-atlas-overlay-brand" href="{html.escape(home_href)}"><span>The Edge of Epidemiology</span> <span class="byline">by Devin Teichrow</span></a>'
+        '<nav id="eoe-atlas-overlay-links" aria-label="Atlas navigation">'
+        f'<a href="{html.escape(home_href)}">Home</a>'
+        f'<a href="{html.escape(atlases_href)}" class="active">Atlases</a>'
+        f'<a href="{html.escape(newsdesk_href)}">Newsdesk</a>'
+        f'<a href="{html.escape(essays_href)}">Essays</a>'
+        "</nav>"
         "</div>"
+    )
+    return overlay, nav
+
+
+def inject_atlas_overlay(
+    index_path: Path,
+    *,
+    home_href: str,
+    atlases_href: str,
+    newsdesk_href: str,
+    essays_href: str,
+    top: str = "18px",
+    links_top: str | None = None,
+) -> None:
+    html_text = ATLAS_OVERLAY_RE.sub("", index_path.read_text())
+    overlay, nav = atlas_overlay_html(
+        home_href=home_href,
+        atlases_href=atlases_href,
+        newsdesk_href=newsdesk_href,
+        essays_href=essays_href,
+        top=top,
+        links_top=links_top,
     )
     html_text = html_text.replace("</head>", f"{overlay}</head>")
     html_text = html_text.replace("<body>", f"<body>{nav}", 1)
     index_path.write_text(html_text)
+
+
+def import_external_maritime(docs_dir: Path, base_url: str) -> None:
+    src_root = PROJECT_ROOT / "external" / "maritime_disease_atlas"
+    dest_root = docs_dir / "atlases" / "maritime"
+    if dest_root.exists():
+        shutil.rmtree(dest_root)
+    shutil.copytree(src_root, dest_root)
+    inject_atlas_overlay(
+        dest_root / "index.html",
+        home_href="../../index.html",
+        atlases_href="../index.html",
+        newsdesk_href="../../newsdesk/index.html",
+        essays_href="../../essays/index.html",
+        top="84px",
+    )
 
 
 def prepared_pathogen_atlas_data(atlas_export: dict[str, Any], *, link_prefix: str) -> dict[str, Any]:
@@ -1209,110 +1316,44 @@ def import_external_pathogen(docs_dir: Path, base_url: str) -> None:
     atlas_export = load_json(atlas_export_path)
 
     write_pathogen_atlas_payload(src_root, atlas_export, base_url="/", link_prefix="../../docs/")
+    inject_atlas_overlay(
+        src_root / "index.html",
+        home_href="../../docs/index.html",
+        atlases_href="../../docs/atlases/index.html",
+        newsdesk_href="../../docs/newsdesk/index.html",
+        essays_href="../../docs/essays/index.html",
+        top="52px",
+        links_top="88px",
+    )
 
     if dest_root.exists():
         shutil.rmtree(dest_root)
     shutil.copytree(src_root, dest_root)
     write_pathogen_atlas_payload(dest_root, atlas_export, base_url=base_url, link_prefix="../../")
-
-    index_path = dest_root / "index.html"
-    html_text = index_path.read_text()
-    overlay = f"""
-<style id="eoe-atlas-overlay-style">
-  #eoe-atlas-overlay {{
-    position: fixed;
-    top: 132px;
-    left: 50%;
-    z-index: 1200;
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    max-width: calc(100vw - 36px);
-    justify-content: center;
-    transform: translateX(-50%);
-  }}
-  #eoe-atlas-overlay a {{
-    padding: 8px 12px;
-    border-radius: 999px;
-    border: 1px solid rgba(255,255,255,0.18);
-    background: rgba(12, 12, 10, 0.85);
-    color: #efe4d2;
-    text-decoration: none;
-    font: 700 12px/1 "Avenir Next", "Helvetica Neue", sans-serif;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    backdrop-filter: blur(12px);
-  }}
-  #eoe-atlas-overlay a.active {{ color: #c9a84c; border-color: rgba(201,168,76,0.38); }}
-  @media (max-width: 980px) {{
-    #eoe-atlas-overlay {{
-      position: absolute;
-      top: 14px;
-      left: 18px;
-      right: auto;
-      justify-content: flex-start;
-      max-width: calc(100vw - 36px);
-      transform: none;
-    }}
-  }}
-</style>
-"""
-    nav = (
-        '<div id="eoe-atlas-overlay">'
-        '<a href="../../index.html">Home</a>'
-        '<a href="../index.html" class="active">Atlases</a>'
-        '<a href="../../newsdesk/index.html">Newsdesk</a>'
-        '<a href="../../essays/index.html">Essays</a>'
-        "</div>"
+    inject_atlas_overlay(
+        dest_root / "index.html",
+        home_href="../../index.html",
+        atlases_href="../index.html",
+        newsdesk_href="../../newsdesk/index.html",
+        essays_href="../../essays/index.html",
+        top="52px",
+        links_top="88px",
     )
-    html_text = html_text.replace("</head>", f"{overlay}</head>")
-    html_text = html_text.replace("<body>", f"<body>{nav}", 1)
-    index_path.write_text(html_text)
 
 
 def import_external_viking(docs_dir: Path, base_url: str) -> None:
     src = PROJECT_ROOT / "external" / "viking-health-map.html"
     dest = docs_dir / "atlases" / "viking" / "index.html"
     ensure_dir(dest.parent)
-    html_text = src.read_text()
-    overlay = f"""
-<style id="eoe-atlas-overlay-style">
-  #eoe-atlas-overlay {{
-    position: fixed;
-    top: 14px;
-    right: 18px;
-    z-index: 1200;
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    max-width: calc(100vw - 36px);
-    justify-content: flex-end;
-  }}
-  #eoe-atlas-overlay a {{
-    padding: 8px 12px;
-    border-radius: 999px;
-    border: 1px solid rgba(255,255,255,0.18);
-    background: rgba(12, 12, 10, 0.85);
-    color: #efe4d2;
-    text-decoration: none;
-    font: 700 12px/1 "Avenir Next", "Helvetica Neue", sans-serif;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    backdrop-filter: blur(12px);
-  }}
-  #eoe-atlas-overlay a.active {{ color: #c9a84c; border-color: rgba(201,168,76,0.38); }}
-</style>
-"""
-    nav = (
-        '<div id="eoe-atlas-overlay">'
-        '<a href="../../index.html">Home</a>'
-        '<a href="../index.html" class="active">Atlases</a>'
-        '<a href="../../historical/index.html">Historical</a>'
-        "</div>"
+    dest.write_text(src.read_text())
+    inject_atlas_overlay(
+        dest,
+        home_href="../../index.html",
+        atlases_href="../index.html",
+        newsdesk_href="../../newsdesk/index.html",
+        essays_href="../../essays/index.html",
+        top="14px",
     )
-    html_text = html_text.replace("</head>", f"{overlay}</head>")
-    html_text = html_text.replace("<body>", f"<body>{nav}", 1)
-    dest.write_text(html_text)
 
 
 def copy_static_assets(docs_dir: Path) -> None:
