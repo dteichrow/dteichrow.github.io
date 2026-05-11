@@ -245,6 +245,14 @@ h3 {
   max-width: 68ch;
 }
 
+.hero-home .hero-prose {
+  max-width: min(96ch, 80vw);
+}
+
+.hero-home .hero-prose .subtitle {
+  max-width: none;
+}
+
 .subtitle {
   margin: 0;
   max-width: 68ch;
