@@ -382,7 +382,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [
         {
           "display_title": "Measles transmission and vaccination",
-          "latest_update_summary": "arabnews.jp now foregrounds vaccination or vaccine policy in the story.",
+          "latest_update_summary": "New publisher/source coverage joined this story cluster: CBS 19 News, National Catholic Reporter.",
           "story_id": "story_0cc2d5322bc76f8f",
           "story_url": "stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
           "story_web_path": "stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
@@ -867,7 +867,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [
         {
           "display_title": "Hantavirus and cruise-ship outbreak",
-          "latest_update_summary": "New publisher/source coverage joined this story cluster: Al Jazeera, NPR, TikTok.",
+          "latest_update_summary": "New publisher/source coverage joined this story cluster: Atlanta News First.",
           "story_id": "story_f6d225b01f3f7094",
           "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
           "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -983,7 +983,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "New publisher/source coverage joined this story cluster: Al Jazeera, NPR, TikTok.",
+              "latest_update_summary": "New publisher/source coverage joined this story cluster: Atlanta News First.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1118,7 +1118,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "New publisher/source coverage joined this story cluster: Al Jazeera, NPR, TikTok.",
+              "latest_update_summary": "New publisher/source coverage joined this story cluster: Atlanta News First.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1253,7 +1253,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "New publisher/source coverage joined this story cluster: Al Jazeera, NPR, TikTok.",
+              "latest_update_summary": "New publisher/source coverage joined this story cluster: Atlanta News First.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1969,6 +1969,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state_label": "Adjacent writing"
     }
   ],
-  "generated_at": "2026-05-11T10:50:41",
+  "generated_at": "2026-05-11T11:51:42",
   "atlas_count": 10
 };
