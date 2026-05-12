@@ -1969,6 +1969,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state_label": "Adjacent writing"
     }
   ],
-  "generated_at": "2026-05-11T18:01:50",
+  "generated_at": "2026-05-11T18:02:58",
   "atlas_count": 10
 };
