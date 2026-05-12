@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hantavirus syndrome | The Pathogen Dispatch</title>
+    <title>Dengue and arboviruses | The Pathogen Dispatch</title>
     <style>
       :root { --bg: #e8e1d3; --bg-deep: #d8cebc; --surface: #f8f4ea; --surface-alt: #f2ebde; --paper: #fffdf8; --ink: #1b2836; --ink-soft: #42515e; --line: #d6cab7; --accent: #8d3f2f; --accent-soft: rgba(141,63,47,0.10); --signal: #1f5b89; --signal-soft: rgba(31,91,137,0.12); --shadow: 0 24px 56px rgba(49, 36, 22, 0.10); }
       * { box-sizing: border-box; }
@@ -97,7 +97,7 @@
       @media (max-width: 900px) { .page { padding: 16px 14px 42px; } .hero, .panel, .site-header, .section-nav { padding: 18px; border-radius: 22px; } .site-header { align-items: flex-start; flex-direction: column; } .story-filter-grid { grid-template-columns: 1fr; } .story-grid, .atlas-selector-grid { grid-template-columns: 1fr; } .atlas-map { min-height: 340px; } h1 { font-size: clamp(1.9rem, 10vw, 3.2rem); } }
       @media (max-width: 620px) { .site-nav, .section-nav-links { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 2px; } .site-header-copy { min-width: 0; } .archive-row { flex-direction: column; align-items: flex-start; } .badge, .link-pill { line-height: 1.2; } .live-update-banner { right: 12px; bottom: 12px; width: calc(100vw - 24px); } .live-update-actions { justify-content: space-between; } }
     </style>
-  <meta name="description" content="Edge of Epidemiology publication page." />
+  <meta name="description" content="Source-first outbreak reporting from The Pathogen Dispatch." />
 <style id="eoe-shell-import-style">
   body { padding-top: 112px !important; }
   .eoe-shell-nav {
@@ -274,64 +274,142 @@
   }
 </style>
 </head>
-  <body><div class="eoe-shell-nav"><div class="eoe-shell-nav-inner"><a class="eoe-shell-brand" href="/"><span>The Edge of Epidemiology</span> <span class="eoe-shell-byline">by Devin Teichrow</span></a><nav class="eoe-shell-links" aria-label="Umbrella navigation"><a class="" href="/">Home</a><a class="" href="/newsdesk/">Newsdesk</a><a class="" href="/notebook/">Notebook</a><a class="" href="/atlases/pathogen/">Pathogen Atlas</a><a class="" href="/atlases/maritime/">Maritime Atlas</a><a class="" href="/essays/">Essays</a><a class="" href="/historical/">Historical</a><a class="active" href="/reference/">Reference</a><a class="" href="/search/">Search</a></nav></div></div>
+  <body><div class="eoe-shell-nav"><div class="eoe-shell-nav-inner"><a class="eoe-shell-brand" href="/"><span>The Edge of Epidemiology</span> <span class="eoe-shell-byline">by Devin Teichrow</span></a><nav class="eoe-shell-links" aria-label="Umbrella navigation"><a class="" href="/">Home</a><a class="active" href="/newsdesk/">Newsdesk</a><a class="" href="/notebook/">Notebook</a><a class="" href="/atlases/pathogen/">Pathogen Atlas</a><a class="" href="/atlases/maritime/">Maritime Atlas</a><a class="" href="/essays/">Essays</a><a class="" href="/historical/">Historical</a><a class="" href="/reference/">Reference</a><a class="" href="/search/">Search</a></nav></div></div>
     <main class="page">
       <header class="site-header"><div class="site-header-copy"><div class="kicker">The Pathogen Dispatch</div><p class="site-header-title">Source-first newsroom desks</p></div><nav class="site-nav" aria-label="Site navigation"><a class="site-nav-link" href="../index.html">Home</a><a class="site-nav-link" href="/notebook/">Notebook</a><a class="site-nav-link" href="/atlases/pathogen/">Atlas</a><a class="site-nav-link" href="/newsdesk/watch/">Global watch</a><a class="site-nav-link" href="/newsdesk/africa/">Africa</a><a class="site-nav-link" href="/newsdesk/asia/">Asia</a><a class="site-nav-link" href="/newsdesk/research/">Research</a><a class="site-nav-link" href="/newsdesk/official/">Official alerts</a><a class="site-nav-link" href="/newsdesk/archive/">Archive</a></nav></header>
       <section class="live-update-banner panel utility-panel" id="live-update-banner" hidden aria-live="polite" role="status" data-live-update-banner="true"><div class="live-update-copy"><div class="section-nav-label">New edition available</div><p class="live-update-text" id="live-update-text">An updated edition is available. Load the latest run when you are ready.</p></div><div class="live-update-actions"><button class="live-update-dismiss" id="live-update-dismiss" type="button" onclick="(function(btn){const banner=btn.closest('[data-live-update-banner]');if(banner){banner.hidden=true;banner.style.display='none';const runId=(banner.dataset&&banner.dataset.pendingRunId)||'';const key=(banner.dataset&&banner.dataset.dismissKey)||('pathogen-dispatch-live-update-dismissed:'+window.location.pathname);try{window.sessionStorage.setItem(key, window.location.pathname+'::'+(runId||'unknown'));}catch(error){}}return false;})(this)">Keep reading</button><button class="live-update-button" id="live-update-refresh" type="button" onclick="(function(btn){const banner=btn.closest('[data-live-update-banner]');if(banner){banner.hidden=true;banner.style.display='none';}const url=new URL(window.location.href);url.searchParams.set('_edition', String(Date.now()));window.location.replace(url.toString());return false;})(this)">Load latest</button></div></section>
       <section class="hero" id="story-overview">
-        <p class="kicker">Disease intelligence sheet</p>
-        <h1>Hantavirus syndrome</h1>
-        <p class="subtitle">Curated desk background for reporters who need the pathogen, transmission, and outbreak frame fast.</p>
-        <div class="meta-row"><span class="badge">Zoonotic</span><span class="badge">Hemorrhagic / cardiopulmonary</span><span class="badge">Emerging</span><span class="badge">Rural rodent exposure</span><span class="badge">Cabins and enclosed travel settings</span><span class="badge">Field and agricultural work</span></div>
-        <div class="meta-row"><a class="link-pill" href="/atlases/pathogen/?pathogen=hantavirus">View in Atlas</a></div>
-        <p><strong>Pathogen / agent:</strong> Hantaviruses, including Andes virus in the Americas</p>
-        <p><strong>Transmission:</strong> Rodent exposure; limited person-to-person transmission has been documented for Andes virus</p>
-        <p><strong>Reservoir / vector:</strong> Wild rodents; Andes virus is especially associated with sigmodontine rodents in South America.</p>
-        <p><strong>Incubation:</strong> Usually 1 to 8 weeks after exposure.</p>
-        <p><strong>Severity:</strong> Potentially high fatality once cardiopulmonary syndrome develops.</p>
-        <p><strong>Diagnostics:</strong> PCR, serology, and exposure history are central; timing matters.</p>
-        <p><strong>Treatment:</strong> Supportive critical care, oxygenation, and hemodynamic support.</p>
-        <p><strong>Prevention:</strong> Rodent control, avoiding aerosolized rodent excreta, and close-contact precautions for suspected Andes virus clusters.</p>
-        <p><strong>Vaccine / prevention status:</strong> No licensed routine human vaccine is in general public-health use.</p>
+        <p class="kicker">Tracked outbreak file</p>
+        <h1>Dengue and arboviruses</h1>
+        <p class="subtitle">A durable desk file generated from the active dossier story cluster.</p>
+        <div class="meta-row">
+          <span class="badge accent">3 item(s)</span>
+          <span class="badge">3 source(s)</span>
+          <span class="badge">0 official</span>
+          <span class="badge">First seen: 2026-05-12T07:11:17</span>
+          <span class="badge">Updated: 2026-05-12T07:11:17</span>
+        </div>
+        <div class="meta-row"><span class="badge tone-official">Current status: Expanding coverage</span><span class="badge">Severity or death</span><span class="badge">New geography</span></div>
+        <div class="meta-row"><span class="badge">Official sources: 0</span><span class="badge">Wire: 0</span><span class="badge">Major newsroom: 0</span><span class="badge">Specialist health: 0</span><span class="badge">General outlet: 1</span><span class="badge">Aggregator-only: 0</span><span class="badge">Metadata-only: 2</span></div>
+        <div class="meta-row"><span class="badge">Official confidence: 0</span><span class="badge">Wire confidence: 0</span><span class="badge">Major newsroom confidence: 0</span><span class="badge">Specialist health confidence: 0</span><span class="badge">General confidence: 1</span><span class="badge">Wrapper only confidence: 0</span></div>
+        <div class="meta-row"><span class="badge">Direct links: 0</span><span class="badge">Resolved links: 1</span><span class="badge">Resolved non-article: 0</span><span class="badge">Wrapper-only: 0</span><span class="badge">Metadata only: 2</span></div>
+        <div class="meta-row"><span class="badge">Live fetches: 3</span><span class="badge">Refresh cache: 0</span><span class="badge">Fallback cache: 0</span><span class="badge">Retained: 0</span></div>
+        <div class="meta-row"><span class="badge">Outbreak News Today</span><span class="badge">RFI</span><span class="badge">Sudan Horizon</span><span class="badge">South Asia</span><span class="badge">Africa</span></div>
+        <p class="lede"><a href="https://outbreaknewstoday.substack.com/p/dengue-fever-in-sri-lanka-more-than">Dengue fever in Sri Lanka: More than 25,000 cases reported in 2026 to date</a></p>
+        <p><strong>Lead source:</strong> Outbreak News Today</p>
+        <h2 class="hero-subhead">What happened</h2>
+        <p>Dengue fever in Sri Lanka: More than 25,000 cases reported in 2026 to date</p>
+        <h2 class="hero-subhead">Why it matters</h2>
+        <p>This file matters because newsroom follow-up suggests the story is still moving even without a fresh official update.</p>
+        <h2 class="hero-subhead">What changed in this run</h2>
+        <p><strong>Latest summary:</strong> Baseline snapshot created with 3 clustered item(s) across 3 source(s).</p>
+        <ul class="bullet-list"><li>Baseline snapshot created with 3 clustered item(s) across 3 source(s).</li><li>Outbreak News Today now includes deaths or fatal cases in the story frame.</li></ul>
+      </section>
+
+      <section class="panel utility-panel" id="story-filters">
+        <h2>Filter This Story File</h2>
+        <p class="muted-note">Use this desk bar to cut the outbreak file down by source quality, freshness, region, or link fidelity before you scan the cards.</p>
+        <div class="story-filter-shell"><div class="story-filter-grid"><label class="filter-group filter-search-wide"><span class="filter-label">Search</span><input id="story-filter-search" class="filter-input" type="search" placeholder="Search titles, publishers, places, or phrases" /></label><label class="filter-group"><span class="filter-label">Source type</span><select class="filter-select" data-story-filter="source-kind"><option value="all">All</option><option value="general_outlet">General outlet</option><option value="metadata_only_signal">Metadata-only signal</option></select></label><label class="filter-group"><span class="filter-label">Freshness</span><select class="filter-select" data-story-filter="freshness"><option value="all">All</option><option value="live">Live fetch</option></select></label><label class="filter-group"><span class="filter-label">Link quality</span><select class="filter-select" data-story-filter="link-quality"><option value="all">All</option><option value="metadata_only">Metadata only</option><option value="resolved_article">Resolved article</option></select></label><label class="filter-group"><span class="filter-label">Region</span><select class="filter-select" data-story-filter="region"><option value="all">All</option><option value="africa">Africa</option><option value="south_asia">South Asia</option></select></label><label class="filter-group"><span class="filter-label">Access</span><select class="filter-select" data-story-filter="access"><option value="all">All</option><option value="unknown">Access unknown</option></select></label><label class="filter-group"><span class="filter-label">Date range</span><select class="filter-select" data-story-filter="date-window"><option value="all">All</option><option value="older">Older</option><option value="1">Past 24 hours</option><option value="3">Past 3 days</option></select></label><label class="filter-group"><span class="filter-label">Story status</span><select class="filter-select" data-story-filter="story-status"><option value="all">All</option><option value="expanding_coverage">Expanding coverage</option><option value="quiet_retained">Quiet but retained</option></select></label><label class="filter-group"><span class="filter-label">Claim type</span><select class="filter-select" data-story-filter="claim-type"><option value="all">All</option><option value="general_update">General update</option><option value="severity_or_death">Severity or death</option></select></label></div><p id="story-filter-status" class="muted-note">Showing all story-file cards.</p></div>
       </section>
 
       <section class="panel-grid">
-        <section class="panel" id="clinical-pattern">
-          <h2>Symptoms And Clinical Pattern</h2>
-          <ul class="bullet-list"><li>Fever and severe myalgias after a prodromal phase.</li><li>Rapid progression to cough, pulmonary edema, and cardiopulmonary compromise in severe cases.</li><li>Thrombocytopenia and shock can appear in the more fulminant presentations.</li></ul>
+        <section class="panel" id="official-sources-panel">
+          <h2>Official Sources</h2>
+          
+          <div class="sort-bar"><label class="sort-control">Sort by <select class="sort-select" data-sort-target="official-sources"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="source">Source A-Z</option></select></label></div>
+          <div id="official-sources" class="card-grid sortable-grid" data-default-sort="newest"><p class="empty-note">No official source items are attached to this story yet.</p></div>
         </section>
-        <section class="panel">
-          <h2>Official Background Links</h2>
-          <div class="meta-row"><a class="link-pill" href="https://www.who.int/news-room/fact-sheets/detail/hantavirus">WHO fact sheet</a><a class="link-pill" href="https://www.cdc.gov/hantavirus/">CDC overview</a></div>
+        <section class="panel" id="publisher-coverage-panel">
+          <h2>Publisher Coverage</h2>
+          
+          <div class="sort-bar"><label class="sort-control">Sort by <select class="sort-select" data-sort-target="publisher-coverage"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="source">Source A-Z</option></select></label></div>
+          <div id="publisher-coverage" class="card-grid sortable-grid" data-default-sort="newest"><article class="site-card sortable-card compact-card searchable-card" data-sort-ts="1778555040" data-sort-source="RFI" data-sort-title="Dengue outpaces virus-blocking mosquitoes in Brazil" data-search="Dengue outpaces virus-blocking mosquitoes in Brazil Limited detail was available from feed metadata alone. RFI Africa https://news.google.com/rss/articles/CBMiowFBVV95cUxQNjRKX0ZpM280SElScVc2QlpPUDJWS3JfYldHckpLYTVzUWdvd0pUeFVTWVRvdUFvR1dBRi1wZ2FNc3lmbUV5TFp6Q0tFZFZFVFV6SkVnSUh4eExlT3RPX0p5SnJKOEh5SW5iNmg4RVZUZDdseDdrbHcxYTFfVEltYlFjT0lzNUEwY0F4ZExCS1FGN255TDJSWk9zSm5reXpkUGZ3?oc=5" data-source-kind="metadata_only_signal" data-freshness="live" data-link-quality="metadata_only" data-region="Africa" data-access="unknown" data-date-window="1" data-scope="publisher" data-official="false" data-story-status="expanding_coverage" data-claim-type="general_update"><div class="kicker">Publisher coverage</div><h3><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxQNjRKX0ZpM280SElScVc2QlpPUDJWS3JfYldHckpLYTVzUWdvd0pUeFVTWVRvdUFvR1dBRi1wZ2FNc3lmbUV5TFp6Q0tFZFZFVFV6SkVnSUh4eExlT3RPX0p5SnJKOEh5SW5iNmg4RVZUZDdseDdrbHcxYTFfVEltYlFjT0lzNUEwY0F4ZExCS1FGN255TDJSWk9zSm5reXpkUGZ3?oc=5">Dengue outpaces virus-blocking mosquitoes in Brazil</a></h3><div class="meta-row"><span class="badge">RFI</span><span class="badge">Metadata-only</span><span class="badge">Metadata-only signal</span><span class="badge">Live</span><span class="badge">Africa</span><span class="badge">2026-05-12T03:04+00:00</span><span class="badge">Metadata only</span><span class="badge">Metadata only</span></div></article><article class="site-card sortable-card compact-card searchable-card" data-sort-ts="1778496900" data-sort-source="Sudan Horizon" data-sort-title="Malaria and Dengue Cases Recede in Khartoum State" data-search="Malaria and Dengue Cases Recede in Khartoum State Limited detail was available from feed metadata alone. Sudan Horizon Africa https://sudanhorizon.com/malaria-and-dengue-cases-recede-in-khartoum-state/" data-source-kind="metadata_only_signal" data-freshness="live" data-link-quality="metadata_only" data-region="Africa" data-access="unknown" data-date-window="3" data-scope="publisher" data-official="false" data-story-status="quiet_retained" data-claim-type="general_update"><div class="kicker">Publisher coverage</div><h3><a href="https://sudanhorizon.com/malaria-and-dengue-cases-recede-in-khartoum-state/">Malaria and Dengue Cases Recede in Khartoum State</a></h3><div class="meta-row"><span class="badge">Sudan Horizon</span><span class="badge">Metadata-only</span><span class="badge">Metadata-only signal</span><span class="badge">Live</span><span class="badge">Africa</span><span class="badge">2026-05-11T10:55+00:00</span><span class="badge">Metadata only</span><span class="badge">Metadata only</span></div></article><article class="site-card sortable-card searchable-card" data-sort-ts="1777735440" data-sort-source="Outbreak News Today" data-sort-title="Dengue fever in Sri Lanka: More than 25,000 cases reported in 2026 to date" data-search="Dengue fever in Sri Lanka: More than 25,000 cases reported in 2026 to date In addition, there has been 12 dengue related deaths reported this year. According to the National Dengue Control Unit (NDCU) in Colombo, Sri Lanka, a total of 25,082 dengue cases have been reported across Sri Lanka so far in 2026. In all of 2025, the country saw 51,000 cases. Outbreak News Today South Asia https://outbreaknewstoday.substack.com/p/dengue-fever-in-sri-lanka-more-than" data-source-kind="general_outlet" data-freshness="live" data-link-quality="resolved_article" data-region="South Asia" data-access="unknown" data-date-window="older" data-scope="publisher" data-official="false" data-story-status="quiet_retained" data-claim-type="severity_or_death"><div class="kicker">Publisher coverage</div><h3><a href="https://outbreaknewstoday.substack.com/p/dengue-fever-in-sri-lanka-more-than">Dengue fever in Sri Lanka: More than 25,000 cases reported in 2026 to date</a></h3><p>In addition, there has been 12 dengue related deaths reported this year. According to the National Dengue Control Unit (NDCU) in Colombo, Sri Lanka, a total of 25,082 dengue cases have been reported across Sri Lanka so far in 2026. In all of 2025, the country saw 51,000 cases.</p><div class="meta-row"><span class="badge">Outbreak News Today</span><span class="badge">General outlet</span><span class="badge">General outlet confidence</span><span class="badge">Live</span><span class="badge">South Asia</span><span class="badge">2026-05-02T15:24+00:00</span><span class="badge">Resolved article</span></div></article></div>
         </section>
       </section>
 
-      <section class="panel" id="current-story-files">
-        <h2>Current Story Files</h2>
-        <div class="card-grid"><article class="site-card"><div class="kicker">Active story file</div><h3><a href="/stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html">Hantavirus and cruise-ship outbreak</a></h3><p>ECDC News now includes evacuation reporting.</p></article></div>
+      <section class="panel" id="related-disease-intelligence">
+        <h2>Related Disease Intelligence</h2>
+        <div class="card-grid"><article class="site-card"><div class="kicker">Disease sheet</div><h3><a href="/reference/dengue.html">Dengue</a></h3><p><strong>Pathogen:</strong> Dengue virus</p></article></div>
       </section>
 
-      <section class="panel" id="why-reporters-care">
-        <h2>Why Reporters Care</h2>
-        <p><strong>Why this keeps becoming news:</strong> This is a rare but frightening severe-disease story where a single unusual cluster can force questions about travel safety, rodent exposure, and whether Andes-virus-style person-to-person spread is in play.</p>
-        <p><strong>What journalists often get wrong:</strong> Coverage often treats all hantaviruses as one epidemiologic problem, when the key distinction is whether the event looks like classic rodent exposure or the much rarer Andes-virus pattern with limited human-to-human spread.</p>
-        <ul class="bullet-list"><li>Confirmed versus suspected cases, because panic often outruns laboratory certainty.</li><li>Whether exposure points to rodents, enclosed lodging, or close-contact transmission.</li><li>Severity markers such as ICU care, pulmonary edema, shock, and deaths.</li></ul>
-      </section>
-
-      <section class="panel">
-        <h2>Last Major Outbreak On File</h2>
-        <p><strong>Cruise-ship linked cluster</strong> | Multi-country / maritime | April-May 2026</p>
-        <p>WHO reported seven cases, including two laboratory-confirmed infections, three deaths, one critically ill patient and three mild suspected cases linked to cruise-ship travel.</p>
-        <p><strong>Source:</strong> <a href="https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON599">WHO Disease Outbreak News</a> (2026-05-04)</p>
-      </section>
-
-      <section class="panel" id="desk-notes">
-        <h2>Desk Notes And Historical Signals</h2>
-        <p><strong>Desk note:</strong> Useful for rare severe respiratory clusters with rodent ecology or unusual travel-linked spread.</p>
-        <p><strong>Research caveats:</strong> Small case counts and heterogeneous hantavirus species mean early claims about transmission mode can be unstable.</p>
-        <ul class="bullet-list"><li>Andes virus outbreaks in Argentina and Chile remain the canonical example of limited person-to-person hantavirus transmission.</li></ul>
+      <section class="panel" id="story-timeline-panel">
+        <h2>Timeline</h2>
+        <div class="sort-bar"><label class="sort-control">Sort by <select class="sort-select" data-sort-target="story-timeline"><option value="newest">Newest first</option><option value="oldest">Oldest first</option></select></label></div>
+        <div id="story-timeline" class="timeline sortable-grid" data-default-sort="newest"><article class="timeline-row sortable-card" data-sort-ts="1778595077" data-sort-title="2026-05-12T07:11:17"><div class="meta-row"><span class="badge accent">2026-05-12T07:11:17</span><span class="badge">3 item(s)</span><span class="badge">3 source(s)</span></div><ul class="bullet-list"><li>Baseline snapshot created with 3 clustered item(s) across 3 source(s).</li><li>Outbreak News Today now includes deaths or fatal cases in the story frame.</li></ul></article></div>
       </section>
     </main>
+    <script>
+      const storySorters = Array.from(document.querySelectorAll("[data-sort-target]"));
+
+      function sortSortableGrid(targetId, mode) {
+        const container = document.getElementById(targetId);
+        if (!container) return;
+        const cards = Array.from(container.querySelectorAll(".sortable-card"));
+        const normalizedMode = mode || container.dataset.defaultSort || "newest";
+        cards.sort((left, right) => {
+          if (normalizedMode === "oldest") {
+            return Number(left.dataset.sortTs || 0) - Number(right.dataset.sortTs || 0);
+          }
+          if (normalizedMode === "source") {
+            const sourceCompare = (left.dataset.sortSource || "").localeCompare(right.dataset.sortSource || "");
+            if (sourceCompare !== 0) return sourceCompare;
+            return (left.dataset.sortTitle || "").localeCompare(right.dataset.sortTitle || "");
+          }
+          return Number(right.dataset.sortTs || 0) - Number(left.dataset.sortTs || 0);
+        });
+        cards.forEach((card) => container.appendChild(card));
+      }
+
+      storySorters.forEach((select) => {
+        const targetId = select.dataset.sortTarget;
+        sortSortableGrid(targetId, select.value);
+        select.addEventListener("change", () => sortSortableGrid(targetId, select.value));
+      });
+    </script>
+    <script>
+      const storyFilterSearch = document.getElementById("story-filter-search");
+      const storyFilterControls = Array.from(document.querySelectorAll("[data-story-filter]"));
+      const storyFilterStatus = document.getElementById("story-filter-status");
+      const storyFilterCards = Array.from(document.querySelectorAll(".searchable-card"));
+
+      function normalizeStoryFilterText(value) {
+        return String(value || "").toLowerCase().trim();
+      }
+
+      function applyStoryFilters() {
+        const query = normalizeStoryFilterText(storyFilterSearch ? storyFilterSearch.value : "");
+        const activeFilters = Object.fromEntries(
+          storyFilterControls.map((select) => [select.dataset.storyFilter, normalizeStoryFilterText(select.value)])
+        );
+        let visibleCount = 0;
+        storyFilterCards.forEach((card) => {
+          const matchesQuery = !query || normalizeStoryFilterText(card.dataset.search).includes(query);
+          const matchesSourceKind = activeFilters["source-kind"] === "all" || normalizeStoryFilterText(card.dataset.sourceKind) === activeFilters["source-kind"];
+          const matchesFreshness = activeFilters["freshness"] === "all" || normalizeStoryFilterText(card.dataset.freshness) === activeFilters["freshness"];
+          const matchesLinkQuality = activeFilters["link-quality"] === "all" || normalizeStoryFilterText(card.dataset.linkQuality) === activeFilters["link-quality"];
+          const matchesRegion = activeFilters["region"] === "all" || normalizeStoryFilterText(card.dataset.region).replace(/\s+/g, "_") === activeFilters["region"];
+          const matchesAccess = activeFilters["access"] === "all" || normalizeStoryFilterText(card.dataset.access) === activeFilters["access"];
+          const matchesDateWindow = activeFilters["date-window"] === "all" || normalizeStoryFilterText(card.dataset.dateWindow) === activeFilters["date-window"];
+          const matchesStoryStatus = activeFilters["story-status"] === "all" || normalizeStoryFilterText(card.dataset.storyStatus) === activeFilters["story-status"];
+          const matchesClaimType = activeFilters["claim-type"] === "all" || normalizeStoryFilterText(card.dataset.claimType) === activeFilters["claim-type"];
+          const visible = matchesQuery && matchesSourceKind && matchesFreshness && matchesLinkQuality && matchesRegion && matchesAccess && matchesDateWindow && matchesStoryStatus && matchesClaimType;
+          card.hidden = !visible;
+          if (visible) visibleCount += 1;
+        });
+        if (storyFilterStatus) {
+          const total = storyFilterCards.length;
+          const visibleOfficial = storyFilterCards.filter((card) => !card.hidden && card.dataset.scope === "official").length;
+          const visiblePublisher = storyFilterCards.filter((card) => !card.hidden && card.dataset.scope === "publisher").length;
+          storyFilterStatus.textContent = visibleCount === total
+            ? `Showing all ${total} story-file cards (${visibleOfficial} official, ${visiblePublisher} publisher).`
+            : `Showing ${visibleCount} of ${total} story-file cards after filtering (${visibleOfficial} official, ${visiblePublisher} publisher).`;
+        }
+      }
+
+      if (storyFilterSearch) storyFilterSearch.addEventListener("input", applyStoryFilters);
+      storyFilterControls.forEach((select) => select.addEventListener("change", applyStoryFilters));
+      applyStoryFilters();
+    </script>
     <script>
       const liveUpdateBanner = document.getElementById("live-update-banner");
       const liveUpdateButton = document.getElementById("live-update-refresh");

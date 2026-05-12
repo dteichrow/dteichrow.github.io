@@ -382,7 +382,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [
         {
           "display_title": "Measles transmission and vaccination",
-          "latest_update_summary": "New publisher/source coverage joined this story cluster: LebTown.",
+          "latest_update_summary": "New publisher/source coverage joined this story cluster: Outbreak News Today.",
           "story_id": "story_0cc2d5322bc76f8f",
           "story_url": "stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
           "story_web_path": "stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
@@ -867,7 +867,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [
         {
           "display_title": "Hantavirus and cruise-ship outbreak",
-          "latest_update_summary": "South China Morning Post now includes quarantine language.",
+          "latest_update_summary": "ECDC News now includes evacuation reporting.",
           "story_id": "story_f6d225b01f3f7094",
           "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
           "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -983,7 +983,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "South China Morning Post now includes quarantine language.",
+              "latest_update_summary": "ECDC News now includes evacuation reporting.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1118,7 +1118,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "South China Morning Post now includes quarantine language.",
+              "latest_update_summary": "ECDC News now includes evacuation reporting.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1253,7 +1253,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "South China Morning Post now includes quarantine language.",
+              "latest_update_summary": "ECDC News now includes evacuation reporting.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1406,7 +1406,16 @@ window.PATHOGEN_ATLAS_DATA = {
       "reference_name": "Dengue",
       "reference_url": "reference/dengue.html",
       "reference_web_path": "reference/dengue.html",
-      "related_stories": [],
+      "related_stories": [
+        {
+          "display_title": "Dengue and arboviruses",
+          "latest_update_summary": "Baseline snapshot created with 3 clustered item(s) across 3 source(s).",
+          "story_id": "story_ccfeaff28d46baf6",
+          "story_url": "stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
+          "story_web_path": "stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
+          "story_href": "../../stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html"
+        }
+      ],
       "route_count": 3,
       "slug": "dengue",
       "spread_routes": [
@@ -1476,7 +1485,7 @@ window.PATHOGEN_ATLAS_DATA = {
         }
       ],
       "status": "consensus",
-      "story_count": 0,
+      "story_count": 1,
       "subtitle": "Aedes routes, urbanization, and shipping-enabled vector expansion",
       "summary": "Dengue makes the atlas useful for modern readers because it shows how vector range expansion, used-tire shipping, urbanization, and travel can redraw the map without requiring a single ancient origin story.",
       "variant_count": 0,
@@ -1969,6 +1978,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state_label": "Adjacent writing"
     }
   ],
-  "generated_at": "2026-05-12T07:01:45",
+  "generated_at": "2026-05-12T07:14:13",
   "atlas_count": 10
 };
