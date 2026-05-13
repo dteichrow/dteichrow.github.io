@@ -1,7 +1,47 @@
 {
-  "generated_at": "2026-05-13T06:33:51",
-  "count": 87,
+  "generated_at": "2026-05-13T07:34:50",
+  "count": 88,
   "posts": [
+    {
+      "substack_id": 197437573,
+      "slug": "hantavirus-in-the-korean-war-korean",
+      "title": "The Disease That Came From the Ground: Korean Hemorrhagic Fever, Hantaan Virus, and the Disease Ecology of Warfare",
+      "date": "2026-05-13",
+      "canonical_url": "https://theedgeofepidemiology.substack.com/p/hantavirus-in-the-korean-war-korean",
+      "excerpt": "Between Spring of 1951 and the armistice of July 1953, an unnamed disease infected UN soldiers among the ridge lines and rice paddies of central Korea.",
+      "cover_image": "https://substackcdn.com/image/fetch/$s_!w6UP!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcc7f1a29-bdc6-4096-8997-21550a5bc7d0_600x632.jpeg",
+      "upstream_tags": [
+        "science",
+        "History",
+        "hantavirus",
+        "Military History",
+        "Korean War"
+      ],
+      "source_mode": "substack_page",
+      "wordcount": 2361,
+      "status": "summary_only",
+      "dek": "",
+      "topics": [
+        "science",
+        "History",
+        "hantavirus",
+        "Military History",
+        "Korean War"
+      ],
+      "series": [],
+      "related_atlases": [
+        "pathogen-atlas",
+        "maritime-disease-atlas"
+      ],
+      "related_reference_slugs": [],
+      "related_story_ids": [],
+      "search_excerpt": "Between Spring of 1951 and the armistice of July 1953, an unnamed disease infected UN soldiers among the ridge lines and rice paddies of central Korea.",
+      "local_body_path": "",
+      "hero_mode": "cover",
+      "notes": "",
+      "first_seen_at": "2026-05-13T14:25:47+00:00",
+      "last_synced_at": "2026-05-13T14:25:47+00:00"
+    },
     {
       "substack_id": 196425690,
       "slug": "hantavirus-at-sea-what-we-know-about",
@@ -18,7 +58,7 @@
         "MV Hondius"
       ],
       "source_mode": "substack_archive_api",
-      "wordcount": 2440,
+      "wordcount": 2687,
       "status": "summary_only",
       "dek": "",
       "topics": [
@@ -40,7 +80,7 @@
       "hero_mode": "cover",
       "notes": "",
       "first_seen_at": "2026-05-10T15:45:48+00:00",
-      "last_synced_at": "2026-05-10T21:44:18+00:00"
+      "last_synced_at": "2026-05-13T14:25:47+00:00"
     },
     {
       "substack_id": 196225500,
