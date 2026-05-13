@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-13T07:34:50",
+  "generated_at": "2026-05-13T07:39:22",
   "count": 88,
   "posts": [
     {
@@ -17,7 +17,7 @@
         "Military History",
         "Korean War"
       ],
-      "source_mode": "substack_page",
+      "source_mode": "substack_archive_api",
       "wordcount": 2361,
       "status": "summary_only",
       "dek": "",
@@ -40,7 +40,7 @@
       "hero_mode": "cover",
       "notes": "",
       "first_seen_at": "2026-05-13T14:25:47+00:00",
-      "last_synced_at": "2026-05-13T14:25:47+00:00"
+      "last_synced_at": "2026-05-13T14:39:26+00:00"
     },
     {
       "substack_id": 196425690,
