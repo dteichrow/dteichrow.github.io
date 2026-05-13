@@ -51,20 +51,20 @@ a {
   right: 0;
   z-index: 1000;
   display: grid;
-  grid-template-columns: minmax(240px, 340px) minmax(0, 1fr);
-  gap: 18px;
-  padding: 12px 22px 11px;
+  grid-template-columns: minmax(260px, 400px) minmax(0, 1fr);
+  gap: 16px;
+  padding: 14px 22px 12px;
   background: linear-gradient(180deg, rgba(14,13,11,0.97), rgba(14,13,11,0.88));
   border-bottom: 1px solid var(--border);
   box-shadow: 0 16px 48px rgba(0,0,0,0.48);
 }
 #brand h1 {
   margin: 0;
-  font-size: clamp(25px, 2.7vw, 38px);
+  font-size: clamp(28px, 3.2vw, 44px);
   line-height: 0.95;
 }
 #brand p {
-  margin: 7px 0 0;
+  margin: 8px 0 0;
   color: var(--muted);
   font-size: 12px;
   letter-spacing: 0.16em;
@@ -72,48 +72,13 @@ a {
 }
 #scenario-bar {
   min-width: 0;
-  display: grid;
-  grid-template-columns: minmax(210px, 260px) minmax(240px, 1fr) auto;
-  align-items: center;
-  gap: 12px;
-  padding: 1px 0 2px;
-}
-.atlas-picker {
-  min-width: 0;
-}
-.atlas-picker label {
-  display: block;
-  margin: 0 0 5px;
-  color: var(--gold);
-  font: 700 10px/1.1 var(--display);
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-.atlas-select {
-  width: 100%;
-  min-height: 38px;
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 10px;
-  background: rgba(255,255,255,0.055);
-  color: var(--text);
-  padding: 8px 34px 8px 11px;
-  font: 700 13px/1.2 var(--display);
-  letter-spacing: 0.02em;
-  outline: none;
-}
-.atlas-select:focus {
-  border-color: rgba(201,168,76,0.58);
-  box-shadow: 0 0 0 3px rgba(201,168,76,0.10);
-}
-.atlas-select option {
-  background: #181511;
-  color: var(--text);
-}
-#atlas-controls {
   display: flex;
-  justify-content: flex-end;
-  align-items: end;
-  gap: 7px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 9px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 4px 0 6px;
 }
 .scenario-btn,
 #pause-btn,
@@ -125,7 +90,7 @@ a {
   border-radius: 999px;
   background: rgba(255,255,255,0.04);
   color: var(--muted);
-  padding: 9px 12px;
+  padding: 8px 13px;
   font: 700 12px/1 var(--display);
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -148,25 +113,25 @@ a {
 #story-panel,
 #evidence-panel {
   position: fixed;
-  top: 118px;
+  top: 132px;
   z-index: 920;
-  max-height: calc(100vh - 166px);
+  max-height: calc(100vh - 180px);
   overflow-y: auto;
   border: 1px solid var(--border);
   box-shadow: 0 18px 58px rgba(0,0,0,0.55);
 }
 #story-panel {
   left: 22px;
-  width: 390px;
+  width: 420px;
   max-width: calc(100vw - 44px);
-  padding: 16px 18px 18px;
+  padding: 18px 20px 20px;
   background: var(--panel);
 }
 #evidence-panel {
   right: 24px;
-  width: 390px;
+  width: 420px;
   max-width: calc(100vw - 48px);
-  padding: 16px 18px 18px;
+  padding: 18px 20px 20px;
   background: var(--panel-2);
 }
 #story-kicker,
@@ -183,7 +148,7 @@ a {
 }
 #story-title {
   margin: 8px 0 10px;
-  font-size: 26px;
+  font-size: 29px;
   line-height: 1.05;
 }
 #story-copy,
@@ -239,8 +204,8 @@ a {
 .list-card {
   width: 100%;
   text-align: left;
-  padding: 11px 12px;
-  border-radius: 12px;
+  padding: 12px 13px;
+  border-radius: 18px;
   border: 1px solid rgba(255,255,255,0.10);
   background: rgba(255,255,255,0.035);
   color: inherit;
@@ -262,13 +227,13 @@ a {
 .route-title,
 .panel-section h3 {
   margin: 0;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.1;
 }
 .route-label {
   margin-top: 4px;
   color: var(--text);
-  font-size: 15px;
+  font-size: 16px;
 }
 .route-copy {
   margin-top: 7px;
@@ -430,9 +395,6 @@ a {
   #chrome {
     grid-template-columns: 1fr;
   }
-  #scenario-bar {
-    grid-template-columns: minmax(190px, 0.9fr) minmax(220px, 1.1fr) auto;
-  }
 }
 @media (max-width: 980px) {
   body {
@@ -447,14 +409,6 @@ a {
     position: sticky;
     grid-template-columns: 1fr;
     padding: 14px 18px;
-  }
-  #scenario-bar {
-    grid-template-columns: 1fr;
-  }
-  #atlas-controls {
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
   }
   #story-panel,
   #evidence-panel {
@@ -476,6 +430,11 @@ a {
   }
 }
 @media (max-width: 720px) {
+  #scenario-bar {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
   #story-title {
     font-size: 24px;
   }
@@ -570,20 +529,10 @@ a {
     <p>Origins | spread routes | evidence confidence | related writing</p>
   </section>
   <nav id="scenario-bar" aria-label="Pathogen atlas rotation">
-    <div class="atlas-picker">
-      <label for="category-select">Category</label>
-      <select class="atlas-select" id="category-select"></select>
-    </div>
-    <div class="atlas-picker">
-      <label for="pathogen-select">Disease</label>
-      <select class="atlas-select" id="pathogen-select"></select>
-    </div>
-    <div id="atlas-controls">
-      <button id="prev-btn" type="button">Prev</button>
-      <button id="pause-btn" type="button" aria-pressed="false">Pause</button>
-      <button id="next-btn" type="button">Next</button>
-      <button id="reset-btn" type="button">Recenter</button>
-    </div>
+    <button id="prev-btn" type="button">Prev</button>
+    <button id="pause-btn" type="button" aria-pressed="false">Pause</button>
+    <button id="next-btn" type="button">Next</button>
+    <button id="reset-btn" type="button">Recenter</button>
   </nav>
 </header>
 
@@ -698,20 +647,6 @@ const WRITING_LABELS = {
   adjacent: "Adjacent writing",
   not_yet_written: "No dedicated post yet"
 };
-const CATEGORY_ORDER = [
-  "mosquito-borne",
-  "tick-borne",
-  "flea-louse-mite-borne",
-  "fecal-oral-waterborne",
-  "foodborne",
-  "airborne-respiratory",
-  "contact-sexual-bloodborne",
-  "zoonotic-animal-interface",
-  "rodent-environmental",
-  "soil-environmental",
-  "healthcare-associated",
-  "other-mixed"
-];
 const map = L.map("map", {
   center: [18, 5],
   zoom: 2.4,
@@ -734,14 +669,11 @@ L.control.zoom({ position: "bottomright" }).addTo(map);
 L.control.attribution({ position: "bottomleft", prefix: false }).addTo(map).addAttribution("OpenStreetMap / CARTO");
 
 const scenarioBar = document.getElementById("scenario-bar");
-const categorySelect = document.getElementById("category-select");
-const pathogenSelect = document.getElementById("pathogen-select");
 const storyMeta = document.getElementById("story-meta");
 const evidenceLinks = document.getElementById("evidence-links");
 let currentIndex = 0;
 let currentSlug = null;
 let currentVariantSlug = null;
-let currentCategory = "all";
 let isPaused = false;
 let rotationTimer = null;
 let originMarker = null;
@@ -761,34 +693,6 @@ function escapeHtml(value) {
 
 function colorFor(entry) {
   return entry.color || PALETTE[entry.slug] || "#c9a84c";
-}
-
-function categoryKeyFor(entry) {
-  return entry.category || "other";
-}
-
-function categoryLabelFor(entry) {
-  return entry.category_label || entry.transmission_group || "Other";
-}
-
-function categoryOptions() {
-  const seen = new Map();
-  ATLAS_ENTRIES.forEach((entry) => {
-    seen.set(categoryKeyFor(entry), categoryLabelFor(entry));
-  });
-  return Array.from(seen.entries()).sort(([a], [b]) => {
-    const ai = CATEGORY_ORDER.indexOf(a);
-    const bi = CATEGORY_ORDER.indexOf(b);
-    return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi) || a.localeCompare(b);
-  });
-}
-
-function entriesInScope() {
-  if (currentCategory === "all") {
-    return ATLAS_ENTRIES;
-  }
-  const scoped = ATLAS_ENTRIES.filter((entry) => categoryKeyFor(entry) === currentCategory);
-  return scoped.length ? scoped : ATLAS_ENTRIES;
 }
 
 function variantsFor(entry) {
@@ -865,58 +769,29 @@ function arcLatLngs(fromCoordinates, toCoordinates) {
   return points;
 }
 
-function scopedIndex(delta) {
-  const scoped = entriesInScope();
-  const active = ATLAS_ENTRIES[currentIndex];
-  const scopedCurrentIndex = Math.max(0, scoped.findIndex((entry) => entry.slug === active?.slug));
-  const nextScopedIndex = ((scopedCurrentIndex + delta) % scoped.length + scoped.length) % scoped.length;
-  return ATLAS_ENTRIES.findIndex((entry) => entry.slug === scoped[nextScopedIndex].slug);
-}
-
-function populatePathogenSelect(selectedSlug) {
-  const scoped = entriesInScope();
-  pathogenSelect.innerHTML = scoped.map((entry) => `
-    <option value="${escapeHtml(entry.slug)}"${entry.slug === selectedSlug ? " selected" : ""}>
-      ${escapeHtml(entry.name)}
-    </option>
-  `).join("");
-}
-
-function syncScenarioControls(entry) {
-  if (!entry) return;
-  const activeCategory = currentCategory === "all" ? "all" : categoryKeyFor(entry);
-  if (categorySelect.value !== activeCategory) {
-    categorySelect.value = activeCategory;
-  }
-  populatePathogenSelect(entry.slug);
-  pathogenSelect.value = entry.slug;
-}
-
-function renderScenarioControls() {
-  const categories = categoryOptions();
-  categorySelect.innerHTML = [
-    '<option value="all">All disease categories</option>',
-    ...categories.map(([key, label]) => `<option value="${escapeHtml(key)}">${escapeHtml(label)}</option>`)
-  ].join("");
-  categorySelect.value = currentCategory;
-  populatePathogenSelect(ATLAS_ENTRIES[currentIndex]?.slug);
-
-  categorySelect.addEventListener("change", () => {
-    currentCategory = categorySelect.value;
-    const firstScopedEntry = entriesInScope()[0];
-    const nextIndex = ATLAS_ENTRIES.findIndex((entry) => entry.slug === firstScopedEntry.slug);
-    selectIndex(nextIndex, { userInitiated: true });
-  });
-  pathogenSelect.addEventListener("change", () => {
-    const index = ATLAS_ENTRIES.findIndex((entry) => entry.slug === pathogenSelect.value);
-    if (index >= 0) {
-      selectIndex(index, { userInitiated: true });
-    }
-  });
-  document.getElementById("prev-btn").addEventListener("click", () => selectIndex(scopedIndex(-1), { userInitiated: true }));
-  document.getElementById("next-btn").addEventListener("click", () => selectIndex(scopedIndex(1), { userInitiated: true }));
+function renderScenarioButtons() {
+  const buttonHtml = ATLAS_ENTRIES.map((entry) => {
+    const color = colorFor(entry);
+    return `<button class="scenario-btn" type="button" data-pathogen="${escapeHtml(entry.slug)}" style="color:${color}">${escapeHtml(entry.name)}</button>`;
+  }).join("");
+  const controls = document.getElementById("prev-btn").outerHTML
+    + document.getElementById("pause-btn").outerHTML
+    + document.getElementById("next-btn").outerHTML
+    + document.getElementById("reset-btn").outerHTML;
+  scenarioBar.innerHTML = controls + buttonHtml;
+  document.getElementById("prev-btn").addEventListener("click", () => selectIndex(currentIndex - 1, { userInitiated: true }));
+  document.getElementById("next-btn").addEventListener("click", () => selectIndex(currentIndex + 1, { userInitiated: true }));
   document.getElementById("pause-btn").addEventListener("click", () => setPaused(!isPaused));
   document.getElementById("reset-btn").addEventListener("click", () => fitCurrentEntry());
+  scenarioBar.querySelectorAll(".scenario-btn").forEach((button) => {
+    button.addEventListener("click", () => {
+      const slug = button.dataset.pathogen;
+      const index = ATLAS_ENTRIES.findIndex((entry) => entry.slug === slug);
+      if (index >= 0) {
+        selectIndex(index, { userInitiated: true });
+      }
+    });
+  });
 }
 
 function setPaused(nextValue) {
@@ -940,7 +815,7 @@ function scheduleRotation() {
     return;
   }
   rotationTimer = window.setTimeout(() => {
-    selectIndex(scopedIndex(1), { fromRotation: true });
+    selectIndex(currentIndex + 1, { fromRotation: true });
   }, 12000);
 }
 
@@ -957,7 +832,6 @@ function renderMeta(entry, activeEntry) {
   const writingLabel = WRITING_LABELS[activeEntry.writing_state] || "Writing state pending";
   const badges = [
     `<span class="badge accent">${escapeHtml(statusLabel)}</span>`,
-    `<span class="badge">${escapeHtml(categoryLabelFor(entry))}</span>`,
     `<span class="badge signal">${escapeHtml(activeEntry.pathogen_type || entry.pathogen_type || "Pathogen")}</span>`,
     `<span class="badge">${escapeHtml(writingLabel)}</span>`,
     (activeEntry.atlas_scope || entry.atlas_scope) ? `<span class="badge">${escapeHtml(activeEntry.atlas_scope || entry.atlas_scope)}</span>` : "",
@@ -1189,7 +1063,9 @@ function selectIndex(nextIndex, options = {}) {
     currentVariantSlug = null;
   }
   const activeEntry = resolveActiveEntry(entry);
-  syncScenarioControls(entry);
+  scenarioBar.querySelectorAll(".scenario-btn").forEach((button) => {
+    button.classList.toggle("active", button.dataset.pathogen === entry.slug);
+  });
   renderStoryPanel(entry, activeEntry);
   renderEvidencePanel(entry, activeEntry);
   drawEntry(activeEntry);
@@ -1243,7 +1119,7 @@ function init() {
     document.getElementById("evidence-title").textContent = "No evidence data available";
     return;
   }
-  renderScenarioControls();
+  renderScenarioButtons();
   selectIndex(initialIndex(), { variantSlug: initialVariantSlug(), suppressUrl: true });
 }
 
