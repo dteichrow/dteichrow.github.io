@@ -639,16 +639,9 @@
   {
     "title": "Hantavirus and cruise-ship outbreak",
     "section": "Newsdesk",
-    "summary": "New publisher/source coverage joined this story cluster: Fox News, NTD News, instagram.com.",
+    "summary": "New publisher/source coverage joined this story cluster: facebook.com.",
     "url": "/stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
     "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel new_geography Global / Maritime Spain"
-  },
-  {
-    "title": "Measles transmission and vaccination",
-    "section": "Newsdesk",
-    "summary": "Digital Journal now includes deaths or fatal cases in the story frame.",
-    "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
-    "keywords": "new_official_source suspected_case confirmed_case severity_or_death Southeast Asia "
   },
   {
     "title": "Avian influenza and H5N1",
@@ -656,6 +649,13 @@
     "summary": "CDC MMWR now explicitly uses investigation or monitoring language.",
     "url": "/stories/story_28a91c6d89267872-avian-influenza-and-h5n1.html",
     "keywords": "new_official_source severity_or_death new_geography North America United States"
+  },
+  {
+    "title": "Measles transmission and vaccination",
+    "section": "Newsdesk",
+    "summary": "Digital Journal now includes deaths or fatal cases in the story frame.",
+    "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
+    "keywords": "new_official_source suspected_case confirmed_case severity_or_death Southeast Asia "
   },
   {
     "title": "Dengue and arboviruses",

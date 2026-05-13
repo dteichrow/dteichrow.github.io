@@ -165,6 +165,9 @@ window.PATHOGEN_ATLAS_DATA = {
       "why_it_matters": "It lets the atlas show how a pathogen can move with people, water storage, ships, and vector habitat rather than by human travel alone.",
       "writing_state": "direct",
       "color": "#d86a4f",
+      "category": "mosquito-borne",
+      "category_label": "Mosquito-borne / arboviral",
+      "transmission_group": "Mosquito-borne / arboviral",
       "status_label": "Consensus",
       "writing_state_label": "Written here directly",
       "reference_href": "../../reference/yellow-fever.html"
@@ -321,6 +324,9 @@ window.PATHOGEN_ATLAS_DATA = {
       "why_it_matters": "It gives the atlas a clean origin basin, repeated outward routes, and a still-live connection between infrastructure failure and epidemic geography.",
       "writing_state": "adjacent",
       "color": "#5a9bd4",
+      "category": "fecal-oral-waterborne",
+      "category_label": "Fecal-oral / waterborne",
+      "transmission_group": "Fecal-oral / waterborne",
       "status_label": "Consensus",
       "writing_state_label": "Adjacent writing",
       "reference_href": "../../reference/cholera.html"
@@ -457,6 +463,9 @@ window.PATHOGEN_ATLAS_DATA = {
       "why_it_matters": "It shows the difference between debated deep origin, strong consensus on later spread, and the modern reality that measles outbreaks are usually immunity-gap stories.",
       "writing_state": "not_yet_written",
       "color": "#d6c06a",
+      "category": "airborne-respiratory",
+      "category_label": "Airborne / respiratory",
+      "transmission_group": "Airborne / respiratory",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/measles.html"
@@ -613,6 +622,9 @@ window.PATHOGEN_ATLAS_DATA = {
       "why_it_matters": "It forces the site to distinguish clades, transport mode, and transmission network rather than collapsing everything into one map pin.",
       "writing_state": "not_yet_written",
       "color": "#dd6974",
+      "category": "contact-sexual-bloodborne",
+      "category_label": "Contact, sexual, or bloodborne",
+      "transmission_group": "Contact, sexual, or bloodborne",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/mpox.html"
@@ -785,6 +797,9 @@ window.PATHOGEN_ATLAS_DATA = {
       "why_it_matters": "It creates a genuinely different map grammar from the classic human-to-human pathogens and foregrounds One Health risk.",
       "writing_state": "not_yet_written",
       "color": "#9b7bd8",
+      "category": "zoonotic-animal-interface",
+      "category_label": "Zoonotic / animal interface",
+      "transmission_group": "Zoonotic / animal interface",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/avian-influenza-a-h5n1.html"
@@ -867,7 +882,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [
         {
           "display_title": "Hantavirus and cruise-ship outbreak",
-          "latest_update_summary": "New publisher/source coverage joined this story cluster: Fox News, NTD News, instagram.com.",
+          "latest_update_summary": "New publisher/source coverage joined this story cluster: facebook.com.",
           "story_id": "story_f6d225b01f3f7094",
           "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
           "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -983,7 +998,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "New publisher/source coverage joined this story cluster: Fox News, NTD News, instagram.com.",
+              "latest_update_summary": "New publisher/source coverage joined this story cluster: facebook.com.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1057,6 +1072,9 @@ window.PATHOGEN_ATLAS_DATA = {
           "why_it_matters": "It restores the older and broader hantavirus story that gets erased when modern news cycles jump straight to Andes virus.",
           "writing_state": "direct",
           "color": "#7aa96b",
+          "category": "other-mixed",
+          "category_label": "Other / mixed transmission",
+          "transmission_group": "Other / mixed transmission",
           "status_label": "Consensus",
           "writing_state_label": "Written here directly",
           "reference_href": "../../reference/hantavirus-syndrome.html"
@@ -1118,7 +1136,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "New publisher/source coverage joined this story cluster: Fox News, NTD News, instagram.com.",
+              "latest_update_summary": "New publisher/source coverage joined this story cluster: facebook.com.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1192,6 +1210,9 @@ window.PATHOGEN_ATLAS_DATA = {
           "why_it_matters": "It explains why U.S. readers often think hantavirus starts in the Four Corners when that is really the start of one major New World recognition event.",
           "writing_state": "direct",
           "color": "#7aa96b",
+          "category": "other-mixed",
+          "category_label": "Other / mixed transmission",
+          "transmission_group": "Other / mixed transmission",
           "status_label": "Consensus",
           "writing_state_label": "Written here directly",
           "reference_href": "../../reference/hantavirus-syndrome.html"
@@ -1253,7 +1274,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "New publisher/source coverage joined this story cluster: Fox News, NTD News, instagram.com.",
+              "latest_update_summary": "New publisher/source coverage joined this story cluster: facebook.com.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1327,6 +1348,9 @@ window.PATHOGEN_ATLAS_DATA = {
           "why_it_matters": "It is the variant that turns a rodent-exposure story into a transmission-story question.",
           "writing_state": "direct",
           "color": "#7aa96b",
+          "category": "other-mixed",
+          "category_label": "Other / mixed transmission",
+          "transmission_group": "Other / mixed transmission",
           "status_label": "Mixed / debated",
           "writing_state_label": "Written here directly",
           "reference_href": "../../reference/hantavirus-syndrome.html"
@@ -1348,6 +1372,9 @@ window.PATHOGEN_ATLAS_DATA = {
       "why_it_matters": "It forces the atlas to behave like an encyclopedia rather than a single-route animation and keeps us honest about host ecology, geography, and syndrome differences.",
       "writing_state": "direct",
       "color": "#7aa96b",
+      "category": "rodent-environmental",
+      "category_label": "Rodent-borne / environmental",
+      "transmission_group": "Rodent-borne / environmental",
       "status_label": "Mixed / debated",
       "writing_state_label": "Written here directly",
       "reference_href": "../../reference/hantavirus-syndrome.html"
@@ -1506,6 +1533,9 @@ window.PATHOGEN_ATLAS_DATA = {
       "why_it_matters": "It turns the atlas toward contemporary global change instead of leaving it stranded in historical imperial routes.",
       "writing_state": "not_yet_written",
       "color": "#c9a84c",
+      "category": "mosquito-borne",
+      "category_label": "Mosquito-borne / arboviral",
+      "transmission_group": "Mosquito-borne / arboviral",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/dengue.html"
@@ -1663,6 +1693,9 @@ window.PATHOGEN_ATLAS_DATA = {
       "why_it_matters": "It keeps the atlas from becoming virus-only and forces a map grammar built around mosquitoes, species differences, and ecological receptivity.",
       "writing_state": "adjacent",
       "color": "#5abf7c",
+      "category": "mosquito-borne",
+      "category_label": "Mosquito-borne / parasitic",
+      "transmission_group": "Mosquito-borne / parasitic",
       "status_label": "Mixed / debated",
       "writing_state_label": "Adjacent writing",
       "reference_href": "../../reference/malaria.html"
@@ -1822,6 +1855,9 @@ window.PATHOGEN_ATLAS_DATA = {
       "why_it_matters": "It turns the atlas toward chronic structural transmission instead of one spectacular frontier jump.",
       "writing_state": "direct",
       "color": "#d98e5f",
+      "category": "airborne-respiratory",
+      "category_label": "Airborne / respiratory",
+      "transmission_group": "Airborne / respiratory",
       "status_label": "Mixed / debated",
       "writing_state_label": "Written here directly"
     },
@@ -1974,10 +2010,2327 @@ window.PATHOGEN_ATLAS_DATA = {
       "why_it_matters": "It lets the atlas bridge deep historical fear, genomic reconstruction, and the very practical map logic of rodents, fleas, and ports.",
       "writing_state": "adjacent",
       "color": "#b9754f",
+      "category": "flea-louse-mite-borne",
+      "category_label": "Flea, louse, and mite-borne",
+      "transmission_group": "Flea, louse, and mite-borne",
       "status_label": "Mixed / debated",
       "writing_state_label": "Adjacent writing"
+    },
+    {
+      "slug": "zika-virus-disease",
+      "name": "Zika virus disease",
+      "subtitle": "Aedes ecology, Pacific jumps, pregnancy surveillance, and sexual transmission",
+      "status": "mixed",
+      "pathogen_type": "Virus",
+      "summary": "A mosquito-borne flavivirus whose modern importance comes from congenital risk, urban Aedes habitat, travel, and sexual transmission.",
+      "why_it_matters": "It forces the atlas to keep vector ecology and reproductive epidemiology in the same frame.",
+      "atlas_scope": "Aedes mosquito expansion, pregnancy risk, and the 2015-2016 congenital-malformation crisis",
+      "origin_claim": {
+        "label": "Zika Forest / East African discovery frame",
+        "coordinates": [
+          32.5,
+          1.5
+        ],
+        "date_or_era": "First identified in Uganda in 1947; later urban and transoceanic expansion",
+        "confidence": "mixed",
+        "narrative": "The cautious origin frame is East African discovery and sylvatic Aedes-primate ecology, not a single clean birthplace for modern Zika.",
+        "citation_ids": [
+          "zika-cdc"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "zika-africa-asia",
+          "from_label": "East Africa",
+          "to_label": "Equatorial Asia",
+          "from_coordinates": [
+            32.5,
+            1.5
+          ],
+          "to_coordinates": [
+            103.8,
+            1.35
+          ],
+          "date_or_era": "Mid twentieth century recognition beyond Africa",
+          "route_type": "spread",
+          "confidence": "moderate",
+          "narrative": "Serology and outbreaks moved Zika from a sylvatic curiosity into a wider Old World arbovirus map.",
+          "citation_ids": [
+            "zika-cdc",
+            "zika-who"
+          ]
+        },
+        {
+          "route_id": "zika-pacific-americas",
+          "from_label": "Pacific island outbreaks",
+          "to_label": "Brazil and the Americas",
+          "from_coordinates": [
+            158.2,
+            6.9
+          ],
+          "to_coordinates": [
+            -47.9,
+            -15.8
+          ],
+          "date_or_era": "2007-2016 Pacific and American expansion",
+          "route_type": "aedes_urbanization",
+          "confidence": "strong",
+          "narrative": "Island outbreaks preceded explosive American spread, where congenital outcomes changed the political meaning of an arbovirus map.",
+          "citation_ids": [
+            "zika-cdc",
+            "zika-who"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern Zika coverage still turns on travel, pregnancy counseling, mosquito suitability, and local transmission evidence.",
+        "It shows how a mild infection can become historically important through one exposed subgroup."
+      ],
+      "framing_traps": [
+        "Do not treat Zika as just another dengue-like fever; congenital risk changed the surveillance problem.",
+        "Do not map Aedes presence as identical to sustained Zika transmission."
+      ],
+      "linked_reference_slug": "zika-virus-disease",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "zika-cdc",
+          "short_citation": "CDC. Transmission of Zika Virus. 2025.",
+          "url": "https://www.cdc.gov/zika/php/transmission/index.html",
+          "claim_supported": "Aedes transmission, sylvatic and urban cycles, and congenital/sexual transmission.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        },
+        {
+          "id": "zika-who",
+          "short_citation": "WHO Western Pacific. Zika virus fact sheet. 2025.",
+          "url": "https://www.who.int/westernpacific/newsroom/fact-sheets/detail/zika-virus",
+          "claim_supported": "Pregnancy risk, PHEIC history, and persistent low-level transmission.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        }
+      ],
+      "citation_count": 2,
+      "default_variant_slug": "",
+      "variants": [],
+      "variant_count": 0,
+      "related_stories": [],
+      "story_count": 0,
+      "route_count": 2,
+      "writing_state": "not_yet_written",
+      "reference_name": "Zika virus disease",
+      "reference_url": "reference/zika-virus-disease.html",
+      "reference_web_path": "reference/zika-virus-disease.html",
+      "atlas_url": "atlas.html?pathogen=zika-virus-disease",
+      "visual_asset": {},
+      "visual_asset_id": "atlas-zika-virus-disease-hero",
+      "category": "mosquito-borne",
+      "category_label": "Mosquito-borne / arboviral",
+      "transmission_group": "Mosquito-borne / arboviral",
+      "color": "#5fb6a6",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "reference_href": "../../reference/zika-virus-disease.html"
+    },
+    {
+      "slug": "chikungunya",
+      "name": "Chikungunya",
+      "subtitle": "A fever-and-joint-pain arbovirus that follows Aedes habitat and immunologically naive populations",
+      "status": "consensus",
+      "pathogen_type": "Virus",
+      "summary": "A mosquito-borne alphavirus whose spread tracks Aedes ecology, container water, travel, viral adaptation, and explosive outbreaks.",
+      "why_it_matters": "It shows how mosquito ecology, viral adaptation, and human movement can rapidly change a disease map.",
+      "atlas_scope": "Aedes urbanization from East Africa into Asia, islands, Europe, and the Americas",
+      "origin_claim": {
+        "label": "Tanzania / East African discovery setting",
+        "coordinates": [
+          39.2,
+          -6.4
+        ],
+        "date_or_era": "First identified in Tanzania in 1952",
+        "confidence": "strong",
+        "narrative": "The first recognized chikungunya outbreak was in what is now Tanzania, followed by African and Asian circulation and wider Aedes-driven expansion.",
+        "citation_ids": [
+          "chik-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "chik-east-africa-asia",
+          "from_label": "East Africa",
+          "to_label": "Thailand and India",
+          "from_coordinates": [
+            39.2,
+            -6.4
+          ],
+          "to_coordinates": [
+            100.5,
+            13.8
+          ],
+          "date_or_era": "1950s-1970s African and Asian recognition",
+          "route_type": "aedes_urban",
+          "confidence": "strong",
+          "narrative": "Early recognized spread moved the virus into urban Asian outbreak settings.",
+          "citation_ids": [
+            "chik-who",
+            "chik-cdc"
+          ]
+        },
+        {
+          "route_id": "chik-indian-ocean-americas",
+          "from_label": "Indian Ocean outbreak zone",
+          "to_label": "Caribbean and the Americas",
+          "from_coordinates": [
+            55.5,
+            -21.1
+          ],
+          "to_coordinates": [
+            -61.0,
+            14.6
+          ],
+          "date_or_era": "2004 onward global expansion",
+          "route_type": "travel_and_vector",
+          "confidence": "strong",
+          "narrative": "Travel, viral adaptation, and Aedes albopictus/aegypti distributions helped widen outbreak risk.",
+          "citation_ids": [
+            "chik-who",
+            "chik-cdc"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Chikungunya now sits beside dengue and Zika in the diagnostic problem of overlapping Aedes-borne fever.",
+        "New vaccines make it a moving target for travel medicine and outbreak preparedness."
+      ],
+      "framing_traps": [
+        "Do not reduce chikungunya to dengue with joint pain; prolonged arthralgia changes burden.",
+        "Do not imply that every Aedes region has equal current outbreak risk."
+      ],
+      "linked_reference_slug": "chikungunya",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "chik-who",
+          "short_citation": "WHO. Chikungunya fact sheet. 2025.",
+          "url": "https://www.who.int/en/news-room/fact-sheets/detail/chikungunya",
+          "claim_supported": "First identification in Tanzania, Aedes transmission, and spread to more than 110 countries.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        },
+        {
+          "id": "chik-cdc",
+          "short_citation": "CDC. Chikungunya Virus.",
+          "url": "https://www.cdc.gov/chikungunya/",
+          "claim_supported": "Clinical and public-health framing for chikungunya surveillance and prevention.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        }
+      ],
+      "citation_count": 2,
+      "default_variant_slug": "",
+      "variants": [],
+      "variant_count": 0,
+      "related_stories": [],
+      "story_count": 0,
+      "route_count": 2,
+      "writing_state": "not_yet_written",
+      "reference_name": "Chikungunya",
+      "reference_url": "reference/chikungunya.html",
+      "reference_web_path": "reference/chikungunya.html",
+      "atlas_url": "atlas.html?pathogen=chikungunya",
+      "visual_asset": {},
+      "visual_asset_id": "atlas-chikungunya-hero",
+      "category": "mosquito-borne",
+      "category_label": "Mosquito-borne / arboviral",
+      "transmission_group": "Mosquito-borne / arboviral",
+      "color": "#d9a441",
+      "status_label": "Consensus",
+      "writing_state_label": "No dedicated post yet",
+      "reference_href": "../../reference/chikungunya.html"
+    },
+    {
+      "slug": "west-nile-virus",
+      "name": "West Nile virus",
+      "subtitle": "A Culex-bird virus that turned into a North American seasonal surveillance system",
+      "status": "consensus",
+      "pathogen_type": "Virus",
+      "summary": "West Nile maps best as an ecology of birds, Culex mosquitoes, horses, humans, wetlands, cities, and seasonal heat.",
+      "why_it_matters": "It gives the atlas a clean ecological counterexample to human-centered epidemic maps.",
+      "atlas_scope": "Bird-mosquito ecology, dead-end mammal hosts, and rapid North American establishment",
+      "origin_claim": {
+        "label": "West Nile district, Uganda discovery setting",
+        "coordinates": [
+          32.3,
+          0.4
+        ],
+        "date_or_era": "First isolated in Uganda in 1937",
+        "confidence": "strong",
+        "narrative": "The name and earliest isolation anchor the virus in Uganda, but the practical atlas frame is the bird-mosquito cycle.",
+        "citation_ids": [
+          "wnv-cdc-transmission"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "wnv-uganda-mediterranean",
+          "from_label": "Uganda discovery setting",
+          "to_label": "Mediterranean and Middle East",
+          "from_coordinates": [
+            32.3,
+            0.4
+          ],
+          "to_coordinates": [
+            35.2,
+            31.8
+          ],
+          "date_or_era": "Mid twentieth century Afro-Eurasian recognition",
+          "route_type": "spread",
+          "confidence": "moderate",
+          "narrative": "West Nile became visible as a recurring bird-mosquito encephalitis signal across Afro-Eurasian wetlands and cities.",
+          "citation_ids": [
+            "wnv-cdc-transmission",
+            "wnv-cdc-causes"
+          ]
+        },
+        {
+          "route_id": "wnv-new-york-americas",
+          "from_label": "New York City introduction",
+          "to_label": "Continental United States",
+          "from_coordinates": [
+            -73.9,
+            40.7
+          ],
+          "to_coordinates": [
+            -95.0,
+            39.0
+          ],
+          "date_or_era": "1999 onward North American establishment",
+          "route_type": "invasive_arbovirus",
+          "confidence": "strong",
+          "narrative": "After the 1999 New York outbreak, bird-mosquito transmission allowed the virus to establish across much of North America.",
+          "citation_ids": [
+            "wnv-cdc-transmission",
+            "wnv-cdc-causes"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern surveillance depends on mosquito pools, bird ecology, horse cases, weather, and neuroinvasive disease reporting.",
+        "The North American story is a rare modern example of continent-scale establishment visible within years."
+      ],
+      "framing_traps": [
+        "Do not map human cases as the reservoir; humans and horses are usually dead-end hosts.",
+        "Do not treat mosquito-borne diseases as one interchangeable category."
+      ],
+      "linked_reference_slug": "untitled",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "wnv-cdc-transmission",
+          "short_citation": "CDC. Transmission of West Nile Virus. 2024.",
+          "url": "https://www.cdc.gov/west-nile-virus/php/transmission/index.html",
+          "claim_supported": "Culex-bird cycle, dead-end human and horse hosts, and rare non-mosquito routes.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        },
+        {
+          "id": "wnv-cdc-causes",
+          "short_citation": "CDC. West Nile: Causes and How It Spreads. 2025.",
+          "url": "https://www.cdc.gov/west-nile-virus/causes/index.html",
+          "claim_supported": "West Nile as a flavivirus spread primarily by mosquitoes after feeding on infected birds.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        }
+      ],
+      "citation_count": 2,
+      "default_variant_slug": "",
+      "variants": [],
+      "variant_count": 0,
+      "related_stories": [],
+      "story_count": 0,
+      "route_count": 2,
+      "writing_state": "not_yet_written",
+      "reference_name": "",
+      "reference_url": "",
+      "reference_web_path": "",
+      "atlas_url": "atlas.html?pathogen=west-nile-virus",
+      "visual_asset": {},
+      "visual_asset_id": "atlas-west-nile-virus-hero",
+      "category": "mosquito-borne",
+      "category_label": "Mosquito-borne / arboviral",
+      "transmission_group": "Mosquito-borne / arboviral",
+      "color": "#8fbf5f",
+      "status_label": "Consensus",
+      "writing_state_label": "No dedicated post yet"
+    },
+    {
+      "slug": "japanese-encephalitis",
+      "name": "Japanese encephalitis",
+      "subtitle": "Mosquitoes, pigs, water birds, rice landscapes, and childhood immunity",
+      "status": "consensus",
+      "pathogen_type": "Virus",
+      "summary": "Japanese encephalitis turns the atlas toward agricultural ecology: Culex mosquitoes, pigs, water birds, rice cultivation, and vaccination.",
+      "why_it_matters": "It is an atlas entry where land use and animal husbandry are the map, not background context.",
+      "atlas_scope": "Rice agriculture, pigs, water birds, and Culex transmission across Asia",
+      "origin_claim": {
+        "label": "Japan / early documented clinical frame",
+        "coordinates": [
+          139.7,
+          35.7
+        ],
+        "date_or_era": "First documented disease case in Japan in 1871",
+        "confidence": "strong",
+        "narrative": "The earliest documented clinical frame is Japan; endemic transmission now belongs to a wider South-East Asian and Western Pacific agricultural ecology.",
+        "citation_ids": [
+          "je-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "je-japan-east-asia",
+          "from_label": "Japan",
+          "to_label": "East and Southeast Asia",
+          "from_coordinates": [
+            139.7,
+            35.7
+          ],
+          "to_coordinates": [
+            121.5,
+            25.0
+          ],
+          "date_or_era": "Late nineteenth to twentieth century recognition",
+          "route_type": "regional_recognition",
+          "confidence": "strong",
+          "narrative": "Clinical recognition in Japan led into a wider Asian encephalitis map linked to Culex mosquitoes and amplifying hosts.",
+          "citation_ids": [
+            "je-who",
+            "je-wpro"
+          ]
+        },
+        {
+          "route_id": "je-rice-pig-interface",
+          "from_label": "Mekong and rice-growing Asia",
+          "to_label": "South and South-East Asia",
+          "from_coordinates": [
+            105.8,
+            21.0
+          ],
+          "to_coordinates": [
+            78.9,
+            22.9
+          ],
+          "date_or_era": "Modern endemic rural-periurban transmission",
+          "route_type": "agricultural_ecology",
+          "confidence": "strong",
+          "narrative": "Rice agriculture, pigs, water birds, and seasonal mosquito abundance sustain modern risk geography.",
+          "citation_ids": [
+            "je-who",
+            "je-wpro"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Vaccination policy is inseparable from geography because risk is concentrated where enzootic transmission is recognized.",
+        "Climate, rice cultivation, and pig husbandry keep this disease in the atlas as an ecology problem."
+      ],
+      "framing_traps": [
+        "Do not confuse Japanese encephalitis with direct human-to-human spread.",
+        "Do not treat Asia as homogeneous; risk varies with ecology, season, vaccination, and exposure."
+      ],
+      "linked_reference_slug": "untitled",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "je-who",
+          "short_citation": "WHO. Japanese encephalitis fact sheet. 2024.",
+          "url": "https://www.who.int/en/news-room/fact-sheets/detail/japanese-encephalitis",
+          "claim_supported": "Culex transmission, pig/water bird cycle, Asian distribution, and vaccine prevention.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        },
+        {
+          "id": "je-wpro",
+          "short_citation": "WHO Western Pacific. Japanese encephalitis.",
+          "url": "https://www.who.int/westernpacific/health-topics/japanese-encephalitis",
+          "claim_supported": "Regional public-health framing and severity in the Western Pacific.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        }
+      ],
+      "citation_count": 2,
+      "default_variant_slug": "",
+      "variants": [],
+      "variant_count": 0,
+      "related_stories": [],
+      "story_count": 0,
+      "route_count": 2,
+      "writing_state": "not_yet_written",
+      "reference_name": "",
+      "reference_url": "",
+      "reference_web_path": "",
+      "atlas_url": "atlas.html?pathogen=japanese-encephalitis",
+      "visual_asset": {},
+      "visual_asset_id": "atlas-japanese-encephalitis-hero",
+      "category": "mosquito-borne",
+      "category_label": "Mosquito-borne / arboviral",
+      "transmission_group": "Mosquito-borne / arboviral",
+      "color": "#6fa8dc",
+      "status_label": "Consensus",
+      "writing_state_label": "No dedicated post yet"
+    },
+    {
+      "slug": "poliomyelitis",
+      "name": "Poliomyelitis",
+      "subtitle": "An eradication-era virus shaped by immunity gaps, sanitation, and surveillance",
+      "status": "mixed",
+      "pathogen_type": "Virus",
+      "summary": "Polio is now a map of fecal-oral transmission, under-immunization, environmental surveillance, and eradication politics.",
+      "why_it_matters": "It turns the atlas toward the geography of eradication, not only emergence.",
+      "atlas_scope": "Fecal-oral transmission, eradication, and the infrastructure of surveillance",
+      "origin_claim": {
+        "label": "Modern endemic Afghanistan-Pakistan frame",
+        "coordinates": [
+          67.0,
+          30.0
+        ],
+        "date_or_era": "Ancient disease with modern endemic strongholds in Afghanistan and Pakistan",
+        "confidence": "mixed",
+        "narrative": "Deep origin is not usefully reduced to one point; the practical frame is modern persistence in remaining endemic and vaccine-derived transmission zones.",
+        "citation_ids": [
+          "polio-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "polio-endemic-crossborder",
+          "from_label": "Pakistan-Afghanistan border region",
+          "to_label": "Cross-border transmission zones",
+          "from_coordinates": [
+            67.0,
+            30.0
+          ],
+          "to_coordinates": [
+            69.2,
+            34.5
+          ],
+          "date_or_era": "Late twentieth to twenty-first century endemic persistence",
+          "route_type": "eradication_frontier",
+          "confidence": "strong",
+          "narrative": "The remaining wild-poliovirus map is shaped by mobility, conflict, vaccination access, and environmental detection.",
+          "citation_ids": [
+            "polio-who",
+            "polio-who-topic"
+          ]
+        },
+        {
+          "route_id": "polio-global-eradication",
+          "from_label": "Former high-burden countries",
+          "to_label": "Global elimination campaigns",
+          "from_coordinates": [
+            7.5,
+            9.0
+          ],
+          "to_coordinates": [
+            0.0,
+            20.0
+          ],
+          "date_or_era": "1988 onward global eradication campaign",
+          "route_type": "eradication",
+          "confidence": "strong",
+          "narrative": "Mass vaccination and surveillance collapsed the global wild-polio map from more than 125 endemic countries to final hard-to-reach zones.",
+          "citation_ids": [
+            "polio-who",
+            "polio-who-topic"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Polio remains a daily lesson that \u201calmost eradicated\u201d is still geographically fragile.",
+        "Wastewater and acute flaccid paralysis surveillance make invisible transmission visible."
+      ],
+      "framing_traps": [
+        "Do not imply wild poliovirus origin is the same as present-day endemic persistence.",
+        "Do not ignore vaccine-derived poliovirus in modern polio geography."
+      ],
+      "linked_reference_slug": "poliomyelitis-cvdpv2",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "polio-who",
+          "short_citation": "WHO. Poliomyelitis fact sheet. 2025.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/poliomyelitis",
+          "claim_supported": "Fecal-oral transmission, >99% reduction since 1988, remaining endemic countries, and eradication framing.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        },
+        {
+          "id": "polio-who-topic",
+          "short_citation": "WHO. Poliomyelitis health topic.",
+          "url": "https://www.who.int/topics/poliomyelitis/en/",
+          "claim_supported": "Global Polio Eradication Initiative and vaccine-preventable disease context.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        }
+      ],
+      "citation_count": 2,
+      "default_variant_slug": "",
+      "variants": [],
+      "variant_count": 0,
+      "related_stories": [],
+      "story_count": 0,
+      "route_count": 2,
+      "writing_state": "not_yet_written",
+      "reference_name": "Poliomyelitis",
+      "reference_url": "reference/poliomyelitis-cvdpv2.html",
+      "reference_web_path": "reference/poliomyelitis-cvdpv2.html",
+      "atlas_url": "atlas.html?pathogen=poliomyelitis",
+      "visual_asset": {},
+      "visual_asset_id": "atlas-poliomyelitis-hero",
+      "category": "fecal-oral-waterborne",
+      "category_label": "Fecal-oral / waterborne",
+      "transmission_group": "Fecal-oral / waterborne",
+      "color": "#7c9fd1",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "reference_href": "../../reference/poliomyelitis-cvdpv2.html"
+    },
+    {
+      "slug": "hepatitis-a",
+      "name": "Hepatitis A",
+      "subtitle": "A fecal-oral virus that maps sanitation, food systems, travel, and adult susceptibility",
+      "status": "consensus",
+      "pathogen_type": "Virus",
+      "summary": "Hepatitis A shows how improving sanitation can shift symptomatic disease into older, more vulnerable age groups.",
+      "why_it_matters": "It adds a disease where modernization changes who gets sick, not simply how much disease exists.",
+      "atlas_scope": "Food, water, sanitation, travel, and cyclic outbreak recurrence",
+      "origin_claim": {
+        "label": "Global sanitation-gradient frame",
+        "coordinates": [
+          30.0,
+          20.0
+        ],
+        "date_or_era": "Worldwide fecal-oral infection; modern endemicity follows sanitation gradients",
+        "confidence": "mixed",
+        "narrative": "The useful frame is a worldwide fecal-oral virus whose disease burden changes with childhood exposure, sanitation, vaccination, and travel.",
+        "citation_ids": [
+          "hav-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "hav-high-low-endemicity",
+          "from_label": "High-endemicity childhood exposure settings",
+          "to_label": "Low-endemicity susceptible adult settings",
+          "from_coordinates": [
+            30.0,
+            20.0
+          ],
+          "to_coordinates": [
+            -95.0,
+            37.0
+          ],
+          "date_or_era": "Modern sanitation transition",
+          "route_type": "spread",
+          "confidence": "moderate",
+          "narrative": "Sanitation transitions can move populations from early childhood infection toward outbreaks among susceptible adolescents and adults.",
+          "citation_ids": [
+            "hav-who",
+            "hav-cdc"
+          ]
+        },
+        {
+          "route_id": "hav-food-water-outbreaks",
+          "from_label": "Contaminated food-water outbreaks",
+          "to_label": "Urban outbreak response settings",
+          "from_coordinates": [
+            121.5,
+            31.2
+          ],
+          "to_coordinates": [
+            -74.0,
+            40.7
+          ],
+          "date_or_era": "Food and waterborne outbreak movement",
+          "route_type": "food_water",
+          "confidence": "strong",
+          "narrative": "Food, water, and close-contact outbreaks can move hepatitis A into settings where adult immunity gaps exist.",
+          "citation_ids": [
+            "hav-who",
+            "hav-cdc"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Large adult outbreaks in high-income countries often reveal homelessness, drug-use networks, food contamination, or travel.",
+        "It bridges sanitation history and modern vaccine policy."
+      ],
+      "framing_traps": [
+        "Do not treat hepatitis A like hepatitis B or C; it does not produce chronic infection.",
+        "Do not map endemicity as moral failure; it is infrastructure, exposure age, and vaccine access."
+      ],
+      "linked_reference_slug": "hepatitis-a",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "hav-who",
+          "short_citation": "WHO. Hepatitis A fact sheet. 2025.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/hepatitis-a",
+          "claim_supported": "Fecal-oral transmission, sanitation gradient, food/water outbreaks, and vaccine prevention.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        },
+        {
+          "id": "hav-cdc",
+          "short_citation": "CDC. Clinical Overview of Hepatitis A. 2025.",
+          "url": "https://www.cdc.gov/hepatitis-a/hcp/clinical-overview/index.html",
+          "claim_supported": "Clinical and public-health overview including fecal-oral transmission and vaccination.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        }
+      ],
+      "citation_count": 2,
+      "default_variant_slug": "",
+      "variants": [],
+      "variant_count": 0,
+      "related_stories": [],
+      "story_count": 0,
+      "route_count": 2,
+      "writing_state": "not_yet_written",
+      "reference_name": "Hepatitis A",
+      "reference_url": "reference/hepatitis-a.html",
+      "reference_web_path": "reference/hepatitis-a.html",
+      "atlas_url": "atlas.html?pathogen=hepatitis-a",
+      "visual_asset": {},
+      "visual_asset_id": "atlas-hepatitis-a-hero",
+      "category": "fecal-oral-waterborne",
+      "category_label": "Fecal-oral / waterborne",
+      "transmission_group": "Fecal-oral / waterborne",
+      "color": "#c9b56b",
+      "status_label": "Consensus",
+      "writing_state_label": "No dedicated post yet",
+      "reference_href": "../../reference/hepatitis-a.html"
+    },
+    {
+      "slug": "typhoid-fever",
+      "name": "Typhoid fever",
+      "subtitle": "A Salmonella Typhi map of unsafe water, food systems, carriers, and resistant lineages",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "Typhoid follows infrastructure: water safety, sanitation, food handling, urban crowding, carriers, and antibiotic pressure.",
+      "why_it_matters": "It connects nineteenth-century sanitation lessons to twenty-first-century antimicrobial resistance.",
+      "atlas_scope": "Water, sanitation, antimicrobial resistance, and urban enteric disease",
+      "origin_claim": {
+        "label": "South Asian high-burden modern frame",
+        "coordinates": [
+          78.0,
+          22.0
+        ],
+        "date_or_era": "Ancient human-adapted enteric disease; modern burden concentrated where water and sanitation are weak",
+        "confidence": "mixed",
+        "narrative": "The deep history is human and old, but the modern frame is high burden in South Asia and sub-Saharan Africa with antimicrobial resistance.",
+        "citation_ids": [
+          "typhoid-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "typhoid-water-sanitation",
+          "from_label": "South Asian endemic settings",
+          "to_label": "East African urbanizing settings",
+          "from_coordinates": [
+            78.0,
+            22.0
+          ],
+          "to_coordinates": [
+            31.0,
+            0.0
+          ],
+          "date_or_era": "Modern endemic enteric belt",
+          "route_type": "water_sanitation",
+          "confidence": "strong",
+          "narrative": "Unsafe drinking water and inadequate sanitation sustain high-burden transmission across urban and periurban settings.",
+          "citation_ids": [
+            "typhoid-who",
+            "typhoid-cdc-yellowbook"
+          ]
+        },
+        {
+          "route_id": "typhoid-travel-amr",
+          "from_label": "South Asian resistant-lineage settings",
+          "to_label": "Travel-associated receiving countries",
+          "from_coordinates": [
+            73.0,
+            31.5
+          ],
+          "to_coordinates": [
+            -0.1,
+            51.5
+          ],
+          "date_or_era": "Travel and resistant lineage movement",
+          "route_type": "spread",
+          "confidence": "moderate",
+          "narrative": "International travel makes typhoid a local water problem and a global antimicrobial-resistance signal.",
+          "citation_ids": [
+            "typhoid-who",
+            "typhoid-cdc-yellowbook"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Typhoid conjugate vaccines are changing prevention strategy in high-burden countries.",
+        "The disease is a quiet index of water infrastructure and antibiotic pressure."
+      ],
+      "framing_traps": [
+        "Do not make typhoid a purely historical disease.",
+        "Do not confuse typhoid fever with typhus."
+      ],
+      "linked_reference_slug": "untitled",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "typhoid-who",
+          "short_citation": "WHO. Typhoid fact sheet. 2023.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/typhoid",
+          "claim_supported": "Food/water transmission, burden, vaccine prevention, and antimicrobial-resistance concern.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        },
+        {
+          "id": "typhoid-cdc-yellowbook",
+          "short_citation": "CDC Yellow Book. Typhoid and Paratyphoid Fever.",
+          "url": "https://wwwnc.cdc.gov/travel/yellowbook/2024/infections-diseases/typhoid-and-paratyphoid-fever",
+          "claim_supported": "Travel medicine and enteric fever risk framing.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        }
+      ],
+      "citation_count": 2,
+      "default_variant_slug": "",
+      "variants": [],
+      "variant_count": 0,
+      "related_stories": [],
+      "story_count": 0,
+      "route_count": 2,
+      "writing_state": "not_yet_written",
+      "reference_name": "",
+      "reference_url": "",
+      "reference_web_path": "",
+      "atlas_url": "atlas.html?pathogen=typhoid-fever",
+      "visual_asset": {},
+      "visual_asset_id": "atlas-typhoid-fever-hero",
+      "category": "fecal-oral-waterborne",
+      "category_label": "Fecal-oral / waterborne",
+      "transmission_group": "Fecal-oral / waterborne",
+      "color": "#bc8f5f",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet"
+    },
+    {
+      "slug": "norovirus",
+      "name": "Norovirus",
+      "subtitle": "A confined-space gastroenteritis virus that turns surfaces, food, water, and vomiting into a transmission map",
+      "status": "consensus",
+      "pathogen_type": "Virus",
+      "summary": "Norovirus is less a single-route disease than a choreography of people, surfaces, food, water, aerosolized vomitus, and institutional crowding.",
+      "why_it_matters": "It adds the disease ecology of closed rooms, hand hygiene, shellfish beds, and travel infrastructure.",
+      "atlas_scope": "Cruise ships, institutions, food service, shellfish, and extreme environmental persistence",
+      "origin_claim": {
+        "label": "Norwalk, Ohio discovery frame",
+        "coordinates": [
+          -81.4,
+          41.2
+        ],
+        "date_or_era": "Norwalk, Ohio outbreak investigation in 1968; virus identified in 1972",
+        "confidence": "strong",
+        "narrative": "The discovery frame begins with the Norwalk school outbreak, but the modern geography is global and dominated by crowded settings and food-water interfaces.",
+        "citation_ids": [
+          "noro-cdc"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "noro-norwalk-global",
+          "from_label": "Norwalk outbreak frame",
+          "to_label": "Global institutional outbreaks",
+          "from_coordinates": [
+            -81.4,
+            41.2
+          ],
+          "to_coordinates": [
+            -0.1,
+            51.5
+          ],
+          "date_or_era": "Late twentieth-century recognition and global syndrome",
+          "route_type": "recognition",
+          "confidence": "strong",
+          "narrative": "Laboratory methods made norovirus visible across schools, hospitals, ships, and care facilities.",
+          "citation_ids": [
+            "noro-cdc",
+            "noro-yellowbook"
+          ]
+        },
+        {
+          "route_id": "noro-shellfish-cruise",
+          "from_label": "Shellfish and coastal food-water interfaces",
+          "to_label": "Cruise ships and closed settings",
+          "from_coordinates": [
+            -70.0,
+            42.0
+          ],
+          "to_coordinates": [
+            -64.0,
+            32.3
+          ],
+          "date_or_era": "Modern food-water-confined spread",
+          "route_type": "confined_space",
+          "confidence": "strong",
+          "narrative": "Shellfish, food handlers, contaminated water, and confined populations create maritime, institutional, and household outbreaks.",
+          "citation_ids": [
+            "noro-cdc",
+            "noro-yellowbook"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Norovirus is one of the cleanest examples of why surfaces and food handlers still matter.",
+        "It is the atlas entry for density, institutions, and environmental persistence."
+      ],
+      "framing_traps": [
+        "Do not call norovirus \u201cstomach flu\u201d; it is not influenza.",
+        "Do not treat cruise ships as the reservoir; they are amplification settings."
+      ],
+      "linked_reference_slug": "norovirus",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "noro-cdc",
+          "short_citation": "CDC. How Norovirus Spreads. 2024.",
+          "url": "https://www.cdc.gov/norovirus/causes/index.html",
+          "claim_supported": "Spread through people, contaminated food/water/surfaces, vomit/fecal particles, and post-illness contagiousness.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        },
+        {
+          "id": "noro-yellowbook",
+          "short_citation": "CDC Yellow Book. Norovirus. 2025.",
+          "url": "https://www.cdc.gov/yellow-book/hcp/travel-associated-infections-diseases/norovirus.html",
+          "claim_supported": "Fecal-oral, food/water, fomites, vomitus aerosols, and cruise/camp/dorm/care-facility outbreaks.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        }
+      ],
+      "citation_count": 2,
+      "default_variant_slug": "",
+      "variants": [],
+      "variant_count": 0,
+      "related_stories": [],
+      "story_count": 0,
+      "route_count": 2,
+      "writing_state": "not_yet_written",
+      "reference_name": "Norovirus",
+      "reference_url": "reference/norovirus.html",
+      "reference_web_path": "reference/norovirus.html",
+      "atlas_url": "atlas.html?pathogen=norovirus",
+      "visual_asset": {},
+      "visual_asset_id": "atlas-norovirus-hero",
+      "category": "fecal-oral-waterborne",
+      "category_label": "Fecal-oral / waterborne",
+      "transmission_group": "Fecal-oral / waterborne",
+      "color": "#9aa36b",
+      "status_label": "Consensus",
+      "writing_state_label": "No dedicated post yet",
+      "reference_href": "../../reference/norovirus.html"
+    },
+    {
+      "slug": "smallpox",
+      "name": "Smallpox",
+      "subtitle": "A human-only orthopoxvirus from ancient trade routes to eradication surveillance",
+      "status": "mixed",
+      "pathogen_type": "Virus",
+      "summary": "Smallpox is the disease where historical spread and modern public health ended in true eradication.",
+      "why_it_matters": "It anchors the project: disease moving through civilization, then being removed by surveillance and vaccination.",
+      "atlas_scope": "Trade routes, empire, variolation, vaccination, and eradication",
+      "origin_claim": {
+        "label": "Ancient Afro-Eurasian evidence frame",
+        "coordinates": [
+          31.1,
+          30.0
+        ],
+        "date_or_era": "At least 3000 years old; exact origin unknown",
+        "confidence": "mixed",
+        "narrative": "The origin is unknown; ancient Egyptian, Chinese, Indian, and Asian Minor evidence should be treated as early frames rather than a single birthplace.",
+        "citation_ids": [
+          "smallpox-cdc"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "smallpox-silk-road-japan",
+          "from_label": "China/Korea trade interfaces",
+          "to_label": "Japan",
+          "from_coordinates": [
+            116.4,
+            39.9
+          ],
+          "to_coordinates": [
+            139.7,
+            35.7
+          ],
+          "date_or_era": "Sixth century East Asian trade route spread",
+          "route_type": "spread",
+          "confidence": "moderate",
+          "narrative": "Increased trade with China and Korea is part of the classic narrative for smallpox entering Japan.",
+          "citation_ids": [
+            "smallpox-cdc",
+            "smallpox-who"
+          ]
+        },
+        {
+          "route_id": "smallpox-colonial-americas",
+          "from_label": "Europe and Atlantic empires",
+          "to_label": "The Americas",
+          "from_coordinates": [
+            -3.7,
+            40.4
+          ],
+          "to_coordinates": [
+            -99.1,
+            19.4
+          ],
+          "date_or_era": "Seventeenth-century colonization and American epidemics",
+          "route_type": "colonial_spread",
+          "confidence": "strong",
+          "narrative": "European colonization carried smallpox into immunologically vulnerable American populations.",
+          "citation_ids": [
+            "smallpox-cdc",
+            "smallpox-who"
+          ]
+        },
+        {
+          "route_id": "smallpox-eradication",
+          "from_label": "Asia and remaining endemic zones",
+          "to_label": "Somalia last natural case frame",
+          "from_coordinates": [
+            78.9,
+            22.9
+          ],
+          "to_coordinates": [
+            46.2,
+            5.2
+          ],
+          "date_or_era": "1967-1980 intensified eradication",
+          "route_type": "eradication",
+          "confidence": "strong",
+          "narrative": "Surveillance, ring vaccination, and field logistics pushed smallpox to eradication certification.",
+          "citation_ids": [
+            "smallpox-cdc",
+            "smallpox-who"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Smallpox now survives as preparedness, laboratory, and biosecurity problem rather than a naturally circulating disease.",
+        "It is the gold-standard comparison for every eradication claim."
+      ],
+      "framing_traps": [
+        "Do not claim a precise smallpox origin.",
+        "Do not make eradication look inevitable; it was a logistical and political achievement."
+      ],
+      "linked_reference_slug": "untitled",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "smallpox-cdc",
+          "short_citation": "CDC. History of Smallpox. 2024.",
+          "url": "https://www.cdc.gov/smallpox/about/history.html",
+          "claim_supported": "Unknown origin, ancient evidence, global spread through trade/exploration, and eradication history.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        },
+        {
+          "id": "smallpox-who",
+          "short_citation": "WHO. Smallpox health topic.",
+          "url": "https://www.who.int/health-topics/smallpox",
+          "claim_supported": "Transmission, fatality, Jenner vaccine, 1967 intensified campaign, last natural case, and 1980 eradication.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        }
+      ],
+      "citation_count": 2,
+      "default_variant_slug": "",
+      "variants": [],
+      "variant_count": 0,
+      "related_stories": [],
+      "story_count": 0,
+      "route_count": 3,
+      "writing_state": "adjacent",
+      "reference_name": "",
+      "reference_url": "",
+      "reference_web_path": "",
+      "atlas_url": "atlas.html?pathogen=smallpox",
+      "visual_asset": {},
+      "visual_asset_id": "atlas-smallpox-hero",
+      "category": "airborne-respiratory",
+      "category_label": "Airborne / respiratory",
+      "transmission_group": "Airborne / respiratory",
+      "color": "#b56b5b",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "Adjacent writing"
+    },
+    {
+      "slug": "seasonal-influenza",
+      "name": "Seasonal influenza",
+      "subtitle": "A respiratory virus map of winter epidemics, tropical persistence, vaccination, and crowded indoor transmission",
+      "status": "mixed",
+      "pathogen_type": "Virus",
+      "summary": "Seasonal influenza is a recurrent global circulation system shaped by immunity, seasonality, travel, and indoor crowding.",
+      "why_it_matters": "It gives the atlas a disease where recurrence, not novelty, is the point.",
+      "atlas_scope": "Global respiratory seasonality, antigenic drift, and recurring institutional burden",
+      "origin_claim": {
+        "label": "Global seasonal-circulation frame",
+        "coordinates": [
+          0.0,
+          20.0
+        ],
+        "date_or_era": "Ancient respiratory syndrome; modern virologic surveillance is global",
+        "confidence": "mixed",
+        "narrative": "The useful frame is not a single origin point but the global respiratory network through which influenza viruses repeatedly circulate and evolve.",
+        "citation_ids": [
+          "flu-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "flu-temperate-seasonality",
+          "from_label": "Global circulation",
+          "to_label": "Temperate winter epidemic belts",
+          "from_coordinates": [
+            0.0,
+            20.0
+          ],
+          "to_coordinates": [
+            -73.9,
+            40.7
+          ],
+          "date_or_era": "Annual temperate winter epidemics",
+          "route_type": "seasonality",
+          "confidence": "strong",
+          "narrative": "In temperate regions influenza concentrates into winter waves that pressure schools, workplaces, clinics, and hospitals.",
+          "citation_ids": [
+            "flu-who",
+            "flu-who-topic"
+          ]
+        },
+        {
+          "route_id": "flu-tropics-year-round",
+          "from_label": "Tropical and subtropical circulation",
+          "to_label": "Irregular outbreak zones",
+          "from_coordinates": [
+            100.5,
+            13.8
+          ],
+          "to_coordinates": [
+            7.4,
+            9.1
+          ],
+          "date_or_era": "Tropical year-round circulation",
+          "route_type": "tropical_circulation",
+          "confidence": "strong",
+          "narrative": "In tropical regions influenza can circulate throughout the year, making seasonality more irregular.",
+          "citation_ids": [
+            "flu-who",
+            "flu-who-topic"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Influenza is a standing lesson in why schools, nursing homes, hospitals, and vaccination campaigns are geographic systems.",
+        "Its routine nature hides how large the annual burden is."
+      ],
+      "framing_traps": [
+        "Do not collapse seasonal influenza into pandemic influenza.",
+        "Do not imply tropical influenza follows the same winter pattern as temperate influenza."
+      ],
+      "linked_reference_slug": "untitled",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "flu-who",
+          "short_citation": "WHO. Influenza (seasonal) fact sheet. 2025.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/influenza-%28seasonal%29",
+          "claim_supported": "Global burden, respiratory spread, temperate winter epidemics, tropical year-round circulation, and vaccination.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        },
+        {
+          "id": "flu-who-topic",
+          "short_citation": "WHO. Influenza health topic.",
+          "url": "https://www.who.int/health-topics/influenza-seasonal",
+          "claim_supported": "Seasonal influenza overview and surveillance resources.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        }
+      ],
+      "citation_count": 2,
+      "default_variant_slug": "",
+      "variants": [],
+      "variant_count": 0,
+      "related_stories": [],
+      "story_count": 0,
+      "route_count": 2,
+      "writing_state": "not_yet_written",
+      "reference_name": "",
+      "reference_url": "",
+      "reference_web_path": "",
+      "atlas_url": "atlas.html?pathogen=seasonal-influenza",
+      "visual_asset": {},
+      "visual_asset_id": "atlas-seasonal-influenza-hero",
+      "category": "airborne-respiratory",
+      "category_label": "Airborne / respiratory",
+      "transmission_group": "Airborne / respiratory",
+      "color": "#b7c7df",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet"
+    },
+    {
+      "slug": "covid-19",
+      "name": "COVID-19 / SARS-CoV-2",
+      "subtitle": "A pandemic coronavirus whose map turned air, buildings, borders, surveillance, and inequality into one disease surface",
+      "status": "mixed",
+      "pathogen_type": "Virus",
+      "summary": "COVID-19 made respiratory transmission visible as infrastructure: indoor air, work, travel, households, health systems, and variant surveillance.",
+      "why_it_matters": "It is the modern respiratory atlas entry par excellence.",
+      "atlas_scope": "Pandemic respiratory spread, travel networks, indoor air, and year-round circulation",
+      "origin_claim": {
+        "label": "Wuhan early-detection frame",
+        "coordinates": [
+          114.3,
+          30.6
+        ],
+        "date_or_era": "First detected as a cluster in Wuhan, China in late 2019; ultimate origin remains debated",
+        "confidence": "mixed",
+        "narrative": "The earliest recognized outbreak was in Wuhan in late 2019; the ultimate animal-origin pathway remains unsettled and should not be flattened into certainty.",
+        "citation_ids": [
+          "covid-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "covid-wuhan-global",
+          "from_label": "Wuhan early outbreak",
+          "to_label": "Global travel network",
+          "from_coordinates": [
+            114.3,
+            30.6
+          ],
+          "to_coordinates": [
+            11.6,
+            48.1
+          ],
+          "date_or_era": "Late 2019 to early 2020 global dissemination",
+          "route_type": "pandemic_spread",
+          "confidence": "strong",
+          "narrative": "Travel and dense indoor transmission moved SARS-CoV-2 from a local cluster into a pandemic respiratory network.",
+          "citation_ids": [
+            "covid-who",
+            "covid-topic"
+          ]
+        },
+        {
+          "route_id": "covid-variants-global",
+          "from_label": "Variant emergence zones",
+          "to_label": "Global genomic surveillance network",
+          "from_coordinates": [
+            31.0,
+            -29.0
+          ],
+          "to_coordinates": [
+            -0.1,
+            51.5
+          ],
+          "date_or_era": "2020 onward variant replacement",
+          "route_type": "variant_surveillance",
+          "confidence": "strong",
+          "narrative": "Variants made the map dynamic: immune escape, transmissibility, sequencing capacity, and reporting shaped apparent spread.",
+          "citation_ids": [
+            "covid-who",
+            "covid-topic"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "COVID changed how readers understand dashboards, wastewater, genomic surveillance, and indoor air.",
+        "It is now a year-round circulation problem rather than a closed historical episode."
+      ],
+      "framing_traps": [
+        "Do not state the ultimate origin as settled.",
+        "Do not reduce COVID transmission to surfaces; respiratory particles and indoor air are central."
+      ],
+      "linked_reference_slug": "untitled",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "covid-who",
+          "short_citation": "WHO. Coronavirus disease (COVID-19) fact sheet.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/coronavirus-disease-%28covid-19%29",
+          "claim_supported": "Airborne respiratory-particle transmission, year-round circulation, symptoms, and public-health framing.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        },
+        {
+          "id": "covid-topic",
+          "short_citation": "WHO. Coronavirus disease health topic.",
+          "url": "https://www.who.int/health-topics/coronavirus/coronavirus",
+          "claim_supported": "General SARS-CoV-2 overview and prevention framing.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        }
+      ],
+      "citation_count": 2,
+      "default_variant_slug": "",
+      "variants": [],
+      "variant_count": 0,
+      "related_stories": [],
+      "story_count": 0,
+      "route_count": 2,
+      "writing_state": "not_yet_written",
+      "reference_name": "",
+      "reference_url": "",
+      "reference_web_path": "",
+      "atlas_url": "atlas.html?pathogen=covid-19",
+      "visual_asset": {},
+      "visual_asset_id": "atlas-covid-19-hero",
+      "category": "airborne-respiratory",
+      "category_label": "Airborne / respiratory",
+      "transmission_group": "Airborne / respiratory",
+      "color": "#7b8fa8",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet"
+    },
+    {
+      "slug": "ebola-virus-disease",
+      "name": "Ebola disease",
+      "subtitle": "A filovirus map built from wildlife contact, body fluids, health systems, burial practice, and borders",
+      "status": "consensus",
+      "pathogen_type": "Virus",
+      "summary": "Ebola shows how zoonotic spillover becomes a social and institutional transmission crisis.",
+      "why_it_matters": "It maps social practice and health-system capacity without pretending the virus moves by geography alone.",
+      "atlas_scope": "Forest spillover, caregiving, burial, hospitals, and regional borders",
+      "origin_claim": {
+        "label": "Central African first-recognition frame",
+        "coordinates": [
+          22.4,
+          4.4
+        ],
+        "date_or_era": "First recognized outbreaks in 1976 near Ebola River and Nzara/Yambuku contexts",
+        "confidence": "moderate",
+        "narrative": "The discovery frame is Central Africa in 1976; reservoir ecology is more complex than one river or village.",
+        "citation_ids": [
+          "ebola-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "ebola-central-africa",
+          "from_label": "Central African forest-edge settings",
+          "to_label": "Yambuku and Nzara outbreak frame",
+          "from_coordinates": [
+            22.4,
+            4.4
+          ],
+          "to_coordinates": [
+            29.0,
+            3.7
+          ],
+          "date_or_era": "1976 Central African recognition",
+          "route_type": "recognition",
+          "confidence": "strong",
+          "narrative": "Initial recognition involved severe outbreaks where hospitals amplified transmission under difficult infection-control conditions.",
+          "citation_ids": [
+            "ebola-who",
+            "ebola-topic"
+          ]
+        },
+        {
+          "route_id": "ebola-west-africa",
+          "from_label": "Guinea forest region",
+          "to_label": "Sierra Leone and Liberia",
+          "from_coordinates": [
+            -10.9,
+            10.4
+          ],
+          "to_coordinates": [
+            -13.2,
+            8.5
+          ],
+          "date_or_era": "2014-2016 West African epidemic",
+          "route_type": "regional_epidemic",
+          "confidence": "strong",
+          "narrative": "Caregiving, burials, weak health systems, roads, and borders turned spillover into a regional emergency.",
+          "citation_ids": [
+            "ebola-who",
+            "ebola-topic"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Ebola tests whether outbreak maps include hospitals, funerals, trust, roads, and borders.",
+        "Vaccines changed response, but only for some Ebola viruses."
+      ],
+      "framing_traps": [
+        "Do not imply people transmit before symptoms.",
+        "Do not make fruit bats a solved, single-source explanation for every outbreak."
+      ],
+      "linked_reference_slug": "ebola-virus-disease",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "ebola-who",
+          "short_citation": "WHO. Ebola disease fact sheet. 2025.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/ebola-disease",
+          "claim_supported": "Animal spillover, body-fluid transmission, burial and health-care transmission, and outbreak control.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        },
+        {
+          "id": "ebola-topic",
+          "short_citation": "WHO. Ebola virus disease health topic.",
+          "url": "https://www.who.int/en/health-topics/ebola/ebola",
+          "claim_supported": "1976 first outbreaks and 2014-2016 West African spread.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        }
+      ],
+      "citation_count": 2,
+      "default_variant_slug": "",
+      "variants": [],
+      "variant_count": 0,
+      "related_stories": [],
+      "story_count": 0,
+      "route_count": 2,
+      "writing_state": "not_yet_written",
+      "reference_name": "Ebola disease",
+      "reference_url": "reference/ebola-virus-disease.html",
+      "reference_web_path": "reference/ebola-virus-disease.html",
+      "atlas_url": "atlas.html?pathogen=ebola-virus-disease",
+      "visual_asset": {},
+      "visual_asset_id": "atlas-ebola-virus-disease-hero",
+      "category": "zoonotic-animal-interface",
+      "category_label": "Zoonotic / animal interface",
+      "transmission_group": "Zoonotic / animal interface",
+      "color": "#b84646",
+      "status_label": "Consensus",
+      "writing_state_label": "No dedicated post yet",
+      "reference_href": "../../reference/ebola-virus-disease.html"
+    },
+    {
+      "slug": "marburg-virus-disease",
+      "name": "Marburg virus disease",
+      "subtitle": "A Rousettus-bat filovirus whose map begins in caves and mines, then moves through care networks",
+      "status": "consensus",
+      "pathogen_type": "Virus",
+      "summary": "Marburg starts with bat habitats and occupational exposure, then becomes a body-fluid and hospital transmission problem.",
+      "why_it_matters": "It adds an occupational/ecological filovirus map distinct from Ebola.",
+      "atlas_scope": "Caves, mines, fruit bats, laboratories, and filovirus response",
+      "origin_claim": {
+        "label": "Marburg/Frankfurt/Belgrade laboratory-recognition frame",
+        "coordinates": [
+          8.8,
+          50.8
+        ],
+        "date_or_era": "First detected in 1967 in Germany and Serbia after imported African green monkey exposure",
+        "confidence": "strong",
+        "narrative": "First detected in European laboratory outbreaks linked to imported African green monkeys; later geography ties to African bat reservoirs and caves/mines.",
+        "citation_ids": [
+          "marburg-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "marburg-lab",
+          "from_label": "Ugandan primate source frame",
+          "to_label": "Marburg and Frankfurt laboratories",
+          "from_coordinates": [
+            32.3,
+            1.4
+          ],
+          "to_coordinates": [
+            8.8,
+            50.8
+          ],
+          "date_or_era": "1967 laboratory outbreak",
+          "route_type": "laboratory_recognition",
+          "confidence": "strong",
+          "narrative": "The first recognized outbreak made a Central/East African filovirus visible in Europe.",
+          "citation_ids": [
+            "marburg-who",
+            "marburg-topic"
+          ]
+        },
+        {
+          "route_id": "marburg-caves",
+          "from_label": "Rousettus bat cave/mine ecologies",
+          "to_label": "Central and southern African outbreak settings",
+          "from_coordinates": [
+            30.0,
+            -1.5
+          ],
+          "to_coordinates": [
+            11.8,
+            -11.2
+          ],
+          "date_or_era": "Modern African cave and mine exposure",
+          "route_type": "bat_ecology",
+          "confidence": "strong",
+          "narrative": "Later outbreaks point back to cave and mine exposure followed by body-fluid transmission.",
+          "citation_ids": [
+            "marburg-who",
+            "marburg-topic"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Marburg response turns on recognition, infection control, safe burial, and occupational exposure histories.",
+        "The 1967 story shows laboratories and animal trade can reveal pathogens far from reservoirs."
+      ],
+      "framing_traps": [
+        "Do not treat Marburg and Ebola as the same virus with different names.",
+        "Do not omit cave/mine exposure ecology."
+      ],
+      "linked_reference_slug": "marburg-virus-disease",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "marburg-who",
+          "short_citation": "WHO. Marburg virus disease fact sheet. 2025.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/marburg-virus-disease",
+          "claim_supported": "Rousettus fruit bat host, cave/mine exposure, direct body-fluid transmission, and fatality range.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        },
+        {
+          "id": "marburg-topic",
+          "short_citation": "WHO. Marburg virus disease health topic.",
+          "url": "https://www.who.int/health-topics/marburg-virus-disease",
+          "claim_supported": "1967 laboratory recognition and later African outbreak geography.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        }
+      ],
+      "citation_count": 2,
+      "default_variant_slug": "",
+      "variants": [],
+      "variant_count": 0,
+      "related_stories": [],
+      "story_count": 0,
+      "route_count": 2,
+      "writing_state": "not_yet_written",
+      "reference_name": "Marburg virus disease",
+      "reference_url": "reference/marburg-virus-disease.html",
+      "reference_web_path": "reference/marburg-virus-disease.html",
+      "atlas_url": "atlas.html?pathogen=marburg-virus-disease",
+      "visual_asset": {},
+      "visual_asset_id": "atlas-marburg-virus-disease-hero",
+      "category": "zoonotic-animal-interface",
+      "category_label": "Zoonotic / animal interface",
+      "transmission_group": "Zoonotic / animal interface",
+      "color": "#9f3f43",
+      "status_label": "Consensus",
+      "writing_state_label": "No dedicated post yet",
+      "reference_href": "../../reference/marburg-virus-disease.html"
+    },
+    {
+      "slug": "nipah-virus-disease",
+      "name": "Nipah virus disease",
+      "subtitle": "A henipavirus map of flying foxes, pig farms, raw sap, and close-contact transmission",
+      "status": "consensus",
+      "pathogen_type": "Virus",
+      "summary": "Nipah has multiple routes: bat-contaminated food, pig-amplified farm outbreaks, and limited person-to-person spread.",
+      "why_it_matters": "It forces the atlas to track food habits, farms, bats, hospitals, and household care in one entry.",
+      "atlas_scope": "Fruit bats, pigs, date-palm sap, hospitals, and South/Southeast Asian spillover",
+      "origin_claim": {
+        "label": "Malaysia pig-farm discovery frame",
+        "coordinates": [
+          101.7,
+          2.9
+        ],
+        "date_or_era": "First identified during Malaysia/Singapore pig-farm outbreak in 1998-1999",
+        "confidence": "strong",
+        "narrative": "First recognized during pig-farm outbreaks in Malaysia and Singapore; later Bangladesh and India outbreaks emphasized date palm sap and close contact.",
+        "citation_ids": [
+          "nipah-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "nipah-malaysia",
+          "from_label": "Malaysia pig farms",
+          "to_label": "Singapore linked cases",
+          "from_coordinates": [
+            101.7,
+            2.9
+          ],
+          "to_coordinates": [
+            103.8,
+            1.35
+          ],
+          "date_or_era": "1998-1999 Malaysia/Singapore outbreak",
+          "route_type": "pig_amplification",
+          "confidence": "strong",
+          "narrative": "Pig amplification moved a bat-associated virus into farmers and abattoir workers.",
+          "citation_ids": [
+            "nipah-who",
+            "nipah-cdc"
+          ]
+        },
+        {
+          "route_id": "nipah-bangladesh",
+          "from_label": "Bangladesh date-palm sap belt",
+          "to_label": "India outbreak settings",
+          "from_coordinates": [
+            90.4,
+            23.7
+          ],
+          "to_coordinates": [
+            76.3,
+            10.0
+          ],
+          "date_or_era": "2001 onward Bangladesh/India pattern",
+          "route_type": "food_and_contact",
+          "confidence": "strong",
+          "narrative": "Raw date palm sap contamination, bat ecology, and close caregiving define the South Asian Nipah map.",
+          "citation_ids": [
+            "nipah-who",
+            "nipah-cdc"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Nipah is a pandemic-watchlist pathogen because it combines high severity with some human-to-human spread.",
+        "The prevention map is partly agricultural and food-practice geography."
+      ],
+      "framing_traps": [
+        "Do not claim Nipah is easily airborne.",
+        "Do not make all Nipah outbreaks pig-farm outbreaks."
+      ],
+      "linked_reference_slug": "nipah-virus-disease",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "nipah-who",
+          "short_citation": "WHO. Nipah virus fact sheet. 2026.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/nipah-virus",
+          "claim_supported": "Fruit bat reservoir, first recognition, outbreak countries, food contamination, animal contact, and person-to-person spread.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        },
+        {
+          "id": "nipah-cdc",
+          "short_citation": "CDC. About Nipah Virus. 2026.",
+          "url": "https://www.cdc.gov/nipah-virus/about/index.html",
+          "claim_supported": "Fruit bat reservoir, outbreak countries, pig outbreak history, and high fatality framing.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        }
+      ],
+      "citation_count": 2,
+      "default_variant_slug": "",
+      "variants": [],
+      "variant_count": 0,
+      "related_stories": [],
+      "story_count": 0,
+      "route_count": 2,
+      "writing_state": "not_yet_written",
+      "reference_name": "Nipah virus disease",
+      "reference_url": "reference/nipah-virus-disease.html",
+      "reference_web_path": "reference/nipah-virus-disease.html",
+      "atlas_url": "atlas.html?pathogen=nipah-virus-disease",
+      "visual_asset": {},
+      "visual_asset_id": "atlas-nipah-virus-disease-hero",
+      "category": "zoonotic-animal-interface",
+      "category_label": "Zoonotic / animal interface",
+      "transmission_group": "Zoonotic / animal interface",
+      "color": "#7a6f4f",
+      "status_label": "Consensus",
+      "writing_state_label": "No dedicated post yet",
+      "reference_href": "../../reference/nipah-virus-disease.html"
+    },
+    {
+      "slug": "lassa-fever",
+      "name": "Lassa fever",
+      "subtitle": "A Mastomys-rat arenavirus whose map is home, food storage, farms, and hospitals",
+      "status": "consensus",
+      "pathogen_type": "Virus",
+      "summary": "Lassa is domestic and ecological at once: rodents, stored food, household contamination, pregnancy risk, and health-care infection control.",
+      "why_it_matters": "It adds a quieter map of household ecology and health-system vulnerability.",
+      "atlas_scope": "West African rodent ecology, household food storage, and health-care transmission",
+      "origin_claim": {
+        "label": "Nigeria first-identification frame",
+        "coordinates": [
+          8.9,
+          10.3
+        ],
+        "date_or_era": "First identified in Nigeria in 1969",
+        "confidence": "strong",
+        "narrative": "Lassa was first identified in Nigeria; its modern endemic frame sits across parts of West Africa where Mastomys rodents live near homes.",
+        "citation_ids": [
+          "lassa-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "lassa-west-africa",
+          "from_label": "Nigeria discovery setting",
+          "to_label": "West African endemic belt",
+          "from_coordinates": [
+            8.9,
+            10.3
+          ],
+          "to_coordinates": [
+            -11.8,
+            8.5
+          ],
+          "date_or_era": "1969 onward West African endemic recognition",
+          "route_type": "rodent_household",
+          "confidence": "strong",
+          "narrative": "Mastomys ecology and household food contamination define the endemic belt.",
+          "citation_ids": [
+            "lassa-who",
+            "lassa-topic"
+          ]
+        },
+        {
+          "route_id": "lassa-healthcare",
+          "from_label": "Community rodent exposure",
+          "to_label": "Hospitals and care settings",
+          "from_coordinates": [
+            8.9,
+            10.3
+          ],
+          "to_coordinates": [
+            3.4,
+            6.5
+          ],
+          "date_or_era": "Health-care amplification risk",
+          "route_type": "spread",
+          "confidence": "moderate",
+          "narrative": "Blood and body-fluid exposure can amplify transmission in health-care settings without adequate infection control.",
+          "citation_ids": [
+            "lassa-who",
+            "lassa-topic"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Lassa shows how food storage and domestic architecture can be epidemiologic infrastructure.",
+        "Pregnancy and hospital infection control make its burden larger than raw case counts imply."
+      ],
+      "framing_traps": [
+        "Do not describe Lassa as primarily airborne.",
+        "Do not treat West Africa as uniform risk."
+      ],
+      "linked_reference_slug": "untitled",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "lassa-who",
+          "short_citation": "WHO. Lassa fever fact sheet. 2024.",
+          "url": "https://www.who.int/en/news-room/fact-sheets/detail/lassa-fever",
+          "claim_supported": "Mastomys reservoir, West African endemicity, food/household contamination, and health-care risk.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        },
+        {
+          "id": "lassa-topic",
+          "short_citation": "WHO. Lassa fever health topic.",
+          "url": "https://www.who.int/health-topics/lassa-fever",
+          "claim_supported": "Endemic countries, fatality framing, and prompt treatment importance.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        }
+      ],
+      "citation_count": 2,
+      "default_variant_slug": "",
+      "variants": [],
+      "variant_count": 0,
+      "related_stories": [],
+      "story_count": 0,
+      "route_count": 2,
+      "writing_state": "not_yet_written",
+      "reference_name": "",
+      "reference_url": "",
+      "reference_web_path": "",
+      "atlas_url": "atlas.html?pathogen=lassa-fever",
+      "visual_asset": {},
+      "visual_asset_id": "atlas-lassa-fever-hero",
+      "category": "rodent-environmental",
+      "category_label": "Rodent-borne / environmental",
+      "transmission_group": "Rodent-borne / environmental",
+      "color": "#b17d5a",
+      "status_label": "Consensus",
+      "writing_state_label": "No dedicated post yet"
+    },
+    {
+      "slug": "rabies",
+      "name": "Rabies",
+      "subtitle": "A fatal zoonosis whose map is dogs, bites, vaccination, and access to PEP",
+      "status": "mixed",
+      "pathogen_type": "Virus",
+      "summary": "Rabies geography determines whether a bite is survivable: dog vaccination, wound care, immunoglobulin, and vaccine access are the real map.",
+      "why_it_matters": "It adds a One Health entry where veterinary public health and human mortality are inseparable.",
+      "atlas_scope": "Dog-mediated zoonosis, bite exposure, post-exposure prophylaxis, and One Health",
+      "origin_claim": {
+        "label": "Modern dog-mediated Africa/Asia burden frame",
+        "coordinates": [
+          78.9,
+          22.9
+        ],
+        "date_or_era": "Ancient zoonosis; modern deaths concentrated in Africa and Asia",
+        "confidence": "mixed",
+        "narrative": "Rabies has an ancient history, but the atlas frame is modern dog-mediated transmission and uneven access to post-exposure prophylaxis.",
+        "citation_ids": [
+          "rabies-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "rabies-dog",
+          "from_label": "South Asian dog-mediated burden",
+          "to_label": "African dog-mediated burden",
+          "from_coordinates": [
+            78.9,
+            22.9
+          ],
+          "to_coordinates": [
+            20.0,
+            5.0
+          ],
+          "date_or_era": "Modern dog-mediated endemic belt",
+          "route_type": "one_health",
+          "confidence": "strong",
+          "narrative": "Dog bites and scratches drive the overwhelming majority of human rabies cases.",
+          "citation_ids": [
+            "rabies-who",
+            "rabies-topic"
+          ]
+        },
+        {
+          "route_id": "rabies-pep",
+          "from_label": "Under-resourced bite-response settings",
+          "to_label": "High-access PEP systems",
+          "from_coordinates": [
+            20.0,
+            5.0
+          ],
+          "to_coordinates": [
+            -77.0,
+            39.0
+          ],
+          "date_or_era": "Post-exposure prophylaxis geography",
+          "route_type": "healthcare_access",
+          "confidence": "strong",
+          "narrative": "The same exposure has radically different outcomes depending on wound washing, vaccine, immunoglobulin, and clinical access.",
+          "citation_ids": [
+            "rabies-who",
+            "rabies-topic"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Rabies is access-to-care geography: fatal after symptoms, preventable after exposure.",
+        "Dog vaccination is human public health."
+      ],
+      "framing_traps": [
+        "Do not imply rabies is treatable after clinical symptoms.",
+        "Do not center bats globally when dog-mediated rabies causes most human deaths."
+      ],
+      "linked_reference_slug": "rabies",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "rabies-who",
+          "short_citation": "WHO. Rabies fact sheet. 2024.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/rabies",
+          "claim_supported": "Dog bites/scratches cause 99% of human rabies cases; fatality after symptoms; PEP and One Health prevention.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        },
+        {
+          "id": "rabies-topic",
+          "short_citation": "WHO. Rabies health topic.",
+          "url": "https://www.who.int/health-topics/rabies",
+          "claim_supported": "Estimated annual deaths, Africa/Asia concentration, and dog-mediated prevention.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        }
+      ],
+      "citation_count": 2,
+      "default_variant_slug": "",
+      "variants": [],
+      "variant_count": 0,
+      "related_stories": [],
+      "story_count": 0,
+      "route_count": 2,
+      "writing_state": "not_yet_written",
+      "reference_name": "Rabies",
+      "reference_url": "reference/rabies.html",
+      "reference_web_path": "reference/rabies.html",
+      "atlas_url": "atlas.html?pathogen=rabies",
+      "visual_asset": {},
+      "visual_asset_id": "atlas-rabies-hero",
+      "category": "zoonotic-animal-interface",
+      "category_label": "Zoonotic / animal interface",
+      "transmission_group": "Zoonotic / animal interface",
+      "color": "#9c6f3d",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "reference_href": "../../reference/rabies.html"
+    },
+    {
+      "slug": "anthrax",
+      "name": "Anthrax",
+      "subtitle": "A spore-forming bacterium whose map is soil, grazing animals, animal products, and disturbed landscapes",
+      "status": "consensus",
+      "pathogen_type": "Bacterium",
+      "summary": "Anthrax is environmental memory: spores persist in soil, livestock encounter them, and humans meet the pathogen through animals and animal products.",
+      "why_it_matters": "It gives the atlas a disease where the landscape itself stores risk.",
+      "atlas_scope": "Soil spores, livestock, hides, wool, meat, and occupational exposure",
+      "origin_claim": {
+        "label": "Global livestock-soil ecology frame",
+        "coordinates": [
+          35.0,
+          0.0
+        ],
+        "date_or_era": "Worldwide soil ecology with recurrent livestock-associated outbreaks",
+        "confidence": "strong",
+        "narrative": "The meaningful geography is persistence of Bacillus anthracis spores in soils that expose grazing animals and people who handle them.",
+        "citation_ids": [
+          "anthrax-cdc"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "anthrax-soil",
+          "from_label": "Spore-contaminated grazing lands",
+          "to_label": "Livestock outbreak zones",
+          "from_coordinates": [
+            35.0,
+            0.0
+          ],
+          "to_coordinates": [
+            44.0,
+            15.0
+          ],
+          "date_or_era": "Persistent soil-livestock cycle",
+          "route_type": "environmental_reservoir",
+          "confidence": "strong",
+          "narrative": "Animals become infected through contaminated soil, plants, or water.",
+          "citation_ids": [
+            "anthrax-cdc",
+            "anthrax-cdc-main"
+          ]
+        },
+        {
+          "route_id": "anthrax-products",
+          "from_label": "Infected livestock and animal products",
+          "to_label": "Industrial and occupational receiving settings",
+          "from_coordinates": [
+            44.0,
+            15.0
+          ],
+          "to_coordinates": [
+            -74.0,
+            40.7
+          ],
+          "date_or_era": "Occupational and animal-product exposure",
+          "route_type": "spread",
+          "confidence": "moderate",
+          "narrative": "Hides, wool, meat, and contaminated animal products can move risk from rural ecology into workplaces and trade networks.",
+          "citation_ids": [
+            "anthrax-cdc",
+            "anthrax-cdc-main"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Anthrax reveals drought, grazing, soil disruption, livestock vaccination, and occupational safety.",
+        "It explains environmental persistence without mysticism."
+      ],
+      "framing_traps": [
+        "Do not make anthrax only a bioterrorism story.",
+        "Do not imply person-to-person spread drives ordinary anthrax outbreaks."
+      ],
+      "linked_reference_slug": "anthrax",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "anthrax-cdc",
+          "short_citation": "CDC. About Anthrax. 2026.",
+          "url": "https://www.cdc.gov/anthrax/about/index.html",
+          "claim_supported": "Soil spore ecology, livestock/wildlife infection, and human exposure through animals or animal products.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        },
+        {
+          "id": "anthrax-cdc-main",
+          "short_citation": "CDC. About Anthrax. 2025.",
+          "url": "https://www.cdc.gov/anthrax/",
+          "claim_supported": "Naturally occurring soil distribution and inhalation, ingestion, or cutaneous exposure routes.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        }
+      ],
+      "citation_count": 2,
+      "default_variant_slug": "",
+      "variants": [],
+      "variant_count": 0,
+      "related_stories": [],
+      "story_count": 0,
+      "route_count": 2,
+      "writing_state": "not_yet_written",
+      "reference_name": "Anthrax",
+      "reference_url": "reference/anthrax.html",
+      "reference_web_path": "reference/anthrax.html",
+      "atlas_url": "atlas.html?pathogen=anthrax",
+      "visual_asset": {},
+      "visual_asset_id": "atlas-anthrax-hero",
+      "category": "zoonotic-animal-interface",
+      "category_label": "Zoonotic / animal interface",
+      "transmission_group": "Zoonotic / animal interface",
+      "color": "#8c7a55",
+      "status_label": "Consensus",
+      "writing_state_label": "No dedicated post yet",
+      "reference_href": "../../reference/anthrax.html"
+    },
+    {
+      "slug": "mers",
+      "name": "Middle East respiratory syndrome",
+      "subtitle": "A camel coronavirus whose map is zoonotic exposure plus health-care amplification",
+      "status": "consensus",
+      "pathogen_type": "Virus",
+      "summary": "MERS shows how a poorly efficient human transmitter can still cause serious hospital outbreaks when triage and infection control fail.",
+      "why_it_matters": "It is a compact map of zoonotic exposure, travel medicine, and hospital preparedness.",
+      "atlas_scope": "Dromedary camels, Arabian Peninsula spillover, hospitals, and travel-linked outbreaks",
+      "origin_claim": {
+        "label": "Arabian Peninsula first-recognition frame",
+        "coordinates": [
+          45.1,
+          24.7
+        ],
+        "date_or_era": "First identified in Saudi Arabia and Jordan in 2012",
+        "confidence": "strong",
+        "narrative": "MERS-CoV was first identified in Saudi Arabia and Jordan, with dromedary camels as the primary reservoir for zoonotic transmission.",
+        "citation_ids": [
+          "mers-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "mers-camel",
+          "from_label": "Arabian Peninsula dromedary interface",
+          "to_label": "Saudi clinical detection",
+          "from_coordinates": [
+            45.1,
+            24.7
+          ],
+          "to_coordinates": [
+            46.7,
+            24.7
+          ],
+          "date_or_era": "2012 onward camel-human spillover",
+          "route_type": "camel_interface",
+          "confidence": "strong",
+          "narrative": "Camel contact and raw camel products anchor the recurring zoonotic transmission map.",
+          "citation_ids": [
+            "mers-who",
+            "mers-cdc"
+          ]
+        },
+        {
+          "route_id": "mers-korea",
+          "from_label": "Middle East travel exposure",
+          "to_label": "Republic of Korea hospitals",
+          "from_coordinates": [
+            46.7,
+            24.7
+          ],
+          "to_coordinates": [
+            127.0,
+            37.5
+          ],
+          "date_or_era": "2015 Korea health-care outbreak",
+          "route_type": "healthcare_amplification",
+          "confidence": "strong",
+          "narrative": "One travel-linked case spread through hospitals before recognition and isolation.",
+          "citation_ids": [
+            "mers-who",
+            "mers-cdc"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "MERS warns that health-care systems can amplify diseases that do not spread efficiently in ordinary community settings.",
+        "Camel economies and hospital infection control belong on the same map."
+      ],
+      "framing_traps": [
+        "Do not imply sustained global human-to-human transmission.",
+        "Do not erase camels from the story by making it just another coronavirus."
+      ],
+      "linked_reference_slug": "middle-east-respiratory-syndrome-mers",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "mers-who",
+          "short_citation": "WHO. Middle East respiratory syndrome coronavirus fact sheet. 2025.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/middle-east-respiratory-syndrome-coronavirus-%28mers-cov%29",
+          "claim_supported": "First identification, camel reservoir, Arabian Peninsula concentration, Korea hospital outbreak, and transmission.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        },
+        {
+          "id": "mers-cdc",
+          "short_citation": "CDC. About Middle East Respiratory Syndrome. 2024.",
+          "url": "https://www.cdc.gov/mers/about/index.html",
+          "claim_supported": "Camel-to-human and limited human-to-human spread, health-care outbreaks, and prevention advice.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        }
+      ],
+      "citation_count": 2,
+      "default_variant_slug": "",
+      "variants": [],
+      "variant_count": 0,
+      "related_stories": [],
+      "story_count": 0,
+      "route_count": 2,
+      "writing_state": "not_yet_written",
+      "reference_name": "Middle East respiratory syndrome",
+      "reference_url": "reference/middle-east-respiratory-syndrome-mers.html",
+      "reference_web_path": "reference/middle-east-respiratory-syndrome-mers.html",
+      "atlas_url": "atlas.html?pathogen=mers",
+      "visual_asset": {},
+      "visual_asset_id": "atlas-mers-hero",
+      "category": "zoonotic-animal-interface",
+      "category_label": "Zoonotic / animal interface",
+      "transmission_group": "Zoonotic / animal interface",
+      "color": "#b88a55",
+      "status_label": "Consensus",
+      "writing_state_label": "No dedicated post yet",
+      "reference_href": "../../reference/middle-east-respiratory-syndrome-mers.html"
+    },
+    {
+      "slug": "diphtheria",
+      "name": "Diphtheria",
+      "subtitle": "A toxin-producing respiratory bacterium that returns where immunization and living conditions break down",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "Diphtheria is a vaccine-preventable disease whose geography reappears through under-immunization, displacement, and damaged health systems.",
+      "why_it_matters": "It shows that old vaccine-preventable diseases are not gone; they are suppressed by systems.",
+      "atlas_scope": "Vaccination gaps, crowding, respiratory droplets, toxin, and conflict-disrupted health services",
+      "origin_claim": {
+        "label": "Global pre-vaccine and under-immunized resurgence frame",
+        "coordinates": [
+          30.0,
+          45.0
+        ],
+        "date_or_era": "Historically worldwide before vaccination; modern outbreaks follow immunity gaps",
+        "confidence": "mixed",
+        "narrative": "The useful frame is a historically global respiratory infection that resurges where vaccine coverage and boosters fail.",
+        "citation_ids": [
+          "diphtheria-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "diphtheria-prevaccine",
+          "from_label": "Europe and global pre-vaccine settings",
+          "to_label": "Industrializing cities",
+          "from_coordinates": [
+            30.0,
+            45.0
+          ],
+          "to_coordinates": [
+            -75.0,
+            40.0
+          ],
+          "date_or_era": "Pre-vaccine worldwide childhood disease",
+          "route_type": "spread",
+          "confidence": "moderate",
+          "narrative": "Before vaccination, diphtheria belonged to childhood, crowding, and respiratory spread.",
+          "citation_ids": [
+            "diphtheria-who",
+            "diphtheria-topic"
+          ]
+        },
+        {
+          "route_id": "diphtheria-resurgence",
+          "from_label": "Displacement and under-immunized settings",
+          "to_label": "Conflict-affected outbreak settings",
+          "from_coordinates": [
+            91.8,
+            21.2
+          ],
+          "to_coordinates": [
+            35.2,
+            31.8
+          ],
+          "date_or_era": "Modern outbreak resurgence",
+          "route_type": "vaccine_gap",
+          "confidence": "strong",
+          "narrative": "Disrupted routine immunization and crowded living conditions can reopen old disease maps.",
+          "citation_ids": [
+            "diphtheria-who",
+            "diphtheria-topic"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Diphtheria is a marker of routine immunization failure.",
+        "It connects refugee camps, conflict, primary care, and booster policy."
+      ],
+      "framing_traps": [
+        "Do not write diphtheria as a disease of the past.",
+        "Do not forget toxin-mediated severity."
+      ],
+      "linked_reference_slug": "diphtheria",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "diphtheria-who",
+          "short_citation": "WHO. Diphtheria fact sheet. 2024.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/diphtheria",
+          "claim_supported": "Respiratory transmission, toxin disease, vaccination, under-immunization, and outbreak resurgence.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        },
+        {
+          "id": "diphtheria-topic",
+          "short_citation": "WHO. Diphtheria health topic.",
+          "url": "https://www.who.int/health-topics/diphtheria",
+          "claim_supported": "Respiratory-droplet spread and clinical overview.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        }
+      ],
+      "citation_count": 2,
+      "default_variant_slug": "",
+      "variants": [],
+      "variant_count": 0,
+      "related_stories": [],
+      "story_count": 0,
+      "route_count": 2,
+      "writing_state": "not_yet_written",
+      "reference_name": "Diphtheria",
+      "reference_url": "reference/diphtheria.html",
+      "reference_web_path": "reference/diphtheria.html",
+      "atlas_url": "atlas.html?pathogen=diphtheria",
+      "visual_asset": {},
+      "visual_asset_id": "atlas-diphtheria-hero",
+      "category": "airborne-respiratory",
+      "category_label": "Airborne / respiratory",
+      "transmission_group": "Airborne / respiratory",
+      "color": "#8f9c5a",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "reference_href": "../../reference/diphtheria.html"
+    },
+    {
+      "slug": "pertussis",
+      "name": "Pertussis",
+      "subtitle": "A cough disease whose map is babies, households, schools, boosters, and diagnostic visibility",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "Pertussis vaccination changed but did not erase the disease; waning immunity and infant vulnerability keep it clinically alive.",
+      "why_it_matters": "It gives the atlas a disease where controlled is not the same as eliminated.",
+      "atlas_scope": "Respiratory droplets, infant risk, waning immunity, and vaccine-era recurrence",
+      "origin_claim": {
+        "label": "Global respiratory childhood-disease frame",
+        "coordinates": [
+          10.0,
+          50.0
+        ],
+        "date_or_era": "Historically worldwide; modern recurrence shaped by vaccination and waning immunity",
+        "confidence": "mixed",
+        "narrative": "Pertussis is best mapped as a historically global respiratory infection whose modern geography depends on vaccination, boosters, diagnosis, and infant protection.",
+        "citation_ids": [
+          "pertussis-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "pertussis-household",
+          "from_label": "Households and schools",
+          "to_label": "Infant exposure settings",
+          "from_coordinates": [
+            10.0,
+            50.0
+          ],
+          "to_coordinates": [
+            -95.0,
+            37.0
+          ],
+          "date_or_era": "Routine household and school spread",
+          "route_type": "respiratory_household",
+          "confidence": "strong",
+          "narrative": "Older children and adults with mild or missed disease can transmit into households where infants face highest risk.",
+          "citation_ids": [
+            "pertussis-who",
+            "pertussis-immunization"
+          ]
+        },
+        {
+          "route_id": "pertussis-vaccine-era",
+          "from_label": "High-coverage countries",
+          "to_label": "Outbreak and reporting systems",
+          "from_coordinates": [
+            0.0,
+            52.0
+          ],
+          "to_coordinates": [
+            -122.3,
+            47.6
+          ],
+          "date_or_era": "Vaccine-era resurgence and reporting",
+          "route_type": "spread",
+          "confidence": "moderate",
+          "narrative": "Pertussis persists through waning immunity, diagnostic changes, and pockets of under-vaccination.",
+          "citation_ids": [
+            "pertussis-who",
+            "pertussis-immunization"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Pertussis is a household-network disease disguised as a childhood cough.",
+        "Infant protection depends on the immunity of everyone around them."
+      ],
+      "framing_traps": [
+        "Do not imply pertussis vaccination provides permanent sterilizing immunity.",
+        "Do not focus only on classic whoop; adult and adolescent disease may be missed."
+      ],
+      "linked_reference_slug": "pertussis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "pertussis-who",
+          "short_citation": "WHO. Pertussis health topic.",
+          "url": "https://www.who.int/health-topics/pertussis",
+          "claim_supported": "Droplet spread, infant risk, global cases, symptoms, contagious period, and immunization prevention.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        },
+        {
+          "id": "pertussis-immunization",
+          "short_citation": "WHO. Pertussis immunization page.",
+          "url": "https://www.who.int/immunization/diseases/pertussis/en/",
+          "claim_supported": "Vaccine-preventable respiratory disease overview and global burden framing.",
+          "note": "Official source used for transmission, geography, or public-health framing."
+        }
+      ],
+      "citation_count": 2,
+      "default_variant_slug": "",
+      "variants": [],
+      "variant_count": 0,
+      "related_stories": [],
+      "story_count": 0,
+      "route_count": 2,
+      "writing_state": "not_yet_written",
+      "reference_name": "Pertussis",
+      "reference_url": "reference/pertussis.html",
+      "reference_web_path": "reference/pertussis.html",
+      "atlas_url": "atlas.html?pathogen=pertussis",
+      "visual_asset": {},
+      "visual_asset_id": "atlas-pertussis-hero",
+      "category": "airborne-respiratory",
+      "category_label": "Airborne / respiratory",
+      "transmission_group": "Airborne / respiratory",
+      "color": "#c7a05a",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "reference_href": "../../reference/pertussis.html"
     }
   ],
-  "generated_at": "2026-05-12T21:21:53",
-  "atlas_count": 10
+  "generated_at": "2026-05-12T22:20:11",
+  "atlas_count": 30
 };
