@@ -382,7 +382,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [
         {
           "display_title": "Measles transmission and vaccination",
-          "latest_update_summary": "The lead item has changed to Japan reports more than 400 measles cases in first four months of 2026 from Outbreak News Today.",
+          "latest_update_summary": "Digital Journal now includes deaths or fatal cases in the story frame.",
           "story_id": "story_0cc2d5322bc76f8f",
           "story_url": "stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
           "story_web_path": "stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
@@ -867,7 +867,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [
         {
           "display_title": "Hantavirus and cruise-ship outbreak",
-          "latest_update_summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
+          "latest_update_summary": "New publisher/source coverage joined this story cluster: Facebook, Scripps News, mb.ntd.com.",
           "story_id": "story_f6d225b01f3f7094",
           "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
           "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -983,7 +983,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
+              "latest_update_summary": "New publisher/source coverage joined this story cluster: Facebook, Scripps News, mb.ntd.com.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1118,7 +1118,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
+              "latest_update_summary": "New publisher/source coverage joined this story cluster: Facebook, Scripps News, mb.ntd.com.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1253,7 +1253,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
+              "latest_update_summary": "New publisher/source coverage joined this story cluster: Facebook, Scripps News, mb.ntd.com.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1978,6 +1978,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state_label": "Adjacent writing"
     }
   ],
-  "generated_at": "2026-05-12T19:17:17",
+  "generated_at": "2026-05-12T20:17:45",
   "atlas_count": 10
 };
