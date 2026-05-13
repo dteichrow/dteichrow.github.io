@@ -4331,6 +4331,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "reference_href": "../../reference/pertussis.html"
     }
   ],
-  "generated_at": "2026-05-12T22:22:54",
+  "generated_at": "2026-05-12T23:21:46",
   "atlas_count": 30
 };
