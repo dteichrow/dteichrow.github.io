@@ -28,6 +28,7 @@ from .common import (
 
 
 DEFAULT_EPI_DOSSIER_REPO = "https://github.com/dteichrow/epi-dossier.git"
+DOI_URL_PATTERN = re.compile(r"(^|/)(10\.[0-9]{4,9}/\S+)", re.IGNORECASE)
 PATHOGEN_ATLAS_COLORS = {
     "yellow-fever": "#d86a4f",
     "cholera": "#5a9bd4",
@@ -51,6 +52,31 @@ PATHOGEN_WRITING_LABELS = {
     "adjacent": "Adjacent writing",
     "not_yet_written": "No dedicated post yet",
 }
+
+
+def is_doi_url(value: str | None) -> bool:
+    if not value:
+        return False
+    lowered = value.lower()
+    return "doi.org/" in lowered or bool(DOI_URL_PATTERN.search(value))
+
+
+def public_pathogen_citations(entry: dict[str, Any]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    public_citations: list[dict[str, Any]] = []
+    withheld_citations: list[dict[str, Any]] = []
+    for citation in entry.get("citations", []):
+        citation_copy = dict(citation)
+        if is_doi_url(citation_copy.get("url")) and not citation_copy.get("verified"):
+            withheld_citations.append(
+                {
+                    "id": citation_copy.get("id", ""),
+                    "short_citation": citation_copy.get("short_citation", ""),
+                    "reason": "DOI link withheld pending manual verification",
+                }
+            )
+            continue
+        public_citations.append(citation_copy)
+    return public_citations, withheld_citations
 
 
 def site_nav(active: str, base_url: str) -> str:
@@ -1352,6 +1378,12 @@ def prepared_pathogen_atlas_data(atlas_export: dict[str, Any], *, link_prefix: s
         prepared["color"] = color
         prepared["status_label"] = PATHOGEN_STATUS_LABELS.get(prepared.get("status"), "Curated")
         prepared["writing_state_label"] = PATHOGEN_WRITING_LABELS.get(prepared.get("writing_state"), "Writing state pending")
+        public_citations, withheld_citations = public_pathogen_citations(prepared)
+        prepared["citations"] = public_citations
+        prepared["citation_count"] = len(public_citations)
+        if withheld_citations:
+            prepared["withheld_citations"] = withheld_citations
+            prepared["citation_verification_note"] = "Some DOI citations are withheld from the public atlas until manually verified."
         reference_path = prepared.get("reference_web_path") or prepared.get("reference_url")
         if reference_path:
             prepared["reference_href"] = f"{link_prefix}{reference_path.lstrip('/')}"

@@ -239,6 +239,20 @@ def test_import_external_pathogen_writes_js_payload(tmp_path, monkeypatch) -> No
                                 "story_web_path": "stories/demo-story.html",
                             }
                         ],
+                        "citations": [
+                            {
+                                "id": "fake-doi",
+                                "short_citation": "A fake DOI fixture.",
+                                "url": "https://doi.org/10.1234/fake-fixture",
+                                "claim_supported": "Should not be publicly linked.",
+                            },
+                            {
+                                "id": "official-source",
+                                "short_citation": "CDC. Yellow fever fixture.",
+                                "url": "https://www.cdc.gov/yellow-fever/index.html",
+                                "claim_supported": "Should remain publicly linked.",
+                            },
+                        ],
                         "variants": [
                             {
                                 "slug": "urban-yellow-fever",
@@ -277,12 +291,17 @@ def test_import_external_pathogen_writes_js_payload(tmp_path, monkeypatch) -> No
     source_text = source_data.read_text()
     assert '"reference_href": "../../docs/reference/yellow-fever.html"' in source_text
     assert '"story_href": "../../docs/stories/demo-story.html"' in source_text
+    assert "https://doi.org/10.1234/fake-fixture" not in source_text
+    assert "DOI citations are withheld" in source_text
+    assert "https://www.cdc.gov/yellow-fever/index.html" in source_text
     data_text = built_data.read_text()
     assert 'window.PATHOGEN_ATLAS_BASE_URL = "/"' in data_text
     assert '"reference_href": "../../reference/yellow-fever.html"' in data_text
     assert '"story_href": "../../stories/demo-story.html"' in data_text
     assert '"slug": "urban-yellow-fever"' in data_text
     assert '"writing_state_label": "Adjacent writing"' in data_text
+    assert "https://doi.org/10.1234/fake-fixture" not in data_text
+    assert "DOI citations are withheld" in data_text
 
 
 def test_archived_story_placeholders_cover_stale_archive_links(tmp_path) -> None:

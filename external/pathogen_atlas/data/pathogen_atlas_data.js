@@ -4,22 +4,8 @@ window.PATHOGEN_ATLAS_DATA = {
     {
       "atlas_scope": "Historical-to-modern transatlantic spread",
       "atlas_url": "atlas.html?pathogen=yellow-fever",
-      "citation_count": 3,
+      "citation_count": 1,
       "citations": [
-        {
-          "claim_supported": "Historical African origin framing and Atlantic spread into the Caribbean, Philadelphia, Haiti, and Panama.",
-          "id": "yellow-handbook",
-          "note": "Core geography-first secondary source for the atlas narrative.",
-          "short_citation": "Tuan JJ, Cox FEG, Bia FJ. Historical overview of global infectious diseases and geopolitics. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
-          "url": "https://doi.org/10.4324/9781003531425"
-        },
-        {
-          "claim_supported": "African endemic ecology, vector biology, and modern transmission framing.",
-          "id": "yellow-review",
-          "note": "Useful modern review of ecology and transmission.",
-          "short_citation": "Douam F, Ploss A. Yellow Fever Virus: Knowledge Gaps Impeding the Fight Against an Old Foe. Trends Microbiol. 2018.",
-          "url": "https://doi.org/10.1016/j.tim.2018.05.012"
-        },
         {
           "claim_supported": "Port-city diffusion and the political consequences of yellow fever in the Atlantic world.",
           "id": "yellow-history",
@@ -167,35 +153,26 @@ window.PATHOGEN_ATLAS_DATA = {
       "color": "#d86a4f",
       "status_label": "Consensus",
       "writing_state_label": "Written here directly",
-      "reference_href": "../../docs/reference/yellow-fever.html"
+      "reference_href": "../../docs/reference/yellow-fever.html",
+      "withheld_citations": [
+        {
+          "id": "yellow-handbook",
+          "short_citation": "Tuan JJ, Cox FEG, Bia FJ. Historical overview of global infectious diseases and geopolitics. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
+          "reason": "DOI link withheld pending manual verification"
+        },
+        {
+          "id": "yellow-review",
+          "short_citation": "Douam F, Ploss A. Yellow Fever Virus: Knowledge Gaps Impeding the Fight Against an Old Foe. Trends Microbiol. 2018.",
+          "reason": "DOI link withheld pending manual verification"
+        }
+      ],
+      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
     },
     {
       "atlas_scope": "Nineteenth-century pandemic expansion with modern humanitarian echoes",
       "atlas_url": "atlas.html?pathogen=cholera",
-      "citation_count": 3,
-      "citations": [
-        {
-          "claim_supported": "Bay of Bengal endemicity and British trade-route expansion into repeated pandemics.",
-          "id": "cholera-handbook",
-          "note": "Core geography source.",
-          "short_citation": "Tuan JJ, Cox FEG, Bia FJ. Historical overview of global infectious diseases and geopolitics. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
-          "url": "https://doi.org/10.4324/9781003531425"
-        },
-        {
-          "claim_supported": "Repeated transregional spread and phylogeographic movement across cholera pandemic waves.",
-          "id": "cholera-nature",
-          "note": "Strong modern genomic support for long-distance spread.",
-          "short_citation": "Mutreja A, Kim DW, Thomson NR et al. Evidence for several waves of global transmission in the seventh cholera pandemic. Nature. 2011.",
-          "url": "https://doi.org/10.1038/nature09548"
-        },
-        {
-          "claim_supported": "Seventh-pandemic lineage emergence and downstream global spread.",
-          "id": "cholera-review",
-          "note": "Useful for connecting historical and genomic narratives.",
-          "short_citation": "Hu D, Liu B, Feng L et al. Origins of the current seventh cholera pandemic. Proc Natl Acad Sci U S A. 2016.",
-          "url": "https://doi.org/10.1073/pnas.1608732113"
-        }
-      ],
+      "citation_count": 0,
+      "citations": [],
       "default_variant_slug": "",
       "framing_traps": [
         "Do not reduce cholera to an abstract waterborne disease with no political geography.",
@@ -323,35 +300,31 @@ window.PATHOGEN_ATLAS_DATA = {
       "color": "#5a9bd4",
       "status_label": "Consensus",
       "writing_state_label": "Adjacent writing",
-      "reference_href": "../../docs/reference/cholera.html"
+      "reference_href": "../../docs/reference/cholera.html",
+      "withheld_citations": [
+        {
+          "id": "cholera-handbook",
+          "short_citation": "Tuan JJ, Cox FEG, Bia FJ. Historical overview of global infectious diseases and geopolitics. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
+          "reason": "DOI link withheld pending manual verification"
+        },
+        {
+          "id": "cholera-nature",
+          "short_citation": "Mutreja A, Kim DW, Thomson NR et al. Evidence for several waves of global transmission in the seventh cholera pandemic. Nature. 2011.",
+          "reason": "DOI link withheld pending manual verification"
+        },
+        {
+          "id": "cholera-review",
+          "short_citation": "Hu D, Liu B, Feng L et al. Origins of the current seventh cholera pandemic. Proc Natl Acad Sci U S A. 2016.",
+          "reason": "DOI link withheld pending manual verification"
+        }
+      ],
+      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
     },
     {
       "atlas_scope": "Ancient divergence with early modern colonial spread",
       "atlas_url": "atlas.html?pathogen=measles",
-      "citation_count": 3,
-      "citations": [
-        {
-          "claim_supported": "Colonial spread through the Americas and later maritime dissemination.",
-          "id": "measles-handbook",
-          "note": "Geography-first secondary source.",
-          "short_citation": "Tuan JJ, Cox FEG, Bia FJ. Historical overview of global infectious diseases and geopolitics. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
-          "url": "https://doi.org/10.4324/9781003531425"
-        },
-        {
-          "claim_supported": "Earlier molecular divergence date and dense-settlement origin framing.",
-          "id": "measles-science",
-          "note": "Strong modern molecular-clock paper.",
-          "short_citation": "D\u00fcx A, Lequime S, Patrono LV et al. Measles virus and rinderpest virus divergence dated to the sixth century BCE. Science. 2020.",
-          "url": "https://doi.org/10.1126/science.aba9411"
-        },
-        {
-          "claim_supported": "Transmission characteristics and modern outbreak interpretation.",
-          "id": "measles-lancet",
-          "note": "Broad clinical-epidemiologic review.",
-          "short_citation": "Moss WJ. Measles. Lancet. 2017.",
-          "url": "https://doi.org/10.1016/S0140-6736(16)31483-1"
-        }
-      ],
+      "citation_count": 0,
+      "citations": [],
       "default_variant_slug": "",
       "framing_traps": [
         "Do not pretend the deep origin date is settled more tightly than the literature supports.",
@@ -459,42 +432,31 @@ window.PATHOGEN_ATLAS_DATA = {
       "color": "#d6c06a",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
-      "reference_href": "../../docs/reference/measles.html"
+      "reference_href": "../../docs/reference/measles.html",
+      "withheld_citations": [
+        {
+          "id": "measles-handbook",
+          "short_citation": "Tuan JJ, Cox FEG, Bia FJ. Historical overview of global infectious diseases and geopolitics. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
+          "reason": "DOI link withheld pending manual verification"
+        },
+        {
+          "id": "measles-science",
+          "short_citation": "D\u00fcx A, Lequime S, Patrono LV et al. Measles virus and rinderpest virus divergence dated to the sixth century BCE. Science. 2020.",
+          "reason": "DOI link withheld pending manual verification"
+        },
+        {
+          "id": "measles-lancet",
+          "short_citation": "Moss WJ. Measles. Lancet. 2017.",
+          "reason": "DOI link withheld pending manual verification"
+        }
+      ],
+      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
     },
     {
       "atlas_scope": "Central and West African history with 2003 and 2022 global turning points",
       "atlas_url": "atlas.html?pathogen=mpox",
-      "citation_count": 4,
-      "citations": [
-        {
-          "claim_supported": "Central/West African origins, 2003 animal-trade export, and 2022 global outbreak framing.",
-          "id": "mpox-handbook",
-          "note": "Combines historical overview and emerging infections synthesis.",
-          "short_citation": "Tuan JJ, Cox FEG, Bia FJ; Wilson ME, Petersen E, Koopmans MP. Historical overview and emerging infections chapters. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
-          "url": "https://doi.org/10.4324/9781003531425"
-        },
-        {
-          "claim_supported": "2003 U.S. outbreak tied to imported African rodents and prairie-dog exposure chains.",
-          "id": "mpox-croft",
-          "note": "Useful for the wildlife-trade route.",
-          "short_citation": "Croft DR, Sotir MJ, Williams CJ et al. Occupational risks during a monkeypox outbreak, Wisconsin, 2003. Emerg Infect Dis. 2007.",
-          "url": "https://doi.org/10.3201/eid1307.061365"
-        },
-        {
-          "claim_supported": "Changing epidemiology, human transmission, and geographic expansion beyond historical endemic zones.",
-          "id": "mpox-review",
-          "note": "Broad review before the full scale of the 2022 outbreak.",
-          "short_citation": "Bunge EM, Hoet B, Chen L et al. The changing epidemiology of human monkeypox\u2014A potential threat? PLoS Negl Trop Dis. 2022.",
-          "url": "https://doi.org/10.1371/journal.pntd.0010141"
-        },
-        {
-          "claim_supported": "Modern clade framing, transmission patterns, and global outbreak context.",
-          "id": "mpox-lancet",
-          "note": "High-level synthesis for current-era interpretation.",
-          "short_citation": "Mitj\u00e0 O, Ogoina D, Titanji BK et al. Monkeypox. Lancet. 2023.",
-          "url": "https://doi.org/10.1016/S0140-6736(23)01574-0"
-        }
-      ],
+      "citation_count": 0,
+      "citations": [],
       "default_variant_slug": "",
       "framing_traps": [
         "Do not flatten clade I and clade II epidemiology into the same story.",
@@ -615,41 +577,36 @@ window.PATHOGEN_ATLAS_DATA = {
       "color": "#dd6974",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
-      "reference_href": "../../docs/reference/mpox.html"
+      "reference_href": "../../docs/reference/mpox.html",
+      "withheld_citations": [
+        {
+          "id": "mpox-handbook",
+          "short_citation": "Tuan JJ, Cox FEG, Bia FJ; Wilson ME, Petersen E, Koopmans MP. Historical overview and emerging infections chapters. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
+          "reason": "DOI link withheld pending manual verification"
+        },
+        {
+          "id": "mpox-croft",
+          "short_citation": "Croft DR, Sotir MJ, Williams CJ et al. Occupational risks during a monkeypox outbreak, Wisconsin, 2003. Emerg Infect Dis. 2007.",
+          "reason": "DOI link withheld pending manual verification"
+        },
+        {
+          "id": "mpox-review",
+          "short_citation": "Bunge EM, Hoet B, Chen L et al. The changing epidemiology of human monkeypox\u2014A potential threat? PLoS Negl Trop Dis. 2022.",
+          "reason": "DOI link withheld pending manual verification"
+        },
+        {
+          "id": "mpox-lancet",
+          "short_citation": "Mitj\u00e0 O, Ogoina D, Titanji BK et al. Monkeypox. Lancet. 2023.",
+          "reason": "DOI link withheld pending manual verification"
+        }
+      ],
+      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
     },
     {
       "atlas_scope": "East and Southeast Asian emergence with global bird and farm spread",
       "atlas_url": "atlas.html?pathogen=avian-influenza-h5n1",
-      "citation_count": 5,
+      "citation_count": 1,
       "citations": [
-        {
-          "claim_supported": "East/Asian origin framing, migratory dissemination, and global bird-plus-mammal spread.",
-          "id": "h5n1-handbook",
-          "note": "Core atlas synthesis source.",
-          "short_citation": "Wilson ME, Petersen E, Koopmans MP. Emerging infections. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
-          "url": "https://doi.org/10.4324/9781003531425"
-        },
-        {
-          "claim_supported": "Wide avian spread across Europe and beyond.",
-          "id": "h5n1-efsa",
-          "note": "Good operational surveillance overview.",
-          "short_citation": "Adlhoch C, Fusaro A, Gonzales JL et al. Avian influenza overview April-June 2023. EFSA J. 2023.",
-          "url": "https://doi.org/10.2903/j.efsa.2023.8191"
-        },
-        {
-          "claim_supported": "Mammalian spillover in Europe during the current clade 2.3.4.4b era.",
-          "id": "h5n1-cat",
-          "note": "Illustrates the expanded non-avian host picture.",
-          "short_citation": "Briand FX, Souchaud F, Pierre I et al. Highly pathogenic Avian Influenza A(H5N1) Clade 2.3.4.4b Virus in Domestic Cat, France, 2022. Emerg Infect Dis. 2023.",
-          "url": "https://doi.org/10.3201/eid2908.230188"
-        },
-        {
-          "claim_supported": "Farmed-mammal spillover and adaptation concern.",
-          "id": "h5n1-mink",
-          "note": "Important for the mammal-interface narrative.",
-          "short_citation": "Ag\u00fcero M, Monne I, S\u00e1nchez A et al. Highly pathogenic avian influenza A(H5N1) virus infection in farmed minks, Spain, October 2022. Euro Surveill. 2023.",
-          "url": "https://doi.org/10.2807/1560-7917.ES.2023.28.3.2300001"
-        },
         {
           "claim_supported": "U.S. dairy-associated spread and human spillover updates.",
           "id": "h5n1-cdc",
@@ -787,49 +744,36 @@ window.PATHOGEN_ATLAS_DATA = {
       "color": "#9b7bd8",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
-      "reference_href": "../../docs/reference/avian-influenza-a-h5n1.html"
+      "reference_href": "../../docs/reference/avian-influenza-a-h5n1.html",
+      "withheld_citations": [
+        {
+          "id": "h5n1-handbook",
+          "short_citation": "Wilson ME, Petersen E, Koopmans MP. Emerging infections. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
+          "reason": "DOI link withheld pending manual verification"
+        },
+        {
+          "id": "h5n1-efsa",
+          "short_citation": "Adlhoch C, Fusaro A, Gonzales JL et al. Avian influenza overview April-June 2023. EFSA J. 2023.",
+          "reason": "DOI link withheld pending manual verification"
+        },
+        {
+          "id": "h5n1-cat",
+          "short_citation": "Briand FX, Souchaud F, Pierre I et al. Highly pathogenic Avian Influenza A(H5N1) Clade 2.3.4.4b Virus in Domestic Cat, France, 2022. Emerg Infect Dis. 2023.",
+          "reason": "DOI link withheld pending manual verification"
+        },
+        {
+          "id": "h5n1-mink",
+          "short_citation": "Ag\u00fcero M, Monne I, S\u00e1nchez A et al. Highly pathogenic avian influenza A(H5N1) virus infection in farmed minks, Spain, October 2022. Euro Surveill. 2023.",
+          "reason": "DOI link withheld pending manual verification"
+        }
+      ],
+      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
     },
     {
       "atlas_scope": "Family-level rodent-host geography with variant-specific human disease lenses",
       "atlas_url": "atlas.html?pathogen=hantavirus",
-      "citation_count": 5,
-      "citations": [
-        {
-          "claim_supported": "Family-level hantavirus ecology, rodent-host associations, and the division between Old World and New World disease patterns.",
-          "id": "hanta-family-review",
-          "note": "Best broad synthesis source for a family-level atlas entry.",
-          "short_citation": "Jonsson CB, Figueiredo LTM, Vapalahti O. A global perspective on hantavirus ecology, epidemiology, and disease. Clin Microbiol Rev. 2010.",
-          "url": "https://doi.org/10.1128/CMR.00062-09"
-        },
-        {
-          "claim_supported": "American hantavirus ecology, cardiopulmonary syndromes, and host-geography framing.",
-          "id": "hanta-americas",
-          "note": "Broad review of hantavirus emergence in the Americas.",
-          "short_citation": "Hjelle B, Torres-P\u00e9rez F. Hantaviruses in the Americas and their role as emerging pathogens. Viruses. 2010.",
-          "url": "https://doi.org/10.3390/v2032559"
-        },
-        {
-          "claim_supported": "Global hantavirus distribution and the Old World hemorrhagic-fever geography.",
-          "id": "hanta-hfrs",
-          "note": "Useful bridge between HFRS and broader global distribution.",
-          "short_citation": "Bi Z, Formenty PBH, Roth CE. Hantavirus infection: A review and global update. J Infect Dev Ctries. 2008.",
-          "url": "https://doi.org/10.3855/jidc.317"
-        },
-        {
-          "claim_supported": "Andes-virus person-to-person transmission as the key exception.",
-          "id": "hanta-andes",
-          "note": "Specific evidence for the atlas caution layer.",
-          "short_citation": "Mart\u00ednez-Valdebenito C, Calvo M, Vial C et al. Person-to-person household and nosocomial transmission of Andes hantavirus, southern Chile, 2011. Emerg Infect Dis. 2014.",
-          "url": "https://doi.org/10.3201/eid2008.131936"
-        },
-        {
-          "claim_supported": "Climate and landscape conditions affecting hantavirus geography in Latin America and the Caribbean.",
-          "id": "hanta-climate",
-          "note": "Useful for the ecology panel.",
-          "short_citation": "Douglas KO, Payne K, Sabino-Santos G et al. Influence of climatic factors on human hantavirus infections in Latin America and the Caribbean: A systematic review. Pathogens. 2022.",
-          "url": "https://doi.org/10.3390/pathogens11010015"
-        }
-      ],
+      "citation_count": 0,
+      "citations": [],
       "default_variant_slug": "hantaan-virus",
       "framing_traps": [
         "Do not write all hantaviruses as though they share one syndrome, one rodent host, or one transmission pattern.",
@@ -929,23 +873,8 @@ window.PATHOGEN_ATLAS_DATA = {
         {
           "atlas_scope": "Family-level rodent-host geography with variant-specific human disease lenses",
           "atlas_url": "atlas.html?pathogen=hantavirus&variant=hantaan-virus",
-          "citation_count": 2,
-          "citations": [
-            {
-              "claim_supported": "Recognition of Hantaan virus as the etiologic agent of Korean hemorrhagic fever.",
-              "id": "hantaan-korean-war",
-              "note": "Landmark identification paper.",
-              "short_citation": "Lee HW, Lee PW, Johnson KM. Isolation of the etiologic agent of Korean hemorrhagic fever. J Infect Dis. 1978.",
-              "url": "https://doi.org/10.1093/infdis/137.3.298"
-            },
-            {
-              "claim_supported": "East Asian HFRS geography and broader Old World distribution.",
-              "id": "hanta-hfrs",
-              "note": "Practical global review.",
-              "short_citation": "Bi Z, Formenty PBH, Roth CE. Hantavirus infection: A review and global update. J Infect Dev Ctries. 2008.",
-              "url": "https://doi.org/10.3855/jidc.317"
-            }
-          ],
+          "citation_count": 0,
+          "citations": [],
           "default_variant_slug": "",
           "framing_traps": [
             "Do not collapse HFRS and cardiopulmonary syndromes into one undifferentiated clinical map.",
@@ -1059,28 +988,26 @@ window.PATHOGEN_ATLAS_DATA = {
           "color": "#7aa96b",
           "status_label": "Consensus",
           "writing_state_label": "Written here directly",
-          "reference_href": "../../docs/reference/hantavirus-syndrome.html"
+          "reference_href": "../../docs/reference/hantavirus-syndrome.html",
+          "withheld_citations": [
+            {
+              "id": "hantaan-korean-war",
+              "short_citation": "Lee HW, Lee PW, Johnson KM. Isolation of the etiologic agent of Korean hemorrhagic fever. J Infect Dis. 1978.",
+              "reason": "DOI link withheld pending manual verification"
+            },
+            {
+              "id": "hanta-hfrs",
+              "short_citation": "Bi Z, Formenty PBH, Roth CE. Hantavirus infection: A review and global update. J Infect Dev Ctries. 2008.",
+              "reason": "DOI link withheld pending manual verification"
+            }
+          ],
+          "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
         },
         {
           "atlas_scope": "Family-level rodent-host geography with variant-specific human disease lenses",
           "atlas_url": "atlas.html?pathogen=hantavirus&variant=sin-nombre-virus",
-          "citation_count": 2,
-          "citations": [
-            {
-              "claim_supported": "Identification of the Four Corners-associated hantavirus and cardiopulmonary outbreak framing.",
-              "id": "sin-nombre-four-corners",
-              "note": "Landmark emergence paper.",
-              "short_citation": "Nichol ST, Spiropoulou CF, Morzunov S et al. Genetic identification of a hantavirus associated with an outbreak of acute respiratory illness. Science. 1993.",
-              "url": "https://doi.org/10.1126/science.8390689"
-            },
-            {
-              "claim_supported": "North American ecology and New World hantavirus patterns.",
-              "id": "hanta-americas",
-              "note": "Broad Americas review.",
-              "short_citation": "Hjelle B, Torres-P\u00e9rez F. Hantaviruses in the Americas and their role as emerging pathogens. Viruses. 2010.",
-              "url": "https://doi.org/10.3390/v2032559"
-            }
-          ],
+          "citation_count": 0,
+          "citations": [],
           "default_variant_slug": "",
           "framing_traps": [
             "Do not call Sin Nombre a mysterious new spillover just because the 1993 cluster was the first dramatic public recognition.",
@@ -1194,28 +1121,26 @@ window.PATHOGEN_ATLAS_DATA = {
           "color": "#7aa96b",
           "status_label": "Consensus",
           "writing_state_label": "Written here directly",
-          "reference_href": "../../docs/reference/hantavirus-syndrome.html"
+          "reference_href": "../../docs/reference/hantavirus-syndrome.html",
+          "withheld_citations": [
+            {
+              "id": "sin-nombre-four-corners",
+              "short_citation": "Nichol ST, Spiropoulou CF, Morzunov S et al. Genetic identification of a hantavirus associated with an outbreak of acute respiratory illness. Science. 1993.",
+              "reason": "DOI link withheld pending manual verification"
+            },
+            {
+              "id": "hanta-americas",
+              "short_citation": "Hjelle B, Torres-P\u00e9rez F. Hantaviruses in the Americas and their role as emerging pathogens. Viruses. 2010.",
+              "reason": "DOI link withheld pending manual verification"
+            }
+          ],
+          "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
         },
         {
           "atlas_scope": "Family-level rodent-host geography with variant-specific human disease lenses",
           "atlas_url": "atlas.html?pathogen=hantavirus&variant=andes-virus",
-          "citation_count": 2,
-          "citations": [
-            {
-              "claim_supported": "Andes-virus person-to-person transmission and southern cone cluster interpretation.",
-              "id": "hanta-andes",
-              "note": "Key exception paper for the family.",
-              "short_citation": "Mart\u00ednez-Valdebenito C, Calvo M, Vial C et al. Person-to-person household and nosocomial transmission of Andes hantavirus, southern Chile, 2011. Emerg Infect Dis. 2014.",
-              "url": "https://doi.org/10.3201/eid2008.131936"
-            },
-            {
-              "claim_supported": "Climatic and landscape context for Latin American hantavirus geography.",
-              "id": "hanta-climate",
-              "note": "Useful ecology and context source.",
-              "short_citation": "Douglas KO, Payne K, Sabino-Santos G et al. Influence of climatic factors on human hantavirus infections in Latin America and the Caribbean: A systematic review. Pathogens. 2022.",
-              "url": "https://doi.org/10.3390/pathogens11010015"
-            }
-          ],
+          "citation_count": 0,
+          "citations": [],
           "default_variant_slug": "",
           "framing_traps": [
             "Do not project Andes-virus person-to-person concerns onto the rest of the family.",
@@ -1329,7 +1254,20 @@ window.PATHOGEN_ATLAS_DATA = {
           "color": "#7aa96b",
           "status_label": "Mixed / debated",
           "writing_state_label": "Written here directly",
-          "reference_href": "../../docs/reference/hantavirus-syndrome.html"
+          "reference_href": "../../docs/reference/hantavirus-syndrome.html",
+          "withheld_citations": [
+            {
+              "id": "hanta-andes",
+              "short_citation": "Mart\u00ednez-Valdebenito C, Calvo M, Vial C et al. Person-to-person household and nosocomial transmission of Andes hantavirus, southern Chile, 2011. Emerg Infect Dis. 2014.",
+              "reason": "DOI link withheld pending manual verification"
+            },
+            {
+              "id": "hanta-climate",
+              "short_citation": "Douglas KO, Payne K, Sabino-Santos G et al. Influence of climatic factors on human hantavirus infections in Latin America and the Caribbean: A systematic review. Pathogens. 2022.",
+              "reason": "DOI link withheld pending manual verification"
+            }
+          ],
+          "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
         }
       ],
       "visual_asset": {
@@ -1350,35 +1288,41 @@ window.PATHOGEN_ATLAS_DATA = {
       "color": "#7aa96b",
       "status_label": "Mixed / debated",
       "writing_state_label": "Written here directly",
-      "reference_href": "../../docs/reference/hantavirus-syndrome.html"
+      "reference_href": "../../docs/reference/hantavirus-syndrome.html",
+      "withheld_citations": [
+        {
+          "id": "hanta-family-review",
+          "short_citation": "Jonsson CB, Figueiredo LTM, Vapalahti O. A global perspective on hantavirus ecology, epidemiology, and disease. Clin Microbiol Rev. 2010.",
+          "reason": "DOI link withheld pending manual verification"
+        },
+        {
+          "id": "hanta-americas",
+          "short_citation": "Hjelle B, Torres-P\u00e9rez F. Hantaviruses in the Americas and their role as emerging pathogens. Viruses. 2010.",
+          "reason": "DOI link withheld pending manual verification"
+        },
+        {
+          "id": "hanta-hfrs",
+          "short_citation": "Bi Z, Formenty PBH, Roth CE. Hantavirus infection: A review and global update. J Infect Dev Ctries. 2008.",
+          "reason": "DOI link withheld pending manual verification"
+        },
+        {
+          "id": "hanta-andes",
+          "short_citation": "Mart\u00ednez-Valdebenito C, Calvo M, Vial C et al. Person-to-person household and nosocomial transmission of Andes hantavirus, southern Chile, 2011. Emerg Infect Dis. 2014.",
+          "reason": "DOI link withheld pending manual verification"
+        },
+        {
+          "id": "hanta-climate",
+          "short_citation": "Douglas KO, Payne K, Sabino-Santos G et al. Influence of climatic factors on human hantavirus infections in Latin America and the Caribbean: A systematic review. Pathogens. 2022.",
+          "reason": "DOI link withheld pending manual verification"
+        }
+      ],
+      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
     },
     {
       "atlas_scope": "Asian origin framing with modern vector-driven global expansion",
       "atlas_url": "atlas.html?pathogen=dengue",
-      "citation_count": 3,
-      "citations": [
-        {
-          "claim_supported": "Global Aedes expansion, shipping, urbanization, and climate-linked spread.",
-          "id": "dengue-handbook",
-          "note": "Combines the emerging infections and climate chapters.",
-          "short_citation": "Wilson ME, Petersen E, Koopmans MP; Khatib AN, Matsee W, Semenza JC. Emerging infections and climate change chapters. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
-          "url": "https://doi.org/10.4324/9781003531425"
-        },
-        {
-          "claim_supported": "Vector spread and the transport routes that underpin dengue range expansion.",
-          "id": "dengue-kraemer",
-          "note": "Vector map paper more than a virus paper, which is exactly why it belongs here.",
-          "short_citation": "Kraemer MUG, Reiner RC Jr, Brady OJ et al. Past and future spread of the arbovirus vectors Aedes aegypti and Aedes albopictus. Nat Microbiol. 2019.",
-          "url": "https://doi.org/10.1038/s41564-019-0376-y"
-        },
-        {
-          "claim_supported": "Modern geographic spread and population-at-risk framing.",
-          "id": "dengue-messina",
-          "note": "Strong for the modern echo layer.",
-          "short_citation": "Messina JP, Brady OJ, Golding N et al. The current and future global distribution and population at risk of dengue. Nat Microbiol. 2019.",
-          "url": "https://doi.org/10.1038/s41564-019-0476-8"
-        }
-      ],
+      "citation_count": 0,
+      "citations": [],
       "default_variant_slug": "",
       "framing_traps": [
         "Do not confuse imported cases with sustained local transmission.",
@@ -1499,40 +1443,37 @@ window.PATHOGEN_ATLAS_DATA = {
       "color": "#c9a84c",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
-      "reference_href": "../../docs/reference/dengue.html"
+      "reference_href": "../../docs/reference/dengue.html",
+      "withheld_citations": [
+        {
+          "id": "dengue-handbook",
+          "short_citation": "Wilson ME, Petersen E, Koopmans MP; Khatib AN, Matsee W, Semenza JC. Emerging infections and climate change chapters. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
+          "reason": "DOI link withheld pending manual verification"
+        },
+        {
+          "id": "dengue-kraemer",
+          "short_citation": "Kraemer MUG, Reiner RC Jr, Brady OJ et al. Past and future spread of the arbovirus vectors Aedes aegypti and Aedes albopictus. Nat Microbiol. 2019.",
+          "reason": "DOI link withheld pending manual verification"
+        },
+        {
+          "id": "dengue-messina",
+          "short_citation": "Messina JP, Brady OJ, Golding N et al. The current and future global distribution and population at risk of dengue. Nat Microbiol. 2019.",
+          "reason": "DOI link withheld pending manual verification"
+        }
+      ],
+      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
     },
     {
       "atlas_scope": "Ancient African-rooted burden with colonial and modern climate-vector redistribution",
       "atlas_url": "atlas.html?pathogen=malaria",
-      "citation_count": 4,
+      "citation_count": 1,
       "citations": [
-        {
-          "claim_supported": "Historical global spread, colonial and travel-linked malaria geography, and climate-linked transmission shifts.",
-          "id": "malaria-handbook",
-          "note": "Core geography-first secondary source.",
-          "short_citation": "Tuan JJ, Cox FEG, Bia FJ; Wilson ME, Petersen E, Koopmans MP; Khatib AN, Matsee W, Semenza JC. Historical overview, emerging infections, and climate change chapters. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
-          "url": "https://doi.org/10.4324/9781003531425"
-        },
-        {
-          "claim_supported": "Deep historical burden and long-run geographic framing of malaria.",
-          "id": "malaria-carter",
-          "note": "Standard historical review.",
-          "short_citation": "Carter R, Mendis KN. Evolutionary and historical aspects of the burden of malaria. Clin Microbiol Rev. 2002.",
-          "url": "https://doi.org/10.1128/CMR.15.4.564-594.2002"
-        },
         {
           "claim_supported": "Reintroduction and airport-malaria framing in nonendemic settings.",
           "id": "malaria-airport",
           "note": "Useful for modern travel-linked route interpretation.",
           "short_citation": "Van den Ende J, Lynen L, Elsen P et al. A cluster of airport malaria in Belgium in 1995. Acta Clin Belg. 1998.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/9581493/"
-        },
-        {
-          "claim_supported": "Climatic suitability shifts and future geographic redistribution.",
-          "id": "malaria-mordecai",
-          "note": "Strong modern climate-geography framing.",
-          "short_citation": "Mordecai EA, Ryan SJ, Caldwell JM et al. Climate change could shift disease burden from malaria to arboviruses in Africa. Lancet Planet Health. 2020.",
-          "url": "https://doi.org/10.1016/S2542-5196(20)30178-9"
         }
       ],
       "default_variant_slug": "",
@@ -1656,34 +1597,31 @@ window.PATHOGEN_ATLAS_DATA = {
       "color": "#5abf7c",
       "status_label": "Mixed / debated",
       "writing_state_label": "Adjacent writing",
-      "reference_href": "../../docs/reference/malaria.html"
+      "reference_href": "../../docs/reference/malaria.html",
+      "withheld_citations": [
+        {
+          "id": "malaria-handbook",
+          "short_citation": "Tuan JJ, Cox FEG, Bia FJ; Wilson ME, Petersen E, Koopmans MP; Khatib AN, Matsee W, Semenza JC. Historical overview, emerging infections, and climate change chapters. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
+          "reason": "DOI link withheld pending manual verification"
+        },
+        {
+          "id": "malaria-carter",
+          "short_citation": "Carter R, Mendis KN. Evolutionary and historical aspects of the burden of malaria. Clin Microbiol Rev. 2002.",
+          "reason": "DOI link withheld pending manual verification"
+        },
+        {
+          "id": "malaria-mordecai",
+          "short_citation": "Mordecai EA, Ryan SJ, Caldwell JM et al. Climate change could shift disease burden from malaria to arboviruses in Africa. Lancet Planet Health. 2020.",
+          "reason": "DOI link withheld pending manual verification"
+        }
+      ],
+      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
     },
     {
       "atlas_scope": "Deep human coexpansion with industrial, colonial, and migration-linked redistribution",
       "atlas_url": "atlas.html?pathogen=tuberculosis",
-      "citation_count": 5,
+      "citation_count": 2,
       "citations": [
-        {
-          "claim_supported": "Historical burden, industrial-era spread, and geopolitical significance of tuberculosis.",
-          "id": "tb-handbook",
-          "note": "Geography-first anchor source.",
-          "short_citation": "Tuan JJ, Cox FEG, Bia FJ. Historical overview of global infectious diseases and geopolitics. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
-          "url": "https://doi.org/10.4324/9781003531425"
-        },
-        {
-          "claim_supported": "Deep origin and coexpansion framework for MTBC.",
-          "id": "tb-comas",
-          "note": "Core genomic origin paper.",
-          "short_citation": "Comas I, Coscolla M, Luo T et al. Out-of-Africa migration and Neolithic coexpansion of Mycobacterium tuberculosis with modern humans. Nat Genet. 2013.",
-          "url": "https://doi.org/10.1038/ng.2744"
-        },
-        {
-          "claim_supported": "Migration-linked modern European TB policy and MDR concerns.",
-          "id": "tb-migration",
-          "note": "Good modern route/policy bridge.",
-          "short_citation": "Hargreaves S, L\u00f6nnroth K, Nellums LB et al. Multidrug-resistant tuberculosis and migration to Europe. Clin Microbiol Infect. 2017.",
-          "url": "https://doi.org/10.1016/j.cmi.2017.02.010"
-        },
         {
           "claim_supported": "Contemporary burden and global control context.",
           "id": "tb-who",
@@ -1814,34 +1752,31 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "direct",
       "color": "#d98e5f",
       "status_label": "Mixed / debated",
-      "writing_state_label": "Written here directly"
+      "writing_state_label": "Written here directly",
+      "withheld_citations": [
+        {
+          "id": "tb-handbook",
+          "short_citation": "Tuan JJ, Cox FEG, Bia FJ. Historical overview of global infectious diseases and geopolitics. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
+          "reason": "DOI link withheld pending manual verification"
+        },
+        {
+          "id": "tb-comas",
+          "short_citation": "Comas I, Coscolla M, Luo T et al. Out-of-Africa migration and Neolithic coexpansion of Mycobacterium tuberculosis with modern humans. Nat Genet. 2013.",
+          "reason": "DOI link withheld pending manual verification"
+        },
+        {
+          "id": "tb-migration",
+          "short_citation": "Hargreaves S, L\u00f6nnroth K, Nellums LB et al. Multidrug-resistant tuberculosis and migration to Europe. Clin Microbiol Infect. 2017.",
+          "reason": "DOI link withheld pending manual verification"
+        }
+      ],
+      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
     },
     {
       "atlas_scope": "Central Asian reservoir framing with Justinianic, Black Death, and third-pandemic routes",
       "atlas_url": "atlas.html?pathogen=plague",
-      "citation_count": 4,
+      "citation_count": 1,
       "citations": [
-        {
-          "claim_supported": "Justinianic plague, Black Death, Greenland, and the later port-disease framing.",
-          "id": "plague-handbook",
-          "note": "Geography-first historical synthesis.",
-          "short_citation": "Tuan JJ, Cox FEG, Bia FJ. Historical overview of global infectious diseases and geopolitics. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
-          "url": "https://doi.org/10.4324/9781003531425"
-        },
-        {
-          "claim_supported": "Reservoir ecology, transmission mechanisms, and long-run plague history.",
-          "id": "plague-stenseth",
-          "note": "Broad modern synthesis.",
-          "short_citation": "Stenseth NC, Atshabar BB, Begon M et al. Plague: Past, present, and future. PLoS Med. 2008.",
-          "url": "https://doi.org/10.1371/journal.pmed.0050003"
-        },
-        {
-          "claim_supported": "Genomic confirmation and modern reconstruction of Black Death plague.",
-          "id": "plague-bos",
-          "note": "Landmark ancient-DNA paper.",
-          "short_citation": "Bos KI, Schuenemann VJ, Golding GB et al. A draft genome of Yersinia pestis from victims of the Black Death. Nature. 2011.",
-          "url": "https://doi.org/10.1038/nature10549"
-        },
         {
           "claim_supported": "Third-pandemic port spread and the broader narrative of recurring plague waves.",
           "id": "plague-third-pandemic",
@@ -1966,7 +1901,25 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "adjacent",
       "color": "#b9754f",
       "status_label": "Mixed / debated",
-      "writing_state_label": "Adjacent writing"
+      "writing_state_label": "Adjacent writing",
+      "withheld_citations": [
+        {
+          "id": "plague-handbook",
+          "short_citation": "Tuan JJ, Cox FEG, Bia FJ. Historical overview of global infectious diseases and geopolitics. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
+          "reason": "DOI link withheld pending manual verification"
+        },
+        {
+          "id": "plague-stenseth",
+          "short_citation": "Stenseth NC, Atshabar BB, Begon M et al. Plague: Past, present, and future. PLoS Med. 2008.",
+          "reason": "DOI link withheld pending manual verification"
+        },
+        {
+          "id": "plague-bos",
+          "short_citation": "Bos KI, Schuenemann VJ, Golding GB et al. A draft genome of Yersinia pestis from victims of the Black Death. Nature. 2011.",
+          "reason": "DOI link withheld pending manual verification"
+        }
+      ],
+      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
     }
   ],
   "generated_at": "2026-05-11T06:35:25",

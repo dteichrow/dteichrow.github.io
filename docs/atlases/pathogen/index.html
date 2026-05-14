@@ -1053,7 +1053,7 @@ function renderEvidencePanel(entry, activeEntry) {
         <div class="note-text">${escapeHtml(citation.claim_supported || "")}</div>
       </article>
     `,
-    "No supporting paper links are attached yet."
+    activeEntry.citation_verification_note || "No verified public citation links are attached yet."
   );
 
   document.getElementById("story-list").innerHTML = renderLinkedCards(
