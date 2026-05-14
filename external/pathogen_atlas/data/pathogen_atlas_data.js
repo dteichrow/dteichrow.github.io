@@ -150,9 +150,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "visual_asset_id": "atlas-yellow-fever-hero",
       "why_it_matters": "It lets the atlas show how a pathogen can move with people, water storage, ships, and vector habitat rather than by human travel alone.",
       "writing_state": "direct",
-      "color": "#d86a4f",
-      "status_label": "Consensus",
-      "writing_state_label": "Written here directly",
       "withheld_citations": [
         {
           "id": "yellow-handbook",
@@ -165,7 +162,10 @@ window.PATHOGEN_ATLAS_DATA = {
           "reason": "DOI link withheld pending manual verification"
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified.",
+      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+      "color": "#d86a4f",
+      "status_label": "Consensus",
+      "writing_state_label": "Written here directly",
       "reference_href": "../../docs/reference/yellow-fever.html"
     },
     {
@@ -297,9 +297,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "visual_asset_id": "atlas-cholera-hero",
       "why_it_matters": "It gives the atlas a clean origin basin, repeated outward routes, and a still-live connection between infrastructure failure and epidemic geography.",
       "writing_state": "adjacent",
-      "color": "#5a9bd4",
-      "status_label": "Consensus",
-      "writing_state_label": "Adjacent writing",
       "withheld_citations": [
         {
           "id": "cholera-handbook",
@@ -317,7 +314,10 @@ window.PATHOGEN_ATLAS_DATA = {
           "reason": "DOI link withheld pending manual verification"
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified.",
+      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+      "color": "#5a9bd4",
+      "status_label": "Consensus",
+      "writing_state_label": "Adjacent writing",
       "reference_href": "../../docs/reference/cholera.html"
     },
     {
@@ -429,9 +429,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "visual_asset_id": "atlas-measles-hero",
       "why_it_matters": "It shows the difference between debated deep origin, strong consensus on later spread, and the modern reality that measles outbreaks are usually immunity-gap stories.",
       "writing_state": "not_yet_written",
-      "color": "#d6c06a",
-      "status_label": "Mixed / debated",
-      "writing_state_label": "No dedicated post yet",
       "withheld_citations": [
         {
           "id": "measles-handbook",
@@ -449,7 +446,10 @@ window.PATHOGEN_ATLAS_DATA = {
           "reason": "DOI link withheld pending manual verification"
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified.",
+      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+      "color": "#d6c06a",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
       "reference_href": "../../docs/reference/measles.html"
     },
     {
@@ -574,9 +574,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "visual_asset_id": "atlas-mpox-hero",
       "why_it_matters": "It forces the site to distinguish clades, transport mode, and transmission network rather than collapsing everything into one map pin.",
       "writing_state": "not_yet_written",
-      "color": "#dd6974",
-      "status_label": "Mixed / debated",
-      "writing_state_label": "No dedicated post yet",
       "withheld_citations": [
         {
           "id": "mpox-handbook",
@@ -599,7 +596,10 @@ window.PATHOGEN_ATLAS_DATA = {
           "reason": "DOI link withheld pending manual verification"
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified.",
+      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+      "color": "#dd6974",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
       "reference_href": "../../docs/reference/mpox.html"
     },
     {
@@ -741,9 +741,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "visual_asset_id": "atlas-h5n1-hero",
       "why_it_matters": "It creates a genuinely different map grammar from the classic human-to-human pathogens and foregrounds One Health risk.",
       "writing_state": "not_yet_written",
-      "color": "#9b7bd8",
-      "status_label": "Mixed / debated",
-      "writing_state_label": "No dedicated post yet",
       "withheld_citations": [
         {
           "id": "h5n1-handbook",
@@ -766,7 +763,10 @@ window.PATHOGEN_ATLAS_DATA = {
           "reason": "DOI link withheld pending manual verification"
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified.",
+      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+      "color": "#9b7bd8",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
       "reference_href": "../../docs/reference/avian-influenza-a-h5n1.html"
     },
     {
@@ -811,7 +811,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [
         {
           "display_title": "Hantavirus and cruise-ship outbreak",
-          "latest_update_summary": "The lead item has changed to From 'staged' to Israel: Hantavirus misinformation runs rampant online from Euronews.com.",
+          "latest_update_summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
           "story_id": "story_f6d225b01f3f7094",
           "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
           "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -912,7 +912,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "The lead item has changed to From 'staged' to Israel: Hantavirus misinformation runs rampant online from Euronews.com.",
+              "latest_update_summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -985,9 +985,6 @@ window.PATHOGEN_ATLAS_DATA = {
           "visual_asset_id": "atlas-hantavirus-hero",
           "why_it_matters": "It restores the older and broader hantavirus story that gets erased when modern news cycles jump straight to Andes virus.",
           "writing_state": "direct",
-          "color": "#7aa96b",
-          "status_label": "Consensus",
-          "writing_state_label": "Written here directly",
           "withheld_citations": [
             {
               "id": "hantaan-korean-war",
@@ -1000,7 +997,10 @@ window.PATHOGEN_ATLAS_DATA = {
               "reason": "DOI link withheld pending manual verification"
             }
           ],
-          "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified.",
+          "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+          "color": "#7aa96b",
+          "status_label": "Consensus",
+          "writing_state_label": "Written here directly",
           "reference_href": "../../docs/reference/hantavirus-syndrome.html"
         },
         {
@@ -1045,7 +1045,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "The lead item has changed to From 'staged' to Israel: Hantavirus misinformation runs rampant online from Euronews.com.",
+              "latest_update_summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1118,9 +1118,6 @@ window.PATHOGEN_ATLAS_DATA = {
           "visual_asset_id": "atlas-hantavirus-hero",
           "why_it_matters": "It explains why U.S. readers often think hantavirus starts in the Four Corners when that is really the start of one major New World recognition event.",
           "writing_state": "direct",
-          "color": "#7aa96b",
-          "status_label": "Consensus",
-          "writing_state_label": "Written here directly",
           "withheld_citations": [
             {
               "id": "sin-nombre-four-corners",
@@ -1133,7 +1130,10 @@ window.PATHOGEN_ATLAS_DATA = {
               "reason": "DOI link withheld pending manual verification"
             }
           ],
-          "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified.",
+          "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+          "color": "#7aa96b",
+          "status_label": "Consensus",
+          "writing_state_label": "Written here directly",
           "reference_href": "../../docs/reference/hantavirus-syndrome.html"
         },
         {
@@ -1178,7 +1178,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "The lead item has changed to From 'staged' to Israel: Hantavirus misinformation runs rampant online from Euronews.com.",
+              "latest_update_summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1251,9 +1251,6 @@ window.PATHOGEN_ATLAS_DATA = {
           "visual_asset_id": "atlas-hantavirus-hero",
           "why_it_matters": "It is the variant that turns a rodent-exposure story into a transmission-story question.",
           "writing_state": "direct",
-          "color": "#7aa96b",
-          "status_label": "Mixed / debated",
-          "writing_state_label": "Written here directly",
           "withheld_citations": [
             {
               "id": "hanta-andes",
@@ -1266,7 +1263,10 @@ window.PATHOGEN_ATLAS_DATA = {
               "reason": "DOI link withheld pending manual verification"
             }
           ],
-          "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified.",
+          "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+          "color": "#7aa96b",
+          "status_label": "Mixed / debated",
+          "writing_state_label": "Written here directly",
           "reference_href": "../../docs/reference/hantavirus-syndrome.html"
         }
       ],
@@ -1285,9 +1285,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "visual_asset_id": "atlas-hantavirus-hero",
       "why_it_matters": "It forces the atlas to behave like an encyclopedia rather than a single-route animation and keeps us honest about host ecology, geography, and syndrome differences.",
       "writing_state": "direct",
-      "color": "#7aa96b",
-      "status_label": "Mixed / debated",
-      "writing_state_label": "Written here directly",
       "withheld_citations": [
         {
           "id": "hanta-family-review",
@@ -1315,7 +1312,10 @@ window.PATHOGEN_ATLAS_DATA = {
           "reason": "DOI link withheld pending manual verification"
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified.",
+      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+      "color": "#7aa96b",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "Written here directly",
       "reference_href": "../../docs/reference/hantavirus-syndrome.html"
     },
     {
@@ -1449,9 +1449,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "visual_asset_id": "atlas-dengue-hero",
       "why_it_matters": "It turns the atlas toward contemporary global change instead of leaving it stranded in historical imperial routes.",
       "writing_state": "not_yet_written",
-      "color": "#c9a84c",
-      "status_label": "Consensus",
-      "writing_state_label": "No dedicated post yet",
       "withheld_citations": [
         {
           "id": "dengue-handbook",
@@ -1469,7 +1466,10 @@ window.PATHOGEN_ATLAS_DATA = {
           "reason": "DOI link withheld pending manual verification"
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified.",
+      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+      "color": "#c9a84c",
+      "status_label": "Consensus",
+      "writing_state_label": "No dedicated post yet",
       "reference_href": "../../docs/reference/dengue.html"
     },
     {
@@ -1603,9 +1603,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "visual_asset_id": "atlas-malaria-hero",
       "why_it_matters": "It keeps the atlas from becoming virus-only and forces a map grammar built around mosquitoes, species differences, and ecological receptivity.",
       "writing_state": "adjacent",
-      "color": "#5abf7c",
-      "status_label": "Mixed / debated",
-      "writing_state_label": "Adjacent writing",
       "withheld_citations": [
         {
           "id": "malaria-handbook",
@@ -1623,7 +1620,10 @@ window.PATHOGEN_ATLAS_DATA = {
           "reason": "DOI link withheld pending manual verification"
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified.",
+      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+      "color": "#5abf7c",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "Adjacent writing",
       "reference_href": "../../docs/reference/malaria.html"
     },
     {
@@ -1759,9 +1759,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "visual_asset_id": "atlas-tuberculosis-hero",
       "why_it_matters": "It turns the atlas toward chronic structural transmission instead of one spectacular frontier jump.",
       "writing_state": "direct",
-      "color": "#d98e5f",
-      "status_label": "Mixed / debated",
-      "writing_state_label": "Written here directly",
       "withheld_citations": [
         {
           "id": "tb-handbook",
@@ -1779,7 +1776,10 @@ window.PATHOGEN_ATLAS_DATA = {
           "reason": "DOI link withheld pending manual verification"
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
+      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+      "color": "#d98e5f",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "Written here directly"
     },
     {
       "atlas_scope": "Central Asian reservoir framing with Justinianic, Black Death, and third-pandemic routes",
@@ -1908,9 +1908,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "visual_asset_id": "atlas-plague-hero",
       "why_it_matters": "It lets the atlas bridge deep historical fear, genomic reconstruction, and the very practical map logic of rodents, fleas, and ports.",
       "writing_state": "adjacent",
-      "color": "#b9754f",
-      "status_label": "Mixed / debated",
-      "writing_state_label": "Adjacent writing",
       "withheld_citations": [
         {
           "id": "plague-handbook",
@@ -1928,7 +1925,10 @@ window.PATHOGEN_ATLAS_DATA = {
           "reason": "DOI link withheld pending manual verification"
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
+      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+      "color": "#b9754f",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "Adjacent writing"
     },
     {
       "slug": "zika-virus-disease",
@@ -4245,6 +4245,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "reference_href": "../../docs/reference/pertussis.html"
     }
   ],
-  "generated_at": "2026-05-13T19:50:09",
+  "generated_at": "2026-05-13T20:51:00",
   "atlas_count": 30
 };
