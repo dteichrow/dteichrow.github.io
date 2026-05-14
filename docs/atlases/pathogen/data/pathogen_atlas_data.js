@@ -13835,6 +13835,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-adenovirus-infection-hero",
       "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "adenovirus-global-close-contact-institution-water-surface",
+          "label": "Global close-contact, institution, water, and healthcare outbreak surface",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary respiratory, contact, conjunctival, and healthcare outbreak geography",
+          "confidence": "strong",
+          "narrative": "Adenovirus is global; the useful atlas layer is close-contact institutions, childcare, military training, healthcare settings, pools, and surface/water-associated conjunctivitis outbreaks.",
+          "citation_ids": [
+            "adeno-cdc",
+            "adeno-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#8fa4b8",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -13921,6 +13937,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-human-parainfluenza-virus-infection-hero",
       "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "hpiv-global-pediatric-seasonal-respiratory-surface",
+          "label": "Global pediatric seasonal respiratory and close-contact surface",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary global pediatric respiratory circulation",
+          "confidence": "strong",
+          "narrative": "Human parainfluenza viruses are globally distributed; the geography is seasonality, pediatric croup and lower-respiratory burden, childcare, households, and healthcare demand.",
+          "citation_ids": [
+            "hpiv-cdc",
+            "hpiv-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#9eb5c2",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -14007,6 +14039,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-mycoplasma-pneumoniae-infection-hero",
       "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "mycoplasma-global-congregate-respiratory-outbreak-surface",
+          "label": "Global congregate-setting atypical-pneumonia outbreak surface",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary global respiratory outbreak and clinical-recognition geography",
+          "confidence": "strong",
+          "narrative": "Mycoplasma pneumoniae is global, with visible outbreaks shaped by schools, dormitories, households, military settings, prolonged close contact, testing, and atypical-pneumonia recognition.",
+          "citation_ids": [
+            "mycoplasma-cdc",
+            "mycoplasma-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#b18f6f",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -14093,6 +14141,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-group-a-streptococcal-disease-hero",
       "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "gas-global-respiratory-skin-crowding-wound-surface",
+          "label": "Global respiratory, skin-contact, crowding, wound, and invasive-disease surface",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary global respiratory and skin-contact transmission geography",
+          "confidence": "strong",
+          "narrative": "Group A Streptococcus is global; its atlas surface combines strep throat, skin infections, crowding, wounds, care settings, invasive disease recognition, and post-infection complications.",
+          "citation_ids": [
+            "gas-cdc",
+            "gas-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#b0786a",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -14179,6 +14243,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-hand-foot-and-mouth-disease-hero",
       "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "hfmd-global-childcare-enterovirus-contact-fecal-surface",
+          "label": "Global childcare, enterovirus, contact, respiratory, surface, and fecal-oral surface",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary childhood enterovirus outbreak geography",
+          "confidence": "strong",
+          "narrative": "Hand, foot, and mouth disease is global; the relevant layer is childcare, schools, households, surfaces, respiratory secretions, fecal material, and enterovirus-specific outbreak detection.",
+          "citation_ids": [
+            "hfmd-cdc",
+            "hfmd-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#b69a54",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -14265,6 +14345,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-hepatitis-d-hero",
       "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "hdv-global-hbv-dependent-blood-sex-vaccine-gap-surface",
+          "label": "Global HBV-dependent bloodborne, sexual, chronic-liver-disease, and vaccine-gap surface",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary hepatitis B-dependent HDV prevention and chronic-disease geography",
+          "confidence": "strong",
+          "narrative": "Hepatitis D maps onto hepatitis B infection and prevention: bloodborne and sexual exposure, injection networks, chronic liver disease, screening, and hepatitis B vaccination coverage shape the surface.",
+          "citation_ids": [
+            "hdv-cdc",
+            "hdv-who"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#a78352",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -14351,6 +14447,56 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-hepatitis-e-hero",
       "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "hev-waterborne-outbreak-and-zoonotic-foodborne-realm",
+          "label": "Waterborne outbreak plus zoonotic foodborne exposure realm",
+          "layer_type": "exposure_zone",
+          "geometry_type": "polygon",
+          "coordinates": [
+            [
+              -20,
+              -30
+            ],
+            [
+              5,
+              25
+            ],
+            [
+              45,
+              38
+            ],
+            [
+              95,
+              35
+            ],
+            [
+              125,
+              20
+            ],
+            [
+              115,
+              -10
+            ],
+            [
+              70,
+              -18
+            ],
+            [
+              25,
+              -25
+            ]
+          ],
+          "date_or_era": "Contemporary contaminated-water outbreaks and zoonotic foodborne exposure",
+          "confidence": "moderate",
+          "narrative": "Hepatitis E needs a mixed layer: large waterborne outbreaks in sanitation-stressed settings, zoonotic foodborne exposure in other regions, and pregnancy risk as a major severity geography.",
+          "citation_ids": [
+            "hev-cdc",
+            "hev-who"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#c39b59",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -14437,6 +14583,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-cysticercosis-hero",
       "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "cysticercosis-global-pork-sanitation-neurocysticercosis-surface",
+          "label": "Global pork, sanitation, human tapeworm, and neurocysticercosis exposure surface",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary fecal-oral egg ingestion and pig-human cycle geography",
+          "confidence": "moderate",
+          "narrative": "Cysticercosis geography follows Taenia solium transmission: sanitation, human tapeworm carriers, pig husbandry, pork systems, migration, and neurocysticercosis diagnosis.",
+          "citation_ids": [
+            "cysticercosis-cdc",
+            "taeniasis-who"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#9f8f61",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -14523,6 +14685,29 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-clonorchiasis-hero",
       "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "clonorchiasis-east-asian-freshwater-fish-liver-fluke-realm",
+          "label": "East Asian freshwater-fish liver-fluke realm",
+          "layer_type": "endemic_zone",
+          "geometry_type": "ellipse",
+          "center": [
+            118,
+            33
+          ],
+          "radius_lng": 18,
+          "radius_lat": 11,
+          "rotation_degrees": 18,
+          "date_or_era": "Contemporary foodborne trematode and freshwater aquaculture geography",
+          "confidence": "moderate",
+          "narrative": "Clonorchiasis is an East Asian freshwater-fish and raw/undercooked-food practice layer, with aquaculture, river systems, and chronic hepatobiliary disease shaping the atlas surface.",
+          "citation_ids": [
+            "clonorchis-cdc",
+            "clonorchis-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#7f9f66",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -14609,6 +14794,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-fascioliasis-hero",
       "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "fascioliasis-global-livestock-aquatic-plant-irrigation-surface",
+          "label": "Global livestock, aquatic-plant, water, and irrigation liver-fluke surface",
+          "layer_type": "exposure_zone",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary foodborne and water-associated liver-fluke geography",
+          "confidence": "moderate",
+          "narrative": "Fascioliasis is a livestock, snail, irrigation, aquatic-plant, and contaminated-water surface rather than a single route; local ecology and food habits determine risk.",
+          "citation_ids": [
+            "fasciola-cdc",
+            "fasciola-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#8f9b58",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -14695,6 +14896,72 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-paragonimiasis-hero",
       "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "paragonimiasis-asia-africa-americas-freshwater-crustacean-realm",
+          "label": "Freshwater crab/crayfish lung-fluke foodborne realm",
+          "layer_type": "endemic_zone",
+          "geometry_type": "polygon",
+          "coordinates": [
+            [
+              -100,
+              -15
+            ],
+            [
+              -75,
+              25
+            ],
+            [
+              -20,
+              20
+            ],
+            [
+              15,
+              12
+            ],
+            [
+              35,
+              0
+            ],
+            [
+              70,
+              5
+            ],
+            [
+              115,
+              35
+            ],
+            [
+              145,
+              25
+            ],
+            [
+              130,
+              5
+            ],
+            [
+              85,
+              -5
+            ],
+            [
+              30,
+              -10
+            ],
+            [
+              -60,
+              -20
+            ]
+          ],
+          "date_or_era": "Contemporary foodborne lung-fluke geography",
+          "confidence": "moderate",
+          "narrative": "Paragonimiasis is a freshwater crustacean and raw/undercooked-food practice layer across focal regions of Asia, Africa, and the Americas, often confused clinically with pulmonary disease such as tuberculosis.",
+          "citation_ids": [
+            "paragonimus-cdc",
+            "paragonimus-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#9f7a54",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -14781,6 +15048,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-anisakiasis-hero",
       "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "anisakiasis-global-marine-fish-raw-seafood-surface",
+          "label": "Global marine fish, squid, raw-seafood, and supply-chain surface",
+          "layer_type": "exposure_zone",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary seafood supply and raw-food exposure geography",
+          "confidence": "moderate",
+          "narrative": "Anisakiasis is a marine fish, squid, raw/undercooked seafood, freezing, inspection, cuisine, and supply-chain map rather than a human transmission route.",
+          "citation_ids": [
+            "anisakis-cdc",
+            "anisakis-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#5f9ba8",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -14867,6 +15150,64 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-strongyloidiasis-hero",
       "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "strongyloidiasis-tropical-soil-autoinfection-immunosuppression-realm",
+          "label": "Tropical/subtropical soil exposure, autoinfection, migration, and immunosuppression realm",
+          "layer_type": "endemic_zone",
+          "geometry_type": "polygon",
+          "coordinates": [
+            [
+              -105,
+              -32
+            ],
+            [
+              -75,
+              25
+            ],
+            [
+              -10,
+              25
+            ],
+            [
+              35,
+              30
+            ],
+            [
+              95,
+              28
+            ],
+            [
+              145,
+              20
+            ],
+            [
+              160,
+              -25
+            ],
+            [
+              110,
+              -30
+            ],
+            [
+              45,
+              -25
+            ],
+            [
+              -20,
+              -30
+            ]
+          ],
+          "date_or_era": "Contemporary soil-transmitted helminth and latent infection geography",
+          "confidence": "moderate",
+          "narrative": "Strongyloidiasis is a soil-exposure and autoinfection geography: tropical/subtropical settings, sanitation, migration, decades-long persistence, corticosteroids, and immunosuppression define the map.",
+          "citation_ids": [
+            "strongy-cdc",
+            "strongy-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#8e7d57",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -14953,6 +15294,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-toxocariasis-hero",
       "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "toxocariasis-global-pet-soil-child-exposure-surface",
+          "label": "Global pet-associated soil contamination and child-exposure surface",
+          "layer_type": "exposure_zone",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary zoonotic soil and child-exposure geography",
+          "confidence": "strong",
+          "narrative": "Toxocariasis is a global dog/cat, soil, sandbox, yard, surface, and child-exposure map; the atlas surface is environmental contamination and behavior, not travel.",
+          "citation_ids": [
+            "toxocara-cdc",
+            "toxocara-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#9a865b",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -15039,6 +15396,29 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-baylisascariasis-hero",
       "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "baylisascariasis-north-american-wildlife-latrine-child-exposure-realm",
+          "label": "North American wildlife-latrine, contaminated-soil, and child-exposure realm",
+          "layer_type": "exposure_zone",
+          "geometry_type": "ellipse",
+          "center": [
+            -92,
+            42
+          ],
+          "radius_lng": 34,
+          "radius_lat": 15,
+          "rotation_degrees": 0,
+          "date_or_era": "Contemporary wildlife-associated environmental contamination geography",
+          "confidence": "moderate",
+          "narrative": "Baylisascariasis is a rare but severe environmental exposure map: wildlife latrines, contaminated soil, child exposure, and neurologic disease recognition define the practical geography.",
+          "citation_ids": [
+            "baylisascaris-cdc",
+            "baylisascaris-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#8c705f",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -15125,6 +15505,52 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-loiasis-hero",
       "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "loiasis-west-central-african-rainforest-deer-fly-realm",
+          "label": "West and Central African rainforest deer-fly transmission realm",
+          "layer_type": "endemic_zone",
+          "geometry_type": "polygon",
+          "coordinates": [
+            [
+              -5,
+              -6
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              12,
+              9
+            ],
+            [
+              28,
+              5
+            ],
+            [
+              31,
+              -5
+            ],
+            [
+              20,
+              -9
+            ],
+            [
+              5,
+              -8
+            ]
+          ],
+          "date_or_era": "Contemporary rainforest vector ecology and treatment-program risk geography",
+          "confidence": "moderate",
+          "narrative": "Loiasis is a West and Central African rainforest deer-fly layer, important not only for infection but for treatment-program risk where other filarial control programs operate.",
+          "citation_ids": [
+            "loiasis-cdc",
+            "loiasis-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#b79b52",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -15211,6 +15637,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-group-b-streptococcal-disease-hero",
       "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "gbs-global-maternal-colonization-neonatal-prevention-surface",
+          "label": "Global maternal colonization, neonatal exposure, screening, and intrapartum-prevention surface",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary maternal-neonatal prevention geography",
+          "confidence": "strong",
+          "narrative": "Group B Streptococcus disease is global; the meaningful map is maternal colonization, neonatal exposure, prenatal screening, intrapartum antibiotics, and neonatal care capacity.",
+          "citation_ids": [
+            "gbs-cdc",
+            "gbs-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#9f7a84",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -15288,6 +15730,21 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-clostridium-perfringens-food-poisoning-hero",
       "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "cperfringens-global-large-batch-temperature-abuse-surface",
+          "label": "Global large-batch cooked-food, temperature-abuse, and institutional-meal surface",
+          "layer_type": "exposure_zone",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary food-service and institutional-meal outbreak geography",
+          "confidence": "strong",
+          "narrative": "Clostridium perfringens food poisoning is a global food-handling map: large batches, cooked meat or poultry, gravy, cooling, holding temperatures, and institutional meals drive outbreaks.",
+          "citation_ids": [
+            "cperfringens-cdc"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#b8874f",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -15365,6 +15822,21 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-staphylococcal-food-poisoning-hero",
       "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "staph-food-global-handling-refrigeration-toxin-surface",
+          "label": "Global food handling, refrigeration failure, and preformed-toxin surface",
+          "layer_type": "exposure_zone",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary food-handling and rapid-onset outbreak geography",
+          "confidence": "strong",
+          "narrative": "Staphylococcal food poisoning is a global handling and refrigeration map: human contamination, foods held too warm, preformed toxin, and rapid outbreak recognition define the geography.",
+          "citation_ids": [
+            "staph-food-cdc"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#c08a5d",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -15451,6 +15923,29 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-naegleria-fowleri-infection-hero",
       "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "naegleria-warm-freshwater-nasal-exposure-realm",
+          "label": "Warm freshwater, nasal exposure, and climate-sensitive risk realm",
+          "layer_type": "exposure_zone",
+          "geometry_type": "ellipse",
+          "center": [
+            -92,
+            32
+          ],
+          "radius_lng": 28,
+          "radius_lat": 12,
+          "rotation_degrees": -5,
+          "date_or_era": "Contemporary warm freshwater and rare severe encephalitis geography",
+          "confidence": "moderate",
+          "narrative": "Naegleria fowleri infection should be mapped as warm freshwater and nasal-exposure ecology, with lakes, rivers, poorly maintained water systems, heat, and climate sensitivity shaping risk.",
+          "citation_ids": [
+            "naegleria-cdc",
+            "naegleria-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#4f9faa",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -21619,6 +22114,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "variants": []
     }
   ],
-  "generated_at": "2026-05-14T12:22:17",
+  "generated_at": "2026-05-14T13:23:27",
   "atlas_count": 210
 };
