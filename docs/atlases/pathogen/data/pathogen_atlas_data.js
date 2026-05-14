@@ -164,6 +164,9 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "writing_state": "direct",
       "color": "#d86a4f",
+      "category": "mosquito-borne",
+      "category_label": "Mosquito-borne / arboviral",
+      "transmission_group": "Mosquito-borne / arboviral",
       "status_label": "Consensus",
       "writing_state_label": "Written here directly",
       "reference_href": "../../reference/yellow-fever.html"
@@ -316,6 +319,9 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "writing_state": "adjacent",
       "color": "#5a9bd4",
+      "category": "fecal-oral-waterborne",
+      "category_label": "Fecal-oral / waterborne",
+      "transmission_group": "Fecal-oral / waterborne",
       "status_label": "Consensus",
       "writing_state_label": "Adjacent writing",
       "reference_href": "../../reference/cholera.html"
@@ -448,6 +454,9 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "writing_state": "not_yet_written",
       "color": "#d6c06a",
+      "category": "airborne-respiratory",
+      "category_label": "Airborne / respiratory",
+      "transmission_group": "Airborne / respiratory",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/measles.html"
@@ -598,6 +607,9 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "writing_state": "not_yet_written",
       "color": "#dd6974",
+      "category": "contact-sexual-bloodborne",
+      "category_label": "Contact, sexual, or bloodborne",
+      "transmission_group": "Contact, sexual, or bloodborne",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/mpox.html"
@@ -765,6 +777,9 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "writing_state": "not_yet_written",
       "color": "#9b7bd8",
+      "category": "zoonotic-animal-interface",
+      "category_label": "Zoonotic / animal interface",
+      "transmission_group": "Zoonotic / animal interface",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/avian-influenza-a-h5n1.html"
@@ -812,7 +827,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [
         {
           "display_title": "Hantavirus and cruise-ship outbreak",
-          "latest_update_summary": "The lead item has changed to From 'staged' to Israel: Hantavirus misinformation runs rampant online from Euronews.com.",
+          "latest_update_summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
           "story_id": "story_f6d225b01f3f7094",
           "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
           "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -914,7 +929,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "The lead item has changed to From 'staged' to Israel: Hantavirus misinformation runs rampant online from Euronews.com.",
+              "latest_update_summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1000,6 +1015,9 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "writing_state": "direct",
           "color": "#7aa96b",
+          "category": "other-mixed",
+          "category_label": "Other / mixed transmission",
+          "transmission_group": "Other / mixed transmission",
           "status_label": "Consensus",
           "writing_state_label": "Written here directly",
           "reference_href": "../../reference/hantavirus-syndrome.html"
@@ -1047,7 +1065,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "The lead item has changed to From 'staged' to Israel: Hantavirus misinformation runs rampant online from Euronews.com.",
+              "latest_update_summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1133,6 +1151,9 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "writing_state": "direct",
           "color": "#7aa96b",
+          "category": "other-mixed",
+          "category_label": "Other / mixed transmission",
+          "transmission_group": "Other / mixed transmission",
           "status_label": "Consensus",
           "writing_state_label": "Written here directly",
           "reference_href": "../../reference/hantavirus-syndrome.html"
@@ -1180,7 +1201,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "The lead item has changed to From 'staged' to Israel: Hantavirus misinformation runs rampant online from Euronews.com.",
+              "latest_update_summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1266,6 +1287,9 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "writing_state": "direct",
           "color": "#7aa96b",
+          "category": "other-mixed",
+          "category_label": "Other / mixed transmission",
+          "transmission_group": "Other / mixed transmission",
           "status_label": "Mixed / debated",
           "writing_state_label": "Written here directly",
           "reference_href": "../../reference/hantavirus-syndrome.html"
@@ -1314,6 +1338,9 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "writing_state": "direct",
       "color": "#7aa96b",
+      "category": "rodent-environmental",
+      "category_label": "Rodent-borne / environmental",
+      "transmission_group": "Rodent-borne / environmental",
       "status_label": "Mixed / debated",
       "writing_state_label": "Written here directly",
       "reference_href": "../../reference/hantavirus-syndrome.html"
@@ -1468,6 +1495,9 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "writing_state": "not_yet_written",
       "color": "#c9a84c",
+      "category": "mosquito-borne",
+      "category_label": "Mosquito-borne / arboviral",
+      "transmission_group": "Mosquito-borne / arboviral",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/dengue.html"
@@ -1622,6 +1652,9 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "writing_state": "adjacent",
       "color": "#5abf7c",
+      "category": "mosquito-borne",
+      "category_label": "Mosquito-borne / parasitic",
+      "transmission_group": "Mosquito-borne / parasitic",
       "status_label": "Mixed / debated",
       "writing_state_label": "Adjacent writing",
       "reference_href": "../../reference/malaria.html"
@@ -1778,6 +1811,9 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "writing_state": "direct",
       "color": "#d98e5f",
+      "category": "airborne-respiratory",
+      "category_label": "Airborne / respiratory",
+      "transmission_group": "Airborne / respiratory",
       "status_label": "Mixed / debated",
       "writing_state_label": "Written here directly"
     },
@@ -1927,6 +1963,9 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "writing_state": "adjacent",
       "color": "#b9754f",
+      "category": "flea-louse-mite-borne",
+      "category_label": "Flea, louse, and mite-borne",
+      "transmission_group": "Flea, louse, and mite-borne",
       "status_label": "Mixed / debated",
       "writing_state_label": "Adjacent writing"
     },
@@ -2040,7 +2079,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "mosquito-borne",
       "category_label": "Mosquito-borne / arboviral",
       "transmission_group": "Mosquito-borne / arboviral",
-      "color": "#c9a84c",
+      "color": "#5fb6a6",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/zika-virus-disease.html"
@@ -2155,7 +2194,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "mosquito-borne",
       "category_label": "Mosquito-borne / arboviral",
       "transmission_group": "Mosquito-borne / arboviral",
-      "color": "#c9a84c",
+      "color": "#d9a441",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/chikungunya.html"
@@ -2270,7 +2309,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "mosquito-borne",
       "category_label": "Mosquito-borne / arboviral",
       "transmission_group": "Mosquito-borne / arboviral",
-      "color": "#c9a84c",
+      "color": "#8fbf5f",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet"
     },
@@ -2384,7 +2423,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "mosquito-borne",
       "category_label": "Mosquito-borne / arboviral",
       "transmission_group": "Mosquito-borne / arboviral",
-      "color": "#c9a84c",
+      "color": "#6fa8dc",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet"
     },
@@ -2498,7 +2537,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
       "transmission_group": "Fecal-oral / waterborne",
-      "color": "#c9a84c",
+      "color": "#7c9fd1",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/poliomyelitis-cvdpv2.html"
@@ -2613,7 +2652,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
       "transmission_group": "Fecal-oral / waterborne",
-      "color": "#c9a84c",
+      "color": "#c9b56b",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/hepatitis-a.html"
@@ -2728,7 +2767,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
       "transmission_group": "Fecal-oral / waterborne",
-      "color": "#c9a84c",
+      "color": "#bc8f5f",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet"
     },
@@ -2842,7 +2881,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
       "transmission_group": "Fecal-oral / waterborne",
-      "color": "#c9a84c",
+      "color": "#9aa36b",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/norovirus.html"
@@ -2978,7 +3017,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
       "transmission_group": "Airborne / respiratory",
-      "color": "#c9a84c",
+      "color": "#b56b5b",
       "status_label": "Mixed / debated",
       "writing_state_label": "Adjacent writing"
     },
@@ -3092,7 +3131,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
       "transmission_group": "Airborne / respiratory",
-      "color": "#c9a84c",
+      "color": "#b7c7df",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet"
     },
@@ -3206,7 +3245,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
       "transmission_group": "Airborne / respiratory",
-      "color": "#c9a84c",
+      "color": "#7b8fa8",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet"
     },
@@ -3320,7 +3359,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
-      "color": "#c9a84c",
+      "color": "#b84646",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/ebola-virus-disease.html"
@@ -3435,7 +3474,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
-      "color": "#c9a84c",
+      "color": "#9f3f43",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/marburg-virus-disease.html"
@@ -3550,7 +3589,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
-      "color": "#c9a84c",
+      "color": "#7a6f4f",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/nipah-virus-disease.html"
@@ -3665,7 +3704,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "rodent-environmental",
       "category_label": "Rodent-borne / environmental",
       "transmission_group": "Rodent-borne / environmental",
-      "color": "#c9a84c",
+      "color": "#b17d5a",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet"
     },
@@ -3779,7 +3818,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
-      "color": "#c9a84c",
+      "color": "#9c6f3d",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/rabies.html"
@@ -3894,7 +3933,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
-      "color": "#c9a84c",
+      "color": "#8c7a55",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/anthrax.html"
@@ -4009,7 +4048,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
-      "color": "#c9a84c",
+      "color": "#b88a55",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/middle-east-respiratory-syndrome-mers.html"
@@ -4124,7 +4163,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
       "transmission_group": "Airborne / respiratory",
-      "color": "#c9a84c",
+      "color": "#8f9c5a",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/diphtheria.html"
@@ -4239,12 +4278,1739 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
       "transmission_group": "Airborne / respiratory",
-      "color": "#c9a84c",
+      "color": "#c7a05a",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/pertussis.html"
+    },
+    {
+      "slug": "lyme-disease",
+      "name": "Lyme disease",
+      "subtitle": "Blacklegged ticks, suburban ecotones, deer-mouse cycles, and contested chronicity",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "A tick-borne Borrelia infection whose modern geography is shaped by woodland fragmentation, expanding tick habitat, reservoir hosts, and outdoor exposure.",
+      "why_it_matters": "Lyme disease is a clean example of how land use, wildlife ecology, clinical uncertainty, and surveillance artifacts become the same public-health problem.",
+      "atlas_scope": "Ixodes tick ecology, northeastern and upper-midwestern U.S. emergence, and expanding risk maps",
+      "category": "tick-borne",
+      "category_label": "Tick-borne",
+      "transmission_group": "Tick-borne",
+      "origin_claim": {
+        "label": "Connecticut recognition frame",
+        "coordinates": [
+          -72.33,
+          41.31
+        ],
+        "date_or_era": "Recognized around Lyme, Connecticut, in the 1970s; enzootic Borrelia cycles predate clinical recognition",
+        "confidence": "moderate",
+        "narrative": "The atlas origin should be read as a recognition frame around clustered arthritis cases, not as the biological origin of Borrelia burgdorferi.",
+        "citation_ids": [
+          "lyme-cdc-about",
+          "lyme-ncbi"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "lyme-disease-northeast-midwest",
+          "from_label": "Southern New England",
+          "to_label": "Upper Midwest endemic belt",
+          "from_coordinates": [
+            -72.33,
+            41.31
+          ],
+          "to_coordinates": [
+            -89.4,
+            43.1
+          ],
+          "date_or_era": "Late twentieth century to present",
+          "route_type": "tick_ecology",
+          "confidence": "strong",
+          "narrative": "Reported risk concentrates in the Northeast, mid-Atlantic, and upper Midwest as Ixodes habitat, reservoir hosts, and human exposure overlap.",
+          "citation_ids": [
+            "lyme-cdc-about",
+            "lyme-ncbi"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern coverage often turns on tick range, seasonality, outdoor exposure, and how surveillance definitions shape maps.",
+        "It is a useful atlas entry because the route is ecological rather than a simple human-to-human chain."
+      ],
+      "framing_traps": [
+        "Do not mistake the Connecticut recognition cluster for the deep evolutionary origin of the bacterium.",
+        "Do not treat county case maps as pure ecology; testing, care access, and reporting all matter."
+      ],
+      "linked_reference_slug": "lyme-disease",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "lyme-cdc-about",
+          "short_citation": "CDC. About Lyme Disease. 2024.",
+          "url": "https://www.cdc.gov/lyme/about/index.html",
+          "claim_supported": "Supports tick transmission, symptoms, and U.S. public-health framing.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        },
+        {
+          "id": "lyme-ncbi",
+          "short_citation": "StatPearls / NCBI Bookshelf. Lyme Disease.",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK431066/",
+          "claim_supported": "Supports clinical and epidemiologic overview for Lyme disease.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-lyme-disease-hero",
+      "source_reviewed_at": "2026-05-14T05:38:40+00:00",
+      "color": "#6f9f73",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "rocky-mountain-spotted-fever",
+      "name": "Rocky Mountain spotted fever",
+      "subtitle": "Rickettsial ticks, western naming, southeastern burden, and severe febrile disease",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "A severe tick-borne rickettsiosis whose name points west while much contemporary U.S. burden is reported elsewhere.",
+      "why_it_matters": "It is an antidote to literal map reading: disease names can preserve older recognition geographies long after the risk map has moved.",
+      "atlas_scope": "Tick vectors, historical Rocky Mountain recognition, and wider U.S. spotted-fever surveillance",
+      "category": "tick-borne",
+      "category_label": "Tick-borne",
+      "transmission_group": "Tick-borne",
+      "origin_claim": {
+        "label": "Rocky Mountain recognition frame",
+        "coordinates": [
+          -114.0,
+          46.9
+        ],
+        "date_or_era": "Early twentieth-century recognition and investigation in the Rocky Mountain region",
+        "confidence": "mixed",
+        "narrative": "The name reflects a historical investigation frame; modern spotted fever rickettsiosis risk is not confined to the Rocky Mountains.",
+        "citation_ids": [
+          "rmsf-cdc-about",
+          "rmsf-cdc-stats"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "rocky-mountain-spotted-fever-west-southeast",
+          "from_label": "Rocky Mountain recognition zone",
+          "to_label": "Southeastern U.S. reporting belt",
+          "from_coordinates": [
+            -114.0,
+            46.9
+          ],
+          "to_coordinates": [
+            -84.4,
+            33.7
+          ],
+          "date_or_era": "Twentieth century to present",
+          "route_type": "tick_vector_reporting",
+          "confidence": "moderate",
+          "narrative": "Public-health maps and reporting now place much recognized spotted-fever burden outside the region that gave RMSF its name.",
+          "citation_ids": [
+            "rmsf-cdc-about",
+            "rmsf-cdc-stats"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern surveillance groups several spotted fever rickettsioses, which complicates clean pathogen maps.",
+        "Delayed treatment is a major practical issue because early symptoms are nonspecific and disease can progress rapidly."
+      ],
+      "framing_traps": [
+        "Do not read the name as a present-day distribution map.",
+        "Do not collapse all spotted fever group rickettsioses into identical ecology."
+      ],
+      "linked_reference_slug": "rocky-mountain-spotted-fever",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "rmsf-cdc-about",
+          "short_citation": "CDC. About Rocky Mountain Spotted Fever. 2024.",
+          "url": "https://www.cdc.gov/rocky-mountain-spotted-fever/about/index.html",
+          "claim_supported": "Supports tick transmission and clinical severity.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        },
+        {
+          "id": "rmsf-cdc-stats",
+          "short_citation": "CDC. RMSF Data and Statistics. 2024.",
+          "url": "https://www.cdc.gov/rocky-mountain-spotted-fever/data-research/facts-stats/index.html",
+          "claim_supported": "Supports contemporary surveillance and geography.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        },
+        {
+          "id": "rmsf-ncbi",
+          "short_citation": "StatPearls / NCBI Bookshelf. Rocky Mountain Spotted Fever.",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK430881/",
+          "claim_supported": "Supports clinical and epidemiologic overview.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-rocky-mountain-spotted-fever-hero",
+      "source_reviewed_at": "2026-05-14T05:38:40+00:00",
+      "color": "#c07b4f",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 3,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "crimean-congo-hemorrhagic-fever",
+      "name": "Crimean-Congo hemorrhagic fever",
+      "subtitle": "Hyalomma ticks, livestock exposure, nosocomial risk, and a name with two recognition sites",
+      "status": "mixed",
+      "pathogen_type": "Virus",
+      "summary": "A tick-borne viral hemorrhagic fever maintained in tick-animal cycles and amplified by livestock contact and healthcare exposure.",
+      "why_it_matters": "CCHF belongs in an atlas because its public-health geography is vector ecology plus animal handling plus hospital infection prevention.",
+      "atlas_scope": "Hyalomma tick range, livestock interface, Black Sea and African recognition history, and healthcare-amplified risk",
+      "category": "tick-borne",
+      "category_label": "Tick-borne",
+      "transmission_group": "Tick-borne",
+      "origin_claim": {
+        "label": "Crimea and Congo naming frame",
+        "coordinates": [
+          34.1,
+          45.3
+        ],
+        "date_or_era": "Recognized in Crimea in the 1940s and later linked to Congo virus isolates",
+        "confidence": "mixed",
+        "narrative": "The origin claim is deliberately a naming and recognition frame; CCHF virus ecology is broader than either Crimea or Congo alone.",
+        "citation_ids": [
+          "cchf-who",
+          "cchf-cdc"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "crimean-congo-hemorrhagic-fever-black-sea-belt",
+          "from_label": "Crimean recognition zone",
+          "to_label": "Turkey and eastern Mediterranean risk belt",
+          "from_coordinates": [
+            34.1,
+            45.3
+          ],
+          "to_coordinates": [
+            35.2,
+            39.0
+          ],
+          "date_or_era": "Late twentieth century to present",
+          "route_type": "tick_livestock_interface",
+          "confidence": "moderate",
+          "narrative": "Transmission follows Hyalomma tick ecology and livestock contact across parts of Africa, the Balkans, the Middle East, and Asia rather than a single linear march.",
+          "citation_ids": [
+            "cchf-who",
+            "cchf-cdc"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern CCHF warnings often combine veterinary exposure, slaughtering, tick bites, and healthcare infection-control risk.",
+        "Climate and land-use changes make vector-range narratives tempting, but surveillance capacity strongly shapes what appears on the map."
+      ],
+      "framing_traps": [
+        "Do not treat a hemorrhagic-fever label as proof of Ebola-like person-to-person epidemic dynamics.",
+        "Do not infer absence from sparse surveillance in tick-livestock systems."
+      ],
+      "linked_reference_slug": "crimean-congo-hemorrhagic-fever",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "cchf-who",
+          "short_citation": "WHO. Crimean-Congo haemorrhagic fever fact sheet. 2025.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/crimean-congo-haemorrhagic-fever",
+          "claim_supported": "Supports transmission ecology, geographic distribution, and healthcare risk.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        },
+        {
+          "id": "cchf-cdc",
+          "short_citation": "CDC. About Crimean-Congo Hemorrhagic Fever. 2024.",
+          "url": "https://www.cdc.gov/crimean-congo-hemorrhagic/about/index.html",
+          "claim_supported": "Supports tick, animal, and human exposure routes.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-crimean-congo-hemorrhagic-fever-hero",
+      "source_reviewed_at": "2026-05-14T05:38:40+00:00",
+      "color": "#b04f63",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "epidemic-typhus",
+      "name": "Epidemic typhus",
+      "subtitle": "Body lice, crowding, war, prisons, famine, and febrile collapse",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "A rickettsial disease organized around body-louse transmission in settings where washing, clothing changes, and shelter break down.",
+      "why_it_matters": "The entry keeps social conditions and vector biology together instead of reducing transmission to a simple insect bite.",
+      "atlas_scope": "Vector ecology, crowding or peri-domestic exposure, and historical movement through ports, war, or rural frontiers",
+      "category": "flea-louse-mite-borne",
+      "category_label": "Flea, louse, and mite-borne",
+      "transmission_group": "Flea, louse, and mite-borne",
+      "origin_claim": {
+        "label": "European wartime crowding frame",
+        "coordinates": [
+          21.0,
+          52.2
+        ],
+        "date_or_era": "Historical and modern recognition frame, not a single biological birthplace",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for epidemic typhus is an ecological-recognition frame: where vector exposure, human movement, and clinical recognition made the disease visible.",
+        "citation_ids": [
+          "epidemic-typhus-cdc",
+          "typhus-cdc-clinical"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "epidemic-typhus-ecology-route",
+          "from_label": "European wartime crowding frame",
+          "to_label": "Central and eastern European war corridors",
+          "from_coordinates": [
+            21.0,
+            52.2
+          ],
+          "to_coordinates": [
+            30.5,
+            50.4
+          ],
+          "date_or_era": "Historical recognition to contemporary surveillance",
+          "route_type": "vector_social_ecology",
+          "confidence": "moderate",
+          "narrative": "Epidemic typhus maps best as a vector-social system: exposure rises where the vector, reservoir or crowding condition, and human vulnerability align.",
+          "citation_ids": [
+            "epidemic-typhus-cdc",
+            "typhus-cdc-clinical"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern cases often require ecological investigation rather than only patient-to-patient tracing.",
+        "The same vector category contains very different social histories: war lice, port fleas, and chigger-exposed rural landscapes."
+      ],
+      "framing_traps": [
+        "Do not let the shared typhus name erase vector differences.",
+        "Do not map old war or port patterns as if they are unchanged contemporary risk maps."
+      ],
+      "linked_reference_slug": "epidemic-typhus",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "epidemic-typhus-cdc",
+          "short_citation": "CDC. About Epidemic typhus. 2024.",
+          "url": "https://www.cdc.gov/typhus/about/epidemic.html",
+          "claim_supported": "Supports transmission route, vector, and clinical/public-health framing.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        },
+        {
+          "id": "typhus-cdc-clinical",
+          "short_citation": "CDC. Clinical Overview of Typhus Fevers. 2024.",
+          "url": "https://www.cdc.gov/typhus/hcp/clinical-overview/index.html",
+          "claim_supported": "Supports typhus fever clinical and epidemiologic distinctions.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-epidemic-typhus-hero",
+      "source_reviewed_at": "2026-05-14T05:38:40+00:00",
+      "color": "#b38a5a",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "murine-typhus",
+      "name": "Murine typhus",
+      "subtitle": "Fleas, rats, opossums, ports, and suburban spillover",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "A rickettsial disease organized around flea-borne transmission linked to rodents, opossums, cats, and peri-domestic exposure.",
+      "why_it_matters": "The entry keeps social conditions and vector biology together instead of reducing transmission to a simple insect bite.",
+      "atlas_scope": "Vector ecology, crowding or peri-domestic exposure, and historical movement through ports, war, or rural frontiers",
+      "category": "flea-louse-mite-borne",
+      "category_label": "Flea, louse, and mite-borne",
+      "transmission_group": "Flea, louse, and mite-borne",
+      "origin_claim": {
+        "label": "Urban port and rodent-flea frame",
+        "coordinates": [
+          -95.36,
+          29.76
+        ],
+        "date_or_era": "Historical and modern recognition frame, not a single biological birthplace",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for murine typhus is an ecological-recognition frame: where vector exposure, human movement, and clinical recognition made the disease visible.",
+        "citation_ids": [
+          "murine-typhus-cdc",
+          "typhus-cdc-clinical"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "murine-typhus-ecology-route",
+          "from_label": "Urban port and rodent-flea frame",
+          "to_label": "Southern California suburban flea cycles",
+          "from_coordinates": [
+            -95.36,
+            29.76
+          ],
+          "to_coordinates": [
+            -118.24,
+            34.05
+          ],
+          "date_or_era": "Historical recognition to contemporary surveillance",
+          "route_type": "vector_social_ecology",
+          "confidence": "moderate",
+          "narrative": "Murine typhus maps best as a vector-social system: exposure rises where the vector, reservoir or crowding condition, and human vulnerability align.",
+          "citation_ids": [
+            "murine-typhus-cdc",
+            "typhus-cdc-clinical"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern cases often require ecological investigation rather than only patient-to-patient tracing.",
+        "The same vector category contains very different social histories: war lice, port fleas, and chigger-exposed rural landscapes."
+      ],
+      "framing_traps": [
+        "Do not let the shared typhus name erase vector differences.",
+        "Do not map old war or port patterns as if they are unchanged contemporary risk maps."
+      ],
+      "linked_reference_slug": "murine-typhus",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "murine-typhus-cdc",
+          "short_citation": "CDC. About Murine typhus. 2024.",
+          "url": "https://www.cdc.gov/typhus/about/murine.html",
+          "claim_supported": "Supports transmission route, vector, and clinical/public-health framing.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        },
+        {
+          "id": "typhus-cdc-clinical",
+          "short_citation": "CDC. Clinical Overview of Typhus Fevers. 2024.",
+          "url": "https://www.cdc.gov/typhus/hcp/clinical-overview/index.html",
+          "claim_supported": "Supports typhus fever clinical and epidemiologic distinctions.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-murine-typhus-hero",
+      "source_reviewed_at": "2026-05-14T05:38:40+00:00",
+      "color": "#9a7d55",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "scrub-typhus",
+      "name": "Scrub typhus",
+      "subtitle": "Chigger mites, the tsutsugamushi triangle, military movement, and rural exposure",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "A rickettsial disease organized around mite-borne transmission in rural and transitional ecologies across Asia-Pacific risk zones.",
+      "why_it_matters": "The entry keeps social conditions and vector biology together instead of reducing transmission to a simple insect bite.",
+      "atlas_scope": "Vector ecology, crowding or peri-domestic exposure, and historical movement through ports, war, or rural frontiers",
+      "category": "flea-louse-mite-borne",
+      "category_label": "Flea, louse, and mite-borne",
+      "transmission_group": "Flea, louse, and mite-borne",
+      "origin_claim": {
+        "label": "Tsutsugamushi triangle ecology frame",
+        "coordinates": [
+          100.5,
+          15.8
+        ],
+        "date_or_era": "Historical and modern recognition frame, not a single biological birthplace",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for scrub typhus is an ecological-recognition frame: where vector exposure, human movement, and clinical recognition made the disease visible.",
+        "citation_ids": [
+          "scrub-typhus-cdc",
+          "typhus-cdc-clinical"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "scrub-typhus-ecology-route",
+          "from_label": "Tsutsugamushi triangle ecology frame",
+          "to_label": "Western Pacific military and rural exposure zones",
+          "from_coordinates": [
+            100.5,
+            15.8
+          ],
+          "to_coordinates": [
+            145.0,
+            13.5
+          ],
+          "date_or_era": "Historical recognition to contemporary surveillance",
+          "route_type": "vector_social_ecology",
+          "confidence": "moderate",
+          "narrative": "Scrub typhus maps best as a vector-social system: exposure rises where the vector, reservoir or crowding condition, and human vulnerability align.",
+          "citation_ids": [
+            "scrub-typhus-cdc",
+            "typhus-cdc-clinical"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern cases often require ecological investigation rather than only patient-to-patient tracing.",
+        "The same vector category contains very different social histories: war lice, port fleas, and chigger-exposed rural landscapes."
+      ],
+      "framing_traps": [
+        "Do not let the shared typhus name erase vector differences.",
+        "Do not map old war or port patterns as if they are unchanged contemporary risk maps."
+      ],
+      "linked_reference_slug": "scrub-typhus",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "scrub-typhus-cdc",
+          "short_citation": "CDC. About Scrub typhus. 2024.",
+          "url": "https://www.cdc.gov/typhus/about/scrub.html",
+          "claim_supported": "Supports transmission route, vector, and clinical/public-health framing.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        },
+        {
+          "id": "typhus-cdc-clinical",
+          "short_citation": "CDC. Clinical Overview of Typhus Fevers. 2024.",
+          "url": "https://www.cdc.gov/typhus/hcp/clinical-overview/index.html",
+          "claim_supported": "Supports typhus fever clinical and epidemiologic distinctions.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-scrub-typhus-hero",
+      "source_reviewed_at": "2026-05-14T05:38:40+00:00",
+      "color": "#8da05a",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "salmonellosis",
+      "name": "Salmonellosis",
+      "subtitle": "Food animals, eggs, poultry, produce, pets, and distributed food systems",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "Salmonella infection is a leading foodborne illness pattern in which animal reservoirs, food production, kitchens, pets, and surveillance networks are inseparable.",
+      "why_it_matters": "It gives the atlas a food-system layer: the route is often supply-chain distribution, storage, preparation, or preservation rather than person-to-person spread.",
+      "atlas_scope": "Foodborne disease ecology, production and storage systems, and high-risk exposure groups",
+      "category": "foodborne",
+      "category_label": "Foodborne",
+      "transmission_group": "Foodborne",
+      "origin_claim": {
+        "label": "Global food-animal reservoir frame",
+        "coordinates": [
+          12.5,
+          41.9
+        ],
+        "date_or_era": "Persistent reservoir or exposure system; not a single birthplace",
+        "confidence": "mixed",
+        "narrative": "The origin frame for salmonellosis is the exposure system that makes illness visible: reservoirs, food handling, preservation, or cold-chain distribution.",
+        "citation_ids": [
+          "salmonella-who",
+          "salmonella-cdc-clinical"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "salmonellosis-food-system-route",
+          "from_label": "Global food-animal reservoir frame",
+          "to_label": "Distributed food supply and outbreak investigations",
+          "from_coordinates": [
+            12.5,
+            41.9
+          ],
+          "to_coordinates": [
+            -98.5,
+            39.8
+          ],
+          "date_or_era": "Modern food-system surveillance period",
+          "route_type": "food_system",
+          "confidence": "moderate",
+          "narrative": "Salmonellosis becomes spatial when contamination is distributed through food production, storage, retail, kitchens, or high-risk exposure settings.",
+          "citation_ids": [
+            "salmonella-who",
+            "salmonella-cdc-clinical"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern outbreak investigation depends on product tracing, lab subtyping, exposure interviews, and regulatory coordination.",
+        "The atlas route is often a network of commodities and kitchens rather than a visible human travel route."
+      ],
+      "framing_traps": [
+        "Do not map foodborne disease as if it were always locally acquired near the case address.",
+        "Do not confuse the pathogen reservoir with the outbreak vehicle."
+      ],
+      "linked_reference_slug": "salmonellosis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "salmonella-who",
+          "short_citation": "Official source. Salmonellosis facts.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/salmonella-(non-typhoidal)",
+          "claim_supported": "Supports transmission, reservoirs, and public-health framing.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        },
+        {
+          "id": "salmonella-cdc-clinical",
+          "short_citation": "Official source. Salmonellosis fact sheet.",
+          "url": "https://www.cdc.gov/salmonella/hcp/clinical-overview/index.html",
+          "claim_supported": "Supports foodborne transmission and risk groups.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-salmonellosis-hero",
+      "source_reviewed_at": "2026-05-14T05:38:40+00:00",
+      "color": "#c6a15a",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "listeriosis",
+      "name": "Listeriosis",
+      "subtitle": "Cold-chain foods, pregnancy risk, aging populations, and ready-to-eat supply lines",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "Listeriosis is a foodborne infection whose atlas logic runs through refrigeration, ready-to-eat foods, pregnancy, age, and immune vulnerability.",
+      "why_it_matters": "It gives the atlas a food-system layer: the route is often supply-chain distribution, storage, preparation, or preservation rather than person-to-person spread.",
+      "atlas_scope": "Foodborne disease ecology, production and storage systems, and high-risk exposure groups",
+      "category": "foodborne",
+      "category_label": "Foodborne",
+      "transmission_group": "Foodborne",
+      "origin_claim": {
+        "label": "Cold-chain food system frame",
+        "coordinates": [
+          -73.6,
+          45.5
+        ],
+        "date_or_era": "Persistent reservoir or exposure system; not a single birthplace",
+        "confidence": "mixed",
+        "narrative": "The origin frame for listeriosis is the exposure system that makes illness visible: reservoirs, food handling, preservation, or cold-chain distribution.",
+        "citation_ids": [
+          "listeria-cdc",
+          "listeria-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "listeriosis-food-system-route",
+          "from_label": "Cold-chain food system frame",
+          "to_label": "Ready-to-eat food distribution networks",
+          "from_coordinates": [
+            -73.6,
+            45.5
+          ],
+          "to_coordinates": [
+            -95.0,
+            40.0
+          ],
+          "date_or_era": "Modern food-system surveillance period",
+          "route_type": "food_system",
+          "confidence": "moderate",
+          "narrative": "Listeriosis becomes spatial when contamination is distributed through food production, storage, retail, kitchens, or high-risk exposure settings.",
+          "citation_ids": [
+            "listeria-cdc",
+            "listeria-who"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern outbreak investigation depends on product tracing, lab subtyping, exposure interviews, and regulatory coordination.",
+        "The atlas route is often a network of commodities and kitchens rather than a visible human travel route."
+      ],
+      "framing_traps": [
+        "Do not map foodborne disease as if it were always locally acquired near the case address.",
+        "Do not confuse the pathogen reservoir with the outbreak vehicle."
+      ],
+      "linked_reference_slug": "listeriosis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "listeria-cdc",
+          "short_citation": "Official source. Listeriosis facts.",
+          "url": "https://www.cdc.gov/listeria/about/index.html",
+          "claim_supported": "Supports transmission, reservoirs, and public-health framing.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        },
+        {
+          "id": "listeria-who",
+          "short_citation": "Official source. Listeriosis fact sheet.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/listeriosis",
+          "claim_supported": "Supports foodborne transmission and risk groups.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-listeriosis-hero",
+      "source_reviewed_at": "2026-05-14T05:38:40+00:00",
+      "color": "#8fae7a",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "botulism",
+      "name": "Botulism",
+      "subtitle": "Anaerobic preservation, neurotoxin, infant exposure, wounds, and food-processing errors",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "Botulism maps less like a spreading infection and more like a failure of preservation, wound ecology, or infant exposure to spores.",
+      "why_it_matters": "It gives the atlas a food-system layer: the route is often supply-chain distribution, storage, preparation, or preservation rather than person-to-person spread.",
+      "atlas_scope": "Foodborne disease ecology, production and storage systems, and high-risk exposure groups",
+      "category": "foodborne",
+      "category_label": "Foodborne",
+      "transmission_group": "Foodborne",
+      "origin_claim": {
+        "label": "Food preservation and soil-spore frame",
+        "coordinates": [
+          11.3,
+          44.5
+        ],
+        "date_or_era": "Persistent reservoir or exposure system; not a single birthplace",
+        "confidence": "mixed",
+        "narrative": "The origin frame for botulism is the exposure system that makes illness visible: reservoirs, food handling, preservation, or cold-chain distribution.",
+        "citation_ids": [
+          "botulism-cdc",
+          "botulism-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "botulism-food-system-route",
+          "from_label": "Food preservation and soil-spore frame",
+          "to_label": "Household and commercial preservation events",
+          "from_coordinates": [
+            11.3,
+            44.5
+          ],
+          "to_coordinates": [
+            -121.5,
+            38.5
+          ],
+          "date_or_era": "Modern food-system surveillance period",
+          "route_type": "food_system",
+          "confidence": "moderate",
+          "narrative": "Botulism becomes spatial when contamination is distributed through food production, storage, retail, kitchens, or high-risk exposure settings.",
+          "citation_ids": [
+            "botulism-cdc",
+            "botulism-who"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern outbreak investigation depends on product tracing, lab subtyping, exposure interviews, and regulatory coordination.",
+        "The atlas route is often a network of commodities and kitchens rather than a visible human travel route."
+      ],
+      "framing_traps": [
+        "Do not map foodborne disease as if it were always locally acquired near the case address.",
+        "Do not confuse the pathogen reservoir with the outbreak vehicle."
+      ],
+      "linked_reference_slug": "botulism",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "botulism-cdc",
+          "short_citation": "Official source. Botulism facts.",
+          "url": "https://www.cdc.gov/botulism/about/index.html",
+          "claim_supported": "Supports transmission, reservoirs, and public-health framing.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        },
+        {
+          "id": "botulism-who",
+          "short_citation": "Official source. Botulism fact sheet.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/botulism",
+          "claim_supported": "Supports foodborne transmission and risk groups.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-botulism-hero",
+      "source_reviewed_at": "2026-05-14T05:38:40+00:00",
+      "color": "#8d7868",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "tetanus",
+      "name": "Tetanus",
+      "subtitle": "Soil spores, wounds, birth settings, and vaccine preventability",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "Tetanus is an environmental and immunization story: spores are widespread, but disease follows wounds, birth conditions, and gaps in vaccination.",
+      "why_it_matters": "It forces the atlas to handle infections whose geography is environmental exposure rather than a chain of infected people.",
+      "atlas_scope": "Environmental reservoirs, occupational or wound exposure, climate and soil conditions, and prevention through vaccination or risk mitigation",
+      "category": "soil-environmental",
+      "category_label": "Soil / environmental",
+      "transmission_group": "Soil / environmental",
+      "origin_claim": {
+        "label": "Global soil-spore exposure frame",
+        "coordinates": [
+          15.0,
+          0.0
+        ],
+        "date_or_era": "Environmental exposure frame; endemicity or recognition varies by disease",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for tetanus is an environmental reservoir or endemic recognition frame, not a point-source introduction.",
+        "citation_ids": [
+          "tetanus-cdc",
+          "tetanus-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "tetanus-environmental-route",
+          "from_label": "Global soil-spore exposure frame",
+          "to_label": "Maternal and neonatal tetanus risk settings",
+          "from_coordinates": [
+            15.0,
+            0.0
+          ],
+          "to_coordinates": [
+            31.2,
+            30.0
+          ],
+          "date_or_era": "Persistent environmental exposure with modern surveillance",
+          "route_type": "environmental_exposure",
+          "confidence": "moderate",
+          "narrative": "Tetanus is mapped through soil, water, dust, wounds, weather, occupation, and host vulnerability rather than direct transmission between cases.",
+          "citation_ids": [
+            "tetanus-cdc",
+            "tetanus-who"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern risk communication often needs weather, occupation, construction, immunization, or wound-care context.",
+        "Case counts may follow exposure opportunity and diagnostic awareness as much as pathogen presence."
+      ],
+      "framing_traps": [
+        "Do not imply routine person-to-person spread where environmental exposure is the dominant route.",
+        "Do not treat environmental maps as fixed; climate, land disturbance, and surveillance alter visibility."
+      ],
+      "linked_reference_slug": "tetanus",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "tetanus-cdc",
+          "short_citation": "Official source. Tetanus facts.",
+          "url": "https://www.cdc.gov/tetanus/about/index.html",
+          "claim_supported": "Supports environmental exposure route and public-health framing.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        },
+        {
+          "id": "tetanus-who",
+          "short_citation": "NCBI/WHO source. Tetanus overview.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/tetanus",
+          "claim_supported": "Supports clinical, epidemiologic, or transmission overview.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-tetanus-hero",
+      "source_reviewed_at": "2026-05-14T05:38:40+00:00",
+      "color": "#a88d5d",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "melioidosis",
+      "name": "Melioidosis",
+      "subtitle": "Wet-season soil, surface water, diabetes, severe pneumonia, and tropical underdiagnosis",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "Melioidosis links Burkholderia pseudomallei in soil and water to rainfall, occupational exposure, diabetes, pneumonia, sepsis, and missed diagnosis.",
+      "why_it_matters": "It forces the atlas to handle infections whose geography is environmental exposure rather than a chain of infected people.",
+      "atlas_scope": "Environmental reservoirs, occupational or wound exposure, climate and soil conditions, and prevention through vaccination or risk mitigation",
+      "category": "soil-environmental",
+      "category_label": "Soil / environmental",
+      "transmission_group": "Soil / environmental",
+      "origin_claim": {
+        "label": "Northern Australia and Southeast Asia endemic frame",
+        "coordinates": [
+          130.8,
+          -12.5
+        ],
+        "date_or_era": "Environmental exposure frame; endemicity or recognition varies by disease",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for melioidosis is an environmental reservoir or endemic recognition frame, not a point-source introduction.",
+        "citation_ids": [
+          "melioidosis-cdc",
+          "melioidosis-ncbi"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "melioidosis-environmental-route",
+          "from_label": "Northern Australia and Southeast Asia endemic frame",
+          "to_label": "Monsoon tropics and imported-case surveillance",
+          "from_coordinates": [
+            130.8,
+            -12.5
+          ],
+          "to_coordinates": [
+            100.5,
+            13.8
+          ],
+          "date_or_era": "Persistent environmental exposure with modern surveillance",
+          "route_type": "environmental_exposure",
+          "confidence": "moderate",
+          "narrative": "Melioidosis is mapped through soil, water, dust, wounds, weather, occupation, and host vulnerability rather than direct transmission between cases.",
+          "citation_ids": [
+            "melioidosis-cdc",
+            "melioidosis-ncbi"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern risk communication often needs weather, occupation, construction, immunization, or wound-care context.",
+        "Case counts may follow exposure opportunity and diagnostic awareness as much as pathogen presence."
+      ],
+      "framing_traps": [
+        "Do not imply routine person-to-person spread where environmental exposure is the dominant route.",
+        "Do not treat environmental maps as fixed; climate, land disturbance, and surveillance alter visibility."
+      ],
+      "linked_reference_slug": "melioidosis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "melioidosis-cdc",
+          "short_citation": "Official source. Melioidosis facts.",
+          "url": "https://www.cdc.gov/melioidosis/about/index.html",
+          "claim_supported": "Supports environmental exposure route and public-health framing.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        },
+        {
+          "id": "melioidosis-ncbi",
+          "short_citation": "NCBI/WHO source. Melioidosis overview.",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK448110/",
+          "claim_supported": "Supports clinical, epidemiologic, or transmission overview.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-melioidosis-hero",
+      "source_reviewed_at": "2026-05-14T05:38:40+00:00",
+      "color": "#5f9c8a",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "coccidioidomycosis",
+      "name": "Coccidioidomycosis",
+      "subtitle": "Desert soil, dust, construction, climate, prisons, and the expanding Valley fever map",
+      "status": "mixed",
+      "pathogen_type": "Fungus",
+      "summary": "Coccidioidomycosis is a fungal lung infection acquired by inhaling Coccidioides spores from endemic dry soils.",
+      "why_it_matters": "It forces the atlas to handle infections whose geography is environmental exposure rather than a chain of infected people.",
+      "atlas_scope": "Environmental reservoirs, occupational or wound exposure, climate and soil conditions, and prevention through vaccination or risk mitigation",
+      "category": "soil-environmental",
+      "category_label": "Soil / environmental",
+      "transmission_group": "Soil / environmental",
+      "origin_claim": {
+        "label": "San Joaquin Valley and desert Southwest frame",
+        "coordinates": [
+          -119.4,
+          35.4
+        ],
+        "date_or_era": "Environmental exposure frame; endemicity or recognition varies by disease",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for coccidioidomycosis is an environmental reservoir or endemic recognition frame, not a point-source introduction.",
+        "citation_ids": [
+          "cocci-cdc",
+          "cocci-ncbi"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "coccidioidomycosis-environmental-route",
+          "from_label": "San Joaquin Valley and desert Southwest frame",
+          "to_label": "Arizona and wider arid Southwest reporting zone",
+          "from_coordinates": [
+            -119.4,
+            35.4
+          ],
+          "to_coordinates": [
+            -111.9,
+            33.4
+          ],
+          "date_or_era": "Persistent environmental exposure with modern surveillance",
+          "route_type": "environmental_exposure",
+          "confidence": "moderate",
+          "narrative": "Coccidioidomycosis is mapped through soil, water, dust, wounds, weather, occupation, and host vulnerability rather than direct transmission between cases.",
+          "citation_ids": [
+            "cocci-cdc",
+            "cocci-ncbi"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern risk communication often needs weather, occupation, construction, immunization, or wound-care context.",
+        "Case counts may follow exposure opportunity and diagnostic awareness as much as pathogen presence."
+      ],
+      "framing_traps": [
+        "Do not imply routine person-to-person spread where environmental exposure is the dominant route.",
+        "Do not treat environmental maps as fixed; climate, land disturbance, and surveillance alter visibility."
+      ],
+      "linked_reference_slug": "coccidioidomycosis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "cocci-cdc",
+          "short_citation": "Official source. Coccidioidomycosis facts.",
+          "url": "https://www.cdc.gov/valley-fever/about/index.html",
+          "claim_supported": "Supports environmental exposure route and public-health framing.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        },
+        {
+          "id": "cocci-ncbi",
+          "short_citation": "NCBI/WHO source. Coccidioidomycosis overview.",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK448161/",
+          "claim_supported": "Supports clinical, epidemiologic, or transmission overview.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-coccidioidomycosis-hero",
+      "source_reviewed_at": "2026-05-14T05:38:40+00:00",
+      "color": "#c28f5a",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "hiv-aids",
+      "name": "HIV/AIDS",
+      "subtitle": "Retrovirus, sexual networks, blood exposure, vertical transmission, and colonial transport history",
+      "status": "mixed",
+      "pathogen_type": "Virus",
+      "summary": "HIV/AIDS is a blood, sexual, and perinatal transmission story whose pandemic history is inseparable from urbanization, transport, medicine, stigma, and unequal treatment access.",
+      "why_it_matters": "This section lets the atlas handle intimate transmission, blood systems, congenital infection, and the social institutions that make exposure patterns durable.",
+      "atlas_scope": "Sexual, bloodborne, and perinatal transmission; historical spread; surveillance and prevention systems",
+      "category": "contact-sexual-bloodborne",
+      "category_label": "Contact, sexual, or bloodborne",
+      "transmission_group": "Contact, sexual, or bloodborne",
+      "origin_claim": {
+        "label": "Kinshasa early epidemic ignition frame",
+        "coordinates": [
+          15.3,
+          -4.3
+        ],
+        "date_or_era": "Historically specific recognition or epidemic-expansion frame; origin certainty varies",
+        "confidence": "mixed",
+        "narrative": "The atlas uses a cautious historical frame for HIV/AIDS: transmission routes are clear, but deep origins and early expansion require careful wording.",
+        "citation_ids": [
+          "hiv-who",
+          "hiv-pubmed-early-spread"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "hiv-aids-social-route",
+          "from_label": "Kinshasa early epidemic ignition frame",
+          "to_label": "Caribbean and global subtype B expansion",
+          "from_coordinates": [
+            15.3,
+            -4.3
+          ],
+          "to_coordinates": [
+            -72.3,
+            18.9
+          ],
+          "date_or_era": "Historical expansion and modern surveillance era",
+          "route_type": "sexual_blood_perinatal_networks",
+          "confidence": "moderate",
+          "narrative": "HIV/AIDS maps through contact networks, health systems, screening, birth, and blood exposure rather than environmental suitability alone.",
+          "citation_ids": [
+            "hiv-who",
+            "hiv-pubmed-early-spread"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern control depends on testing, treatment, prevention access, and trust in health systems.",
+        "The map is partly biological and partly institutional: screening, stigma, treatment, and reporting change what becomes visible."
+      ],
+      "framing_traps": [
+        "Do not reduce these infections to individual behavior stripped of institutions and history.",
+        "Do not overstate origin claims where phylogenetic, archaeological, or documentary evidence remains debated."
+      ],
+      "linked_reference_slug": "hiv-aids",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "hiv-who",
+          "short_citation": "Official source. HIV/AIDS facts.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/hiv-aids",
+          "claim_supported": "Supports transmission and public-health framing.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        },
+        {
+          "id": "hiv-pubmed-early-spread",
+          "short_citation": "Review or NCBI/PubMed source. HIV/AIDS historical or epidemiologic framing.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25278604/",
+          "claim_supported": "Supports historical, epidemiologic, or route framing beyond a basic fact sheet.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-hiv-aids-hero",
+      "source_reviewed_at": "2026-05-14T05:38:40+00:00",
+      "color": "#9d5f7a",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "hepatitis-b",
+      "name": "Hepatitis B",
+      "subtitle": "Bloodborne and perinatal transmission, chronic infection, vaccination, and liver-cancer geography",
+      "status": "mixed",
+      "pathogen_type": "Virus",
+      "summary": "Hepatitis B maps through perinatal infection, childhood household transmission, sexual exposure, blood exposure, vaccination, and chronic liver disease burden.",
+      "why_it_matters": "This section lets the atlas handle intimate transmission, blood systems, congenital infection, and the social institutions that make exposure patterns durable.",
+      "atlas_scope": "Sexual, bloodborne, and perinatal transmission; historical spread; surveillance and prevention systems",
+      "category": "contact-sexual-bloodborne",
+      "category_label": "Contact, sexual, or bloodborne",
+      "transmission_group": "Contact, sexual, or bloodborne",
+      "origin_claim": {
+        "label": "High-endemicity perinatal and childhood transmission frame",
+        "coordinates": [
+          105.0,
+          16.0
+        ],
+        "date_or_era": "Historically specific recognition or epidemic-expansion frame; origin certainty varies",
+        "confidence": "mixed",
+        "narrative": "The atlas uses a cautious historical frame for Hepatitis B: transmission routes are clear, but deep origins and early expansion require careful wording.",
+        "citation_ids": [
+          "hbv-who",
+          "hbv-ncbi"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "hepatitis-b-social-route",
+          "from_label": "High-endemicity perinatal and childhood transmission frame",
+          "to_label": "Vaccination-era global prevention map",
+          "from_coordinates": [
+            105.0,
+            16.0
+          ],
+          "to_coordinates": [
+            113.3,
+            23.1
+          ],
+          "date_or_era": "Historical expansion and modern surveillance era",
+          "route_type": "sexual_blood_perinatal_networks",
+          "confidence": "moderate",
+          "narrative": "Hepatitis B maps through contact networks, health systems, screening, birth, and blood exposure rather than environmental suitability alone.",
+          "citation_ids": [
+            "hbv-who",
+            "hbv-ncbi"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern control depends on testing, treatment, prevention access, and trust in health systems.",
+        "The map is partly biological and partly institutional: screening, stigma, treatment, and reporting change what becomes visible."
+      ],
+      "framing_traps": [
+        "Do not reduce these infections to individual behavior stripped of institutions and history.",
+        "Do not overstate origin claims where phylogenetic, archaeological, or documentary evidence remains debated."
+      ],
+      "linked_reference_slug": "hepatitis-b",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "hbv-who",
+          "short_citation": "Official source. Hepatitis B facts.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/hepatitis-b",
+          "claim_supported": "Supports transmission and public-health framing.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        },
+        {
+          "id": "hbv-ncbi",
+          "short_citation": "Review or NCBI/PubMed source. Hepatitis B historical or epidemiologic framing.",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK304352/",
+          "claim_supported": "Supports historical, epidemiologic, or route framing beyond a basic fact sheet.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-hepatitis-b-hero",
+      "source_reviewed_at": "2026-05-14T05:38:40+00:00",
+      "color": "#b6974f",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "syphilis",
+      "name": "Syphilis",
+      "subtitle": "Treponemal history, sexual transmission, congenital infection, and an origin debate that refuses to die",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "Syphilis is a sexually transmitted treponemal infection whose early modern history, congenital burden, and recurrent outbreaks make it one of epidemiology\u2019s great historical arguments.",
+      "why_it_matters": "This section lets the atlas handle intimate transmission, blood systems, congenital infection, and the social institutions that make exposure patterns durable.",
+      "atlas_scope": "Sexual, bloodborne, and perinatal transmission; historical spread; surveillance and prevention systems",
+      "category": "contact-sexual-bloodborne",
+      "category_label": "Contact, sexual, or bloodborne",
+      "transmission_group": "Contact, sexual, or bloodborne",
+      "origin_claim": {
+        "label": "Early modern transatlantic debate frame",
+        "coordinates": [
+          -3.7,
+          40.4
+        ],
+        "date_or_era": "Historically specific recognition or epidemic-expansion frame; origin certainty varies",
+        "confidence": "mixed",
+        "narrative": "The atlas uses a cautious historical frame for Syphilis: transmission routes are clear, but deep origins and early expansion require careful wording.",
+        "citation_ids": [
+          "syphilis-cdc",
+          "syphilis-history-pmc"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "syphilis-social-route",
+          "from_label": "Early modern transatlantic debate frame",
+          "to_label": "European outbreak and colonial-era circulation debate",
+          "from_coordinates": [
+            -3.7,
+            40.4
+          ],
+          "to_coordinates": [
+            12.5,
+            41.9
+          ],
+          "date_or_era": "Historical expansion and modern surveillance era",
+          "route_type": "sexual_blood_perinatal_networks",
+          "confidence": "moderate",
+          "narrative": "Syphilis maps through contact networks, health systems, screening, birth, and blood exposure rather than environmental suitability alone.",
+          "citation_ids": [
+            "syphilis-cdc",
+            "syphilis-history-pmc"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern control depends on testing, treatment, prevention access, and trust in health systems.",
+        "The map is partly biological and partly institutional: screening, stigma, treatment, and reporting change what becomes visible."
+      ],
+      "framing_traps": [
+        "Do not reduce these infections to individual behavior stripped of institutions and history.",
+        "Do not overstate origin claims where phylogenetic, archaeological, or documentary evidence remains debated."
+      ],
+      "linked_reference_slug": "syphilis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "syphilis-cdc",
+          "short_citation": "Official source. Syphilis facts.",
+          "url": "https://www.cdc.gov/syphilis/about/index.html",
+          "claim_supported": "Supports transmission and public-health framing.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        },
+        {
+          "id": "syphilis-history-pmc",
+          "short_citation": "Review or NCBI/PubMed source. Syphilis historical or epidemiologic framing.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7945438/",
+          "claim_supported": "Supports historical, epidemiologic, or route framing beyond a basic fact sheet.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-syphilis-hero",
+      "source_reviewed_at": "2026-05-14T05:38:40+00:00",
+      "color": "#aa6a58",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "leishmaniasis",
+      "name": "Leishmaniasis",
+      "subtitle": "Sand flies, poverty, dogs, conflict displacement, and multiple clinical syndromes",
+      "status": "mixed",
+      "pathogen_type": "Protozoan parasite",
+      "summary": "Leishmaniasis is a sand-fly transmitted parasitic disease complex whose geography follows vectors, reservoirs, housing, conflict, poverty, and ecology.",
+      "why_it_matters": "This category keeps sand flies, triatomine bugs, and blackflies out of an overstuffed mosquito/tick bucket.",
+      "atlas_scope": "Other arthropod vectors, reservoir ecology, housing or river landscapes, and control programs",
+      "category": "other-arthropod-borne",
+      "category_label": "Other arthropod-borne",
+      "transmission_group": "Other arthropod-borne",
+      "origin_claim": {
+        "label": "Mediterranean, Middle Eastern, and tropical sand-fly ecology frame",
+        "coordinates": [
+          35.9,
+          33.9
+        ],
+        "date_or_era": "Endemic ecology and control-program frame, not a single origin point",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for leishmaniasis is a vector-ecology and recognition frame; transmission depends on local arthropods, reservoirs, housing, rivers, or displacement.",
+        "citation_ids": [
+          "leish-cdc",
+          "leish-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "leishmaniasis-arthropod-route",
+          "from_label": "Mediterranean, Middle Eastern, and tropical sand-fly ecology frame",
+          "to_label": "Conflict and displacement risk zones",
+          "from_coordinates": [
+            35.9,
+            33.9
+          ],
+          "to_coordinates": [
+            44.4,
+            33.3
+          ],
+          "date_or_era": "Endemic transmission and modern control era",
+          "route_type": "other_arthropod_vector",
+          "confidence": "moderate",
+          "narrative": "Leishmaniasis follows a specific vector system that is too epidemiologically distinct to hide inside mosquito-borne disease.",
+          "citation_ids": [
+            "leish-cdc",
+            "leish-who"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern control depends on vector ecology, housing or river interventions, drug programs, and surveillance in both endemic and migrant populations.",
+        "These infections show why transmission-first browsing needs more than mosquitoes and ticks."
+      ],
+      "framing_traps": [
+        "Do not flatten different arthropod vectors into one generic vector-borne category.",
+        "Do not treat imported diagnoses as evidence of local vector-borne transmission without ecological support."
+      ],
+      "linked_reference_slug": "leishmaniasis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "leish-cdc",
+          "short_citation": "CDC. Leishmaniasis overview.",
+          "url": "https://www.cdc.gov/leishmaniasis/about/index.html",
+          "claim_supported": "Supports vector, transmission, and public-health framing.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        },
+        {
+          "id": "leish-who",
+          "short_citation": "WHO. Leishmaniasis fact sheet.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/leishmaniasis",
+          "claim_supported": "Supports geographic distribution, burden, and control framing.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-leishmaniasis-hero",
+      "source_reviewed_at": "2026-05-14T05:38:40+00:00",
+      "color": "#d0a24a",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "chagas-disease",
+      "name": "Chagas disease",
+      "subtitle": "Triatomine bugs, domestic walls, congenital transmission, migration, and chronic cardiac disease",
+      "status": "mixed",
+      "pathogen_type": "Protozoan parasite",
+      "summary": "Chagas disease maps through triatomine ecology, rural housing, congenital infection, transfusion or transplant safety, and migration from endemic regions.",
+      "why_it_matters": "This category keeps sand flies, triatomine bugs, and blackflies out of an overstuffed mosquito/tick bucket.",
+      "atlas_scope": "Other arthropod vectors, reservoir ecology, housing or river landscapes, and control programs",
+      "category": "other-arthropod-borne",
+      "category_label": "Other arthropod-borne",
+      "transmission_group": "Other arthropod-borne",
+      "origin_claim": {
+        "label": "Rural Latin American vector-housing frame",
+        "coordinates": [
+          -65.0,
+          -17.0
+        ],
+        "date_or_era": "Endemic ecology and control-program frame, not a single origin point",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for chagas disease is a vector-ecology and recognition frame; transmission depends on local arthropods, reservoirs, housing, rivers, or displacement.",
+        "citation_ids": [
+          "chagas-cdc",
+          "chagas-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "chagas-disease-arthropod-route",
+          "from_label": "Rural Latin American vector-housing frame",
+          "to_label": "Migration and blood-safety surveillance in non-endemic settings",
+          "from_coordinates": [
+            -65.0,
+            -17.0
+          ],
+          "to_coordinates": [
+            -98.5,
+            39.8
+          ],
+          "date_or_era": "Endemic transmission and modern control era",
+          "route_type": "other_arthropod_vector",
+          "confidence": "moderate",
+          "narrative": "Chagas disease follows a specific vector system that is too epidemiologically distinct to hide inside mosquito-borne disease.",
+          "citation_ids": [
+            "chagas-cdc",
+            "chagas-who"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern control depends on vector ecology, housing or river interventions, drug programs, and surveillance in both endemic and migrant populations.",
+        "These infections show why transmission-first browsing needs more than mosquitoes and ticks."
+      ],
+      "framing_traps": [
+        "Do not flatten different arthropod vectors into one generic vector-borne category.",
+        "Do not treat imported diagnoses as evidence of local vector-borne transmission without ecological support."
+      ],
+      "linked_reference_slug": "chagas-disease",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "chagas-cdc",
+          "short_citation": "CDC. Chagas disease overview.",
+          "url": "https://www.cdc.gov/chagas/about/index.html",
+          "claim_supported": "Supports vector, transmission, and public-health framing.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        },
+        {
+          "id": "chagas-who",
+          "short_citation": "WHO. Chagas disease fact sheet.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/chagas-disease-(american-trypanosomiasis)",
+          "claim_supported": "Supports geographic distribution, burden, and control framing.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-chagas-disease-hero",
+      "source_reviewed_at": "2026-05-14T05:38:40+00:00",
+      "color": "#9f6b4d",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "onchocerciasis",
+      "name": "Onchocerciasis",
+      "subtitle": "Blackflies, fast rivers, blindness, ivermectin campaigns, and river-basin public health",
+      "status": "mixed",
+      "pathogen_type": "Helminth",
+      "summary": "Onchocerciasis is a blackfly-borne filarial infection organized by river ecology, repeated bites, skin disease, eye disease, and mass drug administration.",
+      "why_it_matters": "This category keeps sand flies, triatomine bugs, and blackflies out of an overstuffed mosquito/tick bucket.",
+      "atlas_scope": "Other arthropod vectors, reservoir ecology, housing or river landscapes, and control programs",
+      "category": "other-arthropod-borne",
+      "category_label": "Other arthropod-borne",
+      "transmission_group": "Other arthropod-borne",
+      "origin_claim": {
+        "label": "West African river-basin frame",
+        "coordinates": [
+          -1.5,
+          12.4
+        ],
+        "date_or_era": "Endemic ecology and control-program frame, not a single origin point",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for onchocerciasis is a vector-ecology and recognition frame; transmission depends on local arthropods, reservoirs, housing, rivers, or displacement.",
+        "citation_ids": [
+          "oncho-cdc",
+          "oncho-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "onchocerciasis-arthropod-route",
+          "from_label": "West African river-basin frame",
+          "to_label": "Latin American elimination foci and river communities",
+          "from_coordinates": [
+            -1.5,
+            12.4
+          ],
+          "to_coordinates": [
+            -66.9,
+            7.0
+          ],
+          "date_or_era": "Endemic transmission and modern control era",
+          "route_type": "other_arthropod_vector",
+          "confidence": "moderate",
+          "narrative": "Onchocerciasis follows a specific vector system that is too epidemiologically distinct to hide inside mosquito-borne disease.",
+          "citation_ids": [
+            "oncho-cdc",
+            "oncho-who"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern control depends on vector ecology, housing or river interventions, drug programs, and surveillance in both endemic and migrant populations.",
+        "These infections show why transmission-first browsing needs more than mosquitoes and ticks."
+      ],
+      "framing_traps": [
+        "Do not flatten different arthropod vectors into one generic vector-borne category.",
+        "Do not treat imported diagnoses as evidence of local vector-borne transmission without ecological support."
+      ],
+      "linked_reference_slug": "onchocerciasis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "oncho-cdc",
+          "short_citation": "CDC. Onchocerciasis overview.",
+          "url": "https://www.cdc.gov/filarial-worms/about/onchocerciasis.html",
+          "claim_supported": "Supports vector, transmission, and public-health framing.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        },
+        {
+          "id": "oncho-who",
+          "short_citation": "WHO. Onchocerciasis fact sheet.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/onchocerciasis",
+          "claim_supported": "Supports geographic distribution, burden, and control framing.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-onchocerciasis-hero",
+      "source_reviewed_at": "2026-05-14T05:38:40+00:00",
+      "color": "#6d9b83",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "clostridioides-difficile-infection",
+      "name": "Clostridioides difficile infection",
+      "subtitle": "Antibiotic pressure, spores, hospitals, long-term care, and recurrent diarrhea",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "C. difficile infection is a healthcare-associated and community-associated disease where antibiotic exposure, spores, cleaning, and institutional vulnerability matter.",
+      "why_it_matters": "It gives the atlas a hospital and antimicrobial-resistance layer, where the route is institutional practice as much as microbial movement.",
+      "atlas_scope": "Healthcare-associated transmission, antibiotic pressure, environmental persistence, colonization, and community spillover",
+      "category": "healthcare-associated",
+      "category_label": "Healthcare-associated",
+      "transmission_group": "Healthcare-associated",
+      "origin_claim": {
+        "label": "Healthcare antibiotic-pressure frame",
+        "coordinates": [
+          -77.0,
+          38.9
+        ],
+        "date_or_era": "Modern healthcare and antimicrobial-resistance recognition frame",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for clostridioides difficile infection is a healthcare-recognition frame: a place where antimicrobial pressure, vulnerable hosts, and transmission control made the problem visible.",
+        "citation_ids": [
+          "cdiff-cdc",
+          "cdiff-ncbi"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "clostridioides-difficile-infection-healthcare-route",
+          "from_label": "Healthcare antibiotic-pressure frame",
+          "to_label": "Hospitals and long-term care networks",
+          "from_coordinates": [
+            -77.0,
+            38.9
+          ],
+          "to_coordinates": [
+            -87.6,
+            41.9
+          ],
+          "date_or_era": "Modern healthcare and community-associated surveillance era",
+          "route_type": "healthcare_network",
+          "confidence": "moderate",
+          "narrative": "Clostridioides difficile infection spreads through contact, environmental persistence, antibiotics, colonization, or institutional networks rather than a classical geographic invasion route alone.",
+          "citation_ids": [
+            "cdiff-cdc",
+            "cdiff-ncbi"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on lab definitions, infection-control practices, prescribing patterns, and institutional surveillance.",
+        "These entries make the atlas more honest about disease routes inside built health systems."
+      ],
+      "framing_traps": [
+        "Do not confuse healthcare association with exclusive hospital acquisition.",
+        "Do not map antimicrobial resistance as if it were a single clone moving through space."
+      ],
+      "linked_reference_slug": "clostridioides-difficile-infection",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "cdiff-cdc",
+          "short_citation": "CDC. Clostridioides difficile infection overview.",
+          "url": "https://www.cdc.gov/c-diff/about/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        },
+        {
+          "id": "cdiff-ncbi",
+          "short_citation": "NCBI Bookshelf. Clostridioides difficile infection overview.",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK431054/",
+          "claim_supported": "Supports clinical and epidemiologic overview.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-clostridioides-difficile-infection-hero",
+      "source_reviewed_at": "2026-05-14T05:38:40+00:00",
+      "color": "#7b9f78",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "mrsa-infection",
+      "name": "MRSA infection",
+      "subtitle": "Antibiotic resistance, hospitals, community strains, wounds, contact, and colonization",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "MRSA maps through antibiotic selection, colonization, contact, healthcare exposure, crowded settings, wounds, and community transmission.",
+      "why_it_matters": "It gives the atlas a hospital and antimicrobial-resistance layer, where the route is institutional practice as much as microbial movement.",
+      "atlas_scope": "Healthcare-associated transmission, antibiotic pressure, environmental persistence, colonization, and community spillover",
+      "category": "healthcare-associated",
+      "category_label": "Healthcare-associated",
+      "transmission_group": "Healthcare-associated",
+      "origin_claim": {
+        "label": "Hospital antibiotic-resistance recognition frame",
+        "coordinates": [
+          -71.1,
+          42.4
+        ],
+        "date_or_era": "Modern healthcare and antimicrobial-resistance recognition frame",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for mrsa infection is a healthcare-recognition frame: a place where antimicrobial pressure, vulnerable hosts, and transmission control made the problem visible.",
+        "citation_ids": [
+          "mrsa-cdc",
+          "mrsa-ncbi"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "mrsa-infection-healthcare-route",
+          "from_label": "Hospital antibiotic-resistance recognition frame",
+          "to_label": "Community and healthcare transmission networks",
+          "from_coordinates": [
+            -71.1,
+            42.4
+          ],
+          "to_coordinates": [
+            -122.3,
+            47.6
+          ],
+          "date_or_era": "Modern healthcare and community-associated surveillance era",
+          "route_type": "healthcare_network",
+          "confidence": "moderate",
+          "narrative": "MRSA infection spreads through contact, environmental persistence, antibiotics, colonization, or institutional networks rather than a classical geographic invasion route alone.",
+          "citation_ids": [
+            "mrsa-cdc",
+            "mrsa-ncbi"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on lab definitions, infection-control practices, prescribing patterns, and institutional surveillance.",
+        "These entries make the atlas more honest about disease routes inside built health systems."
+      ],
+      "framing_traps": [
+        "Do not confuse healthcare association with exclusive hospital acquisition.",
+        "Do not map antimicrobial resistance as if it were a single clone moving through space."
+      ],
+      "linked_reference_slug": "mrsa-infection",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "mrsa-cdc",
+          "short_citation": "CDC. MRSA infection overview.",
+          "url": "https://www.cdc.gov/mrsa/about/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        },
+        {
+          "id": "mrsa-ncbi",
+          "short_citation": "NCBI Bookshelf. MRSA infection overview.",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK482221/",
+          "claim_supported": "Supports clinical and epidemiologic overview.",
+          "note": "Verified public source; not used as a Wikipedia-derived evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-mrsa-infection-hero",
+      "source_reviewed_at": "2026-05-14T05:38:40+00:00",
+      "color": "#9c6d70",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
     }
   ],
-  "generated_at": "2026-05-13T21:51:56",
-  "atlas_count": 30
+  "generated_at": "2026-05-13T23:01:57",
+  "atlas_count": 50
 };
