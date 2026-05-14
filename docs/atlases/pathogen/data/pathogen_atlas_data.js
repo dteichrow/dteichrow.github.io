@@ -827,7 +827,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [
         {
           "display_title": "Hantavirus and cruise-ship outbreak",
-          "latest_update_summary": "South China Morning Post now explicitly uses investigation or monitoring language.",
+          "latest_update_summary": "The lead item has changed to 5th Californian possibly exposed to hantavirus identified, health officials say no confirmed cases from CBS News.",
           "story_id": "story_f6d225b01f3f7094",
           "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
           "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -929,7 +929,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "South China Morning Post now explicitly uses investigation or monitoring language.",
+              "latest_update_summary": "The lead item has changed to 5th Californian possibly exposed to hantavirus identified, health officials say no confirmed cases from CBS News.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1065,7 +1065,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "South China Morning Post now explicitly uses investigation or monitoring language.",
+              "latest_update_summary": "The lead item has changed to 5th Californian possibly exposed to hantavirus identified, health officials say no confirmed cases from CBS News.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1201,7 +1201,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "South China Morning Post now explicitly uses investigation or monitoring language.",
+              "latest_update_summary": "The lead item has changed to 5th Californian possibly exposed to hantavirus identified, health officials say no confirmed cases from CBS News.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -2079,6 +2079,32 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "mosquito-borne",
       "category_label": "Mosquito-borne / arboviral",
       "transmission_group": "Mosquito-borne / arboviral",
+      "geography_layers": [
+        {
+          "layer_id": "zika-tropical-subtropical-distribution",
+          "label": "Tropical and subtropical arbovirus distribution frame",
+          "layer_type": "endemic_zone",
+          "geometry_type": "bbox",
+          "bounds": [
+            [
+              -105,
+              -35
+            ],
+            [
+              155,
+              35
+            ]
+          ],
+          "date_or_era": "Contemporary Aedes-borne risk geography",
+          "confidence": "moderate",
+          "narrative": "The atlas layer marks the broad tropical and subtropical belt where Aedes mosquito ecology and travel-linked outbreaks make Zika a recurring surveillance problem rather than a single route line.",
+          "citation_ids": [
+            "zika-cdc",
+            "zika-who"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#5fb6a6",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -2194,6 +2220,32 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "mosquito-borne",
       "category_label": "Mosquito-borne / arboviral",
       "transmission_group": "Mosquito-borne / arboviral",
+      "geography_layers": [
+        {
+          "layer_id": "chikungunya-tropical-subtropical-distribution",
+          "label": "Tropical and subtropical Aedes transmission belt",
+          "layer_type": "endemic_zone",
+          "geometry_type": "bbox",
+          "bounds": [
+            [
+              -105,
+              -35
+            ],
+            [
+              155,
+              35
+            ]
+          ],
+          "date_or_era": "Contemporary Aedes-borne distribution",
+          "confidence": "moderate",
+          "narrative": "Chikungunya is better represented as a recurring Aedes-borne tropical and subtropical distribution surface across Africa, Asia, islands, and the Americas than as one clean historical path.",
+          "citation_ids": [
+            "chik-who",
+            "chik-cdc"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#d9a441",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
@@ -2309,6 +2361,32 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "mosquito-borne",
       "category_label": "Mosquito-borne / arboviral",
       "transmission_group": "Mosquito-borne / arboviral",
+      "geography_layers": [
+        {
+          "layer_id": "west-nile-north-american-seasonal-zone",
+          "label": "North American seasonal mosquito-bird-human surveillance zone",
+          "layer_type": "surveillance_region",
+          "geometry_type": "bbox",
+          "bounds": [
+            [
+              -130,
+              20
+            ],
+            [
+              -60,
+              55
+            ]
+          ],
+          "date_or_era": "Post-1999 North American establishment and seasonal surveillance",
+          "confidence": "strong",
+          "narrative": "In the atlas, West Nile virus needs a shaded bird-mosquito-human surveillance region across North America, where seasonal vector ecology and neuroinvasive disease monitoring matter more than a single origin-to-destination arrow.",
+          "citation_ids": [
+            "wnv-cdc-transmission",
+            "wnv-cdc-causes"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#8fbf5f",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet"
@@ -2423,6 +2501,32 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "mosquito-borne",
       "category_label": "Mosquito-borne / arboviral",
       "transmission_group": "Mosquito-borne / arboviral",
+      "geography_layers": [
+        {
+          "layer_id": "japanese-encephalitis-asia-western-pacific-zone",
+          "label": "Asia and western Pacific endemic-risk zone",
+          "layer_type": "endemic_zone",
+          "geometry_type": "bbox",
+          "bounds": [
+            [
+              65,
+              -10
+            ],
+            [
+              150,
+              50
+            ]
+          ],
+          "date_or_era": "Contemporary rural and peri-urban transmission ecology",
+          "confidence": "strong",
+          "narrative": "Japanese encephalitis belongs on the map as an endemic-risk zone across parts of Asia and the western Pacific, tied to mosquito vectors, amplifying hosts, vaccination geography, and rural exposure.",
+          "citation_ids": [
+            "je-who",
+            "je-wpro"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#6fa8dc",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet"
@@ -2537,6 +2641,32 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
       "transmission_group": "Fecal-oral / waterborne",
+      "geography_layers": [
+        {
+          "layer_id": "polio-remaining-endemic-transmission-frame",
+          "label": "Remaining endemic-transmission frame",
+          "layer_type": "surveillance_region",
+          "geometry_type": "bbox",
+          "bounds": [
+            [
+              60,
+              20
+            ],
+            [
+              75,
+              38
+            ]
+          ],
+          "date_or_era": "Contemporary eradication endgame",
+          "confidence": "moderate",
+          "narrative": "The route story should be paired with a tight surveillance layer for the remaining endemic-transmission frame, while the larger atlas context remains global eradication and vaccine-derived poliovirus risk.",
+          "citation_ids": [
+            "polio-who",
+            "polio-who-topic"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#7c9fd1",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -2652,6 +2782,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
       "transmission_group": "Fecal-oral / waterborne",
+      "geography_layers": [
+        {
+          "layer_id": "hepatitis-a-global-sanitation-inequality-surface",
+          "label": "Global fecal-oral risk shaped by sanitation and immunity",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary global fecal-oral transmission",
+          "confidence": "moderate",
+          "narrative": "Hepatitis A is global, but not evenly distributed: water, sanitation, food handling, childhood exposure, vaccination, and travel create the real risk surface.",
+          "citation_ids": [
+            "hav-who",
+            "hav-cdc"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#c9b56b",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
@@ -2767,6 +2913,32 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
       "transmission_group": "Fecal-oral / waterborne",
+      "geography_layers": [
+        {
+          "layer_id": "typhoid-sanitation-endemic-zone",
+          "label": "Water and sanitation endemic-risk belt",
+          "layer_type": "endemic_zone",
+          "geometry_type": "bbox",
+          "bounds": [
+            [
+              20,
+              -35
+            ],
+            [
+              125,
+              35
+            ]
+          ],
+          "date_or_era": "Contemporary water and sanitation risk geography",
+          "confidence": "moderate",
+          "narrative": "Typhoid should be read through water and sanitation systems, with endemic risk concentrated in settings where sewage, drinking water, food systems, and antibiotic resistance overlap.",
+          "citation_ids": [
+            "typhoid-who",
+            "typhoid-cdc-yellowbook"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#bc8f5f",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet"
@@ -2881,6 +3053,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
       "transmission_group": "Fecal-oral / waterborne",
+      "geography_layers": [
+        {
+          "layer_id": "norovirus-global-closed-setting-distribution",
+          "label": "Global closed-setting and food-service distribution",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary global gastroenteritis ecology",
+          "confidence": "strong",
+          "narrative": "Norovirus is a global distribution problem: cruise ships, care homes, schools, restaurants, households, and health-care settings are the map as much as countries are.",
+          "citation_ids": [
+            "noro-cdc",
+            "noro-yellowbook"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#9aa36b",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
@@ -3017,6 +3205,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
       "transmission_group": "Airborne / respiratory",
+      "geography_layers": [
+        {
+          "layer_id": "smallpox-historical-global-distribution",
+          "label": "Historical global distribution before eradication",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Pre-eradication global circulation; eradication certified in 1980",
+          "confidence": "strong",
+          "narrative": "For smallpox, the correct atlas layer is historical global distribution followed by eradication, with the modern map defined by absence from natural circulation and laboratory-security concerns.",
+          "citation_ids": [
+            "smallpox-cdc",
+            "smallpox-who"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#b56b5b",
       "status_label": "Mixed / debated",
       "writing_state_label": "Adjacent writing"
@@ -3131,6 +3335,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
       "transmission_group": "Airborne / respiratory",
+      "geography_layers": [
+        {
+          "layer_id": "seasonal-influenza-global-respiratory-distribution",
+          "label": "Global seasonal respiratory distribution",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Recurring seasonal and year-round circulation",
+          "confidence": "strong",
+          "narrative": "Seasonal influenza is a global respiratory surface whose timing varies by hemisphere, tropics, surveillance capacity, vaccination, and antigenic drift.",
+          "citation_ids": [
+            "flu-who",
+            "flu-who-topic"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#b7c7df",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet"
@@ -3245,6 +3465,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
       "transmission_group": "Airborne / respiratory",
+      "geography_layers": [
+        {
+          "layer_id": "covid-global-pandemic-distribution",
+          "label": "Global pandemic and continuing respiratory distribution",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "2020 onward global circulation",
+          "confidence": "strong",
+          "narrative": "COVID-19 should not appear as only a line out of Wuhan; the mature atlas layer is global respiratory circulation shaped by indoor air, travel, immunity, surveillance, variants, and health-system reporting.",
+          "citation_ids": [
+            "covid-who",
+            "covid-topic"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#7b8fa8",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet"
@@ -3359,6 +3595,32 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
+      "geography_layers": [
+        {
+          "layer_id": "ebola-central-west-africa-outbreak-ecology",
+          "label": "Central and West African outbreak ecology frame",
+          "layer_type": "outbreak_region",
+          "geometry_type": "bbox",
+          "bounds": [
+            [
+              -17,
+              -10
+            ],
+            [
+              32,
+              15
+            ]
+          ],
+          "date_or_era": "Recognized outbreaks from 1976 onward",
+          "confidence": "moderate",
+          "narrative": "Ebola requires an outbreak-ecology region rather than a single point: forest spillover, caregiving, funerals, mobility, borders, and health-system trust shape the visible map.",
+          "citation_ids": [
+            "ebola-who",
+            "ebola-topic"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#b84646",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
@@ -3474,6 +3736,32 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
+      "geography_layers": [
+        {
+          "layer_id": "marburg-african-filovirus-outbreak-ecology",
+          "label": "African filovirus outbreak and reservoir-exposure frame",
+          "layer_type": "outbreak_region",
+          "geometry_type": "bbox",
+          "bounds": [
+            [
+              5,
+              -30
+            ],
+            [
+              40,
+              15
+            ]
+          ],
+          "date_or_era": "Recognized outbreaks and travel-linked events",
+          "confidence": "moderate",
+          "narrative": "Marburg is best drawn as an African outbreak-ecology and reservoir-exposure frame, with caves, mines, bats, health-care exposure, and cross-border response all shaping the map.",
+          "citation_ids": [
+            "marburg-who",
+            "marburg-topic"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#9f3f43",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
@@ -3589,6 +3877,32 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
+      "geography_layers": [
+        {
+          "layer_id": "nipah-south-southeast-asia-reservoir-interface",
+          "label": "South and Southeast Asian bat-livestock-human interface",
+          "layer_type": "reservoir_ecology",
+          "geometry_type": "bbox",
+          "bounds": [
+            [
+              75,
+              -10
+            ],
+            [
+              125,
+              30
+            ]
+          ],
+          "date_or_era": "Recognized outbreaks from 1998 onward",
+          "confidence": "strong",
+          "narrative": "Nipah geography is a reservoir-interface layer: fruit bats, pigs or other intermediate pathways, date-palm sap exposure, hospitals, and household caregiving shape outbreak risk.",
+          "citation_ids": [
+            "nipah-who",
+            "nipah-cdc"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#7a6f4f",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
@@ -3704,6 +4018,32 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "rodent-environmental",
       "category_label": "Rodent-borne / environmental",
       "transmission_group": "Rodent-borne / environmental",
+      "geography_layers": [
+        {
+          "layer_id": "lassa-west-africa-endemic-zone",
+          "label": "West African rodent-associated endemic zone",
+          "layer_type": "endemic_zone",
+          "geometry_type": "bbox",
+          "bounds": [
+            [
+              -18,
+              4
+            ],
+            [
+              15,
+              16
+            ]
+          ],
+          "date_or_era": "Contemporary endemic and seasonal outbreak ecology",
+          "confidence": "strong",
+          "narrative": "Lassa fever belongs as a West African endemic-zone layer tied to multimammate rodent ecology, housing, food storage, health-care exposure, and seasonal detection.",
+          "citation_ids": [
+            "lassa-who",
+            "lassa-topic"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#b17d5a",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet"
@@ -3818,6 +4158,32 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
+      "geography_layers": [
+        {
+          "layer_id": "rabies-africa-asia-dog-mediated-burden",
+          "label": "Africa and Asia dog-mediated burden frame",
+          "layer_type": "endemic_zone",
+          "geometry_type": "bbox",
+          "bounds": [
+            [
+              -20,
+              -35
+            ],
+            [
+              145,
+              55
+            ]
+          ],
+          "date_or_era": "Contemporary dog-mediated human mortality burden",
+          "confidence": "strong",
+          "narrative": "Rabies geography is dominated by dog-mediated exposure and uneven post-exposure prophylaxis access, with most human deaths concentrated in Africa and Asia.",
+          "citation_ids": [
+            "rabies-who",
+            "rabies-topic"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#9c6f3d",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -3933,6 +4299,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
+      "geography_layers": [
+        {
+          "layer_id": "anthrax-global-soil-livestock-ecology",
+          "label": "Global soil and livestock exposure ecology",
+          "layer_type": "reservoir_ecology",
+          "geometry_type": "world",
+          "date_or_era": "Persistent environmental spore ecology",
+          "confidence": "moderate",
+          "narrative": "Anthrax is not a travel route so much as environmental memory: spores persist in soil, livestock encounter them, and humans enter the map through animals, hides, wool, meat, and occupational exposure.",
+          "citation_ids": [
+            "anthrax-cdc",
+            "anthrax-cdc-main"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#8c7a55",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
@@ -4048,6 +4430,32 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
+      "geography_layers": [
+        {
+          "layer_id": "mers-arabian-peninsula-camel-interface",
+          "label": "Arabian Peninsula camel-human interface",
+          "layer_type": "reservoir_ecology",
+          "geometry_type": "bbox",
+          "bounds": [
+            [
+              35,
+              10
+            ],
+            [
+              60,
+              35
+            ]
+          ],
+          "date_or_era": "Recognized from 2012 onward",
+          "confidence": "strong",
+          "narrative": "MERS needs a shaded camel-human interface zone centered on the Arabian Peninsula, with secondary health-care amplification and travel-linked export layered on top.",
+          "citation_ids": [
+            "mers-who",
+            "mers-cdc"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#b88a55",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
@@ -4163,6 +4571,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
       "transmission_group": "Airborne / respiratory",
+      "geography_layers": [
+        {
+          "layer_id": "diphtheria-global-vaccine-gap-surface",
+          "label": "Global vaccine-preventable disease with outbreak pockets",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary vaccine-preventable resurgence risk",
+          "confidence": "moderate",
+          "narrative": "Diphtheria is geographically global in possibility but clustered by vaccination gaps, conflict, displacement, crowding, and access to antitoxin and antibiotics.",
+          "citation_ids": [
+            "diphtheria-who",
+            "diphtheria-topic"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#8f9c5a",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -4278,6 +4702,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
       "transmission_group": "Airborne / respiratory",
+      "geography_layers": [
+        {
+          "layer_id": "pertussis-global-vaccine-preventable-circulation",
+          "label": "Global vaccine-preventable respiratory circulation",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary recurrent respiratory circulation",
+          "confidence": "strong",
+          "narrative": "Pertussis remains a global respiratory disease surface despite vaccination, with infant vulnerability, waning immunity, schedules, and outbreak detection shaping the map.",
+          "citation_ids": [
+            "pertussis-who",
+            "pertussis-immunization"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#c7a05a",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -19024,6 +19464,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "variants": []
     }
   ],
-  "generated_at": "2026-05-14T07:11:44",
+  "generated_at": "2026-05-14T08:13:28",
   "atlas_count": 210
 };
