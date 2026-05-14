@@ -151,12 +151,8 @@ window.PATHOGEN_ATLAS_DATA = {
       "why_it_matters": "It lets the atlas show how a pathogen can move with people, water storage, ships, and vector habitat rather than by human travel alone.",
       "writing_state": "direct",
       "color": "#d86a4f",
-      "category": "mosquito-borne",
-      "category_label": "Mosquito-borne / arboviral",
-      "transmission_group": "Mosquito-borne / arboviral",
       "status_label": "Consensus",
       "writing_state_label": "Written here directly",
-      "reference_href": "../../reference/yellow-fever.html",
       "withheld_citations": [
         {
           "id": "yellow-handbook",
@@ -169,7 +165,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "reason": "DOI link withheld pending manual verification"
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
+      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified.",
+      "reference_href": "../../reference/yellow-fever.html"
     },
     {
       "atlas_scope": "Nineteenth-century pandemic expansion with modern humanitarian echoes",
@@ -301,12 +298,8 @@ window.PATHOGEN_ATLAS_DATA = {
       "why_it_matters": "It gives the atlas a clean origin basin, repeated outward routes, and a still-live connection between infrastructure failure and epidemic geography.",
       "writing_state": "adjacent",
       "color": "#5a9bd4",
-      "category": "fecal-oral-waterborne",
-      "category_label": "Fecal-oral / waterborne",
-      "transmission_group": "Fecal-oral / waterborne",
       "status_label": "Consensus",
       "writing_state_label": "Adjacent writing",
-      "reference_href": "../../reference/cholera.html",
       "withheld_citations": [
         {
           "id": "cholera-handbook",
@@ -324,7 +317,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "reason": "DOI link withheld pending manual verification"
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
+      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified.",
+      "reference_href": "../../reference/cholera.html"
     },
     {
       "atlas_scope": "Ancient divergence with early modern colonial spread",
@@ -436,12 +430,8 @@ window.PATHOGEN_ATLAS_DATA = {
       "why_it_matters": "It shows the difference between debated deep origin, strong consensus on later spread, and the modern reality that measles outbreaks are usually immunity-gap stories.",
       "writing_state": "not_yet_written",
       "color": "#d6c06a",
-      "category": "airborne-respiratory",
-      "category_label": "Airborne / respiratory",
-      "transmission_group": "Airborne / respiratory",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
-      "reference_href": "../../reference/measles.html",
       "withheld_citations": [
         {
           "id": "measles-handbook",
@@ -459,7 +449,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "reason": "DOI link withheld pending manual verification"
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
+      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified.",
+      "reference_href": "../../reference/measles.html"
     },
     {
       "atlas_scope": "Central and West African history with 2003 and 2022 global turning points",
@@ -584,12 +575,8 @@ window.PATHOGEN_ATLAS_DATA = {
       "why_it_matters": "It forces the site to distinguish clades, transport mode, and transmission network rather than collapsing everything into one map pin.",
       "writing_state": "not_yet_written",
       "color": "#dd6974",
-      "category": "contact-sexual-bloodborne",
-      "category_label": "Contact, sexual, or bloodborne",
-      "transmission_group": "Contact, sexual, or bloodborne",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
-      "reference_href": "../../reference/mpox.html",
       "withheld_citations": [
         {
           "id": "mpox-handbook",
@@ -612,7 +599,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "reason": "DOI link withheld pending manual verification"
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
+      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified.",
+      "reference_href": "../../reference/mpox.html"
     },
     {
       "atlas_scope": "East and Southeast Asian emergence with global bird and farm spread",
@@ -754,12 +742,8 @@ window.PATHOGEN_ATLAS_DATA = {
       "why_it_matters": "It creates a genuinely different map grammar from the classic human-to-human pathogens and foregrounds One Health risk.",
       "writing_state": "not_yet_written",
       "color": "#9b7bd8",
-      "category": "zoonotic-animal-interface",
-      "category_label": "Zoonotic / animal interface",
-      "transmission_group": "Zoonotic / animal interface",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
-      "reference_href": "../../reference/avian-influenza-a-h5n1.html",
       "withheld_citations": [
         {
           "id": "h5n1-handbook",
@@ -782,7 +766,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "reason": "DOI link withheld pending manual verification"
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
+      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified.",
+      "reference_href": "../../reference/avian-influenza-a-h5n1.html"
     },
     {
       "atlas_scope": "Family-level rodent-host geography with variant-specific human disease lenses",
@@ -826,7 +811,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [
         {
           "display_title": "Hantavirus and cruise-ship outbreak",
-          "latest_update_summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
+          "latest_update_summary": "The lead item has changed to From 'staged' to Israel: Hantavirus misinformation runs rampant online from Euronews.com.",
           "story_id": "story_f6d225b01f3f7094",
           "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
           "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -927,7 +912,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
+              "latest_update_summary": "The lead item has changed to From 'staged' to Israel: Hantavirus misinformation runs rampant online from Euronews.com.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1001,12 +986,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "why_it_matters": "It restores the older and broader hantavirus story that gets erased when modern news cycles jump straight to Andes virus.",
           "writing_state": "direct",
           "color": "#7aa96b",
-          "category": "other-mixed",
-          "category_label": "Other / mixed transmission",
-          "transmission_group": "Other / mixed transmission",
           "status_label": "Consensus",
           "writing_state_label": "Written here directly",
-          "reference_href": "../../reference/hantavirus-syndrome.html",
           "withheld_citations": [
             {
               "id": "hantaan-korean-war",
@@ -1019,7 +1000,8 @@ window.PATHOGEN_ATLAS_DATA = {
               "reason": "DOI link withheld pending manual verification"
             }
           ],
-          "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
+          "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified.",
+          "reference_href": "../../reference/hantavirus-syndrome.html"
         },
         {
           "atlas_scope": "Family-level rodent-host geography with variant-specific human disease lenses",
@@ -1063,7 +1045,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
+              "latest_update_summary": "The lead item has changed to From 'staged' to Israel: Hantavirus misinformation runs rampant online from Euronews.com.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1137,12 +1119,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "why_it_matters": "It explains why U.S. readers often think hantavirus starts in the Four Corners when that is really the start of one major New World recognition event.",
           "writing_state": "direct",
           "color": "#7aa96b",
-          "category": "other-mixed",
-          "category_label": "Other / mixed transmission",
-          "transmission_group": "Other / mixed transmission",
           "status_label": "Consensus",
           "writing_state_label": "Written here directly",
-          "reference_href": "../../reference/hantavirus-syndrome.html",
           "withheld_citations": [
             {
               "id": "sin-nombre-four-corners",
@@ -1155,7 +1133,8 @@ window.PATHOGEN_ATLAS_DATA = {
               "reason": "DOI link withheld pending manual verification"
             }
           ],
-          "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
+          "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified.",
+          "reference_href": "../../reference/hantavirus-syndrome.html"
         },
         {
           "atlas_scope": "Family-level rodent-host geography with variant-specific human disease lenses",
@@ -1199,7 +1178,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
+              "latest_update_summary": "The lead item has changed to From 'staged' to Israel: Hantavirus misinformation runs rampant online from Euronews.com.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1273,12 +1252,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "why_it_matters": "It is the variant that turns a rodent-exposure story into a transmission-story question.",
           "writing_state": "direct",
           "color": "#7aa96b",
-          "category": "other-mixed",
-          "category_label": "Other / mixed transmission",
-          "transmission_group": "Other / mixed transmission",
           "status_label": "Mixed / debated",
           "writing_state_label": "Written here directly",
-          "reference_href": "../../reference/hantavirus-syndrome.html",
           "withheld_citations": [
             {
               "id": "hanta-andes",
@@ -1291,7 +1266,8 @@ window.PATHOGEN_ATLAS_DATA = {
               "reason": "DOI link withheld pending manual verification"
             }
           ],
-          "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
+          "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified.",
+          "reference_href": "../../reference/hantavirus-syndrome.html"
         }
       ],
       "visual_asset": {
@@ -1310,12 +1286,8 @@ window.PATHOGEN_ATLAS_DATA = {
       "why_it_matters": "It forces the atlas to behave like an encyclopedia rather than a single-route animation and keeps us honest about host ecology, geography, and syndrome differences.",
       "writing_state": "direct",
       "color": "#7aa96b",
-      "category": "rodent-environmental",
-      "category_label": "Rodent-borne / environmental",
-      "transmission_group": "Rodent-borne / environmental",
       "status_label": "Mixed / debated",
       "writing_state_label": "Written here directly",
-      "reference_href": "../../reference/hantavirus-syndrome.html",
       "withheld_citations": [
         {
           "id": "hanta-family-review",
@@ -1343,7 +1315,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "reason": "DOI link withheld pending manual verification"
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
+      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified.",
+      "reference_href": "../../reference/hantavirus-syndrome.html"
     },
     {
       "atlas_scope": "Asian origin framing with modern vector-driven global expansion",
@@ -1477,12 +1450,8 @@ window.PATHOGEN_ATLAS_DATA = {
       "why_it_matters": "It turns the atlas toward contemporary global change instead of leaving it stranded in historical imperial routes.",
       "writing_state": "not_yet_written",
       "color": "#c9a84c",
-      "category": "mosquito-borne",
-      "category_label": "Mosquito-borne / arboviral",
-      "transmission_group": "Mosquito-borne / arboviral",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
-      "reference_href": "../../reference/dengue.html",
       "withheld_citations": [
         {
           "id": "dengue-handbook",
@@ -1500,7 +1469,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "reason": "DOI link withheld pending manual verification"
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
+      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified.",
+      "reference_href": "../../reference/dengue.html"
     },
     {
       "atlas_scope": "Ancient African-rooted burden with colonial and modern climate-vector redistribution",
@@ -1634,12 +1604,8 @@ window.PATHOGEN_ATLAS_DATA = {
       "why_it_matters": "It keeps the atlas from becoming virus-only and forces a map grammar built around mosquitoes, species differences, and ecological receptivity.",
       "writing_state": "adjacent",
       "color": "#5abf7c",
-      "category": "mosquito-borne",
-      "category_label": "Mosquito-borne / parasitic",
-      "transmission_group": "Mosquito-borne / parasitic",
       "status_label": "Mixed / debated",
       "writing_state_label": "Adjacent writing",
-      "reference_href": "../../reference/malaria.html",
       "withheld_citations": [
         {
           "id": "malaria-handbook",
@@ -1657,7 +1623,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "reason": "DOI link withheld pending manual verification"
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified."
+      "citation_verification_note": "Some DOI citations are withheld from the public atlas until manually verified.",
+      "reference_href": "../../reference/malaria.html"
     },
     {
       "atlas_scope": "Deep human coexpansion with industrial, colonial, and migration-linked redistribution",
@@ -1793,9 +1760,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "why_it_matters": "It turns the atlas toward chronic structural transmission instead of one spectacular frontier jump.",
       "writing_state": "direct",
       "color": "#d98e5f",
-      "category": "airborne-respiratory",
-      "category_label": "Airborne / respiratory",
-      "transmission_group": "Airborne / respiratory",
       "status_label": "Mixed / debated",
       "writing_state_label": "Written here directly",
       "withheld_citations": [
@@ -1945,9 +1909,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "why_it_matters": "It lets the atlas bridge deep historical fear, genomic reconstruction, and the very practical map logic of rodents, fleas, and ports.",
       "writing_state": "adjacent",
       "color": "#b9754f",
-      "category": "flea-louse-mite-borne",
-      "category_label": "Flea, louse, and mite-borne",
-      "transmission_group": "Flea, louse, and mite-borne",
       "status_label": "Mixed / debated",
       "writing_state_label": "Adjacent writing",
       "withheld_citations": [
@@ -2079,7 +2040,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "mosquito-borne",
       "category_label": "Mosquito-borne / arboviral",
       "transmission_group": "Mosquito-borne / arboviral",
-      "color": "#5fb6a6",
+      "color": "#c9a84c",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/zika-virus-disease.html"
@@ -2194,7 +2155,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "mosquito-borne",
       "category_label": "Mosquito-borne / arboviral",
       "transmission_group": "Mosquito-borne / arboviral",
-      "color": "#d9a441",
+      "color": "#c9a84c",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/chikungunya.html"
@@ -2309,7 +2270,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "mosquito-borne",
       "category_label": "Mosquito-borne / arboviral",
       "transmission_group": "Mosquito-borne / arboviral",
-      "color": "#8fbf5f",
+      "color": "#c9a84c",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet"
     },
@@ -2423,7 +2384,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "mosquito-borne",
       "category_label": "Mosquito-borne / arboviral",
       "transmission_group": "Mosquito-borne / arboviral",
-      "color": "#6fa8dc",
+      "color": "#c9a84c",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet"
     },
@@ -2537,7 +2498,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
       "transmission_group": "Fecal-oral / waterborne",
-      "color": "#7c9fd1",
+      "color": "#c9a84c",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/poliomyelitis-cvdpv2.html"
@@ -2652,7 +2613,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
       "transmission_group": "Fecal-oral / waterborne",
-      "color": "#c9b56b",
+      "color": "#c9a84c",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/hepatitis-a.html"
@@ -2767,7 +2728,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
       "transmission_group": "Fecal-oral / waterborne",
-      "color": "#bc8f5f",
+      "color": "#c9a84c",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet"
     },
@@ -2881,7 +2842,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
       "transmission_group": "Fecal-oral / waterborne",
-      "color": "#9aa36b",
+      "color": "#c9a84c",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/norovirus.html"
@@ -3017,7 +2978,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
       "transmission_group": "Airborne / respiratory",
-      "color": "#b56b5b",
+      "color": "#c9a84c",
       "status_label": "Mixed / debated",
       "writing_state_label": "Adjacent writing"
     },
@@ -3131,7 +3092,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
       "transmission_group": "Airborne / respiratory",
-      "color": "#b7c7df",
+      "color": "#c9a84c",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet"
     },
@@ -3245,7 +3206,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
       "transmission_group": "Airborne / respiratory",
-      "color": "#7b8fa8",
+      "color": "#c9a84c",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet"
     },
@@ -3359,7 +3320,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
-      "color": "#b84646",
+      "color": "#c9a84c",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/ebola-virus-disease.html"
@@ -3474,7 +3435,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
-      "color": "#9f3f43",
+      "color": "#c9a84c",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/marburg-virus-disease.html"
@@ -3589,7 +3550,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
-      "color": "#7a6f4f",
+      "color": "#c9a84c",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/nipah-virus-disease.html"
@@ -3704,7 +3665,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "rodent-environmental",
       "category_label": "Rodent-borne / environmental",
       "transmission_group": "Rodent-borne / environmental",
-      "color": "#b17d5a",
+      "color": "#c9a84c",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet"
     },
@@ -3818,7 +3779,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
-      "color": "#9c6f3d",
+      "color": "#c9a84c",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/rabies.html"
@@ -3933,7 +3894,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
-      "color": "#8c7a55",
+      "color": "#c9a84c",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/anthrax.html"
@@ -4048,7 +4009,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
-      "color": "#b88a55",
+      "color": "#c9a84c",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/middle-east-respiratory-syndrome-mers.html"
@@ -4163,7 +4124,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
       "transmission_group": "Airborne / respiratory",
-      "color": "#8f9c5a",
+      "color": "#c9a84c",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/diphtheria.html"
@@ -4278,12 +4239,12 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
       "transmission_group": "Airborne / respiratory",
-      "color": "#c7a05a",
+      "color": "#c9a84c",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/pertussis.html"
     }
   ],
-  "generated_at": "2026-05-13T19:50:03",
+  "generated_at": "2026-05-13T19:50:09",
   "atlas_count": 30
 };

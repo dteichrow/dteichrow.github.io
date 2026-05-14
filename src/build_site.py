@@ -1426,6 +1426,13 @@ def import_external_pathogen(docs_dir: Path, base_url: str) -> None:
     dest_root = docs_dir / "atlases" / "pathogen"
     atlas_export_path = docs_dir / "app_exports" / "atlas.json"
     atlas_export = load_json(atlas_export_path)
+    extra_pathogens_path = src_root / "extra_pathogens.json"
+    if extra_pathogens_path.exists():
+        extra_export = load_json(extra_pathogens_path)
+        known_slugs = {entry.get("slug") for entry in atlas_export.get("atlas", [])}
+        atlas_export["atlas"] = atlas_export.get("atlas", []) + [
+            entry for entry in extra_export.get("atlas", []) if entry.get("slug") not in known_slugs
+        ]
 
     write_pathogen_atlas_payload(src_root, atlas_export, base_url="/", link_prefix="../../docs/")
     inject_atlas_overlay(
@@ -1440,7 +1447,7 @@ def import_external_pathogen(docs_dir: Path, base_url: str) -> None:
 
     if dest_root.exists():
         shutil.rmtree(dest_root)
-    shutil.copytree(src_root, dest_root)
+    shutil.copytree(src_root, dest_root, ignore=shutil.ignore_patterns("catalog", "extra_pathogens.json"))
     write_pathogen_atlas_payload(dest_root, atlas_export, base_url=base_url, link_prefix="../../")
     inject_atlas_overlay(
         dest_root / "index.html",

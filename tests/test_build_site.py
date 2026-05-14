@@ -273,6 +273,32 @@ def test_import_external_pathogen_writes_js_payload(tmp_path, monkeypatch) -> No
             }
         )
     )
+    (src_root / "extra_pathogens.json").write_text(
+        json.dumps(
+            {
+                "atlas": [
+                    {
+                        "slug": "rabies",
+                        "name": "Rabies",
+                        "status": "consensus",
+                        "writing_state": "direct",
+                        "citations": [
+                            {
+                                "id": "who-rabies",
+                                "short_citation": "WHO. Rabies fact sheet.",
+                                "url": "https://www.who.int/news-room/fact-sheets/detail/rabies",
+                                "claim_supported": "Rabies remains a public health concern.",
+                            }
+                        ],
+                    },
+                    {
+                        "slug": "yellow-fever",
+                        "name": "Duplicate yellow fever",
+                    },
+                ]
+            }
+        )
+    )
 
     monkeypatch.setattr(build_site, "PROJECT_ROOT", project_root)
     build_site.import_external_pathogen(docs_dir, "/")
@@ -299,6 +325,9 @@ def test_import_external_pathogen_writes_js_payload(tmp_path, monkeypatch) -> No
     assert '"reference_href": "../../reference/yellow-fever.html"' in data_text
     assert '"story_href": "../../stories/demo-story.html"' in data_text
     assert '"slug": "urban-yellow-fever"' in data_text
+    assert '"slug": "rabies"' in data_text
+    assert "Duplicate yellow fever" not in data_text
+    assert "extra_pathogens.json" not in {path.name for path in (docs_dir / "atlases" / "pathogen").iterdir()}
     assert '"writing_state_label": "Adjacent writing"' in data_text
     assert "https://doi.org/10.1234/fake-fixture" not in data_text
     assert "DOI citations are withheld" in data_text
