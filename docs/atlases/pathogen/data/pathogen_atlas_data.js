@@ -5,6 +5,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "atlas_scope": "Historical-to-modern transatlantic spread",
       "atlas_url": "atlas.html?pathogen=yellow-fever",
       "citation_count": 1,
+      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
       "citations": [
         {
           "claim_supported": "Historical development of yellow fever epidemiology, including mosquito transmission, vertebrate hosts, and epidemic spacing.",
@@ -149,21 +150,23 @@ window.PATHOGEN_ATLAS_DATA = {
       },
       "visual_asset_id": "atlas-yellow-fever-hero",
       "why_it_matters": "It lets the atlas show how a pathogen can move with people, water storage, ships, and vector habitat rather than by human travel alone.",
-      "writing_state": "direct",
       "withheld_citations": [
         {
           "id": "yellow-handbook",
-          "short_citation": "Tuan JJ, Cox FEG, Bia FJ. Historical overview of global infectious diseases and geopolitics. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Tuan JJ, Cox FEG, Bia FJ. Historical overview of global infectious diseases and geopolitics. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025."
         },
         {
           "id": "yellow-review",
-          "short_citation": "Douam F, Ploss A. Yellow Fever Virus: Knowledge Gaps Impeding the Fight Against an Old Foe. Trends Microbiol. 2018.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Douam F, Ploss A. Yellow Fever Virus: Knowledge Gaps Impeding the Fight Against an Old Foe. Trends Microbiol. 2018."
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+      "writing_state": "direct",
       "color": "#d86a4f",
+      "category": "mosquito-borne",
+      "category_label": "Mosquito-borne / arboviral",
+      "transmission_group": "Mosquito-borne / arboviral",
       "status_label": "Consensus",
       "writing_state_label": "Written here directly",
       "reference_href": "../../reference/yellow-fever.html"
@@ -172,6 +175,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "atlas_scope": "Nineteenth-century pandemic expansion with modern humanitarian echoes",
       "atlas_url": "atlas.html?pathogen=cholera",
       "citation_count": 0,
+      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
       "citations": [],
       "default_variant_slug": "",
       "framing_traps": [
@@ -296,26 +300,28 @@ window.PATHOGEN_ATLAS_DATA = {
       },
       "visual_asset_id": "atlas-cholera-hero",
       "why_it_matters": "It gives the atlas a clean origin basin, repeated outward routes, and a still-live connection between infrastructure failure and epidemic geography.",
-      "writing_state": "adjacent",
       "withheld_citations": [
         {
           "id": "cholera-handbook",
-          "short_citation": "Tuan JJ, Cox FEG, Bia FJ. Historical overview of global infectious diseases and geopolitics. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Tuan JJ, Cox FEG, Bia FJ. Historical overview of global infectious diseases and geopolitics. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025."
         },
         {
           "id": "cholera-nature",
-          "short_citation": "Mutreja A, Kim DW, Thomson NR et al. Evidence for several waves of global transmission in the seventh cholera pandemic. Nature. 2011.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Mutreja A, Kim DW, Thomson NR et al. Evidence for several waves of global transmission in the seventh cholera pandemic. Nature. 2011."
         },
         {
           "id": "cholera-review",
-          "short_citation": "Hu D, Liu B, Feng L et al. Origins of the current seventh cholera pandemic. Proc Natl Acad Sci U S A. 2016.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Hu D, Liu B, Feng L et al. Origins of the current seventh cholera pandemic. Proc Natl Acad Sci U S A. 2016."
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+      "writing_state": "adjacent",
       "color": "#5a9bd4",
+      "category": "fecal-oral-waterborne",
+      "category_label": "Fecal-oral / waterborne",
+      "transmission_group": "Fecal-oral / waterborne",
       "status_label": "Consensus",
       "writing_state_label": "Adjacent writing",
       "reference_href": "../../reference/cholera.html"
@@ -324,6 +330,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "atlas_scope": "Ancient divergence with early modern colonial spread",
       "atlas_url": "atlas.html?pathogen=measles",
       "citation_count": 0,
+      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
       "citations": [],
       "default_variant_slug": "",
       "framing_traps": [
@@ -428,26 +435,28 @@ window.PATHOGEN_ATLAS_DATA = {
       },
       "visual_asset_id": "atlas-measles-hero",
       "why_it_matters": "It shows the difference between debated deep origin, strong consensus on later spread, and the modern reality that measles outbreaks are usually immunity-gap stories.",
-      "writing_state": "not_yet_written",
       "withheld_citations": [
         {
           "id": "measles-handbook",
-          "short_citation": "Tuan JJ, Cox FEG, Bia FJ. Historical overview of global infectious diseases and geopolitics. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Tuan JJ, Cox FEG, Bia FJ. Historical overview of global infectious diseases and geopolitics. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025."
         },
         {
           "id": "measles-science",
-          "short_citation": "D\u00fcx A, Lequime S, Patrono LV et al. Measles virus and rinderpest virus divergence dated to the sixth century BCE. Science. 2020.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "D\u00fcx A, Lequime S, Patrono LV et al. Measles virus and rinderpest virus divergence dated to the sixth century BCE. Science. 2020."
         },
         {
           "id": "measles-lancet",
-          "short_citation": "Moss WJ. Measles. Lancet. 2017.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Moss WJ. Measles. Lancet. 2017."
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+      "writing_state": "not_yet_written",
       "color": "#d6c06a",
+      "category": "airborne-respiratory",
+      "category_label": "Airborne / respiratory",
+      "transmission_group": "Airborne / respiratory",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/measles.html"
@@ -456,6 +465,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "atlas_scope": "Central and West African history with 2003 and 2022 global turning points",
       "atlas_url": "atlas.html?pathogen=mpox",
       "citation_count": 0,
+      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
       "citations": [],
       "default_variant_slug": "",
       "framing_traps": [
@@ -573,31 +583,33 @@ window.PATHOGEN_ATLAS_DATA = {
       },
       "visual_asset_id": "atlas-mpox-hero",
       "why_it_matters": "It forces the site to distinguish clades, transport mode, and transmission network rather than collapsing everything into one map pin.",
-      "writing_state": "not_yet_written",
       "withheld_citations": [
         {
           "id": "mpox-handbook",
-          "short_citation": "Tuan JJ, Cox FEG, Bia FJ; Wilson ME, Petersen E, Koopmans MP. Historical overview and emerging infections chapters. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Tuan JJ, Cox FEG, Bia FJ; Wilson ME, Petersen E, Koopmans MP. Historical overview and emerging infections chapters. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025."
         },
         {
           "id": "mpox-croft",
-          "short_citation": "Croft DR, Sotir MJ, Williams CJ et al. Occupational risks during a monkeypox outbreak, Wisconsin, 2003. Emerg Infect Dis. 2007.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Croft DR, Sotir MJ, Williams CJ et al. Occupational risks during a monkeypox outbreak, Wisconsin, 2003. Emerg Infect Dis. 2007."
         },
         {
           "id": "mpox-review",
-          "short_citation": "Bunge EM, Hoet B, Chen L et al. The changing epidemiology of human monkeypox\u2014A potential threat? PLoS Negl Trop Dis. 2022.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Bunge EM, Hoet B, Chen L et al. The changing epidemiology of human monkeypox\u2014A potential threat? PLoS Negl Trop Dis. 2022."
         },
         {
           "id": "mpox-lancet",
-          "short_citation": "Mitj\u00e0 O, Ogoina D, Titanji BK et al. Monkeypox. Lancet. 2023.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Mitj\u00e0 O, Ogoina D, Titanji BK et al. Monkeypox. Lancet. 2023."
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+      "writing_state": "not_yet_written",
       "color": "#dd6974",
+      "category": "contact-sexual-bloodborne",
+      "category_label": "Contact, sexual, or bloodborne",
+      "transmission_group": "Contact, sexual, or bloodborne",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/mpox.html"
@@ -606,6 +618,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "atlas_scope": "East and Southeast Asian emergence with global bird and farm spread",
       "atlas_url": "atlas.html?pathogen=avian-influenza-h5n1",
       "citation_count": 1,
+      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
       "citations": [
         {
           "claim_supported": "U.S. dairy-associated spread and human spillover updates.",
@@ -740,31 +753,33 @@ window.PATHOGEN_ATLAS_DATA = {
       },
       "visual_asset_id": "atlas-h5n1-hero",
       "why_it_matters": "It creates a genuinely different map grammar from the classic human-to-human pathogens and foregrounds One Health risk.",
-      "writing_state": "not_yet_written",
       "withheld_citations": [
         {
           "id": "h5n1-handbook",
-          "short_citation": "Wilson ME, Petersen E, Koopmans MP. Emerging infections. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Wilson ME, Petersen E, Koopmans MP. Emerging infections. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025."
         },
         {
           "id": "h5n1-efsa",
-          "short_citation": "Adlhoch C, Fusaro A, Gonzales JL et al. Avian influenza overview April-June 2023. EFSA J. 2023.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Adlhoch C, Fusaro A, Gonzales JL et al. Avian influenza overview April-June 2023. EFSA J. 2023."
         },
         {
           "id": "h5n1-cat",
-          "short_citation": "Briand FX, Souchaud F, Pierre I et al. Highly pathogenic Avian Influenza A(H5N1) Clade 2.3.4.4b Virus in Domestic Cat, France, 2022. Emerg Infect Dis. 2023.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Briand FX, Souchaud F, Pierre I et al. Highly pathogenic Avian Influenza A(H5N1) Clade 2.3.4.4b Virus in Domestic Cat, France, 2022. Emerg Infect Dis. 2023."
         },
         {
           "id": "h5n1-mink",
-          "short_citation": "Ag\u00fcero M, Monne I, S\u00e1nchez A et al. Highly pathogenic avian influenza A(H5N1) virus infection in farmed minks, Spain, October 2022. Euro Surveill. 2023.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Ag\u00fcero M, Monne I, S\u00e1nchez A et al. Highly pathogenic avian influenza A(H5N1) virus infection in farmed minks, Spain, October 2022. Euro Surveill. 2023."
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+      "writing_state": "not_yet_written",
       "color": "#9b7bd8",
+      "category": "zoonotic-animal-interface",
+      "category_label": "Zoonotic / animal interface",
+      "transmission_group": "Zoonotic / animal interface",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/avian-influenza-a-h5n1.html"
@@ -773,6 +788,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "atlas_scope": "Family-level rodent-host geography with variant-specific human disease lenses",
       "atlas_url": "atlas.html?pathogen=hantavirus",
       "citation_count": 0,
+      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
       "citations": [],
       "default_variant_slug": "hantaan-virus",
       "framing_traps": [
@@ -811,7 +827,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [
         {
           "display_title": "Hantavirus and cruise-ship outbreak",
-          "latest_update_summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
+          "latest_update_summary": "The lead item has changed to From 'staged' to Israel: Hantavirus misinformation runs rampant online from Euronews.com.",
           "story_id": "story_f6d225b01f3f7094",
           "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
           "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -874,6 +890,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "atlas_scope": "Family-level rodent-host geography with variant-specific human disease lenses",
           "atlas_url": "atlas.html?pathogen=hantavirus&variant=hantaan-virus",
           "citation_count": 0,
+          "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
           "citations": [],
           "default_variant_slug": "",
           "framing_traps": [
@@ -912,7 +929,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
+              "latest_update_summary": "The lead item has changed to From 'staged' to Israel: Hantavirus misinformation runs rampant online from Euronews.com.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -984,21 +1001,23 @@ window.PATHOGEN_ATLAS_DATA = {
           },
           "visual_asset_id": "atlas-hantavirus-hero",
           "why_it_matters": "It restores the older and broader hantavirus story that gets erased when modern news cycles jump straight to Andes virus.",
-          "writing_state": "direct",
           "withheld_citations": [
             {
               "id": "hantaan-korean-war",
-              "short_citation": "Lee HW, Lee PW, Johnson KM. Isolation of the etiologic agent of Korean hemorrhagic fever. J Infect Dis. 1978.",
-              "reason": "DOI link withheld pending manual verification"
+              "reason": "DOI link withheld pending manual verification",
+              "short_citation": "Lee HW, Lee PW, Johnson KM. Isolation of the etiologic agent of Korean hemorrhagic fever. J Infect Dis. 1978."
             },
             {
               "id": "hanta-hfrs",
-              "short_citation": "Bi Z, Formenty PBH, Roth CE. Hantavirus infection: A review and global update. J Infect Dev Ctries. 2008.",
-              "reason": "DOI link withheld pending manual verification"
+              "reason": "DOI link withheld pending manual verification",
+              "short_citation": "Bi Z, Formenty PBH, Roth CE. Hantavirus infection: A review and global update. J Infect Dev Ctries. 2008."
             }
           ],
-          "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+          "writing_state": "direct",
           "color": "#7aa96b",
+          "category": "other-mixed",
+          "category_label": "Other / mixed transmission",
+          "transmission_group": "Other / mixed transmission",
           "status_label": "Consensus",
           "writing_state_label": "Written here directly",
           "reference_href": "../../reference/hantavirus-syndrome.html"
@@ -1007,6 +1026,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "atlas_scope": "Family-level rodent-host geography with variant-specific human disease lenses",
           "atlas_url": "atlas.html?pathogen=hantavirus&variant=sin-nombre-virus",
           "citation_count": 0,
+          "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
           "citations": [],
           "default_variant_slug": "",
           "framing_traps": [
@@ -1045,7 +1065,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
+              "latest_update_summary": "The lead item has changed to From 'staged' to Israel: Hantavirus misinformation runs rampant online from Euronews.com.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1117,21 +1137,23 @@ window.PATHOGEN_ATLAS_DATA = {
           },
           "visual_asset_id": "atlas-hantavirus-hero",
           "why_it_matters": "It explains why U.S. readers often think hantavirus starts in the Four Corners when that is really the start of one major New World recognition event.",
-          "writing_state": "direct",
           "withheld_citations": [
             {
               "id": "sin-nombre-four-corners",
-              "short_citation": "Nichol ST, Spiropoulou CF, Morzunov S et al. Genetic identification of a hantavirus associated with an outbreak of acute respiratory illness. Science. 1993.",
-              "reason": "DOI link withheld pending manual verification"
+              "reason": "DOI link withheld pending manual verification",
+              "short_citation": "Nichol ST, Spiropoulou CF, Morzunov S et al. Genetic identification of a hantavirus associated with an outbreak of acute respiratory illness. Science. 1993."
             },
             {
               "id": "hanta-americas",
-              "short_citation": "Hjelle B, Torres-P\u00e9rez F. Hantaviruses in the Americas and their role as emerging pathogens. Viruses. 2010.",
-              "reason": "DOI link withheld pending manual verification"
+              "reason": "DOI link withheld pending manual verification",
+              "short_citation": "Hjelle B, Torres-P\u00e9rez F. Hantaviruses in the Americas and their role as emerging pathogens. Viruses. 2010."
             }
           ],
-          "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+          "writing_state": "direct",
           "color": "#7aa96b",
+          "category": "other-mixed",
+          "category_label": "Other / mixed transmission",
+          "transmission_group": "Other / mixed transmission",
           "status_label": "Consensus",
           "writing_state_label": "Written here directly",
           "reference_href": "../../reference/hantavirus-syndrome.html"
@@ -1140,6 +1162,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "atlas_scope": "Family-level rodent-host geography with variant-specific human disease lenses",
           "atlas_url": "atlas.html?pathogen=hantavirus&variant=andes-virus",
           "citation_count": 0,
+          "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
           "citations": [],
           "default_variant_slug": "",
           "framing_traps": [
@@ -1178,7 +1201,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
+              "latest_update_summary": "The lead item has changed to From 'staged' to Israel: Hantavirus misinformation runs rampant online from Euronews.com.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1250,21 +1273,23 @@ window.PATHOGEN_ATLAS_DATA = {
           },
           "visual_asset_id": "atlas-hantavirus-hero",
           "why_it_matters": "It is the variant that turns a rodent-exposure story into a transmission-story question.",
-          "writing_state": "direct",
           "withheld_citations": [
             {
               "id": "hanta-andes",
-              "short_citation": "Mart\u00ednez-Valdebenito C, Calvo M, Vial C et al. Person-to-person household and nosocomial transmission of Andes hantavirus, southern Chile, 2011. Emerg Infect Dis. 2014.",
-              "reason": "DOI link withheld pending manual verification"
+              "reason": "DOI link withheld pending manual verification",
+              "short_citation": "Mart\u00ednez-Valdebenito C, Calvo M, Vial C et al. Person-to-person household and nosocomial transmission of Andes hantavirus, southern Chile, 2011. Emerg Infect Dis. 2014."
             },
             {
               "id": "hanta-climate",
-              "short_citation": "Douglas KO, Payne K, Sabino-Santos G et al. Influence of climatic factors on human hantavirus infections in Latin America and the Caribbean: A systematic review. Pathogens. 2022.",
-              "reason": "DOI link withheld pending manual verification"
+              "reason": "DOI link withheld pending manual verification",
+              "short_citation": "Douglas KO, Payne K, Sabino-Santos G et al. Influence of climatic factors on human hantavirus infections in Latin America and the Caribbean: A systematic review. Pathogens. 2022."
             }
           ],
-          "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+          "writing_state": "direct",
           "color": "#7aa96b",
+          "category": "other-mixed",
+          "category_label": "Other / mixed transmission",
+          "transmission_group": "Other / mixed transmission",
           "status_label": "Mixed / debated",
           "writing_state_label": "Written here directly",
           "reference_href": "../../reference/hantavirus-syndrome.html"
@@ -1284,36 +1309,38 @@ window.PATHOGEN_ATLAS_DATA = {
       },
       "visual_asset_id": "atlas-hantavirus-hero",
       "why_it_matters": "It forces the atlas to behave like an encyclopedia rather than a single-route animation and keeps us honest about host ecology, geography, and syndrome differences.",
-      "writing_state": "direct",
       "withheld_citations": [
         {
           "id": "hanta-family-review",
-          "short_citation": "Jonsson CB, Figueiredo LTM, Vapalahti O. A global perspective on hantavirus ecology, epidemiology, and disease. Clin Microbiol Rev. 2010.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Jonsson CB, Figueiredo LTM, Vapalahti O. A global perspective on hantavirus ecology, epidemiology, and disease. Clin Microbiol Rev. 2010."
         },
         {
           "id": "hanta-americas",
-          "short_citation": "Hjelle B, Torres-P\u00e9rez F. Hantaviruses in the Americas and their role as emerging pathogens. Viruses. 2010.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Hjelle B, Torres-P\u00e9rez F. Hantaviruses in the Americas and their role as emerging pathogens. Viruses. 2010."
         },
         {
           "id": "hanta-hfrs",
-          "short_citation": "Bi Z, Formenty PBH, Roth CE. Hantavirus infection: A review and global update. J Infect Dev Ctries. 2008.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Bi Z, Formenty PBH, Roth CE. Hantavirus infection: A review and global update. J Infect Dev Ctries. 2008."
         },
         {
           "id": "hanta-andes",
-          "short_citation": "Mart\u00ednez-Valdebenito C, Calvo M, Vial C et al. Person-to-person household and nosocomial transmission of Andes hantavirus, southern Chile, 2011. Emerg Infect Dis. 2014.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Mart\u00ednez-Valdebenito C, Calvo M, Vial C et al. Person-to-person household and nosocomial transmission of Andes hantavirus, southern Chile, 2011. Emerg Infect Dis. 2014."
         },
         {
           "id": "hanta-climate",
-          "short_citation": "Douglas KO, Payne K, Sabino-Santos G et al. Influence of climatic factors on human hantavirus infections in Latin America and the Caribbean: A systematic review. Pathogens. 2022.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Douglas KO, Payne K, Sabino-Santos G et al. Influence of climatic factors on human hantavirus infections in Latin America and the Caribbean: A systematic review. Pathogens. 2022."
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+      "writing_state": "direct",
       "color": "#7aa96b",
+      "category": "rodent-environmental",
+      "category_label": "Rodent-borne / environmental",
+      "transmission_group": "Rodent-borne / environmental",
       "status_label": "Mixed / debated",
       "writing_state_label": "Written here directly",
       "reference_href": "../../reference/hantavirus-syndrome.html"
@@ -1322,6 +1349,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "atlas_scope": "Asian origin framing with modern vector-driven global expansion",
       "atlas_url": "atlas.html?pathogen=dengue",
       "citation_count": 0,
+      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
       "citations": [],
       "default_variant_slug": "",
       "framing_traps": [
@@ -1448,26 +1476,28 @@ window.PATHOGEN_ATLAS_DATA = {
       },
       "visual_asset_id": "atlas-dengue-hero",
       "why_it_matters": "It turns the atlas toward contemporary global change instead of leaving it stranded in historical imperial routes.",
-      "writing_state": "not_yet_written",
       "withheld_citations": [
         {
           "id": "dengue-handbook",
-          "short_citation": "Wilson ME, Petersen E, Koopmans MP; Khatib AN, Matsee W, Semenza JC. Emerging infections and climate change chapters. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Wilson ME, Petersen E, Koopmans MP; Khatib AN, Matsee W, Semenza JC. Emerging infections and climate change chapters. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025."
         },
         {
           "id": "dengue-kraemer",
-          "short_citation": "Kraemer MUG, Reiner RC Jr, Brady OJ et al. Past and future spread of the arbovirus vectors Aedes aegypti and Aedes albopictus. Nat Microbiol. 2019.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Kraemer MUG, Reiner RC Jr, Brady OJ et al. Past and future spread of the arbovirus vectors Aedes aegypti and Aedes albopictus. Nat Microbiol. 2019."
         },
         {
           "id": "dengue-messina",
-          "short_citation": "Messina JP, Brady OJ, Golding N et al. The current and future global distribution and population at risk of dengue. Nat Microbiol. 2019.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Messina JP, Brady OJ, Golding N et al. The current and future global distribution and population at risk of dengue. Nat Microbiol. 2019."
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+      "writing_state": "not_yet_written",
       "color": "#c9a84c",
+      "category": "mosquito-borne",
+      "category_label": "Mosquito-borne / arboviral",
+      "transmission_group": "Mosquito-borne / arboviral",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/dengue.html"
@@ -1476,6 +1506,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "atlas_scope": "Ancient African-rooted burden with colonial and modern climate-vector redistribution",
       "atlas_url": "atlas.html?pathogen=malaria",
       "citation_count": 1,
+      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
       "citations": [
         {
           "claim_supported": "Reintroduction and airport-malaria framing in nonendemic settings.",
@@ -1602,26 +1633,28 @@ window.PATHOGEN_ATLAS_DATA = {
       "visual_asset": {},
       "visual_asset_id": "atlas-malaria-hero",
       "why_it_matters": "It keeps the atlas from becoming virus-only and forces a map grammar built around mosquitoes, species differences, and ecological receptivity.",
-      "writing_state": "adjacent",
       "withheld_citations": [
         {
           "id": "malaria-handbook",
-          "short_citation": "Tuan JJ, Cox FEG, Bia FJ; Wilson ME, Petersen E, Koopmans MP; Khatib AN, Matsee W, Semenza JC. Historical overview, emerging infections, and climate change chapters. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Tuan JJ, Cox FEG, Bia FJ; Wilson ME, Petersen E, Koopmans MP; Khatib AN, Matsee W, Semenza JC. Historical overview, emerging infections, and climate change chapters. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025."
         },
         {
           "id": "malaria-carter",
-          "short_citation": "Carter R, Mendis KN. Evolutionary and historical aspects of the burden of malaria. Clin Microbiol Rev. 2002.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Carter R, Mendis KN. Evolutionary and historical aspects of the burden of malaria. Clin Microbiol Rev. 2002."
         },
         {
           "id": "malaria-mordecai",
-          "short_citation": "Mordecai EA, Ryan SJ, Caldwell JM et al. Climate change could shift disease burden from malaria to arboviruses in Africa. Lancet Planet Health. 2020.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Mordecai EA, Ryan SJ, Caldwell JM et al. Climate change could shift disease burden from malaria to arboviruses in Africa. Lancet Planet Health. 2020."
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+      "writing_state": "adjacent",
       "color": "#5abf7c",
+      "category": "mosquito-borne",
+      "category_label": "Mosquito-borne / parasitic",
+      "transmission_group": "Mosquito-borne / parasitic",
       "status_label": "Mixed / debated",
       "writing_state_label": "Adjacent writing",
       "reference_href": "../../reference/malaria.html"
@@ -1630,6 +1663,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "atlas_scope": "Deep human coexpansion with industrial, colonial, and migration-linked redistribution",
       "atlas_url": "atlas.html?pathogen=tuberculosis",
       "citation_count": 2,
+      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
       "citations": [
         {
           "claim_supported": "Contemporary burden and global control context.",
@@ -1758,26 +1792,28 @@ window.PATHOGEN_ATLAS_DATA = {
       "visual_asset": {},
       "visual_asset_id": "atlas-tuberculosis-hero",
       "why_it_matters": "It turns the atlas toward chronic structural transmission instead of one spectacular frontier jump.",
-      "writing_state": "direct",
       "withheld_citations": [
         {
           "id": "tb-handbook",
-          "short_citation": "Tuan JJ, Cox FEG, Bia FJ. Historical overview of global infectious diseases and geopolitics. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Tuan JJ, Cox FEG, Bia FJ. Historical overview of global infectious diseases and geopolitics. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025."
         },
         {
           "id": "tb-comas",
-          "short_citation": "Comas I, Coscolla M, Luo T et al. Out-of-Africa migration and Neolithic coexpansion of Mycobacterium tuberculosis with modern humans. Nat Genet. 2013.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Comas I, Coscolla M, Luo T et al. Out-of-Africa migration and Neolithic coexpansion of Mycobacterium tuberculosis with modern humans. Nat Genet. 2013."
         },
         {
           "id": "tb-migration",
-          "short_citation": "Hargreaves S, L\u00f6nnroth K, Nellums LB et al. Multidrug-resistant tuberculosis and migration to Europe. Clin Microbiol Infect. 2017.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Hargreaves S, L\u00f6nnroth K, Nellums LB et al. Multidrug-resistant tuberculosis and migration to Europe. Clin Microbiol Infect. 2017."
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+      "writing_state": "direct",
       "color": "#d98e5f",
+      "category": "airborne-respiratory",
+      "category_label": "Airborne / respiratory",
+      "transmission_group": "Airborne / respiratory",
       "status_label": "Mixed / debated",
       "writing_state_label": "Written here directly"
     },
@@ -1785,6 +1821,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "atlas_scope": "Central Asian reservoir framing with Justinianic, Black Death, and third-pandemic routes",
       "atlas_url": "atlas.html?pathogen=plague",
       "citation_count": 1,
+      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
       "citations": [
         {
           "claim_supported": "Third-pandemic port spread and the broader narrative of recurring plague waves.",
@@ -1907,26 +1944,28 @@ window.PATHOGEN_ATLAS_DATA = {
       "visual_asset": {},
       "visual_asset_id": "atlas-plague-hero",
       "why_it_matters": "It lets the atlas bridge deep historical fear, genomic reconstruction, and the very practical map logic of rodents, fleas, and ports.",
-      "writing_state": "adjacent",
       "withheld_citations": [
         {
           "id": "plague-handbook",
-          "short_citation": "Tuan JJ, Cox FEG, Bia FJ. Historical overview of global infectious diseases and geopolitics. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Tuan JJ, Cox FEG, Bia FJ. Historical overview of global infectious diseases and geopolitics. In Routledge Handbook of Infectious Diseases: A Geographical Guide. 2025."
         },
         {
           "id": "plague-stenseth",
-          "short_citation": "Stenseth NC, Atshabar BB, Begon M et al. Plague: Past, present, and future. PLoS Med. 2008.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Stenseth NC, Atshabar BB, Begon M et al. Plague: Past, present, and future. PLoS Med. 2008."
         },
         {
           "id": "plague-bos",
-          "short_citation": "Bos KI, Schuenemann VJ, Golding GB et al. A draft genome of Yersinia pestis from victims of the Black Death. Nature. 2011.",
-          "reason": "DOI link withheld pending manual verification"
+          "reason": "DOI link withheld pending manual verification",
+          "short_citation": "Bos KI, Schuenemann VJ, Golding GB et al. A draft genome of Yersinia pestis from victims of the Black Death. Nature. 2011."
         }
       ],
-      "citation_verification_note": "Some DOI citations are withheld from public exports until manually verified.",
+      "writing_state": "adjacent",
       "color": "#b9754f",
+      "category": "flea-louse-mite-borne",
+      "category_label": "Flea, louse, and mite-borne",
+      "transmission_group": "Flea, louse, and mite-borne",
       "status_label": "Mixed / debated",
       "writing_state_label": "Adjacent writing"
     },
@@ -2040,7 +2079,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "mosquito-borne",
       "category_label": "Mosquito-borne / arboviral",
       "transmission_group": "Mosquito-borne / arboviral",
-      "color": "#c9a84c",
+      "color": "#5fb6a6",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/zika-virus-disease.html"
@@ -2155,7 +2194,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "mosquito-borne",
       "category_label": "Mosquito-borne / arboviral",
       "transmission_group": "Mosquito-borne / arboviral",
-      "color": "#c9a84c",
+      "color": "#d9a441",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/chikungunya.html"
@@ -2270,7 +2309,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "mosquito-borne",
       "category_label": "Mosquito-borne / arboviral",
       "transmission_group": "Mosquito-borne / arboviral",
-      "color": "#c9a84c",
+      "color": "#8fbf5f",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet"
     },
@@ -2384,7 +2423,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "mosquito-borne",
       "category_label": "Mosquito-borne / arboviral",
       "transmission_group": "Mosquito-borne / arboviral",
-      "color": "#c9a84c",
+      "color": "#6fa8dc",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet"
     },
@@ -2498,7 +2537,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
       "transmission_group": "Fecal-oral / waterborne",
-      "color": "#c9a84c",
+      "color": "#7c9fd1",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/poliomyelitis-cvdpv2.html"
@@ -2613,7 +2652,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
       "transmission_group": "Fecal-oral / waterborne",
-      "color": "#c9a84c",
+      "color": "#c9b56b",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/hepatitis-a.html"
@@ -2728,7 +2767,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
       "transmission_group": "Fecal-oral / waterborne",
-      "color": "#c9a84c",
+      "color": "#bc8f5f",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet"
     },
@@ -2842,7 +2881,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
       "transmission_group": "Fecal-oral / waterborne",
-      "color": "#c9a84c",
+      "color": "#9aa36b",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/norovirus.html"
@@ -2978,7 +3017,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
       "transmission_group": "Airborne / respiratory",
-      "color": "#c9a84c",
+      "color": "#b56b5b",
       "status_label": "Mixed / debated",
       "writing_state_label": "Adjacent writing"
     },
@@ -3092,7 +3131,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
       "transmission_group": "Airborne / respiratory",
-      "color": "#c9a84c",
+      "color": "#b7c7df",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet"
     },
@@ -3206,7 +3245,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
       "transmission_group": "Airborne / respiratory",
-      "color": "#c9a84c",
+      "color": "#7b8fa8",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet"
     },
@@ -3320,7 +3359,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
-      "color": "#c9a84c",
+      "color": "#b84646",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/ebola-virus-disease.html"
@@ -3435,7 +3474,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
-      "color": "#c9a84c",
+      "color": "#9f3f43",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/marburg-virus-disease.html"
@@ -3550,7 +3589,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
-      "color": "#c9a84c",
+      "color": "#7a6f4f",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/nipah-virus-disease.html"
@@ -3665,7 +3704,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "rodent-environmental",
       "category_label": "Rodent-borne / environmental",
       "transmission_group": "Rodent-borne / environmental",
-      "color": "#c9a84c",
+      "color": "#b17d5a",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet"
     },
@@ -3779,7 +3818,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
-      "color": "#c9a84c",
+      "color": "#9c6f3d",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/rabies.html"
@@ -3894,7 +3933,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
-      "color": "#c9a84c",
+      "color": "#8c7a55",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/anthrax.html"
@@ -4009,7 +4048,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
-      "color": "#c9a84c",
+      "color": "#b88a55",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/middle-east-respiratory-syndrome-mers.html"
@@ -4124,7 +4163,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
       "transmission_group": "Airborne / respiratory",
-      "color": "#c9a84c",
+      "color": "#8f9c5a",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/diphtheria.html"
@@ -4239,12 +4278,12 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
       "transmission_group": "Airborne / respiratory",
-      "color": "#c9a84c",
+      "color": "#c7a05a",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/pertussis.html"
     }
   ],
-  "generated_at": "2026-05-13T20:51:00",
+  "generated_at": "2026-05-13T21:51:56",
   "atlas_count": 30
 };
