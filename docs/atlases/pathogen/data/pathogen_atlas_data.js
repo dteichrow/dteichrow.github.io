@@ -827,7 +827,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [
         {
           "display_title": "Hantavirus and cruise-ship outbreak",
-          "latest_update_summary": "The lead item has changed to 5th Californian possibly exposed to hantavirus identified, health officials say no confirmed cases from CBS News.",
+          "latest_update_summary": "The lead item has changed to From 'staged' to Israel: Hantavirus misinformation runs rampant online from Euronews.com.",
           "story_id": "story_f6d225b01f3f7094",
           "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
           "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -929,7 +929,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "The lead item has changed to 5th Californian possibly exposed to hantavirus identified, health officials say no confirmed cases from CBS News.",
+              "latest_update_summary": "The lead item has changed to From 'staged' to Israel: Hantavirus misinformation runs rampant online from Euronews.com.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1065,7 +1065,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "The lead item has changed to 5th Californian possibly exposed to hantavirus identified, health officials say no confirmed cases from CBS News.",
+              "latest_update_summary": "The lead item has changed to From 'staged' to Israel: Hantavirus misinformation runs rampant online from Euronews.com.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1201,7 +1201,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "The lead item has changed to 5th Californian possibly exposed to hantavirus identified, health officials say no confirmed cases from CBS News.",
+              "latest_update_summary": "The lead item has changed to From 'staged' to Israel: Hantavirus misinformation runs rampant online from Euronews.com.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -11160,8 +11160,1710 @@ window.PATHOGEN_ATLAS_DATA = {
       "citation_count": 2,
       "related_stories": [],
       "variants": []
+    },
+    {
+      "slug": "adenovirus-infection",
+      "name": "Adenovirus infection",
+      "subtitle": "Respiratory, ocular, gastrointestinal, military, daycare, and pool-associated transmission",
+      "status": "mixed",
+      "pathogen_type": "Virus",
+      "summary": "Adenoviruses cause respiratory, conjunctival, and gastrointestinal syndromes, with outbreaks in close-contact settings including childcare, military training, healthcare, and pools.",
+      "why_it_matters": "It adds a multi-syndrome respiratory virus that also forces attention to institutions and recreational water.",
+      "atlas_scope": "Respiratory/contact transmission, institutional outbreaks, water-associated conjunctivitis, and healthcare risk",
+      "category": "airborne-respiratory",
+      "category_label": "Airborne / respiratory",
+      "transmission_group": "Airborne / respiratory",
+      "origin_claim": {
+        "label": "Close-contact respiratory and water-recreation frame",
+        "coordinates": [
+          -77.0,
+          38.9
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for adenovirus infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "adeno-cdc",
+          "adeno-ncbi"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "adenovirus-infection-route",
+          "from_label": "Close-contact respiratory and water-recreation frame",
+          "to_label": "Daycare, military, healthcare, and pool-associated outbreaks",
+          "from_coordinates": [
+            -77.0,
+            38.9
+          ],
+          "to_coordinates": [
+            -95.0,
+            39.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "respiratory_contact_water",
+          "confidence": "moderate",
+          "narrative": "Adenovirus infection maps through the places, institutions, and exposures where transmission can be interrupted: households, schools, water, food, soil, animals, vectors, or healthcare depending on the disease.",
+          "citation_ids": [
+            "adeno-cdc",
+            "adeno-ncbi"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "adenovirus-infection",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "adeno-cdc",
+          "short_citation": "Official source. Adenovirus infection.",
+          "url": "https://www.cdc.gov/adenovirus/about/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        },
+        {
+          "id": "adeno-ncbi",
+          "short_citation": "Official or NCBI source. Adenovirus infection.",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK559072/",
+          "claim_supported": "Supports clinical, epidemiologic, or spatial framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-adenovirus-infection-hero",
+      "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "color": "#8fa4b8",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "human-parainfluenza-virus-infection",
+      "name": "Human parainfluenza virus infection",
+      "subtitle": "Croup, pediatric respiratory disease, seasonality, and close-contact spread",
+      "status": "mixed",
+      "pathogen_type": "Virus",
+      "summary": "Human parainfluenza viruses are common respiratory viruses and major causes of croup and pediatric lower respiratory disease.",
+      "why_it_matters": "It rounds out routine respiratory pathogens that create large pediatric burden without headline drama.",
+      "atlas_scope": "Respiratory transmission, pediatric burden, seasonality, and close-contact settings",
+      "category": "airborne-respiratory",
+      "category_label": "Airborne / respiratory",
+      "transmission_group": "Airborne / respiratory",
+      "origin_claim": {
+        "label": "Pediatric respiratory-seasonality frame",
+        "coordinates": [
+          -77.0,
+          38.9
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for human parainfluenza virus infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "hpiv-cdc",
+          "hpiv-ncbi"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "human-parainfluenza-virus-infection-route",
+          "from_label": "Pediatric respiratory-seasonality frame",
+          "to_label": "Childcare, household, and pediatric-care settings",
+          "from_coordinates": [
+            -77.0,
+            38.9
+          ],
+          "to_coordinates": [
+            -87.6,
+            41.9
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "respiratory_close_contact",
+          "confidence": "moderate",
+          "narrative": "Human parainfluenza virus infection maps through the places, institutions, and exposures where transmission can be interrupted: households, schools, water, food, soil, animals, vectors, or healthcare depending on the disease.",
+          "citation_ids": [
+            "hpiv-cdc",
+            "hpiv-ncbi"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "human-parainfluenza-virus-infection",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "hpiv-cdc",
+          "short_citation": "Official source. Human parainfluenza virus infection.",
+          "url": "https://www.cdc.gov/parainfluenza/about/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        },
+        {
+          "id": "hpiv-ncbi",
+          "short_citation": "Official or NCBI source. Human parainfluenza virus infection.",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK560719/",
+          "claim_supported": "Supports clinical, epidemiologic, or spatial framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-human-parainfluenza-virus-infection-hero",
+      "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "color": "#9eb5c2",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "mycoplasma-pneumoniae-infection",
+      "name": "Mycoplasma pneumoniae infection",
+      "subtitle": "Walking pneumonia, schools, dormitories, military settings, and slow respiratory spread",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "Mycoplasma pneumoniae is a bacterial respiratory infection often associated with prolonged close contact in schools, dormitories, households, and military settings.",
+      "why_it_matters": "It gives the respiratory section a slow-moving bacterial pneumonia ecology, not just viral waves.",
+      "atlas_scope": "Respiratory transmission, congregate settings, atypical pneumonia, and outbreak recognition",
+      "category": "airborne-respiratory",
+      "category_label": "Airborne / respiratory",
+      "transmission_group": "Airborne / respiratory",
+      "origin_claim": {
+        "label": "Congregate respiratory-spread frame",
+        "coordinates": [
+          -77.0,
+          38.9
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for mycoplasma pneumoniae infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "mycoplasma-cdc",
+          "mycoplasma-ncbi"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "mycoplasma-pneumoniae-infection-route",
+          "from_label": "Congregate respiratory-spread frame",
+          "to_label": "School, dormitory, and military outbreak networks",
+          "from_coordinates": [
+            -77.0,
+            38.9
+          ],
+          "to_coordinates": [
+            -71.1,
+            42.4
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "respiratory_close_contact",
+          "confidence": "moderate",
+          "narrative": "Mycoplasma pneumoniae infection maps through the places, institutions, and exposures where transmission can be interrupted: households, schools, water, food, soil, animals, vectors, or healthcare depending on the disease.",
+          "citation_ids": [
+            "mycoplasma-cdc",
+            "mycoplasma-ncbi"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "mycoplasma-pneumoniae-infection",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "mycoplasma-cdc",
+          "short_citation": "Official source. Mycoplasma pneumoniae infection.",
+          "url": "https://www.cdc.gov/mycoplasma/about/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        },
+        {
+          "id": "mycoplasma-ncbi",
+          "short_citation": "Official or NCBI source. Mycoplasma pneumoniae infection.",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK430780/",
+          "claim_supported": "Supports clinical, epidemiologic, or spatial framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-mycoplasma-pneumoniae-infection-hero",
+      "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "color": "#b18f6f",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "group-a-streptococcal-disease",
+      "name": "Group A streptococcal disease",
+      "subtitle": "Pharyngitis, invasive disease, skin infection, crowding, and postpartum or wound risk",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "Group A Streptococcus causes illnesses ranging from strep throat and impetigo to invasive disease, with transmission shaped by respiratory droplets, skin contact, crowding, wounds, and care settings.",
+      "why_it_matters": "It keeps one pathogen family linked to very different syndromes and exposure settings.",
+      "atlas_scope": "Respiratory and skin-contact transmission, invasive disease, and institutional risk",
+      "category": "airborne-respiratory",
+      "category_label": "Airborne / respiratory",
+      "transmission_group": "Airborne / respiratory",
+      "origin_claim": {
+        "label": "Respiratory-skin-contact streptococcal frame",
+        "coordinates": [
+          -77.0,
+          38.9
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for group a streptococcal disease is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "gas-cdc",
+          "gas-ncbi"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "group-a-streptococcal-disease-route",
+          "from_label": "Respiratory-skin-contact streptococcal frame",
+          "to_label": "Schools, households, long-term care, and wound-associated settings",
+          "from_coordinates": [
+            -77.0,
+            38.9
+          ],
+          "to_coordinates": [
+            -0.1,
+            51.5
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "respiratory_skin_contact",
+          "confidence": "moderate",
+          "narrative": "Group A streptococcal disease maps through the places, institutions, and exposures where transmission can be interrupted: households, schools, water, food, soil, animals, vectors, or healthcare depending on the disease.",
+          "citation_ids": [
+            "gas-cdc",
+            "gas-ncbi"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "group-a-streptococcal-disease",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "gas-cdc",
+          "short_citation": "Official source. Group A streptococcal disease.",
+          "url": "https://www.cdc.gov/group-a-strep/about/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        },
+        {
+          "id": "gas-ncbi",
+          "short_citation": "Official or NCBI source. Group A streptococcal disease.",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK333425/",
+          "claim_supported": "Supports clinical, epidemiologic, or spatial framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-group-a-streptococcal-disease-hero",
+      "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "color": "#b0786a",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "hand-foot-and-mouth-disease",
+      "name": "Hand, foot, and mouth disease",
+      "subtitle": "Enteroviruses, childcare, fecal-oral spread, respiratory secretions, and seasonal outbreaks",
+      "status": "mixed",
+      "pathogen_type": "Virus",
+      "summary": "Hand, foot, and mouth disease is usually caused by enteroviruses and spreads through close contact, respiratory secretions, contaminated surfaces, and fecal material.",
+      "why_it_matters": "It is a useful hybrid route: respiratory, surface, and fecal exposure in ordinary childhood institutions.",
+      "atlas_scope": "Childhood enterovirus transmission, childcare outbreaks, fecal-oral and contact routes",
+      "category": "fecal-oral-waterborne",
+      "category_label": "Fecal-oral / waterborne",
+      "transmission_group": "Fecal-oral / waterborne",
+      "origin_claim": {
+        "label": "Childcare enterovirus transmission frame",
+        "coordinates": [
+          103.8,
+          1.35
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for hand, foot, and mouth disease is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "hfmd-cdc",
+          "hfmd-ncbi"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "hand-foot-and-mouth-disease-route",
+          "from_label": "Childcare enterovirus transmission frame",
+          "to_label": "Childcare, school, and household transmission networks",
+          "from_coordinates": [
+            103.8,
+            1.35
+          ],
+          "to_coordinates": [
+            121.5,
+            25.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "fecal_oral_respiratory_contact",
+          "confidence": "moderate",
+          "narrative": "Hand, foot, and mouth disease maps through the places, institutions, and exposures where transmission can be interrupted: households, schools, water, food, soil, animals, vectors, or healthcare depending on the disease.",
+          "citation_ids": [
+            "hfmd-cdc",
+            "hfmd-ncbi"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "hand-foot-and-mouth-disease",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "hfmd-cdc",
+          "short_citation": "Official source. Hand, foot, and mouth disease.",
+          "url": "https://www.cdc.gov/hand-foot-mouth/about/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        },
+        {
+          "id": "hfmd-ncbi",
+          "short_citation": "Official or NCBI source. Hand, foot, and mouth disease.",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK431082/",
+          "claim_supported": "Supports clinical, epidemiologic, or spatial framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-hand-foot-and-mouth-disease-hero",
+      "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "color": "#b69a54",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "hepatitis-d",
+      "name": "Hepatitis D",
+      "subtitle": "Defective virus, hepatitis B dependence, blood exposure, and chronic liver disease",
+      "status": "mixed",
+      "pathogen_type": "Virus",
+      "summary": "Hepatitis D virus requires hepatitis B infection and maps through bloodborne and sexual exposure, chronic liver disease, and uneven vaccination protection.",
+      "why_it_matters": "It shows how one virus can depend on another virus and therefore inherit its prevention geography.",
+      "atlas_scope": "Bloodborne transmission, HBV dependence, chronic liver disease, and vaccination-era prevention",
+      "category": "contact-sexual-bloodborne",
+      "category_label": "Contact, sexual, or bloodborne",
+      "transmission_group": "Contact, sexual, or bloodborne",
+      "origin_claim": {
+        "label": "HBV-dependent bloodborne transmission frame",
+        "coordinates": [
+          44.4,
+          33.3
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for hepatitis d is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "hdv-cdc",
+          "hdv-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "hepatitis-d-route",
+          "from_label": "HBV-dependent bloodborne transmission frame",
+          "to_label": "High-burden chronic hepatitis and vaccination-gap settings",
+          "from_coordinates": [
+            44.4,
+            33.3
+          ],
+          "to_coordinates": [
+            45.0,
+            42.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "bloodborne_hbv_dependent",
+          "confidence": "moderate",
+          "narrative": "Hepatitis D maps through the places, institutions, and exposures where transmission can be interrupted: households, schools, water, food, soil, animals, vectors, or healthcare depending on the disease.",
+          "citation_ids": [
+            "hdv-cdc",
+            "hdv-who"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "hepatitis-d",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "hdv-cdc",
+          "short_citation": "Official source. Hepatitis D.",
+          "url": "https://www.cdc.gov/hepatitis-d/about/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        },
+        {
+          "id": "hdv-who",
+          "short_citation": "Official or NCBI source. Hepatitis D.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/hepatitis-d",
+          "claim_supported": "Supports clinical, epidemiologic, or spatial framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-hepatitis-d-hero",
+      "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "color": "#a78352",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "hepatitis-e",
+      "name": "Hepatitis E",
+      "subtitle": "Fecal-oral waterborne outbreaks, zoonotic foodborne infection, pregnancy risk, and displacement settings",
+      "status": "mixed",
+      "pathogen_type": "Virus",
+      "summary": "Hepatitis E is usually fecal-orally transmitted through contaminated water in outbreak settings, with some genotypes linked to zoonotic foodborne exposure.",
+      "why_it_matters": "It connects water, displacement, pregnancy risk, and animal food systems in one disease map.",
+      "atlas_scope": "Waterborne outbreaks, fecal-oral transmission, zoonotic foodborne exposure, and pregnancy risk",
+      "category": "fecal-oral-waterborne",
+      "category_label": "Fecal-oral / waterborne",
+      "transmission_group": "Fecal-oral / waterborne",
+      "origin_claim": {
+        "label": "Waterborne outbreak and displacement frame",
+        "coordinates": [
+          78.9,
+          22.9
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for hepatitis e is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "hev-cdc",
+          "hev-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "hepatitis-e-route",
+          "from_label": "Waterborne outbreak and displacement frame",
+          "to_label": "Refugee, sanitation-crisis, and zoonotic foodborne settings",
+          "from_coordinates": [
+            78.9,
+            22.9
+          ],
+          "to_coordinates": [
+            31.2,
+            30.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "fecal_oral_waterborne_zoonotic",
+          "confidence": "moderate",
+          "narrative": "Hepatitis E maps through the places, institutions, and exposures where transmission can be interrupted: households, schools, water, food, soil, animals, vectors, or healthcare depending on the disease.",
+          "citation_ids": [
+            "hev-cdc",
+            "hev-who"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "hepatitis-e",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "hev-cdc",
+          "short_citation": "Official source. Hepatitis E.",
+          "url": "https://www.cdc.gov/hepatitis-e/about/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        },
+        {
+          "id": "hev-who",
+          "short_citation": "Official or NCBI source. Hepatitis E.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/hepatitis-e",
+          "claim_supported": "Supports clinical, epidemiologic, or spatial framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-hepatitis-e-hero",
+      "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "color": "#c39b59",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "cysticercosis",
+      "name": "Cysticercosis",
+      "subtitle": "Pork tapeworm eggs, sanitation, neurocysticercosis, and migration-linked diagnosis",
+      "status": "mixed",
+      "pathogen_type": "Helminth",
+      "summary": "Cysticercosis results from ingesting Taenia solium eggs and can cause neurocysticercosis when larval cysts involve the central nervous system.",
+      "why_it_matters": "It shows how a food animal cycle becomes a neurologic disease through sanitation and migration.",
+      "atlas_scope": "Fecal-oral egg ingestion, pig-human cycles, sanitation, and neurocysticercosis",
+      "category": "fecal-oral-waterborne",
+      "category_label": "Fecal-oral / waterborne",
+      "transmission_group": "Fecal-oral / waterborne",
+      "origin_claim": {
+        "label": "Taenia solium sanitation and pig-human cycle frame",
+        "coordinates": [
+          -99.1,
+          19.4
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for cysticercosis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "cysticercosis-cdc",
+          "taeniasis-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "cysticercosis-route",
+          "from_label": "Taenia solium sanitation and pig-human cycle frame",
+          "to_label": "Migration-linked neurocysticercosis and pork-sanitation settings",
+          "from_coordinates": [
+            -99.1,
+            19.4
+          ],
+          "to_coordinates": [
+            -118.2,
+            34.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "fecal_oral_pig_human_cycle",
+          "confidence": "moderate",
+          "narrative": "Cysticercosis maps through the places, institutions, and exposures where transmission can be interrupted: households, schools, water, food, soil, animals, vectors, or healthcare depending on the disease.",
+          "citation_ids": [
+            "cysticercosis-cdc",
+            "taeniasis-who"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "cysticercosis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "cysticercosis-cdc",
+          "short_citation": "Official source. Cysticercosis.",
+          "url": "https://www.cdc.gov/cysticercosis/about/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        },
+        {
+          "id": "taeniasis-who",
+          "short_citation": "Official or NCBI source. Cysticercosis.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/taeniasis-cysticercosis",
+          "claim_supported": "Supports clinical, epidemiologic, or spatial framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-cysticercosis-hero",
+      "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "color": "#9f8f61",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "clonorchiasis",
+      "name": "Clonorchiasis",
+      "subtitle": "Raw freshwater fish, liver flukes, river foodways, and cholangiocarcinoma risk",
+      "status": "mixed",
+      "pathogen_type": "Helminth",
+      "summary": "Clonorchiasis is a liver fluke infection acquired by eating raw or undercooked freshwater fish containing metacercariae.",
+      "why_it_matters": "It adds foodways, rivers, and cancer risk to the foodborne parasite layer.",
+      "atlas_scope": "Foodborne trematode infection, freshwater fish, aquaculture, and hepatobiliary disease",
+      "category": "foodborne",
+      "category_label": "Foodborne",
+      "transmission_group": "Foodborne",
+      "origin_claim": {
+        "label": "East Asian freshwater fish and river-foodway frame",
+        "coordinates": [
+          120.2,
+          30.3
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for clonorchiasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "clonorchis-cdc",
+          "clonorchis-ncbi"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "clonorchiasis-route",
+          "from_label": "East Asian freshwater fish and river-foodway frame",
+          "to_label": "Aquaculture, raw-fish consumption, and hepatobiliary disease settings",
+          "from_coordinates": [
+            120.2,
+            30.3
+          ],
+          "to_coordinates": [
+            127.0,
+            37.5
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "foodborne_fish_fluke",
+          "confidence": "moderate",
+          "narrative": "Clonorchiasis maps through the places, institutions, and exposures where transmission can be interrupted: households, schools, water, food, soil, animals, vectors, or healthcare depending on the disease.",
+          "citation_ids": [
+            "clonorchis-cdc",
+            "clonorchis-ncbi"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "clonorchiasis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "clonorchis-cdc",
+          "short_citation": "Official source. Clonorchiasis.",
+          "url": "https://www.cdc.gov/clonorchis/about/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        },
+        {
+          "id": "clonorchis-ncbi",
+          "short_citation": "Official or NCBI source. Clonorchiasis.",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK553125/",
+          "claim_supported": "Supports clinical, epidemiologic, or spatial framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-clonorchiasis-hero",
+      "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "color": "#7f9f66",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "fascioliasis",
+      "name": "Fascioliasis",
+      "subtitle": "Liver flukes, aquatic plants, livestock, irrigation, and neglected food-water exposure",
+      "status": "mixed",
+      "pathogen_type": "Helminth",
+      "summary": "Fascioliasis is a liver fluke infection acquired through contaminated aquatic plants or water in livestock-associated environments.",
+      "why_it_matters": "It makes irrigation and livestock-linked aquatic foodways visible as disease infrastructure.",
+      "atlas_scope": "Foodborne and water-associated liver fluke infection, livestock ecology, and irrigation",
+      "category": "foodborne",
+      "category_label": "Foodborne",
+      "transmission_group": "Foodborne",
+      "origin_claim": {
+        "label": "Livestock-aquatic plant exposure frame",
+        "coordinates": [
+          -74.0,
+          -13.5
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for fascioliasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "fasciola-cdc",
+          "fasciola-ncbi"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "fascioliasis-route",
+          "from_label": "Livestock-aquatic plant exposure frame",
+          "to_label": "Irrigation, wetland grazing, and aquatic-plant foodways",
+          "from_coordinates": [
+            -74.0,
+            -13.5
+          ],
+          "to_coordinates": [
+            -68.1,
+            -16.5
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "food_water_liver_fluke",
+          "confidence": "moderate",
+          "narrative": "Fascioliasis maps through the places, institutions, and exposures where transmission can be interrupted: households, schools, water, food, soil, animals, vectors, or healthcare depending on the disease.",
+          "citation_ids": [
+            "fasciola-cdc",
+            "fasciola-ncbi"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "fascioliasis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "fasciola-cdc",
+          "short_citation": "Official source. Fascioliasis.",
+          "url": "https://www.cdc.gov/liver-flukes/fasciola/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        },
+        {
+          "id": "fasciola-ncbi",
+          "short_citation": "Official or NCBI source. Fascioliasis.",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK537032/",
+          "claim_supported": "Supports clinical, epidemiologic, or spatial framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-fascioliasis-hero",
+      "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "color": "#8f9b58",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "paragonimiasis",
+      "name": "Paragonimiasis",
+      "subtitle": "Lung flukes, raw crustaceans, river ecology, and tuberculosis mimicry",
+      "status": "mixed",
+      "pathogen_type": "Helminth",
+      "summary": "Paragonimiasis is a lung fluke infection acquired by eating raw or undercooked freshwater crabs or crayfish containing infective larvae.",
+      "why_it_matters": "It is a useful reminder that foodborne parasites can masquerade as respiratory disease.",
+      "atlas_scope": "Foodborne lung fluke infection, freshwater crustaceans, river ecology, and diagnostic confusion",
+      "category": "foodborne",
+      "category_label": "Foodborne",
+      "transmission_group": "Foodborne",
+      "origin_claim": {
+        "label": "Freshwater crustacean foodway frame",
+        "coordinates": [
+          106.6,
+          10.8
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for paragonimiasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "paragonimus-cdc",
+          "paragonimus-ncbi"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "paragonimiasis-route",
+          "from_label": "Freshwater crustacean foodway frame",
+          "to_label": "Riverine crab and crayfish consumption settings",
+          "from_coordinates": [
+            106.6,
+            10.8
+          ],
+          "to_coordinates": [
+            100.5,
+            13.8
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "foodborne_crustacean_fluke",
+          "confidence": "moderate",
+          "narrative": "Paragonimiasis maps through the places, institutions, and exposures where transmission can be interrupted: households, schools, water, food, soil, animals, vectors, or healthcare depending on the disease.",
+          "citation_ids": [
+            "paragonimus-cdc",
+            "paragonimus-ncbi"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "paragonimiasis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "paragonimus-cdc",
+          "short_citation": "Official source. Paragonimiasis.",
+          "url": "https://www.cdc.gov/paragonimus/about/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        },
+        {
+          "id": "paragonimus-ncbi",
+          "short_citation": "Official or NCBI source. Paragonimiasis.",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK555950/",
+          "claim_supported": "Supports clinical, epidemiologic, or spatial framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-paragonimiasis-hero",
+      "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "color": "#9f7a54",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "anisakiasis",
+      "name": "Anisakiasis",
+      "subtitle": "Raw marine fish, sushi globalization, larval nematodes, and supply-chain recognition",
+      "status": "mixed",
+      "pathogen_type": "Helminth",
+      "summary": "Anisakiasis is acquired by eating raw or undercooked marine fish or squid containing Anisakis larvae.",
+      "why_it_matters": "It adds globalization of raw seafood to the atlas without sensationalizing it.",
+      "atlas_scope": "Foodborne helminth infection, marine fish, seafood supply chains, and raw-food culture",
+      "category": "foodborne",
+      "category_label": "Foodborne",
+      "transmission_group": "Foodborne",
+      "origin_claim": {
+        "label": "Marine fish and raw-seafood foodway frame",
+        "coordinates": [
+          139.7,
+          35.7
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for anisakiasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "anisakis-cdc",
+          "anisakis-ncbi"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "anisakiasis-route",
+          "from_label": "Marine fish and raw-seafood foodway frame",
+          "to_label": "Global sushi, seafood inspection, and marine supply chains",
+          "from_coordinates": [
+            139.7,
+            35.7
+          ],
+          "to_coordinates": [
+            -73.9,
+            40.7
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "foodborne_marine_fish",
+          "confidence": "moderate",
+          "narrative": "Anisakiasis maps through the places, institutions, and exposures where transmission can be interrupted: households, schools, water, food, soil, animals, vectors, or healthcare depending on the disease.",
+          "citation_ids": [
+            "anisakis-cdc",
+            "anisakis-ncbi"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "anisakiasis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "anisakis-cdc",
+          "short_citation": "Official source. Anisakiasis.",
+          "url": "https://www.cdc.gov/anisakiasis/about/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        },
+        {
+          "id": "anisakis-ncbi",
+          "short_citation": "Official or NCBI source. Anisakiasis.",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK546646/",
+          "claim_supported": "Supports clinical, epidemiologic, or spatial framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-anisakiasis-hero",
+      "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "color": "#5f9ba8",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "strongyloidiasis",
+      "name": "Strongyloidiasis",
+      "subtitle": "Soil larvae, autoinfection, immunosuppression, and hidden chronic infection",
+      "status": "mixed",
+      "pathogen_type": "Helminth",
+      "summary": "Strongyloidiasis is a soil-transmitted helminth infection that can persist for decades through autoinfection and become severe with immunosuppression.",
+      "why_it_matters": "It gives the soil section a disease whose timeline can stretch decades after exposure.",
+      "atlas_scope": "Soil-transmitted helminth infection, autoinfection, migration, and immunosuppression",
+      "category": "soil-environmental",
+      "category_label": "Soil / environmental",
+      "transmission_group": "Soil / environmental",
+      "origin_claim": {
+        "label": "Soil-larval and autoinfection frame",
+        "coordinates": [
+          103.8,
+          1.35
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for strongyloidiasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "strongy-cdc",
+          "strongy-ncbi"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "strongyloidiasis-route",
+          "from_label": "Soil-larval and autoinfection frame",
+          "to_label": "Migration, immunosuppression, and tropical/subtropical exposure histories",
+          "from_coordinates": [
+            103.8,
+            1.35
+          ],
+          "to_coordinates": [
+            -80.2,
+            25.8
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "soil_larval_autoinfection",
+          "confidence": "moderate",
+          "narrative": "Strongyloidiasis maps through the places, institutions, and exposures where transmission can be interrupted: households, schools, water, food, soil, animals, vectors, or healthcare depending on the disease.",
+          "citation_ids": [
+            "strongy-cdc",
+            "strongy-ncbi"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "strongyloidiasis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "strongy-cdc",
+          "short_citation": "Official source. Strongyloidiasis.",
+          "url": "https://www.cdc.gov/strongyloides/about/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        },
+        {
+          "id": "strongy-ncbi",
+          "short_citation": "Official or NCBI source. Strongyloidiasis.",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK436024/",
+          "claim_supported": "Supports clinical, epidemiologic, or spatial framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-strongyloidiasis-hero",
+      "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "color": "#8e7d57",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "toxocariasis",
+      "name": "Toxocariasis",
+      "subtitle": "Dogs and cats, soil, children, visceral larva migrans, and ocular disease",
+      "status": "mixed",
+      "pathogen_type": "Helminth",
+      "summary": "Toxocariasis is acquired by ingesting Toxocara eggs from contaminated soil or surfaces, often linked to dogs, cats, and child exposure.",
+      "why_it_matters": "It keeps domestic animals and ordinary soil exposure inside historical epidemiology.",
+      "atlas_scope": "Zoonotic helminth infection, pet-associated soil contamination, and child risk",
+      "category": "zoonotic-animal-interface",
+      "category_label": "Zoonotic / animal interface",
+      "transmission_group": "Zoonotic / animal interface",
+      "origin_claim": {
+        "label": "Dog-cat-soil exposure frame",
+        "coordinates": [
+          -77.0,
+          38.9
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for toxocariasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "toxocara-cdc",
+          "toxocara-ncbi"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "toxocariasis-route",
+          "from_label": "Dog-cat-soil exposure frame",
+          "to_label": "Parks, yards, child exposure, and pet-associated soil contamination",
+          "from_coordinates": [
+            -77.0,
+            38.9
+          ],
+          "to_coordinates": [
+            -95.0,
+            39.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "animal_soil_fecal_oral",
+          "confidence": "moderate",
+          "narrative": "Toxocariasis maps through the places, institutions, and exposures where transmission can be interrupted: households, schools, water, food, soil, animals, vectors, or healthcare depending on the disease.",
+          "citation_ids": [
+            "toxocara-cdc",
+            "toxocara-ncbi"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "toxocariasis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "toxocara-cdc",
+          "short_citation": "Official source. Toxocariasis.",
+          "url": "https://www.cdc.gov/toxocariasis/about/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        },
+        {
+          "id": "toxocara-ncbi",
+          "short_citation": "Official or NCBI source. Toxocariasis.",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK538706/",
+          "claim_supported": "Supports clinical, epidemiologic, or spatial framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-toxocariasis-hero",
+      "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "color": "#9a865b",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "baylisascariasis",
+      "name": "Baylisascariasis",
+      "subtitle": "Raccoon roundworm, latrines, soil exposure, severe neurologic disease, and wildlife interface",
+      "status": "mixed",
+      "pathogen_type": "Helminth",
+      "summary": "Baylisascariasis is a rare but severe infection from ingesting Baylisascaris procyonis eggs shed by raccoons into contaminated environments.",
+      "why_it_matters": "It adds wildlife contamination and rare severe outcomes to the environmental section.",
+      "atlas_scope": "Wildlife-associated environmental contamination, soil ingestion, and neurologic disease",
+      "category": "rodent-environmental",
+      "category_label": "Rodent-borne / environmental",
+      "transmission_group": "Rodent-borne / environmental",
+      "origin_claim": {
+        "label": "Urban wildlife latrine exposure frame",
+        "coordinates": [
+          -87.6,
+          41.9
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for baylisascariasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "baylisascaris-cdc",
+          "baylisascaris-ncbi"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "baylisascariasis-route",
+          "from_label": "Urban wildlife latrine exposure frame",
+          "to_label": "Peridomestic wildlife, soil, and child exposure settings",
+          "from_coordinates": [
+            -87.6,
+            41.9
+          ],
+          "to_coordinates": [
+            -75.2,
+            40.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "wildlife_soil_fecal_oral",
+          "confidence": "moderate",
+          "narrative": "Baylisascariasis maps through the places, institutions, and exposures where transmission can be interrupted: households, schools, water, food, soil, animals, vectors, or healthcare depending on the disease.",
+          "citation_ids": [
+            "baylisascaris-cdc",
+            "baylisascaris-ncbi"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "baylisascariasis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "baylisascaris-cdc",
+          "short_citation": "Official source. Baylisascariasis.",
+          "url": "https://www.cdc.gov/baylisascaris/about/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        },
+        {
+          "id": "baylisascaris-ncbi",
+          "short_citation": "Official or NCBI source. Baylisascariasis.",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK546617/",
+          "claim_supported": "Supports clinical, epidemiologic, or spatial framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-baylisascariasis-hero",
+      "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "color": "#8c705f",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "loiasis",
+      "name": "Loiasis",
+      "subtitle": "Deer flies, rainforest exposure, eye worm, and mass-treatment risk in Central Africa",
+      "status": "mixed",
+      "pathogen_type": "Helminth",
+      "summary": "Loiasis is a filarial infection transmitted by Chrysops deer flies in rainforest regions of West and Central Africa.",
+      "why_it_matters": "It makes vector-borne helminths more than mosquitoes and blackflies.",
+      "atlas_scope": "Deer-fly transmitted filarial infection, rainforest ecology, and treatment-program risk",
+      "category": "other-arthropod-borne",
+      "category_label": "Other arthropod-borne",
+      "transmission_group": "Other arthropod-borne",
+      "origin_claim": {
+        "label": "Central African rainforest deer-fly frame",
+        "coordinates": [
+          12.4,
+          0.4
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for loiasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "loiasis-cdc",
+          "loiasis-ncbi"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "loiasis-route",
+          "from_label": "Central African rainforest deer-fly frame",
+          "to_label": "Rainforest exposure and mass-treatment safety geographies",
+          "from_coordinates": [
+            12.4,
+            0.4
+          ],
+          "to_coordinates": [
+            15.3,
+            -4.3
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "deer_fly_vector",
+          "confidence": "moderate",
+          "narrative": "Loiasis maps through the places, institutions, and exposures where transmission can be interrupted: households, schools, water, food, soil, animals, vectors, or healthcare depending on the disease.",
+          "citation_ids": [
+            "loiasis-cdc",
+            "loiasis-ncbi"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "loiasis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "loiasis-cdc",
+          "short_citation": "Official source. Loiasis.",
+          "url": "https://www.cdc.gov/filarial-worms/about/loiasis.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        },
+        {
+          "id": "loiasis-ncbi",
+          "short_citation": "Official or NCBI source. Loiasis.",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK560685/",
+          "claim_supported": "Supports clinical, epidemiologic, or spatial framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-loiasis-hero",
+      "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "color": "#b79b52",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "group-b-streptococcal-disease",
+      "name": "Group B streptococcal disease",
+      "subtitle": "Maternal colonization, neonatal sepsis, screening, and intrapartum prevention",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "Group B Streptococcus disease maps through maternal colonization, neonatal exposure, screening systems, and intrapartum antibiotic prevention.",
+      "why_it_matters": "It adds perinatal transmission and prevention systems to the contact category.",
+      "atlas_scope": "Maternal colonization, neonatal exposure, screening, and intrapartum prevention",
+      "category": "contact-sexual-bloodborne",
+      "category_label": "Contact, sexual, or bloodborne",
+      "transmission_group": "Contact, sexual, or bloodborne",
+      "origin_claim": {
+        "label": "Maternal-neonatal prevention frame",
+        "coordinates": [
+          -77.0,
+          38.9
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for group b streptococcal disease is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "gbs-cdc",
+          "gbs-ncbi"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "group-b-streptococcal-disease-route",
+          "from_label": "Maternal-neonatal prevention frame",
+          "to_label": "Birth settings, screening, and neonatal sepsis prevention systems",
+          "from_coordinates": [
+            -77.0,
+            38.9
+          ],
+          "to_coordinates": [
+            -87.6,
+            41.9
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "vertical_perinatal_contact",
+          "confidence": "moderate",
+          "narrative": "Group B streptococcal disease maps through the places, institutions, and exposures where transmission can be interrupted: households, schools, water, food, soil, animals, vectors, or healthcare depending on the disease.",
+          "citation_ids": [
+            "gbs-cdc",
+            "gbs-ncbi"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "group-b-streptococcal-disease",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "gbs-cdc",
+          "short_citation": "Official source. Group B streptococcal disease.",
+          "url": "https://www.cdc.gov/group-b-strep/about/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        },
+        {
+          "id": "gbs-ncbi",
+          "short_citation": "Official or NCBI source. Group B streptococcal disease.",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK553143/",
+          "claim_supported": "Supports clinical, epidemiologic, or spatial framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-group-b-streptococcal-disease-hero",
+      "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "color": "#9f7a84",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "clostridium-perfringens-food-poisoning",
+      "name": "Clostridium perfringens food poisoning",
+      "subtitle": "Large-batch cooking, cooling failures, meat, gravy, and institutional meals",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "Clostridium perfringens food poisoning is linked to cooked foods kept at unsafe temperatures, especially meat, poultry, gravy, and large-batch institutional meals.",
+      "why_it_matters": "It adds the kitchen-infrastructure side of foodborne disease.",
+      "atlas_scope": "Foodborne bacterial intoxication/infection, temperature abuse, and institutional meals",
+      "category": "foodborne",
+      "category_label": "Foodborne",
+      "transmission_group": "Foodborne",
+      "origin_claim": {
+        "label": "Institutional cooking and temperature-control frame",
+        "coordinates": [
+          -77.0,
+          38.9
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for clostridium perfringens food poisoning is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "cperfringens-cdc"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "clostridium-perfringens-food-poisoning-route",
+          "from_label": "Institutional cooking and temperature-control frame",
+          "to_label": "Cafeteria, banquet, and large-batch meal outbreak settings",
+          "from_coordinates": [
+            -77.0,
+            38.9
+          ],
+          "to_coordinates": [
+            -95.0,
+            39.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "food_temperature_control",
+          "confidence": "moderate",
+          "narrative": "Clostridium perfringens food poisoning maps through the places, institutions, and exposures where transmission can be interrupted: households, schools, water, food, soil, animals, vectors, or healthcare depending on the disease.",
+          "citation_ids": [
+            "cperfringens-cdc"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "clostridium-perfringens-food-poisoning",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "cperfringens-cdc",
+          "short_citation": "Official source. Clostridium perfringens food poisoning.",
+          "url": "https://www.cdc.gov/clostridium-perfringens/about/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-clostridium-perfringens-food-poisoning-hero",
+      "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "color": "#b8874f",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 1,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "staphylococcal-food-poisoning",
+      "name": "Staphylococcal food poisoning",
+      "subtitle": "Preformed toxin, food handling, unrefrigerated foods, and rapid outbreaks",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "Staphylococcal food poisoning is caused by preformed toxins in contaminated foods, often linked to handling and inadequate refrigeration.",
+      "why_it_matters": "It makes food handling and toxin timing visible as an epidemiologic route.",
+      "atlas_scope": "Foodborne toxin illness, handling, refrigeration, and rapid outbreak recognition",
+      "category": "foodborne",
+      "category_label": "Foodborne",
+      "transmission_group": "Foodborne",
+      "origin_claim": {
+        "label": "Food handling and preformed-toxin frame",
+        "coordinates": [
+          -77.0,
+          38.9
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for staphylococcal food poisoning is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "staph-food-cdc"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "staphylococcal-food-poisoning-route",
+          "from_label": "Food handling and preformed-toxin frame",
+          "to_label": "Picnics, kitchens, catering, and refrigeration-failure settings",
+          "from_coordinates": [
+            -77.0,
+            38.9
+          ],
+          "to_coordinates": [
+            -118.2,
+            34.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "food_handling_toxin",
+          "confidence": "moderate",
+          "narrative": "Staphylococcal food poisoning maps through the places, institutions, and exposures where transmission can be interrupted: households, schools, water, food, soil, animals, vectors, or healthcare depending on the disease.",
+          "citation_ids": [
+            "staph-food-cdc"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "staphylococcal-food-poisoning",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "staph-food-cdc",
+          "short_citation": "Official source. Staphylococcal food poisoning.",
+          "url": "https://www.cdc.gov/staph-food-poisoning/about/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-staphylococcal-food-poisoning-hero",
+      "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "color": "#c08a5d",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 1,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "naegleria-fowleri-infection",
+      "name": "Naegleria fowleri infection",
+      "subtitle": "Warm freshwater, nasal exposure, climate, rare fatal encephalitis, and recreational water",
+      "status": "mixed",
+      "pathogen_type": "Protozoan parasite",
+      "summary": "Naegleria fowleri infection is a rare, usually fatal amebic infection acquired when warm freshwater containing the organism enters the nose.",
+      "why_it_matters": "It adds a rare but spatially crisp water-temperature and recreation signal.",
+      "atlas_scope": "Warm freshwater exposure, nasal route, climate sensitivity, and rare severe encephalitis",
+      "category": "soil-environmental",
+      "category_label": "Soil / environmental",
+      "transmission_group": "Soil / environmental",
+      "origin_claim": {
+        "label": "Warm freshwater nasal-exposure frame",
+        "coordinates": [
+          -81.5,
+          28.0
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for naegleria fowleri infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "naegleria-cdc",
+          "naegleria-ncbi"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "naegleria-fowleri-infection-route",
+          "from_label": "Warm freshwater nasal-exposure frame",
+          "to_label": "Southern warm-water recreation and climate-sensitive exposure settings",
+          "from_coordinates": [
+            -81.5,
+            28.0
+          ],
+          "to_coordinates": [
+            -97.0,
+            31.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "warm_freshwater_nasal_exposure",
+          "confidence": "moderate",
+          "narrative": "Naegleria fowleri infection maps through the places, institutions, and exposures where transmission can be interrupted: households, schools, water, food, soil, animals, vectors, or healthcare depending on the disease.",
+          "citation_ids": [
+            "naegleria-cdc",
+            "naegleria-ncbi"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "naegleria-fowleri-infection",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "naegleria-cdc",
+          "short_citation": "Official source. Naegleria fowleri infection.",
+          "url": "https://www.cdc.gov/naegleria/about/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        },
+        {
+          "id": "naegleria-ncbi",
+          "short_citation": "Official or NCBI source. Naegleria fowleri infection.",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535447/",
+          "claim_supported": "Supports clinical, epidemiologic, or spatial framing.",
+          "note": "Verified public source; not a Wikipedia evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-naegleria-fowleri-infection-hero",
+      "source_reviewed_at": "2026-05-14T09:35:37+00:00",
+      "color": "#4f9faa",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 2,
+      "related_stories": [],
+      "variants": []
     }
   ],
-  "generated_at": "2026-05-14T02:06:01",
-  "atlas_count": 110
+  "generated_at": "2026-05-14T03:07:43",
+  "atlas_count": 130
 };
