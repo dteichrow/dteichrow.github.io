@@ -827,7 +827,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [
         {
           "display_title": "Hantavirus and cruise-ship outbreak",
-          "latest_update_summary": "New publisher/source coverage joined this story cluster: CNN.",
+          "latest_update_summary": "3 newly observed linked item(s) were added since the last saved snapshot.",
           "story_id": "story_f6d225b01f3f7094",
           "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
           "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -929,7 +929,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "New publisher/source coverage joined this story cluster: CNN.",
+              "latest_update_summary": "3 newly observed linked item(s) were added since the last saved snapshot.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1065,7 +1065,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "New publisher/source coverage joined this story cluster: CNN.",
+              "latest_update_summary": "3 newly observed linked item(s) were added since the last saved snapshot.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1201,7 +1201,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "New publisher/source coverage joined this story cluster: CNN.",
+              "latest_update_summary": "3 newly observed linked item(s) were added since the last saved snapshot.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1381,7 +1381,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [
         {
           "display_title": "Dengue and arboviruses",
-          "latest_update_summary": "Baseline snapshot created with 3 clustered item(s) across 3 source(s).",
+          "latest_update_summary": "New official source(s) joined this story cluster: CDC MMWR.",
           "story_id": "story_ccfeaff28d46baf6",
           "story_url": "stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
           "story_web_path": "stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
@@ -7139,6 +7139,59 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-tick-borne-encephalitis-hero",
       "source_reviewed_at": "2026-05-14T06:34:03+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "tbe-eurasian-ixodes-forest-realm",
+          "label": "Eurasian Ixodes forest and dairy-exposure realm",
+          "layer_type": "endemic_zone",
+          "geometry_type": "polygon",
+          "coordinates": [
+            [
+              5,
+              45
+            ],
+            [
+              20,
+              58
+            ],
+            [
+              45,
+              62
+            ],
+            [
+              75,
+              58
+            ],
+            [
+              110,
+              50
+            ],
+            [
+              125,
+              42
+            ],
+            [
+              95,
+              34
+            ],
+            [
+              55,
+              37
+            ],
+            [
+              20,
+              40
+            ]
+          ],
+          "date_or_era": "Contemporary Eurasian tick-borne encephalitis endemic geography",
+          "confidence": "moderate",
+          "narrative": "Tick-borne encephalitis is best shown as a Eurasian forest, tick, reservoir, outdoor-exposure, and occasional unpasteurized-dairy realm rather than a single route line.",
+          "citation_ids": [
+            "tbe-ecdc"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#6e8f62",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -7225,6 +7278,56 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-anaplasmosis-hero",
       "source_reviewed_at": "2026-05-14T06:34:03+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "anaplasmosis-northern-us-ixodes-realm",
+          "label": "Northern United States Ixodes surveillance realm",
+          "layer_type": "surveillance_region",
+          "geometry_type": "polygon",
+          "coordinates": [
+            [
+              -124,
+              37
+            ],
+            [
+              -117,
+              49
+            ],
+            [
+              -96,
+              51
+            ],
+            [
+              -67,
+              48
+            ],
+            [
+              -66,
+              39
+            ],
+            [
+              -77,
+              35
+            ],
+            [
+              -94,
+              38
+            ],
+            [
+              -112,
+              36
+            ]
+          ],
+          "date_or_era": "Contemporary tick-borne surveillance geography",
+          "confidence": "moderate",
+          "narrative": "Anaplasmosis shares much of the Ixodes tick and reservoir geography used to read Lyme disease, especially northern temperate surveillance regions where nonspecific fever can be missed.",
+          "citation_ids": [
+            "anaplasmosis-cdc",
+            "anaplasmosis-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#7d9b6c",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -7311,6 +7414,29 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-ehrlichiosis-hero",
       "source_reviewed_at": "2026-05-14T06:34:03+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "ehrlichiosis-eastern-us-lone-star-tick-realm",
+          "label": "Eastern and south-central U.S. lone star tick realm",
+          "layer_type": "endemic_zone",
+          "geometry_type": "ellipse",
+          "center": [
+            -88,
+            36
+          ],
+          "radius_lng": 22,
+          "radius_lat": 12,
+          "rotation_degrees": -12,
+          "date_or_era": "Contemporary tick-borne surveillance geography",
+          "confidence": "moderate",
+          "narrative": "Ehrlichiosis is a tick-ecology and clinical-recognition map centered on eastern and south-central U.S. lone star tick exposure rather than a migration route.",
+          "citation_ids": [
+            "ehrlichiosis-cdc",
+            "ehrlichiosis-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#a27858",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -7397,6 +7523,52 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-babesiosis-hero",
       "source_reviewed_at": "2026-05-14T06:34:03+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "babesiosis-northeast-upper-midwest-tick-realm",
+          "label": "Northeastern and upper Midwestern tick and blood-safety realm",
+          "layer_type": "surveillance_region",
+          "geometry_type": "polygon",
+          "coordinates": [
+            [
+              -98,
+              40
+            ],
+            [
+              -92,
+              48
+            ],
+            [
+              -76,
+              48
+            ],
+            [
+              -67,
+              45
+            ],
+            [
+              -69,
+              39
+            ],
+            [
+              -82,
+              37
+            ],
+            [
+              -94,
+              39
+            ]
+          ],
+          "date_or_era": "Contemporary U.S. tick-borne and transfusion-safety geography",
+          "confidence": "moderate",
+          "narrative": "Babesiosis should be shown as a northeastern and upper Midwestern tick-risk and blood-safety surveillance layer, because asymptomatic infection can enter transfusion systems.",
+          "citation_ids": [
+            "babesiosis-cdc",
+            "babesiosis-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#7e9771",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -7483,6 +7655,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-shigellosis-hero",
       "source_reviewed_at": "2026-05-14T06:34:03+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "shigellosis-global-low-dose-fecal-oral-surface",
+          "label": "Global low-infectious-dose fecal-oral exposure surface",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary global fecal-oral and outbreak-prone settings",
+          "confidence": "strong",
+          "narrative": "Shigellosis is global, with the operative geography made by childcare, crowded living, hygiene infrastructure, sexual transmission networks, travel, and antimicrobial resistance.",
+          "citation_ids": [
+            "shigella-cdc",
+            "shigella-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#b16f58",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -7569,6 +7757,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-rotavirus-hero",
       "source_reviewed_at": "2026-05-14T06:34:03+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "rotavirus-global-childhood-diarrhea-vaccine-surface",
+          "label": "Global childhood diarrheal disease and vaccine-impact surface",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary global childhood disease with vaccine-shaped burden",
+          "confidence": "strong",
+          "narrative": "Rotavirus is a global childhood diarrhea surface whose severe-disease geography changed where vaccines entered routine immunization programs.",
+          "citation_ids": [
+            "rotavirus-cdc",
+            "rotavirus-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#c5a65b",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -7655,6 +7859,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-giardiasis-hero",
       "source_reviewed_at": "2026-05-14T06:34:03+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "giardiasis-global-water-close-contact-surface",
+          "label": "Global water, childcare, travel, and close-contact exposure surface",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary waterborne and fecal-oral exposure geography",
+          "confidence": "strong",
+          "narrative": "Giardiasis is global; the map is cyst-contaminated water, childcare, recreation, travel, food, surfaces, and close-contact settings rather than one endemic boundary.",
+          "citation_ids": [
+            "giardia-cdc",
+            "giardia-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#6f9f91",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -7741,6 +7961,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-cryptosporidiosis-hero",
       "source_reviewed_at": "2026-05-14T06:34:03+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "cryptosporidiosis-global-water-animal-childcare-surface",
+          "label": "Global water, animal, childcare, and recreational exposure surface",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary oocyst-driven water and contact geography",
+          "confidence": "strong",
+          "narrative": "Cryptosporidiosis belongs on a global water and contact map: pools, drinking water, childcare, animal contact, farms, and immunocompromised hosts determine the risk surface.",
+          "citation_ids": [
+            "crypto-cdc",
+            "crypto-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#8d9f65",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -7827,6 +8063,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-amebiasis-hero",
       "source_reviewed_at": "2026-05-14T06:34:03+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "amebiasis-global-sanitation-travel-surface",
+          "label": "Global sanitation, travel, and fecal-oral exposure surface",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary global fecal-oral and travel-associated geography",
+          "confidence": "moderate",
+          "narrative": "Amebiasis is a global fecal-oral exposure problem whose visible burden is shaped by sanitation, travel, food and water safety, sexual exposure, and diagnostic capacity.",
+          "citation_ids": [
+            "amebiasis-cdc",
+            "amebiasis-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#a47b54",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -7913,6 +8165,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-campylobacteriosis-hero",
       "source_reviewed_at": "2026-05-14T06:34:03+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "campylobacter-global-poultry-dairy-water-surface",
+          "label": "Global poultry, dairy, water, and animal-exposure surface",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary global foodborne and zoonotic exposure geography",
+          "confidence": "strong",
+          "narrative": "Campylobacteriosis is a global food-system and animal-exposure geography, especially poultry, unpasteurized milk, contaminated water, kitchens, and farm interfaces.",
+          "citation_ids": [
+            "campy-cdc",
+            "campy-who"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#bd8b4d",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -7999,6 +8267,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-yersiniosis-hero",
       "source_reviewed_at": "2026-05-14T06:34:03+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "yersiniosis-global-pork-cold-chain-surface",
+          "label": "Global pork, animal, and cold-chain exposure surface",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary foodborne and zoonotic exposure geography",
+          "confidence": "moderate",
+          "narrative": "Yersiniosis is better treated as a food-system and animal-interface surface, with pork, food handling, cold-tolerant contamination, and diagnostic practices shaping the map.",
+          "citation_ids": [
+            "yersinia-cdc",
+            "yersinia-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#9b815d",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -8085,6 +8369,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-shiga-toxin-producing-e-coli-infection-hero",
       "source_reviewed_at": "2026-05-14T06:34:03+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "stec-global-ruminant-food-water-surface",
+          "label": "Global ruminant, produce, meat, and water exposure surface",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary foodborne and environmental exposure geography",
+          "confidence": "strong",
+          "narrative": "STEC maps through cattle and other ruminant reservoirs, meat processing, produce fields, water, kitchens, petting zoos, and severe toxin-mediated outcomes.",
+          "citation_ids": [
+            "stec-cdc",
+            "stec-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#b57456",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -8171,6 +8471,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-rubella-hero",
       "source_reviewed_at": "2026-05-14T06:34:03+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "rubella-global-vaccine-congenital-risk-surface",
+          "label": "Global vaccine-preventable respiratory and congenital-risk surface",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary vaccine-preventable disease and congenital rubella risk",
+          "confidence": "strong",
+          "narrative": "Rubella is global in possibility but geographically shaped by vaccination coverage, immunity gaps, pregnancy exposure, and congenital rubella surveillance.",
+          "citation_ids": [
+            "rubella-cdc",
+            "rubella-who"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#c27c8a",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -8257,6 +8573,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-mumps-hero",
       "source_reviewed_at": "2026-05-14T06:34:03+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "mumps-global-close-contact-vaccine-surface",
+          "label": "Global close-contact and vaccine-gap respiratory surface",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary vaccine-preventable close-contact outbreaks",
+          "confidence": "strong",
+          "narrative": "Mumps outbreaks are best mapped as close-contact settings overlaid on vaccination and waning-immunity geography: campuses, teams, households, and congregate settings matter.",
+          "citation_ids": [
+            "mumps-cdc",
+            "mumps-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#9c83b7",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -8343,6 +8675,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-varicella-hero",
       "source_reviewed_at": "2026-05-14T06:34:03+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "varicella-global-airborne-vaccine-latency-surface",
+          "label": "Global airborne/contact spread, vaccination, and latency surface",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary vaccine-shaped circulation and lifetime latency",
+          "confidence": "strong",
+          "narrative": "Varicella is global, with the atlas surface shaped by airborne and contact spread, vaccine coverage, susceptible clusters, and the lifelong latency link to shingles.",
+          "citation_ids": [
+            "varicella-cdc",
+            "varicella-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#7c9bc6",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -8429,6 +8777,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-brucellosis-hero",
       "source_reviewed_at": "2026-05-14T06:34:03+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "brucellosis-global-livestock-dairy-occupational-surface",
+          "label": "Global livestock, unpasteurized dairy, and occupational exposure surface",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary animal-interface and food-safety geography",
+          "confidence": "strong",
+          "narrative": "Brucellosis is a global animal-interface surface, with livestock, unpasteurized dairy, slaughter, veterinary work, laboratories, and food-safety systems shaping risk.",
+          "citation_ids": [
+            "brucellosis-cdc",
+            "brucellosis-who"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#b18a52",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -8515,6 +8879,72 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-leptospirosis-hero",
       "source_reviewed_at": "2026-05-14T06:34:03+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "leptospirosis-tropical-flood-urine-soil-water-realm",
+          "label": "Tropical and flood-prone animal-urine water/soil realm",
+          "layer_type": "exposure_zone",
+          "geometry_type": "polygon",
+          "coordinates": [
+            [
+              -105,
+              -30
+            ],
+            [
+              -80,
+              -35
+            ],
+            [
+              -35,
+              5
+            ],
+            [
+              5,
+              18
+            ],
+            [
+              45,
+              20
+            ],
+            [
+              85,
+              30
+            ],
+            [
+              145,
+              25
+            ],
+            [
+              160,
+              -20
+            ],
+            [
+              120,
+              -35
+            ],
+            [
+              70,
+              -15
+            ],
+            [
+              20,
+              -25
+            ],
+            [
+              -55,
+              -20
+            ]
+          ],
+          "date_or_era": "Contemporary flood, occupational, and recreational exposure geography",
+          "confidence": "moderate",
+          "narrative": "Leptospirosis needs a tropical, subtropical, and flood-prone exposure layer: animal urine, water, soil, work, recreation, urban flooding, and disaster response drive the map.",
+          "citation_ids": [
+            "lepto-cdc",
+            "lepto-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#6f9b8d",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -8601,6 +9031,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-q-fever-hero",
       "source_reviewed_at": "2026-05-14T06:34:03+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "q-fever-global-livestock-aerosol-surface",
+          "label": "Global livestock birth-products and aerosol exposure surface",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary occupational and downwind animal-interface geography",
+          "confidence": "strong",
+          "narrative": "Q fever is a global livestock and aerosol-exposure map: birth products, farms, abattoirs, veterinary work, windborne spread, and diagnostic recognition shape the geography.",
+          "citation_ids": [
+            "qfever-cdc",
+            "qfever-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#a8835a",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -8687,6 +9133,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-carbapenem-resistant-enterobacterales-infection-hero",
       "source_reviewed_at": "2026-05-14T06:34:03+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "cre-global-healthcare-network-resistance-surface",
+          "label": "Global healthcare-network and antimicrobial-resistance surface",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary healthcare-associated resistance geography",
+          "confidence": "strong",
+          "narrative": "CRE is a healthcare-network map: devices, colonization, antibiotics, long-term care, interfacility transfers, infection control, and regional laboratory detection shape spread.",
+          "citation_ids": [
+            "cre-cdc",
+            "cre-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#8f7668",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -8773,6 +9235,22 @@ window.PATHOGEN_ATLAS_DATA = {
       "writing_state": "not_yet_written",
       "visual_asset_id": "atlas-vancomycin-resistant-enterococcus-infection-hero",
       "source_reviewed_at": "2026-05-14T06:34:03+00:00",
+      "geography_layers": [
+        {
+          "layer_id": "vre-global-healthcare-colonization-resistance-surface",
+          "label": "Global healthcare colonization and antimicrobial-pressure surface",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary healthcare-associated resistance geography",
+          "confidence": "strong",
+          "narrative": "VRE geography follows healthcare exposure, colonization, antimicrobial pressure, environmental persistence, high-risk patients, and infection-control capacity.",
+          "citation_ids": [
+            "vre-cdc",
+            "vre-ncbi"
+          ]
+        }
+      ],
+      "geography_layer_count": 1,
       "color": "#806f8f",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
@@ -20083,6 +20561,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "variants": []
     }
   ],
-  "generated_at": "2026-05-14T09:19:35",
+  "generated_at": "2026-05-14T10:19:44",
   "atlas_count": 210
 };
