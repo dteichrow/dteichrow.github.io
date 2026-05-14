@@ -164,9 +164,6 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "writing_state": "direct",
       "color": "#d86a4f",
-      "category": "mosquito-borne",
-      "category_label": "Mosquito-borne / arboviral",
-      "transmission_group": "Mosquito-borne / arboviral",
       "status_label": "Consensus",
       "writing_state_label": "Written here directly",
       "reference_href": "../../reference/yellow-fever.html"
@@ -319,9 +316,6 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "writing_state": "adjacent",
       "color": "#5a9bd4",
-      "category": "fecal-oral-waterborne",
-      "category_label": "Fecal-oral / waterborne",
-      "transmission_group": "Fecal-oral / waterborne",
       "status_label": "Consensus",
       "writing_state_label": "Adjacent writing",
       "reference_href": "../../reference/cholera.html"
@@ -454,9 +448,6 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "writing_state": "not_yet_written",
       "color": "#d6c06a",
-      "category": "airborne-respiratory",
-      "category_label": "Airborne / respiratory",
-      "transmission_group": "Airborne / respiratory",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/measles.html"
@@ -607,9 +598,6 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "writing_state": "not_yet_written",
       "color": "#dd6974",
-      "category": "contact-sexual-bloodborne",
-      "category_label": "Contact, sexual, or bloodborne",
-      "transmission_group": "Contact, sexual, or bloodborne",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/mpox.html"
@@ -777,9 +765,6 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "writing_state": "not_yet_written",
       "color": "#9b7bd8",
-      "category": "zoonotic-animal-interface",
-      "category_label": "Zoonotic / animal interface",
-      "transmission_group": "Zoonotic / animal interface",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/avian-influenza-a-h5n1.html"
@@ -1015,9 +1000,6 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "writing_state": "direct",
           "color": "#7aa96b",
-          "category": "other-mixed",
-          "category_label": "Other / mixed transmission",
-          "transmission_group": "Other / mixed transmission",
           "status_label": "Consensus",
           "writing_state_label": "Written here directly",
           "reference_href": "../../reference/hantavirus-syndrome.html"
@@ -1151,9 +1133,6 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "writing_state": "direct",
           "color": "#7aa96b",
-          "category": "other-mixed",
-          "category_label": "Other / mixed transmission",
-          "transmission_group": "Other / mixed transmission",
           "status_label": "Consensus",
           "writing_state_label": "Written here directly",
           "reference_href": "../../reference/hantavirus-syndrome.html"
@@ -1287,9 +1266,6 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "writing_state": "direct",
           "color": "#7aa96b",
-          "category": "other-mixed",
-          "category_label": "Other / mixed transmission",
-          "transmission_group": "Other / mixed transmission",
           "status_label": "Mixed / debated",
           "writing_state_label": "Written here directly",
           "reference_href": "../../reference/hantavirus-syndrome.html"
@@ -1338,9 +1314,6 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "writing_state": "direct",
       "color": "#7aa96b",
-      "category": "rodent-environmental",
-      "category_label": "Rodent-borne / environmental",
-      "transmission_group": "Rodent-borne / environmental",
       "status_label": "Mixed / debated",
       "writing_state_label": "Written here directly",
       "reference_href": "../../reference/hantavirus-syndrome.html"
@@ -1495,9 +1468,6 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "writing_state": "not_yet_written",
       "color": "#c9a84c",
-      "category": "mosquito-borne",
-      "category_label": "Mosquito-borne / arboviral",
-      "transmission_group": "Mosquito-borne / arboviral",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/dengue.html"
@@ -1652,9 +1622,6 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "writing_state": "adjacent",
       "color": "#5abf7c",
-      "category": "mosquito-borne",
-      "category_label": "Mosquito-borne / parasitic",
-      "transmission_group": "Mosquito-borne / parasitic",
       "status_label": "Mixed / debated",
       "writing_state_label": "Adjacent writing",
       "reference_href": "../../reference/malaria.html"
@@ -1811,9 +1778,6 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "writing_state": "direct",
       "color": "#d98e5f",
-      "category": "airborne-respiratory",
-      "category_label": "Airborne / respiratory",
-      "transmission_group": "Airborne / respiratory",
       "status_label": "Mixed / debated",
       "writing_state_label": "Written here directly"
     },
@@ -1963,9 +1927,6 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "writing_state": "adjacent",
       "color": "#b9754f",
-      "category": "flea-louse-mite-borne",
-      "category_label": "Flea, louse, and mite-borne",
-      "transmission_group": "Flea, louse, and mite-borne",
       "status_label": "Mixed / debated",
       "writing_state_label": "Adjacent writing"
     },
@@ -2079,7 +2040,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "mosquito-borne",
       "category_label": "Mosquito-borne / arboviral",
       "transmission_group": "Mosquito-borne / arboviral",
-      "color": "#5fb6a6",
+      "color": "#c9a84c",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/zika-virus-disease.html"
@@ -2194,7 +2155,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "mosquito-borne",
       "category_label": "Mosquito-borne / arboviral",
       "transmission_group": "Mosquito-borne / arboviral",
-      "color": "#d9a441",
+      "color": "#c9a84c",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/chikungunya.html"
@@ -2309,7 +2270,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "mosquito-borne",
       "category_label": "Mosquito-borne / arboviral",
       "transmission_group": "Mosquito-borne / arboviral",
-      "color": "#8fbf5f",
+      "color": "#c9a84c",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet"
     },
@@ -2423,7 +2384,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "mosquito-borne",
       "category_label": "Mosquito-borne / arboviral",
       "transmission_group": "Mosquito-borne / arboviral",
-      "color": "#6fa8dc",
+      "color": "#c9a84c",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet"
     },
@@ -2537,7 +2498,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
       "transmission_group": "Fecal-oral / waterborne",
-      "color": "#7c9fd1",
+      "color": "#c9a84c",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/poliomyelitis-cvdpv2.html"
@@ -2652,7 +2613,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
       "transmission_group": "Fecal-oral / waterborne",
-      "color": "#c9b56b",
+      "color": "#c9a84c",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/hepatitis-a.html"
@@ -2767,7 +2728,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
       "transmission_group": "Fecal-oral / waterborne",
-      "color": "#bc8f5f",
+      "color": "#c9a84c",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet"
     },
@@ -2881,7 +2842,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
       "transmission_group": "Fecal-oral / waterborne",
-      "color": "#9aa36b",
+      "color": "#c9a84c",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/norovirus.html"
@@ -3017,7 +2978,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
       "transmission_group": "Airborne / respiratory",
-      "color": "#b56b5b",
+      "color": "#c9a84c",
       "status_label": "Mixed / debated",
       "writing_state_label": "Adjacent writing"
     },
@@ -3131,7 +3092,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
       "transmission_group": "Airborne / respiratory",
-      "color": "#b7c7df",
+      "color": "#c9a84c",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet"
     },
@@ -3245,7 +3206,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
       "transmission_group": "Airborne / respiratory",
-      "color": "#7b8fa8",
+      "color": "#c9a84c",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet"
     },
@@ -3359,7 +3320,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
-      "color": "#b84646",
+      "color": "#c9a84c",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/ebola-virus-disease.html"
@@ -3474,7 +3435,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
-      "color": "#9f3f43",
+      "color": "#c9a84c",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/marburg-virus-disease.html"
@@ -3589,7 +3550,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
-      "color": "#7a6f4f",
+      "color": "#c9a84c",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/nipah-virus-disease.html"
@@ -3704,7 +3665,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "rodent-environmental",
       "category_label": "Rodent-borne / environmental",
       "transmission_group": "Rodent-borne / environmental",
-      "color": "#b17d5a",
+      "color": "#c9a84c",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet"
     },
@@ -3818,7 +3779,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
-      "color": "#9c6f3d",
+      "color": "#c9a84c",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/rabies.html"
@@ -3933,7 +3894,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
-      "color": "#8c7a55",
+      "color": "#c9a84c",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/anthrax.html"
@@ -4048,7 +4009,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "zoonotic-animal-interface",
       "category_label": "Zoonotic / animal interface",
       "transmission_group": "Zoonotic / animal interface",
-      "color": "#b88a55",
+      "color": "#c9a84c",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/middle-east-respiratory-syndrome-mers.html"
@@ -4163,7 +4124,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
       "transmission_group": "Airborne / respiratory",
-      "color": "#8f9c5a",
+      "color": "#c9a84c",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/diphtheria.html"
@@ -4278,7 +4239,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
       "transmission_group": "Airborne / respiratory",
-      "color": "#c7a05a",
+      "color": "#c9a84c",
       "status_label": "Mixed / debated",
       "writing_state_label": "No dedicated post yet",
       "reference_href": "../../reference/pertussis.html"
