@@ -17482,8 +17482,1548 @@ window.PATHOGEN_ATLAS_DATA = {
       "citation_count": 1,
       "related_stories": [],
       "variants": []
+    },
+    {
+      "slug": "herpes-simplex-virus-infection",
+      "name": "Herpes simplex virus infection",
+      "subtitle": "Oral and genital herpes, skin and mucosal contact, latency, recurrence, and neonatal risk",
+      "status": "mixed",
+      "pathogen_type": "Virus",
+      "summary": "Herpes simplex virus infection is a common viral infection spread through oral, genital, skin, or mucosal contact and marked by latency and recurrence.",
+      "why_it_matters": "It adds a broad herpesvirus route where intimacy, latency, stigma, pregnancy care, and neonatal prevention all matter.",
+      "atlas_scope": "Oral and genital transmission, latency, recurrence, neonatal prevention, and sexual-health care",
+      "category": "contact-sexual-bloodborne",
+      "category_label": "Contact, sexual, or bloodborne",
+      "transmission_group": "Contact, sexual, or bloodborne",
+      "origin_claim": {
+        "label": "Mucocutaneous-contact herpesvirus frame",
+        "coordinates": [
+          -77.0,
+          39.0
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for herpes simplex virus infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "hsv-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "herpes-simplex-virus-infection-route",
+          "from_label": "Mucocutaneous-contact herpesvirus frame",
+          "to_label": "Oral, sexual, pregnancy-care, neonatal, and close-contact settings",
+          "from_coordinates": [
+            -77.0,
+            39.0
+          ],
+          "to_coordinates": [
+            -95.0,
+            39.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "mucosal_skin_contact_and_latency",
+          "confidence": "moderate",
+          "narrative": "Herpes simplex virus infection maps through the exposure settings where public health can actually intervene: households, schools, water, food, soil, animals, vectors, sexual networks, travel corridors, outpatient clinics, or healthcare systems depending on the route.",
+          "citation_ids": [
+            "hsv-who"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "herpes-simplex-virus-infection",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "hsv-who",
+          "short_citation": "Official source. Herpes simplex virus infection.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/herpes-simplex-virus",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-herpes-simplex-virus-infection-hero",
+      "source_reviewed_at": "2026-05-14T13:29:53+00:00",
+      "color": "#a86f93",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 1,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "human-t-lymphotropic-virus-1-infection",
+      "name": "Human T-lymphotropic virus type 1 infection",
+      "subtitle": "Blood, sexual, and breastfeeding transmission, lifelong infection, and uneven endemic geography",
+      "status": "mixed",
+      "pathogen_type": "Virus",
+      "summary": "Human T-lymphotropic virus type 1 infection is a lifelong retroviral infection transmitted through breastfeeding, sexual contact, and blood exposure.",
+      "why_it_matters": "It adds a historically under-seen retrovirus whose map is shaped by breastfeeding, blood safety, sexual networks, and regional endemicity.",
+      "atlas_scope": "Breastfeeding, blood exposure, sexual transmission, lifelong infection, and endemic-region surveillance",
+      "category": "contact-sexual-bloodborne",
+      "category_label": "Contact, sexual, or bloodborne",
+      "transmission_group": "Contact, sexual, or bloodborne",
+      "origin_claim": {
+        "label": "HTLV-1 endemicity and transmission frame",
+        "coordinates": [
+          -61.0,
+          14.6
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for human t-lymphotropic virus type 1 infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "htlv1-who"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "human-t-lymphotropic-virus-1-infection-route",
+          "from_label": "HTLV-1 endemicity and transmission frame",
+          "to_label": "Breastfeeding, sexual-health, blood-safety, and endemic-community surveillance settings",
+          "from_coordinates": [
+            -61.0,
+            14.6
+          ],
+          "to_coordinates": [
+            135.5,
+            34.7
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "blood_sexual_and_breastfeeding_transmission",
+          "confidence": "moderate",
+          "narrative": "Human T-lymphotropic virus type 1 infection maps through the exposure settings where public health can actually intervene: households, schools, water, food, soil, animals, vectors, sexual networks, travel corridors, outpatient clinics, or healthcare systems depending on the route.",
+          "citation_ids": [
+            "htlv1-who"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "human-t-lymphotropic-virus-1-infection",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "htlv1-who",
+          "short_citation": "Official source. Human T-lymphotropic virus type 1 infection.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/human-t-lymphotropic-virus-type-1",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-human-t-lymphotropic-virus-1-infection-hero",
+      "source_reviewed_at": "2026-05-14T13:29:53+00:00",
+      "color": "#8c6fa7",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 1,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "shingles",
+      "name": "Shingles",
+      "subtitle": "Varicella-zoster reactivation, aging, immune status, contact risk, and vaccination",
+      "status": "mixed",
+      "pathogen_type": "Virus",
+      "summary": "Shingles is caused by reactivation of varicella-zoster virus and can transmit the virus to susceptible people through exposure to lesions.",
+      "why_it_matters": "It lets the atlas show that disease geography is not always new invasion: age structure, immunity, vaccination, and reactivation matter.",
+      "atlas_scope": "Varicella-zoster reactivation, lesion exposure, aging, immune status, and vaccination",
+      "category": "contact-sexual-bloodborne",
+      "category_label": "Contact, sexual, or bloodborne",
+      "transmission_group": "Contact, sexual, or bloodborne",
+      "origin_claim": {
+        "label": "Varicella-zoster reactivation and contact-risk frame",
+        "coordinates": [
+          -77.0,
+          39.0
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for shingles is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "shingles-cdc"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "shingles-route",
+          "from_label": "Varicella-zoster reactivation and contact-risk frame",
+          "to_label": "Older-adult care, immunocompromised care, households, lesion-exposure, and vaccination settings",
+          "from_coordinates": [
+            -77.0,
+            39.0
+          ],
+          "to_coordinates": [
+            -95.0,
+            39.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "reactivation_contact_and_immunity_frame",
+          "confidence": "moderate",
+          "narrative": "Shingles maps through the exposure settings where public health can actually intervene: households, schools, water, food, soil, animals, vectors, sexual networks, travel corridors, outpatient clinics, or healthcare systems depending on the route.",
+          "citation_ids": [
+            "shingles-cdc"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "shingles",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "shingles-cdc",
+          "short_citation": "Official source. Shingles.",
+          "url": "https://www.cdc.gov/shingles/about/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-shingles-hero",
+      "source_reviewed_at": "2026-05-14T13:29:53+00:00",
+      "color": "#9b7ab0",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 1,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "conjunctivitis",
+      "name": "Conjunctivitis",
+      "subtitle": "Eye infection and inflammation, hands, surfaces, respiratory viruses, schools, and clinical sorting",
+      "status": "mixed",
+      "pathogen_type": "Other",
+      "summary": "Conjunctivitis is an eye condition with infectious forms that can spread through hands, close contact, respiratory secretions, and contaminated surfaces.",
+      "why_it_matters": "It adds a contact-and-surface infection where schools, childcare, work exclusion, and diagnostic uncertainty shape response.",
+      "atlas_scope": "Eye infection, hand and surface transmission, respiratory viruses, schools, and clinical triage",
+      "category": "contact-sexual-bloodborne",
+      "category_label": "Contact, sexual, or bloodborne",
+      "transmission_group": "Contact, sexual, or bloodborne",
+      "origin_claim": {
+        "label": "Eye-contact and surface-transmission frame",
+        "coordinates": [
+          -77.0,
+          39.0
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for conjunctivitis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "conjunctivitis-cdc"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "conjunctivitis-route",
+          "from_label": "Eye-contact and surface-transmission frame",
+          "to_label": "Schools, childcare, households, clinics, hands, towels, and shared surfaces",
+          "from_coordinates": [
+            -77.0,
+            39.0
+          ],
+          "to_coordinates": [
+            -95.0,
+            39.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "hand_surface_close_contact_and_respiratory_spread",
+          "confidence": "moderate",
+          "narrative": "Conjunctivitis maps through the exposure settings where public health can actually intervene: households, schools, water, food, soil, animals, vectors, sexual networks, travel corridors, outpatient clinics, or healthcare systems depending on the route.",
+          "citation_ids": [
+            "conjunctivitis-cdc"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "conjunctivitis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "conjunctivitis-cdc",
+          "short_citation": "Official source. Conjunctivitis.",
+          "url": "https://www.cdc.gov/conjunctivitis/about/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-conjunctivitis-hero",
+      "source_reviewed_at": "2026-05-14T13:29:53+00:00",
+      "color": "#8fa4a8",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 1,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "meningitis",
+      "name": "Meningitis",
+      "subtitle": "Bacterial, viral, fungal, and parasitic routes, crowding, vaccination, and emergency diagnosis",
+      "status": "mixed",
+      "pathogen_type": "Other",
+      "summary": "Meningitis is inflammation of the membranes around the brain and spinal cord with infectious causes that spread through different respiratory, contact, environmental, or vector-linked routes.",
+      "why_it_matters": "It adds a syndrome-level atlas entry where pathogen type, vaccination, crowding, and emergency care split one clinical label into many geographies.",
+      "atlas_scope": "Meningitis syndromes, respiratory and contact spread, vaccination, emergency diagnosis, and pathogen-specific routing",
+      "category": "airborne-respiratory",
+      "category_label": "Airborne / respiratory",
+      "transmission_group": "Airborne / respiratory",
+      "origin_claim": {
+        "label": "Syndromic meningitis surveillance frame",
+        "coordinates": [
+          -77.0,
+          39.0
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for meningitis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "meningitis-cdc"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "meningitis-route",
+          "from_label": "Syndromic meningitis surveillance frame",
+          "to_label": "Dormitories, households, clinics, vaccination programs, and emergency-care settings",
+          "from_coordinates": [
+            -77.0,
+            39.0
+          ],
+          "to_coordinates": [
+            -1.5,
+            12.4
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "syndromic_respiratory_contact_and_environmental_routes",
+          "confidence": "moderate",
+          "narrative": "Meningitis maps through the exposure settings where public health can actually intervene: households, schools, water, food, soil, animals, vectors, sexual networks, travel corridors, outpatient clinics, or healthcare systems depending on the route.",
+          "citation_ids": [
+            "meningitis-cdc"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "meningitis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "meningitis-cdc",
+          "short_citation": "Official source. Meningitis.",
+          "url": "https://www.cdc.gov/meningitis/about/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-meningitis-hero",
+      "source_reviewed_at": "2026-05-14T13:29:53+00:00",
+      "color": "#8c9ab8",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 1,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "impetigo",
+      "name": "Impetigo",
+      "subtitle": "Skin infection, children, close contact, minor wounds, schools, and hygiene access",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "Impetigo is a contagious bacterial skin infection that spreads through close contact and contaminated hands, clothing, towels, or surfaces.",
+      "why_it_matters": "It adds a child-centered skin infection where minor wounds, hygiene, crowding, and school policy matter.",
+      "atlas_scope": "Skin contact, children, minor wounds, schools, hygiene access, and household spread",
+      "category": "contact-sexual-bloodborne",
+      "category_label": "Contact, sexual, or bloodborne",
+      "transmission_group": "Contact, sexual, or bloodborne",
+      "origin_claim": {
+        "label": "Childhood skin-contact bacterial infection frame",
+        "coordinates": [
+          -77.0,
+          39.0
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for impetigo is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "impetigo-medlineplus"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "impetigo-route",
+          "from_label": "Childhood skin-contact bacterial infection frame",
+          "to_label": "Schools, childcare, households, sports, towels, clothing, and skin-wound exposure settings",
+          "from_coordinates": [
+            -77.0,
+            39.0
+          ],
+          "to_coordinates": [
+            -95.0,
+            39.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "skin_contact_fomite_and_minor_wound_spread",
+          "confidence": "moderate",
+          "narrative": "Impetigo maps through the exposure settings where public health can actually intervene: households, schools, water, food, soil, animals, vectors, sexual networks, travel corridors, outpatient clinics, or healthcare systems depending on the route.",
+          "citation_ids": [
+            "impetigo-medlineplus"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "impetigo",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "impetigo-medlineplus",
+          "short_citation": "Official source. Impetigo.",
+          "url": "https://medlineplus.gov/impetigo.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-impetigo-hero",
+      "source_reviewed_at": "2026-05-14T13:29:53+00:00",
+      "color": "#b18463",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 1,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "cellulitis",
+      "name": "Cellulitis",
+      "subtitle": "Skin barrier breaks, bacterial invasion, edema, wounds, and care access",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "Cellulitis is a bacterial skin and soft-tissue infection that often develops when bacteria enter through breaks in the skin.",
+      "why_it_matters": "It adds a non-outbreak infection whose geography is made by wounds, chronic edema, diabetes, skin care, and access to early treatment.",
+      "atlas_scope": "Skin barrier breaks, wounds, edema, diabetes, bacterial invasion, and treatment access",
+      "category": "contact-sexual-bloodborne",
+      "category_label": "Contact, sexual, or bloodborne",
+      "transmission_group": "Contact, sexual, or bloodborne",
+      "origin_claim": {
+        "label": "Skin-barrier and wound-entry bacterial infection frame",
+        "coordinates": [
+          -77.0,
+          39.0
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for cellulitis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "cellulitis-medlineplus"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "cellulitis-route",
+          "from_label": "Skin-barrier and wound-entry bacterial infection frame",
+          "to_label": "Wound-care, diabetes-care, edema, skin injury, and outpatient-treatment settings",
+          "from_coordinates": [
+            -77.0,
+            39.0
+          ],
+          "to_coordinates": [
+            -95.0,
+            39.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "skin_barrier_break_and_bacterial_entry",
+          "confidence": "moderate",
+          "narrative": "Cellulitis maps through the exposure settings where public health can actually intervene: households, schools, water, food, soil, animals, vectors, sexual networks, travel corridors, outpatient clinics, or healthcare systems depending on the route.",
+          "citation_ids": [
+            "cellulitis-medlineplus"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "cellulitis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "cellulitis-medlineplus",
+          "short_citation": "Official source. Cellulitis.",
+          "url": "https://medlineplus.gov/cellulitis.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-cellulitis-hero",
+      "source_reviewed_at": "2026-05-14T13:29:53+00:00",
+      "color": "#a9786b",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 1,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "necrotizing-fasciitis",
+      "name": "Necrotizing fasciitis",
+      "subtitle": "Rapid soft-tissue infection, wounds, trauma, surgery, and emergency recognition",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "Necrotizing fasciitis is a rapidly progressive bacterial soft-tissue infection that can follow wounds, trauma, surgery, or other skin breaks.",
+      "why_it_matters": "It adds a high-severity wound-route disease where time to recognition is the public-health geography.",
+      "atlas_scope": "Wound entry, trauma, surgery, soft-tissue spread, emergency recognition, and severe outcomes",
+      "category": "contact-sexual-bloodborne",
+      "category_label": "Contact, sexual, or bloodborne",
+      "transmission_group": "Contact, sexual, or bloodborne",
+      "origin_claim": {
+        "label": "Wound-entry soft-tissue infection frame",
+        "coordinates": [
+          -77.0,
+          39.0
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for necrotizing fasciitis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "nec-fasc-medlineplus"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "necrotizing-fasciitis-route",
+          "from_label": "Wound-entry soft-tissue infection frame",
+          "to_label": "Emergency departments, surgical sites, wound-care pathways, and trauma-exposure settings",
+          "from_coordinates": [
+            -77.0,
+            39.0
+          ],
+          "to_coordinates": [
+            -95.0,
+            39.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "wound_entry_and_rapid_soft_tissue_spread",
+          "confidence": "moderate",
+          "narrative": "Necrotizing fasciitis maps through the exposure settings where public health can actually intervene: households, schools, water, food, soil, animals, vectors, sexual networks, travel corridors, outpatient clinics, or healthcare systems depending on the route.",
+          "citation_ids": [
+            "nec-fasc-medlineplus"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "necrotizing-fasciitis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "nec-fasc-medlineplus",
+          "short_citation": "Official source. Necrotizing fasciitis.",
+          "url": "https://medlineplus.gov/ency/article/001443.htm",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-necrotizing-fasciitis-hero",
+      "source_reviewed_at": "2026-05-14T13:29:53+00:00",
+      "color": "#9c5f5f",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 1,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "helicobacter-pylori-infection",
+      "name": "Helicobacter pylori infection",
+      "subtitle": "Gastric infection, household clustering, sanitation, ulcers, and gastric cancer risk",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "Helicobacter pylori infection is a bacterial stomach infection associated with gastritis, ulcers, household clustering, sanitation, and gastric cancer risk.",
+      "why_it_matters": "It adds a chronic fecal-oral and household disease route that is historically important but not outbreak-like.",
+      "atlas_scope": "Gastric infection, household transmission, sanitation, ulcers, cancer risk, and treatment access",
+      "category": "fecal-oral-waterborne",
+      "category_label": "Fecal-oral / waterborne",
+      "transmission_group": "Fecal-oral / waterborne",
+      "origin_claim": {
+        "label": "Household and sanitation-linked gastric infection frame",
+        "coordinates": [
+          -77.0,
+          39.0
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for helicobacter pylori infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "h-pylori-medlineplus"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "helicobacter-pylori-infection-route",
+          "from_label": "Household and sanitation-linked gastric infection frame",
+          "to_label": "Households, sanitation systems, childhood exposure, gastroenterology, and treatment settings",
+          "from_coordinates": [
+            -77.0,
+            39.0
+          ],
+          "to_coordinates": [
+            77.2,
+            28.6
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "household_fecal_oral_and_sanitation_associated_route",
+          "confidence": "moderate",
+          "narrative": "Helicobacter pylori infection maps through the exposure settings where public health can actually intervene: households, schools, water, food, soil, animals, vectors, sexual networks, travel corridors, outpatient clinics, or healthcare systems depending on the route.",
+          "citation_ids": [
+            "h-pylori-medlineplus"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "helicobacter-pylori-infection",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "h-pylori-medlineplus",
+          "short_citation": "Official source. Helicobacter pylori infection.",
+          "url": "https://medlineplus.gov/helicobacterpyloriinfections.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-helicobacter-pylori-infection-hero",
+      "source_reviewed_at": "2026-05-14T13:29:53+00:00",
+      "color": "#a98f55",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 1,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "tinea-pedis",
+      "name": "Tinea pedis",
+      "subtitle": "Athlete\u2019s foot, dermatophyte fungi, damp surfaces, footwear, gyms, and household spread",
+      "status": "mixed",
+      "pathogen_type": "Fungus",
+      "summary": "Tinea pedis, commonly called athlete\u2019s foot, is a fungal infection of the feet associated with damp environments, shared surfaces, footwear, and close-contact settings.",
+      "why_it_matters": "It adds a mundane but spatially crisp fungal route: locker rooms, shoes, wet floors, and household surfaces.",
+      "atlas_scope": "Dermatophyte fungi, damp surfaces, footwear, locker rooms, household spread, and recurrence",
+      "category": "contact-sexual-bloodborne",
+      "category_label": "Contact, sexual, or bloodborne",
+      "transmission_group": "Contact, sexual, or bloodborne",
+      "origin_claim": {
+        "label": "Damp-surface dermatophyte exposure frame",
+        "coordinates": [
+          -77.0,
+          39.0
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for tinea pedis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "athletes-foot-medlineplus"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "tinea-pedis-route",
+          "from_label": "Damp-surface dermatophyte exposure frame",
+          "to_label": "Locker rooms, pools, shoes, showers, households, and shared-floor exposure settings",
+          "from_coordinates": [
+            -77.0,
+            39.0
+          ],
+          "to_coordinates": [
+            -118.2,
+            34.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "damp_surface_footwear_and_skin_contact",
+          "confidence": "moderate",
+          "narrative": "Tinea pedis maps through the exposure settings where public health can actually intervene: households, schools, water, food, soil, animals, vectors, sexual networks, travel corridors, outpatient clinics, or healthcare systems depending on the route.",
+          "citation_ids": [
+            "athletes-foot-medlineplus"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "tinea-pedis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "athletes-foot-medlineplus",
+          "short_citation": "Official source. Tinea pedis.",
+          "url": "https://medlineplus.gov/athletesfoot.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-tinea-pedis-hero",
+      "source_reviewed_at": "2026-05-14T13:29:53+00:00",
+      "color": "#8d9c6a",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 1,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "vulvovaginal-candidiasis",
+      "name": "Vulvovaginal candidiasis",
+      "subtitle": "Candida overgrowth, vaginal microbiome, antibiotics, pregnancy, diabetes, and recurrence",
+      "status": "mixed",
+      "pathogen_type": "Fungus",
+      "summary": "Vulvovaginal candidiasis is a common Candida-associated yeast infection linked to vaginal microbiome shifts, antibiotics, pregnancy, diabetes, and recurrence.",
+      "why_it_matters": "It adds a reproductive-health fungal condition where microbiome ecology and clinical context are more important than simple contagion.",
+      "atlas_scope": "Candida overgrowth, vaginal microbiome, antibiotics, pregnancy, diabetes, and recurrence management",
+      "category": "contact-sexual-bloodborne",
+      "category_label": "Contact, sexual, or bloodborne",
+      "transmission_group": "Contact, sexual, or bloodborne",
+      "origin_claim": {
+        "label": "Vaginal microbiome and Candida overgrowth frame",
+        "coordinates": [
+          -77.0,
+          39.0
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for vulvovaginal candidiasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "yeast-infection-medlineplus"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "vulvovaginal-candidiasis-route",
+          "from_label": "Vaginal microbiome and Candida overgrowth frame",
+          "to_label": "Reproductive-health care, antibiotic exposure, diabetes care, pregnancy care, and recurrence-management settings",
+          "from_coordinates": [
+            -77.0,
+            39.0
+          ],
+          "to_coordinates": [
+            -95.0,
+            39.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "microbiome_shift_and_reproductive_health_frame",
+          "confidence": "moderate",
+          "narrative": "Vulvovaginal candidiasis maps through the exposure settings where public health can actually intervene: households, schools, water, food, soil, animals, vectors, sexual networks, travel corridors, outpatient clinics, or healthcare systems depending on the route.",
+          "citation_ids": [
+            "yeast-infection-medlineplus"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "vulvovaginal-candidiasis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "yeast-infection-medlineplus",
+          "short_citation": "Official source. Vulvovaginal candidiasis.",
+          "url": "https://medlineplus.gov/yeastinfections.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-vulvovaginal-candidiasis-hero",
+      "source_reviewed_at": "2026-05-14T13:29:53+00:00",
+      "color": "#b28aa0",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 1,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "nocardiosis",
+      "name": "Nocardiosis",
+      "subtitle": "Soil bacteria, inhalation, traumatic inoculation, immune compromise, and pulmonary disease",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "Nocardiosis is a bacterial infection associated with Nocardia species found in soil and water, often affecting the lungs, skin, or disseminated sites in vulnerable hosts.",
+      "why_it_matters": "It adds a soil-water bacterial disease where immune status and exposure route split pulmonary from traumatic skin disease.",
+      "atlas_scope": "Soil and water exposure, inhalation, traumatic inoculation, immune compromise, and disseminated disease",
+      "category": "soil-environmental",
+      "category_label": "Soil / environmental",
+      "transmission_group": "Soil / environmental",
+      "origin_claim": {
+        "label": "Soil and water Nocardia exposure frame",
+        "coordinates": [
+          -77.0,
+          39.0
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for nocardiosis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "nocardiosis-cdc"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "nocardiosis-route",
+          "from_label": "Soil and water Nocardia exposure frame",
+          "to_label": "Soil, dust, water, gardening, wound, and immunocompromised-care settings",
+          "from_coordinates": [
+            -77.0,
+            39.0
+          ],
+          "to_coordinates": [
+            -95.0,
+            39.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "soil_water_inhalation_and_wound_inoculation",
+          "confidence": "moderate",
+          "narrative": "Nocardiosis maps through the exposure settings where public health can actually intervene: households, schools, water, food, soil, animals, vectors, sexual networks, travel corridors, outpatient clinics, or healthcare systems depending on the route.",
+          "citation_ids": [
+            "nocardiosis-cdc"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "nocardiosis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "nocardiosis-cdc",
+          "short_citation": "Official source. Nocardiosis.",
+          "url": "https://www.cdc.gov/nocardiosis/about/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-nocardiosis-hero",
+      "source_reviewed_at": "2026-05-14T13:29:53+00:00",
+      "color": "#8a8264",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 1,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "paracoccidioidomycosis",
+      "name": "Paracoccidioidomycosis",
+      "subtitle": "Latin American endemic fungus, soil exposure, rural labor, latency, and pulmonary disease",
+      "status": "mixed",
+      "pathogen_type": "Fungus",
+      "summary": "Paracoccidioidomycosis is an endemic fungal infection associated with environmental exposure in parts of Latin America.",
+      "why_it_matters": "It adds a historically and geographically grounded fungal disease tied to rural labor, soil, migration, and delayed diagnosis.",
+      "atlas_scope": "Endemic Latin American fungal exposure, rural labor, soil disturbance, pulmonary disease, and latency",
+      "category": "soil-environmental",
+      "category_label": "Soil / environmental",
+      "transmission_group": "Soil / environmental",
+      "origin_claim": {
+        "label": "Latin American endemic-fungus soil-exposure frame",
+        "coordinates": [
+          -47.9,
+          -15.8
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for paracoccidioidomycosis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "paracoccidioidomycosis-cdc"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "paracoccidioidomycosis-route",
+          "from_label": "Latin American endemic-fungus soil-exposure frame",
+          "to_label": "Rural labor, soil disturbance, agriculture, migration, and pulmonary-disease care settings",
+          "from_coordinates": [
+            -47.9,
+            -15.8
+          ],
+          "to_coordinates": [
+            -58.4,
+            -34.6
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "endemic_soil_fungal_inhalation",
+          "confidence": "moderate",
+          "narrative": "Paracoccidioidomycosis maps through the exposure settings where public health can actually intervene: households, schools, water, food, soil, animals, vectors, sexual networks, travel corridors, outpatient clinics, or healthcare systems depending on the route.",
+          "citation_ids": [
+            "paracoccidioidomycosis-cdc"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "paracoccidioidomycosis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "paracoccidioidomycosis-cdc",
+          "short_citation": "Official source. Paracoccidioidomycosis.",
+          "url": "https://www.cdc.gov/paracoccidioidomycosis/about/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-paracoccidioidomycosis-hero",
+      "source_reviewed_at": "2026-05-14T13:29:53+00:00",
+      "color": "#8f765c",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 1,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "acute-flaccid-myelitis",
+      "name": "Acute flaccid myelitis",
+      "subtitle": "Polio-like paralysis syndrome, enterovirus suspicion, surveillance, seasonality, and uncertainty",
+      "status": "mixed",
+      "pathogen_type": "Other",
+      "summary": "Acute flaccid myelitis is a rare neurologic syndrome involving sudden limb weakness, monitored through surveillance and often discussed in relation to viral infections including enteroviruses.",
+      "why_it_matters": "It adds a modern surveillance problem where the atlas must preserve uncertainty rather than forcing one pathogen route.",
+      "atlas_scope": "Polio-like paralysis, enterovirus-associated investigation, seasonality, neurologic surveillance, and causal uncertainty",
+      "category": "other-mixed",
+      "category_label": "Other / mixed transmission",
+      "transmission_group": "Other / mixed transmission",
+      "origin_claim": {
+        "label": "Neurologic syndrome surveillance frame",
+        "coordinates": [
+          -77.0,
+          39.0
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for acute flaccid myelitis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "afm-cdc"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "acute-flaccid-myelitis-route",
+          "from_label": "Neurologic syndrome surveillance frame",
+          "to_label": "Pediatric neurology, respiratory-virus surveillance, schools, hospitals, and case-investigation settings",
+          "from_coordinates": [
+            -77.0,
+            39.0
+          ],
+          "to_coordinates": [
+            -95.0,
+            39.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "syndromic_surveillance_with_possible_viral_association",
+          "confidence": "moderate",
+          "narrative": "Acute flaccid myelitis maps through the exposure settings where public health can actually intervene: households, schools, water, food, soil, animals, vectors, sexual networks, travel corridors, outpatient clinics, or healthcare systems depending on the route.",
+          "citation_ids": [
+            "afm-cdc"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "acute-flaccid-myelitis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "afm-cdc",
+          "short_citation": "Official source. Acute flaccid myelitis.",
+          "url": "https://www.cdc.gov/acute-flaccid-myelitis/index.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-acute-flaccid-myelitis-hero",
+      "source_reviewed_at": "2026-05-14T13:29:53+00:00",
+      "color": "#7f8faa",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 1,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "pneumonia",
+      "name": "Pneumonia",
+      "subtitle": "Lower respiratory infection, bacterial and viral causes, age structure, vaccination, and care access",
+      "status": "mixed",
+      "pathogen_type": "Other",
+      "summary": "Pneumonia is a lower respiratory infection with bacterial, viral, and fungal causes, shaped by age, immunity, vaccination, crowding, and access to care.",
+      "why_it_matters": "It gives the atlas a syndrome-level respiratory anchor that can connect pathogen-specific entries without collapsing them into one cause.",
+      "atlas_scope": "Lower respiratory infection, multiple pathogen causes, age structure, vaccination, crowding, and clinical care",
+      "category": "airborne-respiratory",
+      "category_label": "Airborne / respiratory",
+      "transmission_group": "Airborne / respiratory",
+      "origin_claim": {
+        "label": "Lower-respiratory infection syndrome frame",
+        "coordinates": [
+          -77.0,
+          39.0
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for pneumonia is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "pneumonia-medlineplus"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "pneumonia-route",
+          "from_label": "Lower-respiratory infection syndrome frame",
+          "to_label": "Households, hospitals, long-term care, vaccination programs, and respiratory-care settings",
+          "from_coordinates": [
+            -77.0,
+            39.0
+          ],
+          "to_coordinates": [
+            -95.0,
+            39.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "syndromic_respiratory_infection_and_care_access",
+          "confidence": "moderate",
+          "narrative": "Pneumonia maps through the exposure settings where public health can actually intervene: households, schools, water, food, soil, animals, vectors, sexual networks, travel corridors, outpatient clinics, or healthcare systems depending on the route.",
+          "citation_ids": [
+            "pneumonia-medlineplus"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "pneumonia",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "pneumonia-medlineplus",
+          "short_citation": "Official source. Pneumonia.",
+          "url": "https://medlineplus.gov/pneumonia.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-pneumonia-hero",
+      "source_reviewed_at": "2026-05-14T13:29:53+00:00",
+      "color": "#9bb0c2",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 1,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "sinusitis",
+      "name": "Sinusitis",
+      "subtitle": "Upper respiratory infection, sinus inflammation, viral triggers, bacterial complications, and care-seeking",
+      "status": "mixed",
+      "pathogen_type": "Other",
+      "summary": "Sinusitis is inflammation or infection of the sinuses, often following upper respiratory infections and sometimes involving bacterial complications.",
+      "why_it_matters": "It adds a common respiratory-care pathway where viral ecology, antibiotic decisions, and clinical sorting matter.",
+      "atlas_scope": "Upper respiratory infection, sinus inflammation, bacterial complications, antibiotic decisions, and outpatient care",
+      "category": "airborne-respiratory",
+      "category_label": "Airborne / respiratory",
+      "transmission_group": "Airborne / respiratory",
+      "origin_claim": {
+        "label": "Upper-respiratory and sinus infection care frame",
+        "coordinates": [
+          -77.0,
+          39.0
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for sinusitis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "sinusitis-medlineplus"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "sinusitis-route",
+          "from_label": "Upper-respiratory and sinus infection care frame",
+          "to_label": "Households, workplaces, clinics, respiratory-virus seasonality, and outpatient antibiotic-decision settings",
+          "from_coordinates": [
+            -77.0,
+            39.0
+          ],
+          "to_coordinates": [
+            -95.0,
+            39.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "upper_respiratory_infection_and_clinical_care_pathway",
+          "confidence": "moderate",
+          "narrative": "Sinusitis maps through the exposure settings where public health can actually intervene: households, schools, water, food, soil, animals, vectors, sexual networks, travel corridors, outpatient clinics, or healthcare systems depending on the route.",
+          "citation_ids": [
+            "sinusitis-medlineplus"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "sinusitis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "sinusitis-medlineplus",
+          "short_citation": "Official source. Sinusitis.",
+          "url": "https://medlineplus.gov/sinusitis.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-sinusitis-hero",
+      "source_reviewed_at": "2026-05-14T13:29:53+00:00",
+      "color": "#9eb6bd",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 1,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "acute-bronchitis",
+      "name": "Acute bronchitis",
+      "subtitle": "Respiratory viruses, cough illness, seasonality, antibiotic overuse, and outpatient diagnosis",
+      "status": "mixed",
+      "pathogen_type": "Other",
+      "summary": "Acute bronchitis is an inflammation of the bronchial tubes most often associated with respiratory viral infections and cough illness.",
+      "why_it_matters": "It adds an ordinary but important respiratory syndrome where antibiotic stewardship and outpatient diagnosis shape the public-health map.",
+      "atlas_scope": "Respiratory viruses, cough illness, seasonality, outpatient care, and antibiotic stewardship",
+      "category": "airborne-respiratory",
+      "category_label": "Airborne / respiratory",
+      "transmission_group": "Airborne / respiratory",
+      "origin_claim": {
+        "label": "Acute cough and bronchitis care frame",
+        "coordinates": [
+          -77.0,
+          39.0
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for acute bronchitis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "acute-bronchitis-medlineplus"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "acute-bronchitis-route",
+          "from_label": "Acute cough and bronchitis care frame",
+          "to_label": "Households, workplaces, clinics, respiratory seasonality, and outpatient stewardship settings",
+          "from_coordinates": [
+            -77.0,
+            39.0
+          ],
+          "to_coordinates": [
+            -95.0,
+            39.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "respiratory_viral_cough_illness_and_care_pathway",
+          "confidence": "moderate",
+          "narrative": "Acute bronchitis maps through the exposure settings where public health can actually intervene: households, schools, water, food, soil, animals, vectors, sexual networks, travel corridors, outpatient clinics, or healthcare systems depending on the route.",
+          "citation_ids": [
+            "acute-bronchitis-medlineplus"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "acute-bronchitis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "acute-bronchitis-medlineplus",
+          "short_citation": "Official source. Acute bronchitis.",
+          "url": "https://medlineplus.gov/acutebronchitis.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-acute-bronchitis-hero",
+      "source_reviewed_at": "2026-05-14T13:29:53+00:00",
+      "color": "#8faec0",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 1,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "otitis-media",
+      "name": "Otitis media",
+      "subtitle": "Middle-ear infection, children, respiratory viruses, bacteria, childcare, and antibiotic decisions",
+      "status": "mixed",
+      "pathogen_type": "Other",
+      "summary": "Otitis media is a middle-ear infection, common in children and often connected to respiratory infections, bacterial complications, childcare exposure, and antibiotic decisions.",
+      "why_it_matters": "It adds a pediatric infection route where anatomy, childcare, viral seasons, pneumococcal vaccination, and antibiotic use intersect.",
+      "atlas_scope": "Middle-ear infection, pediatric risk, childcare exposure, respiratory infections, and antibiotic decision-making",
+      "category": "airborne-respiratory",
+      "category_label": "Airborne / respiratory",
+      "transmission_group": "Airborne / respiratory",
+      "origin_claim": {
+        "label": "Pediatric respiratory-linked ear infection frame",
+        "coordinates": [
+          -77.0,
+          39.0
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for otitis media is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "ear-infections-medlineplus"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "otitis-media-route",
+          "from_label": "Pediatric respiratory-linked ear infection frame",
+          "to_label": "Childcare, households, pediatric clinics, respiratory-virus seasonality, and antibiotic-decision settings",
+          "from_coordinates": [
+            -77.0,
+            39.0
+          ],
+          "to_coordinates": [
+            -95.0,
+            39.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "pediatric_respiratory_linked_middle_ear_infection",
+          "confidence": "moderate",
+          "narrative": "Otitis media maps through the exposure settings where public health can actually intervene: households, schools, water, food, soil, animals, vectors, sexual networks, travel corridors, outpatient clinics, or healthcare systems depending on the route.",
+          "citation_ids": [
+            "ear-infections-medlineplus"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "otitis-media",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "ear-infections-medlineplus",
+          "short_citation": "Official source. Otitis media.",
+          "url": "https://medlineplus.gov/earinfections.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-otitis-media-hero",
+      "source_reviewed_at": "2026-05-14T13:29:53+00:00",
+      "color": "#b0a071",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 1,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "urinary-tract-infection",
+      "name": "Urinary tract infection",
+      "subtitle": "Ascending bacterial infection, anatomy, catheters, sexual exposure, pregnancy, and healthcare devices",
+      "status": "mixed",
+      "pathogen_type": "Bacterium",
+      "summary": "Urinary tract infection is a common bacterial infection involving the urinary system, shaped by anatomy, sexual exposure, pregnancy, catheters, and healthcare devices.",
+      "why_it_matters": "It adds a major infection where the route is often endogenous and device-mediated rather than airborne, vectorborne, or foodborne.",
+      "atlas_scope": "Ascending bacterial infection, anatomy, sexual exposure, pregnancy, catheters, device-associated infection, and resistance",
+      "category": "healthcare-associated",
+      "category_label": "Healthcare-associated",
+      "transmission_group": "Healthcare-associated",
+      "origin_claim": {
+        "label": "Urinary-tract and device-associated infection frame",
+        "coordinates": [
+          -77.0,
+          39.0
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for urinary tract infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "uti-medlineplus"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "urinary-tract-infection-route",
+          "from_label": "Urinary-tract and device-associated infection frame",
+          "to_label": "Primary care, pregnancy care, sexual-health contexts, catheter use, hospitals, and long-term care settings",
+          "from_coordinates": [
+            -77.0,
+            39.0
+          ],
+          "to_coordinates": [
+            -95.0,
+            39.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "ascending_bacterial_and_device_associated_route",
+          "confidence": "moderate",
+          "narrative": "Urinary tract infection maps through the exposure settings where public health can actually intervene: households, schools, water, food, soil, animals, vectors, sexual networks, travel corridors, outpatient clinics, or healthcare systems depending on the route.",
+          "citation_ids": [
+            "uti-medlineplus"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "urinary-tract-infection",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "uti-medlineplus",
+          "short_citation": "Official source. Urinary tract infection.",
+          "url": "https://medlineplus.gov/urinarytractinfections.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-urinary-tract-infection-hero",
+      "source_reviewed_at": "2026-05-14T13:29:53+00:00",
+      "color": "#8b8f75",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 1,
+      "related_stories": [],
+      "variants": []
+    },
+    {
+      "slug": "infectious-gastroenteritis",
+      "name": "Infectious gastroenteritis",
+      "subtitle": "Diarrheal illness, viruses, bacteria, parasites, food, water, hands, and outbreak detection",
+      "status": "mixed",
+      "pathogen_type": "Other",
+      "summary": "Infectious gastroenteritis is inflammation of the stomach and intestines caused by viruses, bacteria, or parasites and spread through food, water, hands, surfaces, or close contact.",
+      "why_it_matters": "It gives the atlas a syndrome-level digestive-disease anchor connecting norovirus, rotavirus, Salmonella, Shigella, parasites, and water systems.",
+      "atlas_scope": "Diarrheal disease, food and water exposure, hand and surface transmission, outbreak detection, and pathogen-specific sorting",
+      "category": "fecal-oral-waterborne",
+      "category_label": "Fecal-oral / waterborne",
+      "transmission_group": "Fecal-oral / waterborne",
+      "origin_claim": {
+        "label": "Fecal-oral diarrheal-disease syndrome frame",
+        "coordinates": [
+          -77.0,
+          39.0
+        ],
+        "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
+        "confidence": "mixed",
+        "narrative": "The atlas origin for infectious gastroenteritis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
+        "citation_ids": [
+          "gastroenteritis-medlineplus"
+        ]
+      },
+      "spread_routes": [
+        {
+          "route_id": "infectious-gastroenteritis-route",
+          "from_label": "Fecal-oral diarrheal-disease syndrome frame",
+          "to_label": "Food service, water systems, childcare, households, travel, and outbreak-investigation settings",
+          "from_coordinates": [
+            -77.0,
+            39.0
+          ],
+          "to_coordinates": [
+            -95.0,
+            39.0
+          ],
+          "date_or_era": "Modern surveillance and control era",
+          "route_type": "fecal_oral_food_water_hand_and_surface_spread",
+          "confidence": "moderate",
+          "narrative": "Infectious gastroenteritis maps through the exposure settings where public health can actually intervene: households, schools, water, food, soil, animals, vectors, sexual networks, travel corridors, outpatient clinics, or healthcare systems depending on the route.",
+          "citation_ids": [
+            "gastroenteritis-medlineplus"
+          ]
+        }
+      ],
+      "modern_echoes": [
+        "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
+        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+      ],
+      "framing_traps": [
+        "Do not convert a recognition frame into a definitive origin story.",
+        "Do not read reported geography without considering exposure setting, surveillance, and differential testing."
+      ],
+      "linked_reference_slug": "infectious-gastroenteritis",
+      "linked_story_ids": [],
+      "linked_blog_posts": [],
+      "citations": [
+        {
+          "id": "gastroenteritis-medlineplus",
+          "short_citation": "Official source. Infectious gastroenteritis.",
+          "url": "https://medlineplus.gov/gastroenteritis.html",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "writing_state": "not_yet_written",
+      "visual_asset_id": "atlas-infectious-gastroenteritis-hero",
+      "source_reviewed_at": "2026-05-14T13:29:53+00:00",
+      "color": "#8aa66a",
+      "status_label": "Mixed / debated",
+      "writing_state_label": "No dedicated post yet",
+      "citation_count": 1,
+      "related_stories": [],
+      "variants": []
     }
   ],
-  "generated_at": "2026-05-14T06:11:13",
-  "atlas_count": 190
+  "generated_at": "2026-05-14T07:11:44",
+  "atlas_count": 210
 };

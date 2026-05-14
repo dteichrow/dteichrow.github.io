@@ -806,9 +806,11 @@ function categoryOptions() {
   }).map(([key, label]) => [key, label, counts.get(key) || 0]);
 }
 
-function typeOptions() {
+function typeOptions(categoryFilter = currentCategory) {
   const counts = new Map();
-  ATLAS_ENTRIES.forEach((entry) => {
+  ATLAS_ENTRIES.filter((entry) => {
+    return categoryFilter === "all" || categoryKeyFor(entry) === categoryFilter;
+  }).forEach((entry) => {
     const key = typeKeyFor(entry);
     counts.set(key, (counts.get(key) || 0) + 1);
   });
@@ -820,12 +822,11 @@ function typeOptions() {
 }
 
 function entriesInScope() {
-  const scoped = ATLAS_ENTRIES.filter((entry) => {
+  return ATLAS_ENTRIES.filter((entry) => {
     const categoryMatches = currentCategory === "all" || categoryKeyFor(entry) === currentCategory;
     const typeMatches = currentType === "all" || typeKeyFor(entry) === currentType;
     return categoryMatches && typeMatches;
   });
-  return scoped.length ? scoped : ATLAS_ENTRIES;
 }
 
 function variantsFor(entry) {
@@ -904,19 +905,55 @@ function arcLatLngs(fromCoordinates, toCoordinates) {
 
 function scopedIndex(delta) {
   const scoped = entriesInScope();
+  if (!scoped.length) {
+    return currentIndex;
+  }
   const active = ATLAS_ENTRIES[currentIndex];
-  const scopedCurrentIndex = Math.max(0, scoped.findIndex((entry) => entry.slug === active?.slug));
-  const nextScopedIndex = ((scopedCurrentIndex + delta) % scoped.length + scoped.length) % scoped.length;
+  const scopedCurrentIndex = scoped.findIndex((entry) => entry.slug === active?.slug);
+  const baseIndex = scopedCurrentIndex >= 0 ? scopedCurrentIndex : (delta > 0 ? -1 : 0);
+  const nextScopedIndex = ((baseIndex + delta) % scoped.length + scoped.length) % scoped.length;
   return ATLAS_ENTRIES.findIndex((entry) => entry.slug === scoped[nextScopedIndex].slug);
 }
 
 function populatePathogenSelect(selectedSlug) {
   const scoped = entriesInScope();
+  if (!scoped.length) {
+    pathogenSelect.disabled = true;
+    pathogenSelect.innerHTML = '<option value="">No diseases match selected filters</option>';
+    return;
+  }
+  pathogenSelect.disabled = false;
   pathogenSelect.innerHTML = scoped.map((entry) => `
     <option value="${escapeHtml(entry.slug)}"${entry.slug === selectedSlug ? " selected" : ""}>
       ${escapeHtml(entry.name)}
     </option>
   `).join("");
+}
+
+function renderTypeSelectOptions() {
+  const categoryScopedTotal = currentCategory === "all"
+    ? ATLAS_ENTRIES.length
+    : ATLAS_ENTRIES.filter((entry) => categoryKeyFor(entry) === currentCategory).length;
+  const types = typeOptions(currentCategory);
+  const validTypes = new Set(types.map(([key]) => key));
+  if (currentType !== "all" && !validTypes.has(currentType)) {
+    currentType = "all";
+  }
+  typeSelect.innerHTML = [
+    `<option value="all">All types (${categoryScopedTotal})</option>`,
+    ...types.map(([key, count]) => `<option value="${escapeHtml(key)}">${escapeHtml(key)} (${count})</option>`)
+  ].join("");
+  typeSelect.value = currentType;
+}
+
+function selectFirstScopedEntry() {
+  const firstScopedEntry = entriesInScope()[0];
+  if (!firstScopedEntry) {
+    populatePathogenSelect("");
+    return;
+  }
+  const nextIndex = ATLAS_ENTRIES.findIndex((entry) => entry.slug === firstScopedEntry.slug);
+  selectIndex(nextIndex, { userInitiated: true });
 }
 
 function syncScenarioControls(entry) {
@@ -940,25 +977,17 @@ function renderScenarioControls() {
     ...categories.map(([key, label, count]) => `<option value="${escapeHtml(key)}">${escapeHtml(label)} (${count})</option>`)
   ].join("");
   categorySelect.value = currentCategory;
-  const types = typeOptions();
-  typeSelect.innerHTML = [
-    `<option value="all">All types (${ATLAS_ENTRIES.length})</option>`,
-    ...types.map(([key, count]) => `<option value="${escapeHtml(key)}">${escapeHtml(key)} (${count})</option>`)
-  ].join("");
-  typeSelect.value = currentType;
+  renderTypeSelectOptions();
   populatePathogenSelect(ATLAS_ENTRIES[currentIndex]?.slug);
 
   categorySelect.addEventListener("change", () => {
     currentCategory = categorySelect.value;
-    const firstScopedEntry = entriesInScope()[0];
-    const nextIndex = ATLAS_ENTRIES.findIndex((entry) => entry.slug === firstScopedEntry.slug);
-    selectIndex(nextIndex, { userInitiated: true });
+    renderTypeSelectOptions();
+    selectFirstScopedEntry();
   });
   typeSelect.addEventListener("change", () => {
     currentType = typeSelect.value;
-    const firstScopedEntry = entriesInScope()[0];
-    const nextIndex = ATLAS_ENTRIES.findIndex((entry) => entry.slug === firstScopedEntry.slug);
-    selectIndex(nextIndex, { userInitiated: true });
+    selectFirstScopedEntry();
   });
   pathogenSelect.addEventListener("change", () => {
     const index = ATLAS_ENTRIES.findIndex((entry) => entry.slug === pathogenSelect.value);
