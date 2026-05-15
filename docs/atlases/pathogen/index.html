@@ -53,7 +53,7 @@ a {
   display: grid;
   grid-template-columns: minmax(240px, 340px) minmax(0, 1fr);
   gap: 18px;
-  padding: 12px 22px 11px;
+  padding: 50px 22px 11px;
   background: linear-gradient(180deg, rgba(14,13,11,0.97), rgba(14,13,11,0.88));
   border-bottom: 1px solid var(--border);
   box-shadow: 0 16px 48px rgba(0,0,0,0.48);
@@ -73,7 +73,7 @@ a {
 #scenario-bar {
   min-width: 0;
   display: grid;
-  grid-template-columns: minmax(190px, 240px) minmax(170px, 220px) minmax(230px, 1fr) auto;
+  grid-template-columns: minmax(170px, 220px) minmax(150px, 190px) minmax(230px, 1fr) minmax(145px, 170px) auto;
   align-items: center;
   gap: 12px;
   padding: 1px 0 2px;
@@ -108,6 +108,36 @@ a {
 .atlas-select option {
   background: #181511;
   color: var(--text);
+}
+.atlas-search {
+  width: 100%;
+  min-height: 34px;
+  margin-bottom: 6px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.045);
+  color: var(--text);
+  padding: 7px 11px;
+  font: 650 12px/1.2 var(--display);
+  outline: none;
+}
+.atlas-search::placeholder {
+  color: var(--faint);
+}
+.atlas-search:focus {
+  border-color: rgba(201,168,76,0.52);
+  box-shadow: 0 0 0 3px rgba(201,168,76,0.08);
+}
+.filter-count {
+  display: block;
+  min-height: 15px;
+  margin-top: 5px;
+  color: var(--faint);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+.mode-select {
+  border-color: rgba(140,201,181,0.24);
 }
 #atlas-controls {
   display: flex;
@@ -148,9 +178,9 @@ a {
 #story-panel,
 #evidence-panel {
   position: fixed;
-  top: 118px;
+  top: 156px;
   z-index: 920;
-  max-height: calc(100vh - 166px);
+  max-height: calc(100vh - 204px);
   overflow-y: auto;
   border: 1px solid var(--border);
   box-shadow: 0 18px 58px rgba(0,0,0,0.55);
@@ -224,7 +254,19 @@ a {
 .badge.signal {
   color: var(--text);
 }
+.badge.reviewed {
+  color: #8cc9b5;
+  border-color: rgba(140,201,181,0.30);
+  background: rgba(140,201,181,0.10);
+}
+.badge.layer-global_distribution { color: #9eb4b2; }
+.badge.layer-endemic_zone { color: var(--gold); }
+.badge.layer-reservoir_ecology { color: #9dcf8d; }
+.badge.layer-outbreak_region { color: #d8876d; }
+.badge.layer-surveillance_region { color: #8fb8d8; }
+.badge.layer-exposure_zone { color: #8cc9b5; }
 #route-list,
+#geography-evidence-list,
 #modern-echo-list,
 #framing-trap-list,
 #blog-list,
@@ -377,6 +419,22 @@ a {
 .legend-line.dotted {
   border-top-style: dotted;
 }
+.legend-swatch {
+  display: inline-block;
+  width: 18px;
+  height: 11px;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  background: color-mix(in srgb, currentColor 22%, transparent);
+}
+.legend-swatch.hatched {
+  background:
+    repeating-linear-gradient(135deg, color-mix(in srgb, currentColor 32%, transparent) 0 2px, transparent 2px 5px),
+    color-mix(in srgb, currentColor 10%, transparent);
+}
+.legend-swatch.dashed {
+  border-style: dashed;
+}
 .origin-marker,
 .endpoint-marker {
   width: 24px;
@@ -411,6 +469,21 @@ a {
 .atlas-route.active {
   filter: drop-shadow(0 0 8px currentColor);
 }
+.atlas-geography-layer {
+  stroke-linejoin: round;
+}
+.atlas-geography-layer.layer-global_distribution {
+  filter: saturate(0.8);
+}
+.atlas-geography-layer.layer-reservoir_ecology {
+  filter: drop-shadow(0 0 5px rgba(157, 207, 141, 0.18));
+}
+.atlas-geography-layer.layer-outbreak_region {
+  filter: drop-shadow(0 0 7px rgba(216, 135, 109, 0.28));
+}
+.atlas-geography-layer.layer-surveillance_region {
+  filter: drop-shadow(0 0 5px rgba(143, 184, 216, 0.16));
+}
 .leaflet-popup-content-wrapper,
 .leaflet-popup-tip {
   background: rgba(20, 19, 16, 0.96);
@@ -431,7 +504,7 @@ a {
     grid-template-columns: 1fr;
   }
   #scenario-bar {
-    grid-template-columns: minmax(170px, 0.8fr) minmax(150px, 0.7fr) minmax(220px, 1.1fr) auto;
+    grid-template-columns: minmax(150px, 0.8fr) minmax(135px, 0.7fr) minmax(220px, 1.1fr) minmax(135px, 0.65fr) auto;
   }
 }
 @media (max-width: 980px) {
@@ -498,7 +571,7 @@ a {
   }
   #eoe-atlas-overlay-brand {
     position: fixed;
-    top: 52px;
+    top: 8px;
     left: 18px;
     display: inline-flex;
     flex-wrap: wrap;
@@ -520,7 +593,7 @@ a {
   }
   #eoe-atlas-overlay-links {
     position: fixed;
-    top: 88px;
+    top: 8px;
     right: 18px;
     display: flex;
     gap: 8px;
@@ -580,7 +653,18 @@ a {
     </div>
     <div class="atlas-picker">
       <label for="pathogen-select">Disease</label>
+      <input class="atlas-search" id="pathogen-search" type="search" placeholder="Search disease names" autocomplete="off">
       <select class="atlas-select" id="pathogen-select"></select>
+      <span class="filter-count" id="filter-count"></span>
+    </div>
+    <div class="atlas-picker">
+      <label for="map-mode-select">Map</label>
+      <select class="atlas-select mode-select" id="map-mode-select">
+        <option value="both">Both</option>
+        <option value="routes">Routes</option>
+        <option value="geography">Extent</option>
+        <option value="evidence">Evidence</option>
+      </select>
     </div>
     <div id="atlas-controls">
       <button id="prev-btn" type="button">Prev</button>
@@ -633,6 +717,11 @@ a {
   </section>
 
   <section class="panel-section">
+    <div class="subsection-kicker">Geography interpretation</div>
+    <div id="geography-evidence-list"></div>
+  </section>
+
+  <section class="panel-section">
     <div class="subsection-kicker">What is unsettled</div>
     <div class="list-card">
       <ul id="framing-trap-list"></ul>
@@ -668,7 +757,10 @@ a {
     <span class="legend-chip" style="color:#efe4d2"><span class="legend-line"></span> Strong route</span>
     <span class="legend-chip" style="color:#efe4d2"><span class="legend-line dashed"></span> Moderate route</span>
     <span class="legend-chip" style="color:#efe4d2"><span class="legend-line dotted"></span> Debated route</span>
-    <span class="legend-chip" style="color:#8cc9b5"><span class="legend-dot"></span> Distribution zone</span>
+    <span class="legend-chip" style="color:#c9a84c"><span class="legend-swatch"></span> Endemic zone</span>
+    <span class="legend-chip" style="color:#9dcf8d"><span class="legend-swatch hatched"></span> Reservoir ecology</span>
+    <span class="legend-chip" style="color:#8fb8d8"><span class="legend-swatch dashed"></span> Surveillance</span>
+    <span class="legend-chip" style="color:#8cc9b5"><span class="legend-swatch"></span> Exposure zone</span>
   </div>
 </div>
 
@@ -756,6 +848,9 @@ const scenarioBar = document.getElementById("scenario-bar");
 const categorySelect = document.getElementById("category-select");
 const typeSelect = document.getElementById("type-select");
 const pathogenSelect = document.getElementById("pathogen-select");
+const pathogenSearch = document.getElementById("pathogen-search");
+const filterCount = document.getElementById("filter-count");
+const mapModeSelect = document.getElementById("map-mode-select");
 const storyMeta = document.getElementById("story-meta");
 const evidenceLinks = document.getElementById("evidence-links");
 let currentIndex = 0;
@@ -763,6 +858,8 @@ let currentSlug = null;
 let currentVariantSlug = null;
 let currentCategory = "all";
 let currentType = "all";
+let currentSearch = "";
+let currentMapMode = "both";
 let isPaused = false;
 let rotationTimer = null;
 let originMarker = null;
@@ -797,6 +894,17 @@ function typeKeyFor(entry) {
   return entry.pathogen_type || "Other";
 }
 
+function normalizedSearchText(entry) {
+  return [
+    entry.name,
+    entry.slug,
+    entry.subtitle,
+    entry.category_label,
+    entry.pathogen_type,
+    ...(variantsFor(entry).map((variant) => [variant.name, variant.slug, variant.subtitle].filter(Boolean).join(" ")))
+  ].filter(Boolean).join(" ").toLowerCase();
+}
+
 function categoryOptions() {
   const seen = new Map();
   const counts = new Map();
@@ -828,10 +936,12 @@ function typeOptions(categoryFilter = currentCategory) {
 }
 
 function entriesInScope() {
+  const query = currentSearch.trim().toLowerCase();
   return ATLAS_ENTRIES.filter((entry) => {
     const categoryMatches = currentCategory === "all" || categoryKeyFor(entry) === currentCategory;
     const typeMatches = currentType === "all" || typeKeyFor(entry) === currentType;
-    return categoryMatches && typeMatches;
+    const searchMatches = !query || normalizedSearchText(entry).includes(query);
+    return categoryMatches && typeMatches && searchMatches;
   });
 }
 
@@ -877,6 +987,48 @@ function geographyOpacity(confidence) {
   return 0.09;
 }
 
+function geographyTypeColor(layer, fallbackColor) {
+  return {
+    global_distribution: "#9eb4b2",
+    endemic_zone: fallbackColor,
+    reservoir_ecology: "#9dcf8d",
+    outbreak_region: "#d8876d",
+    surveillance_region: "#8fb8d8",
+    exposure_zone: "#8cc9b5"
+  }[layer?.layer_type] || fallbackColor;
+}
+
+function geographyDashArray(layer) {
+  return {
+    global_distribution: "2 12",
+    reservoir_ecology: "7 6",
+    outbreak_region: "1 8",
+    surveillance_region: "10 8",
+    exposure_zone: "14 10"
+  }[layer?.layer_type] || null;
+}
+
+function geographyStrokeWeight(layer) {
+  return {
+    global_distribution: 1.2,
+    endemic_zone: 2.1,
+    reservoir_ecology: 2.0,
+    outbreak_region: 2.7,
+    surveillance_region: 1.8,
+    exposure_zone: 1.8
+  }[layer?.layer_type] || 1.8;
+}
+
+function geographyFillOpacity(layer) {
+  const base = geographyOpacity(layer?.confidence);
+  if (layer?.layer_type === "global_distribution") return Math.min(base, 0.075);
+  if (layer?.layer_type === "reservoir_ecology") return base * 0.9;
+  if (layer?.layer_type === "outbreak_region") return Math.min(base + 0.04, 0.22);
+  if (layer?.layer_type === "surveillance_region") return base * 0.55;
+  if (layer?.layer_type === "exposure_zone") return base * 0.82;
+  return base;
+}
+
 function geographyLabel(layer) {
   return {
     global_distribution: "Global distribution",
@@ -886,6 +1038,49 @@ function geographyLabel(layer) {
     surveillance_region: "Surveillance region",
     exposure_zone: "Exposure zone"
   }[layer?.layer_type] || "Geographic layer";
+}
+
+function geographyCssClass(layer) {
+  return `layer-${String(layer?.layer_type || "other")}`;
+}
+
+function geographyLayerBadgeClass(layer) {
+  return `layer-${String(layer?.layer_type || "other")}`;
+}
+
+function mapModeLabel(value) {
+  return {
+    both: "Routes + extent",
+    routes: "Routes only",
+    geography: "Extent only",
+    evidence: "Evidence view"
+  }[value] || "Routes + extent";
+}
+
+function citationsById(entry) {
+  const citations = new Map();
+  (entry?.citations || []).forEach((citation) => {
+    if (citation?.id) {
+      citations.set(citation.id, citation);
+    }
+  });
+  return citations;
+}
+
+function citationLabel(citation) {
+  return citation?.short_citation || citation?.title || citation?.id || "Source";
+}
+
+function hasReviewedGeography(entry) {
+  return (entry?.geography_layers || []).some((layer) => Array.isArray(layer.citation_ids) && layer.citation_ids.length);
+}
+
+function shouldDrawGeography() {
+  return currentMapMode !== "routes";
+}
+
+function shouldDrawRoutes() {
+  return currentMapMode !== "geography";
 }
 
 function makeMarker(color, kind = "origin") {
@@ -958,6 +1153,11 @@ function scopedIndex(delta) {
 
 function populatePathogenSelect(selectedSlug) {
   const scoped = entriesInScope();
+  const total = ATLAS_ENTRIES.length;
+  const countCopy = scoped.length === total
+    ? `${total} diseases in the atlas`
+    : `${scoped.length} of ${total} diseases shown`;
+  filterCount.textContent = `${countCopy} | ${mapModeLabel(currentMapMode)}`;
   if (!scoped.length) {
     pathogenSelect.disabled = true;
     pathogenSelect.innerHTML = '<option value="">No diseases match selected filters</option>';
@@ -1009,6 +1209,7 @@ function syncScenarioControls(entry) {
   }
   populatePathogenSelect(entry.slug);
   pathogenSelect.value = entry.slug;
+  mapModeSelect.value = currentMapMode;
 }
 
 function renderScenarioControls() {
@@ -1030,11 +1231,31 @@ function renderScenarioControls() {
     currentType = typeSelect.value;
     selectFirstScopedEntry();
   });
+  pathogenSearch.addEventListener("input", () => {
+    currentSearch = pathogenSearch.value;
+    selectFirstScopedEntry();
+  });
   pathogenSelect.addEventListener("change", () => {
     const index = ATLAS_ENTRIES.findIndex((entry) => entry.slug === pathogenSelect.value);
     if (index >= 0) {
       selectIndex(index, { userInitiated: true });
     }
+  });
+  mapModeSelect.addEventListener("change", () => {
+    currentMapMode = mapModeSelect.value;
+    const entry = ENTRY_BY_SLUG.get(currentSlug) || ATLAS_ENTRIES[currentIndex];
+    if (!entry) {
+      return;
+    }
+    const activeEntry = resolveActiveEntry(entry);
+    populatePathogenSelect(entry.slug);
+    renderStoryPanel(entry, activeEntry);
+    renderEvidencePanel(entry, activeEntry);
+    drawEntry(activeEntry);
+    if (currentMapMode === "routes" && activeEntry.spread_routes?.length) {
+      focusRoute(activeEntry.spread_routes[0].route_id);
+    }
+    scheduleRotation();
   });
   document.getElementById("prev-btn").addEventListener("click", () => selectIndex(scopedIndex(-1), { userInitiated: true }));
   document.getElementById("next-btn").addEventListener("click", () => selectIndex(scopedIndex(1), { userInitiated: true }));
@@ -1083,6 +1304,8 @@ function renderMeta(entry, activeEntry) {
     `<span class="badge">${escapeHtml(categoryLabelFor(entry))}</span>`,
     `<span class="badge signal">${escapeHtml(activeEntry.pathogen_type || entry.pathogen_type || "Pathogen")}</span>`,
     `<span class="badge">${escapeHtml(writingLabel)}</span>`,
+    `<span class="badge">${escapeHtml(mapModeLabel(currentMapMode))}</span>`,
+    hasReviewedGeography(activeEntry) ? `<span class="badge reviewed">Reviewed geography</span>` : "",
     (activeEntry.atlas_scope || entry.atlas_scope) ? `<span class="badge">${escapeHtml(activeEntry.atlas_scope || entry.atlas_scope)}</span>` : "",
     variants.length ? `<span class="badge">${escapeHtml(activeEntry.name || "Variant view")}</span>` : ""
   ].filter(Boolean);
@@ -1106,6 +1329,21 @@ function renderVariantSelector(entry, activeEntry) {
   `).join("");
   note.textContent = activeEntry.subtitle || activeEntry.summary || "";
   select.onchange = () => selectVariant(select.value);
+}
+
+function renderLayerSourceLinks(layer, activeEntry) {
+  const citations = citationsById(activeEntry);
+  const ids = Array.isArray(layer?.citation_ids) ? layer.citation_ids : [];
+  if (!ids.length) {
+    return '<span class="badge">Source review pending</span>';
+  }
+  return ids.map((id) => {
+    const citation = citations.get(id);
+    if (citation?.url) {
+      return `<a class="panel-link" href="${escapeHtml(citation.url)}">${escapeHtml(citationLabel(citation))}</a>`;
+    }
+    return `<span class="badge">${escapeHtml(id)}</span>`;
+  }).join("");
 }
 
 function renderStoryPanel(entry, activeEntry) {
@@ -1139,7 +1377,9 @@ function renderStoryPanel(entry, activeEntry) {
       <div class="subsection-kicker">${escapeHtml(geographyLabel(layer))}</div>
       <h3>${escapeHtml(layer.label || "Geographic layer")}</h3>
       <div class="meta-row">
+        <span class="badge ${escapeHtml(geographyLayerBadgeClass(layer))}">${escapeHtml(geographyLabel(layer))}</span>
         <span class="badge accent">${escapeHtml(confidenceLabel(layer.confidence))}</span>
+        ${Array.isArray(layer.citation_ids) && layer.citation_ids.length ? '<span class="badge reviewed">Reviewed geography</span>' : ""}
         ${layer.date_or_era ? `<span class="badge">${escapeHtml(layer.date_or_era)}</span>` : ""}
       </div>
       <p class="panel-copy">${escapeHtml(layer.narrative || "")}</p>
@@ -1166,6 +1406,21 @@ function renderEvidencePanel(entry, activeEntry) {
     links.push(`<a class="panel-link" href="${escapeHtml(activeEntry.related_stories[0].story_href)}">Active story file</a>`);
   }
   evidenceLinks.innerHTML = links.join("");
+
+  const geographyEvidenceHtml = (activeEntry.geography_layers || []).map((layer) => `
+    <article class="detail-card">
+      <div class="subsection-kicker">Mapped as</div>
+      <h3>${escapeHtml(layer.label || geographyLabel(layer))}</h3>
+      <div class="meta-row">
+        <span class="badge ${escapeHtml(geographyLayerBadgeClass(layer))}">${escapeHtml(geographyLabel(layer))}</span>
+        <span class="badge accent">${escapeHtml(confidenceLabel(layer.confidence))}</span>
+        ${Array.isArray(layer.citation_ids) && layer.citation_ids.length ? '<span class="badge reviewed">Source-backed</span>' : ""}
+      </div>
+      <p class="panel-copy">${escapeHtml(layer.narrative || "")}</p>
+      <div class="inline-links">${renderLayerSourceLinks(layer, activeEntry)}</div>
+    </article>
+  `).join("");
+  document.getElementById("geography-evidence-list").innerHTML = geographyEvidenceHtml || '<article class="list-card"><div class="note-text">No geography interpretation layer is attached yet.</div></article>';
 
   renderBulletList("framing-trap-list", activeEntry.framing_traps, "No major framing trap notes are attached yet.");
   renderBulletList("modern-echo-list", activeEntry.modern_echoes, "No modern-echo notes are attached yet.");
@@ -1245,13 +1500,15 @@ function drawGeographyLayer(layer, color) {
   if (!layer || !layer.geometry_type) {
     return;
   }
+  const layerColor = geographyTypeColor(layer, color);
   const options = {
-    color,
-    weight: 1.8,
-    opacity: 0.78,
-    fillColor: color,
-    fillOpacity: geographyOpacity(layer.confidence),
-    className: "atlas-geography-layer"
+    color: layerColor,
+    weight: geographyStrokeWeight(layer),
+    opacity: layer.layer_type === "global_distribution" ? 0.48 : 0.82,
+    fillColor: layerColor,
+    fillOpacity: geographyFillOpacity(layer),
+    dashArray: geographyDashArray(layer),
+    className: `atlas-geography-layer ${geographyCssClass(layer)}`
   };
   const bounds = geographyBounds(layer);
   let mapLayer = null;
@@ -1280,39 +1537,43 @@ function drawEntry(entry) {
   const color = colorFor(entry);
   document.documentElement.style.setProperty("--active-color", color);
 
-  (entry.geography_layers || []).forEach((layer) => drawGeographyLayer(layer, color));
+  if (shouldDrawGeography()) {
+    (entry.geography_layers || []).forEach((layer) => drawGeographyLayer(layer, color));
+  }
 
-  if (entry.origin_claim?.coordinates) {
+  if (shouldDrawRoutes() && entry.origin_claim?.coordinates) {
     originMarker = L.marker(toLatLng(entry.origin_claim.coordinates), { icon: makeMarker(color, "origin") });
     originMarker.bindPopup(`<div class="popup-title">${escapeHtml(entry.origin_claim.label || entry.name)}</div><div class="popup-copy">${escapeHtml(entry.origin_claim.narrative || "")}</div>`);
     currentFeatureGroup.addLayer(originMarker);
   }
 
-  (entry.spread_routes || []).forEach((route) => {
-    if (!route.from_coordinates || !route.to_coordinates) {
-      return;
-    }
-    const path = arcLatLngs(route.from_coordinates, route.to_coordinates);
-    const layer = L.polyline(path, {
-      className: "atlas-route",
-      color,
-      weight: route.confidence === "strong" ? 4.8 : 3.6,
-      opacity: routeOpacity(route.confidence),
-      dashArray: routeDashArray(route.confidence)
-    });
-    layer.bindPopup(`
-      <div class="popup-title">${escapeHtml(route.from_label || "Origin")} to ${escapeHtml(route.to_label || "Destination")}</div>
-      <div class="popup-copy">${escapeHtml(route.narrative || "")}</div>
-    `);
-    currentFeatureGroup.addLayer(layer);
-    routeLayers.push(layer);
-    routeLayerById.set(route.route_id, layer);
+  if (shouldDrawRoutes()) {
+    (entry.spread_routes || []).forEach((route) => {
+      if (!route.from_coordinates || !route.to_coordinates) {
+        return;
+      }
+      const path = arcLatLngs(route.from_coordinates, route.to_coordinates);
+      const layer = L.polyline(path, {
+        className: "atlas-route",
+        color,
+        weight: route.confidence === "strong" ? 4.8 : 3.6,
+        opacity: currentMapMode === "evidence" ? Math.max(routeOpacity(route.confidence) - 0.08, 0.48) : routeOpacity(route.confidence),
+        dashArray: routeDashArray(route.confidence)
+      });
+      layer.bindPopup(`
+        <div class="popup-title">${escapeHtml(route.from_label || "Origin")} to ${escapeHtml(route.to_label || "Destination")}</div>
+        <div class="popup-copy">${escapeHtml(route.narrative || "")}</div>
+      `);
+      currentFeatureGroup.addLayer(layer);
+      routeLayers.push(layer);
+      routeLayerById.set(route.route_id, layer);
 
-    const endpoint = L.marker(toLatLng(route.to_coordinates), { icon: makeMarker(color, "endpoint") });
-    endpoint.bindPopup(`<div class="popup-title">${escapeHtml(route.to_label || "Route endpoint")}</div><div class="popup-copy">${escapeHtml(route.date_or_era || "")}</div>`);
-    currentFeatureGroup.addLayer(endpoint);
-    endpointMarkers.push(endpoint);
-  });
+      const endpoint = L.marker(toLatLng(route.to_coordinates), { icon: makeMarker(color, "endpoint") });
+      endpoint.bindPopup(`<div class="popup-title">${escapeHtml(route.to_label || "Route endpoint")}</div><div class="popup-copy">${escapeHtml(route.date_or_era || "")}</div>`);
+      currentFeatureGroup.addLayer(endpoint);
+      endpointMarkers.push(endpoint);
+    });
+  }
 
   if (currentFeatureGroup.getLayers().length) {
     fitCurrentEntry();
@@ -1377,7 +1638,7 @@ function selectIndex(nextIndex, options = {}) {
   renderStoryPanel(entry, activeEntry);
   renderEvidencePanel(entry, activeEntry);
   drawEntry(activeEntry);
-  if (activeEntry.spread_routes?.length) {
+  if (currentMapMode === "routes" && activeEntry.spread_routes?.length) {
     focusRoute(activeEntry.spread_routes[0].route_id);
   }
   if (!options.fromRotation && !options.suppressUrl) {
@@ -1396,7 +1657,7 @@ function selectVariant(variantSlug) {
   renderStoryPanel(entry, activeEntry);
   renderEvidencePanel(entry, activeEntry);
   drawEntry(activeEntry);
-  if (activeEntry.spread_routes?.length) {
+  if (currentMapMode === "routes" && activeEntry.spread_routes?.length) {
     focusRoute(activeEntry.spread_routes[0].route_id);
   }
   updateUrl(entry.slug, currentVariantSlug);
