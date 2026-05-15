@@ -972,7 +972,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [
         {
           "display_title": "Hantavirus and cruise-ship outbreak",
-          "latest_update_summary": "The lead item has changed to 5th Californian possibly exposed to hantavirus identified, health officials say no confirmed cases from CBS News.",
+          "latest_update_summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
           "story_id": "story_f6d225b01f3f7094",
           "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
           "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1074,7 +1074,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "The lead item has changed to 5th Californian possibly exposed to hantavirus identified, health officials say no confirmed cases from CBS News.",
+              "latest_update_summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1210,7 +1210,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "The lead item has changed to 5th Californian possibly exposed to hantavirus identified, health officials say no confirmed cases from CBS News.",
+              "latest_update_summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1346,7 +1346,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "The lead item has changed to 5th Californian possibly exposed to hantavirus identified, health officials say no confirmed cases from CBS News.",
+              "latest_update_summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -23823,6 +23823,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "variants": []
     }
   ],
-  "generated_at": "2026-05-15T09:51:24",
+  "generated_at": "2026-05-15T09:53:42",
   "atlas_count": 210
 };
