@@ -46,7 +46,8 @@
             "yellow-fever-who"
           ]
         }
-      ]
+      ],
+      "why_it_matters": "Yellow fever moves with people, water storage, ships, and vector habitat, not by human travel alone."
     },
     {
       "slug": "cholera",
@@ -141,7 +142,7 @@
         }
       ],
       "summary": "Mpox combines a geographically anchored Central and West African history with wildlife-trade export events and a distinct twenty-first-century pattern of networked global transmission.",
-      "why_it_matters": "The geography separates clades, transport events, animal reservoirs, and transmission networks instead of collapsing them into one origin point."
+      "why_it_matters": "Mpox geography separates clades, transport events, animal reservoirs, and transmission networks instead of collapsing them into a single point of origin."
     },
     {
       "slug": "avian-influenza-h5n1",
@@ -187,7 +188,8 @@
           ]
         }
       ],
-      "why_it_matters": "Hantavirus geography depends on host ecology, housing, work exposures, and syndrome differences across regions, not a single route line."
+      "why_it_matters": "Hantavirus geography depends on host ecology, housing, work exposures, and syndrome differences across regions, not a single route line.",
+      "summary": "Hantavirus geography follows rodent-host biogeography, ecological exposure settings, and the split between Old World hemorrhagic-fever viruses and New World cardiopulmonary viruses."
     },
     {
       "slug": "dengue",
@@ -303,7 +305,8 @@
           ]
         }
       ],
-      "summary": "Plague is one of the clearest historical demonstrations that reservoir ecology, trade corridors, warfare, and maritime ports can repeatedly rewire a continent."
+      "summary": "Plague is one of the clearest historical demonstrations that reservoir ecology, trade corridors, warfare, and maritime ports can repeatedly rewire a continent.",
+      "why_it_matters": "Plague links deep historical fear, genomic reconstruction, and the practical geography of rodents, fleas, and ports."
     }
   ]
 }

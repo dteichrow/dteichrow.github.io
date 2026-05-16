@@ -148,7 +148,7 @@
         "surface": "hero"
       },
       "visual_asset_id": "atlas-yellow-fever-hero",
-      "why_it_matters": "It lets the atlas show how a pathogen can move with people, water storage, ships, and vector habitat rather than by human travel alone.",
+      "why_it_matters": "Yellow fever moves with people, water storage, ships, and vector habitat, not by human travel alone.",
       "withheld_citations": [
         {
           "id": "yellow-handbook",
@@ -559,7 +559,7 @@
         "surface": "hero"
       },
       "visual_asset_id": "atlas-mpox-hero",
-      "why_it_matters": "The geography separates clades, transport events, animal reservoirs, and transmission networks instead of collapsing them into one origin point.",
+      "why_it_matters": "Mpox geography separates clades, transport events, animal reservoirs, and transmission networks instead of collapsing them into a single point of origin.",
       "withheld_citations": [
         {
           "id": "mpox-handbook",
@@ -844,7 +844,7 @@
       "status": "mixed",
       "story_count": 1,
       "subtitle": "Rodent-host lineages, hemorrhagic fever versus cardiopulmonary syndromes, and one crucial Andes-virus exception",
-      "summary": "Hantaviruses belong in the atlas because they break the habit of pretending every pathogen has one clean human-travel route. The real map is rodent-host biogeography, ecological exposure settings, and the split between Old World hemorrhagic-fever viruses and New World cardiopulmonary viruses.",
+      "summary": "Hantavirus geography follows rodent-host biogeography, ecological exposure settings, and the split between Old World hemorrhagic-fever viruses and New World cardiopulmonary viruses.",
       "variant_count": 3,
       "variants": [
         {
@@ -1245,7 +1245,7 @@
         "surface": "hero"
       },
       "visual_asset_id": "atlas-hantavirus-hero",
-      "why_it_matters": "Hantavirus geography depends on host ecology, housing, work exposures, and syndrome differences across regions, not a single route line.",
+      "why_it_matters": "Hantavirus geography follows rodent-host biogeography, ecological exposure settings, and the split between Old World hemorrhagic-fever viruses and New World cardiopulmonary viruses.",
       "withheld_citations": [
         {
           "id": "hanta-family-review",
@@ -1852,7 +1852,7 @@
       "variants": [],
       "visual_asset": {},
       "visual_asset_id": "atlas-plague-hero",
-      "why_it_matters": "It lets the atlas bridge deep historical fear, genomic reconstruction, and the very practical map logic of rodents, fleas, and ports.",
+      "why_it_matters": "Plague links deep historical fear, genomic reconstruction, and the practical geography of rodents, fleas, and ports.",
       "withheld_citations": [
         {
           "id": "plague-handbook",
@@ -3799,7 +3799,7 @@
       ],
       "atlas_entry_slug": "hantavirus",
       "atlas_status": "mixed",
-      "atlas_summary": "Hantaviruses belong in the atlas because they break the habit of pretending every pathogen has one clean human-travel route. The real map is rodent-host biogeography, ecological exposure settings, and the split between Old World hemorrhagic-fever viruses and New World cardiopulmonary viruses.",
+      "atlas_summary": "Hantavirus geography follows rodent-host biogeography, ecological exposure settings, and the split between Old World hemorrhagic-fever viruses and New World cardiopulmonary viruses.",
       "atlas_url": "atlas.html?pathogen=hantavirus",
       "categories": [
         "Zoonotic",

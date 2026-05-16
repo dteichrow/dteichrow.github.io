@@ -156,7 +156,7 @@ window.PATHOGEN_ATLAS_DATA = {
         "surface": "hero"
       },
       "visual_asset_id": "atlas-yellow-fever-hero",
-      "why_it_matters": "It lets the atlas show how a pathogen can move with people, water storage, ships, and vector habitat rather than by human travel alone.",
+      "why_it_matters": "Yellow fever moves with people, water storage, ships, and vector habitat, not by human travel alone.",
       "withheld_citations": [
         {
           "id": "yellow-handbook",
@@ -684,7 +684,7 @@ window.PATHOGEN_ATLAS_DATA = {
         "surface": "hero"
       },
       "visual_asset_id": "atlas-mpox-hero",
-      "why_it_matters": "The geography separates clades, transport events, animal reservoirs, and transmission networks instead of collapsing them into one origin point.",
+      "why_it_matters": "Mpox geography separates clades, transport events, animal reservoirs, and transmission networks instead of collapsing them into a single point of origin.",
       "withheld_citations": [
         {
           "id": "mpox-handbook",
@@ -1028,7 +1028,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "story_count": 1,
       "subtitle": "Rodent-host lineages, hemorrhagic fever versus cardiopulmonary syndromes, and one crucial Andes-virus exception",
-      "summary": "Hantaviruses belong in the atlas because they break the habit of pretending every pathogen has one clean human-travel route. The real map is rodent-host biogeography, ecological exposure settings, and the split between Old World hemorrhagic-fever viruses and New World cardiopulmonary viruses.",
+      "summary": "Hantavirus geography follows rodent-host biogeography, ecological exposure settings, and the split between Old World hemorrhagic-fever viruses and New World cardiopulmonary viruses.",
       "variant_count": 3,
       "variants": [
         {
@@ -2180,7 +2180,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "variants": [],
       "visual_asset": {},
       "visual_asset_id": "atlas-plague-hero",
-      "why_it_matters": "It lets the atlas bridge deep historical fear, genomic reconstruction, and the very practical map logic of rodents, fleas, and ports.",
+      "why_it_matters": "Plague links deep historical fear, genomic reconstruction, and the practical geography of rodents, fleas, and ports.",
       "withheld_citations": [
         {
           "id": "plague-handbook",
@@ -2631,7 +2631,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "Post-1999 North American establishment and seasonal surveillance",
           "confidence": "strong",
-          "narrative": "In the atlas, West Nile virus needs a shaded bird-mosquito-human surveillance region across North America, where seasonal vector ecology and neuroinvasive disease monitoring matter more than a single origin-to-destination arrow.",
+          "narrative": "West Nile virus is best read as a bird-mosquito-human surveillance region across North America, where seasonal vector ecology and neuroinvasive disease monitoring matter more than a single origin-to-destination arrow.",
           "citation_ids": [
             "wnv-cdc-transmission",
             "wnv-cdc-causes"
@@ -2711,7 +2711,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Vaccination policy is inseparable from geography because risk is concentrated where enzootic transmission is recognized.",
-        "Climate, rice cultivation, and pig husbandry keep this disease in the atlas as an ecology problem."
+        "Climate, rice cultivation, and pig husbandry make Japanese encephalitis an ecology problem, not only a human case map."
       ],
       "framing_traps": [
         "Do not confuse Japanese encephalitis with direct human-to-human spread.",
@@ -6394,7 +6394,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Virus",
       "summary": "HIV/AIDS is a blood, sexual, and perinatal transmission story whose pandemic history is inseparable from urbanization, transport, medicine, stigma, and unequal treatment access.",
-      "why_it_matters": "This section lets the atlas handle intimate transmission, blood systems, congenital infection, and the social institutions that make exposure patterns durable.",
+      "why_it_matters": "The geography ties intimate transmission, blood systems, congenital infection, and durable social exposure patterns together.",
       "atlas_scope": "Sexual, bloodborne, and perinatal transmission; historical spread; surveillance and prevention systems",
       "category": "contact-sexual-bloodborne",
       "category_label": "Contact, sexual, or bloodborne",
@@ -6496,7 +6496,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Virus",
       "summary": "Hepatitis B maps through perinatal infection, childhood household transmission, sexual exposure, blood exposure, vaccination, and chronic liver disease burden.",
-      "why_it_matters": "This section lets the atlas handle intimate transmission, blood systems, congenital infection, and the social institutions that make exposure patterns durable.",
+      "why_it_matters": "The geography ties intimate transmission, blood systems, congenital infection, and durable social exposure patterns together.",
       "atlas_scope": "Sexual, bloodborne, and perinatal transmission; historical spread; surveillance and prevention systems",
       "category": "contact-sexual-bloodborne",
       "category_label": "Contact, sexual, or bloodborne",
@@ -6598,7 +6598,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Bacterium",
       "summary": "Syphilis is a sexually transmitted treponemal infection whose early modern history, congenital burden, and recurrent outbreaks make it one of epidemiology\u2019s great historical arguments.",
-      "why_it_matters": "This section lets the atlas handle intimate transmission, blood systems, congenital infection, and the social institutions that make exposure patterns durable.",
+      "why_it_matters": "The geography ties intimate transmission, blood systems, congenital infection, and durable social exposure patterns together.",
       "atlas_scope": "Sexual, bloodborne, and perinatal transmission; historical spread; surveillance and prevention systems",
       "category": "contact-sexual-bloodborne",
       "category_label": "Contact, sexual, or bloodborne",
@@ -11378,7 +11378,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Bacterium",
       "summary": "Acinetobacter infections are healthcare-associated bacterial infections often tied to severe illness, wounds, devices, environmental persistence, and antimicrobial resistance.",
-      "why_it_matters": "This keeps antimicrobial resistance and built healthcare environments visible in the atlas.",
+      "why_it_matters": "Antimicrobial resistance and built healthcare environments are central to the geography.",
       "atlas_scope": "Healthcare-associated transmission, resistance, devices, water systems, and institutional exposure",
       "category": "healthcare-associated",
       "category_label": "Healthcare-associated",
@@ -11480,7 +11480,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Bacterium",
       "summary": "Pseudomonas aeruginosa infections map through water, devices, wounds, immunocompromise, healthcare exposure, and resistance.",
-      "why_it_matters": "This keeps antimicrobial resistance and built healthcare environments visible in the atlas.",
+      "why_it_matters": "Antimicrobial resistance and built healthcare environments are central to the geography.",
       "atlas_scope": "Healthcare-associated transmission, resistance, devices, water systems, and institutional exposure",
       "category": "healthcare-associated",
       "category_label": "Healthcare-associated",
@@ -11582,7 +11582,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Bacterium",
       "summary": "Vibriosis is a group of Vibrio infections associated with warm coastal water, raw or undercooked seafood, and wound exposure.",
-      "why_it_matters": "This keeps food and coastal-water exposure visible as a spatial route, not just a diagnosis.",
+      "why_it_matters": "Food and coastal-water exposure are spatial routes, not just diagnoses.",
       "atlas_scope": "Foodborne or water-associated exposure, animal reservoirs, preparation systems, and outbreak investigation",
       "category": "foodborne",
       "category_label": "Foodborne",
@@ -11718,7 +11718,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Helminth",
       "summary": "Trichinellosis is a foodborne helminth infection acquired by eating raw or undercooked meat containing Trichinella larvae.",
-      "why_it_matters": "This keeps food and coastal-water exposure visible as a spatial route, not just a diagnosis.",
+      "why_it_matters": "Food and coastal-water exposure are spatial routes, not just diagnoses.",
       "atlas_scope": "Foodborne or water-associated exposure, animal reservoirs, preparation systems, and outbreak investigation",
       "category": "foodborne",
       "category_label": "Foodborne",
@@ -13331,7 +13331,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Helminth",
       "summary": "Ascariasis is a soil-transmitted helminth infection acquired by ingesting eggs from fecally contaminated soil or food.",
-      "why_it_matters": "It keeps sanitation and soil exposure visible as historical infrastructure, not just parasite biology.",
+      "why_it_matters": "Sanitation and soil exposure are historical infrastructure, not just parasite biology.",
       "atlas_scope": "Soil-transmitted helminth infection, sanitation, childhood burden, and deworming",
       "category": "soil-environmental",
       "category_label": "Soil / environmental",
@@ -14219,7 +14219,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Bacterium",
       "summary": "Mycoplasma pneumoniae is a bacterial respiratory infection often associated with prolonged close contact in schools, dormitories, households, and military settings.",
-      "why_it_matters": "It gives the respiratory section a slow-moving bacterial pneumonia ecology, not just viral waves.",
+      "why_it_matters": "Its spread is a slow-moving bacterial pneumonia ecology, not a viral wave.",
       "atlas_scope": "Respiratory transmission, congregate settings, atypical pneumonia, and outbreak recognition",
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
@@ -16613,7 +16613,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Virus",
       "summary": "Bourbon virus disease is a rare tick-associated viral illness recognized in the United States.",
-      "why_it_matters": "It is useful precisely because the evidence base is thin: the atlas can show how emerging disease maps should stay cautious.",
+      "why_it_matters": "The thin evidence base matters: emerging-disease geography should stay cautious about reservoirs, ranges, and route certainty.",
       "atlas_scope": "Emerging tick-associated disease, sparse surveillance, and cautious route framing",
       "category": "tick-borne",
       "category_label": "Tick-borne",
@@ -17851,7 +17851,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Bacterium",
       "summary": "Buruli ulcer is a disease caused by Mycobacterium ulcerans that produces destructive skin and soft-tissue lesions and has an incompletely understood environmental transmission ecology.",
-      "why_it_matters": "It is valuable because the atlas can hold uncertainty: wetlands, environment, delayed diagnosis, and surgical access all shape the disease landscape.",
+      "why_it_matters": "The uncertain geography still matters: wetlands, environment, delayed diagnosis, and surgical access all shape the disease landscape.",
       "atlas_scope": "Environmental mycobacterial disease, wetlands, delayed care, and uncertain transmission",
       "category": "soil-environmental",
       "category_label": "Soil / environmental",
@@ -18343,7 +18343,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Protozoan parasite",
       "summary": "Blastocystis infection involves an intestinal organism detected in human stool, with transmission framed around fecal-oral exposure and contaminated food or water.",
-      "why_it_matters": "It is useful because the atlas can carry uncertainty without overclaiming pathogenicity or route certainty.",
+      "why_it_matters": "The evidence remains uncertain, so the geography should avoid overclaiming pathogenicity or route certainty.",
       "atlas_scope": "Fecal-oral exposure, contaminated food or water, intestinal detection, and uncertainty over disease causation",
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
@@ -20766,7 +20766,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Virus",
       "summary": "Chapare hemorrhagic fever is a rare arenavirus disease reported in Bolivia and framed around severe hemorrhagic illness, likely rodent ecology, and infection-control risk.",
-      "why_it_matters": "It adds a sparse-evidence hemorrhagic-fever entry where the atlas should stay cautious about reservoirs and routes.",
+      "why_it_matters": "The sparse evidence base calls for caution about reservoirs, routes, and geographic range.",
       "atlas_scope": "Arenavirus disease, Bolivia, suspected rodent ecology, severe illness, and healthcare infection-control risk",
       "category": "rodent-environmental",
       "category_label": "Rodent-borne / environmental",
@@ -21408,7 +21408,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Bacterium",
       "summary": "Bacterial vaginosis is a common condition involving disruption of normal vaginal bacterial flora and is framed in sexual and reproductive-health guidance.",
-      "why_it_matters": "It lets the atlas handle microbiome-associated disease without pretending every entry is a simple invasion-and-spread story.",
+      "why_it_matters": "Microbiome-associated disease does not fit a simple invasion-and-spread story.",
       "atlas_scope": "Vaginal microbiome disruption, sexual-health care, recurrence, pregnancy considerations, and reproductive-health surveillance",
       "category": "contact-sexual-bloodborne",
       "category_label": "Contact, sexual, or bloodborne",
@@ -22150,7 +22150,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Virus",
       "summary": "Shingles is caused by reactivation of varicella-zoster virus and can transmit the virus to susceptible people through exposure to lesions.",
-      "why_it_matters": "It lets the atlas show that disease geography is not always new invasion: age structure, immunity, vaccination, and reactivation matter.",
+      "why_it_matters": "Disease geography is not always new invasion: age structure, immunity, vaccination, and reactivation matter.",
       "atlas_scope": "Varicella-zoster reactivation, lesion exposure, aging, immune status, and vaccination",
       "category": "contact-sexual-bloodborne",
       "category_label": "Contact, sexual, or bloodborne",
