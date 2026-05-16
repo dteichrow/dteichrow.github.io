@@ -61,6 +61,19 @@ Build the umbrella site:
 python -m src.build_site --site-base-url /
 ```
 
+Discover and stage Pathogen Atlas candidates:
+
+```bash
+python -m src.pathogen_atlas_ingest discover --limit 300
+python -m src.pathogen_atlas_ingest enrich
+python -m src.pathogen_atlas_ingest validate
+python -m src.pathogen_atlas_ingest promote
+```
+
+The ingestion workflow uses Wikipedia/Wikidata only for candidate discovery.
+Public atlas entries are promoted only after reviewed, non-Wikipedia evidence
+has been attached in `external/pathogen_atlas/catalog/drafts.json`.
+
 ## How the import works
 
 For the historical essay archive:

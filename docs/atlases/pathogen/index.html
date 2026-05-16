@@ -677,7 +677,7 @@ a {
 
 <aside id="story-panel">
   <div id="story-kicker">Autoplay atlas</div>
-  <h2 id="story-title">Loading atlas entry</h2>
+  <h2 id="story-title">Loading disease profile</h2>
   <div id="story-copy">Preparing curated pathogen routes and evidence notes.</div>
   <div class="meta-row" id="story-meta"></div>
   <div id="rotation-state">Rotation is on.</div>
@@ -1433,7 +1433,7 @@ function renderEvidencePanel(entry, activeEntry) {
         <div class="note-text">${escapeHtml(post.published_at || "")}${post.relation ? `; ${escapeHtml(post.relation.replaceAll("_", " "))}` : ""}</div>
       </article>
     `,
-    "No Edge of Epidemiology writing is linked to this atlas entry yet."
+    "No Edge of Epidemiology writing is linked to this disease profile yet."
   );
 
   document.getElementById("citation-list").innerHTML = renderLinkedCards(
@@ -1455,7 +1455,7 @@ function renderEvidencePanel(entry, activeEntry) {
         <div class="note-text">${escapeHtml(story.latest_update_summary || story.status || "")}</div>
       </article>
     `,
-    "No active outbreak file is linked to this atlas entry right now."
+    "No active outbreak file is linked to this disease profile right now."
   );
 }
 

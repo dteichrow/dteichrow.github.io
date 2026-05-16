@@ -219,6 +219,39 @@ def test_import_external_pathogen_writes_js_payload(tmp_path, monkeypatch) -> No
     docs_dir = tmp_path / "docs"
     src_root.mkdir(parents=True)
     (src_root / "index.html").write_text("<html><head></head><body><main id='map'></main></body></html>")
+    (src_root / "extra_pathogens.json").write_text(json.dumps({"atlas": []}))
+    (src_root / "core_geography_overrides.json").write_text(
+        json.dumps(
+            {
+                "atlas": [
+                    {
+                        "slug": "yellow-fever",
+                        "citations": [
+                            {
+                                "id": "official-geo-source",
+                                "short_citation": "WHO. Yellow fever fixture.",
+                                "url": "https://www.who.int/news-room/fact-sheets/detail/yellow-fever",
+                                "claim_supported": "Should be merged into the imported core entry.",
+                            }
+                        ],
+                        "geography_layers": [
+                            {
+                                "layer_id": "yellow-fever-fixture-zone",
+                                "label": "Yellow fever fixture zone",
+                                "layer_type": "endemic_zone",
+                                "geometry_type": "world",
+                                "confidence": "moderate",
+                                "narrative": "Fixture geography layer.",
+                                "citation_ids": ["official-geo-source"],
+                            }
+                        ],
+                    }
+                ]
+            }
+        )
+    )
+    (src_root / "catalog").mkdir()
+    (src_root / "catalog" / "drafts.json").write_text(json.dumps({"drafts": []}))
 
     app_exports = docs_dir / "app_exports"
     app_exports.mkdir(parents=True)
@@ -273,32 +306,6 @@ def test_import_external_pathogen_writes_js_payload(tmp_path, monkeypatch) -> No
             }
         )
     )
-    (src_root / "extra_pathogens.json").write_text(
-        json.dumps(
-            {
-                "atlas": [
-                    {
-                        "slug": "rabies",
-                        "name": "Rabies",
-                        "status": "consensus",
-                        "writing_state": "direct",
-                        "citations": [
-                            {
-                                "id": "who-rabies",
-                                "short_citation": "WHO. Rabies fact sheet.",
-                                "url": "https://www.who.int/news-room/fact-sheets/detail/rabies",
-                                "claim_supported": "Rabies remains a public health concern.",
-                            }
-                        ],
-                    },
-                    {
-                        "slug": "yellow-fever",
-                        "name": "Duplicate yellow fever",
-                    },
-                ]
-            }
-        )
-    )
 
     monkeypatch.setattr(build_site, "PROJECT_ROOT", project_root)
     build_site.import_external_pathogen(docs_dir, "/")
@@ -309,6 +316,8 @@ def test_import_external_pathogen_writes_js_payload(tmp_path, monkeypatch) -> No
     assert built_index.exists()
     assert built_data.exists()
     assert source_data.exists()
+    assert not (docs_dir / "atlases" / "pathogen" / "catalog").exists()
+    assert not (docs_dir / "atlases" / "pathogen" / "extra_pathogens.json").exists()
     index_text = built_index.read_text()
     assert "eoe-atlas-overlay-brand" in index_text
     assert "by Devin Teichrow" in index_text
@@ -320,17 +329,50 @@ def test_import_external_pathogen_writes_js_payload(tmp_path, monkeypatch) -> No
     assert "https://doi.org/10.1234/fake-fixture" not in source_text
     assert "DOI citations are withheld" in source_text
     assert "https://www.cdc.gov/yellow-fever/index.html" in source_text
+    assert "official-geo-source" in source_text
+    assert "yellow-fever-fixture-zone" in source_text
     data_text = built_data.read_text()
     assert 'window.PATHOGEN_ATLAS_BASE_URL = "/"' in data_text
     assert '"reference_href": "../../reference/yellow-fever.html"' in data_text
     assert '"story_href": "../../stories/demo-story.html"' in data_text
     assert '"slug": "urban-yellow-fever"' in data_text
-    assert '"slug": "rabies"' in data_text
-    assert "Duplicate yellow fever" not in data_text
-    assert "extra_pathogens.json" not in {path.name for path in (docs_dir / "atlases" / "pathogen").iterdir()}
     assert '"writing_state_label": "Adjacent writing"' in data_text
     assert "https://doi.org/10.1234/fake-fixture" not in data_text
     assert "DOI citations are withheld" in data_text
+    assert "official-geo-source" in data_text
+    assert "yellow-fever-fixture-zone" in data_text
+
+
+def test_pathogen_atlas_filters_do_not_fallback_to_all_entries() -> None:
+    atlas_html = (build_site.PROJECT_ROOT / "external" / "pathogen_atlas" / "index.html").read_text()
+    assert "return scoped.length ? scoped : ATLAS_ENTRIES" not in atlas_html
+    assert "function renderTypeSelectOptions()" in atlas_html
+    assert "No diseases match selected filters" in atlas_html
+
+
+def test_pathogen_atlas_renders_geography_layers() -> None:
+    atlas_html = (build_site.PROJECT_ROOT / "external" / "pathogen_atlas" / "index.html").read_text()
+    assert "Geographic extent" in atlas_html
+    assert "Geography interpretation" in atlas_html
+    assert "Reviewed geography" in atlas_html
+    assert "function drawGeographyLayer" in atlas_html
+    assert "function ellipseLatLngs" in atlas_html
+    assert "function geographyTypeColor" in atlas_html
+    assert "geography_layers" in atlas_html
+    assert "Endemic zone" in atlas_html
+    assert "Reservoir ecology" in atlas_html
+
+
+def test_pathogen_atlas_has_map_mode_and_search_controls() -> None:
+    atlas_html = (build_site.PROJECT_ROOT / "external" / "pathogen_atlas" / "index.html").read_text()
+    assert 'id="map-mode-select"' in atlas_html
+    assert '<option value="routes">Routes</option>' in atlas_html
+    assert '<option value="geography">Extent</option>' in atlas_html
+    assert '<option value="evidence">Evidence</option>' in atlas_html
+    assert 'id="pathogen-search"' in atlas_html
+    assert 'id="filter-count"' in atlas_html
+    assert "function mapModeLabel" in atlas_html
+    assert "function normalizedSearchText" in atlas_html
 
 
 def test_archived_story_placeholders_cover_stale_archive_links(tmp_path) -> None:

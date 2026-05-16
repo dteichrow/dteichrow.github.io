@@ -402,7 +402,7 @@
       "status": "mixed",
       "story_count": 1,
       "subtitle": "Dense settlement, cattle-linked ancestry, and colonial spread into immunologically naive populations",
-      "summary": "Measles is a useful atlas pathogen because its deeper origin story is partly reconstructed from molecular-clock work, while its colonial spread story is brutally visible in the Americas and Pacific.",
+      "summary": "Measles has a partly reconstructed deeper origin story from molecular-clock work, while its colonial spread is brutally visible in the Americas and Pacific.",
       "variant_count": 0,
       "variants": [],
       "visual_asset": {
@@ -428,7 +428,7 @@
         {
           "id": "measles-science",
           "reason": "DOI link withheld pending manual verification",
-          "short_citation": "D\u00fcx A, Lequime S, Patrono LV et al. Measles virus and rinderpest virus divergence dated to the sixth century BCE. Science. 2020."
+          "short_citation": "Düx A, Lequime S, Patrono LV et al. Measles virus and rinderpest virus divergence dated to the sixth century BCE. Science. 2020."
         },
         {
           "id": "measles-lancet",
@@ -543,7 +543,7 @@
       "status": "mixed",
       "story_count": 0,
       "subtitle": "Forest-zone recognition, animal trade jumps, and networked global spread",
-      "summary": "Mpox belongs in the atlas because it combines a geographically anchored Central/West African history with abrupt export through wildlife trade and then a very different twenty-first century global transmission pattern.",
+      "summary": "Mpox combines a geographically anchored Central and West African history with wildlife-trade export events and a distinct twenty-first-century pattern of networked global transmission.",
       "variant_count": 0,
       "variants": [],
       "visual_asset": {
@@ -559,7 +559,7 @@
         "surface": "hero"
       },
       "visual_asset_id": "atlas-mpox-hero",
-      "why_it_matters": "It forces the site to distinguish clades, transport mode, and transmission network rather than collapsing everything into one map pin.",
+      "why_it_matters": "The geography separates clades, transport events, animal reservoirs, and transmission networks instead of collapsing them into one origin point.",
       "withheld_citations": [
         {
           "id": "mpox-handbook",
@@ -574,12 +574,12 @@
         {
           "id": "mpox-review",
           "reason": "DOI link withheld pending manual verification",
-          "short_citation": "Bunge EM, Hoet B, Chen L et al. The changing epidemiology of human monkeypox\u2014A potential threat? PLoS Negl Trop Dis. 2022."
+          "short_citation": "Bunge EM, Hoet B, Chen L et al. The changing epidemiology of human monkeypox—A potential threat? PLoS Negl Trop Dis. 2022."
         },
         {
           "id": "mpox-lancet",
           "reason": "DOI link withheld pending manual verification",
-          "short_citation": "Mitj\u00e0 O, Ogoina D, Titanji BK et al. Monkeypox. Lancet. 2023."
+          "short_citation": "Mitjà O, Ogoina D, Titanji BK et al. Monkeypox. Lancet. 2023."
         }
       ],
       "writing_state": "not_yet_written"
@@ -705,7 +705,7 @@
       "status": "mixed",
       "story_count": 1,
       "subtitle": "Bird flyways, poultry systems, mammalian spillover, and farm-interface risk",
-      "summary": "H5N1 belongs in the atlas because its contemporary geography is not a human epidemic map first; it is a bird-route, farm-system, and spillover map whose human layer remains contingent.",
+      "summary": "H5N1 is not primarily a human epidemic map. Its geography follows bird migration, poultry systems, mammal spillover, dairy-herd events, and occupational exposure.",
       "variant_count": 0,
       "variants": [],
       "visual_asset": {
@@ -721,7 +721,7 @@
         "surface": "hero"
       },
       "visual_asset_id": "atlas-h5n1-hero",
-      "why_it_matters": "It creates a genuinely different map grammar from the classic human-to-human pathogens and foregrounds One Health risk.",
+      "why_it_matters": "The spatial problem is One Health risk: animal movement, farm systems, and spillover opportunities before sustained human-to-human transmission.",
       "withheld_citations": [
         {
           "id": "h5n1-handbook",
@@ -741,7 +741,7 @@
         {
           "id": "h5n1-mink",
           "reason": "DOI link withheld pending manual verification",
-          "short_citation": "Ag\u00fcero M, Monne I, S\u00e1nchez A et al. Highly pathogenic avian influenza A(H5N1) virus infection in farmed minks, Spain, October 2022. Euro Surveill. 2023."
+          "short_citation": "Agüero M, Monne I, Sánchez A et al. Highly pathogenic avian influenza A(H5N1) virus infection in farmed minks, Spain, October 2022. Euro Surveill. 2023."
         }
       ],
       "writing_state": "not_yet_written"
@@ -1098,7 +1098,7 @@
             {
               "id": "hanta-americas",
               "reason": "DOI link withheld pending manual verification",
-              "short_citation": "Hjelle B, Torres-P\u00e9rez F. Hantaviruses in the Americas and their role as emerging pathogens. Viruses. 2010."
+              "short_citation": "Hjelle B, Torres-Pérez F. Hantaviruses in the Americas and their role as emerging pathogens. Viruses. 2010."
             }
           ],
           "writing_state": "direct"
@@ -1221,7 +1221,7 @@
             {
               "id": "hanta-andes",
               "reason": "DOI link withheld pending manual verification",
-              "short_citation": "Mart\u00ednez-Valdebenito C, Calvo M, Vial C et al. Person-to-person household and nosocomial transmission of Andes hantavirus, southern Chile, 2011. Emerg Infect Dis. 2014."
+              "short_citation": "Martínez-Valdebenito C, Calvo M, Vial C et al. Person-to-person household and nosocomial transmission of Andes hantavirus, southern Chile, 2011. Emerg Infect Dis. 2014."
             },
             {
               "id": "hanta-climate",
@@ -1245,7 +1245,7 @@
         "surface": "hero"
       },
       "visual_asset_id": "atlas-hantavirus-hero",
-      "why_it_matters": "It forces the atlas to behave like an encyclopedia rather than a single-route animation and keeps us honest about host ecology, geography, and syndrome differences.",
+      "why_it_matters": "Hantavirus geography depends on host ecology, housing, work exposures, and syndrome differences across regions, not a single route line.",
       "withheld_citations": [
         {
           "id": "hanta-family-review",
@@ -1255,7 +1255,7 @@
         {
           "id": "hanta-americas",
           "reason": "DOI link withheld pending manual verification",
-          "short_citation": "Hjelle B, Torres-P\u00e9rez F. Hantaviruses in the Americas and their role as emerging pathogens. Viruses. 2010."
+          "short_citation": "Hjelle B, Torres-Pérez F. Hantaviruses in the Americas and their role as emerging pathogens. Viruses. 2010."
         },
         {
           "id": "hanta-hfrs",
@@ -1265,7 +1265,7 @@
         {
           "id": "hanta-andes",
           "reason": "DOI link withheld pending manual verification",
-          "short_citation": "Mart\u00ednez-Valdebenito C, Calvo M, Vial C et al. Person-to-person household and nosocomial transmission of Andes hantavirus, southern Chile, 2011. Emerg Infect Dis. 2014."
+          "short_citation": "Martínez-Valdebenito C, Calvo M, Vial C et al. Person-to-person household and nosocomial transmission of Andes hantavirus, southern Chile, 2011. Emerg Infect Dis. 2014."
         },
         {
           "id": "hanta-climate",
@@ -1404,7 +1404,7 @@
         "surface": "hero"
       },
       "visual_asset_id": "atlas-dengue-hero",
-      "why_it_matters": "It turns the atlas toward contemporary global change instead of leaving it stranded in historical imperial routes.",
+      "why_it_matters": "Dengue shows how urbanization, climate, vector range, water storage, travel, and surveillance reshape disease geography in real time.",
       "withheld_citations": [
         {
           "id": "dengue-handbook",
@@ -1453,7 +1453,7 @@
         {
           "published_at": "2025-10-28",
           "relation": "adjacent_context",
-          "title": "Humanity\u2019s Deadliest Companions: Checking the Till on the Deadliest Microbes in History",
+          "title": "Humanity’s Deadliest Companions: Checking the Till on the Deadliest Microbes in History",
           "url": "https://theedgeofepidemiology.substack.com/p/humanitys-deadliest-companions-checking"
         }
       ],
@@ -1549,12 +1549,12 @@
       "status": "mixed",
       "story_count": 0,
       "subtitle": "Anopheles ecologies, empire, labor, and the long retreat and return of a mosquito-borne world disease",
-      "summary": "Malaria belongs in the atlas because it shows how vector ecology, land use, labor systems, altitude, war, and climate can redraw disease geography across centuries without one neat origin story doing all the work.",
+      "summary": "Malaria shows how vector ecology, land use, labor systems, altitude, war, and climate can redraw disease geography across centuries without a single tidy origin story.",
       "variant_count": 0,
       "variants": [],
       "visual_asset": {},
       "visual_asset_id": "atlas-malaria-hero",
-      "why_it_matters": "It keeps the atlas from becoming virus-only and forces a map grammar built around mosquitoes, species differences, and ecological receptivity.",
+      "why_it_matters": "Its geography is built around mosquitoes, parasite species, ecological receptivity, control programs, and uneven health-system reach.",
       "withheld_citations": [
         {
           "id": "malaria-handbook",
@@ -1701,12 +1701,12 @@
       "status": "mixed",
       "story_count": 0,
       "subtitle": "Human coexpansion, crowding, industry, migration, and the stubborn durability of airborne inequality",
-      "summary": "Tuberculosis belongs in the atlas because it is both ancient and modern at once: a human co-traveler that thrives in crowding, poverty, institutional confinement, and uneven public health capacity.",
+      "summary": "Tuberculosis is ancient and modern at once: a human co-traveler that thrives in crowding, poverty, institutional confinement, migration, HIV, and uneven public-health capacity.",
       "variant_count": 0,
       "variants": [],
       "visual_asset": {},
       "visual_asset_id": "atlas-tuberculosis-hero",
-      "why_it_matters": "It turns the atlas toward chronic structural transmission instead of one spectacular frontier jump.",
+      "why_it_matters": "Its map is chronic and structural: airborne transmission shaped by housing, labor, prisons, care access, and drug-resistance systems.",
       "withheld_citations": [
         {
           "id": "tb-handbook",
@@ -1721,7 +1721,7 @@
         {
           "id": "tb-migration",
           "reason": "DOI link withheld pending manual verification",
-          "short_citation": "Hargreaves S, L\u00f6nnroth K, Nellums LB et al. Multidrug-resistant tuberculosis and migration to Europe. Clin Microbiol Infect. 2017."
+          "short_citation": "Hargreaves S, Lönnroth K, Nellums LB et al. Multidrug-resistant tuberculosis and migration to Europe. Clin Microbiol Infect. 2017."
         }
       ],
       "writing_state": "direct"
@@ -1847,7 +1847,7 @@
       "status": "mixed",
       "story_count": 0,
       "subtitle": "Steppe reservoirs, siege and shipping, and the repeated collision of rodents, fleas, and empire",
-      "summary": "Plague belongs in the atlas because it is one of the clearest historical demonstrations that reservoir ecology, trade corridors, warfare, and maritime ports can repeatedly rewire a continent.",
+      "summary": "Plague is one of the clearest historical demonstrations that reservoir ecology, trade corridors, warfare, and maritime ports can repeatedly rewire a continent.",
       "variant_count": 0,
       "variants": [],
       "visual_asset": {},
@@ -2059,7 +2059,7 @@
       "source_url": "https://www.afro.who.int/countries/democratic-republic-of-congo/news/democratic-republic-congo-confirms-new-ebola-outbreak-who-scales-upsupport",
       "story_id": null,
       "story_status": "",
-      "summary": "* Statement updated to include new figures Eugene Kabambi Communications Officer WHO DRC Tel : +243 81 715 1697 Office : +47 241 39 027 Email: kabambie [at] who.int (kabambie[at]who[dot]int) Collins Boakye-Agyemang Communications and marketing officer Tel: + 242 06 520 65 65 (WhatsApp) Email: boakyeagyemangc [at] who.int (boakyeagyemangc[at]who[dot]int) carousel-bg The Bundibugyo species was first identified in 2007 in Bundibugyo district in western Uganda, during which 131 cases were reported with 42 deaths (case fatality rate of 32%). Laboratory analysis conducted by the National Institute of Biomedical Research (INRB), the country\u2019s reference laboratory in the capital Kinshasa, confirmed the Ebola outbreak caused by the Bundibugyo species in 8 of 13 samples* collected from suspected cases linked to a cluster of severe illness and deaths reported in Mongbwalu and Rwampara health zones in Ituri Province.",
+      "summary": "* Statement updated to include new figures Eugene Kabambi Communications Officer WHO DRC Tel : +243 81 715 1697 Office : +47 241 39 027 Email: kabambie [at] who.int (kabambie[at]who[dot]int) Collins Boakye-Agyemang Communications and marketing officer Tel: + 242 06 520 65 65 (WhatsApp) Email: boakyeagyemangc [at] who.int (boakyeagyemangc[at]who[dot]int) carousel-bg The Bundibugyo species was first identified in 2007 in Bundibugyo district in western Uganda, during which 131 cases were reported with 42 deaths (case fatality rate of 32%). Laboratory analysis conducted by the National Institute of Biomedical Research (INRB), the country’s reference laboratory in the capital Kinshasa, confirmed the Ebola outbreak caused by the Bundibugyo species in 8 of 13 samples* collected from suspected cases linked to a cluster of severe illness and deaths reported in Mongbwalu and Rwampara health zones in Ituri Province.",
       "title": "Democratic Republic of the Congo confirms new Ebola outbreak, WHO scales up support",
       "topic_id": "topic_900601687147a144",
       "topic_name": "Miscellaneous signals",
@@ -2110,7 +2110,7 @@
       "source_url": "https://www.ecdc.europa.eu/en/news-events/ecdc-monitoring-ebola-outbreak-democratic-republic-congo",
       "story_id": null,
       "story_status": "",
-      "summary": "Ebolavirus was detected in 13 of 20 samples tested at the Institut National de Recherche Biom\u00e9dicale in the Democratic Republic of the Congo. For the general population in the EU/EEA, the likelihood of infection is very low due to the limited possibility of importation and onward transmission in Europe. Based on the available information and current uncertainties, the likelihood of infection for EU/EEA residents in or travellers to the Ituri Province is assessed as low.",
+      "summary": "Ebolavirus was detected in 13 of 20 samples tested at the Institut National de Recherche Biomédicale in the Democratic Republic of the Congo. For the general population in the EU/EEA, the likelihood of infection is very low due to the limited possibility of importation and onward transmission in Europe. Based on the available information and current uncertainties, the likelihood of infection for EU/EEA residents in or travellers to the Ituri Province is assessed as low.",
       "title": "ECDC monitoring Ebola outbreak in the Democratic Republic of the Congo",
       "topic_id": "topic_900601687147a144",
       "topic_name": "Miscellaneous signals",
@@ -2160,8 +2160,8 @@
       "source_url": "https://www.eurekalert.org/news-releases/1128425",
       "story_id": "story_ccfeaff28d46baf6",
       "story_status": "expanding_coverage",
-      "summary": "Outbreaks in 2019, 2022, and 2024 were early warnings of a structural shift \u2014 and the country's surveillance infrastructure has not kept pace. The authors synthesize existing evidence on how specific environmental signals \u2014 temperature exceeding 27\u00b0C, moderate weekly rainfall of 130\u2013210 mm, severe drought as measured by the Palmer Drought Severity Index, widening diurnal temperature ranges, heatwaves, and El Ni\u00f1o anomalies \u2014 interact with Aedes mosquito biology and dengue virus replication to create outbreak conditions. For decades, Vietnam's dengue surveillance relied on a straightforward logic: when cases exceed the five-year average by a sufficient margin, sound the alarm.",
-      "title": "Traditional dengue alerts are missing the mark as Vietnam's climate shifts\u2014researchers propose a one health solution",
+      "summary": "Outbreaks in 2019, 2022, and 2024 were early warnings of a structural shift — and the country's surveillance infrastructure has not kept pace. The authors synthesize existing evidence on how specific environmental signals — temperature exceeding 27°C, moderate weekly rainfall of 130–210 mm, severe drought as measured by the Palmer Drought Severity Index, widening diurnal temperature ranges, heatwaves, and El Niño anomalies — interact with Aedes mosquito biology and dengue virus replication to create outbreak conditions. For decades, Vietnam's dengue surveillance relied on a straightforward logic: when cases exceed the five-year average by a sufficient margin, sound the alarm.",
+      "title": "Traditional dengue alerts are missing the mark as Vietnam's climate shifts—researchers propose a one health solution",
       "topic_id": "topic_ccfeaff28d46baf6",
       "topic_name": "Dengue and arboviruses",
       "updated_at": "2026-05-16T06:41:23",
@@ -2211,7 +2211,7 @@
       "source_url": "https://www.afro.who.int/countries/sierra-leone/publication/who-sierra-leone-annual-report-2025",
       "story_id": null,
       "story_status": "",
-      "summary": "It also highlights WHO\u2019s technical support to the Ministry of Health in developing major policy and strategic frameworks, including the National Health Sector Strategic Plan (2026\u20132030). The report details the successful response to the Mpox outbreak declared in January 2025, alongside continued progress in routine immunization, cervical cancer services, and HPV vaccine uptake. Despite funding challenges, WHO Sierra Leone continued to support critical health interventions and reaffirmed its commitment to working with government and partners to improve health outcomes across the country.",
+      "summary": "It also highlights WHO’s technical support to the Ministry of Health in developing major policy and strategic frameworks, including the National Health Sector Strategic Plan (2026–2030). The report details the successful response to the Mpox outbreak declared in January 2025, alongside continued progress in routine immunization, cervical cancer services, and HPV vaccine uptake. Despite funding challenges, WHO Sierra Leone continued to support critical health interventions and reaffirmed its commitment to working with government and partners to improve health outcomes across the country.",
       "title": "WHO Sierra Leone Annual Report 2025",
       "topic_id": "topic_900601687147a144",
       "topic_name": "Miscellaneous signals",
@@ -2261,7 +2261,7 @@
       "source_url": "https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765451",
       "story_id": "story_28a91c6d89267872",
       "story_status": "quiet_retained",
-      "summary": "Weekly / May 14, 2026 / 75(18);234\u00e2\u0080\u0093239 Melissa A. Durand, PhD, VMD 1 ; Carrie Reed, DSc 1 ( View author affiliations ) Since 2024, three human influenza A(H5) cases have been reported among people in the U.S. Campagna, DVM 5 ; Elizabeth Harker, MPH 1 ; Colin A.",
+      "summary": "Weekly / May 14, 2026 / 75(18);234â239 Melissa A. Durand, PhD, VMD 1 ; Carrie Reed, DSc 1 ( View author affiliations ) Since 2024, three human influenza A(H5) cases have been reported among people in the U.S. Campagna, DVM 5 ; Elizabeth Harker, MPH 1 ; Colin A.",
       "title": "Knowledge, Attitudes, and Practices Regarding Avian Influenza Among Owners of Backyard Flocks",
       "topic_id": "topic_28a91c6d89267872",
       "topic_name": "Avian influenza and H5N1",
@@ -2311,7 +2311,7 @@
       "source_url": "https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765450",
       "story_id": "story_ccfeaff28d46baf6",
       "story_status": "expanding_coverage",
-      "summary": "states and the District of Columbia increased 359% above the annual average during 2010\u20132023; a total of 97.2% of cases were travel associated, and 2.8% were locally acquired. Approximately one fifth (21.8%) of cases occurred among persons aged 50\u201359 years, and more than one half (57.5%) occurred in Hispanic or Latino persons. Approximately one third (36.1%) of patients were hospitalized; six (0.2%) patients died.",
+      "summary": "states and the District of Columbia increased 359% above the annual average during 2010–2023; a total of 97.2% of cases were travel associated, and 2.8% were locally acquired. Approximately one fifth (21.8%) of cases occurred among persons aged 50–59 years, and more than one half (57.5%) occurred in Hispanic or Latino persons. Approximately one third (36.1%) of patients were hospitalized; six (0.2%) patients died.",
       "title": "Increase in Travel-Associated and Locally Acquired Dengue Cases",
       "topic_id": "topic_ccfeaff28d46baf6",
       "topic_name": "Dengue and arboviruses",
@@ -2456,7 +2456,7 @@
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42116765/",
       "story_id": "story_afd8f5934e291e02",
       "story_status": "official_follow_up_only",
-      "summary": "Timely protection with the autumn dose for those aged \u226575 y and the high-risk population aged 18-74 was estimated to avert 1.0 million cases, 15,642 hospitalization, 3,897 deaths, 82,977 post-COVID condition cases, \u00a3179 million in direct medical costs, and \u00a3195 million in productivity losses. The model examined a hypothetical year based on the average age-stratified incidence and severity reported in public health surveillance data for the 2022/2023 and the 2023/2024 seasons. Adapted vaccines for COVID-19 remain an important public health tool for reducing the health and economic burden.",
+      "summary": "Timely protection with the autumn dose for those aged ≥75 y and the high-risk population aged 18-74 was estimated to avert 1.0 million cases, 15,642 hospitalization, 3,897 deaths, 82,977 post-COVID condition cases, £179 million in direct medical costs, and £195 million in productivity losses. The model examined a hypothetical year based on the average age-stratified incidence and severity reported in public health surveillance data for the 2022/2023 and the 2023/2024 seasons. Adapted vaccines for COVID-19 remain an important public health tool for reducing the health and economic burden.",
       "title": "Estimating the potential public health and economic impact of vaccination timing: A modeling study of COVID-19 vaccination in the United Kingdom.",
       "topic_id": "topic_afd8f5934e291e02",
       "topic_name": "COVID-19 and SARS-CoV-2",
@@ -2505,7 +2505,7 @@
       "source_url": "https://www.euronews.com/my-europe/2026/05/13/staged-claims-and-israeli-hoaxes-debunking-viral-conspiracy-theories-about-hantavirus",
       "story_id": "story_f6d225b01f3f7094",
       "story_status": "expanding_coverage",
-      "summary": "Euronews investigates Make it Work Smart Regions Featured Europe Today Euronews' flagship morning TV show with the news and insights that drive Europe, live from Brussels every morning at 08.00. In each episode, two political heavyweights from across the EU face off to propose a diversity of opinions and spark conversations around the most important issues of EU affairs and the wider European political life. The Ring The Ring is Euronews\u2019 weekly political showdown, where Europe\u2019s toughest debates meet their boldest voices.",
+      "summary": "Euronews investigates Make it Work Smart Regions Featured Europe Today Euronews' flagship morning TV show with the news and insights that drive Europe, live from Brussels every morning at 08.00. In each episode, two political heavyweights from across the EU face off to propose a diversity of opinions and spark conversations around the most important issues of EU affairs and the wider European political life. The Ring The Ring is Euronews’ weekly political showdown, where Europe’s toughest debates meet their boldest voices.",
       "title": "From 'staged' to Israel: Hantavirus misinformation runs rampant online",
       "topic_id": "topic_f6d225b01f3f7094",
       "topic_name": "Hantavirus and cruise-ship outbreak",
@@ -2654,7 +2654,7 @@
       "source_url": "https://www.straitstimes.com/singapore/spore-dengue-cases-drop-66-in-first-5-months-of-2026-most-breeding-sites-in-2025-found-in-homes",
       "story_id": "story_ccfeaff28d46baf6",
       "story_status": "expanding_coverage",
-      "summary": "SINGAPORE \u2013 There were more than 600 dengue cases from January to May 15, 2026, a 66 per cent decrease compared with the same period in 2025, the National Environment Agency (NEA) said. NEA took over 9,800 enforcement actions in 2025 as 65 per cent of Aedes breeding sites were found in homes, highlighting ongoing vigilance needed against endemic dengue risks. Sign up now: Get ST's newsletters delivered to your inbox Senior Minister of State for Sustainability and the Environment Janil Puthucheary speaking at the launch of the National Dengue Prevention Campaign 2026 on May 16.",
+      "summary": "SINGAPORE – There were more than 600 dengue cases from January to May 15, 2026, a 66 per cent decrease compared with the same period in 2025, the National Environment Agency (NEA) said. NEA took over 9,800 enforcement actions in 2025 as 65 per cent of Aedes breeding sites were found in homes, highlighting ongoing vigilance needed against endemic dengue risks. Sign up now: Get ST's newsletters delivered to your inbox Senior Minister of State for Sustainability and the Environment Janil Puthucheary speaking at the launch of the National Dengue Prevention Campaign 2026 on May 16.",
       "title": "Dengue cases drop in Singapore; breeding sites monitored",
       "topic_id": "topic_ccfeaff28d46baf6",
       "topic_name": "Dengue and arboviruses",
@@ -2753,7 +2753,7 @@
       "source_url": "https://www.thenews.pk/print/1415723-efforts-launched-in-upper-kohistan-to-contain-dengue-outbreak",
       "story_id": "story_ccfeaff28d46baf6",
       "story_status": "expanding_coverage",
-      "summary": "Besides others, the district health officer, medical superintendent of the District Headquarters Hospital, Dasu, and representatives of the Expanded Programme on Immunisation, Public Health Department and other devolved departments attended the meeting. We have to take extra measures to contain its outbreak following the first spell of monsoon rains across the district,\u201d Azizullah Jan, the deputy commissioner of Upper Kohistan, told a meeting held at his office on Friday. The heads and representatives of various departments also briefed the meeting regarding their preparedness to effectively contain the spread of dengue.",
+      "summary": "Besides others, the district health officer, medical superintendent of the District Headquarters Hospital, Dasu, and representatives of the Expanded Programme on Immunisation, Public Health Department and other devolved departments attended the meeting. We have to take extra measures to contain its outbreak following the first spell of monsoon rains across the district,” Azizullah Jan, the deputy commissioner of Upper Kohistan, told a meeting held at his office on Friday. The heads and representatives of various departments also briefed the meeting regarding their preparedness to effectively contain the spread of dengue.",
       "title": "Efforts launched in Upper Kohistan to contain dengue outbreak",
       "topic_id": "topic_ccfeaff28d46baf6",
       "topic_name": "Dengue and arboviruses",
@@ -2802,7 +2802,7 @@
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42133835/",
       "story_id": "story_afd8f5934e291e02",
       "story_status": "official_follow_up_only",
-      "summary": "Compared to no vaccination, the vaccination of older adults aged \u226565 years and the high-risk population was estimated to prevent 12,933 symptomatic cases, 12,811 outpatient cases, 122 hospitalizations, 353 lost quality-adjusted life-years (QALYs) gained, and four deaths, translating to total direct and societal cost savings of US$9,424,605 and US$10,397,107 respectively. Implementing an adapted COVID-19 vaccine strategy for high-risk and older adults in Guatemala is projected to improve health outcomes and, under base-case assumptions, be cost-saving from both payer and societal perspectives. Using adapted COVID-19 vaccines targeting current variants in circulation is necessary for addressing the dynamic evolution of the SARS-CoV-2 virus.",
+      "summary": "Compared to no vaccination, the vaccination of older adults aged ≥65 years and the high-risk population was estimated to prevent 12,933 symptomatic cases, 12,811 outpatient cases, 122 hospitalizations, 353 lost quality-adjusted life-years (QALYs) gained, and four deaths, translating to total direct and societal cost savings of US$9,424,605 and US$10,397,107 respectively. Implementing an adapted COVID-19 vaccine strategy for high-risk and older adults in Guatemala is projected to improve health outcomes and, under base-case assumptions, be cost-saving from both payer and societal perspectives. Using adapted COVID-19 vaccines targeting current variants in circulation is necessary for addressing the dynamic evolution of the SARS-CoV-2 virus.",
       "title": "Modeling the potential public health and economic impact and cost-effectiveness of vaccination strategies using an adapted COVID-19 vaccine in Guatemala.",
       "topic_id": "topic_afd8f5934e291e02",
       "topic_name": "COVID-19 and SARS-CoV-2",
@@ -3887,7 +3887,7 @@
       ],
       "atlas_entry_slug": "measles",
       "atlas_status": "mixed",
-      "atlas_summary": "Measles is a useful atlas pathogen because its deeper origin story is partly reconstructed from molecular-clock work, while its colonial spread story is brutally visible in the Americas and Pacific.",
+      "atlas_summary": "Measles has a partly reconstructed deeper origin story from molecular-clock work, while its colonial spread is brutally visible in the Americas and Pacific.",
       "atlas_url": "atlas.html?pathogen=measles",
       "categories": [
         "Vaccine-preventable",
@@ -4052,7 +4052,7 @@
       ],
       "atlas_entry_slug": "avian-influenza-h5n1",
       "atlas_status": "mixed",
-      "atlas_summary": "H5N1 belongs in the atlas because its contemporary geography is not a human epidemic map first; it is a bird-route, farm-system, and spillover map whose human layer remains contingent.",
+      "atlas_summary": "H5N1 is not primarily a human epidemic map. Its geography follows bird migration, poultry systems, mammal spillover, dairy-herd events, and occupational exposure.",
       "atlas_url": "atlas.html?pathogen=avian-influenza-h5n1",
       "categories": [
         "Zoonotic",
@@ -4671,7 +4671,7 @@
       ],
       "atlas_entry_slug": "malaria",
       "atlas_status": "mixed",
-      "atlas_summary": "Malaria belongs in the atlas because it shows how vector ecology, land use, labor systems, altitude, war, and climate can redraw disease geography across centuries without one neat origin story doing all the work.",
+      "atlas_summary": "Malaria shows how vector ecology, land use, labor systems, altitude, war, and climate can redraw disease geography across centuries without a single tidy origin story.",
       "atlas_url": "atlas.html?pathogen=malaria",
       "categories": [
         "Vector-borne",
@@ -4970,7 +4970,7 @@
       ],
       "atlas_entry_slug": "mpox",
       "atlas_status": "mixed",
-      "atlas_summary": "Mpox belongs in the atlas because it combines a geographically anchored Central/West African history with abrupt export through wildlife trade and then a very different twenty-first century global transmission pattern.",
+      "atlas_summary": "Mpox combines a geographically anchored Central and West African history with wildlife-trade export events and a distinct twenty-first-century pattern of networked global transmission.",
       "atlas_url": "atlas.html?pathogen=mpox",
       "categories": [
         "Emerging",
@@ -7543,7 +7543,7 @@
         },
         {
           "bullets": [
-            "New publisher/source coverage joined this story cluster: Anadolu Ajans\u0131, The Guardian.",
+            "New publisher/source coverage joined this story cluster: Anadolu Ajansı, The Guardian.",
             "Story volume increased from 56 to 60 clustered item(s) in the current window.",
             "5 newly observed linked item(s) were added since the last saved snapshot."
           ],
@@ -7712,7 +7712,7 @@
         },
         {
           "bullets": [
-            "New publisher/source coverage joined this story cluster: Anadolu Ajans\u0131, CTV News, OSV News.",
+            "New publisher/source coverage joined this story cluster: Anadolu Ajansı, CTV News, OSV News.",
             "6 newly observed linked item(s) were added since the last saved snapshot."
           ],
           "generated_at": "2026-05-11T09:49:43",
@@ -7794,7 +7794,7 @@
         },
         {
           "bullets": [
-            "New publisher/source coverage joined this story cluster: Al Jazeera, Anadolu Ajans\u0131, CTV News.",
+            "New publisher/source coverage joined this story cluster: Al Jazeera, Anadolu Ajansı, CTV News.",
             "Story volume increased from 61 to 64 clustered item(s) in the current window.",
             "1 newly observed linked item(s) were added since the last saved snapshot."
           ],
@@ -7822,7 +7822,7 @@
         },
         {
           "bullets": [
-            "New publisher/source coverage joined this story cluster: EL PA\u00cdS English, NTD News, WCTI.",
+            "New publisher/source coverage joined this story cluster: EL PAÍS English, NTD News, WCTI.",
             "6 newly observed linked item(s) were added since the last saved snapshot."
           ],
           "generated_at": "2026-05-11T14:56:11",
@@ -9195,7 +9195,7 @@
         {
           "bullets": [
             "New publisher/source coverage joined this story cluster: Latest news from Azerbaijan, Yahoo News Malaysia.",
-            "The lead item has changed to Why has the Africa CDC confirmed an Ebola outbreak in Congo\u2019s Ituri province? from Latest news from Azerbaijan.",
+            "The lead item has changed to Why has the Africa CDC confirmed an Ebola outbreak in Congo’s Ituri province? from Latest news from Azerbaijan.",
             "4 newly observed linked item(s) were added since the last saved snapshot."
           ],
           "generated_at": "2026-05-15T00:40:28",
@@ -10676,7 +10676,7 @@
       "timeline": [
         {
           "bullets": [
-            "New publisher/source coverage joined this story cluster: LebTown, Outbreak News Today, \u6bce\u65e5\u65b0\u805e.",
+            "New publisher/source coverage joined this story cluster: LebTown, Outbreak News Today, 毎日新聞.",
             "The lead item has changed to [Japan reports more than 400 measles cases in first four months of 2026](https://outbreaknewstoday.substack.com/p/japan-reports-more-than-400-measles) from Outbreak News Today.",
             "3 newly observed linked item(s) were added since the last saved snapshot."
           ],
@@ -10882,7 +10882,7 @@
         {
           "bullets": [
             "arabnews.jp now foregrounds vaccination or vaccine policy in the story.",
-            "New publisher/source coverage joined this story cluster: \u6bce\u65e5\u65b0\u805e.",
+            "New publisher/source coverage joined this story cluster: 毎日新聞.",
             "The lead item has changed to How conflict is driving measles outbreaks in the Middle East and North Africa from arabnews.jp.",
             "5 newly observed linked item(s) were added since the last saved snapshot."
           ],
@@ -12338,7 +12338,7 @@
       ],
       "source_count": 5,
       "story_id": "story_ccfeaff28d46baf6",
-      "summary": "states and the District of Columbia increased 359% above the annual average during 2010\u20132023; a total of 97.2% of cases were travel associated, and 2.8% were locally acquired. Approximately one fifth (21.8%) of cases occurred among persons aged 50\u201359 years, and more than one half (57.5%) occurred in Hispanic or Latino persons. SINGAPORE \u2013 There were more than 600 dengue cases from January to May 15, 2026, a 66...",
+      "summary": "states and the District of Columbia increased 359% above the annual average during 2010–2023; a total of 97.2% of cases were travel associated, and 2.8% were locally acquired. Approximately one fifth (21.8%) of cases occurred among persons aged 50–59 years, and more than one half (57.5%) occurred in Hispanic or Latino persons. SINGAPORE – There were more than 600 dengue cases from January to May 15, 2026, a 66...",
       "topic_id": "topic_ccfeaff28d46baf6",
       "topic_name": "Dengue and arboviruses",
       "updated_at": "2026-05-16T06:38:53"
@@ -12371,7 +12371,7 @@
       ],
       "source_count": 2,
       "story_id": "story_afd8f5934e291e02",
-      "summary": "Compared to no vaccination, the vaccination of older adults aged \u226565 years and the high-risk population was estimated to prevent 12,933 symptomatic cases, 12,811 outpatient cases, 122 hospitalizations, 353 lost quality-adjusted life-years (QALYs) gained, and four deaths, translating to total direct and societal cost savings of US$9,424,605 and US$10,397,107 respectively. Timely protection with the autumn dose for...",
+      "summary": "Compared to no vaccination, the vaccination of older adults aged ≥65 years and the high-risk population was estimated to prevent 12,933 symptomatic cases, 12,811 outpatient cases, 122 hospitalizations, 353 lost quality-adjusted life-years (QALYs) gained, and four deaths, translating to total direct and societal cost savings of US$9,424,605 and US$10,397,107 respectively. Timely protection with the autumn dose for...",
       "topic_id": "topic_afd8f5934e291e02",
       "topic_name": "COVID-19 and SARS-CoV-2",
       "updated_at": "2026-05-15T03:43:45"
@@ -12385,7 +12385,7 @@
       ],
       "source_count": 2,
       "story_id": "story_28a91c6d89267872",
-      "summary": "Weekly / May 14, 2026 / 75(18);234\u00e2\u0080\u0093239 Melissa A. Durand, PhD, VMD 1 ; Carrie Reed, DSc 1 ( View author affiliations ) Since 2024, three human influenza A(H5) cases have been reported among people in the U.S.",
+      "summary": "Weekly / May 14, 2026 / 75(18);234â239 Melissa A. Durand, PhD, VMD 1 ; Carrie Reed, DSc 1 ( View author affiliations ) Since 2024, three human influenza A(H5) cases have been reported among people in the U.S.",
       "topic_id": "topic_28a91c6d89267872",
       "topic_name": "Avian influenza and H5N1",
       "updated_at": "2026-05-16T06:35:35"

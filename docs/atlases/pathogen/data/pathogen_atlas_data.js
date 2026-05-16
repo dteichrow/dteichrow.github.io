@@ -384,7 +384,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "rotation_degrees": 0,
           "date_or_era": "Contemporary cholera outbreak and endemic-risk geography",
           "confidence": "moderate",
-          "narrative": "Cholera is represented as a broad water, sanitation, displacement, conflict, and outbreak-risk belt, where the meaningful atlas surface is infrastructure vulnerability and water systems rather than a precise pathogen range.",
+          "narrative": "Cholera is represented as a broad belt of water, sanitation, displacement, conflict, and outbreak risk; the main spatial signal is infrastructure vulnerability rather than a precise pathogen range.",
           "citation_ids": [
             "cholera-who"
           ]
@@ -498,7 +498,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "story_count": 1,
       "subtitle": "Dense settlement, cattle-linked ancestry, and colonial spread into immunologically naive populations",
-      "summary": "Measles is a useful atlas pathogen because its deeper origin story is partly reconstructed from molecular-clock work, while its colonial spread story is brutally visible in the Americas and Pacific.",
+      "summary": "Measles has a partly reconstructed deeper origin story from molecular-clock work, while its colonial spread is brutally visible in the Americas and Pacific.",
       "variant_count": 0,
       "variants": [],
       "visual_asset": {
@@ -541,7 +541,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "geometry_type": "world",
           "date_or_era": "Contemporary global measles elimination and resurgence geography",
           "confidence": "moderate",
-          "narrative": "Measles maps globally through airborne transmission and immunity gaps, with the atlas surface defined by vaccine coverage, outbreak importation, crowding, and surveillance rather than a natural endemic frontier.",
+          "narrative": "Measles maps globally through airborne transmission and immunity gaps, with risk shaped by vaccine coverage, importation, crowding, and surveillance rather than a natural endemic frontier.",
           "citation_ids": [
             "measles-who"
           ]
@@ -668,7 +668,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "story_count": 0,
       "subtitle": "Forest-zone recognition, animal trade jumps, and networked global spread",
-      "summary": "Mpox belongs in the atlas because it combines a geographically anchored Central/West African history with abrupt export through wildlife trade and then a very different twenty-first century global transmission pattern.",
+      "summary": "Mpox combines a geographically anchored Central and West African history with wildlife-trade export events and a distinct twenty-first-century pattern of networked global transmission.",
       "variant_count": 0,
       "variants": [],
       "visual_asset": {
@@ -684,7 +684,7 @@ window.PATHOGEN_ATLAS_DATA = {
         "surface": "hero"
       },
       "visual_asset_id": "atlas-mpox-hero",
-      "why_it_matters": "It forces the site to distinguish clades, transport mode, and transmission network rather than collapsing everything into one map pin.",
+      "why_it_matters": "The geography separates clades, transport events, animal reservoirs, and transmission networks instead of collapsing them into one origin point.",
       "withheld_citations": [
         {
           "id": "mpox-handbook",
@@ -859,7 +859,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "story_count": 1,
       "subtitle": "Bird flyways, poultry systems, mammalian spillover, and farm-interface risk",
-      "summary": "H5N1 belongs in the atlas because its contemporary geography is not a human epidemic map first; it is a bird-route, farm-system, and spillover map whose human layer remains contingent.",
+      "summary": "H5N1 is not primarily a human epidemic map. Its geography follows bird migration, poultry systems, mammal spillover, dairy-herd events, and occupational exposure.",
       "variant_count": 0,
       "variants": [],
       "visual_asset": {
@@ -875,7 +875,7 @@ window.PATHOGEN_ATLAS_DATA = {
         "surface": "hero"
       },
       "visual_asset_id": "atlas-h5n1-hero",
-      "why_it_matters": "It creates a genuinely different map grammar from the classic human-to-human pathogens and foregrounds One Health risk.",
+      "why_it_matters": "The spatial problem is One Health risk: animal movement, farm systems, and spillover opportunities before sustained human-to-human transmission.",
       "withheld_citations": [
         {
           "id": "h5n1-handbook",
@@ -907,7 +907,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "geometry_type": "world",
           "date_or_era": "Contemporary global avian-influenza panzootic and spillover geography",
           "confidence": "moderate",
-          "narrative": "H5N1 is mapped as a global animal-interface layer, where migratory birds, poultry systems, mammal spillover, dairy herds, culling, and occupational exposure define the atlas surface.",
+          "narrative": "H5N1 is mapped as a global animal-interface pattern, where migratory birds, poultry systems, mammal spillover, dairy herds, culling, and occupational exposure define the risk surface.",
           "citation_ids": [
             "h5n1-cdc"
           ]
@@ -1453,7 +1453,7 @@ window.PATHOGEN_ATLAS_DATA = {
         "surface": "hero"
       },
       "visual_asset_id": "atlas-hantavirus-hero",
-      "why_it_matters": "It forces the atlas to behave like an encyclopedia rather than a single-route animation and keeps us honest about host ecology, geography, and syndrome differences.",
+      "why_it_matters": "Hantavirus geography depends on host ecology, housing, work exposures, and syndrome differences across regions, not a single route line.",
       "withheld_citations": [
         {
           "id": "hanta-family-review",
@@ -1642,7 +1642,7 @@ window.PATHOGEN_ATLAS_DATA = {
         "surface": "hero"
       },
       "visual_asset_id": "atlas-dengue-hero",
-      "why_it_matters": "It turns the atlas toward contemporary global change instead of leaving it stranded in historical imperial routes.",
+      "why_it_matters": "Dengue shows how urbanization, climate, vector range, water storage, travel, and surveillance reshape disease geography in real time.",
       "withheld_citations": [
         {
           "id": "dengue-handbook",
@@ -1822,12 +1822,12 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "story_count": 0,
       "subtitle": "Anopheles ecologies, empire, labor, and the long retreat and return of a mosquito-borne world disease",
-      "summary": "Malaria belongs in the atlas because it shows how vector ecology, land use, labor systems, altitude, war, and climate can redraw disease geography across centuries without one neat origin story doing all the work.",
+      "summary": "Malaria shows how vector ecology, land use, labor systems, altitude, war, and climate can redraw disease geography across centuries without a single tidy origin story.",
       "variant_count": 0,
       "variants": [],
       "visual_asset": {},
       "visual_asset_id": "atlas-malaria-hero",
-      "why_it_matters": "It keeps the atlas from becoming virus-only and forces a map grammar built around mosquitoes, species differences, and ecological receptivity.",
+      "why_it_matters": "Its geography is built around mosquitoes, parasite species, ecological receptivity, control programs, and uneven health-system reach.",
       "withheld_citations": [
         {
           "id": "malaria-handbook",
@@ -2002,12 +2002,12 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "story_count": 0,
       "subtitle": "Human coexpansion, crowding, industry, migration, and the stubborn durability of airborne inequality",
-      "summary": "Tuberculosis belongs in the atlas because it is both ancient and modern at once: a human co-traveler that thrives in crowding, poverty, institutional confinement, and uneven public health capacity.",
+      "summary": "Tuberculosis is ancient and modern at once: a human co-traveler that thrives in crowding, poverty, institutional confinement, migration, HIV, and uneven public-health capacity.",
       "variant_count": 0,
       "variants": [],
       "visual_asset": {},
       "visual_asset_id": "atlas-tuberculosis-hero",
-      "why_it_matters": "It turns the atlas toward chronic structural transmission instead of one spectacular frontier jump.",
+      "why_it_matters": "Its map is chronic and structural: airborne transmission shaped by housing, labor, prisons, care access, and drug-resistance systems.",
       "withheld_citations": [
         {
           "id": "tb-handbook",
@@ -2175,7 +2175,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "story_count": 0,
       "subtitle": "Steppe reservoirs, siege and shipping, and the repeated collision of rodents, fleas, and empire",
-      "summary": "Plague belongs in the atlas because it is one of the clearest historical demonstrations that reservoir ecology, trade corridors, warfare, and maritime ports can repeatedly rewire a continent.",
+      "summary": "Plague is one of the clearest historical demonstrations that reservoir ecology, trade corridors, warfare, and maritime ports can repeatedly rewire a continent.",
       "variant_count": 0,
       "variants": [],
       "visual_asset": {},
@@ -2228,7 +2228,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Virus",
       "summary": "A mosquito-borne flavivirus whose modern importance comes from congenital risk, urban Aedes habitat, travel, and sexual transmission.",
-      "why_it_matters": "It forces the atlas to keep vector ecology and reproductive epidemiology in the same frame.",
+      "why_it_matters": "Vector ecology and reproductive epidemiology have to be read together, especially where pregnancy outcomes shaped public concern.",
       "atlas_scope": "Aedes mosquito expansion, pregnancy risk, and the 2015-2016 congenital-malformation crisis",
       "origin_claim": {
         "label": "Zika Forest / East African discovery frame",
@@ -2349,7 +2349,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "Contemporary Aedes-borne risk geography",
           "confidence": "moderate",
-          "narrative": "The atlas layer marks the broad tropical and subtropical belt where Aedes mosquito ecology and travel-linked outbreaks make Zika a recurring surveillance problem rather than a single route line.",
+          "narrative": "The map marks the broad tropical and subtropical belt where Aedes mosquito ecology and travel-linked outbreaks make Zika a recurring surveillance problem rather than a single route line.",
           "citation_ids": [
             "zika-cdc",
             "zika-who"
@@ -2649,8 +2649,8 @@ window.PATHOGEN_ATLAS_DATA = {
       "subtitle": "Mosquitoes, pigs, water birds, rice landscapes, and childhood immunity",
       "status": "consensus",
       "pathogen_type": "Virus",
-      "summary": "Japanese encephalitis turns the atlas toward agricultural ecology: Culex mosquitoes, pigs, water birds, rice cultivation, and vaccination.",
-      "why_it_matters": "It is an atlas entry where land use and animal husbandry are the map, not background context.",
+      "summary": "Japanese encephalitis is agricultural ecology in motion: Culex mosquitoes, pigs, water birds, rice cultivation, and vaccination.",
+      "why_it_matters": "Land use and animal husbandry are the map, not background context.",
       "atlas_scope": "Rice agriculture, pigs, water birds, and Culex transmission across Asia",
       "origin_claim": {
         "label": "Japan / early documented clinical frame",
@@ -2790,7 +2790,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Virus",
       "summary": "Polio is now a map of fecal-oral transmission, under-immunization, environmental surveillance, and eradication politics.",
-      "why_it_matters": "It turns the atlas toward the geography of eradication, not only emergence.",
+      "why_it_matters": "Its geography is the geography of eradication, not only emergence.",
       "atlas_scope": "Fecal-oral transmission, eradication, and the infrastructure of surveillance",
       "origin_claim": {
         "label": "Modern endemic Afghanistan-Pakistan frame",
@@ -3263,7 +3263,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Norovirus is one of the cleanest examples of why surfaces and food handlers still matter.",
-        "It is the atlas entry for density, institutions, and environmental persistence."
+        "Density, institutions, and environmental persistence are central to its spread."
       ],
       "framing_traps": [
         "Do not call norovirus \u201cstomach flu\u201d; it is not influenza.",
@@ -3465,7 +3465,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "geometry_type": "world",
           "date_or_era": "Pre-eradication global circulation; eradication certified in 1980",
           "confidence": "strong",
-          "narrative": "For smallpox, the correct atlas layer is historical global distribution followed by eradication, with the modern map defined by absence from natural circulation and laboratory-security concerns.",
+          "narrative": "For smallpox, the useful spatial frame is historical global distribution followed by eradication, with the modern map defined by absence from natural circulation and laboratory-security concerns.",
           "citation_ids": [
             "smallpox-cdc",
             "smallpox-who"
@@ -3614,7 +3614,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Virus",
       "summary": "COVID-19 made respiratory transmission visible as infrastructure: indoor air, work, travel, households, health systems, and variant surveillance.",
-      "why_it_matters": "It is the modern respiratory atlas entry par excellence.",
+      "why_it_matters": "It is the defining modern example of global respiratory spread.",
       "atlas_scope": "Pandemic respiratory spread, travel networks, indoor air, and year-round circulation",
       "origin_claim": {
         "label": "Wuhan early-detection frame",
@@ -3725,7 +3725,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "geometry_type": "world",
           "date_or_era": "2020 onward global circulation",
           "confidence": "strong",
-          "narrative": "COVID-19 should not appear as only a line out of Wuhan; the mature atlas layer is global respiratory circulation shaped by indoor air, travel, immunity, surveillance, variants, and health-system reporting.",
+          "narrative": "COVID-19 is not only a line out of Wuhan; its mature geography is global respiratory circulation shaped by indoor air, travel, immunity, surveillance, variants, and health-system reporting.",
           "citation_ids": [
             "covid-who",
             "covid-topic"
@@ -4026,7 +4026,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "consensus",
       "pathogen_type": "Virus",
       "summary": "Nipah has multiple routes: bat-contaminated food, pig-amplified farm outbreaks, and limited person-to-person spread.",
-      "why_it_matters": "It forces the atlas to track food habits, farms, bats, hospitals, and household care in one entry.",
+      "why_it_matters": "Its transmission geography ties together food habits, farms, bats, hospitals, and household care.",
       "atlas_scope": "Fruit bats, pigs, date-palm sap, hospitals, and South/Southeast Asian spillover",
       "origin_claim": {
         "label": "Malaysia pig-farm discovery frame",
@@ -5026,7 +5026,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern coverage often turns on tick range, seasonality, outdoor exposure, and how surveillance definitions shape maps.",
-        "It is a useful atlas entry because the route is ecological rather than a simple human-to-human chain."
+        "The route is ecological rather than a simple human-to-human chain."
       ],
       "framing_traps": [
         "Do not mistake the Connecticut recognition cluster for the deep evolutionary origin of the bacterium.",
@@ -5353,7 +5353,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "Contemporary tick-livestock-human exposure geography",
           "confidence": "moderate",
-          "narrative": "CCHF needs a broad Africa-Eurasia tick and livestock exposure surface: Hyalomma ecology, animal movement, slaughter, and health-care exposure create the atlas layer.",
+          "narrative": "CCHF needs a broad Africa-Eurasia tick and livestock exposure surface: Hyalomma ecology, animal movement, slaughter, and health-care exposure shape the mapped risk zone.",
           "citation_ids": [
             "cchf-who",
             "cchf-cdc"
@@ -5455,7 +5455,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "geometry_type": "world",
           "date_or_era": "Historically recurrent in war, famine, prison, and displacement settings",
           "confidence": "moderate",
-          "narrative": "Epidemic typhus is less an endemic-country map than a social exposure geography: body lice, crowding, cold, poor sanitation, war, famine, and displacement are the real atlas surface.",
+          "narrative": "Epidemic typhus is less an endemic-country map than a social exposure geography: body lice, crowding, cold, poor sanitation, war, famine, and displacement define the risk surface.",
           "citation_ids": [
             "epidemic-typhus-cdc",
             "typhus-cdc-clinical"
@@ -6028,7 +6028,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Bacterium",
       "summary": "Tetanus is an environmental and immunization story: spores are widespread, but disease follows wounds, birth conditions, and gaps in vaccination.",
-      "why_it_matters": "It forces the atlas to handle infections whose geography is environmental exposure rather than a chain of infected people.",
+      "why_it_matters": "Its geography is environmental exposure rather than a chain of infected people.",
       "atlas_scope": "Environmental reservoirs, occupational or wound exposure, climate and soil conditions, and prevention through vaccination or risk mitigation",
       "category": "soil-environmental",
       "category_label": "Soil / environmental",
@@ -6130,7 +6130,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Bacterium",
       "summary": "Melioidosis links Burkholderia pseudomallei in soil and water to rainfall, occupational exposure, diabetes, pneumonia, sepsis, and missed diagnosis.",
-      "why_it_matters": "It forces the atlas to handle infections whose geography is environmental exposure rather than a chain of infected people.",
+      "why_it_matters": "Its geography is environmental exposure rather than a chain of infected people.",
       "atlas_scope": "Environmental reservoirs, occupational or wound exposure, climate and soil conditions, and prevention through vaccination or risk mitigation",
       "category": "soil-environmental",
       "category_label": "Soil / environmental",
@@ -6262,7 +6262,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Fungus",
       "summary": "Coccidioidomycosis is a fungal lung infection acquired by inhaling Coccidioides spores from endemic dry soils.",
-      "why_it_matters": "It forces the atlas to handle infections whose geography is environmental exposure rather than a chain of infected people.",
+      "why_it_matters": "Its geography is environmental exposure rather than a chain of infected people.",
       "atlas_scope": "Environmental reservoirs, occupational or wound exposure, climate and soil conditions, and prevention through vaccination or risk mitigation",
       "category": "soil-environmental",
       "category_label": "Soil / environmental",
@@ -6474,7 +6474,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "geometry_type": "world",
           "date_or_era": "Contemporary global HIV pandemic and treatment-access geography",
           "confidence": "strong",
-          "narrative": "HIV/AIDS is global, but the atlas layer has to keep burden, transmission networks, stigma, testing, treatment access, and prevention infrastructure visible rather than drawing one origin route.",
+          "narrative": "HIV/AIDS is global, but its geography has to keep burden, transmission networks, stigma, testing, treatment access, and prevention infrastructure visible rather than drawing one origin route.",
           "citation_ids": [
             "hiv-who",
             "hiv-pubmed-early-spread"
@@ -6576,7 +6576,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "geometry_type": "world",
           "date_or_era": "Contemporary global chronic infection and vaccination geography",
           "confidence": "strong",
-          "narrative": "Hepatitis B is global but uneven, with perinatal transmission, childhood exposure, vaccination coverage, blood safety, injection exposure, and treatment access determining the atlas surface.",
+          "narrative": "Hepatitis B is global but uneven, with perinatal transmission, childhood exposure, vaccination coverage, blood safety, injection exposure, and treatment access determining the risk surface.",
           "citation_ids": [
             "hbv-who",
             "hbv-ncbi"
@@ -7204,7 +7204,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "geometry_type": "world",
           "date_or_era": "Contemporary healthcare-associated and community-associated infection geography",
           "confidence": "strong",
-          "narrative": "C. difficile is a healthcare and antibiotic-exposure geography rather than a continent-scale endemic zone: hospitals, long-term care, antimicrobial use, testing, and infection control shape the atlas layer.",
+          "narrative": "C. difficile is a healthcare and antibiotic-exposure geography rather than a continent-scale endemic zone: hospitals, long-term care, antimicrobial use, testing, and infection control shape the mapped pattern.",
           "citation_ids": [
             "cdiff-cdc",
             "cdiff-ncbi"
@@ -7835,7 +7835,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Bacterium",
       "summary": "Shigellosis is a fecal-oral bacterial diarrheal disease whose low infectious dose makes childcare, crowded living, hygiene, sexual exposure, and resistance important.",
-      "why_it_matters": "This adds the atlas layer where sanitation, water, childcare, travel, and social infrastructure produce geography.",
+      "why_it_matters": "Sanitation, water, childcare, travel, and social infrastructure produce the geography.",
       "atlas_scope": "Fecal-oral and waterborne transmission, exposure institutions, and surveillance visibility",
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
@@ -7937,7 +7937,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Virus",
       "summary": "Rotavirus is a highly contagious cause of severe childhood diarrhea whose map changed dramatically where vaccines entered routine schedules.",
-      "why_it_matters": "This adds the atlas layer where sanitation, water, childcare, travel, and social infrastructure produce geography.",
+      "why_it_matters": "Sanitation, water, childcare, travel, and social infrastructure produce the geography.",
       "atlas_scope": "Fecal-oral and waterborne transmission, exposure institutions, and surveillance visibility",
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
@@ -8039,7 +8039,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Protozoan parasite",
       "summary": "Giardiasis is a protozoan infection transmitted through cyst-contaminated water, food, surfaces, and close-contact settings.",
-      "why_it_matters": "This adds the atlas layer where sanitation, water, childcare, travel, and social infrastructure produce geography.",
+      "why_it_matters": "Sanitation, water, childcare, travel, and social infrastructure produce the geography.",
       "atlas_scope": "Fecal-oral and waterborne transmission, exposure institutions, and surveillance visibility",
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
@@ -8141,7 +8141,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Protozoan parasite",
       "summary": "Cryptosporidiosis is a diarrheal infection whose oocysts can move through recreational water, drinking water, animal contact, and childcare settings.",
-      "why_it_matters": "This adds the atlas layer where sanitation, water, childcare, travel, and social infrastructure produce geography.",
+      "why_it_matters": "Sanitation, water, childcare, travel, and social infrastructure produce the geography.",
       "atlas_scope": "Fecal-oral and waterborne transmission, exposure institutions, and surveillance visibility",
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
@@ -8243,7 +8243,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Protozoan parasite",
       "summary": "Amebiasis is a fecal-oral protozoan infection that can produce intestinal disease and extraintestinal complications such as liver abscess.",
-      "why_it_matters": "This adds the atlas layer where sanitation, water, childcare, travel, and social infrastructure produce geography.",
+      "why_it_matters": "Sanitation, water, childcare, travel, and social infrastructure produce the geography.",
       "atlas_scope": "Fecal-oral and waterborne transmission, exposure institutions, and surveillance visibility",
       "category": "fecal-oral-waterborne",
       "category_label": "Fecal-oral / waterborne",
@@ -8935,7 +8935,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "geometry_type": "world",
           "date_or_era": "Contemporary vaccine-shaped circulation and lifetime latency",
           "confidence": "strong",
-          "narrative": "Varicella is global, with the atlas surface shaped by airborne and contact spread, vaccine coverage, susceptible clusters, and the lifelong latency link to shingles.",
+          "narrative": "Varicella is global, with geography shaped by airborne and contact spread, vaccine coverage, susceptible clusters, and the lifelong latency link to shingles.",
           "citation_ids": [
             "varicella-cdc",
             "varicella-ncbi"
@@ -10363,7 +10363,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "geometry_type": "world",
           "date_or_era": "Contemporary rodent-associated exposure geography",
           "confidence": "moderate",
-          "narrative": "LCM is not usefully bounded by country; the atlas surface is house mice, pet rodents, contaminated materials, pregnancy risk, and immunocompromised-host vulnerability.",
+          "narrative": "LCM is not usefully bounded by country; the geography follows house mice, pet rodents, contaminated materials, pregnancy risk, and immunocompromised-host vulnerability.",
           "citation_ids": [
             "lcm-cdc",
             "lcm-ncbi"
@@ -12240,7 +12240,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "geometry_type": "world",
           "date_or_era": "Contemporary vaccine-shaped respiratory and invasive disease geography",
           "confidence": "strong",
-          "narrative": "Hib is global in respiratory spread, but the atlas layer is vaccine-era childhood invasive disease: conjugate vaccine coverage, susceptible children, and surveillance determine what remains visible.",
+          "narrative": "Hib is global in respiratory spread, but its modern geography is vaccine-era childhood invasive disease: conjugate vaccine coverage, susceptible children, and surveillance determine what remains visible.",
           "citation_ids": [
             "hib-cdc-about",
             "hib-cdc-hcp"
@@ -12648,7 +12648,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "geometry_type": "world",
           "date_or_era": "Contemporary global HPV infection and cancer-prevention geography",
           "confidence": "strong",
-          "narrative": "HPV is global; the atlas layer is prevention inequality: sexual transmission, vaccination, cervical screening, cancer treatment access, and gendered health infrastructure.",
+          "narrative": "HPV is global; the geography is prevention inequality: sexual transmission, vaccination, cervical screening, cancer treatment access, and gendered health infrastructure.",
           "citation_ids": [
             "hpv-cdc",
             "hpv-who"
@@ -12874,7 +12874,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Bacterium",
       "summary": "Leprosy is a chronic mycobacterial disease whose geography is shaped by long incubation, close contact, stigma, case detection, and in some regions zoonotic reservoirs.",
-      "why_it_matters": "It is a historical epidemiology atlas entry almost by definition: biology, stigma, and detection are inseparable.",
+      "why_it_matters": "Biology, stigma, and detection are inseparable in its historical epidemiology.",
       "atlas_scope": "Chronic contact-associated transmission, NTD surveillance, stigma, and reservoir complexity",
       "category": "contact-sexual-bloodborne",
       "category_label": "Contact, sexual, or bloodborne",
@@ -13411,7 +13411,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "geometry_type": "world",
           "date_or_era": "Contemporary soil-transmitted helminth geography",
           "confidence": "strong",
-          "narrative": "Ascariasis geography is sanitation geography: fecally contaminated soil or food, childhood exposure, poverty, school-based deworming, and environmental persistence define the atlas layer.",
+          "narrative": "Ascariasis geography is sanitation geography: fecally contaminated soil or food, childhood exposure, poverty, school-based deworming, and environmental persistence define the mapped pattern.",
           "citation_ids": [
             "sth-who-ascariasis",
             "ascariasis-ncbi"
@@ -13577,7 +13577,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Protozoan parasite",
       "summary": "Toxoplasmosis is a protozoan infection acquired through tissue cysts in meat, oocysts from cats, contaminated soil or food, and congenital transmission.",
-      "why_it_matters": "It forces the atlas to keep animals, food, soil, pregnancy, and immune status together.",
+      "why_it_matters": "The epidemiology keeps animals, food, soil, pregnancy, and immune status together.",
       "atlas_scope": "Foodborne, animal-interface, soil, and congenital transmission",
       "category": "foodborne",
       "category_label": "Foodborne",
@@ -13657,7 +13657,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "geometry_type": "world",
           "date_or_era": "Contemporary foodborne, animal-interface, soil, and congenital geography",
           "confidence": "strong",
-          "narrative": "Toxoplasmosis is globally distributed; its atlas surface is cats, oocysts in soil, meat cysts, food handling, pregnancy, congenital disease, and immunocompromised hosts.",
+          "narrative": "Toxoplasmosis is globally distributed; its risk surface is cats, oocysts in soil, meat cysts, food handling, pregnancy, congenital disease, and immunocompromised hosts.",
           "citation_ids": [
             "toxo-cdc",
             "toxo-ncbi"
@@ -14059,7 +14059,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -14095,7 +14095,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "geometry_type": "world",
           "date_or_era": "Contemporary respiratory, contact, conjunctival, and healthcare outbreak geography",
           "confidence": "strong",
-          "narrative": "Adenovirus is global; the useful atlas layer is close-contact institutions, childcare, military training, healthcare settings, pools, and surface/water-associated conjunctivitis outbreaks.",
+          "narrative": "Adenovirus is global; the useful spatial pattern is close-contact institutions, childcare, military training, healthcare settings, pools, and surface/water-associated conjunctivitis outbreaks.",
           "citation_ids": [
             "adeno-cdc",
             "adeno-ncbi"
@@ -14161,7 +14161,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -14263,7 +14263,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -14365,7 +14365,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -14401,7 +14401,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "geometry_type": "world",
           "date_or_era": "Contemporary global respiratory and skin-contact transmission geography",
           "confidence": "strong",
-          "narrative": "Group A Streptococcus is global; its atlas surface combines strep throat, skin infections, crowding, wounds, care settings, invasive disease recognition, and post-infection complications.",
+          "narrative": "Group A Streptococcus is global; its risk surface combines strep throat, skin infections, crowding, wounds, care settings, invasive disease recognition, and post-infection complications.",
           "citation_ids": [
             "gas-cdc",
             "gas-ncbi"
@@ -14467,7 +14467,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -14569,7 +14569,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -14671,7 +14671,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -14807,7 +14807,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -14909,7 +14909,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -14952,7 +14952,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "rotation_degrees": 18,
           "date_or_era": "Contemporary foodborne trematode and freshwater aquaculture geography",
           "confidence": "moderate",
-          "narrative": "Clonorchiasis is an East Asian freshwater-fish and raw/undercooked-food practice layer, with aquaculture, river systems, and chronic hepatobiliary disease shaping the atlas surface.",
+          "narrative": "Clonorchiasis is an East Asian freshwater-fish and raw/undercooked-food practice pattern, with aquaculture, river systems, and chronic hepatobiliary disease shaping the risk surface.",
           "citation_ids": [
             "clonorchis-cdc",
             "clonorchis-ncbi"
@@ -15018,7 +15018,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -15120,7 +15120,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -15272,7 +15272,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -15374,7 +15374,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -15518,7 +15518,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -15554,7 +15554,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "geometry_type": "world",
           "date_or_era": "Contemporary zoonotic soil and child-exposure geography",
           "confidence": "strong",
-          "narrative": "Toxocariasis is a global dog/cat, soil, sandbox, yard, surface, and child-exposure map; the atlas surface is environmental contamination and behavior, not travel.",
+          "narrative": "Toxocariasis is a global dog/cat, soil, sandbox, yard, surface, and child-exposure map; the risk surface is environmental contamination and behavior, not travel.",
           "citation_ids": [
             "toxocara-cdc",
             "toxocara-ncbi"
@@ -15620,7 +15620,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -15729,7 +15729,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -15861,7 +15861,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -15961,7 +15961,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -16053,7 +16053,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -16147,7 +16147,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -16268,7 +16268,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -16282,7 +16282,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "parvovirus-b19-cdc",
           "short_citation": "Official source. Parvovirus B19 infection.",
           "url": "https://www.cdc.gov/parvovirus-b19/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -16359,7 +16359,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -16373,7 +16373,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "hmpv-cdc",
           "short_citation": "Official source. Human metapneumovirus infection.",
           "url": "https://www.cdc.gov/human-metapneumovirus/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -16457,7 +16457,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -16471,7 +16471,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "powassan-cdc",
           "short_citation": "Official source. Powassan virus disease.",
           "url": "https://www.cdc.gov/powassan/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -16578,7 +16578,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -16592,7 +16592,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "colorado-tick-fever-cdc",
           "short_citation": "Official source. Colorado tick fever.",
           "url": "https://www.cdc.gov/colorado-tick-fever/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -16676,7 +16676,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -16690,7 +16690,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "bourbon-virus-cdc",
           "short_citation": "Official source. Bourbon virus disease.",
           "url": "https://www.cdc.gov/bourbon-virus/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -16774,7 +16774,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -16788,7 +16788,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "heartland-virus-cdc",
           "short_citation": "Official source. Heartland virus disease.",
           "url": "https://www.cdc.gov/heartland-virus/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -16865,7 +16865,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -16879,7 +16879,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "cmv-cdc",
           "short_citation": "Official source. Cytomegalovirus infection.",
           "url": "https://www.cdc.gov/cytomegalovirus/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -16956,7 +16956,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -16970,7 +16970,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "ebv-cdc",
           "short_citation": "Official source. Epstein-Barr virus infection.",
           "url": "https://www.cdc.gov/epstein-barr/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -17047,7 +17047,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -17061,7 +17061,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "cryptococcosis-cdc",
           "short_citation": "Official source. Cryptococcosis.",
           "url": "https://www.cdc.gov/cryptococcosis/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -17138,7 +17138,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -17152,7 +17152,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "mucormycosis-cdc",
           "short_citation": "Official source. Mucormycosis.",
           "url": "https://www.cdc.gov/mucormycosis/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -17229,7 +17229,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -17243,7 +17243,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "pinworm-cdc",
           "short_citation": "Official source. Pinworm infection.",
           "url": "https://www.cdc.gov/pinworm/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -17320,7 +17320,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -17334,7 +17334,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "trichomoniasis-cdc",
           "short_citation": "Official source. Trichomoniasis.",
           "url": "https://www.cdc.gov/trichomoniasis/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -17411,7 +17411,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -17425,7 +17425,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "cjd-cdc",
           "short_citation": "Official source. Creutzfeldt-Jakob disease.",
           "url": "https://www.cdc.gov/creutzfeldt-jakob/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -17502,7 +17502,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -17516,7 +17516,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "ringworm-cdc",
           "short_citation": "Official source. Ringworm.",
           "url": "https://www.cdc.gov/ringworm/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -17593,7 +17593,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -17607,7 +17607,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "molluscum-cdc",
           "short_citation": "Official source. Molluscum contagiosum.",
           "url": "https://www.cdc.gov/molluscum-contagiosum/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -17628,7 +17628,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Bacterium",
       "summary": "Trachoma is an infectious eye disease caused by Chlamydia trachomatis and is associated with repeated exposure in settings affected by poverty, crowding, limited water, sanitation, and flies.",
-      "why_it_matters": "It belongs in the atlas because its geography is social infrastructure: water, sanitation, housing, flies, and treatment campaigns.",
+      "why_it_matters": "Its geography is social infrastructure: water, sanitation, housing, flies, and treatment campaigns.",
       "atlas_scope": "Repeated ocular infection, household transmission, WASH infrastructure, flies, and elimination campaigns",
       "category": "other-mixed",
       "category_label": "Other / mixed transmission",
@@ -17710,7 +17710,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "Contemporary neglected tropical disease elimination geography",
           "confidence": "moderate",
-          "narrative": "Trachoma is mapped as a high-burden African water, sanitation, crowding, and fly-exposure realm, while recognizing that endemic districts and elimination programs are more granular than this schematic atlas layer.",
+          "narrative": "Trachoma is mapped as a high-burden African water, sanitation, crowding, and fly-exposure realm, while recognizing that endemic districts and elimination programs are more granular than this schematic layer.",
           "citation_ids": [
             "trachoma-who"
           ]
@@ -17718,7 +17718,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -17732,7 +17732,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "trachoma-who",
           "short_citation": "Official source. Trachoma.",
           "url": "https://www.who.int/news-room/fact-sheets/detail/trachoma",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -17816,7 +17816,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -17830,7 +17830,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "yaws-who",
           "short_citation": "Official source. Yaws.",
           "url": "https://www.who.int/news-room/fact-sheets/detail/yaws",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -17937,7 +17937,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -17951,7 +17951,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "buruli-ulcer-who",
           "short_citation": "Official source. Buruli ulcer.",
           "url": "https://www.who.int/news-room/fact-sheets/detail/buruli-ulcer-(mycobacterium-ulcerans-infection)",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -18035,7 +18035,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -18049,7 +18049,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "cystoisospora-cdc",
           "short_citation": "Official source. Cystoisosporiasis.",
           "url": "https://www.cdc.gov/cystoisospora/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -18126,7 +18126,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -18140,7 +18140,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "capnocytophaga-cdc",
           "short_citation": "Official source. Capnocytophaga infection.",
           "url": "https://www.cdc.gov/capnocytophaga/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -18217,7 +18217,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -18231,7 +18231,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "acanthamoeba-cdc",
           "short_citation": "Official source. Acanthamoeba keratitis.",
           "url": "https://www.cdc.gov/acanthamoeba/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -18308,7 +18308,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -18322,7 +18322,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "balamuthia-cdc",
           "short_citation": "Official source. Balamuthia mandrillaris infection.",
           "url": "https://www.cdc.gov/balamuthia/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -18399,7 +18399,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -18413,7 +18413,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "blastocystis-cdc",
           "short_citation": "Official source. Blastocystis infection.",
           "url": "https://www.cdc.gov/blastocystis/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -18497,7 +18497,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -18511,7 +18511,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "angiostrongylus-cdc",
           "short_citation": "Official source. Angiostrongyliasis.",
           "url": "https://www.cdc.gov/angiostrongylus/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -18595,7 +18595,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -18609,7 +18609,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "gnathostoma-cdc",
           "short_citation": "Official source. Gnathostomiasis.",
           "url": "https://www.cdc.gov/gnathostoma/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -18693,7 +18693,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -18707,7 +18707,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "talaromycosis-cdc",
           "short_citation": "Official source. Talaromycosis.",
           "url": "https://www.cdc.gov/talaromycosis/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -18783,7 +18783,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "rotation_degrees": 0,
           "date_or_era": "Contemporary neglected tropical fungal disease geography",
           "confidence": "moderate",
-          "narrative": "Chromoblastomycosis is shown as a tropical and subtropical traumatic-implantation realm, where occupational skin injury, vegetation, soil, humidity, and delayed diagnosis shape the atlas surface.",
+          "narrative": "Chromoblastomycosis is shown as a tropical and subtropical traumatic-implantation realm, where occupational skin injury, vegetation, soil, humidity, and delayed diagnosis shape the risk surface.",
           "citation_ids": [
             "chromoblastomycosis-cdc"
           ]
@@ -18791,7 +18791,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -18805,7 +18805,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "chromoblastomycosis-cdc",
           "short_citation": "Official source. Chromoblastomycosis.",
           "url": "https://www.cdc.gov/chromoblastomycosis/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -18916,7 +18916,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -18930,7 +18930,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "noma-who",
           "short_citation": "Official source. Noma.",
           "url": "https://www.who.int/news-room/fact-sheets/detail/noma",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -19014,7 +19014,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -19028,7 +19028,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "jamestown-canyon-cdc",
           "short_citation": "Official source. Jamestown Canyon virus disease.",
           "url": "https://www.cdc.gov/jamestown-canyon/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -19105,7 +19105,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -19119,7 +19119,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "bartonella-cdc",
           "short_citation": "Official source. Bartonella henselae infection.",
           "url": "https://www.cdc.gov/bartonella/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -19196,7 +19196,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -19210,7 +19210,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "cronobacter-cdc",
           "short_citation": "Official source. Cronobacter infection.",
           "url": "https://www.cdc.gov/cronobacter/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -19287,7 +19287,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -19301,7 +19301,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "sarcocystosis-cdc",
           "short_citation": "Official source. Sarcocystosis.",
           "url": "https://www.cdc.gov/sarcocystosis/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -19385,7 +19385,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -19399,7 +19399,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "fasciolopsis-cdc",
           "short_citation": "Official source. Fasciolopsiasis.",
           "url": "https://www.cdc.gov/fasciolopsis/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -19476,7 +19476,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -19490,7 +19490,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "chancroid-cdc",
           "short_citation": "Official source. Chancroid.",
           "url": "https://www.cdc.gov/std/treatment-guidelines/chancroid.htm",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -19567,7 +19567,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -19581,7 +19581,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "lgv-cdc",
           "short_citation": "Official source. Lymphogranuloma venereum.",
           "url": "https://www.cdc.gov/std/treatment-guidelines/lgv.htm",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -19665,7 +19665,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -19679,7 +19679,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "donovanosis-cdc",
           "short_citation": "Official source. Donovanosis.",
           "url": "https://www.cdc.gov/std/treatment-guidelines/donovanosis.htm",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -19756,7 +19756,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -19770,7 +19770,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "mycoplasma-genitalium-cdc",
           "short_citation": "Official source. Mycoplasma genitalium infection.",
           "url": "https://www.cdc.gov/std/treatment-guidelines/mycoplasmagenitalium.htm",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -19791,7 +19791,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Other",
       "summary": "Mycetoma is a chronic subcutaneous disease associated with traumatic inoculation, often involving fungi or bacteria from environmental sources.",
-      "why_it_matters": "It belongs in the atlas as a disease of land, labor, poverty, delayed care, and neglected surveillance.",
+      "why_it_matters": "Its geography follows land, labor, poverty, delayed care, and neglected surveillance.",
       "atlas_scope": "Traumatic inoculation, soil and thorn exposure, chronic disability, and neglected tropical disease control",
       "category": "soil-environmental",
       "category_label": "Soil / environmental",
@@ -19854,7 +19854,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -19868,7 +19868,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "mycetoma-who",
           "short_citation": "Official source. Mycetoma.",
           "url": "https://www.who.int/news-room/fact-sheets/detail/mycetoma",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -19975,7 +19975,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -19989,7 +19989,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "sars-who",
           "short_citation": "Official source. Severe acute respiratory syndrome.",
           "url": "https://www.who.int/health-topics/severe-acute-respiratory-syndrome",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -20073,7 +20073,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -20087,7 +20087,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "trichuriasis-who",
           "short_citation": "Official source. Trichuriasis.",
           "url": "https://www.who.int/news-room/fact-sheets/detail/soil-transmitted-helminth-infections",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -20164,7 +20164,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -20178,7 +20178,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "pneumocystis-cdc",
           "short_citation": "Official source. Pneumocystis pneumonia.",
           "url": "https://www.cdc.gov/pneumocystis-pneumonia/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -20255,7 +20255,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -20269,7 +20269,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "taeniasis-who",
           "short_citation": "Official source. Taeniasis.",
           "url": "https://www.who.int/news-room/fact-sheets/detail/taeniasis-cysticercosis",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -20345,7 +20345,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "rotation_degrees": -12,
           "date_or_era": "Contemporary foodborne trematode and freshwater-fish geography",
           "confidence": "moderate",
-          "narrative": "Opisthorchiasis is represented as an East and Southeast Asian freshwater-fish trematode realm, where river systems, aquaculture, raw or undercooked fish dishes, and chronic hepatobiliary disease define the atlas layer.",
+          "narrative": "Opisthorchiasis is represented as an East and Southeast Asian freshwater-fish trematode realm, where river systems, aquaculture, raw or undercooked fish dishes, and chronic hepatobiliary disease define the mapped pattern.",
           "citation_ids": [
             "opisthorchiasis-who"
           ]
@@ -20353,7 +20353,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -20367,7 +20367,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "opisthorchiasis-who",
           "short_citation": "Official source. Opisthorchiasis.",
           "url": "https://www.who.int/news-room/fact-sheets/detail/foodborne-trematode-infections",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -20451,7 +20451,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -20465,7 +20465,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "tungiasis-who",
           "short_citation": "Official source. Tungiasis.",
           "url": "https://www.who.int/news-room/fact-sheets/detail/tungiasis",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -20549,7 +20549,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -20563,7 +20563,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "hendra-cdc",
           "short_citation": "Official source. Hendra virus disease.",
           "url": "https://www.cdc.gov/hendra-virus/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -20640,7 +20640,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -20654,7 +20654,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "herpes-b-cdc",
           "short_citation": "Official source. Herpes B virus infection.",
           "url": "https://www.cdc.gov/herpes-b-virus/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -20731,7 +20731,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -20745,7 +20745,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "orf-cdc",
           "short_citation": "Official source. Orf virus infection.",
           "url": "https://www.cdc.gov/orf-virus/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -20827,7 +20827,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -20841,7 +20841,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "chapare-cdc",
           "short_citation": "Official source. Chapare hemorrhagic fever.",
           "url": "https://www.cdc.gov/chapare/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -20918,7 +20918,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -20932,7 +20932,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "ntm-cdc",
           "short_citation": "Official source. Nontuberculous mycobacterial disease.",
           "url": "https://www.cdc.gov/nontuberculous-mycobacteria/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -21009,7 +21009,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -21023,7 +21023,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "elizabethkingia-cdc",
           "short_citation": "Official source. Elizabethkingia infection.",
           "url": "https://www.cdc.gov/elizabethkingia/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -21100,7 +21100,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -21114,7 +21114,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "klebsiella-cdc",
           "short_citation": "Official source. Klebsiella infection.",
           "url": "https://www.cdc.gov/klebsiella/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -21191,7 +21191,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -21205,7 +21205,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "esbl-cdc",
           "short_citation": "Official source. ESBL-producing Enterobacterales infection.",
           "url": "https://www.cdc.gov/esbl-producing-enterobacterales/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -21282,7 +21282,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -21296,7 +21296,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "non-polio-enterovirus-cdc",
           "short_citation": "Official source. Non-polio enterovirus infection.",
           "url": "https://www.cdc.gov/non-polio-enterovirus/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -21373,7 +21373,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -21387,7 +21387,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "common-cold-cdc",
           "short_citation": "Official source. Common cold.",
           "url": "https://www.cdc.gov/common-cold/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -21464,7 +21464,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -21478,7 +21478,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "bacterial-vaginosis-cdc",
           "short_citation": "Official source. Bacterial vaginosis.",
           "url": "https://www.cdc.gov/bacterial-vaginosis/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -21499,7 +21499,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Other",
       "summary": "Southern tick-associated rash illness is a Lyme-like illness associated with lone star tick bites, with an uncertain cause.",
-      "why_it_matters": "It is useful because it forces the atlas to preserve uncertainty instead of overspecifying a pathogen.",
+      "why_it_matters": "The evidence stays deliberately uncertain: the rash syndrome is tracked without pretending there is a fully specified pathogen.",
       "atlas_scope": "Lone star tick exposure, Lyme-like rash, uncertain etiology, and conservative tickborne surveillance",
       "category": "tick-borne",
       "category_label": "Tick-borne",
@@ -21562,7 +21562,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -21576,7 +21576,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "stari-cdc",
           "short_citation": "Official source. Southern tick-associated rash illness.",
           "url": "https://www.cdc.gov/stari/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -21653,7 +21653,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -21667,7 +21667,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "head-lice-cdc",
           "short_citation": "Official source. Head lice infestation.",
           "url": "https://www.cdc.gov/lice/about/head-lice.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -21744,7 +21744,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -21758,7 +21758,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "pubic-lice-cdc",
           "short_citation": "Official source. Pubic lice infestation.",
           "url": "https://www.cdc.gov/lice/about/pubic-lice.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -21835,7 +21835,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -21849,7 +21849,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "body-lice-cdc",
           "short_citation": "Official source. Body lice infestation.",
           "url": "https://www.cdc.gov/lice/about/body-lice.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -21933,7 +21933,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -21947,7 +21947,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "myiasis-cdc",
           "short_citation": "Official source. Myiasis.",
           "url": "https://www.cdc.gov/myiasis/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -22024,7 +22024,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -22038,7 +22038,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "hsv-who",
           "short_citation": "Official source. Herpes simplex virus infection.",
           "url": "https://www.who.int/news-room/fact-sheets/detail/herpes-simplex-virus",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -22115,7 +22115,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -22129,7 +22129,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "htlv1-who",
           "short_citation": "Official source. Human T-lymphotropic virus type 1 infection.",
           "url": "https://www.who.int/news-room/fact-sheets/detail/human-t-lymphotropic-virus-type-1",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -22198,7 +22198,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "geometry_type": "world",
           "date_or_era": "Contemporary global aging, immunocompromise, and vaccination-era geography",
           "confidence": "moderate",
-          "narrative": "Shingles maps globally through prior varicella infection, aging, immunosuppression, and vaccine access, making the relevant atlas layer a population-risk surface rather than a place-bounded outbreak zone.",
+          "narrative": "Shingles maps globally through prior varicella infection, aging, immunosuppression, and vaccine access, making the relevant geography a population-risk surface rather than a place-bounded outbreak zone.",
           "citation_ids": [
             "shingles-cdc"
           ]
@@ -22206,7 +22206,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -22220,7 +22220,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "shingles-cdc",
           "short_citation": "Official source. Shingles.",
           "url": "https://www.cdc.gov/shingles/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -22297,7 +22297,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -22311,7 +22311,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "conjunctivitis-cdc",
           "short_citation": "Official source. Conjunctivitis.",
           "url": "https://www.cdc.gov/conjunctivitis/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -22332,7 +22332,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "status": "mixed",
       "pathogen_type": "Other",
       "summary": "Meningitis is inflammation of the membranes around the brain and spinal cord with infectious causes that spread through different respiratory, contact, environmental, or vector-linked routes.",
-      "why_it_matters": "It adds a syndrome-level atlas entry where pathogen type, vaccination, crowding, and emergency care split one clinical label into many geographies.",
+      "why_it_matters": "Pathogen type, vaccination, crowding, and emergency care split one clinical label into many geographies.",
       "atlas_scope": "Meningitis syndromes, respiratory and contact spread, vaccination, emergency diagnosis, and pathogen-specific routing",
       "category": "airborne-respiratory",
       "category_label": "Airborne / respiratory",
@@ -22388,7 +22388,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -22402,7 +22402,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "meningitis-cdc",
           "short_citation": "Official source. Meningitis.",
           "url": "https://www.cdc.gov/meningitis/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -22479,7 +22479,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -22493,7 +22493,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "impetigo-medlineplus",
           "short_citation": "Official source. Impetigo.",
           "url": "https://medlineplus.gov/impetigo.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -22570,7 +22570,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -22584,7 +22584,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "cellulitis-medlineplus",
           "short_citation": "Official source. Cellulitis.",
           "url": "https://medlineplus.gov/cellulitis.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -22661,7 +22661,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -22675,7 +22675,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "nec-fasc-medlineplus",
           "short_citation": "Official source. Necrotizing fasciitis.",
           "url": "https://medlineplus.gov/ency/article/001443.htm",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -22752,7 +22752,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -22766,7 +22766,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "h-pylori-medlineplus",
           "short_citation": "Official source. Helicobacter pylori infection.",
           "url": "https://medlineplus.gov/helicobacterpyloriinfections.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -22843,7 +22843,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -22857,7 +22857,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "athletes-foot-medlineplus",
           "short_citation": "Official source. Tinea pedis.",
           "url": "https://medlineplus.gov/athletesfoot.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -22934,7 +22934,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -22948,7 +22948,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "yeast-infection-medlineplus",
           "short_citation": "Official source. Vulvovaginal candidiasis.",
           "url": "https://medlineplus.gov/yeastinfections.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -23025,7 +23025,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -23039,7 +23039,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "nocardiosis-cdc",
           "short_citation": "Official source. Nocardiosis.",
           "url": "https://www.cdc.gov/nocardiosis/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -23115,7 +23115,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "rotation_degrees": -8,
           "date_or_era": "Contemporary Latin American endemic mycosis geography",
           "confidence": "moderate",
-          "narrative": "Paracoccidioidomycosis is mapped as a Latin American endemic mycosis realm, with occupational soil exposure, rural ecology, delayed diagnosis, and migration shaping the atlas layer.",
+          "narrative": "Paracoccidioidomycosis is mapped as a Latin American endemic mycosis realm, with occupational soil exposure, rural ecology, delayed diagnosis, and migration shaping the mapped pattern.",
           "citation_ids": [
             "paracoccidioidomycosis-cdc"
           ]
@@ -23123,7 +23123,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -23137,7 +23137,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "paracoccidioidomycosis-cdc",
           "short_citation": "Official source. Paracoccidioidomycosis.",
           "url": "https://www.cdc.gov/paracoccidioidomycosis/about/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -23248,7 +23248,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -23262,7 +23262,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "afm-cdc",
           "short_citation": "Official source. Acute flaccid myelitis.",
           "url": "https://www.cdc.gov/acute-flaccid-myelitis/index.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -23339,7 +23339,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -23353,7 +23353,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "pneumonia-medlineplus",
           "short_citation": "Official source. Pneumonia.",
           "url": "https://medlineplus.gov/pneumonia.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -23430,7 +23430,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -23444,7 +23444,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "sinusitis-medlineplus",
           "short_citation": "Official source. Sinusitis.",
           "url": "https://medlineplus.gov/sinusitis.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -23521,7 +23521,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -23535,7 +23535,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "acute-bronchitis-medlineplus",
           "short_citation": "Official source. Acute bronchitis.",
           "url": "https://medlineplus.gov/acutebronchitis.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -23612,7 +23612,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -23626,7 +23626,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "ear-infections-medlineplus",
           "short_citation": "Official source. Otitis media.",
           "url": "https://medlineplus.gov/earinfections.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -23703,7 +23703,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -23717,7 +23717,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "uti-medlineplus",
           "short_citation": "Official source. Urinary tract infection.",
           "url": "https://medlineplus.gov/urinarytractinfections.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],
@@ -23794,7 +23794,7 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "modern_echoes": [
         "Modern reporting depends on testing, exposure ascertainment, and prevention systems as much as pathogen presence.",
-        "The atlas value is in showing the route public health has to act on, not just naming the organism."
+        "Control depends on the route of exposure, not only the organism's name."
       ],
       "framing_traps": [
         "Do not convert a recognition frame into a definitive origin story.",
@@ -23808,7 +23808,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "id": "gastroenteritis-medlineplus",
           "short_citation": "Official source. Infectious gastroenteritis.",
           "url": "https://medlineplus.gov/gastroenteritis.html",
-          "claim_supported": "Supports transmission, prevention, and public-health framing for this atlas entry.",
+          "claim_supported": "Supports transmission, prevention, and public-health framing for this disease.",
           "note": "Verified public source; not a Wikipedia or DOI evidence link."
         }
       ],

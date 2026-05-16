@@ -40,6 +40,244 @@ PATHOGEN_ATLAS_COLORS = {
     "malaria": "#5abf7c",
     "tuberculosis": "#d98e5f",
     "plague": "#b9754f",
+    "zika-virus-disease": "#5fb6a6",
+    "chikungunya": "#d9a441",
+    "west-nile-virus": "#8fbf5f",
+    "japanese-encephalitis": "#6fa8dc",
+    "poliomyelitis": "#7c9fd1",
+    "hepatitis-a": "#c9b56b",
+    "typhoid-fever": "#bc8f5f",
+    "norovirus": "#9aa36b",
+    "smallpox": "#b56b5b",
+    "seasonal-influenza": "#b7c7df",
+    "covid-19": "#7b8fa8",
+    "ebola-virus-disease": "#b84646",
+    "marburg-virus-disease": "#9f3f43",
+    "nipah-virus-disease": "#7a6f4f",
+    "lassa-fever": "#b17d5a",
+    "rabies": "#9c6f3d",
+    "anthrax": "#8c7a55",
+    "mers": "#b88a55",
+    "diphtheria": "#8f9c5a",
+    "pertussis": "#c7a05a",
+    "lyme-disease": "#6f9f73",
+    "rocky-mountain-spotted-fever": "#c07b4f",
+    "crimean-congo-hemorrhagic-fever": "#b04f63",
+    "epidemic-typhus": "#b38a5a",
+    "murine-typhus": "#9a7d55",
+    "scrub-typhus": "#8da05a",
+    "salmonellosis": "#c6a15a",
+    "listeriosis": "#8fae7a",
+    "botulism": "#8d7868",
+    "tetanus": "#a88d5d",
+    "melioidosis": "#5f9c8a",
+    "coccidioidomycosis": "#c28f5a",
+    "hiv-aids": "#9d5f7a",
+    "hepatitis-b": "#b6974f",
+    "syphilis": "#aa6a58",
+    "leishmaniasis": "#d0a24a",
+    "chagas-disease": "#9f6b4d",
+    "onchocerciasis": "#6d9b83",
+    "clostridioides-difficile-infection": "#7b9f78",
+    "mrsa-infection": "#9c6d70",
+    "tick-borne-encephalitis": "#6e8f62",
+    "anaplasmosis": "#7d9b6c",
+    "ehrlichiosis": "#a27858",
+    "babesiosis": "#7e9771",
+    "shigellosis": "#b16f58",
+    "rotavirus": "#c5a65b",
+    "giardiasis": "#6f9f91",
+    "cryptosporidiosis": "#8d9f65",
+    "amebiasis": "#a47b54",
+    "campylobacteriosis": "#bd8b4d",
+    "yersiniosis": "#9b815d",
+    "shiga-toxin-producing-e-coli-infection": "#b57456",
+    "rubella": "#c27c8a",
+    "mumps": "#9c83b7",
+    "varicella": "#7c9bc6",
+    "brucellosis": "#b18a52",
+    "leptospirosis": "#6f9b8d",
+    "q-fever": "#a8835a",
+    "carbapenem-resistant-enterobacterales-infection": "#8f7668",
+    "vancomycin-resistant-enterococcus-infection": "#806f8f",
+    "rift-valley-fever": "#b88742",
+    "eastern-equine-encephalitis": "#8a9f54",
+    "la-crosse-encephalitis": "#7b9c6d",
+    "lymphatic-filariasis": "#a7a75a",
+    "ross-river-virus-disease": "#5e9f88",
+    "oropouche-virus-disease": "#c39a4e",
+    "lymphocytic-choriomeningitis": "#8f7a54",
+    "rat-bite-fever": "#9b705d",
+    "tularemia": "#8c9b62",
+    "histoplasmosis": "#a98355",
+    "blastomycosis": "#8f875e",
+    "aspergillosis": "#6f8f7a",
+    "sporotrichosis": "#b07d58",
+    "gonorrhea": "#a86770",
+    "chlamydia": "#c08a67",
+    "genital-herpes": "#9b6c94",
+    "acinetobacter-infection": "#756f8c",
+    "pseudomonas-aeruginosa-infection": "#5f9b8d",
+    "vibriosis": "#5b9fb6",
+    "trichinellosis": "#b18f55",
+    "respiratory-syncytial-virus-infection": "#9bb3c8",
+    "meningococcal-disease": "#8a9ab6",
+    "pneumococcal-disease": "#b28d6b",
+    "haemophilus-influenzae-type-b-disease": "#9c8fb8",
+    "legionnaires-disease": "#5f8f9f",
+    "candida-auris-infection": "#c08a5d",
+    "invasive-candidiasis": "#a77c68",
+    "human-papillomavirus-infection": "#b06d93",
+    "hepatitis-c": "#c49a57",
+    "scabies": "#a88957",
+    "leprosy": "#9c7d68",
+    "cyclosporiasis": "#6c9f8a",
+    "dracunculiasis": "#b5a45b",
+    "schistosomiasis": "#6f9aa6",
+    "ascariasis": "#9f875b",
+    "hookworm-disease": "#8f7b55",
+    "toxoplasmosis": "#967ab0",
+    "psittacosis": "#6f9675",
+    "human-african-trypanosomiasis": "#b59a52",
+    "echinococcosis": "#8e8f5e",
+    "adenovirus-infection": "#8fa4b8",
+    "human-parainfluenza-virus-infection": "#9eb5c2",
+    "mycoplasma-pneumoniae-infection": "#b18f6f",
+    "group-a-streptococcal-disease": "#b0786a",
+    "hand-foot-and-mouth-disease": "#b69a54",
+    "hepatitis-d": "#a78352",
+    "hepatitis-e": "#c39b59",
+    "cysticercosis": "#9f8f61",
+    "clonorchiasis": "#7f9f66",
+    "fascioliasis": "#8f9b58",
+    "paragonimiasis": "#9f7a54",
+    "anisakiasis": "#5f9ba8",
+    "strongyloidiasis": "#8e7d57",
+    "toxocariasis": "#9a865b",
+    "baylisascariasis": "#8c705f",
+    "loiasis": "#b79b52",
+    "group-b-streptococcal-disease": "#9f7a84",
+    "clostridium-perfringens-food-poisoning": "#b8874f",
+    "staphylococcal-food-poisoning": "#c08a5d",
+    "naegleria-fowleri-infection": "#4f9faa",
+    "parvovirus-b19-infection": "#b89f74",
+    "human-metapneumovirus-infection": "#9fb2c3",
+    "powassan-virus-disease": "#7c945f",
+    "colorado-tick-fever": "#b67e55",
+    "bourbon-virus-disease": "#a56f5e",
+    "heartland-virus-disease": "#8f8f5c",
+    "cytomegalovirus-infection": "#9d7ea9",
+    "epstein-barr-virus-infection": "#8f77a8",
+    "cryptococcosis": "#7f9270",
+    "mucormycosis": "#8a765f",
+    "pinworm-infection": "#b3a15f",
+    "trichomoniasis": "#8f8ab8",
+    "creutzfeldt-jakob-disease": "#777777",
+    "ringworm": "#9a8758",
+    "molluscum-contagiosum": "#b4808b",
+    "trachoma": "#b49b5a",
+    "yaws": "#aa7458",
+    "buruli-ulcer": "#6f957a",
+    "cystoisosporiasis": "#74a58d",
+    "capnocytophaga-infection": "#a17d63",
+    "acanthamoeba-keratitis": "#5f9aa5",
+    "balamuthia-mandrillaris-infection": "#8f8060",
+    "blastocystis-infection": "#7d9f74",
+    "angiostrongyliasis": "#b4935d",
+    "gnathostomiasis": "#a87856",
+    "talaromycosis": "#7f8f66",
+    "chromoblastomycosis": "#9b7a58",
+    "noma": "#8b735f",
+    "jamestown-canyon-virus-disease": "#7aa06a",
+    "bartonella-henselae-infection": "#a67c5b",
+    "cronobacter-infection": "#c29a55",
+    "sarcocystosis": "#8ca56f",
+    "fasciolopsiasis": "#6f9b86",
+    "chancroid": "#b16d62",
+    "lymphogranuloma-venereum": "#9d6f8f",
+    "donovanosis": "#a06f62",
+    "mycoplasma-genitalium-infection": "#b0777d",
+    "mycetoma": "#9f8c5f",
+    "sars": "#8ca7bd",
+    "trichuriasis": "#9b8d57",
+    "pneumocystis-pneumonia": "#8ba17f",
+    "taeniasis": "#a88f57",
+    "opisthorchiasis": "#7f9964",
+    "tungiasis": "#b58a4f",
+    "hendra-virus-disease": "#8a7b55",
+    "herpes-b-virus-infection": "#9b7aa5",
+    "orf-virus-infection": "#a78657",
+    "chapare-hemorrhagic-fever": "#a65454",
+    "nontuberculous-mycobacterial-disease": "#6f9387",
+    "elizabethkingia-infection": "#8f9270",
+    "klebsiella-infection": "#a27d72",
+    "esbl-producing-enterobacterales-infection": "#7a748f",
+    "non-polio-enterovirus-infection": "#8aa7c2",
+    "common-cold": "#9fb8c9",
+    "bacterial-vaginosis": "#b0798f",
+    "southern-tick-associated-rash-illness": "#7c9b61",
+    "head-lice-infestation": "#9a8b63",
+    "pubic-lice-infestation": "#a07b66",
+    "body-lice-infestation": "#8b765b",
+    "myiasis": "#b78b53",
+    "herpes-simplex-virus-infection": "#a86f93",
+    "human-t-lymphotropic-virus-1-infection": "#8c6fa7",
+    "shingles": "#9b7ab0",
+    "conjunctivitis": "#8fa4a8",
+    "meningitis": "#8c9ab8",
+    "impetigo": "#b18463",
+    "cellulitis": "#a9786b",
+    "necrotizing-fasciitis": "#9c5f5f",
+    "helicobacter-pylori-infection": "#a98f55",
+    "tinea-pedis": "#8d9c6a",
+    "vulvovaginal-candidiasis": "#b28aa0",
+    "nocardiosis": "#8a8264",
+    "paracoccidioidomycosis": "#8f765c",
+    "acute-flaccid-myelitis": "#7f8faa",
+    "pneumonia": "#9bb0c2",
+    "sinusitis": "#9eb6bd",
+    "acute-bronchitis": "#8faec0",
+    "otitis-media": "#b0a071",
+    "urinary-tract-infection": "#8b8f75",
+    "infectious-gastroenteritis": "#8aa66a",
+}
+PATHOGEN_ATLAS_CATEGORIES = {
+    "yellow-fever": ("mosquito-borne", "Mosquito-borne / arboviral"),
+    "cholera": ("fecal-oral-waterborne", "Fecal-oral / waterborne"),
+    "measles": ("airborne-respiratory", "Airborne / respiratory"),
+    "mpox": ("contact-sexual-bloodborne", "Contact, sexual, or bloodborne"),
+    "avian-influenza-h5n1": ("zoonotic-animal-interface", "Zoonotic / animal interface"),
+    "hantavirus": ("rodent-environmental", "Rodent-borne / environmental"),
+    "dengue": ("mosquito-borne", "Mosquito-borne / arboviral"),
+    "malaria": ("mosquito-borne", "Mosquito-borne / parasitic"),
+    "tuberculosis": ("airborne-respiratory", "Airborne / respiratory"),
+    "plague": ("flea-louse-mite-borne", "Flea, louse, and mite-borne"),
+    "zika-virus-disease": ("mosquito-borne", "Mosquito-borne / arboviral"),
+    "chikungunya": ("mosquito-borne", "Mosquito-borne / arboviral"),
+    "west-nile-virus": ("mosquito-borne", "Mosquito-borne / arboviral"),
+    "japanese-encephalitis": ("mosquito-borne", "Mosquito-borne / arboviral"),
+    "poliomyelitis": ("fecal-oral-waterborne", "Fecal-oral / waterborne"),
+    "hepatitis-a": ("fecal-oral-waterborne", "Fecal-oral / waterborne"),
+    "typhoid-fever": ("fecal-oral-waterborne", "Fecal-oral / waterborne"),
+    "norovirus": ("fecal-oral-waterborne", "Fecal-oral / waterborne"),
+    "smallpox": ("airborne-respiratory", "Airborne / respiratory"),
+    "seasonal-influenza": ("airborne-respiratory", "Airborne / respiratory"),
+    "covid-19": ("airborne-respiratory", "Airborne / respiratory"),
+    "diphtheria": ("airborne-respiratory", "Airborne / respiratory"),
+    "pertussis": ("airborne-respiratory", "Airborne / respiratory"),
+    "ebola-virus-disease": ("zoonotic-animal-interface", "Zoonotic / animal interface"),
+    "marburg-virus-disease": ("zoonotic-animal-interface", "Zoonotic / animal interface"),
+    "nipah-virus-disease": ("zoonotic-animal-interface", "Zoonotic / animal interface"),
+    "rabies": ("zoonotic-animal-interface", "Zoonotic / animal interface"),
+    "anthrax": ("zoonotic-animal-interface", "Zoonotic / animal interface"),
+    "mers": ("zoonotic-animal-interface", "Zoonotic / animal interface"),
+    "lassa-fever": ("rodent-environmental", "Rodent-borne / environmental"),
+}
+PATHOGEN_ATLAS_CATEGORY_ALIASES = {
+    "fecal-oral": ("fecal-oral-waterborne", "Fecal-oral / waterborne"),
+    "contact-sexual": ("contact-sexual-bloodborne", "Contact, sexual, or bloodborne"),
+    "zoonotic-vector": ("flea-louse-mite-borne", "Flea, louse, and mite-borne"),
+    "other": ("other-mixed", "Other / mixed transmission"),
 }
 PATHOGEN_STATUS_LABELS = {
     "consensus": "Consensus",
@@ -52,6 +290,20 @@ PATHOGEN_WRITING_LABELS = {
     "adjacent": "Adjacent writing",
     "not_yet_written": "No dedicated post yet",
 }
+PUBLIC_COPY_REPLACEMENTS = {
+    "Mpox belongs in the atlas because it combines a geographically anchored Central/West African history with abrupt export through wildlife trade and then a very different twenty-first century global transmission pattern.": "Mpox combines a geographically anchored Central and West African history with wildlife-trade export events and a distinct twenty-first-century pattern of networked global transmission.",
+    "It forces the site to distinguish clades, transport mode, and transmission network rather than collapsing everything into one map pin.": "The geography separates clades, transport events, animal reservoirs, and transmission networks instead of collapsing them into one origin point.",
+    "H5N1 belongs in the atlas because its contemporary geography is not a human epidemic map first; it is a bird-route, farm-system, and spillover map whose human layer remains contingent.": "H5N1 is not primarily a human epidemic map. Its geography follows bird migration, poultry systems, mammal spillover, dairy-herd events, and occupational exposure.",
+    "It creates a genuinely different map grammar from the classic human-to-human pathogens and foregrounds One Health risk.": "The spatial problem is One Health risk: animal movement, farm systems, and spillover opportunities before sustained human-to-human transmission.",
+    "It forces the atlas to behave like an encyclopedia rather than a single-route animation and keeps us honest about host ecology, geography, and syndrome differences.": "Hantavirus geography depends on host ecology, housing, work exposures, and syndrome differences across regions, not a single route line.",
+    "It turns the atlas toward contemporary global change instead of leaving it stranded in historical imperial routes.": "Dengue shows how urbanization, climate, vector range, water storage, travel, and surveillance reshape disease geography in real time.",
+    "Malaria belongs in the atlas because it shows how vector ecology, land use, labor systems, altitude, war, and climate can redraw disease geography across centuries without one neat origin story doing all the work.": "Malaria shows how vector ecology, land use, labor systems, altitude, war, and climate can redraw disease geography across centuries without a single tidy origin story.",
+    "It keeps the atlas from becoming virus-only and forces a map grammar built around mosquitoes, species differences, and ecological receptivity.": "Its geography is built around mosquitoes, parasite species, ecological receptivity, control programs, and uneven health-system reach.",
+    "Tuberculosis belongs in the atlas because it is both ancient and modern at once: a human co-traveler that thrives in crowding, poverty, institutional confinement, and uneven public health capacity.": "Tuberculosis is ancient and modern at once: a human co-traveler that thrives in crowding, poverty, institutional confinement, migration, HIV, and uneven public-health capacity.",
+    "It turns the atlas toward chronic structural transmission instead of one spectacular frontier jump.": "Its map is chronic and structural: airborne transmission shaped by housing, labor, prisons, care access, and drug-resistance systems.",
+    "Plague belongs in the atlas because it is one of the clearest historical demonstrations that reservoir ecology, trade corridors, warfare, and maritime ports can repeatedly rewire a continent.": "Plague is one of the clearest historical demonstrations that reservoir ecology, trade corridors, warfare, and maritime ports can repeatedly rewire a continent.",
+    "Measles is a useful atlas pathogen because its deeper origin story is partly reconstructed from molecular-clock work, while its colonial spread story is brutally visible in the Americas and Pacific.": "Measles has a partly reconstructed deeper origin story from molecular-clock work, while its colonial spread is brutally visible in the Americas and Pacific.",
+}
 
 
 def is_doi_url(value: str | None) -> bool:
@@ -59,6 +311,27 @@ def is_doi_url(value: str | None) -> bool:
         return False
     lowered = value.lower()
     return "doi.org/" in lowered or bool(DOI_URL_PATTERN.search(value))
+
+
+def sanitize_public_copy(value: Any) -> Any:
+    if isinstance(value, str):
+        for old, new in PUBLIC_COPY_REPLACEMENTS.items():
+            value = value.replace(old, new)
+        return value
+    if isinstance(value, list):
+        return [sanitize_public_copy(item) for item in value]
+    if isinstance(value, dict):
+        return {key: sanitize_public_copy(item) for key, item in value.items()}
+    return value
+
+
+def sanitize_copied_app_exports(app_exports_dir: Path) -> None:
+    for path in app_exports_dir.glob("*.json"):
+        try:
+            data = load_json(path)
+        except json.JSONDecodeError:
+            continue
+        write_json(path, sanitize_public_copy(data))
 
 
 def public_pathogen_citations(entry: dict[str, Any]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
@@ -428,7 +701,7 @@ def render_atlas_hub(atlases: list[dict[str, Any]], base_url: str) -> str:
       <section class="hero hero-open">
         <p class="kicker">Atlas family</p>
         <h2 class="hero-title">Pathogens, routes, and disease ecologies as public-facing map work</h2>
-        <p class="subtitle">The atlas layer is distinct from the live desk. These are curated geography projects with explicit evidence framing and direct links back to your published writing.</p>
+        <p class="subtitle">Curated geography projects with explicit evidence framing, archival context, and direct links back to the published essays.</p>
       </section>
       <section class="panel panel-soft">
         <div class="card-grid two-up">{cards}</div>
@@ -555,14 +828,14 @@ def render_methods_page(base_url: str) -> str:
         body=f"""
       <section class="hero hero-open">
         <p class="kicker">Methods</p>
-        <h2 class="hero-title">How this site updates and what each layer is for</h2>
-        <p class="subtitle">The site is static, source-first, and split into separate product layers so live reporting, atlas argumentation, and essay publication do not collapse into one feed.</p>
+        <h2 class="hero-title">Update cadence, sourcing, and publication structure</h2>
+        <p class="subtitle">A static, source-first publication structure keeps live reporting, atlas argumentation, and essay publication distinct.</p>
       </section>
       <section class="panel prose">
         <h3>Publication sync</h3>
         <p>New essays are discovered from the public Substack RSS feed every 15 minutes. A full historical backfill is seeded from the public sitemap and archive surfaces, then each post gets a local stub page immediately.</p>
         <h3>Live desk import</h3>
-        <p>The Pathogen Dispatch remains its own reporting engine, but its public outputs are imported into this umbrella site so the stories, reference sheets, and atlas layer live under one roof.</p>
+        <p>The Pathogen Dispatch remains its own reporting engine, with public outputs imported here so stories, reference sheets, and atlas material stay connected.</p>
         <h3>Atlas evidence policy</h3>
         <p>Atlas geometry and route claims are evidence-driven. Editorial visuals can be layered on later, but they are not treated as proof.</p>
       </section>
@@ -592,8 +865,8 @@ def render_about_page(base_url: str) -> str:
         </div>
         <div class="about-block">
           <p class="kicker">Project</p>
-          <h3>What this site became</h3>
-          <p>This site began as a place to write about historical epidemics and overlooked disease stories, but it has gradually expanded into something wider: a hybrid of outbreak reporting, historical epidemiology, disease atlases, methodological explainers, and longform essays about how pathogens shape societies over time.</p>
+          <h3>What the project became</h3>
+          <p>The Edge of Epidemiology began as a place to write about historical epidemics and overlooked disease stories, but it has gradually expanded into something wider: a hybrid of outbreak reporting, historical epidemiology, disease atlases, methodological explainers, and longform essays about how pathogens shape societies over time.</p>
           <p>Much of modern disease reporting treats outbreaks as isolated events. I’m more interested in the long view of how epidemics recur, how institutions respond, how public fear evolves, and how the same epidemiologic patterns reappear across centuries under different names. I’m also interested in the biological, genetic, and societal changes that occur as a result of infectious disease epidemics.</p>
         </div>
         <div class="about-block">
@@ -681,7 +954,7 @@ def render_curated_atlas_page(entry: dict[str, Any], posts: list[dict[str, Any]]
       </section>
       <section class="panel prose">
         <h3>Current state</h3>
-        <p>{html.escape(entry.get('long_note', 'This section is being promoted into the umbrella site as a dedicated atlas surface.'))}</p>
+        <p>{html.escape(entry.get('long_note', 'This atlas section is being prepared as a fuller public geography project.'))}</p>
         <h3>Evidence model</h3>
         <p>{html.escape(entry.get('evidence_model', 'Curated historical and epidemiologic sources.'))}</p>
       </section>
@@ -1153,6 +1426,7 @@ def transform_imported_html(html_text: str, *, active: str, base_url: str) -> st
     html_text = rewrite_imported_paths(html_text, base_url)
     html_text = remove_imported_section_nav(html_text)
     html_text = simplify_imported_cards(html_text)
+    html_text = sanitize_public_copy(html_text)
     description = (
         "Source-first outbreak reporting from The Pathogen Dispatch."
         if active == "newsdesk"
@@ -1172,6 +1446,7 @@ def import_epidossier_public(docs_dir: Path, base_url: str) -> dict[str, Any]:
     if app_exports_dest.exists():
         shutil.rmtree(app_exports_dest)
     shutil.copytree(app_exports_src, app_exports_dest)
+    sanitize_copied_app_exports(app_exports_dest)
 
     latest_html_dest = docs_dir / "newsdesk" / "latest.html"
     latest_html = transform_imported_html((source_docs / "latest.html").read_text(), active="newsdesk", base_url=base_url)
@@ -1215,7 +1490,7 @@ def import_epidossier_public(docs_dir: Path, base_url: str) -> dict[str, Any]:
             dest.write_text(transformed)
 
     ensure_archived_story_placeholders(docs_dir, base_url)
-    latest = load_json(source_docs / "app_exports" / "latest.json")
+    latest = sanitize_public_copy(load_json(app_exports_dest / "latest.json"))
     return latest
 
 
@@ -1376,6 +1651,14 @@ def prepared_pathogen_atlas_data(atlas_export: dict[str, Any], *, link_prefix: s
     def rewrite_entry_links(entry: dict[str, Any], color: str) -> dict[str, Any]:
         prepared = dict(entry)
         prepared["color"] = color
+        category, category_label = PATHOGEN_ATLAS_CATEGORIES.get(
+            prepared.get("slug"),
+            (prepared.get("category") or "other", prepared.get("category_label") or "Other"),
+        )
+        category, category_label = PATHOGEN_ATLAS_CATEGORY_ALIASES.get(category, (category, category_label))
+        prepared["category"] = category
+        prepared["category_label"] = category_label
+        prepared["transmission_group"] = prepared.get("transmission_group") or prepared["category_label"]
         prepared["status_label"] = PATHOGEN_STATUS_LABELS.get(prepared.get("status"), "Curated")
         prepared["writing_state_label"] = PATHOGEN_WRITING_LABELS.get(prepared.get("writing_state"), "Writing state pending")
         public_citations, withheld_citations = public_pathogen_citations(prepared)
@@ -1421,11 +1704,41 @@ def write_pathogen_atlas_payload(target_root: Path, atlas_export: dict[str, Any]
     (data_dir / "pathogen_atlas_data.js").write_text(data_text)
 
 
+def merge_pathogen_atlas_overrides(atlas_export: dict[str, Any], overrides: dict[str, Any]) -> None:
+    """Apply local curation fields to imported atlas entries without editing generated exports."""
+    scalar_fields = ("summary", "why_it_matters", "atlas_scope", "origin_claim")
+    list_fields = ("modern_echoes", "framing_traps")
+    by_slug = {entry.get("slug"): entry for entry in atlas_export.get("atlas", [])}
+    for override in overrides.get("atlas", []):
+        slug = override.get("slug")
+        entry = by_slug.get(slug)
+        if not entry:
+            continue
+        for field in scalar_fields:
+            if field in override:
+                entry[field] = override[field]
+        for field in list_fields:
+            if field in override:
+                entry[field] = override[field]
+        if override.get("geography_layers") and not entry.get("geography_layers"):
+            entry["geography_layers"] = override["geography_layers"]
+        if override.get("citations"):
+            existing_ids = {citation.get("id") for citation in entry.get("citations", [])}
+            entry.setdefault("citations", [])
+            for citation in override["citations"]:
+                if citation.get("id") not in existing_ids:
+                    entry["citations"].append(citation)
+                    existing_ids.add(citation.get("id"))
+
+
 def import_external_pathogen(docs_dir: Path, base_url: str) -> None:
     src_root = PROJECT_ROOT / "external" / "pathogen_atlas"
     dest_root = docs_dir / "atlases" / "pathogen"
     atlas_export_path = docs_dir / "app_exports" / "atlas.json"
     atlas_export = load_json(atlas_export_path)
+    core_overrides_path = src_root / "core_geography_overrides.json"
+    if core_overrides_path.exists():
+        merge_pathogen_atlas_overrides(atlas_export, load_json(core_overrides_path))
     extra_pathogens_path = src_root / "extra_pathogens.json"
     if extra_pathogens_path.exists():
         extra_export = load_json(extra_pathogens_path)
@@ -1441,13 +1754,13 @@ def import_external_pathogen(docs_dir: Path, base_url: str) -> None:
         atlases_href="../../docs/atlases/index.html",
         newsdesk_href="../../docs/newsdesk/index.html",
         essays_href="../../docs/essays/index.html",
-        top="52px",
-        links_top="88px",
+        top="8px",
+        links_top="8px",
     )
 
     if dest_root.exists():
         shutil.rmtree(dest_root)
-    shutil.copytree(src_root, dest_root, ignore=shutil.ignore_patterns("catalog", "extra_pathogens.json"))
+    shutil.copytree(src_root, dest_root, ignore=shutil.ignore_patterns("catalog", "extra_pathogens.json", "core_geography_overrides.json"))
     write_pathogen_atlas_payload(dest_root, atlas_export, base_url=base_url, link_prefix="../../")
     inject_atlas_overlay(
         dest_root / "index.html",
@@ -1455,8 +1768,8 @@ def import_external_pathogen(docs_dir: Path, base_url: str) -> None:
         atlases_href="../index.html",
         newsdesk_href="../../newsdesk/index.html",
         essays_href="../../essays/index.html",
-        top="52px",
-        links_top="88px",
+        top="8px",
+        links_top="8px",
     )
 
 

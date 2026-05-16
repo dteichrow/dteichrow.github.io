@@ -1,0 +1,309 @@
+{
+  "atlas": [
+    {
+      "slug": "yellow-fever",
+      "citations": [
+        {
+          "id": "yellow-fever-who",
+          "short_citation": "World Health Organization. Yellow fever fact sheet.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/yellow-fever",
+          "claim_supported": "Supports yellow fever transmission geography, endemic risk, and vaccination framing.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "geography_layers": [
+        {
+          "layer_id": "yellow-fever-tropical-africa-south-america-mosquito-endemic-realm",
+          "label": "Tropical Africa and South America mosquito-endemic realm",
+          "layer_type": "endemic_zone",
+          "geometry_type": "polygon",
+          "coordinates": [
+            [
+              -82,
+              12
+            ],
+            [
+              -34,
+              10
+            ],
+            [
+              -35,
+              -23
+            ],
+            [
+              -73,
+              -20
+            ],
+            [
+              -82,
+              12
+            ]
+          ],
+          "date_or_era": "Contemporary yellow fever endemic and vaccination-risk geography",
+          "confidence": "moderate",
+          "narrative": "Yellow fever is mapped as a tropical Africa and South America mosquito-endemic realm, a schematic layer for enzootic and outbreak risk rather than a hard administrative boundary.",
+          "citation_ids": [
+            "yellow-fever-who"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cholera",
+      "citations": [
+        {
+          "id": "cholera-who",
+          "short_citation": "World Health Organization. Cholera fact sheet.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/cholera",
+          "claim_supported": "Supports cholera water, sanitation, outbreak, and endemic-risk geography.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "geography_layers": [
+        {
+          "layer_id": "cholera-water-sanitation-outbreak-and-endemic-risk-belt",
+          "label": "Water, sanitation, outbreak, and endemic-risk belt",
+          "layer_type": "endemic_zone",
+          "geometry_type": "ellipse",
+          "center": [
+            45,
+            10
+          ],
+          "radius_lng": 130,
+          "radius_lat": 38,
+          "rotation_degrees": 0,
+          "date_or_era": "Contemporary cholera outbreak and endemic-risk geography",
+          "confidence": "moderate",
+          "narrative": "Cholera is represented as a broad belt of water, sanitation, displacement, conflict, and outbreak risk; the main spatial signal is infrastructure vulnerability rather than a precise pathogen range.",
+          "citation_ids": [
+            "cholera-who"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "measles",
+      "citations": [
+        {
+          "id": "measles-who",
+          "short_citation": "World Health Organization. Measles fact sheet.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/measles",
+          "claim_supported": "Supports measles global transmission and vaccination-gap geography.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "geography_layers": [
+        {
+          "layer_id": "measles-global-airborne-vaccination-gap-distribution",
+          "label": "Global airborne and vaccination-gap distribution",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary global measles elimination and resurgence geography",
+          "confidence": "moderate",
+          "narrative": "Measles maps globally through airborne transmission and immunity gaps, with risk shaped by vaccine coverage, importation, crowding, and surveillance rather than a natural endemic frontier.",
+          "citation_ids": [
+            "measles-who"
+          ]
+        }
+      ],
+      "summary": "Measles has a partly reconstructed deeper origin story from molecular-clock work, while its colonial spread is brutally visible in the Americas and Pacific."
+    },
+    {
+      "slug": "mpox",
+      "citations": [
+        {
+          "id": "mpox-who",
+          "short_citation": "World Health Organization. Mpox fact sheet.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/mpox",
+          "claim_supported": "Supports mpox zoonotic endemic geography and global outbreak framing.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "geography_layers": [
+        {
+          "layer_id": "mpox-central-west-african-zoonotic-endemic-and-global-outbreak-interface",
+          "label": "Central and West African zoonotic endemic interface with global outbreak routes",
+          "layer_type": "endemic_zone",
+          "geometry_type": "ellipse",
+          "center": [
+            17,
+            2
+          ],
+          "radius_lng": 28,
+          "radius_lat": 17,
+          "rotation_degrees": -8,
+          "date_or_era": "Contemporary zoonotic endemic and international outbreak geography",
+          "confidence": "moderate",
+          "narrative": "Mpox is mapped as a Central and West African zoonotic endemic interface, with global outbreak spread treated as networked transmission layered on top of reservoir ecology and surveillance gaps.",
+          "citation_ids": [
+            "mpox-who"
+          ]
+        }
+      ],
+      "summary": "Mpox combines a geographically anchored Central and West African history with wildlife-trade export events and a distinct twenty-first-century pattern of networked global transmission.",
+      "why_it_matters": "The geography separates clades, transport events, animal reservoirs, and transmission networks instead of collapsing them into one origin point."
+    },
+    {
+      "slug": "avian-influenza-h5n1",
+      "geography_layers": [
+        {
+          "layer_id": "h5n1-global-avian-migration-poultry-dairy-and-mammal-interface",
+          "label": "Global avian migration, poultry, dairy, and mammal interface",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary global avian-influenza panzootic and spillover geography",
+          "confidence": "moderate",
+          "narrative": "H5N1 is mapped as a global animal-interface pattern, where migratory birds, poultry systems, mammal spillover, dairy herds, culling, and occupational exposure define the risk surface.",
+          "citation_ids": [
+            "h5n1-cdc"
+          ]
+        }
+      ],
+      "summary": "H5N1 is not primarily a human epidemic map. Its geography follows bird migration, poultry systems, mammal spillover, dairy-herd events, and occupational exposure.",
+      "why_it_matters": "The spatial problem is One Health risk: animal movement, farm systems, and spillover opportunities before sustained human-to-human transmission."
+    },
+    {
+      "slug": "hantavirus",
+      "citations": [
+        {
+          "id": "hantavirus-cdc",
+          "short_citation": "Centers for Disease Control and Prevention. About hantavirus.",
+          "url": "https://www.cdc.gov/hantavirus/about/index.html",
+          "claim_supported": "Supports rodent reservoir and exposure geography for hantaviruses.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "geography_layers": [
+        {
+          "layer_id": "hantavirus-global-rodent-reservoir-and-aerosol-exposure-distribution",
+          "label": "Global rodent-reservoir and aerosol-exposure distribution",
+          "layer_type": "reservoir_ecology",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary global rodent-reservoir and spillover geography",
+          "confidence": "moderate",
+          "narrative": "Hantaviruses are mapped as a global rodent-reservoir and aerosolized-excreta exposure layer, with regional syndromes and named viruses nested inside local rodent ecology and housing or occupational exposure.",
+          "citation_ids": [
+            "hantavirus-cdc"
+          ]
+        }
+      ],
+      "why_it_matters": "Hantavirus geography depends on host ecology, housing, work exposures, and syndrome differences across regions, not a single route line."
+    },
+    {
+      "slug": "dengue",
+      "citations": [
+        {
+          "id": "dengue-who",
+          "short_citation": "World Health Organization. Dengue and severe dengue fact sheet.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue",
+          "claim_supported": "Supports dengue tropical/subtropical Aedes distribution and urban outbreak geography.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "geography_layers": [
+        {
+          "layer_id": "dengue-tropical-subtropical-aedes-urban-transmission-belt",
+          "label": "Tropical and subtropical Aedes urban-transmission belt",
+          "layer_type": "endemic_zone",
+          "geometry_type": "ellipse",
+          "center": [
+            20,
+            5
+          ],
+          "radius_lng": 155,
+          "radius_lat": 35,
+          "rotation_degrees": 0,
+          "date_or_era": "Contemporary dengue expansion and urban arboviral geography",
+          "confidence": "moderate",
+          "narrative": "Dengue is mapped as a tropical and subtropical Aedes urban-transmission belt, where climate, urban water storage, vector range, mobility, and surveillance shape outbreak geography.",
+          "citation_ids": [
+            "dengue-who"
+          ]
+        }
+      ],
+      "why_it_matters": "Dengue shows how urbanization, climate, vector range, water storage, travel, and surveillance reshape disease geography in real time."
+    },
+    {
+      "slug": "malaria",
+      "citations": [
+        {
+          "id": "malaria-who",
+          "short_citation": "World Health Organization. Malaria fact sheet.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/malaria",
+          "claim_supported": "Supports malaria endemic geography and vector-control framing.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "geography_layers": [
+        {
+          "layer_id": "malaria-tropical-subtropical-anopheles-transmission-belt",
+          "label": "Tropical and subtropical Anopheles transmission belt",
+          "layer_type": "endemic_zone",
+          "geometry_type": "ellipse",
+          "center": [
+            25,
+            0
+          ],
+          "radius_lng": 145,
+          "radius_lat": 34,
+          "rotation_degrees": 0,
+          "date_or_era": "Contemporary malaria endemic, elimination, and vector-control geography",
+          "confidence": "moderate",
+          "narrative": "Malaria is mapped as a tropical and subtropical Anopheles transmission belt, with local intensity determined by mosquito ecology, housing, control programs, drug resistance, climate, and health-system reach.",
+          "citation_ids": [
+            "malaria-who"
+          ]
+        }
+      ],
+      "summary": "Malaria shows how vector ecology, land use, labor systems, altitude, war, and climate can redraw disease geography across centuries without a single tidy origin story.",
+      "why_it_matters": "Its geography is built around mosquitoes, parasite species, ecological receptivity, control programs, and uneven health-system reach."
+    },
+    {
+      "slug": "tuberculosis",
+      "geography_layers": [
+        {
+          "layer_id": "tuberculosis-global-airborne-crowding-hiv-migration-and-resistance-distribution",
+          "label": "Global airborne, crowding, HIV, migration, and resistance distribution",
+          "layer_type": "global_distribution",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary global tuberculosis burden and drug-resistance geography",
+          "confidence": "moderate",
+          "narrative": "Tuberculosis is mapped globally through airborne transmission, crowding, poverty, HIV, migration, incarceration, treatment completion, and drug resistance rather than a bounded endemic region.",
+          "citation_ids": [
+            "tb-who"
+          ]
+        }
+      ],
+      "summary": "Tuberculosis is ancient and modern at once: a human co-traveler that thrives in crowding, poverty, institutional confinement, migration, HIV, and uneven public-health capacity.",
+      "why_it_matters": "Its map is chronic and structural: airborne transmission shaped by housing, labor, prisons, care access, and drug-resistance systems."
+    },
+    {
+      "slug": "plague",
+      "citations": [
+        {
+          "id": "plague-who",
+          "short_citation": "World Health Organization. Plague fact sheet.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/plague",
+          "claim_supported": "Supports plague reservoir ecology and contemporary endemic foci framing.",
+          "note": "Verified public source; not a Wikipedia or DOI evidence link."
+        }
+      ],
+      "geography_layers": [
+        {
+          "layer_id": "plague-global-rodent-reservoir-foci-and-historical-port-spread",
+          "label": "Global rodent-reservoir foci and historical port-spread surface",
+          "layer_type": "reservoir_ecology",
+          "geometry_type": "world",
+          "date_or_era": "Contemporary reservoir ecology with historical pandemic route memory",
+          "confidence": "moderate",
+          "narrative": "Plague is mapped as a global but focal rodent-reservoir ecology layer, with historical port and overland routes layered onto enzootic foci rather than treated as a purely medieval or purely maritime disease.",
+          "citation_ids": [
+            "plague-who",
+            "plague-third-pandemic"
+          ]
+        }
+      ],
+      "summary": "Plague is one of the clearest historical demonstrations that reservoir ecology, trade corridors, warfare, and maritime ports can repeatedly rewire a continent."
+    }
+  ]
+}
