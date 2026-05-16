@@ -41,6 +41,7 @@ def test_transform_imported_html_rewrites_known_paths() -> None:
     assert "touch-action: pan-x" in transformed
     assert "The Edge of Epidemiology" in transformed
     assert "by Devin Teichrow" in transformed
+    assert 'href="/opportunities/"' in transformed
     assert "On this page" not in transformed
     assert "56 item(s)" not in transformed
     assert "26 source(s)" not in transformed
@@ -179,6 +180,7 @@ atlases:
     assert (docs_dir / "essays" / "first-post" / "index.html").exists()
     assert (docs_dir / "atlases" / "index.html").exists()
     assert (docs_dir / "historical" / "index.html").exists()
+    assert (docs_dir / "opportunities" / "index.html").exists()
     assert (docs_dir / "app_exports" / "posts.json").exists()
     home_text = (docs_dir / "index.html").read_text()
     assert "Devin Teichrow" in home_text
@@ -196,6 +198,9 @@ atlases:
     assert "https://images.example/cover.jpg" in home_text
     assert "reference-card" in home_text
     assert "Read the essays" in home_text
+    assert 'href="/opportunities/"' in home_text
+    assert "Selected projects, collaborations, and commissions" in home_text
+    assert "devinteichrow@gmail.com" in home_text
     assert "site-brand-byline" in home_text
     assert "by Devin Teichrow" in home_text
     assert "Unified site" not in home_text
@@ -211,6 +216,23 @@ atlases:
     assert "plague outbreaks during war" in about_text
     assert "The Edge of Epidemiology on Substack" in about_text
     assert "diseases do not move only through bodies" not in about_text
+    opportunities_text = (docs_dir / "opportunities" / "index.html").read_text()
+    assert "Bring me the projects where disease, data, history, and public understanding collide." in opportunities_text
+    assert "devinteichrow@gmail.com" in opportunities_text
+    assert "https://x.com/edgeofepi" in opportunities_text
+    assert "https://www.instagram.com/edgeofepi/" in opportunities_text
+    assert "https://www.linkedin.com/in/devin-teichrow-msc-938942254" in opportunities_text
+    assert "https://medium.com/@EdgeofEpi" in opportunities_text
+    assert "The Edge of Epidemiology" in opportunities_text
+    assert "Coming soon" in opportunities_text
+    assert "youtube.com" not in opportunities_text
+    assert opportunities_text.count('class="opportunities-section"') == 0
+    assert opportunities_text.count('class="opportunities-showcase"') == 1
+    assert "Evidence and analysis" in opportunities_text
+    assert "Science communication" in opportunities_text
+    assert "Public tools and atlases" in opportunities_text
+    assert "Talks, workshops, and teaching" not in opportunities_text
+    assert "devinteichrow.com" in opportunities_text
 
 
 def test_import_external_pathogen_writes_js_payload(tmp_path, monkeypatch) -> None:

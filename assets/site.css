@@ -1317,6 +1317,218 @@ h3 {
   box-shadow: 0 16px 34px rgba(36, 26, 17, 0.06);
 }
 
+.page-opportunities .hero {
+  color: #f7f0e4;
+  background:
+    linear-gradient(90deg, rgba(8, 15, 22, 0.98), rgba(12, 25, 35, 0.82), rgba(12, 25, 35, 0.36)),
+    url("visuals/library-congress-main-reading-room.jpg") center / cover no-repeat;
+}
+
+.page-opportunities .hero-title,
+.page-opportunities .subtitle {
+  color: #f7f0e4;
+}
+
+.page-opportunities .hero-title {
+  max-width: 22ch;
+}
+
+.opportunities-strip {
+  padding: 26px 28px;
+  border: 1px solid rgba(98, 82, 58, 0.2);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(255, 250, 240, 0.92), rgba(247, 240, 228, 0.86)),
+    url("visuals/paper-grain.svg");
+  box-shadow: 0 18px 38px rgba(36, 26, 17, 0.07);
+}
+
+.opportunities-showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
+  gap: 22px;
+  align-items: stretch;
+}
+
+.opportunities-main,
+.opportunities-contact-card {
+  border: 1px solid rgba(98, 82, 58, 0.22);
+  border-radius: 8px;
+  box-shadow: 0 18px 38px rgba(36, 26, 17, 0.07);
+}
+
+.opportunities-main {
+  display: grid;
+  gap: 20px;
+  padding: 30px;
+  background:
+    linear-gradient(180deg, rgba(255, 250, 240, 0.94), rgba(247, 240, 228, 0.90)),
+    url("visuals/paper-grain.svg");
+}
+
+.opportunity-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.opportunity-mini-card {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid rgba(98, 82, 58, 0.18);
+  border-radius: 8px;
+  background: rgba(255, 252, 245, 0.68);
+}
+
+.opportunity-mini-card h3 {
+  margin: 0;
+  font-size: 1.04rem;
+  line-height: 1.15;
+}
+
+.opportunity-mini-card p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-family: var(--sans);
+  font-size: 0.94rem;
+  line-height: 1.58;
+}
+
+.fit-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.fit-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 10px;
+  border: 1px solid rgba(47, 111, 109, 0.16);
+  border-radius: 999px;
+  background: rgba(47, 111, 109, 0.08);
+  color: var(--signal);
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.opportunities-contact-card {
+  display: grid;
+  align-content: start;
+  gap: 20px;
+  padding: 28px;
+  background:
+    linear-gradient(180deg, rgba(11, 29, 42, 0.96), rgba(16, 31, 42, 0.96)),
+    url("visuals/broad-street-cholera-map.jpg") center / cover no-repeat;
+  color: #f7f0e4;
+}
+
+.opportunities-contact-card h2 {
+  margin: 0;
+  color: #f7f0e4;
+  font-size: clamp(1.45rem, 2vw, 1.95rem);
+  line-height: 1.08;
+}
+
+.opportunities-contact-card p {
+  margin: 0;
+  color: rgba(247, 240, 228, 0.78);
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  line-height: 1.64;
+}
+
+.opportunities-contact-card .kicker {
+  color: rgba(220, 200, 161, 0.92);
+}
+
+.opportunities-contact-card .button.primary {
+  width: 100%;
+  background: rgba(247, 240, 228, 0.96);
+  border-color: rgba(247, 240, 228, 0.76);
+  color: var(--navy-deep);
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr));
+  gap: 12px;
+}
+
+.social-link {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  padding: 14px 16px;
+  border: 1px solid rgba(98, 82, 58, 0.22);
+  border-radius: 8px;
+  background: rgba(255, 250, 240, 0.88);
+  color: var(--ink);
+  box-shadow: 0 12px 24px rgba(36, 26, 17, 0.05);
+}
+
+.social-link:hover {
+  text-decoration: none;
+  border-color: rgba(178, 139, 62, 0.42);
+}
+
+.social-link-disabled {
+  opacity: 0.72;
+}
+
+.social-label,
+.social-status {
+  font-family: "Avenir Next Condensed", "Franklin Gothic Medium", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.7rem;
+}
+
+.social-label {
+  color: var(--accent);
+}
+
+.social-name {
+  color: #173046;
+  font-family: var(--sans);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.social-status {
+  color: var(--ink-soft);
+}
+
+.compact-social-grid {
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.compact-social-grid .social-link {
+  padding: 10px 12px;
+  background: rgba(255, 252, 245, 0.10);
+  border-color: rgba(247, 240, 228, 0.18);
+  box-shadow: none;
+}
+
+.compact-social-grid .social-label {
+  color: rgba(220, 200, 161, 0.92);
+}
+
+.compact-social-grid .social-name,
+.compact-social-grid .social-status {
+  color: rgba(247, 240, 228, 0.86);
+}
+
+.domain-note {
+  padding-top: 12px;
+  border-top: 1px solid rgba(247, 240, 228, 0.14);
+  font-size: 0.84rem !important;
+}
+
 @media (max-width: 980px) {
   .site-header-inner {
     padding: 24px 14px 18px;
@@ -1375,6 +1587,12 @@ h3 {
   .about-layout {
     grid-template-columns: 1fr;
   }
+
+  .opportunities-showcase,
+  .opportunity-mini-grid {
+    grid-template-columns: 1fr;
+  }
+
 }
 
 @media (max-width: 760px) {

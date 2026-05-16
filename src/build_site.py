@@ -365,6 +365,7 @@ def site_nav(active: str, base_url: str) -> str:
         ("Reference", "reference/"),
         ("Methods", "methods/"),
         ("About", "about/"),
+        ("Opportunities", "opportunities/"),
         ("Search", "search/"),
     ]
     nav_links = []
@@ -601,6 +602,7 @@ def render_home(posts: list[dict[str, Any]], atlases: list[dict[str, Any]], late
         active="home",
         base_url=base_url,
         body=hero
+        + f'<section class="home-section opportunities-strip"><div class="section-head section-head-split"><div><p class="kicker">Opportunities</p><h2>Selected projects, collaborations, and commissions</h2><p class="muted-note">I am open to serious projects where epidemiology, data, public health, history, and technical implementation need to become one usable thing.</p></div><aside class="section-sidecar"><p class="section-sidecar-label">Contact</p><p><a href="mailto:devinteichrow@gmail.com">devinteichrow@gmail.com</a></p></aside></div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "opportunities/"))}">Work with me</a></div></section>'
         + f'<section class="home-section newsdesk-panel"><div class="section-head section-head-split"><div><p class="kicker">Live desk</p><h2>The Pathogen Dispatch</h2><p class="muted-note">Current outbreak files, follow-up reporting, and source-first tracking for major infectious-disease stories.</p></div><aside class="section-sidecar"><p class="section-sidecar-label">Currently tracking</p><p>{html.escape(str(story_count))} active files · {html.escape(str(item_count))} source items · Updated {html.escape(generated_at)}</p></aside></div><div class="card-grid three-up">{newsdesk_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "newsdesk/"))}">Go to the full newsdesk</a></div></section>'
         + f'<section class="home-section atlas-panel"><div class="section-head"><p class="kicker">Atlas family</p><h2>Geography-first disease interactives</h2><p class="muted-note">Interactive atlas work on pathogen origins, spread routes, maritime disease ecology, and historical outbreak worlds.</p></div><div class="card-grid two-up">{atlas_cards}</div></section>'
         + f'<section class="home-section essay-panel"><div class="section-head"><p class="kicker">Published writing</p><h2>Recent essays</h2><p class="muted-note">Longer-form writing on outbreaks, evidence, history, ecology, and the politics of public health.</p></div><div class="card-grid three-up essays-grid">{post_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "essays/"))}">Browse all essays</a></div></section>'
@@ -906,6 +908,81 @@ def render_about_page(base_url: str) -> str:
     )
 
 
+def render_opportunities_page(base_url: str) -> str:
+    services = [
+        ("Evidence and analysis", "Study design, literature synthesis, epidemiologic framing, R/Python analysis, dashboards, and interpretation that keeps uncertainty visible."),
+        ("Science communication", "Essays, explainers, editorial strategy, research translation, pitch development, and historically grounded health writing."),
+        ("Public tools and atlases", "Interactive maps, outbreak trackers, disease reference layers, historical epidemiology projects, and source-first public-health tools."),
+    ]
+    fit_items = [
+        "infectious disease",
+        "neurology and cognition",
+        "historical epidemiology",
+        "public-health data",
+        "maps and dashboards",
+        "research translation",
+    ]
+    social_links = [
+        ("Substack", "The Edge of Epidemiology", "https://theedgeofepidemiology.substack.com", ""),
+        ("X / Twitter", "@edgeofepi", "https://x.com/edgeofepi", ""),
+        ("Instagram", "@edgeofepi", "https://www.instagram.com/edgeofepi/", ""),
+        ("LinkedIn", "Devin Teichrow MSc", "https://www.linkedin.com/in/devin-teichrow-msc-938942254", ""),
+        ("Medium", "@EdgeofEpi", "https://medium.com/@EdgeofEpi", ""),
+        ("YouTube", "The Edge of Epidemiology", "", "Coming soon"),
+    ]
+    service_cards = "".join(
+        f'<article class="opportunity-mini-card"><p class="kicker">Project lane</p><h3>{html.escape(title)}</h3><p>{html.escape(summary)}</p></article>'
+        for title, summary in services
+    )
+    fit_list = "".join(f'<span class="fit-chip">{html.escape(item)}</span>' for item in fit_items)
+    social_items = "".join(
+        (
+            f'<a class="social-link" href="{html.escape(url)}"><span class="social-label">{html.escape(label)}</span><span class="social-name">{html.escape(name)}</span></a>'
+            if url
+            else f'<div class="social-link social-link-disabled" aria-disabled="true"><span class="social-label">{html.escape(label)}</span><span class="social-name">{html.escape(name)}</span><span class="social-status">{html.escape(status)}</span></div>'
+        )
+        for label, name, url, status in social_links
+    )
+    return base_html(
+        title="Opportunities | Edge of Epidemiology",
+        description="Work with Devin Teichrow on epidemiology, evidence, disease history, science communication, data projects, and public-facing health tools.",
+        active="opportunities",
+        base_url=base_url,
+        body=f"""
+      <section class="hero hero-open opportunities-hero">
+        <p class="kicker">Opportunities</p>
+        <h2 class="hero-title">Bring me the projects where disease, data, history, and public understanding collide.</h2>
+        <p class="subtitle">I work best on projects that need more than one narrow lane: epidemiologic judgment, statistical care, historical context, public-facing explanation, and enough technical building to turn an idea into something people can actually use.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="mailto:devinteichrow@gmail.com">Email me about a project</a>
+          <a class="button secondary" href="https://theedgeofepidemiology.substack.com">Read The Edge of Epidemiology</a>
+        </div>
+      </section>
+      <section class="opportunities-showcase">
+        <div class="opportunities-main">
+          <div class="section-head">
+            <p class="kicker">Selected work</p>
+            <h2>Useful where evidence has to become public, visual, or usable.</h2>
+            <p class="muted-note">The fit is not generic consulting. It is the overlap: epidemiologic reasoning, historical imagination, data work, technical implementation, and clear public explanation.</p>
+          </div>
+          <div class="opportunity-mini-grid">{service_cards}</div>
+          <div class="fit-chip-row">{fit_list}</div>
+        </div>
+        <aside class="opportunities-contact-card">
+          <div>
+            <p class="kicker">Get in touch</p>
+            <h2>Send the actual shape of the problem.</h2>
+            <p>If you want to collaborate, commission a project, invite me to speak, ask about consulting, or pitch something strange but serious, send what you are trying to do, who it is for, what exists already, and the timeline or budget if relevant.</p>
+          </div>
+          <a class="button primary" href="mailto:devinteichrow@gmail.com">devinteichrow@gmail.com</a>
+          <div class="social-grid compact-social-grid">{social_items}</div>
+          <p class="domain-note">Domain direction: use devinteichrow.com as the canonical personal site when DNS is ready.</p>
+        </aside>
+      </section>
+    """,
+    )
+
+
 def render_search_page(base_url: str) -> str:
     endpoint = link_for(base_url, "app_exports/search-index.json")
     return base_html(
@@ -1186,6 +1263,7 @@ def imported_shell_nav(active: str, base_url: str) -> str:
         ("Essays", "essays/"),
         ("Historical", "historical/"),
         ("Reference", "reference/"),
+        ("Opportunities", "opportunities/"),
         ("Search", "search/"),
     ]
     link_html = []
@@ -1824,6 +1902,7 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
         docs_dir / "historical" / "index.html": render_historical_page(posts, atlases, base_url),
         docs_dir / "methods" / "index.html": render_methods_page(base_url),
         docs_dir / "about" / "index.html": render_about_page(base_url),
+        docs_dir / "opportunities" / "index.html": render_opportunities_page(base_url),
         docs_dir / "search" / "index.html": render_search_page(base_url),
         docs_dir / "reference" / "index.html": render_reference_index(references, base_url),
         docs_dir / "stories" / "index.html": render_stories_index(stories, base_url),
@@ -1900,6 +1979,15 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
                 "keywords": " ".join(reference.get("categories", []) + reference.get("aliases", [])),
             }
         )
+    search_index.append(
+        {
+            "title": "Opportunities",
+            "section": "About",
+            "summary": "Work with Devin Teichrow on epidemiology, evidence, disease history, science communication, data projects, and public-facing health tools.",
+            "url": link_for(base_url, "opportunities/"),
+            "keywords": "consulting collaboration epidemiology data science communication atlases public health",
+        }
+    )
 
     write_json(docs_dir / "app_exports" / "posts.json", posts_export)
     write_json(docs_dir / "app_exports" / "atlases.json", atlases_export)

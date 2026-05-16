@@ -37,6 +37,7 @@ This site turns the existing public surfaces into one navigable publication shel
 - `/essays/<slug>/`
 - `/methods/`
 - `/about/`
+- `/opportunities/`
 - `/search/`
 
 ## Local commands
@@ -113,5 +114,7 @@ This repo is set up for the GitHub Actions deployment model rather than the olde
 - set the repository Pages source to `GitHub Actions`
 - keep `docs/.nojekyll` in place
 - if you publish under a custom root domain, `--site-base-url /` is correct
+- the recommended personal custom domain is `devinteichrow.com`; add `docs/CNAME`
+  only after DNS is ready and GitHub Pages is configured for that domain
 - if you publish under a repository subpath instead, rebuild with the matching
   base URL before deployment
