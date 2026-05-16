@@ -23823,6 +23823,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "variants": []
     }
   ],
-  "generated_at": "2026-05-16T06:36:52",
+  "generated_at": "2026-05-16T06:37:36",
   "atlas_count": 210
 };
