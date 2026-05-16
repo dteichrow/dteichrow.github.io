@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-05-16
-Generated at: 2026-05-16T08:11
+Generated at: 2026-05-16T09:12
 Search window: 7 day(s) ending 2026-05-16
 
 ## Executive scan
@@ -12,18 +12,18 @@ Search window: 7 day(s) ending 2026-05-16
 - [Digitization of Historical Data from Somalia's Last Smallpox Outbreaks 1976-1977.](https://pubmed.ncbi.nlm.nih.gov/42135325/) (PubMed Historical Pathogen Case Studies; 2026-05-14T00:00; Historical epidemiology / ancient disease / paleopathology; relevance 5/5)
 - [Evolutionary trends of plague research from 2016 to 2025: A bibliometric analysis.](https://pubmed.ncbi.nlm.nih.gov/42127162/) (PubMed Historical Epidemiology; 2026-05-13T00:00; Historical epidemiology / ancient disease / paleopathology; relevance 5/5)
 - [Estimating the potential public health and economic impact of vaccination timing: A modeling study of COVID-19 vaccination in the United Kingdom.](https://pubmed.ncbi.nlm.nih.gov/42116765/) (PubMed Infectious Disease Search; 2026-05-12T00:00; Major epidemiology studies; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (30), Major epidemiology studies (3), Policy, surveillance, and public health infrastructure (2)
+- Category mix: Outbreaks and emerging infections (27), Major epidemiology studies (3), Occupational and environmental epidemiology (2)
 - Source health: 2 source(s) failed during collection: Nigeria Centre for Disease Control, USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
-### Hantavirus and cruise-ship outbreak
-- Lead item: [From 'staged' to Israel: Hantavirus misinformation runs rampant online](https://www.euronews.com/my-europe/2026/05/13/staged-claims-and-israeli-hoaxes-debunking-viral-conspiracy-theories-about-hantavirus) (Euronews.com)
-- New publisher/source coverage joined this story cluster: facebook.com.
-- Story volume increased from 19 to 21 clustered item(s) in the current window.
-
 ### Dengue and arboviruses
 - Lead item: [Increase in Travel-Associated and Locally Acquired Dengue Cases](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765450) (CDC MMWR)
-- New publisher/source coverage joined this story cluster: Goemkarponn.
+- Free Press Journal now includes deaths or fatal cases in the story frame.
+- New publisher/source coverage joined this story cluster: Free Press Journal.
+- 1 newly observed linked item(s) were added since the last saved snapshot.
+
+### Hantavirus and cruise-ship outbreak
+- Lead item: [From 'staged' to Israel: Hantavirus misinformation runs rampant online](https://www.euronews.com/my-europe/2026/05/13/staged-claims-and-israeli-hoaxes-debunking-viral-conspiracy-theories-about-hantavirus) (Euronews.com)
 - 1 newly observed linked item(s) were added since the last saved snapshot.
 
 
@@ -32,7 +32,7 @@ Search window: 7 day(s) ending 2026-05-16
 - Topic size: 5 item(s) across 4 source(s); 3 official/primary-source item(s).
 - Lead item: [Democratic Republic of the Congo confirms new Ebola outbreak, WHO scales up support](https://www.afro.who.int/countries/democratic-republic-of-congo/news/democratic-republic-congo-confirms-new-ebola-outbreak-who-scales-upsupport) (WHO Regional Office for Africa, 2026-05-15T18:57+00:00)
 - Detailed note: Several lower-volume signals passed the filters, but they do not resolve into one coherent topic cluster. Use the linked evidence notes directly rather than reading this as a single story.
-- Evidence notes: [Democratic Republic of the Congo confirms new Ebola outbreak, WHO scales up support](https://www.afro.who.int/countries/democratic-republic-of-congo/news/democratic-republic-congo-confirms-new-ebola-outbreak-who-scales-upsupport) (WHO Regional Office for Africa); [ECDC monitoring Ebola outbreak in the Democratic Republic of the Congo](https://www.ecdc.europa.eu/en/news-events/ecdc-monitoring-ebola-outbreak-democratic-republic-congo) (ECDC News); [WHO Sierra Leone Annual Report 2025](https://www.afro.who.int/countries/sierra-leone/publication/who-sierra-leone-annual-report-2025) (WHO Regional Office for Africa); [Ebola outbreak in DR Congo: Over 80 dead, 246 cases reported in Ituri province; health emergency declared](https://www.inkl.com/news/ebola-outbreak-in-dr-congo-over-80-dead-246-cases-reported-in-ituri-province-health-emergency-declared) (inkl); [Ebola outbreak kills 65 in eastern DR Congo's Ituri province](https://www.bbc.com/news/articles/cze2wpk7y76o) (BBC)
+- Evidence notes: [Democratic Republic of the Congo confirms new Ebola outbreak, WHO scales up support](https://www.afro.who.int/countries/democratic-republic-of-congo/news/democratic-republic-congo-confirms-new-ebola-outbreak-who-scales-upsupport) (WHO Regional Office for Africa); [ECDC monitoring Ebola outbreak in the Democratic Republic of the Congo](https://www.ecdc.europa.eu/en/news-events/ecdc-monitoring-ebola-outbreak-democratic-republic-congo) (ECDC News); [WHO Sierra Leone Annual Report 2025](https://www.afro.who.int/countries/sierra-leone/publication/who-sierra-leone-annual-report-2025) (WHO Regional Office for Africa); [Ebola outbreak kills 65 in eastern DR Congo's Ituri province](https://www.bbc.com/news/articles/cze2wpk7y76o) (BBC); [New Ebola outbreak confirmed in a remote Congo province](https://www.cnn.com/2026/05/15/us/video/ac360ebolacongo) (CNN)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: These notes are limited to source text collected in this run.
 
@@ -40,7 +40,7 @@ Search window: 7 day(s) ending 2026-05-16
 - Topic size: 4 item(s) across 4 source(s); 1 official/primary-source item(s).
 - Lead item: [Increase in Travel-Associated and Locally Acquired Dengue Cases](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765450) (CDC MMWR, 2026-05-14T17:00+00:00)
 - Detailed note: states and the District of Columbia increased 359% above the annual average during 2010–2023; a total of 97.2% of cases were travel associated, and 2.8% were locally acquired. Approximately one fifth (21.8%) of cases occurred among persons aged 50–59 years, and more than one half (57.5%) occurred in Hispanic or Latino persons. Outbreaks in 2019, 2022, and 2024 were early warnings of a structural shift — and the...
-- Evidence notes: [Increase in Travel-Associated and Locally Acquired Dengue Cases](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765450) (CDC MMWR); [Traditional dengue alerts are missing the mark as Vietnam's climate shifts—researchers propose a one health solution](https://www.eurekalert.org/news-releases/1128425) (EurekAlert!); [Efforts launched in Upper Kohistan to contain dengue outbreak](https://www.thenews.pk/print/1415723-efforts-launched-in-upper-kohistan-to-contain-dengue-outbreak) (The News Pakistan); [Health Department Sounds Dengue Alert Ahead of Monsoon](https://goemkarponn.com/health-department-sounds-dengue-alert-ahead-of-monsoon/) (Goemkarponn)
+- Evidence notes: [Increase in Travel-Associated and Locally Acquired Dengue Cases](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765450) (CDC MMWR); [Traditional dengue alerts are missing the mark as Vietnam's climate shifts—researchers propose a one health solution](https://www.eurekalert.org/news-releases/1128425) (EurekAlert!); [Maharashtra: Dengue Scare In Uran’s Chanje Village After Woman’s Death; Samples Sent For Testing](https://www.freepressjournal.in/mumbai/maharashtra-dengue-scare-in-urans-chanje-village-after-womans-death-samples-sent-for-testing) (Free Press Journal); [Efforts launched in Upper Kohistan to contain dengue outbreak](https://www.thenews.pk/print/1415723-efforts-launched-in-upper-kohistan-to-contain-dengue-outbreak) (The News Pakistan)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: These notes are limited to source text collected in this run.
 
@@ -69,7 +69,7 @@ Search window: 7 day(s) ending 2026-05-16
 - Caveats / uncertainty: These notes are limited to source text collected in this run.
 
 ### Hantavirus and cruise-ship outbreak
-- Topic size: 21 item(s) across 13 source(s); 0 official/primary-source item(s).
+- Topic size: 18 item(s) across 10 source(s); 0 official/primary-source item(s).
 - Lead item: [From 'staged' to Israel: Hantavirus misinformation runs rampant online](https://www.euronews.com/my-europe/2026/05/13/staged-claims-and-israeli-hoaxes-debunking-viral-conspiracy-theories-about-hantavirus) (Euronews.com, 2026-05-13T15:06+00:00)
 - Detailed note: Euronews investigates Make it Work Smart Regions Featured Europe Today Euronews' flagship morning TV show with the news and insights that drive Europe, live from Brussels every morning at 08.00. In each episode, two political heavyweights from across the EU face off to propose a diversity of opinions and spark conversations around the most important issues of EU affairs and the wider European political life.
 - Evidence notes: [From 'staged' to Israel: Hantavirus misinformation runs rampant online](https://www.euronews.com/my-europe/2026/05/13/staged-claims-and-israeli-hoaxes-debunking-viral-conspiracy-theories-about-hantavirus) (Euronews.com); [Fact Check: China has not banned US citizens over hantavirus](https://www.reuters.com/fact-check/china-has-not-banned-us-citizens-over-hantavirus-2026-05-14/) (Reuters); [More than 1,700 people banned from leaving British cruise ship docked in France over likely stomach flu outbreak](https://news.sky.com/story/over-1-000-passengers-banned-from-leaving-british-cruise-ship-docked-in-france-over-likely-stomach-flu-outbreak-13543587) (Sky News); [5th Californian possibly exposed to hantavirus identified, health officials say no confirmed cases](https://www.cbsnews.com/sacramento/news/5th-californian-possibly-exposed-hantavirus-no-confirmed-cases/) (CBS News); [Fact Check: Andes strain of hantavirus is transmissible in humans](https://www.reuters.com/fact-check/andes-strain-hantavirus-is-transmissible-humans-2026-05-13/) (Reuters)
@@ -385,16 +385,6 @@ Search window: 7 day(s) ending 2026-05-16
 - Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
 - Relevance score: 5/5
 
-### Ebola outbreak in DR Congo: Over 80 dead, 246 cases reported in Ituri province; health emergency declared
-- Source: inkl
-- Date: 2026-05-16T09:40+00:00
-- URL: https://www.inkl.com/news/ebola-outbreak-in-dr-congo-over-80-dead-246-cases-reported-in-ituri-province-health-emergency-declared
-- Category: Outbreaks and emerging infections
-- Summary: Of the reported deaths, four were among confirmed cases. The Ugandan health ministry said a 59-year-old Congolese man, who was admitted to a hospital in Kampala on Monday, died on Thursday in intensive care after testing positive for Ebola. Health officials have warned of a high risk of further spread due to population movement, urban settings in affected areas, and mining activity, BBC reported.
-- Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response.
-- Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
-- Relevance score: 5/5
-
 ### Ebola outbreak kills 65 in eastern DR Congo's Ituri province
 - Source: BBC
 - Date: 2026-05-16T04:11+00:00
@@ -405,10 +395,22 @@ Search window: 7 day(s) ending 2026-05-16
 - Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
 - Relevance score: 5/5
 
+### New Ebola outbreak confirmed in a remote Congo province
+- Source: CNN
+- Date: 2026-05-16T01:08+00:00
+- URL: https://www.cnn.com/2026/05/15/us/video/ac360ebolacongo
+- Category: Outbreaks and emerging infections
+- Summary: Limited detail was available from feed metadata alone.
+- Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response.
+- Caveats / uncertainty: Usable source detail was limited after cleanup.
+- Relevance score: 5/5
+
 
 ## Other notable readings
 - [Traditional dengue alerts are missing the mark as Vietnam's climate shifts—researchers propose a one health solution](https://www.eurekalert.org/news-releases/1128425) | EurekAlert! | 2026-05-15T15:55+00:00 | Outbreaks and emerging infections
   Outbreaks in 2019, 2022, and 2024 were early warnings of a structural shift — and the country's surveillance infrastructure has not kept pace. The authors synthesize existing evidence on how specific environmental signals — temperature exceeding 27°C, moderate weekly rainfall of 130–210 mm, severe drought as measured by the Palmer Drought Severity Index, widening diurnal temperature ranges, heatwaves, and El Niño anomalies — interact with Aedes mosquito biology and dengue virus replication to create outbreak conditions. For decades, Vietnam's dengue surveillance relied on a straightforward logic: when cases exceed the five-year average by a sufficient margin, sound the alarm.
+- [Maharashtra: Dengue Scare In Uran’s Chanje Village After Woman’s Death; Samples Sent For Testing](https://www.freepressjournal.in/mumbai/maharashtra-dengue-scare-in-urans-chanje-village-after-womans-death-samples-sent-for-testing) | Free Press Journal | 2026-05-13T15:11+00:00 | Outbreaks and emerging infections
+  Entertainment Bollywood Hollywood Television Regional Film News Movie Reviews Uran, May 13: Health authorities in Uran taluka are on alert after suspected dengue cases were reported from the Chanje gram panchayat area, where one woman has died while undergoing treatment for a dengue-like illness. Officials clarified that only three suspected dengue cases have been reported so far, and the exact cause of the woman’s death is yet to be confirmed pending laboratory reports. Samples of six persons have been collected and sent to the Civil Hospital, Alibag, for testing.
 - [From 'staged' to Israel: Hantavirus misinformation runs rampant online](https://www.euronews.com/my-europe/2026/05/13/staged-claims-and-israeli-hoaxes-debunking-viral-conspiracy-theories-about-hantavirus) | Euronews.com | 2026-05-13T15:06+00:00 | Outbreaks and emerging infections
   Euronews investigates Make it Work Smart Regions Featured Europe Today Euronews' flagship morning TV show with the news and insights that drive Europe, live from Brussels every morning at 08.00. In each episode, two political heavyweights from across the EU face off to propose a diversity of opinions and spark conversations around the most important issues of EU affairs and the wider European political life. The Ring The Ring is Euronews’ weekly political showdown, where Europe’s toughest debates meet their boldest voices.
 - [Bangladesh measles outbreak top 50,000 total cases since mid-March](https://outbreaknewstoday.substack.com/p/bangladesh-measles-outbreak-top-50000) | Outbreak News Today | 2026-05-12T23:14+00:00 | Outbreaks and emerging infections
@@ -436,8 +438,6 @@ Search window: 7 day(s) ending 2026-05-16
 - [What comes next for US and Canada passengers evacuated from hantavirus-hit cruise ship](https://www.bbc.com/news/articles/cn4pq1y1zjgo) | BBC | 2026-05-12T01:39+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Hantavirus-hit ship sets sail for Netherlands as final passengers evacuated in Tenerife](https://www.reuters.com/business/healthcare-pharmaceuticals/evacuation-passengers-virus-hit-cruise-ship-be-completed-monday-2026-05-11/) | Reuters | 2026-05-12T00:04+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [3 more passengers, Spanish, French and American, evacuated from cruise ship test positive for hantavirus](https://news.google.com/rss/articles/CBMifkFVX3lxTE4zNjQ0YUd4OGx1cWsycGpBaktLU0tEaUhCYmtKTUJvcGVuUUR3SGlOYm9iT0RMWEV3dDdMaVQ0QjZqQ1hoQzRGenVsbjNKX2ktTjd1bWpRUHRKTVA0ZGJxRTB0dFpPenlrbmxVTll4dHpVV2ZhUnVPa2RHell0Zw?oc=5) | CBC | 2026-05-11T23:49+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [American cruise ship passenger tests positive for hantavirus after evacuation](https://news.google.com/rss/articles/CBMiswFBVV95cUxNRzlnN2lpZ2RyTVRjNXp4UGRyZmdCbVNwaHdsUlBUM3VOT2oybzZtNmI2REF4U0YzeGVVb1BPNTRmdG1WazhLZVV1WlJrakxIYjRnX2hOVmpIZkRIekVhWm9sN3RXVVdqZTVsRHllU3loOUdfSkNyRVBKZmkwZ1o0WDYzRWhkcm51bzRXRW9SbWFrOU1HcXptOXNYNGdpVFRCcHUyWFFBSHFqQW95Z2hhNmhydw?oc=5) | PBS | 2026-05-11T13:46+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
