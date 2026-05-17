@@ -651,13 +651,6 @@
     "keywords": "new_official_source confirmed_case policy_or_travel new_geography Global / Maritime Spain"
   },
   {
-    "title": "Avian influenza and H5N1",
-    "section": "Newsdesk",
-    "summary": "New publisher/source coverage joined this story cluster: Cambodianess.",
-    "url": "/stories/story_28a91c6d89267872-avian-influenza-and-h5n1.html",
-    "keywords": "confirmed_case transmission_change new_geography Southeast Asia United States"
-  },
-  {
     "title": "Measles transmission and vaccination",
     "section": "Newsdesk",
     "summary": "The lead item has changed to How conflict is driving measles outbreaks in the Middle East and North Africa from arabnews.jp.",
@@ -665,11 +658,18 @@
     "keywords": "confirmed_case new_geography Africa United Kingdom"
   },
   {
+    "title": "Avian influenza and H5N1",
+    "section": "Newsdesk",
+    "summary": "New publisher/source coverage joined this story cluster: Cambodianess.",
+    "url": "/stories/story_28a91c6d89267872-avian-influenza-and-h5n1.html",
+    "keywords": "confirmed_case transmission_change new_geography Southeast Asia United States"
+  },
+  {
     "title": "COVID-19 and SARS-CoV-2",
     "section": "Newsdesk",
-    "summary": "Story volume increased from 2 to 4 clustered item(s) in the current window.",
+    "summary": "The lead item has changed to Modeling the potential public health and economic impact and cost-effectiveness of vaccination strategies using an adapted COVID-19 vaccine in Guatemala. from PubMed Infectious Disease Search.",
     "url": "/stories/story_afd8f5934e291e02-covid-19-and-sars-cov-2.html",
-    "keywords": "new_official_source severity_or_death new_geography North America United Kingdom"
+    "keywords": "new_official_source severity_or_death new_geography North America United States"
   },
   {
     "title": "Historical epidemiology and ancient pathogens",
