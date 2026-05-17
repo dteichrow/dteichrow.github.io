@@ -1548,7 +1548,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [
         {
           "display_title": "Dengue and arboviruses",
-          "latest_update_summary": "New publisher/source coverage joined this story cluster: The Straits Times, The Sunday Times, Sri Lanka.",
+          "latest_update_summary": "Free Press Journal now includes deaths or fatal cases in the story frame.",
           "story_id": "story_ccfeaff28d46baf6",
           "story_url": "stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
           "story_web_path": "stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
@@ -23823,6 +23823,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "variants": []
     }
   ],
-  "generated_at": "2026-05-16T16:20:18",
+  "generated_at": "2026-05-16T17:21:15",
   "atlas_count": 210
 };
