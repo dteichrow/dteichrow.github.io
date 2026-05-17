@@ -1,10 +1,11 @@
 posts:
 - substack_id: 197437573
   slug: hantavirus-in-the-korean-war-korean
-  title: 'The Disease That Came From the Ground: Korean Hemorrhagic Fever, Hantaan Virus, and the Disease Ecology of Warfare'
+  title: Korean Hemorrhagic Fever in the Korean War
   date: '2026-05-13'
   canonical_url: https://theedgeofepidemiology.substack.com/p/hantavirus-in-the-korean-war-korean
-  excerpt: Between Spring of 1951 and the armistice of July 1953, an unnamed disease infected UN soldiers among the ridge lines and rice paddies of central Korea.
+  excerpt: How Korean War trench warfare, rodent ecology, and Hantaan virus turned
+    a mysterious military outbreak into hantavirus history.
   cover_image: https://substackcdn.com/image/fetch/$s_!w6UP!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcc7f1a29-bdc6-4096-8997-21550a5bc7d0_600x632.jpeg
   upstream_tags:
   - science
@@ -28,23 +29,29 @@ posts:
   - maritime-disease-atlas
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: Between Spring of 1951 and the armistice of July 1953, an unnamed disease infected UN soldiers among the ridge lines and rice paddies of central Korea.
+  search_excerpt: Between Spring of 1951 and the armistice of July 1953, an unnamed
+    disease infected UN soldiers among the ridge lines and rice paddies of central
+    Korea.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-13T14:25:47+00:00'
-  last_synced_at: '2026-05-13T14:39:26+00:00'
+  last_synced_at: '2026-05-17T19:40:45+00:00'
   seo_title: Korean Hemorrhagic Fever in the Korean War
-  seo_description: Korean hemorrhagic fever in the Korean War, Hantaan virus, rodent ecology, trench warfare, and how a mysterious military outbreak became part of hantavirus history.
+  seo_description: Korean hemorrhagic fever in the Korean War, Hantaan virus, rodent
+    ecology, trench warfare, and how a mysterious military outbreak became part of
+    hantavirus history.
   primary_keyword: Korean hemorrhagic fever
   topic_cluster: disease-and-war
   indexing_strategy: evergreen
 - substack_id: 196425690
   slug: hantavirus-at-sea-what-we-know-about
-  title: 'Hantavirus at Sea: What We Know About the MV Hondius Outbreak (The Pathogen Dispatch #2)'
+  title: 'MV Hondius Hantavirus Outbreak: What We Know So Far'
   date: '2026-05-04'
   canonical_url: https://theedgeofepidemiology.substack.com/p/hantavirus-at-sea-what-we-know-about
-  excerpt: The recent fungal STI outbreak and ongoing hantavirus outbreak on a cruise ship make me want to start a new segment here at The Edge of Epidemiology, so welcome to The Pathogen Dispatch.
+  excerpt: A source-first guide to the MV Hondius hantavirus outbreak, Andes virus,
+    cruise-ship exposure, travel risk, and what investigators could and could not
+    yet know.
   cover_image: https://substackcdn.com/image/fetch/$s_!jeza!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6e9fa99a-2b15-4e8f-8dcc-97f6dc5b7705_1920x1080.jpeg
   upstream_tags:
   - science
@@ -68,14 +75,18 @@ posts:
   - maritime-disease-atlas
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: The recent fungal STI outbreak and ongoing hantavirus outbreak on a cruise ship make me want to start a new segment here at The Edge of Epidemiology, so welcome to The Pathogen Dispatch.
+  search_excerpt: The recent fungal STI outbreak and ongoing hantavirus outbreak on
+    a cruise ship make me want to start a new segment here at The Edge of Epidemiology,
+    so welcome to The Pathogen Dispatch.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-14T14:11:49+00:00'
+  last_synced_at: '2026-05-17T19:40:45+00:00'
   seo_title: 'MV Hondius Hantavirus Outbreak: What We Know So Far'
-  seo_description: A source-first guide to the MV Hondius hantavirus outbreak, Andes virus, cruise-ship exposure, travel risk, and what investigators could and could not yet know.
+  seo_description: A source-first guide to the MV Hondius hantavirus outbreak, Andes
+    virus, cruise-ship exposure, travel risk, and what investigators could and could
+    not yet know.
   primary_keyword: MV Hondius hantavirus outbreak
   topic_cluster: pathogen-geography
   indexing_strategy: evergreen
@@ -114,16 +125,19 @@ posts:
   first_seen_at: '2026-05-10T15:45:48+00:00'
   last_synced_at: '2026-05-10T21:44:18+00:00'
   seo_title: 'The New Fungal STI Hiding in Plain Sight (Pathogen Dispatch #1)'
-  seo_description: 'The New Fungal STI Hiding in Plain Sight (Pathogen Dispatch #1) from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on MSMs.'
+  seo_description: 'The New Fungal STI Hiding in Plain Sight (Pathogen Dispatch #1)
+    from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation,
+    and a focus on MSMs.'
   primary_keyword: MSMs
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
 - substack_id: 195413363
   slug: how-changing-disease-environments
-  title: How Changing Disease Environments Drove Genomic Selection in West Eurasians
+  title: Ancient DNA and Disease Selection in West Eurasia
   date: '2026-04-25'
   canonical_url: https://theedgeofepidemiology.substack.com/p/how-changing-disease-environments
-  excerpt: Am epidemiologists look at the 2026 Reich Lab paper.
+  excerpt: How ancient DNA, infectious disease pressure, immunity, and changing environments
+    can help explain genomic selection in West Eurasian populations.
   cover_image: https://substackcdn.com/image/fetch/$s_!uXvG!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F41886fa8-7d51-49d0-b395-676dd0e17e4c_1920x2482.jpeg
   upstream_tags:
   - information science
@@ -151,9 +165,10 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-10T21:44:18+00:00'
+  last_synced_at: '2026-05-17T19:40:45+00:00'
   seo_title: Ancient DNA and Disease Selection in West Eurasia
-  seo_description: How ancient DNA, infectious disease pressure, immunity, and changing environments can help explain genomic selection in West Eurasian populations.
+  seo_description: How ancient DNA, infectious disease pressure, immunity, and changing
+    environments can help explain genomic selection in West Eurasian populations.
   primary_keyword: ancient DNA disease selection
   topic_cluster: historical-epidemiology
   indexing_strategy: evergreen
@@ -162,7 +177,8 @@ posts:
   title: 'Big Epidemiology: Disease at the Scale of Civilization'
   date: '2026-04-11'
   canonical_url: https://theedgeofepidemiology.substack.com/p/big-epidemiology-disease-at-the-scale
-  excerpt: 'At a 2011 TED conference, historian David Christian asked a deceptively simple question: when did history begin?'
+  excerpt: 'At a 2011 TED conference, historian David Christian asked a deceptively
+    simple question: when did history begin?'
   cover_image: https://substackcdn.com/image/fetch/$s_!F2yF!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6c35b218-4016-4b59-85c0-db81dc767d92_960x766.png
   upstream_tags:
   - science
@@ -185,23 +201,26 @@ posts:
   - maritime-disease-atlas
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: 'At a 2011 TED conference, historian David Christian asked a deceptively simple question: when did history begin?'
+  search_excerpt: 'At a 2011 TED conference, historian David Christian asked a deceptively
+    simple question: when did history begin?'
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
   last_synced_at: '2026-05-10T21:44:18+00:00'
   seo_title: 'Big Epidemiology: Disease at the Scale of Civilization'
-  seo_description: 'At a 2011 TED conference, historian David Christian asked a deceptively simple question: when did history begin?'
+  seo_description: 'At a 2011 TED conference, historian David Christian asked a deceptively
+    simple question: when did history begin?'
   primary_keyword: big History
   topic_cluster: pathogen-geography
   indexing_strategy: noindex_stub
 - substack_id: 193176173
   slug: the-first-american-epidemic-how-yellow
-  title: 'The First American Epidemic: How Yellow Fever Exposed the Fault Lines of the Early Republic'
+  title: '1793 Philadelphia Yellow Fever: America''s First Epidemic Crisis'
   date: '2026-04-04'
   canonical_url: https://theedgeofepidemiology.substack.com/p/the-first-american-epidemic-how-yellow
-  excerpt: In late summer of 1793, approaching a full decade of independence, Philadelphia was the most populous city in the United States and was the temporary seat of the federal government.
+  excerpt: The 1793 Philadelphia yellow fever epidemic as an early American public-health
+    crisis shaped by urban ecology, politics, race, medicine, and mosquito-borne disease.
   cover_image: https://substackcdn.com/image/fetch/$s_!fDf-!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdeb97c57-38a6-4430-95c6-7eb516119752_883x620.png
   upstream_tags:
   - american history
@@ -226,23 +245,28 @@ posts:
   - pathogen-atlas
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: In late summer of 1793, approaching a full decade of independence, Philadelphia was the most populous city in the United States and was the temporary seat of the federal government.
+  search_excerpt: In late summer of 1793, approaching a full decade of independence,
+    Philadelphia was the most populous city in the United States and was the temporary
+    seat of the federal government.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-10T21:44:18+00:00'
+  last_synced_at: '2026-05-17T19:40:45+00:00'
   seo_title: '1793 Philadelphia Yellow Fever: America''s First Epidemic Crisis'
-  seo_description: The 1793 Philadelphia yellow fever epidemic as an early American public-health crisis shaped by urban ecology, politics, race, medicine, and mosquito-borne disease.
+  seo_description: The 1793 Philadelphia yellow fever epidemic as an early American
+    public-health crisis shaped by urban ecology, politics, race, medicine, and mosquito-borne
+    disease.
   primary_keyword: 1793 Philadelphia yellow fever
   topic_cluster: historical-epidemiology
   indexing_strategy: evergreen
 - substack_id: 192444219
   slug: did-the-vikings-bring-plague-across
-  title: Did the Vikings Bring Plague Across the North Sea? Norse Voyages, Infectious Disease, and the North Atlantic
+  title: Did Vikings Spread Plague Across the North Sea?
   date: '2026-04-01'
   canonical_url: https://theedgeofepidemiology.substack.com/p/did-the-vikings-bring-plague-across
-  excerpt: This piece was written for The Viking Herald (where copyediting has likely enhanced the draft you see here).
+  excerpt: A careful look at Viking movement, North Sea disease ecology, plague evidence,
+    Norse voyages, and the limits of reconstructing medieval pathogen spread.
   cover_image: https://substackcdn.com/image/fetch/$s_!7WgR!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F45398610-393d-47c9-ae4e-7df83dab1403_640x389.jpeg
   upstream_tags:
   - science
@@ -268,20 +292,23 @@ posts:
   - viking-health-atlas
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: This piece was written for The Viking Herald (where copyediting has likely enhanced the draft you see here).
+  search_excerpt: This piece was written for The Viking Herald (where copyediting
+    has likely enhanced the draft you see here).
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-10T21:44:18+00:00'
+  last_synced_at: '2026-05-17T19:40:45+00:00'
   seo_title: Did Vikings Spread Plague Across the North Sea?
-  seo_description: A careful look at Viking movement, North Sea disease ecology, plague evidence, Norse voyages, and the limits of reconstructing medieval pathogen spread.
+  seo_description: A careful look at Viking movement, North Sea disease ecology, plague
+    evidence, Norse voyages, and the limits of reconstructing medieval pathogen spread.
   primary_keyword: Viking plague North Sea
   topic_cluster: historical-epidemiology
   indexing_strategy: evergreen
 - substack_id: 192334500
   slug: the-white-plague-returns-tuberculosis
-  title: 'The White Plague Returns?: Tuberculosis and the Fragility of Public Health (The Pathogen Dispatch)'
+  title: 'The White Plague Returns?: Tuberculosis and the Fragility of Public Health
+    (The Pathogen Dispatch)'
   date: '2026-03-27'
   canonical_url: https://theedgeofepidemiology.substack.com/p/the-white-plague-returns-tuberculosis
   excerpt: First for the headline question.
@@ -311,17 +338,21 @@ posts:
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
   last_synced_at: '2026-05-10T21:44:18+00:00'
-  seo_title: 'The White Plague Returns?: Tuberculosis and the Fragility of Public Health (The Pathogen Dispatch)'
-  seo_description: 'The White Plague Returns?: Tuberculosis and the Fragility of Public Health (The Pathogen Dispatch) from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on tuberculosis.'
+  seo_title: 'The White Plague Returns?: Tuberculosis and the Fragility of Public
+    Health (The Pathogen Dispatch)'
+  seo_description: 'The White Plague Returns?: Tuberculosis and the Fragility of Public
+    Health (The Pathogen Dispatch) from The Edge of Epidemiology, with epidemiologic
+    context, source-aware interpretation, and a focus on tuberculosis.'
   primary_keyword: tuberculosis
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
 - substack_id: 191686346
   slug: who-died-of-what-in-the-american
-  title: Who Died of What in the American Revolutionary War? Disease, Battle, and Survival in the Late 18th Century
+  title: 'Disease in the American Revolutionary War: Who Died of What?'
   date: '2026-03-21'
   canonical_url: https://theedgeofepidemiology.substack.com/p/who-died-of-what-in-the-american
-  excerpt: The Dead of the Jersey
+  excerpt: How disease, smallpox, camp fever, prison ships, and military medicine
+    shaped mortality in the American Revolutionary War.
   cover_image: https://substackcdn.com/image/fetch/$s_!egyW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff2019e74-efac-479f-bd33-3a14093932d7_1431x1370.png
   upstream_tags:
   - infectious disease
@@ -350,18 +381,21 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-10T21:44:18+00:00'
+  last_synced_at: '2026-05-17T19:40:45+00:00'
   seo_title: 'Disease in the American Revolutionary War: Who Died of What?'
-  seo_description: Disease mortality in the American Revolutionary War, including battle deaths, smallpox, camp disease, military medicine, and survival in the late eighteenth century.
+  seo_description: Disease mortality in the American Revolutionary War, including
+    battle deaths, smallpox, camp disease, military medicine, and survival in the
+    late eighteenth century.
   primary_keyword: disease in the American Revolutionary War
   topic_cluster: disease-and-war
   indexing_strategy: evergreen
 - substack_id: 191075721
   slug: invisible-killers-of-the-oregon-trail
-  title: 'Invisible Killers of the Oregon Trail: Disease and Death on the Overland Road (1840-1869)'
+  title: 'Disease on the Oregon Trail: Cholera, Dysentery, and Death'
   date: '2026-03-16'
   canonical_url: https://theedgeofepidemiology.substack.com/p/invisible-killers-of-the-oregon-trail
-  excerpt: “Started out soon this morning, passed several graves, we hear that it is sickly on the route…” noted Lodisa Frizzell in May of 1852 in her journal documenting her family’s journey from Illinois to Wyoming.
+  excerpt: Disease on the Oregon Trail, from cholera and dysentery to overland migration,
+    sanitation, graves, and the epidemiology of nineteenth-century westward travel.
   cover_image: https://substackcdn.com/image/fetch/$s_!mNB2!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2ffccbcf-be76-4b52-8068-8607c6a9ec94_810x477.png
   upstream_tags:
   - information science
@@ -385,23 +419,28 @@ posts:
   - revolutionary-war-atlas
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: “Started out soon this morning, passed several graves, we hear that it is sickly on the route…” noted Lodisa Frizzell in May of 1852 in her journal documenting her family’s journey from Illinois to Wyoming.
+  search_excerpt: “Started out soon this morning, passed several graves, we hear that
+    it is sickly on the route…” noted Lodisa Frizzell in May of 1852 in her journal
+    documenting her family’s journey from Illinois to Wyoming.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-10T21:44:18+00:00'
+  last_synced_at: '2026-05-17T19:40:45+00:00'
   seo_title: 'Disease on the Oregon Trail: Cholera, Dysentery, and Death'
-  seo_description: Disease on the Oregon Trail, from cholera and dysentery to overland migration, sanitation, graves, and the epidemiology of nineteenth-century westward travel.
+  seo_description: Disease on the Oregon Trail, from cholera and dysentery to overland
+    migration, sanitation, graves, and the epidemiology of nineteenth-century westward
+    travel.
   primary_keyword: disease on the Oregon Trail
   topic_cluster: disease-and-war
   indexing_strategy: evergreen
 - substack_id: 190210122
   slug: how-mosquitos-killed-napoleons-north
-  title: How Mosquitos Killed Napoleon’s North American Empire Dream
+  title: How Yellow Fever Killed Napoleon's American Empire
   date: '2026-03-07'
   canonical_url: https://theedgeofepidemiology.substack.com/p/how-mosquitos-killed-napoleons-north
-  excerpt: Between the years of 1791 and 1804, two mosquito-borne diseases destroyed the French expeditionary armies in Saint-Domingue (modern day Haiti and the Dominican Republic) and ended up tipping the balance of power toward revolution.
+  excerpt: How yellow fever, mosquitoes, Saint-Domingue, military failure, and disease
+    ecology helped destroy Napoleon's North American empire plans.
   cover_image: https://substackcdn.com/image/fetch/$s_!CBSc!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7be4ce1a-bd5c-409b-9860-5f84fba53a06_960x952.jpeg
   upstream_tags:
   - science
@@ -428,14 +467,17 @@ posts:
   - maritime-disease-atlas
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: Between the years of 1791 and 1804, two mosquito-borne diseases destroyed the French expeditionary armies in Saint-Domingue (modern day Haiti and the Dominican Republic) and ended up tipping the balance of power toward revolution.
+  search_excerpt: Between the years of 1791 and 1804, two mosquito-borne diseases
+    destroyed the French expeditionary armies in Saint-Domingue (modern day Haiti
+    and the Dominican Republic) and ended up tipping the balance of power toward revolution.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-10T21:44:18+00:00'
+  last_synced_at: '2026-05-17T19:40:45+00:00'
   seo_title: How Yellow Fever Killed Napoleon's American Empire
-  seo_description: How yellow fever, mosquitoes, Saint-Domingue, military failure, and disease ecology helped destroy Napoleon's North American empire plans.
+  seo_description: How yellow fever, mosquitoes, Saint-Domingue, military failure,
+    and disease ecology helped destroy Napoleon's North American empire plans.
   primary_keyword: yellow fever Napoleon
   topic_cluster: disease-and-war
   indexing_strategy: evergreen
@@ -474,16 +516,22 @@ posts:
   first_seen_at: '2026-05-10T15:45:48+00:00'
   last_synced_at: '2026-05-10T21:44:18+00:00'
   seo_title: The American Revolution Was Nearly Lost to Smallpox
-  seo_description: The American Revolution Was Nearly Lost to Smallpox from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on american history.
+  seo_description: The American Revolution Was Nearly Lost to Smallpox from The Edge
+    of Epidemiology, with epidemiologic context, source-aware interpretation, and
+    a focus on american history.
   primary_keyword: american history
   topic_cluster: disease-and-war
   indexing_strategy: noindex_stub
 - substack_id: 187959272
   slug: disease-in-the-early-colonies-pre
-  title: 'Disease in the Early Colonies: Pre-Revolutionary War Disease Ecology and Outbreaks'
+  title: 'Disease in the Early Colonies: Pre-Revolutionary War Disease Ecology and
+    Outbreaks'
   date: '2026-02-14'
   canonical_url: https://theedgeofepidemiology.substack.com/p/disease-in-the-early-colonies-pre
-  excerpt: British North America during the pre-revolutionary war period was a region of fluctuating disease ecology shaped by repeated incursions of smallpox, measles, diphtheria, enteric infections (the nice way of saying feces got in their mouths somehow), and vector-borne fevers.
+  excerpt: British North America during the pre-revolutionary war period was a region
+    of fluctuating disease ecology shaped by repeated incursions of smallpox, measles,
+    diphtheria, enteric infections (the nice way of saying feces got in their mouths
+    somehow), and vector-borne fevers.
   cover_image: https://substackcdn.com/image/fetch/$s_!JEMI!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb0718958-e95f-4016-addb-5f9c55ff6d2b_960x748.jpeg
   upstream_tags:
   - science
@@ -505,23 +553,33 @@ posts:
   - revolutionary-war-atlas
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: British North America during the pre-revolutionary war period was a region of fluctuating disease ecology shaped by repeated incursions of smallpox, measles, diphtheria, enteric infections (the nice way of saying feces got in their mouths somehow), and vector-borne fevers.
+  search_excerpt: British North America during the pre-revolutionary war period was
+    a region of fluctuating disease ecology shaped by repeated incursions of smallpox,
+    measles, diphtheria, enteric infections (the nice way of saying feces got in their
+    mouths somehow), and vector-borne fevers.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
   last_synced_at: '2026-05-10T21:44:18+00:00'
-  seo_title: 'Disease in the Early Colonies: Pre-Revolutionary War Disease Ecology and Outbreaks'
-  seo_description: British North America during the pre-revolutionary war period was a region of fluctuating disease ecology shaped by repeated incursions of smallpox, measles, diphtheria, enteric infections (the nice way of saying feces got in their mouths somehow), and vector-
+  seo_title: 'Disease in the Early Colonies: Pre-Revolutionary War Disease Ecology
+    and Outbreaks'
+  seo_description: British North America during the pre-revolutionary war period was
+    a region of fluctuating disease ecology shaped by repeated incursions of smallpox,
+    measles, diphtheria, enteric infections (the nice way of saying feces got in their
+    mouths somehow), and vector-
   primary_keyword: malaria
   topic_cluster: disease-and-war
   indexing_strategy: noindex_stub
 - substack_id: 186425026
   slug: why-europeans-didnt-get-hit-by-disease
-  title: Why Europeans Didn’t Die of New World Diseases (but did from diseases in Africa and Asia)
+  title: Why Europeans Didn’t Die of New World Diseases (but did from diseases in
+    Africa and Asia)
   date: '2026-01-31'
   canonical_url: https://theedgeofepidemiology.substack.com/p/why-europeans-didnt-get-hit-by-disease
-  excerpt: I was recently asked why Europeans didn’t end up suffering as much at the hands of New World diseases compared to how the Native Americans were impacted by the likes of smallpox, measles, malaria, and yellow fever.
+  excerpt: I was recently asked why Europeans didn’t end up suffering as much at the
+    hands of New World diseases compared to how the Native Americans were impacted
+    by the likes of smallpox, measles, malaria, and yellow fever.
   cover_image: https://substackcdn.com/image/fetch/$s_!ix5P!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F77696bba-58af-41da-b8fc-f82d06e67ba9_658x401.jpeg
   upstream_tags:
   - science
@@ -547,14 +605,19 @@ posts:
   - revolutionary-war-atlas
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: I was recently asked why Europeans didn’t end up suffering as much at the hands of New World diseases compared to how the Native Americans were impacted by the likes of smallpox, measles, malaria, and yellow fever.
+  search_excerpt: I was recently asked why Europeans didn’t end up suffering as much
+    at the hands of New World diseases compared to how the Native Americans were impacted
+    by the likes of smallpox, measles, malaria, and yellow fever.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
   last_synced_at: '2026-05-10T21:44:18+00:00'
-  seo_title: Why Europeans Didn’t Die of New World Diseases (but did from diseases in Africa and Asia)
-  seo_description: I was recently asked why Europeans didn’t end up suffering as much at the hands of New World diseases compared to how the Native Americans were impacted by the likes of smallpox, measles, malaria, and yellow fever.
+  seo_title: Why Europeans Didn’t Die of New World Diseases (but did from diseases
+    in Africa and Asia)
+  seo_description: I was recently asked why Europeans didn’t end up suffering as much
+    at the hands of New World diseases compared to how the Native Americans were impacted
+    by the likes of smallpox, measles, malaria, and yellow fever.
   primary_keyword: infectious disease
   topic_cluster: pathogen-geography
   indexing_strategy: noindex_stub
@@ -563,7 +626,9 @@ posts:
   title: 'They Came from the Steppe: The Genetic Legacy of Plague and Steppe Migrations'
   date: '2026-01-18'
   canonical_url: https://theedgeofepidemiology.substack.com/p/they-came-from-the-steppe-the-genetic
-  excerpt: The study of ancient DNA has made the Yamnaya and other early pastoralist groups of the Eurasian steppe some of the better understood prehistoric populations out there.
+  excerpt: The study of ancient DNA has made the Yamnaya and other early pastoralist
+    groups of the Eurasian steppe some of the better understood prehistoric populations
+    out there.
   cover_image: https://substackcdn.com/image/fetch/$s_!w9MU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb8ae8dc5-8615-49db-a0d2-1c12edd1b2b5_730x730.jpeg
   upstream_tags:
   - History
@@ -585,23 +650,30 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: The study of ancient DNA has made the Yamnaya and other early pastoralist groups of the Eurasian steppe some of the better understood prehistoric populations out there.
+  search_excerpt: The study of ancient DNA has made the Yamnaya and other early pastoralist
+    groups of the Eurasian steppe some of the better understood prehistoric populations
+    out there.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:49+00:00'
   last_synced_at: '2026-05-10T21:44:18+00:00'
   seo_title: 'They Came from the Steppe: The Genetic Legacy of Plague and Steppe Migrations'
-  seo_description: The study of ancient DNA has made the Yamnaya and other early pastoralist groups of the Eurasian steppe some of the better understood prehistoric populations out there.
+  seo_description: The study of ancient DNA has made the Yamnaya and other early pastoralist
+    groups of the Eurasian steppe some of the better understood prehistoric populations
+    out there.
   primary_keyword: Genetics
   topic_cluster: historical-epidemiology
   indexing_strategy: noindex_stub
 - substack_id: 184243719
   slug: when-worlds-collided-disease-and
-  title: 'When Worlds Collided: Disease and Population Collapse in the Americas After 1492'
+  title: 'When Worlds Collided: Disease and Population Collapse in the Americas After
+    1492'
   date: '2026-01-11'
   canonical_url: https://theedgeofepidemiology.substack.com/p/when-worlds-collided-disease-and
-  excerpt: The story of disease in the Americas post-1492 is usually told in a blunt manner, with Europeans arriving, Old World pathogens hitching a ride, and then causing a total collapse of the Indigenous Populations.
+  excerpt: The story of disease in the Americas post-1492 is usually told in a blunt
+    manner, with Europeans arriving, Old World pathogens hitching a ride, and then
+    causing a total collapse of the Indigenous Populations.
   cover_image: https://substackcdn.com/image/fetch/$s_!QWFS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6cfc1a7c-09ad-4137-ab03-2f75703f7482_975x768.jpeg
   upstream_tags:
   - infectious disease
@@ -624,14 +696,19 @@ posts:
   - maritime-disease-atlas
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: The story of disease in the Americas post-1492 is usually told in a blunt manner, with Europeans arriving, Old World pathogens hitching a ride, and then causing a total collapse of the Indigenous Populations.
+  search_excerpt: The story of disease in the Americas post-1492 is usually told in
+    a blunt manner, with Europeans arriving, Old World pathogens hitching a ride,
+    and then causing a total collapse of the Indigenous Populations.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:49+00:00'
   last_synced_at: '2026-05-10T21:44:18+00:00'
-  seo_title: 'When Worlds Collided: Disease and Population Collapse in the Americas After 1492'
-  seo_description: The story of disease in the Americas post-1492 is usually told in a blunt manner, with Europeans arriving, Old World pathogens hitching a ride, and then causing a total collapse of the Indigenous Populations.
+  seo_title: 'When Worlds Collided: Disease and Population Collapse in the Americas
+    After 1492'
+  seo_description: The story of disease in the Americas post-1492 is usually told
+    in a blunt manner, with Europeans arriving, Old World pathogens hitching a ride,
+    and then causing a total collapse of the Indigenous Populations.
   primary_keyword: infectious disease
   topic_cluster: pathogen-geography
   indexing_strategy: noindex_stub
@@ -674,16 +751,20 @@ posts:
   first_seen_at: '2026-05-10T15:45:50+00:00'
   last_synced_at: '2026-05-10T21:44:18+00:00'
   seo_title: 'Scourges of the High Seas: Early Maritime Disease Ecology'
-  seo_description: 'Scourges of the High Seas: Early Maritime Disease Ecology from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on disease ecology.'
+  seo_description: 'Scourges of the High Seas: Early Maritime Disease Ecology from
+    The Edge of Epidemiology, with epidemiologic context, source-aware interpretation,
+    and a focus on disease ecology.'
   primary_keyword: disease ecology
   topic_cluster: disease-and-war
   indexing_strategy: noindex_stub
 - substack_id: 182976217
   slug: mexicos-mystery-epidemics-of-the
-  title: 'Mexico’s Mystery Epidemics of the 16th Century: Cocoliztli and the Limits of a Retrospective Diagnostics'
+  title: 'Cocoliztli: Mexico''s 16th-Century Mystery Epidemic'
   date: '2025-12-30'
   canonical_url: https://theedgeofepidemiology.substack.com/p/mexicos-mystery-epidemics-of-the
-  excerpt: In 16th century Mexico (New Spain at the time), two extremely high mortality epidemics swept through Mesoamerica, decimating the population.
+  excerpt: Cocoliztli and Mexico's sixteenth-century epidemics, including hemorrhagic
+    fever, colonial disruption, climate stress, and the evidence behind a historical
+    mystery.
   cover_image: https://substackcdn.com/image/fetch/$s_!5jk7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F42e0c614-9cdc-45c3-91af-946fd1da2752_768x599.png
   upstream_tags:
   - science
@@ -706,14 +787,17 @@ posts:
   - maritime-disease-atlas
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: In 16th century Mexico (New Spain at the time), two extremely high mortality epidemics swept through Mesoamerica, decimating the population.
+  search_excerpt: In 16th century Mexico (New Spain at the time), two extremely high
+    mortality epidemics swept through Mesoamerica, decimating the population.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:50+00:00'
-  last_synced_at: '2026-05-10T21:44:18+00:00'
+  last_synced_at: '2026-05-17T19:40:45+00:00'
   seo_title: 'Cocoliztli: Mexico''s 16th-Century Mystery Epidemic'
-  seo_description: Cocoliztli and Mexico's sixteenth-century mystery epidemics, including retrospective diagnosis, colonial records, ancient DNA, and the limits of pathogen certainty.
+  seo_description: Cocoliztli and Mexico's sixteenth-century mystery epidemics, including
+    retrospective diagnosis, colonial records, ancient DNA, and the limits of pathogen
+    certainty.
   primary_keyword: cocoliztli epidemic
   topic_cluster: historical-epidemiology
   indexing_strategy: evergreen
@@ -754,7 +838,9 @@ posts:
   first_seen_at: '2026-05-10T15:45:51+00:00'
   last_synced_at: '2026-05-10T21:44:18+00:00'
   seo_title: 'Inherited Infections: What Our Oldest Diseases Reveal About Human Prehistory'
-  seo_description: 'Inherited Infections: What Our Oldest Diseases Reveal About Human Prehistory from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on infectious disease.'
+  seo_description: 'Inherited Infections: What Our Oldest Diseases Reveal About Human
+    Prehistory from The Edge of Epidemiology, with epidemiologic context, source-aware
+    interpretation, and a focus on infectious disease.'
   primary_keyword: infectious disease
   topic_cluster: pathogen-geography
   indexing_strategy: noindex_stub
@@ -763,7 +849,8 @@ posts:
   title: 'The Disease Ecology of the Pre-Contact Americas (Part 2: South America)'
   date: '2025-12-17'
   canonical_url: https://theedgeofepidemiology.substack.com/p/the-disease-ecology-of-the-pre-contact
-  excerpt: Last time we went over some of the infectious diseases that were prominent in pre-contact North America and Central America.
+  excerpt: Last time we went over some of the infectious diseases that were prominent
+    in pre-contact North America and Central America.
   cover_image: https://substackcdn.com/image/fetch/$s_!XozR!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc8cf4e84-79a6-4399-bb27-dd8e3fa3e9ad_469x316.png
   upstream_tags:
   - science
@@ -787,14 +874,16 @@ posts:
   - revolutionary-war-atlas
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: Last time we went over some of the infectious diseases that were prominent in pre-contact North America and Central America.
+  search_excerpt: Last time we went over some of the infectious diseases that were
+    prominent in pre-contact North America and Central America.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:51+00:00'
   last_synced_at: '2026-05-10T21:44:18+00:00'
   seo_title: 'The Disease Ecology of the Pre-Contact Americas (Part 2: South America)'
-  seo_description: Last time we went over some of the infectious diseases that were prominent in pre-contact North America and Central America.
+  seo_description: Last time we went over some of the infectious diseases that were
+    prominent in pre-contact North America and Central America.
   primary_keyword: infectious disease
   topic_cluster: pathogen-geography
   indexing_strategy: noindex_stub
@@ -803,7 +892,8 @@ posts:
   title: 'The Disease Ecology of Pre-Contact Americas (Part 1: North and Central America)'
   date: '2025-12-10'
   canonical_url: https://theedgeofepidemiology.substack.com/p/the-disease-ecology-of-pre-contact
-  excerpt: Before 1492, the indigenous people of the Americas lived in a long-term isolation from the vast reservoir that was Eurasia’s disease pool.
+  excerpt: Before 1492, the indigenous people of the Americas lived in a long-term
+    isolation from the vast reservoir that was Eurasia’s disease pool.
   cover_image: https://substackcdn.com/image/fetch/$s_!jjcD!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe1bc09f1-d47b-4fe1-a5be-f11014ebd6e9_1399x935.png
   upstream_tags:
   - science
@@ -826,14 +916,17 @@ posts:
   - maritime-disease-atlas
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: Before 1492, the indigenous people of the Americas lived in a long-term isolation from the vast reservoir that was Eurasia’s disease pool.
+  search_excerpt: Before 1492, the indigenous people of the Americas lived in a long-term
+    isolation from the vast reservoir that was Eurasia’s disease pool.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:51+00:00'
   last_synced_at: '2026-05-10T21:44:18+00:00'
-  seo_title: 'The Disease Ecology of Pre-Contact Americas (Part 1: North and Central America)'
-  seo_description: Before 1492, the indigenous people of the Americas lived in a long-term isolation from the vast reservoir that was Eurasia’s disease pool.
+  seo_title: 'The Disease Ecology of Pre-Contact Americas (Part 1: North and Central
+    America)'
+  seo_description: Before 1492, the indigenous people of the Americas lived in a long-term
+    isolation from the vast reservoir that was Eurasia’s disease pool.
   primary_keyword: infectious disease
   topic_cluster: pathogen-geography
   indexing_strategy: noindex_stub
@@ -842,7 +935,8 @@ posts:
   title: When Did Syphilis Enter Europe? The Origins Debate
   date: '2025-12-03'
   canonical_url: https://theedgeofepidemiology.substack.com/p/when-did-syphilis-enter-europe-the
-  excerpt: For a family of pathogens that has likely been with humanity since the dawn of agriculture, Treponema has a funny way of keeping its secrets.
+  excerpt: For a family of pathogens that has likely been with humanity since the
+    dawn of agriculture, Treponema has a funny way of keeping its secrets.
   cover_image: https://substackcdn.com/image/fetch/$s_!fEHu!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa7f292fc-4ac6-48a2-97f9-01c48a9c5247_877x1200.jpeg
   upstream_tags:
   - science
@@ -864,23 +958,27 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: For a family of pathogens that has likely been with humanity since the dawn of agriculture, Treponema has a funny way of keeping its secrets.
+  search_excerpt: For a family of pathogens that has likely been with humanity since
+    the dawn of agriculture, Treponema has a funny way of keeping its secrets.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:52+00:00'
   last_synced_at: '2026-05-10T21:44:18+00:00'
   seo_title: When Did Syphilis Enter Europe? The Origins Debate
-  seo_description: For a family of pathogens that has likely been with humanity since the dawn of agriculture, Treponema has a funny way of keeping its secrets.
+  seo_description: For a family of pathogens that has likely been with humanity since
+    the dawn of agriculture, Treponema has a funny way of keeping its secrets.
   primary_keyword: syphilis
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
 - substack_id: 179321195
   slug: the-mystery-of-hookworm-in-ancient
-  title: 'The Mystery of Hookworm in Ancient America: A Parasite Found When and Where it Shouldn''t Be Yet'
+  title: 'The Mystery of Hookworm in Ancient America: A Parasite Found When and Where
+    it Shouldn''t Be Yet'
   date: '2025-11-19'
   canonical_url: https://theedgeofepidemiology.substack.com/p/the-mystery-of-hookworm-in-ancient
-  excerpt: I’m currently researching for a piece on the disease ecology of the early Americas.
+  excerpt: I’m currently researching for a piece on the disease ecology of the early
+    Americas.
   cover_image: https://substackcdn.com/image/fetch/$s_!IykA!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9be41e5a-eed0-4cf8-b47d-50c10b75e443_800x800.png
   upstream_tags:
   - science
@@ -905,14 +1003,17 @@ posts:
   - maritime-disease-atlas
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: I’m currently researching for a piece on the disease ecology of the early Americas.
+  search_excerpt: I’m currently researching for a piece on the disease ecology of
+    the early Americas.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:52+00:00'
   last_synced_at: '2026-05-10T21:44:18+00:00'
   seo_title: 'Ancient Hookworm in the Americas: A Parasite Out of Place'
-  seo_description: Ancient hookworm in the Americas, parasite geography, archaeology, migration, and why a tropical helminth can complicate simple stories of disease history.
+  seo_description: Ancient hookworm in the Americas, parasite geography, archaeology,
+    migration, and why a tropical helminth can complicate simple stories of disease
+    history.
   primary_keyword: ancient hookworm Americas
   topic_cluster: historical-epidemiology
   indexing_strategy: evergreen
@@ -921,7 +1022,9 @@ posts:
   title: 'The Ghosts of Meals Past: What We’ve Learned from Fossilized Poop'
   date: '2025-11-12'
   canonical_url: https://theedgeofepidemiology.substack.com/p/the-ghosts-of-meals-past-what-weve
-  excerpt: When construction first broke ground for the Lloyds Bank building in York in 1972, within a moist layer of peat was something each of the crew would have seen countless times before, although never one like this.
+  excerpt: When construction first broke ground for the Lloyds Bank building in York
+    in 1972, within a moist layer of peat was something each of the crew would have
+    seen countless times before, although never one like this.
   cover_image: https://substackcdn.com/image/fetch/$s_!aG9u!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fecf57f7d-e237-418d-9f31-478133c091de_1430x657.jpeg
   upstream_tags:
   - science
@@ -941,14 +1044,18 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: When construction first broke ground for the Lloyds Bank building in York in 1972, within a moist layer of peat was something each of the crew would have seen countless times before, although never one like this.
+  search_excerpt: When construction first broke ground for the Lloyds Bank building
+    in York in 1972, within a moist layer of peat was something each of the crew would
+    have seen countless times before, although never one like this.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:53+00:00'
   last_synced_at: '2026-05-10T21:44:18+00:00'
   seo_title: 'The Ghosts of Meals Past: What We’ve Learned from Fossilized Poop'
-  seo_description: When construction first broke ground for the Lloyds Bank building in York in 1972, within a moist layer of peat was something each of the crew would have seen countless times before, although never one like this.
+  seo_description: When construction first broke ground for the Lloyds Bank building
+    in York in 1972, within a moist layer of peat was something each of the crew would
+    have seen countless times before, although never one like this.
   primary_keyword: anthropology
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -987,16 +1094,19 @@ posts:
   first_seen_at: '2026-05-10T15:45:53+00:00'
   last_synced_at: '2026-05-10T15:47:24+00:00'
   seo_title: The Oldest Diseases We Know Of
-  seo_description: The Oldest Diseases We Know Of from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on paleontology.
+  seo_description: The Oldest Diseases We Know Of from The Edge of Epidemiology, with
+    epidemiologic context, source-aware interpretation, and a focus on paleontology.
   primary_keyword: paleontology
   topic_cluster: pathogen-geography
   indexing_strategy: noindex_stub
 - substack_id: 177329295
   slug: humanitys-deadliest-companions-checking
-  title: 'Humanity’s Deadliest Companions: Checking the Till on the Deadliest Microbes in History'
+  title: 'Humanity’s Deadliest Companions: Checking the Till on the Deadliest Microbes
+    in History'
   date: '2025-10-28'
   canonical_url: https://theedgeofepidemiology.substack.com/p/humanitys-deadliest-companions-checking
-  excerpt: I was reorganizing parts of my bookshelf the other day when I came across my copy of Deadly Companions by Dorothy Crawford.
+  excerpt: I was reorganizing parts of my bookshelf the other day when I came across
+    my copy of Deadly Companions by Dorothy Crawford.
   cover_image: https://substackcdn.com/image/fetch/$s_!GMMh!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1be7050-c48c-4a44-a675-f9d4283fa860_1024x1024.png
   upstream_tags:
   - science
@@ -1019,14 +1129,17 @@ posts:
   - maritime-disease-atlas
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: I was reorganizing parts of my bookshelf the other day when I came across my copy of Deadly Companions by Dorothy Crawford.
+  search_excerpt: I was reorganizing parts of my bookshelf the other day when I came
+    across my copy of Deadly Companions by Dorothy Crawford.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:53+00:00'
   last_synced_at: '2026-05-10T15:47:24+00:00'
-  seo_title: 'Humanity’s Deadliest Companions: Checking the Till on the Deadliest Microbes in History'
-  seo_description: I was reorganizing parts of my bookshelf the other day when I came across my copy of Deadly Companions by Dorothy Crawford.
+  seo_title: 'Humanity’s Deadliest Companions: Checking the Till on the Deadliest
+    Microbes in History'
+  seo_description: I was reorganizing parts of my bookshelf the other day when I came
+    across my copy of Deadly Companions by Dorothy Crawford.
   primary_keyword: infectious disease
   topic_cluster: pathogen-geography
   indexing_strategy: noindex_stub
@@ -1067,13 +1180,16 @@ posts:
   first_seen_at: '2026-05-10T15:45:54+00:00'
   last_synced_at: '2026-05-10T15:47:24+00:00'
   seo_title: 'Islands of Affliction: Leprosy and Empire in the South Pacific'
-  seo_description: 'Islands of Affliction: Leprosy and Empire in the South Pacific from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on information science.'
+  seo_description: 'Islands of Affliction: Leprosy and Empire in the South Pacific
+    from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation,
+    and a focus on information science.'
   primary_keyword: information science
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
 - substack_id: 176091810
   slug: the-night-staten-island-burned-its
-  title: 'The Night Staten Island Burned Its Hospital: Fear, Fire, and the Forgotten Quarantine War of 1858'
+  title: 'The Night Staten Island Burned Its Hospital: Fear, Fire, and the Forgotten
+    Quarantine War of 1858'
   date: '2025-10-14'
   canonical_url: https://theedgeofepidemiology.substack.com/p/the-night-staten-island-burned-its
   excerpt: Staten Island, September 1858.
@@ -1102,17 +1218,22 @@ posts:
   notes: ''
   first_seen_at: '2026-05-10T15:45:54+00:00'
   last_synced_at: '2026-05-10T15:47:24+00:00'
-  seo_title: 'The Night Staten Island Burned Its Hospital: Fear, Fire, and the Forgotten Quarantine War of 1858'
-  seo_description: 'The Night Staten Island Burned Its Hospital: Fear, Fire, and the Forgotten Quarantine War of 1858 from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on quarantine.'
+  seo_title: 'The Night Staten Island Burned Its Hospital: Fear, Fire, and the Forgotten
+    Quarantine War of 1858'
+  seo_description: 'The Night Staten Island Burned Its Hospital: Fear, Fire, and the
+    Forgotten Quarantine War of 1858 from The Edge of Epidemiology, with epidemiologic
+    context, source-aware interpretation, and a focus on quarantine.'
   primary_keyword: quarantine
   topic_cluster: disease-and-war
   indexing_strategy: noindex_stub
 - substack_id: 175470298
   slug: when-diabetes-drugs-start-treating
-  title: 'When Diabetes Drugs Start Treating Headaches: GLP-1 Agonists and the Migraine Connection'
+  title: 'When Diabetes Drugs Start Treating Headaches: GLP-1 Agonists and the Migraine
+    Connection'
   date: '2025-10-07'
   canonical_url: https://theedgeofepidemiology.substack.com/p/when-diabetes-drugs-start-treating
-  excerpt: The story of GLP-1 drugs have had so many plot twists it would almost sound lazy in a medical fiction novel.
+  excerpt: The story of GLP-1 drugs have had so many plot twists it would almost sound
+    lazy in a medical fiction novel.
   cover_image: https://substackcdn.com/image/fetch/$s_!gm2Y!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7e5e1d38-326c-4aaf-acca-108dcb6a298e_1024x1536.png
   upstream_tags:
   - science
@@ -1136,20 +1257,24 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: The story of GLP-1 drugs have had so many plot twists it would almost sound lazy in a medical fiction novel.
+  search_excerpt: The story of GLP-1 drugs have had so many plot twists it would almost
+    sound lazy in a medical fiction novel.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:55+00:00'
   last_synced_at: '2026-05-10T15:47:25+00:00'
-  seo_title: 'When Diabetes Drugs Start Treating Headaches: GLP-1 Agonists and the Migraine Connection'
-  seo_description: The story of GLP-1 drugs have had so many plot twists it would almost sound lazy in a medical fiction novel.
+  seo_title: 'When Diabetes Drugs Start Treating Headaches: GLP-1 Agonists and the
+    Migraine Connection'
+  seo_description: The story of GLP-1 drugs have had so many plot twists it would
+    almost sound lazy in a medical fiction novel.
   primary_keyword: GLP-1
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
 - substack_id: 174580810
   slug: the-us-life-expectancy-gap-sounds
-  title: The U.S. Life Expectancy Gap Sounds Worse Than It Is and (Hypothetically) Easier to Fix Than You Think
+  title: The U.S. Life Expectancy Gap Sounds Worse Than It Is and (Hypothetically)
+    Easier to Fix Than You Think
   date: '2025-09-26'
   canonical_url: https://theedgeofepidemiology.substack.com/p/the-us-life-expectancy-gap-sounds
   excerpt: America isn’t cursed.
@@ -1176,8 +1301,11 @@ posts:
   notes: ''
   first_seen_at: '2026-05-10T15:45:55+00:00'
   last_synced_at: '2026-05-10T15:47:25+00:00'
-  seo_title: The U.S. Life Expectancy Gap Sounds Worse Than It Is and (Hypothetically) Easier to Fix Than You Think
-  seo_description: The U.S. Life Expectancy Gap Sounds Worse Than It Is and (Hypothetically) Easier to Fix Than You Think from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on epidemiology.
+  seo_title: The U.S. Life Expectancy Gap Sounds Worse Than It Is and (Hypothetically)
+    Easier to Fix Than You Think
+  seo_description: The U.S. Life Expectancy Gap Sounds Worse Than It Is and (Hypothetically)
+    Easier to Fix Than You Think from The Edge of Epidemiology, with epidemiologic
+    context, source-aware interpretation, and a focus on epidemiology.
   primary_keyword: epidemiology
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -1215,7 +1343,9 @@ posts:
   first_seen_at: '2026-05-10T15:45:56+00:00'
   last_synced_at: '2026-05-10T15:47:25+00:00'
   seo_title: 'Psychedelics for Anxiety: What the New LSD Trial Does and Doesn’t Change'
-  seo_description: 'Psychedelics for Anxiety: What the New LSD Trial Does and Doesn’t Change from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on clinical trials.'
+  seo_description: 'Psychedelics for Anxiety: What the New LSD Trial Does and Doesn’t
+    Change from The Edge of Epidemiology, with epidemiologic context, source-aware
+    interpretation, and a focus on clinical trials.'
   primary_keyword: clinical trials
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -1251,7 +1381,9 @@ posts:
   first_seen_at: '2026-05-10T15:45:56+00:00'
   last_synced_at: '2026-05-10T15:47:25+00:00'
   seo_title: Body-Snatching, the Doctors’ Riot, and How Cadavers Built American Medicine
-  seo_description: Body-Snatching, the Doctors’ Riot, and How Cadavers Built American Medicine from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on riots.
+  seo_description: Body-Snatching, the Doctors’ Riot, and How Cadavers Built American
+    Medicine from The Edge of Epidemiology, with epidemiologic context, source-aware
+    interpretation, and a focus on riots.
   primary_keyword: riots
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -1287,13 +1419,15 @@ posts:
   first_seen_at: '2026-05-10T15:45:56+00:00'
   last_synced_at: '2026-05-10T15:47:25+00:00'
   seo_title: Heat Doesn’t Age Everyone Equally
-  seo_description: Heat Doesn’t Age Everyone Equally from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on heat waves.
+  seo_description: Heat Doesn’t Age Everyone Equally from The Edge of Epidemiology,
+    with epidemiologic context, source-aware interpretation, and a focus on heat waves.
   primary_keyword: heat waves
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
 - substack_id: 172135919
   slug: finding-risk-where-history-put-it
-  title: 'Finding Risk Where History Put It: Founder Effects, Population Bottlenecks, Rare Diseases, and Screening Programs'
+  title: 'Finding Risk Where History Put It: Founder Effects, Population Bottlenecks,
+    Rare Diseases, and Screening Programs'
   date: '2025-08-28'
   canonical_url: https://theedgeofepidemiology.substack.com/p/finding-risk-where-history-put-it
   excerpt: 'Opening Disclaimer: I’m not a geneticist.'
@@ -1325,14 +1459,18 @@ posts:
   notes: ''
   first_seen_at: '2026-05-10T15:45:57+00:00'
   last_synced_at: '2026-05-10T15:47:25+00:00'
-  seo_title: 'Finding Risk Where History Put It: Founder Effects, Population Bottlenecks, Rare Diseases, and Screening Programs'
-  seo_description: 'Finding Risk Where History Put It: Founder Effects, Population Bottlenecks, Rare Diseases, and Screening Programs from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on Genetics.'
+  seo_title: 'Finding Risk Where History Put It: Founder Effects, Population Bottlenecks,
+    Rare Diseases, and Screening Programs'
+  seo_description: 'Finding Risk Where History Put It: Founder Effects, Population
+    Bottlenecks, Rare Diseases, and Screening Programs from The Edge of Epidemiology,
+    with epidemiologic context, source-aware interpretation, and a focus on Genetics.'
   primary_keyword: Genetics
   topic_cluster: pathogen-geography
   indexing_strategy: noindex_stub
 - substack_id: 171521367
   slug: infectious-diseases-on-the-move-2025
-  title: 'Infectious Diseases on the Move (2025): How Warmer Weather and Urbanicity are Shifting Risks'
+  title: 'Infectious Diseases on the Move (2025): How Warmer Weather and Urbanicity
+    are Shifting Risks'
   date: '2025-08-21'
   canonical_url: https://theedgeofepidemiology.substack.com/p/infectious-diseases-on-the-move-2025
   excerpt: Why ranges change
@@ -1362,8 +1500,11 @@ posts:
   notes: ''
   first_seen_at: '2026-05-10T15:45:58+00:00'
   last_synced_at: '2026-05-10T15:47:26+00:00'
-  seo_title: 'Infectious Diseases on the Move (2025): How Warmer Weather and Urbanicity are Shifting Risks'
-  seo_description: 'Infectious Diseases on the Move (2025): How Warmer Weather and Urbanicity are Shifting Risks from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on infectious disease.'
+  seo_title: 'Infectious Diseases on the Move (2025): How Warmer Weather and Urbanicity
+    are Shifting Risks'
+  seo_description: 'Infectious Diseases on the Move (2025): How Warmer Weather and
+    Urbanicity are Shifting Risks from The Edge of Epidemiology, with epidemiologic
+    context, source-aware interpretation, and a focus on infectious disease.'
   primary_keyword: infectious disease
   topic_cluster: disease-and-war
   indexing_strategy: noindex_stub
@@ -1401,7 +1542,9 @@ posts:
   first_seen_at: '2026-05-10T15:45:58+00:00'
   last_synced_at: '2026-05-10T15:47:26+00:00'
   seo_title: Does Lithium Lower Alzheimer’s Risk? A Guide to the Evidence
-  seo_description: Does Lithium Lower Alzheimer’s Risk? A Guide to the Evidence from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on alzheimer's.
+  seo_description: Does Lithium Lower Alzheimer’s Risk? A Guide to the Evidence from
+    The Edge of Epidemiology, with epidemiologic context, source-aware interpretation,
+    and a focus on alzheimer's.
   primary_keyword: alzheimer's
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -1410,7 +1553,8 @@ posts:
   title: Paper Mills are Poisoning Science
   date: '2025-08-07'
   canonical_url: https://theedgeofepidemiology.substack.com/p/paper-mills-are-poisoning-science
-  excerpt: You can now pay a few hundred bucks to publish your name on a scientific study.
+  excerpt: You can now pay a few hundred bucks to publish your name on a scientific
+    study.
   cover_image: https://substackcdn.com/image/fetch/$s_!_mXK!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F32a4e42a-ab0e-4c6c-b0de-f2f7b73216a1_1024x1024.png
   upstream_tags:
   - science
@@ -1430,14 +1574,16 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: You can now pay a few hundred bucks to publish your name on a scientific study.
+  search_excerpt: You can now pay a few hundred bucks to publish your name on a scientific
+    study.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:58+00:00'
   last_synced_at: '2026-05-10T15:47:26+00:00'
   seo_title: Paper Mills are Poisoning Science
-  seo_description: You can now pay a few hundred bucks to publish your name on a scientific study.
+  seo_description: You can now pay a few hundred bucks to publish your name on a scientific
+    study.
   primary_keyword: AI
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -1446,7 +1592,9 @@ posts:
   title: 'Eric Topol’s Super Agers: The Medical System We Ought to Build'
   date: '2025-07-31'
   canonical_url: https://theedgeofepidemiology.substack.com/p/eric-topols-super-agers-the-medical
-  excerpt: I remember sitting in a gymnasium in Walnut Creek, California working with a group of elderly folk at an independent living facility measuring things like grip strength, up and down speed, and walking speed.
+  excerpt: I remember sitting in a gymnasium in Walnut Creek, California working with
+    a group of elderly folk at an independent living facility measuring things like
+    grip strength, up and down speed, and walking speed.
   cover_image: https://substackcdn.com/image/fetch/$s_!TF9e!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fac3098e6-93d5-47e9-8c6c-cabd5d64b1ee_1431x1544.jpeg
   upstream_tags:
   - Eric Topol
@@ -1468,14 +1616,18 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: I remember sitting in a gymnasium in Walnut Creek, California working with a group of elderly folk at an independent living facility measuring things like grip strength, up and down speed, and walking speed.
+  search_excerpt: I remember sitting in a gymnasium in Walnut Creek, California working
+    with a group of elderly folk at an independent living facility measuring things
+    like grip strength, up and down speed, and walking speed.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:59+00:00'
   last_synced_at: '2026-05-10T15:47:26+00:00'
   seo_title: 'Eric Topol’s Super Agers: The Medical System We Ought to Build'
-  seo_description: I remember sitting in a gymnasium in Walnut Creek, California working with a group of elderly folk at an independent living facility measuring things like grip strength, up and down speed, and walking speed.
+  seo_description: I remember sitting in a gymnasium in Walnut Creek, California working
+    with a group of elderly folk at an independent living facility measuring things
+    like grip strength, up and down speed, and walking speed.
   primary_keyword: Eric Topol
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -1484,7 +1636,8 @@ posts:
   title: Migraine and brain fog
   date: '2025-07-23'
   canonical_url: https://theedgeofepidemiology.substack.com/p/migraine-and-brain-fog
-  excerpt: impacts across multiple cognitive domains, migraine phases, and medication trade-offs
+  excerpt: impacts across multiple cognitive domains, migraine phases, and medication
+    trade-offs
   cover_image: https://substackcdn.com/image/fetch/$s_!x01j!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2b1988c0-a6ce-441f-bf46-5347ea3394f7_2718x1246.png
   upstream_tags:
   - science
@@ -1506,14 +1659,16 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: impacts across multiple cognitive domains, migraine phases, and medication trade-offs
+  search_excerpt: impacts across multiple cognitive domains, migraine phases, and
+    medication trade-offs
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:59+00:00'
   last_synced_at: '2026-05-10T15:47:26+00:00'
   seo_title: Migraine and brain fog
-  seo_description: impacts across multiple cognitive domains, migraine phases, and medication trade-offs
+  seo_description: impacts across multiple cognitive domains, migraine phases, and
+    medication trade-offs
   primary_keyword: cognition
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -1522,7 +1677,8 @@ posts:
   title: Memetics is dead, long live memetics
   date: '2025-07-17'
   canonical_url: https://theedgeofepidemiology.substack.com/p/memetics-is-dead-long-live-memetics
-  excerpt: On stealth memetics, viral ideas, and why the term may have died while the logic behind it lived on.
+  excerpt: On stealth memetics, viral ideas, and why the term may have died while
+    the logic behind it lived on.
   cover_image: https://substackcdn.com/image/fetch/$s_!HYfm!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa7d3149f-a7b1-4620-9840-7edb468bb1e6_493x654.png
   upstream_tags:
   - science
@@ -1544,14 +1700,16 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: On stealth memetics, viral ideas, and why the term may have died while the logic behind it lived on.
+  search_excerpt: On stealth memetics, viral ideas, and why the term may have died
+    while the logic behind it lived on.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:00+00:00'
   last_synced_at: '2026-05-10T15:47:27+00:00'
   seo_title: Memetics is dead, long live memetics
-  seo_description: On stealth memetics, viral ideas, and why the term may have died while the logic behind it lived on.
+  seo_description: On stealth memetics, viral ideas, and why the term may have died
+    while the logic behind it lived on.
   primary_keyword: information science
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -1589,7 +1747,9 @@ posts:
   first_seen_at: '2026-05-10T15:46:00+00:00'
   last_synced_at: '2026-05-10T15:47:27+00:00'
   seo_title: 'Shrooms vs antidepressants: A meta-analysis calls it a tie'
-  seo_description: 'Shrooms vs antidepressants: A meta-analysis calls it a tie from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on depression.'
+  seo_description: 'Shrooms vs antidepressants: A meta-analysis calls it a tie from
+    The Edge of Epidemiology, with epidemiologic context, source-aware interpretation,
+    and a focus on depression.'
   primary_keyword: depression
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -1598,7 +1758,8 @@ posts:
   title: 'The Poison Nobody Could Agree On: The Unsolved 1951 Outbreak of Pont-Saint-Esprit'
   date: '2025-07-05'
   canonical_url: https://theedgeofepidemiology.substack.com/p/the-poison-nobody-could-agree-on
-  excerpt: In August of 1951, something toxic ripped through the town of Pont-Saint-Esprit in southern France.
+  excerpt: In August of 1951, something toxic ripped through the town of Pont-Saint-Esprit
+    in southern France.
   cover_image: https://substackcdn.com/image/fetch/$s_!n2he!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F09c0db4c-813b-4e03-9124-87ad7888a325_1544x708.png
   upstream_tags:
   - science
@@ -1618,14 +1779,16 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: In August of 1951, something toxic ripped through the town of Pont-Saint-Esprit in southern France.
+  search_excerpt: In August of 1951, something toxic ripped through the town of Pont-Saint-Esprit
+    in southern France.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:00+00:00'
   last_synced_at: '2026-05-10T15:47:27+00:00'
   seo_title: 'The Poison Nobody Could Agree On: The Unsolved 1951 Outbreak of Pont-Saint-Esprit'
-  seo_description: In August of 1951, something toxic ripped through the town of Pont-Saint-Esprit in southern France.
+  seo_description: In August of 1951, something toxic ripped through the town of Pont-Saint-Esprit
+    in southern France.
   primary_keyword: CIA
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -1634,7 +1797,9 @@ posts:
   title: 'Migraine: What We Know and Who It Hits Hardest'
   date: '2025-06-30'
   canonical_url: https://theedgeofepidemiology.substack.com/p/migraine-what-we-know-and-who-it
-  excerpt: Migraine is one of the most disabling conditions we know of. Here's what the data says about who gets it, who doesn't get help, and why we still don't quite understand it.
+  excerpt: Migraine is one of the most disabling conditions we know of. Here's what
+    the data says about who gets it, who doesn't get help, and why we still don't
+    quite understand it.
   cover_image: https://substackcdn.com/image/fetch/$s_!ixSD!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F54b7d172-3993-4ba8-9a5c-b91b9073d681_1460x1289.jpeg
   upstream_tags:
   - science
@@ -1656,14 +1821,18 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: Migraine is one of the most disabling conditions we know of. Here's what the data says about who gets it, who doesn't get help, and why we still don't quite understand it.
+  search_excerpt: Migraine is one of the most disabling conditions we know of. Here's
+    what the data says about who gets it, who doesn't get help, and why we still don't
+    quite understand it.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:01+00:00'
   last_synced_at: '2026-05-10T15:47:27+00:00'
   seo_title: 'Migraine: What We Know and Who It Hits Hardest'
-  seo_description: Migraine is one of the most disabling conditions we know of. Here's what the data says about who gets it, who doesn't get help, and why we still don't quite understand it.
+  seo_description: Migraine is one of the most disabling conditions we know of. Here's
+    what the data says about who gets it, who doesn't get help, and why we still don't
+    quite understand it.
   primary_keyword: neurology
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -1695,7 +1864,8 @@ posts:
   first_seen_at: '2026-05-10T15:46:01+00:00'
   last_synced_at: '2026-05-10T15:47:27+00:00'
   seo_title: Something I Noticed at the American Headache Society Conference
-  seo_description: A short post on my time at AHS and a question I had during the conference.
+  seo_description: A short post on my time at AHS and a question I had during the
+    conference.
   primary_keyword: Migraine
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -1704,7 +1874,8 @@ posts:
   title: 'Snort This to Tan: The Bizarre and Dangerous Barbie Drug'
   date: '2025-06-22'
   canonical_url: https://theedgeofepidemiology.substack.com/p/snort-this-to-tan-the-bizarre-and
-  excerpt: There’s a black-market peptide that’ll give you a tan, a hard-on, and possibly cancer; and it’s going up people’s noses in Barbie-core packaging.
+  excerpt: There’s a black-market peptide that’ll give you a tan, a hard-on, and possibly
+    cancer; and it’s going up people’s noses in Barbie-core packaging.
   cover_image: https://substackcdn.com/image/fetch/$s_!Mkyq!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd792ba99-1662-49f8-940f-fda1a84f7bcc_472x706.png
   upstream_tags:
   - science
@@ -1726,23 +1897,27 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: There’s a black-market peptide that’ll give you a tan, a hard-on, and possibly cancer; and it’s going up people’s noses in Barbie-core packaging.
+  search_excerpt: There’s a black-market peptide that’ll give you a tan, a hard-on,
+    and possibly cancer; and it’s going up people’s noses in Barbie-core packaging.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:02+00:00'
   last_synced_at: '2026-05-10T15:47:27+00:00'
   seo_title: 'Snort This to Tan: The Bizarre and Dangerous Barbie Drug'
-  seo_description: There’s a black-market peptide that’ll give you a tan, a hard-on, and possibly cancer; and it’s going up people’s noses in Barbie-core packaging.
+  seo_description: There’s a black-market peptide that’ll give you a tan, a hard-on,
+    and possibly cancer; and it’s going up people’s noses in Barbie-core packaging.
   primary_keyword: risk communication
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
 - substack_id: 166112010
   slug: how-accurate-are-wearable-fitness
-  title: How Accurate is Your Apple Watch? What Fitness Trackers are Good For and Where They Still Need Work
+  title: How Accurate is Your Apple Watch? What Fitness Trackers are Good For and
+    Where They Still Need Work
   date: '2025-06-17'
   canonical_url: https://theedgeofepidemiology.substack.com/p/how-accurate-are-wearable-fitness
-  excerpt: I’ve had an Apple watch for a while and have mostly used it to track my sleep.
+  excerpt: I’ve had an Apple watch for a while and have mostly used it to track my
+    sleep.
   cover_image: https://substackcdn.com/image/fetch/$s_!AzwA!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F37d68652-01f4-4a5d-8855-31c699521604_1124x692.png
   upstream_tags:
   - science
@@ -1764,14 +1939,17 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: I’ve had an Apple watch for a while and have mostly used it to track my sleep.
+  search_excerpt: I’ve had an Apple watch for a while and have mostly used it to track
+    my sleep.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:02+00:00'
   last_synced_at: '2026-05-10T15:47:28+00:00'
-  seo_title: How Accurate is Your Apple Watch? What Fitness Trackers are Good For and Where They Still Need Work
-  seo_description: I’ve had an Apple watch for a while and have mostly used it to track my sleep.
+  seo_title: How Accurate is Your Apple Watch? What Fitness Trackers are Good For
+    and Where They Still Need Work
+  seo_description: I’ve had an Apple watch for a while and have mostly used it to
+    track my sleep.
   primary_keyword: fitness trackers
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -1780,7 +1958,9 @@ posts:
   title: War on Many Fronts During the Justinianic Plague (541 CE)
   date: '2025-06-10'
   canonical_url: https://theedgeofepidemiology.substack.com/p/war-on-many-fronts-during-the-justinianic
-  excerpt: Draft number 2 of this post. Thought I tackled a few topics too early and will be re-releasing some very early posts. Enjoy War Epidemiology chapter drafts again!
+  excerpt: Draft number 2 of this post. Thought I tackled a few topics too early and
+    will be re-releasing some very early posts. Enjoy War Epidemiology chapter drafts
+    again!
   cover_image: https://substackcdn.com/image/fetch/$s_!74_h!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc1c998c8-c0c0-4388-acfd-ae7ddb625c6e_1920x2560.jpeg
   upstream_tags:
   - science
@@ -1803,14 +1983,18 @@ posts:
   - maritime-disease-atlas
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: Draft number 2 of this post. Thought I tackled a few topics too early and will be re-releasing some very early posts. Enjoy War Epidemiology chapter drafts again!
+  search_excerpt: Draft number 2 of this post. Thought I tackled a few topics too
+    early and will be re-releasing some very early posts. Enjoy War Epidemiology chapter
+    drafts again!
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:03+00:00'
   last_synced_at: '2026-05-10T15:47:28+00:00'
   seo_title: War on Many Fronts During the Justinianic Plague (541 CE)
-  seo_description: Draft number 2 of this post. Thought I tackled a few topics too early and will be re-releasing some very early posts. Enjoy War Epidemiology chapter drafts again!
+  seo_description: Draft number 2 of this post. Thought I tackled a few topics too
+    early and will be re-releasing some very early posts. Enjoy War Epidemiology chapter
+    drafts again!
   primary_keyword: infectious disease
   topic_cluster: disease-and-war
   indexing_strategy: noindex_stub
@@ -1819,7 +2003,8 @@ posts:
   title: Magnesium is Overrated (Especially by the Mocktail Crowd)
   date: '2025-06-05'
   canonical_url: https://theedgeofepidemiology.substack.com/p/magnesium-for-sleep-mocktails-hype
-  excerpt: Is magnesium the sleep fix it claims to be? Or is your mocktail just overpriced cherry juice?
+  excerpt: Is magnesium the sleep fix it claims to be? Or is your mocktail just overpriced
+    cherry juice?
   cover_image: https://substackcdn.com/image/fetch/$s_!agoq!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2df8a806-fcca-4305-85fa-18d96145683f_658x658.png
   upstream_tags:
   - science
@@ -1844,14 +2029,16 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: Is magnesium the sleep fix it claims to be? Or is your mocktail just overpriced cherry juice?
+  search_excerpt: Is magnesium the sleep fix it claims to be? Or is your mocktail
+    just overpriced cherry juice?
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:03+00:00'
   last_synced_at: '2026-05-10T15:47:28+00:00'
   seo_title: Magnesium is Overrated (Especially by the Mocktail Crowd)
-  seo_description: Is magnesium the sleep fix it claims to be? Or is your mocktail just overpriced cherry juice?
+  seo_description: Is magnesium the sleep fix it claims to be? Or is your mocktail
+    just overpriced cherry juice?
   primary_keyword: vitamins
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -1860,7 +2047,10 @@ posts:
   title: Dopamine and the Problem of Poorly Trained Brains
   date: '2025-06-03'
   canonical_url: https://theedgeofepidemiology.substack.com/p/dopamine-and-the-problem-of-poorly
-  excerpt: Dopamine has become a scapegoat. Everything from addiction to short attention spans and social media’s grip on us are blamed on dopamine. Just open those same social media sites, search ‘dopamine’ and you’ll hear all about dopamine detoxes or how your phone is hijacking your neurotransmitters.
+  excerpt: Dopamine has become a scapegoat. Everything from addiction to short attention
+    spans and social media’s grip on us are blamed on dopamine. Just open those same
+    social media sites, search ‘dopamine’ and you’ll hear all about dopamine detoxes
+    or how your phone is hijacking your neurotransmitters.
   cover_image: https://substackcdn.com/image/fetch/$s_!C7Mv!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc0cad10a-054d-4afa-a4b4-1afb2cffa4f8_1526x2320.jpeg
   upstream_tags:
   - science
@@ -1882,14 +2072,20 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: Dopamine has become a scapegoat. Everything from addiction to short attention spans and social media’s grip on us are blamed on dopamine. Just open those same social media sites, search ‘dopamine’ and you’ll hear all about dopamine detoxes or how your phone is hijacking your neur
+  search_excerpt: Dopamine has become a scapegoat. Everything from addiction to short
+    attention spans and social media’s grip on us are blamed on dopamine. Just open
+    those same social media sites, search ‘dopamine’ and you’ll hear all about dopamine
+    detoxes or how your phone is hijacking your neur
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:03+00:00'
   last_synced_at: '2026-05-10T15:47:28+00:00'
   seo_title: Dopamine and the Problem of Poorly Trained Brains
-  seo_description: Dopamine has become a scapegoat. Everything from addiction to short attention spans and social media’s grip on us are blamed on dopamine. Just open those same social media sites, search ‘dopamine’ and you’ll hear all about dopamine detoxes or how your phone is
+  seo_description: Dopamine has become a scapegoat. Everything from addiction to short
+    attention spans and social media’s grip on us are blamed on dopamine. Just open
+    those same social media sites, search ‘dopamine’ and you’ll hear all about dopamine
+    detoxes or how your phone is
   primary_keyword: dopamine
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -1925,7 +2121,9 @@ posts:
   first_seen_at: '2026-05-10T15:46:04+00:00'
   last_synced_at: '2026-05-10T15:47:29+00:00'
   seo_title: Melatonin is Misunderstood (Especially By Those Who Use It Most)
-  seo_description: Melatonin is Misunderstood (Especially By Those Who Use It Most) from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on Melatonin.
+  seo_description: Melatonin is Misunderstood (Especially By Those Who Use It Most)
+    from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation,
+    and a focus on Melatonin.
   primary_keyword: Melatonin
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -1963,7 +2161,8 @@ posts:
   first_seen_at: '2026-05-10T15:46:04+00:00'
   last_synced_at: '2026-05-10T15:47:29+00:00'
   seo_title: The Raw Truth About Raw Milk
-  seo_description: The Raw Truth About Raw Milk from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on Raw Milk.
+  seo_description: The Raw Truth About Raw Milk from The Edge of Epidemiology, with
+    epidemiologic context, source-aware interpretation, and a focus on Raw Milk.
   primary_keyword: Raw Milk
   topic_cluster: disease-ecology
   indexing_strategy: noindex_stub
@@ -1972,7 +2171,9 @@ posts:
   title: Nature Isn’t Trying to Save You
   date: '2025-05-27'
   canonical_url: https://theedgeofepidemiology.substack.com/p/nature-isnt-trying-to-save-you
-  excerpt: I’m sure some of you have seen or heard some wellness influencer saying something along the lines of “go back to nature.” They say we should stop eating anything synthetic, avoid the seed oils, and to trust the wisdom of the Earth.
+  excerpt: I’m sure some of you have seen or heard some wellness influencer saying
+    something along the lines of “go back to nature.” They say we should stop eating
+    anything synthetic, avoid the seed oils, and to trust the wisdom of the Earth.
   cover_image: https://substackcdn.com/image/fetch/$s_!Dzw9!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F975cb5fc-799d-4f77-8e9d-d6d025708acc_936x624.jpeg
   upstream_tags:
   - science
@@ -1990,23 +2191,33 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: I’m sure some of you have seen or heard some wellness influencer saying something along the lines of “go back to nature.” They say we should stop eating anything synthetic, avoid the seed oils, and to trust the wisdom of the Earth.
+  search_excerpt: I’m sure some of you have seen or heard some wellness influencer
+    saying something along the lines of “go back to nature.” They say we should stop
+    eating anything synthetic, avoid the seed oils, and to trust the wisdom of the
+    Earth.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:04+00:00'
   last_synced_at: '2026-05-10T15:47:29+00:00'
   seo_title: Nature Isn’t Trying to Save You
-  seo_description: I’m sure some of you have seen or heard some wellness influencer saying something along the lines of “go back to nature.” They say we should stop eating anything synthetic, avoid the seed oils, and to trust the wisdom of the Earth.
+  seo_description: I’m sure some of you have seen or heard some wellness influencer
+    saying something along the lines of “go back to nature.” They say we should stop
+    eating anything synthetic, avoid the seed oils, and to trust the wisdom of the
+    Earth.
   primary_keyword: Wellness Industry
   topic_cluster: disease-ecology
   indexing_strategy: noindex_stub
 - substack_id: 164052573
   slug: when-the-influencers-claims-are-stronger
-  title: 'When the Influencer’s Claims are Stronger than the Evidence: A Look at Rhonda Patrick’s Vitamin D Claims'
+  title: 'When the Influencer’s Claims are Stronger than the Evidence: A Look at Rhonda
+    Patrick’s Vitamin D Claims'
   date: '2025-05-21'
   canonical_url: https://theedgeofepidemiology.substack.com/p/when-the-influencers-claims-are-stronger
-  excerpt: By now, more than 200,000 people on Twitter and over 30,000 on YouTube1 have seen the new video of Dr. Rhonda Patrick explaining how vitamin D supplements can cut your dementia risk by 40%2. That’s a bold, hopeful claim based on an observational study of over 12,000 people. And I think she means well. But how true is it?
+  excerpt: By now, more than 200,000 people on Twitter and over 30,000 on YouTube1
+    have seen the new video of Dr. Rhonda Patrick explaining how vitamin D supplements
+    can cut your dementia risk by 40%2. That’s a bold, hopeful claim based on an observational
+    study of over 12,000 people. And I think she means well. But how true is it?
   cover_image: https://substackcdn.com/image/fetch/$s_!Erti!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8d443539-75b0-4e00-9dc1-6af32f90462a_1024x1536.png
   upstream_tags:
   - science
@@ -2030,14 +2241,21 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: By now, more than 200,000 people on Twitter and over 30,000 on YouTube1 have seen the new video of Dr. Rhonda Patrick explaining how vitamin D supplements can cut your dementia risk by 40%2. That’s a bold, hopeful claim based on an observational study of over 12,000 people. And I
+  search_excerpt: By now, more than 200,000 people on Twitter and over 30,000 on YouTube1
+    have seen the new video of Dr. Rhonda Patrick explaining how vitamin D supplements
+    can cut your dementia risk by 40%2. That’s a bold, hopeful claim based on an observational
+    study of over 12,000 people. And I
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:05+00:00'
   last_synced_at: '2026-05-10T15:47:29+00:00'
-  seo_title: 'When the Influencer’s Claims are Stronger than the Evidence: A Look at Rhonda Patrick’s Vitamin D Claims'
-  seo_description: By now, more than 200,000 people on Twitter and over 30,000 on YouTube1 have seen the new video of Dr. Rhonda Patrick explaining how vitamin D supplements can cut your dementia risk by 40%2. That’s a bold, hopeful claim based on an observational study of over
+  seo_title: 'When the Influencer’s Claims are Stronger than the Evidence: A Look
+    at Rhonda Patrick’s Vitamin D Claims'
+  seo_description: By now, more than 200,000 people on Twitter and over 30,000 on
+    YouTube1 have seen the new video of Dr. Rhonda Patrick explaining how vitamin
+    D supplements can cut your dementia risk by 40%2. That’s a bold, hopeful claim
+    based on an observational study of over
   primary_keyword: dementia
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -2046,7 +2264,8 @@ posts:
   title: Your Body Already Detoxifies Itself. You Don’t Need a “Cleanse”
   date: '2025-05-20'
   canonical_url: https://theedgeofepidemiology.substack.com/p/your-body-already-detoxifies-itself
-  excerpt: Search the word ‘detox’ and you’ll find links about smoothies, sweat lodges, and supplement stacks that’ll cost more than a first date.
+  excerpt: Search the word ‘detox’ and you’ll find links about smoothies, sweat lodges,
+    and supplement stacks that’ll cost more than a first date.
   cover_image: https://substackcdn.com/image/fetch/$s_!7dJA!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb931c7fd-2280-4d79-b9d7-a9652f6da31c_1280x1214.jpeg
   upstream_tags:
   - science
@@ -2066,14 +2285,16 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: Search the word ‘detox’ and you’ll find links about smoothies, sweat lodges, and supplement stacks that’ll cost more than a first date.
+  search_excerpt: Search the word ‘detox’ and you’ll find links about smoothies, sweat
+    lodges, and supplement stacks that’ll cost more than a first date.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:05+00:00'
   last_synced_at: '2026-05-10T15:47:29+00:00'
   seo_title: Your Body Already Detoxifies Itself. You Don’t Need a “Cleanse”
-  seo_description: Search the word ‘detox’ and you’ll find links about smoothies, sweat lodges, and supplement stacks that’ll cost more than a first date.
+  seo_description: Search the word ‘detox’ and you’ll find links about smoothies,
+    sweat lodges, and supplement stacks that’ll cost more than a first date.
   primary_keyword: detox
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -2101,14 +2322,16 @@ posts:
   - revolutionary-war-atlas
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: It’s almost summer, and for a lot of people, that means tanning season.
+  search_excerpt: It’s almost summer, and for a lot of people, that means tanning
+    season.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:05+00:00'
   last_synced_at: '2026-05-10T15:47:29+00:00'
   seo_title: 'When Skin and Latitude Don’t Match: Why Pale Skin Burns in the Colonies'
-  seo_description: It’s almost summer, and for a lot of people, that means tanning season.
+  seo_description: It’s almost summer, and for a lot of people, that means tanning
+    season.
   primary_keyword: epidemiology
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -2148,7 +2371,9 @@ posts:
   first_seen_at: '2026-05-10T15:46:06+00:00'
   last_synced_at: '2026-05-10T15:47:30+00:00'
   seo_title: Creatine Is Underrated (By Those Who Would Benefit Most)
-  seo_description: Creatine Is Underrated (By Those Who Would Benefit Most) from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on epidemiology.
+  seo_description: Creatine Is Underrated (By Those Who Would Benefit Most) from The
+    Edge of Epidemiology, with epidemiologic context, source-aware interpretation,
+    and a focus on epidemiology.
   primary_keyword: epidemiology
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -2157,7 +2382,8 @@ posts:
   title: Why I Write ‘The Edge of Epidemiology’
   date: '2025-05-15'
   canonical_url: https://theedgeofepidemiology.substack.com/p/why-i-write-the-edge-of-epidemiology
-  excerpt: I started this blog because I was slightly fed up with the state of science communication.
+  excerpt: I started this blog because I was slightly fed up with the state of science
+    communication.
   cover_image: https://substackcdn.com/image/fetch/$s_!JuUC!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5b858093-5c1d-49bf-b366-0e12a969c83b_1024x1024.png
   upstream_tags:
   - science
@@ -2173,14 +2399,16 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: I started this blog because I was slightly fed up with the state of science communication.
+  search_excerpt: I started this blog because I was slightly fed up with the state
+    of science communication.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:06+00:00'
   last_synced_at: '2026-05-10T15:47:30+00:00'
   seo_title: Why I Write ‘The Edge of Epidemiology’
-  seo_description: I started this blog because I was slightly fed up with the state of science communication.
+  seo_description: I started this blog because I was slightly fed up with the state
+    of science communication.
   primary_keyword: epidemiology
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -2214,7 +2442,9 @@ posts:
   first_seen_at: '2026-05-10T15:46:07+00:00'
   last_synced_at: '2026-05-10T15:47:30+00:00'
   seo_title: Calories, Chaos, and the Mystery of Early Puberty
-  seo_description: Calories, Chaos, and the Mystery of Early Puberty from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on epidemiology.
+  seo_description: Calories, Chaos, and the Mystery of Early Puberty from The Edge
+    of Epidemiology, with epidemiologic context, source-aware interpretation, and
+    a focus on epidemiology.
   primary_keyword: epidemiology
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -2249,8 +2479,11 @@ posts:
   notes: ''
   first_seen_at: '2026-05-10T15:46:07+00:00'
   last_synced_at: '2026-05-10T15:47:30+00:00'
-  seo_title: 'Earn Your Opinions: Why Due Diligence is the Minimum Bar for Strong Beliefs'
-  seo_description: 'Earn Your Opinions: Why Due Diligence is the Minimum Bar for Strong Beliefs from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on Epistemology.'
+  seo_title: 'Earn Your Opinions: Why Due Diligence is the Minimum Bar for Strong
+    Beliefs'
+  seo_description: 'Earn Your Opinions: Why Due Diligence is the Minimum Bar for Strong
+    Beliefs from The Edge of Epidemiology, with epidemiologic context, source-aware
+    interpretation, and a focus on Epistemology.'
   primary_keyword: Epistemology
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -2259,7 +2492,8 @@ posts:
   title: 'Scout, Not Soldier: Rethinking Certainty in an Age of Tribalism'
   date: '2025-05-05'
   canonical_url: https://theedgeofepidemiology.substack.com/p/scout-not-soldier-rethinking-certainty
-  excerpt: There’s a moment early in Julia Galef’s 2021 book The Scout Mindset where she defines the core difference between two broad ways of approaching the world.
+  excerpt: There’s a moment early in Julia Galef’s 2021 book The Scout Mindset where
+    she defines the core difference between two broad ways of approaching the world.
   cover_image: https://substackcdn.com/image/fetch/$s_!A26b!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa0979ae-ab71-46c9-ab78-3ac54fb507b9_686x888.png
   upstream_tags:
   - Epistemology
@@ -2284,14 +2518,18 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: There’s a moment early in Julia Galef’s 2021 book The Scout Mindset where she defines the core difference between two broad ways of approaching the world.
+  search_excerpt: There’s a moment early in Julia Galef’s 2021 book The Scout Mindset
+    where she defines the core difference between two broad ways of approaching the
+    world.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:07+00:00'
   last_synced_at: '2026-05-10T15:47:30+00:00'
   seo_title: 'Scout, Not Soldier: Rethinking Certainty in an Age of Tribalism'
-  seo_description: There’s a moment early in Julia Galef’s 2021 book The Scout Mindset where she defines the core difference between two broad ways of approaching the world.
+  seo_description: There’s a moment early in Julia Galef’s 2021 book The Scout Mindset
+    where she defines the core difference between two broad ways of approaching the
+    world.
   primary_keyword: Epistemology
   topic_cluster: disease-and-war
   indexing_strategy: noindex_stub
@@ -2329,7 +2567,9 @@ posts:
   first_seen_at: '2026-05-10T15:46:08+00:00'
   last_synced_at: '2026-05-10T15:47:31+00:00'
   seo_title: 'Artificial Sweeteners: Health Hazard or Just a Convenient Scapegoat?'
-  seo_description: 'Artificial Sweeteners: Health Hazard or Just a Convenient Scapegoat? from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on risk communication.'
+  seo_description: 'Artificial Sweeteners: Health Hazard or Just a Convenient Scapegoat?
+    from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation,
+    and a focus on risk communication.'
   primary_keyword: risk communication
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -2370,16 +2610,19 @@ posts:
   first_seen_at: '2026-05-10T15:46:08+00:00'
   last_synced_at: '2026-05-10T15:47:31+00:00'
   seo_title: Gluten Panic
-  seo_description: Gluten Panic from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on Gluten.
+  seo_description: Gluten Panic from The Edge of Epidemiology, with epidemiologic
+    context, source-aware interpretation, and a focus on Gluten.
   primary_keyword: Gluten
   topic_cluster: pathogen-geography
   indexing_strategy: noindex_stub
 - substack_id: 162018776
   slug: stem-cells-for-parkinsons-just-took
-  title: Stem Cells for Parkinson’s Just Took a Big Step Forward. But We Don't Have a Cure Yet
+  title: Stem Cells for Parkinson’s Just Took a Big Step Forward. But We Don't Have
+    a Cure Yet
   date: '2025-04-24'
   canonical_url: https://theedgeofepidemiology.substack.com/p/stem-cells-for-parkinsons-just-took
-  excerpt: 'Neuroepidemiology Series Part 6: Two new clinical trials were published this month. Both look promising in terms of safety measures.'
+  excerpt: 'Neuroepidemiology Series Part 6: Two new clinical trials were published
+    this month. Both look promising in terms of safety measures.'
   cover_image: https://substackcdn.com/image/fetch/$s_!rjEE!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F903a2542-1985-4bd5-8c17-f48ce005d2a3_1024x1024.png
   upstream_tags:
   - science
@@ -2399,14 +2642,17 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: 'Neuroepidemiology Series Part 6: Two new clinical trials were published this month. Both look promising in terms of safety measures.'
+  search_excerpt: 'Neuroepidemiology Series Part 6: Two new clinical trials were published
+    this month. Both look promising in terms of safety measures.'
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:09+00:00'
   last_synced_at: '2026-05-10T15:47:31+00:00'
-  seo_title: Stem Cells for Parkinson’s Just Took a Big Step Forward. But We Don't Have a Cure Yet
-  seo_description: 'Neuroepidemiology Series Part 6: Two new clinical trials were published this month. Both look promising in terms of safety measures.'
+  seo_title: Stem Cells for Parkinson’s Just Took a Big Step Forward. But We Don't
+    Have a Cure Yet
+  seo_description: 'Neuroepidemiology Series Part 6: Two new clinical trials were
+    published this month. Both look promising in terms of safety measures.'
   primary_keyword: clinical trials
   topic_cluster: disease-and-war
   indexing_strategy: noindex_stub
@@ -2433,14 +2679,16 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: I spent most of my early training thinking I was doing epidemiology wrong.
+  search_excerpt: I spent most of my early training thinking I was doing epidemiology
+    wrong.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:09+00:00'
   last_synced_at: '2026-05-10T15:47:31+00:00'
   seo_title: When Learning Causal Inference Almost Broke My Brain
-  seo_description: I spent most of my early training thinking I was doing epidemiology wrong.
+  seo_description: I spent most of my early training thinking I was doing epidemiology
+    wrong.
   primary_keyword: math
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -2476,7 +2724,9 @@ posts:
   first_seen_at: '2026-05-10T15:46:10+00:00'
   last_synced_at: '2026-05-10T15:47:31+00:00'
   seo_title: 'From Asperger’s to Autism: How Reclassification Created a False "Epidemic"'
-  seo_description: 'From Asperger’s to Autism: How Reclassification Created a False "Epidemic" from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on psychiatry.'
+  seo_description: 'From Asperger’s to Autism: How Reclassification Created a False
+    "Epidemic" from The Edge of Epidemiology, with epidemiologic context, source-aware
+    interpretation, and a focus on psychiatry.'
   primary_keyword: psychiatry
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -2510,7 +2760,9 @@ posts:
   first_seen_at: '2026-05-10T15:46:10+00:00'
   last_synced_at: '2026-05-10T15:47:31+00:00'
   seo_title: Monogamous Birds Are Cheating Bastards (And That’s Normal)
-  seo_description: Monogamous Birds Are Cheating Bastards (And That’s Normal) from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on ecology.
+  seo_description: Monogamous Birds Are Cheating Bastards (And That’s Normal) from
+    The Edge of Epidemiology, with epidemiologic context, source-aware interpretation,
+    and a focus on ecology.
   primary_keyword: ecology
   topic_cluster: disease-ecology
   indexing_strategy: noindex_stub
@@ -2550,8 +2802,11 @@ posts:
   notes: ''
   first_seen_at: '2026-05-10T15:46:11+00:00'
   last_synced_at: '2026-05-10T15:47:32+00:00'
-  seo_title: How Health Headlines Trick You Without Technically Lying (Baseline Risk Matters)
-  seo_description: How Health Headlines Trick You Without Technically Lying (Baseline Risk Matters) from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on risk communication.
+  seo_title: How Health Headlines Trick You Without Technically Lying (Baseline Risk
+    Matters)
+  seo_description: How Health Headlines Trick You Without Technically Lying (Baseline
+    Risk Matters) from The Edge of Epidemiology, with epidemiologic context, source-aware
+    interpretation, and a focus on risk communication.
   primary_keyword: risk communication
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -2560,7 +2815,8 @@ posts:
   title: Epidemiology Didn’t Have a Replication Crisis — But Got its Trust Crisis
   date: '2025-04-11'
   canonical_url: https://theedgeofepidemiology.substack.com/p/epidemiology-didnt-have-a-replication
-  excerpt: What COVID revealed about the gap between doing good science and earning public trust.
+  excerpt: What COVID revealed about the gap between doing good science and earning
+    public trust.
   cover_image: https://substackcdn.com/image/fetch/$s_!TNh5!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F05008fb8-7218-4b4a-a433-5de84689045b_1024x1024.png
   upstream_tags:
   - science
@@ -2578,14 +2834,16 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: What COVID revealed about the gap between doing good science and earning public trust.
+  search_excerpt: What COVID revealed about the gap between doing good science and
+    earning public trust.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:12+00:00'
   last_synced_at: '2026-05-10T15:47:32+00:00'
   seo_title: Epidemiology Didn’t Have a Replication Crisis — But Got its Trust Crisis
-  seo_description: What COVID revealed about the gap between doing good science and earning public trust.
+  seo_description: What COVID revealed about the gap between doing good science and
+    earning public trust.
   primary_keyword: epidemiology
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -2623,7 +2881,9 @@ posts:
   first_seen_at: '2026-05-10T15:46:13+00:00'
   last_synced_at: '2026-05-10T15:47:32+00:00'
   seo_title: Obesity Isn’t a Dopamine Deficiency. It Might Be the Opposite.
-  seo_description: Obesity Isn’t a Dopamine Deficiency. It Might Be the Opposite. from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on obesity.
+  seo_description: Obesity Isn’t a Dopamine Deficiency. It Might Be the Opposite.
+    from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation,
+    and a focus on obesity.
   primary_keyword: obesity
   topic_cluster: wellness-claims
   indexing_strategy: noindex_stub
@@ -2632,7 +2892,8 @@ posts:
   title: Personality Is Probabilistic, Not Destiny
   date: '2025-04-07'
   canonical_url: https://theedgeofepidemiology.substack.com/p/personality-is-probabilistic-not
-  excerpt: Most people hear “personality is heritable” and picture a kind of genetic Xeroxing.
+  excerpt: Most people hear “personality is heritable” and picture a kind of genetic
+    Xeroxing.
   cover_image: https://substackcdn.com/image/fetch/$s_!sb0T!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F08df15b5-e9a8-4694-834d-07624c768cf5_1280x1771.jpeg
   upstream_tags:
   - Psychology
@@ -2654,14 +2915,16 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: Most people hear “personality is heritable” and picture a kind of genetic Xeroxing.
+  search_excerpt: Most people hear “personality is heritable” and picture a kind of
+    genetic Xeroxing.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:13+00:00'
   last_synced_at: '2026-05-10T15:47:32+00:00'
   seo_title: Personality Is Probabilistic, Not Destiny
-  seo_description: Most people hear “personality is heritable” and picture a kind of genetic Xeroxing.
+  seo_description: Most people hear “personality is heritable” and picture a kind
+    of genetic Xeroxing.
   primary_keyword: Psychology
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -2689,7 +2952,9 @@ posts:
   last_synced_at: '2026-05-10T15:47:33+00:00'
   upstream_tags: []
   seo_title: Why Every Food is a Carcinogen (If You Trust the Wrong Studies)
-  seo_description: Why Every Food is a Carcinogen (If You Trust the Wrong Studies) from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on every food carcinogen.
+  seo_description: Why Every Food is a Carcinogen (If You Trust the Wrong Studies)
+    from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation,
+    and a focus on every food carcinogen.
   primary_keyword: every food carcinogen
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -2698,7 +2963,8 @@ posts:
   title: Why the Link Between Weed and Psychosis Isn’t So Simple
   date: '2025-04-02'
   canonical_url: https://theedgeofepidemiology.substack.com/p/why-the-link-between-weed-and-psychosis
-  excerpt: Part 5 of the Neuroepidemiology Series takes a look at the not-so-straight forward link between cannabis and psychosis.
+  excerpt: Part 5 of the Neuroepidemiology Series takes a look at the not-so-straight
+    forward link between cannabis and psychosis.
   cover_image: https://substackcdn.com/image/fetch/$s_!7omK!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F181e56f3-b437-4c2a-bb85-c54589bf5e9e_822x1200.jpeg
   upstream_tags:
   - cannabis
@@ -2718,14 +2984,16 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: Part 5 of the Neuroepidemiology Series takes a look at the not-so-straight forward link between cannabis and psychosis.
+  search_excerpt: Part 5 of the Neuroepidemiology Series takes a look at the not-so-straight
+    forward link between cannabis and psychosis.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:14+00:00'
   last_synced_at: '2026-05-10T15:47:33+00:00'
   seo_title: Why the Link Between Weed and Psychosis Isn’t So Simple
-  seo_description: Part 5 of the Neuroepidemiology Series takes a look at the not-so-straight forward link between cannabis and psychosis.
+  seo_description: Part 5 of the Neuroepidemiology Series takes a look at the not-so-straight
+    forward link between cannabis and psychosis.
   primary_keyword: cannabis
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -2734,7 +3002,9 @@ posts:
   title: Chronic Wasting Disease (Devilish Diseases Part 5)
   date: '2025-03-27'
   canonical_url: https://theedgeofepidemiology.substack.com/p/chronic-wasting-disease-devilish
-  excerpt: A new direction for the Devilish Diseases series. We've covered all of the transmissible cancers in the wild, now on to other intriguing diseases in the animal kingdom.
+  excerpt: A new direction for the Devilish Diseases series. We've covered all of
+    the transmissible cancers in the wild, now on to other intriguing diseases in
+    the animal kingdom.
   cover_image: https://substackcdn.com/image/fetch/$s_!voU0!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcdcb6ae7-c421-4bd9-8be5-f4798fe151aa_1336x1032.jpeg
   upstream_tags:
   - science
@@ -2757,14 +3027,18 @@ posts:
   - maritime-disease-atlas
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: A new direction for the Devilish Diseases series. We've covered all of the transmissible cancers in the wild, now on to other intriguing diseases in the animal kingdom.
+  search_excerpt: A new direction for the Devilish Diseases series. We've covered
+    all of the transmissible cancers in the wild, now on to other intriguing diseases
+    in the animal kingdom.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:15+00:00'
   last_synced_at: '2026-05-10T15:47:33+00:00'
   seo_title: Chronic Wasting Disease (Devilish Diseases Part 5)
-  seo_description: A new direction for the Devilish Diseases series. We've covered all of the transmissible cancers in the wild, now on to other intriguing diseases in the animal kingdom.
+  seo_description: A new direction for the Devilish Diseases series. We've covered
+    all of the transmissible cancers in the wild, now on to other intriguing diseases
+    in the animal kingdom.
   primary_keyword: infectious disease
   topic_cluster: pathogen-geography
   indexing_strategy: noindex_stub
@@ -2773,7 +3047,8 @@ posts:
   title: How Tropical Diseases Impact Cognitive Development
   date: '2025-03-25'
   canonical_url: https://theedgeofepidemiology.substack.com/p/how-tropical-diseases-impact-cognitive
-  excerpt: In many regions with endemic NTDs, children face the burden of both physical symptoms and long term impacts.
+  excerpt: In many regions with endemic NTDs, children face the burden of both physical
+    symptoms and long term impacts.
   cover_image: https://substackcdn.com/image/fetch/$s_!o7ux!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F96949dec-5ceb-4a78-8fef-3a0f25361cfd_679x768.jpeg
   upstream_tags:
   - infectious disease
@@ -2796,20 +3071,23 @@ posts:
   - maritime-disease-atlas
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: In many regions with endemic NTDs, children face the burden of both physical symptoms and long term impacts.
+  search_excerpt: In many regions with endemic NTDs, children face the burden of both
+    physical symptoms and long term impacts.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:15+00:00'
   last_synced_at: '2026-05-10T15:47:33+00:00'
   seo_title: How Tropical Diseases Impact Cognitive Development
-  seo_description: In many regions with endemic NTDs, children face the burden of both physical symptoms and long term impacts.
+  seo_description: In many regions with endemic NTDs, children face the burden of
+    both physical symptoms and long term impacts.
   primary_keyword: infectious disease
   topic_cluster: pathogen-geography
   indexing_strategy: noindex_stub
 - substack_id: 159519883
   slug: measles-resurgence-the-hidden-toll
-  title: 'Measles Resurgence: The Hidden Toll of Immune Amnesia and the Urgent Need for Vaccination'
+  title: 'Measles Resurgence: The Hidden Toll of Immune Amnesia and the Urgent Need
+    for Vaccination'
   date: '2025-03-21'
   canonical_url: https://theedgeofepidemiology.substack.com/p/measles-resurgence-the-hidden-toll
   excerpt: A quick post on measles induced immune amnesia and the Texas outbreak.
@@ -2837,7 +3115,8 @@ posts:
   notes: ''
   first_seen_at: '2026-05-10T15:46:16+00:00'
   last_synced_at: '2026-05-10T15:47:33+00:00'
-  seo_title: 'Measles Resurgence: The Hidden Toll of Immune Amnesia and the Urgent Need for Vaccination'
+  seo_title: 'Measles Resurgence: The Hidden Toll of Immune Amnesia and the Urgent
+    Need for Vaccination'
   seo_description: A quick post on measles induced immune amnesia and the Texas outbreak.
   primary_keyword: epidemiology
   topic_cluster: epidemiologic-methods
@@ -2847,7 +3126,9 @@ posts:
   title: 'AI in Healthcare: Current Applications and Future Prospects'
   date: '2025-03-19'
   canonical_url: https://theedgeofepidemiology.substack.com/p/ai-in-healthcare-current-applications
-  excerpt: Artificial Intelligence (AI) has been steadily transitioning from science fiction into being an integral part of many people’s every day lives, including healthcare practitioners.
+  excerpt: Artificial Intelligence (AI) has been steadily transitioning from science
+    fiction into being an integral part of many people’s every day lives, including
+    healthcare practitioners.
   cover_image: https://substackcdn.com/image/fetch/$s_!ntsU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0f1db3d9-f399-4d1b-a7b9-7c6bc385ffef_853x1123.jpeg
   upstream_tags:
   - public health
@@ -2869,23 +3150,29 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: Artificial Intelligence (AI) has been steadily transitioning from science fiction into being an integral part of many people’s every day lives, including healthcare practitioners.
+  search_excerpt: Artificial Intelligence (AI) has been steadily transitioning from
+    science fiction into being an integral part of many people’s every day lives,
+    including healthcare practitioners.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:16+00:00'
   last_synced_at: '2026-05-10T15:47:33+00:00'
   seo_title: 'AI in Healthcare: Current Applications and Future Prospects'
-  seo_description: Artificial Intelligence (AI) has been steadily transitioning from science fiction into being an integral part of many people’s every day lives, including healthcare practitioners.
+  seo_description: Artificial Intelligence (AI) has been steadily transitioning from
+    science fiction into being an integral part of many people’s every day lives,
+    including healthcare practitioners.
   primary_keyword: AI
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
 - substack_id: 158813002
   slug: between-seizures-and-stigma-my-struggle
-  title: 'Between Seizures and Stigma: My Struggle with Epilepsy and the Global Public Health Challenge'
+  title: 'Between Seizures and Stigma: My Struggle with Epilepsy and the Global Public
+    Health Challenge'
   date: '2025-03-12'
   canonical_url: https://theedgeofepidemiology.substack.com/p/between-seizures-and-stigma-my-struggle
-  excerpt: Part 4 of the neuroepidemiology series gets a bit personal with my story dealing with epilepsy contrasted with the global experience
+  excerpt: Part 4 of the neuroepidemiology series gets a bit personal with my story
+    dealing with epilepsy contrasted with the global experience
   cover_image: https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6e0495eb-2940-4050-8c95-ea04b64e08ad_480x640.png
   upstream_tags:
   - science
@@ -2907,14 +3194,17 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: Part 4 of the neuroepidemiology series gets a bit personal with my story dealing with epilepsy contrasted with the global experience
+  search_excerpt: Part 4 of the neuroepidemiology series gets a bit personal with
+    my story dealing with epilepsy contrasted with the global experience
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:47:34+00:00'
   last_synced_at: '2026-05-10T15:47:34+00:00'
-  seo_title: 'Between Seizures and Stigma: My Struggle with Epilepsy and the Global Public Health Challenge'
-  seo_description: Part 4 of the neuroepidemiology series gets a bit personal with my story dealing with epilepsy contrasted with the global experience
+  seo_title: 'Between Seizures and Stigma: My Struggle with Epilepsy and the Global
+    Public Health Challenge'
+  seo_description: Part 4 of the neuroepidemiology series gets a bit personal with
+    my story dealing with epilepsy contrasted with the global experience
   primary_keyword: global health
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -2945,8 +3235,11 @@ posts:
   notes: ''
   first_seen_at: '2026-05-10T15:47:34+00:00'
   last_synced_at: '2026-05-10T15:47:34+00:00'
-  seo_title: 'MS Increases with Distance from the Equator: Examining the Latitude Gradient'
-  seo_description: 'MS Increases with Distance from the Equator: Examining the Latitude Gradient from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on neurology.'
+  seo_title: 'MS Increases with Distance from the Equator: Examining the Latitude
+    Gradient'
+  seo_description: 'MS Increases with Distance from the Equator: Examining the Latitude
+    Gradient from The Edge of Epidemiology, with epidemiologic context, source-aware
+    interpretation, and a focus on neurology.'
   primary_keyword: neurology
   topic_cluster: neuroepidemiology
   indexing_strategy: noindex_stub
@@ -2955,7 +3248,8 @@ posts:
   title: 'Understanding Migraine: Advances in Neuroepidemiology and Neuroscience'
   date: '2025-02-20'
   canonical_url: https://theedgeofepidemiology.substack.com/p/understanding-migraine-advances-in
-  excerpt: Part 2 of the Neuroepidemiology series. My job currently focuses on migraine research. This is based on my read of the literature over the past few weeks.
+  excerpt: Part 2 of the Neuroepidemiology series. My job currently focuses on migraine
+    research. This is based on my read of the literature over the past few weeks.
   cover_image: https://substackcdn.com/image/fetch/$s_!pwEb!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F530b4e71-b37b-4a3c-b7e7-026ad86b2a69_800x800.png
   upstream_tags:
   - science
@@ -2979,14 +3273,18 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: Part 2 of the Neuroepidemiology series. My job currently focuses on migraine research. This is based on my read of the literature over the past few weeks.
+  search_excerpt: Part 2 of the Neuroepidemiology series. My job currently focuses
+    on migraine research. This is based on my read of the literature over the past
+    few weeks.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:47:35+00:00'
   last_synced_at: '2026-05-10T15:47:35+00:00'
   seo_title: 'Understanding Migraine: Advances in Neuroepidemiology and Neuroscience'
-  seo_description: Part 2 of the Neuroepidemiology series. My job currently focuses on migraine research. This is based on my read of the literature over the past few weeks.
+  seo_description: Part 2 of the Neuroepidemiology series. My job currently focuses
+    on migraine research. This is based on my read of the literature over the past
+    few weeks.
   primary_keyword: Migraine
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -3019,23 +3317,27 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: Part 1 of the Neuroepidemiology series in the works here at Edge of Epi.
+  search_excerpt: Part 1 of the Neuroepidemiology series in the works here at Edge
+    of Epi.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:47:36+00:00'
   last_synced_at: '2026-05-10T15:47:36+00:00'
   seo_title: 'Neuroepidemiology: A Comprehensive Introduction'
-  seo_description: Part 1 of the Neuroepidemiology series in the works here at Edge of Epi.
+  seo_description: Part 1 of the Neuroepidemiology series in the works here at Edge
+    of Epi.
   primary_keyword: machine learning
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
 - substack_id: 155877299
   slug: transmissible-cancer-in-bivalves
-  title: 'Transmissible Cancer in Bivalves: What We Know About BTN (Devilish Diseases Part 4)'
+  title: 'Transmissible Cancer in Bivalves: What We Know About BTN (Devilish Diseases
+    Part 4)'
   date: '2025-01-27'
   canonical_url: https://theedgeofepidemiology.substack.com/p/transmissible-cancer-in-bivalves
-  excerpt: A transmissible cancer in bivalves poses a unique challenge to marine life and the ecosystems they sustain.
+  excerpt: A transmissible cancer in bivalves poses a unique challenge to marine life
+    and the ecosystems they sustain.
   cover_image: https://substackcdn.com/image/fetch/$s_!aua8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3372842f-5fdd-49a1-9fa2-2131d7248edc_1920x756.png
   source_mode: substack_page
   wordcount: 2549
@@ -3047,15 +3349,18 @@ posts:
   - maritime-disease-atlas
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: A transmissible cancer in bivalves poses a unique challenge to marine life and the ecosystems they sustain.
+  search_excerpt: A transmissible cancer in bivalves poses a unique challenge to marine
+    life and the ecosystems they sustain.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:47:36+00:00'
   last_synced_at: '2026-05-10T15:47:36+00:00'
   upstream_tags: []
-  seo_title: 'Transmissible Cancer in Bivalves: What We Know About BTN (Devilish Diseases Part 4)'
-  seo_description: A transmissible cancer in bivalves poses a unique challenge to marine life and the ecosystems they sustain.
+  seo_title: 'Transmissible Cancer in Bivalves: What We Know About BTN (Devilish Diseases
+    Part 4)'
+  seo_description: A transmissible cancer in bivalves poses a unique challenge to
+    marine life and the ecosystems they sustain.
   primary_keyword: transmissible cancer bivalves
   topic_cluster: pathogen-geography
   indexing_strategy: noindex_stub
@@ -3064,7 +3369,9 @@ posts:
   title: 'Bacteriophages: A Tool for Sustainability'
   date: '2025-01-19'
   canonical_url: https://theedgeofepidemiology.substack.com/p/bacteriophages-a-tool-for-sustainability
-  excerpt: This is part 2 of my phages series. Part 1 covered some of the medical uses. Here, I go over some uses in the food industry, water treatment facilities, and environmental uses.
+  excerpt: This is part 2 of my phages series. Part 1 covered some of the medical
+    uses. Here, I go over some uses in the food industry, water treatment facilities,
+    and environmental uses.
   cover_image: https://substackcdn.com/image/fetch/$s_!7kUl!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcf83f1fd-446e-4857-889d-0c48acc90a55_625x448.png
   upstream_tags:
   - science
@@ -3086,14 +3393,18 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: This is part 2 of my phages series. Part 1 covered some of the medical uses. Here, I go over some uses in the food industry, water treatment facilities, and environmental uses.
+  search_excerpt: This is part 2 of my phages series. Part 1 covered some of the medical
+    uses. Here, I go over some uses in the food industry, water treatment facilities,
+    and environmental uses.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:47:36+00:00'
   last_synced_at: '2026-05-10T15:47:36+00:00'
   seo_title: 'Bacteriophages: A Tool for Sustainability'
-  seo_description: This is part 2 of my phages series. Part 1 covered some of the medical uses. Here, I go over some uses in the food industry, water treatment facilities, and environmental uses.
+  seo_description: This is part 2 of my phages series. Part 1 covered some of the
+    medical uses. Here, I go over some uses in the food industry, water treatment
+    facilities, and environmental uses.
   primary_keyword: environmental health
   topic_cluster: disease-ecology
   indexing_strategy: noindex_stub
@@ -3102,7 +3413,9 @@ posts:
   title: 'Bacteriophages: A Viral Cure for Antibiotic Resistance?'
   date: '2025-01-13'
   canonical_url: https://theedgeofepidemiology.substack.com/p/bacteriophages-a-viral-cure-for-antibiotic
-  excerpt: Part 1 of a two-part series on phages and their many uses. Part 1 focuses on medical uses, while part 2 will focus on environmental, agricultural, industrial, and food safety applications.
+  excerpt: Part 1 of a two-part series on phages and their many uses. Part 1 focuses
+    on medical uses, while part 2 will focus on environmental, agricultural, industrial,
+    and food safety applications.
   cover_image: https://substackcdn.com/image/fetch/$s_!RMNG!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc2a4a87d-edcd-419b-9635-03cece05e0e7_400x535.png
   upstream_tags:
   - infectious disease
@@ -3125,14 +3438,18 @@ posts:
   - maritime-disease-atlas
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: Part 1 of a two-part series on phages and their many uses. Part 1 focuses on medical uses, while part 2 will focus on environmental, agricultural, industrial, and food safety applications.
+  search_excerpt: Part 1 of a two-part series on phages and their many uses. Part
+    1 focuses on medical uses, while part 2 will focus on environmental, agricultural,
+    industrial, and food safety applications.
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:18+00:00'
   last_synced_at: '2026-05-10T15:47:37+00:00'
   seo_title: 'Bacteriophages: A Viral Cure for Antibiotic Resistance?'
-  seo_description: Part 1 of a two-part series on phages and their many uses. Part 1 focuses on medical uses, while part 2 will focus on environmental, agricultural, industrial, and food safety applications.
+  seo_description: Part 1 of a two-part series on phages and their many uses. Part
+    1 focuses on medical uses, while part 2 will focus on environmental, agricultural,
+    industrial, and food safety applications.
   primary_keyword: infectious disease
   topic_cluster: pathogen-geography
   indexing_strategy: noindex_stub
@@ -3141,7 +3458,8 @@ posts:
   title: Oral GLP-1 Agonists Show Major Promise
   date: '2025-01-02'
   canonical_url: https://theedgeofepidemiology.substack.com/p/oral-glp-1-agonists-show-major-promise
-  excerpt: Recently, a new wave of drugs has been developed that puts obesity and type 2 diabetes in a chokehold.
+  excerpt: Recently, a new wave of drugs has been developed that puts obesity and
+    type 2 diabetes in a chokehold.
   cover_image: https://substackcdn.com/image/fetch/$s_!4i7V!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa3b94a37-db86-4738-8ffb-33f8a73f7813_954x688.png
   source_mode: substack_page
   wordcount: 1440
@@ -3152,7 +3470,8 @@ posts:
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: Recently, a new wave of drugs has been developed that puts obesity and type 2 diabetes in a chokehold.
+  search_excerpt: Recently, a new wave of drugs has been developed that puts obesity
+    and type 2 diabetes in a chokehold.
   local_body_path: ''
   hero_mode: cover
   notes: ''
@@ -3160,7 +3479,8 @@ posts:
   last_synced_at: '2026-05-10T15:47:37+00:00'
   upstream_tags: []
   seo_title: Oral GLP-1 Agonists Show Major Promise
-  seo_description: Recently, a new wave of drugs has been developed that puts obesity and type 2 diabetes in a chokehold.
+  seo_description: Recently, a new wave of drugs has been developed that puts obesity
+    and type 2 diabetes in a chokehold.
   primary_keyword: oral agonists show major
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -3169,7 +3489,8 @@ posts:
   title: 'The Koala Retrovirus : A Genome Under Siege (Devilish Diseases Part 3)'
   date: '2024-12-24'
   canonical_url: https://theedgeofepidemiology.substack.com/p/the-koala-retrovirus-a-genome-under
-  excerpt: 'Koalas, the beloved marsupial from Australia, are facing threats to their existence on multiple fronts: habitat loss, climate change, and disease.'
+  excerpt: 'Koalas, the beloved marsupial from Australia, are facing threats to their
+    existence on multiple fronts: habitat loss, climate change, and disease.'
   cover_image: https://substackcdn.com/image/fetch/$s_!oL2G!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5e298cbc-e894-4d36-a3a7-47264b234a6c_544x810.jpeg
   upstream_tags:
   - infectious disease
@@ -3194,23 +3515,28 @@ posts:
   - maritime-disease-atlas
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: 'Koalas, the beloved marsupial from Australia, are facing threats to their existence on multiple fronts: habitat loss, climate change, and disease.'
+  search_excerpt: 'Koalas, the beloved marsupial from Australia, are facing threats
+    to their existence on multiple fronts: habitat loss, climate change, and disease.'
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:47:37+00:00'
   last_synced_at: '2026-05-10T15:47:37+00:00'
-  seo_title: 'The Koala Retrovirus : A Genome Under Siege (Devilish Diseases Part 3)'
-  seo_description: 'Koalas, the beloved marsupial from Australia, are facing threats to their existence on multiple fronts: habitat loss, climate change, and disease.'
+  seo_title: 'The Koala Retrovirus : A Genome Under Siege (Devilish Diseases Part
+    3)'
+  seo_description: 'Koalas, the beloved marsupial from Australia, are facing threats
+    to their existence on multiple fronts: habitat loss, climate change, and disease.'
   primary_keyword: infectious disease
   topic_cluster: pathogen-geography
   indexing_strategy: noindex_stub
 - substack_id: 152777071
   slug: the-ancient-cancer-that-crossed-continents
-  title: 'The Ancient Cancer that Crossed Continents (Devilish Diseases Part 2): Canine Transmissible Venereal Tumor'
+  title: 'The Ancient Cancer that Crossed Continents (Devilish Diseases Part 2): Canine
+    Transmissible Venereal Tumor'
   date: '2024-12-08'
   canonical_url: https://theedgeofepidemiology.substack.com/p/the-ancient-cancer-that-crossed-continents
-  excerpt: In the first installment of my “Devilish Diseases” series (https://vectorsofinquiry.substack.com/p/the-devils-burden) we looked at the series’ namesake, Tasmanian Devil Facial Tumor Disease (DFTD).
+  excerpt: In the first installment of my “Devilish Diseases” series (https://vectorsofinquiry.substack.com/p/the-devils-burden)
+    we looked at the series’ namesake, Tasmanian Devil Facial Tumor Disease (DFTD).
   cover_image: https://substackcdn.com/image/fetch/$s_!8oCo!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F99c2b293-0b4e-4835-969d-c01dd83e1df9_654x646.png
   upstream_tags:
   - science
@@ -3235,14 +3561,17 @@ posts:
   - maritime-disease-atlas
   related_reference_slugs: []
   related_story_ids: []
-  search_excerpt: In the first installment of my “Devilish Diseases” series (https://vectorsofinquiry.substack.com/p/the-devils-burden) we looked at the series’ namesake, Tasmanian Devil Facial Tumor Disease (DFTD).
+  search_excerpt: In the first installment of my “Devilish Diseases” series (https://vectorsofinquiry.substack.com/p/the-devils-burden)
+    we looked at the series’ namesake, Tasmanian Devil Facial Tumor Disease (DFTD).
   local_body_path: ''
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:47:38+00:00'
   last_synced_at: '2026-05-10T15:47:38+00:00'
-  seo_title: 'The Ancient Cancer that Crossed Continents (Devilish Diseases Part 2): Canine Transmissible Venereal Tumor'
-  seo_description: In the first installment of my “Devilish Diseases” series (https://vectorsofinquiry.substack.com/p/the-devils-burden) we looked at the series’ namesake, Tasmanian Devil Facial Tumor Disease (DFTD).
+  seo_title: 'The Ancient Cancer that Crossed Continents (Devilish Diseases Part 2):
+    Canine Transmissible Venereal Tumor'
+  seo_description: In the first installment of my “Devilish Diseases” series (https://vectorsofinquiry.substack.com/p/the-devils-burden)
+    we looked at the series’ namesake, Tasmanian Devil Facial Tumor Disease (DFTD).
   primary_keyword: ecology
   topic_cluster: pathogen-geography
   indexing_strategy: noindex_stub
@@ -3278,7 +3607,9 @@ posts:
   first_seen_at: '2026-05-10T15:47:38+00:00'
   last_synced_at: '2026-05-10T15:47:38+00:00'
   seo_title: Don’t let foodborne illnesses ruin your Thanksgiving
-  seo_description: Don’t let foodborne illnesses ruin your Thanksgiving from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on holidays.
+  seo_description: Don’t let foodborne illnesses ruin your Thanksgiving from The Edge
+    of Epidemiology, with epidemiologic context, source-aware interpretation, and
+    a focus on holidays.
   primary_keyword: holidays
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
@@ -3307,7 +3638,9 @@ posts:
   last_synced_at: '2026-05-10T15:47:39+00:00'
   upstream_tags: []
   seo_title: The Devil’s Burden (Devilish Diseases Part 1)
-  seo_description: The Devil’s Burden (Devilish Diseases Part 1) from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on devils burden.
+  seo_description: The Devil’s Burden (Devilish Diseases Part 1) from The Edge of
+    Epidemiology, with epidemiologic context, source-aware interpretation, and a focus
+    on devils burden.
   primary_keyword: devils burden
   topic_cluster: pathogen-geography
   indexing_strategy: noindex_stub
