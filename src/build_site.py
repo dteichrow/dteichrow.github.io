@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import datetime as dt
 import html
 import json
 import re
@@ -28,7 +29,62 @@ from .common import (
 
 
 DEFAULT_EPI_DOSSIER_REPO = "https://github.com/dteichrow/epi-dossier.git"
+PUBLIC_SITE_ORIGIN = "https://devinteichrow.com"
+PUBLIC_SITE_DOMAIN = "devinteichrow.com"
+DEFAULT_SOCIAL_IMAGE = "assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png"
+INDEXABLE_POST_STRATEGIES = {"evergreen", "index", "mirrored"}
 DOI_URL_PATTERN = re.compile(r"(^|/)(10\.[0-9]{4,9}/\S+)", re.IGNORECASE)
+GENERIC_DESCRIPTIONS = {
+    "",
+    "About Edge of Epidemiology.",
+    "Edge of Epidemiology publication page.",
+    "Source-first outbreak reporting from The Pathogen Dispatch.",
+    "Interactive atlas from The Edge of Epidemiology.",
+}
+TOPIC_HUBS = [
+    {
+        "slug": "historical-epidemiology",
+        "title": "Historical Epidemiology",
+        "description": "Essays on epidemics as historical forces: ancient pathogens, colonial encounters, disease ecology, and the long memory of public health.",
+        "keywords": ["history", "historical epidemiology", "ancient", "colonial", "plague", "cocoliztli", "syphilis"],
+    },
+    {
+        "slug": "disease-and-war",
+        "title": "Disease And War",
+        "description": "War, armies, migration, logistics, barracks, ships, and the infections that move through military systems.",
+        "keywords": ["war", "military", "revolutionary", "korean", "napoleon", "soldier", "oregon trail"],
+    },
+    {
+        "slug": "disease-ecology",
+        "title": "Disease Ecology",
+        "description": "Disease stories where landscapes, reservoirs, vectors, cities, climate, and infrastructure explain more than the pathogen alone.",
+        "keywords": ["ecology", "vector", "mosquito", "climate", "environment", "raw milk", "zoonotic"],
+    },
+    {
+        "slug": "pathogen-geography",
+        "title": "Pathogen Geography",
+        "description": "Map-first work on how pathogens travel through ports, ships, animal reservoirs, water systems, roads, empires, and borders.",
+        "keywords": ["atlas", "geography", "pathogen", "maritime", "ship", "route", "port"],
+    },
+    {
+        "slug": "epidemiologic-methods",
+        "title": "Epidemiologic Methods",
+        "description": "Readable epidemiology methods, causal inference, risk communication, evidence grading, replication, and statistical thinking.",
+        "keywords": ["causal", "risk", "evidence", "baseline", "replication", "wearable", "meta-analysis", "studies"],
+    },
+    {
+        "slug": "wellness-claims",
+        "title": "Wellness Claims",
+        "description": "Evidence-first writing on supplements, nutrition, wellness panics, influencer claims, and health stories that outrun the data.",
+        "keywords": ["wellness", "supplement", "raw milk", "gluten", "creatine", "melatonin", "detox", "sweetener", "dopamine"],
+    },
+    {
+        "slug": "neuroepidemiology",
+        "title": "Neuroepidemiology",
+        "description": "Neuroepidemiology essays on migraine, cognition, epilepsy, dementia, Parkinson's disease, multiple sclerosis, and brain-health evidence.",
+        "keywords": ["migraine", "brain", "neuro", "alzheimer", "parkinson", "epilepsy", "seizure", "cognition", "ms"],
+    },
+]
 PATHOGEN_ATLAS_COLORS = {
     "yellow-fever": "#d86a4f",
     "cholera": "#5a9bd4",
@@ -361,6 +417,7 @@ def site_nav(active: str, base_url: str) -> str:
         ("Newsdesk", "newsdesk/"),
         ("Atlases", "atlases/"),
         ("Essays", "essays/"),
+        ("Topics", "topics/"),
         ("Historical", "historical/"),
         ("Reference", "reference/"),
         ("Methods", "methods/"),
@@ -383,7 +440,7 @@ def site_nav(active: str, base_url: str) -> str:
         '<div class="site-header-inner">'
         '<div class="site-header-copy">'
         '<p class="kicker">The Edge of Epidemiology</p>'
-        '<h1 class="site-brand"><a href="{home}"><span>The Edge of Epidemiology</span> <span class="site-brand-byline">by Devin Teichrow</span></a></h1>'
+        '<div class="site-brand"><a href="{home}"><span>The Edge of Epidemiology</span> <span class="site-brand-byline">by Devin Teichrow</span></a></div>'
         '<p class="site-header-title">History-haunted epidemiology, live reporting, and atlas work in one place.</p>'
         "</div>"
         '<nav class="site-nav" aria-label="Primary navigation">{links}</nav>'
@@ -404,6 +461,7 @@ def base_html(
 ) -> str:
     css_href = html.escape(link_for(base_url, "assets/site.css"))
     js_href = html.escape(link_for(base_url, "assets/site.js"))
+    body = promote_first_hero_heading(body)
     return f"""<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -424,6 +482,16 @@ def base_html(
   </body>
 </html>
 """
+
+
+def promote_first_hero_heading(body: str) -> str:
+    return re.sub(
+        r'<h2 class="hero-title">(.*?)</h2>',
+        r'<h1 class="hero-title">\1</h1>',
+        body,
+        count=1,
+        flags=re.S,
+    )
 
 
 def render_card(title: str, href: str, kicker: str, summary: str, meta: list[str] | None = None) -> str:
@@ -479,7 +547,13 @@ def post_folio_meta(post: dict[str, Any]) -> tuple[str, str]:
         category_text = str(post["series"][0])
     elif post.get("topics"):
         category_text = str(post["topics"][0])
-    status_label = "Local stub" if post.get("status") != "mirrored" else "Mirrored"
+    strategy = post_indexing_strategy(post)
+    if strategy in INDEXABLE_POST_STRATEGIES:
+        status_label = "Evergreen"
+    elif post.get("status") == "mirrored":
+        status_label = "Mirrored"
+    else:
+        status_label = "Noindex stub"
     utility_meta = " · ".join(item for item in [category_text, status_label] if item)
     return date_text, utility_meta
 
@@ -487,7 +561,7 @@ def post_folio_meta(post: dict[str, Any]) -> tuple[str, str]:
 def render_post_card(post: dict[str, Any], base_url: str, *, featured: bool = False) -> str:
     href = link_for(base_url, f"essays/{post.get('slug', '')}/")
     date_text, utility_meta = post_folio_meta(post)
-    summary = post.get("dek") or post.get("excerpt") or "Published writing from The Edge of Epidemiology."
+    summary = post_seo_description(post)
     feature_image = post.get("cover_image") or ""
     feature_class = " essay-card-featured" if featured and feature_image else ""
     image_class = " essay-card-has-media" if feature_image else ""
@@ -507,7 +581,7 @@ def render_post_card(post: dict[str, Any], base_url: str, *, featured: bool = Fa
         f'<span class="card-utility-meta">{html.escape(utility_meta)}</span>'
         "</div>"
         '<p class="kicker">Essay</p>'
-        f'<h3><a href="{html.escape(href)}">{html.escape(post.get("title", "Untitled post"))}</a></h3>'
+        f'<h3><a href="{html.escape(href)}">{html.escape(post_display_title(post))}</a></h3>'
         f'<p class="muted-note">{html.escape(summary)}</p>'
         "</div>"
         "</article>"
@@ -565,6 +639,53 @@ def render_reference_card(reference: dict[str, Any], base_url: str) -> str:
 
 def canonical_meta(values: list[str]) -> list[str]:
     return [value for value in values if value]
+
+
+def post_display_title(post: dict[str, Any]) -> str:
+    return post.get("seo_title") or post.get("title") or "Untitled post"
+
+
+def post_seo_description(post: dict[str, Any]) -> str:
+    return (
+        post.get("seo_description")
+        or post.get("dek")
+        or post.get("excerpt")
+        or post.get("search_excerpt")
+        or "Published writing from The Edge of Epidemiology."
+    )
+
+
+def post_indexing_strategy(post: dict[str, Any]) -> str:
+    strategy = str(post.get("indexing_strategy") or "").strip()
+    if strategy:
+        return strategy
+    if post.get("status") == "mirrored":
+        return "mirrored"
+    return "noindex_stub"
+
+
+def post_topic_cluster(post: dict[str, Any]) -> str:
+    if post.get("topic_cluster"):
+        return str(post["topic_cluster"])
+    text = " ".join(
+        [
+            str(post.get("slug", "")),
+            str(post.get("title", "")),
+            " ".join(str(topic) for topic in post.get("topics", [])),
+            " ".join(str(tag) for tag in post.get("upstream_tags", [])),
+        ]
+    ).lower()
+    for hub in TOPIC_HUBS:
+        if any(keyword in text for keyword in hub["keywords"]):
+            return str(hub["slug"])
+    return "historical-epidemiology" if "history" in text else "epidemiologic-methods"
+
+
+def topic_hub_title(slug: str) -> str:
+    for hub in TOPIC_HUBS:
+        if hub["slug"] == slug:
+            return str(hub["title"])
+    return slug.replace("-", " ").title()
 
 
 def render_home(posts: list[dict[str, Any]], atlases: list[dict[str, Any]], latest: dict[str, Any], base_url: str) -> str:
@@ -638,7 +759,66 @@ def render_essays_index(posts: list[dict[str, Any]], base_url: str) -> str:
     )
 
 
-def render_post_page(post: dict[str, Any], atlases: dict[str, dict[str, Any]], base_url: str) -> str:
+def render_topic_hub_index(posts: list[dict[str, Any]], base_url: str) -> str:
+    cards = []
+    for hub in TOPIC_HUBS:
+        count = sum(1 for post in posts if post_topic_cluster(post) == hub["slug"])
+        cards.append(
+            render_card(
+                title=str(hub["title"]),
+                href=link_for(base_url, f"topics/{hub['slug']}/"),
+                kicker=f"{count} essay(s)",
+                summary=str(hub["description"]),
+                meta=["Topic hub"],
+            )
+        )
+    return base_html(
+        title="Topics | Edge of Epidemiology",
+        description="Topic hubs for historical epidemiology, disease and war, pathogen geography, epidemiologic methods, wellness claims, and neuroepidemiology.",
+        active="topics",
+        base_url=base_url,
+        body=f"""
+      <section class="hero hero-open">
+        <p class="kicker">Topic hubs</p>
+        <h2 class="hero-title">The main search lanes for The Edge of Epidemiology</h2>
+        <p class="subtitle">A cleaner topical map for readers and search engines: disease history, war, ecology, geography, methods, wellness claims, and neuroepidemiology.</p>
+      </section>
+      <section class="panel panel-soft">
+        <div class="card-grid three-up">{"".join(cards)}</div>
+      </section>
+    """,
+    )
+
+
+def render_topic_hub_page(hub: dict[str, Any], posts: list[dict[str, Any]], base_url: str) -> str:
+    selected = [post for post in posts if post_topic_cluster(post) == hub["slug"]]
+    cards = "".join(render_post_card(post, base_url, featured=index == 0) for index, post in enumerate(selected))
+    if not cards:
+        cards = '<p class="muted-note">No essays are currently assigned to this topic hub.</p>'
+    return base_html(
+        title=f"{hub['title']} Topic Hub | Edge of Epidemiology",
+        description=str(hub["description"]),
+        active="topics",
+        base_url=base_url,
+        body=f"""
+      <section class="hero hero-open">
+        <p class="kicker">Topic hub</p>
+        <h2 class="hero-title">{html.escape(str(hub['title']))}</h2>
+        <p class="subtitle">{html.escape(str(hub['description']))}</p>
+      </section>
+      <section class="panel panel-soft">
+        <div class="section-head">
+          <p class="kicker">Essays</p>
+          <h2>{len(selected)} linked piece(s)</h2>
+          <p class="muted-note">This hub groups related writing so older essays keep sending authority to newer and more specific pages.</p>
+        </div>
+        <div class="card-grid three-up essays-grid">{cards}</div>
+      </section>
+    """,
+    )
+
+
+def render_post_page(post: dict[str, Any], atlases: dict[str, dict[str, Any]], posts: list[dict[str, Any]], base_url: str) -> str:
     related_atlas_links = []
     for atlas_id in post.get("related_atlases", []):
         entry = atlases.get(atlas_id)
@@ -656,20 +836,60 @@ def render_post_page(post: dict[str, Any], atlases: dict[str, dict[str, Any]], b
     )
     topics = "".join(f'<span class="badge">{html.escape(topic)}</span>' for topic in post.get("topics", []))
     read_url = post.get("canonical_url", "")
-    status_label = "Mirrored locally" if post.get("status") == "mirrored" else "Local library stub"
+    strategy = post_indexing_strategy(post)
+    is_indexable = strategy in INDEXABLE_POST_STRATEGIES
+    status_label = "Evergreen landing page" if is_indexable else "Noindex library stub"
+    display_title = post_display_title(post)
+    description = post_seo_description(post)
+    original_title = post.get("title") or ""
+    original_note = (
+        f'<p class="muted-note"><strong>Original Substack title:</strong> {html.escape(original_title)}</p>'
+        if original_title and original_title != display_title
+        else ""
+    )
+    cluster = post_topic_cluster(post)
+    cluster_link = link_for(base_url, f"topics/{cluster}/")
+    cluster_title = topic_hub_title(cluster)
+    related_posts = [
+        item
+        for item in posts
+        if item is not post and item.get("slug") != post.get("slug") and post_topic_cluster(item) == cluster
+    ][:5]
+    related_essay_items = "".join(
+        f'<li><a href="{html.escape(link_for(base_url, f"essays/{item.get("slug", "")}/"))}">{html.escape(post_display_title(item))}</a></li>'
+        for item in related_posts
+    )
+    related_essay_block = (
+        '<div class="detail-block"><h3>Related essays</h3><ul class="link-list">'
+        + related_essay_items
+        + "</ul></div>"
+        if related_essay_items
+        else '<div class="detail-block"><h3>Related essays</h3><p class="muted-note">No same-topic essays are linked yet.</p></div>'
+    )
+    keyword = post.get("primary_keyword") or cluster_title
+    source_mode = post.get("source_mode") or "Substack archive"
+    updated_label = format_display_date(post.get("last_synced_at") or post.get("date"))
+    first_seen_label = format_display_date(post.get("first_seen_at") or post.get("date"))
+    page_role = (
+        "This page is an owned-domain evergreen landing page for the essay. It gives the piece a clearer search title, a topic hub, visible source metadata, and durable links into the rest of The Edge of Epidemiology."
+        if is_indexable
+        else "This page is an owned-domain library stub for the essay. It is intentionally marked noindex until it becomes a fuller mirror, a real evergreen landing page, or an original owned-domain article."
+    )
     return base_html(
-        title=f"{post.get('title', 'Essay')} | Edge of Epidemiology",
-        description=post.get("excerpt") or post.get("dek") or "Published work from The Edge of Epidemiology.",
+        title=f"{display_title} | Edge of Epidemiology",
+        description=description,
         active="essays",
         base_url=base_url,
         body=f"""
       <section class="hero">
         <p class="kicker">Essay</p>
-        <h2 class="hero-title">{html.escape(post.get('title', 'Untitled post'))}</h2>
-        <p class="subtitle">{html.escape(post.get('dek') or post.get('excerpt') or 'Published writing from The Edge of Epidemiology.')}</p>
+        <h2 class="hero-title">{html.escape(display_title)}</h2>
+        <p class="subtitle">{html.escape(description)}</p>
+        {original_note}
         <div class="meta-row">
           <span class="badge accent">{html.escape(status_label)}</span>
           <span class="badge">{html.escape(format_display_date(post.get('date')))}</span>
+          <span class="badge">By Devin Teichrow</span>
           {topics}
         </div>
         <div class="hero-actions">
@@ -678,18 +898,50 @@ def render_post_page(post: dict[str, Any], atlases: dict[str, dict[str, Any]], b
       </section>
       <section class="panel detail-grid">
         <div class="detail-block">
-          <h3>What this page is</h3>
-          <p class="muted-note">This is the local public library entry for the essay. It exists immediately when a post is published so the site can surface it without waiting for a later mirroring pass.</p>
+          <h3>Contents</h3>
+          <ul class="link-list">
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#source-notes">Source notes</a></li>
+            <li><a href="#related-work">Related work</a></li>
+          </ul>
         </div>
+        <div class="detail-block">
+          <h3>Topic hub</h3>
+          <p><a href="{html.escape(cluster_link)}">{html.escape(cluster_title)}</a></p>
+        </div>
+        <div class="detail-block">
+          <h3>Search focus</h3>
+          <p>{html.escape(str(keyword))}</p>
+        </div>
+        <div class="detail-block">
+          <h3>Author and updates</h3>
+          <p>By Devin Teichrow. Published {html.escape(format_display_date(post.get('date')))}. Last synced {html.escape(updated_label)}.</p>
+        </div>
+      </section>
+      <section class="panel detail-grid" id="overview">
+        <div class="detail-block">
+          <h3>Overview</h3>
+          <p>{html.escape(description)}</p>
+          <p>{html.escape(post.get('excerpt') or post.get('search_excerpt') or '')}</p>
+        </div>
+        <div class="detail-block">
+          <h3>What this page is</h3>
+          <p class="muted-note">{html.escape(page_role)}</p>
+        </div>
+      </section>
+      <section class="panel detail-grid" id="source-notes">
         <div class="detail-block">
           <h3>Canonical source</h3>
           <p><a href="{html.escape(read_url)}">{html.escape(read_url)}</a></p>
         </div>
         <div class="detail-block">
-          <h3>Excerpt</h3>
-          <p>{html.escape(post.get('excerpt') or post.get('search_excerpt') or '')}</p>
+          <h3>Source notes</h3>
+          <p>Source mode: {html.escape(str(source_mode))}. First seen locally: {html.escape(first_seen_label)}. Indexing strategy: {html.escape(strategy)}.</p>
         </div>
+      </section>
+      <section class="panel detail-grid" id="related-work">
         {related_block}
+        {related_essay_block}
       </section>
     """,
     )
@@ -1261,6 +1513,7 @@ def imported_shell_nav(active: str, base_url: str) -> str:
         ("Pathogen Atlas", "atlases/pathogen/"),
         ("Maritime Atlas", "atlases/maritime/"),
         ("Essays", "essays/"),
+        ("Topics", "topics/"),
         ("Historical", "historical/"),
         ("Reference", "reference/"),
         ("Opportunities", "opportunities/"),
@@ -1875,6 +2128,311 @@ def copy_static_assets(docs_dir: Path) -> None:
         shutil.rmtree(target)
     shutil.copytree(ASSETS_DIR, target)
     (docs_dir / ".nojekyll").write_text("")
+    (docs_dir / "CNAME").write_text(f"{PUBLIC_SITE_DOMAIN}\n")
+
+
+def route_for_html_path(path: Path, docs_dir: Path) -> str:
+    rel = path.relative_to(docs_dir).as_posix()
+    if rel == "index.html":
+        return ""
+    if rel.endswith("/index.html"):
+        return f"{rel[:-len('/index.html')]}/"
+    return rel
+
+
+def public_url_for_route(route: str) -> str:
+    return f"{PUBLIC_SITE_ORIGIN}/{route.lstrip('/')}" if route else f"{PUBLIC_SITE_ORIGIN}/"
+
+
+def extract_html_title(html_text: str) -> str:
+    match = re.search(r"<title>(.*?)</title>", html_text, flags=re.I | re.S)
+    return strip_html_tags(match.group(1)) if match else ""
+
+
+def extract_meta_description_from_html(html_text: str) -> str:
+    return meta_tag_content(html_text, "name", "description")
+
+
+def meta_tag_content(html_text: str, attr: str, value: str) -> str:
+    pattern = rf'<meta[^>]+{attr}=["\']{re.escape(value)}["\'][^>]+content=["\']([^"\']*)["\']'
+    match = re.search(pattern, html_text, flags=re.I | re.S)
+    return html.unescape(match.group(1)).strip() if match else ""
+
+
+def extract_primary_heading(html_text: str) -> str:
+    for tag in ("h1", "h2"):
+        match = re.search(rf"<{tag}[^>]*>(.*?)</{tag}>", html_text, flags=re.I | re.S)
+        if match:
+            heading = strip_html_tags(match.group(1))
+            if heading and heading.lower() not in {"the edge of epidemiology", "by devin teichrow"}:
+                return heading
+    return ""
+
+
+def clean_seo_description(value: str, fallback: str) -> str:
+    cleaned = re.sub(r"\s+", " ", strip_html_tags(value)).strip()
+    if cleaned in GENERIC_DESCRIPTIONS or len(cleaned) < 70:
+        cleaned = fallback
+    return cleaned[:280].rstrip()
+
+
+def title_case_slug(value: str) -> str:
+    return value.replace("-", " ").replace("_", " ").title()
+
+
+def post_route(post: dict[str, Any]) -> str:
+    return f"essays/{post.get('slug', 'untitled')}/"
+
+
+def route_is_collection(route: str) -> bool:
+    if not route or route in {"about/", "methods/", "opportunities/", "search/"}:
+        return False
+    if route.endswith("/") and not re.match(r"essays/[^/]+/$", route):
+        return True
+    return False
+
+
+def seo_profile_for_route(route: str, html_text: str, post_by_route: dict[str, dict[str, Any]]) -> dict[str, Any]:
+    title = extract_html_title(html_text)
+    heading = extract_primary_heading(html_text)
+    description = extract_meta_description_from_html(html_text)
+    image = public_url_for_route(DEFAULT_SOCIAL_IMAGE)
+    noindex = route in {"search/", "newsdesk/latest.html"}
+    schema_type = "CollectionPage" if route_is_collection(route) else "WebPage"
+    date_published = ""
+    date_modified = ""
+
+    if route == "":
+        title = "The Edge of Epidemiology | Devin Teichrow"
+        description = "The canonical home for Devin Teichrow's Edge of Epidemiology essays, Pathogen Dispatch reporting, disease atlases, historical epidemiology, and public-health methods work."
+        schema_type = "WebSite"
+    elif route in post_by_route:
+        post = post_by_route[route]
+        title = f"{post_display_title(post)} | Edge of Epidemiology"
+        description = post_seo_description(post)
+        image = post.get("cover_image") or image
+        noindex = post_indexing_strategy(post) not in INDEXABLE_POST_STRATEGIES
+        schema_type = "Article" if not noindex else "WebPage"
+        date_published = str(post.get("date") or "")
+        date_modified = str(post.get("last_synced_at") or post.get("date") or "")
+    elif route == "essays/":
+        title = "Epidemiology Essays | Edge of Epidemiology"
+        description = "The Edge of Epidemiology essay archive: historical epidemiology, infectious disease, outbreak reporting, epidemiologic methods, wellness claims, and neuroepidemiology."
+    elif route == "topics/":
+        title = "Topic Hubs | Edge of Epidemiology"
+        description = "Topic hubs for historical epidemiology, disease and war, disease ecology, pathogen geography, epidemiologic methods, wellness claims, and neuroepidemiology."
+    elif route.startswith("topics/"):
+        slug = route.strip("/").split("/", 1)[1]
+        hub = next((item for item in TOPIC_HUBS if item["slug"] == slug), None)
+        if hub:
+            title = f"{hub['title']} Topic Hub | Edge of Epidemiology"
+            description = str(hub["description"])
+    elif route.startswith("reference/") and route != "reference/":
+        page_name = heading or title_case_slug(Path(route).stem)
+        title = f"{page_name} Reference Guide | Edge of Epidemiology"
+        description = f"{page_name} reference guide from The Pathogen Dispatch, with transmission notes, current story links, reporting context, and source caveats."
+    elif route.startswith("stories/") and route != "stories/":
+        page_name = heading or title_case_slug(Path(route).stem)
+        title = f"{page_name} Story File | Edge of Epidemiology"
+        description = f"Pathogen Dispatch story file for {page_name}, with source-first outbreak tracking, update context, and related reporting notes."
+    elif route.startswith("newsdesk/") and re.search(r"\d{4}-\d{2}-\d{2}\.html$", route):
+        match = re.search(r"(\d{4}-\d{2}-\d{2})\.html$", route)
+        date_label = format_display_date(match.group(1)) if match else "Archive"
+        title = f"Pathogen Dispatch for {date_label} | Edge of Epidemiology"
+        description = f"The Pathogen Dispatch archive for {date_label}, with source-first infectious-disease reporting, outbreak tracking, and daily evidence notes."
+        schema_type = "CollectionPage"
+    elif route.startswith("newsdesk/"):
+        page_name = heading or "The Pathogen Dispatch"
+        if route == "newsdesk/":
+            title = "The Pathogen Dispatch | Edge of Epidemiology"
+            description = "Source-first outbreak reporting from The Pathogen Dispatch, with active story files, official-source tracking, research signals, and historical epidemiology context."
+        elif route == "newsdesk/archive/":
+            title = "Pathogen Dispatch Archive | Edge of Epidemiology"
+            description = "Archive of Pathogen Dispatch daily outbreak briefings and source-first infectious-disease reporting files."
+        elif route == "newsdesk/latest.html":
+            title = "Latest Pathogen Dispatch | Edge of Epidemiology"
+            description = "The latest generated Pathogen Dispatch briefing. This duplicate utility page points readers toward the current daily and archive surfaces."
+        else:
+            title = f"{page_name} | The Pathogen Dispatch"
+            description = f"{page_name} from The Pathogen Dispatch, the Edge of Epidemiology source-first infectious-disease reporting desk."
+        schema_type = "CollectionPage"
+    elif route.startswith("atlases/pathogen"):
+        title = "Pathogen Atlas | Edge of Epidemiology"
+        description = "Interactive pathogen atlas mapping disease origins, spread routes, transmission ecologies, reference evidence, and reporting context."
+    elif route.startswith("atlases/maritime"):
+        title = "Maritime Disease Atlas | Edge of Epidemiology"
+        description = "Interactive maritime disease atlas for shipboard infection, port quarantine, sea routes, naval medicine, and historical disease ecology."
+    elif route.startswith("atlases/viking"):
+        title = "Viking Health Atlas | Edge of Epidemiology"
+        description = "Interactive Viking health and disease atlas connecting settlement geography, archaeology, historical demography, and epidemic uncertainty."
+    elif route == "reference/":
+        title = "Disease Reference Desk | Edge of Epidemiology"
+        description = "Disease reference sheets connected to the live newsdesk, pathogen atlas, reporting caveats, transmission notes, and official background links."
+    elif route == "historical/":
+        title = "Historical Epidemiology | Edge of Epidemiology"
+        description = "Historical epidemiology essays and atlas projects about disease, empire, war, routes, ecological change, and epidemic reconstruction."
+    elif route == "methods/":
+        title = "Methods And Sourcing | Edge of Epidemiology"
+        description = "Methods, sourcing, update cadence, and editorial structure for The Edge of Epidemiology, The Pathogen Dispatch, and related atlas work."
+    elif route == "about/":
+        title = "About Devin Teichrow | Edge of Epidemiology"
+        description = "About Devin Teichrow and The Edge of Epidemiology: epidemiology, neurology research, historical disease writing, outbreak reporting, and science communication."
+    elif route == "opportunities/":
+        title = "Work With Devin Teichrow | Edge of Epidemiology"
+        description = "Collaborate with Devin Teichrow on epidemiology, public-health data, historical disease writing, science communication, outbreak tools, and disease atlas projects."
+
+    if not title:
+        fallback_name = heading or title_case_slug(Path(route.rstrip("/") or "home").name)
+        title = f"{fallback_name} | Edge of Epidemiology"
+    fallback_description = f"{heading or title.split('|')[0].strip()} from The Edge of Epidemiology by Devin Teichrow."
+    description = clean_seo_description(description, fallback_description)
+    return {
+        "route": route,
+        "url": public_url_for_route(route),
+        "title": title,
+        "description": description,
+        "image": image,
+        "noindex": noindex,
+        "schema_type": schema_type,
+        "date_published": date_published,
+        "date_modified": date_modified,
+    }
+
+
+def ensure_head_element(html_text: str) -> str:
+    if re.search(r"<head[^>]*>", html_text, flags=re.I):
+        return html_text
+    if re.search(r"<html[^>]*>", html_text, flags=re.I):
+        return re.sub(r"(<html[^>]*>)", r"\1<head></head>", html_text, count=1, flags=re.I)
+    return f"<!DOCTYPE html><html lang=\"en\"><head></head><body>{html_text}</body></html>"
+
+
+def upsert_title(html_text: str, title: str) -> str:
+    escaped = html.escape(title)
+    if re.search(r"<title>.*?</title>", html_text, flags=re.I | re.S):
+        return re.sub(r"<title>.*?</title>", f"<title>{escaped}</title>", html_text, count=1, flags=re.I | re.S)
+    return html_text.replace("</head>", f"<title>{escaped}</title>\n</head>", 1)
+
+
+def remove_meta_name(html_text: str, name: str) -> str:
+    return re.sub(rf'\s*<meta[^>]+name=["\']{re.escape(name)}["\'][^>]*>\n?', "\n", html_text, flags=re.I)
+
+
+def remove_meta_property(html_text: str, prop: str) -> str:
+    return re.sub(rf'\s*<meta[^>]+property=["\']{re.escape(prop)}["\'][^>]*>\n?', "\n", html_text, flags=re.I)
+
+
+def render_json_ld(profile: dict[str, Any]) -> str:
+    payload: dict[str, Any] = {
+        "@context": "https://schema.org",
+        "@type": profile["schema_type"],
+        "name": profile["title"],
+        "url": profile["url"],
+        "description": profile["description"],
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "The Edge of Epidemiology",
+            "url": f"{PUBLIC_SITE_ORIGIN}/",
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Devin Teichrow",
+            "url": f"{PUBLIC_SITE_ORIGIN}/about/",
+        },
+    }
+    if profile["schema_type"] == "WebSite":
+        payload["potentialAction"] = {
+            "@type": "SearchAction",
+            "target": f"{PUBLIC_SITE_ORIGIN}/search/?q={{search_term_string}}",
+            "query-input": "required name=search_term_string",
+        }
+    if profile["schema_type"] == "Article":
+        payload["headline"] = profile["title"].split("|")[0].strip()
+        if profile.get("date_published"):
+            payload["datePublished"] = profile["date_published"]
+        if profile.get("date_modified"):
+            payload["dateModified"] = profile["date_modified"]
+    return (
+        '<script type="application/ld+json" data-eoe-seo>'
+        + json.dumps(payload, ensure_ascii=False)
+        + "</script>"
+    )
+
+
+def apply_seo_profile(html_text: str, profile: dict[str, Any]) -> str:
+    html_text = ensure_head_element(html_text)
+    html_text = upsert_title(html_text, profile["title"])
+    html_text = remove_meta_name(html_text, "description")
+    html_text = remove_meta_name(html_text, "robots")
+    for name in ("twitter:card", "twitter:title", "twitter:description", "twitter:image"):
+        html_text = remove_meta_name(html_text, name)
+    for prop in ("og:type", "og:site_name", "og:title", "og:description", "og:url", "og:image"):
+        html_text = remove_meta_property(html_text, prop)
+    html_text = re.sub(r'\s*<link[^>]+rel=["\']canonical["\'][^>]*>\n?', "\n", html_text, flags=re.I)
+    html_text = re.sub(r'\s*<script[^>]+type=["\']application/ld\+json["\'][^>]*data-eoe-seo[^>]*>.*?</script>\n?', "\n", html_text, flags=re.I | re.S)
+
+    robots = '<meta name="robots" content="noindex,follow" />\n' if profile["noindex"] else ""
+    meta_block = f"""
+    <link rel="canonical" href="{html.escape(profile['url'])}" />
+    {robots}<meta name="description" content="{html.escape(profile['description'])}" />
+    <meta property="og:type" content="{'article' if profile['schema_type'] == 'Article' else 'website'}" />
+    <meta property="og:site_name" content="The Edge of Epidemiology" />
+    <meta property="og:title" content="{html.escape(profile['title'])}" />
+    <meta property="og:description" content="{html.escape(profile['description'])}" />
+    <meta property="og:url" content="{html.escape(profile['url'])}" />
+    <meta property="og:image" content="{html.escape(profile['image'])}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{html.escape(profile['title'])}" />
+    <meta name="twitter:description" content="{html.escape(profile['description'])}" />
+    <meta name="twitter:image" content="{html.escape(profile['image'])}" />
+    {render_json_ld(profile)}
+"""
+    return html_text.replace("</head>", f"{meta_block}</head>", 1)
+
+
+def finalize_seo(docs_dir: Path, posts: list[dict[str, Any]]) -> dict[str, Any]:
+    post_by_route = {post_route(post): post for post in posts}
+    profiles: dict[str, dict[str, Any]] = {}
+    for path in sorted(docs_dir.rglob("*.html")):
+        route = route_for_html_path(path, docs_dir)
+        html_text = path.read_text()
+        profile = seo_profile_for_route(route, html_text, post_by_route)
+        path.write_text(apply_seo_profile(html_text, profile))
+        profiles[route] = profile
+    sitemap_count = write_sitemap_and_robots(docs_dir, profiles)
+    return {
+        "html_pages": len(profiles),
+        "indexable_pages": sitemap_count,
+        "noindex_pages": sum(1 for profile in profiles.values() if profile["noindex"]),
+    }
+
+
+def write_sitemap_and_robots(docs_dir: Path, profiles: dict[str, dict[str, Any]]) -> int:
+    lastmod = dt.datetime.now(dt.timezone.utc).date().isoformat()
+    indexable = [profile for _, profile in sorted(profiles.items()) if not profile["noindex"]]
+    url_entries = "\n".join(
+        "  <url>\n"
+        f"    <loc>{html.escape(profile['url'])}</loc>\n"
+        f"    <lastmod>{lastmod}</lastmod>\n"
+        "  </url>"
+        for profile in indexable
+    )
+    sitemap = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f"{url_entries}\n"
+        "</urlset>\n"
+    )
+    (docs_dir / "sitemap.xml").write_text(sitemap)
+    (docs_dir / "robots.txt").write_text(
+        "User-agent: *\n"
+        "Allow: /\n"
+        "Disallow: /app_exports/\n"
+        "Disallow: /search/\n"
+        f"Sitemap: {PUBLIC_SITE_ORIGIN}/sitemap.xml\n"
+    )
+    (docs_dir / "CNAME").write_text(f"{PUBLIC_SITE_DOMAIN}\n")
+    return len(indexable)
 
 
 def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -> dict[str, Any]:
@@ -1898,6 +2456,7 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
     page_specs = {
         docs_dir / "index.html": render_home(posts, atlases, latest, base_url),
         docs_dir / "essays" / "index.html": render_essays_index(posts, base_url),
+        docs_dir / "topics" / "index.html": render_topic_hub_index(posts, base_url),
         docs_dir / "atlases" / "index.html": render_atlas_hub(atlases, base_url),
         docs_dir / "historical" / "index.html": render_historical_page(posts, atlases, base_url),
         docs_dir / "methods" / "index.html": render_methods_page(base_url),
@@ -1915,7 +2474,12 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
     for post in posts:
         path = docs_dir / "essays" / post.get("slug", "untitled") / "index.html"
         ensure_dir(path.parent)
-        path.write_text(render_post_page(post, atlas_by_id, base_url))
+        path.write_text(render_post_page(post, atlas_by_id, posts, base_url))
+
+    for hub in TOPIC_HUBS:
+        path = docs_dir / "topics" / str(hub["slug"]) / "index.html"
+        ensure_dir(path.parent)
+        path.write_text(render_topic_hub_page(hub, posts, base_url))
 
     for atlas_entry in atlases:
         if atlas_entry.get("atlas_id") == "pathogen-atlas":
@@ -1943,10 +2507,21 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
         search_index.append(
             {
                 "title": post.get("title"),
+                "display_title": post_display_title(post),
                 "section": "Essay",
-                "summary": post.get("dek") or post.get("excerpt") or post.get("search_excerpt"),
+                "summary": post_seo_description(post),
                 "url": link_for(base_url, f"essays/{post.get('slug')}/"),
-                "keywords": " ".join(post.get("topics", []) + post.get("upstream_tags", [])),
+                "keywords": " ".join(post.get("topics", []) + post.get("upstream_tags", []) + [post.get("primary_keyword", ""), post_topic_cluster(post)]),
+            }
+        )
+    for hub in TOPIC_HUBS:
+        search_index.append(
+            {
+                "title": hub["title"],
+                "section": "Topic",
+                "summary": hub["description"],
+                "url": link_for(base_url, f"topics/{hub['slug']}/"),
+                "keywords": " ".join(hub["keywords"]),
             }
         )
     for atlas in atlases:
@@ -1992,6 +2567,7 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
     write_json(docs_dir / "app_exports" / "posts.json", posts_export)
     write_json(docs_dir / "app_exports" / "atlases.json", atlases_export)
     write_json(docs_dir / "app_exports" / "search-index.json", search_index)
+    seo_report = finalize_seo(docs_dir, posts)
 
     return {
         "generated_at": latest.get("generated_at"),
@@ -1999,6 +2575,7 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
         "atlases": len(atlases),
         "stories": len(stories),
         "references": len(references),
+        "seo": seo_report,
         "docs_dir": str(docs_dir),
     }
 

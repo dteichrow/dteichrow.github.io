@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+from collections import Counter
 import json
+import re
 from pathlib import Path
 
 from src import build_site
@@ -74,6 +76,11 @@ posts:
     dek: ""
     topics: [History]
     series: []
+    seo_title: First Local SEO Title
+    seo_description: A local SEO description for the first test post that is specific enough to avoid generic metadata regressions.
+    primary_keyword: first test epidemiology post
+    topic_cluster: historical-epidemiology
+    indexing_strategy: noindex_stub
     related_atlases: [revolutionary-war-atlas]
     related_reference_slugs: []
     related_story_ids: []
@@ -176,15 +183,29 @@ atlases:
 
     result = build_site.build_site(docs_dir=docs_dir, base_url="/")
     assert result["posts"] == 1
+    assert result["seo"]["html_pages"] >= 20
+    assert result["seo"]["indexable_pages"] >= 10
+    assert result["seo"]["noindex_pages"] >= 2
     assert (docs_dir / "index.html").exists()
     assert (docs_dir / "essays" / "first-post" / "index.html").exists()
+    assert (docs_dir / "topics" / "index.html").exists()
+    assert (docs_dir / "topics" / "historical-epidemiology" / "index.html").exists()
     assert (docs_dir / "atlases" / "index.html").exists()
     assert (docs_dir / "historical" / "index.html").exists()
     assert (docs_dir / "opportunities" / "index.html").exists()
     assert (docs_dir / "app_exports" / "posts.json").exists()
+    assert (docs_dir / "CNAME").read_text() == "devinteichrow.com\n"
+    assert (docs_dir / "robots.txt").exists()
+    assert (docs_dir / "sitemap.xml").exists()
     home_text = (docs_dir / "index.html").read_text()
     assert "Devin Teichrow" in home_text
     assert "Disease travels with people and the things people build" in home_text
+    assert '<h1 class="hero-title">' in home_text
+    assert '<h1 class="site-brand">' not in home_text
+    assert '<link rel="canonical" href="https://devinteichrow.com/" />' in home_text
+    assert '<meta property="og:title" content="The Edge of Epidemiology | Devin Teichrow" />' in home_text
+    assert '<meta name="twitter:card" content="summary_large_image" />' in home_text
+    assert '<script type="application/ld+json" data-eoe-seo>' in home_text
     assert "UCLA-trained epidemiologist and neuroscience researcher at UC Irvine" in home_text
     assert "hero-notebook" not in home_text
     assert "hero-status-line" in home_text
@@ -233,6 +254,57 @@ atlases:
     assert "Public tools and atlases" in opportunities_text
     assert "Talks, workshops, and teaching" not in opportunities_text
     assert "devinteichrow.com" in opportunities_text
+    post_text = (docs_dir / "essays" / "first-post" / "index.html").read_text()
+    assert "First Local SEO Title" in post_text
+    assert "Original Substack title:" in post_text
+    assert '<meta name="robots" content="noindex,follow" />' in post_text
+    assert '<link rel="canonical" href="https://devinteichrow.com/essays/first-post/" />' in post_text
+    assert "Contents" in post_text
+    assert "Source notes" in post_text
+    assert "Indexing strategy: noindex_stub" in post_text
+    topic_text = (docs_dir / "topics" / "historical-epidemiology" / "index.html").read_text()
+    assert '<link rel="canonical" href="https://devinteichrow.com/topics/historical-epidemiology/" />' in topic_text
+    assert "First Local SEO Title" in topic_text
+    robots_text = (docs_dir / "robots.txt").read_text()
+    assert "Disallow: /app_exports/" in robots_text
+    assert "Sitemap: https://devinteichrow.com/sitemap.xml" in robots_text
+    sitemap_text = (docs_dir / "sitemap.xml").read_text()
+    assert "<loc>https://devinteichrow.com/</loc>" in sitemap_text
+    assert "<loc>https://devinteichrow.com/topics/historical-epidemiology/</loc>" in sitemap_text
+    assert "https://devinteichrow.com/search/" not in sitemap_text
+    assert "https://devinteichrow.com/essays/first-post/" not in sitemap_text
+
+    indexable_titles = []
+    for html_path in sorted(docs_dir.rglob("*.html")):
+        page_text = html_path.read_text()
+        assert '<link rel="canonical" href="' in page_text
+        assert '<meta name="description" content="' in page_text
+        assert '<meta property="og:title" content="' in page_text
+        assert '<meta property="og:description" content="' in page_text
+        assert '<meta property="og:url" content="' in page_text
+        assert '<meta name="twitter:title" content="' in page_text
+        assert '<meta name="twitter:description" content="' in page_text
+        assert '<script type="application/ld+json" data-eoe-seo>' in page_text
+
+        description_match = re.search(r'<meta name="description" content="([^"]+)"', page_text)
+        assert description_match is not None
+        assert description_match.group(1) not in build_site.GENERIC_DESCRIPTIONS
+
+        title_match = re.search(r"<title>(.*?)</title>", page_text, flags=re.S)
+        assert title_match is not None
+        title = re.sub(r"\s+", " ", title_match.group(1)).strip()
+        assert title
+
+        route = build_site.route_for_html_path(html_path, docs_dir)
+        url = build_site.public_url_for_route(route)
+        if '<meta name="robots" content="noindex,follow" />' not in page_text:
+            assert f"<loc>{url}</loc>" in sitemap_text
+            indexable_titles.append(title)
+        else:
+            assert f"<loc>{url}</loc>" not in sitemap_text
+
+    duplicate_titles = [title for title, count in Counter(indexable_titles).items() if count > 1]
+    assert duplicate_titles == []
 
 
 def test_import_external_pathogen_writes_js_payload(tmp_path, monkeypatch) -> None:
