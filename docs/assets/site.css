@@ -1277,6 +1277,12 @@ h3 {
   background-image: url("visuals/yersinia-pestis-bacteria.jpg");
 }
 
+.atlas-card-visual-american-epidemic-timeline {
+  background-image:
+    linear-gradient(120deg, rgba(9, 18, 27, 0.18), rgba(107, 30, 35, 0.18)),
+    url("visuals/quarantine-notice-1878.jpg");
+}
+
 .atlas-card-visual-maritime-disease-atlas {
   background-image: url("visuals/pirate-ship-garneray.jpg");
 }
