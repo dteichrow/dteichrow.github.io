@@ -972,7 +972,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [
         {
           "display_title": "Hantavirus and cruise-ship outbreak",
-          "latest_update_summary": "The lead item has changed to From 'staged' to Israel: Hantavirus misinformation runs rampant online from Euronews.com.",
+          "latest_update_summary": "Story volume increased from 18 to 19 clustered item(s) in the current window.",
           "story_id": "story_f6d225b01f3f7094",
           "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
           "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1074,7 +1074,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "The lead item has changed to From 'staged' to Israel: Hantavirus misinformation runs rampant online from Euronews.com.",
+              "latest_update_summary": "Story volume increased from 18 to 19 clustered item(s) in the current window.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1210,7 +1210,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "The lead item has changed to From 'staged' to Israel: Hantavirus misinformation runs rampant online from Euronews.com.",
+              "latest_update_summary": "Story volume increased from 18 to 19 clustered item(s) in the current window.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1346,7 +1346,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "The lead item has changed to From 'staged' to Israel: Hantavirus misinformation runs rampant online from Euronews.com.",
+              "latest_update_summary": "Story volume increased from 18 to 19 clustered item(s) in the current window.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -23823,6 +23823,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "variants": []
     }
   ],
-  "generated_at": "2026-05-17T02:30:01",
+  "generated_at": "2026-05-17T03:31:55",
   "atlas_count": 210
 };
