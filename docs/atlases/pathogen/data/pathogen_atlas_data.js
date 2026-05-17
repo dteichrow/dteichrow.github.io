@@ -972,7 +972,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [
         {
           "display_title": "Hantavirus and cruise-ship outbreak",
-          "latest_update_summary": "New publisher/source coverage joined this story cluster: Buenos Aires Times.",
+          "latest_update_summary": "The lead item has changed to Canadian from hantavirus-hit cruise ship tests positive from BBC.",
           "story_id": "story_f6d225b01f3f7094",
           "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
           "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1074,7 +1074,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "New publisher/source coverage joined this story cluster: Buenos Aires Times.",
+              "latest_update_summary": "The lead item has changed to Canadian from hantavirus-hit cruise ship tests positive from BBC.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1210,7 +1210,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "New publisher/source coverage joined this story cluster: Buenos Aires Times.",
+              "latest_update_summary": "The lead item has changed to Canadian from hantavirus-hit cruise ship tests positive from BBC.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -1346,7 +1346,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "related_stories": [
             {
               "display_title": "Hantavirus and cruise-ship outbreak",
-              "latest_update_summary": "New publisher/source coverage joined this story cluster: Buenos Aires Times.",
+              "latest_update_summary": "The lead item has changed to Canadian from hantavirus-hit cruise ship tests positive from BBC.",
               "story_id": "story_f6d225b01f3f7094",
               "story_url": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
               "story_web_path": "stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
@@ -23823,6 +23823,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "variants": []
     }
   ],
-  "generated_at": "2026-05-17T07:36:35",
+  "generated_at": "2026-05-17T08:37:13",
   "atlas_count": 210
 };
