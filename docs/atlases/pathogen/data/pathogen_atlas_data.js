@@ -781,7 +781,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [
         {
           "display_title": "Avian influenza and H5N1",
-          "latest_update_summary": "New publisher/source coverage joined this story cluster: MSN.",
+          "latest_update_summary": "New publisher/source coverage joined this story cluster: Cambodianess.",
           "story_id": "story_28a91c6d89267872",
           "story_url": "stories/story_28a91c6d89267872-avian-influenza-and-h5n1.html",
           "story_web_path": "stories/story_28a91c6d89267872-avian-influenza-and-h5n1.html",
@@ -23823,6 +23823,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "variants": []
     }
   ],
-  "generated_at": "2026-05-17T01:29:22",
+  "generated_at": "2026-05-17T02:30:01",
   "atlas_count": 210
 };
