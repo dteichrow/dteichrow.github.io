@@ -42,6 +42,115 @@ html, body {
   z-index: 0;
   background: #080806;
 }
+#cinema-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 650;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 160ms ease;
+  background:
+    radial-gradient(circle at var(--cinema-clear-x, 42%) var(--cinema-clear-y, 52%), rgba(239,228,207,0.38), transparent 31%),
+    linear-gradient(90deg, rgba(239,228,207,0.16), transparent 26%, transparent 72%, rgba(239,228,207,0.12));
+}
+.recording-mode #cinema-backdrop.open {
+  opacity: 1;
+  animation: cinemaPresence var(--cinema-duration, 3200ms) ease-in-out forwards;
+}
+#cinema-backdrop::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  background:
+    radial-gradient(circle at var(--cinema-clear-x, 42%) var(--cinema-clear-y, 52%), rgba(239,228,207,0.58), transparent 20%),
+    linear-gradient(180deg, rgba(239,228,207,0.14), transparent 18%, transparent 78%, rgba(239,228,207,0.12));
+  mix-blend-mode: screen;
+}
+#cinema-backdrop::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  opacity: 0.12;
+  background:
+    repeating-linear-gradient(0deg, rgba(40,30,20,0.08) 0 1px, transparent 1px 4px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.05) 0 1px, transparent 1px 7px);
+  mix-blend-mode: multiply;
+}
+#cinema-backdrop-image {
+  position: absolute;
+  inset: -4vh -4vw;
+  width: 108vw;
+  height: 108vh;
+  object-fit: cover;
+  object-position: var(--cinema-position, center center);
+  z-index: 4;
+  opacity: var(--cinema-opacity, 0.46);
+  filter: sepia(0.38) contrast(1.18) saturate(0.72) brightness(1.08);
+  transform-origin: var(--cinema-origin, 68% 45%);
+  transform: scale(1.01) translate3d(0, 0, 0);
+  mix-blend-mode: multiply;
+}
+#cinema-backdrop-secondary {
+  position: absolute;
+  inset: -4vh -4vw;
+  width: 108vw;
+  height: 108vh;
+  object-fit: cover;
+  object-position: var(--cinema-secondary-position, center center);
+  z-index: 4;
+  opacity: 0;
+  filter: sepia(0.34) contrast(1.16) saturate(0.72) brightness(1.08);
+  transform-origin: var(--cinema-secondary-origin, 54% 45%);
+  transform: scale(1.01) translate3d(0, 0, 0);
+  mix-blend-mode: multiply;
+}
+#cinema-backdrop-secondary.has-secondary {
+  opacity: 0;
+}
+#cinema-caption {
+  position: absolute;
+  top: 42px;
+  right: 44px;
+  z-index: 7;
+  max-width: min(42vw, 720px);
+  color: #20170f;
+  text-align: right;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.55);
+}
+#cinema-caption-kicker {
+  font: 800 12px/1.1 "Avenir Next", "Helvetica Neue", sans-serif;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #785d35;
+}
+#cinema-caption-title {
+  margin-top: 5px;
+  font-size: clamp(22px, 1.85vw, 38px);
+  line-height: 0.98;
+  font-weight: 800;
+}
+#cinema-caption-credit {
+  margin-top: 7px;
+  color: rgba(32,23,15,0.68);
+  font: 700 11px/1.25 "Avenir Next", "Helvetica Neue", sans-serif;
+  letter-spacing: 0.04em;
+}
+.recording-mode #cinema-backdrop.open #cinema-backdrop-image {
+  animation: cinemaZoom var(--cinema-duration, 9000ms) ease-out forwards;
+}
+.recording-mode #cinema-backdrop.open.has-secondary #cinema-backdrop-image {
+  animation:
+    cinemaPrimaryPresence var(--cinema-duration, 9000ms) ease-in-out forwards,
+    cinemaZoom var(--cinema-duration, 9000ms) ease-out forwards;
+}
+.recording-mode #cinema-backdrop.open #cinema-backdrop-secondary.has-secondary {
+  animation:
+    cinemaSecondPresence var(--cinema-duration, 9000ms) ease-in-out forwards,
+    cinemaSecondZoom var(--cinema-duration, 9000ms) ease-out forwards;
+}
 .leaflet-container { background: #080806 !important; }
 .leaflet-control-attribution {
   background: rgba(0, 0, 0, 0.4) !important;
@@ -88,6 +197,7 @@ html, body {
 }
 .scenario-btn,
 #pause-btn,
+#tour-btn,
 #recording-btn,
 #reset-btn {
   flex: 0 0 auto;
@@ -104,6 +214,8 @@ html, body {
 .scenario-btn:hover,
 .scenario-btn.active,
 #pause-btn:hover,
+#tour-btn:hover,
+#tour-btn.active,
 #pause-btn.active,
 #recording-btn:hover,
 #recording-btn.active {
@@ -114,6 +226,9 @@ html, body {
 #pause-btn {
   color: var(--gold);
 }
+#tour-btn {
+  color: #6d9f91;
+}
 #recording-btn {
   color: #88a7bd;
 }
@@ -123,6 +238,75 @@ html, body {
   opacity: 0.58;
 }
 #reset-btn { color: #8f887f; }
+#video-pause-btn {
+  position: fixed;
+  top: 34px;
+  left: 50%;
+  z-index: 1200;
+  display: none;
+  align-items: center;
+  gap: 10px;
+  transform: translateX(-50%);
+  border: 1px solid rgba(32,23,15,0.32);
+  border-radius: 999px;
+  background: rgba(252,247,236,0.74);
+  color: #20170f;
+  box-shadow: 0 14px 38px rgba(72, 44, 20, 0.22);
+  padding: 9px 14px 9px 16px;
+  font: 800 12px/1 "Avenir Next", "Helvetica Neue", sans-serif;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  backdrop-filter: blur(12px);
+  touch-action: manipulation;
+  user-select: none;
+}
+.recording-mode.scenario-playing #video-pause-btn {
+  display: flex;
+}
+.recording-mode.paused #video-pause-btn {
+  background: rgba(32,23,15,0.94);
+  color: #fcf7ec;
+  border-color: rgba(32,23,15,0.82);
+}
+#video-pause-btn::before {
+  content: "";
+  width: 9px;
+  height: 13px;
+  border-left: 3px solid currentColor;
+  border-right: 3px solid currentColor;
+}
+.recording-mode.paused #video-pause-btn::before {
+  width: 0;
+  height: 0;
+  border-left: 10px solid currentColor;
+  border-right: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+}
+#pause-btn,
+#video-pause-btn {
+  touch-action: manipulation;
+  user-select: none;
+}
+.paused #cinema-backdrop,
+.paused #cinema-backdrop-image,
+.paused #cinema-backdrop-secondary,
+.paused .active-route,
+.paused .pulse-marker,
+.paused .pirate-marker.active,
+.paused .asset-card::before,
+.paused .asset-card::after,
+.paused .asset-img,
+.paused #context-card.open #context-image {
+  animation-play-state: paused !important;
+}
+#video-pause-hint {
+  color: currentColor;
+  opacity: 0.58;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
 #story-panel {
   position: fixed;
   top: 120px;
@@ -157,6 +341,30 @@ html, body {
   display: grid;
   gap: 8px;
   margin-top: 18px;
+}
+#scene-progress {
+  display: none;
+}
+#scene-progress-label {
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+#scene-progress-track {
+  height: 4px;
+  margin-top: 8px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.12);
+}
+#scene-progress-fill {
+  display: block;
+  width: 0%;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--active-color, var(--gold));
+  box-shadow: 0 0 18px color-mix(in srgb, var(--active-color, var(--gold)) 68%, transparent);
 }
 .step-chip {
   display: grid;
@@ -451,6 +659,9 @@ html, body {
   --faint: #746655;
   --gold: #927034;
 }
+.recording-mode #eoe-atlas-overlay {
+  display: none;
+}
 .recording-mode #map,
 .recording-mode .leaflet-container {
   background: #e8ddc9 !important;
@@ -458,6 +669,12 @@ html, body {
 .recording-mode #chrome {
   background: linear-gradient(180deg, rgba(245,238,222,0.98), rgba(245,238,222,0.9));
   box-shadow: 0 16px 42px rgba(80, 52, 21, 0.22);
+}
+.recording-mode.scenario-playing #chrome,
+.recording-mode.tour-running #chrome {
+  transform: translateY(-112%);
+  opacity: 0;
+  pointer-events: none;
 }
 .recording-mode #story-panel,
 .recording-mode #mechanism-card,
@@ -474,9 +691,35 @@ html, body {
 .recording-mode #context-image {
   filter: sepia(0.07) contrast(1.05) brightness(1.03);
 }
+.recording-mode #context-card.open #context-image {
+  animation: contextZoom var(--cinema-duration, 9000ms) ease-out forwards;
+}
+.recording-mode .asset-card::before {
+  animation: deckLine 5.8s linear infinite;
+}
+.recording-mode .asset-card::after {
+  animation: deckLine 7.2s linear infinite reverse;
+}
+.recording-mode .asset-img {
+  animation: mechanismFloat 5.8s ease-in-out infinite;
+}
 .recording-mode .site-marker,
 .recording-mode .pirate-marker {
   background: rgba(255, 250, 235, 0.9);
+}
+.recording-mode .site-marker,
+.recording-mode .pirate-marker:not(.active) {
+  transform: scale(1.18);
+}
+.recording-mode path.atlas-route {
+  stroke-width: 4px !important;
+}
+.recording-mode path.active-route {
+  stroke-width: 7px !important;
+  filter: drop-shadow(0 0 12px currentColor);
+}
+.recording-mode .leaflet-control-zoom {
+  display: none;
 }
 .recording-mode .leaflet-control-attribution {
   background: rgba(255,255,255,0.72) !important;
@@ -485,6 +728,129 @@ html, body {
 .recording-mode .leaflet-popup-content-wrapper,
 .recording-mode .leaflet-popup-tip {
   background: rgba(252, 247, 236, 0.98);
+}
+#video-brand {
+  position: fixed;
+  top: 34px;
+  left: 42px;
+  z-index: 980;
+  display: none;
+  flex-direction: column;
+  gap: 3px;
+  align-items: flex-start;
+  color: #20170f;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.55);
+  pointer-events: none;
+}
+#video-brand-title {
+  font-size: clamp(25px, 1.9vw, 40px);
+  font-weight: 800;
+  line-height: 0.95;
+}
+#video-brand-source {
+  color: #6b5c4b;
+  font: 700 clamp(10px, 0.64vw, 13px)/1.1 "Avenir Next", "Helvetica Neue", sans-serif;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+.recording-mode #video-brand {
+  display: flex;
+}
+.recording-mode #story-panel {
+  top: auto;
+  bottom: 42px;
+  left: 42px;
+  width: min(660px, 43vw);
+  max-height: 40vh;
+  padding: 22px 24px 24px;
+  overflow: hidden;
+  background: rgba(252, 247, 236, 0.92);
+  backdrop-filter: blur(13px);
+}
+.recording-mode #story-kicker {
+  color: var(--active-color, var(--gold));
+  font: 800 13px/1.2 "Avenir Next", "Helvetica Neue", sans-serif;
+  letter-spacing: 0.16em;
+}
+.recording-mode #story-title {
+  margin-top: 10px;
+  font-size: clamp(31px, 2.25vw, 46px);
+  line-height: 1.02;
+}
+.recording-mode #story-copy {
+  max-width: 58ch;
+  color: #392d22;
+  font-size: clamp(18px, 1.05vw, 23px);
+  line-height: 1.24;
+}
+.recording-mode #timeline {
+  grid-template-columns: repeat(auto-fit, minmax(76px, 1fr));
+  gap: 8px;
+  margin-top: 16px;
+}
+.recording-mode .step-chip {
+  grid-template-columns: 1fr;
+  gap: 5px;
+  min-width: 0;
+  font: 700 11px/1.15 "Avenir Next", "Helvetica Neue", sans-serif;
+  letter-spacing: 0.01em;
+}
+.recording-mode .step-dot {
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  background: rgba(255,255,255,0.55);
+}
+.recording-mode #scene-progress {
+  display: block;
+  margin-top: 14px;
+}
+.recording-mode #context-card,
+.recording-mode #mechanism-card,
+.recording-mode #plot-card {
+  top: auto;
+  right: 42px;
+  bottom: 42px;
+  width: min(520px, 34vw);
+  max-height: 48vh;
+  transition: none;
+  backdrop-filter: blur(13px);
+}
+.recording-mode #context-image {
+  height: min(280px, 25vh);
+}
+.recording-mode #context-title,
+.recording-mode #mechanism-card h2,
+.recording-mode #plot-title {
+  font-size: clamp(25px, 1.65vw, 34px);
+}
+.recording-mode #context-credit,
+.recording-mode #plot-note {
+  font-size: 12px;
+}
+.recording-mode #mechanism-copy,
+.recording-mode #plot-copy,
+.recording-mode #mechanism-card p {
+  color: #392d22;
+  font-size: clamp(17px, 0.95vw, 21px);
+  line-height: 1.28;
+}
+.recording-mode #plot-card {
+  width: min(720px, 42vw);
+}
+.recording-mode #plot-title,
+.recording-mode #plot-copy,
+.recording-mode #plot-note {
+  display: none;
+}
+.recording-mode #plot-art {
+  border-radius: 8px;
+}
+.recording-mode #plot-art svg rect:first-child {
+  fill: rgba(255, 252, 244, 0.88);
+}
+.recording-mode .active-route {
+  animation-duration: 1.05s;
 }
 .popup-title {
   font-weight: 700;
@@ -502,6 +868,49 @@ html, body {
 @keyframes pulse {
   0%, 100% { transform: scale(0.74); opacity: 0.45; }
   50% { transform: scale(1.08); opacity: 1; }
+}
+@keyframes cinemaZoom {
+  from { transform: scale(1.01) translate3d(var(--cinema-pan-start-x, 1.2%), var(--cinema-pan-start-y, 0), 0); }
+  to { transform: scale(1.22) translate3d(var(--cinema-pan-end-x, -3.2%), var(--cinema-pan-end-y, -1.4%), 0); }
+}
+@keyframes cinemaSecondZoom {
+  from { transform: scale(1.01) translate3d(var(--cinema-secondary-pan-start-x, -1%), var(--cinema-secondary-pan-start-y, 0), 0); }
+  to { transform: scale(1.18) translate3d(var(--cinema-secondary-pan-end-x, 2.4%), var(--cinema-secondary-pan-end-y, -1.2%), 0); }
+}
+@keyframes cinemaPresence {
+  0% { opacity: 0; }
+  12% { opacity: 1; }
+  84% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes cinemaPrimaryPresence {
+  0% { opacity: 0; }
+  11% { opacity: var(--cinema-opacity, 0.46); }
+  52% { opacity: var(--cinema-opacity, 0.46); }
+  68% { opacity: 0.05; }
+  100% { opacity: 0; }
+}
+@keyframes cinemaSecondPresence {
+  0%, 58% { opacity: 0; }
+  70% { opacity: var(--cinema-secondary-opacity, 0.28); }
+  86% { opacity: var(--cinema-secondary-opacity, 0.28); }
+  100% { opacity: 0; }
+}
+@keyframes contextZoom {
+  from { transform: scale(1.02); }
+  to { transform: scale(1.15); }
+}
+@keyframes plateDrift {
+  from { transform: rotate(-0.8deg) translate3d(0, 10px, 0) scale(1); }
+  to { transform: rotate(0.45deg) translate3d(-22px, -14px, 0) scale(1.045); }
+}
+@keyframes mechanismFloat {
+  0%, 100% { transform: translate(-50%, -50%) rotate(var(--asset-rotate, 0deg)) scale(1); }
+  50% { transform: translate(-50%, -52%) rotate(var(--asset-rotate, 0deg)) scale(1.04); }
+}
+@keyframes deckLine {
+  from { background-position: 0 0; }
+  to { background-position: 80px 0; }
 }
 @media (max-width: 950px) {
   #chrome { grid-template-columns: 1fr; }
@@ -612,6 +1021,15 @@ html, body {
 </head>
 <body><div id="eoe-atlas-overlay"><a id="eoe-atlas-overlay-brand" href="../../index.html"><span>The Edge of Epidemiology</span> <span class="byline">by Devin Teichrow</span></a><nav id="eoe-atlas-overlay-links" aria-label="Atlas navigation"><a href="../../index.html">Home</a><a href="../index.html" class="active">Atlases</a><a href="../../newsdesk/index.html">Newsdesk</a><a href="../../essays/index.html">Essays</a></nav></div>
 <main id="map" aria-label="Maritime disease ecology atlas"></main>
+<div id="cinema-backdrop" aria-hidden="true">
+  <img id="cinema-backdrop-image" alt="">
+  <img id="cinema-backdrop-secondary" alt="">
+  <div id="cinema-caption">
+    <div id="cinema-caption-kicker"></div>
+    <div id="cinema-caption-title"></div>
+    <div id="cinema-caption-credit"></div>
+  </div>
+</div>
 
 <header id="chrome">
   <section id="brand">
@@ -630,17 +1048,31 @@ html, body {
     <button class="scenario-btn" style="color:#bd7b45" data-scenario="wounds_sepsis">Wounds + Sepsis</button>
     <button class="scenario-btn" style="color:#dd6974" data-scenario="middle_passage">Middle Passage</button>
     <button class="scenario-btn" style="color:#c9a84c" data-scenario="pirate_network">Pirate Ports</button>
+    <button id="tour-btn" aria-pressed="false">Tour</button>
     <button id="pause-btn" aria-pressed="false" aria-disabled="true">Pause</button>
-    <button id="recording-btn" aria-pressed="false">Record Mode</button>
+    <button id="recording-btn" aria-pressed="false">Video Mode</button>
     <button id="reset-btn">Reset</button>
   </nav>
 </header>
 
+<div id="video-brand" aria-hidden="true">
+  <span id="video-brand-title">Maritime Disease Ecology Atlas</span>
+  <span id="video-brand-source">The Edge of Epidemiology</span>
+</div>
+<button id="video-pause-btn" aria-pressed="false" aria-disabled="true">
+  <span id="video-pause-label">Pause</span>
+  <span id="video-pause-hint">Space / P</span>
+</button>
+
 <aside id="story-panel">
   <div id="story-kicker">Click a disease route</div>
   <h2 id="story-title">A ship was a moving disease ecosystem.</h2>
-  <div id="story-copy">Pick a disease button. The map moves through origin ecology, mechanism, route, and endpoint.</div>
+  <div id="story-copy">Each route follows one disease ecology from source conditions through shipboard mechanism to port consequences.</div>
   <div id="timeline"></div>
+  <div id="scene-progress" aria-hidden="true">
+    <div id="scene-progress-label">Scene ready</div>
+    <div id="scene-progress-track"><span id="scene-progress-fill"></span></div>
+  </div>
 </aside>
 
 <section id="mechanism-card">
@@ -712,13 +1144,49 @@ L.control.attribution({ position: "bottomleft", prefix: false }).addTo(map).addA
 const atlas = window.MARITIME_DISEASE_ATLAS_GEOJSON;
 const scenarios = window.MARITIME_DISEASE_SCENARIOS;
 const featureById = new Map(atlas.features.map(feature => [feature.properties.id, feature]));
+const queryParams = new URLSearchParams(window.location.search);
+const SCENARIO_ORDER = [
+  "yellow_fever",
+  "malaria",
+  "scurvy",
+  "ship_fever",
+  "flux",
+  "typhoid",
+  "smallpox",
+  "measles",
+  "wounds_sepsis",
+  "middle_passage",
+  "pirate_network"
+];
+const VIDEO_TOUR = [
+  "pirate_network",
+  "yellow_fever",
+  "malaria",
+  "scurvy",
+  "ship_fever",
+  "flux",
+  "typhoid",
+  "smallpox",
+  "measles",
+  "wounds_sepsis",
+  "middle_passage"
+];
+const durationScale = (() => {
+  const raw = Number(queryParams.get("pace") || queryParams.get("speed") || 1);
+  if (!Number.isFinite(raw)) return 1;
+  return Math.min(2.5, Math.max(0.35, raw));
+})();
 let geoLayer;
 let activePulse;
 let activeScenario = null;
 let runToken = 0;
+let tourToken = 0;
 let isPaused = false;
 let isRecordingMode = false;
+let isTourRunning = false;
 let pauseResolvers = [];
+let activeProgress = null;
+let lastPausePointerAt = 0;
 
 const CONTEXT_ART = {
   nassau: {
@@ -800,20 +1268,19 @@ const CONTEXT_ART = {
     fit: "contain"
   },
   water_cask: {
-    src: "assets/context/emigrant_ship_breakfast_bell.jpg",
-    title: "On board an emigrant ship: the breakfast bell",
+    src: "assets/cinema/barrels_on_savannah_docks_nara.jpg",
+    title: "Barrels and containers on the dock",
     kicker: "Food-water context",
-    credit: "Library of Congress via Wikimedia Commons, public domain",
-    position: "center 45%",
-    fit: "contain"
+    credit: "National Archives via Wikimedia Commons, public domain",
+    position: "center center",
+    fit: "cover"
   },
   food_water_typhi: {
-    src: "assets/context/typhoid_prevention_1908.jpg",
-    title: "Typhoid fever mortality map, 1908",
+    src: "assets/cinema/cook_at_galley_hatch.jpg",
+    title: "The Cook at the Galley Hatch",
     kicker: "Food-water disease visual",
-    credit: "Internet Archive Book Images via Wikimedia Commons, no known restrictions",
-    position: "center center",
-    fit: "contain"
+    credit: "Imperial War Museums via Wikimedia Commons, public domain",
+    position: "center 43%"
   },
   hms_salisbury: {
     src: "assets/context/lind_scurvy_treatise.jpg",
@@ -886,11 +1353,525 @@ const CONTEXT_ART = {
   }
 };
 
+function cinemaPlate({
+  src,
+  title,
+  kicker = "Archival plate",
+  credit = "",
+  position = "center center",
+  origin = "68% 45%",
+  secondary = null,
+  featureId = null,
+  visual = null,
+  kind = null,
+  opacity = "0.46",
+  clearX = "42%",
+  clearY = "52%",
+  panStartX = "1.2%",
+  panStartY = "0%",
+  panEndX = "-3.2%",
+  panEndY = "-1.4%"
+}) {
+  return { src, title, kicker, credit, position, origin, secondary, featureId, visual, kind, opacity, clearX, clearY, panStartX, panStartY, panEndX, panEndY };
+}
+
+const CINEMA_REELS = {
+  pirate_network: [
+    cinemaPlate({
+      featureId: "nassau",
+      src: "assets/cinema/new_providence_harbour_plan.jpg",
+      title: "New Providence made piracy infrastructural",
+      kicker: "Nassau / New Providence",
+      credit: "Bibliotheque nationale de France via Wikimedia Commons, public domain",
+      position: "center 46%",
+      origin: "43% 44%",
+      opacity: "0.5",
+      clearX: "43%",
+      clearY: "52%",
+      panStartX: "0.4%",
+      panEndX: "-2.4%",
+      secondary: {
+        src: "assets/cinema/pyle_henry_morgan_recruiting.jpg",
+        title: "Henry Morgan Recruiting for the Attack",
+        position: "center 44%",
+        origin: "48% 42%",
+        opacity: "0.32",
+        panStartX: "-1.2%",
+        panEndX: "2.2%"
+      }
+    }),
+    cinemaPlate({
+      featureId: "port_royal",
+      src: "assets/cinema/port_royal_kingston_harbour_nypl.jpg",
+      title: "Port Royal was a harbor system, not a dot",
+      kicker: "Jamaica harbor",
+      credit: "New York Public Library via Wikimedia Commons, public domain",
+      position: "center 52%",
+      origin: "48% 48%",
+      opacity: "0.48",
+      clearX: "43%",
+      clearY: "55%",
+      panStartX: "-1.2%",
+      panEndX: "2.4%",
+      secondary: {
+        src: "assets/cinema/ann_bonny_mary_read.jpg",
+        title: "Ann Bonny and Mary Read before the Vice Admiralty court",
+        position: "center 43%",
+        origin: "48% 40%",
+        opacity: "0.34",
+        panStartX: "1%",
+        panEndX: "-2.2%"
+      }
+    }),
+    cinemaPlate({
+      featureId: "tortuga",
+      src: "assets/cinema/pyle_walking_plank.jpg",
+      title: "Pirate discipline and spectacle traveled with the ship",
+      kicker: "Island base",
+      credit: "Howard Pyle via Wikimedia Commons, public domain",
+      position: "center 38%",
+      origin: "50% 36%",
+      opacity: "0.5",
+      clearX: "45%",
+      clearY: "50%",
+      panStartY: "1.4%",
+      panEndY: "-2.8%",
+      secondary: {
+        src: "assets/cinema/pyle_pirate_captain.jpg",
+        title: "Pirate captain on deck",
+        position: "center 22%",
+        origin: "50% 28%",
+        opacity: "0.3",
+        panStartY: "-1%",
+        panEndY: "1.8%"
+      }
+    }),
+    cinemaPlate({
+      featureId: "cape_fear",
+      src: "assets/cinema/blackbeard_capture_ferris.jpg",
+      title: "The Carolina coast enters the violence map",
+      kicker: "Atlantic endpoint",
+      credit: "Jean Leon Gerome Ferris via Wikimedia Commons, public domain",
+      position: "center 43%",
+      origin: "48% 42%",
+      opacity: "0.54",
+      clearX: "44%",
+      clearY: "50%",
+      panStartX: "1.6%",
+      panEndX: "-2.8%",
+      secondary: {
+        src: "assets/cinema/pyle_pirates_raidship.jpg",
+        title: "A ship as mobile risk",
+        position: "center 40%",
+        origin: "58% 45%",
+        opacity: "0.28",
+        panStartX: "-1%",
+        panEndX: "2%"
+      }
+    }),
+    cinemaPlate({
+      featureId: "route_pirate_network",
+      src: "assets/cinema/pyle_pirates_approaching_ship.jpg",
+      title: "The pirate network was a ship-to-port system",
+      kicker: "Pirate network",
+      credit: "Howard Pyle via Wikimedia Commons, public domain",
+      position: "center 43%",
+      origin: "44% 45%",
+      opacity: "0.52",
+      clearX: "45%",
+      clearY: "51%",
+      panStartX: "-1%",
+      panEndX: "2.6%",
+      secondary: {
+        src: "assets/cinema/pyle_capture_of_galleon.jpg",
+        title: "Capture of the Galleon",
+        position: "center center",
+        origin: "54% 48%",
+        opacity: "0.32",
+        panStartX: "1.2%",
+        panEndX: "-2.6%"
+      }
+    })
+  ],
+  yellow_fever: [
+    cinemaPlate({
+      featureId: "west_africa",
+      src: "assets/context/guinea_coast_1736.jpg",
+      title: "African coastal ecology anchors the route",
+      kicker: "Origin ecology",
+      credit: "Wikimedia Commons, public domain",
+      position: "center 46%",
+      origin: "54% 42%",
+      opacity: "0.48",
+      clearX: "42%",
+      clearY: "52%"
+    }),
+    cinemaPlate({
+      featureId: "route_yellow_fever",
+      src: "assets/cinema/east_indiaman_hindustan.jpg",
+      title: "Merchant sail made vector ecology mobile",
+      kicker: "Atlantic movement",
+      credit: "Thomas Luny / Royal Museums Greenwich via Wikimedia Commons, public domain",
+      position: "center 50%",
+      origin: "42% 50%",
+      opacity: "0.52",
+      clearX: "42%",
+      clearY: "52%"
+    }),
+    cinemaPlate({
+      featureId: "saint_domingue",
+      src: "assets/context/cap_francais_1728.jpg",
+      title: "Caribbean ports turned exposure into amplification",
+      kicker: "Caribbean port",
+      credit: "Wikimedia Commons, public domain",
+      position: "center 42%",
+      origin: "54% 46%",
+      opacity: "0.5",
+      clearX: "43%",
+      clearY: "52%"
+    }),
+    cinemaPlate({
+      featureId: "philadelphia_1793",
+      src: "assets/context/philadelphia_yellow_fever_1793.gif",
+      title: "A port city receives the ship ecology",
+      kicker: "Port outbreak",
+      credit: "Library of Congress via Wikimedia Commons, public domain",
+      position: "center center",
+      origin: "50% 50%",
+      opacity: "0.46",
+      clearX: "44%",
+      clearY: "52%"
+    })
+  ],
+  malaria: [
+    cinemaPlate({
+      featureId: "west_africa_malaria",
+      src: "assets/context/guinea_coast_1736.jpg",
+      title: "Tropical ecology is the first layer",
+      kicker: "Mosquito habitat",
+      credit: "Wikimedia Commons, public domain",
+      position: "center 46%",
+      origin: "54% 42%",
+      opacity: "0.47",
+      clearX: "43%",
+      clearY: "53%"
+    }),
+    cinemaPlate({
+      featureId: "port_royal",
+      src: "assets/cinema/port_royal_kingston_harbour_nypl.jpg",
+      title: "Warm harbors concentrate people, water, and work",
+      kicker: "Caribbean port",
+      credit: "New York Public Library via Wikimedia Commons, public domain",
+      position: "center 52%",
+      origin: "48% 48%",
+      opacity: "0.48",
+      clearX: "43%",
+      clearY: "55%"
+    }),
+    cinemaPlate({
+      featureId: "route_malaria",
+      src: "assets/cinema/east_indiaman_kent_off_deal.jpg",
+      title: "The route tracks climate and exposure",
+      kicker: "Tropical route",
+      credit: "Wikimedia Commons, public domain",
+      position: "center 50%",
+      origin: "48% 50%",
+      opacity: "0.5",
+      clearX: "43%",
+      clearY: "52%"
+    })
+  ],
+  scurvy: [
+    cinemaPlate({
+      featureId: "hms_salisbury",
+      src: "assets/cinema/east_indiamen_gale.jpg",
+      title: "Long routes turned food into time",
+      kicker: "Provisioning clock",
+      credit: "Wikimedia Commons, public domain",
+      position: "center center",
+      origin: "46% 46%",
+      opacity: "0.5"
+    }),
+    cinemaPlate({
+      featureId: "route_scurvy",
+      src: "assets/cinema/east_indiaman_kent_off_deal.jpg",
+      title: "Ship time makes deficiency visible",
+      kicker: "Long-voyage route",
+      credit: "Wikimedia Commons, public domain",
+      position: "center 50%",
+      origin: "48% 50%",
+      opacity: "0.5"
+    }),
+    cinemaPlate({
+      src: "assets/context/lind_scurvy_treatise.jpg",
+      title: "The manuscript meets the voyage",
+      kicker: "Source plate",
+      credit: "Wellcome Collection via Wikimedia Commons, CC BY 4.0",
+      position: "center 18%",
+      opacity: "0.44"
+    })
+  ],
+  ship_fever: [
+    cinemaPlate({
+      featureId: "london_naval",
+      src: "assets/cinema/quarantine_hulk_binstead.jpg",
+      title: "Quarantine was a maritime technology",
+      kicker: "Fever control",
+      credit: "Arthur Wellington Fowles / Royal Museums Greenwich via Wikimedia Commons, public domain",
+      position: "center 52%",
+      origin: "46% 48%",
+      opacity: "0.5",
+      clearX: "42%",
+      clearY: "52%"
+    }),
+    cinemaPlate({
+      featureId: "below_deck",
+      src: "assets/cinema/steerage_passengers_friedrich_der_grosse.jpg",
+      title: "Below deck is a social and microbial map",
+      kicker: "Crowding plate",
+      credit: "Library of Congress via Wikimedia Commons, public domain",
+      position: "center 48%",
+      origin: "48% 46%",
+      opacity: "0.52",
+      clearX: "42%",
+      clearY: "52%"
+    }),
+    cinemaPlate({
+      featureId: "grosse_ile_quarantine",
+      src: "assets/context/grosse_ile_quarantine_1850.jpg",
+      title: "A fever ship becomes a quarantine landscape",
+      kicker: "Grosse Ile",
+      credit: "Library and Archives Canada via Wikimedia Commons, public domain",
+      position: "center center",
+      origin: "52% 50%",
+      opacity: "0.5",
+      clearX: "42%",
+      clearY: "52%"
+    }),
+    cinemaPlate({
+      featureId: "route_ship_fever",
+      src: "assets/cinema/steerage_children_friedrich_der_grosse.jpg",
+      title: "The route follows families, clothing, and confinement",
+      kicker: "North Atlantic fever route",
+      credit: "Library of Congress via Wikimedia Commons, public domain",
+      position: "center 48%",
+      origin: "48% 45%",
+      opacity: "0.5",
+      clearX: "43%",
+      clearY: "52%"
+    })
+  ],
+  flux: [
+    cinemaPlate({
+      featureId: "below_deck",
+      src: "assets/cinema/steerage_passengers_friedrich_der_grosse.jpg",
+      title: "Bodies and waste share the same architecture",
+      kicker: "Below-deck exposure",
+      credit: "Library of Congress via Wikimedia Commons, public domain",
+      position: "center 48%",
+      opacity: "0.5"
+    }),
+    cinemaPlate({
+      featureId: "water_cask",
+      src: "assets/cinema/barrels_on_savannah_docks_nara.jpg",
+      title: "The exposure object is a container",
+      kicker: "Water and provisions",
+      credit: "Library of Congress via Wikimedia Commons, public domain",
+      position: "center center",
+      origin: "50% 44%",
+      opacity: "0.48"
+    }),
+    cinemaPlate({
+      featureId: "route_flux",
+      src: "assets/cinema/east_indiaman_hindustan.jpg",
+      title: "The route is inside the ship",
+      kicker: "Exposure route",
+      credit: "Thomas Luny / Royal Museums Greenwich via Wikimedia Commons, public domain",
+      position: "center 50%",
+      opacity: "0.5"
+    })
+  ],
+  typhoid: [
+    cinemaPlate({
+      featureId: "london_naval",
+      src: "assets/cinema/quarantine_hulk_binstead.jpg",
+      title: "Hygiene begins as practical maritime control",
+      kicker: "Shared fever problem",
+      credit: "Arthur Wellington Fowles / Royal Museums Greenwich via Wikimedia Commons, public domain",
+      position: "center 52%",
+      opacity: "0.48"
+    }),
+    cinemaPlate({
+      featureId: "food_water_typhi",
+      src: "assets/cinema/cook_at_galley_hatch.jpg",
+      title: "The exposure route runs through the galley",
+      kicker: "Food-water plate",
+      credit: "Imperial War Museums via Wikimedia Commons, public domain",
+      position: "center 43%",
+      opacity: "0.5"
+    }),
+    cinemaPlate({
+      featureId: "route_typhoid",
+      src: "assets/cinema/sailors_drinking_tunbridge_waters.jpg",
+      title: "Drinking water is an exposure route",
+      kicker: "Provisioning route",
+      credit: "The Metropolitan Museum of Art via Wikimedia Commons, CC0",
+      position: "center 46%",
+      opacity: "0.48"
+    })
+  ],
+  smallpox: [
+    cinemaPlate({
+      featureId: "smallpox_origin_camel",
+      src: "assets/context/camel_from_nubia_1838.jpg",
+      title: "The origin story remains unsettled",
+      kicker: "Deep origin",
+      credit: "J. R. Wellsted via Wikimedia Commons, public domain",
+      position: "center center",
+      opacity: "0.46"
+    }),
+    cinemaPlate({
+      featureId: "below_deck",
+      src: "assets/cinema/steerage_passengers_friedrich_der_grosse.jpg",
+      title: "Bedding and close contact matter at sea",
+      kicker: "Shipboard contact",
+      credit: "Library of Congress via Wikimedia Commons, public domain",
+      position: "center 48%",
+      opacity: "0.5"
+    }),
+    cinemaPlate({
+      featureId: "smallpox_hulks",
+      src: "assets/context/smallpox_hospital_ships_atlas_endymion.jpg",
+      title: "Ships transported disease and contained it",
+      kicker: "Hospital hulks",
+      credit: "Wellcome Collection via Wikimedia Commons, CC BY 4.0",
+      position: "center center",
+      opacity: "0.5"
+    }),
+    cinemaPlate({
+      featureId: "port_arrival",
+      src: "assets/context/quarantine_guardship_rhin_1830.jpg",
+      title: "Arrival turns ship disease into port policy",
+      kicker: "Port quarantine",
+      credit: "Royal Museums Greenwich via Wikimedia Commons, public domain",
+      position: "center center",
+      opacity: "0.48"
+    }),
+    cinemaPlate({
+      featureId: "route_smallpox",
+      src: "assets/context/quarantine_guardship_rhin_1830.jpg",
+      title: "The route runs from deep origin to port control",
+      kicker: "Smallpox route",
+      credit: "Royal Museums Greenwich via Wikimedia Commons, public domain",
+      position: "center center",
+      opacity: "0.48"
+    })
+  ],
+  measles: [
+    cinemaPlate({
+      featureId: "measles_origin_rinderpest",
+      src: "assets/context/rinderpest_1896.jpg",
+      title: "Cattle ancestry, human density, shipboard air",
+      kicker: "Morbillivirus plate",
+      credit: "Wikimedia Commons, public domain",
+      position: "center center",
+      opacity: "0.46"
+    }),
+    cinemaPlate({
+      featureId: "below_deck",
+      src: "assets/cinema/steerage_children_friedrich_der_grosse.jpg",
+      title: "At sea, measles becomes an air problem",
+      kicker: "Shipboard air",
+      credit: "Library of Congress via Wikimedia Commons, public domain",
+      position: "center 48%",
+      opacity: "0.5"
+    }),
+    cinemaPlate({
+      featureId: "port_arrival",
+      src: "assets/cinema/quarantine_hulk_binstead.jpg",
+      title: "Arrival changes the outbreak stage",
+      kicker: "Port arrival",
+      credit: "Arthur Wellington Fowles / Royal Museums Greenwich via Wikimedia Commons, public domain",
+      position: "center 52%",
+      opacity: "0.48"
+    }),
+    cinemaPlate({
+      featureId: "route_measles",
+      src: "assets/cinema/east_indiaman_hindustan.jpg",
+      title: "The route links air, density, and arrival",
+      kicker: "Measles route",
+      credit: "Thomas Luny / Royal Museums Greenwich via Wikimedia Commons, public domain",
+      position: "center 50%",
+      opacity: "0.5"
+    })
+  ],
+  wounds_sepsis: [
+    cinemaPlate({
+      featureId: "below_deck",
+      src: "assets/cinema/pyle_capture_of_galleon.jpg",
+      title: "Violence turns the ship into a wound ecology",
+      kicker: "Trauma plate",
+      credit: "Howard Pyle via Wikimedia Commons, public domain",
+      position: "center center",
+      opacity: "0.52"
+    }),
+    cinemaPlate({
+      featureId: "ship_surgery",
+      src: "assets/context/naval_surgeon_instruments.jpg",
+      title: "Dirty tools, delayed care, infected tissue",
+      kicker: "Surgery plate",
+      credit: "Wellcome Collection via Wikimedia Commons, CC BY 4.0",
+      position: "center 46%",
+      opacity: "0.47"
+    }),
+    cinemaPlate({
+      featureId: "route_wounds_sepsis",
+      src: "assets/cinema/pyle_pirates_raidship.jpg",
+      title: "Everyday ship damage becomes disease ecology",
+      kicker: "Treatment route",
+      credit: "Howard Pyle via Wikimedia Commons, public domain",
+      position: "center 40%",
+      opacity: "0.52"
+    })
+  ],
+  middle_passage: [
+    cinemaPlate({
+      featureId: "west_africa",
+      src: "assets/context/ship_deck_slavery_1861.jpg",
+      title: "Forced movement changes every risk",
+      kicker: "Forced departure",
+      credit: "Library of Congress via Wikimedia Commons, public domain",
+      position: "center center",
+      opacity: "0.48"
+    }),
+    cinemaPlate({
+      featureId: "route_middle_passage",
+      src: "assets/context/brookes_slave_ship.jpg",
+      title: "Confinement is the disease environment",
+      kicker: "Coercive ecology",
+      credit: "British Library via Wikimedia Commons, public domain",
+      position: "center center",
+      opacity: "0.46"
+    }),
+    cinemaPlate({
+      featureId: "brookes_middle_passage",
+      src: "assets/context/brookes_slave_ship.jpg",
+      title: "The diagram fixes the scale of confinement",
+      kicker: "Extreme burden",
+      credit: "British Library via Wikimedia Commons, public domain",
+      position: "center center",
+      opacity: "0.46"
+    })
+  ]
+};
+
 function setRecordingMode(nextValue) {
   isRecordingMode = nextValue;
   document.documentElement.classList.toggle("recording-mode", isRecordingMode);
-  document.getElementById("recording-btn").classList.toggle("active", isRecordingMode);
-  document.getElementById("recording-btn").setAttribute("aria-pressed", String(isRecordingMode));
+  const button = document.getElementById("recording-btn");
+  button.classList.toggle("active", isRecordingMode);
+  button.setAttribute("aria-pressed", String(isRecordingMode));
+  button.textContent = isRecordingMode ? "Exit Video" : "Video Mode";
 
   if (isRecordingMode) {
     map.removeLayer(darkBaseLayer);
@@ -906,6 +1887,58 @@ function setRecordingMode(nextValue) {
 
   if (geoLayer) geoLayer.bringToFront();
   if (activePulse) activePulse.addTo(map);
+  map.invalidateSize();
+}
+
+function setScenarioPlaying(nextValue) {
+  document.documentElement.classList.toggle("scenario-playing", nextValue);
+}
+
+function setTourRunning(nextValue) {
+  isTourRunning = nextValue;
+  const button = document.getElementById("tour-btn");
+  document.documentElement.classList.toggle("tour-running", isTourRunning);
+  button.classList.toggle("active", isTourRunning);
+  button.setAttribute("aria-pressed", String(isTourRunning));
+  button.textContent = isTourRunning ? "Stop Tour" : "Tour";
+}
+
+function scaledMs(ms) {
+  return Math.max(500, Math.round(ms * durationScale));
+}
+
+function scenarioOverviewFitOptions(duration = 1) {
+  if (isRecordingMode) {
+    return {
+      paddingTopLeft: [90, 130],
+      paddingBottomRight: [100, 320],
+      animate: true,
+      duration
+    };
+  }
+  return {
+    paddingTopLeft: [450, 135],
+    paddingBottomRight: [70, 70],
+    animate: true,
+    duration
+  };
+}
+
+function routeFitOptions(duration = 1.45) {
+  if (isRecordingMode) {
+    return {
+      paddingTopLeft: [90, 130],
+      paddingBottomRight: [560, 380],
+      animate: true,
+      duration
+    };
+  }
+  return {
+    paddingTopLeft: [460, 130],
+    paddingBottomRight: [120, 120],
+    animate: true,
+    duration
+  };
 }
 
 function featureColor(feature) {
@@ -1005,6 +2038,73 @@ function renderTimeline(scenario, activeIndex = -1) {
       <span>${step.label}</span>
     </div>
   `).join("");
+  const progressLabel = document.getElementById("scene-progress-label");
+  const progressFill = document.getElementById("scene-progress-fill");
+  if (activeIndex >= 0) {
+    progressLabel.textContent = `Scene ${activeIndex + 1}/${scenario.steps.length} | ${scenario.steps[activeIndex].label}`;
+  } else {
+    progressLabel.textContent = `${scenario.steps.length} scene route`;
+    progressFill.style.transition = "none";
+    progressFill.style.width = "0%";
+  }
+}
+
+function startStepProgress(scenario, activeIndex, holdMs) {
+  const progressFill = document.getElementById("scene-progress-fill");
+  const start = (activeIndex / scenario.steps.length) * 100;
+  const end = ((activeIndex + 1) / scenario.steps.length) * 100;
+  activeProgress = {
+    start,
+    end,
+    duration: holdMs,
+    startTime: performance.now(),
+    pausedDuration: 0,
+    pausedAt: null
+  };
+  progressFill.style.transition = "none";
+  progressFill.style.width = `${start}%`;
+  progressFill.getBoundingClientRect();
+  progressFill.style.transition = `width ${holdMs}ms linear`;
+  progressFill.style.width = `${end}%`;
+}
+
+function currentProgressPercent() {
+  const progressFill = document.getElementById("scene-progress-fill");
+  const track = progressFill.parentElement;
+  const trackWidth = track ? track.getBoundingClientRect().width : 0;
+  if (!trackWidth) return Number.parseFloat(progressFill.style.width) || 0;
+  return (progressFill.getBoundingClientRect().width / trackWidth) * 100;
+}
+
+function pauseStepProgress() {
+  if (!activeProgress || activeProgress.pausedAt) return;
+  const progressFill = document.getElementById("scene-progress-fill");
+  activeProgress.pausedAt = performance.now();
+  progressFill.style.transition = "none";
+  progressFill.style.width = `${currentProgressPercent()}%`;
+}
+
+function resumeStepProgress() {
+  if (!activeProgress || !activeProgress.pausedAt) return;
+  const progressFill = document.getElementById("scene-progress-fill");
+  const pausedAt = activeProgress.pausedAt;
+  const elapsedBeforePause = Math.max(0, pausedAt - activeProgress.startTime - activeProgress.pausedDuration);
+  activeProgress.pausedDuration += performance.now() - pausedAt;
+  activeProgress.pausedAt = null;
+  const remaining = Math.max(80, activeProgress.duration - elapsedBeforePause);
+  progressFill.style.transition = "none";
+  progressFill.style.width = `${currentProgressPercent()}%`;
+  progressFill.getBoundingClientRect();
+  progressFill.style.transition = `width ${remaining}ms linear`;
+  progressFill.style.width = `${activeProgress.end}%`;
+}
+
+function resetStepProgress() {
+  const progressFill = document.getElementById("scene-progress-fill");
+  activeProgress = null;
+  document.getElementById("scene-progress-label").textContent = "Scene ready";
+  progressFill.style.transition = "none";
+  progressFill.style.width = "0%";
 }
 
 function mechanismArt(kind, color) {
@@ -1051,21 +2151,99 @@ function hideMechanism() {
   document.getElementById("mechanism-card").classList.remove("open");
 }
 
-function showContextArt(art) {
+function cinemaArtForStep(scenarioId, step, index, fallbackArt = null) {
+  const reel = CINEMA_REELS[scenarioId] || [];
+  const matched = reel.find(item => (
+    (step.featureId && item.featureId === step.featureId) ||
+    (step.visual && item.visual === step.visual) ||
+    (step.kind && item.kind === step.kind)
+  ));
+  const selected = matched || (reel.length ? reel[index % reel.length] : null);
+  return selected || fallbackArt;
+}
+
+function showContextArt(art, cinemaArt = art, durationMs = null) {
   const card = document.getElementById("context-card");
+  if (isRecordingMode && cinemaArt) {
+    card.classList.remove("open");
+    showCinemaBackdrop(cinemaArt, durationMs);
+    return;
+  }
   const image = document.getElementById("context-image");
   image.src = art.src;
   image.alt = art.title;
   image.style.setProperty("--context-position", art.position || "center center");
   image.style.setProperty("--context-fit", art.fit || "cover");
+  image.style.animation = "none";
+  image.getBoundingClientRect();
+  image.style.animation = "";
   document.getElementById("context-kicker").textContent = art.kicker || "Context art";
   document.getElementById("context-title").textContent = art.title;
   document.getElementById("context-credit").textContent = art.credit || "";
   card.classList.add("open");
+  showCinemaBackdrop(cinemaArt || art, durationMs);
 }
 
-function hideContextArt() {
+function hideContextArt({ keepBackdrop = false } = {}) {
   document.getElementById("context-card").classList.remove("open");
+  if (!keepBackdrop) hideCinemaBackdrop();
+}
+
+function showCinemaBackdrop(art, durationMs = null) {
+  const backdrop = document.getElementById("cinema-backdrop");
+  const image = document.getElementById("cinema-backdrop-image");
+  const secondary = document.getElementById("cinema-backdrop-secondary");
+  const primary = art.primary || art;
+  image.src = primary.src;
+  image.alt = primary.title || "";
+  image.style.setProperty("--cinema-position", primary.position || "center center");
+  image.style.setProperty("--cinema-origin", primary.origin || "68% 45%");
+  image.style.setProperty("--cinema-opacity", primary.opacity || "0.46");
+  backdrop.style.setProperty("--cinema-clear-x", primary.clearX || "42%");
+  backdrop.style.setProperty("--cinema-clear-y", primary.clearY || "52%");
+  image.style.setProperty("--cinema-pan-start-x", primary.panStartX || "1.2%");
+  image.style.setProperty("--cinema-pan-start-y", primary.panStartY || "0%");
+  image.style.setProperty("--cinema-pan-end-x", primary.panEndX || "-3.2%");
+  image.style.setProperty("--cinema-pan-end-y", primary.panEndY || "-1.4%");
+  const duration = durationMs || scaledMs(3200);
+  document.documentElement.style.setProperty("--cinema-duration", `${Math.max(900, duration)}ms`);
+  backdrop.classList.remove("open");
+  backdrop.style.animation = "none";
+  image.style.animation = "none";
+  backdrop.getBoundingClientRect();
+  image.getBoundingClientRect();
+  backdrop.style.animation = "";
+  image.style.animation = "";
+  const secondaryArt = primary.secondary || art.secondary || null;
+  if (secondaryArt && secondaryArt.src) {
+    secondary.src = secondaryArt.src;
+    secondary.alt = secondaryArt.title || "";
+    secondary.style.setProperty("--cinema-secondary-position", secondaryArt.position || "center center");
+    secondary.style.setProperty("--cinema-secondary-origin", secondaryArt.origin || "54% 45%");
+    secondary.style.setProperty("--cinema-secondary-opacity", secondaryArt.opacity || "0.34");
+    secondary.style.setProperty("--cinema-secondary-pan-start-x", secondaryArt.panStartX || "-1%");
+    secondary.style.setProperty("--cinema-secondary-pan-start-y", secondaryArt.panStartY || "0%");
+    secondary.style.setProperty("--cinema-secondary-pan-end-x", secondaryArt.panEndX || "2.4%");
+    secondary.style.setProperty("--cinema-secondary-pan-end-y", secondaryArt.panEndY || "-1.2%");
+    secondary.classList.add("has-secondary");
+    backdrop.classList.add("has-secondary");
+    secondary.style.animation = "none";
+    secondary.getBoundingClientRect();
+    secondary.style.animation = "";
+  } else {
+    secondary.removeAttribute("src");
+    secondary.classList.remove("has-secondary");
+    backdrop.classList.remove("has-secondary");
+  }
+  document.getElementById("cinema-caption-kicker").textContent = primary.kicker || "Archival plate";
+  document.getElementById("cinema-caption-title").textContent = primary.title || "";
+  document.getElementById("cinema-caption-credit").textContent = primary.credit || "";
+  backdrop.classList.add("open");
+}
+
+function hideCinemaBackdrop() {
+  document.getElementById("cinema-backdrop").classList.remove("open", "has-secondary");
+  document.getElementById("cinema-backdrop-secondary").classList.remove("has-secondary");
 }
 
 function simulateClosedShip({ population, initial, rEff, latentDays, infectiousDays, days }) {
@@ -1106,7 +2284,7 @@ function burnoutPlot(kind, color) {
   const configs = {
     smallpox_burnout: {
       heading: "Smallpox burnout model",
-      subtitle: "Closed-ship SEIR simulation | N=120 | illustrative R_eff=4.5 | latent=12 days | infectious=18 days",
+      subtitle: "Closed-ship SEIR | N=120 | R_eff=4.5 | latent 12d | infectious 18d",
       population: 120,
       initial: 1,
       rEff: 4.5,
@@ -1118,7 +2296,7 @@ function burnoutPlot(kind, color) {
     },
     measles_burnout: {
       heading: "Measles burnout model",
-      subtitle: "Closed-ship SEIR simulation | N=120 | illustrative R_eff=14 | latent=10 days | infectious=8 days",
+      subtitle: "Closed-ship SEIR | N=120 | R_eff=14 | latent 10d | infectious 8d",
       population: 120,
       initial: 1,
       rEff: 14,
@@ -1229,18 +2407,28 @@ function sleep(ms) {
 
 function updatePauseButton() {
   const button = document.getElementById("pause-btn");
+  const videoButton = document.getElementById("video-pause-btn");
+  const videoLabel = document.getElementById("video-pause-label");
   button.textContent = isPaused ? "Resume" : "Pause";
   button.classList.toggle("active", isPaused);
   button.setAttribute("aria-pressed", String(isPaused));
   button.setAttribute("aria-disabled", String(!activeScenario));
+  if (videoButton) {
+    videoButton.setAttribute("aria-pressed", String(isPaused));
+    videoButton.setAttribute("aria-disabled", String(!activeScenario));
+  }
+  if (videoLabel) videoLabel.textContent = isPaused ? "Resume" : "Pause";
 }
 
 function setPaused(nextValue) {
   if (!activeScenario && nextValue) return;
   isPaused = nextValue;
+  document.documentElement.classList.toggle("paused", isPaused);
   if (isPaused) {
     map.stop();
+    pauseStepProgress();
   } else {
+    resumeStepProgress();
     pauseResolvers.splice(0).forEach(resolve => resolve());
   }
   updatePauseButton();
@@ -1259,11 +2447,41 @@ async function pausableSleep(ms, token) {
       await waitWhilePaused(token);
       continue;
     }
-    const tick = Math.min(120, ms - elapsed);
+    const tick = Math.min(32, ms - elapsed);
     const started = performance.now();
     await sleep(tick);
     elapsed += performance.now() - started;
   }
+}
+
+function stepHoldMs(step) {
+  const base = scaledMs(step.hold || 2600);
+  if (!isRecordingMode) return base;
+  if (step.kind === "point" || step.kind === "route") return Math.round(base * 1.75);
+  if (step.kind === "plot") return Math.round(base * 1.2);
+  return Math.round(base * 1.12);
+}
+
+function togglePauseFromControl(event) {
+  if (!activeScenario) return;
+  if (event) event.preventDefault();
+  setPaused(!isPaused);
+}
+
+function bindPauseControl(id) {
+  const button = document.getElementById(id);
+  button.addEventListener("pointerdown", event => {
+    if (event.button && event.button !== 0) return;
+    lastPausePointerAt = performance.now();
+    togglePauseFromControl(event);
+  });
+  button.addEventListener("click", event => {
+    if (performance.now() - lastPausePointerAt < 500) {
+      event.preventDefault();
+      return;
+    }
+    togglePauseFromControl(event);
+  });
 }
 
 async function playScenario(id) {
@@ -1271,6 +2489,7 @@ async function playScenario(id) {
   if (!scenario) return;
   const token = ++runToken;
   activeScenario = id;
+  setScenarioPlaying(true);
   setPaused(false);
   updatePauseButton();
   if (activePulse) {
@@ -1284,8 +2503,8 @@ async function playScenario(id) {
   hidePlot();
   renderTimeline(scenario);
   setStory(scenario.kicker, scenario.title, scenario.summary, scenario.color);
-  map.fitBounds(boundsForFeatureIds(scenario.featureIds), { paddingTopLeft: [450, 135], paddingBottomRight: [70, 70], animate: true, duration: 1 });
-  await pausableSleep(900, token);
+  map.fitBounds(boundsForFeatureIds(scenario.featureIds), scenarioOverviewFitOptions(1));
+  await pausableSleep(isRecordingMode ? scaledMs(1450) : scaledMs(900), token);
 
   for (let i = 0; i < scenario.steps.length; i++) {
     if (token !== runToken) return;
@@ -1293,28 +2512,38 @@ async function playScenario(id) {
     const step = scenario.steps[i];
     renderTimeline(scenario, i);
     setStory(step.kicker, step.title, step.copy, scenario.color);
+    const holdMs = stepHoldMs(step);
+    const isInflectionStep = step.kind === "point" || step.kind === "route";
+    const cinemaArt = isInflectionStep ? cinemaArtForStep(id, step, i, artForStep(step)) : null;
+    startStepProgress(scenario, i, holdMs);
     if (step.kind === "point") {
       hideMechanism();
       hidePlot();
       const art = artForStep(step);
-      if (art) showContextArt(art);
-      else hideContextArt();
+      if (art) showContextArt(art, cinemaArt, holdMs);
+      else {
+        hideContextArt({ keepBackdrop: Boolean(cinemaArt) });
+        if (cinemaArt) showCinemaBackdrop(cinemaArt, holdMs);
+      }
       setPulse(step.featureId);
       const feature = featureById.get(step.featureId);
       const [lon, lat] = feature.geometry.coordinates;
-      map.flyTo([lat, lon], step.zoom || 6, { duration: 1.45 });
+      map.flyTo([lat, lon], step.zoom || 6, { duration: isRecordingMode ? 1.15 : 1.45 });
     }
     if (step.kind === "route") {
       hideMechanism();
       hidePlot();
       const art = artForStep(step);
-      if (art) showContextArt(art);
-      else hideContextArt();
+      if (art) showContextArt(art, cinemaArt, holdMs);
+      else {
+        hideContextArt({ keepBackdrop: Boolean(cinemaArt) });
+        if (cinemaArt) showCinemaBackdrop(cinemaArt, holdMs);
+      }
       if (activePulse) {
         activePulse.remove();
         activePulse = null;
       }
-      map.fitBounds(boundsForFeatureIds([step.featureId]), { paddingTopLeft: [460, 130], paddingBottomRight: [120, 120], animate: true, duration: 1.45 });
+      map.fitBounds(boundsForFeatureIds([step.featureId]), routeFitOptions(isRecordingMode ? 1.15 : 1.45));
     }
     if (step.kind === "mechanism") {
       if (activePulse) {
@@ -1334,12 +2563,14 @@ async function playScenario(id) {
       hideMechanism();
       showPlot(step, scenario.color);
     }
-    await pausableSleep(step.hold || 2600, token);
+    await pausableSleep(holdMs, token);
   }
   if (token === runToken) {
     activeScenario = null;
+    setScenarioPlaying(false);
     setPaused(false);
     updatePauseButton();
+    activeProgress = null;
   }
 }
 
@@ -1348,8 +2579,11 @@ function openFeature(props) {
 }
 
 function resetAtlas() {
+  ++tourToken;
   ++runToken;
   activeScenario = null;
+  setScenarioPlaying(false);
+  setTourRunning(false);
   setPaused(false);
   pauseResolvers.splice(0).forEach(resolve => resolve());
   if (activePulse) {
@@ -1362,26 +2596,111 @@ function resetAtlas() {
   drawAtlas();
   document.querySelectorAll(".scenario-btn").forEach(btn => btn.classList.remove("active"));
   document.getElementById("timeline").innerHTML = "";
-  setStory("Click a disease route", "A ship was a moving disease ecosystem.", "Pick a disease button. The map moves through origin ecology, mechanism, route, and endpoint.", "#c9a84c");
+  resetStepProgress();
+  setStory("Click a disease route", "A ship was a moving disease ecosystem.", "Each route follows one disease ecology from source conditions through shipboard mechanism to port consequences.", "#c9a84c");
   map.setView([22, -43], 4, { animate: true });
   updatePauseButton();
 }
 
 document.querySelectorAll(".scenario-btn").forEach(button => {
-  button.addEventListener("click", () => playScenario(button.dataset.scenario));
+  button.addEventListener("click", () => {
+    ++tourToken;
+    setTourRunning(false);
+    playScenario(button.dataset.scenario);
+  });
 });
-document.getElementById("pause-btn").addEventListener("click", () => setPaused(!isPaused));
+bindPauseControl("pause-btn");
+bindPauseControl("video-pause-btn");
+document.getElementById("tour-btn").addEventListener("click", () => {
+  if (isTourRunning) {
+    ++tourToken;
+    ++runToken;
+    setTourRunning(false);
+    setScenarioPlaying(false);
+    activeScenario = null;
+    updatePauseButton();
+    return;
+  }
+  playTour();
+});
 document.getElementById("recording-btn").addEventListener("click", () => setRecordingMode(!isRecordingMode));
 document.getElementById("reset-btn").addEventListener("click", resetAtlas);
 document.addEventListener("keydown", event => {
-  if (event.code === "Space" && activeScenario) {
+  if ((event.code === "Space" || event.key.toLowerCase() === "p") && activeScenario) {
     event.preventDefault();
     setPaused(!isPaused);
   }
+  if (event.key.toLowerCase() === "v") {
+    setRecordingMode(!isRecordingMode);
+  }
+  if (event.key.toLowerCase() === "t") {
+    if (isTourRunning) {
+      ++tourToken;
+      ++runToken;
+      setTourRunning(false);
+      setScenarioPlaying(false);
+      activeScenario = null;
+      updatePauseButton();
+    } else {
+      playTour();
+    }
+  }
+  if (/^[1-9]$/.test(event.key)) {
+    const index = Number(event.key) - 1;
+    if (SCENARIO_ORDER[index]) {
+      ++tourToken;
+      setTourRunning(false);
+      playScenario(SCENARIO_ORDER[index]);
+    }
+  }
 });
+
+async function playTour() {
+  const token = ++tourToken;
+  setRecordingMode(true);
+  setTourRunning(true);
+  for (const scenarioId of VIDEO_TOUR) {
+    if (token !== tourToken) break;
+    await playScenario(scenarioId);
+    if (token !== tourToken) break;
+    await sleep(scaledMs(700));
+  }
+  if (token === tourToken) {
+    setTourRunning(false);
+    setScenarioPlaying(false);
+    activeScenario = null;
+    updatePauseButton();
+  }
+}
+
+function queryFlag(...names) {
+  return names.some(name => {
+    const value = queryParams.get(name);
+    return value === "" || value === "1" || value === "true" || value === "yes";
+  });
+}
+
+function initializeFromQuery() {
+  if (queryFlag("video", "recording", "record")) {
+    setRecordingMode(true);
+  }
+  const requestedScenario = queryParams.get("scenario");
+  const shouldTour = queryFlag("tour", "autotour");
+  if (shouldTour || requestedScenario) {
+    window.setTimeout(() => {
+      if (shouldTour) {
+        playTour();
+      } else if (scenarios[requestedScenario]) {
+        playScenario(requestedScenario);
+      }
+    }, 350);
+  }
+}
 
 drawAtlas();
 updatePauseButton();
+initializeFromQuery();
+window.MARITIME_ATLAS_CONTROLS = { playScenario, playTour, resetAtlas, setRecordingMode };
 </script>
 </body>
 </html>

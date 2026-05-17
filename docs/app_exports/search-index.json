@@ -176,7 +176,7 @@
     "keywords": "science History syphilis medicine epidemiology science History syphilis medicine epidemiology syphilis epidemiologic-methods"
   },
   {
-    "title": "The Mystery of Hookworm in Ancient America: A Parasite Found When and Where it Shouldn't Be Yet",
+    "title": "Ancient Hookworm in the Americas: A Parasite Out of Place",
     "display_title": "Ancient Hookworm in the Americas: A Parasite Out of Place",
     "section": "Essay",
     "summary": "Ancient hookworm in the Americas, parasite geography, archaeology, migration, and why a tropical helminth can complicate simple stories of disease history.",
@@ -783,7 +783,7 @@
   {
     "title": "Hantavirus and cruise-ship outbreak",
     "section": "Newsdesk",
-    "summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
+    "summary": "New publisher/source coverage joined this story cluster: The Guardian.",
     "url": "/stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
     "keywords": "new_official_source confirmed_case policy_or_travel new_geography Global / Maritime Spain"
   },
@@ -802,13 +802,6 @@
     "keywords": "confirmed_case transmission_change new_geography Southeast Asia United States"
   },
   {
-    "title": "Dengue and arboviruses",
-    "section": "Newsdesk",
-    "summary": "New publisher/source coverage joined this story cluster: CNA, Free Press Journal, The News Pakistan.",
-    "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
-    "keywords": "new_official_source confirmed_case severity_or_death new_geography South Asia United Kingdom"
-  },
-  {
     "title": "COVID-19 and SARS-CoV-2",
     "section": "Newsdesk",
     "summary": "The lead item has changed to Multicenter retrospective observational study on the clinical effectiveness of butyrate-producing Clostridium butyricum containing probiotics in patients with COVID-19. from PubMed Infectious Disease Search.",
@@ -821,6 +814,13 @@
     "summary": "Baseline snapshot created with 2 clustered item(s) across 2 source(s).",
     "url": "/stories/story_b461b8ac8c062700-historical-epidemiology-and-ancient-pathogens.html",
     "keywords": "new_official_source severity_or_death new_geography Africa United Kingdom"
+  },
+  {
+    "title": "Dengue and arboviruses",
+    "section": "Newsdesk",
+    "summary": "New publisher/source coverage joined this story cluster: CNA, Free Press Journal, The News Pakistan.",
+    "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
+    "keywords": "new_official_source confirmed_case severity_or_death new_geography South Asia United Kingdom"
   },
   {
     "title": "Occupational and environmental epidemiology",
