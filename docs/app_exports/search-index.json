@@ -839,14 +839,14 @@
   {
     "title": "Dengue and arboviruses",
     "section": "Newsdesk",
-    "summary": "New publisher/source coverage joined this story cluster: The News Pakistan.",
+    "summary": "Free Press Journal now includes deaths or fatal cases in the story frame.",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
-    "keywords": "policy_or_travel new_geography North America "
+    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography South Asia United Kingdom"
   },
   {
     "title": "COVID-19 and SARS-CoV-2",
     "section": "Newsdesk",
-    "summary": "The lead item has changed to Multicenter retrospective observational study on the clinical effectiveness of butyrate-producing Clostridium butyricum containing probiotics in patients with COVID-19. from PubMed Infectious Disease Search.",
+    "summary": "The lead item has changed to Modeling the potential public health and economic impact and cost-effectiveness of vaccination strategies using an adapted COVID-19 vaccine in Guatemala. from PubMed Infectious Disease Search.",
     "url": "/stories/story_afd8f5934e291e02-covid-19-and-sars-cov-2.html",
     "keywords": "new_official_source severity_or_death new_geography North America United States"
   },
