@@ -363,6 +363,27 @@ PUBLIC_COPY_REPLACEMENTS = {
     "Plague belongs in the atlas because it is one of the clearest historical demonstrations that reservoir ecology, trade corridors, warfare, and maritime ports can repeatedly rewire a continent.": "Plague is one of the clearest historical demonstrations that reservoir ecology, trade corridors, warfare, and maritime ports can repeatedly rewire a continent.",
     "It lets the atlas bridge deep historical fear, genomic reconstruction, and the very practical map logic of rodents, fleas, and ports.": "Plague links deep historical fear, genomic reconstruction, and the practical geography of rodents, fleas, and ports.",
     "Measles is a useful atlas pathogen because its deeper origin story is partly reconstructed from molecular-clock work, while its colonial spread story is brutally visible in the Americas and Pacific.": "Measles has a partly reconstructed deeper origin story from molecular-clock work, while its colonial spread is brutally visible in the Americas and Pacific.",
+    "A durable desk file generated from the active dossier story cluster.": "A durable desk file assembled from current reporting, official updates, and source clusters.",
+    "Summary stays within source text and metadata; no outside facts were added.": "The summary stays close to the source language and should be read as an initial source note, not a final interpretation.",
+    "summary stays within source text and metadata; no outside facts were added.": "the summary stays close to the source language and should be read as an initial source note, not a final interpretation.",
+    "Limited detail was available from feed metadata alone.": "Only a brief source description was available at publication time.",
+    "limited detail was available from feed metadata alone.": "only a brief source description was available at publication time.",
+    "metadata_only_signal": "brief_source_signal",
+    "metadata_only": "brief_source",
+    "metadata-only signal": "brief source signal",
+    "Metadata-only signal": "Brief source signal",
+    "metadata-only follow-ups": "brief-source follow-ups",
+    "Metadata-only follow-ups": "Brief-source follow-ups",
+    "Metadata-only": "Brief source",
+    "metadata only": "brief source",
+    "Metadata only": "Brief source",
+    "Live fetches": "Current source checks",
+    "Live fetch": "Current source",
+    "live fetch": "current source",
+    "Wrapper-only": "Source-link only",
+    "wrapper-only": "source-link only",
+    "wrapper only": "source-link only",
+    "Wrapper only": "Source-link only",
 }
 
 
@@ -545,7 +566,7 @@ def render_tool_card(entry: dict[str, Any], base_url: str) -> str:
     route = entry.get("public_route", "")
     href = link_for(base_url, route)
     coordinate_hint = " / ".join(keyword.upper() for keyword in entry.get("keywords", [])[:2]) or "CURATED TOOL"
-    status = entry.get("status_label", "Tool")
+    status = public_tool_status(entry)
     feature_line = entry.get("evidence_model", "")
     tool_token = css_token(entry.get("tool_id") or entry.get("atlas_id"), "tool")
     tool_type = str(entry.get("tool_type") or "tool").replace("_", " ").title()
@@ -558,7 +579,7 @@ def render_tool_card(entry: dict[str, Any], base_url: str) -> str:
         f'<span class="card-utility-label">{html.escape(tool_type)}</span>'
         f'<span class="card-utility-meta">{html.escape(coordinate_hint)}</span>'
         "</div>"
-        '<p class="kicker">Virtual teaching tool</p>'
+        '<p class="kicker">Learning tool</p>'
         f'<h3><a href="{html.escape(href)}">{html.escape(entry.get("title", "Untitled tool"))}</a></h3>'
         f'<p class="muted-note">{html.escape(entry.get("summary", ""))}</p>'
         f'{f"<p class=\"card-meta-text\">{html.escape(feature_line)}</p>" if feature_line else ""}'
@@ -578,9 +599,9 @@ def post_folio_meta(post: dict[str, Any]) -> tuple[str, str]:
     if strategy in INDEXABLE_POST_STRATEGIES:
         status_label = "Evergreen"
     elif post.get("status") == "mirrored":
-        status_label = "Mirrored"
+        status_label = "Full essay"
     else:
-        status_label = "Noindex stub"
+        status_label = "Essay archive"
     utility_meta = " · ".join(item for item in [category_text, status_label] if item)
     return date_text, utility_meta
 
@@ -613,6 +634,45 @@ def render_post_card(post: dict[str, Any], base_url: str, *, featured: bool = Fa
         "</div>"
         "</article>"
     )
+
+
+def public_tool_status(entry: dict[str, Any]) -> str:
+    status = str(entry.get("status") or "").lower()
+    tool_type = str(entry.get("tool_type") or "tool").replace("_", " ").title()
+    if status == "live":
+        return "Open now"
+    if status in {"prototype", "in_build", "section"}:
+        return f"{tool_type} section"
+    return tool_type
+
+
+def public_tool_export(entry: dict[str, Any]) -> dict[str, Any]:
+    public_entry = {
+        key: value
+        for key, value in entry.items()
+        if key
+        not in {
+            "source_path",
+            "launch_priority",
+            "legacy_atlas_id",
+        }
+    }
+    public_entry["status_label"] = str(entry.get("status_label") or public_tool_status(entry))
+    public_entry["status"] = "open" if str(entry.get("status") or "").lower() == "live" else "section"
+    return public_entry
+
+
+def public_post_export(post: dict[str, Any]) -> dict[str, Any]:
+    internal_keys = {
+        "source_mode",
+        "indexing_strategy",
+        "first_seen_at",
+        "last_synced_at",
+        "sync_source",
+        "source_path",
+        "original_title",
+    }
+    return {key: value for key, value in post.items() if key not in internal_keys}
 
 
 def render_story_card(story: dict[str, Any], base_url: str) -> str:
@@ -728,7 +788,7 @@ def render_home(posts: list[dict[str, Any]], tools: list[dict[str, Any]], latest
           <p class="kicker">Devin Teichrow</p>
           <h2 class="hero-title">Disease travels with people and the things people build: ships, barracks, markets, wells, mosquitoes, rats, crowded rooms, and decisions made too late.</h2>
           <div class="hero-prose">
-            <p class="subtitle">I&apos;m Devin Teichrow, a UCLA-trained epidemiologist and neuroscience researcher at UC Irvine working on migraine and Alzheimer&apos;s Disease and Related Dementias. My public-facing work focuses on how disease moves through populations, history, war, ecology, and infrastructure, including everything from modern outbreak reporting to historical epidemic reconstruction and interactive disease mapping.</p>
+            <p class="subtitle">I&apos;m Devin Teichrow, a UCLA-trained epidemiologist and neuroscience researcher at UC Irvine working on migraine and Alzheimer&apos;s Disease and Related Dementias. My public science work focuses on how disease moves through populations, history, war, ecology, and infrastructure, including everything from modern outbreak reporting to historical epidemic reconstruction and interactive disease mapping.</p>
             <p class="subtitle">The Edge of Epidemiology is my home for longform essays, live outbreak coverage, disease atlases, methodological explainers, and projects exploring the intersection of epidemiology, geography, and history.</p>
           </div>
           <div class="hero-actions">
@@ -736,7 +796,7 @@ def render_home(posts: list[dict[str, Any]], tools: list[dict[str, Any]], latest
             <a class="button secondary" href="{html.escape(link_for(base_url, 'tools/'))}">Browse the tools</a>
             <a class="button secondary" href="{html.escape(link_for(base_url, 'essays/'))}">Read the essays</a>
           </div>
-          <p class="hero-status-line"><span class="hero-status-label">Live desk</span> Updated {html.escape(generated_at)} · {html.escape(str(story_count))} active files · {html.escape(str(item_count))} tracked items · {html.escape(str(live_count))} live pulls</p>
+          <p class="hero-status-line"><span class="hero-status-label">Live desk</span> Updated {html.escape(generated_at)} · {html.escape(str(story_count))} active files · {html.escape(str(item_count))} tracked sources · {html.escape(str(live_count))} current updates</p>
         </div>
       </section>
     """
@@ -751,7 +811,7 @@ def render_home(posts: list[dict[str, Any]], tools: list[dict[str, Any]], latest
         base_url=base_url,
         body=hero
         + f'<section class="home-section opportunities-strip"><div class="section-head section-head-split"><div><p class="kicker">Opportunities</p><h2>Selected projects, collaborations, and commissions</h2><p class="muted-note">I am open to serious projects where epidemiology, data, public health, history, and technical implementation need to become one usable thing.</p></div><aside class="section-sidecar"><p class="section-sidecar-label">Contact</p><p><a href="mailto:devinteichrow@gmail.com">devinteichrow@gmail.com</a></p></aside></div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "opportunities/"))}">Work with me</a></div></section>'
-        + f'<section class="home-section newsdesk-panel"><div class="section-head section-head-split"><div><p class="kicker">Live desk</p><h2>The Pathogen Dispatch</h2><p class="muted-note">Current outbreak files, follow-up reporting, and source-first tracking for major infectious-disease stories.</p></div><aside class="section-sidecar"><p class="section-sidecar-label">Currently tracking</p><p>{html.escape(str(story_count))} active files · {html.escape(str(item_count))} source items · Updated {html.escape(generated_at)}</p></aside></div><div class="card-grid three-up">{newsdesk_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "newsdesk/"))}">Go to the full newsdesk</a></div></section>'
+        + f'<section class="home-section newsdesk-panel"><div class="section-head section-head-split"><div><p class="kicker">Live desk</p><h2>The Pathogen Dispatch</h2><p class="muted-note">Current outbreak files, follow-up reporting, and source-first tracking for major infectious-disease stories.</p></div><aside class="section-sidecar"><p class="section-sidecar-label">Currently tracking</p><p>{html.escape(str(story_count))} active files · {html.escape(str(item_count))} tracked sources · Updated {html.escape(generated_at)}</p></aside></div><div class="card-grid three-up">{newsdesk_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "newsdesk/"))}">Go to the full newsdesk</a></div></section>'
         + f'<section class="home-section atlas-panel"><div class="section-head"><p class="kicker">Learning tools</p><h2>Interactive disease worlds for learning by looking</h2><p class="muted-note">Timelines, atlases, and source-first visual tools for pathogen history, outbreak geography, and epidemiologic reasoning.</p></div><div class="card-grid two-up">{tool_cards}</div></section>'
         + f'<section class="home-section essay-panel"><div class="section-head"><p class="kicker">Published writing</p><h2>Recent essays</h2><p class="muted-note">Longer-form writing on outbreaks, evidence, history, ecology, and the politics of public health.</p></div><div class="card-grid three-up essays-grid">{post_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "essays/"))}">Browse all essays</a></div></section>'
         + f'<section class="home-section reference-panel"><div class="section-head"><p class="kicker">Field guides</p><h2>Reference layer</h2><p class="muted-note">Practical disease briefings on transmission, diagnostics, severity, and what matters when a pathogen reappears.</p></div><div class="card-grid three-up">{ref_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "reference/"))}">Open the reference desk</a></div></section>',
@@ -765,20 +825,20 @@ def render_essays_index(posts: list[dict[str, Any]], base_url: str) -> str:
     )
     return base_html(
         title="Essays | Edge of Epidemiology",
-        description="Published work from The Edge of Epidemiology with automatic Substack ingestion and local stub pages.",
+        description="Published work from The Edge of Epidemiology.",
         active="essays",
         base_url=base_url,
         body=f"""
       <section class="hero hero-open">
         <p class="kicker">Writing archive</p>
         <h2 class="hero-title">Published work from The Edge of Epidemiology</h2>
-        <p class="subtitle">This library is seeded from the public Substack archive and refreshed from the live RSS feed. New posts show up here automatically as soon as they are detected.</p>
+        <p class="subtitle">Essays on outbreaks, evidence, disease history, ecology, neuroepidemiology, and the public arguments that gather around health.</p>
       </section>
       <section class="panel panel-soft">
         <div class="section-head">
           <p class="kicker">Archive</p>
-          <h2>{len(posts)} essay page(s)</h2>
-          <p class="muted-note">Entries default to local stub pages with canonical outbound links. Curated mirrors can replace the stub state later without breaking the public URL.</p>
+          <h2>{len(posts)} essays</h2>
+          <p class="muted-note">Each entry keeps the essay connected to topic hubs, disease maps, and related work across the site.</p>
         </div>
         <div class="card-grid three-up essays-grid">{cards}</div>
       </section>
@@ -865,15 +925,10 @@ def render_post_page(post: dict[str, Any], atlases: dict[str, dict[str, Any]], p
     read_url = post.get("canonical_url", "")
     strategy = post_indexing_strategy(post)
     is_indexable = strategy in INDEXABLE_POST_STRATEGIES
-    status_label = "Evergreen landing page" if is_indexable else "Noindex library stub"
+    status_label = "Evergreen essay" if is_indexable else "Essay archive"
     display_title = post_display_title(post)
     description = post_seo_description(post)
     original_title = post.get("title") or ""
-    original_note = (
-        f'<p class="muted-note"><strong>Original Substack title:</strong> {html.escape(original_title)}</p>'
-        if original_title and original_title != display_title
-        else ""
-    )
     cluster = post_topic_cluster(post)
     cluster_link = link_for(base_url, f"topics/{cluster}/")
     cluster_title = topic_hub_title(cluster)
@@ -891,17 +946,9 @@ def render_post_page(post: dict[str, Any], atlases: dict[str, dict[str, Any]], p
         + related_essay_items
         + "</ul></div>"
         if related_essay_items
-        else '<div class="detail-block"><h3>Related essays</h3><p class="muted-note">No same-topic essays are linked yet.</p></div>'
+        else ""
     )
     keyword = post.get("primary_keyword") or cluster_title
-    source_mode = post.get("source_mode") or "Substack archive"
-    updated_label = format_display_date(post.get("last_synced_at") or post.get("date"))
-    first_seen_label = format_display_date(post.get("first_seen_at") or post.get("date"))
-    page_role = (
-        "This page is an owned-domain evergreen landing page for the essay. It gives the piece a clearer search title, a topic hub, visible source metadata, and durable links into the rest of The Edge of Epidemiology."
-        if is_indexable
-        else "This page is an owned-domain library stub for the essay. It is intentionally marked noindex until it becomes a fuller mirror, a real evergreen landing page, or an original owned-domain article."
-    )
     return base_html(
         title=f"{display_title} | Edge of Epidemiology",
         description=description,
@@ -912,7 +959,6 @@ def render_post_page(post: dict[str, Any], atlases: dict[str, dict[str, Any]], p
         <p class="kicker">Essay</p>
         <h2 class="hero-title">{html.escape(display_title)}</h2>
         <p class="subtitle">{html.escape(description)}</p>
-        {original_note}
         <div class="meta-row">
           <span class="badge accent">{html.escape(status_label)}</span>
           <span class="badge">{html.escape(format_display_date(post.get('date')))}</span>
@@ -928,7 +974,7 @@ def render_post_page(post: dict[str, Any], atlases: dict[str, dict[str, Any]], p
           <h3>Contents</h3>
           <ul class="link-list">
             <li><a href="#overview">Overview</a></li>
-            <li><a href="#source-notes">Source notes</a></li>
+            <li><a href="#read">Read the essay</a></li>
             <li><a href="#related-work">Related work</a></li>
           </ul>
         </div>
@@ -941,8 +987,8 @@ def render_post_page(post: dict[str, Any], atlases: dict[str, dict[str, Any]], p
           <p>{html.escape(str(keyword))}</p>
         </div>
         <div class="detail-block">
-          <h3>Author and updates</h3>
-          <p>By Devin Teichrow. Published {html.escape(format_display_date(post.get('date')))}. Last synced {html.escape(updated_label)}.</p>
+          <h3>Author</h3>
+          <p>By Devin Teichrow. Published {html.escape(format_display_date(post.get('date')))}.</p>
         </div>
       </section>
       <section class="panel detail-grid" id="overview">
@@ -951,19 +997,15 @@ def render_post_page(post: dict[str, Any], atlases: dict[str, dict[str, Any]], p
           <p>{html.escape(description)}</p>
           <p>{html.escape(post.get('excerpt') or post.get('search_excerpt') or '')}</p>
         </div>
-        <div class="detail-block">
-          <h3>What this page is</h3>
-          <p class="muted-note">{html.escape(page_role)}</p>
-        </div>
       </section>
-      <section class="panel detail-grid" id="source-notes">
+      <section class="panel detail-grid" id="read">
         <div class="detail-block">
-          <h3>Canonical source</h3>
+          <h3>Read the full essay</h3>
           <p><a href="{html.escape(read_url)}">{html.escape(read_url)}</a></p>
         </div>
         <div class="detail-block">
-          <h3>Source notes</h3>
-          <p>Source mode: {html.escape(str(source_mode))}. First seen locally: {html.escape(first_seen_label)}. Indexing strategy: {html.escape(strategy)}.</p>
+          <h3>Archive note</h3>
+          <p>This page keeps the essay connected to related topics, maps, and reference pages on The Edge of Epidemiology.</p>
         </div>
       </section>
       <section class="panel detail-grid" id="related-work">
@@ -983,9 +1025,9 @@ def render_atlas_hub(atlases: list[dict[str, Any]], base_url: str) -> str:
         base_url=base_url,
         body=f"""
       <section class="hero hero-open">
-        <p class="kicker">Legacy atlas route</p>
+        <p class="kicker">Atlases</p>
         <h2 class="hero-title">The atlas family now lives inside Learning Tools</h2>
-        <p class="subtitle">These map projects keep their original URLs. The broader project family now includes timelines, atlases, and other interactive teaching surfaces.</p>
+        <p class="subtitle">Disease maps, historical exhibits, and visual tools for following pathogens through geography, infrastructure, ecology, and time.</p>
         <div class="hero-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "tools/"))}">Open Learning Tools</a></div>
       </section>
       <section class="panel panel-soft">
@@ -999,14 +1041,14 @@ def render_tools_hub(tools: list[dict[str, Any]], base_url: str) -> str:
     cards = "".join(render_tool_card(entry, base_url) for entry in tools)
     return base_html(
         title="Learning Tools | Edge of Epidemiology",
-        description="Interactive timelines, atlases, and source-first learning tools from Edge of Epidemiology.",
+        description="Interactive timelines, atlases, and evidence-led learning tools from Edge of Epidemiology.",
         active="tools",
         base_url=base_url,
         body=f"""
       <section class="hero hero-open">
         <p class="kicker">Learning tools</p>
         <h2 class="hero-title">Disease history, outbreak geography, and epidemiologic reasoning as interactive public work</h2>
-        <p class="subtitle">These are not decorations for essays. They are source-first teaching surfaces: timelines, atlases, ledgers, and visual tools that let readers explore evidence directly.</p>
+        <p class="subtitle">Timelines, atlases, ledgers, and visual tools for exploring epidemic history, pathogen geography, and public-health reasoning.</p>
       </section>
       <section class="panel panel-soft">
         <div class="card-grid two-up">{cards}</div>
@@ -1070,7 +1112,7 @@ def render_archived_story_placeholder(filename: str, base_url: str) -> str:
       <section class="hero">
         <p class="kicker">Archived story file</p>
         <h2 class="hero-title">{html.escape(story_title)}</h2>
-        <p class="subtitle">This story appeared in an earlier Pathogen Dispatch archive snapshot, but it is not part of the current active story export. The archive link is preserved so older daily pages do not break.</p>
+        <p class="subtitle">Earlier Pathogen Dispatch coverage retained for archive continuity.</p>
         <div class="hero-actions">
           <a class="button secondary" href="{html.escape(link_for(base_url, "stories/"))}">Current story files</a>
           <a class="button secondary" href="{html.escape(link_for(base_url, "newsdesk/archive/"))}">Newsdesk archive</a>
@@ -1127,22 +1169,22 @@ def render_historical_page(posts: list[dict[str, Any]], atlases: list[dict[str, 
 def render_methods_page(base_url: str) -> str:
     return base_html(
         title="Methods | Edge of Epidemiology",
-        description="Methods and sourcing notes for the Edge of Epidemiology umbrella site.",
+        description="Methods and sourcing principles for The Edge of Epidemiology.",
         active="methods",
         base_url=base_url,
         body=f"""
       <section class="hero hero-open">
         <p class="kicker">Methods</p>
-        <h2 class="hero-title">Update cadence, sourcing, and publication structure</h2>
-        <p class="subtitle">A static, source-first publication structure keeps live reporting, atlas argumentation, and essay publication distinct.</p>
+        <h2 class="hero-title">How I handle evidence, uncertainty, and disease stories</h2>
+        <p class="subtitle">The work here keeps outbreak reporting, historical argument, and epidemiologic explanation separate enough that readers can see what kind of claim is being made.</p>
       </section>
       <section class="panel prose">
-        <h3>Publication sync</h3>
-        <p>New essays are discovered from the public Substack RSS feed every 15 minutes. A full historical backfill is seeded from the public sitemap and archive surfaces, then each post gets a local stub page immediately.</p>
-        <h3>Live desk import</h3>
-        <p>The Pathogen Dispatch remains its own reporting engine, with public outputs imported here so stories, reference sheets, and atlas material stay connected.</p>
+        <h3>Publication archive</h3>
+        <p>The essay archive keeps longform writing connected to topic hubs, reference pages, and interactive maps, so a reader can move from an argument to the surrounding disease ecology.</p>
+        <h3>Live desk</h3>
+        <p>The Pathogen Dispatch follows current outbreak reporting with visible source links, caveats, and separate story files for major public-health signals.</p>
         <h3>Atlas evidence policy</h3>
-        <p>Atlas geometry and route claims are evidence-driven. Editorial visuals can be layered on later, but they are not treated as proof.</p>
+        <p>Atlas geometry and route claims are treated as arguments that need evidence. Visuals help readers inspect the ecology, but they do not stand in for proof.</p>
       </section>
     """,
     )
@@ -1158,13 +1200,13 @@ def render_about_page(base_url: str) -> str:
       <section class="hero hero-open about-hero">
         <p class="kicker">About</p>
         <h2 class="hero-title">About Devin Teichrow and The Edge of Epidemiology</h2>
-        <p class="subtitle">A public-facing epidemiology project built around outbreak reporting, disease geography, historical epidemiology, and science communication.</p>
+        <p class="subtitle">An epidemiology project built around outbreak reporting, disease geography, historical epidemiology, and science communication.</p>
       </section>
       <section class="about-layout">
         <div class="about-block">
           <p class="kicker">Bio</p>
           <h3>Research and public work</h3>
-          <p>I’m Devin Teichrow, an epidemiologist based at the University of California, Irvine, where I am an epidemiology specialist in the lab of Dr. Ali Ezzati. My public-facing work sits at the intersection of infectious disease, historical analysis, and public science communication.</p>
+          <p>I’m Devin Teichrow, an epidemiologist based at the University of California, Irvine, where I am an epidemiology specialist in the lab of Dr. Ali Ezzati. My public science work sits at the intersection of infectious disease, historical analysis, and evidence communication.</p>
           <p>I received my training in epidemiology at UCLA and currently work in neurology research, where my projects have focused on cognition, migraine, aging, ecological momentary assessment, and digital health methods. Alongside my academic work, I’ve developed a growing interest in how disease moves through populations beyond the clinic or dataset: through war, migration, infrastructure, ecology, trade, and geography.</p>
           <p>That broader perspective is what led to my <a href="https://theedgeofepidemiology.substack.com">Substack, The Edge of Epidemiology</a>. My writing can also currently be found in The Viking Herald and The Age of Exploration.</p>
         </div>
@@ -1191,7 +1233,7 @@ def render_about_page(base_url: str) -> str:
           <p class="kicker">Framing</p>
           <h3>Why geography matters here</h3>
           <p>The site’s atlas projects and interactive maps grew out of a belief that epidemiology is fundamentally geographic. Disease is biological, spatial, political, ecological, economic, cultural, and historical. Pathogens move along trade routes, through armies, across borders, inside housing systems, and within the infrastructure societies build for themselves.</p>
-          <p>My goal is to make epidemiology feel legible, historically grounded, and intellectually honest for a broader audience without flattening uncertainty or complexity. Outside of research and writing, I build interactive disease atlases, public-facing epidemiology tools, and science communication projects focused on making complex public health topics more understandable and visually intuitive.</p>
+          <p>My goal is to make epidemiology feel legible, historically grounded, and intellectually honest for a broader audience without flattening uncertainty or complexity. Outside of research and writing, I build interactive disease atlases, epidemiology tools, and science communication projects focused on making complex public health topics more understandable and visually intuitive.</p>
         </div>
         <div class="about-block">
           <p class="kicker">Links</p>
@@ -1228,7 +1270,6 @@ def render_opportunities_page(base_url: str) -> str:
         ("Instagram", "@edgeofepi", "https://www.instagram.com/edgeofepi/", ""),
         ("LinkedIn", "Devin Teichrow MSc", "https://www.linkedin.com/in/devin-teichrow-msc-938942254", ""),
         ("Medium", "@EdgeofEpi", "https://medium.com/@EdgeofEpi", ""),
-        ("YouTube", "The Edge of Epidemiology", "", "Coming soon"),
     ]
     service_cards = "".join(
         f'<article class="opportunity-mini-card"><p class="kicker">Project lane</p><h3>{html.escape(title)}</h3><p>{html.escape(summary)}</p></article>'
@@ -1245,14 +1286,14 @@ def render_opportunities_page(base_url: str) -> str:
     )
     return base_html(
         title="Opportunities | Edge of Epidemiology",
-        description="Work with Devin Teichrow on epidemiology, evidence, disease history, science communication, data projects, and public-facing health tools.",
+        description="Work with Devin Teichrow on epidemiology, evidence, disease history, science communication, data projects, and public health tools.",
         active="opportunities",
         base_url=base_url,
         body=f"""
       <section class="hero hero-open opportunities-hero">
         <p class="kicker">Opportunities</p>
         <h2 class="hero-title">Bring me the projects where disease, data, history, and public understanding collide.</h2>
-        <p class="subtitle">I work best on projects that need more than one narrow lane: epidemiologic judgment, statistical care, historical context, public-facing explanation, and enough technical building to turn an idea into something people can actually use.</p>
+        <p class="subtitle">I work best on projects that need more than one narrow lane: epidemiologic judgment, statistical care, historical context, clear explanation, and enough technical building to turn an idea into something people can actually use.</p>
         <div class="hero-actions">
           <a class="button primary" href="mailto:devinteichrow@gmail.com">Email me about a project</a>
           <a class="button secondary" href="https://theedgeofepidemiology.substack.com">Read The Edge of Epidemiology</a>
@@ -1791,6 +1832,22 @@ def simplify_imported_cards(html_text: str) -> str:
     return ARTICLE_RE.sub(lambda match: simplify_imported_article(match.group(1)), html_text)
 
 
+def remove_imported_build_meta(html_text: str) -> str:
+    html_text = re.sub(
+        r'\s*<span class="badge(?: [^"]+)?">First seen:.*?</span>',
+        "",
+        html_text,
+        flags=re.S,
+    )
+    html_text = re.sub(
+        r'\s*<div class="meta-row">(?=[\s\S]*?</div>)(?=[\s\S]{0,900}(?:Official confidence|Direct links|Refresh cache|Fallback cache|Retained:|Wire confidence|Wrapper only confidence)).*?</div>',
+        "",
+        html_text,
+        flags=re.S,
+    )
+    return html_text
+
+
 def remove_imported_section_nav(html_text: str) -> str:
     return re.sub(r'\s*<nav class="section-nav panel utility-panel".*?</nav>', "", html_text, flags=re.S)
 
@@ -1809,6 +1866,7 @@ def transform_imported_html(html_text: str, *, active: str, base_url: str) -> st
     html_text = rewrite_imported_paths(html_text, base_url)
     html_text = remove_imported_section_nav(html_text)
     html_text = simplify_imported_cards(html_text)
+    html_text = remove_imported_build_meta(html_text)
     html_text = sanitize_public_copy(html_text)
     description = (
         "Source-first outbreak reporting from The Pathogen Dispatch."
@@ -2317,7 +2375,7 @@ def seo_profile_for_route(route: str, html_text: str, post_by_route: dict[str, d
             description = "Archive of Pathogen Dispatch daily outbreak briefings and source-first infectious-disease reporting files."
         elif route == "newsdesk/latest.html":
             title = "Latest Pathogen Dispatch | Edge of Epidemiology"
-            description = "The latest generated Pathogen Dispatch briefing. This duplicate utility page points readers toward the current daily and archive surfaces."
+            description = "The current Pathogen Dispatch briefing, with active outbreak files, source notes, and archive links."
         else:
             title = f"{page_name} | The Pathogen Dispatch"
             description = f"{page_name} from The Pathogen Dispatch, the Edge of Epidemiology source-first infectious-disease reporting desk."
@@ -2564,17 +2622,17 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
     posts_export = {
         "generated_at": latest.get("generated_at"),
         "count": len(posts),
-        "posts": posts,
+        "posts": [public_post_export(post) for post in posts],
     }
     atlases_export = {
         "generated_at": latest.get("generated_at"),
         "count": len(atlases),
-        "atlases": atlases,
+        "atlases": [public_tool_export(atlas) for atlas in atlases],
     }
     tools_export = {
         "generated_at": latest.get("generated_at"),
         "count": len(tools),
-        "tools": tools,
+        "tools": [public_tool_export(tool) for tool in tools],
     }
     search_index = []
     for post in posts:
@@ -2642,7 +2700,7 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
         {
             "title": "Opportunities",
             "section": "About",
-            "summary": "Work with Devin Teichrow on epidemiology, evidence, disease history, science communication, data projects, and public-facing health tools.",
+            "summary": "Work with Devin Teichrow on epidemiology, evidence, disease history, science communication, data projects, and public health tools.",
             "url": link_for(base_url, "opportunities/"),
             "keywords": "consulting collaboration epidemiology data science communication atlases public health",
         }

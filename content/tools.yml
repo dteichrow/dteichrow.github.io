@@ -3,9 +3,9 @@ tools:
     title: American Epidemic Timeline
     tool_type: timeline
     status: live
-    status_label: New flagship
-    summary: A cinematic, source-first timeline of major U.S.-linked epidemics and disease outbreaks, built as a public-health memory machine.
-    evidence_model: Curated outbreak ledger with source links, rights-checked archival visuals, uncertainty notes, and public-health turning points
+    status_label: Open now
+    summary: A cinematic timeline of major U.S.-linked epidemics and disease outbreaks, designed as a public-health memory machine.
+    evidence_model: Outbreak ledger with source links, rights-checked archival visuals, uncertainty notes, and public-health turning points
     public_route: tools/american-epidemic-timeline/
     source_path: external/american_epidemic_timeline/index.html + data/american_epidemic_timeline_data.js
     launch_priority: flagship
@@ -16,9 +16,9 @@ tools:
     title: Pathogen Atlas
     tool_type: atlas
     status: live
-    status_label: Live atlas
-    summary: A curated origin-and-spread atlas that links geography, uncertainty, papers, and prior writing instead of flattening pathogens into another story stream.
-    evidence_model: Curated origin claims, route confidence, and linked papers
+    status_label: Open now
+    summary: An origin-and-spread atlas that links geography, uncertainty, papers, and prior writing instead of flattening pathogens into another story stream.
+    evidence_model: Origin claims, route confidence, and linked papers
     public_route: atlases/pathogen/
     source_path: external/pathogen_atlas/index.html + docs/app_exports/atlas.json
     launch_priority: flagship
@@ -29,9 +29,9 @@ tools:
     title: Maritime Disease Atlas
     tool_type: atlas
     status: live
-    status_label: Live atlas
+    status_label: Open now
     summary: A map-first digital exhibit on shipboard disease ecology, ports, vectors, provisions, quarantine, violence, and the movement constraints of life at sea.
-    evidence_model: Curated exhibit stations with routes, mechanisms, archival plates, source credits, and guided-tour narrative
+    evidence_model: Exhibit stations with routes, mechanisms, archival plates, source credits, and guided-tour narrative
     public_route: atlases/maritime/
     source_path: external/maritime_disease_atlas/index.html
     launch_priority: flagship
@@ -41,25 +41,25 @@ tools:
     legacy_atlas_id: revolutionary-war-atlas
     title: Revolutionary War Disease Atlas
     tool_type: atlas
-    status: in_build
-    status_label: Curated section
+    status: section
+    status_label: Historical section
     summary: A historical epidemiology section focused on colonial and Revolutionary-era disease ecology, troop movement, and the public-health constraints around the founding period.
-    evidence_model: Essay-linked historical synthesis with future map promotion
+    evidence_model: Essay-linked historical synthesis
     public_route: atlases/revolutionary-war/
     source_path: curated umbrella page
-    launch_priority: next up
+    launch_priority: historical section
     keywords: [revolutionary war, colonies, smallpox, inoculation, military disease]
-    long_note: This section launches as a structured historical atlas page with linked essays first, then graduates into a fuller interactive once the map layer is ready.
+    long_note: A structured historical atlas page connecting colonial disease ecology, military movement, smallpox, inoculation, and public-health constraints around the founding period.
   - tool_id: viking-health-atlas
     legacy_atlas_id: viking-health-atlas
     title: Viking Health Atlas
     tool_type: atlas
-    status: prototype
-    status_label: Prototype atlas
+    status: section
+    status_label: Norse-world atlas
     summary: A Norse-world disease and health map that ties Greenland, Vinland, settlement ecology, and pre-Columbian contact arguments into one visual surface.
-    evidence_model: Prototype map plus linked historical essays
+    evidence_model: Map-based historical synthesis plus linked essays
     public_route: atlases/viking/
     source_path: external/viking-health-map.html
-    launch_priority: next up
+    launch_priority: historical section
     keywords: [viking, norse, greenland, vinland, plague, health]
-    long_note: The current Viking build is strong enough to surface publicly as a prototype atlas while the surrounding essay and evidence layer fills in.
+    long_note: A Norse-world health and disease map connecting Greenland, Vinland, settlement ecology, pre-Columbian contact arguments, and epidemic uncertainty.

@@ -755,7 +755,7 @@
   {
     "title": "Pathogen Atlas",
     "section": "Atlas",
-    "summary": "A curated origin-and-spread atlas that links geography, uncertainty, papers, and prior writing instead of flattening pathogens into another story stream.",
+    "summary": "An origin-and-spread atlas that links geography, uncertainty, papers, and prior writing instead of flattening pathogens into another story stream.",
     "url": "/atlases/pathogen/",
     "keywords": "pathogen routes origin infectious disease spread"
   },
@@ -783,14 +783,14 @@
   {
     "title": "American Epidemic Timeline",
     "section": "Tool",
-    "summary": "A cinematic, source-first timeline of major U.S.-linked epidemics and disease outbreaks, built as a public-health memory machine.",
+    "summary": "A cinematic timeline of major U.S.-linked epidemics and disease outbreaks, designed as a public-health memory machine.",
     "url": "/tools/american-epidemic-timeline/",
     "keywords": "american epidemics timeline public health history outbreaks teaching tool timeline"
   },
   {
     "title": "Pathogen Atlas",
     "section": "Tool",
-    "summary": "A curated origin-and-spread atlas that links geography, uncertainty, papers, and prior writing instead of flattening pathogens into another story stream.",
+    "summary": "An origin-and-spread atlas that links geography, uncertainty, papers, and prior writing instead of flattening pathogens into another story stream.",
     "url": "/atlases/pathogen/",
     "keywords": "pathogen routes origin infectious disease spread atlas"
   },
@@ -1042,7 +1042,7 @@
   {
     "title": "Opportunities",
     "section": "About",
-    "summary": "Work with Devin Teichrow on epidemiology, evidence, disease history, science communication, data projects, and public-facing health tools.",
+    "summary": "Work with Devin Teichrow on epidemiology, evidence, disease history, science communication, data projects, and public health tools.",
     "url": "/opportunities/",
     "keywords": "consulting collaboration epidemiology data science communication atlases public health"
   }

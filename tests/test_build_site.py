@@ -245,7 +245,7 @@ atlases:
     assert "https://www.linkedin.com/in/devin-teichrow-msc-938942254" in opportunities_text
     assert "https://medium.com/@EdgeofEpi" in opportunities_text
     assert "The Edge of Epidemiology" in opportunities_text
-    assert "Coming soon" in opportunities_text
+    assert "Domain direction: use devinteichrow.com" in opportunities_text
     assert "youtube.com" not in opportunities_text
     assert opportunities_text.count('class="opportunities-section"') == 0
     assert opportunities_text.count('class="opportunities-showcase"') == 1
@@ -256,12 +256,11 @@ atlases:
     assert "devinteichrow.com" in opportunities_text
     post_text = (docs_dir / "essays" / "first-post" / "index.html").read_text()
     assert "First Local SEO Title" in post_text
-    assert "Original Substack title:" in post_text
     assert '<meta name="robots" content="noindex,follow" />' in post_text
     assert '<link rel="canonical" href="https://devinteichrow.com/essays/first-post/" />' in post_text
     assert "Contents" in post_text
-    assert "Source notes" in post_text
-    assert "Indexing strategy: noindex_stub" in post_text
+    assert "Archive note" in post_text
+    assert "This page keeps the essay connected to related topics, maps, and reference pages" in post_text
     topic_text = (docs_dir / "topics" / "historical-epidemiology" / "index.html").read_text()
     assert '<link rel="canonical" href="https://devinteichrow.com/topics/historical-epidemiology/" />' in topic_text
     assert "First Local SEO Title" in topic_text
