@@ -818,9 +818,9 @@
   {
     "title": "Measles transmission and vaccination",
     "section": "Newsdesk",
-    "summary": "The lead item has changed to How conflict is driving measles outbreaks in the Middle East and North Africa from arabnews.jp.",
+    "summary": "Independent Observer now explicitly uses investigation or monitoring language.",
     "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
-    "keywords": "confirmed_case new_geography Africa United Kingdom"
+    "keywords": "new_official_source confirmed_case severity_or_death new_geography Southeast Asia "
   },
   {
     "title": "Hantavirus and cruise-ship outbreak",
@@ -835,13 +835,6 @@
     "summary": "Cambodianess now explicitly uses investigation or monitoring language.",
     "url": "/stories/story_28a91c6d89267872-avian-influenza-and-h5n1.html",
     "keywords": "confirmed_case transmission_change new_geography Southeast Asia "
-  },
-  {
-    "title": "Dengue and arboviruses",
-    "section": "Newsdesk",
-    "summary": "New publisher/source coverage joined this story cluster: CNA.",
-    "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
-    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography Southeast Asia United Kingdom"
   },
   {
     "title": "Tuberculosis and antimicrobial resistance",
@@ -870,6 +863,13 @@
     "summary": "Baseline snapshot created with 2 clustered item(s) across 2 source(s).",
     "url": "/stories/story_b461b8ac8c062700-historical-epidemiology-and-ancient-pathogens.html",
     "keywords": "new_official_source severity_or_death new_geography Africa United Kingdom"
+  },
+  {
+    "title": "Dengue and arboviruses",
+    "section": "Newsdesk",
+    "summary": "New publisher/source coverage joined this story cluster: CNA.",
+    "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
+    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography Southeast Asia United Kingdom"
   },
   {
     "title": "Hantavirus syndrome",
