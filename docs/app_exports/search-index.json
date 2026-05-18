@@ -823,18 +823,18 @@
     "keywords": "East Asia United Kingdom"
   },
   {
-    "title": "Measles transmission and vaccination",
-    "section": "Newsdesk",
-    "summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
-    "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
-    "keywords": "new_official_source confirmed_case severity_or_death new_geography Southeast Asia "
-  },
-  {
     "title": "Avian influenza and H5N1",
     "section": "Newsdesk",
     "summary": "Cambodianess now explicitly uses investigation or monitoring language.",
     "url": "/stories/story_28a91c6d89267872-avian-influenza-and-h5n1.html",
     "keywords": "confirmed_case transmission_change new_geography Southeast Asia "
+  },
+  {
+    "title": "Measles transmission and vaccination",
+    "section": "Newsdesk",
+    "summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
+    "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
+    "keywords": "new_official_source confirmed_case severity_or_death new_geography Southeast Asia "
   },
   {
     "title": "COVID-19 and SARS-CoV-2",
