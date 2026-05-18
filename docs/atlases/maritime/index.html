@@ -195,11 +195,32 @@ html, body {
   scrollbar-width: thin;
   -webkit-overflow-scrolling: touch;
 }
+.station-group {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 6px 5px 8px;
+  border: 1px solid rgba(231, 214, 184, 0.09);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.018);
+}
+.station-group-label {
+  color: rgba(214, 200, 174, 0.62);
+  font: 800 10px/1 var(--display);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.exhibit-controls {
+  background: rgba(201,168,76,0.045);
+}
 .scenario-btn,
 #pause-btn,
 #tour-btn,
 #recording-btn,
 #sound-btn,
+#sources-btn,
 #reset-btn {
   flex: 0 0 auto;
   border: 1px solid var(--border);
@@ -221,7 +242,9 @@ html, body {
 #recording-btn:hover,
 #recording-btn.active,
 #sound-btn:hover,
-#sound-btn.active {
+#sound-btn.active,
+#sources-btn:hover,
+#sources-btn.active {
   color: var(--text);
   border-color: currentColor;
   background: color-mix(in srgb, currentColor 16%, transparent);
@@ -237,6 +260,9 @@ html, body {
 }
 #sound-btn {
   color: #c6a766;
+}
+#sources-btn {
+  color: #d8c89b;
 }
 #pause-btn[aria-disabled="true"] {
   color: #5e584f;
@@ -345,6 +371,103 @@ html, body {
   font-weight: 700;
   letter-spacing: 0.08em;
 }
+.exhibit-guide {
+  margin: 14px 0 4px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+}
+.exhibit-guide summary {
+  cursor: pointer;
+  padding: 10px 0;
+  color: var(--gold);
+  font: 800 11px/1.2 var(--display);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.exhibit-guide p {
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 1.42;
+}
+#sources-drawer {
+  position: fixed;
+  inset: 0 0 0 auto;
+  z-index: 1300;
+  width: min(480px, calc(100vw - 26px));
+  padding: 20px 22px;
+  background: rgba(21, 19, 15, 0.96);
+  border-left: 1px solid var(--border);
+  box-shadow: -24px 0 70px rgba(0,0,0,0.55);
+  color: var(--text);
+  transform: translateX(104%);
+  transition: transform 220ms ease;
+  overflow-y: auto;
+}
+.sources-open #sources-drawer {
+  transform: translateX(0);
+}
+.recording-mode #sources-drawer,
+.recording-mode .exhibit-guide {
+  display: none;
+}
+#sources-drawer header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 16px;
+}
+#sources-drawer h2 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1;
+}
+#sources-drawer p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  line-height: 1.38;
+}
+#sources-close-btn {
+  flex: 0 0 auto;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.04);
+  color: var(--text);
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  font: 800 18px/1 var(--display);
+}
+#sources-list {
+  display: grid;
+  gap: 11px;
+}
+.source-item {
+  border: 1px solid rgba(231, 214, 184, 0.12);
+  background: rgba(255,255,255,0.035);
+  padding: 12px 13px;
+}
+.source-item-title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.18;
+}
+.source-item-meta,
+.source-item-where {
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
+}
+.source-item-license {
+  display: inline-block;
+  margin-top: 9px;
+  color: var(--gold);
+  font: 800 10px/1 var(--display);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
 #story-panel {
   position: fixed;
   top: 120px;
@@ -374,6 +497,24 @@ html, body {
   color: var(--muted);
   font-size: 16px;
   line-height: 1.38;
+}
+#story-evidence {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
+#story-evidence span {
+  display: block;
+}
+#story-evidence strong {
+  color: var(--gold);
+  font-family: var(--display);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 #timeline {
   display: grid;
@@ -962,6 +1103,12 @@ html, body {
     flex-wrap: nowrap;
     overflow-x: auto;
   }
+  .station-group {
+    align-items: center;
+    flex-direction: row;
+    border-radius: 999px;
+    padding: 5px 6px 5px 8px;
+  }
   #story-panel { top: 184px; }
   #mechanism-card { top: 184px; }
   #plot-card { top: 184px; width: 360px; }
@@ -1044,21 +1191,21 @@ html, body {
 </style>
 
     <link rel="canonical" href="https://devinteichrow.com/atlases/maritime/" />
-    <meta name="description" content="Interactive maritime disease atlas for shipboard infection, port quarantine, sea routes, naval medicine, and historical disease ecology." />
+    <meta name="description" content="Map-first digital exhibit on shipboard infection, port quarantine, sea routes, naval medicine, archival sources, and maritime disease ecology." />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="The Edge of Epidemiology" />
     <meta property="og:title" content="Maritime Disease Atlas | Edge of Epidemiology" />
-    <meta property="og:description" content="Interactive maritime disease atlas for shipboard infection, port quarantine, sea routes, naval medicine, and historical disease ecology." />
+    <meta property="og:description" content="Map-first digital exhibit on shipboard infection, port quarantine, sea routes, naval medicine, archival sources, and maritime disease ecology." />
     <meta property="og:url" content="https://devinteichrow.com/atlases/maritime/" />
     <meta property="og:image" content="https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Maritime Disease Atlas | Edge of Epidemiology" />
-    <meta name="twitter:description" content="Interactive maritime disease atlas for shipboard infection, port quarantine, sea routes, naval medicine, and historical disease ecology." />
+    <meta name="twitter:description" content="Map-first digital exhibit on shipboard infection, port quarantine, sea routes, naval medicine, archival sources, and maritime disease ecology." />
     <meta name="twitter:image" content="https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png" />
-    <script type="application/ld+json" data-eoe-seo>{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Maritime Disease Atlas | Edge of Epidemiology", "url": "https://devinteichrow.com/atlases/maritime/", "description": "Interactive maritime disease atlas for shipboard infection, port quarantine, sea routes, naval medicine, and historical disease ecology.", "isPartOf": {"@type": "WebSite", "name": "The Edge of Epidemiology", "url": "https://devinteichrow.com/"}, "author": {"@type": "Person", "name": "Devin Teichrow", "url": "https://devinteichrow.com/about/"}}</script>
+    <script type="application/ld+json" data-eoe-seo>{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Maritime Disease Atlas | Edge of Epidemiology", "url": "https://devinteichrow.com/atlases/maritime/", "description": "Map-first digital exhibit on shipboard infection, port quarantine, sea routes, naval medicine, archival sources, and maritime disease ecology.", "isPartOf": {"@type": "WebSite", "name": "The Edge of Epidemiology", "url": "https://devinteichrow.com/"}, "author": {"@type": "Person", "name": "Devin Teichrow", "url": "https://devinteichrow.com/about/"}}</script>
 </head>
-<body><div id="eoe-atlas-overlay"><a id="eoe-atlas-overlay-brand" href="../../index.html"><span>The Edge of Epidemiology</span> <span class="byline">by Devin Teichrow</span></a><nav id="eoe-atlas-overlay-links" aria-label="Tool navigation"><a href="../../index.html">Home</a><a href="../../tools/index.html" class="active">Tools</a><a href="../../newsdesk/index.html">Newsdesk</a><a href="../../essays/index.html">Essays</a></nav></div>
-<main id="map" aria-label="Maritime disease ecology atlas"></main>
+<body><div id="eoe-atlas-overlay"><a id="eoe-atlas-overlay-brand" href="../../index.html"><span>The Edge of Epidemiology</span> <span class="byline">by Devin Teichrow</span></a><nav id="eoe-atlas-overlay-links" aria-label="Tool navigation"><a href="../../index.html">Home</a><a href="../../tools/index.html" class="active">Learning Tools</a><a href="../../newsdesk/index.html">Newsdesk</a><a href="../../essays/index.html">Essays</a></nav></div>
+<main id="map"></main>
 <div id="cinema-backdrop" aria-hidden="true">
   <img id="cinema-backdrop-image" alt="">
   <img id="cinema-backdrop-secondary" alt="">
@@ -1072,25 +1219,41 @@ html, body {
 <header id="chrome">
   <section id="brand">
     <h1>Maritime Disease Ecology Atlas</h1>
-    <p>Routes | disease mechanisms | age-of-sail ecology</p>
+    <p>Interactive exhibit | shipboard disease ecology | ports and routes</p>
   </section>
-  <nav id="scenario-bar" aria-label="Disease animations">
-    <button class="scenario-btn" style="color:#d86a4f" data-scenario="yellow_fever">Yellow Fever</button>
-    <button class="scenario-btn" style="color:#9b7bd8" data-scenario="malaria">Malaria</button>
-    <button class="scenario-btn" style="color:#a8864a" data-scenario="scurvy">Scurvy</button>
-    <button class="scenario-btn" style="color:#5d958c" data-scenario="ship_fever">Ship Fever</button>
-    <button class="scenario-btn" style="color:#5a9bd4" data-scenario="flux">Flux</button>
-    <button class="scenario-btn" style="color:#7aa96b" data-scenario="typhoid">Typhoid</button>
-    <button class="scenario-btn" style="color:#e1bf66" data-scenario="smallpox">Smallpox</button>
-    <button class="scenario-btn" style="color:#d6c06a" data-scenario="measles">Measles</button>
-    <button class="scenario-btn" style="color:#bd7b45" data-scenario="wounds_sepsis">Wounds + Sepsis</button>
-    <button class="scenario-btn" style="color:#dd6974" data-scenario="middle_passage">Middle Passage</button>
-    <button class="scenario-btn" style="color:#c9a84c" data-scenario="pirate_network">Pirate Ports</button>
-    <button id="tour-btn" aria-pressed="false">Tour</button>
+  <nav id="scenario-bar" aria-label="Exhibit stations">
+    <div class="station-group" aria-label="Vector and port ecology">
+      <span class="station-group-label">Vector / port</span>
+      <button class="scenario-btn" data-scenario="yellow_fever">Yellow Fever</button>
+      <button class="scenario-btn" data-scenario="malaria">Malaria</button>
+    </div>
+    <div class="station-group" aria-label="Provisions and food-water disease">
+      <span class="station-group-label">Provisions</span>
+      <button class="scenario-btn" data-scenario="scurvy">Scurvy</button>
+      <button class="scenario-btn" data-scenario="flux">Flux</button>
+      <button class="scenario-btn" data-scenario="typhoid">Typhoid</button>
+    </div>
+    <div class="station-group" aria-label="Crowding and contact disease">
+      <span class="station-group-label">Crowding</span>
+      <button class="scenario-btn" data-scenario="ship_fever">Ship Fever</button>
+      <button class="scenario-btn" data-scenario="smallpox">Smallpox</button>
+      <button class="scenario-btn" data-scenario="measles">Measles</button>
+    </div>
+    <div class="station-group" aria-label="Violence, forced movement, and pirate networks">
+      <span class="station-group-label">Coercion / piracy</span>
+      <button class="scenario-btn" data-scenario="wounds_sepsis">Wounds + Sepsis</button>
+      <button class="scenario-btn" data-scenario="middle_passage">Middle Passage</button>
+      <button class="scenario-btn" data-scenario="pirate_network">Pirate Ports</button>
+    </div>
+    <div class="station-group exhibit-controls" aria-label="Exhibit controls">
+      <span class="station-group-label">Exhibit</span>
+    <button id="tour-btn" aria-pressed="false">Guided Tour</button>
     <button id="pause-btn" aria-pressed="false" aria-disabled="true">Pause</button>
-    <button id="recording-btn" aria-pressed="false">Video Mode</button>
-    <button id="sound-btn" aria-pressed="false">Sound Off</button>
+      <button id="recording-btn" aria-pressed="false">Presentation Mode</button>
+      <button id="sound-btn" aria-pressed="false">Atmosphere Off</button>
+      <button id="sources-btn" aria-expanded="false">Sources / Credits</button>
     <button id="reset-btn">Reset</button>
+    </div>
   </nav>
 </header>
 
@@ -1103,14 +1266,30 @@ html, body {
   <span id="video-pause-hint">Space / P</span>
 </button>
 <button id="video-sound-btn" aria-pressed="false">
-  <span id="video-sound-label">Sound Off</span>
+  <span id="video-sound-label">Atmosphere Off</span>
   <span id="video-sound-hint">S</span>
 </button>
 
+<aside id="sources-drawer" aria-label="Sources and credits" aria-hidden="true">
+  <header>
+    <div>
+      <h2>Sources / Credits</h2>
+      <p>Archival plates used in the exhibit and guided-tour presentation mode. Credits are kept local so the atlas remains usable as a standalone file.</p>
+    </div>
+    <button id="sources-close-btn" aria-label="Close sources and credits">×</button>
+  </header>
+  <div id="sources-list"></div>
+</aside>
+
 <aside id="story-panel">
-  <div id="story-kicker">Click a disease route</div>
+  <div id="story-kicker">Start here | Maritime disease exhibit</div>
   <h2 id="story-title">A ship was a moving disease ecosystem.</h2>
-  <div id="story-copy">Each route follows one disease ecology from source conditions through shipboard mechanism to port consequences.</div>
+  <div id="story-copy">This exhibit follows disease as an ecology of ships: ports, provisions, crowded berths, labor, violence, vectors, quarantine, and the routes that made local exposures move.</div>
+  <div id="story-evidence" aria-label="Evidence note" hidden></div>
+  <details id="exhibit-guide" class="exhibit-guide">
+    <summary>How to use this exhibit</summary>
+    <p>Choose a station group across the top, then move through the scene chips below. Guided Tour plays the exhibit without hiding the interface. Presentation Mode switches to the cinematic capture layout for a later YouTube cut.</p>
+  </details>
   <div id="timeline"></div>
   <div id="scene-progress" aria-hidden="true">
     <div id="scene-progress-label">Scene ready</div>
@@ -1214,6 +1393,13 @@ const VIDEO_TOUR = [
   "wounds_sepsis",
   "middle_passage"
 ];
+const CONFIDENCE_LABELS = {
+  high: "High",
+  moderate: "Moderate",
+  low: "Low",
+  contested: "Contested",
+  speculative: "Speculative"
+};
 const durationScale = (() => {
   const raw = Number(queryParams.get("pace") || queryParams.get("speed") || 1);
   if (!Number.isFinite(raw)) return 1;
@@ -1427,7 +1613,7 @@ function applySoundProfile(profile, playCue = false) {
 }
 
 function updateSoundButton() {
-  const label = isSoundEnabled ? "Sound On" : soundUnsupported ? "Sound N/A" : "Sound Off";
+  const label = isSoundEnabled ? "Atmosphere On" : soundUnsupported ? "Atmosphere N/A" : "Atmosphere Off";
   const soundButton = document.getElementById("sound-btn");
   const videoButton = document.getElementById("video-sound-btn");
   const videoLabel = document.getElementById("video-sound-label");
@@ -2163,13 +2349,108 @@ const CINEMA_REELS = {
   ]
 };
 
+const SOURCE_CREDIT_OVERRIDES = {
+  "assets/cinema/pyle_henry_morgan_recruiting.jpg": "Howard Pyle via Wikimedia Commons, public domain",
+  "assets/cinema/ann_bonny_mary_read.jpg": "Wikimedia Commons, public domain",
+  "assets/cinema/pyle_pirate_captain.jpg": "Howard Pyle via Wikimedia Commons, public domain",
+  "assets/cinema/pyle_pirates_raidship.jpg": "Howard Pyle via Wikimedia Commons, public domain",
+  "assets/cinema/pyle_capture_of_galleon.jpg": "Howard Pyle via Wikimedia Commons, public domain",
+  "assets/cinema/barrels_on_savannah_docks_nara.jpg": "National Archives via Wikimedia Commons, public domain"
+};
+
+function readableAssetTitle(src) {
+  return src.split("/").pop().replace(/\.[^.]+$/, "").replace(/[_-]+/g, " ");
+}
+
+function creditForSource(src, item) {
+  return item.credit || SOURCE_CREDIT_OVERRIDES[src] || "Archival source; see image filename and exhibit context";
+}
+
+function licenseFromCredit(credit) {
+  const lower = credit.toLowerCase();
+  if (lower.includes("cc0")) return "CC0";
+  if (lower.includes("cc by 4.0")) return "CC BY 4.0";
+  if (lower.includes("public domain")) return "Public domain";
+  if (lower.includes("no known restrictions")) return "No known restrictions";
+  return "Source credit listed";
+}
+
+function addSourceCatalogItem(catalog, item, where) {
+  if (!item || !item.src) return;
+  const existing = catalog.get(item.src);
+  const credit = creditForSource(item.src, item);
+  if (existing) {
+    existing.where.add(where);
+    if (item.title && existing.title === readableAssetTitle(item.src)) existing.title = item.title;
+    if (credit && existing.credit.startsWith("Archival source")) existing.credit = credit;
+    existing.license = licenseFromCredit(existing.credit);
+    return;
+  }
+  catalog.set(item.src, {
+    src: item.src,
+    title: item.title || readableAssetTitle(item.src),
+    credit,
+    license: licenseFromCredit(credit),
+    where: new Set([where])
+  });
+}
+
+function buildSourceCatalog() {
+  const catalog = new Map();
+  Object.values(CONTEXT_ART).forEach(item => addSourceCatalogItem(catalog, item, `Context plate | ${item.kicker || "Exhibit context"}`));
+  Object.entries(CINEMA_REELS).forEach(([scenarioId, plates]) => {
+    const scenario = scenarios[scenarioId];
+    const scenarioTitle = scenario ? scenario.title : scenarioId.replace(/_/g, " ");
+    plates.forEach(plate => {
+      addSourceCatalogItem(catalog, plate, `${scenarioTitle} | ${plate.kicker || "Presentation plate"}`);
+      if (plate.secondary) addSourceCatalogItem(catalog, plate.secondary, `${scenarioTitle} | paired presentation plate`);
+    });
+  });
+  return Array.from(catalog.values())
+    .map(item => ({ ...item, where: Array.from(item.where).sort() }))
+    .sort((a, b) => a.title.localeCompare(b.title));
+}
+
+const SOURCE_CATALOG = buildSourceCatalog();
+
+function escapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, char => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  }[char]));
+}
+
+function renderSourceCatalog() {
+  const list = document.getElementById("sources-list");
+  list.innerHTML = SOURCE_CATALOG.map(item => `
+    <article class="source-item">
+      <h3 class="source-item-title">${escapeHtml(item.title)}</h3>
+      <div class="source-item-meta">${escapeHtml(item.credit)}</div>
+      <span class="source-item-license">${escapeHtml(item.license)}</span>
+      <div class="source-item-where">${escapeHtml(item.where.join(" | "))}</div>
+    </article>
+  `).join("");
+}
+
+function setSourcesOpen(nextValue) {
+  document.documentElement.classList.toggle("sources-open", nextValue);
+  document.getElementById("sources-drawer").setAttribute("aria-hidden", String(!nextValue));
+  const button = document.getElementById("sources-btn");
+  button.classList.toggle("active", nextValue);
+  button.setAttribute("aria-expanded", String(nextValue));
+}
+
 function setRecordingMode(nextValue) {
   isRecordingMode = nextValue;
   document.documentElement.classList.toggle("recording-mode", isRecordingMode);
   const button = document.getElementById("recording-btn");
   button.classList.toggle("active", isRecordingMode);
   button.setAttribute("aria-pressed", String(isRecordingMode));
-  button.textContent = isRecordingMode ? "Exit Video" : "Video Mode";
+  button.textContent = isRecordingMode ? "Exit Presentation" : "Presentation Mode";
+  if (isRecordingMode) setSourcesOpen(false);
 
   if (isRecordingMode) {
     map.removeLayer(darkBaseLayer);
@@ -2188,6 +2469,10 @@ function setRecordingMode(nextValue) {
   map.invalidateSize();
 }
 
+function setPresentationMode(nextValue) {
+  setRecordingMode(nextValue);
+}
+
 function setScenarioPlaying(nextValue) {
   document.documentElement.classList.toggle("scenario-playing", nextValue);
 }
@@ -2198,7 +2483,7 @@ function setTourRunning(nextValue) {
   document.documentElement.classList.toggle("tour-running", isTourRunning);
   button.classList.toggle("active", isTourRunning);
   button.setAttribute("aria-pressed", String(isTourRunning));
-  button.textContent = isTourRunning ? "Stop Tour" : "Tour";
+  button.textContent = isTourRunning ? "Stop Tour" : "Guided Tour";
 }
 
 function scaledMs(ms) {
@@ -2270,7 +2555,7 @@ function pointIcon(feature, active = false, colorOverride = null) {
       iconSize: [pirateSize, pirateSize],
       iconAnchor: [pirateSize / 2, pirateSize / 2],
       popupAnchor: [0, -pirateSize / 2],
-      html: `<div class="pirate-marker ${active ? "active" : ""}" style="--pirate-color:${color}">${pirateSvg()}</div>`
+      html: `<div class="pirate-marker ${active ? "active" : ""}">${pirateSvg()}</div>`
     });
   }
   return L.divIcon({
@@ -2279,8 +2564,8 @@ function pointIcon(feature, active = false, colorOverride = null) {
     iconAnchor: [size / 2, size / 2],
     popupAnchor: [0, -size / 2],
     html: active
-      ? `<div class="pulse-marker" style="color:${color}"></div>`
-      : `<div class="site-marker" style="color:${color}"></div>`
+      ? `<div class="pulse-marker"></div>`
+      : `<div class="site-marker"></div>`
   });
 }
 
@@ -2321,10 +2606,27 @@ function drawAtlas(scenarioId = null) {
   }).addTo(map);
 }
 
-function setStory(kicker, title, copy, color) {
+function evidenceHtml(item) {
+  if (!item) return "";
+  const sourceIds = Array.isArray(item.source_ids) ? item.source_ids : [];
+  const confidence = item.confidence ? (CONFIDENCE_LABELS[item.confidence] || item.confidence) : "";
+  const note = item.uncertainty_note || item.evidence_note || "";
+  if (!sourceIds.length && !confidence && !note) return "";
+  return [
+    confidence ? `<span><strong>Evidence</strong> ${escapeHtml(confidence)}</span>` : "",
+    sourceIds.length ? `<span><strong>Sources</strong> ${escapeHtml(sourceIds.join(", "))}</span>` : "",
+    note ? `<span><strong>Note</strong> ${escapeHtml(note)}</span>` : ""
+  ].filter(Boolean).join("");
+}
+
+function setStory(kicker, title, copy, color, evidenceItem = null) {
   document.getElementById("story-kicker").textContent = kicker;
   document.getElementById("story-title").textContent = title;
   document.getElementById("story-copy").textContent = copy;
+  const evidence = document.getElementById("story-evidence");
+  const html = evidenceHtml(evidenceItem);
+  evidence.innerHTML = html;
+  evidence.hidden = !html;
   document.documentElement.style.setProperty("--active-color", color || "var(--gold)");
 }
 
@@ -2407,8 +2709,8 @@ function resetStepProgress() {
 
 function mechanismArt(kind, color) {
   const assetCard = (asset, label, styles = "", extra = "") => `
-    <div class="asset-card" role="img" aria-label="${label}" style="--asset-color:${color}">
-      <img class="asset-img" src="assets/${asset}" alt="" style="${styles}">
+    <div class="asset-card" role="img" aria-label="${label}">
+      <img class="asset-img" src="assets/${asset}" alt="">
       ${extra}
     </div>`;
 
@@ -2423,17 +2725,17 @@ function mechanismArt(kind, color) {
   }
   if (kind === "rash") {
     return assetCard("virus.svg", "Respiratory virus spread illustration", "--asset-width:126px; --asset-height:126px;", `
-      <img class="asset-img secondary" src="assets/virus.svg" alt="" style="--secondary-x:-160px; --secondary-y:-64px; --secondary-width:68px; --secondary-height:68px;">
-      <img class="asset-img secondary" src="assets/virus.svg" alt="" style="--secondary-x:86px; --secondary-y:-72px; --secondary-width:76px; --secondary-height:76px;">
+      <img class="asset-img secondary" src="assets/virus.svg" alt="">
+      <img class="asset-img secondary" src="assets/virus.svg" alt="">
     `);
   }
   if (kind === "wound") {
     return assetCard("bandage.svg", "Wound care and infection risk illustration", "--asset-width:230px; --asset-height:126px; --asset-rotate:-10deg;", `
-      <img class="asset-img secondary" src="assets/surgery.svg" alt="" style="--secondary-x:52px; --secondary-y:-86px; --secondary-width:104px; --secondary-height:104px; --secondary-rotate:18deg;">
+      <img class="asset-img secondary" src="assets/surgery.svg" alt="">
     `);
   }
   return assetCard("clock.svg", "Provisioning clock and citrus illustration", "--asset-width:112px; --asset-height:112px; --asset-rotate:0deg;", `
-    <img class="asset-img secondary" src="assets/lemon.svg" alt="" style="--secondary-x:48px; --secondary-y:-74px; --secondary-width:106px; --secondary-height:106px; --secondary-rotate:-12deg;">
+    <img class="asset-img secondary" src="assets/lemon.svg" alt="">
   `);
 }
 
@@ -2802,7 +3104,7 @@ async function playScenario(id) {
   hideContextArt();
   hidePlot();
   renderTimeline(scenario);
-  setStory(scenario.kicker, scenario.title, scenario.summary, scenario.color);
+  setStory(scenario.kicker, scenario.title, scenario.summary, scenario.color, scenario);
   map.fitBounds(boundsForFeatureIds(scenario.featureIds), scenarioOverviewFitOptions(1));
   await pausableSleep(isRecordingMode ? scaledMs(1450) : scaledMs(900), token);
 
@@ -2811,7 +3113,7 @@ async function playScenario(id) {
     await waitWhilePaused(token);
     const step = scenario.steps[i];
     renderTimeline(scenario, i);
-    setStory(step.kicker, step.title, step.copy, scenario.color);
+    setStory(step.kicker, step.title, step.copy, scenario.color, step);
     const holdMs = stepHoldMs(step);
     const isInflectionStep = step.kind === "point" || step.kind === "route";
     const cinemaArt = isInflectionStep ? cinemaArtForStep(id, step, i, artForStep(step)) : null;
@@ -2877,7 +3179,7 @@ async function playScenario(id) {
 }
 
 function openFeature(props) {
-  setStory(props.group, props.name, props.caption || props.mechanism || "", COLORS[props.group]);
+  setStory(props.group, props.name, props.caption || props.mechanism || "", COLORS[props.group], props);
 }
 
 function resetAtlas() {
@@ -2896,11 +3198,12 @@ function resetAtlas() {
   hideContextArt();
   hidePlot();
   applySoundProfile({ scene: "idle", cue: null }, false);
+  setSourcesOpen(false);
   drawAtlas();
   document.querySelectorAll(".scenario-btn").forEach(btn => btn.classList.remove("active"));
   document.getElementById("timeline").innerHTML = "";
   resetStepProgress();
-  setStory("Click a disease route", "A ship was a moving disease ecosystem.", "Each route follows one disease ecology from source conditions through shipboard mechanism to port consequences.", "#c9a84c");
+  setStory("Start here | Maritime disease exhibit", "A ship was a moving disease ecosystem.", "This exhibit follows disease as an ecology of ships: ports, provisions, crowded berths, labor, violence, vectors, quarantine, and the routes that made local exposures move.", "#c9a84c");
   map.setView([22, -43], 4, { animate: true });
   updatePauseButton();
 }
@@ -2916,6 +3219,10 @@ bindPauseControl("pause-btn");
 bindPauseControl("video-pause-btn");
 bindSoundControl("sound-btn");
 bindSoundControl("video-sound-btn");
+document.getElementById("sources-btn").addEventListener("click", () => {
+  setSourcesOpen(!document.documentElement.classList.contains("sources-open"));
+});
+document.getElementById("sources-close-btn").addEventListener("click", () => setSourcesOpen(false));
 document.getElementById("tour-btn").addEventListener("click", () => {
   if (isTourRunning) {
     ++tourToken;
@@ -2928,9 +3235,14 @@ document.getElementById("tour-btn").addEventListener("click", () => {
   }
   playTour();
 });
-document.getElementById("recording-btn").addEventListener("click", () => setRecordingMode(!isRecordingMode));
+document.getElementById("recording-btn").addEventListener("click", () => setPresentationMode(!isRecordingMode));
 document.getElementById("reset-btn").addEventListener("click", resetAtlas);
 document.addEventListener("keydown", event => {
+  if (event.key === "Escape" && document.documentElement.classList.contains("sources-open")) {
+    event.preventDefault();
+    setSourcesOpen(false);
+    return;
+  }
   if ((event.code === "Space" || event.key.toLowerCase() === "p") && activeScenario) {
     event.preventDefault();
     setPaused(!isPaused);
@@ -2940,7 +3252,7 @@ document.addEventListener("keydown", event => {
     setSoundEnabled(!isSoundEnabled);
   }
   if (event.key.toLowerCase() === "v") {
-    setRecordingMode(!isRecordingMode);
+    setPresentationMode(!isRecordingMode);
   }
   if (event.key.toLowerCase() === "t") {
     if (isTourRunning) {
@@ -2966,7 +3278,6 @@ document.addEventListener("keydown", event => {
 
 async function playTour() {
   const token = ++tourToken;
-  setRecordingMode(true);
   setTourRunning(true);
   for (const scenarioId of VIDEO_TOUR) {
     if (token !== tourToken) break;
@@ -2991,7 +3302,7 @@ function queryFlag(...names) {
 
 function initializeFromQuery() {
   if (queryFlag("video", "recording", "record")) {
-    setRecordingMode(true);
+    setPresentationMode(true);
   }
   if (queryFlag("sound", "audio")) {
     setSoundEnabled(true, { cue: false });
@@ -3010,6 +3321,7 @@ function initializeFromQuery() {
 }
 
 drawAtlas();
+renderSourceCatalog();
 updatePauseButton();
 updateSoundButton();
 document.addEventListener("pointerdown", resumeArmedSoundFromGesture, true);
@@ -3020,6 +3332,7 @@ window.MARITIME_ATLAS_CONTROLS = {
   playTour,
   resetAtlas,
   setRecordingMode,
+  setPresentationMode,
   setSoundEnabled,
   soundStatus: () => soundDesign ? soundDesign.status() : {
     enabled: isSoundEnabled,
@@ -3030,5 +3343,6 @@ window.MARITIME_ATLAS_CONTROLS = {
   }
 };
 </script>
+
 </body>
 </html>

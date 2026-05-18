@@ -801,10 +801,13 @@ const STATUS_LABELS = {
   weak: "Weakly supported"
 };
 const CONFIDENCE_LABELS = {
-  strong: "Strong support",
+  high: "High support",
   moderate: "Moderate support",
-  mixed: "Mixed support",
-  weak: "Weak support",
+  low: "Low support",
+  speculative: "Speculative",
+  strong: "High support",
+  mixed: "Moderate support",
+  weak: "Low support",
   contested: "Contested"
 };
 const WRITING_LABELS = {
@@ -980,21 +983,21 @@ function confidenceLabel(value) {
 }
 
 function routeDashArray(confidence) {
-  if (confidence === "strong") return null;
+  if (confidence === "high" || confidence === "strong") return null;
   if (confidence === "moderate") return "12 8";
   if (confidence === "mixed") return "8 8";
   return "4 10";
 }
 
 function routeOpacity(confidence) {
-  if (confidence === "strong") return 0.92;
+  if (confidence === "high" || confidence === "strong") return 0.92;
   if (confidence === "moderate") return 0.82;
   if (confidence === "mixed") return 0.72;
   return 0.62;
 }
 
 function geographyOpacity(confidence) {
-  if (confidence === "strong") return 0.2;
+  if (confidence === "high" || confidence === "strong") return 0.2;
   if (confidence === "moderate") return 0.16;
   if (confidence === "mixed") return 0.12;
   return 0.09;
@@ -1569,7 +1572,7 @@ function drawEntry(entry) {
       const layer = L.polyline(path, {
         className: "atlas-route",
         color,
-        weight: route.confidence === "strong" ? 4.8 : 3.6,
+        weight: (route.confidence === "high" || route.confidence === "strong") ? 4.8 : 3.6,
         opacity: currentMapMode === "evidence" ? Math.max(routeOpacity(route.confidence) - 0.08, 0.48) : routeOpacity(route.confidence),
         dashArray: routeDashArray(route.confidence)
       });
@@ -1609,7 +1612,7 @@ function focusRoute(routeId) {
   const route = (entry?.spread_routes || []).find((item) => item.route_id === routeId);
   layer.setStyle({
     opacity: 0.98,
-    weight: route?.confidence === "strong" ? 5.6 : 4.3,
+    weight: (route?.confidence === "high" || route?.confidence === "strong") ? 5.6 : 4.3,
     dashArray: routeDashArray(route?.confidence),
     className: "atlas-route active"
   });

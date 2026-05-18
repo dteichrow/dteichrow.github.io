@@ -55,14 +55,19 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "name": "Yellow fever",
       "origin_claim": {
-        "confidence": "strong",
+        "confidence": "high",
         "coordinates": [
           -1.5,
           6.2
         ],
         "date_or_era": "Pre-colonial circulation documented before seventeenth-century Atlantic spread",
         "label": "West and Central African transmission zone",
-        "narrative": "The best-supported origin frame places endemic yellow fever ecology in tropical Africa before repeated Atlantic export into Caribbean and American port settings."
+        "narrative": "The best-supported origin frame places endemic yellow fever ecology in tropical Africa before repeated Atlantic export into Caribbean and American port settings.",
+        "citation_ids": [
+          "yellow-history",
+          "yellow-fever-who",
+          "yellow-handbook"
+        ]
       },
       "pathogen_type": "Virus",
       "reference_name": "Yellow fever",
@@ -78,7 +83,7 @@ window.PATHOGEN_ATLAS_DATA = {
             "yellow-review",
             "yellow-history"
           ],
-          "confidence": "strong",
+          "confidence": "high",
           "date_or_era": "Seventeenth century Atlantic shipping",
           "from_coordinates": [
             -1.5,
@@ -99,7 +104,7 @@ window.PATHOGEN_ATLAS_DATA = {
             "yellow-handbook",
             "yellow-history"
           ],
-          "confidence": "strong",
+          "confidence": "high",
           "date_or_era": "1793 port-city epidemic",
           "from_coordinates": [
             -72.3,
@@ -249,14 +254,19 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "name": "Cholera",
       "origin_claim": {
-        "confidence": "strong",
+        "confidence": "high",
         "coordinates": [
           90.35,
           22.55
         ],
         "date_or_era": "Long-standing endemic zone before nineteenth-century pandemic export",
         "label": "Ganges-Brahmaputra delta / Bay of Bengal",
-        "narrative": "The strongest consensus places cholera's pandemic source ecology in the Bay of Bengal and adjacent delta systems before colonial trade and troop movement accelerated wider spread."
+        "narrative": "The strongest consensus places cholera's pandemic source ecology in the Bay of Bengal and adjacent delta systems before colonial trade and troop movement accelerated wider spread.",
+        "citation_ids": [
+          "cholera-who",
+          "cholera-handbook",
+          "cholera-nature"
+        ]
       },
       "pathogen_type": "Bacterium",
       "reference_name": "Cholera",
@@ -272,7 +282,7 @@ window.PATHOGEN_ATLAS_DATA = {
             "cholera-nature",
             "cholera-review"
           ],
-          "confidence": "strong",
+          "confidence": "high",
           "date_or_era": "1817 first pandemic wave",
           "from_coordinates": [
             90.35,
@@ -293,7 +303,7 @@ window.PATHOGEN_ATLAS_DATA = {
             "cholera-handbook",
             "cholera-nature"
           ],
-          "confidence": "strong",
+          "confidence": "high",
           "date_or_era": "1817-1837",
           "from_coordinates": [
             88.36,
@@ -433,7 +443,12 @@ window.PATHOGEN_ATLAS_DATA = {
         ],
         "date_or_era": "First millennium BCE to first millennium CE, depending on molecular model",
         "label": "West Eurasian dense-settlement zone with cattle-linked morbillivirus ancestry",
-        "narrative": "Measles is generally treated as a human morbillivirus related to rinderpest, but the exact timing of divergence remains model-dependent rather than settled to a single year."
+        "narrative": "Measles is generally treated as a human morbillivirus related to rinderpest, but the exact timing of divergence remains model-dependent rather than settled to a single year.",
+        "citation_ids": [
+          "measles-who",
+          "measles-handbook",
+          "measles-science"
+        ]
       },
       "pathogen_type": "Virus",
       "reference_name": "Measles",
@@ -457,7 +472,7 @@ window.PATHOGEN_ATLAS_DATA = {
             "measles-handbook",
             "measles-science"
           ],
-          "confidence": "strong",
+          "confidence": "high",
           "date_or_era": "Sixteenth to seventeenth centuries",
           "from_coordinates": [
             35.5,
@@ -590,7 +605,12 @@ window.PATHOGEN_ATLAS_DATA = {
         ],
         "date_or_era": "Recognized in humans in 1970, likely circulating earlier in animal reservoirs",
         "label": "Central and West African forest-zone circulation",
-        "narrative": "Human recognition begins in the Congo Basin and West Africa, but the deeper animal-reservoir history is less settled than the later export events."
+        "narrative": "Human recognition begins in the Congo Basin and West Africa, but the deeper animal-reservoir history is less settled than the later export events.",
+        "citation_ids": [
+          "mpox-who",
+          "mpox-handbook",
+          "mpox-croft"
+        ]
       },
       "pathogen_type": "Virus",
       "reference_name": "Mpox",
@@ -626,7 +646,7 @@ window.PATHOGEN_ATLAS_DATA = {
             "mpox-handbook",
             "mpox-croft"
           ],
-          "confidence": "strong",
+          "confidence": "high",
           "date_or_era": "2003 animal-trade outbreak",
           "from_coordinates": [
             -15.3,
@@ -648,7 +668,7 @@ window.PATHOGEN_ATLAS_DATA = {
             "mpox-review",
             "mpox-lancet"
           ],
-          "confidence": "strong",
+          "confidence": "high",
           "date_or_era": "2018 to 2022",
           "from_coordinates": [
             7.5,
@@ -765,14 +785,19 @@ window.PATHOGEN_ATLAS_DATA = {
       ],
       "name": "Avian influenza A(H5N1)",
       "origin_claim": {
-        "confidence": "strong",
+        "confidence": "high",
         "coordinates": [
           113.5,
           22.3
         ],
         "date_or_era": "Recognized in humans in 1997, with wider avian circulation already established",
         "label": "Southern China and adjacent East/Southeast Asian poultry interfaces",
-        "narrative": "The strongest modern surveillance narrative begins in East and Southeast Asian poultry-wild bird interfaces before later global circulation through migratory and farm networks."
+        "narrative": "The strongest modern surveillance narrative begins in East and Southeast Asian poultry-wild bird interfaces before later global circulation through migratory and farm networks.",
+        "citation_ids": [
+          "h5n1-cdc",
+          "h5n1-handbook",
+          "h5n1-efsa"
+        ]
       },
       "pathogen_type": "Virus",
       "reference_name": "Avian influenza A(H5N1)",
@@ -796,7 +821,7 @@ window.PATHOGEN_ATLAS_DATA = {
             "h5n1-handbook",
             "h5n1-efsa"
           ],
-          "confidence": "strong",
+          "confidence": "high",
           "date_or_era": "2000s to present",
           "from_coordinates": [
             113.5,
@@ -818,7 +843,7 @@ window.PATHOGEN_ATLAS_DATA = {
             "h5n1-cat",
             "h5n1-mink"
           ],
-          "confidence": "strong",
+          "confidence": "high",
           "date_or_era": "2021 to present clade 2.3.4.4b expansion",
           "from_coordinates": [
             35.0,
@@ -963,7 +988,12 @@ window.PATHOGEN_ATLAS_DATA = {
         ],
         "date_or_era": "Twentieth-century human recognition layered on much older rodent-virus evolution",
         "label": "Eurasian and American rodent-host lineages",
-        "narrative": "There is no honest single origin pin for all hantaviruses. The stronger atlas frame is family-level rodent-host evolution across Eurasia and the Americas, then variant-specific human syndromes with distinct geographic signatures."
+        "narrative": "There is no honest single origin pin for all hantaviruses. The stronger atlas frame is family-level rodent-host evolution across Eurasia and the Americas, then variant-specific human syndromes with distinct geographic signatures.",
+        "citation_ids": [
+          "hantavirus-cdc",
+          "hanta-family-review",
+          "hanta-americas"
+        ]
       },
       "pathogen_type": "Virus",
       "reference_name": "Hantavirus syndrome",
@@ -987,7 +1017,7 @@ window.PATHOGEN_ATLAS_DATA = {
             "hanta-family-review",
             "hanta-hfrs"
           ],
-          "confidence": "strong",
+          "confidence": "high",
           "date_or_era": "Twentieth-century recognition of hemorrhagic fever with renal syndrome",
           "from_coordinates": [
             111.0,
@@ -1008,7 +1038,7 @@ window.PATHOGEN_ATLAS_DATA = {
             "hanta-family-review",
             "hanta-americas"
           ],
-          "confidence": "strong",
+          "confidence": "high",
           "date_or_era": "1990s emergence framing and later regional expansion",
           "from_coordinates": [
             -108.0,
@@ -1058,14 +1088,18 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "name": "Hantaan orthohantavirus",
           "origin_claim": {
-            "confidence": "strong",
+            "confidence": "high",
             "coordinates": [
               127.0,
               40.2
             ],
             "date_or_era": "Recognized during the Korean War, with older endemic circulation",
             "label": "Korean peninsula and adjacent northeast Asian rodent zones",
-            "narrative": "Hantaan virus is tied to striped field-mouse ecologies in Korea, China, and nearby parts of Eurasia and became globally legible during Korean War hemorrhagic-fever outbreaks."
+            "narrative": "Hantaan virus is tied to striped field-mouse ecologies in Korea, China, and nearby parts of Eurasia and became globally legible during Korean War hemorrhagic-fever outbreaks.",
+            "citation_ids": [
+              "hantaan-korean-war",
+              "hanta-hfrs"
+            ]
           },
           "pathogen_type": "Virus",
           "reference_name": "Hantavirus syndrome",
@@ -1089,7 +1123,7 @@ window.PATHOGEN_ATLAS_DATA = {
                 "hanta-hfrs",
                 "hantaan-korean-war"
               ],
-              "confidence": "strong",
+              "confidence": "high",
               "date_or_era": "1950s recognition through wartime outbreaks",
               "from_coordinates": [
                 127.0,
@@ -1194,14 +1228,18 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "name": "Sin Nombre orthohantavirus",
           "origin_claim": {
-            "confidence": "strong",
+            "confidence": "high",
             "coordinates": [
               -108.0,
               37.0
             ],
             "date_or_era": "Recognized in 1993, with older enzootic circulation",
             "label": "Deer-mouse ecologies in the U.S. Southwest",
-            "narrative": "Sin Nombre virus was recognized after the Four Corners outbreak, but the ecology was already present in deer-mouse populations before the human cluster made it visible."
+            "narrative": "Sin Nombre virus was recognized after the Four Corners outbreak, but the ecology was already present in deer-mouse populations before the human cluster made it visible.",
+            "citation_ids": [
+              "sin-nombre-four-corners",
+              "hanta-americas"
+            ]
           },
           "pathogen_type": "Virus",
           "reference_name": "Hantavirus syndrome",
@@ -1225,7 +1263,7 @@ window.PATHOGEN_ATLAS_DATA = {
                 "hanta-americas",
                 "sin-nombre-four-corners"
               ],
-              "confidence": "strong",
+              "confidence": "high",
               "date_or_era": "1993 emergence recognition",
               "from_coordinates": [
                 -108.0,
@@ -1337,7 +1375,11 @@ window.PATHOGEN_ATLAS_DATA = {
             ],
             "date_or_era": "Late twentieth century recognition with older enzootic circulation",
             "label": "Southern Andes rodent ecologies",
-            "narrative": "Andes virus is associated with southern South American rodent ecologies and gained outsized attention because of evidence for person-to-person transmission in specific settings."
+            "narrative": "Andes virus is associated with southern South American rodent ecologies and gained outsized attention because of evidence for person-to-person transmission in specific settings.",
+            "citation_ids": [
+              "hanta-andes",
+              "hanta-climate"
+            ]
           },
           "pathogen_type": "Virus",
           "reference_name": "Hantavirus syndrome",
@@ -1361,7 +1403,7 @@ window.PATHOGEN_ATLAS_DATA = {
                 "hanta-andes",
                 "hanta-climate"
               ],
-              "confidence": "strong",
+              "confidence": "high",
               "date_or_era": "Late twentieth century to present",
               "from_coordinates": [
                 -71.0,
@@ -1539,7 +1581,12 @@ window.PATHOGEN_ATLAS_DATA = {
         ],
         "date_or_era": "Modern endemic framing consolidated in twentieth-century tropical Asia",
         "label": "South-East Asian and western Pacific transmission zone",
-        "narrative": "Dengue's deeper origin is more diffuse than yellow fever's, but the strongest modern atlas frame places sustained amplification in tropical Asia before wide contemporary global expansion."
+        "narrative": "Dengue's deeper origin is more diffuse than yellow fever's, but the strongest modern atlas frame places sustained amplification in tropical Asia before wide contemporary global expansion.",
+        "citation_ids": [
+          "dengue-who",
+          "dengue-handbook",
+          "dengue-kraemer"
+        ]
       },
       "pathogen_type": "Virus",
       "reference_name": "Dengue",
@@ -1606,7 +1653,7 @@ window.PATHOGEN_ATLAS_DATA = {
             "dengue-handbook",
             "dengue-kraemer"
           ],
-          "confidence": "strong",
+          "confidence": "high",
           "date_or_era": "Contemporary spread",
           "from_coordinates": [
             120.0,
@@ -1745,7 +1792,12 @@ window.PATHOGEN_ATLAS_DATA = {
         ],
         "date_or_era": "Ancient human-parasite history with later species-specific dispersal",
         "label": "Deep African and Old World malaria ecologies",
-        "narrative": "The broadest consensus places the deepest burden and evolutionary importance of falciparum malaria in Africa, while the wider human malaria story includes multiple Plasmodium species with different dispersal histories."
+        "narrative": "The broadest consensus places the deepest burden and evolutionary importance of falciparum malaria in Africa, while the wider human malaria story includes multiple Plasmodium species with different dispersal histories.",
+        "citation_ids": [
+          "malaria-airport",
+          "malaria-who",
+          "malaria-handbook"
+        ]
       },
       "pathogen_type": "Protozoan parasite",
       "reference_name": "Malaria",
@@ -1924,7 +1976,12 @@ window.PATHOGEN_ATLAS_DATA = {
         ],
         "date_or_era": "Deep premodern origin with Neolithic and later human dispersal",
         "label": "African human-associated origin with later Eurasian and global coexpansion",
-        "narrative": "Modern genomic work supports an African origin for the MTBC followed by dispersal with human populations, but the later epidemiologic story is built in cities, mines, barracks, prisons, and migration corridors."
+        "narrative": "Modern genomic work supports an African origin for the MTBC followed by dispersal with human populations, but the later epidemiologic story is built in cities, mines, barracks, prisons, and migration corridors.",
+        "citation_ids": [
+          "tb-who",
+          "tb-white-plague",
+          "tb-handbook"
+        ]
       },
       "pathogen_type": "Bacterium",
       "reference_name": "",
@@ -1960,7 +2017,7 @@ window.PATHOGEN_ATLAS_DATA = {
             "tb-handbook",
             "tb-white-plague"
           ],
-          "confidence": "strong",
+          "confidence": "high",
           "date_or_era": "Eighteenth to twentieth centuries",
           "from_coordinates": [
             7.0,
@@ -2096,7 +2153,12 @@ window.PATHOGEN_ATLAS_DATA = {
         ],
         "date_or_era": "Deep zoonotic reservoir history with repeated later human pandemic spillovers",
         "label": "Central Asian rodent-reservoir zone",
-        "narrative": "The strongest broad frame places plague in Central Asian rodent reservoirs, with later eruptions into human trade and military networks rather than one single human-origin event."
+        "narrative": "The strongest broad frame places plague in Central Asian rodent reservoirs, with later eruptions into human trade and military networks rather than one single human-origin event.",
+        "citation_ids": [
+          "plague-third-pandemic",
+          "plague-who",
+          "plague-handbook"
+        ]
       },
       "pathogen_type": "Bacterium",
       "reference_name": "",
@@ -2133,7 +2195,7 @@ window.PATHOGEN_ATLAS_DATA = {
             "plague-bos",
             "plague-stenseth"
           ],
-          "confidence": "strong",
+          "confidence": "high",
           "date_or_era": "1347 to 1353 Black Death",
           "from_coordinates": [
             35.4,
@@ -2155,7 +2217,7 @@ window.PATHOGEN_ATLAS_DATA = {
             "plague-stenseth",
             "plague-third-pandemic"
           ],
-          "confidence": "strong",
+          "confidence": "high",
           "date_or_era": "Late nineteenth to early twentieth century third pandemic",
           "from_coordinates": [
             114.2,
@@ -2237,7 +2299,7 @@ window.PATHOGEN_ATLAS_DATA = {
           1.5
         ],
         "date_or_era": "First identified in Uganda in 1947; later urban and transoceanic expansion",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The cautious origin frame is East African discovery and sylvatic Aedes-primate ecology, not a single clean birthplace for modern Zika.",
         "citation_ids": [
           "zika-cdc"
@@ -2279,7 +2341,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "2007-2016 Pacific and American expansion",
           "route_type": "aedes_urbanization",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Island outbreaks preceded explosive American spread, where congenital outcomes changed the political meaning of an arbovirus map.",
           "citation_ids": [
             "zika-cdc",
@@ -2378,7 +2440,7 @@ window.PATHOGEN_ATLAS_DATA = {
           -6.4
         ],
         "date_or_era": "First identified in Tanzania in 1952",
-        "confidence": "strong",
+        "confidence": "high",
         "narrative": "The first recognized chikungunya outbreak was in what is now Tanzania, followed by African and Asian circulation and wider Aedes-driven expansion.",
         "citation_ids": [
           "chik-who"
@@ -2399,7 +2461,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "1950s-1970s African and Asian recognition",
           "route_type": "aedes_urban",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Early recognized spread moved the virus into urban Asian outbreak settings.",
           "citation_ids": [
             "chik-who",
@@ -2420,7 +2482,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "2004 onward global expansion",
           "route_type": "travel_and_vector",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Travel, viral adaptation, and Aedes albopictus/aegypti distributions helped widen outbreak risk.",
           "citation_ids": [
             "chik-who",
@@ -2519,7 +2581,7 @@ window.PATHOGEN_ATLAS_DATA = {
           0.4
         ],
         "date_or_era": "First isolated in Uganda in 1937",
-        "confidence": "strong",
+        "confidence": "high",
         "narrative": "The name and earliest isolation anchor the virus in Uganda, but the practical atlas frame is the bird-mosquito cycle.",
         "citation_ids": [
           "wnv-cdc-transmission"
@@ -2561,7 +2623,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "1999 onward North American establishment",
           "route_type": "invasive_arbovirus",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "After the 1999 New York outbreak, bird-mosquito transmission allowed the virus to establish across much of North America.",
           "citation_ids": [
             "wnv-cdc-transmission",
@@ -2630,7 +2692,7 @@ window.PATHOGEN_ATLAS_DATA = {
             ]
           ],
           "date_or_era": "Post-1999 North American establishment and seasonal surveillance",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "West Nile virus is best read as a bird-mosquito-human surveillance region across North America, where seasonal vector ecology and neuroinvasive disease monitoring matter more than a single origin-to-destination arrow.",
           "citation_ids": [
             "wnv-cdc-transmission",
@@ -2659,7 +2721,7 @@ window.PATHOGEN_ATLAS_DATA = {
           35.7
         ],
         "date_or_era": "First documented disease case in Japan in 1871",
-        "confidence": "strong",
+        "confidence": "high",
         "narrative": "The earliest documented clinical frame is Japan; endemic transmission now belongs to a wider South-East Asian and Western Pacific agricultural ecology.",
         "citation_ids": [
           "je-who"
@@ -2680,7 +2742,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "Late nineteenth to twentieth century recognition",
           "route_type": "regional_recognition",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Clinical recognition in Japan led into a wider Asian encephalitis map linked to Culex mosquitoes and amplifying hosts.",
           "citation_ids": [
             "je-who",
@@ -2701,7 +2763,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "Modern endemic rural-periurban transmission",
           "route_type": "agricultural_ecology",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Rice agriculture, pigs, water birds, and seasonal mosquito abundance sustain modern risk geography.",
           "citation_ids": [
             "je-who",
@@ -2770,7 +2832,7 @@ window.PATHOGEN_ATLAS_DATA = {
             ]
           ],
           "date_or_era": "Contemporary rural and peri-urban transmission ecology",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Japanese encephalitis belongs on the map as an endemic-risk zone across parts of Asia and the western Pacific, tied to mosquito vectors, amplifying hosts, vaccination geography, and rural exposure.",
           "citation_ids": [
             "je-who",
@@ -2799,7 +2861,7 @@ window.PATHOGEN_ATLAS_DATA = {
           30.0
         ],
         "date_or_era": "Ancient disease with modern endemic strongholds in Afghanistan and Pakistan",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "Deep origin is not usefully reduced to one point; the practical frame is modern persistence in remaining endemic and vaccine-derived transmission zones.",
         "citation_ids": [
           "polio-who"
@@ -2820,7 +2882,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "Late twentieth to twenty-first century endemic persistence",
           "route_type": "eradication_frontier",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "The remaining wild-poliovirus map is shaped by mobility, conflict, vaccination access, and environmental detection.",
           "citation_ids": [
             "polio-who",
@@ -2841,7 +2903,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "1988 onward global eradication campaign",
           "route_type": "eradication",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Mass vaccination and surveillance collapsed the global wild-polio map from more than 125 endemic countries to final hard-to-reach zones.",
           "citation_ids": [
             "polio-who",
@@ -2940,7 +3002,7 @@ window.PATHOGEN_ATLAS_DATA = {
           20.0
         ],
         "date_or_era": "Worldwide fecal-oral infection; modern endemicity follows sanitation gradients",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The useful frame is a worldwide fecal-oral virus whose disease burden changes with childhood exposure, sanitation, vaccination, and travel.",
         "citation_ids": [
           "hav-who"
@@ -2982,7 +3044,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "Food and waterborne outbreak movement",
           "route_type": "food_water",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Food, water, and close-contact outbreaks can move hepatitis A into settings where adult immunity gaps exist.",
           "citation_ids": [
             "hav-who",
@@ -3071,7 +3133,7 @@ window.PATHOGEN_ATLAS_DATA = {
           22.0
         ],
         "date_or_era": "Ancient human-adapted enteric disease; modern burden concentrated where water and sanitation are weak",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The deep history is human and old, but the modern frame is high burden in South Asia and sub-Saharan Africa with antimicrobial resistance.",
         "citation_ids": [
           "typhoid-who"
@@ -3092,7 +3154,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "Modern endemic enteric belt",
           "route_type": "water_sanitation",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Unsafe drinking water and inadequate sanitation sustain high-burden transmission across urban and periurban settings.",
           "citation_ids": [
             "typhoid-who",
@@ -3211,7 +3273,7 @@ window.PATHOGEN_ATLAS_DATA = {
           41.2
         ],
         "date_or_era": "Norwalk, Ohio outbreak investigation in 1968; virus identified in 1972",
-        "confidence": "strong",
+        "confidence": "high",
         "narrative": "The discovery frame begins with the Norwalk school outbreak, but the modern geography is global and dominated by crowded settings and food-water interfaces.",
         "citation_ids": [
           "noro-cdc"
@@ -3232,7 +3294,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "Late twentieth-century recognition and global syndrome",
           "route_type": "recognition",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Laboratory methods made norovirus visible across schools, hospitals, ships, and care facilities.",
           "citation_ids": [
             "noro-cdc",
@@ -3253,7 +3315,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "Modern food-water-confined spread",
           "route_type": "confined_space",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Shellfish, food handlers, contaminated water, and confined populations create maritime, institutional, and household outbreaks.",
           "citation_ids": [
             "noro-cdc",
@@ -3312,7 +3374,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary global gastroenteritis ecology",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Norovirus is a global distribution problem: cruise ships, care homes, schools, restaurants, households, and health-care settings are the map as much as countries are.",
           "citation_ids": [
             "noro-cdc",
@@ -3342,7 +3404,7 @@ window.PATHOGEN_ATLAS_DATA = {
           30.0
         ],
         "date_or_era": "At least 3000 years old; exact origin unknown",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The origin is unknown; ancient Egyptian, Chinese, Indian, and Asian Minor evidence should be treated as early frames rather than a single birthplace.",
         "citation_ids": [
           "smallpox-cdc"
@@ -3384,7 +3446,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "Seventeenth-century colonization and American epidemics",
           "route_type": "colonial_spread",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "European colonization carried smallpox into immunologically vulnerable American populations.",
           "citation_ids": [
             "smallpox-cdc",
@@ -3405,7 +3467,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "1967-1980 intensified eradication",
           "route_type": "eradication",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Surveillance, ring vaccination, and field logistics pushed smallpox to eradication certification.",
           "citation_ids": [
             "smallpox-cdc",
@@ -3464,7 +3526,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Pre-eradication global circulation; eradication certified in 1980",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "For smallpox, the useful spatial frame is historical global distribution followed by eradication, with the modern map defined by absence from natural circulation and laboratory-security concerns.",
           "citation_ids": [
             "smallpox-cdc",
@@ -3493,7 +3555,7 @@ window.PATHOGEN_ATLAS_DATA = {
           20.0
         ],
         "date_or_era": "Ancient respiratory syndrome; modern virologic surveillance is global",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The useful frame is not a single origin point but the global respiratory network through which influenza viruses repeatedly circulate and evolve.",
         "citation_ids": [
           "flu-who"
@@ -3514,7 +3576,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "Annual temperate winter epidemics",
           "route_type": "seasonality",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "In temperate regions influenza concentrates into winter waves that pressure schools, workplaces, clinics, and hospitals.",
           "citation_ids": [
             "flu-who",
@@ -3535,7 +3597,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "Tropical year-round circulation",
           "route_type": "tropical_circulation",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "In tropical regions influenza can circulate throughout the year, making seasonality more irregular.",
           "citation_ids": [
             "flu-who",
@@ -3594,7 +3656,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Recurring seasonal and year-round circulation",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Seasonal influenza is a global respiratory surface whose timing varies by hemisphere, tropics, surveillance capacity, vaccination, and antigenic drift.",
           "citation_ids": [
             "flu-who",
@@ -3623,7 +3685,7 @@ window.PATHOGEN_ATLAS_DATA = {
           30.6
         ],
         "date_or_era": "First detected as a cluster in Wuhan, China in late 2019; ultimate origin remains debated",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The earliest recognized outbreak was in Wuhan in late 2019; the ultimate animal-origin pathway remains unsettled and should not be flattened into certainty.",
         "citation_ids": [
           "covid-who"
@@ -3644,7 +3706,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "Late 2019 to early 2020 global dissemination",
           "route_type": "pandemic_spread",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Travel and dense indoor transmission moved SARS-CoV-2 from a local cluster into a pandemic respiratory network.",
           "citation_ids": [
             "covid-who",
@@ -3665,7 +3727,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "2020 onward variant replacement",
           "route_type": "variant_surveillance",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Variants made the map dynamic: immune escape, transmissibility, sequencing capacity, and reporting shaped apparent spread.",
           "citation_ids": [
             "covid-who",
@@ -3724,7 +3786,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "2020 onward global circulation",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "COVID-19 is not only a line out of Wuhan; its mature geography is global respiratory circulation shaped by indoor air, travel, immunity, surveillance, variants, and health-system reporting.",
           "citation_ids": [
             "covid-who",
@@ -3774,7 +3836,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "1976 Central African recognition",
           "route_type": "recognition",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Initial recognition involved severe outbreaks where hospitals amplified transmission under difficult infection-control conditions.",
           "citation_ids": [
             "ebola-who",
@@ -3795,7 +3857,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "2014-2016 West African epidemic",
           "route_type": "regional_epidemic",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Caregiving, burials, weak health systems, roads, and borders turned spillover into a regional emergency.",
           "citation_ids": [
             "ebola-who",
@@ -3894,7 +3956,7 @@ window.PATHOGEN_ATLAS_DATA = {
           50.8
         ],
         "date_or_era": "First detected in 1967 in Germany and Serbia after imported African green monkey exposure",
-        "confidence": "strong",
+        "confidence": "high",
         "narrative": "First detected in European laboratory outbreaks linked to imported African green monkeys; later geography ties to African bat reservoirs and caves/mines.",
         "citation_ids": [
           "marburg-who"
@@ -3915,7 +3977,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "1967 laboratory outbreak",
           "route_type": "laboratory_recognition",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "The first recognized outbreak made a Central/East African filovirus visible in Europe.",
           "citation_ids": [
             "marburg-who",
@@ -3936,7 +3998,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "Modern African cave and mine exposure",
           "route_type": "bat_ecology",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Later outbreaks point back to cave and mine exposure followed by body-fluid transmission.",
           "citation_ids": [
             "marburg-who",
@@ -4035,7 +4097,7 @@ window.PATHOGEN_ATLAS_DATA = {
           2.9
         ],
         "date_or_era": "First identified during Malaysia/Singapore pig-farm outbreak in 1998-1999",
-        "confidence": "strong",
+        "confidence": "high",
         "narrative": "First recognized during pig-farm outbreaks in Malaysia and Singapore; later Bangladesh and India outbreaks emphasized date palm sap and close contact.",
         "citation_ids": [
           "nipah-who"
@@ -4056,7 +4118,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "1998-1999 Malaysia/Singapore outbreak",
           "route_type": "pig_amplification",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Pig amplification moved a bat-associated virus into farmers and abattoir workers.",
           "citation_ids": [
             "nipah-who",
@@ -4077,7 +4139,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "2001 onward Bangladesh/India pattern",
           "route_type": "food_and_contact",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Raw date palm sap contamination, bat ecology, and close caregiving define the South Asian Nipah map.",
           "citation_ids": [
             "nipah-who",
@@ -4146,7 +4208,7 @@ window.PATHOGEN_ATLAS_DATA = {
             ]
           ],
           "date_or_era": "Recognized outbreaks from 1998 onward",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Nipah geography is a reservoir-interface layer: fruit bats, pigs or other intermediate pathways, date-palm sap exposure, hospitals, and household caregiving shape outbreak risk.",
           "citation_ids": [
             "nipah-who",
@@ -4176,7 +4238,7 @@ window.PATHOGEN_ATLAS_DATA = {
           10.3
         ],
         "date_or_era": "First identified in Nigeria in 1969",
-        "confidence": "strong",
+        "confidence": "high",
         "narrative": "Lassa was first identified in Nigeria; its modern endemic frame sits across parts of West Africa where Mastomys rodents live near homes.",
         "citation_ids": [
           "lassa-who"
@@ -4197,7 +4259,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "1969 onward West African endemic recognition",
           "route_type": "rodent_household",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Mastomys ecology and household food contamination define the endemic belt.",
           "citation_ids": [
             "lassa-who",
@@ -4287,7 +4349,7 @@ window.PATHOGEN_ATLAS_DATA = {
             ]
           ],
           "date_or_era": "Contemporary endemic and seasonal outbreak ecology",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Lassa fever belongs as a West African endemic-zone layer tied to multimammate rodent ecology, housing, food storage, health-care exposure, and seasonal detection.",
           "citation_ids": [
             "lassa-who",
@@ -4316,7 +4378,7 @@ window.PATHOGEN_ATLAS_DATA = {
           22.9
         ],
         "date_or_era": "Ancient zoonosis; modern deaths concentrated in Africa and Asia",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "Rabies has an ancient history, but the atlas frame is modern dog-mediated transmission and uneven access to post-exposure prophylaxis.",
         "citation_ids": [
           "rabies-who"
@@ -4337,7 +4399,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "Modern dog-mediated endemic belt",
           "route_type": "one_health",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Dog bites and scratches drive the overwhelming majority of human rabies cases.",
           "citation_ids": [
             "rabies-who",
@@ -4358,7 +4420,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "Post-exposure prophylaxis geography",
           "route_type": "healthcare_access",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "The same exposure has radically different outcomes depending on wound washing, vaccine, immunoglobulin, and clinical access.",
           "citation_ids": [
             "rabies-who",
@@ -4427,7 +4489,7 @@ window.PATHOGEN_ATLAS_DATA = {
             ]
           ],
           "date_or_era": "Contemporary dog-mediated human mortality burden",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Rabies geography is dominated by dog-mediated exposure and uneven post-exposure prophylaxis access, with most human deaths concentrated in Africa and Asia.",
           "citation_ids": [
             "rabies-who",
@@ -4457,7 +4519,7 @@ window.PATHOGEN_ATLAS_DATA = {
           0.0
         ],
         "date_or_era": "Worldwide soil ecology with recurrent livestock-associated outbreaks",
-        "confidence": "strong",
+        "confidence": "high",
         "narrative": "The meaningful geography is persistence of Bacillus anthracis spores in soils that expose grazing animals and people who handle them.",
         "citation_ids": [
           "anthrax-cdc"
@@ -4478,7 +4540,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "Persistent soil-livestock cycle",
           "route_type": "environmental_reservoir",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Animals become infected through contaminated soil, plants, or water.",
           "citation_ids": [
             "anthrax-cdc",
@@ -4588,7 +4650,7 @@ window.PATHOGEN_ATLAS_DATA = {
           24.7
         ],
         "date_or_era": "First identified in Saudi Arabia and Jordan in 2012",
-        "confidence": "strong",
+        "confidence": "high",
         "narrative": "MERS-CoV was first identified in Saudi Arabia and Jordan, with dromedary camels as the primary reservoir for zoonotic transmission.",
         "citation_ids": [
           "mers-who"
@@ -4609,7 +4671,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "2012 onward camel-human spillover",
           "route_type": "camel_interface",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Camel contact and raw camel products anchor the recurring zoonotic transmission map.",
           "citation_ids": [
             "mers-who",
@@ -4630,7 +4692,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "2015 Korea health-care outbreak",
           "route_type": "healthcare_amplification",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "One travel-linked case spread through hospitals before recognition and isolation.",
           "citation_ids": [
             "mers-who",
@@ -4699,7 +4761,7 @@ window.PATHOGEN_ATLAS_DATA = {
             ]
           ],
           "date_or_era": "Recognized from 2012 onward",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "MERS needs a shaded camel-human interface zone centered on the Arabian Peninsula, with secondary health-care amplification and travel-linked export layered on top.",
           "citation_ids": [
             "mers-who",
@@ -4729,7 +4791,7 @@ window.PATHOGEN_ATLAS_DATA = {
           45.0
         ],
         "date_or_era": "Historically worldwide before vaccination; modern outbreaks follow immunity gaps",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The useful frame is a historically global respiratory infection that resurges where vaccine coverage and boosters fail.",
         "citation_ids": [
           "diphtheria-who"
@@ -4771,7 +4833,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "Modern outbreak resurgence",
           "route_type": "vaccine_gap",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Disrupted routine immunization and crowded living conditions can reopen old disease maps.",
           "citation_ids": [
             "diphtheria-who",
@@ -4860,7 +4922,7 @@ window.PATHOGEN_ATLAS_DATA = {
           50.0
         ],
         "date_or_era": "Historically worldwide; modern recurrence shaped by vaccination and waning immunity",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "Pertussis is best mapped as a historically global respiratory infection whose modern geography depends on vaccination, boosters, diagnosis, and infant protection.",
         "citation_ids": [
           "pertussis-who"
@@ -4881,7 +4943,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "Routine household and school spread",
           "route_type": "respiratory_household",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Older children and adults with mild or missed disease can transmit into households where infants face highest risk.",
           "citation_ids": [
             "pertussis-who",
@@ -4961,7 +5023,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary recurrent respiratory circulation",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Pertussis remains a global respiratory disease surface despite vaccination, with infant vulnerability, waning immunity, schedules, and outbreak detection shaping the map.",
           "citation_ids": [
             "pertussis-who",
@@ -5016,7 +5078,7 @@ window.PATHOGEN_ATLAS_DATA = {
           ],
           "date_or_era": "Late twentieth century to present",
           "route_type": "tick_ecology",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Reported risk concentrates in the Northeast, mid-Atlantic, and upper Midwest as Ixodes habitat, reservoir hosts, and human exposure overlap.",
           "citation_ids": [
             "lyme-cdc-about",
@@ -5130,7 +5192,7 @@ window.PATHOGEN_ATLAS_DATA = {
           46.9
         ],
         "date_or_era": "Early twentieth-century recognition and investigation in the Rocky Mountain region",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The name reflects a historical investigation frame; modern spotted fever rickettsiosis risk is not confined to the Rocky Mountains.",
         "citation_ids": [
           "rmsf-cdc-about",
@@ -5247,7 +5309,7 @@ window.PATHOGEN_ATLAS_DATA = {
           45.3
         ],
         "date_or_era": "Recognized in Crimea in the 1940s and later linked to Congo virus isolates",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The origin claim is deliberately a naming and recognition frame; CCHF virus ecology is broader than either Crimea or Congo alone.",
         "citation_ids": [
           "cchf-who",
@@ -5387,7 +5449,7 @@ window.PATHOGEN_ATLAS_DATA = {
           52.2
         ],
         "date_or_era": "Historical and modern recognition frame, not a single biological birthplace",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for epidemic typhus is an ecological-recognition frame: where vector exposure, human movement, and clinical recognition made the disease visible.",
         "citation_ids": [
           "epidemic-typhus-cdc",
@@ -5489,7 +5551,7 @@ window.PATHOGEN_ATLAS_DATA = {
           29.76
         ],
         "date_or_era": "Historical and modern recognition frame, not a single biological birthplace",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for murine typhus is an ecological-recognition frame: where vector exposure, human movement, and clinical recognition made the disease visible.",
         "citation_ids": [
           "murine-typhus-cdc",
@@ -5598,7 +5660,7 @@ window.PATHOGEN_ATLAS_DATA = {
           15.8
         ],
         "date_or_era": "Historical and modern recognition frame, not a single biological birthplace",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for scrub typhus is an ecological-recognition frame: where vector exposure, human movement, and clinical recognition made the disease visible.",
         "citation_ids": [
           "scrub-typhus-cdc",
@@ -5734,7 +5796,7 @@ window.PATHOGEN_ATLAS_DATA = {
           41.9
         ],
         "date_or_era": "Persistent reservoir or exposure system; not a single birthplace",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The origin frame for salmonellosis is the exposure system that makes illness visible: reservoirs, food handling, preservation, or cold-chain distribution.",
         "citation_ids": [
           "salmonella-who",
@@ -5801,7 +5863,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary global foodborne transmission",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Salmonellosis belongs on a global food-system map: eggs, poultry, meat, produce, animal contact, processing, kitchens, and surveillance all shape where illness is seen.",
           "citation_ids": [
             "salmonella-who",
@@ -5836,7 +5898,7 @@ window.PATHOGEN_ATLAS_DATA = {
           45.5
         ],
         "date_or_era": "Persistent reservoir or exposure system; not a single birthplace",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The origin frame for listeriosis is the exposure system that makes illness visible: reservoirs, food handling, preservation, or cold-chain distribution.",
         "citation_ids": [
           "listeria-cdc",
@@ -5903,7 +5965,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary global food-production and cold-chain risk",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Listeriosis is a global cold-chain and ready-to-eat food geography, with severity concentrated among pregnant people, newborns, older adults, and immunocompromised people.",
           "citation_ids": [
             "listeria-cdc",
@@ -5938,7 +6000,7 @@ window.PATHOGEN_ATLAS_DATA = {
           44.5
         ],
         "date_or_era": "Persistent reservoir or exposure system; not a single birthplace",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The origin frame for botulism is the exposure system that makes illness visible: reservoirs, food handling, preservation, or cold-chain distribution.",
         "citation_ids": [
           "botulism-cdc",
@@ -6040,7 +6102,7 @@ window.PATHOGEN_ATLAS_DATA = {
           0.0
         ],
         "date_or_era": "Environmental exposure frame; endemicity or recognition varies by disease",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for tetanus is an environmental reservoir or endemic recognition frame, not a point-source introduction.",
         "citation_ids": [
           "tetanus-cdc",
@@ -6107,7 +6169,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary soil exposure and vaccine-preventable disease geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Tetanus is global in environmental possibility but geographically shaped by vaccination, wound care, birth practices, and health-system access; it should not appear as mosquito-borne or route-driven.",
           "citation_ids": [
             "tetanus-cdc",
@@ -6142,7 +6204,7 @@ window.PATHOGEN_ATLAS_DATA = {
           -12.5
         ],
         "date_or_era": "Environmental exposure frame; endemicity or recognition varies by disease",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for melioidosis is an environmental reservoir or endemic recognition frame, not a point-source introduction.",
         "citation_ids": [
           "melioidosis-cdc",
@@ -6274,7 +6336,7 @@ window.PATHOGEN_ATLAS_DATA = {
           35.4
         ],
         "date_or_era": "Environmental exposure frame; endemicity or recognition varies by disease",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for coccidioidomycosis is an environmental reservoir or endemic recognition frame, not a point-source introduction.",
         "citation_ids": [
           "cocci-cdc",
@@ -6406,7 +6468,7 @@ window.PATHOGEN_ATLAS_DATA = {
           -4.3
         ],
         "date_or_era": "Historically specific recognition or epidemic-expansion frame; origin certainty varies",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas uses a cautious historical frame for HIV/AIDS: transmission routes are clear, but deep origins and early expansion require careful wording.",
         "citation_ids": [
           "hiv-who",
@@ -6473,7 +6535,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary global HIV pandemic and treatment-access geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "HIV/AIDS is global, but its geography has to keep burden, transmission networks, stigma, testing, treatment access, and prevention infrastructure visible rather than drawing one origin route.",
           "citation_ids": [
             "hiv-who",
@@ -6508,7 +6570,7 @@ window.PATHOGEN_ATLAS_DATA = {
           16.0
         ],
         "date_or_era": "Historically specific recognition or epidemic-expansion frame; origin certainty varies",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas uses a cautious historical frame for Hepatitis B: transmission routes are clear, but deep origins and early expansion require careful wording.",
         "citation_ids": [
           "hbv-who",
@@ -6575,7 +6637,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary global chronic infection and vaccination geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Hepatitis B is global but uneven, with perinatal transmission, childhood exposure, vaccination coverage, blood safety, injection exposure, and treatment access determining the risk surface.",
           "citation_ids": [
             "hbv-who",
@@ -6610,7 +6672,7 @@ window.PATHOGEN_ATLAS_DATA = {
           40.4
         ],
         "date_or_era": "Historically specific recognition or epidemic-expansion frame; origin certainty varies",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas uses a cautious historical frame for Syphilis: transmission routes are clear, but deep origins and early expansion require careful wording.",
         "citation_ids": [
           "syphilis-cdc",
@@ -6712,7 +6774,7 @@ window.PATHOGEN_ATLAS_DATA = {
           33.9
         ],
         "date_or_era": "Endemic ecology and control-program frame, not a single origin point",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for leishmaniasis is a vector-ecology and recognition frame; transmission depends on local arthropods, reservoirs, housing, rivers, or displacement.",
         "citation_ids": [
           "leish-cdc",
@@ -6864,7 +6926,7 @@ window.PATHOGEN_ATLAS_DATA = {
           -17.0
         ],
         "date_or_era": "Endemic ecology and control-program frame, not a single origin point",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for chagas disease is a vector-ecology and recognition frame; transmission depends on local arthropods, reservoirs, housing, rivers, or displacement.",
         "citation_ids": [
           "chagas-cdc",
@@ -6965,7 +7027,7 @@ window.PATHOGEN_ATLAS_DATA = {
             ]
           ],
           "date_or_era": "Contemporary endemic and migration-linked geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Chagas disease is anchored in Latin American triatomine ecology, but migration, congenital transmission, blood screening, and organ transplantation make its health-system map wider than the vector map.",
           "citation_ids": [
             "chagas-cdc",
@@ -7000,7 +7062,7 @@ window.PATHOGEN_ATLAS_DATA = {
           12.4
         ],
         "date_or_era": "Endemic ecology and control-program frame, not a single origin point",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for onchocerciasis is a vector-ecology and recognition frame; transmission depends on local arthropods, reservoirs, housing, rivers, or displacement.",
         "citation_ids": [
           "oncho-cdc",
@@ -7101,7 +7163,7 @@ window.PATHOGEN_ATLAS_DATA = {
             ]
           ],
           "date_or_era": "Contemporary riverine vector-control and elimination geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Onchocerciasis belongs as a riverine blackfly transmission realm, especially in sub-Saharan Africa, where vector ecology, ivermectin programs, and elimination campaigns define the map.",
           "citation_ids": [
             "oncho-cdc",
@@ -7136,7 +7198,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.9
         ],
         "date_or_era": "Modern healthcare and antimicrobial-resistance recognition frame",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for clostridioides difficile infection is a healthcare-recognition frame: a place where antimicrobial pressure, vulnerable hosts, and transmission control made the problem visible.",
         "citation_ids": [
           "cdiff-cdc",
@@ -7203,7 +7265,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "exposure_zone",
           "geometry_type": "world",
           "date_or_era": "Contemporary healthcare-associated and community-associated infection geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "C. difficile is a healthcare and antibiotic-exposure geography rather than a continent-scale endemic zone: hospitals, long-term care, antimicrobial use, testing, and infection control shape the mapped pattern.",
           "citation_ids": [
             "cdiff-cdc",
@@ -7238,7 +7300,7 @@ window.PATHOGEN_ATLAS_DATA = {
           42.4
         ],
         "date_or_era": "Modern healthcare and antimicrobial-resistance recognition frame",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for mrsa infection is a healthcare-recognition frame: a place where antimicrobial pressure, vulnerable hosts, and transmission control made the problem visible.",
         "citation_ids": [
           "mrsa-cdc",
@@ -7305,7 +7367,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary healthcare- and community-associated resistance geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "MRSA is global, with the meaningful atlas geography made by hospitals, long-term care, prisons, athletics, skin contact, antibiotic pressure, and local resistance surveillance.",
           "citation_ids": [
             "mrsa-cdc",
@@ -7340,7 +7402,7 @@ window.PATHOGEN_ATLAS_DATA = {
           50.1
         ],
         "date_or_era": "Modern endemicity and recognition frame; not a single biological origin point",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for tick-borne encephalitis is a vector-ecology and recognition frame because tick habitat, reservoir hosts, diagnosis, and reporting determine where the disease becomes visible.",
         "citation_ids": [
           "tbe-ecdc"
@@ -7470,7 +7532,7 @@ window.PATHOGEN_ATLAS_DATA = {
           44.9
         ],
         "date_or_era": "Modern endemicity and recognition frame; not a single biological origin point",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for anaplasmosis is a vector-ecology and recognition frame because tick habitat, reservoir hosts, diagnosis, and reporting determine where the disease becomes visible.",
         "citation_ids": [
           "anaplasmosis-cdc",
@@ -7606,7 +7668,7 @@ window.PATHOGEN_ATLAS_DATA = {
           32.8
         ],
         "date_or_era": "Modern endemicity and recognition frame; not a single biological origin point",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for ehrlichiosis is a vector-ecology and recognition frame because tick habitat, reservoir hosts, diagnosis, and reporting determine where the disease becomes visible.",
         "citation_ids": [
           "ehrlichiosis-cdc",
@@ -7715,7 +7777,7 @@ window.PATHOGEN_ATLAS_DATA = {
           41.3
         ],
         "date_or_era": "Modern endemicity and recognition frame; not a single biological origin point",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for babesiosis is a vector-ecology and recognition frame because tick habitat, reservoir hosts, diagnosis, and reporting determine where the disease becomes visible.",
         "citation_ids": [
           "babesiosis-cdc",
@@ -7847,7 +7909,7 @@ window.PATHOGEN_ATLAS_DATA = {
           40.7
         ],
         "date_or_era": "Exposure-system frame; not a single-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for shigellosis is a fecal-oral exposure frame because sanitation, water, close contact, food, and diagnostics define the visible map.",
         "citation_ids": [
           "shigella-cdc",
@@ -7914,7 +7976,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary global fecal-oral and outbreak-prone settings",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Shigellosis is global, with the operative geography made by childcare, crowded living, hygiene infrastructure, sexual transmission networks, travel, and antimicrobial resistance.",
           "citation_ids": [
             "shigella-cdc",
@@ -7949,7 +8011,7 @@ window.PATHOGEN_ATLAS_DATA = {
           22.9
         ],
         "date_or_era": "Exposure-system frame; not a single-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for rotavirus is a fecal-oral exposure frame because sanitation, water, close contact, food, and diagnostics define the visible map.",
         "citation_ids": [
           "rotavirus-cdc",
@@ -8016,7 +8078,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary global childhood disease with vaccine-shaped burden",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Rotavirus is a global childhood diarrhea surface whose severe-disease geography changed where vaccines entered routine immunization programs.",
           "citation_ids": [
             "rotavirus-cdc",
@@ -8051,7 +8113,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.7
         ],
         "date_or_era": "Exposure-system frame; not a single-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for giardiasis is a fecal-oral exposure frame because sanitation, water, close contact, food, and diagnostics define the visible map.",
         "citation_ids": [
           "giardia-cdc",
@@ -8118,7 +8180,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary waterborne and fecal-oral exposure geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Giardiasis is global; the map is cyst-contaminated water, childcare, recreation, travel, food, surfaces, and close-contact settings rather than one endemic boundary.",
           "citation_ids": [
             "giardia-cdc",
@@ -8153,7 +8215,7 @@ window.PATHOGEN_ATLAS_DATA = {
           42.0
         ],
         "date_or_era": "Exposure-system frame; not a single-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for cryptosporidiosis is a fecal-oral exposure frame because sanitation, water, close contact, food, and diagnostics define the visible map.",
         "citation_ids": [
           "crypto-cdc",
@@ -8220,7 +8282,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary oocyst-driven water and contact geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Cryptosporidiosis belongs on a global water and contact map: pools, drinking water, childcare, animal contact, farms, and immunocompromised hosts determine the risk surface.",
           "citation_ids": [
             "crypto-cdc",
@@ -8255,7 +8317,7 @@ window.PATHOGEN_ATLAS_DATA = {
           19.4
         ],
         "date_or_era": "Exposure-system frame; not a single-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for amebiasis is a fecal-oral exposure frame because sanitation, water, close contact, food, and diagnostics define the visible map.",
         "citation_ids": [
           "amebiasis-cdc",
@@ -8357,7 +8419,7 @@ window.PATHOGEN_ATLAS_DATA = {
           52.5
         ],
         "date_or_era": "Reservoir and food-system frame; not a single-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for campylobacteriosis is the reservoir or food-system setting where exposure becomes epidemiologically visible.",
         "citation_ids": [
           "campy-cdc",
@@ -8424,7 +8486,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary global foodborne and zoonotic exposure geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Campylobacteriosis is a global food-system and animal-exposure geography, especially poultry, unpasteurized milk, contaminated water, kitchens, and farm interfaces.",
           "citation_ids": [
             "campy-cdc",
@@ -8459,7 +8521,7 @@ window.PATHOGEN_ATLAS_DATA = {
           59.9
         ],
         "date_or_era": "Reservoir and food-system frame; not a single-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for yersiniosis is the reservoir or food-system setting where exposure becomes epidemiologically visible.",
         "citation_ids": [
           "yersinia-cdc",
@@ -8561,7 +8623,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.8
         ],
         "date_or_era": "Reservoir and food-system frame; not a single-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for shiga toxin-producing e. coli infection is the reservoir or food-system setting where exposure becomes epidemiologically visible.",
         "citation_ids": [
           "stec-cdc",
@@ -8628,7 +8690,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary foodborne and environmental exposure geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "STEC maps through cattle and other ruminant reservoirs, meat processing, produce fields, water, kitchens, petting zoos, and severe toxin-mediated outcomes.",
           "citation_ids": [
             "stec-cdc",
@@ -8663,7 +8725,7 @@ window.PATHOGEN_ATLAS_DATA = {
           52.5
         ],
         "date_or_era": "Modern respiratory and vaccine-era surveillance frame",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for rubella is a recognition and transmission setting, not a deep evolutionary origin claim.",
         "citation_ids": [
           "rubella-cdc",
@@ -8730,7 +8792,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary vaccine-preventable disease and congenital rubella risk",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Rubella is global in possibility but geographically shaped by vaccination coverage, immunity gaps, pregnancy exposure, and congenital rubella surveillance.",
           "citation_ids": [
             "rubella-cdc",
@@ -8765,7 +8827,7 @@ window.PATHOGEN_ATLAS_DATA = {
           42.4
         ],
         "date_or_era": "Modern respiratory and vaccine-era surveillance frame",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for mumps is a recognition and transmission setting, not a deep evolutionary origin claim.",
         "citation_ids": [
           "mumps-cdc",
@@ -8832,7 +8894,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary vaccine-preventable close-contact outbreaks",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Mumps outbreaks are best mapped as close-contact settings overlaid on vaccination and waning-immunity geography: campuses, teams, households, and congregate settings matter.",
           "citation_ids": [
             "mumps-cdc",
@@ -8867,7 +8929,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.9
         ],
         "date_or_era": "Modern respiratory and vaccine-era surveillance frame",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for varicella is a recognition and transmission setting, not a deep evolutionary origin claim.",
         "citation_ids": [
           "varicella-cdc",
@@ -8934,7 +8996,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary vaccine-shaped circulation and lifetime latency",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Varicella is global, with geography shaped by airborne and contact spread, vaccine coverage, susceptible clusters, and the lifelong latency link to shingles.",
           "citation_ids": [
             "varicella-cdc",
@@ -8969,7 +9031,7 @@ window.PATHOGEN_ATLAS_DATA = {
           31.8
         ],
         "date_or_era": "Animal-interface exposure frame; not a single-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for brucellosis is an exposure ecology, where animals, work, water, aerosols, or food practices make infection visible.",
         "citation_ids": [
           "brucellosis-cdc",
@@ -9036,7 +9098,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary animal-interface and food-safety geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Brucellosis is a global animal-interface surface, with livestock, unpasteurized dairy, slaughter, veterinary work, laboratories, and food-safety systems shaping risk.",
           "citation_ids": [
             "brucellosis-cdc",
@@ -9071,7 +9133,7 @@ window.PATHOGEN_ATLAS_DATA = {
           -22.9
         ],
         "date_or_era": "Animal-interface exposure frame; not a single-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for leptospirosis is an exposure ecology, where animals, work, water, aerosols, or food practices make infection visible.",
         "citation_ids": [
           "lepto-cdc",
@@ -9223,7 +9285,7 @@ window.PATHOGEN_ATLAS_DATA = {
           52.1
         ],
         "date_or_era": "Animal-interface exposure frame; not a single-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for q fever is an exposure ecology, where animals, work, water, aerosols, or food practices make infection visible.",
         "citation_ids": [
           "qfever-cdc",
@@ -9290,7 +9352,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary occupational and downwind animal-interface geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Q fever is a global livestock and aerosol-exposure map: birth products, farms, abattoirs, veterinary work, windborne spread, and diagnostic recognition shape the geography.",
           "citation_ids": [
             "qfever-cdc",
@@ -9325,7 +9387,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.9
         ],
         "date_or_era": "Modern antimicrobial-resistance and healthcare-network frame",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for carbapenem-resistant enterobacterales infection is a healthcare recognition frame: antimicrobial pressure, vulnerable patients, devices, colonization, and facility transfer make the route visible.",
         "citation_ids": [
           "cre-cdc",
@@ -9392,7 +9454,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary healthcare-associated resistance geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "CRE is a healthcare-network map: devices, colonization, antibiotics, long-term care, interfacility transfers, infection control, and regional laboratory detection shape spread.",
           "citation_ids": [
             "cre-cdc",
@@ -9427,7 +9489,7 @@ window.PATHOGEN_ATLAS_DATA = {
           40.7
         ],
         "date_or_era": "Modern antimicrobial-resistance and healthcare-network frame",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for vancomycin-resistant enterococcus infection is a healthcare recognition frame: antimicrobial pressure, vulnerable patients, devices, colonization, and facility transfer make the route visible.",
         "citation_ids": [
           "vre-cdc",
@@ -9494,7 +9556,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary healthcare-associated resistance geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "VRE geography follows healthcare exposure, colonization, antimicrobial pressure, environmental persistence, high-risk patients, and infection-control capacity.",
           "citation_ids": [
             "vre-cdc",
@@ -9529,7 +9591,7 @@ window.PATHOGEN_ATLAS_DATA = {
           -3.2
         ],
         "date_or_era": "Recognition and vector-ecology frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for rift valley fever is a cautious ecological-recognition frame: vector habitat, reservoirs, and surveillance make the disease visible.",
         "citation_ids": [
           "rvf-cdc",
@@ -9665,7 +9727,7 @@ window.PATHOGEN_ATLAS_DATA = {
           31.0
         ],
         "date_or_era": "Recognition and vector-ecology frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for eastern equine encephalitis is a cautious ecological-recognition frame: vector habitat, reservoirs, and surveillance make the disease visible.",
         "citation_ids": [
           "eee-cdc-about",
@@ -9793,7 +9855,7 @@ window.PATHOGEN_ATLAS_DATA = {
           44.0
         ],
         "date_or_era": "Recognition and vector-ecology frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for la crosse encephalitis is a cautious ecological-recognition frame: vector habitat, reservoirs, and surveillance make the disease visible.",
         "citation_ids": [
           "lac-cdc-about",
@@ -9902,7 +9964,7 @@ window.PATHOGEN_ATLAS_DATA = {
           7.9
         ],
         "date_or_era": "Recognition and vector-ecology frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for lymphatic filariasis is a cautious ecological-recognition frame: vector habitat, reservoirs, and surveillance make the disease visible.",
         "citation_ids": [
           "lf-cdc",
@@ -10054,7 +10116,7 @@ window.PATHOGEN_ATLAS_DATA = {
           -19.3
         ],
         "date_or_era": "Recognition and vector-ecology frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for ross river virus disease is a cautious ecological-recognition frame: vector habitat, reservoirs, and surveillance make the disease visible.",
         "citation_ids": [
           "rrv-cdc",
@@ -10163,7 +10225,7 @@ window.PATHOGEN_ATLAS_DATA = {
           -3.1
         ],
         "date_or_era": "Recognition and vector-ecology frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for oropouche virus disease is a cautious ecological-recognition frame: vector habitat, reservoirs, and surveillance make the disease visible.",
         "citation_ids": [
           "oropouche-cdc",
@@ -10295,7 +10357,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.9
         ],
         "date_or_era": "Exposure-ecology frame; not a single-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for lymphocytic choriomeningitis is an exposure system where animals, built environments, vectors, or work practices bring the pathogen into human view.",
         "citation_ids": [
           "lcm-cdc",
@@ -10397,7 +10459,7 @@ window.PATHOGEN_ATLAS_DATA = {
           40.7
         ],
         "date_or_era": "Exposure-ecology frame; not a single-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for rat-bite fever is an exposure system where animals, built environments, vectors, or work practices bring the pathogen into human view.",
         "citation_ids": [
           "rbf-cdc",
@@ -10499,7 +10561,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.8
         ],
         "date_or_era": "Exposure-ecology frame; not a single-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for tularemia is an exposure system where animals, built environments, vectors, or work practices bring the pathogen into human view.",
         "citation_ids": [
           "tularemia-cdc",
@@ -10608,7 +10670,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.6
         ],
         "date_or_era": "Environmental exposure and endemicity frame; not a point-source origin",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for histoplasmosis is an exposure ecology because endemic soils, spores, work, buildings, animals, and host susceptibility define visibility.",
         "citation_ids": [
           "histo-cdc",
@@ -10752,7 +10814,7 @@ window.PATHOGEN_ATLAS_DATA = {
           45.0
         ],
         "date_or_era": "Environmental exposure and endemicity frame; not a point-source origin",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for blastomycosis is an exposure ecology because endemic soils, spores, work, buildings, animals, and host susceptibility define visibility.",
         "citation_ids": [
           "blasto-cdc",
@@ -10880,7 +10942,7 @@ window.PATHOGEN_ATLAS_DATA = {
           20.0
         ],
         "date_or_era": "Environmental exposure and endemicity frame; not a point-source origin",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for aspergillosis is an exposure ecology because endemic soils, spores, work, buildings, animals, and host susceptibility define visibility.",
         "citation_ids": [
           "aspergillosis-cdc",
@@ -10947,7 +11009,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary global mold exposure and severe-host-risk geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Aspergillosis is global because Aspergillus spores are environmental; the severe-disease map is made by immunosuppression, transplants, neutropenia, lung disease, construction dust, and hospital air control.",
           "citation_ids": [
             "aspergillosis-cdc",
@@ -10982,7 +11044,7 @@ window.PATHOGEN_ATLAS_DATA = {
           -23.6
         ],
         "date_or_era": "Environmental exposure and endemicity frame; not a point-source origin",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for sporotrichosis is an exposure ecology because endemic soils, spores, work, buildings, animals, and host susceptibility define visibility.",
         "citation_ids": [
           "sporo-cdc",
@@ -11084,7 +11146,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.9
         ],
         "date_or_era": "Modern STI surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for gonorrhea is a surveillance and transmission-system frame because reporting, screening, stigma, and care access determine visibility.",
         "citation_ids": [
           "gonorrhea-cdc",
@@ -11151,7 +11213,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary global STI and antimicrobial-resistance geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Gonorrhea is global, with the meaningful map made by sexual networks, asymptomatic infection, screening, reproductive-health access, neonatal risk, and antimicrobial resistance.",
           "citation_ids": [
             "gonorrhea-cdc",
@@ -11186,7 +11248,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.9
         ],
         "date_or_era": "Modern STI surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for chlamydia is a surveillance and transmission-system frame because reporting, screening, stigma, and care access determine visibility.",
         "citation_ids": [
           "chlamydia-cdc",
@@ -11253,7 +11315,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary global STI surveillance and reproductive-health geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Chlamydia geography is created by sexual networks, asymptomatic infection, screening access, partner services, reproductive-health care, and reporting intensity.",
           "citation_ids": [
             "chlamydia-cdc",
@@ -11288,7 +11350,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.9
         ],
         "date_or_era": "Modern STI surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for genital herpes is a surveillance and transmission-system frame because reporting, screening, stigma, and care access determine visibility.",
         "citation_ids": [
           "herpes-cdc",
@@ -11355,7 +11417,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary global HSV sexual and perinatal-risk geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Genital herpes is a global infection surface complicated by latency, asymptomatic shedding, recurrence, stigma, pregnancy care, and neonatal prevention.",
           "citation_ids": [
             "herpes-cdc",
@@ -11390,7 +11452,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.9
         ],
         "date_or_era": "Exposure-system frame; not a single-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for acinetobacter infection is the exposure system where the pathogen becomes visible: care networks, water, devices, food, animals, or preparation practices.",
         "citation_ids": [
           "acinetobacter-cdc",
@@ -11457,7 +11519,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary healthcare-associated resistance geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Acinetobacter infections map through intensive care, wounds, devices, contaminated environments, severe illness, antibiotic pressure, and resistance surveillance.",
           "citation_ids": [
             "acinetobacter-cdc",
@@ -11492,7 +11554,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.9
         ],
         "date_or_era": "Exposure-system frame; not a single-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for pseudomonas aeruginosa infection is the exposure system where the pathogen becomes visible: care networks, water, devices, food, animals, or preparation practices.",
         "citation_ids": [
           "pseudomonas-cdc",
@@ -11559,7 +11621,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary healthcare-associated and environmental opportunist geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Pseudomonas aeruginosa is a water, device, wound, immunocompromise, hospital, and antimicrobial-resistance map, not a place-bound endemic zone.",
           "citation_ids": [
             "pseudomonas-cdc",
@@ -11594,7 +11656,7 @@ window.PATHOGEN_ATLAS_DATA = {
           29.0
         ],
         "date_or_era": "Exposure-system frame; not a single-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for vibriosis is the exposure system where the pathogen becomes visible: care networks, water, devices, food, animals, or preparation practices.",
         "citation_ids": [
           "vibrio-cdc",
@@ -11730,7 +11792,7 @@ window.PATHOGEN_ATLAS_DATA = {
           47.0
         ],
         "date_or_era": "Exposure-system frame; not a single-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for trichinellosis is the exposure system where the pathogen becomes visible: care networks, water, devices, food, animals, or preparation practices.",
         "citation_ids": [
           "trich-cdc",
@@ -11832,7 +11894,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.9
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for respiratory syncytial virus infection is framed around the exposure or surveillance system that makes the disease geographically visible, not a single definitive birthplace.",
         "citation_ids": [
           "rsv-cdc",
@@ -11899,7 +11961,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary global seasonal respiratory circulation",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "RSV is globally distributed; its meaningful atlas geography is seasonal respiratory circulation, infant hospitalization, older-adult burden, prevention access, and health-system capacity.",
           "citation_ids": [
             "rsv-cdc",
@@ -11934,7 +11996,7 @@ window.PATHOGEN_ATLAS_DATA = {
           13.5
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for meningococcal disease is framed around the exposure or surveillance system that makes the disease geographically visible, not a single definitive birthplace.",
         "citation_ids": [
           "meningo-cdc",
@@ -12070,7 +12132,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.9
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for pneumococcal disease is framed around the exposure or surveillance system that makes the disease geographically visible, not a single definitive birthplace.",
         "citation_ids": [
           "pneumo-cdc",
@@ -12137,7 +12199,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary global invasive disease and vaccine-era serotype ecology",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Pneumococcal disease is global, but severe disease is structured by respiratory carriage, age, immune status, vaccine pressure, serotype ecology, and access to diagnosis and care.",
           "citation_ids": [
             "pneumo-cdc",
@@ -12172,7 +12234,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.9
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for haemophilus influenzae type b disease is framed around the exposure or surveillance system that makes the disease geographically visible, not a single definitive birthplace.",
         "citation_ids": [
           "hib-cdc-about",
@@ -12239,7 +12301,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary vaccine-shaped respiratory and invasive disease geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Hib is global in respiratory spread, but its modern geography is vaccine-era childhood invasive disease: conjugate vaccine coverage, susceptible children, and surveillance determine what remains visible.",
           "citation_ids": [
             "hib-cdc-about",
@@ -12274,7 +12336,7 @@ window.PATHOGEN_ATLAS_DATA = {
           40.7
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for legionnaires disease is framed around the exposure or surveillance system that makes the disease geographically visible, not a single definitive birthplace.",
         "citation_ids": [
           "legionella-cdc",
@@ -12341,7 +12403,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "exposure_zone",
           "geometry_type": "world",
           "date_or_era": "Contemporary built-environment pneumonia outbreak geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Legionnaires disease is a built-infrastructure map: cooling towers, plumbing, hot tubs, hospitals, hotels, stagnant warm water, aerosolization, and outbreak investigation define its geography.",
           "citation_ids": [
             "legionella-cdc",
@@ -12376,7 +12438,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.9
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for candida auris infection is framed around the exposure or surveillance system that makes the disease geographically visible, not a single definitive birthplace.",
         "citation_ids": [
           "cauris-cdc-about",
@@ -12443,7 +12505,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "surveillance_region",
           "geometry_type": "world",
           "date_or_era": "Contemporary emerging healthcare-associated fungal resistance geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Candida auris geography is healthcare-network geography: colonized patients, environmental persistence, resistance, laboratory identification, interfacility movement, and infection-control capacity.",
           "citation_ids": [
             "cauris-cdc-about",
@@ -12478,7 +12540,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.9
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for invasive candidiasis is framed around the exposure or surveillance system that makes the disease geographically visible, not a single definitive birthplace.",
         "citation_ids": [
           "invasive-candida-cdc",
@@ -12545,7 +12607,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "exposure_zone",
           "geometry_type": "world",
           "date_or_era": "Contemporary healthcare-associated bloodstream infection geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Invasive candidiasis is a global healthcare exposure surface defined by intensive care, central venous catheters, broad-spectrum antibiotics, immune vulnerability, and diagnostic capacity.",
           "citation_ids": [
             "invasive-candida-cdc",
@@ -12580,7 +12642,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.9
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for human papillomavirus infection is framed around the exposure or surveillance system that makes the disease geographically visible, not a single definitive birthplace.",
         "citation_ids": [
           "hpv-cdc",
@@ -12647,7 +12709,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary global HPV infection and cancer-prevention geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "HPV is global; the geography is prevention inequality: sexual transmission, vaccination, cervical screening, cancer treatment access, and gendered health infrastructure.",
           "citation_ids": [
             "hpv-cdc",
@@ -12682,7 +12744,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.9
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for hepatitis c is framed around the exposure or surveillance system that makes the disease geographically visible, not a single definitive birthplace.",
         "citation_ids": [
           "hcv-cdc",
@@ -12749,7 +12811,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary chronic infection, cure, and harm-reduction geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Hepatitis C is a global bloodborne infection surface shaped by injection networks, blood safety, incarceration, harm reduction, screening, antiviral access, and chronic liver-disease care.",
           "citation_ids": [
             "hcv-cdc",
@@ -12784,7 +12846,7 @@ window.PATHOGEN_ATLAS_DATA = {
           -6.3
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for scabies is framed around the exposure or surveillance system that makes the disease geographically visible, not a single definitive birthplace.",
         "citation_ids": [
           "scabies-cdc",
@@ -12851,7 +12913,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary close-contact infestation and institutional amplification geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Scabies is global, with amplification in crowded households, care facilities, prisons, shelters, schools, and tropical-poverty settings where skin infection complications matter.",
           "citation_ids": [
             "scabies-cdc",
@@ -12886,7 +12948,7 @@ window.PATHOGEN_ATLAS_DATA = {
           22.9
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for leprosy is framed around the exposure or surveillance system that makes the disease geographically visible, not a single definitive birthplace.",
         "citation_ids": [
           "leprosy-cdc",
@@ -12988,7 +13050,7 @@ window.PATHOGEN_ATLAS_DATA = {
           14.6
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for cyclosporiasis is framed around the exposure or surveillance system that makes the disease geographically visible, not a single definitive birthplace.",
         "citation_ids": [
           "cyclospora-cdc",
@@ -13090,7 +13152,7 @@ window.PATHOGEN_ATLAS_DATA = {
           6.9
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for dracunculiasis is framed around the exposure or surveillance system that makes the disease geographically visible, not a single definitive birthplace.",
         "citation_ids": [
           "guinea-worm-cdc",
@@ -13199,7 +13261,7 @@ window.PATHOGEN_ATLAS_DATA = {
           30.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for schistosomiasis is framed around the exposure or surveillance system that makes the disease geographically visible, not a single definitive birthplace.",
         "citation_ids": [
           "schisto-cdc",
@@ -13343,7 +13405,7 @@ window.PATHOGEN_ATLAS_DATA = {
           -1.3
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for ascariasis is framed around the exposure or surveillance system that makes the disease geographically visible, not a single definitive birthplace.",
         "citation_ids": [
           "sth-who-ascariasis",
@@ -13410,7 +13472,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary soil-transmitted helminth geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Ascariasis geography is sanitation geography: fecally contaminated soil or food, childhood exposure, poverty, school-based deworming, and environmental persistence define the mapped pattern.",
           "citation_ids": [
             "sth-who-ascariasis",
@@ -13445,7 +13507,7 @@ window.PATHOGEN_ATLAS_DATA = {
           33.7
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for hookworm disease is framed around the exposure or surveillance system that makes the disease geographically visible, not a single definitive birthplace.",
         "citation_ids": [
           "sth-who-hookworm",
@@ -13589,7 +13651,7 @@ window.PATHOGEN_ATLAS_DATA = {
           48.9
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for toxoplasmosis is framed around the exposure or surveillance system that makes the disease geographically visible, not a single definitive birthplace.",
         "citation_ids": [
           "toxo-cdc",
@@ -13656,7 +13718,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary foodborne, animal-interface, soil, and congenital geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Toxoplasmosis is globally distributed; its risk surface is cats, oocysts in soil, meat cysts, food handling, pregnancy, congenital disease, and immunocompromised hosts.",
           "citation_ids": [
             "toxo-cdc",
@@ -13691,7 +13753,7 @@ window.PATHOGEN_ATLAS_DATA = {
           40.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for psittacosis is framed around the exposure or surveillance system that makes the disease geographically visible, not a single definitive birthplace.",
         "citation_ids": [
           "psittacosis-cdc",
@@ -13793,7 +13855,7 @@ window.PATHOGEN_ATLAS_DATA = {
           -2.9
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for human african trypanosomiasis is framed around the exposure or surveillance system that makes the disease geographically visible, not a single definitive birthplace.",
         "citation_ids": [
           "hat-cdc",
@@ -13925,7 +13987,7 @@ window.PATHOGEN_ATLAS_DATA = {
           42.9
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for echinococcosis is framed around the exposure or surveillance system that makes the disease geographically visible, not a single definitive birthplace.",
         "citation_ids": [
           "echino-cdc",
@@ -13992,7 +14054,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary zoonotic tapeworm transmission geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Echinococcosis geography is the dog or wild-canid, livestock, slaughter, offal, egg-contaminated environment, and cyst-disease map rather than a single route.",
           "citation_ids": [
             "echino-cdc",
@@ -14027,7 +14089,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.9
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for adenovirus infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "adeno-cdc",
@@ -14094,7 +14156,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary respiratory, contact, conjunctival, and healthcare outbreak geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Adenovirus is global; the useful spatial pattern is close-contact institutions, childcare, military training, healthcare settings, pools, and surface/water-associated conjunctivitis outbreaks.",
           "citation_ids": [
             "adeno-cdc",
@@ -14129,7 +14191,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.9
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for human parainfluenza virus infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "hpiv-cdc",
@@ -14196,7 +14258,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary global pediatric respiratory circulation",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Human parainfluenza viruses are globally distributed; the geography is seasonality, pediatric croup and lower-respiratory burden, childcare, households, and healthcare demand.",
           "citation_ids": [
             "hpiv-cdc",
@@ -14231,7 +14293,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.9
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for mycoplasma pneumoniae infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "mycoplasma-cdc",
@@ -14298,7 +14360,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary global respiratory outbreak and clinical-recognition geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Mycoplasma pneumoniae is global, with visible outbreaks shaped by schools, dormitories, households, military settings, prolonged close contact, testing, and atypical-pneumonia recognition.",
           "citation_ids": [
             "mycoplasma-cdc",
@@ -14333,7 +14395,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.9
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for group a streptococcal disease is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "gas-cdc",
@@ -14400,7 +14462,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary global respiratory and skin-contact transmission geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Group A Streptococcus is global; its risk surface combines strep throat, skin infections, crowding, wounds, care settings, invasive disease recognition, and post-infection complications.",
           "citation_ids": [
             "gas-cdc",
@@ -14435,7 +14497,7 @@ window.PATHOGEN_ATLAS_DATA = {
           1.35
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for hand, foot, and mouth disease is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "hfmd-cdc",
@@ -14502,7 +14564,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary childhood enterovirus outbreak geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Hand, foot, and mouth disease is global; the relevant layer is childcare, schools, households, surfaces, respiratory secretions, fecal material, and enterovirus-specific outbreak detection.",
           "citation_ids": [
             "hfmd-cdc",
@@ -14537,7 +14599,7 @@ window.PATHOGEN_ATLAS_DATA = {
           33.3
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for hepatitis d is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "hdv-cdc",
@@ -14604,7 +14666,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary hepatitis B-dependent HDV prevention and chronic-disease geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Hepatitis D maps onto hepatitis B infection and prevention: bloodborne and sexual exposure, injection networks, chronic liver disease, screening, and hepatitis B vaccination coverage shape the surface.",
           "citation_ids": [
             "hdv-cdc",
@@ -14639,7 +14701,7 @@ window.PATHOGEN_ATLAS_DATA = {
           22.9
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for hepatitis e is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "hev-cdc",
@@ -14775,7 +14837,7 @@ window.PATHOGEN_ATLAS_DATA = {
           19.4
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for cysticercosis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "cysticercosis-cdc",
@@ -14877,7 +14939,7 @@ window.PATHOGEN_ATLAS_DATA = {
           30.3
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for clonorchiasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "clonorchis-cdc",
@@ -14986,7 +15048,7 @@ window.PATHOGEN_ATLAS_DATA = {
           -13.5
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for fascioliasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "fasciola-cdc",
@@ -15088,7 +15150,7 @@ window.PATHOGEN_ATLAS_DATA = {
           10.8
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for paragonimiasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "paragonimus-cdc",
@@ -15240,7 +15302,7 @@ window.PATHOGEN_ATLAS_DATA = {
           35.7
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for anisakiasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "anisakis-cdc",
@@ -15342,7 +15404,7 @@ window.PATHOGEN_ATLAS_DATA = {
           1.35
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for strongyloidiasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "strongy-cdc",
@@ -15486,7 +15548,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.9
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for toxocariasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "toxocara-cdc",
@@ -15553,7 +15615,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "exposure_zone",
           "geometry_type": "world",
           "date_or_era": "Contemporary zoonotic soil and child-exposure geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Toxocariasis is a global dog/cat, soil, sandbox, yard, surface, and child-exposure map; the risk surface is environmental contamination and behavior, not travel.",
           "citation_ids": [
             "toxocara-cdc",
@@ -15588,7 +15650,7 @@ window.PATHOGEN_ATLAS_DATA = {
           41.9
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for baylisascariasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "baylisascaris-cdc",
@@ -15697,7 +15759,7 @@ window.PATHOGEN_ATLAS_DATA = {
           0.4
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for loiasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "loiasis-cdc",
@@ -15829,7 +15891,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.9
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for group b streptococcal disease is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "gbs-cdc",
@@ -15896,7 +15958,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "global_distribution",
           "geometry_type": "world",
           "date_or_era": "Contemporary maternal-neonatal prevention geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Group B Streptococcus disease is global; the meaningful map is maternal colonization, neonatal exposure, prenatal screening, intrapartum antibiotics, and neonatal care capacity.",
           "citation_ids": [
             "gbs-cdc",
@@ -15931,7 +15993,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.9
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for clostridium perfringens food poisoning is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "cperfringens-cdc"
@@ -15989,7 +16051,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "exposure_zone",
           "geometry_type": "world",
           "date_or_era": "Contemporary food-service and institutional-meal outbreak geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Clostridium perfringens food poisoning is a global food-handling map: large batches, cooked meat or poultry, gravy, cooling, holding temperatures, and institutional meals drive outbreaks.",
           "citation_ids": [
             "cperfringens-cdc"
@@ -16023,7 +16085,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.9
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for staphylococcal food poisoning is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "staph-food-cdc"
@@ -16081,7 +16143,7 @@ window.PATHOGEN_ATLAS_DATA = {
           "layer_type": "exposure_zone",
           "geometry_type": "world",
           "date_or_era": "Contemporary food-handling and rapid-onset outbreak geography",
-          "confidence": "strong",
+          "confidence": "high",
           "narrative": "Staphylococcal food poisoning is a global handling and refrigeration map: human contamination, foods held too warm, preformed toxin, and rapid outbreak recognition define the geography.",
           "citation_ids": [
             "staph-food-cdc"
@@ -16115,7 +16177,7 @@ window.PATHOGEN_ATLAS_DATA = {
           28.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for naegleria fowleri infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, detection, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "naegleria-cdc",
@@ -16224,7 +16286,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for parvovirus b19 infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "parvovirus-b19-cdc"
@@ -16315,7 +16377,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for human metapneumovirus infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "hmpv-cdc"
@@ -16406,7 +16468,7 @@ window.PATHOGEN_ATLAS_DATA = {
           43.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for powassan virus disease is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "powassan-cdc"
@@ -16504,7 +16566,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for colorado tick fever is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "colorado-tick-fever-cdc"
@@ -16625,7 +16687,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.5
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for bourbon virus disease is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "bourbon-virus-cdc"
@@ -16723,7 +16785,7 @@ window.PATHOGEN_ATLAS_DATA = {
           38.5
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for heartland virus disease is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "heartland-virus-cdc"
@@ -16821,7 +16883,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for cytomegalovirus infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "cmv-cdc"
@@ -16912,7 +16974,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for epstein-barr virus infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "ebv-cdc"
@@ -17003,7 +17065,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for cryptococcosis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "cryptococcosis-cdc"
@@ -17094,7 +17156,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for mucormycosis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "mucormycosis-cdc"
@@ -17185,7 +17247,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for pinworm infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "pinworm-cdc"
@@ -17276,7 +17338,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for trichomoniasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "trichomoniasis-cdc"
@@ -17367,7 +17429,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for creutzfeldt-jakob disease is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "cjd-cdc"
@@ -17458,7 +17520,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for ringworm is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "ringworm-cdc"
@@ -17549,7 +17611,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for molluscum contagiosum is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "molluscum-cdc"
@@ -17640,7 +17702,7 @@ window.PATHOGEN_ATLAS_DATA = {
           -1.3
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for trachoma is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "trachoma-who"
@@ -17765,7 +17827,7 @@ window.PATHOGEN_ATLAS_DATA = {
           7.9
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for yaws is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "yaws-who"
@@ -17863,7 +17925,7 @@ window.PATHOGEN_ATLAS_DATA = {
           7.9
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for buruli ulcer is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "buruli-ulcer-who"
@@ -17984,7 +18046,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for cystoisosporiasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "cystoisospora-cdc"
@@ -18082,7 +18144,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for capnocytophaga infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "capnocytophaga-cdc"
@@ -18173,7 +18235,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for acanthamoeba keratitis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "acanthamoeba-cdc"
@@ -18264,7 +18326,7 @@ window.PATHOGEN_ATLAS_DATA = {
           34.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for balamuthia mandrillaris infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "balamuthia-cdc"
@@ -18355,7 +18417,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for blastocystis infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "blastocystis-cdc"
@@ -18446,7 +18508,7 @@ window.PATHOGEN_ATLAS_DATA = {
           21.3
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for angiostrongyliasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "angiostrongylus-cdc"
@@ -18544,7 +18606,7 @@ window.PATHOGEN_ATLAS_DATA = {
           13.8
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for gnathostomiasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "gnathostoma-cdc"
@@ -18642,7 +18704,7 @@ window.PATHOGEN_ATLAS_DATA = {
           21.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for talaromycosis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "talaromycosis-cdc"
@@ -18740,7 +18802,7 @@ window.PATHOGEN_ATLAS_DATA = {
           -1.5
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for chromoblastomycosis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "chromoblastomycosis-cdc"
@@ -18838,7 +18900,7 @@ window.PATHOGEN_ATLAS_DATA = {
           13.5
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for noma is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "noma-who"
@@ -18963,7 +19025,7 @@ window.PATHOGEN_ATLAS_DATA = {
           45.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for jamestown canyon virus disease is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "jamestown-canyon-cdc"
@@ -19061,7 +19123,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for bartonella henselae infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "bartonella-cdc"
@@ -19152,7 +19214,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for cronobacter infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "cronobacter-cdc"
@@ -19243,7 +19305,7 @@ window.PATHOGEN_ATLAS_DATA = {
           13.8
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for sarcocystosis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "sarcocystosis-cdc"
@@ -19334,7 +19396,7 @@ window.PATHOGEN_ATLAS_DATA = {
           16.5
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for fasciolopsiasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "fasciolopsis-cdc"
@@ -19432,7 +19494,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for chancroid is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "chancroid-cdc"
@@ -19523,7 +19585,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for lymphogranuloma venereum is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "lgv-cdc"
@@ -19614,7 +19676,7 @@ window.PATHOGEN_ATLAS_DATA = {
           -12.4
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for donovanosis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "donovanosis-cdc"
@@ -19712,7 +19774,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for mycoplasma genitalium infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "mycoplasma-genitalium-cdc"
@@ -19803,7 +19865,7 @@ window.PATHOGEN_ATLAS_DATA = {
           12.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for mycetoma is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "mycetoma-who"
@@ -19901,7 +19963,7 @@ window.PATHOGEN_ATLAS_DATA = {
           23.1
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for severe acute respiratory syndrome is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "sars-who"
@@ -20022,7 +20084,7 @@ window.PATHOGEN_ATLAS_DATA = {
           -1.3
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for trichuriasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "trichuriasis-who"
@@ -20120,7 +20182,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for pneumocystis pneumonia is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "pneumocystis-cdc"
@@ -20211,7 +20273,7 @@ window.PATHOGEN_ATLAS_DATA = {
           19.4
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for taeniasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "taeniasis-who"
@@ -20302,7 +20364,7 @@ window.PATHOGEN_ATLAS_DATA = {
           17.4
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for opisthorchiasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "opisthorchiasis-who"
@@ -20400,7 +20462,7 @@ window.PATHOGEN_ATLAS_DATA = {
           -22.9
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for tungiasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "tungiasis-who"
@@ -20498,7 +20560,7 @@ window.PATHOGEN_ATLAS_DATA = {
           -27.5
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for hendra virus disease is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "hendra-cdc"
@@ -20596,7 +20658,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for herpes b virus infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "herpes-b-cdc"
@@ -20687,7 +20749,7 @@ window.PATHOGEN_ATLAS_DATA = {
           53.5
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for orf virus infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "orf-cdc"
@@ -20778,7 +20840,7 @@ window.PATHOGEN_ATLAS_DATA = {
           -16.5
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for chapare hemorrhagic fever is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "chapare-cdc"
@@ -20874,7 +20936,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for nontuberculous mycobacterial disease is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "ntm-cdc"
@@ -20965,7 +21027,7 @@ window.PATHOGEN_ATLAS_DATA = {
           43.1
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for elizabethkingia infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "elizabethkingia-cdc"
@@ -21056,7 +21118,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for klebsiella infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "klebsiella-cdc"
@@ -21147,7 +21209,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for esbl-producing enterobacterales infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "esbl-cdc"
@@ -21238,7 +21300,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for non-polio enterovirus infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "non-polio-enterovirus-cdc"
@@ -21329,7 +21391,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for common cold is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "common-cold-cdc"
@@ -21420,7 +21482,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for bacterial vaginosis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "bacterial-vaginosis-cdc"
@@ -21511,7 +21573,7 @@ window.PATHOGEN_ATLAS_DATA = {
           36.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for southern tick-associated rash illness is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "stari-cdc"
@@ -21609,7 +21671,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for head lice infestation is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "head-lice-cdc"
@@ -21700,7 +21762,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for pubic lice infestation is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "pubic-lice-cdc"
@@ -21791,7 +21853,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for body lice infestation is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "body-lice-cdc"
@@ -21882,7 +21944,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for myiasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "myiasis-cdc"
@@ -21980,7 +22042,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for herpes simplex virus infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "hsv-who"
@@ -22071,7 +22133,7 @@ window.PATHOGEN_ATLAS_DATA = {
           14.6
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for human t-lymphotropic virus type 1 infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "htlv1-who"
@@ -22162,7 +22224,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for shingles is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "shingles-cdc"
@@ -22253,7 +22315,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for conjunctivitis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "conjunctivitis-cdc"
@@ -22344,7 +22406,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for meningitis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "meningitis-cdc"
@@ -22435,7 +22497,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for impetigo is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "impetigo-medlineplus"
@@ -22526,7 +22588,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for cellulitis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "cellulitis-medlineplus"
@@ -22617,7 +22679,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for necrotizing fasciitis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "nec-fasc-medlineplus"
@@ -22708,7 +22770,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for helicobacter pylori infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "h-pylori-medlineplus"
@@ -22799,7 +22861,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for tinea pedis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "athletes-foot-medlineplus"
@@ -22890,7 +22952,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for vulvovaginal candidiasis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "yeast-infection-medlineplus"
@@ -22981,7 +23043,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for nocardiosis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "nocardiosis-cdc"
@@ -23072,7 +23134,7 @@ window.PATHOGEN_ATLAS_DATA = {
           -15.8
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for paracoccidioidomycosis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "paracoccidioidomycosis-cdc"
@@ -23170,7 +23232,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for acute flaccid myelitis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "afm-cdc"
@@ -23295,7 +23357,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for pneumonia is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "pneumonia-medlineplus"
@@ -23386,7 +23448,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for sinusitis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "sinusitis-medlineplus"
@@ -23477,7 +23539,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for acute bronchitis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "acute-bronchitis-medlineplus"
@@ -23568,7 +23630,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for otitis media is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "ear-infections-medlineplus"
@@ -23659,7 +23721,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for urinary tract infection is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "uti-medlineplus"
@@ -23750,7 +23812,7 @@ window.PATHOGEN_ATLAS_DATA = {
           39.0
         ],
         "date_or_era": "Recognition, exposure, or surveillance frame; not a deep-origin claim",
-        "confidence": "mixed",
+        "confidence": "moderate",
         "narrative": "The atlas origin for infectious gastroenteritis is a cautious exposure or surveillance frame, because the durable public-health geography is made by transmission setting, recognition, and prevention systems rather than one clean birthplace.",
         "citation_ids": [
           "gastroenteritis-medlineplus"
@@ -23823,6 +23885,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "variants": []
     }
   ],
-  "generated_at": "2026-05-17T17:49:04",
+  "generated_at": "2026-05-17T20:52:39",
   "atlas_count": 210
 };
