@@ -16671,7 +16671,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "narrative": "Bourbon virus is mapped cautiously as a central U.S. tick-surveillance realm, because human case geography is sparse and recognition-dependent rather than a mature endemicity map.",
           "citation_ids": [
             "bourbon-virus-cdc"
-          ]
+          ],
+          "evidence_note": "Low-confidence or schematic geography; keep the uncertainty visible and do not treat this layer as a precise range map."
         }
       ],
       "modern_echoes": [
@@ -16769,7 +16770,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "narrative": "Heartland virus is represented as a soft midwestern and southern U.S. tick-surveillance realm, emphasizing sparse recognized cases, tick exposure, and diagnostic visibility rather than exact range boundaries.",
           "citation_ids": [
             "heartland-virus-cdc"
-          ]
+          ],
+          "evidence_note": "Low-confidence or schematic geography; keep the uncertainty visible and do not treat this layer as a precise range map."
         }
       ],
       "modern_echoes": [
@@ -18303,7 +18305,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "narrative": "Balamuthia mandrillaris infection is mapped cautiously as a global soil and dust exposure layer, because disease is rare and recognition-dependent while the relevant environmental exposure is broad.",
           "citation_ids": [
             "balamuthia-cdc"
-          ]
+          ],
+          "evidence_note": "Low-confidence or schematic geography; keep the uncertainty visible and do not treat this layer as a precise range map."
         }
       ],
       "modern_echoes": [
@@ -19471,7 +19474,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "narrative": "Chancroid is mapped cautiously as a global rare-STI surveillance layer, because contemporary visibility depends heavily on local outbreaks, diagnostic capacity, syndromic ulcer care, and declining incidence in many settings.",
           "citation_ids": [
             "chancroid-cdc"
-          ]
+          ],
+          "evidence_note": "Low-confidence or schematic geography; keep the uncertainty visible and do not treat this layer as a precise range map."
         }
       ],
       "modern_echoes": [
@@ -19660,7 +19664,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "narrative": "Donovanosis is mapped as a low-confidence tropical rare-STI belt, reflecting its association with tropical and resource-limited settings while avoiding false precision about contemporary focal distribution.",
           "citation_ids": [
             "donovanosis-cdc"
-          ]
+          ],
+          "evidence_note": "Low-confidence or schematic geography; keep the uncertainty visible and do not treat this layer as a precise range map."
         }
       ],
       "modern_echoes": [
@@ -20822,7 +20827,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "narrative": "Chapare hemorrhagic fever is shown as a low-confidence Bolivian outbreak and rodent-spillover region, because recognized human geography is sparse, outbreak-linked, and strongly shaped by detection and healthcare transmission.",
           "citation_ids": [
             "chapare-cdc"
-          ]
+          ],
+          "evidence_note": "Low-confidence or schematic geography; keep the uncertainty visible and do not treat this layer as a precise range map."
         }
       ],
       "modern_echoes": [
@@ -22292,7 +22298,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "narrative": "Conjunctivitis is retained as a low-confidence global syndrome layer rather than a precise pathogen map, because infectious and noninfectious causes, schools, households, respiratory spread, water exposure, and care-seeking determine what is seen.",
           "citation_ids": [
             "conjunctivitis-cdc"
-          ]
+          ],
+          "evidence_note": "Low-confidence or schematic geography; keep the uncertainty visible and do not treat this layer as a precise range map."
         }
       ],
       "modern_echoes": [
@@ -22383,7 +22390,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "narrative": "Meningitis is mapped cautiously as a global syndrome and surveillance layer, because its geographic meaning depends on the pathogen, vaccination, age structure, outbreaks, and diagnostic systems rather than one universal endemic boundary.",
           "citation_ids": [
             "meningitis-cdc"
-          ]
+          ],
+          "evidence_note": "Low-confidence or schematic geography; keep the uncertainty visible and do not treat this layer as a precise range map."
         }
       ],
       "modern_echoes": [
@@ -22565,7 +22573,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "narrative": "Cellulitis is mapped as a low-confidence global skin-break and care-access layer, because its atlas geography is injury, edema, diabetes, healthcare access, and bacterial ecology rather than a single pathogen range.",
           "citation_ids": [
             "cellulitis-medlineplus"
-          ]
+          ],
+          "evidence_note": "Low-confidence or schematic geography; keep the uncertainty visible and do not treat this layer as a precise range map."
         }
       ],
       "modern_echoes": [
@@ -22656,7 +22665,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "narrative": "Necrotizing fasciitis is mapped as a global severe soft-tissue infection surveillance layer, with geography shaped by wounds, surgery, trauma, host risk, rapid care access, and diagnostic recognition rather than a stable endemic area.",
           "citation_ids": [
             "nec-fasc-medlineplus"
-          ]
+          ],
+          "evidence_note": "Low-confidence or schematic geography; keep the uncertainty visible and do not treat this layer as a precise range map."
         }
       ],
       "modern_echoes": [
@@ -23243,7 +23253,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "narrative": "Acute flaccid myelitis is shown as a U.S. surveillance-region layer because this entry is anchored to CDC case recognition and neurologic syndrome tracking rather than a confirmed single-pathogen endemic geography.",
           "citation_ids": [
             "afm-cdc"
-          ]
+          ],
+          "evidence_note": "Low-confidence or schematic geography; keep the uncertainty visible and do not treat this layer as a precise range map."
         }
       ],
       "modern_echoes": [
@@ -23334,7 +23345,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "narrative": "Pneumonia is mapped as a global respiratory syndrome and care-access layer, because its atlas meaning depends on pathogen, vaccination, age, air quality, comorbidity, healthcare access, and surveillance rather than one mapable agent.",
           "citation_ids": [
             "pneumonia-medlineplus"
-          ]
+          ],
+          "evidence_note": "Low-confidence or schematic geography; keep the uncertainty visible and do not treat this layer as a precise range map."
         }
       ],
       "modern_echoes": [
@@ -23425,7 +23437,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "narrative": "Sinusitis is mapped as a low-confidence global upper-respiratory syndrome layer, where allergy, viral infection, bacterial complications, care-seeking, and antibiotic practices drive geography more than a discrete pathogen range.",
           "citation_ids": [
             "sinusitis-medlineplus"
-          ]
+          ],
+          "evidence_note": "Low-confidence or schematic geography; keep the uncertainty visible and do not treat this layer as a precise range map."
         }
       ],
       "modern_echoes": [
@@ -23516,7 +23529,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "narrative": "Acute bronchitis is mapped as a global respiratory syndrome layer, with practical geography in viral seasonality, indoor contact, air quality, care-seeking, and antibiotic stewardship rather than a bounded endemic surface.",
           "citation_ids": [
             "acute-bronchitis-medlineplus"
-          ]
+          ],
+          "evidence_note": "Low-confidence or schematic geography; keep the uncertainty visible and do not treat this layer as a precise range map."
         }
       ],
       "modern_echoes": [
@@ -23607,7 +23621,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "narrative": "Otitis media is mapped as a global childhood respiratory and primary-care layer, with geography shaped by age, viral respiratory infections, vaccination, crowding, smoke exposure, and treatment access.",
           "citation_ids": [
             "ear-infections-medlineplus"
-          ]
+          ],
+          "evidence_note": "Low-confidence or schematic geography; keep the uncertainty visible and do not treat this layer as a precise range map."
         }
       ],
       "modern_echoes": [
@@ -23789,7 +23804,8 @@ window.PATHOGEN_ATLAS_DATA = {
           "narrative": "Infectious gastroenteritis is mapped as a global enteric syndrome layer, where the real geography is sanitation, food systems, water, childcare, travel, pathogen mix, dehydration care, and diagnostic visibility.",
           "citation_ids": [
             "gastroenteritis-medlineplus"
-          ]
+          ],
+          "evidence_note": "Low-confidence or schematic geography; keep the uncertainty visible and do not treat this layer as a precise range map."
         }
       ],
       "modern_echoes": [
@@ -23823,6 +23839,6 @@ window.PATHOGEN_ATLAS_DATA = {
       "variants": []
     }
   ],
-  "generated_at": "2026-05-17T20:52:39",
+  "generated_at": "2026-05-17T21:53:57",
   "atlas_count": 210
 };

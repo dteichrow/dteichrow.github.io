@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T20:52:39",
+  "generated_at": "2026-05-17T21:53:57",
   "count": 5,
   "tools": [
     {
@@ -8,8 +8,8 @@
       "tool_type": "timeline",
       "status": "open",
       "status_label": "Open now",
-      "summary": "A cinematic timeline of major U.S.-linked epidemics and disease outbreaks, designed as a public-health memory machine.",
-      "evidence_model": "Outbreak ledger with source links, rights-checked archival visuals, uncertainty notes, and public-health turning points",
+      "summary": "A source-backed teaching timeline of major U.S.-linked epidemics, outbreaks, and public-health turning points.",
+      "evidence_model": "Defensible outbreak ledger with source IDs, claim-level confidence categories, rights-checked archival visuals, visible uncertainty notes, and conservative public-health interpretation",
       "public_route": "tools/american-epidemic-timeline/",
       "keywords": [
         "american epidemics",
@@ -18,7 +18,7 @@
         "outbreaks",
         "teaching tool"
       ],
-      "long_note": "The timeline follows large epidemics, public-health turning points, and regional outbreaks where the evidence is strong enough to carry the story."
+      "long_note": "The timeline follows major epidemics, public-health turning points, and selected regional outbreaks where the evidence is strong enough to carry the story without overdiagnosis or fake precision."
     },
     {
       "tool_id": "pathogen-atlas",
@@ -27,7 +27,7 @@
       "status": "open",
       "status_label": "Open now",
       "summary": "An origin-and-spread atlas that links geography, uncertainty, papers, and prior writing instead of flattening pathogens into another story stream.",
-      "evidence_model": "Origin claims, route confidence, and linked papers",
+      "evidence_model": "Origin claims, route confidence, linked papers, and central source-registry validation",
       "public_route": "atlases/pathogen/",
       "keywords": [
         "pathogen",
@@ -45,7 +45,7 @@
       "status": "open",
       "status_label": "Open now",
       "summary": "A map-first digital exhibit on shipboard disease ecology, ports, vectors, provisions, quarantine, violence, and the movement constraints of life at sea.",
-      "evidence_model": "Exhibit stations with routes, mechanisms, archival plates, source credits, and guided-tour narrative",
+      "evidence_model": "Exhibit stations with routes, mechanisms, archival plates, claim-level source IDs, confidence notes, and guided-tour narrative",
       "public_route": "atlases/maritime/",
       "keywords": [
         "maritime",
