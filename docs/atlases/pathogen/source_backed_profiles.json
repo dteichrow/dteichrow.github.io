@@ -1,6 +1,75 @@
-window.PATHOGEN_ATLAS_BASE_URL = "/";
-window.PATHOGEN_ATLAS_DATA = {
-  "entries": [
+{
+  "schema_version": "2.0.0",
+  "generated_at": "2026-05-18",
+  "description": "Curated, source-backed Pathogen Atlas profiles focused on origins, reservoirs, transmission ecology, historical spread, and evidentiary uncertainty.",
+  "confidence_legend": {
+    "high": "Multiple strong sources, or one definitive primary/technical source for the specific displayed claim.",
+    "moderate": "Supported but limited, indirect, or dependent on interpretation/model choice.",
+    "low": "Plausible or teachable but thin; must remain visibly caveated.",
+    "contested": "Serious scholarly disagreement, unresolved origin debate, or contested retrospective diagnosis.",
+    "unknown": "The atlas does not have enough support to make the claim; display as unknown rather than smoothing over the gap."
+  },
+  "evidence_types": [
+    {
+      "id": "textual_historical",
+      "label": "Textual / historical"
+    },
+    {
+      "id": "archaeological_skeletal",
+      "label": "Archaeological / skeletal"
+    },
+    {
+      "id": "ancient_dna_genomic",
+      "label": "Ancient DNA / genomic"
+    },
+    {
+      "id": "ecological_vector_reservoir",
+      "label": "Ecological / reservoir"
+    },
+    {
+      "id": "modern_epidemiologic",
+      "label": "Modern epidemiologic"
+    }
+  ],
+  "source_audit": {
+    "standard": "Every displayed factual claim must resolve to a source_id in data/sources/sources.json; origin claims separate earliest evidence from true origin.",
+    "source_hierarchy": [
+      "technical genomic or ancient-DNA papers",
+      "WHO/CDC official public-health sources",
+      "peer-reviewed reviews",
+      "academic historical synthesis",
+      "primary historical sources only as descriptions"
+    ],
+    "excluded_source_policy": "Wikipedia and unsourced web summaries are not used as evidentiary support.",
+    "profile_count": 16
+  },
+  "deferred_profiles": [
+    {
+      "name": "Bartonella quintana / trench fever",
+      "reason": "Good candidate, but needs a separate pass to balance ancient DNA, trench fever history, and modern homelessness/body-louse ecology without overclaiming."
+    },
+    {
+      "name": "Ebola, Marburg, Nipah, and other high-consequence zoonoses",
+      "reason": "Important, but would pull the atlas toward outbreak-response geography rather than the first public-history backbone."
+    },
+    {
+      "name": "H5N1 avian influenza as a standalone profile",
+      "reason": "Current and fast-changing; folded under Influenza A for now to avoid stale claims."
+    },
+    {
+      "name": "Prion diseases",
+      "reason": "Different evidentiary and transmission logic; better as a later specialized profile."
+    },
+    {
+      "name": "Noninfectious epidemic/toxin profiles",
+      "reason": "Out of scope for this pathogen-focused pass."
+    },
+    {
+      "name": "Common-cold coronaviruses/rhinoviruses",
+      "reason": "Too broad for a defensible origin/history profile in this initial museum set."
+    }
+  ],
+  "atlas": [
     {
       "slug": "variola-smallpox",
       "name": "Variola virus / smallpox",
@@ -287,11 +356,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [],
       "linked_blog_posts": [],
       "variants": [],
-      "transmission_group": "Respiratory / close contact",
-      "color": "#b56b5b",
-      "status_label": "Consensus",
-      "writing_state_label": "No dedicated post yet",
-      "citation_count": 5
+      "transmission_group": "Respiratory / close contact"
     },
     {
       "slug": "yersinia-pestis-plague",
@@ -649,11 +714,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [],
       "linked_blog_posts": [],
       "variants": [],
-      "transmission_group": "Flea-borne zoonosis",
-      "color": "#b9754f",
-      "status_label": "Consensus",
-      "writing_state_label": "No dedicated post yet",
-      "citation_count": 6
+      "transmission_group": "Flea-borne zoonosis"
     },
     {
       "slug": "vibrio-cholerae-cholera",
@@ -964,11 +1025,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [],
       "linked_blog_posts": [],
       "variants": [],
-      "transmission_group": "Fecal-oral / waterborne",
-      "color": "#5a9bd4",
-      "status_label": "Consensus",
-      "writing_state_label": "No dedicated post yet",
-      "citation_count": 4
+      "transmission_group": "Fecal-oral / waterborne"
     },
     {
       "slug": "mycobacterium-tuberculosis-complex",
@@ -1269,11 +1326,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [],
       "linked_blog_posts": [],
       "variants": [],
-      "transmission_group": "Airborne / chronic infection",
-      "color": "#d98e5f",
-      "status_label": "Consensus",
-      "writing_state_label": "No dedicated post yet",
-      "citation_count": 5
+      "transmission_group": "Airborne / chronic infection"
     },
     {
       "slug": "influenza-a",
@@ -1565,11 +1618,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [],
       "linked_blog_posts": [],
       "variants": [],
-      "transmission_group": "Respiratory / zoonotic reservoir",
-      "color": "#b7c7df",
-      "status_label": "Consensus",
-      "writing_state_label": "No dedicated post yet",
-      "citation_count": 5
+      "transmission_group": "Respiratory / zoonotic reservoir"
     },
     {
       "slug": "measles-virus",
@@ -1847,11 +1896,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [],
       "linked_blog_posts": [],
       "variants": [],
-      "transmission_group": "Respiratory / airborne",
-      "color": "#d6c06a",
-      "status_label": "Consensus",
-      "writing_state_label": "No dedicated post yet",
-      "citation_count": 5
+      "transmission_group": "Respiratory / airborne"
     },
     {
       "slug": "yellow-fever-virus",
@@ -2185,11 +2230,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [],
       "linked_blog_posts": [],
       "variants": [],
-      "transmission_group": "Mosquito-borne / sylvatic-urban",
-      "color": "#d86a4f",
-      "status_label": "Consensus",
-      "writing_state_label": "No dedicated post yet",
-      "citation_count": 5
+      "transmission_group": "Mosquito-borne / sylvatic-urban"
     },
     {
       "slug": "dengue-virus",
@@ -2468,11 +2509,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [],
       "linked_blog_posts": [],
       "variants": [],
-      "transmission_group": "Mosquito-borne / urban arbovirus",
-      "color": "#c9a84c",
-      "status_label": "Consensus",
-      "writing_state_label": "No dedicated post yet",
-      "citation_count": 3
+      "transmission_group": "Mosquito-borne / urban arbovirus"
     },
     {
       "slug": "malaria-parasites",
@@ -2748,11 +2785,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [],
       "linked_blog_posts": [],
       "variants": [],
-      "transmission_group": "Mosquito-borne parasite",
-      "color": "#5abf7c",
-      "status_label": "Consensus",
-      "writing_state_label": "No dedicated post yet",
-      "citation_count": 3
+      "transmission_group": "Mosquito-borne parasite"
     },
     {
       "slug": "hantaviruses",
@@ -3044,11 +3077,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [],
       "linked_blog_posts": [],
       "variants": [],
-      "transmission_group": "Rodent / environmental",
-      "color": "#7aa96b",
-      "status_label": "Consensus",
-      "writing_state_label": "No dedicated post yet",
-      "citation_count": 5
+      "transmission_group": "Rodent / environmental"
     },
     {
       "slug": "hiv-1",
@@ -3358,11 +3387,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [],
       "linked_blog_posts": [],
       "variants": [],
-      "transmission_group": "Sexual / bloodborne",
-      "color": "#d26b91",
-      "status_label": "Consensus",
-      "writing_state_label": "No dedicated post yet",
-      "citation_count": 6
+      "transmission_group": "Sexual / bloodborne"
     },
     {
       "slug": "sars-cov-2",
@@ -3710,11 +3735,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [],
       "linked_blog_posts": [],
       "variants": [],
-      "transmission_group": "Respiratory / pandemic",
-      "color": "#7b8fa8",
-      "status_label": "Contested",
-      "writing_state_label": "No dedicated post yet",
-      "citation_count": 7
+      "transmission_group": "Respiratory / pandemic"
     },
     {
       "slug": "poliovirus",
@@ -4001,11 +4022,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [],
       "linked_blog_posts": [],
       "variants": [],
-      "transmission_group": "Fecal-oral / vaccine-preventable",
-      "color": "#7c9fd1",
-      "status_label": "Consensus",
-      "writing_state_label": "No dedicated post yet",
-      "citation_count": 5
+      "transmission_group": "Fecal-oral / vaccine-preventable"
     },
     {
       "slug": "treponema-pallidum-syphilis",
@@ -4283,11 +4300,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [],
       "linked_blog_posts": [],
       "variants": [],
-      "transmission_group": "Sexual / congenital / contact treponematoses",
-      "color": "#c38a65",
-      "status_label": "Contested",
-      "writing_state_label": "No dedicated post yet",
-      "citation_count": 3
+      "transmission_group": "Sexual / congenital / contact treponematoses"
     },
     {
       "slug": "salmonella-enterica",
@@ -4562,11 +4575,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [],
       "linked_blog_posts": [],
       "variants": [],
-      "transmission_group": "Foodborne / fecal-oral",
-      "color": "#bc8f5f",
-      "status_label": "Contested",
-      "writing_state_label": "No dedicated post yet",
-      "citation_count": 3
+      "transmission_group": "Foodborne / fecal-oral"
     },
     {
       "slug": "rickettsia-prowazekii-epidemic-typhus",
@@ -4851,82 +4860,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "related_stories": [],
       "linked_blog_posts": [],
       "variants": [],
-      "transmission_group": "Louse-borne / crowding",
-      "color": "#9a8c5f",
-      "status_label": "Consensus",
-      "writing_state_label": "No dedicated post yet",
-      "citation_count": 4
-    }
-  ],
-  "generated_at": "2026-05-18",
-  "atlas_count": 16,
-  "schema_version": "2.0.0",
-  "description": "Curated, source-backed Pathogen Atlas profiles focused on origins, reservoirs, transmission ecology, historical spread, and evidentiary uncertainty.",
-  "confidence_legend": {
-    "high": "Multiple strong sources, or one definitive primary/technical source for the specific displayed claim.",
-    "moderate": "Supported but limited, indirect, or dependent on interpretation/model choice.",
-    "low": "Plausible or teachable but thin; must remain visibly caveated.",
-    "contested": "Serious scholarly disagreement, unresolved origin debate, or contested retrospective diagnosis.",
-    "unknown": "The atlas does not have enough support to make the claim; display as unknown rather than smoothing over the gap."
-  },
-  "evidence_types": [
-    {
-      "id": "textual_historical",
-      "label": "Textual / historical"
-    },
-    {
-      "id": "archaeological_skeletal",
-      "label": "Archaeological / skeletal"
-    },
-    {
-      "id": "ancient_dna_genomic",
-      "label": "Ancient DNA / genomic"
-    },
-    {
-      "id": "ecological_vector_reservoir",
-      "label": "Ecological / reservoir"
-    },
-    {
-      "id": "modern_epidemiologic",
-      "label": "Modern epidemiologic"
-    }
-  ],
-  "source_audit": {
-    "standard": "Every displayed factual claim must resolve to a source_id in data/sources/sources.json; origin claims separate earliest evidence from true origin.",
-    "source_hierarchy": [
-      "technical genomic or ancient-DNA papers",
-      "WHO/CDC official public-health sources",
-      "peer-reviewed reviews",
-      "academic historical synthesis",
-      "primary historical sources only as descriptions"
-    ],
-    "excluded_source_policy": "Wikipedia and unsourced web summaries are not used as evidentiary support.",
-    "profile_count": 16
-  },
-  "deferred_profiles": [
-    {
-      "name": "Bartonella quintana / trench fever",
-      "reason": "Good candidate, but needs a separate pass to balance ancient DNA, trench fever history, and modern homelessness/body-louse ecology without overclaiming."
-    },
-    {
-      "name": "Ebola, Marburg, Nipah, and other high-consequence zoonoses",
-      "reason": "Important, but would pull the atlas toward outbreak-response geography rather than the first public-history backbone."
-    },
-    {
-      "name": "H5N1 avian influenza as a standalone profile",
-      "reason": "Current and fast-changing; folded under Influenza A for now to avoid stale claims."
-    },
-    {
-      "name": "Prion diseases",
-      "reason": "Different evidentiary and transmission logic; better as a later specialized profile."
-    },
-    {
-      "name": "Noninfectious epidemic/toxin profiles",
-      "reason": "Out of scope for this pathogen-focused pass."
-    },
-    {
-      "name": "Common-cold coronaviruses/rhinoviruses",
-      "reason": "Too broad for a defensible origin/history profile in this initial museum set."
+      "transmission_group": "Louse-borne / crowding"
     }
   ]
-};
+}
