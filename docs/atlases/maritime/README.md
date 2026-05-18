@@ -26,6 +26,8 @@ external/maritime_disease_atlas/index.html?youtube=1&tour=1&pace=0.55
 
 The video script must not add claims beyond the exhibit data unless those claims are also added with source IDs, confidence, and uncertainty notes.
 
+The recording packet lives in `notes/maritime-disease-atlas-youtube-recording-packet/`. It includes the timestamped recording script, caption draft, chapter markers, capture checklist, and shot replacement guide. A public-final MP4 should wait for Devin's recorded narration.
+
 ## Evidence Standard
 
 Every displayed maritime case module must include source IDs. Retrospective diagnosis should remain conservative:
@@ -52,11 +54,19 @@ Allowed map claim types follow the public UI language: documented route, typical
 
 ## Current Included Modules
 
-V1 includes 15 modules: scurvy and naval provisioning, Grosse Ile ship fever, New York cholera quarantine, Atlantic yellow fever port ecology, Mediterranean plague lazarettos, smallpox maritime isolation, the Middle Passage, pirate ports, wounds and sepsis, typhoid provisions, flux/dysentery, Ellis Island inspection, San Francisco plague, cruise-ship norovirus, and cruise-ship COVID-19.
+V1 includes 16 modules: scurvy and naval provisioning, Grosse Ile ship fever, New York cholera quarantine, Atlantic yellow fever port ecology, Mediterranean plague lazarettos, Algiers plague and the American sanitary ban, smallpox maritime isolation, the Middle Passage, pirate ports, wounds and sepsis, typhoid provisions, flux/dysentery, Ellis Island inspection, San Francisco plague, cruise-ship norovirus, and cruise-ship COVID-19.
 
 ## Deferred Modules
 
-Deferred candidates are listed in the module payload. The main V1 exclusions are Barbary captivity and plague, convict ships/prison hulks, hantavirus cruise-ship claims, precise Middle Passage cause-specific mortality fractions, and single-ship yellow-fever import reconstructions.
+Deferred candidates are listed in the module payload and explained in `notes/maritime-disease-atlas-source-triage.md`. The main V1 exclusions are unsupported Barbary captivity plague mortality claims, convict ships/prison hulks, hantavirus cruise-ship claims, precise Middle Passage cause-specific mortality fractions, and single-ship yellow-fever import reconstructions.
+
+## Not Included And Why
+
+- Barbary plague is included only as the narrower Algiers sanitary-ban case; claims that plague decided the Barbary Wars or killed most American captives are excluded.
+- Convict ships and prison hulks need a separate source packet before display because prison hulks, convict transports, POW hulks, and disease labels are easy to conflate.
+- Hantavirus cruise-ship claims are excluded without official maritime outbreak support.
+- Middle Passage cause-specific disease proportions are excluded; total mortality and voyage conditions are better supported than precise cause-specific attribution.
+- Single-ship yellow-fever import routes are excluded unless named-voyage evidence supports them.
 
 ## Validation
 

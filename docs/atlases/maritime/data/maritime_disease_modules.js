@@ -23,13 +23,14 @@ window.MARITIME_DISEASE_MODULES = {
     "known_limits": [
       "Cause-specific mortality is often unavailable for older voyages.",
       "Historical labels such as flux, fever, pestilence, and ship fever are not automatically pathogen-specific diagnoses.",
-      "Port quarantine is treated as infrastructure and political economy, not as proof that a specific ship imported a specific epidemic."
+      "Port quarantine is treated as infrastructure and political economy, not as proof that a specific ship imported a specific epidemic.",
+      "Barbary plague is represented through the narrower Algiers sanitary-ban case; this atlas does not claim that disease decided the Barbary Wars or that most American captives died of plague."
     ]
   },
   "deferred_modules": [
     {
-      "candidate": "Barbary captivity and plague",
-      "reason": "Potentially useful, but V1 needs stronger case-level sources before tying captivity, plague, and American naval movement together."
+      "candidate": "Barbary captivity plague mortality",
+      "reason": "Narrowed. V1 now includes the 1817-1818 Algiers plague and American sanitary-ban case, but excludes unsupported claims that plague determined Barbary captivity outcomes or the Barbary Wars."
     },
     {
       "candidate": "Convict ships and prison hulks",
@@ -288,6 +289,27 @@ window.MARITIME_DISEASE_MODULES = {
       "source_type": "book"
     },
     {
+      "source_id": "maritime-delange-algiers-sanitary-ban-1818",
+      "short_citation": "de Lange. The Plague on Board. 2017.",
+      "full_citation": "Erik de Lange. The Plague on Board: Algiers and the American Sanitary Ban of 1818. ERC Project Blog, 6 March 2017.",
+      "url_or_doi": "https://securing-europe.wp.hum.uu.nl/the-plague-on-board-algiers-and-the-american-sanitary-ban-of-1818/",
+      "source_type": "reputable encyclopedia/background only"
+    },
+    {
+      "source_id": "maritime-ini-quarantine-geographies-2023",
+      "short_citation": "Ini. Quarantine and Diseased Geographies. 2024.",
+      "full_citation": "Marina Ini. Quarantine, Diseased Geographies, and Cross-Cultural Encounters in the Eighteenth-Century Mediterranean. The Historical Journal. 2024;67(2):338-359.",
+      "url_or_doi": "https://doi.org/10.1017/S0018246X23000596",
+      "source_type": "peer-reviewed article"
+    },
+    {
+      "source_id": "maritime-state-barbary-wars",
+      "short_citation": "Office of the Historian. Barbary Wars.",
+      "full_citation": "U.S. Department of State, Office of the Historian. Barbary Wars, 1801-1805 and 1815-1816.",
+      "url_or_doi": "https://history.state.gov/milestones/1801-1829/barbary-wars",
+      "source_type": "government report"
+    },
+    {
       "source_id": "maritime-cdc-vsp-outbreaks",
       "short_citation": "CDC Vessel Sanitation Program. Cruise ship outbreak updates.",
       "full_citation": "CDC Vessel Sanitation Program. Cruise Ship Outbreak Updates.",
@@ -531,6 +553,54 @@ window.MARITIME_DISEASE_MODULES = {
           "confidence": "high",
           "claim_type": "public-health infrastructure",
           "notes": "Supports the exhibit framing of quarantine as infrastructure."
+        }
+      ]
+    },
+    {
+      "id": "algiers_plague_sanitary_ban_1818",
+      "title": "Algiers plague and the American sanitary ban",
+      "date_range": "1817-1818",
+      "century_tags": ["19th century"],
+      "geography": "Algiers Bay and the western Mediterranean",
+      "route_or_setting": "port quarantine and naval squadron",
+      "setting_tags": ["port city", "naval campaign", "quarantine station", "trade network"],
+      "diseases_or_conditions": ["plague"],
+      "agents": ["Yersinia pestis"],
+      "transmission_or_cause": ["vector-borne", "quarantine exposure"],
+      "mechanism_tags": ["quarantine", "ports", "empire/war"],
+      "maritime_mechanism": "The Algiers outbreak turned plague fear into a naval and diplomatic problem: U.S. consul William Shaler pushed to keep Algerine sailors from boarding American vessels while Mediterranean quarantine systems treated Barbary Coast provenance as a sanitary category.",
+      "historical_context": "This case narrows the earlier Barbary-plague idea into a supportable claim about plague, corsair mobility, naval presence, and quarantine politics after the Barbary Wars.",
+      "human_burden": {
+        "burden_type": "estimated",
+        "summary": "A scholar-authored synthesis reports Daniel Panzac's estimate that as much as one third of Algiers's urban population died between June and September 1817; the module does not assign mortality to American captives or sailors.",
+        "source_ids": ["maritime-delange-algiers-sanitary-ban-1818"]
+      },
+      "public_health_response": "Sanitary exclusion, restrictions on boarding American ships, Mediterranean quarantine routines, bills of health, and port-health surveillance.",
+      "uncertainty_note": "The sanitary-ban case is supportable; claims that plague decided the Barbary Wars, drove American captivity outcomes, or killed most captives are not supported here.",
+      "confidence": "moderate",
+      "source_ids": ["maritime-delange-algiers-sanitary-ban-1818", "maritime-ini-quarantine-geographies-2023", "maritime-state-barbary-wars", "plague-who"],
+      "map_geometry_or_route": {
+        "geometry_type": "point",
+        "claim_type": "port location",
+        "route_confidence": "moderate",
+        "source_ids": ["maritime-delange-algiers-sanitary-ban-1818", "maritime-state-barbary-wars"],
+        "coordinates": [3.06, 36.75]
+      },
+      "related_blog_links": [],
+      "claims": [
+        {
+          "claim": "The 1817-1818 Algiers case is best taught as sanitary exclusion and maritime security, not as proof that plague caused the Barbary Wars.",
+          "source_ids": ["maritime-delange-algiers-sanitary-ban-1818", "maritime-state-barbary-wars"],
+          "confidence": "moderate",
+          "claim_type": "interpretive synthesis",
+          "notes": "Narrowed from the earlier deferred Barbary captivity and plague candidate."
+        },
+        {
+          "claim": "Mediterranean quarantine systems used provenance, bills of health, and quarantine duration to sort perceived danger from Ottoman and Barbary Coast ports.",
+          "source_ids": ["maritime-ini-quarantine-geographies-2023"],
+          "confidence": "high",
+          "claim_type": "public-health infrastructure",
+          "notes": "Supports the quarantine-system framing without assigning a specific ship-to-city transmission chain."
         }
       ]
     },

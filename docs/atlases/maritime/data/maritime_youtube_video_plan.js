@@ -52,8 +52,8 @@ window.MARITIME_YOUTUBE_VIDEO_PLAN = {
       "start_time": "0:45",
       "duration_seconds": 60,
       "scenarios": ["pirate_network"],
-      "module_ids": ["pirate_ports_caribbean_network", "mediterranean_plague_lazarettos", "san_francisco_plague_port_1900"],
-      "source_ids": ["maritime-rediker-between-devil", "maritime-rediker-villains", "maritime-booker-quarantine-2007", "maritime-tognotti-quarantine-2013"],
+      "module_ids": ["pirate_ports_caribbean_network", "mediterranean_plague_lazarettos", "algiers_plague_sanitary_ban_1818", "san_francisco_plague_port_1900"],
+      "source_ids": ["maritime-rediker-between-devil", "maritime-rediker-villains", "maritime-booker-quarantine-2007", "maritime-tognotti-quarantine-2013", "maritime-delange-algiers-sanitary-ban-1818", "maritime-ini-quarantine-geographies-2023"],
       "narration_job": "Use Nassau, Port Royal, Tortuga, and coastal nodes to show how maritime disease risk lived inside provisioning, labor, repair, capture, trade, and port regulation.",
       "uncertainty_note": "Pirate ports are used as a network model, not as documented disease-origin points."
     },
@@ -159,8 +159,8 @@ window.MARITIME_YOUTUBE_VIDEO_PLAN = {
       "visual_beat": "Use the quarantine/lazaretto material to shift from network romance to public-health infrastructure.",
       "narration_beat": "Quarantine was not a footnote. It was a maritime technology: documents, guards, isolation, cargo, time, and political conflict.",
       "edit_notes": "This is a good place for a citation-visible screenshot or quick lower-third credit if the edit needs one.",
-      "module_ids": ["mediterranean_plague_lazarettos"],
-      "source_ids": ["maritime-booker-quarantine-2007", "maritime-tognotti-quarantine-2013", "maritime-crawshaw-plague-hospitals"]
+      "module_ids": ["mediterranean_plague_lazarettos", "algiers_plague_sanitary_ban_1818"],
+      "source_ids": ["maritime-booker-quarantine-2007", "maritime-tognotti-quarantine-2013", "maritime-crawshaw-plague-hospitals", "maritime-delange-algiers-sanitary-ban-1818", "maritime-ini-quarantine-geographies-2023"]
     },
     {
       "id": "s05_yellow_fever",
@@ -316,8 +316,8 @@ window.MARITIME_YOUTUBE_VIDEO_PLAN = {
     },
     {
       "chapter_id": "pirate_infrastructure",
-      "script": "The pirate network is a useful place to begin because it makes infrastructure visible. Nassau, Port Royal, Tortuga, and the Carolina coast were connected by ships, but also by repair, provisioning, recruitment, capture, resale, rumor, water, food, alcohol, wounds, sex, insects, and waiting. Disease risk lived inside that same network. The point is not that pirates uniquely caused epidemics. The point is that ports were ecological machinery.",
-      "source_ids": ["maritime-rediker-between-devil", "maritime-rediker-villains"],
+      "script": "The pirate network is a useful place to begin because it makes infrastructure visible. Nassau, Port Royal, Tortuga, and the Carolina coast were connected by ships, but also by repair, provisioning, recruitment, capture, resale, rumor, water, food, alcohol, wounds, sex, insects, and waiting. Disease risk lived inside that same network. The point is not that pirates uniquely caused epidemics. The point is that ports were ecological machinery. Quarantine belongs in that machinery too. Bills of health, lazarettos, guards, cargo controls, sanitary bans, and waiting periods made quarantine a maritime technology, not just a medical footnote.",
+      "source_ids": ["maritime-rediker-between-devil", "maritime-rediker-villains", "maritime-booker-quarantine-2007", "maritime-tognotti-quarantine-2013", "maritime-delange-algiers-sanitary-ban-1818", "maritime-ini-quarantine-geographies-2023"],
       "review_note": "Do not claim a specific pirate-port outbreak burden."
     },
     {
@@ -370,7 +370,7 @@ window.MARITIME_YOUTUBE_VIDEO_PLAN = {
   "deferred_or_excluded": [
     {
       "item": "Barbary captivity and plague",
-      "reason": "Good future topic, but excluded from this cut because V1 deferred the case pending stronger case-level sourcing."
+      "reason": "Narrowed. The exhibit now includes the 1817-1818 Algiers plague and American sanitary-ban case, but excludes unsupported claims that plague determined Barbary captivity outcomes."
     },
     {
       "item": "Convict ships and prison hulks",
