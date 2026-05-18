@@ -783,23 +783,23 @@
   {
     "title": "American Epidemic Timeline",
     "section": "Tool",
-    "summary": "A cinematic timeline of major U.S.-linked epidemics and disease outbreaks, designed as a public-health memory machine.",
+    "summary": "A source-backed teaching timeline of major U.S.-linked epidemics, outbreaks, and public-health turning points.",
     "url": "/tools/american-epidemic-timeline/",
     "keywords": "american epidemics timeline public health history outbreaks teaching tool timeline"
   },
   {
     "title": "Pathogen Atlas",
     "section": "Tool",
-    "summary": "An origin-and-spread atlas that links geography, uncertainty, papers, and prior writing instead of flattening pathogens into another story stream.",
+    "summary": "A source-backed teaching atlas about pathogen origins, reservoirs, transmission ecology, historical spread, and evidentiary uncertainty.",
     "url": "/atlases/pathogen/",
-    "keywords": "pathogen routes origin infectious disease spread atlas"
+    "keywords": "pathogen reservoirs transmission origin uncertainty infectious disease spread atlas"
   },
   {
     "title": "Maritime Disease Atlas",
     "section": "Tool",
-    "summary": "A map-first digital exhibit on shipboard disease ecology, ports, vectors, provisions, quarantine, violence, and the movement constraints of life at sea.",
+    "summary": "A source-backed map-first digital exhibit on ships, ports, quarantine, naval warfare, captivity, trade, migration, and maritime disease ecology.",
     "url": "/atlases/maritime/",
-    "keywords": "maritime ports ships yellow fever scurvy piracy vector exhibit atlas"
+    "keywords": "maritime ports ships quarantine scurvy ship fever yellow fever migration exhibit atlas"
   },
   {
     "title": "Revolutionary War Disease Atlas",
@@ -816,6 +816,13 @@
     "keywords": "viking norse greenland vinland plague health atlas"
   },
   {
+    "title": "Avian influenza and H5N1",
+    "section": "Newsdesk",
+    "summary": "2 newly observed linked item(s) were added since the last saved snapshot.",
+    "url": "/stories/story_28a91c6d89267872-avian-influenza-and-h5n1.html",
+    "keywords": "confirmed_case transmission_change new_geography Southeast Asia "
+  },
+  {
     "title": "Measles transmission and vaccination",
     "section": "Newsdesk",
     "summary": "The lead item has changed to How conflict is driving measles outbreaks in the Middle East and North Africa from arabnews.jp.",
@@ -828,20 +835,6 @@
     "summary": "nippon.com currently frames broader public risk as low.",
     "url": "/stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
     "keywords": "East Asia United Kingdom"
-  },
-  {
-    "title": "Avian influenza and H5N1",
-    "section": "Newsdesk",
-    "summary": "2 newly observed linked item(s) were added since the last saved snapshot.",
-    "url": "/stories/story_28a91c6d89267872-avian-influenza-and-h5n1.html",
-    "keywords": "confirmed_case transmission_change new_geography Southeast Asia United States"
-  },
-  {
-    "title": "Dengue and arboviruses",
-    "section": "Newsdesk",
-    "summary": "2 newly observed linked item(s) were added since the last saved snapshot.",
-    "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
-    "keywords": "policy_or_travel new_geography North America "
   },
   {
     "title": "Tuberculosis and antimicrobial resistance",
@@ -870,6 +863,13 @@
     "summary": "Baseline snapshot created with 2 clustered item(s) across 2 source(s).",
     "url": "/stories/story_b461b8ac8c062700-historical-epidemiology-and-ancient-pathogens.html",
     "keywords": "new_official_source severity_or_death new_geography Africa United Kingdom"
+  },
+  {
+    "title": "Dengue and arboviruses",
+    "section": "Newsdesk",
+    "summary": "2 newly observed linked item(s) were added since the last saved snapshot.",
+    "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
+    "keywords": "policy_or_travel new_geography North America United Kingdom"
   },
   {
     "title": "Hantavirus syndrome",
