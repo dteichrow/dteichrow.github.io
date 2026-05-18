@@ -768,13 +768,18 @@ a {
 
 <aside id="story-panel">
   <div id="story-kicker">Source-backed atlas</div>
-  <h2 id="story-title">Select a pathogen profile</h2>
-  <div id="story-copy">Curated pathogen history, transmission ecology, and evidence notes will appear here.</div>
-  <div class="meta-row" id="story-meta"></div>
+  <h2 id="story-title">Variola virus / smallpox</h2>
+  <div id="story-copy">Smallpox is the archetype of a human-only pathogen whose archival record, vaccination history, and eradication campaign show how disease history can be written from both documents and virology.</div>
+  <div class="meta-row" id="story-meta">
+    <span class="badge">Virus</span>
+    <span class="badge">Agent: Variola virus</span>
+    <span class="badge reviewed">Ancient DNA evidence</span>
+    <span class="badge warning">Low origin confidence</span>
+  </div>
   <div id="rotation-state">Rotation is on.</div>
   <div class="panel-section">
     <div class="subsection-kicker">Why this matters</div>
-    <p class="panel-copy" id="why-matters-copy"></p>
+    <p class="panel-copy" id="why-matters-copy">Smallpox shows why origin, earliest evidence, historical spread, and modern control have to be kept separate: secure molecular evidence is not the same thing as a birthplace, while eradication depended on a well-supported human-only reservoir.</p>
   </div>
   <div class="panel-section">
     <div class="subsection-kicker">How to read uncertainty</div>
@@ -782,15 +787,60 @@ a {
   </div>
   <div class="panel-section">
     <div class="subsection-kicker">Known / inferred / contested / unknown</div>
-    <div id="knowledge-status"></div>
+    <div id="knowledge-status">
+      <article class="detail-card">
+        <div class="subsection-kicker">Known</div>
+        <p class="panel-copy">Variola virus caused smallpox, circulated only in humans before eradication, and was controlled through vaccination, surveillance, isolation, and ring vaccination.</p>
+      </article>
+      <article class="detail-card">
+        <div class="subsection-kicker">Inferred</div>
+        <p class="panel-copy">Viking Age genomes document extinct variola lineages in northern Europe, but this evidence does not locate the pathogen's true evolutionary origin.</p>
+      </article>
+      <article class="detail-card">
+        <div class="subsection-kicker">Unknown / contested</div>
+        <p class="panel-copy">Older pox-like descriptions are diagnostically nonspecific, and ancient DNA sampling is geographically uneven.</p>
+      </article>
+    </div>
   </div>
   <div class="panel-section">
     <div class="subsection-kicker">Reservoirs and transmission</div>
-    <div id="ecology-list"></div>
+    <div id="ecology-list">
+      <article class="detail-card">
+        <div class="subsection-kicker">Agent</div>
+        <p class="panel-copy">Variola virus</p>
+      </article>
+      <article class="detail-card">
+        <div class="subsection-kicker">Reservoirs</div>
+        <p class="panel-copy">Humans before eradication; no known animal reservoir for variola virus.</p>
+      </article>
+      <article class="detail-card">
+        <div class="subsection-kicker">Transmission</div>
+        <p class="panel-copy">Respiratory droplets and aerosols in close contact; contact with lesion material or contaminated bedding/clothing.</p>
+      </article>
+      <article class="detail-card">
+        <div class="subsection-kicker">Modern status</div>
+        <p class="panel-copy">Eradicated in nature; variola virus remains only in declared high-security laboratory stocks.</p>
+      </article>
+    </div>
   </div>
   <div class="panel-section">
     <div class="subsection-kicker">Major episodes</div>
-    <div id="episode-list"></div>
+    <div id="episode-list">
+      <article class="detail-card">
+        <div class="subsection-kicker">c. 600-1050 CE</div>
+        <h3>Viking Age variola genomes</h3>
+        <div class="meta-row"><span class="badge accent">High confidence</span><span class="badge">Northern Europe</span></div>
+        <p class="panel-copy">Ancient DNA establishes that extinct variola lineages circulated in northern Europe by the Viking Age.</p>
+        <div class="source-row"><a class="source-link" href="https://doi.org/10.1126/science.aaw8977">Muhlemann et al. 2020</a></div>
+      </article>
+      <article class="detail-card">
+        <div class="subsection-kicker">1967-1980</div>
+        <h3>Global eradication</h3>
+        <div class="meta-row"><span class="badge accent">High confidence</span><span class="badge">Global</span></div>
+        <p class="panel-copy">The eradication program succeeded because humans were the only reservoir and vaccination/surveillance could interrupt transmission.</p>
+        <div class="source-row"><a class="source-link" href="https://iris.who.int/handle/10665/39485">WHO: Smallpox and Its Eradication</a></div>
+      </article>
+    </div>
   </div>
   <div class="panel-section" id="variant-shell" hidden>
     <div class="subsection-kicker">Variant / strain lens</div>
@@ -810,53 +860,117 @@ a {
 
 <aside id="evidence-panel">
   <div class="panel-kicker">Evidence desk</div>
-  <h2 id="evidence-title">Evidence panel ready</h2>
-  <p class="panel-copy" id="origin-copy"></p>
-  <div class="inline-links" id="evidence-links"></div>
+  <h2 id="evidence-title">Variola virus / smallpox evidence</h2>
+  <p class="panel-copy" id="origin-copy">The deeper geographic origin of variola virus remains uncertain; Viking Age northern Europe is earliest strong genomic evidence in this profile, not a proven birthplace.</p>
+  <div class="inline-links" id="evidence-links">
+    <span class="badge reviewed">Earliest evidence: ancient DNA</span>
+    <span class="badge reviewed">Ancient DNA: yes</span>
+  </div>
 
   <section class="panel-section">
     <div class="subsection-kicker">Origin claim</div>
     <div class="detail-card">
-      <h3 id="origin-label"></h3>
-      <div class="meta-row" id="origin-meta"></div>
-      <p class="panel-copy" id="origin-narrative"></p>
-      <p class="panel-copy" id="origin-uncertainty"></p>
-      <div class="inline-links" id="origin-source-links"></div>
+      <h3 id="origin-label">Viking Age northern Europe evidence</h3>
+      <div class="meta-row" id="origin-meta">
+        <span class="badge accent">Low confidence</span>
+        <span class="badge">Earliest strong evidence, not birthplace</span>
+        <span class="badge">c. 600-1050 CE ancient DNA; deeper origin uncertain</span>
+      </div>
+      <p class="panel-copy" id="origin-narrative">Ancient variola genomes from Viking Age northern Europe push secure molecular evidence earlier, but they do not locate where variola first evolved.</p>
+      <p class="panel-copy" id="origin-uncertainty">Uncertainty: The profile separates secure Viking Age genomes from older retrospective diagnoses and from any claim of true birthplace. Ancient DNA sampling is geographically uneven; older textual descriptions of pox-like disease are diagnostically nonspecific.</p>
+      <div class="inline-links" id="origin-source-links">
+        <a class="source-link" href="https://doi.org/10.1126/science.aaw8977">Muhlemann et al. 2020</a>
+        <a class="source-link" href="https://doi.org/10.3390/v7031100">Babkin and Babkina 2015</a>
+        <a class="source-link" href="https://www.cdc.gov/smallpox/about/history.html">CDC history</a>
+      </div>
     </div>
   </section>
 
   <section class="panel-section">
     <div class="subsection-kicker">What kind of evidence do we have?</div>
-    <div id="evidence-kind-list"></div>
+    <div id="evidence-kind-list">
+      <article class="evidence-card">
+        <div class="subsection-kicker">Textual / historical</div>
+        <h3>Textual / historical</h3>
+        <div class="meta-row"><span class="badge accent">Moderate</span></div>
+        <p class="panel-copy">Historical pox descriptions are abundant but often nonspecific before laboratory virology.</p>
+        <div class="source-row"><a class="source-link" href="https://www.cdc.gov/smallpox/about/history.html">CDC history</a> <a class="source-link" href="https://doi.org/10.3390/v7031100">Babkin and Babkina 2015</a></div>
+      </article>
+      <article class="evidence-card">
+        <div class="subsection-kicker">Ancient DNA / genomic</div>
+        <h3>Ancient DNA / genomic</h3>
+        <div class="meta-row"><span class="badge reviewed">Strong</span></div>
+        <p class="panel-copy">Viking Age variola genomes provide direct molecular evidence.</p>
+        <div class="source-row"><a class="source-link" href="https://doi.org/10.1126/science.aaw8977">Muhlemann et al. 2020</a></div>
+      </article>
+      <article class="evidence-card">
+        <div class="subsection-kicker">Ecological / reservoir</div>
+        <h3>Ecological / reservoir</h3>
+        <div class="meta-row"><span class="badge reviewed">Strong</span></div>
+        <p class="panel-copy">The absence of a nonhuman reservoir is central to eradication reasoning.</p>
+        <div class="source-row"><a class="source-link" href="https://www.who.int/health-topics/smallpox">WHO smallpox topic</a> <a class="source-link" href="https://iris.who.int/handle/10665/39485">WHO eradication history</a></div>
+      </article>
+      <article class="evidence-card">
+        <div class="subsection-kicker">Major uncertainties</div>
+        <ul>
+          <li>Older retrospective diagnoses of smallpox are much weaker than genomic or modern clinical evidence.</li>
+        </ul>
+      </article>
+    </div>
   </section>
 
   <section class="panel-section">
     <div class="subsection-kicker">Geography interpretation</div>
-    <div id="geography-evidence-list"></div>
+    <div id="geography-evidence-list">
+      <article class="detail-card">
+        <div class="subsection-kicker">Mapped as</div>
+        <h3>Viking Age northern Europe evidence</h3>
+        <div class="meta-row"><span class="badge">Earliest strong evidence</span><span class="badge accent">Low origin confidence</span><span class="badge reviewed">Source-backed</span></div>
+        <p class="panel-copy">This layer marks the evidence location used by ancient DNA studies. It should not be read as the pathogen's true geographic origin.</p>
+      </article>
+    </div>
   </section>
 
   <section class="panel-section">
     <div class="subsection-kicker">What is unsettled</div>
     <div class="list-card">
-      <ul id="framing-trap-list"></ul>
+      <ul id="framing-trap-list">
+        <li>Do not equate earliest ancient DNA evidence with actual origin.</li>
+        <li>Do not treat every older pox-like description as a secure smallpox diagnosis.</li>
+      </ul>
     </div>
   </section>
 
   <section class="panel-section">
     <div class="subsection-kicker">Modern echoes</div>
     <div class="list-card">
-      <ul id="modern-echo-list"></ul>
+      <ul id="modern-echo-list">
+        <li>Smallpox eradication depended on reservoir ecology, vaccine delivery, surveillance, and political organization.</li>
+      </ul>
     </div>
   </section>
 
   <section class="panel-section">
     <div class="subsection-kicker">Written at The Edge of Epidemiology</div>
-    <div id="blog-list"></div>
+    <div id="blog-list"><article class="list-card"><div class="note-text">No Edge of Epidemiology writing is linked to this disease profile yet.</div></article></div>
   </section>
 
   <section class="panel-section">
     <div class="subsection-kicker">Supporting papers</div>
-    <div id="citation-list"></div>
+    <div id="citation-list">
+      <article class="list-card">
+        <a class="citation-title" href="https://doi.org/10.1126/science.aaw8977">Muhlemann et al. Viking Age variola genomes. Science. 2020.</a>
+        <div class="note-text">Supports ancient DNA evidence and the caution that earliest molecular evidence is not a proven birthplace.</div>
+      </article>
+      <article class="list-card">
+        <a class="citation-title" href="https://doi.org/10.3390/v7031100">Babkin and Babkina. The Origin of the Variola Virus. Viruses. 2015.</a>
+        <div class="note-text">Supports cautious treatment of older origin claims and retrospective diagnosis.</div>
+      </article>
+      <article class="list-card">
+        <a class="citation-title" href="https://iris.who.int/handle/10665/39485">WHO: Smallpox and Its Eradication.</a>
+        <div class="note-text">Supports eradication history, control strategy, and reservoir logic.</div>
+      </article>
+    </div>
   </section>
 
   <section class="panel-section">

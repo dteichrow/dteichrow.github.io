@@ -62,6 +62,18 @@ Run the 15-minute incremental-style sync manually:
 python -m src.substack_sync --mode incremental
 ```
 
+Validate source provenance for the interactive learning tools:
+
+```bash
+python scripts/validate_tool_sources.py
+```
+
+Smoke-test the built public tool pages for placeholder shells, zero-count regressions, and missing static fallback content:
+
+```bash
+python scripts/smoke_test_tool_pages.py
+```
+
 Build the umbrella site:
 
 ```bash
@@ -100,6 +112,26 @@ For virtual teaching tools:
 - existing atlas cards have been migrated into the tool registry while `content/atlases.yml` keeps `/atlases/` and `/atlases/<name>/` routes stable
 - `external/american_epidemic_timeline/` is copied into `docs/tools/american-epidemic-timeline/`
 - the timeline data contract lives in `external/american_epidemic_timeline/data/american_epidemic_timeline_data.js`
+- the Pathogen Atlas public payload is generated into `external/pathogen_atlas/data/pathogen_atlas_data.js` and copied into `docs/atlases/pathogen/`
+- the Maritime Disease Atlas uses `external/maritime_disease_atlas/data/maritime_disease_atlas_data.js` for map features and guided-tour scenario text, plus local archival image credits in the atlas app
+- `data/sources/sources.json` is the central source registry used by `scripts/validate_tool_sources.py`
+- `scripts/smoke_test_tool_pages.py` checks the built `docs/` pages for production-facing hydration failures: timeline counters stuck at zero, pathogen loading shells, empty origin panels, and maritime module lists not exposed as readable page content
+
+## Learning tool evidence standard
+
+These tools are teaching tools, not exhaustive historical or epidemiologic databases. Entries privilege claims supported by historical scholarship, epidemiologic literature, public-health records, public datasets, or clearly labeled primary sources. Absence from a tool does not mean absence from history.
+
+Every displayed factual claim should have a source trail. Disease origin claims, mortality claims, date ranges, route claims, reservoir/vector claims, public-health interpretations, and historical consequences need source IDs. Uncertain or contested claims should remain visibly uncertain rather than being smoothed into certainty. If the literature does not support a claim, omit it.
+
+Use the shared confidence categories consistently:
+
+- `high`: multiple strong sources, or one definitive primary/technical source for the displayed claim
+- `moderate`: supported but limited, indirect, source-type dependent, or interpretive
+- `low`: plausible but thin evidence
+- `contested`: serious scholarly disagreement or disputed retrospective diagnosis
+- `speculative`: teaching model or hypothesis only, displayed only with an explicit caveat
+
+Source records live in `data/sources/sources.json` and should keep the fields `source_id`, `full_citation`, `short_citation`, `authors`, `year`, `title`, `publication_or_publisher`, `url_or_doi`, `source_type`, `topic_tags`, `notes_on_use`, and `reliability_notes`. Tool records should cite those IDs directly, and interpretive records can add a `claims` list with `claim`, `source_ids`, `confidence`, `claim_type`, and optional `notes` or `uncertainty_note`.
 
 ## GitHub Actions
 

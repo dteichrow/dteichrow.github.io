@@ -4,39 +4,39 @@ tools:
     tool_type: timeline
     status: live
     status_label: Open now
-    summary: A cinematic timeline of major U.S.-linked epidemics and disease outbreaks, designed as a public-health memory machine.
-    evidence_model: Outbreak ledger with source links, rights-checked archival visuals, uncertainty notes, and public-health turning points
+    summary: A source-backed teaching timeline of major U.S.-linked epidemics, outbreaks, and public-health turning points.
+    evidence_model: Defensible outbreak ledger with source IDs, claim-level confidence categories, rights-checked archival visuals, visible uncertainty notes, and conservative public-health interpretation
     public_route: tools/american-epidemic-timeline/
     source_path: external/american_epidemic_timeline/index.html + data/american_epidemic_timeline_data.js
     launch_priority: flagship
     keywords: [american epidemics, timeline, public health history, outbreaks, teaching tool]
-    long_note: The timeline follows large epidemics, public-health turning points, and regional outbreaks where the evidence is strong enough to carry the story.
+    long_note: The timeline follows major epidemics, public-health turning points, and selected regional outbreaks where the evidence is strong enough to carry the story without overdiagnosis or fake precision.
   - tool_id: pathogen-atlas
     legacy_atlas_id: pathogen-atlas
     title: Pathogen Atlas
     tool_type: atlas
     status: live
-    status_label: Open now
-    summary: An origin-and-spread atlas that links geography, uncertainty, papers, and prior writing instead of flattening pathogens into another story stream.
-    evidence_model: Origin claims, route confidence, and linked papers
+    status_label: Source-backed atlas
+    summary: A source-backed teaching atlas about pathogen origins, reservoirs, transmission ecology, historical spread, and evidentiary uncertainty.
+    evidence_model: Claim-level source IDs, origin confidence, evidence-type panels, and central source-registry validation
     public_route: atlases/pathogen/
-    source_path: external/pathogen_atlas/index.html + docs/app_exports/atlas.json
+    source_path: external/pathogen_atlas/index.html + external/pathogen_atlas/source_backed_profiles.json
     launch_priority: flagship
-    keywords: [pathogen, routes, origin, infectious disease, spread]
-    long_note: The pathogen atlas runs as a dedicated dark atlas app while drawing from the curated epi-dossier atlas export.
+    keywords: [pathogen, reservoirs, transmission, origin, uncertainty, infectious disease, spread]
+    long_note: The pathogen atlas runs as a dark digital exhibit with claim-level source IDs, confidence labels, evidence-type panels, and explicit uncertainty notes.
   - tool_id: maritime-disease-atlas
     legacy_atlas_id: maritime-disease-atlas
     title: Maritime Disease Atlas
     tool_type: atlas
     status: live
-    status_label: Open now
-    summary: A map-first digital exhibit on shipboard disease ecology, ports, vectors, provisions, quarantine, violence, and the movement constraints of life at sea.
-    evidence_model: Exhibit stations with routes, mechanisms, archival plates, source credits, and guided-tour narrative
+    status_label: Source-backed exhibit
+    summary: A source-backed map-first digital exhibit on ships, ports, quarantine, naval warfare, captivity, trade, migration, and maritime disease ecology.
+    evidence_model: Case modules with source IDs, route claim types, burden categories, confidence notes, uncertainty notes, mechanism filters, and guided-tour narrative
     public_route: atlases/maritime/
-    source_path: external/maritime_disease_atlas/index.html
+    source_path: external/maritime_disease_atlas/index.html + data/maritime_disease_modules.js
     launch_priority: flagship
-    keywords: [maritime, ports, ships, yellow fever, scurvy, piracy, vector, exhibit]
-    long_note: "This is the main public-history exhibit in the atlas family: an exploratory disease ecology surface with guided-tour and presentation modes for later video adaptation."
+    keywords: [maritime, ports, ships, quarantine, scurvy, ship fever, yellow fever, migration, exhibit]
+    long_note: "This is the main public-history exhibit in the atlas family: an exploratory disease ecology surface with source-backed case modules, route confidence labels, and guided-tour and presentation modes for later video adaptation."
   - tool_id: revolutionary-war-atlas
     legacy_atlas_id: revolutionary-war-atlas
     title: Revolutionary War Disease Atlas

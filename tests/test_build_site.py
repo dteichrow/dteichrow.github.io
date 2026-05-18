@@ -444,6 +444,81 @@ def test_pathogen_atlas_filters_do_not_fallback_to_all_entries() -> None:
     assert "No diseases match selected filters" in atlas_html
 
 
+def test_maritime_atlas_has_video_mode_contract() -> None:
+    atlas_html = (build_site.PROJECT_ROOT / "external" / "maritime_disease_atlas" / "index.html").read_text()
+    assert 'id="cinema-backdrop"' in atlas_html
+    assert "Guided Tour" in atlas_html
+    assert "Presentation Mode" in atlas_html
+    assert "Atmosphere Off" in atlas_html
+    assert "Sources / Credits" in atlas_html
+    assert "How to use this exhibit" in atlas_html
+    assert "Vector / port" in atlas_html
+    assert "Provisions" in atlas_html
+    assert "Crowding" in atlas_html
+    assert "Coercion / piracy" in atlas_html
+    assert "function playTour()" in atlas_html
+    assert 'queryFlag("video", "recording", "record")' in atlas_html
+    assert "function setPresentationMode" in atlas_html
+    assert ".recording-mode #eoe-atlas-overlay" in atlas_html
+    assert "MARITIME_ATLAS_CONTROLS" in atlas_html
+    assert "contextZoom" in atlas_html
+    assert "CINEMA_REELS" in atlas_html
+    assert "cinema-caption-credit" in atlas_html
+    assert "pyle_pirate_captain.jpg" in atlas_html
+    assert "blackbeard_capture_ferris.jpg" in atlas_html
+    assert "pyle_henry_morgan_recruiting.jpg" in atlas_html
+    assert "ann_bonny_mary_read.jpg" in atlas_html
+    assert "cinemaSecondPresence" in atlas_html
+    assert "cinemaPrimaryPresence" in atlas_html
+    assert ".recording-mode #cinema-backdrop.open.has-secondary #cinema-backdrop-image" in atlas_html
+    assert "route_pirate_network" in atlas_html
+    assert 'id="video-pause-btn"' in atlas_html
+    assert 'id="sound-btn"' in atlas_html
+    assert 'id="video-sound-btn"' in atlas_html
+    assert 'id="sources-drawer"' in atlas_html
+    assert 'id="story-evidence"' in atlas_html
+    assert "function evidenceHtml" in atlas_html
+    assert "SOURCE_CATALOG" in atlas_html
+    assert "buildSourceCatalog" in atlas_html
+    assert "renderSourceCatalog" in atlas_html
+    assert "stepHoldMs" in atlas_html
+    assert "bindPauseControl" in atlas_html
+    assert "createSoundDesign" in atlas_html
+    assert "soundProfileForStep" in atlas_html
+    assert "setSoundEnabled" in atlas_html
+    assert 'queryFlag("sound", "audio")' in atlas_html
+    assert "soundStatus" in atlas_html
+    assert "dataset.soundScene" in atlas_html
+    assert "dataset.soundState" in atlas_html
+    assert "tonalOscillators: 0" in atlas_html
+    assert "createOscillator" not in atlas_html
+    assert "dampedOsc" not in atlas_html
+    assert "pauseStepProgress" in atlas_html
+    assert "animation-play-state: paused" in atlas_html
+    assert "steerage_children_friedrich_der_grosse.jpg" in atlas_html
+    assert "cook_at_galley_hatch.jpg" in atlas_html
+    assert "sailors_drinking_tunbridge_waters.jpg" in atlas_html
+    assert "barrels_on_savannah_docks_nara.jpg" in atlas_html
+    assert "National Archives via Wikimedia Commons, public domain" in atlas_html
+    assert "typhoid_prevention_1908.jpg" not in atlas_html
+    assert "secondary:" not in atlas_html.split("yellow_fever: [", 1)[1].split("malaria: [", 1)[0]
+    assert "secondary:" not in atlas_html.split("ship_fever: [", 1)[1].split("flux: [", 1)[0]
+    assert "secondary:" not in atlas_html.split("flux: [", 1)[1].split("typhoid: [", 1)[0]
+    assert "secondary:" not in atlas_html.split("typhoid: [", 1)[1].split("smallpox: [", 1)[0]
+
+
+def test_maritime_atlas_public_exhibit_metadata_and_video_package() -> None:
+    tools_text = (build_site.PROJECT_ROOT / "content" / "tools.yml").read_text()
+    build_text = (build_site.PROJECT_ROOT / "src" / "build_site.py").read_text()
+    video_package = (build_site.PROJECT_ROOT / "notes" / "maritime-disease-atlas-youtube-guided-tour.md").read_text()
+    assert "map-first digital exhibit" in tools_text
+    assert "guided-tour and presentation modes" in tools_text
+    assert "archival sources" in build_text
+    assert "Final narration: Devin" in video_package
+    assert "AI voice: scratch timing only" in video_package
+    assert "?video=1&scenario=<id>&pace=0.55" in video_package
+
+
 def test_pathogen_atlas_renders_geography_layers() -> None:
     atlas_html = (build_site.PROJECT_ROOT / "external" / "pathogen_atlas" / "index.html").read_text()
     assert "Geographic extent" in atlas_html

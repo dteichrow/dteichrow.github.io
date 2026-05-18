@@ -10,6 +10,21 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = PROJECT_ROOT / "external" / "american_epidemic_timeline" / "data" / "american_epidemic_timeline_data.js"
 APP_PATH = PROJECT_ROOT / "external" / "american_epidemic_timeline" / "index.html"
+ALLOWED_CONFIDENCE = {"high", "moderate", "low", "contested", "speculative"}
+ALLOWED_PERIODS = {"Indigenous", "colonial", "early republic", "19th century", "Progressive Era", "20th century", "modern"}
+ALLOWED_TRANSMISSION = {
+    "respiratory",
+    "fecal-oral/waterborne",
+    "vector-borne",
+    "foodborne",
+    "sexually transmitted",
+    "bloodborne",
+    "zoonotic/environmental",
+    "toxin/poisoning",
+    "unknown/contested",
+}
+UNCERTAINTY_WORDS = re.compile(r"\b(uncertain|contested|disputed|diagnosis|retrospective|unknown|limited|not clean|not precise)\b", re.I)
+PLACEHOLDER_WORDS = re.compile(r"\b(TBD|TODO|placeholder|lorem ipsum|source review pending|not specified)\b", re.I)
 
 
 def load_timeline_data() -> dict:
@@ -24,13 +39,17 @@ def test_timeline_data_schema_and_seed_depth() -> None:
     events = data["events"]
     tiers = {tier: sum(1 for event in events if event["significance_tier"] == tier) for tier in ["hero", "major", "regional"]}
 
-    assert data["schema_version"] == "1.0.0"
-    assert len(events) >= 75
-    assert tiers["hero"] >= 20
-    assert tiers["major"] >= 40
-    assert tiers["regional"] >= 15
-    assert len(data["sources"]) >= 70
-    assert len(data["assets"]) >= 10
+    assert data["schema_version"] == "2.0.0"
+    assert 30 <= len(events) <= 50
+    assert tiers["hero"] >= 15
+    assert tiers["major"] >= 15
+    assert tiers["hero"] + tiers["major"] + tiers["regional"] == len(events)
+    assert len(data["sources"]) >= 60
+    assert len(data["assets"]) >= 25
+    assert set(data["periods"]) == ALLOWED_PERIODS
+    assert set(data["transmission_categories"]) == ALLOWED_TRANSMISSION
+    assert len(data["excluded_candidates"]) >= 4
+    assert len(data["future_human_review_claims"]) >= 3
 
 
 def test_timeline_events_have_valid_references_and_dates() -> None:
@@ -45,20 +64,38 @@ def test_timeline_events_have_valid_references_and_dates() -> None:
         "start_date",
         "end_date",
         "date_precision",
+        "start_year",
+        "end_year",
+        "date_display",
+        "century",
         "polity_scope",
         "geography",
         "pathogen_or_syndrome",
+        "pathogen_or_agent",
+        "disease_or_condition",
         "disease_group",
         "transmission_ecology",
+        "transmission_category",
         "significance_tier",
         "case_estimate",
         "death_estimate",
         "uncertainty_note",
+        "mortality_or_burden_note",
         "historical_thesis",
+        "historical_context",
+        "summary_1_sentence",
         "public_health_response",
+        "public_health_significance",
+        "confidence",
         "source_ids",
         "asset_ids",
         "related_posts",
+        "related_tool_links",
+        "related_blog_links",
+        "period_tags",
+        "setting_tags",
+        "modern_location_tags",
+        "claims",
         "tags",
     }
     event_ids = [event["id"] for event in data["events"]]
@@ -70,6 +107,15 @@ def test_timeline_events_have_valid_references_and_dates() -> None:
         assert event["era_id"] in era_ids
         assert event["disease_group"] in disease_ids
         assert event["significance_tier"] in {"hero", "major", "regional"}
+        assert event["confidence"] in ALLOWED_CONFIDENCE
+        assert event["transmission_category"] in ALLOWED_TRANSMISSION
+        assert event["period_tags"]
+        assert set(event["period_tags"]) <= ALLOWED_PERIODS
+        assert event["setting_tags"]
+        assert event["modern_location_tags"]
+        assert isinstance(event["related_tool_links"], list)
+        assert isinstance(event["related_blog_links"], list)
+        assert not PLACEHOLDER_WORDS.search(json.dumps(event))
         assert len(event["source_ids"]) >= 2
         assert set(event["source_ids"]) <= source_ids
         assert event["asset_ids"]
@@ -77,6 +123,14 @@ def test_timeline_events_have_valid_references_and_dates() -> None:
         start = dt.date.fromisoformat(event["start_date"])
         end = dt.date.fromisoformat(event["end_date"])
         assert start <= end
+        assert event["start_year"] == start.year
+        assert event["end_year"] == end.year
+        for claim in event["claims"]:
+            assert claim["claim"]
+            assert claim["confidence"] in ALLOWED_CONFIDENCE
+            assert set(claim["source_ids"]) <= source_ids
+        if event["confidence"] in {"low", "contested", "speculative"} or event["pathogen_or_agent"] in {"unknown", "contested", "not applicable"}:
+            assert UNCERTAINTY_WORDS.search(event["uncertainty_note"])
 
 
 def test_timeline_sources_and_assets_are_public_facing() -> None:
@@ -165,24 +219,31 @@ def test_timeline_asset_reuse_stays_visually_diverse() -> None:
     data = load_timeline_data()
     counts = Counter(asset_id for event in data["events"] for asset_id in event["asset_ids"])
 
-    assert counts["microscope-wellcome"] == 0
-    assert counts.most_common(1)[0][1] <= 12
+    assert counts.most_common(1)[0][1] <= 6
 
 
 def test_timeline_early_entries_do_not_overuse_atlantic_map() -> None:
     data = load_timeline_data()
-    early_events = [event for event in data["events"] if int(event["start_date"][:4]) <= 1806]
+    early_events = [event for event in data["events"] if int(event["start_date"][:4]) <= 1853]
     atlantic_map_events = [event["id"] for event in early_events if "atlantic-map" in event["asset_ids"]]
 
     assert len(atlantic_map_events) <= 1
     assert {
-        "florentine-smallpox-1520",
         "new-england-smith-1616",
         "boylston-smallpox-inoculation-title",
-        "charleston-map-1733",
-        "fort-pitt-1759",
-        "anopheles-malaria-cdc",
+        "washington-crossing",
+        "yellow-fever-1793-title-page",
+        "john-lea-cholera",
+        "new-orleans-sanitary-map-1853",
     } <= {asset_id for event in early_events for asset_id in event["asset_ids"]}
+
+
+def test_timeline_excluded_candidates_keep_scope_conservative() -> None:
+    data = load_timeline_data()
+    excluded_text = json.dumps(data["excluded_candidates"]).lower()
+
+    for phrase in ["pontiac", "flint", "opioid", "h5n1", "recent measles"]:
+        assert phrase in excluded_text
 
 
 def test_timeline_app_exposes_required_interactions() -> None:
@@ -192,10 +253,20 @@ def test_timeline_app_exposes_required_interactions() -> None:
         'id="searchInput"',
         'id="eraFilter"',
         'id="diseaseFilter"',
+        'id="transmissionFilter"',
+        'id="periodFilter"',
+        'id="settingFilter"',
+        'id="confidenceFilter"',
         'id="detailDrawer"',
         'id="tableView"',
         'id="compareView"',
         'id="motionToggle"',
+        "Why this matters",
+        "How to read uncertainty",
+        "sourcePills",
+        "evidenceBadges",
+        "summary_1_sentence",
+        "public_health_significance",
         "data-fallback-src",
         "imageFallbackAttrs",
         "IntersectionObserver",

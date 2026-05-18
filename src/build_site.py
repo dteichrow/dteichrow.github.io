@@ -87,6 +87,22 @@ TOPIC_HUBS = [
     },
 ]
 PATHOGEN_ATLAS_COLORS = {
+    "variola-smallpox": "#b56b5b",
+    "yersinia-pestis-plague": "#b9754f",
+    "vibrio-cholerae-cholera": "#5a9bd4",
+    "mycobacterium-tuberculosis-complex": "#d98e5f",
+    "influenza-a": "#b7c7df",
+    "measles-virus": "#d6c06a",
+    "yellow-fever-virus": "#d86a4f",
+    "dengue-virus": "#c9a84c",
+    "malaria-parasites": "#5abf7c",
+    "hantaviruses": "#7aa96b",
+    "hiv-1": "#d26b91",
+    "sars-cov-2": "#7b8fa8",
+    "poliovirus": "#7c9fd1",
+    "treponema-pallidum-syphilis": "#c38a65",
+    "salmonella-enterica": "#bc8f5f",
+    "rickettsia-prowazekii-epidemic-typhus": "#9a8c5f",
     "yellow-fever": "#d86a4f",
     "cholera": "#5a9bd4",
     "measles": "#d6c06a",
@@ -2085,6 +2101,46 @@ def import_external_maritime(docs_dir: Path, base_url: str) -> None:
     )
 
 
+PATHOGEN_CONFIDENCE_ALIASES = {
+    "strong": "high",
+    "mixed": "moderate",
+    "weak": "low",
+}
+
+
+def normalize_tool_confidence(value: Any) -> str:
+    clean = str(value or "moderate").strip().lower()
+    return PATHOGEN_CONFIDENCE_ALIASES.get(clean, clean if clean in {"high", "moderate", "low", "contested", "speculative"} else "moderate")
+
+
+def normalize_pathogen_claims(entry: dict[str, Any]) -> None:
+    evidence_ids = [
+        citation.get("id")
+        for citation in entry.get("citations", [])
+        if citation.get("id")
+    ] + [
+        citation.get("id")
+        for citation in entry.get("withheld_citations", [])
+        if citation.get("id")
+    ]
+
+    origin = entry.get("origin_claim")
+    if isinstance(origin, dict):
+        origin["confidence"] = normalize_tool_confidence(origin.get("confidence"))
+        if not origin.get("citation_ids") and evidence_ids:
+            origin["citation_ids"] = evidence_ids[:3]
+
+    for route in entry.get("spread_routes", []):
+        if isinstance(route, dict):
+            route["confidence"] = normalize_tool_confidence(route.get("confidence"))
+
+    for layer in entry.get("geography_layers", []):
+        if isinstance(layer, dict):
+            layer["confidence"] = normalize_tool_confidence(layer.get("confidence"))
+            if layer["confidence"] in {"low", "contested", "speculative"} and not (layer.get("uncertainty_note") or layer.get("evidence_note") or layer.get("note")):
+                layer["evidence_note"] = "Low-confidence or schematic geography; keep the uncertainty visible and do not treat this layer as a precise range map."
+
+
 def prepared_pathogen_atlas_data(atlas_export: dict[str, Any], *, link_prefix: str) -> dict[str, Any]:
     raw_entries = atlas_export.get("atlas", [])
     prepared_entries = []
@@ -2108,6 +2164,7 @@ def prepared_pathogen_atlas_data(atlas_export: dict[str, Any], *, link_prefix: s
         if withheld_citations:
             prepared["withheld_citations"] = withheld_citations
             prepared["citation_verification_note"] = "Some DOI citations are withheld from the public atlas until manually verified."
+        normalize_pathogen_claims(prepared)
         reference_path = prepared.get("reference_web_path") or prepared.get("reference_url")
         if reference_path:
             prepared["reference_href"] = f"{link_prefix}{reference_path.lstrip('/')}"
@@ -2127,11 +2184,22 @@ def prepared_pathogen_atlas_data(atlas_export: dict[str, Any], *, link_prefix: s
         prepared = rewrite_entry_links(entry, color)
         prepared_entries.append(prepared)
 
-    return {
+    payload = {
         "entries": prepared_entries,
         "generated_at": atlas_export.get("generated_at"),
         "atlas_count": len(prepared_entries),
     }
+    for key in (
+        "schema_version",
+        "description",
+        "confidence_legend",
+        "evidence_types",
+        "source_audit",
+        "deferred_profiles",
+    ):
+        if key in atlas_export:
+            payload[key] = atlas_export[key]
+    return payload
 
 
 def write_pathogen_atlas_payload(target_root: Path, atlas_export: dict[str, Any], *, base_url: str, link_prefix: str) -> None:
@@ -2175,18 +2243,22 @@ def merge_pathogen_atlas_overrides(atlas_export: dict[str, Any], overrides: dict
 def import_external_pathogen(docs_dir: Path, base_url: str) -> None:
     src_root = PROJECT_ROOT / "external" / "pathogen_atlas"
     dest_root = docs_dir / "atlases" / "pathogen"
-    atlas_export_path = docs_dir / "app_exports" / "atlas.json"
-    atlas_export = load_json(atlas_export_path)
-    core_overrides_path = src_root / "core_geography_overrides.json"
-    if core_overrides_path.exists():
-        merge_pathogen_atlas_overrides(atlas_export, load_json(core_overrides_path))
-    extra_pathogens_path = src_root / "extra_pathogens.json"
-    if extra_pathogens_path.exists():
-        extra_export = load_json(extra_pathogens_path)
-        known_slugs = {entry.get("slug") for entry in atlas_export.get("atlas", [])}
-        atlas_export["atlas"] = atlas_export.get("atlas", []) + [
-            entry for entry in extra_export.get("atlas", []) if entry.get("slug") not in known_slugs
-        ]
+    source_backed_path = src_root / "source_backed_profiles.json"
+    if source_backed_path.exists():
+        atlas_export = load_json(source_backed_path)
+    else:
+        atlas_export_path = docs_dir / "app_exports" / "atlas.json"
+        atlas_export = load_json(atlas_export_path)
+        core_overrides_path = src_root / "core_geography_overrides.json"
+        if core_overrides_path.exists():
+            merge_pathogen_atlas_overrides(atlas_export, load_json(core_overrides_path))
+        extra_pathogens_path = src_root / "extra_pathogens.json"
+        if extra_pathogens_path.exists():
+            extra_export = load_json(extra_pathogens_path)
+            known_slugs = {entry.get("slug") for entry in atlas_export.get("atlas", [])}
+            atlas_export["atlas"] = atlas_export.get("atlas", []) + [
+                entry for entry in extra_export.get("atlas", []) if entry.get("slug") not in known_slugs
+            ]
 
     write_pathogen_atlas_payload(src_root, atlas_export, base_url="/", link_prefix="../../docs/")
     inject_atlas_overlay(
@@ -2382,7 +2454,7 @@ def seo_profile_for_route(route: str, html_text: str, post_by_route: dict[str, d
         schema_type = "CollectionPage"
     elif route.startswith("atlases/pathogen"):
         title = "Pathogen Atlas | Edge of Epidemiology"
-        description = "Interactive pathogen atlas mapping disease origins, spread routes, transmission ecologies, reference evidence, and reporting context."
+        description = "Source-backed digital exhibit on pathogen origins, reservoirs, transmission ecology, historical spread, and evidentiary uncertainty."
     elif route.startswith("atlases/maritime"):
         title = "Maritime Disease Atlas | Edge of Epidemiology"
         description = "Map-first digital exhibit on shipboard infection, port quarantine, sea routes, naval medicine, archival sources, and maritime disease ecology."
