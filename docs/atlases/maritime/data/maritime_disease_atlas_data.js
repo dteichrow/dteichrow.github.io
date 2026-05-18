@@ -28,7 +28,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Feature-level provenance for displayed map text."
           }
-        ]
+        ],
+        "claim_type": "region only",
+        "route_confidence": "high",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "Point",
@@ -66,7 +69,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Feature-level provenance for displayed map text."
           }
-        ]
+        ],
+        "claim_type": "region only",
+        "route_confidence": "moderate",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "Point",
@@ -105,7 +111,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Camel-linked variola emergence is a model in the literature, not a settled origin claim."
           }
-        ]
+        ],
+        "claim_type": "region only",
+        "route_confidence": "contested",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "Point",
@@ -144,7 +153,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "The rinderpest relationship is well supported, but the divergence date remains model-dependent."
           }
-        ]
+        ],
+        "claim_type": "region only",
+        "route_confidence": "moderate",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "Point",
@@ -180,7 +192,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Feature-level provenance for displayed map text."
           }
-        ]
+        ],
+        "claim_type": "port location",
+        "route_confidence": "high",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "Point",
@@ -216,7 +231,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Feature-level provenance for displayed map text."
           }
-        ]
+        ],
+        "claim_type": "port location",
+        "route_confidence": "high",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "Point",
@@ -252,7 +270,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Feature-level provenance for displayed map text."
           }
-        ]
+        ],
+        "claim_type": "region only",
+        "route_confidence": "high",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "Point",
@@ -288,7 +309,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Feature-level provenance for displayed map text."
           }
-        ]
+        ],
+        "claim_type": "region only",
+        "route_confidence": "high",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "Point",
@@ -325,7 +349,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Feature-level provenance for displayed map text."
           }
-        ]
+        ],
+        "claim_type": "port location",
+        "route_confidence": "moderate",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "Point",
@@ -362,7 +389,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Feature-level provenance for displayed map text."
           }
-        ]
+        ],
+        "claim_type": "port location",
+        "route_confidence": "moderate",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "Point",
@@ -399,7 +429,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Feature-level provenance for displayed map text."
           }
-        ]
+        ],
+        "claim_type": "port location",
+        "route_confidence": "moderate",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "Point",
@@ -437,7 +470,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Feature-level provenance for displayed map text."
           }
-        ]
+        ],
+        "claim_type": "region only",
+        "route_confidence": "high",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "Point",
@@ -479,7 +515,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Feature-level provenance for displayed map text."
           }
-        ]
+        ],
+        "claim_type": "region only",
+        "route_confidence": "high",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "Point",
@@ -519,7 +558,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "notes": "Port-arrival transmission is supported generally; exact voyage outcomes vary by immunity and quarantine practice."
           }
         ],
-        "uncertainty_note": "Port-arrival transmission is supported generally; exact voyage outcomes vary by immunity and quarantine practice."
+        "uncertainty_note": "Port-arrival transmission is supported generally; exact voyage outcomes vary by immunity and quarantine practice.",
+        "claim_type": "quarantine station",
+        "route_confidence": "moderate",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "Point",
@@ -558,7 +600,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "notes": "This supports maritime quarantine infrastructure, not the contested deep-origin hypothesis."
           }
         ],
-        "uncertainty_note": "This supports maritime quarantine infrastructure, not the contested deep-origin hypothesis."
+        "uncertainty_note": "This supports maritime quarantine infrastructure, not the contested deep-origin hypothesis.",
+        "claim_type": "quarantine station",
+        "route_confidence": "moderate",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "Point",
@@ -594,7 +639,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Feature-level provenance for displayed map text."
           }
-        ]
+        ],
+        "claim_type": "region only",
+        "route_confidence": "moderate",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "Point",
@@ -630,7 +678,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Feature-level provenance for displayed map text."
           }
-        ]
+        ],
+        "claim_type": "region only",
+        "route_confidence": "moderate",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "Point",
@@ -668,7 +719,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Feature-level provenance for displayed map text."
           }
-        ]
+        ],
+        "claim_type": "region only",
+        "route_confidence": "high",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "Point",
@@ -706,7 +760,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Feature-level provenance for displayed map text."
           }
-        ]
+        ],
+        "claim_type": "quarantine station",
+        "route_confidence": "high",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "Point",
@@ -744,7 +801,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Feature-level provenance for displayed map text."
           }
-        ]
+        ],
+        "claim_type": "region only",
+        "route_confidence": "high",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "Point",
@@ -781,7 +841,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Feature-level provenance for displayed map text."
           }
-        ]
+        ],
+        "claim_type": "port location",
+        "route_confidence": "moderate",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "Point",
@@ -816,7 +879,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Feature-level provenance for displayed map text."
           }
-        ]
+        ],
+        "claim_type": "inferred route",
+        "route_confidence": "high",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "LineString",
@@ -871,7 +937,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Feature-level provenance for displayed map text."
           }
-        ]
+        ],
+        "claim_type": "region only",
+        "route_confidence": "moderate",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "LineString",
@@ -920,7 +989,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Feature-level provenance for displayed map text."
           }
-        ]
+        ],
+        "claim_type": "inferred route",
+        "route_confidence": "high",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "LineString",
@@ -967,7 +1039,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Feature-level provenance for displayed map text."
           }
-        ]
+        ],
+        "claim_type": "typical route",
+        "route_confidence": "high",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "LineString",
@@ -1013,7 +1088,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Flux is a historical syndrome label rather than one pathogen-specific diagnosis."
           }
-        ]
+        ],
+        "claim_type": "region only",
+        "route_confidence": "moderate",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "LineString",
@@ -1060,7 +1138,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Feature-level provenance for displayed map text."
           }
-        ]
+        ],
+        "claim_type": "region only",
+        "route_confidence": "high",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "LineString",
@@ -1108,7 +1189,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "This combines a contested deep-origin hypothesis with better-supported shipboard transmission and quarantine claims."
           }
-        ]
+        ],
+        "claim_type": "inferred route",
+        "route_confidence": "contested",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "LineString",
@@ -1168,7 +1252,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "The deep-origin segment is model-dependent; the shipboard-air segment is a transmission ecology teaching route."
           }
-        ]
+        ],
+        "claim_type": "inferred route",
+        "route_confidence": "moderate",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "LineString",
@@ -1221,7 +1308,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Feature-level provenance for displayed map text."
           }
-        ]
+        ],
+        "claim_type": "region only",
+        "route_confidence": "moderate",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "LineString",
@@ -1268,7 +1358,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Feature-level provenance for displayed map text."
           }
-        ]
+        ],
+        "claim_type": "region only",
+        "route_confidence": "high",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "LineString",
@@ -1314,7 +1407,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             "claim_type": "map feature caption",
             "notes": "Feature-level provenance for displayed map text."
           }
-        ]
+        ],
+        "claim_type": "typical route",
+        "route_confidence": "moderate",
+        "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
       },
       "geometry": {
         "type": "LineString",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T22:54:57",
+  "generated_at": "2026-05-17T23:56:29",
   "count": 5,
   "tools": [
     {
@@ -45,21 +45,22 @@
       "title": "Maritime Disease Atlas",
       "tool_type": "atlas",
       "status": "open",
-      "status_label": "Open now",
-      "summary": "A map-first digital exhibit on shipboard disease ecology, ports, vectors, provisions, quarantine, violence, and the movement constraints of life at sea.",
-      "evidence_model": "Exhibit stations with routes, mechanisms, archival plates, claim-level source IDs, confidence notes, and guided-tour narrative",
+      "status_label": "Source-backed exhibit",
+      "summary": "A source-backed map-first digital exhibit on ships, ports, quarantine, naval warfare, captivity, trade, migration, and maritime disease ecology.",
+      "evidence_model": "Case modules with source IDs, route claim types, burden categories, confidence notes, uncertainty notes, mechanism filters, and guided-tour narrative",
       "public_route": "atlases/maritime/",
       "keywords": [
         "maritime",
         "ports",
         "ships",
-        "yellow fever",
+        "quarantine",
         "scurvy",
-        "piracy",
-        "vector",
+        "ship fever",
+        "yellow fever",
+        "migration",
         "exhibit"
       ],
-      "long_note": "This is the main public-history exhibit in the atlas family: an exploratory disease ecology surface with guided-tour and presentation modes for later video adaptation."
+      "long_note": "This is the main public-history exhibit in the atlas family: an exploratory disease ecology surface with source-backed case modules, route confidence labels, and guided-tour and presentation modes for later video adaptation."
     },
     {
       "tool_id": "revolutionary-war-atlas",

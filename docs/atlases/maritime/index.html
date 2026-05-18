@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="data/maritime_disease_atlas_data.js?v=source-20260518"></script>
+<script src="data/maritime_disease_modules.js?v=source-20260518"></script>
+<script src="data/maritime_youtube_video_plan.js?v=youtube-20260518"></script>
 <style>
 :root {
   --bg: #0d0c0a;
@@ -390,6 +392,129 @@ html, body {
   font-size: 14px;
   line-height: 1.42;
 }
+.mechanism-first {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+.mechanism-first h3,
+.module-browser h3 {
+  margin: 0 0 8px;
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.mechanism-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+}
+.mechanism-pill {
+  min-width: 0;
+  border: 1px solid rgba(231, 214, 184, 0.11);
+  background: rgba(255,255,255,0.035);
+  color: var(--muted);
+  padding: 8px 9px;
+  font-size: 12px;
+  line-height: 1.15;
+}
+.module-browser {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+.module-filters {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+  margin-bottom: 10px;
+}
+.module-filters label {
+  display: grid;
+  gap: 4px;
+  color: #8f887f;
+  font: 800 9px/1.1 var(--display);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.module-filters select {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid rgba(231, 214, 184, 0.13);
+  background: rgba(255,255,255,0.045);
+  color: var(--text);
+  padding: 7px 8px;
+  font: 700 12px/1 var(--display);
+}
+#module-count {
+  margin: 4px 0 8px;
+  color: #8f887f;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+#module-list {
+  display: grid;
+  gap: 9px;
+}
+.module-card {
+  border: 1px solid rgba(231, 214, 184, 0.12);
+  background: rgba(255,255,255,0.035);
+  padding: 11px 12px;
+}
+.module-card h4 {
+  margin: 0 0 4px;
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.14;
+}
+.module-meta,
+.module-line,
+.module-citation {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.34;
+}
+.module-meta {
+  color: #9f968b;
+}
+.module-line {
+  margin-top: 7px;
+}
+.module-line strong,
+.module-citation strong {
+  color: var(--gold);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.module-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 8px;
+}
+.module-badge {
+  border: 1px solid rgba(201,168,76,0.22);
+  color: #d8c89b;
+  padding: 4px 6px;
+  font: 800 9px/1 var(--display);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.module-open {
+  margin-top: 9px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(201,168,76,0.09);
+  color: var(--text);
+  padding: 7px 10px;
+  font: 800 10px/1 var(--display);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 #sources-drawer {
   position: fixed;
   inset: 0 0 0 auto;
@@ -408,7 +533,9 @@ html, body {
   transform: translateX(0);
 }
 .recording-mode #sources-drawer,
-.recording-mode .exhibit-guide {
+.recording-mode .exhibit-guide,
+.recording-mode .mechanism-first,
+.recording-mode #module-browser {
   display: none;
 }
 #sources-drawer header {
@@ -467,6 +594,20 @@ html, body {
   font: 800 10px/1 var(--display);
   letter-spacing: 0.12em;
   text-transform: uppercase;
+}
+.source-section-title {
+  margin: 12px 0 2px;
+  color: var(--gold);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.source-item a,
+.module-citation a,
+#story-evidence a {
+  color: #d8c89b;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
 }
 #story-panel {
   position: fixed;
@@ -935,6 +1076,18 @@ html, body {
 .recording-mode #video-brand {
   display: flex;
 }
+.youtube-mode #video-brand-source {
+  color: #4f6f64;
+}
+.youtube-mode #chrome {
+  transform: translateY(-112%);
+  opacity: 0;
+  pointer-events: none;
+}
+.youtube-mode #video-pause-btn,
+.youtube-mode #video-sound-btn {
+  display: none !important;
+}
 .recording-mode #story-panel {
   top: auto;
   bottom: 42px;
@@ -1091,12 +1244,31 @@ html, body {
   from { background-position: 0 0; }
   to { background-position: 80px 0; }
 }
+@media (max-width: 1180px) {
+  #chrome {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  #scenario-bar {
+    align-items: flex-start;
+  }
+  #story-panel {
+    top: 314px;
+    max-height: calc(100vh - 346px);
+  }
+  #mechanism-card,
+  #plot-card,
+  #context-card {
+    top: 314px;
+    max-height: calc(100vh - 346px);
+  }
+}
 @media (max-width: 950px) {
   #chrome { grid-template-columns: 1fr; }
-  #story-panel { top: 172px; width: 380px; }
-  #mechanism-card { right: 18px; top: 172px; width: 360px; }
-  #plot-card { right: 18px; top: 172px; width: 400px; }
-  #context-card { right: 18px; top: 172px; width: 360px; }
+  #story-panel { top: 314px; width: 380px; }
+  #mechanism-card { right: 18px; top: 314px; width: 360px; }
+  #plot-card { right: 18px; top: 314px; width: 400px; }
+  #context-card { right: 18px; top: 314px; width: 360px; }
 }
 @media (max-width: 700px) {
   #scenario-bar {
@@ -1110,6 +1282,10 @@ html, body {
     padding: 5px 6px 5px 8px;
   }
   #story-panel { top: 184px; }
+  .module-filters,
+  .mechanism-grid {
+    grid-template-columns: 1fr;
+  }
   #mechanism-card { top: 184px; }
   #plot-card { top: 184px; width: 360px; }
   #context-card { top: 184px; }
@@ -1274,7 +1450,7 @@ html, body {
   <header>
     <div>
       <h2>Sources / Credits</h2>
-      <p>Archival plates used in the exhibit and guided-tour presentation mode. Credits are kept local so the atlas remains usable as a standalone file.</p>
+      <p>Evidence sources, module citations, and archival plates used in the exhibit and guided-tour presentation mode. Credits are kept local so the atlas remains usable as a standalone file.</p>
     </div>
     <button id="sources-close-btn" aria-label="Close sources and credits">×</button>
   </header>
@@ -1288,8 +1464,32 @@ html, body {
   <div id="story-evidence" aria-label="Evidence note" hidden></div>
   <details id="exhibit-guide" class="exhibit-guide">
     <summary>How to use this exhibit</summary>
-    <p>Choose a station group across the top, then move through the scene chips below. Guided Tour plays the exhibit without hiding the interface. Presentation Mode switches to the cinematic capture layout for a later YouTube cut.</p>
+    <p>Choose a station group across the top, then use the case modules below as the source-backed reading layer. Guided Tour plays the exhibit without hiding the interface. Presentation Mode switches to the cinematic capture layout for a later YouTube cut.</p>
   </details>
+  <section class="mechanism-first" aria-label="Mechanism first guide">
+    <h3>Mechanism first</h3>
+    <div class="mechanism-grid">
+      <div class="mechanism-pill">Crowding and ventilation</div>
+      <div class="mechanism-pill">Water, waste, and provisions</div>
+      <div class="mechanism-pill">Vectors and warm ports</div>
+      <div class="mechanism-pill">Diet and deficiency</div>
+      <div class="mechanism-pill">Quarantine infrastructure</div>
+      <div class="mechanism-pill">Empire, war, and coercion</div>
+      <div class="mechanism-pill">Not all ship disease is infection</div>
+    </div>
+  </section>
+  <section id="module-browser" class="module-browser" aria-label="Source-backed maritime case modules">
+    <h3>Case modules</h3>
+    <div class="module-filters">
+      <label>Setting<select id="module-setting-filter"></select></label>
+      <label>Condition<select id="module-condition-filter"></select></label>
+      <label>Mechanism<select id="module-mechanism-filter"></select></label>
+      <label>Century<select id="module-century-filter"></select></label>
+      <label>Confidence<select id="module-confidence-filter"></select></label>
+    </div>
+    <div id="module-count"></div>
+    <div id="module-list"></div>
+  </section>
   <div id="timeline"></div>
   <div id="scene-progress" aria-hidden="true">
     <div id="scene-progress-label">Scene ready</div>
@@ -1365,6 +1565,10 @@ L.control.attribution({ position: "bottomleft", prefix: false }).addTo(map).addA
 
 const atlas = window.MARITIME_DISEASE_ATLAS_GEOJSON;
 const scenarios = window.MARITIME_DISEASE_SCENARIOS;
+const moduleDataset = window.MARITIME_DISEASE_MODULES || { modules: [], sources: [], confidence_legend: {} };
+const youtubeVideoPlan = window.MARITIME_YOUTUBE_VIDEO_PLAN || null;
+const maritimeModules = Array.isArray(moduleDataset.modules) ? moduleDataset.modules : [];
+const evidenceSources = new Map((moduleDataset.sources || []).map(source => [source.source_id, source]));
 const featureById = new Map(atlas.features.map(feature => [feature.properties.id, feature]));
 const queryParams = new URLSearchParams(window.location.search);
 const SCENARIO_ORDER = [
@@ -1412,6 +1616,7 @@ let runToken = 0;
 let tourToken = 0;
 let isPaused = false;
 let isRecordingMode = false;
+let isYouTubeMode = false;
 let isTourRunning = false;
 let pauseResolvers = [];
 let activeProgress = null;
@@ -2423,9 +2628,52 @@ function escapeHtml(value) {
   }[char]));
 }
 
+function sourceLabel(sourceId) {
+  const source = evidenceSources.get(sourceId);
+  return source ? source.short_citation : sourceId;
+}
+
+function sourceLinks(sourceIds) {
+  const ids = Array.isArray(sourceIds) ? sourceIds : [];
+  return ids.map(sourceId => {
+    const source = evidenceSources.get(sourceId);
+    if (source && source.url_or_doi) {
+      return `<a href="${escapeHtml(source.url_or_doi)}" target="_blank" rel="noreferrer">${escapeHtml(source.short_citation || sourceId)}</a>`;
+    }
+    return `<span>${escapeHtml(sourceLabel(sourceId))}</span>`;
+  }).join("; ");
+}
+
+function sourceWhere(sourceId) {
+  const appearances = [];
+  maritimeModules.forEach(module => {
+    const fields = [
+      module.source_ids || [],
+      module.human_burden ? module.human_burden.source_ids || [] : [],
+      module.map_geometry_or_route ? module.map_geometry_or_route.source_ids || [] : []
+    ];
+    (module.claims || []).forEach(claim => fields.push(claim.source_ids || []));
+    if (fields.some(ids => ids.includes(sourceId))) appearances.push(module.title);
+  });
+  return appearances;
+}
+
 function renderSourceCatalog() {
   const list = document.getElementById("sources-list");
-  list.innerHTML = SOURCE_CATALOG.map(item => `
+  const evidenceCatalog = Array.from(evidenceSources.values())
+    .map(source => ({ ...source, where: sourceWhere(source.source_id) }))
+    .filter(source => source.where.length)
+    .sort((a, b) => (a.short_citation || a.source_id).localeCompare(b.short_citation || b.source_id));
+  const evidenceHtml = evidenceCatalog.map(source => `
+    <article class="source-item">
+      <h3 class="source-item-title">${escapeHtml(source.short_citation || source.source_id)}</h3>
+      <div class="source-item-meta">${escapeHtml(source.full_citation || "")}</div>
+      ${source.url_or_doi ? `<div class="source-item-where"><a href="${escapeHtml(source.url_or_doi)}" target="_blank" rel="noreferrer">${escapeHtml(source.url_or_doi)}</a></div>` : ""}
+      <span class="source-item-license">${escapeHtml(source.source_type || "source")}</span>
+      <div class="source-item-where">${escapeHtml(source.where.join(" | "))}</div>
+    </article>
+  `).join("");
+  const imageHtml = SOURCE_CATALOG.map(item => `
     <article class="source-item">
       <h3 class="source-item-title">${escapeHtml(item.title)}</h3>
       <div class="source-item-meta">${escapeHtml(item.credit)}</div>
@@ -2433,6 +2681,12 @@ function renderSourceCatalog() {
       <div class="source-item-where">${escapeHtml(item.where.join(" | "))}</div>
     </article>
   `).join("");
+  list.innerHTML = `
+    <h3 class="source-section-title">Evidence sources</h3>
+    ${evidenceHtml}
+    <h3 class="source-section-title">Archival image credits</h3>
+    ${imageHtml}
+  `;
 }
 
 function setSourcesOpen(nextValue) {
@@ -2471,6 +2725,15 @@ function setRecordingMode(nextValue) {
 
 function setPresentationMode(nextValue) {
   setRecordingMode(nextValue);
+}
+
+function setYouTubeMode(nextValue) {
+  isYouTubeMode = nextValue;
+  document.documentElement.classList.toggle("youtube-mode", isYouTubeMode);
+  const brandSource = document.getElementById("video-brand-source");
+  if (brandSource) {
+    brandSource.textContent = isYouTubeMode ? "YouTube guided tour | The Edge of Epidemiology" : "The Edge of Epidemiology";
+  }
 }
 
 function setScenarioPlaying(nextValue) {
@@ -2611,10 +2874,14 @@ function evidenceHtml(item) {
   const sourceIds = Array.isArray(item.source_ids) ? item.source_ids : [];
   const confidence = item.confidence ? (CONFIDENCE_LABELS[item.confidence] || item.confidence) : "";
   const note = item.uncertainty_note || item.evidence_note || "";
-  if (!sourceIds.length && !confidence && !note) return "";
+  const claimType = item.claim_type || "";
+  const routeConfidence = item.route_confidence || "";
+  if (!sourceIds.length && !confidence && !note && !claimType && !routeConfidence) return "";
   return [
     confidence ? `<span><strong>Evidence</strong> ${escapeHtml(confidence)}</span>` : "",
-    sourceIds.length ? `<span><strong>Sources</strong> ${escapeHtml(sourceIds.join(", "))}</span>` : "",
+    claimType ? `<span><strong>Mapped as</strong> ${escapeHtml(claimType)}</span>` : "",
+    routeConfidence ? `<span><strong>Route confidence</strong> ${escapeHtml(CONFIDENCE_LABELS[routeConfidence] || routeConfidence)}</span>` : "",
+    sourceIds.length ? `<span><strong>Sources</strong> ${sourceLinks(sourceIds)}</span>` : "",
     note ? `<span><strong>Note</strong> ${escapeHtml(note)}</span>` : ""
   ].filter(Boolean).join("");
 }
@@ -2628,6 +2895,108 @@ function setStory(kicker, title, copy, color, evidenceItem = null) {
   evidence.innerHTML = html;
   evidence.hidden = !html;
   document.documentElement.style.setProperty("--active-color", color || "var(--gold)");
+}
+
+function listValues(value) {
+  if (Array.isArray(value)) return value.filter(Boolean);
+  if (value) return [value];
+  return [];
+}
+
+function uniqueSorted(values) {
+  return Array.from(new Set(values.filter(Boolean))).sort((a, b) => String(a).localeCompare(String(b)));
+}
+
+function optionLabel(value) {
+  return value === "all" ? "All" : String(value).replace(/\b\w/g, char => char.toUpperCase());
+}
+
+function populateModuleFilter(id, values) {
+  const select = document.getElementById(id);
+  if (!select) return;
+  select.innerHTML = [`<option value="all">All</option>`]
+    .concat(uniqueSorted(values).map(value => `<option value="${escapeHtml(value)}">${escapeHtml(optionLabel(value))}</option>`))
+    .join("");
+}
+
+function initModuleFilters() {
+  populateModuleFilter("module-setting-filter", maritimeModules.flatMap(module => listValues(module.route_or_setting).concat(module.setting_tags || [])));
+  populateModuleFilter("module-condition-filter", maritimeModules.flatMap(module => module.diseases_or_conditions || []));
+  populateModuleFilter("module-mechanism-filter", maritimeModules.flatMap(module => module.mechanism_tags || module.transmission_or_cause || []));
+  populateModuleFilter("module-century-filter", maritimeModules.flatMap(module => module.century_tags || []));
+  populateModuleFilter("module-confidence-filter", maritimeModules.map(module => module.confidence));
+  document.querySelectorAll(".module-filters select").forEach(select => select.addEventListener("change", renderModuleBrowser));
+}
+
+function selectedFilter(id) {
+  const element = document.getElementById(id);
+  return element ? element.value : "all";
+}
+
+function moduleContains(module, values, selected) {
+  if (selected === "all") return true;
+  return listValues(values).includes(selected);
+}
+
+function moduleMatchesFilters(module) {
+  return (
+    moduleContains(module, listValues(module.route_or_setting).concat(module.setting_tags || []), selectedFilter("module-setting-filter")) &&
+    moduleContains(module, module.diseases_or_conditions || [], selectedFilter("module-condition-filter")) &&
+    moduleContains(module, (module.mechanism_tags || []).concat(module.transmission_or_cause || []), selectedFilter("module-mechanism-filter")) &&
+    moduleContains(module, module.century_tags || [], selectedFilter("module-century-filter")) &&
+    moduleContains(module, [module.confidence], selectedFilter("module-confidence-filter"))
+  );
+}
+
+function truncateText(value, length = 172) {
+  const text = String(value || "");
+  if (text.length <= length) return text;
+  return `${text.slice(0, length - 1).trim()}...`;
+}
+
+function renderModuleCard(module) {
+  const burden = module.human_burden || {};
+  const mapInfo = module.map_geometry_or_route || {};
+  const badges = [
+    module.confidence ? `${CONFIDENCE_LABELS[module.confidence] || module.confidence} confidence` : "",
+    mapInfo.claim_type ? `Map: ${mapInfo.claim_type}` : "",
+    ...(module.mechanism_tags || []).slice(0, 3)
+  ].filter(Boolean);
+  return `
+    <article class="module-card" data-module-id="${escapeHtml(module.id)}">
+      <h4>${escapeHtml(module.title)}</h4>
+      <div class="module-meta">${escapeHtml(module.date_range)} | ${escapeHtml(module.route_or_setting)} | ${escapeHtml(module.geography)}</div>
+      <div class="module-line"><strong>Condition</strong> ${escapeHtml((module.diseases_or_conditions || []).join(", "))}</div>
+      <div class="module-line"><strong>Mechanism</strong> ${escapeHtml(truncateText(module.maritime_mechanism, 210))}</div>
+      <div class="module-line"><strong>Burden</strong> ${escapeHtml(burden.burden_type || "unknown")}: ${escapeHtml(truncateText(burden.summary, 190))}</div>
+      <div class="module-line"><strong>Response</strong> ${escapeHtml(truncateText(module.public_health_response, 185))}</div>
+      <div class="module-line"><strong>Uncertainty</strong> ${escapeHtml(truncateText(module.uncertainty_note, 185))}</div>
+      <div class="module-citation"><strong>Citations</strong> ${sourceLinks(module.source_ids || [])}</div>
+      <div class="module-badges">${badges.map(badge => `<span class="module-badge">${escapeHtml(badge)}</span>`).join("")}</div>
+      ${module.scenario_id && scenarios[module.scenario_id] ? `<button class="module-open" data-scenario="${escapeHtml(module.scenario_id)}">Open station</button>` : ""}
+    </article>
+  `;
+}
+
+function renderModuleBrowser() {
+  const list = document.getElementById("module-list");
+  const count = document.getElementById("module-count");
+  if (!list || !count) return;
+  const matches = maritimeModules.filter(moduleMatchesFilters);
+  count.textContent = `${matches.length} of ${maritimeModules.length} source-backed modules`;
+  list.innerHTML = matches.map(renderModuleCard).join("") || `<article class="module-card"><h4>No matching modules</h4><div class="module-line">Adjust the filters to widen the evidence set.</div></article>`;
+}
+
+function initModuleBrowser() {
+  initModuleFilters();
+  renderModuleBrowser();
+  document.getElementById("module-list").addEventListener("click", event => {
+    const button = event.target.closest(".module-open");
+    if (!button) return;
+    ++tourToken;
+    setTourRunning(false);
+    playScenario(button.dataset.scenario);
+  });
 }
 
 function renderTimeline(scenario, activeIndex = -1) {
@@ -3276,10 +3645,23 @@ document.addEventListener("keydown", event => {
   }
 });
 
+function youtubeTourOrder() {
+  const order = youtubeVideoPlan && youtubeVideoPlan.playback && Array.isArray(youtubeVideoPlan.playback.scenario_order)
+    ? youtubeVideoPlan.playback.scenario_order
+    : VIDEO_TOUR;
+  return order.filter(scenarioId => scenarios[scenarioId]);
+}
+
+function activeTourOrder() {
+  return isYouTubeMode ? youtubeTourOrder() : VIDEO_TOUR;
+}
+
 async function playTour() {
+  const order = arguments.length ? arguments[0] : null;
   const token = ++tourToken;
+  const scenarioOrder = Array.isArray(order) ? order.filter(scenarioId => scenarios[scenarioId]) : activeTourOrder();
   setTourRunning(true);
-  for (const scenarioId of VIDEO_TOUR) {
+  for (const scenarioId of scenarioOrder) {
     if (token !== tourToken) break;
     await playScenario(scenarioId);
     if (token !== tourToken) break;
@@ -3293,6 +3675,12 @@ async function playTour() {
   }
 }
 
+function playYouTubeTour() {
+  setYouTubeMode(true);
+  setPresentationMode(true);
+  return playTour(youtubeTourOrder());
+}
+
 function queryFlag(...names) {
   return names.some(name => {
     const value = queryParams.get(name);
@@ -3301,18 +3689,23 @@ function queryFlag(...names) {
 }
 
 function initializeFromQuery() {
+  const requestedScenario = queryParams.get("scenario");
+  const shouldYouTube = queryFlag("youtube", "yt");
+  if (shouldYouTube) {
+    setYouTubeMode(true);
+    setPresentationMode(true);
+  }
   if (queryFlag("video", "recording", "record")) {
     setPresentationMode(true);
   }
   if (queryFlag("sound", "audio")) {
     setSoundEnabled(true, { cue: false });
   }
-  const requestedScenario = queryParams.get("scenario");
-  const shouldTour = queryFlag("tour", "autotour");
+  const shouldTour = queryFlag("tour", "autotour") || (shouldYouTube && !requestedScenario);
   if (shouldTour || requestedScenario) {
     window.setTimeout(() => {
       if (shouldTour) {
-        playTour();
+        playTour(shouldYouTube ? youtubeTourOrder() : null);
       } else if (scenarios[requestedScenario]) {
         playScenario(requestedScenario);
       }
@@ -3321,6 +3714,7 @@ function initializeFromQuery() {
 }
 
 drawAtlas();
+initModuleBrowser();
 renderSourceCatalog();
 updatePauseButton();
 updateSoundButton();
@@ -3330,9 +3724,13 @@ initializeFromQuery();
 window.MARITIME_ATLAS_CONTROLS = {
   playScenario,
   playTour,
+  playYouTubeTour,
+  youtubeTourOrder,
   resetAtlas,
   setRecordingMode,
   setPresentationMode,
+  setYouTubeMode,
+  youtubeVideoPlan,
   setSoundEnabled,
   soundStatus: () => soundDesign ? soundDesign.status() : {
     enabled: isSoundEnabled,
