@@ -73,7 +73,7 @@ a {
 #scenario-bar {
   min-width: 0;
   display: grid;
-  grid-template-columns: minmax(170px, 220px) minmax(150px, 190px) minmax(230px, 1fr) minmax(145px, 170px) auto;
+  grid-template-columns: minmax(145px, 1fr) minmax(120px, 0.8fr) minmax(145px, 0.9fr) minmax(145px, 0.9fr) minmax(220px, 1.25fr) minmax(120px, 0.72fr) auto;
   align-items: center;
   gap: 12px;
   padding: 1px 0 2px;
@@ -178,9 +178,9 @@ a {
 #story-panel,
 #evidence-panel {
   position: fixed;
-  top: 156px;
+  top: 170px;
   z-index: 920;
-  max-height: calc(100vh - 204px);
+  max-height: calc(100vh - 218px);
   overflow-y: auto;
   border: 1px solid var(--border);
   box-shadow: 0 18px 58px rgba(0,0,0,0.55);
@@ -266,6 +266,10 @@ a {
 .badge.layer-surveillance_region { color: #8fb8d8; }
 .badge.layer-exposure_zone { color: #8cc9b5; }
 #route-list,
+#knowledge-status,
+#ecology-list,
+#episode-list,
+#evidence-kind-list,
 #geography-evidence-list,
 #modern-echo-list,
 #framing-trap-list,
@@ -278,6 +282,8 @@ a {
 }
 .route-step,
 .detail-card,
+.evidence-card,
+.knowledge-card,
 .list-card {
   width: 100%;
   text-align: left;
@@ -289,6 +295,46 @@ a {
 }
 .route-step {
   cursor: pointer;
+}
+.knowledge-card h3,
+.evidence-card h3 {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.15;
+}
+.knowledge-card p,
+.evidence-card p {
+  margin: 7px 0 0;
+}
+.knowledge-card ul,
+.evidence-card ul {
+  margin-top: 8px;
+}
+.source-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 9px;
+}
+.source-row .panel-link,
+.source-row .badge {
+  padding: 4px 8px;
+  font-size: 11px;
+}
+.badge.warning {
+  color: #d8876d;
+  border-color: rgba(216,135,109,0.32);
+  background: rgba(216,135,109,0.10);
+}
+.badge.vector {
+  color: #9dcf8d;
+  border-color: rgba(157,207,141,0.28);
+  background: rgba(157,207,141,0.09);
+}
+.badge.eradicated {
+  color: #8fb8d8;
+  border-color: rgba(143,184,216,0.28);
+  background: rgba(143,184,216,0.10);
 }
 .route-step:hover,
 .route-step.active {
@@ -504,7 +550,28 @@ a {
     grid-template-columns: 1fr;
   }
   #scenario-bar {
-    grid-template-columns: minmax(150px, 0.8fr) minmax(135px, 0.7fr) minmax(220px, 1.1fr) minmax(135px, 0.65fr) auto;
+    grid-template-columns: repeat(4, minmax(135px, 1fr));
+  }
+  #scenario-bar .atlas-picker:nth-of-type(5) {
+    grid-column: span 2;
+  }
+  #atlas-controls {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 6px;
+    min-width: 0;
+  }
+  #pause-btn,
+  #prev-btn,
+  #next-btn,
+  #reset-btn {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+  #story-panel,
+  #evidence-panel {
+    top: 326px;
+    max-height: calc(100vh - 374px);
   }
 }
 @media (max-width: 980px) {
@@ -523,6 +590,9 @@ a {
   }
   #scenario-bar {
     grid-template-columns: 1fr;
+  }
+  #scenario-bar .atlas-picker:nth-of-type(5) {
+    grid-column: span 1;
   }
   #atlas-controls {
     justify-content: flex-start;
@@ -634,18 +704,18 @@ a {
 </style>
 
     <link rel="canonical" href="https://devinteichrow.com/atlases/pathogen/" />
-    <meta name="description" content="Interactive pathogen atlas mapping disease origins, spread routes, transmission ecologies, reference evidence, and reporting context." />
+    <meta name="description" content="Source-backed digital exhibit on pathogen origins, reservoirs, transmission ecology, historical spread, and evidentiary uncertainty." />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="The Edge of Epidemiology" />
     <meta property="og:title" content="Pathogen Atlas | Edge of Epidemiology" />
-    <meta property="og:description" content="Interactive pathogen atlas mapping disease origins, spread routes, transmission ecologies, reference evidence, and reporting context." />
+    <meta property="og:description" content="Source-backed digital exhibit on pathogen origins, reservoirs, transmission ecology, historical spread, and evidentiary uncertainty." />
     <meta property="og:url" content="https://devinteichrow.com/atlases/pathogen/" />
     <meta property="og:image" content="https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Pathogen Atlas | Edge of Epidemiology" />
-    <meta name="twitter:description" content="Interactive pathogen atlas mapping disease origins, spread routes, transmission ecologies, reference evidence, and reporting context." />
+    <meta name="twitter:description" content="Source-backed digital exhibit on pathogen origins, reservoirs, transmission ecology, historical spread, and evidentiary uncertainty." />
     <meta name="twitter:image" content="https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png" />
-    <script type="application/ld+json" data-eoe-seo>{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Pathogen Atlas | Edge of Epidemiology", "url": "https://devinteichrow.com/atlases/pathogen/", "description": "Interactive pathogen atlas mapping disease origins, spread routes, transmission ecologies, reference evidence, and reporting context.", "isPartOf": {"@type": "WebSite", "name": "The Edge of Epidemiology", "url": "https://devinteichrow.com/"}, "author": {"@type": "Person", "name": "Devin Teichrow", "url": "https://devinteichrow.com/about/"}}</script>
+    <script type="application/ld+json" data-eoe-seo>{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Pathogen Atlas | Edge of Epidemiology", "url": "https://devinteichrow.com/atlases/pathogen/", "description": "Source-backed digital exhibit on pathogen origins, reservoirs, transmission ecology, historical spread, and evidentiary uncertainty.", "isPartOf": {"@type": "WebSite", "name": "The Edge of Epidemiology", "url": "https://devinteichrow.com/"}, "author": {"@type": "Person", "name": "Devin Teichrow", "url": "https://devinteichrow.com/about/"}}</script>
 </head>
 <body><div id="eoe-atlas-overlay"><a id="eoe-atlas-overlay-brand" href="../../index.html"><span>The Edge of Epidemiology</span> <span class="byline">by Devin Teichrow</span></a><nav id="eoe-atlas-overlay-links" aria-label="Tool navigation"><a href="../../index.html">Home</a><a href="../../tools/index.html" class="active">Learning Tools</a><a href="../../newsdesk/index.html">Newsdesk</a><a href="../../essays/index.html">Essays</a></nav></div>
 <main id="map" aria-label="Pathogen atlas map"></main>
@@ -653,11 +723,11 @@ a {
 <header id="chrome">
   <section id="brand">
     <h1>Pathogen Atlas</h1>
-    <p>Origins | spread routes | evidence confidence | related writing</p>
+    <p>Origins | reservoirs | transmission | evidence uncertainty</p>
   </section>
   <nav id="scenario-bar" aria-label="Pathogen atlas rotation">
     <div class="atlas-picker">
-      <label for="category-select">Category</label>
+      <label for="category-select">Transmission</label>
       <select class="atlas-select" id="category-select"></select>
     </div>
     <div class="atlas-picker">
@@ -665,8 +735,16 @@ a {
       <select class="atlas-select" id="type-select"></select>
     </div>
     <div class="atlas-picker">
-      <label for="pathogen-select">Disease</label>
-      <input class="atlas-search" id="pathogen-search" type="search" placeholder="Search disease names" autocomplete="off">
+      <label for="origin-confidence-select">Origin confidence</label>
+      <select class="atlas-select" id="origin-confidence-select"></select>
+    </div>
+    <div class="atlas-picker">
+      <label for="evidence-type-select">Evidence</label>
+      <select class="atlas-select" id="evidence-type-select"></select>
+    </div>
+    <div class="atlas-picker">
+      <label for="pathogen-select">Pathogen</label>
+      <input class="atlas-search" id="pathogen-search" type="search" placeholder="Search pathogen, reservoir, evidence" autocomplete="off">
       <select class="atlas-select" id="pathogen-select"></select>
       <span class="filter-count" id="filter-count"></span>
     </div>
@@ -689,14 +767,30 @@ a {
 </header>
 
 <aside id="story-panel">
-  <div id="story-kicker">Autoplay atlas</div>
-  <h2 id="story-title">Loading disease profile</h2>
-  <div id="story-copy">Preparing curated pathogen routes and evidence notes.</div>
+  <div id="story-kicker">Source-backed atlas</div>
+  <h2 id="story-title">Select a pathogen profile</h2>
+  <div id="story-copy">Curated pathogen history, transmission ecology, and evidence notes will appear here.</div>
   <div class="meta-row" id="story-meta"></div>
   <div id="rotation-state">Rotation is on.</div>
   <div class="panel-section">
-    <div class="subsection-kicker">Epidemiologic significance</div>
+    <div class="subsection-kicker">Why this matters</div>
     <p class="panel-copy" id="why-matters-copy"></p>
+  </div>
+  <div class="panel-section">
+    <div class="subsection-kicker">How to read uncertainty</div>
+    <p class="panel-copy">Earliest evidence, hypothesized origin, historical spread, and modern distribution are separate claims. The map labels which kind of claim each geography layer represents.</p>
+  </div>
+  <div class="panel-section">
+    <div class="subsection-kicker">Known / inferred / contested / unknown</div>
+    <div id="knowledge-status"></div>
+  </div>
+  <div class="panel-section">
+    <div class="subsection-kicker">Reservoirs and transmission</div>
+    <div id="ecology-list"></div>
+  </div>
+  <div class="panel-section">
+    <div class="subsection-kicker">Major episodes</div>
+    <div id="episode-list"></div>
   </div>
   <div class="panel-section" id="variant-shell" hidden>
     <div class="subsection-kicker">Variant / strain lens</div>
@@ -716,7 +810,7 @@ a {
 
 <aside id="evidence-panel">
   <div class="panel-kicker">Evidence desk</div>
-  <h2 id="evidence-title">Loading evidence panel</h2>
+  <h2 id="evidence-title">Evidence panel ready</h2>
   <p class="panel-copy" id="origin-copy"></p>
   <div class="inline-links" id="evidence-links"></div>
 
@@ -726,7 +820,14 @@ a {
       <h3 id="origin-label"></h3>
       <div class="meta-row" id="origin-meta"></div>
       <p class="panel-copy" id="origin-narrative"></p>
+      <p class="panel-copy" id="origin-uncertainty"></p>
+      <div class="inline-links" id="origin-source-links"></div>
     </div>
+  </section>
+
+  <section class="panel-section">
+    <div class="subsection-kicker">What kind of evidence do we have?</div>
+    <div id="evidence-kind-list"></div>
   </section>
 
   <section class="panel-section">
@@ -783,6 +884,22 @@ const BASE_URL = window.PATHOGEN_ATLAS_BASE_URL || "/";
 const ATLAS_ENTRIES = Array.isArray(ATLAS_STATE.entries) ? ATLAS_STATE.entries : [];
 const ENTRY_BY_SLUG = new Map(ATLAS_ENTRIES.map((entry) => [entry.slug, entry]));
 const PALETTE = {
+  "variola-smallpox": "#b56b5b",
+  "yersinia-pestis-plague": "#b9754f",
+  "vibrio-cholerae-cholera": "#5a9bd4",
+  "mycobacterium-tuberculosis-complex": "#d98e5f",
+  "influenza-a": "#b7c7df",
+  "measles-virus": "#d6c06a",
+  "yellow-fever-virus": "#d86a4f",
+  "dengue-virus": "#c9a84c",
+  "malaria-parasites": "#5abf7c",
+  "hantaviruses": "#7aa96b",
+  "hiv-1": "#d26b91",
+  "sars-cov-2": "#7b8fa8",
+  "poliovirus": "#7c9fd1",
+  "treponema-pallidum-syphilis": "#c38a65",
+  "salmonella-enterica": "#bc8f5f",
+  "rickettsia-prowazekii-epidemic-typhus": "#9a8c5f",
   "yellow-fever": "#d86a4f",
   "cholera": "#5a9bd4",
   "measles": "#d6c06a",
@@ -801,10 +918,14 @@ const STATUS_LABELS = {
   weak: "Weakly supported"
 };
 const CONFIDENCE_LABELS = {
-  strong: "Strong support",
+  high: "High support",
   moderate: "Moderate support",
-  mixed: "Mixed support",
-  weak: "Weak support",
+  low: "Low support",
+  speculative: "Speculative",
+  unknown: "Unknown",
+  strong: "High support",
+  mixed: "Moderate support",
+  weak: "Low support",
   contested: "Contested"
 };
 const WRITING_LABELS = {
@@ -828,6 +949,12 @@ const CATEGORY_ORDER = [
   "other-mixed"
 ];
 const PATHOGEN_TYPE_ORDER = [
+  "virus",
+  "bacterium",
+  "parasite",
+  "prion",
+  "toxin",
+  "other",
   "Virus",
   "Bacterium",
   "Protozoan parasite",
@@ -860,6 +987,8 @@ L.control.attribution({ position: "bottomleft", prefix: false }).addTo(map).addA
 const scenarioBar = document.getElementById("scenario-bar");
 const categorySelect = document.getElementById("category-select");
 const typeSelect = document.getElementById("type-select");
+const originConfidenceSelect = document.getElementById("origin-confidence-select");
+const evidenceTypeSelect = document.getElementById("evidence-type-select");
 const pathogenSelect = document.getElementById("pathogen-select");
 const pathogenSearch = document.getElementById("pathogen-search");
 const filterCount = document.getElementById("filter-count");
@@ -871,6 +1000,8 @@ let currentSlug = null;
 let currentVariantSlug = null;
 let currentCategory = "all";
 let currentType = "all";
+let currentOriginConfidence = "all";
+let currentEvidenceType = "all";
 let currentSearch = "";
 let currentMapMode = "both";
 let isPaused = false;
@@ -907,13 +1038,70 @@ function typeKeyFor(entry) {
   return entry.pathogen_type || "Other";
 }
 
+function typeLabel(value) {
+  const clean = String(value || "other");
+  return clean.split(/[-_\s]+/).map((part) => part ? part.charAt(0).toUpperCase() + part.slice(1) : "").join(" ");
+}
+
+function originConfidenceFor(entry) {
+  return entry.origin_confidence || entry.origin_claim?.confidence || entry.confidence || "moderate";
+}
+
+function evidencePanelFor(entry) {
+  return entry?.evidence_panel && typeof entry.evidence_panel === "object" ? entry.evidence_panel : {};
+}
+
+function evidenceTypesFor(entry) {
+  const panel = evidencePanelFor(entry);
+  const types = [];
+  Object.entries(panel).forEach(([key, lane]) => {
+    if (key === "major_uncertainties" || !lane || typeof lane !== "object") return;
+    const status = String(lane.status || "").toLowerCase();
+    if (!["absent", "not_applicable", "not applicable", "no"].includes(status)) {
+      types.push(key);
+    }
+  });
+  const ancientStatus = String(entry.ancient_dna_evidence?.status || "").toLowerCase();
+  if (["yes", "limited"].includes(ancientStatus) && !types.includes("ancient_dna_genomic")) {
+    types.push("ancient_dna_genomic");
+  }
+  return types;
+}
+
+function evidenceTypeLabel(value) {
+  const configured = (ATLAS_STATE.evidence_types || []).find((item) => item.id === value);
+  if (configured?.label) return configured.label;
+  return String(value || "Evidence").replaceAll("_", " / ");
+}
+
 function normalizedSearchText(entry) {
   return [
     entry.name,
+    entry.display_name,
+    entry.agent_name,
     entry.slug,
     entry.subtitle,
     entry.category_label,
     entry.pathogen_type,
+    entry.historical_signature,
+    entry.origin_claim?.claim,
+    entry.origin_claim?.narrative,
+    entry.transmission_ecology,
+    entry.public_health_control,
+    entry.modern_status,
+    ...(entry.disease_names || []),
+    ...(entry.primary_reservoirs || []),
+    ...(entry.intermediate_hosts || []),
+    ...(entry.vectors || []),
+    ...(entry.main_transmission_routes || []),
+    ...(entry.badges || []),
+    ...(entry.major_historical_episodes || []).map((episode) => [episode.title, episode.summary, episode.date_display, ...(episode.locations || [])].filter(Boolean).join(" ")),
+    ...Object.values(evidencePanelFor(entry)).map((lane) => {
+      if (Array.isArray(lane)) {
+        return lane.map((item) => typeof item === "string" ? item : item.note).filter(Boolean).join(" ");
+      }
+      return lane && typeof lane === "object" ? [lane.label, lane.summary, lane.status].filter(Boolean).join(" ") : "";
+    }),
     ...(variantsFor(entry).map((variant) => [variant.name, variant.slug, variant.subtitle].filter(Boolean).join(" ")))
   ].filter(Boolean).join(" ").toLowerCase();
 }
@@ -948,13 +1136,49 @@ function typeOptions(categoryFilter = currentCategory) {
   });
 }
 
+function originConfidenceOptions() {
+  const counts = new Map();
+  ATLAS_ENTRIES.filter((entry) => currentCategory === "all" || categoryKeyFor(entry) === currentCategory)
+    .filter((entry) => currentType === "all" || typeKeyFor(entry) === currentType)
+    .forEach((entry) => {
+      const key = originConfidenceFor(entry);
+      counts.set(key, (counts.get(key) || 0) + 1);
+    });
+  const order = ["high", "moderate", "low", "contested", "unknown", "speculative"];
+  return Array.from(counts.entries()).sort(([a], [b]) => {
+    const ai = order.indexOf(a);
+    const bi = order.indexOf(b);
+    return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi) || a.localeCompare(b);
+  });
+}
+
+function evidenceTypeOptions() {
+  const counts = new Map();
+  ATLAS_ENTRIES.filter((entry) => {
+    const categoryMatches = currentCategory === "all" || categoryKeyFor(entry) === currentCategory;
+    const typeMatches = currentType === "all" || typeKeyFor(entry) === currentType;
+    const originMatches = currentOriginConfidence === "all" || originConfidenceFor(entry) === currentOriginConfidence;
+    return categoryMatches && typeMatches && originMatches;
+  }).forEach((entry) => {
+    evidenceTypesFor(entry).forEach((type) => counts.set(type, (counts.get(type) || 0) + 1));
+  });
+  const configuredOrder = (ATLAS_STATE.evidence_types || []).map((item) => item.id);
+  return Array.from(counts.entries()).sort(([a], [b]) => {
+    const ai = configuredOrder.indexOf(a);
+    const bi = configuredOrder.indexOf(b);
+    return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi) || a.localeCompare(b);
+  });
+}
+
 function entriesInScope() {
   const query = currentSearch.trim().toLowerCase();
   return ATLAS_ENTRIES.filter((entry) => {
     const categoryMatches = currentCategory === "all" || categoryKeyFor(entry) === currentCategory;
     const typeMatches = currentType === "all" || typeKeyFor(entry) === currentType;
+    const originMatches = currentOriginConfidence === "all" || originConfidenceFor(entry) === currentOriginConfidence;
+    const evidenceMatches = currentEvidenceType === "all" || evidenceTypesFor(entry).includes(currentEvidenceType);
     const searchMatches = !query || normalizedSearchText(entry).includes(query);
-    return categoryMatches && typeMatches && searchMatches;
+    return categoryMatches && typeMatches && originMatches && evidenceMatches && searchMatches;
   });
 }
 
@@ -980,21 +1204,21 @@ function confidenceLabel(value) {
 }
 
 function routeDashArray(confidence) {
-  if (confidence === "strong") return null;
+  if (confidence === "high" || confidence === "strong") return null;
   if (confidence === "moderate") return "12 8";
   if (confidence === "mixed") return "8 8";
   return "4 10";
 }
 
 function routeOpacity(confidence) {
-  if (confidence === "strong") return 0.92;
+  if (confidence === "high" || confidence === "strong") return 0.92;
   if (confidence === "moderate") return 0.82;
   if (confidence === "mixed") return 0.72;
   return 0.62;
 }
 
 function geographyOpacity(confidence) {
-  if (confidence === "strong") return 0.2;
+  if (confidence === "high" || confidence === "strong") return 0.2;
   if (confidence === "moderate") return 0.16;
   if (confidence === "mixed") return 0.12;
   return 0.09;
@@ -1084,8 +1308,28 @@ function citationLabel(citation) {
   return citation?.short_citation || citation?.title || citation?.id || "Source";
 }
 
+function sourceIdsFor(item) {
+  if (Array.isArray(item?.source_ids)) return item.source_ids;
+  if (Array.isArray(item?.citation_ids)) return item.citation_ids;
+  return [];
+}
+
+function sourceLinks(ids, activeEntry) {
+  const citations = citationsById(activeEntry);
+  if (!Array.isArray(ids) || !ids.length) {
+    return '<span class="badge warning">No source linked</span>';
+  }
+  return ids.map((id) => {
+    const citation = citations.get(id);
+    if (citation?.url) {
+      return `<a class="panel-link" href="${escapeHtml(citation.url)}">${escapeHtml(citationLabel(citation))}</a>`;
+    }
+    return `<span class="badge">${escapeHtml(id)}</span>`;
+  }).join("");
+}
+
 function hasReviewedGeography(entry) {
-  return (entry?.geography_layers || []).some((layer) => Array.isArray(layer.citation_ids) && layer.citation_ids.length);
+  return (entry?.geography_layers || []).some((layer) => sourceIdsFor(layer).length);
 }
 
 function shouldDrawGeography() {
@@ -1168,8 +1412,8 @@ function populatePathogenSelect(selectedSlug) {
   const scoped = entriesInScope();
   const total = ATLAS_ENTRIES.length;
   const countCopy = scoped.length === total
-    ? `${total} diseases in the atlas`
-    : `${scoped.length} of ${total} diseases shown`;
+    ? `${total} pathogen profiles in the atlas`
+    : `${scoped.length} of ${total} profiles shown`;
   filterCount.textContent = `${countCopy} | ${mapModeLabel(currentMapMode)}`;
   if (!scoped.length) {
     pathogenSelect.disabled = true;
@@ -1179,7 +1423,7 @@ function populatePathogenSelect(selectedSlug) {
   pathogenSelect.disabled = false;
   pathogenSelect.innerHTML = scoped.map((entry) => `
     <option value="${escapeHtml(entry.slug)}"${entry.slug === selectedSlug ? " selected" : ""}>
-      ${escapeHtml(entry.name)}
+      ${escapeHtml(entry.display_name || entry.name)}
     </option>
   `).join("");
 }
@@ -1195,9 +1439,35 @@ function renderTypeSelectOptions() {
   }
   typeSelect.innerHTML = [
     `<option value="all">All types (${categoryScopedTotal})</option>`,
-    ...types.map(([key, count]) => `<option value="${escapeHtml(key)}">${escapeHtml(key)} (${count})</option>`)
+    ...types.map(([key, count]) => `<option value="${escapeHtml(key)}">${escapeHtml(typeLabel(key))} (${count})</option>`)
   ].join("");
   typeSelect.value = currentType;
+}
+
+function renderOriginConfidenceOptions() {
+  const options = originConfidenceOptions();
+  const valid = new Set(options.map(([key]) => key));
+  if (currentOriginConfidence !== "all" && !valid.has(currentOriginConfidence)) {
+    currentOriginConfidence = "all";
+  }
+  originConfidenceSelect.innerHTML = [
+    `<option value="all">All origin confidence</option>`,
+    ...options.map(([key, count]) => `<option value="${escapeHtml(key)}">${escapeHtml(confidenceLabel(key))} (${count})</option>`)
+  ].join("");
+  originConfidenceSelect.value = currentOriginConfidence;
+}
+
+function renderEvidenceTypeOptions() {
+  const options = evidenceTypeOptions();
+  const valid = new Set(options.map(([key]) => key));
+  if (currentEvidenceType !== "all" && !valid.has(currentEvidenceType)) {
+    currentEvidenceType = "all";
+  }
+  evidenceTypeSelect.innerHTML = [
+    `<option value="all">All evidence types</option>`,
+    ...options.map(([key, count]) => `<option value="${escapeHtml(key)}">${escapeHtml(evidenceTypeLabel(key))} (${count})</option>`)
+  ].join("");
+  evidenceTypeSelect.value = currentEvidenceType;
 }
 
 function selectFirstScopedEntry() {
@@ -1222,6 +1492,8 @@ function syncScenarioControls(entry) {
   }
   populatePathogenSelect(entry.slug);
   pathogenSelect.value = entry.slug;
+  originConfidenceSelect.value = currentOriginConfidence;
+  evidenceTypeSelect.value = currentEvidenceType;
   mapModeSelect.value = currentMapMode;
 }
 
@@ -1233,15 +1505,30 @@ function renderScenarioControls() {
   ].join("");
   categorySelect.value = currentCategory;
   renderTypeSelectOptions();
+  renderOriginConfidenceOptions();
+  renderEvidenceTypeOptions();
   populatePathogenSelect(ATLAS_ENTRIES[currentIndex]?.slug);
 
   categorySelect.addEventListener("change", () => {
     currentCategory = categorySelect.value;
     renderTypeSelectOptions();
+    renderOriginConfidenceOptions();
+    renderEvidenceTypeOptions();
     selectFirstScopedEntry();
   });
   typeSelect.addEventListener("change", () => {
     currentType = typeSelect.value;
+    renderOriginConfidenceOptions();
+    renderEvidenceTypeOptions();
+    selectFirstScopedEntry();
+  });
+  originConfidenceSelect.addEventListener("change", () => {
+    currentOriginConfidence = originConfidenceSelect.value;
+    renderEvidenceTypeOptions();
+    selectFirstScopedEntry();
+  });
+  evidenceTypeSelect.addEventListener("change", () => {
+    currentEvidenceType = evidenceTypeSelect.value;
     selectFirstScopedEntry();
   });
   pathogenSearch.addEventListener("input", () => {
@@ -1312,15 +1599,20 @@ function renderMeta(entry, activeEntry) {
   const variants = variantsFor(entry);
   const statusLabel = STATUS_LABELS[activeEntry.status] || "Curated";
   const writingLabel = WRITING_LABELS[activeEntry.writing_state] || "Writing state pending";
+  const badgesFromEntry = (activeEntry.badges || entry.badges || []).slice(0, 4).map((badge) => {
+    const badgeClass = /vector|mosquito|louse|reservoir/i.test(badge) ? "vector" : (/eradicated|vaccine/i.test(badge) ? "eradicated" : "");
+    return `<span class="badge ${badgeClass}">${escapeHtml(badge)}</span>`;
+  });
   const badges = [
-    `<span class="badge accent">${escapeHtml(statusLabel)}</span>`,
+    `<span class="badge accent">${escapeHtml(confidenceLabel(activeEntry.confidence || entry.confidence || "moderate"))}</span>`,
+    `<span class="badge ${originConfidenceFor(activeEntry) === "contested" || originConfidenceFor(activeEntry) === "unknown" ? "warning" : ""}">Origin: ${escapeHtml(confidenceLabel(originConfidenceFor(activeEntry)))}</span>`,
     `<span class="badge">${escapeHtml(categoryLabelFor(entry))}</span>`,
-    `<span class="badge signal">${escapeHtml(activeEntry.pathogen_type || entry.pathogen_type || "Pathogen")}</span>`,
-    `<span class="badge">${escapeHtml(writingLabel)}</span>`,
+    `<span class="badge signal">${escapeHtml(typeLabel(activeEntry.pathogen_type || entry.pathogen_type || "pathogen"))}</span>`,
     `<span class="badge">${escapeHtml(mapModeLabel(currentMapMode))}</span>`,
     hasReviewedGeography(activeEntry) ? `<span class="badge reviewed">Reviewed geography</span>` : "",
     (activeEntry.atlas_scope || entry.atlas_scope) ? `<span class="badge">${escapeHtml(activeEntry.atlas_scope || entry.atlas_scope)}</span>` : "",
-    variants.length ? `<span class="badge">${escapeHtml(activeEntry.name || "Variant view")}</span>` : ""
+    variants.length ? `<span class="badge">${escapeHtml(activeEntry.name || "Variant view")}</span>` : "",
+    ...badgesFromEntry
   ].filter(Boolean);
   storyMeta.innerHTML = badges.join("");
 }
@@ -1345,26 +1637,109 @@ function renderVariantSelector(entry, activeEntry) {
 }
 
 function renderLayerSourceLinks(layer, activeEntry) {
-  const citations = citationsById(activeEntry);
-  const ids = Array.isArray(layer?.citation_ids) ? layer.citation_ids : [];
-  if (!ids.length) {
-    return '<span class="badge">Source review pending</span>';
+  return sourceLinks(sourceIdsFor(layer), activeEntry);
+}
+
+function renderKnowledgeStatus(entry) {
+  const status = entry.knowledge_status || {};
+  const sections = [
+    ["known", "Known"],
+    ["inferred", "Inferred"],
+    ["contested", "Contested"],
+    ["unknown", "Unknown"]
+  ];
+  return sections.map(([key, label]) => {
+    const items = Array.isArray(status[key]) ? status[key] : [];
+    if (!items.length) return "";
+    return `
+      <article class="knowledge-card">
+        <h3>${escapeHtml(label)}</h3>
+        <ul>${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+      </article>
+    `;
+  }).filter(Boolean).join("") || '<article class="knowledge-card"><p class="note-text">This profile has no knowledge-status breakdown yet.</p></article>';
+}
+
+function renderEcology(activeEntry) {
+  const rows = [
+    ["Agent", activeEntry.agent_name],
+    ["Disease names", (activeEntry.disease_names || []).join(", ")],
+    ["Reservoirs", (activeEntry.primary_reservoirs || []).join("; ")],
+    ["Intermediate hosts", (activeEntry.intermediate_hosts || []).join("; ")],
+    ["Vectors", (activeEntry.vectors || []).join("; ")],
+    ["Transmission", (activeEntry.main_transmission_routes || []).join("; ")],
+    ["Incubation", activeEntry.incubation_period_summary],
+    ["Modern status", activeEntry.modern_status]
+  ].filter(([, value]) => value);
+  return rows.map(([label, value]) => `
+    <article class="detail-card">
+      <div class="subsection-kicker">${escapeHtml(label)}</div>
+      <p class="panel-copy">${escapeHtml(value)}</p>
+    </article>
+  `).join("");
+}
+
+function renderEpisodeList(activeEntry) {
+  const episodes = activeEntry.major_historical_episodes || [];
+  if (!episodes.length) {
+    return '<article class="detail-card"><p class="note-text">No historical episodes are attached to this profile yet.</p></article>';
   }
-  return ids.map((id) => {
-    const citation = citations.get(id);
-    if (citation?.url) {
-      return `<a class="panel-link" href="${escapeHtml(citation.url)}">${escapeHtml(citationLabel(citation))}</a>`;
-    }
-    return `<span class="badge">${escapeHtml(id)}</span>`;
-  }).join("");
+  return episodes.map((episode) => `
+    <article class="detail-card">
+      <div class="subsection-kicker">${escapeHtml(episode.date_display || "Episode")}</div>
+      <h3>${escapeHtml(episode.title || "Historical episode")}</h3>
+      <div class="meta-row">
+        <span class="badge accent">${escapeHtml(confidenceLabel(episode.confidence))}</span>
+        ${(episode.locations || []).slice(0, 3).map((location) => `<span class="badge">${escapeHtml(location)}</span>`).join("")}
+      </div>
+      <p class="panel-copy">${escapeHtml(episode.summary || "")}</p>
+      <div class="source-row">${sourceLinks(sourceIdsFor(episode), activeEntry)}</div>
+    </article>
+  `).join("");
+}
+
+function renderEvidenceKindList(activeEntry) {
+  const panel = evidencePanelFor(activeEntry);
+  const laneHtml = Object.entries(panel).filter(([key]) => key !== "major_uncertainties").map(([key, lane]) => {
+    if (!lane || typeof lane !== "object") return "";
+    const status = String(lane.status || "moderate");
+    const statusClass = ["low", "contested", "limited"].includes(status) ? "warning" : (status === "strong" ? "reviewed" : "accent");
+    return `
+      <article class="evidence-card">
+        <div class="subsection-kicker">${escapeHtml(evidenceTypeLabel(key))}</div>
+        <h3>${escapeHtml(lane.label || evidenceTypeLabel(key))}</h3>
+        <div class="meta-row"><span class="badge ${escapeHtml(statusClass)}">${escapeHtml(typeLabel(status.replaceAll("_", " ")))}</span></div>
+        <p class="panel-copy">${escapeHtml(lane.summary || "")}</p>
+        <div class="source-row">${sourceLinks(sourceIdsFor(lane), activeEntry)}</div>
+      </article>
+    `;
+  }).filter(Boolean).join("");
+  const uncertainties = Array.isArray(panel.major_uncertainties) ? panel.major_uncertainties : [];
+  const uncertaintyHtml = uncertainties.length ? `
+    <article class="evidence-card">
+      <div class="subsection-kicker">Major uncertainties</div>
+      <ul>
+        ${uncertainties.map((item) => `
+          <li>
+            ${escapeHtml(typeof item === "string" ? item : item.note || "")}
+            ${typeof item === "object" ? `<div class="source-row">${sourceLinks(sourceIdsFor(item), activeEntry)}</div>` : ""}
+          </li>
+        `).join("")}
+      </ul>
+    </article>
+  ` : "";
+  return laneHtml + uncertaintyHtml;
 }
 
 function renderStoryPanel(entry, activeEntry) {
   const variants = variantsFor(entry);
   document.getElementById("story-kicker").textContent = variants.length ? "Pathogen family atlas" : (entry.atlas_scope || "Curated atlas");
-  document.getElementById("story-title").textContent = entry.name || "Untitled pathogen";
-  document.getElementById("story-copy").textContent = variants.length ? (entry.summary || "") : (activeEntry.summary || entry.summary || "");
-  document.getElementById("why-matters-copy").textContent = activeEntry.why_it_matters || entry.why_it_matters || "This pathogen entry is still being expanded.";
+  document.getElementById("story-title").textContent = entry.display_name || entry.name || "Untitled pathogen";
+  document.getElementById("story-copy").textContent = variants.length ? (entry.summary || "") : (activeEntry.historical_signature || activeEntry.summary || entry.summary || "");
+  document.getElementById("why-matters-copy").textContent = activeEntry.historical_signature || activeEntry.why_it_matters || entry.why_it_matters || "";
+  document.getElementById("knowledge-status").innerHTML = renderKnowledgeStatus(activeEntry);
+  document.getElementById("ecology-list").innerHTML = renderEcology(activeEntry);
+  document.getElementById("episode-list").innerHTML = renderEpisodeList(activeEntry);
   renderMeta(entry, activeEntry);
   renderVariantSelector(entry, activeEntry);
 
@@ -1378,6 +1753,7 @@ function renderStoryPanel(entry, activeEntry) {
         <span class="badge">${escapeHtml(confidenceLabel(route.confidence))}</span>
       </div>
       <div class="route-copy">${escapeHtml(route.narrative || "")}</div>
+      <div class="source-row">${sourceLinks(sourceIdsFor(route), activeEntry)}</div>
     </button>
   `).join("");
   document.getElementById("route-list").innerHTML = routeHtml || '<div class="detail-card"><div class="route-copy">No mapped route segments are attached to this pathogen yet.</div></div>';
@@ -1392,22 +1768,27 @@ function renderStoryPanel(entry, activeEntry) {
       <div class="meta-row">
         <span class="badge ${escapeHtml(geographyLayerBadgeClass(layer))}">${escapeHtml(geographyLabel(layer))}</span>
         <span class="badge accent">${escapeHtml(confidenceLabel(layer.confidence))}</span>
-        ${Array.isArray(layer.citation_ids) && layer.citation_ids.length ? '<span class="badge reviewed">Reviewed geography</span>' : ""}
+        ${sourceIdsFor(layer).length ? '<span class="badge reviewed">Reviewed geography</span>' : ""}
+        ${layer.claim_type ? `<span class="badge">${escapeHtml(layer.claim_type)}</span>` : ""}
         ${layer.date_or_era ? `<span class="badge">${escapeHtml(layer.date_or_era)}</span>` : ""}
       </div>
       <p class="panel-copy">${escapeHtml(layer.narrative || "")}</p>
+      <div class="source-row">${renderLayerSourceLinks(layer, activeEntry)}</div>
     </article>
   `).join("");
   document.getElementById("geography-list").innerHTML = geographyHtml || '<div class="detail-card"><div class="route-copy">No distribution or endemic-zone layer is attached to this pathogen yet.</div></div>';
 }
 
 function renderEvidencePanel(entry, activeEntry) {
-  document.getElementById("evidence-title").textContent = activeEntry.subtitle || activeEntry.name || entry.subtitle || entry.name || "Evidence panel";
-  document.getElementById("origin-copy").textContent = activeEntry.origin_claim?.narrative || "";
+  document.getElementById("evidence-title").textContent = activeEntry.display_name || activeEntry.name || entry.display_name || entry.name || "Evidence panel";
+  document.getElementById("origin-copy").textContent = activeEntry.origin_claim?.claim || activeEntry.origin_claim?.narrative || "";
   document.getElementById("origin-label").textContent = activeEntry.origin_claim?.label || "Origin claim";
-  document.getElementById("origin-narrative").textContent = activeEntry.origin_claim?.narrative || "";
+  document.getElementById("origin-narrative").textContent = activeEntry.origin_claim?.narrative || activeEntry.origin_claim?.statement || "";
+  document.getElementById("origin-uncertainty").textContent = activeEntry.origin_uncertainty_note || activeEntry.origin_claim?.uncertainty_note || "";
+  document.getElementById("origin-source-links").innerHTML = sourceLinks(sourceIdsFor(activeEntry.origin_claim), activeEntry);
   document.getElementById("origin-meta").innerHTML = [
-    `<span class="badge accent">${escapeHtml(confidenceLabel(activeEntry.origin_claim?.confidence))}</span>`,
+    `<span class="badge accent">${escapeHtml(confidenceLabel(activeEntry.origin_claim?.confidence || activeEntry.origin_confidence))}</span>`,
+    activeEntry.origin_claim?.claim_type ? `<span class="badge">${escapeHtml(activeEntry.origin_claim.claim_type)}</span>` : "",
     activeEntry.origin_claim?.date_or_era ? `<span class="badge">${escapeHtml(activeEntry.origin_claim.date_or_era)}</span>` : ""
   ].filter(Boolean).join("");
 
@@ -1418,7 +1799,14 @@ function renderEvidencePanel(entry, activeEntry) {
   if (activeEntry.related_stories && activeEntry.related_stories.length) {
     links.push(`<a class="panel-link" href="${escapeHtml(activeEntry.related_stories[0].story_href)}">Active story file</a>`);
   }
+  if (activeEntry.earliest_strong_evidence?.description) {
+    links.push(`<span class="badge reviewed">Earliest evidence: ${escapeHtml(activeEntry.earliest_strong_evidence.evidence_type || "documented")}</span>`);
+  }
+  if (activeEntry.ancient_dna_evidence?.status) {
+    links.push(`<span class="badge ${["yes", "limited"].includes(activeEntry.ancient_dna_evidence.status) ? "reviewed" : ""}">Ancient DNA: ${escapeHtml(activeEntry.ancient_dna_evidence.status)}</span>`);
+  }
   evidenceLinks.innerHTML = links.join("");
+  document.getElementById("evidence-kind-list").innerHTML = renderEvidenceKindList(activeEntry);
 
   const geographyEvidenceHtml = (activeEntry.geography_layers || []).map((layer) => `
     <article class="detail-card">
@@ -1427,7 +1815,8 @@ function renderEvidencePanel(entry, activeEntry) {
       <div class="meta-row">
         <span class="badge ${escapeHtml(geographyLayerBadgeClass(layer))}">${escapeHtml(geographyLabel(layer))}</span>
         <span class="badge accent">${escapeHtml(confidenceLabel(layer.confidence))}</span>
-        ${Array.isArray(layer.citation_ids) && layer.citation_ids.length ? '<span class="badge reviewed">Source-backed</span>' : ""}
+        ${sourceIdsFor(layer).length ? '<span class="badge reviewed">Source-backed</span>' : ""}
+        ${layer.claim_type ? `<span class="badge">${escapeHtml(layer.claim_type)}</span>` : ""}
       </div>
       <p class="panel-copy">${escapeHtml(layer.narrative || "")}</p>
       <div class="inline-links">${renderLayerSourceLinks(layer, activeEntry)}</div>
@@ -1539,6 +1928,7 @@ function drawGeographyLayer(layer, color) {
   }
   mapLayer.bindPopup(`
     <div class="popup-title">${escapeHtml(layer.label || geographyLabel(layer))}</div>
+    <div class="subsection-kicker">${escapeHtml(layer.claim_type || geographyLabel(layer))}</div>
     <div class="popup-copy">${escapeHtml(layer.narrative || "")}</div>
   `);
   currentFeatureGroup.addLayer(mapLayer);
@@ -1556,7 +1946,7 @@ function drawEntry(entry) {
 
   if (shouldDrawRoutes() && entry.origin_claim?.coordinates) {
     originMarker = L.marker(toLatLng(entry.origin_claim.coordinates), { icon: makeMarker(color, "origin") });
-    originMarker.bindPopup(`<div class="popup-title">${escapeHtml(entry.origin_claim.label || entry.name)}</div><div class="popup-copy">${escapeHtml(entry.origin_claim.narrative || "")}</div>`);
+    originMarker.bindPopup(`<div class="popup-title">${escapeHtml(entry.origin_claim.label || entry.name)}</div><div class="subsection-kicker">${escapeHtml(entry.origin_claim.claim_type || "Origin claim")}</div><div class="popup-copy">${escapeHtml(entry.origin_claim.narrative || "")}</div>`);
     currentFeatureGroup.addLayer(originMarker);
   }
 
@@ -1569,12 +1959,13 @@ function drawEntry(entry) {
       const layer = L.polyline(path, {
         className: "atlas-route",
         color,
-        weight: route.confidence === "strong" ? 4.8 : 3.6,
+        weight: (route.confidence === "high" || route.confidence === "strong") ? 4.8 : 3.6,
         opacity: currentMapMode === "evidence" ? Math.max(routeOpacity(route.confidence) - 0.08, 0.48) : routeOpacity(route.confidence),
         dashArray: routeDashArray(route.confidence)
       });
       layer.bindPopup(`
         <div class="popup-title">${escapeHtml(route.from_label || "Origin")} to ${escapeHtml(route.to_label || "Destination")}</div>
+        <div class="subsection-kicker">${escapeHtml(route.claim_type || route.route_type || "Route")}</div>
         <div class="popup-copy">${escapeHtml(route.narrative || "")}</div>
       `);
       currentFeatureGroup.addLayer(layer);
@@ -1609,7 +2000,7 @@ function focusRoute(routeId) {
   const route = (entry?.spread_routes || []).find((item) => item.route_id === routeId);
   layer.setStyle({
     opacity: 0.98,
-    weight: route?.confidence === "strong" ? 5.6 : 4.3,
+    weight: (route?.confidence === "high" || route?.confidence === "strong") ? 5.6 : 4.3,
     dashArray: routeDashArray(route?.confidence),
     className: "atlas-route active"
   });
