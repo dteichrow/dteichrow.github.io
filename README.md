@@ -3,6 +3,8 @@
 Static umbrella site for:
 
 - `The Pathogen Dispatch` newsdesk
+- `Virtual Teaching Tools` static interactives
+- `American Epidemic Timeline`
 - `Pathogen Atlas`
 - `Maritime Disease Atlas`
 - `Viking Health Atlas`
@@ -14,6 +16,8 @@ Static umbrella site for:
 This site turns the existing public surfaces into one navigable publication shell.
 
 - `content/posts.yml` is the authoritative essay registry
+- `content/tools.yml` is the teaching-tool registry for timelines, atlases, maps, and interactives
+- `content/atlases.yml` remains supported for legacy atlas URLs and post relationships
 - the public Substack sitemap powers full historical backfill
 - the public Substack RSS feed powers 15-minute incremental new-post sync
 - every post gets a local public page immediately
@@ -27,6 +31,8 @@ This site turns the existing public surfaces into one navigable publication shel
 - `/stories/`
 - `/reference/`
 - `/notebook/`
+- `/tools/`
+- `/tools/american-epidemic-timeline/`
 - `/atlases/`
 - `/atlases/pathogen/`
 - `/atlases/maritime/`
@@ -87,6 +93,13 @@ For the live desk:
 
 - local builds import from the sibling `../epi-dossier/docs`
 - CI builds can clone `https://github.com/dteichrow/epi-dossier.git` if the sibling path is unavailable
+
+For virtual teaching tools:
+
+- `content/tools.yml` drives `/tools/`, the home-page tool cards, search export entries, and the `tools.json` app export
+- existing atlas cards have been migrated into the tool registry while `content/atlases.yml` keeps `/atlases/` and `/atlases/<name>/` routes stable
+- `external/american_epidemic_timeline/` is copied into `docs/tools/american-epidemic-timeline/`
+- the timeline data contract lives in `external/american_epidemic_timeline/data/american_epidemic_timeline_data.js`
 
 ## GitHub Actions
 

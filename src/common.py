@@ -340,6 +340,22 @@ def load_atlas_registry(path: Path | None = None) -> list[dict[str, Any]]:
     return payload.get("atlases", [])
 
 
+def atlas_entry_to_tool(entry: dict[str, Any]) -> dict[str, Any]:
+    tool = dict(entry)
+    tool["tool_id"] = entry.get("atlas_id", "")
+    tool.setdefault("tool_type", "atlas")
+    tool.setdefault("legacy_atlas_id", entry.get("atlas_id", ""))
+    return tool
+
+
+def load_tool_registry(path: Path | None = None, atlas_path: Path | None = None) -> list[dict[str, Any]]:
+    registry_path = path or (CONTENT_DIR / "tools.yml")
+    if registry_path.exists():
+        payload = read_yaml(registry_path, {"tools": []})
+        return payload.get("tools", [])
+    return [atlas_entry_to_tool(entry) for entry in load_atlas_registry(atlas_path)]
+
+
 def load_json(path: Path) -> Any:
     return json.loads(path.read_text())
 

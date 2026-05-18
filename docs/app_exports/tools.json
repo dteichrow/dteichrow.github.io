@@ -8,7 +8,7 @@
       "tool_type": "timeline",
       "status": "live",
       "status_label": "New flagship",
-      "summary": "A cinematic, source-first timeline of major U.S.-linked epidemics and disease outbreaks, built as an expandable public-health memory machine rather than a fake exhaustive list.",
+      "summary": "A cinematic, source-first timeline of major U.S.-linked epidemics and disease outbreaks, built as a public-health memory machine.",
       "evidence_model": "Curated outbreak ledger with source links, rights-checked archival visuals, uncertainty notes, and public-health turning points",
       "public_route": "tools/american-epidemic-timeline/",
       "source_path": "external/american_epidemic_timeline/index.html + data/american_epidemic_timeline_data.js",
@@ -20,7 +20,7 @@
         "outbreaks",
         "teaching tool"
       ],
-      "long_note": "The timeline launches with a major-and-expandable canon of U.S.-linked outbreaks, then grows through a structured event ledger as more local and regional events are verified."
+      "long_note": "The timeline follows large epidemics, public-health turning points, and regional outbreaks where the evidence is strong enough to carry the story."
     },
     {
       "tool_id": "pathogen-atlas",
@@ -50,8 +50,8 @@
       "tool_type": "atlas",
       "status": "live",
       "status_label": "Live atlas",
-      "summary": "A darker, map-forward atlas of shipboard disease ecology, ports, vectors, and the movement constraints of life at sea.",
-      "evidence_model": "Curated map scenarios with route, mechanism, and historical narrative",
+      "summary": "A map-first digital exhibit on shipboard disease ecology, ports, vectors, provisions, quarantine, violence, and the movement constraints of life at sea.",
+      "evidence_model": "Curated exhibit stations with routes, mechanisms, archival plates, source credits, and guided-tour narrative",
       "public_route": "atlases/maritime/",
       "source_path": "external/maritime_disease_atlas/index.html",
       "launch_priority": "flagship",
@@ -62,9 +62,10 @@
         "yellow fever",
         "scurvy",
         "piracy",
-        "vector"
+        "vector",
+        "exhibit"
       ],
-      "long_note": "This is the main visual precedent for the atlas family and stays closer to a control-room cartographic interface than a standard article page."
+      "long_note": "This is the main public-history exhibit in the atlas family: an exploratory disease ecology surface with guided-tour and presentation modes for later video adaptation."
     },
     {
       "tool_id": "revolutionary-war-atlas",

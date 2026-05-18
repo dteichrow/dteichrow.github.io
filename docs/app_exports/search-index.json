@@ -783,7 +783,7 @@
   {
     "title": "American Epidemic Timeline",
     "section": "Tool",
-    "summary": "A cinematic, source-first timeline of major U.S.-linked epidemics and disease outbreaks, built as an expandable public-health memory machine rather than a fake exhaustive list.",
+    "summary": "A cinematic, source-first timeline of major U.S.-linked epidemics and disease outbreaks, built as a public-health memory machine.",
     "url": "/tools/american-epidemic-timeline/",
     "keywords": "american epidemics timeline public health history outbreaks teaching tool timeline"
   },
@@ -797,9 +797,9 @@
   {
     "title": "Maritime Disease Atlas",
     "section": "Tool",
-    "summary": "A darker, map-forward atlas of shipboard disease ecology, ports, vectors, and the movement constraints of life at sea.",
+    "summary": "A map-first digital exhibit on shipboard disease ecology, ports, vectors, provisions, quarantine, violence, and the movement constraints of life at sea.",
     "url": "/atlases/maritime/",
-    "keywords": "maritime ports ships yellow fever scurvy piracy vector atlas"
+    "keywords": "maritime ports ships yellow fever scurvy piracy vector exhibit atlas"
   },
   {
     "title": "Revolutionary War Disease Atlas",

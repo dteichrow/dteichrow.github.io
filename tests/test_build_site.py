@@ -416,7 +416,8 @@ def test_import_external_pathogen_writes_js_payload(tmp_path, monkeypatch) -> No
     assert "eoe-atlas-overlay-brand" in index_text
     assert "by Devin Teichrow" in index_text
     assert 'href="../../index.html"' in index_text
-    assert 'href="../index.html"' in index_text
+    assert 'href="../../tools/index.html"' in index_text
+    assert ">Learning Tools</a>" in index_text
     source_text = source_data.read_text()
     assert '"reference_href": "../../docs/reference/yellow-fever.html"' in source_text
     assert '"story_href": "../../docs/stories/demo-story.html"' in source_text

@@ -22,6 +22,7 @@ from .common import (
     load_atlas_registry,
     load_json,
     load_posts_manifest,
+    load_tool_registry,
     normalize_base_url,
     temporary_directory,
     write_json,
@@ -413,23 +414,23 @@ def public_pathogen_citations(entry: dict[str, Any]) -> tuple[list[dict[str, Any
 
 def site_nav(active: str, base_url: str) -> str:
     links = [
-        ("Home", ""),
-        ("Newsdesk", "newsdesk/"),
-        ("Atlases", "atlases/"),
-        ("Essays", "essays/"),
-        ("Topics", "topics/"),
-        ("Historical", "historical/"),
-        ("Reference", "reference/"),
-        ("Methods", "methods/"),
-        ("About", "about/"),
-        ("Opportunities", "opportunities/"),
-        ("Search", "search/"),
+        ("Home", "", "home"),
+        ("Newsdesk", "newsdesk/", "newsdesk"),
+        ("Learning Tools", "tools/", "tools"),
+        ("Essays", "essays/", "essays"),
+        ("Topics", "topics/", "topics"),
+        ("Historical", "historical/", "historical"),
+        ("Reference", "reference/", "reference"),
+        ("Methods", "methods/", "methods"),
+        ("About", "about/", "about"),
+        ("Opportunities", "opportunities/", "opportunities"),
+        ("Search", "search/", "search"),
     ]
     nav_links = []
-    for label, path in links:
+    for label, path, key in links:
         classes = ["site-nav-link"]
         attrs = ""
-        if active == label.lower():
+        if active == key:
             classes.append("active")
             attrs = ' aria-current="page"'
         nav_links.append(
@@ -441,7 +442,7 @@ def site_nav(active: str, base_url: str) -> str:
         '<div class="site-header-copy">'
         '<p class="kicker">The Edge of Epidemiology</p>'
         '<div class="site-brand"><a href="{home}"><span>The Edge of Epidemiology</span> <span class="site-brand-byline">by Devin Teichrow</span></a></div>'
-        '<p class="site-header-title">History-haunted epidemiology, live reporting, and atlas work in one place.</p>'
+        '<p class="site-header-title">History-haunted epidemiology, live reporting, and interactive teaching tools in one place.</p>'
         "</div>"
         '<nav class="site-nav" aria-label="Primary navigation">{links}</nav>'
         "</div>"
@@ -533,6 +534,32 @@ def render_atlas_card(entry: dict[str, Any], base_url: str) -> str:
         "</div>"
         '<p class="kicker">Atlas family</p>'
         f'<h3><a href="{html.escape(href)}">{html.escape(entry.get("title", "Untitled atlas"))}</a></h3>'
+        f'<p class="muted-note">{html.escape(entry.get("summary", ""))}</p>'
+        f'{f"<p class=\"card-meta-text\">{html.escape(feature_line)}</p>" if feature_line else ""}'
+        f'<div class="meta-row meta-row-plain"><span class="story-status-pill atlas-status-pill">{html.escape(status)}</span></div>'
+        "</article>"
+    )
+
+
+def render_tool_card(entry: dict[str, Any], base_url: str) -> str:
+    route = entry.get("public_route", "")
+    href = link_for(base_url, route)
+    coordinate_hint = " / ".join(keyword.upper() for keyword in entry.get("keywords", [])[:2]) or "CURATED TOOL"
+    status = entry.get("status_label", "Tool")
+    feature_line = entry.get("evidence_model", "")
+    tool_token = css_token(entry.get("tool_id") or entry.get("atlas_id"), "tool")
+    tool_type = str(entry.get("tool_type") or "tool").replace("_", " ").title()
+    return (
+        f'<article class="site-card atlas-card tool-card tool-card-{html.escape(tool_token)}">'
+        f'<a class="atlas-card-visual atlas-card-visual-{html.escape(tool_token)}" href="{html.escape(href)}" aria-hidden="true" tabindex="-1">'
+        f'<span>{html.escape(status)}</span>'
+        "</a>"
+        '<div class="card-utility-row">'
+        f'<span class="card-utility-label">{html.escape(tool_type)}</span>'
+        f'<span class="card-utility-meta">{html.escape(coordinate_hint)}</span>'
+        "</div>"
+        '<p class="kicker">Virtual teaching tool</p>'
+        f'<h3><a href="{html.escape(href)}">{html.escape(entry.get("title", "Untitled tool"))}</a></h3>'
         f'<p class="muted-note">{html.escape(entry.get("summary", ""))}</p>'
         f'{f"<p class=\"card-meta-text\">{html.escape(feature_line)}</p>" if feature_line else ""}'
         f'<div class="meta-row meta-row-plain"><span class="story-status-pill atlas-status-pill">{html.escape(status)}</span></div>'
@@ -688,7 +715,7 @@ def topic_hub_title(slug: str) -> str:
     return slug.replace("-", " ").title()
 
 
-def render_home(posts: list[dict[str, Any]], atlases: list[dict[str, Any]], latest: dict[str, Any], base_url: str) -> str:
+def render_home(posts: list[dict[str, Any]], tools: list[dict[str, Any]], latest: dict[str, Any], base_url: str) -> str:
     stories = latest.get("stories", [])[:4]
     references = latest.get("reference", [])[:3]
     generated_at = format_display_date(latest.get("generated_at"))
@@ -706,7 +733,7 @@ def render_home(posts: list[dict[str, Any]], atlases: list[dict[str, Any]], late
           </div>
           <div class="hero-actions">
             <a class="button secondary" href="{html.escape(link_for(base_url, 'newsdesk/'))}">Open the newsdesk</a>
-            <a class="button secondary" href="{html.escape(link_for(base_url, 'atlases/'))}">Browse the atlases</a>
+            <a class="button secondary" href="{html.escape(link_for(base_url, 'tools/'))}">Browse the tools</a>
             <a class="button secondary" href="{html.escape(link_for(base_url, 'essays/'))}">Read the essays</a>
           </div>
           <p class="hero-status-line"><span class="hero-status-label">Live desk</span> Updated {html.escape(generated_at)} · {html.escape(str(story_count))} active files · {html.escape(str(item_count))} tracked items · {html.escape(str(live_count))} live pulls</p>
@@ -714,18 +741,18 @@ def render_home(posts: list[dict[str, Any]], atlases: list[dict[str, Any]], late
       </section>
     """
     newsdesk_cards = "".join(render_story_card(story, base_url) for story in stories)
-    atlas_cards = "".join(render_atlas_card(atlas, base_url) for atlas in atlases[:4])
+    tool_cards = "".join(render_tool_card(tool, base_url) for tool in tools[:4])
     post_cards = "".join(render_post_card(post, base_url, featured=index == 0) for index, post in enumerate(posts[:6]))
     ref_cards = "".join(render_reference_card(ref, base_url) for ref in references)
     return base_html(
         title="Edge of Epidemiology",
-        description="The umbrella publication for The Pathogen Dispatch, pathogen atlases, historical epidemiology, and the Edge of Epidemiology writing archive.",
+        description="The umbrella publication for The Pathogen Dispatch, virtual teaching tools, historical epidemiology, and the Edge of Epidemiology writing archive.",
         active="home",
         base_url=base_url,
         body=hero
         + f'<section class="home-section opportunities-strip"><div class="section-head section-head-split"><div><p class="kicker">Opportunities</p><h2>Selected projects, collaborations, and commissions</h2><p class="muted-note">I am open to serious projects where epidemiology, data, public health, history, and technical implementation need to become one usable thing.</p></div><aside class="section-sidecar"><p class="section-sidecar-label">Contact</p><p><a href="mailto:devinteichrow@gmail.com">devinteichrow@gmail.com</a></p></aside></div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "opportunities/"))}">Work with me</a></div></section>'
         + f'<section class="home-section newsdesk-panel"><div class="section-head section-head-split"><div><p class="kicker">Live desk</p><h2>The Pathogen Dispatch</h2><p class="muted-note">Current outbreak files, follow-up reporting, and source-first tracking for major infectious-disease stories.</p></div><aside class="section-sidecar"><p class="section-sidecar-label">Currently tracking</p><p>{html.escape(str(story_count))} active files · {html.escape(str(item_count))} source items · Updated {html.escape(generated_at)}</p></aside></div><div class="card-grid three-up">{newsdesk_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "newsdesk/"))}">Go to the full newsdesk</a></div></section>'
-        + f'<section class="home-section atlas-panel"><div class="section-head"><p class="kicker">Atlas family</p><h2>Geography-first disease interactives</h2><p class="muted-note">Interactive atlas work on pathogen origins, spread routes, maritime disease ecology, and historical outbreak worlds.</p></div><div class="card-grid two-up">{atlas_cards}</div></section>'
+        + f'<section class="home-section atlas-panel"><div class="section-head"><p class="kicker">Learning tools</p><h2>Interactive disease worlds for learning by looking</h2><p class="muted-note">Timelines, atlases, and source-first visual tools for pathogen history, outbreak geography, and epidemiologic reasoning.</p></div><div class="card-grid two-up">{tool_cards}</div></section>'
         + f'<section class="home-section essay-panel"><div class="section-head"><p class="kicker">Published writing</p><h2>Recent essays</h2><p class="muted-note">Longer-form writing on outbreaks, evidence, history, ecology, and the politics of public health.</p></div><div class="card-grid three-up essays-grid">{post_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "essays/"))}">Browse all essays</a></div></section>'
         + f'<section class="home-section reference-panel"><div class="section-head"><p class="kicker">Field guides</p><h2>Reference layer</h2><p class="muted-note">Practical disease briefings on transmission, diagnostics, severity, and what matters when a pathogen reappears.</p></div><div class="card-grid three-up">{ref_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "reference/"))}">Open the reference desk</a></div></section>',
     )
@@ -951,14 +978,35 @@ def render_atlas_hub(atlases: list[dict[str, Any]], base_url: str) -> str:
     cards = "".join(render_atlas_card(entry, base_url) for entry in atlases)
     return base_html(
         title="Atlases | Edge of Epidemiology",
-        description="Atlas projects from Edge of Epidemiology, including pathogen, maritime, Viking, and Revolutionary War disease mapping.",
-        active="atlases",
+        description="Legacy atlas route for Edge of Epidemiology map projects, including pathogen, maritime, Viking, and Revolutionary War disease mapping.",
+        active="tools",
         base_url=base_url,
         body=f"""
       <section class="hero hero-open">
-        <p class="kicker">Atlas family</p>
-        <h2 class="hero-title">Pathogens, routes, and disease ecologies as public-facing map work</h2>
-        <p class="subtitle">Curated geography projects with explicit evidence framing, archival context, and direct links back to the published essays.</p>
+        <p class="kicker">Legacy atlas route</p>
+        <h2 class="hero-title">The atlas family now lives inside Learning Tools</h2>
+        <p class="subtitle">These map projects keep their original URLs. The broader project family now includes timelines, atlases, and other interactive teaching surfaces.</p>
+        <div class="hero-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "tools/"))}">Open Learning Tools</a></div>
+      </section>
+      <section class="panel panel-soft">
+        <div class="card-grid two-up">{cards}</div>
+      </section>
+    """,
+    )
+
+
+def render_tools_hub(tools: list[dict[str, Any]], base_url: str) -> str:
+    cards = "".join(render_tool_card(entry, base_url) for entry in tools)
+    return base_html(
+        title="Learning Tools | Edge of Epidemiology",
+        description="Interactive timelines, atlases, and source-first learning tools from Edge of Epidemiology.",
+        active="tools",
+        base_url=base_url,
+        body=f"""
+      <section class="hero hero-open">
+        <p class="kicker">Learning tools</p>
+        <h2 class="hero-title">Disease history, outbreak geography, and epidemiologic reasoning as interactive public work</h2>
+        <p class="subtitle">These are not decorations for essays. They are source-first teaching surfaces: timelines, atlases, ledgers, and visual tools that let readers explore evidence directly.</p>
       </section>
       <section class="panel panel-soft">
         <div class="card-grid two-up">{cards}</div>
@@ -1254,6 +1302,7 @@ def render_search_page(base_url: str) -> str:
             <input class="filter-input" type="search" data-search-input placeholder="Search titles, tags, places, pathogens, or phrases" />
             <select class="filter-select" data-search-filter>
               <option value="all">All sections</option>
+              <option value="Tool">Learning Tools</option>
               <option value="Essay">Essays</option>
               <option value="Atlas">Atlases</option>
               <option value="Newsdesk">Newsdesk</option>
@@ -1276,7 +1325,7 @@ def render_curated_atlas_page(entry: dict[str, Any], posts: list[dict[str, Any]]
     return base_html(
         title=f"{entry.get('title')} | Edge of Epidemiology",
         description=entry.get("summary", ""),
-        active="atlases",
+        active="tools",
         base_url=base_url,
         body=f"""
       <section class="hero">
@@ -1837,7 +1886,7 @@ ATLAS_OVERLAY_RE = re.compile(
 def atlas_overlay_html(
     *,
     home_href: str,
-    atlases_href: str,
+    tools_href: str,
     newsdesk_href: str,
     essays_href: str,
     top: str = "18px",
@@ -1923,9 +1972,9 @@ def atlas_overlay_html(
     nav = (
         '<div id="eoe-atlas-overlay">'
         f'<a id="eoe-atlas-overlay-brand" href="{html.escape(home_href)}"><span>The Edge of Epidemiology</span> <span class="byline">by Devin Teichrow</span></a>'
-        '<nav id="eoe-atlas-overlay-links" aria-label="Atlas navigation">'
+        '<nav id="eoe-atlas-overlay-links" aria-label="Tool navigation">'
         f'<a href="{html.escape(home_href)}">Home</a>'
-        f'<a href="{html.escape(atlases_href)}" class="active">Atlases</a>'
+        f'<a href="{html.escape(tools_href)}" class="active">Learning Tools</a>'
         f'<a href="{html.escape(newsdesk_href)}">Newsdesk</a>'
         f'<a href="{html.escape(essays_href)}">Essays</a>'
         "</nav>"
@@ -1938,7 +1987,7 @@ def inject_atlas_overlay(
     index_path: Path,
     *,
     home_href: str,
-    atlases_href: str,
+    tools_href: str,
     newsdesk_href: str,
     essays_href: str,
     top: str = "18px",
@@ -1951,7 +2000,7 @@ def inject_atlas_overlay(
     )
     overlay, nav = atlas_overlay_html(
         home_href=home_href,
-        atlases_href=atlases_href,
+        tools_href=tools_href,
         newsdesk_href=newsdesk_href,
         essays_href=essays_href,
         top=top,
@@ -1971,7 +2020,7 @@ def import_external_maritime(docs_dir: Path, base_url: str) -> None:
     inject_atlas_overlay(
         dest_root / "index.html",
         home_href="../../index.html",
-        atlases_href="../index.html",
+        tools_href="../../tools/index.html",
         newsdesk_href="../../newsdesk/index.html",
         essays_href="../../essays/index.html",
         top="84px",
@@ -2085,7 +2134,7 @@ def import_external_pathogen(docs_dir: Path, base_url: str) -> None:
     inject_atlas_overlay(
         src_root / "index.html",
         home_href="../../docs/index.html",
-        atlases_href="../../docs/atlases/index.html",
+        tools_href="../../docs/tools/index.html",
         newsdesk_href="../../docs/newsdesk/index.html",
         essays_href="../../docs/essays/index.html",
         top="8px",
@@ -2099,7 +2148,7 @@ def import_external_pathogen(docs_dir: Path, base_url: str) -> None:
     inject_atlas_overlay(
         dest_root / "index.html",
         home_href="../../index.html",
-        atlases_href="../index.html",
+        tools_href="../../tools/index.html",
         newsdesk_href="../../newsdesk/index.html",
         essays_href="../../essays/index.html",
         top="8px",
@@ -2115,11 +2164,20 @@ def import_external_viking(docs_dir: Path, base_url: str) -> None:
     inject_atlas_overlay(
         dest,
         home_href="../../index.html",
-        atlases_href="../index.html",
+        tools_href="../../tools/index.html",
         newsdesk_href="../../newsdesk/index.html",
         essays_href="../../essays/index.html",
         top="14px",
     )
+
+
+def import_external_american_epidemic_timeline(docs_dir: Path, base_url: str) -> None:
+    _ = base_url
+    src_root = PROJECT_ROOT / "external" / "american_epidemic_timeline"
+    dest_root = docs_dir / "tools" / "american-epidemic-timeline"
+    if dest_root.exists():
+        shutil.rmtree(dest_root)
+    shutil.copytree(src_root, dest_root)
 
 
 def copy_static_assets(docs_dir: Path) -> None:
@@ -2227,6 +2285,14 @@ def seo_profile_for_route(route: str, html_text: str, post_by_route: dict[str, d
         if hub:
             title = f"{hub['title']} Topic Hub | Edge of Epidemiology"
             description = str(hub["description"])
+    elif route == "tools/":
+        title = "Learning Tools | Edge of Epidemiology"
+        description = "Interactive timelines, atlases, and source-first public learning tools for epidemic history, disease geography, and epidemiologic reasoning."
+        schema_type = "CollectionPage"
+    elif route.startswith("tools/american-epidemic-timeline"):
+        title = "American Epidemic Timeline | Edge of Epidemiology"
+        description = "A cinematic, source-first timeline of major U.S.-linked epidemics and disease outbreaks from colonial North America through modern public health."
+        schema_type = "CollectionPage"
     elif route.startswith("reference/") and route != "reference/":
         page_name = heading or title_case_slug(Path(route).stem)
         title = f"{page_name} Reference Guide | Edge of Epidemiology"
@@ -2261,7 +2327,7 @@ def seo_profile_for_route(route: str, html_text: str, post_by_route: dict[str, d
         description = "Interactive pathogen atlas mapping disease origins, spread routes, transmission ecologies, reference evidence, and reporting context."
     elif route.startswith("atlases/maritime"):
         title = "Maritime Disease Atlas | Edge of Epidemiology"
-        description = "Interactive maritime disease atlas for shipboard infection, port quarantine, sea routes, naval medicine, and historical disease ecology."
+        description = "Map-first digital exhibit on shipboard infection, port quarantine, sea routes, naval medicine, archival sources, and maritime disease ecology."
     elif route.startswith("atlases/viking"):
         title = "Viking Health Atlas | Edge of Epidemiology"
         description = "Interactive Viking health and disease atlas connecting settlement geography, archaeology, historical demography, and epidemic uncertainty."
@@ -2446,17 +2512,20 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
     import_external_pathogen(docs_dir, base_url)
     import_external_maritime(docs_dir, base_url)
     import_external_viking(docs_dir, base_url)
+    import_external_american_epidemic_timeline(docs_dir, base_url)
 
     posts = load_posts_manifest(CONTENT_DIR / "posts.yml")
     atlases = load_atlas_registry(CONTENT_DIR / "atlases.yml")
+    tools = load_tool_registry(CONTENT_DIR / "tools.yml", CONTENT_DIR / "atlases.yml")
     atlas_by_id = {entry["atlas_id"]: entry for entry in atlases}
     references = latest.get("reference", [])
     stories = latest.get("stories", [])
 
     page_specs = {
-        docs_dir / "index.html": render_home(posts, atlases, latest, base_url),
+        docs_dir / "index.html": render_home(posts, tools, latest, base_url),
         docs_dir / "essays" / "index.html": render_essays_index(posts, base_url),
         docs_dir / "topics" / "index.html": render_topic_hub_index(posts, base_url),
+        docs_dir / "tools" / "index.html": render_tools_hub(tools, base_url),
         docs_dir / "atlases" / "index.html": render_atlas_hub(atlases, base_url),
         docs_dir / "historical" / "index.html": render_historical_page(posts, atlases, base_url),
         docs_dir / "methods" / "index.html": render_methods_page(base_url),
@@ -2502,6 +2571,11 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
         "count": len(atlases),
         "atlases": atlases,
     }
+    tools_export = {
+        "generated_at": latest.get("generated_at"),
+        "count": len(tools),
+        "tools": tools,
+    }
     search_index = []
     for post in posts:
         search_index.append(
@@ -2532,6 +2606,16 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
                 "summary": atlas.get("summary"),
                 "url": link_for(base_url, atlas.get("public_route", "")),
                 "keywords": " ".join(atlas.get("keywords", [])),
+            }
+        )
+    for tool in tools:
+        search_index.append(
+            {
+                "title": tool.get("title"),
+                "section": "Tool",
+                "summary": tool.get("summary"),
+                "url": link_for(base_url, tool.get("public_route", "")),
+                "keywords": " ".join(tool.get("keywords", []) + [tool.get("tool_type", "")]),
             }
         )
     for story in stories:
@@ -2566,6 +2650,7 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
 
     write_json(docs_dir / "app_exports" / "posts.json", posts_export)
     write_json(docs_dir / "app_exports" / "atlases.json", atlases_export)
+    write_json(docs_dir / "app_exports" / "tools.json", tools_export)
     write_json(docs_dir / "app_exports" / "search-index.json", search_index)
     seo_report = finalize_seo(docs_dir, posts)
 
@@ -2573,6 +2658,7 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
         "generated_at": latest.get("generated_at"),
         "posts": len(posts),
         "atlases": len(atlases),
+        "tools": len(tools),
         "stories": len(stories),
         "references": len(references),
         "seo": seo_report,

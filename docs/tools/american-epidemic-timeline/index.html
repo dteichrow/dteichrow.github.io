@@ -959,11 +959,11 @@
       <div class="topbar-inner">
         <a class="brand" href="../../index.html">
           <strong>The Edge of Epidemiology</strong>
-          <span>Virtual Teaching Tools</span>
+          <span>Learning Tools</span>
         </a>
         <nav class="top-nav" aria-label="Primary">
           <a href="../../index.html">Home</a>
-          <a href="../index.html" aria-current="page">Tools</a>
+          <a href="../index.html" aria-current="page">Learning Tools</a>
           <a href="../../newsdesk/index.html">Newsdesk</a>
           <a href="../../essays/index.html">Essays</a>
           <a href="../../about/index.html">About</a>
@@ -985,9 +985,9 @@
             <p class="kicker">American epidemic timeline</p>
             <h1 id="pageTitle">Enter the archive of American epidemic memory.</h1>
             <p class="intro-lede">
-              A source-first vertical teaching tool for U.S.-linked epidemics, outbreaks,
-              territories, colonial contact zones, ports, military settings, built environments,
-              food systems, and public-health turning points.
+              U.S.-linked epidemics, outbreaks, territories, colonial contact zones, ports,
+              military settings, built environments, food systems, and public-health turning
+              points, gathered into one historical map of contagion and response.
             </p>
             <div class="intro-actions">
               <a class="button primary" href="#explore">Enter the timeline</a>
@@ -996,9 +996,9 @@
             </div>
           </div>
           <aside class="intro-stats" aria-label="Timeline summary">
-            <div class="stat-card"><strong id="statEvents">0</strong><span>seeded event records</span></div>
-            <div class="stat-card"><strong id="statSources">0</strong><span>source records with URLs</span></div>
-            <div class="stat-card"><strong id="statAssets">0</strong><span>credited visual assets</span></div>
+            <div class="stat-card"><strong id="statEvents">0</strong><span>epidemics and outbreaks</span></div>
+            <div class="stat-card"><strong id="statSources">0</strong><span>source pathways</span></div>
+            <div class="stat-card"><strong id="statAssets">0</strong><span>archival images and micrographs</span></div>
           </aside>
         </div>
       </section>
@@ -1021,9 +1021,9 @@
             <label for="tierFilter">Significance</label>
             <select id="tierFilter">
               <option value="">All tiers</option>
-              <option value="hero">Hero events</option>
+              <option value="hero">Anchor events</option>
               <option value="major">Major events</option>
-              <option value="regional">Regional and expandable</option>
+              <option value="regional">Regional outbreaks</option>
             </select>
           </div>
           <div class="control-actions">
@@ -1067,7 +1067,7 @@
       </section>
 
       <section class="panel-mode" id="tableView" hidden aria-labelledby="tableTitle">
-        <h2 id="tableTitle">Accessible Event Ledger</h2>
+        <h2 id="tableTitle">Epidemic Ledger</h2>
         <p id="tableSummary" class="intro-lede"></p>
         <div class="table-wrap" id="tableWrap"></div>
       </section>
@@ -1088,13 +1088,13 @@
       </section>
 
       <section class="source-footer" aria-labelledby="sourcePanelTitle">
-        <h2 id="sourcePanelTitle">Source And Rights Rules</h2>
+        <h2 id="sourcePanelTitle">How To Read The Archive</h2>
         <p>
-          This first release is a major, expandable canon, not a claim to every local
-          outbreak ever recorded. Public event records are source-linked; hero visuals avoid
-          assets with unresolved rights; image credits stay visible in the drawer. The design
-          borrows the energy of a scroll-entry lab/project site while keeping the archive,
-          source panel, and table mode central.
+          This archive follows large epidemics, public-health turning points, and regional
+          outbreaks where the evidence is strong enough to carry the story. Some entries are
+          precise; others preserve uncertainty because the historical record is fragmentary.
+          Open each event to see the sources, image credits, burden notes, and caveats behind
+          the account.
         </p>
       </section>
     </main>
@@ -1154,13 +1154,13 @@
         }
 
         function confidence(event) {
-          if ((event.source_ids || []).length >= 3) return "High source density";
+          if ((event.source_ids || []).length >= 3) return "Deeply documented";
           if ((event.uncertainty_note || "").toLowerCase().includes("uncertain")) return "Caveated";
-          return "Two-source minimum";
+          return "Corroborated";
         }
 
         function tierLabel(tier) {
-          if (tier === "hero") return "Hero";
+          if (tier === "hero") return "Anchor";
           if (tier === "major") return "Major";
           return "Regional";
         }
@@ -1277,7 +1277,7 @@
                   <p><span class="meta-label">Mechanism:</span> ${esc(event.transmission_ecology)}</p>
                   <div class="badge-row">${badges}</div>
                   <div class="event-actions">
-                    <button class="small-button" type="button" data-open-event="${esc(event.id)}">Evidence drawer</button>
+                    <button class="small-button" type="button" data-open-event="${esc(event.id)}">Open evidence</button>
                     <button class="small-button" type="button" data-compare-event="${esc(event.id)}">Compare</button>
                   </div>
                 </div>
@@ -1289,9 +1289,9 @@
         function renderTimeline() {
           const filtered = filterEvents();
           renderEraNav(filtered);
-          qs("#resultSummary").textContent = `${filtered.length} of ${events.length} records shown. Filters search titles, places, pathogens, mechanisms, responses, and tags.`;
+          qs("#resultSummary").textContent = `${filtered.length} of ${events.length} entries shown across titles, places, pathogens, mechanisms, responses, and tags.`;
           if (!filtered.length) {
-            qs("#timelineList").innerHTML = '<div class="empty-state">No event records match the current filters.</div>';
+            qs("#timelineList").innerHTML = '<div class="empty-state">No epidemics match the current view.</div>';
             renderTable(filtered);
             return;
           }
@@ -1338,7 +1338,7 @@
           qs("#stageBadges").innerHTML = [
             `<span class="badge gold">${esc(diseaseLabel(event))}</span>`,
             `<span class="badge green">${esc(confidence(event))}</span>`,
-            `<span class="badge red">${esc(event.source_ids.length)} source links</span>`,
+            `<span class="badge red">${esc(event.source_ids.length)} sources</span>`,
           ].join("");
           qsa(".timeline-event.active").forEach((node) => node.classList.remove("active"));
           qs(`#event-${CSS.escape(event.id)}`)?.classList.add("active");
@@ -1362,9 +1362,9 @@
         }
 
         function renderTable(filtered = visibleEvents) {
-          qs("#tableSummary").textContent = `${filtered.length} records match the current filters.`;
+          qs("#tableSummary").textContent = `${filtered.length} entries match the current view.`;
           if (!filtered.length) {
-            qs("#tableWrap").innerHTML = '<div class="empty-state">No records to display.</div>';
+            qs("#tableWrap").innerHTML = '<div class="empty-state">No epidemics to display.</div>';
             return;
           }
           qs("#tableWrap").innerHTML = `
@@ -1389,7 +1389,7 @@
                     <td>${esc(event.geography)}</td>
                     <td>${esc(event.pathogen_or_syndrome)}</td>
                     <td>${esc(event.transmission_ecology)}</td>
-                    <td>${esc(event.source_ids.length)} linked</td>
+                    <td>${esc(event.source_ids.length)}</td>
                   </tr>
                 `
                   )
@@ -1479,7 +1479,7 @@
                   <li>
                     ${esc(asset.credit)}<br />
                     <span class="meta-label">${esc(asset.rights)}</span><br />
-                    <a href="${esc(asset.source_url)}" target="_blank" rel="noreferrer">Source image metadata</a>
+                    <a href="${esc(asset.source_url)}" target="_blank" rel="noreferrer">Image source</a>
                   </li>
                 `
                   )
