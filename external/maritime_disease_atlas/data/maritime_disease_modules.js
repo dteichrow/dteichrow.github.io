@@ -135,6 +135,34 @@ window.MARITIME_DISEASE_MODULES = {
       "source_type": "government report"
     },
     {
+      "source_id": "yellow-fever-who",
+      "short_citation": "World Health Organization. Yellow fever fact sheet.",
+      "full_citation": "World Health Organization. Yellow fever fact sheet. https://www.who.int/news-room/fact-sheets/detail/yellow-fever",
+      "url_or_doi": "https://www.who.int/news-room/fact-sheets/detail/yellow-fever",
+      "source_type": "review"
+    },
+    {
+      "source_id": "malaria-who",
+      "short_citation": "World Health Organization. Malaria fact sheet.",
+      "full_citation": "World Health Organization. Malaria fact sheet. https://www.who.int/news-room/fact-sheets/detail/malaria",
+      "url_or_doi": "https://www.who.int/news-room/fact-sheets/detail/malaria",
+      "source_type": "review"
+    },
+    {
+      "source_id": "malaria-carter",
+      "short_citation": "Carter and Mendis. Evolutionary and historical aspects of malaria. 2002.",
+      "full_citation": "Carter R, Mendis KN. Evolutionary and historical aspects of the burden of malaria. Clinical Microbiology Reviews. 2002;15(4):564-594.",
+      "url_or_doi": "https://doi.org/10.1128/CMR.15.4.564-594.2002",
+      "source_type": "review"
+    },
+    {
+      "source_id": "malaria-mordecai",
+      "short_citation": "Mordecai et al. Climate change and mosquito-borne disease burden. 2020.",
+      "full_citation": "Mordecai EA, Ryan SJ, Caldwell JM, Shah MM, LaBeaud AD. Climate change could shift disease burden from malaria to arboviruses in Africa. Lancet Planetary Health. 2020.",
+      "url_or_doi": null,
+      "source_type": "peer-reviewed article"
+    },
+    {
       "source_id": "nlm-yellow-fever-primary",
       "short_citation": "NLM. 1793 Philadelphia Yellow Fever Primary Account.",
       "full_citation": "NLM Digital Collections: 1793 Philadelphia Yellow Fever Primary Account.",
@@ -182,6 +210,41 @@ window.MARITIME_DISEASE_MODULES = {
       "full_citation": "World Health Organization. Smallpox and Its Eradication.",
       "url_or_doi": "https://iris.who.int/handle/10665/39485",
       "source_type": "book"
+    },
+    {
+      "source_id": "smallpox-who",
+      "short_citation": "WHO. Smallpox health topic.",
+      "full_citation": "WHO. Smallpox health topic. https://www.who.int/health-topics/smallpox",
+      "url_or_doi": "https://www.who.int/health-topics/smallpox",
+      "source_type": "review"
+    },
+    {
+      "source_id": "smallpox-origin-babkin",
+      "short_citation": "Babkin and Babkina. The Origin of the Variola Virus. 2015.",
+      "full_citation": "Babkin IV, Babkina IN. The Origin of the Variola Virus. Viruses. 2015;7(3):1100-1112.",
+      "url_or_doi": "https://doi.org/10.3390/v7031100",
+      "source_type": "peer-reviewed article"
+    },
+    {
+      "source_id": "measles-who",
+      "short_citation": "World Health Organization. Measles fact sheet.",
+      "full_citation": "World Health Organization. Measles fact sheet. https://www.who.int/news-room/fact-sheets/detail/measles",
+      "url_or_doi": "https://www.who.int/news-room/fact-sheets/detail/measles",
+      "source_type": "review"
+    },
+    {
+      "source_id": "measles-science",
+      "short_citation": "Dux et al. Measles and rinderpest divergence. Science. 2020.",
+      "full_citation": "Dux A, Lequime S, Patrono LV, et al. Measles virus and rinderpest virus divergence dated to the sixth century BCE. Science. 2020.",
+      "url_or_doi": "https://doi.org/10.1126/science.aba9411",
+      "source_type": "peer-reviewed article"
+    },
+    {
+      "source_id": "measles-lancet",
+      "short_citation": "Moss. Measles. Lancet. 2017.",
+      "full_citation": "Moss WJ. Measles. Lancet. 2017.",
+      "url_or_doi": "https://doi.org/10.1016/S0140-6736(17)31463-0",
+      "source_type": "review"
     },
     {
       "source_id": "slavevoyages-methodology",
