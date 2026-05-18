@@ -839,16 +839,9 @@
   {
     "title": "Dengue and arboviruses",
     "section": "Newsdesk",
-    "summary": "Free Press Journal now includes deaths or fatal cases in the story frame.",
+    "summary": "2 newly observed linked item(s) were added since the last saved snapshot.",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
-    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography South Asia United Kingdom"
-  },
-  {
-    "title": "COVID-19 and SARS-CoV-2",
-    "section": "Newsdesk",
-    "summary": "The lead item has changed to Modeling the potential public health and economic impact and cost-effectiveness of vaccination strategies using an adapted COVID-19 vaccine in Guatemala. from PubMed Infectious Disease Search.",
-    "url": "/stories/story_afd8f5934e291e02-covid-19-and-sars-cov-2.html",
-    "keywords": "new_official_source severity_or_death new_geography North America United States"
+    "keywords": "policy_or_travel new_geography North America "
   },
   {
     "title": "Tuberculosis and antimicrobial resistance",
@@ -856,6 +849,13 @@
     "summary": "The lead item has changed to Understanding and exploiting superspreading to disrupt Mycobacterium tuberculosis transmission. from PubMed Historical Pathogen Case Studies.",
     "url": "/stories/story_8b3f807bbfd61cab-tuberculosis-and-antimicrobial-resistance.html",
     "keywords": "new_official_source transmission_change new_geography Cross-region / unassigned "
+  },
+  {
+    "title": "COVID-19 and SARS-CoV-2",
+    "section": "Newsdesk",
+    "summary": "The lead item has changed to Modeling the potential public health and economic impact and cost-effectiveness of vaccination strategies using an adapted COVID-19 vaccine in Guatemala. from PubMed Infectious Disease Search.",
+    "url": "/stories/story_afd8f5934e291e02-covid-19-and-sars-cov-2.html",
+    "keywords": "new_official_source severity_or_death new_geography North America United States"
   },
   {
     "title": "Occupational and environmental epidemiology",
