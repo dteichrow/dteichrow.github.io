@@ -317,13 +317,48 @@
         background: rgba(17, 20, 22, 0.96);
       }
 
+      .interpretation-band {
+        width: min(var(--max), calc(100% - 2rem));
+        margin: 0 auto;
+        padding: 2rem 0;
+        display: grid;
+        grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+        gap: 1rem;
+      }
+
+      .interpretation-panel {
+        padding: 1.15rem;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: rgba(239, 227, 207, 0.055);
+      }
+
+      .interpretation-panel h2 {
+        margin-bottom: 0.55rem;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 1.45rem;
+      }
+
+      .interpretation-panel p {
+        margin-bottom: 0.65rem;
+        color: var(--muted);
+      }
+
+      .interpretation-panel p:last-child {
+        margin-bottom: 0;
+      }
+
       .controls-inner {
         width: min(var(--max), calc(100% - 2rem));
         margin: 0 auto;
         padding: 1rem 0;
         display: grid;
-        grid-template-columns: minmax(220px, 1.1fr) repeat(3, minmax(150px, 0.5fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 0.75rem;
+      }
+
+      .control-field.search-field {
+        grid-column: span 2;
       }
 
       .control-field {
@@ -491,6 +526,64 @@
       .badge.red {
         border-color: rgba(182, 77, 69, 0.68);
         color: #f0b6b0;
+      }
+
+      .badge.blue {
+        border-color: rgba(110, 145, 170, 0.72);
+        color: #c5dded;
+      }
+
+      .badge.warning {
+        border-color: rgba(213, 168, 86, 0.76);
+        color: #f4d59a;
+        background: rgba(213, 168, 86, 0.08);
+      }
+
+      .event-summary {
+        color: #e9ddcb;
+      }
+
+      .event-significance,
+      .event-uncertainty,
+      .event-sources {
+        margin-top: 0.75rem;
+        padding-top: 0.75rem;
+        border-top: 1px solid rgba(239, 227, 207, 0.1);
+      }
+
+      .event-uncertainty {
+        color: #f3d491;
+      }
+
+      .source-pills,
+      .link-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        margin-top: 0.45rem;
+      }
+
+      .source-pill,
+      .link-pill {
+        display: inline-flex;
+        align-items: center;
+        min-height: 30px;
+        padding: 0.25rem 0.48rem;
+        border: 1px solid rgba(213, 168, 86, 0.38);
+        border-radius: 999px;
+        color: #f3d491;
+        background: rgba(213, 168, 86, 0.07);
+        font-size: 0.74rem;
+        font-weight: 750;
+        text-decoration: none;
+      }
+
+      .source-pill:hover,
+      .source-pill:focus-visible,
+      .link-pill:hover,
+      .link-pill:focus-visible {
+        border-color: var(--gold);
+        color: var(--ink);
       }
 
       .era-nav {
@@ -869,8 +962,13 @@
           grid-row: auto;
         }
 
+        .interpretation-band,
         .controls-inner {
           grid-template-columns: 1fr 1fr;
+        }
+
+        .control-field.search-field {
+          grid-column: 1 / -1;
         }
 
         .timeline-shell {
@@ -894,6 +992,7 @@
           font-size: 1rem;
         }
 
+        .interpretation-band,
         .controls-inner,
         .event-grid,
         .compare-controls,
@@ -985,9 +1084,10 @@
             <p class="kicker">American epidemic timeline</p>
             <h1 id="pageTitle">Enter the archive of American epidemic memory.</h1>
             <p class="intro-lede">
-              U.S.-linked epidemics, outbreaks, territories, colonial contact zones, ports,
-              military settings, built environments, food systems, and public-health turning
-              points, gathered into one historical map of contagion and response.
+              A selective, source-backed timeline of major epidemics, outbreaks, and
+              public-health turning points in what is now the United States, including
+              colonial, Indigenous, territorial, and modern settings where the evidence can
+              carry the claim.
             </p>
             <div class="intro-actions">
               <a class="button primary" href="#explore">Enter the timeline</a>
@@ -996,26 +1096,66 @@
             </div>
           </div>
           <aside class="intro-stats" aria-label="Timeline summary">
-            <div class="stat-card"><strong id="statEvents">0</strong><span>epidemics and outbreaks</span></div>
+            <div class="stat-card"><strong id="statEvents">0</strong><span>defensible teaching entries</span></div>
             <div class="stat-card"><strong id="statSources">0</strong><span>source pathways</span></div>
             <div class="stat-card"><strong id="statAssets">0</strong><span>archival images and micrographs</span></div>
           </aside>
         </div>
       </section>
 
+      <section class="interpretation-band" aria-label="How to read this timeline">
+        <article class="interpretation-panel">
+          <p class="kicker">Why this matters</p>
+          <h2>Epidemic history is infrastructure history.</h2>
+          <p>
+            This timeline is not a trophy case of disasters. It lets readers compare
+            source-backed entries across ports, camps, households, prisons, schools,
+            hospitals, reservations, food systems, water systems, farms, and sexual or
+            injection networks, while keeping public-health interpretation attached to
+            the evidence that supports it.
+          </p>
+        </article>
+        <article class="interpretation-panel">
+          <p class="kicker">How to read uncertainty</p>
+          <h2>Older outbreaks are not modern lab reports.</h2>
+          <p>
+            A high-confidence entry means the event and claim are strongly sourced. A
+            contested or uncertain entry means the mortality event or public-health lesson
+            is important, but diagnosis, counts, or consequences are not clean enough to
+            flatten into certainty.
+          </p>
+        </article>
+      </section>
+
       <section class="tool-controls" id="explore" aria-label="Timeline controls">
         <div class="controls-inner">
-          <div class="control-field">
+          <div class="control-field search-field">
             <label for="searchInput">Search text</label>
-            <input id="searchInput" type="search" placeholder="cholera, ports, Navajo Nation, wastewater" autocomplete="off" />
+            <input id="searchInput" type="search" placeholder="cholera, ports, Puerto Rico, wastewater" autocomplete="off" />
           </div>
           <div class="control-field">
-            <label for="eraFilter">Era</label>
+            <label for="eraFilter">Century / era</label>
             <select id="eraFilter"></select>
           </div>
           <div class="control-field">
             <label for="diseaseFilter">Disease group</label>
             <select id="diseaseFilter"></select>
+          </div>
+          <div class="control-field">
+            <label for="transmissionFilter">Transmission</label>
+            <select id="transmissionFilter"></select>
+          </div>
+          <div class="control-field">
+            <label for="periodFilter">Period tag</label>
+            <select id="periodFilter"></select>
+          </div>
+          <div class="control-field">
+            <label for="settingFilter">Setting</label>
+            <select id="settingFilter"></select>
+          </div>
+          <div class="control-field">
+            <label for="confidenceFilter">Confidence</label>
+            <select id="confidenceFilter"></select>
           </div>
           <div class="control-field">
             <label for="tierFilter">Significance</label>
@@ -1118,6 +1258,13 @@
         const eraById = new Map(DATA.eras.map((era) => [era.id, era]));
         const groupById = new Map(DATA.disease_groups.map((group) => [group.id, group]));
         const stageFallback = assetById.get("quarantine-notice-1878") || DATA.assets[0];
+        const CONFIDENCE_LABELS = {
+          high: "High confidence",
+          moderate: "Moderate confidence",
+          low: "Low confidence",
+          contested: "Contested",
+          speculative: "Speculative",
+        };
         let activeMode = "timeline";
         let visibleEvents = events;
         let observer = null;
@@ -1137,6 +1284,7 @@
         }
 
         function dateRange(event) {
+          if (event.date_display) return event.date_display;
           const start = event.start_date || "";
           const end = event.end_date || "";
           if (!end || start === end) return start;
@@ -1153,10 +1301,9 @@
           return era ? `${era.label} (${era.range})` : event.era_id;
         }
 
-        function confidence(event) {
-          if ((event.source_ids || []).length >= 3) return "Deeply documented";
-          if ((event.uncertainty_note || "").toLowerCase().includes("uncertain")) return "Caveated";
-          return "Corroborated";
+        function confidenceLabel(eventOrValue) {
+          const value = typeof eventOrValue === "string" ? eventOrValue : eventOrValue.confidence;
+          return CONFIDENCE_LABELS[value] || "Evidence note";
         }
 
         function tierLabel(tier) {
@@ -1167,6 +1314,69 @@
 
         function firstAsset(event) {
           return (event.asset_ids || []).map((id) => assetById.get(id)).find(Boolean) || stageFallback;
+        }
+
+        function uniqueSorted(values) {
+          return [...new Set(values.filter(Boolean))].sort((a, b) => String(a).localeCompare(String(b)));
+        }
+
+        function sourcePills(event, limit = 3) {
+          const sources = (event.source_ids || []).map((id) => sourceById.get(id)).filter(Boolean);
+          const visible = sources.slice(0, limit);
+          const extra = sources.length > visible.length ? `<span class="source-pill">+${sources.length - visible.length} more</span>` : "";
+          return (
+            visible
+              .map(
+                (source) =>
+                  `<a class="source-pill" href="${esc(source.url)}" target="_blank" rel="noreferrer">${esc(source.title)}</a>`
+              )
+              .join("") + extra
+          );
+        }
+
+        function linkList(links) {
+          if (!Array.isArray(links) || !links.length) return '<p>No linked site surface yet.</p>';
+          return `
+            <div class="link-list">
+              ${links
+                .map((link) => {
+                  const href = typeof link === "string" ? link : link.href;
+                  const label = typeof link === "string" ? link : link.label;
+                  return `<a class="link-pill" href="${esc(href)}">${esc(label)}</a>`;
+                })
+                .join("")}
+            </div>
+          `;
+        }
+
+        function evidenceBadges(event) {
+          const uncertaintyText = `${event.uncertainty_note || ""} ${event.pathogen_or_agent || ""}`.toLowerCase();
+          const badges = [`<span class="badge green">${esc(confidenceLabel(event))}</span>`];
+          if (event.confidence === "high") {
+            badges.push('<span class="badge blue">High confidence</span>');
+          }
+          if (event.confidence === "contested") {
+            badges.push('<span class="badge warning">Contested</span>');
+          }
+          if (event.confidence === "low" || event.confidence === "speculative") {
+            badges.push('<span class="badge warning">Thin evidence</span>');
+          }
+          if (
+            uncertaintyText.includes("uncertain") ||
+            uncertaintyText.includes("contested") ||
+            uncertaintyText.includes("disputed") ||
+            uncertaintyText.includes("retrospective") ||
+            uncertaintyText.includes("unknown")
+          ) {
+            badges.push('<span class="badge warning">Uncertain diagnosis</span>');
+          }
+          if (
+            (event.claims || []).some((claim) => String(claim.claim_type || "").toLowerCase().includes("interpret")) ||
+            (event.tags || []).includes("public-health-turning-point")
+          ) {
+            badges.push('<span class="badge blue">Interpretive synthesis</span>');
+          }
+          return [...new Set(badges)].join("");
         }
 
         function imageFallbackAttrs() {
@@ -1194,11 +1404,24 @@
             event.title,
             event.geography,
             event.pathogen_or_syndrome,
+            event.pathogen_or_agent,
+            event.disease_or_condition,
             event.disease_group,
+            diseaseLabel(event),
             event.transmission_ecology,
+            event.transmission_category,
             event.historical_thesis,
+            event.summary_1_sentence,
+            event.historical_context,
             event.public_health_response,
+            event.public_health_significance,
+            event.uncertainty_note,
+            event.mortality_or_burden_note,
             event.polity_scope,
+            event.confidence,
+            ...(event.period_tags || []),
+            ...(event.setting_tags || []),
+            ...(event.modern_location_tags || []),
             ...(event.tags || []),
           ]
             .join(" ")
@@ -1206,14 +1429,32 @@
         }
 
         function populateSelects() {
+          const centuries = uniqueSorted(events.map((event) => event.century));
           qs("#eraFilter").innerHTML =
-            '<option value="">All eras</option>' +
-            DATA.eras.map((era) => `<option value="${esc(era.id)}">${esc(era.label)}</option>`).join("");
+            '<option value="">All centuries / eras</option>' +
+            centuries.map((century) => `<option value="${esc(century)}">${esc(century)}</option>`).join("");
           qs("#diseaseFilter").innerHTML =
             '<option value="">All disease groups</option>' +
             DATA.disease_groups.map((group) => `<option value="${esc(group.id)}">${esc(group.label)}</option>`).join("");
+          qs("#transmissionFilter").innerHTML =
+            '<option value="">All transmission categories</option>' +
+            (DATA.transmission_categories || [])
+              .map((category) => `<option value="${esc(category)}">${esc(category)}</option>`)
+              .join("");
+          qs("#periodFilter").innerHTML =
+            '<option value="">All period tags</option>' +
+            (DATA.periods || []).map((period) => `<option value="${esc(period)}">${esc(period)}</option>`).join("");
+          const settings = uniqueSorted(events.flatMap((event) => event.setting_tags || []));
+          qs("#settingFilter").innerHTML =
+            '<option value="">All settings</option>' +
+            settings.map((setting) => `<option value="${esc(setting)}">${esc(setting)}</option>`).join("");
+          qs("#confidenceFilter").innerHTML =
+            '<option value="">All confidence levels</option>' +
+            Object.entries(CONFIDENCE_LABELS)
+              .map(([value, label]) => `<option value="${esc(value)}">${esc(label)}</option>`)
+              .join("");
           const compareOptions = events
-            .map((event) => `<option value="${esc(event.id)}">${esc(yearOf(event))} - ${esc(event.title)}</option>`)
+            .map((event) => `<option value="${esc(event.id)}">${esc(dateRange(event))} - ${esc(event.title)}</option>`)
             .join("");
           qs("#compareA").innerHTML = compareOptions;
           qs("#compareB").innerHTML = compareOptions;
@@ -1224,8 +1465,12 @@
         function activeFilters() {
           return {
             query: qs("#searchInput").value.trim().toLowerCase(),
-            era: qs("#eraFilter").value,
+            century: qs("#eraFilter").value,
             disease: qs("#diseaseFilter").value,
+            transmission: qs("#transmissionFilter").value,
+            period: qs("#periodFilter").value,
+            setting: qs("#settingFilter").value,
+            confidence: qs("#confidenceFilter").value,
             tier: qs("#tierFilter").value,
             turning: qs("#turningPointFilter").checked,
           };
@@ -1234,8 +1479,12 @@
         function filterEvents() {
           const filters = activeFilters();
           visibleEvents = events.filter((event) => {
-            if (filters.era && event.era_id !== filters.era) return false;
+            if (filters.century && event.century !== filters.century) return false;
             if (filters.disease && event.disease_group !== filters.disease) return false;
+            if (filters.transmission && event.transmission_category !== filters.transmission) return false;
+            if (filters.period && !(event.period_tags || []).includes(filters.period)) return false;
+            if (filters.setting && !(event.setting_tags || []).includes(filters.setting)) return false;
+            if (filters.confidence && event.confidence !== filters.confidence) return false;
             if (filters.tier && event.significance_tier !== filters.tier) return false;
             if (filters.turning && !(event.tags || []).includes("public-health-turning-point")) return false;
             if (filters.query && !textIndex(event).includes(filters.query)) return false;
@@ -1257,8 +1506,9 @@
           const asset = firstAsset(event);
           const badges = [
             `<span class="badge gold">${esc(diseaseLabel(event))}</span>`,
+            `<span class="badge">${esc(event.transmission_category)}</span>`,
             `<span class="badge">${esc(tierLabel(event.significance_tier))}</span>`,
-            `<span class="badge green">${esc(confidence(event))}</span>`,
+            evidenceBadges(event),
           ].join("");
           return `
             <article class="timeline-event" id="event-${esc(event.id)}" data-event-id="${esc(event.id)}" tabindex="0">
@@ -1272,10 +1522,15 @@
                     <span class="badge">${esc(event.polity_scope)}</span>
                   </div>
                   <h3>${esc(event.title)}</h3>
-                  <p><strong>${esc(event.pathogen_or_syndrome)}</strong> · ${esc(event.geography)}</p>
-                  <p>${esc(event.historical_thesis)}</p>
-                  <p><span class="meta-label">Mechanism:</span> ${esc(event.transmission_ecology)}</p>
+                  <p><strong>${esc(event.disease_or_condition)}</strong> · ${esc(event.pathogen_or_agent)} · ${esc(event.geography)}</p>
+                  <p class="event-summary">${esc(event.summary_1_sentence)}</p>
+                  <p class="event-significance"><span class="meta-label">Public-health significance:</span> ${esc(event.public_health_significance)}</p>
+                  <p class="event-uncertainty"><span class="meta-label">Uncertainty:</span> ${esc(event.uncertainty_note)}</p>
                   <div class="badge-row">${badges}</div>
+                  <div class="event-sources">
+                    <span class="meta-label">Citations</span>
+                    <div class="source-pills">${sourcePills(event)}</div>
+                  </div>
                   <div class="event-actions">
                     <button class="small-button" type="button" data-open-event="${esc(event.id)}">Open evidence</button>
                     <button class="small-button" type="button" data-compare-event="${esc(event.id)}">Compare</button>
@@ -1289,7 +1544,7 @@
         function renderTimeline() {
           const filtered = filterEvents();
           renderEraNav(filtered);
-          qs("#resultSummary").textContent = `${filtered.length} of ${events.length} entries shown across titles, places, pathogens, mechanisms, responses, and tags.`;
+          qs("#resultSummary").textContent = `${filtered.length} of ${events.length} entries shown across titles, places, diseases, agents, public-health significance, uncertainty notes, sources, and tags.`;
           if (!filtered.length) {
             qs("#timelineList").innerHTML = '<div class="empty-state">No epidemics match the current view.</div>';
             renderTable(filtered);
@@ -1334,10 +1589,11 @@
           qs("#stageYear").textContent = yearOf(event);
           qs("#stageEra").textContent = eraLabel(event);
           qs("#stageTitle").textContent = event.title;
-          qs("#stageThesis").textContent = event.historical_thesis;
+          qs("#stageThesis").textContent = event.summary_1_sentence;
           qs("#stageBadges").innerHTML = [
             `<span class="badge gold">${esc(diseaseLabel(event))}</span>`,
-            `<span class="badge green">${esc(confidence(event))}</span>`,
+            `<span class="badge">${esc(event.transmission_category)}</span>`,
+            evidenceBadges(event),
             `<span class="badge red">${esc(event.source_ids.length)} sources</span>`,
           ].join("");
           qsa(".timeline-event.active").forEach((node) => node.classList.remove("active"));
@@ -1373,9 +1629,10 @@
                 <tr>
                   <th>Date</th>
                   <th>Event</th>
+                  <th>Disease / agent</th>
                   <th>Place</th>
-                  <th>Pathogen or syndrome</th>
-                  <th>Ecology</th>
+                  <th>Transmission</th>
+                  <th>Confidence</th>
                   <th>Sources</th>
                 </tr>
               </thead>
@@ -1386,9 +1643,10 @@
                   <tr>
                     <td>${esc(dateRange(event))}</td>
                     <td><button class="small-button" type="button" data-open-event="${esc(event.id)}">${esc(event.title)}</button></td>
+                    <td>${esc(event.disease_or_condition)}<br /><span class="meta-label">${esc(event.pathogen_or_agent)}</span></td>
                     <td>${esc(event.geography)}</td>
-                    <td>${esc(event.pathogen_or_syndrome)}</td>
-                    <td>${esc(event.transmission_ecology)}</td>
+                    <td>${esc(event.transmission_category)}</td>
+                    <td>${esc(confidenceLabel(event))}</td>
                     <td>${esc(event.source_ids.length)}</td>
                   </tr>
                 `
@@ -1409,11 +1667,13 @@
               <article class="compare-card">
                 <p class="kicker">${esc(dateRange(event))}</p>
                 <h3>${esc(event.title)}</h3>
-                <p><strong>${esc(event.pathogen_or_syndrome)}</strong></p>
+                <p><strong>${esc(event.disease_or_condition)}</strong> · ${esc(event.pathogen_or_agent)}</p>
                 <p>${esc(event.geography)}</p>
                 <p><span class="meta-label">Disease group:</span> ${esc(diseaseLabel(event))}</p>
-                <p><span class="meta-label">Transmission ecology:</span> ${esc(event.transmission_ecology)}</p>
-                <p><span class="meta-label">Response:</span> ${esc(event.public_health_response)}</p>
+                <p><span class="meta-label">Transmission:</span> ${esc(event.transmission_category)}</p>
+                <p><span class="meta-label">Public-health significance:</span> ${esc(event.public_health_significance)}</p>
+                <p><span class="meta-label">Uncertainty:</span> ${esc(event.uncertainty_note)}</p>
+                <div class="badge-row">${evidenceBadges(event)}</div>
                 <button class="small-button" type="button" data-open-event="${esc(event.id)}">Open evidence</button>
               </article>
             `
@@ -1433,27 +1693,52 @@
             <div class="badge-row">
               <span class="badge gold">${esc(dateRange(event))}</span>
               <span class="badge">${esc(event.polity_scope)}</span>
-              <span class="badge green">${esc(confidence(event))}</span>
+              <span class="badge">${esc(event.transmission_category)}</span>
+              ${evidenceBadges(event)}
               <span class="badge red">${esc(tierLabel(event.significance_tier))}</span>
             </div>
             <section class="drawer-section">
-              <h3>Historical Thesis</h3>
-              <p>${esc(event.historical_thesis)}</p>
+              <h3>Outbreak Description</h3>
+              <p>${esc(event.summary_1_sentence)}</p>
+              <p><strong>${esc(event.disease_or_condition)}</strong> · ${esc(event.pathogen_or_agent)}</p>
+              <p><span class="meta-label">Place:</span> ${esc(event.geography)}</p>
             </section>
             <section class="drawer-section">
-              <h3>Epidemiologic Mechanism</h3>
-              <p>${esc(event.transmission_ecology)}</p>
-              <p><strong>${esc(event.pathogen_or_syndrome)}</strong> · ${esc(diseaseLabel(event))}</p>
+              <h3>Historical Context</h3>
+              <p>${esc(event.historical_context)}</p>
             </section>
             <section class="drawer-section">
-              <h3>Public-Health Response</h3>
-              <p>${esc(event.public_health_response)}</p>
+              <h3>Public-Health Significance</h3>
+              <p>${esc(event.public_health_significance)}</p>
+            </section>
+            <section class="drawer-section">
+              <h3>Transmission And Setting</h3>
+              <p><span class="meta-label">Transmission category:</span> ${esc(event.transmission_category)}</p>
+              <p><span class="meta-label">Settings:</span> ${esc((event.setting_tags || []).join(", "))}</p>
+              <p><span class="meta-label">Location tags:</span> ${esc((event.modern_location_tags || []).join(", "))}</p>
+              <p><span class="meta-label">Period tags:</span> ${esc((event.period_tags || []).join(", "))}</p>
             </section>
             <section class="drawer-section">
               <h3>Burden And Uncertainty</h3>
-              <p><strong>Cases:</strong> ${esc(event.case_estimate)}</p>
-              <p><strong>Deaths:</strong> ${esc(event.death_estimate)}</p>
-              <p>${esc(event.uncertainty_note)}</p>
+              <p>${esc(event.mortality_or_burden_note)}</p>
+              <p><span class="meta-label">Uncertainty:</span> ${esc(event.uncertainty_note)}</p>
+              <p><span class="meta-label">Evidence confidence:</span> ${esc(confidenceLabel(event))}</p>
+            </section>
+            <section class="drawer-section">
+              <h3>Claim Ledger</h3>
+              <ul class="source-list">
+                ${(event.claims || [])
+                  .map(
+                    (claim) => `
+                  <li>
+                    ${esc(claim.claim)}
+                    <br /><span class="meta-label">${esc(confidenceLabel(claim.confidence))} · ${esc(claim.claim_type)}</span>
+                    ${claim.notes ? `<br /><span class="meta-label">${esc(claim.notes)}</span>` : ""}
+                  </li>
+                `
+                  )
+                  .join("")}
+              </ul>
             </section>
             <section class="drawer-section">
               <h3>Sources</h3>
@@ -1469,6 +1754,11 @@
                   )
                   .join("")}
               </ul>
+            </section>
+            <section class="drawer-section">
+              <h3>Related Site Paths</h3>
+              ${linkList(event.related_tool_links)}
+              ${linkList(event.related_blog_links)}
             </section>
             <section class="drawer-section">
               <h3>Image Credits</h3>
@@ -1527,6 +1817,10 @@
           qs("#searchInput").value = "";
           qs("#eraFilter").value = "";
           qs("#diseaseFilter").value = "";
+          qs("#transmissionFilter").value = "";
+          qs("#periodFilter").value = "";
+          qs("#settingFilter").value = "";
+          qs("#confidenceFilter").value = "";
           qs("#tierFilter").value = "";
           qs("#turningPointFilter").checked = false;
           renderTimeline();
@@ -1539,7 +1833,17 @@
           populateSelects();
           renderTimeline();
 
-          ["#searchInput", "#eraFilter", "#diseaseFilter", "#tierFilter", "#turningPointFilter"].forEach((selector) => {
+          [
+            "#searchInput",
+            "#eraFilter",
+            "#diseaseFilter",
+            "#transmissionFilter",
+            "#periodFilter",
+            "#settingFilter",
+            "#confidenceFilter",
+            "#tierFilter",
+            "#turningPointFilter",
+          ].forEach((selector) => {
             qs(selector).addEventListener("input", renderTimeline);
             qs(selector).addEventListener("change", renderTimeline);
           });
