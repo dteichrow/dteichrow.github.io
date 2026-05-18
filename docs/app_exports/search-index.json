@@ -816,13 +816,6 @@
     "keywords": "viking norse greenland vinland plague health atlas"
   },
   {
-    "title": "Avian influenza and H5N1",
-    "section": "Newsdesk",
-    "summary": "Cambodianess now explicitly uses investigation or monitoring language.",
-    "url": "/stories/story_28a91c6d89267872-avian-influenza-and-h5n1.html",
-    "keywords": "confirmed_case transmission_change new_geography Southeast Asia "
-  },
-  {
     "title": "Measles transmission and vaccination",
     "section": "Newsdesk",
     "summary": "The lead item has changed to How conflict is driving measles outbreaks in the Middle East and North Africa from arabnews.jp.",
@@ -835,6 +828,13 @@
     "summary": "nippon.com currently frames broader public risk as low.",
     "url": "/stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
     "keywords": "East Asia United Kingdom"
+  },
+  {
+    "title": "Avian influenza and H5N1",
+    "section": "Newsdesk",
+    "summary": "Cambodianess now explicitly uses investigation or monitoring language.",
+    "url": "/stories/story_28a91c6d89267872-avian-influenza-and-h5n1.html",
+    "keywords": "confirmed_case transmission_change new_geography Southeast Asia "
   },
   {
     "title": "Tuberculosis and antimicrobial resistance",
