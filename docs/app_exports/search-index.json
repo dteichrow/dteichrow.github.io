@@ -783,23 +783,23 @@
   {
     "title": "American Epidemic Timeline",
     "section": "Tool",
-    "summary": "A source-backed teaching timeline of major U.S.-linked epidemics, outbreaks, and public-health turning points.",
+    "summary": "A cinematic timeline of major U.S.-linked epidemics and disease outbreaks, designed as a public-health memory machine.",
     "url": "/tools/american-epidemic-timeline/",
     "keywords": "american epidemics timeline public health history outbreaks teaching tool timeline"
   },
   {
     "title": "Pathogen Atlas",
     "section": "Tool",
-    "summary": "A source-backed teaching atlas about pathogen origins, reservoirs, transmission ecology, historical spread, and evidentiary uncertainty.",
+    "summary": "An origin-and-spread atlas that links geography, uncertainty, papers, and prior writing instead of flattening pathogens into another story stream.",
     "url": "/atlases/pathogen/",
-    "keywords": "pathogen reservoirs transmission origin uncertainty infectious disease spread atlas"
+    "keywords": "pathogen routes origin infectious disease spread atlas"
   },
   {
     "title": "Maritime Disease Atlas",
     "section": "Tool",
-    "summary": "A source-backed map-first digital exhibit on ships, ports, quarantine, naval warfare, captivity, trade, migration, and maritime disease ecology.",
+    "summary": "A map-first digital exhibit on shipboard disease ecology, ports, vectors, provisions, quarantine, violence, and the movement constraints of life at sea.",
     "url": "/atlases/maritime/",
-    "keywords": "maritime ports ships quarantine scurvy ship fever yellow fever migration exhibit atlas"
+    "keywords": "maritime ports ships yellow fever scurvy piracy vector exhibit atlas"
   },
   {
     "title": "Revolutionary War Disease Atlas",
