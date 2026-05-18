@@ -1108,10 +1108,11 @@
           <p class="kicker">Why this matters</p>
           <h2>Epidemic history is infrastructure history.</h2>
           <p>
-            This timeline is not a trophy case of disasters. It shows how pathogens moved
-            through ports, camps, households, prisons, schools, hospitals, reservations,
-            food systems, water systems, farms, and sexual or injection networks, and how
-            public health became visible when those systems failed.
+            This timeline is not a trophy case of disasters. It lets readers compare
+            source-backed entries across ports, camps, households, prisons, schools,
+            hospitals, reservations, food systems, water systems, farms, and sexual or
+            injection networks, while keeping public-health interpretation attached to
+            the evidence that supports it.
           </p>
         </article>
         <article class="interpretation-panel">
@@ -1130,7 +1131,7 @@
         <div class="controls-inner">
           <div class="control-field search-field">
             <label for="searchInput">Search text</label>
-            <input id="searchInput" type="search" placeholder="cholera, ports, Navajo Nation, wastewater" autocomplete="off" />
+            <input id="searchInput" type="search" placeholder="cholera, ports, Puerto Rico, wastewater" autocomplete="off" />
           </div>
           <div class="control-field">
             <label for="eraFilter">Century / era</label>
@@ -1543,7 +1544,7 @@
         function renderTimeline() {
           const filtered = filterEvents();
           renderEraNav(filtered);
-          qs("#resultSummary").textContent = `${filtered.length} of ${events.length} entries shown across titles, places, pathogens, mechanisms, responses, and tags.`;
+          qs("#resultSummary").textContent = `${filtered.length} of ${events.length} entries shown across titles, places, diseases, agents, public-health significance, uncertainty notes, sources, and tags.`;
           if (!filtered.length) {
             qs("#timelineList").innerHTML = '<div class="empty-state">No epidemics match the current view.</div>';
             renderTable(filtered);
