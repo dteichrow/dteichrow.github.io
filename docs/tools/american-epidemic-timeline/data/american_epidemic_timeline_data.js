@@ -2,7 +2,7 @@ window.AMERICAN_EPIDEMIC_TIMELINE_DATA = {
   "schema_version": "2.0.0",
   "generated_at": "2026-05-18",
   "title": "American Epidemic Timeline",
-  "description": "A defensible, source-backed teaching timeline of major epidemics, outbreaks, and public-health turning points in what is now the United States and its colonial/pre-state antecedents.",
+  "description": "A curated timeline of major epidemics, outbreaks, and public-health turning points in what is now the United States and its colonial/pre-state antecedents.",
   "scope_note": "Primary scope is present-day United States, U.S. territories where appropriate, and colonial or pre-state antecedents. The dataset is intentionally selective rather than exhaustive.",
   "interpretation_rules": [
     "Separate outbreak description from claimed historical consequence.",

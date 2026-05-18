@@ -8,8 +8,8 @@
       "tool_type": "timeline",
       "status": "open",
       "status_label": "Open now",
-      "summary": "A source-backed teaching timeline of major U.S.-linked epidemics, outbreaks, and public-health turning points.",
-      "evidence_model": "Defensible outbreak ledger with source IDs, claim-level confidence categories, rights-checked archival visuals, visible uncertainty notes, and conservative public-health interpretation",
+      "summary": "A carefully cited timeline of major U.S.-linked epidemics, outbreaks, and public-health turning points.",
+      "evidence_model": "Cited entries with confidence labels, archival visuals, uncertainty notes, and careful public-health interpretation",
       "public_route": "tools/american-epidemic-timeline/",
       "keywords": [
         "american epidemics",
@@ -18,7 +18,7 @@
         "outbreaks",
         "teaching tool"
       ],
-      "long_note": "The timeline follows major epidemics, public-health turning points, and selected regional outbreaks where the evidence is strong enough to carry the story without overdiagnosis or fake precision."
+      "long_note": "The timeline follows major epidemics, public-health turning points, and selected regional outbreaks while keeping uncertain diagnoses and rough counts visibly uncertain."
     },
     {
       "tool_id": "pathogen-atlas",
@@ -26,8 +26,8 @@
       "tool_type": "atlas",
       "status": "open",
       "status_label": "Source-backed atlas",
-      "summary": "A source-backed teaching atlas about pathogen origins, reservoirs, transmission ecology, historical spread, and evidentiary uncertainty.",
-      "evidence_model": "Claim-level source IDs, origin confidence, evidence-type panels, and central source-registry validation",
+      "summary": "A cited teaching atlas about pathogen origins, reservoirs, transmission ecology, historical spread, and evidentiary uncertainty.",
+      "evidence_model": "Origin confidence, evidence-type panels, citations, and uncertainty notes",
       "public_route": "atlases/pathogen/",
       "keywords": [
         "pathogen",
@@ -38,7 +38,7 @@
         "infectious disease",
         "spread"
       ],
-      "long_note": "The pathogen atlas runs as a dark digital exhibit with claim-level source IDs, confidence labels, evidence-type panels, and explicit uncertainty notes."
+      "long_note": "The pathogen atlas runs as a dark digital exhibit with confidence labels, evidence-type panels, citations, and explicit uncertainty notes."
     },
     {
       "tool_id": "maritime-disease-atlas",
@@ -46,8 +46,8 @@
       "tool_type": "atlas",
       "status": "open",
       "status_label": "Source-backed exhibit",
-      "summary": "A source-backed map-first digital exhibit on ships, ports, quarantine, naval warfare, captivity, trade, migration, and maritime disease ecology.",
-      "evidence_model": "Case modules with source IDs, route claim types, burden categories, confidence notes, uncertainty notes, mechanism filters, and guided-tour narrative",
+      "summary": "A cited map-first digital exhibit on ships, ports, quarantine, naval warfare, captivity, trade, migration, and maritime disease ecology.",
+      "evidence_model": "Case modules with citations, route confidence, burden notes, uncertainty notes, mechanism filters, and guided-tour narrative",
       "public_route": "atlases/maritime/",
       "keywords": [
         "maritime",
@@ -60,7 +60,7 @@
         "migration",
         "exhibit"
       ],
-      "long_note": "This is the main public-history exhibit in the atlas family: an exploratory disease ecology surface with source-backed case modules, route confidence labels, and guided-tour and presentation modes for later video adaptation."
+      "long_note": "This is the main public-history exhibit in the atlas family: an exploratory disease ecology surface with case modules, route confidence labels, and guided-tour and presentation modes for later video adaptation."
     },
     {
       "tool_id": "revolutionary-war-atlas",
