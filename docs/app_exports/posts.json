@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T13:59:13",
+  "generated_at": "2026-05-19T14:58:24",
   "count": 89,
   "posts": [
     {
@@ -28,10 +28,10 @@
         "Africa"
       ],
       "series": [],
-      "seo_title": "",
-      "seo_description": "",
-      "primary_keyword": "",
-      "topic_cluster": "",
+      "seo_title": "Ebola in DRC and Uganda: Outbreak Update",
+      "seo_description": "Live outbreak notes on Ebola virus disease in DRC and Uganda, with what is confirmed, what remains uncertain, and why regional spread matters.",
+      "primary_keyword": "Ebola DRC Uganda outbreak",
+      "topic_cluster": "disease-ecology",
       "related_atlases": [
         "pathogen-atlas",
         "maritime-disease-atlas"
@@ -79,9 +79,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Korean Hemorrhagic Fever in the Korean War",
-      "seo_description": "Korean hemorrhagic fever in the Korean War, Hantaan virus, rodent ecology, trench warfare, and how a mysterious military outbreak became part of hantavirus history.",
-      "primary_keyword": "Korean hemorrhagic fever",
+      "seo_title": "Korean War Hantavirus: Hemorrhagic Fever History",
+      "seo_description": "How Korean War trench warfare, rodent ecology, and Hantaan virus turned a mysterious military outbreak into hantavirus history.",
+      "primary_keyword": "Korean War hantavirus",
       "topic_cluster": "disease-and-war"
     },
     {
@@ -120,8 +120,8 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "MV Hondius Hantavirus Outbreak: What We Know So Far",
-      "seo_description": "A source-first guide to the MV Hondius hantavirus outbreak, Andes virus, cruise-ship exposure, travel risk, and what investigators could and could not yet know.",
+      "seo_title": "MV Hondius Hantavirus Outbreak: What We Know",
+      "seo_description": "A source-first guide to the MV Hondius hantavirus outbreak, Andes virus, cruise-ship exposure, travel risk, and what investigators could know.",
       "primary_keyword": "MV Hondius hantavirus outbreak",
       "topic_cluster": "pathogen-geography"
     },
@@ -160,9 +160,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "The New Fungal STI Hiding in Plain Sight (Pathogen Dispatch #1)",
-      "seo_description": "The New Fungal STI Hiding in Plain Sight (Pathogen Dispatch #1) from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on MSMs.",
-      "primary_keyword": "MSMs",
+      "seo_title": "New Fungal STI: Epidemiology and Transmission Risk",
+      "seo_description": "A source-aware look at a newly reported sexually transmitted fungal infection, including MSM networks, case evidence, transmission questions, and reporting limits.",
+      "primary_keyword": "fungal STI",
       "topic_cluster": "epidemiologic-methods"
     },
     {
@@ -201,7 +201,7 @@
       "hero_mode": "cover",
       "notes": "",
       "seo_title": "Ancient DNA and Disease Selection in West Eurasia",
-      "seo_description": "How ancient DNA, infectious disease pressure, immunity, and changing environments can help explain genomic selection in West Eurasian populations.",
+      "seo_description": "How ancient DNA, infectious disease pressure, immunity, and changing environments help explain genomic selection in West Eurasian populations.",
       "primary_keyword": "ancient DNA disease selection",
       "topic_cluster": "historical-epidemiology"
     },
@@ -240,10 +240,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Big Epidemiology: Disease at the Scale of Civilization",
-      "seo_description": "At a 2011 TED conference, historian David Christian asked a deceptively simple question: when did history begin?",
-      "primary_keyword": "big History",
-      "topic_cluster": "pathogen-geography"
+      "seo_title": "Big Epidemiology: Disease at Civilization Scale",
+      "seo_description": "A framework essay for thinking about disease across deep time, infrastructure, migration, ecology, empire, and the systems civilizations build.",
+      "primary_keyword": "big epidemiology",
+      "topic_cluster": "historical-epidemiology"
     },
     {
       "substack_id": 193176173,
@@ -282,8 +282,8 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "1793 Philadelphia Yellow Fever: America's First Epidemic Crisis",
-      "seo_description": "The 1793 Philadelphia yellow fever epidemic as an early American public-health crisis shaped by urban ecology, politics, race, medicine, and mosquito-borne disease.",
+      "seo_title": "1793 Philadelphia Yellow Fever: America’s First Epidemic Crisis",
+      "seo_description": "The 1793 Philadelphia yellow fever epidemic as an early American public-health crisis shaped by urban ecology, politics, race, and mosquito-borne disease.",
       "primary_keyword": "1793 Philadelphia yellow fever",
       "topic_cluster": "historical-epidemiology"
     },
@@ -363,10 +363,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "The White Plague Returns?: Tuberculosis and the Fragility of Public Health (The Pathogen Dispatch)",
-      "seo_description": "The White Plague Returns?: Tuberculosis and the Fragility of Public Health (The Pathogen Dispatch) from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on tuberculosis.",
-      "primary_keyword": "tuberculosis",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "Tuberculosis and the Fragility of Public Health",
+      "seo_description": "A Pathogen Dispatch essay on tuberculosis, public-health capacity, drug resistance, airborne transmission, and why old diseases keep returning.",
+      "primary_keyword": "tuberculosis public health",
+      "topic_cluster": "disease-ecology"
     },
     {
       "substack_id": 191686346,
@@ -405,7 +405,7 @@
       "hero_mode": "cover",
       "notes": "",
       "seo_title": "Disease in the American Revolutionary War: Who Died of What?",
-      "seo_description": "Disease mortality in the American Revolutionary War, including battle deaths, smallpox, camp disease, military medicine, and survival in the late eighteenth century.",
+      "seo_description": "Disease mortality in the American Revolutionary War, including battle deaths, smallpox, camp disease, military medicine, and eighteenth-century survival.",
       "primary_keyword": "disease in the American Revolutionary War",
       "topic_cluster": "disease-and-war"
     },
@@ -446,7 +446,7 @@
       "hero_mode": "cover",
       "notes": "",
       "seo_title": "Disease on the Oregon Trail: Cholera, Dysentery, and Death",
-      "seo_description": "Disease on the Oregon Trail, from cholera and dysentery to overland migration, sanitation, graves, and the epidemiology of nineteenth-century westward travel.",
+      "seo_description": "Disease on the Oregon Trail, from cholera and dysentery to overland migration, sanitation, graves, and nineteenth-century westward travel.",
       "primary_keyword": "disease on the Oregon Trail",
       "topic_cluster": "disease-and-war"
     },
@@ -489,8 +489,8 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "How Yellow Fever Killed Napoleon's American Empire",
-      "seo_description": "How yellow fever, mosquitoes, Saint-Domingue, military failure, and disease ecology helped destroy Napoleon's North American empire plans.",
+      "seo_title": "Yellow Fever and Napoleon’s American Empire",
+      "seo_description": "How yellow fever, mosquitoes, Saint-Domingue, military failure, and disease ecology helped destroy Napoleon’s North American empire plans.",
       "primary_keyword": "yellow fever Napoleon",
       "topic_cluster": "disease-and-war"
     },
@@ -529,9 +529,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "The American Revolution Was Nearly Lost to Smallpox",
-      "seo_description": "The American Revolution Was Nearly Lost to Smallpox from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on american history.",
-      "primary_keyword": "american history",
+      "seo_title": "Smallpox and the American Revolution",
+      "seo_description": "How smallpox threatened the American Revolution, why inoculation mattered, and how disease shaped military survival during the founding war.",
+      "primary_keyword": "smallpox American Revolution",
       "topic_cluster": "disease-and-war"
     },
     {
@@ -568,9 +568,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Disease in the Early Colonies: Pre-Revolutionary War Disease Ecology and Outbreaks",
-      "seo_description": "British North America during the pre-revolutionary war period was a region of fluctuating disease ecology shaped by repeated incursions of smallpox, measles, diphtheria, enteric infections (the nice way of saying feces got in their mouths somehow), and vector-",
-      "primary_keyword": "malaria",
+      "seo_title": "Colonial Disease Ecology Before the Revolution",
+      "seo_description": "Smallpox, measles, malaria, diphtheria, enteric disease, and vector-borne fevers in early British North America before the Revolution.",
+      "primary_keyword": "colonial disease ecology",
       "topic_cluster": "disease-and-war"
     },
     {
@@ -611,9 +611,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Why Europeans Didn’t Die of New World Diseases (but did from diseases in Africa and Asia)",
-      "seo_description": "I was recently asked why Europeans didn’t end up suffering as much at the hands of New World diseases compared to how the Native Americans were impacted by the likes of smallpox, measles, malaria, and yellow fever.",
-      "primary_keyword": "infectious disease",
+      "seo_title": "Why Europeans Didn’t Die of New World Diseases",
+      "seo_description": "Why Old World pathogens devastated Indigenous Americans while New World diseases rarely reversed the catastrophe in Europe, Africa, and Asia.",
+      "primary_keyword": "New World diseases Europeans",
       "topic_cluster": "pathogen-geography"
     },
     {
@@ -649,9 +649,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "They Came from the Steppe: The Genetic Legacy of Plague and Steppe Migrations",
-      "seo_description": "The study of ancient DNA has made the Yamnaya and other early pastoralist groups of the Eurasian steppe some of the better understood prehistoric populations out there.",
-      "primary_keyword": "Genetics",
+      "seo_title": "Plague, Steppe Migrations, and Ancient DNA",
+      "seo_description": "Ancient DNA, Yamnaya and steppe migrations, plague evidence, and how pathogen history intersects with population-genetic change.",
+      "primary_keyword": "plague steppe migrations",
       "topic_cluster": "historical-epidemiology"
     },
     {
@@ -689,9 +689,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "When Worlds Collided: Disease and Population Collapse in the Americas After 1492",
-      "seo_description": "The story of disease in the Americas post-1492 is usually told in a blunt manner, with Europeans arriving, Old World pathogens hitching a ride, and then causing a total collapse of the Indigenous Populations.",
-      "primary_keyword": "infectious disease",
+      "seo_title": "Disease and Population Collapse After 1492",
+      "seo_description": "A careful look at disease, colonial disruption, Indigenous population collapse, Old World pathogens, and the limits of simple post-1492 stories.",
+      "primary_keyword": "disease population collapse Americas",
       "topic_cluster": "pathogen-geography"
     },
     {
@@ -733,10 +733,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Scourges of the High Seas: Early Maritime Disease Ecology",
-      "seo_description": "Scourges of the High Seas: Early Maritime Disease Ecology from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on disease ecology.",
-      "primary_keyword": "disease ecology",
-      "topic_cluster": "disease-and-war"
+      "seo_title": "Maritime Disease Ecology on Early Ships",
+      "seo_description": "Shipboard disease ecology before modern medicine: scurvy, infection, crowding, ports, naval history, and the epidemiology of life at sea.",
+      "primary_keyword": "maritime disease ecology",
+      "topic_cluster": "pathogen-geography"
     },
     {
       "substack_id": 182976217,
@@ -773,8 +773,8 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Cocoliztli: Mexico's 16th-Century Mystery Epidemic",
-      "seo_description": "Cocoliztli and Mexico's sixteenth-century mystery epidemics, including retrospective diagnosis, colonial records, ancient DNA, and the limits of pathogen certainty.",
+      "seo_title": "Cocoliztli: Mexico’s 16th-Century Mystery Epidemic",
+      "seo_description": "Cocoliztli and Mexico’s sixteenth-century mystery epidemics, including retrospective diagnosis, colonial records, ancient DNA, and pathogen uncertainty.",
       "primary_keyword": "cocoliztli epidemic",
       "topic_cluster": "historical-epidemiology"
     },
@@ -815,10 +815,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Inherited Infections: What Our Oldest Diseases Reveal About Human Prehistory",
-      "seo_description": "Inherited Infections: What Our Oldest Diseases Reveal About Human Prehistory from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on infectious disease.",
-      "primary_keyword": "infectious disease",
-      "topic_cluster": "pathogen-geography"
+      "seo_title": "Oldest Human Diseases and Prehistory",
+      "seo_description": "What ancient infections, inherited pathogens, and human prehistory can reveal about disease pressure before written medical history.",
+      "primary_keyword": "oldest human diseases",
+      "topic_cluster": "historical-epidemiology"
     },
     {
       "substack_id": 181844122,
@@ -856,9 +856,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "The Disease Ecology of the Pre-Contact Americas (Part 2: South America)",
-      "seo_description": "Last time we went over some of the infectious diseases that were prominent in pre-contact North America and Central America.",
-      "primary_keyword": "infectious disease",
+      "seo_title": "Pre-Contact South American Disease Ecology",
+      "seo_description": "Part two of a pre-contact Americas disease ecology series, focused on South America, isolation, endemic infections, and ecological context.",
+      "primary_keyword": "pre-contact South America disease",
       "topic_cluster": "pathogen-geography"
     },
     {
@@ -896,9 +896,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "The Disease Ecology of Pre-Contact Americas (Part 1: North and Central America)",
-      "seo_description": "Before 1492, the indigenous people of the Americas lived in a long-term isolation from the vast reservoir that was Eurasia’s disease pool.",
-      "primary_keyword": "infectious disease",
+      "seo_title": "Pre-Contact North and Central American Disease Ecology",
+      "seo_description": "Disease ecology in North and Central America before 1492, including isolation from Eurasian disease pools and Indigenous health context.",
+      "primary_keyword": "pre-contact Americas disease ecology",
       "topic_cluster": "pathogen-geography"
     },
     {
@@ -934,10 +934,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "When Did Syphilis Enter Europe? The Origins Debate",
-      "seo_description": "For a family of pathogens that has likely been with humanity since the dawn of agriculture, Treponema has a funny way of keeping its secrets.",
-      "primary_keyword": "syphilis",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "Syphilis Origins Debate: When Did It Reach Europe?",
+      "seo_description": "A historical epidemiology guide to the syphilis origins debate, Treponema evidence, ancient DNA, and the Columbian versus pre-Columbian question.",
+      "primary_keyword": "syphilis origins debate",
+      "topic_cluster": "historical-epidemiology"
     },
     {
       "substack_id": 179321195,
@@ -976,8 +976,8 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Ancient Hookworm in the Americas: A Parasite Out of Place",
-      "seo_description": "Ancient hookworm in the Americas, parasite geography, archaeology, migration, and why a tropical helminth can complicate simple stories of disease history.",
+      "seo_title": "Ancient Hookworm in the Americas",
+      "seo_description": "Ancient hookworm in the Americas, parasite geography, archaeology, migration, and why a tropical helminth complicates disease-history origin stories.",
       "primary_keyword": "ancient hookworm Americas",
       "topic_cluster": "historical-epidemiology"
     },
@@ -1012,10 +1012,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "The Ghosts of Meals Past: What We’ve Learned from Fossilized Poop",
-      "seo_description": "When construction first broke ground for the Lloyds Bank building in York in 1972, within a moist layer of peat was something each of the crew would have seen countless times before, although never one like this.",
-      "primary_keyword": "anthropology",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "Fossilized Poop: What Coprolites Reveal",
+      "seo_description": "What fossilized feces, archaeology, parasite evidence, diet, and microbial remains can tell us about ancient health and disease.",
+      "primary_keyword": "fossilized poop coprolites",
+      "topic_cluster": "historical-epidemiology"
     },
     {
       "substack_id": 177940071,
@@ -1052,10 +1052,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "The Oldest Diseases We Know Of",
-      "seo_description": "The Oldest Diseases We Know Of from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on paleontology.",
-      "primary_keyword": "paleontology",
-      "topic_cluster": "pathogen-geography"
+      "seo_title": "Oldest Diseases in the Fossil Record",
+      "seo_description": "A deep-time disease essay on the oldest known evidence for infection, cancer, parasites, and what paleopathology can reveal.",
+      "primary_keyword": "oldest diseases",
+      "topic_cluster": "historical-epidemiology"
     },
     {
       "substack_id": 177329295,
@@ -1092,10 +1092,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Humanity’s Deadliest Companions: Checking the Till on the Deadliest Microbes in History",
-      "seo_description": "I was reorganizing parts of my bookshelf the other day when I came across my copy of Deadly Companions by Dorothy Crawford.",
-      "primary_keyword": "infectious disease",
-      "topic_cluster": "pathogen-geography"
+      "seo_title": "Deadliest Microbes in Human History",
+      "seo_description": "A critical look at claims about history’s deadliest microbes, mortality estimates, infectious disease rankings, and what counts as a deadly companion.",
+      "primary_keyword": "deadliest microbes",
+      "topic_cluster": "historical-epidemiology"
     },
     {
       "substack_id": 176802554,
@@ -1133,10 +1133,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Islands of Affliction: Leprosy and Empire in the South Pacific",
-      "seo_description": "Islands of Affliction: Leprosy and Empire in the South Pacific from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on information science.",
-      "primary_keyword": "information science",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "Leprosy and Empire in the South Pacific",
+      "seo_description": "Leprosy, colonial rule, island isolation, stigma, and the public-health geography of empire in the South Pacific.",
+      "primary_keyword": "leprosy South Pacific",
+      "topic_cluster": "historical-epidemiology"
     },
     {
       "substack_id": 176091810,
@@ -1169,10 +1169,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "The Night Staten Island Burned Its Hospital: Fear, Fire, and the Forgotten Quarantine War of 1858",
-      "seo_description": "The Night Staten Island Burned Its Hospital: Fear, Fire, and the Forgotten Quarantine War of 1858 from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on quarantine.",
-      "primary_keyword": "quarantine",
-      "topic_cluster": "disease-and-war"
+      "seo_title": "Staten Island Quarantine War of 1858",
+      "seo_description": "The 1858 Staten Island quarantine hospital fire, immigrant disease fear, port quarantine, yellow fever panic, and public-health violence.",
+      "primary_keyword": "Staten Island quarantine",
+      "topic_cluster": "historical-epidemiology"
     },
     {
       "substack_id": 175470298,
@@ -1209,10 +1209,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "When Diabetes Drugs Start Treating Headaches: GLP-1 Agonists and the Migraine Connection",
-      "seo_description": "The story of GLP-1 drugs have had so many plot twists it would almost sound lazy in a medical fiction novel.",
-      "primary_keyword": "GLP-1",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "GLP-1 Drugs and Migraine: Evidence Guide",
+      "seo_description": "What GLP-1 agonists might mean for migraine, headache biology, metabolic drugs, clinical evidence, and what remains speculative.",
+      "primary_keyword": "GLP-1 migraine",
+      "topic_cluster": "neuroepidemiology"
     },
     {
       "substack_id": 174580810,
@@ -1243,9 +1243,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "The U.S. Life Expectancy Gap Sounds Worse Than It Is and (Hypothetically) Easier to Fix Than You Think",
-      "seo_description": "The U.S. Life Expectancy Gap Sounds Worse Than It Is and (Hypothetically) Easier to Fix Than You Think from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on epidemiology.",
-      "primary_keyword": "epidemiology",
+      "seo_title": "U.S. Life Expectancy Gap: What the Numbers Mean",
+      "seo_description": "A methods-first look at the U.S. life expectancy gap, why it sounds worse than it is, and what the counterfactuals imply.",
+      "primary_keyword": "US life expectancy gap",
       "topic_cluster": "epidemiologic-methods"
     },
     {
@@ -1281,9 +1281,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Psychedelics for Anxiety: What the New LSD Trial Does and Doesn’t Change",
-      "seo_description": "Psychedelics for Anxiety: What the New LSD Trial Does and Doesn’t Change from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on clinical trials.",
-      "primary_keyword": "clinical trials",
+      "seo_title": "Psychedelics for Anxiety: LSD Trial Evidence",
+      "seo_description": "What a new LSD trial does and does not show about psychedelics for anxiety, trial design, clinical endpoints, and evidence limits.",
+      "primary_keyword": "psychedelics anxiety trial",
       "topic_cluster": "epidemiologic-methods"
     },
     {
@@ -1317,10 +1317,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Body-Snatching, the Doctors’ Riot, and How Cadavers Built American Medicine",
-      "seo_description": "Body-Snatching, the Doctors’ Riot, and How Cadavers Built American Medicine from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on riots.",
-      "primary_keyword": "riots",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "Body Snatching and the Doctors’ Riot",
+      "seo_description": "How cadaver shortages, grave robbing, riots, and medical education shaped the history of American anatomy and public trust.",
+      "primary_keyword": "Doctors Riot body snatching",
+      "topic_cluster": "historical-epidemiology"
     },
     {
       "substack_id": 172614829,
@@ -1353,10 +1353,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Heat Doesn’t Age Everyone Equally",
-      "seo_description": "Heat Doesn’t Age Everyone Equally from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on heat waves.",
-      "primary_keyword": "heat waves",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "Heat Exposure and Unequal Aging Risk",
+      "seo_description": "Why heat exposure may not age everyone equally, including climate risk, social vulnerability, occupational exposure, and epidemiologic measurement.",
+      "primary_keyword": "heat aging risk",
+      "topic_cluster": "disease-ecology"
     },
     {
       "substack_id": 172135919,
@@ -1393,10 +1393,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Finding Risk Where History Put It: Founder Effects, Population Bottlenecks, Rare Diseases, and Screening Programs",
-      "seo_description": "Finding Risk Where History Put It: Founder Effects, Population Bottlenecks, Rare Diseases, and Screening Programs from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on Genetics.",
-      "primary_keyword": "Genetics",
-      "topic_cluster": "pathogen-geography"
+      "seo_title": "Founder Effects, Rare Disease, and Screening",
+      "seo_description": "Founder effects, population bottlenecks, rare disease risk, genetic ancestry, and why screening programs often follow history.",
+      "primary_keyword": "founder effects rare disease",
+      "topic_cluster": "epidemiologic-methods"
     },
     {
       "substack_id": 171521367,
@@ -1431,10 +1431,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Infectious Diseases on the Move (2025): How Warmer Weather and Urbanicity are Shifting Risks",
-      "seo_description": "Infectious Diseases on the Move (2025): How Warmer Weather and Urbanicity are Shifting Risks from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on infectious disease.",
-      "primary_keyword": "infectious disease",
-      "topic_cluster": "disease-and-war"
+      "seo_title": "Climate, Urbanization, and Infectious Disease Risk",
+      "seo_description": "How warmer weather, urbanization, vector range, travel, and ecological change are shifting infectious disease risks in 2025.",
+      "primary_keyword": "climate infectious disease risk",
+      "topic_cluster": "disease-ecology"
     },
     {
       "substack_id": 171024347,
@@ -1469,10 +1469,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Does Lithium Lower Alzheimer’s Risk? A Guide to the Evidence",
-      "seo_description": "Does Lithium Lower Alzheimer’s Risk? A Guide to the Evidence from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on alzheimer's.",
-      "primary_keyword": "alzheimer's",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "Lithium and Alzheimer’s Risk: Evidence Guide",
+      "seo_description": "A guide to the evidence on lithium and Alzheimer’s risk, including observational data, mechanisms, trial limits, and causal uncertainty.",
+      "primary_keyword": "lithium Alzheimer’s risk",
+      "topic_cluster": "neuroepidemiology"
     },
     {
       "substack_id": 170328251,
@@ -1505,9 +1505,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Paper Mills are Poisoning Science",
-      "seo_description": "You can now pay a few hundred bucks to publish your name on a scientific study.",
-      "primary_keyword": "AI",
+      "seo_title": "Paper Mills and Scientific Fraud",
+      "seo_description": "How paper mills poison science, why fake studies spread, and what scientific publishing loses when quantity beats credibility.",
+      "primary_keyword": "paper mills scientific fraud",
       "topic_cluster": "epidemiologic-methods"
     },
     {
@@ -1543,9 +1543,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Eric Topol’s Super Agers: The Medical System We Ought to Build",
-      "seo_description": "I remember sitting in a gymnasium in Walnut Creek, California working with a group of elderly folk at an independent living facility measuring things like grip strength, up and down speed, and walking speed.",
-      "primary_keyword": "Eric Topol",
+      "seo_title": "Super Agers and Preventive Medicine",
+      "seo_description": "A response to Eric Topol’s super-agers argument and the medical system needed for aging, prevention, function, and long-term health.",
+      "primary_keyword": "super agers preventive medicine",
       "topic_cluster": "epidemiologic-methods"
     },
     {
@@ -1581,10 +1581,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Migraine and brain fog",
-      "seo_description": "impacts across multiple cognitive domains, migraine phases, and medication trade-offs",
-      "primary_keyword": "cognition",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "Migraine Brain Fog and Cognition",
+      "seo_description": "Migraine brain fog, cognition, medication trade-offs, attack phases, and how cognitive symptoms complicate the lived burden of migraine.",
+      "primary_keyword": "migraine brain fog",
+      "topic_cluster": "neuroepidemiology"
     },
     {
       "substack_id": 168528776,
@@ -1619,9 +1619,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Memetics is dead, long live memetics",
-      "seo_description": "On stealth memetics, viral ideas, and why the term may have died while the logic behind it lived on.",
-      "primary_keyword": "information science",
+      "seo_title": "Memetics After Memetics",
+      "seo_description": "Why the word memetics faded while viral ideas, imitation, information spread, and cultural transmission kept shaping public life.",
+      "primary_keyword": "memetics viral ideas",
       "topic_cluster": "epidemiologic-methods"
     },
     {
@@ -1657,9 +1657,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Shrooms vs antidepressants: A meta-analysis calls it a tie",
-      "seo_description": "Shrooms vs antidepressants: A meta-analysis calls it a tie from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on depression.",
-      "primary_keyword": "depression",
+      "seo_title": "Psilocybin vs Antidepressants: Meta-Analysis",
+      "seo_description": "A meta-analysis comparison of psilocybin and antidepressants for depression, with attention to study design, endpoints, and overstated certainty.",
+      "primary_keyword": "psilocybin antidepressants meta-analysis",
       "topic_cluster": "epidemiologic-methods"
     },
     {
@@ -1693,10 +1693,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "The Poison Nobody Could Agree On: The Unsolved 1951 Outbreak of Pont-Saint-Esprit",
-      "seo_description": "In August of 1951, something toxic ripped through the town of Pont-Saint-Esprit in southern France.",
-      "primary_keyword": "CIA",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "Pont-Saint-Esprit Poisoning Outbreak of 1951",
+      "seo_description": "The unsolved 1951 Pont-Saint-Esprit outbreak, ergot theories, poisoning claims, CIA rumors, and why retrospective diagnosis stays hard.",
+      "primary_keyword": "Pont-Saint-Esprit outbreak",
+      "topic_cluster": "historical-epidemiology"
     },
     {
       "substack_id": 167022011,
@@ -1731,10 +1731,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Migraine: What We Know and Who It Hits Hardest",
-      "seo_description": "Migraine is one of the most disabling conditions we know of. Here's what the data says about who gets it, who doesn't get help, and why we still don't quite understand it.",
-      "primary_keyword": "neurology",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "Migraine Epidemiology: Who Gets Hit Hardest",
+      "seo_description": "Migraine is disabling and unevenly treated. Here is what the data says about who gets it, who lacks help, and why uncertainty remains.",
+      "primary_keyword": "migraine epidemiology",
+      "topic_cluster": "neuroepidemiology"
     },
     {
       "substack_id": 166858843,
@@ -1763,10 +1763,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Something I Noticed at the American Headache Society Conference",
-      "seo_description": "A short post on my time at AHS and a question I had during the conference.",
-      "primary_keyword": "Migraine",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "American Headache Society Conference Notes",
+      "seo_description": "A short migraine research note from the American Headache Society meeting, focused on clinical questions, evidence gaps, and field direction.",
+      "primary_keyword": "American Headache Society migraine",
+      "topic_cluster": "neuroepidemiology"
     },
     {
       "substack_id": 164702703,
@@ -1801,10 +1801,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Snort This to Tan: The Bizarre and Dangerous Barbie Drug",
-      "seo_description": "There’s a black-market peptide that’ll give you a tan, a hard-on, and possibly cancer; and it’s going up people’s noses in Barbie-core packaging.",
-      "primary_keyword": "risk communication",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "Melanotan Nasal Spray and Barbie Drug Risks",
+      "seo_description": "A risk-communication essay on melanotan nasal sprays, tanning peptides, sexual side effects, black-market marketing, and safety concerns.",
+      "primary_keyword": "melanotan Barbie drug",
+      "topic_cluster": "wellness-claims"
     },
     {
       "substack_id": 166112010,
@@ -1839,9 +1839,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "How Accurate is Your Apple Watch? What Fitness Trackers are Good For and Where They Still Need Work",
-      "seo_description": "I’ve had an Apple watch for a while and have mostly used it to track my sleep.",
-      "primary_keyword": "fitness trackers",
+      "seo_title": "Apple Watch Accuracy and Fitness Trackers",
+      "seo_description": "What fitness trackers and Apple Watch data are good for, where wearable measurements fail, and how to interpret consumer health metrics.",
+      "primary_keyword": "Apple Watch accuracy",
       "topic_cluster": "epidemiologic-methods"
     },
     {
@@ -1879,9 +1879,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "War on Many Fronts During the Justinianic Plague (541 CE)",
-      "seo_description": "Draft number 2 of this post. Thought I tackled a few topics too early and will be re-releasing some very early posts. Enjoy War Epidemiology chapter drafts again!",
-      "primary_keyword": "infectious disease",
+      "seo_title": "Justinianic Plague and War Epidemiology",
+      "seo_description": "A War Epidemiology chapter draft on the Justinianic Plague, military stress, empire, logistics, and disease pressure in 541 CE.",
+      "primary_keyword": "Justinianic Plague war",
       "topic_cluster": "disease-and-war"
     },
     {
@@ -1920,10 +1920,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Magnesium is Overrated (Especially by the Mocktail Crowd)",
-      "seo_description": "Is magnesium the sleep fix it claims to be? Or is your mocktail just overpriced cherry juice?",
-      "primary_keyword": "vitamins",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "Magnesium for Sleep: Evidence vs Hype",
+      "seo_description": "A skeptical look at magnesium for sleep, mocktail marketing, supplement evidence, and why plausible mechanisms are not enough.",
+      "primary_keyword": "magnesium sleep evidence",
+      "topic_cluster": "wellness-claims"
     },
     {
       "substack_id": 165069275,
@@ -1958,10 +1958,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Dopamine and the Problem of Poorly Trained Brains",
-      "seo_description": "Dopamine has become a scapegoat. Everything from addiction to short attention spans and social media’s grip on us are blamed on dopamine. Just open those same social media sites, search ‘dopamine’ and you’ll hear all about dopamine detoxes or how your phone is",
-      "primary_keyword": "dopamine",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "Dopamine Detox Claims and Brain Training",
+      "seo_description": "A critique of dopamine detox claims, poorly trained brains, social media habits, reward systems, and pop-neuroscience oversimplification.",
+      "primary_keyword": "dopamine detox",
+      "topic_cluster": "wellness-claims"
     },
     {
       "substack_id": 164856375,
@@ -1994,10 +1994,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Melatonin is Misunderstood (Especially By Those Who Use It Most)",
-      "seo_description": "Melatonin is Misunderstood (Especially By Those Who Use It Most) from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on Melatonin.",
-      "primary_keyword": "Melatonin",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "Melatonin Misuse and Sleep Evidence",
+      "seo_description": "Why melatonin is misunderstood, who may benefit, how timing matters, and where sleep supplement claims outrun the evidence.",
+      "primary_keyword": "melatonin sleep evidence",
+      "topic_cluster": "wellness-claims"
     },
     {
       "substack_id": 164691083,
@@ -2032,10 +2032,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "The Raw Truth About Raw Milk",
-      "seo_description": "The Raw Truth About Raw Milk from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on Raw Milk.",
-      "primary_keyword": "Raw Milk",
-      "topic_cluster": "disease-ecology"
+      "seo_title": "Raw Milk Risks and Evidence",
+      "seo_description": "A public-health look at raw milk, foodborne pathogens, pasteurization, outbreak risk, and the evidence behind natural-food claims.",
+      "primary_keyword": "raw milk risks",
+      "topic_cluster": "wellness-claims"
     },
     {
       "substack_id": 164048427,
@@ -2066,10 +2066,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Nature Isn’t Trying to Save You",
-      "seo_description": "I’m sure some of you have seen or heard some wellness influencer saying something along the lines of “go back to nature.” They say we should stop eating anything synthetic, avoid the seed oils, and to trust the wisdom of the Earth.",
-      "primary_keyword": "Wellness Industry",
-      "topic_cluster": "disease-ecology"
+      "seo_title": "Natural Wellness Claims and Disease Risk",
+      "seo_description": "A critique of “back to nature” wellness claims, synthetic panic, food fear, and why nature is not automatically safer.",
+      "primary_keyword": "natural wellness claims",
+      "topic_cluster": "wellness-claims"
     },
     {
       "substack_id": 164052573,
@@ -2106,10 +2106,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "When the Influencer’s Claims are Stronger than the Evidence: A Look at Rhonda Patrick’s Vitamin D Claims",
-      "seo_description": "By now, more than 200,000 people on Twitter and over 30,000 on YouTube1 have seen the new video of Dr. Rhonda Patrick explaining how vitamin D supplements can cut your dementia risk by 40%2. That’s a bold, hopeful claim based on an observational study of over",
-      "primary_keyword": "dementia",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "Vitamin D, Dementia, and Rhonda Patrick’s Claims",
+      "seo_description": "An evidence check on Rhonda Patrick’s vitamin D and dementia claims, observational studies, confounding, and supplement certainty.",
+      "primary_keyword": "vitamin D dementia Rhonda Patrick",
+      "topic_cluster": "wellness-claims"
     },
     {
       "substack_id": 163976211,
@@ -2142,10 +2142,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Your Body Already Detoxifies Itself. You Don’t Need a “Cleanse”",
-      "seo_description": "Search the word ‘detox’ and you’ll find links about smoothies, sweat lodges, and supplement stacks that’ll cost more than a first date.",
-      "primary_keyword": "detox",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "Detox Cleanses and the Body’s Real Filtration Systems",
+      "seo_description": "Why detox cleanses, supplement stacks, and smoothie cures misunderstand liver, kidney, and gastrointestinal physiology.",
+      "primary_keyword": "detox cleanse evidence",
+      "topic_cluster": "wellness-claims"
     },
     {
       "substack_id": 163806459,
@@ -2178,10 +2178,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "When Skin and Latitude Don’t Match: Why Pale Skin Burns in the Colonies",
-      "seo_description": "It’s almost summer, and for a lot of people, that means tanning season.",
-      "primary_keyword": "epidemiology",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "Skin Latitude Mismatch and Colonial Sun Exposure",
+      "seo_description": "How skin pigmentation, latitude, migration, colonial settlement, UV exposure, and sunburn risk collide when ancestry and place diverge.",
+      "primary_keyword": "skin latitude mismatch",
+      "topic_cluster": "disease-ecology"
     },
     {
       "substack_id": 163752277,
@@ -2218,10 +2218,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Creatine Is Underrated (By Those Who Would Benefit Most)",
-      "seo_description": "Creatine Is Underrated (By Those Who Would Benefit Most) from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on epidemiology.",
-      "primary_keyword": "epidemiology",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "Creatine Benefits and Evidence",
+      "seo_description": "Why creatine may be underrated for people who could benefit, including muscle, aging, cognition claims, and supplement evidence limits.",
+      "primary_keyword": "creatine benefits evidence",
+      "topic_cluster": "wellness-claims"
     },
     {
       "substack_id": 163595595,
@@ -2250,9 +2250,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Why I Write ‘The Edge of Epidemiology’",
-      "seo_description": "I started this blog because I was slightly fed up with the state of science communication.",
-      "primary_keyword": "epidemiology",
+      "seo_title": "Why I Write The Edge of Epidemiology",
+      "seo_description": "A statement of purpose for The Edge of Epidemiology: better science communication, disease history, public health, and evidence-aware writing.",
+      "primary_keyword": "Edge of Epidemiology",
       "topic_cluster": "epidemiologic-methods"
     },
     {
@@ -2284,9 +2284,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Calories, Chaos, and the Mystery of Early Puberty",
-      "seo_description": "Calories, Chaos, and the Mystery of Early Puberty from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on epidemiology.",
-      "primary_keyword": "epidemiology",
+      "seo_title": "Early Puberty, Calories, and Environmental Change",
+      "seo_description": "A public-health essay on early puberty, calories, growth, endocrine signals, obesity, and environmental explanations.",
+      "primary_keyword": "early puberty causes",
       "topic_cluster": "epidemiologic-methods"
     },
     {
@@ -2320,9 +2320,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Earn Your Opinions: Why Due Diligence is the Minimum Bar for Strong Beliefs",
-      "seo_description": "Earn Your Opinions: Why Due Diligence is the Minimum Bar for Strong Beliefs from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on Epistemology.",
-      "primary_keyword": "Epistemology",
+      "seo_title": "Due Diligence and Strong Opinions",
+      "seo_description": "Why strong opinions require due diligence, epistemic humility, evidence review, and a higher bar than vibes or tribal certainty.",
+      "primary_keyword": "due diligence opinions",
       "topic_cluster": "epidemiologic-methods"
     },
     {
@@ -2361,10 +2361,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Scout, Not Soldier: Rethinking Certainty in an Age of Tribalism",
-      "seo_description": "There’s a moment early in Julia Galef’s 2021 book The Scout Mindset where she defines the core difference between two broad ways of approaching the world.",
-      "primary_keyword": "Epistemology",
-      "topic_cluster": "disease-and-war"
+      "seo_title": "Scout Mindset and Rethinking Certainty",
+      "seo_description": "A reflection on scout mindset, certainty, tribalism, belief formation, and why changing your mind is part of serious reasoning.",
+      "primary_keyword": "scout mindset certainty",
+      "topic_cluster": "epidemiologic-methods"
     },
     {
       "substack_id": 162663851,
@@ -2399,10 +2399,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Artificial Sweeteners: Health Hazard or Just a Convenient Scapegoat?",
-      "seo_description": "Artificial Sweeteners: Health Hazard or Just a Convenient Scapegoat? from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on risk communication.",
-      "primary_keyword": "risk communication",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "Artificial Sweeteners and Cancer Risk Evidence",
+      "seo_description": "A risk-communication guide to artificial sweeteners, health headlines, cancer fears, confounding, and scapegoat nutrition claims.",
+      "primary_keyword": "artificial sweeteners health risk",
+      "topic_cluster": "wellness-claims"
     },
     {
       "substack_id": 162380149,
@@ -2441,10 +2441,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Gluten Panic",
-      "seo_description": "Gluten Panic from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on Gluten.",
-      "primary_keyword": "Gluten",
-      "topic_cluster": "pathogen-geography"
+      "seo_title": "Gluten Panic and Food Fear",
+      "seo_description": "How gluten became a wellness panic, what celiac disease and sensitivity evidence actually show, and where food fear outruns data.",
+      "primary_keyword": "gluten panic",
+      "topic_cluster": "wellness-claims"
     },
     {
       "substack_id": 162018776,
@@ -2477,10 +2477,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Stem Cells for Parkinson’s Just Took a Big Step Forward. But We Don't Have a Cure Yet",
-      "seo_description": "Neuroepidemiology Series Part 6: Two new clinical trials were published this month. Both look promising in terms of safety measures.",
-      "primary_keyword": "clinical trials",
-      "topic_cluster": "disease-and-war"
+      "seo_title": "Stem Cells for Parkinson’s: Trial Evidence",
+      "seo_description": "What new stem cell trials mean for Parkinson’s disease, safety, endpoints, clinical promise, and why the field still has no cure.",
+      "primary_keyword": "stem cells Parkinson’s trial",
+      "topic_cluster": "neuroepidemiology"
     },
     {
       "substack_id": 161856446,
@@ -2511,9 +2511,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "When Learning Causal Inference Almost Broke My Brain",
-      "seo_description": "I spent most of my early training thinking I was doing epidemiology wrong.",
-      "primary_keyword": "math",
+      "seo_title": "Learning Causal Inference as an Epidemiologist",
+      "seo_description": "A methods essay on learning causal inference, epidemiology training, counterfactual thinking, and why the framework can feel brain-breaking.",
+      "primary_keyword": "causal inference epidemiology",
       "topic_cluster": "epidemiologic-methods"
     },
     {
@@ -2547,9 +2547,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "From Asperger’s to Autism: How Reclassification Created a False \"Epidemic\"",
-      "seo_description": "From Asperger’s to Autism: How Reclassification Created a False \"Epidemic\" from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on psychiatry.",
-      "primary_keyword": "psychiatry",
+      "seo_title": "Asperger’s, Autism, and Diagnostic Reclassification",
+      "seo_description": "How diagnostic reclassification helped create the appearance of an autism epidemic, and what changing case definitions do to trend data.",
+      "primary_keyword": "autism diagnostic reclassification",
       "topic_cluster": "epidemiologic-methods"
     },
     {
@@ -2581,9 +2581,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Monogamous Birds Are Cheating Bastards (And That’s Normal)",
-      "seo_description": "Monogamous Birds Are Cheating Bastards (And That’s Normal) from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on ecology.",
-      "primary_keyword": "ecology",
+      "seo_title": "Monogamous Birds and Reproductive Ecology",
+      "seo_description": "Why apparently monogamous birds often mate outside pairs, and what animal behavior teaches about ecology, genetics, and expectation.",
+      "primary_keyword": "monogamous birds",
       "topic_cluster": "disease-ecology"
     },
     {
@@ -2622,9 +2622,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "How Health Headlines Trick You Without Technically Lying (Baseline Risk Matters)",
-      "seo_description": "How Health Headlines Trick You Without Technically Lying (Baseline Risk Matters) from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on risk communication.",
-      "primary_keyword": "risk communication",
+      "seo_title": "Baseline Risk and Misleading Health Headlines",
+      "seo_description": "How health headlines can be technically true but misleading when baseline risk, relative risk, and absolute risk are left out.",
+      "primary_keyword": "baseline risk headlines",
       "topic_cluster": "epidemiologic-methods"
     },
     {
@@ -2656,9 +2656,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Epidemiology Didn’t Have a Replication Crisis — But Got its Trust Crisis",
-      "seo_description": "What COVID revealed about the gap between doing good science and earning public trust.",
-      "primary_keyword": "epidemiology",
+      "seo_title": "Epidemiology’s Trust Crisis After COVID",
+      "seo_description": "Why epidemiology did not have a replication crisis in the usual sense, but still ended up with a public trust crisis after COVID.",
+      "primary_keyword": "epidemiology trust crisis",
       "topic_cluster": "epidemiologic-methods"
     },
     {
@@ -2694,9 +2694,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Obesity Isn’t a Dopamine Deficiency. It Might Be the Opposite.",
-      "seo_description": "Obesity Isn’t a Dopamine Deficiency. It Might Be the Opposite. from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on obesity.",
-      "primary_keyword": "obesity",
+      "seo_title": "Obesity, Dopamine, and Reward Biology",
+      "seo_description": "Why obesity is not simply a dopamine deficiency, what reward biology suggests, and how simple neurochemical stories mislead.",
+      "primary_keyword": "obesity dopamine",
       "topic_cluster": "wellness-claims"
     },
     {
@@ -2732,9 +2732,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Personality Is Probabilistic, Not Destiny",
-      "seo_description": "Most people hear “personality is heritable” and picture a kind of genetic Xeroxing.",
-      "primary_keyword": "Psychology",
+      "seo_title": "Personality Heritability Is Probabilistic",
+      "seo_description": "Why personality heritability is probabilistic, not destiny, and how genetics, environment, and uncertainty shape psychological traits.",
+      "primary_keyword": "personality heritability",
       "topic_cluster": "epidemiologic-methods"
     },
     {
@@ -2758,9 +2758,9 @@
       "hero_mode": "cover",
       "notes": "",
       "upstream_tags": [],
-      "seo_title": "Why Every Food is a Carcinogen (If You Trust the Wrong Studies)",
-      "seo_description": "Why Every Food is a Carcinogen (If You Trust the Wrong Studies) from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on every food carcinogen.",
-      "primary_keyword": "every food carcinogen",
+      "seo_title": "Every Food Is a Carcinogen If You Trust Bad Studies",
+      "seo_description": "Why weak nutrition studies can make almost any food look carcinogenic, and how confounding, measurement, and multiple testing mislead.",
+      "primary_keyword": "food carcinogen studies",
       "topic_cluster": "epidemiologic-methods"
     },
     {
@@ -2794,10 +2794,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Why the Link Between Weed and Psychosis Isn’t So Simple",
-      "seo_description": "Part 5 of the Neuroepidemiology Series takes a look at the not-so-straight forward link between cannabis and psychosis.",
-      "primary_keyword": "cannabis",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "Cannabis and Psychosis: Evidence Is Not Simple",
+      "seo_description": "Why the relationship between cannabis and psychosis is not straightforward, including causality, confounding, dose, and psychiatric risk.",
+      "primary_keyword": "cannabis psychosis evidence",
+      "topic_cluster": "neuroepidemiology"
     },
     {
       "substack_id": 159886095,
@@ -2834,10 +2834,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Chronic Wasting Disease (Devilish Diseases Part 5)",
-      "seo_description": "A new direction for the Devilish Diseases series. We've covered all of the transmissible cancers in the wild, now on to other intriguing diseases in the animal kingdom.",
-      "primary_keyword": "infectious disease",
-      "topic_cluster": "pathogen-geography"
+      "seo_title": "Chronic Wasting Disease: Prion Ecology",
+      "seo_description": "A Devilish Diseases essay on chronic wasting disease, prions, wildlife ecology, deer populations, surveillance, and spillover anxiety.",
+      "primary_keyword": "chronic wasting disease",
+      "topic_cluster": "disease-ecology"
     },
     {
       "substack_id": 159703656,
@@ -2874,10 +2874,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "How Tropical Diseases Impact Cognitive Development",
-      "seo_description": "In many regions with endemic NTDs, children face the burden of both physical symptoms and long term impacts.",
-      "primary_keyword": "infectious disease",
-      "topic_cluster": "pathogen-geography"
+      "seo_title": "Tropical Diseases and Cognitive Development",
+      "seo_description": "How endemic tropical diseases can affect childhood cognition, development, school performance, and long-term public-health inequality.",
+      "primary_keyword": "tropical diseases cognitive development",
+      "topic_cluster": "disease-ecology"
     },
     {
       "substack_id": 159519883,
@@ -2910,10 +2910,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Measles Resurgence: The Hidden Toll of Immune Amnesia and the Urgent Need for Vaccination",
-      "seo_description": "A quick post on measles induced immune amnesia and the Texas outbreak.",
-      "primary_keyword": "epidemiology",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "Measles Immune Amnesia and Vaccination",
+      "seo_description": "How measles immune amnesia raises the stakes of vaccination, resurgence, outbreak control, and the hidden burden after infection.",
+      "primary_keyword": "measles immune amnesia",
+      "topic_cluster": "disease-ecology"
     },
     {
       "substack_id": 159311326,
@@ -2948,9 +2948,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "AI in Healthcare: Current Applications and Future Prospects",
-      "seo_description": "Artificial Intelligence (AI) has been steadily transitioning from science fiction into being an integral part of many people’s every day lives, including healthcare practitioners.",
-      "primary_keyword": "AI",
+      "seo_title": "AI in Healthcare: Uses and Limits",
+      "seo_description": "A practical overview of AI in healthcare, current applications, clinical promise, implementation limits, and risks of overclaiming.",
+      "primary_keyword": "AI in healthcare",
       "topic_cluster": "epidemiologic-methods"
     },
     {
@@ -2986,10 +2986,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Between Seizures and Stigma: My Struggle with Epilepsy and the Global Public Health Challenge",
-      "seo_description": "Part 4 of the neuroepidemiology series gets a bit personal with my story dealing with epilepsy contrasted with the global experience",
-      "primary_keyword": "global health",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "Epilepsy Stigma and Global Public Health",
+      "seo_description": "A personal and global-health look at epilepsy, seizure stigma, treatment gaps, public misunderstanding, and the burden of neurological disease.",
+      "primary_keyword": "epilepsy stigma public health",
+      "topic_cluster": "neuroepidemiology"
     },
     {
       "substack_id": 158379632,
@@ -3018,9 +3018,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "MS Increases with Distance from the Equator: Examining the Latitude Gradient",
-      "seo_description": "MS Increases with Distance from the Equator: Examining the Latitude Gradient from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on neurology.",
-      "primary_keyword": "neurology",
+      "seo_title": "Multiple Sclerosis Latitude Gradient",
+      "seo_description": "Examining why multiple sclerosis risk increases with distance from the equator, including latitude, vitamin D, genetics, and environment.",
+      "primary_keyword": "multiple sclerosis latitude gradient",
       "topic_cluster": "neuroepidemiology"
     },
     {
@@ -3058,10 +3058,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Understanding Migraine: Advances in Neuroepidemiology and Neuroscience",
-      "seo_description": "Part 2 of the Neuroepidemiology series. My job currently focuses on migraine research. This is based on my read of the literature over the past few weeks.",
-      "primary_keyword": "Migraine",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "Migraine Neuroepidemiology and Neuroscience",
+      "seo_description": "A migraine research overview connecting neuroepidemiology, neuroscience, burden, treatment gaps, and recent literature.",
+      "primary_keyword": "migraine neuroepidemiology",
+      "topic_cluster": "neuroepidemiology"
     },
     {
       "substack_id": 156688155,
@@ -3098,10 +3098,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Neuroepidemiology: A Comprehensive Introduction",
-      "seo_description": "Part 1 of the Neuroepidemiology series in the works here at Edge of Epi.",
-      "primary_keyword": "machine learning",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "Neuroepidemiology: What the Field Studies",
+      "seo_description": "An introduction to neuroepidemiology, including neurological disease patterns, risk factors, populations, surveillance, and public-health methods.",
+      "primary_keyword": "neuroepidemiology",
+      "topic_cluster": "neuroepidemiology"
     },
     {
       "substack_id": 155877299,
@@ -3126,10 +3126,10 @@
       "hero_mode": "cover",
       "notes": "",
       "upstream_tags": [],
-      "seo_title": "Transmissible Cancer in Bivalves: What We Know About BTN (Devilish Diseases Part 4)",
-      "seo_description": "A transmissible cancer in bivalves poses a unique challenge to marine life and the ecosystems they sustain.",
-      "primary_keyword": "transmissible cancer bivalves",
-      "topic_cluster": "pathogen-geography"
+      "seo_title": "Bivalve Transmissible Cancer: BTN",
+      "seo_description": "What is known about bivalve transmissible neoplasia, marine disease ecology, cancer transmission, and ecosystem risk.",
+      "primary_keyword": "bivalve transmissible cancer",
+      "topic_cluster": "disease-ecology"
     },
     {
       "substack_id": 155168407,
@@ -3164,9 +3164,9 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Bacteriophages: A Tool for Sustainability",
-      "seo_description": "This is part 2 of my phages series. Part 1 covered some of the medical uses. Here, I go over some uses in the food industry, water treatment facilities, and environmental uses.",
-      "primary_keyword": "environmental health",
+      "seo_title": "Bacteriophages for Sustainability",
+      "seo_description": "How bacteriophages could be used in food safety, water treatment, agriculture, environmental health, and sustainability.",
+      "primary_keyword": "bacteriophages sustainability",
       "topic_cluster": "disease-ecology"
     },
     {
@@ -3204,10 +3204,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Bacteriophages: A Viral Cure for Antibiotic Resistance?",
-      "seo_description": "Part 1 of a two-part series on phages and their many uses. Part 1 focuses on medical uses, while part 2 will focus on environmental, agricultural, industrial, and food safety applications.",
-      "primary_keyword": "infectious disease",
-      "topic_cluster": "pathogen-geography"
+      "seo_title": "Bacteriophages and Antibiotic Resistance",
+      "seo_description": "A guide to bacteriophages as a possible tool against antibiotic resistance, including medical uses, promise, and limits.",
+      "primary_keyword": "bacteriophages antibiotic resistance",
+      "topic_cluster": "disease-ecology"
     },
     {
       "substack_id": 153961810,
@@ -3230,9 +3230,9 @@
       "hero_mode": "cover",
       "notes": "",
       "upstream_tags": [],
-      "seo_title": "Oral GLP-1 Agonists Show Major Promise",
-      "seo_description": "Recently, a new wave of drugs has been developed that puts obesity and type 2 diabetes in a chokehold.",
-      "primary_keyword": "oral agonists show major",
+      "seo_title": "Oral GLP-1 Agonists for Obesity and Diabetes",
+      "seo_description": "A guide to oral GLP-1 agonists, obesity and type 2 diabetes treatment, clinical promise, delivery advantages, and evidence still needed.",
+      "primary_keyword": "oral GLP-1 agonists",
       "topic_cluster": "epidemiologic-methods"
     },
     {
@@ -3272,10 +3272,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "The Koala Retrovirus : A Genome Under Siege (Devilish Diseases Part 3)",
-      "seo_description": "Koalas, the beloved marsupial from Australia, are facing threats to their existence on multiple fronts: habitat loss, climate change, and disease.",
-      "primary_keyword": "infectious disease",
-      "topic_cluster": "pathogen-geography"
+      "seo_title": "Koala Retrovirus and Conservation Disease",
+      "seo_description": "How koala retrovirus, habitat loss, climate stress, and infectious disease combine into a conservation and evolutionary health problem.",
+      "primary_keyword": "koala retrovirus",
+      "topic_cluster": "disease-ecology"
     },
     {
       "substack_id": 152777071,
@@ -3314,10 +3314,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "The Ancient Cancer that Crossed Continents (Devilish Diseases Part 2): Canine Transmissible Venereal Tumor",
-      "seo_description": "In the first installment of my “Devilish Diseases” series (https://vectorsofinquiry.substack.com/p/the-devils-burden) we looked at the series’ namesake, Tasmanian Devil Facial Tumor Disease (DFTD).",
-      "primary_keyword": "ecology",
-      "topic_cluster": "pathogen-geography"
+      "seo_title": "Canine Transmissible Venereal Tumor",
+      "seo_description": "The ancient canine transmissible venereal tumor, how a cancer crossed continents, and what transmissible cancers reveal about disease ecology.",
+      "primary_keyword": "canine transmissible venereal tumor",
+      "topic_cluster": "disease-ecology"
     },
     {
       "substack_id": 152291181,
@@ -3350,10 +3350,10 @@
       "local_body_path": "",
       "hero_mode": "cover",
       "notes": "",
-      "seo_title": "Don’t let foodborne illnesses ruin your Thanksgiving",
-      "seo_description": "Don’t let foodborne illnesses ruin your Thanksgiving from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on holidays.",
-      "primary_keyword": "holidays",
-      "topic_cluster": "epidemiologic-methods"
+      "seo_title": "Foodborne Illness and Thanksgiving Safety",
+      "seo_description": "A holiday food-safety guide to foodborne illness, kitchen risk, turkey handling, pathogens, and how not to ruin Thanksgiving.",
+      "primary_keyword": "Thanksgiving foodborne illness",
+      "topic_cluster": "disease-ecology"
     },
     {
       "substack_id": 152206115,
@@ -3378,10 +3378,10 @@
       "hero_mode": "cover",
       "notes": "",
       "upstream_tags": [],
-      "seo_title": "The Devil’s Burden (Devilish Diseases Part 1)",
-      "seo_description": "The Devil’s Burden (Devilish Diseases Part 1) from The Edge of Epidemiology, with epidemiologic context, source-aware interpretation, and a focus on devils burden.",
-      "primary_keyword": "devils burden",
-      "topic_cluster": "pathogen-geography"
+      "seo_title": "Tasmanian Devil Facial Tumor Disease",
+      "seo_description": "A Devilish Diseases essay on Tasmanian devil facial tumor disease, transmissible cancer, wildlife ecology, and conservation risk.",
+      "primary_keyword": "Tasmanian devil facial tumor disease",
+      "topic_cluster": "disease-ecology"
     }
   ]
 }

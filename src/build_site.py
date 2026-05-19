@@ -33,7 +33,17 @@ DEFAULT_EPI_DOSSIER_REPO = "https://github.com/dteichrow/epi-dossier.git"
 PUBLIC_SITE_ORIGIN = "https://devinteichrow.com"
 PUBLIC_SITE_DOMAIN = "devinteichrow.com"
 DEFAULT_SOCIAL_IMAGE = "assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png"
-INDEXABLE_POST_STRATEGIES = {"evergreen", "index", "mirrored"}
+RSS_FEED_URL = "https://theedgeofepidemiology.substack.com/feed"
+AUTHOR_SAME_AS = [
+    "https://theedgeofepidemiology.substack.com",
+    "https://x.com/edgeofepi",
+    "https://www.instagram.com/edgeofepi/",
+    "https://www.linkedin.com/in/devin-teichrow-msc-938942254",
+    "https://medium.com/@EdgeofEpi",
+]
+# Legacy records can still carry `noindex_stub`; it is normalized to `summary_only` below.
+# Only explicit private or draft markers block indexing now.
+NOINDEX_POST_STRATEGIES = {"noindex", "noindex_stub_private", "private", "draft", "hidden"}
 DOI_URL_PATTERN = re.compile(r"(^|/)(10\.[0-9]{4,9}/\S+)", re.IGNORECASE)
 GENERIC_DESCRIPTIONS = {
     "",
@@ -612,12 +622,14 @@ def post_folio_meta(post: dict[str, Any]) -> tuple[str, str]:
     elif post.get("topics"):
         category_text = str(post["topics"][0])
     strategy = post_indexing_strategy(post)
-    if strategy in INDEXABLE_POST_STRATEGIES:
+    if strategy == "evergreen":
         status_label = "Evergreen"
     elif post.get("status") == "mirrored":
         status_label = "Full essay"
+    elif post_should_index(post):
+        status_label = "Indexed essay"
     else:
-        status_label = "Essay archive"
+        status_label = "Private archive"
     utility_meta = " · ".join(item for item in [category_text, status_label] if item)
     return date_text, utility_meta
 
@@ -760,11 +772,17 @@ def post_seo_description(post: dict[str, Any]) -> str:
 
 def post_indexing_strategy(post: dict[str, Any]) -> str:
     strategy = str(post.get("indexing_strategy") or "").strip()
+    if strategy == "noindex_stub":
+        return "summary_only"
     if strategy:
         return strategy
     if post.get("status") == "mirrored":
         return "mirrored"
-    return "noindex_stub"
+    return "summary_only"
+
+
+def post_should_index(post: dict[str, Any]) -> bool:
+    return post_indexing_strategy(post).lower() not in NOINDEX_POST_STRATEGIES
 
 
 def post_topic_cluster(post: dict[str, Any]) -> str:
@@ -883,8 +901,8 @@ def render_topic_hub_index(posts: list[dict[str, Any]], base_url: str) -> str:
         body=f"""
       <section class="hero hero-open">
         <p class="kicker">Topic hubs</p>
-        <h2 class="hero-title">The main search lanes for The Edge of Epidemiology</h2>
-        <p class="subtitle">A cleaner topical map for readers and search engines: disease history, war, ecology, geography, methods, wellness claims, and neuroepidemiology.</p>
+        <h2 class="hero-title">The main reading paths through The Edge of Epidemiology</h2>
+        <p class="subtitle">A topical map of disease history, war, ecology, geography, methods, wellness claims, and neuroepidemiology.</p>
       </section>
       <section class="panel panel-soft">
         <div class="card-grid three-up">{"".join(cards)}</div>
@@ -913,7 +931,7 @@ def render_topic_hub_page(hub: dict[str, Any], posts: list[dict[str, Any]], base
         <div class="section-head">
           <p class="kicker">Essays</p>
           <h2>{len(selected)} linked piece(s)</h2>
-          <p class="muted-note">This hub groups related writing so older essays keep sending authority to newer and more specific pages.</p>
+          <p class="muted-note">This hub groups related writing so readers can move from one argument to the surrounding disease history, ecology, and evidence.</p>
         </div>
         <div class="card-grid three-up essays-grid">{cards}</div>
       </section>
@@ -940,8 +958,15 @@ def render_post_page(post: dict[str, Any], atlases: dict[str, dict[str, Any]], p
     topics = "".join(f'<span class="badge">{html.escape(topic)}</span>' for topic in post.get("topics", []))
     read_url = post.get("canonical_url", "")
     strategy = post_indexing_strategy(post)
-    is_indexable = strategy in INDEXABLE_POST_STRATEGIES
-    status_label = "Evergreen essay" if is_indexable else "Essay archive"
+    is_indexable = post_should_index(post)
+    if strategy == "evergreen":
+        status_label = "Evergreen essay"
+    elif post.get("status") == "mirrored":
+        status_label = "Full essay"
+    elif is_indexable:
+        status_label = "Indexed essay"
+    else:
+        status_label = "Private archive"
     display_title = post_display_title(post)
     description = post_seo_description(post)
     original_title = post.get("title") or ""
@@ -2429,6 +2454,7 @@ def seo_profile_for_route(route: str, html_text: str, post_by_route: dict[str, d
     schema_type = "CollectionPage" if route_is_collection(route) else "WebPage"
     date_published = ""
     date_modified = ""
+    source_url = ""
 
     if route == "":
         title = "The Edge of Epidemiology | Devin Teichrow"
@@ -2439,10 +2465,11 @@ def seo_profile_for_route(route: str, html_text: str, post_by_route: dict[str, d
         title = f"{post_display_title(post)} | Edge of Epidemiology"
         description = post_seo_description(post)
         image = post.get("cover_image") or image
-        noindex = post_indexing_strategy(post) not in INDEXABLE_POST_STRATEGIES
+        noindex = not post_should_index(post)
         schema_type = "Article" if not noindex else "WebPage"
         date_published = str(post.get("date") or "")
         date_modified = str(post.get("last_synced_at") or post.get("date") or "")
+        source_url = str(post.get("canonical_url") or "")
     elif route == "essays/":
         title = "Epidemiology Essays | Edge of Epidemiology"
         description = "The Edge of Epidemiology essay archive: historical epidemiology, infectious disease, outbreak reporting, epidemiologic methods, wellness claims, and neuroepidemiology."
@@ -2535,6 +2562,7 @@ def seo_profile_for_route(route: str, html_text: str, post_by_route: dict[str, d
         "schema_type": schema_type,
         "date_published": date_published,
         "date_modified": date_modified,
+        "source_url": source_url,
     }
 
 
@@ -2562,22 +2590,25 @@ def remove_meta_property(html_text: str, prop: str) -> str:
 
 
 def render_json_ld(profile: dict[str, Any]) -> str:
+    author: dict[str, Any] = {
+        "@type": "Person",
+        "name": "Devin Teichrow",
+        "url": f"{PUBLIC_SITE_ORIGIN}/about/",
+        "sameAs": AUTHOR_SAME_AS,
+    }
     payload: dict[str, Any] = {
         "@context": "https://schema.org",
         "@type": profile["schema_type"],
         "name": profile["title"],
         "url": profile["url"],
         "description": profile["description"],
+        "image": profile["image"],
         "isPartOf": {
             "@type": "WebSite",
             "name": "The Edge of Epidemiology",
             "url": f"{PUBLIC_SITE_ORIGIN}/",
         },
-        "author": {
-            "@type": "Person",
-            "name": "Devin Teichrow",
-            "url": f"{PUBLIC_SITE_ORIGIN}/about/",
-        },
+        "author": author,
     }
     if profile["schema_type"] == "WebSite":
         payload["potentialAction"] = {
@@ -2585,12 +2616,18 @@ def render_json_ld(profile: dict[str, Any]) -> str:
             "target": f"{PUBLIC_SITE_ORIGIN}/search/?q={{search_term_string}}",
             "query-input": "required name=search_term_string",
         }
+        payload["publisher"] = author
     if profile["schema_type"] == "Article":
         payload["headline"] = profile["title"].split("|")[0].strip()
+        payload["mainEntityOfPage"] = {"@type": "WebPage", "@id": profile["url"]}
+        payload["publisher"] = author
         if profile.get("date_published"):
             payload["datePublished"] = profile["date_published"]
         if profile.get("date_modified"):
             payload["dateModified"] = profile["date_modified"]
+        if profile.get("source_url"):
+            payload["isBasedOn"] = profile["source_url"]
+            payload["sameAs"] = [profile["source_url"]]
     return (
         '<script type="application/ld+json" data-eoe-seo>'
         + json.dumps(payload, ensure_ascii=False)
@@ -2608,11 +2645,13 @@ def apply_seo_profile(html_text: str, profile: dict[str, Any]) -> str:
     for prop in ("og:type", "og:site_name", "og:title", "og:description", "og:url", "og:image"):
         html_text = remove_meta_property(html_text, prop)
     html_text = re.sub(r'\s*<link[^>]+rel=["\']canonical["\'][^>]*>\n?', "\n", html_text, flags=re.I)
+    html_text = re.sub(r'\s*<link[^>]+rel=["\']alternate["\'][^>]+application/rss\+xml[^>]*>\n?', "\n", html_text, flags=re.I)
     html_text = re.sub(r'\s*<script[^>]+type=["\']application/ld\+json["\'][^>]*data-eoe-seo[^>]*>.*?</script>\n?', "\n", html_text, flags=re.I | re.S)
 
     robots = '<meta name="robots" content="noindex,follow" />\n' if profile["noindex"] else ""
     meta_block = f"""
     <link rel="canonical" href="{html.escape(profile['url'])}" />
+    <link rel="alternate" type="application/rss+xml" title="The Edge of Epidemiology RSS" href="{html.escape(RSS_FEED_URL)}" />
     {robots}<meta name="description" content="{html.escape(profile['description'])}" />
     <meta property="og:type" content="{'article' if profile['schema_type'] == 'Article' else 'website'}" />
     <meta property="og:site_name" content="The Edge of Epidemiology" />

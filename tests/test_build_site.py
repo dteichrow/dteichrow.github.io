@@ -232,7 +232,7 @@ atlases:
     assert result["posts"] == 1
     assert result["seo"]["html_pages"] >= 20
     assert result["seo"]["indexable_pages"] >= 10
-    assert result["seo"]["noindex_pages"] >= 2
+    assert result["seo"]["noindex_pages"] >= 1
     assert (docs_dir / "index.html").exists()
     assert (docs_dir / "essays" / "first-post" / "index.html").exists()
     assert (docs_dir / "topics" / "index.html").exists()
@@ -253,6 +253,7 @@ atlases:
     assert '<h1 class="hero-title">' in home_text
     assert '<h1 class="site-brand">' not in home_text
     assert '<link rel="canonical" href="https://devinteichrow.com/" />' in home_text
+    assert '<link rel="alternate" type="application/rss+xml" title="The Edge of Epidemiology RSS" href="https://theedgeofepidemiology.substack.com/feed" />' in home_text
     assert '<meta property="og:title" content="The Edge of Epidemiology | Devin Teichrow" />' in home_text
     assert '<meta name="twitter:card" content="summary_large_image" />' in home_text
     assert '<script type="application/ld+json" data-eoe-seo>' in home_text
@@ -306,8 +307,11 @@ atlases:
     assert "devinteichrow.com" in opportunities_text
     post_text = (docs_dir / "essays" / "first-post" / "index.html").read_text()
     assert "First Local SEO Title" in post_text
-    assert '<meta name="robots" content="noindex,follow" />' in post_text
+    assert '<meta name="robots" content="noindex,follow" />' not in post_text
     assert '<link rel="canonical" href="https://devinteichrow.com/essays/first-post/" />' in post_text
+    assert '<meta property="og:type" content="article" />' in post_text
+    assert '"@type": "Article"' in post_text
+    assert '"isBasedOn": "https://theedgeofepidemiology.substack.com/p/first-post"' in post_text
     assert "Contents" in post_text
     assert "Archive note" in post_text
     assert "This page keeps the essay connected to related topics, maps, and reference pages" in post_text
@@ -321,7 +325,7 @@ atlases:
     assert "<loc>https://devinteichrow.com/</loc>" in sitemap_text
     assert "<loc>https://devinteichrow.com/topics/historical-epidemiology/</loc>" in sitemap_text
     assert "https://devinteichrow.com/search/" not in sitemap_text
-    assert "https://devinteichrow.com/essays/first-post/" not in sitemap_text
+    assert "<loc>https://devinteichrow.com/essays/first-post/</loc>" in sitemap_text
 
     indexable_titles = []
     for html_path in sorted(docs_dir.rglob("*.html")):
