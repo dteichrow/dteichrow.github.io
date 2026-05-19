@@ -856,12 +856,39 @@ html, body {
   border: 1px solid rgba(255,255,255,0.08);
   overflow: hidden;
 }
-.asset-card {
+.asset-card,
+.mechanism-photo-card {
   position: relative;
   width: 100%;
   height: 168px;
   overflow: hidden;
   background: #12100d;
+}
+.mechanism-photo-card {
+  background: #221a12;
+}
+.mechanism-photo-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(10,8,6,0.02), rgba(10,8,6,0.18)),
+    radial-gradient(circle at 50% 42%, rgba(255,255,255,0.18), transparent 60%);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+.mechanism-photo {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: var(--photo-position, center center);
+  filter: sepia(0.18) saturate(0.86) contrast(1.06) brightness(0.94);
+  transform: scale(1.02);
+}
+.mechanism-photo.contain {
+  object-fit: contain;
+  background: #efe7d8;
 }
 .asset-card::before,
 .asset-card::after {
@@ -3304,35 +3331,27 @@ function resetStepProgress() {
 }
 
 function mechanismArt(kind, color) {
-  const assetCard = (asset, label, styles = "", extra = "") => `
-    <div class="asset-card" role="img" aria-label="${label}">
-      <img class="asset-img" src="assets/${asset}" alt="">
-      ${extra}
+  const photoCard = (asset, label, options = {}) => `
+    <div class="mechanism-photo-card" role="img" aria-label="${label}" style="--photo-position:${options.position || "center center"}">
+      <img class="mechanism-photo ${options.contain ? "contain" : ""}" src="${asset}" alt="">
     </div>`;
 
   if (kind === "mosquito") {
-    return assetCard("mosquito.svg", "Mosquito vector illustration", "--asset-width:245px; --asset-height:138px; --asset-rotate:-7deg;");
+    return photoCard("assets/context/cap_francais_1728.jpg", "Caribbean port map used to show warm-port vector ecology", { contain: true });
   }
   if (kind === "louse") {
-    return assetCard("louse.svg", "Body louse vector illustration", "--asset-width:180px; --asset-height:140px; --asset-rotate:88deg;");
+    return photoCard("assets/context/emigrants_lower_deck_crowded.jpg", "Crowded emigrant lower deck used to show body-louse and ship-fever risk", { position: "center 42%" });
   }
   if (kind === "barrel") {
-    return assetCard("barrel.svg", "Water cask contamination illustration", "--asset-width:245px; --asset-height:128px;");
+    return photoCard("assets/cinema/barrels_on_savannah_docks_nara.jpg", "Wooden barrels on docks used to show provisions and water storage as exposure infrastructure", { position: "center 56%" });
   }
   if (kind === "rash") {
-    return assetCard("virus.svg", "Respiratory virus spread illustration", "--asset-width:126px; --asset-height:126px;", `
-      <img class="asset-img secondary" src="assets/virus.svg" alt="">
-      <img class="asset-img secondary" src="assets/virus.svg" alt="">
-    `);
+    return photoCard("assets/context/smallpox_hospital_ships_atlas_endymion.jpg", "Smallpox hospital ships used to show isolation and respiratory-virus control", { contain: true });
   }
   if (kind === "wound") {
-    return assetCard("bandage.svg", "Wound care and infection risk illustration", "--asset-width:230px; --asset-height:126px; --asset-rotate:-10deg;", `
-      <img class="asset-img secondary" src="assets/surgery.svg" alt="">
-    `);
+    return photoCard("assets/context/naval_surgeon_instruments.jpg", "Naval surgical instruments used to show wound infection risk", { contain: true });
   }
-  return assetCard("clock.svg", "Provisioning clock and citrus illustration", "--asset-width:112px; --asset-height:112px; --asset-rotate:0deg;", `
-    <img class="asset-img secondary" src="assets/lemon.svg" alt="">
-  `);
+  return photoCard("assets/context/lind_scurvy_treatise.jpg", "Lind scurvy treatise used to show provisioning and nutritional deficiency", { contain: true });
 }
 
 function showMechanism(step, color) {
