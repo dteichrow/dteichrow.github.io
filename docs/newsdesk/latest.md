@@ -1,9 +1,10 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-05-19
-Generated at: 2026-05-19T09:49
+Generated at: 2026-05-19T11:52
 Search window: 7 day(s) ending 2026-05-19
 
 ## Executive scan
+- [Recommendations and Reports: CDC Operational Guidance for Investigating Locally Acquired Mosquito-Transmitted Malaria](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765596) (CDC MMWR; 2026-05-19T17:00+00:00; Occupational and environmental epidemiology; relevance 5/5)
 - [Tanzania National Oral Health Strategic Plan 2026-2031](https://www.afro.who.int/countries/united-republic-of-tanzania/publication/tanzania-national-oral-health-strategic-plan-2026-2031) (WHO Regional Office for Africa; 2026-05-19T10:43+00:00; Outbreaks and emerging infections; relevance 5/5)
 - [Candidates selected for ECDC Scientific Expert Panel on RSV vaccination in adults](https://www.ecdc.europa.eu/en/news-events/candidates-selected-ecdc-scientific-expert-panel-rsv-vaccination-adults) (ECDC News; 2026-05-19T11:07+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
 - [ECDC activates the EU Health Task Force, deploying experts to support Ebola outbreak response](https://www.ecdc.europa.eu/en/news-events/ecdc-activates-eu-health-task-force-deploying-experts-support-ebola-outbreak-response) (ECDC News; 2026-05-18T14:14+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
@@ -11,24 +12,38 @@ Search window: 7 day(s) ending 2026-05-19
 - [Eponymous neurologic signs of tabes dorsalis: A historical review (1846-1905).](https://pubmed.ncbi.nlm.nih.gov/42148461/) (PubMed Historical Pathogen Case Studies; 2026-05-18T00:00; Historical epidemiology / ancient disease / paleopathology; relevance 5/5)
 - [WHO declares Ebola outbreak in the Democratic Republic of the Congo a Public Health Emergency of International Concern: ECDC continues monitoring](https://www.ecdc.europa.eu/en/news-events/who-declares-ebola-outbreak-democratic-republic-congo-public-health-emergency) (ECDC News; 2026-05-17T13:38+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
 - [Democratic Republic of the Congo confirms new Ebola outbreak, WHO scales up support](https://www.afro.who.int/countries/democratic-republic-of-congo/news/democratic-republic-congo-confirms-new-ebola-outbreak-who-scales-upsupport) (WHO Regional Office for Africa; 2026-05-15T18:57+00:00; Outbreaks and emerging infections; relevance 5/5)
-- [ECDC monitoring Ebola outbreak in the Democratic Republic of the Congo](https://www.ecdc.europa.eu/en/news-events/ecdc-monitoring-ebola-outbreak-democratic-republic-congo) (ECDC News; 2026-05-15T16:21+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (163), Policy, surveillance, and public health infrastructure (40), Historical epidemiology / ancient disease / paleopathology (3)
+- Category mix: Outbreaks and emerging infections (169), Policy, surveillance, and public health infrastructure (35), Historical epidemiology / ancient disease / paleopathology (3)
 - Source health: 2 source(s) failed during collection: Nigeria Centre for Disease Control, USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
+### Dengue and arboviruses
+- Lead item: [Recommendations and Reports: CDC Operational Guidance for Investigating Locally Acquired Mosquito-Transmitted Malaria](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765596) (CDC MMWR)
+- Outbreak News Today now includes deaths or fatal cases in the story frame.
+- New publisher/source coverage joined this story cluster: CNA, MSN.
+- Story volume increased from 5 to 7 clustered item(s) in the current window.
+- 3 newly observed linked item(s) were added since the last saved snapshot.
+
 ### Ebola virus disease
 - Lead item: [ECDC activates the EU Health Task Force, deploying experts to support Ebola outbreak response](https://www.ecdc.europa.eu/en/news-events/ecdc-activates-eu-health-task-force-deploying-experts-support-ebola-outbreak-response) (ECDC News)
-- New publisher/source coverage joined this story cluster: 13newsnow.com, Alaska's News Source, Austin American-Statesman.
-- Story volume increased from 180 to 192 clustered item(s) in the current window.
-- 4 newly observed linked item(s) were added since the last saved snapshot.
+- New publisher/source coverage joined this story cluster: Action News Now, Doctors Without Borders, Euronews.com.
+- Story volume increased from 189 to 191 clustered item(s) in the current window.
+- 6 newly observed linked item(s) were added since the last saved snapshot.
 
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 192 item(s) across 123 source(s); 4 official/primary-source item(s).
+- Topic size: 191 item(s) across 127 source(s); 4 official/primary-source item(s).
 - Lead item: [ECDC activates the EU Health Task Force, deploying experts to support Ebola outbreak response](https://www.ecdc.europa.eu/en/news-events/ecdc-activates-eu-health-task-force-deploying-experts-support-ebola-outbreak-response) (ECDC News, 2026-05-18T14:14+02:00)
 - Detailed note: * Statement updated to include new figures Eugene Kabambi Communications Officer WHO DRC Tel : +243 81 715 1697 Office : +47 241 39 027 Email: kabambie [at] who.int (kabambie[at]who[dot]int) Collins Boakye-Agyemang Communications and marketing officer Tel: + 242 06 520 65 65 (WhatsApp) Email: boakyeagyemangc [at] who.int (boakyeagyemangc[at]who[dot]int) carousel-bg The Bundibugyo species was first identified in...
-- Evidence notes: [ECDC activates the EU Health Task Force, deploying experts to support Ebola outbreak response](https://www.ecdc.europa.eu/en/news-events/ecdc-activates-eu-health-task-force-deploying-experts-support-ebola-outbreak-response) (ECDC News); [WHO declares Ebola outbreak in the Democratic Republic of the Congo a Public Health Emergency of International Concern: ECDC continues monitoring](https://www.ecdc.europa.eu/en/news-events/who-declares-ebola-outbreak-democratic-republic-congo-public-health-emergency) (ECDC News); [Democratic Republic of the Congo confirms new Ebola outbreak, WHO scales up support](https://www.afro.who.int/countries/democratic-republic-of-congo/news/democratic-republic-congo-confirms-new-ebola-outbreak-who-scales-upsupport) (WHO Regional Office for Africa); [ECDC monitoring Ebola outbreak in the Democratic Republic of the Congo](https://www.ecdc.europa.eu/en/news-events/ecdc-monitoring-ebola-outbreak-democratic-republic-congo) (ECDC News); [WHO chief raises alarm as Ebola outbreak deaths climb in Dem. Republic of Congo and Uganda](https://thegrio.com/2026/05/19/who-chief-raises-alarm-ebola-outbreak-congo-uganda/) (TheGrio)
+- Evidence notes: [ECDC activates the EU Health Task Force, deploying experts to support Ebola outbreak response](https://www.ecdc.europa.eu/en/news-events/ecdc-activates-eu-health-task-force-deploying-experts-support-ebola-outbreak-response) (ECDC News); [WHO declares Ebola outbreak in the Democratic Republic of the Congo a Public Health Emergency of International Concern: ECDC continues monitoring](https://www.ecdc.europa.eu/en/news-events/who-declares-ebola-outbreak-democratic-republic-congo-public-health-emergency) (ECDC News); [Democratic Republic of the Congo confirms new Ebola outbreak, WHO scales up support](https://www.afro.who.int/countries/democratic-republic-of-congo/news/democratic-republic-congo-confirms-new-ebola-outbreak-who-scales-upsupport) (WHO Regional Office for Africa); [ECDC monitoring Ebola outbreak in the Democratic Republic of the Congo](https://www.ecdc.europa.eu/en/news-events/ecdc-monitoring-ebola-outbreak-democratic-republic-congo) (ECDC News); [Why this Ebola outbreak will be so difficult to contain](https://www.washingtonpost.com/health/2026/05/19/why-this-ebola-outbreak-will-be-so-difficult-contain/) (The Washington Post)
+- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
+- Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
+
+### Dengue and arboviruses
+- Topic size: 7 item(s) across 6 source(s); 2 official/primary-source item(s).
+- Lead item: [Recommendations and Reports: CDC Operational Guidance for Investigating Locally Acquired Mosquito-Transmitted Malaria](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765596) (CDC MMWR, 2026-05-19T17:00+00:00)
+- Detailed note: Recommendations and Reports / May 21, 2026 / 75(1);1â14 Nikhil Ranadive, MD 1 ,2 ,3 ; Joel L.N. Ridpath, MD 2 ( View author affiliations ) Guidance for Enhanced Investigation for Suspected Autochthonous Malaria Transmission During 2023, 10 cases of locally acquired mosquito-transmitted (autochthonous) malaria were reported to CDC from four U.S. In a follow-up on the dengue fever situation in Sri Lanka this...
+- Evidence notes: [Recommendations and Reports: CDC Operational Guidance for Investigating Locally Acquired Mosquito-Transmitted Malaria](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765596) (CDC MMWR); [Increase in Travel-Associated and Locally Acquired Dengue Cases](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765450) (CDC MMWR); [Sri Lanka reports increase in dengue in 2026](https://outbreaknewstoday.substack.com/p/sri-lanka-reports-increase-in-dengue) (Outbreak News Today); [Goa sees decline in dengue cases with health centres stepping up efforts](https://www.msn.com/en-in/news/india/goa-sees-decline-in-dengue-cases-with-health-centres-stepping-up-efforts/ar-AA23cYie?apiversion\=v2\&domshim\=1\&noservercache\=1\&noservertelemetry\=1\&batchservertelemetry\=1\&renderwebcomponents\=1\&wcseo\=1) (MSN); [Biting back against dengue - Why experts are cautious despite Singapore's success in lowering case count](https://www.channelnewsasia.com/today/big-read/dengue-cases-wolbachia-mosquito-lowest-record-6120941) (CNA)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
@@ -52,17 +67,9 @@ Search window: 7 day(s) ending 2026-05-19
 - Topic size: 2 item(s) across 2 source(s); 0 official/primary-source item(s).
 - Lead item: [Britain gets experimental drug from Japan to bolster hantavirus response](https://www.reuters.com/business/healthcare-pharmaceuticals/britain-gets-experimental-drug-japan-bolster-hantavirus-response-2026-05-18/) (Reuters, 2026-05-18T17:22+00:00)
 - Detailed note: Cluster remains active across 2 related item(s), but usable factual summary text was limited after cleanup.
-- Evidence notes: [Britain gets experimental drug from Japan to bolster hantavirus response](https://www.reuters.com/business/healthcare-pharmaceuticals/britain-gets-experimental-drug-japan-bolster-hantavirus-response-2026-05-18/) (Reuters); [From 'staged' to Israel: Hantavirus misinformation runs rampant online](https://www.euronews.com/my-europe/2026/05/13/staged-claims-and-israeli-hoaxes-debunking-viral-conspiracy-theories-about-hantavirus) (Euronews.com)
+- Evidence notes: [Britain gets experimental drug from Japan to bolster hantavirus response](https://www.reuters.com/business/healthcare-pharmaceuticals/britain-gets-experimental-drug-japan-bolster-hantavirus-response-2026-05-18/) (Reuters); [Argentina Races to Find Origin of Hantavirus Contagion](https://www.nytimes.com/2026/05/14/world/americas/hantavirus-cruise-ship-argentina.html) (The New York Times)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
-
-### Dengue and arboviruses
-- Topic size: 2 item(s) across 2 source(s); 0 official/primary-source item(s).
-- Lead item: [Sri Lanka reports increase in dengue in 2026](https://outbreaknewstoday.substack.com/p/sri-lanka-reports-increase-in-dengue) (Outbreak News Today, 2026-05-14T00:07+00:00)
-- Detailed note: In a follow-up on the dengue fever situation in Sri Lanka this year, officials with the National Dengue Control Unit (NDCU) report 27,754 dengue cases as of May 11, an increase in cases compared to 2025. In addition, 14 deaths have been recorded.
-- Evidence notes: [Sri Lanka reports increase in dengue in 2026](https://outbreaknewstoday.substack.com/p/sri-lanka-reports-increase-in-dengue) (Outbreak News Today); [Biting back against dengue - Why experts are cautious despite Singapore's success in lowering case count](https://www.channelnewsasia.com/today/big-read/dengue-cases-wolbachia-mosquito-lowest-record-6120941) (CNA)
-- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
-- Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting.
 
 ### Measles transmission and vaccination
 - Topic size: 1 item(s) across 1 source(s); 0 official/primary-source item(s).
@@ -301,6 +308,16 @@ Search window: 7 day(s) ending 2026-05-19
   Desk note: This is exactly the kind of severe rural infectious-disease burden that can disappear if the intake is too urban and too English-headline dependent.
 
 ## Highest priority items
+### Recommendations and Reports: CDC Operational Guidance for Investigating Locally Acquired Mosquito-Transmitted Malaria
+- Source: CDC MMWR
+- Date: 2026-05-19T17:00+00:00
+- URL: https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765596
+- Category: Occupational and environmental epidemiology
+- Summary: Recommendations and Reports / May 21, 2026 / 75(1);1â14 Nikhil Ranadive, MD 1 ,2 ,3 ; Joel L.N. Ridpath, MD 2 ( View author affiliations ) Guidance for Enhanced Investigation for Suspected Autochthonous Malaria Transmission During 2023, 10 cases of locally acquired mosquito-transmitted (autochthonous) malaria were reported to CDC from four U.S. states after a 20-year period with no autochthonous cases.
+- Why it matters: Comes from an official or primary-source channel. Useful for occupational or environmental epidemiology coverage.
+- Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
+- Relevance score: 5/5
+
 ### Tanzania National Oral Health Strategic Plan 2026-2031
 - Source: WHO Regional Office for Africa
 - Date: 2026-05-19T10:43+00:00
@@ -356,7 +373,7 @@ Search window: 7 day(s) ending 2026-05-19
 - Date: 2026-05-17T13:38+02:00
 - URL: https://www.ecdc.europa.eu/en/news-events/who-declares-ebola-outbreak-democratic-republic-congo-public-health-emergency
 - Category: Policy, surveillance, and public health infrastructure
-- Summary: Community deaths among people with symptoms compatible with Ebola virus disease have been reported in Ituri Province, and suspected cases have been identified in both Ituri and North Kivu. Four deaths among healthcare workers have also been reported among people with symptoms consistent with viral haemorrhagic fever, raising concerns regarding healthcare-associated transmission. On 17 May 2026, the World Health Organization (WHO) declared the Ebola virus disease outbreak caused by Bundibugyo virus in the Democratic Republic of the Congo (DRC) a Public Health Emergency of International Concern.
+- Summary: On 17 May 2026, the World Health Organization (WHO) declared the Ebola virus disease outbreak caused by Bundibugyo virus in the Democratic Republic of the Congo (DRC) a Public Health Emergency of International Concern.
 - Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.
 - Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
 - Relevance score: 5/5
@@ -381,67 +398,57 @@ Search window: 7 day(s) ending 2026-05-19
 - Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
 - Relevance score: 5/5
 
-### Digitization of Historical Data from Somalia's Last Smallpox Outbreaks 1976-1977.
-- Source: PubMed Historical Pathogen Case Studies
-- Date: 2026-05-14T00:00
-- URL: https://pubmed.ncbi.nlm.nih.gov/42135325/
-- Category: Historical epidemiology / ancient disease / paleopathology
-- Summary: The transcribed line list comprises of 3,255 incident cases and includes the following variables: national case serial number, age, sex, date of rash onset, date detected, village/locality, district, region, regional outbreak number, and national outbreak number. Over more than three thousand years, smallpox caused millions of deaths worldwide. Handwritten smallpox outbreak data from Somalia (1976-1977) were obtained from the World Health Organization by a Public Health England study team (now UK Health Security Agency).
-- Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.
-- Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
-- Relevance score: 5/5
-
-### Evolutionary trends of plague research from 2016 to 2025: A bibliometric analysis.
-- Source: PubMed Historical Epidemiology
-- Date: 2026-05-13T00:00
-- URL: https://pubmed.ncbi.nlm.nih.gov/42127162/
-- Category: Historical epidemiology / ancient disease / paleopathology
-- Summary: Search for relevant literatures on plague that were published in the Web of Science Core Collection and PubMed database from January 1, 2016 to November 12, 2025.Bibliometric methods were adopted, and software including COOC 20.6, VOSviewer 1.6.20, and Anaconda were used to analyze the publication trend, distribution of institutions, national cooperation network, keyword co-occurrence clustering, and the annual variation trends. From 2021 to 2025, "Phylogenetic Analysis," "Public Health," and "Madagascar" newly entered the top 20 keyword list; the frequencies of "Black Death" and "Infectious Disease" increased significantly, while the frequencies of "Plague Vaccine" and "Prairie Dogs" remained relatively stable. The annual number of publications showed an overall fluctuating upward trend, with a significant growth rate from 2020 to 2021 (annual growth rate of 10.44%).
+### Increase in Travel-Associated and Locally Acquired Dengue Cases
+- Source: CDC MMWR
+- Date: 2026-05-14T17:00+00:00
+- URL: https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765450
+- Category: Occupational and environmental epidemiology
+- Summary: This report describes an increase in dengue cases reported during 2024.
 - Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.
 - Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
 - Relevance score: 5/5
 
 
 ## Other notable readings
+- [Digitization of Historical Data from Somalia's Last Smallpox Outbreaks 1976-1977.](https://pubmed.ncbi.nlm.nih.gov/42135325/) | PubMed Historical Pathogen Case Studies | 2026-05-14T00:00 | Historical epidemiology / ancient disease / paleopathology
+  The transcribed line list comprises of 3,255 incident cases and includes the following variables: national case serial number, age, sex, date of rash onset, date detected, village/locality, district, region, regional outbreak number, and national outbreak number. Over more than three thousand years, smallpox caused millions of deaths worldwide. Handwritten smallpox outbreak data from Somalia (1976-1977) were obtained from the World Health Organization by a Public Health England study team (now UK Health Security Agency).
+- [Evolutionary trends of plague research from 2016 to 2025: A bibliometric analysis.](https://pubmed.ncbi.nlm.nih.gov/42127162/) | PubMed Historical Epidemiology | 2026-05-13T00:00 | Historical epidemiology / ancient disease / paleopathology
+  Search for relevant literatures on plague that were published in the Web of Science Core Collection and PubMed database from January 1, 2016 to November 12, 2025.Bibliometric methods were adopted, and software including COOC 20.6, VOSviewer 1.6.20, and Anaconda were used to analyze the publication trend, distribution of institutions, national cooperation network, keyword co-occurrence clustering, and the annual variation trends. From 2021 to 2025, "Phylogenetic Analysis," "Public Health," and "Madagascar" newly entered the top 20 keyword list; the frequencies of "Black Death" and "Infectious Disease" increased significantly, while the frequencies of "Plague Vaccine" and "Prairie Dogs" remained relatively stable. The annual number of publications showed an overall fluctuating upward trend, with a significant growth rate from 2020 to 2021 (annual growth rate of 10.44%).
+- [Why this Ebola outbreak will be so difficult to contain](https://www.washingtonpost.com/health/2026/05/19/why-this-ebola-outbreak-will-be-so-difficult-contain/) | The Washington Post | 2026-05-19T18:37+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- ['Ebola has tortured us': Fear as DR Congo outbreak spreads](https://www.bbc.com/news/articles/ceqp11gn1l8o) | BBC | 2026-05-19T18:17+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Ebola strain in Congo-Uganda outbreak has no vaccine or treatment, causes often deadly symptoms](https://www.cbsnews.com/news/ebola-outbreak-bundibugyo-congo-uganda-vaccine-treatment-symptoms/) | CBS News | 2026-05-19T18:16+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Ebola deaths in eastern Congo rise to 131, WHO voices deep concern](https://www.reuters.com/business/healthcare-pharmaceuticals/ebola-deaths-eastern-congo-rise-131-outbreak-spreads-2026-05-19/) | Reuters | 2026-05-19T17:46+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [WHO worries about outbreak's scale and speed of Ebola spread as Congo announces 134 deaths](https://www.washingtonpost.com/world/2026/05/19/congo-ebola-deadly-virus-bundibugyo-health-emergency/1e72254c-535d-11f1-9c40-7a0a12d9e745_story.html) | The Washington Post | 2026-05-19T17:31+00:00 | Policy, surveillance, and public health infrastructure
+  Limited detail was available from feed metadata alone.
 - [WHO chief raises alarm as Ebola outbreak deaths climb in Dem. Republic of Congo and Uganda](https://thegrio.com/2026/05/19/who-chief-raises-alarm-ebola-outbreak-congo-uganda/) | TheGrio | 2026-05-19T16:33+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Why this Ebola outbreak will be so difficult to contain](https://www.washingtonpost.com/health/2026/05/19/why-this-ebola-outbreak-will-be-so-difficult-contain/) | The Washington Post | 2026-05-19T16:32+00:00 | Outbreaks and emerging infections
+- [WHO awaits six tons of Ebola supplies to Congo as outbreak grows](https://www.reuters.com/business/healthcare-pharmaceuticals/who-awaits-six-tons-ebola-supplies-congo-outbreak-grows-2026-05-19/) | Reuters | 2026-05-19T16:31+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [As Ebola outbreak spreads in DRC and Uganda, what is risk to US? - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/Health/ebola-outbreak-spreads-drc-uganda-risk-us/story?id\=133065128) | ABC News - Breaking News, Latest News and Videos | 2026-05-19T16:24+00:00 | Policy, surveillance, and public health infrastructure
+- [As Ebola outbreak spreads in DRC and Uganda, what is risk to US? - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/Health/ebola-outbreak-spreads-drc-uganda-risk-us/story?id\=133065128) | ABC News - Breaking News, Latest News and Videos | 2026-05-19T16:24+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [What to know about the Bundibugyo virus, a species of Ebola causing an outbreak in Congo](https://apnews.com/article/ebola-bundibugyo-virus-outbreak-congo-baf5f9861a896ca027a9e40524d42e74) | AP News | 2026-05-19T16:22+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Why the Ebola outbreak is worrying public health officials](https://www.axios.com/2026/05/19/ebola-hantavirus-who-cdc-preparedness-concerns) | Axios | 2026-05-19T16:20+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Ebola deaths in eastern Congo rise to 131, WHO voices deep concern](https://www.reuters.com/business/healthcare-pharmaceuticals/ebola-deaths-eastern-congo-rise-131-outbreak-spreads-2026-05-19/) | Reuters | 2026-05-19T16:19+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
 - [US warns citizens against travelling to Uganda, DRC, South Sudan over Ebola outbreak](https://citizen.digital/article/us-warns-citizens-against-travelling-to-uganda-drc-south-sudan-over-ebola-outbreak-n383024) | Citizen Digital | 2026-05-19T16:07+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [What to Know About the Ebola Outbreak as Cases and Deaths Rise](https://www.nytimes.com/2026/05/17/world/africa/what-to-know-ebola-africa.html) | The New York Times | 2026-05-19T15:50+00:00 | Outbreaks and emerging infections
+- [The fast-spreading Ebola outbreak in central Africa](https://www.reuters.com/graphics/HEALTH-EBOLA/CONGO/zgpolxablvd/) | Reuters | 2026-05-19T15:57+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Bahrain bans visitors from three African countries due to Ebola outbreak](https://www.thenationalnews.com/news/2026/05/19/bahrain-bans-visitors-from-three-african-countries-due-to-ebola-outbreak/) | The National | 2026-05-19T15:40+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [As WHO sounds alarm over Ebola in DRC, what can be learned from previous outbreaks?](https://www.theguardian.com/world/2026/may/19/why-the-lessons-of-the-drcs-last-ebola-outbreak-are-being-tested-again) | The Guardian | 2026-05-19T15:34+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Bahrain halts entry for non-Bahrainis arriving from South Sudan, DRC and Uganda amid Ebola outbreak](https://www.businessupturn.com/sectors/health/bahrain-halts-entry-for-non-bahrainis-arriving-from-south-sudan-drc-and-uganda-amid-ebola-outbreak/) | Business Upturn | 2026-05-19T15:15+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
+- [At least 131 dead amid Ebola outbreak in Congo](https://www.cbsnews.com/chicago/video/at-least-131-dead-amid-ebola-outbreak-in-congo/) | CBS News | 2026-05-19T15:13+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - [What you should know about the Ebola outbreak in 2026](https://www.nbcnews.com/health/health-news/ebola-outbreak-2026-bundibugyo-symptoms-how-spread-treatment-what-know-rcna345696) | NBC News | 2026-05-19T15:09+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Ebola outbreak sees 131 suspected deaths in DRC, officials say - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/International/ebola-outbreak-sees-131-suspected-deaths-drc-officials/story?id\=133099345) | ABC News - Breaking News, Latest News and Videos | 2026-05-19T15:07+00:00 | Policy, surveillance, and public health infrastructure
-  Limited detail was available from feed metadata alone.
-- [U.S. Imposes Entry Ban on Travelers from DRC, Uganda and South Sudan as Ebola Deaths Top 130](https://www.democracynow.org/2026/5/19/headlines/us_imposes_entry_ban_on_travelers_from_drc_uganda_and_south_sudan_as_ebola_deaths_top_130) | Democracy Now! | 2026-05-19T14:25+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [How does Ebola spread? What to know as Congo outbreak worsens](https://www.livenowfox.com/news/how-does-ebola-spread-congo-outbreak-bundibugyo) | LiveNOW from FOX | 2026-05-19T14:22+00:00 | Outbreaks and emerging infections
-  What to know as Congo outbreak worsens LiveNOW from FOX
-- ['Ebola has tortured us': Fear as DR Congo outbreak spreads](https://www.bbc.com/news/articles/ceqp11gn1l8o) | BBC | 2026-05-19T14:20+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [EBOLA OUTBREAK IN DR CONGO Twenty-six more suspected Ebola deaths were recorded in 24 hours in eastern Democratic Republic of Congo, authorities said. | via Reuters](https://www.facebook.com/News5Everywhere/posts/ebola-outbreak-in-dr-congotwenty-six-more-suspected-ebola-deaths-were-recorded-i/1510506047774590/) | facebook.com | 2026-05-19T14:12+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Congo reports sharp rise in Ebola cases as WHO worries about outbreak’s scale and speed](https://apnews.com/article/congo-ebola-deadly-virus-bundibugyo-health-emergency-3c97cacf44e007127df5739199f32517) | AP News | 2026-05-19T13:48+00:00 | Policy, surveillance, and public health infrastructure
-  Limited detail was available from feed metadata alone.
-- [WHO concerned about speed and spread of Ebola: How prepared is India at airports?](https://indianexpress.com/article/health-wellness/ebola-alert-health-ministry-airport-screening-surveillance-lab-preparedness-10696700/) | The Indian Express | 2026-05-19T13:30+00:00 | Outbreaks and emerging infections
-  Dr Ghebreyesus noted over 500 suspected cases and more than 130 suspected deaths across the Democratic Republic of Congo (DRC) and Uganda. There have been 516 suspected cases and 33 confirmed cases in Congo, according to a daily bulletin published by health authorities, and two confirmed cases in neighbouring Uganda. The Health ministry has reviewed the situation and public health preparedness as a precautionary step although there is no case of Ebola in the country and the current risk remains low.
-- [Texas Impact: Ebola outbreak sparks travel rules ahead of World Cup matches](https://www.fox4news.com/news/ebola-outbreak-travel-rules-world-cup-houston-dallas) | FOX 4 News Dallas-Fort Worth | 2026-05-19T13:30+00:00 | Outbreaks and emerging infections
-  Texas Impact: Ebola outbreak sparks travel rules ahead of World Cup matches FOX 4 News Dallas-Fort Worth
-- [As WHO sounds alarm over Ebola in DRC, what can be learned from previous outbreaks?](https://www.theguardian.com/world/2026/may/19/why-the-lessons-of-the-drcs-last-ebola-outbreak-are-being-tested-again) | The Guardian | 2026-05-19T13:21+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Ebola outbreak ‘deeply concerning,’ WHO chief says](https://www.newsnationnow.com/health/ebola-africa-congo-uganda-who/) | NewsNation | 2026-05-19T13:13+00:00 | Policy, surveillance, and public health infrastructure
-  Limited detail was available from feed metadata alone.
-- [Ebola deaths rise sharply as outbreak’s ‘scale and speed’ worry WHO chief](https://www.nbcnews.com/world/africa/ebola-outbreak-deaths-rise-scale-speed-concerns-who-congo-uganda-rcna345833) | NBC News | 2026-05-19T12:55+00:00 | Outbreaks and emerging infections
+- [East Africa tightens borders as Ebola outbreak spreads beyond DRC](https://www.theeastafrican.co.ke/tea/sustainability/health/east-africa-tightens-borders-as-ebola-outbreak-5465564) | The EastAfrican | 2026-05-19T15:00+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
@@ -463,12 +470,6 @@ Search window: 7 day(s) ending 2026-05-19
   Journal/preprint server: PLoS neglected tropical diseases
   Abstract link: https://pubmed.ncbi.nlm.nih.gov/42127162/
   Source URL: https://pubmed.ncbi.nlm.nih.gov/42127162/
-- [Modeling the potential public health and economic impact and cost-effectiveness of vaccination strategies using an adapted COVID-19 vaccine in Guatemala.](https://pubmed.ncbi.nlm.nih.gov/42133835/)
-  Source: PubMed Infectious Disease Search
-  DOI: 10.1080/14760584.2026.2668675
-  Journal/preprint server: Expert review of vaccines
-  Abstract link: https://pubmed.ncbi.nlm.nih.gov/42133835/
-  Source URL: https://pubmed.ncbi.nlm.nih.gov/42133835/
 
 ## Historical epi / weird epi corner
 - [Eponymous neurologic signs of tabes dorsalis: A historical review (1846-1905).](https://pubmed.ncbi.nlm.nih.gov/42148461/) | PubMed Historical Pathogen Case Studies
@@ -477,6 +478,8 @@ Search window: 7 day(s) ending 2026-05-19
   The transcribed line list comprises of 3,255 incident cases and includes the following variables: national case serial number, age, sex, date of rash onset, date detected, village/locality, district, region, regional outbreak number, and national outbreak number. Over more than three thousand years, smallpox caused millions of deaths worldwide. Handwritten smallpox outbreak data from Somalia (1976-1977) were obtained from the World Health Organization by a Public Health England study team (now UK Health Security Agency).
 - [Evolutionary trends of plague research from 2016 to 2025: A bibliometric analysis.](https://pubmed.ncbi.nlm.nih.gov/42127162/) | PubMed Historical Epidemiology
   Search for relevant literatures on plague that were published in the Web of Science Core Collection and PubMed database from January 1, 2016 to November 12, 2025.Bibliometric methods were adopted, and software including COOC 20.6, VOSviewer 1.6.20, and Anaconda were used to analyze the publication trend, distribution of institutions, national cooperation network, keyword co-occurrence clustering, and the annual variation trends. From 2021 to 2025, "Phylogenetic Analysis," "Public Health," and "Madagascar" newly entered the top 20 keyword list; the frequencies of "Black Death" and "Infectious Disease" increased significantly, while the frequencies of "Plague Vaccine" and "Prairie Dogs" remained relatively stable. The annual number of publications showed an overall fluctuating upward trend, with a significant growth rate from 2020 to 2021 (annual growth rate of 10.44%).
+- [Congolese report constant burials as deaths in new Ebola outbreak reach 87](https://news.google.com/rss/articles/CBMiowFBVV95cUxPUXlQYzVuR3R5YnVkdHR3T29SY1lsZ0NubkNPZ0V0X2M1ZWp2WDdOWVNFVVRWT0loTmpjTHFIMjEtQlJ6ckZZU0RzMV8zZ0ZWUlprMGRYMlVOZmlxZl9LQ1pIS3V3dm5keXdZamdlX016NHoxeWJwaVJOWTZ2RFNvazVDc3lmejAxdFpxZ3BHZzVLaW9oLVQweE0zQlFNNXM4QjFv?oc=5) | AP News
+  Limited detail was available from feed metadata alone.
 
 ## Possible blog/video angles
 - Vaccination coverage versus outbreak control: what the day’s measles or vaccine items actually show.
