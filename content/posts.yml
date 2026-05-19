@@ -13,7 +13,7 @@ posts:
   - ebola
   - epidemiology
   - Africa
-  source_mode: substack_page
+  source_mode: substack_archive_api
   wordcount: 1595
   status: summary_only
   dek: ''
@@ -40,7 +40,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-19T02:25:26+00:00'
-  last_synced_at: '2026-05-19T02:25:26+00:00'
+  last_synced_at: '2026-05-19T03:34:27+00:00'
 - substack_id: 197437573
   slug: hantavirus-in-the-korean-war-korean
   title: Korean Hemorrhagic Fever in the Korean War
