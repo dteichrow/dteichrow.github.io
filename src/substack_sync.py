@@ -172,9 +172,21 @@ def _parse_rss_feed(xml_text: str) -> list[dict[str, Any]]:
     return items
 
 
-def _write_report(mode: str, report: dict[str, Any]) -> None:
-    ensure_dir(NOTES_DIR)
-    write_json(NOTES_DIR / f"substack-sync-{mode}.json", report)
+def _report_dir_for_manifest(manifest_path: Path | None) -> Path:
+    if manifest_path is None:
+        return NOTES_DIR
+    resolved_manifest = manifest_path.resolve()
+    try:
+        resolved_manifest.relative_to(CONTENT_DIR)
+    except ValueError:
+        return manifest_path.parent
+    return NOTES_DIR
+
+
+def _write_report(mode: str, report: dict[str, Any], manifest_path: Path | None = None) -> None:
+    report_dir = _report_dir_for_manifest(manifest_path)
+    ensure_dir(report_dir)
+    write_json(report_dir / f"substack-sync-{mode}.json", report)
 
 
 def _recent_posts_from_archive_api() -> list[dict[str, Any]]:
@@ -310,7 +322,7 @@ def backfill_posts(manifest_path: Path | None = None) -> dict[str, Any]:
         "archive_seed_count": len(recent_posts),
         "failed_posts": failures,
     }
-    _write_report("backfill", report)
+    _write_report("backfill", report, manifest_path)
     return report
 
 
@@ -361,7 +373,7 @@ def incremental_sync(manifest_path: Path | None = None) -> dict[str, Any]:
         "fallback_reason": fallback_reason or "",
         "enrichment_failures": failures,
     }
-    _write_report("incremental", report)
+    _write_report("incremental", report, manifest_path)
     return report
 
 

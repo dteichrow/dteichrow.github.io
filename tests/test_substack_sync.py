@@ -166,6 +166,19 @@ def test_incremental_sync_uses_archive_api_without_degraded_mode(tmp_path, monke
     assert "api-post" in saved_manifest
 
 
+def test_incremental_sync_writes_report_next_to_external_manifest(tmp_path, monkeypatch) -> None:
+    manifest_path = tmp_path / "posts.yml"
+    manifest_path.write_text("posts: []\n")
+
+    monkeypatch.setattr(substack_sync, "_recent_posts_from_archive_api", lambda: [])
+
+    substack_sync.incremental_sync(manifest_path)
+    report_path = tmp_path / "substack-sync-incremental.json"
+
+    assert report_path.exists()
+    assert json.loads(report_path.read_text())["total_manifest_records"] == 0
+
+
 def test_incremental_sync_falls_back_to_sitemap_when_primary_sources_fail(tmp_path, monkeypatch) -> None:
     manifest_path = tmp_path / "posts.yml"
     manifest_path.write_text("posts: []\n")
