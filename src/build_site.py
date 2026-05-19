@@ -1646,6 +1646,9 @@ def rewrite_imported_paths(html_text: str, base_url: str) -> str:
         '../notebook.html': link_for(base_url, "notebook/"),
         './atlas.html': link_for(base_url, "atlases/pathogen/"),
         '../atlas.html': link_for(base_url, "atlases/pathogen/"),
+        './outbreaks.html': link_for(base_url, "newsdesk/outbreaks/"),
+        '../outbreaks.html': link_for(base_url, "newsdesk/outbreaks/"),
+        '../../outbreaks.html': link_for(base_url, "newsdesk/outbreaks/"),
         './watch.html': link_for(base_url, "newsdesk/watch/"),
         '../watch.html': link_for(base_url, "newsdesk/watch/"),
         './africa.html': link_for(base_url, "newsdesk/africa/"),
@@ -1913,6 +1916,8 @@ def import_epidossier_public(docs_dir: Path, base_url: str) -> dict[str, Any]:
 
     html_pages = [
         (source_docs / "index.html", docs_dir / "newsdesk" / "index.html", "newsdesk"),
+        (source_docs / "outbreaks.html", docs_dir / "newsdesk" / "outbreaks" / "index.html", "newsdesk"),
+        (source_docs / "outbreaks.html", docs_dir / "outbreaks.html", "newsdesk"),
         (source_docs / "watch.html", docs_dir / "newsdesk" / "watch" / "index.html", "newsdesk"),
         (source_docs / "africa.html", docs_dir / "newsdesk" / "africa" / "index.html", "newsdesk"),
         (source_docs / "asia.html", docs_dir / "newsdesk" / "asia" / "index.html", "newsdesk"),

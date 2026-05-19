@@ -14,6 +14,8 @@ def test_transform_imported_html_rewrites_known_paths() -> None:
       <head></head>
       <body>
         <a href="./index.html">Home</a>
+        <a href="./outbreaks.html">Outbreak terminal</a>
+        <a href="../../outbreaks.html">Deep outbreak terminal</a>
         <a href="./watch.html">Watch</a>
         <a href="../reference/thing.html">Ref</a>
         <a href="../../reference/deep.html">Deep Ref</a>
@@ -31,6 +33,7 @@ def test_transform_imported_html_rewrites_known_paths() -> None:
     """
     transformed = build_site.transform_imported_html(html_text, active="newsdesk", base_url="/")
     assert 'href="/newsdesk/"' in transformed
+    assert transformed.count('href="/newsdesk/outbreaks/"') == 2
     assert 'href="/newsdesk/watch/"' in transformed
     assert 'href="/reference/thing.html"' in transformed
     assert 'href="/reference/deep.html"' in transformed
@@ -48,6 +51,44 @@ def test_transform_imported_html_rewrites_known_paths() -> None:
     assert "56 item(s)" not in transformed
     assert "26 source(s)" not in transformed
     assert "Expanding coverage" in transformed
+
+
+def test_import_epidossier_public_imports_outbreak_terminal_routes(tmp_path, monkeypatch) -> None:
+    source_docs = tmp_path / "source_docs"
+    docs_dir = tmp_path / "docs"
+    (source_docs / "app_exports").mkdir(parents=True)
+    (source_docs / "archive").mkdir(parents=True)
+    (source_docs / "stories").mkdir(parents=True)
+    (source_docs / "reference").mkdir(parents=True)
+    (source_docs / "app_exports" / "latest.json").write_text(json.dumps({"generated_at": "2026-05-19T00:00:00", "stories": [], "reference": []}))
+    (source_docs / "latest.md").write_text("# Latest")
+    (source_docs / "archive" / "index.html").write_text("<html><head></head><body>Archive</body></html>")
+    for name in ["latest", "index", "outbreaks", "watch", "africa", "asia", "research", "official", "historical", "notebook"]:
+        filename = f"{name}.html"
+        if name == "latest":
+            body = '<a href="./outbreaks.html">Outbreak terminal</a>'
+        elif name == "outbreaks":
+            body = '<h1>Outbreak Terminal</h1><a href="./index.html">Newsdesk home</a>'
+        else:
+            body = f"<h1>{name}</h1>"
+        (source_docs / filename).write_text(f"<html><head></head><body>{body}</body></html>")
+    (source_docs / "stories" / "demo-story.html").write_text('<html><head></head><body><a href="../outbreaks.html">Outbreak terminal</a></body></html>')
+    (source_docs / "reference" / "ebola-virus-disease.html").write_text('<html><head></head><body><a href="../outbreaks.html">Outbreak terminal</a></body></html>')
+
+    monkeypatch.setattr(build_site, "resolve_epidossier_docs", lambda: source_docs)
+
+    build_site.import_epidossier_public(docs_dir, "/")
+
+    terminal_page = docs_dir / "newsdesk" / "outbreaks" / "index.html"
+    root_alias = docs_dir / "outbreaks.html"
+    reference_page = docs_dir / "reference" / "ebola-virus-disease.html"
+    story_page = docs_dir / "stories" / "demo-story.html"
+    assert terminal_page.exists()
+    assert root_alias.exists()
+    assert "Outbreak Terminal" in terminal_page.read_text()
+    assert 'href="/newsdesk/outbreaks/"' in reference_page.read_text()
+    assert 'href="/newsdesk/outbreaks/"' in story_page.read_text()
+    assert 'href="/newsdesk/"' in root_alias.read_text()
 
 
 def test_build_site_writes_core_routes(tmp_path, monkeypatch) -> None:
