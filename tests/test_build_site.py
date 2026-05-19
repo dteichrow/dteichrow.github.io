@@ -301,7 +301,7 @@ atlases:
     assert opportunities_text.count('class="opportunities-showcase"') == 1
     assert "Evidence and analysis" in opportunities_text
     assert "Science communication" in opportunities_text
-    assert "Public tools and atlases" in opportunities_text
+    assert "Interactive exhibits and atlases" in opportunities_text
     assert "Talks, workshops, and teaching" not in opportunities_text
     assert "devinteichrow.com" in opportunities_text
     post_text = (docs_dir / "essays" / "first-post" / "index.html").read_text()
@@ -466,7 +466,7 @@ def test_import_external_pathogen_writes_js_payload(tmp_path, monkeypatch) -> No
     assert "by Devin Teichrow" in index_text
     assert 'href="../../index.html"' in index_text
     assert 'href="../../tools/index.html"' in index_text
-    assert ">Learning Tools</a>" in index_text
+    assert ">Exhibits</a>" in index_text
     source_text = source_data.read_text()
     assert '"reference_href": "../../docs/reference/yellow-fever.html"' in source_text
     assert '"story_href": "../../docs/stories/demo-story.html"' in source_text

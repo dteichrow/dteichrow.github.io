@@ -453,7 +453,7 @@ def site_nav(active: str, base_url: str) -> str:
     links = [
         ("Home", "", "home"),
         ("Newsdesk", "newsdesk/", "newsdesk"),
-        ("Learning Tools", "tools/", "tools"),
+        ("Exhibits", "tools/", "tools"),
         ("Essays", "essays/", "essays"),
         ("Topics", "topics/", "topics"),
         ("Historical", "historical/", "historical"),
@@ -479,7 +479,7 @@ def site_nav(active: str, base_url: str) -> str:
         '<div class="site-header-copy">'
         '<p class="kicker">The Edge of Epidemiology</p>'
         '<div class="site-brand"><a href="{home}"><span>The Edge of Epidemiology</span> <span class="site-brand-byline">by Devin Teichrow</span></a></div>'
-        '<p class="site-header-title">History-haunted epidemiology, live reporting, and interactive teaching tools in one place.</p>'
+        '<p class="site-header-title">History-haunted epidemiology, live reporting, and interactive public-health exhibits in one place.</p>'
         "</div>"
         '<nav class="site-nav" aria-label="Primary navigation">{links}</nav>'
         "</div>"
@@ -595,7 +595,7 @@ def render_tool_card(entry: dict[str, Any], base_url: str) -> str:
         f'<span class="card-utility-label">{html.escape(tool_type)}</span>'
         f'<span class="card-utility-meta">{html.escape(coordinate_hint)}</span>'
         "</div>"
-        '<p class="kicker">Learning tool</p>'
+        '<p class="kicker">Interactive exhibit</p>'
         f'<h3><a href="{html.escape(href)}">{html.escape(entry.get("title", "Untitled tool"))}</a></h3>'
         f'<p class="muted-note">{html.escape(entry.get("summary", ""))}</p>'
         f'{f"<p class=\"card-meta-text\">{html.escape(feature_line)}</p>" if feature_line else ""}'
@@ -809,7 +809,7 @@ def render_home(posts: list[dict[str, Any]], tools: list[dict[str, Any]], latest
           </div>
           <div class="hero-actions">
             <a class="button secondary" href="{html.escape(link_for(base_url, 'newsdesk/'))}">Open the newsdesk</a>
-            <a class="button secondary" href="{html.escape(link_for(base_url, 'tools/'))}">Browse the tools</a>
+            <a class="button secondary" href="{html.escape(link_for(base_url, 'tools/'))}">Browse the exhibits</a>
             <a class="button secondary" href="{html.escape(link_for(base_url, 'essays/'))}">Read the essays</a>
           </div>
           <p class="hero-status-line"><span class="hero-status-label">Live desk</span> Updated {html.escape(generated_at)} · {html.escape(str(story_count))} active files · {html.escape(str(item_count))} tracked sources · {html.escape(str(live_count))} current updates</p>
@@ -822,13 +822,13 @@ def render_home(posts: list[dict[str, Any]], tools: list[dict[str, Any]], latest
     ref_cards = "".join(render_reference_card(ref, base_url) for ref in references)
     return base_html(
         title="Edge of Epidemiology",
-        description="The umbrella publication for The Pathogen Dispatch, virtual teaching tools, historical epidemiology, and the Edge of Epidemiology writing archive.",
+        description="The umbrella publication for The Pathogen Dispatch, interactive public-health exhibits, historical epidemiology, and the Edge of Epidemiology writing archive.",
         active="home",
         base_url=base_url,
         body=hero
         + f'<section class="home-section opportunities-strip"><div class="section-head section-head-split"><div><p class="kicker">Opportunities</p><h2>Selected projects, collaborations, and commissions</h2><p class="muted-note">I am open to serious projects where epidemiology, data, public health, history, and technical implementation need to become one usable thing.</p></div><aside class="section-sidecar"><p class="section-sidecar-label">Contact</p><p><a href="mailto:devinteichrow@gmail.com">devinteichrow@gmail.com</a></p></aside></div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "opportunities/"))}">Work with me</a></div></section>'
         + f'<section class="home-section newsdesk-panel"><div class="section-head section-head-split"><div><p class="kicker">Live desk</p><h2>The Pathogen Dispatch</h2><p class="muted-note">Current outbreak files, follow-up reporting, and source-first tracking for major infectious-disease stories.</p></div><aside class="section-sidecar"><p class="section-sidecar-label">Currently tracking</p><p>{html.escape(str(story_count))} active files · {html.escape(str(item_count))} tracked sources · Updated {html.escape(generated_at)}</p></aside></div><div class="card-grid three-up">{newsdesk_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "newsdesk/"))}">Go to the full newsdesk</a></div></section>'
-        + f'<section class="home-section atlas-panel"><div class="section-head"><p class="kicker">Learning tools</p><h2>Interactive disease worlds for learning by looking</h2><p class="muted-note">Timelines, atlases, and source-first visual tools for pathogen history, outbreak geography, and epidemiologic reasoning.</p></div><div class="card-grid two-up">{tool_cards}</div></section>'
+        + f'<section class="home-section atlas-panel"><div class="section-head"><p class="kicker">Interactive exhibits</p><h2>Public disease exhibits for learning by looking</h2><p class="muted-note">Timelines, atlases, and source-first visual work for pathogen history, outbreak geography, and epidemiologic reasoning.</p></div><div class="card-grid two-up">{tool_cards}</div></section>'
         + f'<section class="home-section essay-panel"><div class="section-head"><p class="kicker">Published writing</p><h2>Recent essays</h2><p class="muted-note">Longer-form writing on outbreaks, evidence, history, ecology, and the politics of public health.</p></div><div class="card-grid three-up essays-grid">{post_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "essays/"))}">Browse all essays</a></div></section>'
         + f'<section class="home-section reference-panel"><div class="section-head"><p class="kicker">Field guides</p><h2>Reference layer</h2><p class="muted-note">Practical disease briefings on transmission, diagnostics, severity, and what matters when a pathogen reappears.</p></div><div class="card-grid three-up">{ref_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "reference/"))}">Open the reference desk</a></div></section>',
     )
@@ -1042,9 +1042,9 @@ def render_atlas_hub(atlases: list[dict[str, Any]], base_url: str) -> str:
         body=f"""
       <section class="hero hero-open">
         <p class="kicker">Atlases</p>
-        <h2 class="hero-title">The atlas family now lives inside Learning Tools</h2>
+        <h2 class="hero-title">The atlas family now lives inside Interactive Exhibits</h2>
         <p class="subtitle">Disease maps, historical exhibits, and visual tools for following pathogens through geography, infrastructure, ecology, and time.</p>
-        <div class="hero-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "tools/"))}">Open Learning Tools</a></div>
+        <div class="hero-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "tools/"))}">Open Exhibits</a></div>
       </section>
       <section class="panel panel-soft">
         <div class="card-grid two-up">{cards}</div>
@@ -1056,15 +1056,15 @@ def render_atlas_hub(atlases: list[dict[str, Any]], base_url: str) -> str:
 def render_tools_hub(tools: list[dict[str, Any]], base_url: str) -> str:
     cards = "".join(render_tool_card(entry, base_url) for entry in tools)
     return base_html(
-        title="Learning Tools | Edge of Epidemiology",
-        description="Interactive timelines, atlases, and evidence-led learning tools from Edge of Epidemiology.",
+        title="Interactive Exhibits | Edge of Epidemiology",
+        description="Interactive timelines, atlases, and evidence-led public-health exhibits from Edge of Epidemiology.",
         active="tools",
         base_url=base_url,
         body=f"""
       <section class="hero hero-open">
-        <p class="kicker">Learning tools</p>
-        <h2 class="hero-title">Disease history, outbreak geography, and epidemiologic reasoning as interactive public work</h2>
-        <p class="subtitle">Timelines, atlases, ledgers, and visual tools for exploring epidemic history, pathogen geography, and public-health reasoning.</p>
+        <p class="kicker">Interactive exhibits</p>
+        <h2 class="hero-title">Interactive epidemiology exhibits for disease history, outbreak geography, and public-health reasoning</h2>
+        <p class="subtitle">Timelines, atlases, ledgers, and visual public-health exhibits for exploring epidemic history, pathogen geography, and epidemiologic reasoning.</p>
       </section>
       <section class="panel panel-soft">
         <div class="card-grid two-up">{cards}</div>
@@ -1249,7 +1249,7 @@ def render_about_page(base_url: str) -> str:
           <p class="kicker">Framing</p>
           <h3>Why geography matters here</h3>
           <p>The site’s atlas projects and interactive maps grew out of a belief that epidemiology is fundamentally geographic. Disease is biological, spatial, political, ecological, economic, cultural, and historical. Pathogens move along trade routes, through armies, across borders, inside housing systems, and within the infrastructure societies build for themselves.</p>
-          <p>My goal is to make epidemiology feel legible, historically grounded, and intellectually honest for a broader audience without flattening uncertainty or complexity. Outside of research and writing, I build interactive disease atlases, epidemiology tools, and science communication projects focused on making complex public health topics more understandable and visually intuitive.</p>
+          <p>My goal is to make epidemiology feel legible, historically grounded, and intellectually honest for a broader audience without flattening uncertainty or complexity. Outside of research and writing, I build interactive disease atlases, epidemiology exhibits, and science communication projects focused on making complex public health topics more understandable and visually intuitive.</p>
         </div>
         <div class="about-block">
           <p class="kicker">Links</p>
@@ -1270,7 +1270,7 @@ def render_opportunities_page(base_url: str) -> str:
     services = [
         ("Evidence and analysis", "Study design, literature synthesis, epidemiologic framing, R/Python analysis, dashboards, and interpretation that keeps uncertainty visible."),
         ("Science communication", "Essays, explainers, editorial strategy, research translation, pitch development, and historically grounded health writing."),
-        ("Public tools and atlases", "Interactive maps, outbreak trackers, disease reference layers, historical epidemiology projects, and source-first public-health tools."),
+        ("Interactive exhibits and atlases", "Interactive maps, outbreak trackers, disease reference layers, historical epidemiology projects, and source-first public-health exhibits."),
     ]
     fit_items = [
         "infectious disease",
@@ -1302,7 +1302,7 @@ def render_opportunities_page(base_url: str) -> str:
     )
     return base_html(
         title="Opportunities | Edge of Epidemiology",
-        description="Work with Devin Teichrow on epidemiology, evidence, disease history, science communication, data projects, and public health tools.",
+        description="Work with Devin Teichrow on epidemiology, evidence, disease history, science communication, data projects, and public-health exhibits.",
         active="opportunities",
         base_url=base_url,
         body=f"""
@@ -1359,7 +1359,7 @@ def render_search_page(base_url: str) -> str:
             <input class="filter-input" type="search" data-search-input placeholder="Search titles, tags, places, pathogens, or phrases" />
             <select class="filter-select" data-search-filter>
               <option value="all">All sections</option>
-              <option value="Tool">Learning Tools</option>
+              <option value="Tool">Exhibits</option>
               <option value="Essay">Essays</option>
               <option value="Atlas">Atlases</option>
               <option value="Newsdesk">Newsdesk</option>
@@ -2051,9 +2051,9 @@ def atlas_overlay_html(
     nav = (
         '<div id="eoe-atlas-overlay">'
         f'<a id="eoe-atlas-overlay-brand" href="{html.escape(home_href)}"><span>The Edge of Epidemiology</span> <span class="byline">by Devin Teichrow</span></a>'
-        '<nav id="eoe-atlas-overlay-links" aria-label="Tool navigation">'
+        '<nav id="eoe-atlas-overlay-links" aria-label="Exhibit navigation">'
         f'<a href="{html.escape(home_href)}">Home</a>'
-        f'<a href="{html.escape(tools_href)}" class="active">Learning Tools</a>'
+        f'<a href="{html.escape(tools_href)}" class="active">Exhibits</a>'
         f'<a href="{html.escape(newsdesk_href)}">Newsdesk</a>'
         f'<a href="{html.escape(essays_href)}">Essays</a>'
         "</nav>"
@@ -2430,8 +2430,8 @@ def seo_profile_for_route(route: str, html_text: str, post_by_route: dict[str, d
             title = f"{hub['title']} Topic Hub | Edge of Epidemiology"
             description = str(hub["description"])
     elif route == "tools/":
-        title = "Learning Tools | Edge of Epidemiology"
-        description = "Interactive timelines, atlases, and source-first public learning tools for epidemic history, disease geography, and epidemiologic reasoning."
+        title = "Interactive Exhibits | Edge of Epidemiology"
+        description = "Interactive timelines, atlases, and source-first public-health exhibits for epidemic history, disease geography, and epidemiologic reasoning."
         schema_type = "CollectionPage"
     elif route.startswith("tools/american-epidemic-timeline"):
         title = "American Epidemic Timeline | Edge of Epidemiology"
@@ -2792,7 +2792,7 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
         {
             "title": "Opportunities",
             "section": "About",
-            "summary": "Work with Devin Teichrow on epidemiology, evidence, disease history, science communication, data projects, and public health tools.",
+            "summary": "Work with Devin Teichrow on epidemiology, evidence, disease history, science communication, data projects, and public-health exhibits.",
             "url": link_for(base_url, "opportunities/"),
             "keywords": "consulting collaboration epidemiology data science communication atlases public health",
         }

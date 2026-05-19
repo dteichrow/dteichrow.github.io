@@ -9,7 +9,7 @@ tools:
     public_route: tools/american-epidemic-timeline/
     source_path: external/american_epidemic_timeline/index.html + data/american_epidemic_timeline_data.js
     launch_priority: flagship
-    keywords: [american epidemics, timeline, public health history, outbreaks, teaching tool]
+    keywords: [american epidemics, timeline, public health history, outbreaks, exhibit]
     long_note: The timeline follows major epidemics, public-health turning points, and selected regional outbreaks while keeping uncertain diagnoses and rough counts visibly uncertain.
   - tool_id: pathogen-atlas
     legacy_atlas_id: pathogen-atlas
@@ -17,7 +17,7 @@ tools:
     tool_type: atlas
     status: live
     status_label: Source-backed atlas
-    summary: A cited teaching atlas about pathogen origins, reservoirs, transmission ecology, historical spread, and evidentiary uncertainty.
+    summary: A cited digital exhibit about pathogen origins, reservoirs, transmission ecology, historical spread, and evidentiary uncertainty.
     evidence_model: Origin confidence, evidence-type panels, citations, and uncertainty notes
     public_route: atlases/pathogen/
     source_path: external/pathogen_atlas/index.html + external/pathogen_atlas/source_backed_profiles.json
@@ -46,7 +46,7 @@ tools:
     summary: A historical epidemiology section focused on colonial and Revolutionary-era disease ecology, troop movement, and the public-health constraints around the founding period.
     evidence_model: Essay-linked historical synthesis
     public_route: atlases/revolutionary-war/
-    source_path: curated umbrella page
+    source_path: external/revolutionary_war_atlas/index.html
     launch_priority: historical section
     keywords: [revolutionary war, colonies, smallpox, inoculation, military disease]
     long_note: A structured historical atlas page connecting colonial disease ecology, military movement, smallpox, inoculation, and public-health constraints around the founding period.

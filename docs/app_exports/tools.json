@@ -16,7 +16,7 @@
         "timeline",
         "public health history",
         "outbreaks",
-        "teaching tool"
+        "exhibit"
       ],
       "long_note": "The timeline follows major epidemics, public-health turning points, and selected regional outbreaks while keeping uncertain diagnoses and rough counts visibly uncertain."
     },
@@ -26,7 +26,7 @@
       "tool_type": "atlas",
       "status": "open",
       "status_label": "Source-backed atlas",
-      "summary": "A cited teaching atlas about pathogen origins, reservoirs, transmission ecology, historical spread, and evidentiary uncertainty.",
+      "summary": "A cited digital exhibit about pathogen origins, reservoirs, transmission ecology, historical spread, and evidentiary uncertainty.",
       "evidence_model": "Origin confidence, evidence-type panels, citations, and uncertainty notes",
       "public_route": "atlases/pathogen/",
       "keywords": [

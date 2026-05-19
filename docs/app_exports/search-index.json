@@ -785,12 +785,12 @@
     "section": "Tool",
     "summary": "A carefully cited timeline of major U.S.-linked epidemics, outbreaks, and public-health turning points.",
     "url": "/tools/american-epidemic-timeline/",
-    "keywords": "american epidemics timeline public health history outbreaks teaching tool timeline"
+    "keywords": "american epidemics timeline public health history outbreaks exhibit timeline"
   },
   {
     "title": "Pathogen Atlas",
     "section": "Tool",
-    "summary": "A cited teaching atlas about pathogen origins, reservoirs, transmission ecology, historical spread, and evidentiary uncertainty.",
+    "summary": "A cited digital exhibit about pathogen origins, reservoirs, transmission ecology, historical spread, and evidentiary uncertainty.",
     "url": "/atlases/pathogen/",
     "keywords": "pathogen reservoirs transmission origin uncertainty infectious disease spread atlas"
   },
@@ -1049,7 +1049,7 @@
   {
     "title": "Opportunities",
     "section": "About",
-    "summary": "Work with Devin Teichrow on epidemiology, evidence, disease history, science communication, data projects, and public health tools.",
+    "summary": "Work with Devin Teichrow on epidemiology, evidence, disease history, science communication, data projects, and public-health exhibits.",
     "url": "/opportunities/",
     "keywords": "consulting collaboration epidemiology data science communication atlases public health"
   }
