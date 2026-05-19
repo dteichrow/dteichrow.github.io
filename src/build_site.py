@@ -1970,6 +1970,7 @@ def atlas_overlay_html(
     essays_href: str,
     top: str = "18px",
     links_top: str | None = None,
+    extra_css: str = "",
 ) -> tuple[str, str]:
     links_top = links_top or top
     overlay = f"""
@@ -2046,6 +2047,7 @@ def atlas_overlay_html(
       justify-content: flex-start;
     }}
   }}
+  {extra_css}
 </style>
 """
     nav = (
@@ -2071,6 +2073,7 @@ def inject_atlas_overlay(
     essays_href: str,
     top: str = "18px",
     links_top: str | None = None,
+    overlay_extra_css: str = "",
 ) -> None:
     html_text = ATLAS_OVERLAY_RE.sub("", index_path.read_text())
     html_text = ensure_meta_description(
@@ -2084,6 +2087,7 @@ def inject_atlas_overlay(
         essays_href=essays_href,
         top=top,
         links_top=links_top,
+        extra_css=overlay_extra_css,
     )
     html_text = html_text.replace("</head>", f"{overlay}</head>")
     html_text = html_text.replace("<body>", f"<body>{nav}", 1)
@@ -2102,7 +2106,29 @@ def import_external_maritime(docs_dir: Path, base_url: str) -> None:
         tools_href="../../tools/index.html",
         newsdesk_href="../../newsdesk/index.html",
         essays_href="../../essays/index.html",
-        top="84px",
+        top="14px",
+        links_top="14px",
+        overlay_extra_css="""
+  @media (min-width: 981px) {
+    html:not(.recording-mode):not(.youtube-mode) {
+      --atlas-public-chrome-top: 56px;
+    }
+  }
+  @media (max-width: 980px) {
+    html:not(.recording-mode):not(.youtube-mode) {
+      --atlas-public-chrome-top: 126px;
+    }
+  }
+  @media (min-width: 981px) and (max-width: 1320px) {
+    #eoe-atlas-overlay-brand .byline {
+      display: none;
+    }
+    #eoe-atlas-overlay-links a {
+      padding: 7px 10px;
+      font-size: 11px;
+    }
+  }
+""",
     )
 
 

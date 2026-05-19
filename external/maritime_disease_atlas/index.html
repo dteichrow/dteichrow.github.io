@@ -160,7 +160,7 @@ html, body {
 }
 #chrome {
   position: fixed;
-  top: 0;
+  top: var(--atlas-public-chrome-top, 0px);
   left: 0;
   right: 0;
   z-index: 1000;
@@ -622,6 +622,16 @@ html, body {
   border: 1px solid var(--border);
   box-shadow: 0 16px 50px rgba(0,0,0,0.5);
   padding: 18px 20px 20px;
+}
+html:not(.recording-mode):not(.youtube-mode) #story-panel {
+  top: calc(var(--atlas-public-chrome-bottom, 120px) + 22px);
+  max-height: max(240px, calc(100vh - var(--atlas-public-chrome-bottom, 120px) - 54px));
+}
+html:not(.recording-mode):not(.youtube-mode) #mechanism-card,
+html:not(.recording-mode):not(.youtube-mode) #context-card,
+html:not(.recording-mode):not(.youtube-mode) #plot-card {
+  top: calc(var(--atlas-public-chrome-bottom, 120px) + 22px);
+  max-height: max(240px, calc(100vh - var(--atlas-public-chrome-bottom, 120px) - 54px));
 }
 #story-kicker {
   color: var(--gold);
@@ -1766,6 +1776,7 @@ let soundDesign = null;
 let isSoundEnabled = false;
 let soundUnsupported = false;
 let currentSoundProfile = { scene: "idle", cue: null };
+let publicLayoutFrame = null;
 
 function audioContextClass() {
   return window.AudioContext || window.webkitAudioContext || null;
@@ -2863,6 +2874,32 @@ function setSourcesOpen(nextValue) {
   button.setAttribute("aria-expanded", String(nextValue));
 }
 
+function updatePublicExhibitLayout() {
+  if (publicLayoutFrame) cancelAnimationFrame(publicLayoutFrame);
+  publicLayoutFrame = requestAnimationFrame(() => {
+    publicLayoutFrame = null;
+    const root = document.documentElement;
+    const chrome = document.getElementById("chrome");
+    if (!chrome || root.classList.contains("recording-mode") || root.classList.contains("youtube-mode")) {
+      root.style.removeProperty("--atlas-public-chrome-bottom");
+      return;
+    }
+    root.style.setProperty("--atlas-public-chrome-bottom", `${Math.ceil(chrome.getBoundingClientRect().bottom)}px`);
+  });
+}
+
+function initPublicExhibitLayout() {
+  const chrome = document.getElementById("chrome");
+  if (window.ResizeObserver && chrome) {
+    new ResizeObserver(updatePublicExhibitLayout).observe(chrome);
+  }
+  window.addEventListener("resize", updatePublicExhibitLayout, { passive: true });
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(updatePublicExhibitLayout).catch(() => {});
+  }
+  updatePublicExhibitLayout();
+}
+
 function setRecordingMode(nextValue) {
   isRecordingMode = nextValue;
   document.documentElement.classList.toggle("recording-mode", isRecordingMode);
@@ -2887,6 +2924,7 @@ function setRecordingMode(nextValue) {
   if (geoLayer) geoLayer.bringToFront();
   if (activePulse) activePulse.addTo(map);
   map.invalidateSize();
+  updatePublicExhibitLayout();
 }
 
 function setPresentationMode(nextValue) {
@@ -2900,6 +2938,7 @@ function setYouTubeMode(nextValue) {
   if (brandSource) {
     brandSource.textContent = isYouTubeMode ? "YouTube guided tour | The Edge of Epidemiology" : "The Edge of Epidemiology";
   }
+  updatePublicExhibitLayout();
 }
 
 function setScenarioPlaying(nextValue) {
@@ -3874,6 +3913,7 @@ function initializeFromQuery() {
 drawAtlas();
 initModuleBrowser();
 renderSourceCatalog();
+initPublicExhibitLayout();
 updatePauseButton();
 updateSoundButton();
 document.addEventListener("pointerdown", resumeArmedSoundFromGesture, true);
