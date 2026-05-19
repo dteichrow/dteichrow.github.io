@@ -3,77 +3,141 @@
 This is not a map of ships carrying diseases from one place to another.
 
 2
-00:00:10,000 --> 00:00:24,000
+00:00:10,000 --> 00:00:16,000
 It is a map of ships as disease environments.
 
 3
-00:00:24,000 --> 00:00:45,000
+00:00:16,000 --> 00:00:33,000
 A ship was a ration system, a waste system, an air system, a medical system, a labor system, and sometimes a machine of violence.
 
 4
-00:00:45,000 --> 00:01:03,000
-The pirate network is a useful place to begin because it makes infrastructure visible.
+00:00:33,000 --> 00:01:00,000
+The important unit is not just the voyage. It is the whole machine: the port that supplied it, the people crowded into it, the cargo and water stored inside it, and the quarantine system waiting at the far end.
 
 5
-00:01:03,000 --> 00:01:25,000
-Nassau, Port Royal, Tortuga, and the Carolina coast were connected by ships, repair, provisioning, recruitment, capture, resale, rumor, water, food, wounds, insects, and waiting.
+00:01:00,000 --> 00:01:10,000
+The pirate network is a useful place to begin because it makes infrastructure visible.
 
 6
-00:01:25,000 --> 00:01:45,000
-The point is not that pirates uniquely caused epidemics. The point is that ports were ecological machinery.
+00:01:10,000 --> 00:01:30,000
+Nassau, Port Royal, Tortuga, and the Carolina coast were connected by ships, but also by repair, provisioning, recruitment, capture, resale, rumor, water, food, alcohol, wounds, sex, insects, and waiting.
 
 7
-00:01:45,000 --> 00:02:08,000
-Yellow fever and malaria move the story to the warmer edge of the map, where port ecology and vector ecology overlap.
+00:01:30,000 --> 00:01:46,000
+Disease risk lived inside that same network. The point is not that pirates uniquely caused epidemics. The point is that ports were ecological machinery.
 
 8
-00:02:08,000 --> 00:02:35,000
-Ships moved people, cargo, and exposure, but the disease cycle still depended on climate, stored water, mosquito habitat, labor, immunity, and timing.
+00:01:46,000 --> 00:02:05,000
+Quarantine belongs in that machinery too. Bills of health, lazarettos, guards, cargo controls, sanitary bans, and waiting periods made quarantine a maritime technology, not just a medical footnote.
 
 9
-00:02:35,000 --> 00:02:55,000
-A route is not a magic line of causation. It is a way of seeing how local ecologies became connected.
+00:02:05,000 --> 00:02:25,000
+The map should feel slow here because the argument is cumulative: ports are not dots. They are places where ships, people, documents, animals, insects, provisions, and fear all become organized.
 
 10
-00:02:55,000 --> 00:03:18,000
-Then the map moves inward, into the ship. Scurvy is time made biological.
+00:02:25,000 --> 00:02:43,000
+Yellow fever and malaria move the story to the warmer edge of the map, where port ecology and vector ecology overlap.
 
 11
-00:03:18,000 --> 00:03:48,000
-Flux and typhoid belong to food and water systems: casks, storage, handling, drinking water, dirty hands, waste boundaries, and the galley.
+00:02:43,000 --> 00:03:06,000
+Ships moved people, cargo, and exposure, but the disease cycle still depended on local conditions: climate, stored water, mosquito habitat, labor, immunity, and the timing of arrival.
 
 12
-00:03:48,000 --> 00:04:20,000
-The exposure route is not only across the ocean. It is through the barrel, the berth, and the hand.
+00:03:06,000 --> 00:03:23,000
+A route is not a magic line of causation. It is a way of seeing how local ecologies became connected.
 
 13
-00:04:20,000 --> 00:04:48,000
-Crowding changes the disease world again. Ship fever, smallpox, and measles turn berths, clothing, bedding, ventilation, and quarantine into epidemiologic objects.
+00:03:23,000 --> 00:03:51,000
+That distinction matters. A port could receive ships constantly and still need the right mosquito, the right season, the right water, and enough susceptible people for an epidemic pattern to become visible.
 
 14
-00:04:48,000 --> 00:05:20,000
-Below deck is not just scenery. It is the architecture of transmission.
+00:03:51,000 --> 00:04:00,000
+The sea made contact possible. The port made transmission possible.
 
 15
-00:05:20,000 --> 00:05:55,000
-When the ship reached land, exposure entered quarantine stations, port inspections, hospitals, and politics.
+00:04:00,000 --> 00:04:07,000
+Then the map moves inward, into the ship.
 
 16
-00:05:55,000 --> 00:06:20,000
-Maritime disease ecology cannot be separated from violence.
+00:04:07,000 --> 00:04:19,000
+Scurvy is time made biological: a long voyage can turn diet into exposure.
 
 17
-00:06:20,000 --> 00:06:50,000
-Wounds, dirty tools, delayed care, and forced confinement make infection a social fact.
+00:04:19,000 --> 00:04:56,000
+This is why maritime disease history cannot be only a history of microbes. Sometimes the lethal exposure was absence: no fresh citrus, no fresh vegetables, no reliable provisioning, no easy way to reverse the clock once a voyage stretched on.
 
 18
-00:06:50,000 --> 00:07:20,000
-The Middle Passage exposes what maritime movement could become when commerce, coercion, captivity, dehydration, crowding, violence, and disease were fused.
+00:04:56,000 --> 00:05:15,000
+Flux and typhoid belong to food and water systems: casks, storage, handling, drinking water, dirty hands, waste boundaries, and the galley.
 
 19
-00:07:20,000 --> 00:07:45,000
-The sea did not merely connect outbreaks. It made disease ecological, political, and visible.
+00:05:15,000 --> 00:05:32,000
+The exposure route is not only across the ocean. It is through the barrel, the berth, and the hand.
 
 20
-00:07:45,000 --> 00:08:10,000
-The full source-backed exhibit is linked below. The map is not the answer. It is the reading surface.
+00:05:32,000 --> 00:06:00,000
+And this is where the map needs time. The viewer should feel that disease risk is being assembled out of ordinary shipboard operations, not dropped onto the ship from outside.
+
+21
+00:06:00,000 --> 00:06:08,000
+Crowding changes the disease world again.
+
+22
+00:06:08,000 --> 00:06:24,000
+Ship fever, smallpox, and measles turn berths, clothing, bedding, ventilation, and quarantine into epidemiologic objects.
+
+23
+00:06:24,000 --> 00:06:37,000
+Below deck is not just scenery. It is the architecture of transmission.
+
+24
+00:06:37,000 --> 00:07:15,000
+For ship fever, the historical label often points toward typhus, lice, clothing, hygiene, and the brutal density of migrant transport, but the wording has to stay cautious because historical fever labels were not modern laboratory diagnoses.
+
+25
+00:07:15,000 --> 00:07:34,000
+For smallpox and measles, susceptibility and contact matter differently, but the ship interior still does real epidemiologic work.
+
+26
+00:07:34,000 --> 00:07:55,000
+And when the ship reached land, the exposure did not simply end. It entered quarantine stations, port inspections, hospitals, and politics.
+
+27
+00:07:55,000 --> 00:08:04,000
+Finally, maritime disease ecology cannot be separated from violence.
+
+28
+00:08:04,000 --> 00:08:16,000
+Wounds, dirty tools, delayed care, and forced confinement make infection a social fact.
+
+29
+00:08:16,000 --> 00:08:26,000
+The Middle Passage is not an extreme example outside the system.
+
+30
+00:08:26,000 --> 00:08:49,000
+It is one of the clearest exposures of what maritime movement could become when commerce, coercion, captivity, dehydration, crowding, violence, and disease were fused.
+
+31
+00:08:49,000 --> 00:09:17,000
+The burden here should not be reduced to a generic disease-spread story. Total mortality, cause-specific diagnosis, starvation, dehydration, dysentery, smallpox, measles, heat, violence, and despair are not interchangeable claims.
+
+32
+00:09:17,000 --> 00:09:30,000
+The slower cadence is part of the argument: this section needs room for restraint.
+
+33
+00:09:30,000 --> 00:09:36,000
+The sea did not merely connect outbreaks.
+
+34
+00:09:36,000 --> 00:09:42,000
+It made disease ecological, political, and visible.
+
+35
+00:09:42,000 --> 00:09:50,000
+It turned food, water, air, labor, quarantine, violence, and waiting into public-health history.
+
+36
+00:09:50,000 --> 00:10:00,000
+The full cited exhibit is linked below. The map is not the answer. It is the reading surface.

@@ -5,24 +5,24 @@ Use full-tour capture first. Replace individual sections only when a specific vi
 ## Standard Single-Section URL
 
 ```text
-/atlases/maritime/?youtube=1&scenario=<scenario_id>&pace=0.55
+/atlases/maritime/?youtube=1&scenario=<scenario_id>&pace=2.05
 ```
 
 Local equivalent:
 
 ```text
-external/maritime_disease_atlas/index.html?youtube=1&scenario=<scenario_id>&pace=0.55
+external/maritime_disease_atlas/index.html?youtube=1&scenario=<scenario_id>&pace=2.05
 ```
 
 ## Scenario Retake Map
 
 | Section | Scenario URL suffix | Replace when |
 | --- | --- | --- |
-| Pirate infrastructure | `?youtube=1&scenario=pirate_network&pace=0.55` | A pirate plate overwhelms route readability, or the opening needs a stronger map-first beat. |
-| Vector ecology | `?youtube=1&scenario=yellow_fever&pace=0.55` and `?youtube=1&scenario=malaria&pace=0.55` | The edit needs a clearer transition from port ecology to vector ecology. |
-| Provisions ecology | `?youtube=1&scenario=scurvy&pace=0.55`, `?youtube=1&scenario=flux&pace=0.55`, `?youtube=1&scenario=typhoid&pace=0.55` | The shipboard food-water argument needs more time or fewer archival overlays. |
-| Crowding/contact | `?youtube=1&scenario=ship_fever&pace=0.55`, `?youtube=1&scenario=smallpox&pace=0.55`, `?youtube=1&scenario=measles&pace=0.55` | Below-deck crowding, quarantine, or respiratory/contact mechanisms are unclear. |
-| Violence/coercion | `?youtube=1&scenario=wounds_sepsis&pace=0.55` and `?youtube=1&scenario=middle_passage&pace=0.55` | The final third needs a slower, more sober visual rhythm. |
+| Pirate infrastructure | `?youtube=1&scenario=pirate_network&pace=2.05` | A pirate plate overwhelms route readability, or the opening needs a stronger map-first beat. |
+| Vector ecology | `?youtube=1&scenario=yellow_fever&pace=2.05` and `?youtube=1&scenario=malaria&pace=2.05` | The edit needs a clearer transition from port ecology to vector ecology. |
+| Provisions ecology | `?youtube=1&scenario=scurvy&pace=2.05`, `?youtube=1&scenario=flux&pace=2.05`, `?youtube=1&scenario=typhoid&pace=2.05` | The shipboard food-water argument needs more time or fewer archival overlays. |
+| Crowding/contact | `?youtube=1&scenario=ship_fever&pace=2.05`, `?youtube=1&scenario=smallpox&pace=2.05`, `?youtube=1&scenario=measles&pace=2.05` | Below-deck crowding, quarantine, or respiratory/contact mechanisms are unclear. |
+| Violence/coercion | `?youtube=1&scenario=wounds_sepsis&pace=2.05` and `?youtube=1&scenario=middle_passage&pace=2.05` | The final third needs a slower, more sober visual rhythm. |
 
 ## Replacement Rules
 

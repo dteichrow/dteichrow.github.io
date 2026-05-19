@@ -43,7 +43,7 @@ def test_maritime_youtube_plan_is_capture_ready_and_source_backed() -> None:
     module_ids = {module["id"] for module in modules}
 
     assert plan["schema_version"] == "1.0.0"
-    assert 360 <= plan["runtime_target_seconds"] <= 540
+    assert 540 <= plan["runtime_target_seconds"] <= 660
     assert "youtube=1" in plan["capture_entrypoint"]
     assert plan["voice_plan"]["final_voice"] == "Devin"
     assert "scratch timing" in plan["voice_plan"]["scratch_voice"]
@@ -108,7 +108,7 @@ def test_maritime_youtube_mode_is_wired_into_atlas_ui() -> None:
     assert ".recording-mode .mechanism-first" in html
     assert ".recording-mode #module-browser" in html
 
-    assert "?youtube=1&tour=1&pace=0.55" in note
+    assert "?youtube=1&tour=1&pace=2.05" in note
     assert "Final narration: Devin" in note
     assert "Do not collapse Middle Passage mortality" in note
     assert "Do not turn pirate ports into disease-origin claims" in note
@@ -135,7 +135,7 @@ def test_maritime_recording_packet_is_ready_for_devin_voice() -> None:
 
     assert "Final voice: Devin" in script
     assert "Do not say plague decided the Barbary Wars" in script
-    assert "00:08:10,000" in captions
-    assert "0:45 Pirate ports as infrastructure" in chapters
+    assert "00:10:00,000" in captions
+    assert "1:00 Pirate ports as infrastructure" in chapters
     assert "Do not render or publish" not in checklist
     assert "Export the final MP4 only after narration" in checklist

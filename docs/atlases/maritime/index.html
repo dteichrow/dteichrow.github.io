@@ -1752,6 +1752,10 @@ const maritimeModules = Array.isArray(moduleDataset.modules) ? moduleDataset.mod
 const evidenceSources = new Map((moduleDataset.sources || []).map(source => [source.source_id, source]));
 const featureById = new Map(atlas.features.map(feature => [feature.properties.id, feature]));
 const queryParams = new URLSearchParams(window.location.search);
+const requestedYouTubeMode = ["youtube", "yt"].some(name => {
+  const value = queryParams.get(name);
+  return value === "" || value === "1" || value === "true" || value === "yes";
+});
 const SCENARIO_ORDER = [
   "yellow_fever",
   "malaria",
@@ -1786,7 +1790,8 @@ const CONFIDENCE_LABELS = {
   speculative: "Speculative"
 };
 const durationScale = (() => {
-  const raw = Number(queryParams.get("pace") || queryParams.get("speed") || 1);
+  const youtubeDefaultPace = youtubeVideoPlan?.playback?.default_pace || 2.05;
+  const raw = Number(queryParams.get("pace") || queryParams.get("speed") || (requestedYouTubeMode ? youtubeDefaultPace : 1));
   if (!Number.isFinite(raw)) return 1;
   return Math.min(2.5, Math.max(0.35, raw));
 })();

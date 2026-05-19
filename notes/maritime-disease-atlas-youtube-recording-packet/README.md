@@ -13,13 +13,13 @@ This folder is the recording handoff for the Maritime Disease Ecology Atlas YouT
 ## Capture URL
 
 ```text
-/atlases/maritime/?youtube=1&tour=1&pace=0.55
+/atlases/maritime/?youtube=1&tour=1&pace=2.05
 ```
 
 Local development equivalent:
 
 ```text
-external/maritime_disease_atlas/index.html?youtube=1&tour=1&pace=0.55
+external/maritime_disease_atlas/index.html?youtube=1&tour=1&pace=2.05
 ```
 
 ## Production Rule

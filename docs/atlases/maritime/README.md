@@ -19,10 +19,10 @@ The atlas must remain usable from `file://`, so browser-facing data is kept in l
 The YouTube version is a derivative guided tour, not the canonical source surface. Use:
 
 ```text
-external/maritime_disease_atlas/index.html?youtube=1&tour=1&pace=0.55
+external/maritime_disease_atlas/index.html?youtube=1&tour=1&pace=2.05
 ```
 
-`youtube=1` turns on Presentation Mode, applies the source-backed YouTube tour order, and brands the capture as a guided YouTube cut. Shot-level captures can use `?youtube=1&scenario=<scenario_id>&pace=0.55`. The production note is `notes/maritime-disease-atlas-youtube-guided-tour.md`.
+`youtube=1` turns on Presentation Mode, applies the source-backed YouTube tour order, and brands the capture as a guided YouTube cut. Shot-level captures can use `?youtube=1&scenario=<scenario_id>&pace=2.05`. The production note is `notes/maritime-disease-atlas-youtube-guided-tour.md`.
 
 The video script must not add claims beyond the exhibit data unless those claims are also added with source IDs, confidence, and uncertainty notes.
 
