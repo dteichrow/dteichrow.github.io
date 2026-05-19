@@ -1,4 +1,46 @@
 posts:
+- substack_id: 198344681
+  slug: ebola-in-drc-and-uganda-what-is-known
+  title: 'Ebola in DRC and Uganda: What Is Known So Far (Pathogen Dispatch #4)'
+  date: '2026-05-19'
+  canonical_url: https://theedgeofepidemiology.substack.com/p/ebola-in-drc-and-uganda-what-is-known
+  excerpt: I’ll keep updates at the top of this post; you can expect two or three
+    updates per day.
+  cover_image: https://substackcdn.com/image/fetch/$s_!hwSr!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F69aa395c-0747-4e3b-814b-f5c650960284_1600x900.png
+  upstream_tags:
+  - science
+  - infectious disease
+  - ebola
+  - epidemiology
+  - Africa
+  source_mode: substack_page
+  wordcount: 1595
+  status: summary_only
+  dek: ''
+  topics:
+  - science
+  - infectious disease
+  - ebola
+  - epidemiology
+  - Africa
+  series: []
+  seo_title: ''
+  seo_description: ''
+  primary_keyword: ''
+  topic_cluster: ''
+  indexing_strategy: noindex_stub
+  related_atlases:
+  - pathogen-atlas
+  - maritime-disease-atlas
+  related_reference_slugs: []
+  related_story_ids: []
+  search_excerpt: I’ll keep updates at the top of this post; you can expect two or
+    three updates per day.
+  local_body_path: ''
+  hero_mode: cover
+  notes: ''
+  first_seen_at: '2026-05-19T02:25:26+00:00'
+  last_synced_at: '2026-05-19T02:25:26+00:00'
 - substack_id: 197437573
   slug: hantavirus-in-the-korean-war-korean
   title: Korean Hemorrhagic Fever in the Korean War
