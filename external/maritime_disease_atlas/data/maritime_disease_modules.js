@@ -278,7 +278,7 @@ window.MARITIME_DISEASE_MODULES = {
       "source_id": "maritime-rediker-villains",
       "short_citation": "Rediker. Villains of All Nations. 2004.",
       "full_citation": "Marcus Rediker. Villains of All Nations: Atlantic Pirates in the Golden Age. Beacon Press, 2004.",
-      "url_or_doi": "https://www.beacon.org/Villains-of-All-Nations-P648.aspx",
+      "url_or_doi": "https://www.beacon.org/Villains-of-All-Nations-P2198.aspx",
       "source_type": "book"
     },
     {
