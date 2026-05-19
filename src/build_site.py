@@ -770,6 +770,29 @@ def post_seo_description(post: dict[str, Any]) -> str:
     )
 
 
+def normalize_overview_paragraph(value: Any) -> str:
+    return re.sub(r"\s+", " ", str(value or "")).strip()
+
+
+def post_overview_paragraphs(post: dict[str, Any]) -> list[str]:
+    candidates = [
+        post_seo_description(post),
+        post.get("excerpt") or post.get("search_excerpt") or "",
+    ]
+    paragraphs: list[str] = []
+    seen: set[str] = set()
+    for candidate in candidates:
+        paragraph = normalize_overview_paragraph(candidate)
+        if not paragraph:
+            continue
+        key = paragraph.casefold()
+        if key in seen:
+            continue
+        seen.add(key)
+        paragraphs.append(paragraph)
+    return paragraphs
+
+
 def post_indexing_strategy(post: dict[str, Any]) -> str:
     strategy = str(post.get("indexing_strategy") or "").strip()
     if strategy == "noindex_stub":
@@ -969,6 +992,9 @@ def render_post_page(post: dict[str, Any], atlases: dict[str, dict[str, Any]], p
         status_label = "Private archive"
     display_title = post_display_title(post)
     description = post_seo_description(post)
+    overview_paragraphs = "\n          ".join(
+        f"<p>{html.escape(paragraph)}</p>" for paragraph in post_overview_paragraphs(post)
+    )
     original_title = post.get("title") or ""
     cluster = post_topic_cluster(post)
     cluster_link = link_for(base_url, f"topics/{cluster}/")
@@ -1035,8 +1061,7 @@ def render_post_page(post: dict[str, Any], atlases: dict[str, dict[str, Any]], p
       <section class="panel detail-grid" id="overview">
         <div class="detail-block">
           <h3>Overview</h3>
-          <p>{html.escape(description)}</p>
-          <p>{html.escape(post.get('excerpt') or post.get('search_excerpt') or '')}</p>
+          {overview_paragraphs}
         </div>
       </section>
       <section class="panel detail-grid" id="read">

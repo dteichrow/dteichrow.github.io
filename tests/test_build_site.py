@@ -53,6 +53,24 @@ def test_transform_imported_html_rewrites_known_paths() -> None:
     assert "Expanding coverage" in transformed
 
 
+def test_render_post_page_deduplicates_overview_paragraphs() -> None:
+    post = {
+        "slug": "duplicate-overview",
+        "title": "Duplicate overview",
+        "date": "2026-05-19",
+        "canonical_url": "https://theedgeofepidemiology.substack.com/p/duplicate-overview",
+        "excerpt": "Same overview text.",
+        "seo_description": "Same overview text.",
+        "topics": [],
+        "related_atlases": [],
+    }
+
+    page_text = build_site.render_post_page(post, atlases={}, posts=[post], base_url="/")
+
+    assert page_text.count("<h3>Overview</h3>") == 1
+    assert page_text.count("<p>Same overview text.</p>") == 1
+
+
 def test_import_epidossier_public_imports_outbreak_terminal_routes(tmp_path, monkeypatch) -> None:
     source_docs = tmp_path / "source_docs"
     docs_dir = tmp_path / "docs"
