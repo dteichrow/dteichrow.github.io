@@ -21,6 +21,7 @@ FORBIDDEN_PUBLIC_PLACEHOLDERS = (
     "Curated pathogen history, transmission ecology, and evidence notes will appear here.",
     "Select a pathogen profile",
 )
+LEAFLET_194_CSS_SRI = "sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
 
 
 def load_json_assignment(path: Path, assignment_name: str) -> Any:
@@ -127,12 +128,31 @@ def validate_maritime_page(errors: list[str], project_root: Path, html: str) -> 
                 errors.append(f"maritime module list does not expose {module['id']}.{key}")
 
 
+def validate_revolutionary_war_page(errors: list[str], project_root: Path, html: str) -> None:
+    _ = project_root
+    css_link_match = re.search(
+        r'<link[^>]+href=["\']https://unpkg\.com/leaflet@1\.9\.4/dist/leaflet\.css["\'][^>]*>',
+        html,
+        flags=re.I,
+    )
+    if not css_link_match:
+        errors.append("revolutionary war atlas is missing the Leaflet CSS link")
+        return
+    css_link = css_link_match.group(0)
+    if f'integrity="{LEAFLET_194_CSS_SRI}"' not in css_link:
+        errors.append("revolutionary war atlas has an invalid Leaflet CSS integrity hash")
+    for required in ("Revolutionary War Atlas", "const EVENTS = [", "Battle of Camden", "Valley Forge Encampment"):
+        if required not in html:
+            errors.append(f"revolutionary war atlas does not expose expected content: {required!r}")
+
+
 def validate_built_pages(project_root: Path = PROJECT_ROOT, base_url: str | None = None) -> list[str]:
     errors: list[str] = []
     routes = {
         "tools/american-epidemic-timeline": validate_timeline_page,
         "atlases/pathogen": validate_pathogen_page,
         "atlases/maritime": validate_maritime_page,
+        "atlases/revolutionary-war": validate_revolutionary_war_page,
     }
     for route, validator in routes.items():
         try:
