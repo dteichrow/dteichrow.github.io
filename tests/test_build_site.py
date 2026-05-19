@@ -216,11 +216,17 @@ atlases:
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text("<html><body>Viking</body></html>")
 
+    def fake_import_external_revolutionary_war_atlas(target_docs: Path, base_url: str) -> None:
+        path = target_docs / "atlases" / "revolutionary-war" / "index.html"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text("<html><body>Revolutionary War atlas</body></html>")
+
     monkeypatch.setattr(build_site, "copy_static_assets", fake_copy_static_assets)
     monkeypatch.setattr(build_site, "import_epidossier_public", fake_import_epidossier_public)
     monkeypatch.setattr(build_site, "import_external_pathogen", fake_import_external_pathogen)
     monkeypatch.setattr(build_site, "import_external_maritime", fake_import_external_maritime)
     monkeypatch.setattr(build_site, "import_external_viking", fake_import_external_viking)
+    monkeypatch.setattr(build_site, "import_external_revolutionary_war_atlas", fake_import_external_revolutionary_war_atlas)
 
     result = build_site.build_site(docs_dir=docs_dir, base_url="/")
     assert result["posts"] == 1
@@ -232,6 +238,9 @@ atlases:
     assert (docs_dir / "topics" / "index.html").exists()
     assert (docs_dir / "topics" / "historical-epidemiology" / "index.html").exists()
     assert (docs_dir / "atlases" / "index.html").exists()
+    revolutionary_text = (docs_dir / "atlases" / "revolutionary-war" / "index.html").read_text()
+    assert "Revolutionary War atlas" in revolutionary_text
+    assert "Revolutionary War Disease Atlas | Edge of Epidemiology" in revolutionary_text
     assert (docs_dir / "historical" / "index.html").exists()
     assert (docs_dir / "opportunities" / "index.html").exists()
     assert (docs_dir / "app_exports" / "posts.json").exists()
@@ -476,6 +485,23 @@ def test_import_external_pathogen_writes_js_payload(tmp_path, monkeypatch) -> No
     assert "DOI citations are withheld" in data_text
     assert "official-geo-source" in data_text
     assert "yellow-fever-fixture-zone" in data_text
+
+
+def test_import_external_revolutionary_war_atlas_copies_bundle(tmp_path, monkeypatch) -> None:
+    project_root = tmp_path / "project"
+    src_root = project_root / "external" / "revolutionary_war_atlas"
+    docs_dir = tmp_path / "docs"
+    src_root.mkdir(parents=True)
+    (src_root / "index.html").write_text("<html><body>Revolutionary War Battle & Disease Atlas</body></html>")
+    (src_root / "assets").mkdir()
+    (src_root / "assets" / "fixture.txt").write_text("asset")
+
+    monkeypatch.setattr(build_site, "PROJECT_ROOT", project_root)
+    build_site.import_external_revolutionary_war_atlas(docs_dir, "/")
+
+    dest_root = docs_dir / "atlases" / "revolutionary-war"
+    assert (dest_root / "index.html").read_text() == "<html><body>Revolutionary War Battle & Disease Atlas</body></html>"
+    assert (dest_root / "assets" / "fixture.txt").read_text() == "asset"
 
 
 def test_pathogen_atlas_filters_do_not_fallback_to_all_entries() -> None:

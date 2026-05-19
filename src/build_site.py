@@ -2306,6 +2306,15 @@ def import_external_viking(docs_dir: Path, base_url: str) -> None:
     )
 
 
+def import_external_revolutionary_war_atlas(docs_dir: Path, base_url: str) -> None:
+    _ = base_url
+    src_root = PROJECT_ROOT / "external" / "revolutionary_war_atlas"
+    dest_root = docs_dir / "atlases" / "revolutionary-war"
+    if dest_root.exists():
+        shutil.rmtree(dest_root)
+    shutil.copytree(src_root, dest_root)
+
+
 def import_external_american_epidemic_timeline(docs_dir: Path, base_url: str) -> None:
     _ = base_url
     src_root = PROJECT_ROOT / "external" / "american_epidemic_timeline"
@@ -2466,6 +2475,9 @@ def seo_profile_for_route(route: str, html_text: str, post_by_route: dict[str, d
     elif route.startswith("atlases/viking"):
         title = "Viking Health Atlas | Edge of Epidemiology"
         description = "Interactive Viking health and disease atlas connecting settlement geography, archaeology, historical demography, and epidemic uncertainty."
+    elif route.startswith("atlases/revolutionary-war"):
+        title = "Revolutionary War Disease Atlas | Edge of Epidemiology"
+        description = "Interactive Revolutionary War disease atlas mapping battles, encampments, smallpox pressure, disease deaths, and the military geography of the American Revolution."
     elif route == "reference/":
         title = "Disease Reference Desk | Edge of Epidemiology"
         description = "Disease reference sheets connected to the live newsdesk, pathogen atlas, reporting caveats, transmission notes, and official background links."
@@ -2647,6 +2659,7 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
     import_external_pathogen(docs_dir, base_url)
     import_external_maritime(docs_dir, base_url)
     import_external_viking(docs_dir, base_url)
+    import_external_revolutionary_war_atlas(docs_dir, base_url)
     import_external_american_epidemic_timeline(docs_dir, base_url)
 
     posts = load_posts_manifest(CONTENT_DIR / "posts.yml")
@@ -2691,6 +2704,8 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
         if atlas_entry.get("atlas_id") == "maritime-disease-atlas":
             continue
         if atlas_entry.get("atlas_id") == "viking-health-atlas":
+            continue
+        if atlas_entry.get("atlas_id") == "revolutionary-war-atlas":
             continue
         path = docs_dir / atlas_entry["public_route"].strip("/") / "index.html"
         ensure_dir(path.parent)
