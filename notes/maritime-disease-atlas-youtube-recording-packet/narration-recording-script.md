@@ -1,6 +1,6 @@
 # Maritime Disease Atlas YouTube Narration Recording Script
 
-Target runtime: about 10:00. Final voice: Devin. Delivery: calm, exact, and unsentimental. Leave short rests between paragraphs so the edit can breathe over map movement.
+Target runtime: about 11:40, within the requested 10-12 minute window. Final voice: Devin. Delivery: calm, exact, and unsentimental. Leave short rests between paragraphs so the edit can breathe over map movement.
 
 ## Pronunciation And Caution Notes
 
@@ -8,6 +8,7 @@ Target runtime: about 10:00. Final voice: Devin. Delivery: calm, exact, and unse
 - Grosse Ile: gross EEL.
 - Aedes: AY-deez.
 - Yersinia pestis: yer-SIN-ee-uh PES-tis.
+- Follow the exhibit station order: Yellow Fever, Malaria, Scurvy, Flux, Typhoid, Ship Fever, Smallpox, Measles, Wounds + Sepsis, Middle Passage, Pirate Ports.
 - Do not overstate importation claims for yellow fever.
 - Do not assign exact disease proportions to Middle Passage mortality.
 - Do not describe pirate ports as disease origins.
@@ -15,100 +16,212 @@ Target runtime: about 10:00. Final voice: Devin. Delivery: calm, exact, and unse
 
 ## 0:00 - A ship was a moving disease ecology
 
-This is not a map of ships carrying diseases from one place to another.
+Start with the order of the exhibit itself.
 
-It is a map of ships as disease environments.
+The first thing the map asks us to see is not a ship as an arrow across water, but a ship inside a system of ports, provisions, bodies, air, waste, violence, and rules.
 
-A ship was a ration system, a waste system, an air system, a medical system, a labor system, and sometimes a machine of violence.
+That is the argument of the atlas: maritime disease history is not just importation.
 
-The important unit is not just the voyage. It is the whole machine: the port that supplied it, the people crowded into it, the cargo and water stored inside it, and the quarantine system waiting at the far end.
+It is ecology.
 
-Pacing: target 60 seconds (0:00-1:00). Let the map settle before moving on.
+Every station that follows changes the scale of the question.
 
-## 1:00 - Pirate ports as infrastructure
+First warm ports and vectors.
 
-The pirate network is a useful place to begin because it makes infrastructure visible.
+Then food, water, and diet.
 
-Nassau, Port Royal, Tortuga, and the Carolina coast were connected by ships, but also by repair, provisioning, recruitment, capture, resale, rumor, water, food, alcohol, wounds, sex, insects, and waiting.
+Then crowding and contact.
 
-Disease risk lived inside that same network. The point is not that pirates uniquely caused epidemics. The point is that ports were ecological machinery.
+Then wounds, forced movement, and pirate-port infrastructure.
 
-Quarantine belongs in that machinery too. Bills of health, lazarettos, guards, cargo controls, sanitary bans, and waiting periods made quarantine a maritime technology, not just a medical footnote.
+Pacing: target 45 seconds (0:00-0:45). Keep this beat in the same station order as the exhibit.
 
-The map should feel slow here because the argument is cumulative: ports are not dots. They are places where ships, people, documents, animals, insects, provisions, and fear all become organized.
+## 0:45 - Yellow fever: warm port ecology
 
-Pacing: target 85 seconds (1:00-2:25). Let the map settle before moving on.
+Yellow fever opens the exhibit because it makes port ecology unavoidable.
 
-## 2:25 - Warm ports and vector ecology
+Ships could connect Atlantic and Caribbean ports, but the route alone is not the cause.
 
-Yellow fever and malaria move the story to the warmer edge of the map, where port ecology and vector ecology overlap.
+Yellow fever needed warm conditions, susceptible people, human-mosquito-human transmission, stored water, and urban port environments where Aedes mosquitoes could live close to people.
 
-Ships moved people, cargo, and exposure, but the disease cycle still depended on local conditions: climate, stored water, mosquito habitat, labor, immunity, and the timing of arrival.
+So the map is not saying that one ship explains an epidemic.
 
-A route is not a magic line of causation. It is a way of seeing how local ecologies became connected.
+It is saying that shipping networks and local mosquito ecology could become one epidemiologic system.
 
-That distinction matters. A port could receive ships constantly and still need the right mosquito, the right season, the right water, and enough susceptible people for an epidemic pattern to become visible.
+That distinction is the whole point: maritime movement made exposure possible, but the port made transmission durable.
 
-The sea made contact possible. The port made transmission possible.
+Pacing: target 55 seconds (0:45-1:40). Keep this beat in the same station order as the exhibit.
 
-Pacing: target 95 seconds (2:25-4:00). Let the map settle before moving on.
+## 1:40 - Malaria: movement plus local mosquito ecology
 
-## 4:00 - Provisioning, water, and time
+Malaria pushes that lesson further.
 
-Then the map moves inward, into the ship.
+Maritime routes moved soldiers, workers, captives, sailors, and traders through mosquito ecologies, but malaria was never simply a line on the ocean.
 
-Scurvy is time made biological: a long voyage can turn diet into exposure.
+It depended on Anopheles mosquitoes, climate, water, land use, immunity, and repeated exposure.
 
-This is why maritime disease history cannot be only a history of microbes. Sometimes the lethal exposure was absence: no fresh citrus, no fresh vegetables, no reliable provisioning, no easy way to reverse the clock once a voyage stretched on.
+The sea connected places where those conditions could matter.
 
-Flux and typhoid belong to food and water systems: casks, storage, handling, drinking water, dirty hands, waste boundaries, and the galley.
+The map therefore separates movement from mechanism.
 
-The exposure route is not only across the ocean. It is through the barrel, the berth, and the hand.
+A ship can carry people into risk; it does not by itself create the parasite-vector-human cycle.
 
-And this is where the map needs time. The viewer should feel that disease risk is being assembled out of ordinary shipboard operations, not dropped onto the ship from outside.
+For historical epidemiology, that is a useful guardrail against too-clean origin stories.
 
-Pacing: target 120 seconds (4:00-6:00). Let the map settle before moving on.
+Pacing: target 50 seconds (1:40-2:30). Keep this beat in the same station order as the exhibit.
 
-## 6:00 - Crowding, clothing, bedding, and air
+## 2:30 - Scurvy: diet, time, and naval logistics
 
-Crowding changes the disease world again.
+Then the exhibit turns from warm ports to provisions.
 
-Ship fever, smallpox, and measles turn berths, clothing, bedding, ventilation, and quarantine into epidemiologic objects.
+Scurvy is the clean reminder that not every maritime disease story is infectious.
 
-Below deck is not just scenery. It is the architecture of transmission.
+A long voyage could turn time into exposure.
 
-For ship fever, the historical label often points toward typhus, lice, clothing, hygiene, and the brutal density of migrant transport, but the wording has to stay cautious because historical fever labels were not modern laboratory diagnoses.
+Preserved rations, weak provisioning, and the absence of fresh fruits and vegetables made deficiency biological.
 
-For smallpox and measles, susceptibility and contact matter differently, but the ship interior still does real epidemiologic work.
+Lind matters here, but not as a simple lone-genius story.
 
-And when the ship reached land, the exposure did not simply end. It entered quarantine stations, port inspections, hospitals, and politics.
+The deeper lesson is logistical.
 
-Pacing: target 115 seconds (6:00-7:55). Let the map settle before moving on.
+Knowledge, supply chains, discipline, storage, and naval administration had to line up before a nutritional mechanism became a reliable prevention system.
 
-## 7:55 - Violence and forced movement
+Pacing: target 55 seconds (2:30-3:25). Keep this beat in the same station order as the exhibit.
 
-Finally, maritime disease ecology cannot be separated from violence.
+## 3:25 - Flux and dysentery: water, waste, and broad historical labels
 
-Wounds, dirty tools, delayed care, and forced confinement make infection a social fact.
+Flux and dysentery move from absence to contamination.
 
-The Middle Passage is not an extreme example outside the system.
+Historical labels like flux are broad; they do not always map neatly onto modern pathogens.
 
-It is one of the clearest exposures of what maritime movement could become when commerce, coercion, captivity, dehydration, crowding, violence, and disease were fused.
+But the exposure system is clear enough to teach: water storage, waste disposal, dirty hands, shared utensils, spoiled food, heat, crowding, and limited privacy.
 
-The burden here should not be reduced to a generic disease-spread story. Total mortality, cause-specific diagnosis, starvation, dehydration, dysentery, smallpox, measles, heat, violence, and despair are not interchangeable claims.
+Below deck, the boundary between ordinary ship operation and enteric exposure could be thin.
 
-The slower cadence is part of the argument: this section needs room for restraint.
+The map should make that feel concrete.
 
-Pacing: target 95 seconds (7:55-9:30). Let the map settle before moving on.
+Disease risk was not only outside the ship, waiting at the next port.
 
-## 9:30 - Movement became ecology, policy, and memory
+It could be assembled inside the vessel by water, waste, food, and confinement.
+
+Pacing: target 55 seconds (3:25-4:20). Keep this beat in the same station order as the exhibit.
+
+## 4:20 - Typhoid: provisions as fecal-oral infrastructure
+
+Typhoid narrows the food-water lesson.
+
+Here the issue is fecal-oral infrastructure: carriers, contaminated hands, drinking water, storage, food handling, utensils, and the practical problem of keeping waste away from mouths in a crowded system.
+
+The U.S.
+
+public-health imagery used in the exhibit is not a claim that typhoid belongs only to ships.
+
+It is a way to show the mechanism clearly.
+
+On ships, the same basic logic could become maritime: provisions, handling, water, and sanitation turned routine labor into a transmission pathway.
+
+Pacing: target 55 seconds (4:20-5:15). Keep this beat in the same station order as the exhibit.
+
+## 5:15 - Ship fever: crowding, clothing, lice, and quarantine
+
+The next station is crowding.
+
+Ship fever is the phrase that makes the migrant ship and the quarantine station part of the same exposure system.
+
+In many nineteenth-century contexts the label points toward epidemic typhus: body lice, clothing, hygiene, cold, crowding, and exhaustion.
+
+But the phrase is historical, not a lab result, so the caution has to stay audible.
+
+What matters for the exhibit is the architecture: steerage, berths, delayed landing, dirty clothes, inspection, detention, and places like Grosse Ile where shipboard disease entered port-health infrastructure.
+
+Pacing: target 65 seconds (5:15-6:20). Keep this beat in the same station order as the exhibit.
+
+## 6:20 - Smallpox: bedding, susceptibility, and maritime isolation
+
+Smallpox shifts the crowding section from lice and clothing toward susceptibility, contact, bedding, and isolation.
+
+The exhibit is not trying to solve the deep origin of variola virus here.
+
+That belongs to a different evidentiary problem.
+
+The maritime question is more practical: how did a human-only pathogen move through ships, passengers, linens, port inspection, isolation hulks, vaccination, and quarantine systems? Smallpox is useful because it shows the ship as a contact environment and the port as a sorting environment.
+
+Pacing: target 55 seconds (6:20-7:15). Keep this beat in the same station order as the exhibit.
+
+## 7:15 - Measles: air, susceptibility, and closed-vessel comparison
+
+Measles closes the crowding station by making air and susceptibility visible.
+
+A confined vessel is not automatically an outbreak, but respiratory transmission changes what close quarters mean.
+
+Duration, ventilation, immune history, passenger turnover, and shared indoor air all matter.
+
+This is also why modern closed-vessel examples can help without being projected backward too aggressively.
+
+They remind us that the ship is not just transportation.
+
+It is an indoor environment moving through administrative and ecological systems.
+
+Pacing: target 50 seconds (7:15-8:05). Keep this beat in the same station order as the exhibit.
+
+## 8:05 - Wounds and sepsis: violence made biological
+
+The final station group begins with wounds and sepsis because maritime disease ecology was also made by violence and labor.
+
+Splinters, blades, burns, falls, punishment, battle, dental injury, dirty dressings, delayed care, and shared bedding could turn trauma into infection.
+
+Sepsis is a modern clinical category, so we should not pretend every historical fever after injury was diagnosed that way.
+
+But the mechanism is real: injury plus microbes plus constrained care.
+
+On ships, wounds were never only surgical events.
+
+They were social and environmental events.
+
+Pacing: target 55 seconds (8:05-9:00). Keep this beat in the same station order as the exhibit.
+
+## 9:00 - Middle Passage: forced movement as disease ecology
+
+The Middle Passage has to be handled with discipline.
+
+It is not a generic disease-spread story, and it is not a place to invent cause-specific proportions.
+
+The stronger claim is more devastating: forced transport made mortality through a whole coercive ecology.
+
+Crowding, heat, dehydration, malnutrition, dysentery, smallpox, measles, nonspecific fever, violence, despair, and the commercial logic of captivity were not separable background details.
+
+SlaveVoyages can support voyage-level mortality analysis, but exact disease attribution is much thinner.
+
+So the narration should keep the evidence limit visible while still naming the human burden plainly.
+
+Pacing: target 75 seconds (9:00-10:15). Keep this beat in the same station order as the exhibit.
+
+## 10:15 - Pirate ports: infrastructure at the end of the exhibit line
+
+The exhibit ends with pirate ports, not because pirates are the main cause of maritime disease, but because the pirate network makes infrastructure visible in one frame.
+
+Nassau, Port Royal, Tortuga, Cape Fear, and other Atlantic nodes connected repair, recruitment, stolen goods, provisioning, water, alcohol, wounds, sex, insects, rumor, and naval suppression.
+
+Quarantine also belongs here: bills of health, lazarettos, guards, cargo controls, sanitary bans, and waiting periods.
+
+The point is not pirate exceptionalism.
+
+The point is that ports were machines for organizing movement, risk, profit, fear, and regulation.
+
+Pacing: target 65 seconds (10:15-11:20). Keep this beat in the same station order as the exhibit.
+
+## 11:20 - Movement became ecology, policy, and memory
+
+Read in exhibit order, the map moves from vectors to provisions, from crowding to coercion, and finally to ports as infrastructure.
 
 The sea did not merely connect outbreaks.
 
-It made disease ecological, political, and visible.
+It made disease ecological, political, logistical, and visible in sources.
 
-It turned food, water, air, labor, quarantine, violence, and waiting into public-health history.
+The full cited exhibit is linked below.
 
-The full cited exhibit is linked below. The map is not the answer. It is the reading surface.
+The map is not the answer.
 
-Pacing: target 30 seconds (9:30-10:00). Let the map settle before moving on.
+It is the reading surface.
+
+Pacing: target 20 seconds (11:20-11:40). Keep this beat in the same station order as the exhibit.

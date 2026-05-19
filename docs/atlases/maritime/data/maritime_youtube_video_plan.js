@@ -1,21 +1,20 @@
 window.MARITIME_YOUTUBE_VIDEO_PLAN = {
   "schema_version": "1.0.0",
-  "generated_at": "2026-05-18",
+  "generated_at": "2026-05-19",
   "title": "Ships Were Disease Ecologies",
   "subtitle": "A YouTube guided tour of the Maritime Disease Ecology Atlas",
   "canonical_exhibit_path": "/atlases/maritime/",
-  "runtime_target_seconds": 600,
-  "capture_entrypoint": "index.html?youtube=1&tour=1&pace=2.05",
+  "runtime_target_seconds": 700,
+  "capture_entrypoint": "index.html?youtube=1&tour=1&pace=2.3",
   "voice_plan": {
     "final_voice": "Devin",
     "scratch_voice": "AI voice may be used only for scratch timing and edit rhythm.",
-    "delivery": "Essayistic historical epidemiology: calm, exact, unsentimental, and paced for a 10-minute guided tour.",
+    "delivery": "Essayistic historical epidemiology: calm, exact, unsentimental, and paced for an 11-minute guided tour inside a 10-12 minute target window.",
     "sound": "Optional low atmosphere only. No pitched tones, music stingers, or literal pirate sound effects."
   },
   "playback": {
-    "default_query": "?youtube=1&tour=1&pace=2.05",
+    "default_query": "?youtube=1&tour=1&pace=2.3",
     "scenario_order": [
-      "pirate_network",
       "yellow_fever",
       "malaria",
       "scurvy",
@@ -25,47 +24,245 @@ window.MARITIME_YOUTUBE_VIDEO_PLAN = {
       "smallpox",
       "measles",
       "wounds_sepsis",
-      "middle_passage"
+      "middle_passage",
+      "pirate_network"
     ],
     "capture_notes": [
-      "Use the full-tour URL for a continuous scratch capture.",
+      "Use the full-tour URL for a continuous scratch capture in the same station order as the public exhibit.",
       "Use shot-level URLs when replacing one section with a tighter take.",
       "Keep atmosphere off for narration-first edits unless a quiet bed helps pacing.",
       "The public exhibit remains the source and credits surface; the YouTube description should link back to it."
     ],
-    "default_pace": 2.05,
-    "target_runtime_seconds": 600,
+    "default_pace": 2.3,
+    "target_runtime_seconds": 700,
     "cadence_notes": [
-      "The full YouTube tour is timed for about 10 minutes at pace=2.05.",
+      "The full YouTube tour is timed for about 11:40 at pace=2.3, inside the requested 10-12 minute range.",
+      "The scenario order must follow the exhibit station bar: vector/port, provisions, crowding, coercion/piracy.",
       "Hold route and point scenes long enough for narration before advancing.",
       "Use pauses as part of the exhibit rhythm; do not rush through source caveats.",
-      "Shot replacement captures should keep pace=2.05 unless intentionally retiming a single section."
+      "Shot replacement captures should keep pace=2.3 unless intentionally retiming a single section."
     ]
   },
   "chapters": [
     {
-      "id": "cold_open",
+      "id": "intro",
       "title": "A ship was a moving disease ecology",
       "start_time": "0:00",
-      "duration_seconds": 60,
+      "duration_seconds": 45,
       "scenarios": [
-        "pirate_network"
+        "yellow_fever"
       ],
       "module_ids": [
-        "pirate_ports_caribbean_network"
+        "yellow_fever_atlantic_ports_1793"
       ],
       "source_ids": [
         "maritime-rediker-between-devil",
-        "maritime-rediker-villains"
+        "yellow-history"
       ],
-      "narration_job": "Replace the simple idea of ships carrying disease with the richer idea of ships making disease ecologies. Keep the on-screen cadence slow enough for the 10-minute narration track.",
-      "uncertainty_note": "This is interpretive framing drawn from maritime social history; it is not a claim that pirates or ships alone caused epidemics."
+      "narration_job": "Open in the exhibit order, using the first vector/port station as the visual anchor while defining the central frame: ships as disease ecologies, not simple carriers.",
+      "uncertainty_note": "This is interpretive synthesis; it should not claim that ships alone caused epidemics."
     },
     {
-      "id": "pirate_infrastructure",
-      "title": "Pirate ports as infrastructure",
-      "start_time": "1:00",
-      "duration_seconds": 85,
+      "id": "yellow_fever",
+      "title": "Yellow fever: warm port ecology",
+      "start_time": "0:45",
+      "duration_seconds": 55,
+      "scenarios": [
+        "yellow_fever"
+      ],
+      "module_ids": [
+        "yellow_fever_atlantic_ports_1793"
+      ],
+      "source_ids": [
+        "yellow-history",
+        "yellow-fever-who",
+        "cdc-yellow-fever-spread",
+        "nlm-yellow-fever-primary"
+      ],
+      "narration_job": "Follow the first exhibit station. Explain yellow fever as a port-and-vector ecology without inventing a single ship import route.",
+      "uncertainty_note": "The vector mechanism is strong; specific eighteenth-century import chains require case-level evidence."
+    },
+    {
+      "id": "malaria",
+      "title": "Malaria: movement plus local mosquito ecology",
+      "start_time": "1:40",
+      "duration_seconds": 50,
+      "scenarios": [
+        "malaria"
+      ],
+      "module_ids": [],
+      "source_ids": [
+        "malaria-who",
+        "malaria-carter",
+        "malaria-mordecai"
+      ],
+      "narration_job": "Use malaria to sharpen the distinction between maritime movement and local ecological transmission.",
+      "uncertainty_note": "This is route ecology, not a clean origin or single-voyage claim."
+    },
+    {
+      "id": "scurvy",
+      "title": "Scurvy: diet, time, and naval logistics",
+      "start_time": "2:30",
+      "duration_seconds": 55,
+      "scenarios": [
+        "scurvy"
+      ],
+      "module_ids": [
+        "scurvy_long_voyage_navy"
+      ],
+      "source_ids": [
+        "maritime-lind-scurvy-treatise",
+        "maritime-carpenter-scurvy-vitamin-c",
+        "maritime-james-lind-library-scurvy"
+      ],
+      "narration_job": "Start the provisions station with the clean noninfectious case: nutritional deficiency as maritime exposure.",
+      "uncertainty_note": "The deficiency mechanism is high confidence; voyage-specific mortality rates need ship-level sources."
+    },
+    {
+      "id": "flux",
+      "title": "Flux and dysentery: water, waste, and broad historical labels",
+      "start_time": "3:25",
+      "duration_seconds": 55,
+      "scenarios": [
+        "flux"
+      ],
+      "module_ids": [
+        "flux_dysentery_shipboard_water_waste",
+        "cholera_steamship_quarantine_1892",
+        "cruise_ship_norovirus_modern"
+      ],
+      "source_ids": [
+        "shigella-cdc",
+        "cdc-drinking-water",
+        "curtin-epidemiology-slave-trade",
+        "cholera-who",
+        "noro-cdc"
+      ],
+      "narration_job": "Move from absence of nutrients to contamination systems: casks, hands, waste boundaries, and historically broad diarrheal labels.",
+      "uncertainty_note": "Flux/dysentery are not one diagnosis; pathogen-specific claims require source-backed cases."
+    },
+    {
+      "id": "typhoid",
+      "title": "Typhoid: provisions as fecal-oral infrastructure",
+      "start_time": "4:20",
+      "duration_seconds": 55,
+      "scenarios": [
+        "typhoid"
+      ],
+      "module_ids": [
+        "typhoid_provisions_food_water"
+      ],
+      "source_ids": [
+        "typhoid-cdc-yellowbook",
+        "typhoid-who",
+        "cdc-drinking-water"
+      ],
+      "narration_job": "Finish the provisions station by making food-water transmission legible through storage, handling, carriers, and drinking water.",
+      "uncertainty_note": "The biomedical mechanism is strong; historical fever labels aboard ships can be nonspecific."
+    },
+    {
+      "id": "ship_fever",
+      "title": "Ship fever: crowding, clothing, lice, and quarantine",
+      "start_time": "5:15",
+      "duration_seconds": 65,
+      "scenarios": [
+        "ship_fever"
+      ],
+      "module_ids": [
+        "ship_fever_grosse_ile_1847",
+        "ellis_island_medical_inspection"
+      ],
+      "source_ids": [
+        "maritime-parks-canada-grosse-ile",
+        "epidemic-typhus-cdc",
+        "typhus-cdc-clinical",
+        "maritime-nps-ellis-doctors"
+      ],
+      "narration_job": "Open the crowding station by connecting the migrant ship to quarantine stations and inspection infrastructure.",
+      "uncertainty_note": "Ship fever often points toward typhus in this setting, but historical fever terminology is not always pathogen-specific."
+    },
+    {
+      "id": "smallpox",
+      "title": "Smallpox: bedding, susceptibility, and maritime isolation",
+      "start_time": "6:20",
+      "duration_seconds": 55,
+      "scenarios": [
+        "smallpox"
+      ],
+      "module_ids": [
+        "smallpox_maritime_isolation_hulks"
+      ],
+      "source_ids": [
+        "smallpox-cdc",
+        "smallpox-who",
+        "smallpox-origin-babkin",
+        "who-smallpox-eradication"
+      ],
+      "narration_job": "Keep smallpox focused on maritime transmission and quarantine context, not deep origin history.",
+      "uncertainty_note": "Transmission and quarantine claims are stronger here than retrospective origin claims."
+    },
+    {
+      "id": "measles",
+      "title": "Measles: air, susceptibility, and closed-vessel comparison",
+      "start_time": "7:15",
+      "duration_seconds": 50,
+      "scenarios": [
+        "measles"
+      ],
+      "module_ids": [
+        "cruise_ship_covid_2020"
+      ],
+      "source_ids": [
+        "measles-who",
+        "measles-science",
+        "measles-lancet",
+        "maritime-cdc-cruise-covid-2020"
+      ],
+      "narration_job": "Use measles to close the crowding station with respiratory transmission and susceptibility in confined spaces.",
+      "uncertainty_note": "Do not turn this into a full measles history; it is here to teach respiratory crowding."
+    },
+    {
+      "id": "wounds_sepsis",
+      "title": "Wounds and sepsis: violence made biological",
+      "start_time": "8:05",
+      "duration_seconds": 55,
+      "scenarios": [
+        "wounds_sepsis"
+      ],
+      "module_ids": [
+        "wounds_sepsis_shipboard_trauma"
+      ],
+      "source_ids": [
+        "maritime-rediker-between-devil",
+        "cdc-sepsis-about"
+      ],
+      "narration_job": "Begin the coercion/piracy station with trauma, dirty dressings, delayed care, and the limits of retrospective diagnosis.",
+      "uncertainty_note": "Sepsis is a modern clinical framing; historical sources often describe wounds, fever, gangrene, or death rather than sepsis."
+    },
+    {
+      "id": "middle_passage",
+      "title": "Middle Passage: forced movement as disease ecology",
+      "start_time": "9:00",
+      "duration_seconds": 75,
+      "scenarios": [
+        "middle_passage"
+      ],
+      "module_ids": [
+        "middle_passage_forced_transport"
+      ],
+      "source_ids": [
+        "slavevoyages-methodology",
+        "eltis-richardson-atlas-transatlantic-slave-trade",
+        "curtin-epidemiology-slave-trade"
+      ],
+      "narration_job": "Treat forced confinement, dehydration, heat, crowding, violence, and infection as one coercive ecology while preserving evidence limits.",
+      "uncertainty_note": "Total mortality and voyage conditions are stronger than precise cause-specific disease proportions."
+    },
+    {
+      "id": "pirate_ports",
+      "title": "Pirate ports: infrastructure at the end of the exhibit line",
+      "start_time": "10:15",
+      "duration_seconds": 65,
       "scenarios": [
         "pirate_network"
       ],
@@ -83,227 +280,72 @@ window.MARITIME_YOUTUBE_VIDEO_PLAN = {
         "maritime-delange-algiers-sanitary-ban-1818",
         "maritime-ini-quarantine-geographies-2023"
       ],
-      "narration_job": "Use Nassau, Port Royal, Tortuga, and coastal nodes to show how maritime disease risk lived inside provisioning, labor, repair, capture, trade, and port regulation. Keep the on-screen cadence slow enough for the 10-minute narration track.",
-      "uncertainty_note": "Pirate ports are used as a network model, not as documented disease-origin points."
-    },
-    {
-      "id": "vector_ecology",
-      "title": "Warm ports and vector ecology",
-      "start_time": "2:25",
-      "duration_seconds": 95,
-      "scenarios": [
-        "yellow_fever",
-        "malaria"
-      ],
-      "module_ids": [
-        "yellow_fever_atlantic_ports_1793"
-      ],
-      "source_ids": [
-        "yellow-history",
-        "yellow-fever-who",
-        "cdc-yellow-fever-spread",
-        "malaria-who",
-        "malaria-carter",
-        "malaria-mordecai"
-      ],
-      "narration_job": "Explain yellow fever and malaria as port and vector ecologies shaped by warm climates, water, labor, immunity, and travel. Keep the on-screen cadence slow enough for the 10-minute narration track.",
-      "uncertainty_note": "The video should avoid claiming a single ship route as the origin of an epidemic unless the exhibit marks it as documented."
-    },
-    {
-      "id": "provisions_ecology",
-      "title": "Provisioning, water, and time",
-      "start_time": "4:00",
-      "duration_seconds": 120,
-      "scenarios": [
-        "scurvy",
-        "flux",
-        "typhoid"
-      ],
-      "module_ids": [
-        "scurvy_long_voyage_navy",
-        "flux_dysentery_shipboard_water_waste",
-        "typhoid_provisions_food_water",
-        "cholera_steamship_quarantine_1892",
-        "cruise_ship_norovirus_modern"
-      ],
-      "source_ids": [
-        "maritime-lind-scurvy-treatise",
-        "maritime-carpenter-scurvy-vitamin-c",
-        "shigella-cdc",
-        "cdc-drinking-water",
-        "typhoid-cdc-yellowbook",
-        "typhoid-who",
-        "cholera-who",
-        "noro-cdc"
-      ],
-      "narration_job": "Move from the port into the ship: casks, hands, food handling, waste, spoiled provisions, and vitamin deficiency. Keep the on-screen cadence slow enough for the 10-minute narration track.",
-      "uncertainty_note": "Flux and dysentery are historically broad labels; the narration should not force every case into one pathogen."
-    },
-    {
-      "id": "crowding_contact",
-      "title": "Crowding, clothing, bedding, and air",
-      "start_time": "6:00",
-      "duration_seconds": 115,
-      "scenarios": [
-        "ship_fever",
-        "smallpox",
-        "measles"
-      ],
-      "module_ids": [
-        "ship_fever_grosse_ile_1847",
-        "smallpox_maritime_isolation_hulks",
-        "ellis_island_medical_inspection",
-        "cruise_ship_covid_2020"
-      ],
-      "source_ids": [
-        "maritime-parks-canada-grosse-ile",
-        "epidemic-typhus-cdc",
-        "typhus-cdc-clinical",
-        "smallpox-cdc",
-        "smallpox-who",
-        "measles-who",
-        "measles-science",
-        "maritime-nps-ellis-doctors",
-        "maritime-cdc-cruise-covid-2020"
-      ],
-      "narration_job": "Make the ship interior legible as an epidemiologic architecture: berths, clothes, bedding, ventilation, isolation, and arrival inspection. Keep the on-screen cadence slow enough for the 10-minute narration track.",
-      "uncertainty_note": "Historical labels such as ship fever are not automatically pathogen-specific without source support."
-    },
-    {
-      "id": "violence_coercion",
-      "title": "Violence and forced movement",
-      "start_time": "7:55",
-      "duration_seconds": 95,
-      "scenarios": [
-        "wounds_sepsis",
-        "middle_passage"
-      ],
-      "module_ids": [
-        "wounds_sepsis_shipboard_trauma",
-        "middle_passage_forced_transport"
-      ],
-      "source_ids": [
-        "maritime-rediker-between-devil",
-        "cdc-sepsis-about",
-        "slavevoyages-methodology",
-        "eltis-richardson-atlas-transatlantic-slave-trade",
-        "curtin-epidemiology-slave-trade"
-      ],
-      "narration_job": "Treat wounds, dirty tools, delayed care, captivity, dehydration, crowding, violence, and coercion as disease ecology rather than background texture. Keep the on-screen cadence slow enough for the 10-minute narration track.",
-      "uncertainty_note": "Do not collapse Middle Passage mortality into a single disease story; documented mortality and cause-specific diagnosis are separate questions."
+      "narration_job": "End the exhibit sequence with the pirate-network station as a synthesis of ports, repair, provisioning, capture, quarantine, and regulation.",
+      "uncertainty_note": "Pirate ports are a network and exposure model, not documented disease-origin points."
     },
     {
       "id": "close",
       "title": "Movement became ecology, policy, and memory",
-      "start_time": "9:30",
-      "duration_seconds": 30,
+      "start_time": "11:20",
+      "duration_seconds": 20,
       "scenarios": [
-        "pirate_network",
         "yellow_fever",
+        "malaria",
         "scurvy",
+        "flux",
+        "typhoid",
         "ship_fever",
-        "middle_passage"
+        "smallpox",
+        "measles",
+        "wounds_sepsis",
+        "middle_passage",
+        "pirate_network"
       ],
       "module_ids": [
-        "pirate_ports_caribbean_network",
         "yellow_fever_atlantic_ports_1793",
         "scurvy_long_voyage_navy",
         "ship_fever_grosse_ile_1847",
-        "middle_passage_forced_transport"
+        "middle_passage_forced_transport",
+        "pirate_ports_caribbean_network"
       ],
       "source_ids": [
-        "maritime-rediker-between-devil",
         "yellow-history",
         "maritime-lind-scurvy-treatise",
         "maritime-parks-canada-grosse-ile",
-        "slavevoyages-methodology"
+        "slavevoyages-methodology",
+        "maritime-rediker-between-devil"
       ],
-      "narration_job": "Close by returning to the map: the sea connected local exposures to policy, panic, profit, quarantine, and historical memory. Keep the on-screen cadence slow enough for the 10-minute narration track.",
-      "uncertainty_note": "This is synthesis. Keep the wording ecological and political rather than monocausal."
+      "narration_job": "Close on the exhibit sequence as a reading surface: vector ports, provisions, crowding, coercion, and port networks.",
+      "uncertainty_note": "Closing synthesis should remain ecological and political rather than monocausal."
     }
   ],
   "shots": [
     {
-      "id": "s01_cold_map",
-      "chapter_id": "cold_open",
-      "duration_seconds": 34,
-      "capture_url": "index.html?youtube=1&scenario=pirate_network&pace=2.05",
-      "scenario_id": "pirate_network",
-      "visual_beat": "Start on the map and let the first pirate-network route establish ships, ports, and movement.",
-      "narration_beat": "This is not a map of ships carrying diseases from one place to another. It is a map of ships as disease environments.",
-      "edit_notes": "Use a slow fade in from black. Keep the map readable; do not cover it with a full-screen plate until the route is legible.",
-      "module_ids": [
-        "pirate_ports_caribbean_network"
-      ],
-      "source_ids": [
-        "maritime-rediker-between-devil",
-        "maritime-rediker-villains"
-      ]
-    },
-    {
-      "id": "s02_cold_plate",
-      "chapter_id": "cold_open",
-      "duration_seconds": 26,
-      "capture_url": "index.html?youtube=1&scenario=pirate_network&pace=2.05",
-      "scenario_id": "pirate_network",
-      "visual_beat": "Use the Ken Burns archival pirate plate as texture, then return to the map before the next chapter.",
-      "narration_beat": "A ship was a food system, a waste system, a medical system, a labor system, and sometimes a machine of violence.",
-      "edit_notes": "Let the archival image breathe, but cut back to map before the viewer loses geographic orientation.",
-      "module_ids": [
-        "pirate_ports_caribbean_network"
-      ],
-      "source_ids": [
-        "maritime-rediker-between-devil",
-        "maritime-rediker-villains"
-      ]
-    },
-    {
-      "id": "s03_pirate_ports",
-      "chapter_id": "pirate_infrastructure",
-      "duration_seconds": 43,
-      "capture_url": "index.html?youtube=1&scenario=pirate_network&pace=2.05",
-      "scenario_id": "pirate_network",
-      "visual_beat": "Move through Nassau, Port Royal, Tortuga, and Cape Fear as infrastructure nodes.",
-      "narration_beat": "Pirate ports are a useful opening because they make infrastructure visible: food, repair, recruitment, capture, resale, information, and waiting.",
-      "edit_notes": "Avoid comic pirate tone. The frame is infrastructure and exposure, not adventure.",
-      "module_ids": [
-        "pirate_ports_caribbean_network"
-      ],
-      "source_ids": [
-        "maritime-rediker-between-devil",
-        "maritime-rediker-villains"
-      ]
-    },
-    {
-      "id": "s04_quarantine_infrastructure",
-      "chapter_id": "pirate_infrastructure",
-      "duration_seconds": 42,
-      "capture_url": "index.html?youtube=1&scenario=pirate_network&pace=2.05",
-      "scenario_id": "pirate_network",
-      "visual_beat": "Use the quarantine/lazaretto material to shift from network romance to public-health infrastructure.",
-      "narration_beat": "Quarantine was not a footnote. It was a maritime technology: documents, guards, isolation, cargo, time, and political conflict.",
-      "edit_notes": "This is a good place for a citation-visible screenshot or quick lower-third credit if the edit needs one.",
-      "module_ids": [
-        "mediterranean_plague_lazarettos",
-        "algiers_plague_sanitary_ban_1818"
-      ],
-      "source_ids": [
-        "maritime-booker-quarantine-2007",
-        "maritime-tognotti-quarantine-2013",
-        "maritime-crawshaw-plague-hospitals",
-        "maritime-delange-algiers-sanitary-ban-1818",
-        "maritime-ini-quarantine-geographies-2023"
-      ]
-    },
-    {
-      "id": "s05_yellow_fever",
-      "chapter_id": "vector_ecology",
-      "duration_seconds": 48,
-      "capture_url": "index.html?youtube=1&scenario=yellow_fever&pace=2.05",
+      "id": "s01_intro",
+      "chapter_id": "intro",
+      "duration_seconds": 45,
+      "capture_url": "index.html?youtube=1&scenario=yellow_fever&pace=2.3",
       "scenario_id": "yellow_fever",
-      "visual_beat": "Follow the Atlantic port route and warm-port visual plates.",
-      "narration_beat": "Yellow fever shows why a port city is also an ecology: water storage, heat, mosquitoes, labor, immunity, and ships all matter.",
-      "edit_notes": "Avoid implying that every outbreak was simply imported by one ship.",
+      "visual_beat": "Open on the Yellow Fever station rather than the pirate network so the video begins in the same station order as the exhibit.",
+      "narration_beat": "Start with the order of the exhibit itself.",
+      "edit_notes": "Keep this shot in exhibit station order; use single-scenario retakes only to improve readability, not to reorder the argument.",
+      "module_ids": [
+        "yellow_fever_atlantic_ports_1793"
+      ],
+      "source_ids": [
+        "maritime-rediker-between-devil",
+        "yellow-history"
+      ]
+    },
+    {
+      "id": "s02_yellow_fever",
+      "chapter_id": "yellow_fever",
+      "duration_seconds": 55,
+      "capture_url": "index.html?youtube=1&scenario=yellow_fever&pace=2.3",
+      "scenario_id": "yellow_fever",
+      "visual_beat": "Follow the Atlantic warm-port route and archival yellow-fever material while keeping the route confidence visible.",
+      "narration_beat": "Yellow fever opens the exhibit because it makes port ecology unavoidable.",
+      "edit_notes": "Keep this shot in exhibit station order; use single-scenario retakes only to improve readability, not to reorder the argument.",
       "module_ids": [
         "yellow_fever_atlantic_ports_1793"
       ],
@@ -315,14 +357,14 @@ window.MARITIME_YOUTUBE_VIDEO_PLAN = {
       ]
     },
     {
-      "id": "s06_malaria",
-      "chapter_id": "vector_ecology",
-      "duration_seconds": 47,
-      "capture_url": "index.html?youtube=1&scenario=malaria&pace=2.05",
+      "id": "s03_malaria",
+      "chapter_id": "malaria",
+      "duration_seconds": 50,
+      "capture_url": "index.html?youtube=1&scenario=malaria&pace=2.3",
       "scenario_id": "malaria",
-      "visual_beat": "Use the tropical route ecology to show that vector transmission depends on local ecological conditions.",
-      "narration_beat": "Malaria pushes the same lesson harder: movement matters, but transmission still depends on mosquito ecology, climate, and local exposure.",
-      "edit_notes": "Keep origin language conservative. This is about route ecology, not a clean birthplace story.",
+      "visual_beat": "Shift to malaria ecology and mosquito habitat without implying a clean maritime birthplace.",
+      "narration_beat": "Malaria pushes that lesson further.",
+      "edit_notes": "Keep this shot in exhibit station order; use single-scenario retakes only to improve readability, not to reorder the argument.",
       "module_ids": [],
       "source_ids": [
         "malaria-who",
@@ -331,14 +373,14 @@ window.MARITIME_YOUTUBE_VIDEO_PLAN = {
       ]
     },
     {
-      "id": "s07_scurvy",
-      "chapter_id": "provisions_ecology",
-      "duration_seconds": 42,
-      "capture_url": "index.html?youtube=1&scenario=scurvy&pace=2.05",
+      "id": "s04_scurvy",
+      "chapter_id": "scurvy",
+      "duration_seconds": 55,
+      "capture_url": "index.html?youtube=1&scenario=scurvy&pace=2.3",
       "scenario_id": "scurvy",
-      "visual_beat": "Let the scurvy route and Lind/provisioning imagery establish time, diet, and naval logistics.",
-      "narration_beat": "Scurvy is time made biological. The longer the voyage moved away from fresh provisioning, the more diet became exposure.",
-      "edit_notes": "This is the cleanest moment to say not every maritime disease story is infection.",
+      "visual_beat": "Use scurvy route movement, provisioning imagery, and Lind material to mark the turn inward to diet and time.",
+      "narration_beat": "Then the exhibit turns from warm ports to provisions.",
+      "edit_notes": "Keep this shot in exhibit station order; use single-scenario retakes only to improve readability, not to reorder the argument.",
       "module_ids": [
         "scurvy_long_voyage_navy"
       ],
@@ -349,14 +391,14 @@ window.MARITIME_YOUTUBE_VIDEO_PLAN = {
       ]
     },
     {
-      "id": "s08_flux",
-      "chapter_id": "provisions_ecology",
-      "duration_seconds": 43,
-      "capture_url": "index.html?youtube=1&scenario=flux&pace=2.05",
+      "id": "s05_flux",
+      "chapter_id": "flux",
+      "duration_seconds": 55,
+      "capture_url": "index.html?youtube=1&scenario=flux&pace=2.3",
       "scenario_id": "flux",
-      "visual_beat": "Move into water, waste, shared utensils, and dirty boundaries below deck.",
-      "narration_beat": "Flux and dysentery belong to water, waste, hands, food, storage, and confinement. Historical labels are often broader than modern diagnoses.",
-      "edit_notes": "Use careful wording: broad syndrome first, possible agents second.",
+      "visual_beat": "Show water, waste, galley, and below-deck contamination cues; keep historical diagnostic breadth visible.",
+      "narration_beat": "Flux and dysentery move from absence to contamination.",
+      "edit_notes": "Keep this shot in exhibit station order; use single-scenario retakes only to improve readability, not to reorder the argument.",
       "module_ids": [
         "flux_dysentery_shipboard_water_waste",
         "cholera_steamship_quarantine_1892",
@@ -371,14 +413,14 @@ window.MARITIME_YOUTUBE_VIDEO_PLAN = {
       ]
     },
     {
-      "id": "s09_typhoid",
-      "chapter_id": "provisions_ecology",
-      "duration_seconds": 35,
-      "capture_url": "index.html?youtube=1&scenario=typhoid&pace=2.05",
+      "id": "s06_typhoid",
+      "chapter_id": "typhoid",
+      "duration_seconds": 55,
+      "capture_url": "index.html?youtube=1&scenario=typhoid&pace=2.3",
       "scenario_id": "typhoid",
-      "visual_beat": "Use the food-water plate and map route only when it supports the provision ecology argument.",
-      "narration_beat": "Typhoid makes provisions epidemiologic: carriers, fecal contamination, handling, storage, and drinking water turn ordinary ship work into exposure.",
-      "edit_notes": "If the U.S. typhoid map appears, frame it as food-water ecology, not as a maritime route claim.",
+      "visual_beat": "Use the food-water/provisions visual layer; frame any U.S. typhoid imagery as mechanism evidence, not a maritime route.",
+      "narration_beat": "Typhoid narrows the food-water lesson.",
+      "edit_notes": "Keep this shot in exhibit station order; use single-scenario retakes only to improve readability, not to reorder the argument.",
       "module_ids": [
         "typhoid_provisions_food_water"
       ],
@@ -389,14 +431,14 @@ window.MARITIME_YOUTUBE_VIDEO_PLAN = {
       ]
     },
     {
-      "id": "s10_ship_fever",
-      "chapter_id": "crowding_contact",
-      "duration_seconds": 40,
-      "capture_url": "index.html?youtube=1&scenario=ship_fever&pace=2.05",
+      "id": "s07_ship_fever",
+      "chapter_id": "ship_fever",
+      "duration_seconds": 65,
+      "capture_url": "index.html?youtube=1&scenario=ship_fever&pace=2.3",
       "scenario_id": "ship_fever",
-      "visual_beat": "Use steerage and Grosse Ile material to show ship and quarantine station as a connected exposure system.",
-      "narration_beat": "Ship fever makes clothing, lice, hygiene, crowding, delayed landing, and quarantine part of the same disease ecology.",
-      "edit_notes": "Do not overuse the single passengers-on-ship image; lean on the newer plate variety.",
+      "visual_beat": "Use steerage and Grosse Ile material to connect shipboard crowding to quarantine infrastructure.",
+      "narration_beat": "The next station is crowding.",
+      "edit_notes": "Keep this shot in exhibit station order; use single-scenario retakes only to improve readability, not to reorder the argument.",
       "module_ids": [
         "ship_fever_grosse_ile_1847",
         "ellis_island_medical_inspection"
@@ -409,14 +451,14 @@ window.MARITIME_YOUTUBE_VIDEO_PLAN = {
       ]
     },
     {
-      "id": "s11_smallpox",
-      "chapter_id": "crowding_contact",
-      "duration_seconds": 40,
-      "capture_url": "index.html?youtube=1&scenario=smallpox&pace=2.05",
+      "id": "s08_smallpox",
+      "chapter_id": "smallpox",
+      "duration_seconds": 55,
+      "capture_url": "index.html?youtube=1&scenario=smallpox&pace=2.3",
       "scenario_id": "smallpox",
-      "visual_beat": "Show bedding, close quarters, arrival inspection, and maritime isolation rather than a single origin route.",
-      "narration_beat": "Smallpox turns bedding, clothing, susceptible passengers, and port isolation into public-health objects.",
-      "edit_notes": "Keep eradication/global origin out of this cut unless it is needed for one sentence of context.",
+      "visual_beat": "Show bedding, close quarters, inspection, and isolation; avoid deep-origin visual claims.",
+      "narration_beat": "Smallpox shifts the crowding section from lice and clothing toward susceptibility, contact, bedding, and isolation.",
+      "edit_notes": "Keep this shot in exhibit station order; use single-scenario retakes only to improve readability, not to reorder the argument.",
       "module_ids": [
         "smallpox_maritime_isolation_hulks"
       ],
@@ -428,14 +470,14 @@ window.MARITIME_YOUTUBE_VIDEO_PLAN = {
       ]
     },
     {
-      "id": "s12_measles",
-      "chapter_id": "crowding_contact",
-      "duration_seconds": 35,
-      "capture_url": "index.html?youtube=1&scenario=measles&pace=2.05",
+      "id": "s09_measles",
+      "chapter_id": "measles",
+      "duration_seconds": 50,
+      "capture_url": "index.html?youtube=1&scenario=measles&pace=2.3",
       "scenario_id": "measles",
-      "visual_beat": "Use the shipboard-air framing and any crowding imagery as the bridge to modern closed-vessel comparisons.",
-      "narration_beat": "Measles reminds us that below deck was not just scenery. Air, susceptibility, duration, and crowding could make the interior of a ship the exposure.",
-      "edit_notes": "Do not turn this into a full measles history. It is here to teach respiratory crowding.",
+      "visual_beat": "Use respiratory/crowding imagery and closed-vessel comparison as a short bridge.",
+      "narration_beat": "Measles closes the crowding station by making air and susceptibility visible.",
+      "edit_notes": "Keep this shot in exhibit station order; use single-scenario retakes only to improve readability, not to reorder the argument.",
       "module_ids": [
         "cruise_ship_covid_2020"
       ],
@@ -447,14 +489,14 @@ window.MARITIME_YOUTUBE_VIDEO_PLAN = {
       ]
     },
     {
-      "id": "s13_wounds_sepsis",
-      "chapter_id": "violence_coercion",
-      "duration_seconds": 40,
-      "capture_url": "index.html?youtube=1&scenario=wounds_sepsis&pace=2.05",
+      "id": "s10_wounds_sepsis",
+      "chapter_id": "wounds_sepsis",
+      "duration_seconds": 55,
+      "capture_url": "index.html?youtube=1&scenario=wounds_sepsis&pace=2.3",
       "scenario_id": "wounds_sepsis",
-      "visual_beat": "Use naval surgery, tools, injury, and delayed care as the visual language.",
-      "narration_beat": "Wounds made violence biological: splinters, blades, burns, dirty dressings, delayed care, and shared bedding turned trauma into infectious risk.",
-      "edit_notes": "Avoid gore. Make the mechanism legible through tools and route context.",
+      "visual_beat": "Use surgery tools, wounds, labor, and violence visuals without gore.",
+      "narration_beat": "The final station group begins with wounds and sepsis because maritime disease ecology was also made by violence and labor.",
+      "edit_notes": "Keep this shot in exhibit station order; use single-scenario retakes only to improve readability, not to reorder the argument.",
       "module_ids": [
         "wounds_sepsis_shipboard_trauma"
       ],
@@ -464,14 +506,14 @@ window.MARITIME_YOUTUBE_VIDEO_PLAN = {
       ]
     },
     {
-      "id": "s14_middle_passage",
-      "chapter_id": "violence_coercion",
-      "duration_seconds": 55,
-      "capture_url": "index.html?youtube=1&scenario=middle_passage&pace=2.05",
+      "id": "s11_middle_passage",
+      "chapter_id": "middle_passage",
+      "duration_seconds": 75,
+      "capture_url": "index.html?youtube=1&scenario=middle_passage&pace=2.3",
       "scenario_id": "middle_passage",
-      "visual_beat": "Use the Middle Passage route and Brookes diagram with sober pacing.",
-      "narration_beat": "The Middle Passage is not an extreme example outside the system. It exposes what maritime movement could become when commerce, coercion, captivity, dehydration, crowding, violence, and disease were fused.",
-      "edit_notes": "Keep language sober. Do not reduce mortality to a generic disease-spread story.",
+      "visual_beat": "Use the Middle Passage route and Brookes diagram soberly, with enough hold time for caveats.",
+      "narration_beat": "The Middle Passage has to be handled with discipline.",
+      "edit_notes": "Keep this shot in exhibit station order; use single-scenario retakes only to improve readability, not to reorder the argument.",
       "module_ids": [
         "middle_passage_forced_transport"
       ],
@@ -482,56 +524,172 @@ window.MARITIME_YOUTUBE_VIDEO_PLAN = {
       ]
     },
     {
-      "id": "s15_return_to_map",
-      "chapter_id": "close",
-      "duration_seconds": 20,
-      "capture_url": "index.html?youtube=1&tour=1&pace=2.05",
-      "scenario_id": null,
-      "visual_beat": "Use a selected montage from the full YouTube tour capture: routes, ports, provisions, crowding, coercion.",
-      "narration_beat": "The sea did not merely connect outbreaks. It connected local exposures to policy, panic, profit, quarantine, and memory.",
-      "edit_notes": "This can be built from the full-tour capture rather than a separate take.",
+      "id": "s12_pirate_ports",
+      "chapter_id": "pirate_ports",
+      "duration_seconds": 65,
+      "capture_url": "index.html?youtube=1&scenario=pirate_network&pace=2.3",
+      "scenario_id": "pirate_network",
+      "visual_beat": "Move through Nassau, Port Royal, Tortuga, Cape Fear, and quarantine material as the final station in exhibit order.",
+      "narration_beat": "The exhibit ends with pirate ports, not because pirates are the main cause of maritime disease, but because the pirate network makes infrastructure visible in one frame.",
+      "edit_notes": "Keep this shot in exhibit station order; use single-scenario retakes only to improve readability, not to reorder the argument.",
       "module_ids": [
         "pirate_ports_caribbean_network",
-        "ship_fever_grosse_ile_1847",
-        "middle_passage_forced_transport"
+        "mediterranean_plague_lazarettos",
+        "algiers_plague_sanitary_ban_1818",
+        "san_francisco_plague_port_1900"
       ],
       "source_ids": [
         "maritime-rediker-between-devil",
-        "maritime-parks-canada-grosse-ile",
-        "slavevoyages-methodology"
+        "maritime-rediker-villains",
+        "maritime-booker-quarantine-2007",
+        "maritime-tognotti-quarantine-2013",
+        "maritime-delange-algiers-sanitary-ban-1818",
+        "maritime-ini-quarantine-geographies-2023"
       ]
     },
     {
-      "id": "s16_end_card",
+      "id": "s13_close",
       "chapter_id": "close",
-      "duration_seconds": 10,
-      "capture_url": "index.html?youtube=1&tour=1&pace=2.05",
+      "duration_seconds": 20,
+      "capture_url": "index.html?youtube=1&tour=1&pace=2.3",
       "scenario_id": null,
-      "visual_beat": "Hold on a readable map frame with exhibit title and website route in the description, not as a large in-video card.",
-      "narration_beat": "The full cited exhibit is linked below. The map is not the answer. It is the reading surface.",
-      "edit_notes": "Fade out without music sting. Let the last line land cleanly.",
-      "module_ids": [],
+      "visual_beat": "Return to a readable tour montage: vector ports, provisions, crowding, coercion, and pirate-port infrastructure.",
+      "narration_beat": "Read in exhibit order, the map moves from vectors to provisions, from crowding to coercion, and finally to ports as infrastructure.",
+      "edit_notes": "Keep this shot in exhibit station order; use single-scenario retakes only to improve readability, not to reorder the argument.",
+      "module_ids": [
+        "yellow_fever_atlantic_ports_1793",
+        "scurvy_long_voyage_navy",
+        "ship_fever_grosse_ile_1847",
+        "middle_passage_forced_transport",
+        "pirate_ports_caribbean_network"
+      ],
       "source_ids": [
-        "maritime-rediker-between-devil",
         "yellow-history",
         "maritime-lind-scurvy-treatise",
-        "slavevoyages-methodology"
+        "maritime-parks-canada-grosse-ile",
+        "slavevoyages-methodology",
+        "maritime-rediker-between-devil"
       ]
     }
   ],
   "narration_script": [
     {
-      "chapter_id": "cold_open",
-      "script": "This is not a map of ships carrying diseases from one place to another. It is a map of ships as disease environments. A ship was a ration system, a waste system, an air system, a medical system, a labor system, and sometimes a machine of violence. The important unit is not just the voyage. It is the whole machine: the port that supplied it, the people crowded into it, the cargo and water stored inside it, and the quarantine system waiting at the far end.",
+      "chapter_id": "intro",
+      "script": "Start with the order of the exhibit itself. The first thing the map asks us to see is not a ship as an arrow across water, but a ship inside a system of ports, provisions, bodies, air, waste, violence, and rules. That is the argument of the atlas: maritime disease history is not just importation. It is ecology. Every station that follows changes the scale of the question. First warm ports and vectors. Then food, water, and diet. Then crowding and contact. Then wounds, forced movement, and pirate-port infrastructure.",
       "source_ids": [
         "maritime-rediker-between-devil",
-        "maritime-rediker-villains"
+        "yellow-history"
       ],
-      "review_note": "Interpretive synthesis from maritime social history; keep it as framing, not monocausal claim."
+      "review_note": "This is interpretive synthesis; it should not claim that ships alone caused epidemics."
     },
     {
-      "chapter_id": "pirate_infrastructure",
-      "script": "The pirate network is a useful place to begin because it makes infrastructure visible. Nassau, Port Royal, Tortuga, and the Carolina coast were connected by ships, but also by repair, provisioning, recruitment, capture, resale, rumor, water, food, alcohol, wounds, sex, insects, and waiting. Disease risk lived inside that same network. The point is not that pirates uniquely caused epidemics. The point is that ports were ecological machinery. Quarantine belongs in that machinery too. Bills of health, lazarettos, guards, cargo controls, sanitary bans, and waiting periods made quarantine a maritime technology, not just a medical footnote. The map should feel slow here because the argument is cumulative: ports are not dots. They are places where ships, people, documents, animals, insects, provisions, and fear all become organized.",
+      "chapter_id": "yellow_fever",
+      "script": "Yellow fever opens the exhibit because it makes port ecology unavoidable. Ships could connect Atlantic and Caribbean ports, but the route alone is not the cause. Yellow fever needed warm conditions, susceptible people, human-mosquito-human transmission, stored water, and urban port environments where Aedes mosquitoes could live close to people. So the map is not saying that one ship explains an epidemic. It is saying that shipping networks and local mosquito ecology could become one epidemiologic system. That distinction is the whole point: maritime movement made exposure possible, but the port made transmission durable.",
+      "source_ids": [
+        "yellow-history",
+        "yellow-fever-who",
+        "cdc-yellow-fever-spread",
+        "nlm-yellow-fever-primary"
+      ],
+      "review_note": "The vector mechanism is strong; specific eighteenth-century import chains require case-level evidence."
+    },
+    {
+      "chapter_id": "malaria",
+      "script": "Malaria pushes that lesson further. Maritime routes moved soldiers, workers, captives, sailors, and traders through mosquito ecologies, but malaria was never simply a line on the ocean. It depended on Anopheles mosquitoes, climate, water, land use, immunity, and repeated exposure. The sea connected places where those conditions could matter. The map therefore separates movement from mechanism. A ship can carry people into risk; it does not by itself create the parasite-vector-human cycle. For historical epidemiology, that is a useful guardrail against too-clean origin stories.",
+      "source_ids": [
+        "malaria-who",
+        "malaria-carter",
+        "malaria-mordecai"
+      ],
+      "review_note": "This is route ecology, not a clean origin or single-voyage claim."
+    },
+    {
+      "chapter_id": "scurvy",
+      "script": "Then the exhibit turns from warm ports to provisions. Scurvy is the clean reminder that not every maritime disease story is infectious. A long voyage could turn time into exposure. Preserved rations, weak provisioning, and the absence of fresh fruits and vegetables made deficiency biological. Lind matters here, but not as a simple lone-genius story. The deeper lesson is logistical. Knowledge, supply chains, discipline, storage, and naval administration had to line up before a nutritional mechanism became a reliable prevention system.",
+      "source_ids": [
+        "maritime-lind-scurvy-treatise",
+        "maritime-carpenter-scurvy-vitamin-c",
+        "maritime-james-lind-library-scurvy"
+      ],
+      "review_note": "The deficiency mechanism is high confidence; voyage-specific mortality rates need ship-level sources."
+    },
+    {
+      "chapter_id": "flux",
+      "script": "Flux and dysentery move from absence to contamination. Historical labels like flux are broad; they do not always map neatly onto modern pathogens. But the exposure system is clear enough to teach: water storage, waste disposal, dirty hands, shared utensils, spoiled food, heat, crowding, and limited privacy. Below deck, the boundary between ordinary ship operation and enteric exposure could be thin. The map should make that feel concrete. Disease risk was not only outside the ship, waiting at the next port. It could be assembled inside the vessel by water, waste, food, and confinement.",
+      "source_ids": [
+        "shigella-cdc",
+        "cdc-drinking-water",
+        "curtin-epidemiology-slave-trade",
+        "cholera-who",
+        "noro-cdc"
+      ],
+      "review_note": "Flux/dysentery are not one diagnosis; pathogen-specific claims require source-backed cases."
+    },
+    {
+      "chapter_id": "typhoid",
+      "script": "Typhoid narrows the food-water lesson. Here the issue is fecal-oral infrastructure: carriers, contaminated hands, drinking water, storage, food handling, utensils, and the practical problem of keeping waste away from mouths in a crowded system. The U.S. public-health imagery used in the exhibit is not a claim that typhoid belongs only to ships. It is a way to show the mechanism clearly. On ships, the same basic logic could become maritime: provisions, handling, water, and sanitation turned routine labor into a transmission pathway.",
+      "source_ids": [
+        "typhoid-cdc-yellowbook",
+        "typhoid-who",
+        "cdc-drinking-water"
+      ],
+      "review_note": "The biomedical mechanism is strong; historical fever labels aboard ships can be nonspecific."
+    },
+    {
+      "chapter_id": "ship_fever",
+      "script": "The next station is crowding. Ship fever is the phrase that makes the migrant ship and the quarantine station part of the same exposure system. In many nineteenth-century contexts the label points toward epidemic typhus: body lice, clothing, hygiene, cold, crowding, and exhaustion. But the phrase is historical, not a lab result, so the caution has to stay audible. What matters for the exhibit is the architecture: steerage, berths, delayed landing, dirty clothes, inspection, detention, and places like Grosse Ile where shipboard disease entered port-health infrastructure.",
+      "source_ids": [
+        "maritime-parks-canada-grosse-ile",
+        "epidemic-typhus-cdc",
+        "typhus-cdc-clinical",
+        "maritime-nps-ellis-doctors"
+      ],
+      "review_note": "Ship fever often points toward typhus in this setting, but historical fever terminology is not always pathogen-specific."
+    },
+    {
+      "chapter_id": "smallpox",
+      "script": "Smallpox shifts the crowding section from lice and clothing toward susceptibility, contact, bedding, and isolation. The exhibit is not trying to solve the deep origin of variola virus here. That belongs to a different evidentiary problem. The maritime question is more practical: how did a human-only pathogen move through ships, passengers, linens, port inspection, isolation hulks, vaccination, and quarantine systems? Smallpox is useful because it shows the ship as a contact environment and the port as a sorting environment.",
+      "source_ids": [
+        "smallpox-cdc",
+        "smallpox-who",
+        "smallpox-origin-babkin",
+        "who-smallpox-eradication"
+      ],
+      "review_note": "Transmission and quarantine claims are stronger here than retrospective origin claims."
+    },
+    {
+      "chapter_id": "measles",
+      "script": "Measles closes the crowding station by making air and susceptibility visible. A confined vessel is not automatically an outbreak, but respiratory transmission changes what close quarters mean. Duration, ventilation, immune history, passenger turnover, and shared indoor air all matter. This is also why modern closed-vessel examples can help without being projected backward too aggressively. They remind us that the ship is not just transportation. It is an indoor environment moving through administrative and ecological systems.",
+      "source_ids": [
+        "measles-who",
+        "measles-science",
+        "measles-lancet",
+        "maritime-cdc-cruise-covid-2020"
+      ],
+      "review_note": "Do not turn this into a full measles history; it is here to teach respiratory crowding."
+    },
+    {
+      "chapter_id": "wounds_sepsis",
+      "script": "The final station group begins with wounds and sepsis because maritime disease ecology was also made by violence and labor. Splinters, blades, burns, falls, punishment, battle, dental injury, dirty dressings, delayed care, and shared bedding could turn trauma into infection. Sepsis is a modern clinical category, so we should not pretend every historical fever after injury was diagnosed that way. But the mechanism is real: injury plus microbes plus constrained care. On ships, wounds were never only surgical events. They were social and environmental events.",
+      "source_ids": [
+        "maritime-rediker-between-devil",
+        "cdc-sepsis-about"
+      ],
+      "review_note": "Sepsis is a modern clinical framing; historical sources often describe wounds, fever, gangrene, or death rather than sepsis."
+    },
+    {
+      "chapter_id": "middle_passage",
+      "script": "The Middle Passage has to be handled with discipline. It is not a generic disease-spread story, and it is not a place to invent cause-specific proportions. The stronger claim is more devastating: forced transport made mortality through a whole coercive ecology. Crowding, heat, dehydration, malnutrition, dysentery, smallpox, measles, nonspecific fever, violence, despair, and the commercial logic of captivity were not separable background details. SlaveVoyages can support voyage-level mortality analysis, but exact disease attribution is much thinner. So the narration should keep the evidence limit visible while still naming the human burden plainly.",
+      "source_ids": [
+        "slavevoyages-methodology",
+        "eltis-richardson-atlas-transatlantic-slave-trade",
+        "curtin-epidemiology-slave-trade"
+      ],
+      "review_note": "Total mortality and voyage conditions are stronger than precise cause-specific disease proportions."
+    },
+    {
+      "chapter_id": "pirate_ports",
+      "script": "The exhibit ends with pirate ports, not because pirates are the main cause of maritime disease, but because the pirate network makes infrastructure visible in one frame. Nassau, Port Royal, Tortuga, Cape Fear, and other Atlantic nodes connected repair, recruitment, stolen goods, provisioning, water, alcohol, wounds, sex, insects, rumor, and naval suppression. Quarantine also belongs here: bills of health, lazarettos, guards, cargo controls, sanitary bans, and waiting periods. The point is not pirate exceptionalism. The point is that ports were machines for organizing movement, risk, profit, fear, and regulation.",
       "source_ids": [
         "maritime-rediker-between-devil",
         "maritime-rediker-villains",
@@ -540,106 +698,79 @@ window.MARITIME_YOUTUBE_VIDEO_PLAN = {
         "maritime-delange-algiers-sanitary-ban-1818",
         "maritime-ini-quarantine-geographies-2023"
       ],
-      "review_note": "Do not claim a specific pirate-port outbreak burden."
-    },
-    {
-      "chapter_id": "vector_ecology",
-      "script": "Yellow fever and malaria move the story to the warmer edge of the map, where port ecology and vector ecology overlap. Ships moved people, cargo, and exposure, but the disease cycle still depended on local conditions: climate, stored water, mosquito habitat, labor, immunity, and the timing of arrival. A route is not a magic line of causation. It is a way of seeing how local ecologies became connected. That distinction matters. A port could receive ships constantly and still need the right mosquito, the right season, the right water, and enough susceptible people for an epidemic pattern to become visible. The sea made contact possible. The port made transmission possible.",
-      "source_ids": [
-        "yellow-history",
-        "yellow-fever-who",
-        "cdc-yellow-fever-spread",
-        "malaria-who",
-        "malaria-carter",
-        "malaria-mordecai"
-      ],
-      "review_note": "Avoid single-ship import claims."
-    },
-    {
-      "chapter_id": "provisions_ecology",
-      "script": "Then the map moves inward, into the ship. Scurvy is time made biological: a long voyage can turn diet into exposure. This is why maritime disease history cannot be only a history of microbes. Sometimes the lethal exposure was absence: no fresh citrus, no fresh vegetables, no reliable provisioning, no easy way to reverse the clock once a voyage stretched on. Flux and typhoid belong to food and water systems: casks, storage, handling, drinking water, dirty hands, waste boundaries, and the galley. The exposure route is not only across the ocean. It is through the barrel, the berth, and the hand. And this is where the map needs time. The viewer should feel that disease risk is being assembled out of ordinary shipboard operations, not dropped onto the ship from outside.",
-      "source_ids": [
-        "maritime-lind-scurvy-treatise",
-        "maritime-carpenter-scurvy-vitamin-c",
-        "shigella-cdc",
-        "cdc-drinking-water",
-        "typhoid-cdc-yellowbook",
-        "typhoid-who"
-      ],
-      "review_note": "Keep flux/dysentery as broad historical syndrome unless a source supports pathogen specificity."
-    },
-    {
-      "chapter_id": "crowding_contact",
-      "script": "Crowding changes the disease world again. Ship fever, smallpox, and measles turn berths, clothing, bedding, ventilation, and quarantine into epidemiologic objects. Below deck is not just scenery. It is the architecture of transmission. For ship fever, the historical label often points toward typhus, lice, clothing, hygiene, and the brutal density of migrant transport, but the wording has to stay cautious because historical fever labels were not modern laboratory diagnoses. For smallpox and measles, susceptibility and contact matter differently, but the ship interior still does real epidemiologic work. And when the ship reached land, the exposure did not simply end. It entered quarantine stations, port inspections, hospitals, and politics.",
-      "source_ids": [
-        "maritime-parks-canada-grosse-ile",
-        "epidemic-typhus-cdc",
-        "typhus-cdc-clinical",
-        "smallpox-cdc",
-        "smallpox-who",
-        "measles-who",
-        "maritime-nps-ellis-doctors"
-      ],
-      "review_note": "Use 'ship fever' cautiously; historical terminology is not always pathogen-specific."
-    },
-    {
-      "chapter_id": "violence_coercion",
-      "script": "Finally, maritime disease ecology cannot be separated from violence. Wounds, dirty tools, delayed care, and forced confinement make infection a social fact. The Middle Passage is not an extreme example outside the system. It is one of the clearest exposures of what maritime movement could become when commerce, coercion, captivity, dehydration, crowding, violence, and disease were fused. The burden here should not be reduced to a generic disease-spread story. Total mortality, cause-specific diagnosis, starvation, dehydration, dysentery, smallpox, measles, heat, violence, and despair are not interchangeable claims. The slower cadence is part of the argument: this section needs room for restraint.",
-      "source_ids": [
-        "maritime-rediker-between-devil",
-        "cdc-sepsis-about",
-        "slavevoyages-methodology",
-        "eltis-richardson-atlas-transatlantic-slave-trade",
-        "curtin-epidemiology-slave-trade"
-      ],
-      "review_note": "Do not imply exact cause-specific mortality proportions."
+      "review_note": "Pirate ports are a network and exposure model, not documented disease-origin points."
     },
     {
       "chapter_id": "close",
-      "script": "The sea did not merely connect outbreaks. It made disease ecological, political, and visible. It turned food, water, air, labor, quarantine, violence, and waiting into public-health history. The full cited exhibit is linked below. The map is not the answer. It is the reading surface.",
+      "script": "Read in exhibit order, the map moves from vectors to provisions, from crowding to coercion, and finally to ports as infrastructure. The sea did not merely connect outbreaks. It made disease ecological, political, logistical, and visible in sources. The full cited exhibit is linked below. The map is not the answer. It is the reading surface.",
       "source_ids": [
-        "maritime-rediker-between-devil",
         "yellow-history",
         "maritime-lind-scurvy-treatise",
         "maritime-parks-canada-grosse-ile",
-        "slavevoyages-methodology"
+        "slavevoyages-methodology",
+        "maritime-rediker-between-devil"
       ],
-      "review_note": "Closing synthesis; keep the final edit linked to exhibit sources."
+      "review_note": "Closing synthesis should remain ecological and political rather than monocausal."
     }
   ],
-  "youtube_description_draft": "Ships did not just carry disease across the sea. They created disease ecologies: crowded berths, contaminated water, spoiled provisions, vector-friendly ports, quarantine islands, naval wounds, coerced movement, and public-health conflict. This guided tour adapts the cited Maritime Disease Ecology Atlas from The Edge of Epidemiology. Full interactive exhibit and source credits: /atlases/maritime/",
+  "youtube_description_draft": "Ships did not just carry disease across the sea. They created disease ecologies: vector-friendly ports, contaminated water, spoiled provisions, crowded berths, quarantine islands, naval wounds, coerced movement, pirate-port infrastructure, and public-health conflict. This guided tour follows the Maritime Disease Ecology Atlas in exhibit order. Full interactive exhibit and source credits: /atlases/maritime/",
   "chapter_markers": [
     {
       "time": "0:00",
-      "label": "Ships as disease environments"
+      "label": "A ship was a moving disease ecology"
     },
     {
-      "time": "1:00",
-      "label": "Pirate ports as infrastructure"
+      "time": "0:45",
+      "label": "Yellow fever: warm port ecology"
     },
     {
-      "time": "2:25",
-      "label": "Warm ports and vector ecology"
+      "time": "1:40",
+      "label": "Malaria: movement plus local mosquito ecology"
     },
     {
-      "time": "4:00",
-      "label": "Provisions, water, and time"
+      "time": "2:30",
+      "label": "Scurvy: diet, time, and naval logistics"
     },
     {
-      "time": "6:00",
-      "label": "Crowding, clothing, bedding, and air"
+      "time": "3:25",
+      "label": "Flux and dysentery: water, waste, and broad historical labels"
     },
     {
-      "time": "7:55",
-      "label": "Violence and forced movement"
+      "time": "4:20",
+      "label": "Typhoid: provisions as fecal-oral infrastructure"
     },
     {
-      "time": "9:30",
+      "time": "5:15",
+      "label": "Ship fever: crowding, clothing, lice, and quarantine"
+    },
+    {
+      "time": "6:20",
+      "label": "Smallpox: bedding, susceptibility, and maritime isolation"
+    },
+    {
+      "time": "7:15",
+      "label": "Measles: air, susceptibility, and closed-vessel comparison"
+    },
+    {
+      "time": "8:05",
+      "label": "Wounds and sepsis: violence made biological"
+    },
+    {
+      "time": "9:00",
+      "label": "Middle Passage: forced movement as disease ecology"
+    },
+    {
+      "time": "10:15",
+      "label": "Pirate ports: infrastructure at the end of the exhibit line"
+    },
+    {
+      "time": "11:20",
       "label": "Movement became ecology, policy, and memory"
     }
   ],
   "source_policy": [
     "Narration should use the exhibit citations as its evidence base.",
+    "The YouTube script should follow the same station order as the public exhibit.",
     "No precise mortality or route claim should be added in the video unless already supported in the exhibit data.",
     "Uncertain retrospective diagnosis should remain visibly cautious in narration.",
     "Credits live in the exhibit; the video description should link to the exhibit for full source and image metadata."
@@ -647,7 +778,7 @@ window.MARITIME_YOUTUBE_VIDEO_PLAN = {
   "deferred_or_excluded": [
     {
       "item": "Barbary captivity and plague",
-      "reason": "Narrowed. The exhibit now includes the 1817-1818 Algiers plague and American sanitary-ban case, but excludes unsupported claims that plague determined Barbary captivity outcomes."
+      "reason": "Narrowed. The exhibit includes the 1817-1818 Algiers plague and American sanitary-ban case, but excludes unsupported claims that plague determined Barbary captivity outcomes."
     },
     {
       "item": "Convict ships and prison hulks",

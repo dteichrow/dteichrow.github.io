@@ -634,8 +634,8 @@ def validate_maritime(registry_ids: set[str], project_root: Path = PROJECT_ROOT)
         plan_path = "maritime_atlas.youtube_video_plan"
         require_nonempty(errors, plan_path, youtube_plan, ("schema_version", "title", "runtime_target_seconds", "capture_entrypoint", "chapters", "shots", "narration_script"))
         runtime = youtube_plan.get("runtime_target_seconds")
-        if not isinstance(runtime, int) or not 540 <= runtime <= 660:
-            errors.append(f"{plan_path}.runtime_target_seconds must be an integer between 540 and 660")
+        if not isinstance(runtime, int) or not 600 <= runtime <= 720:
+            errors.append(f"{plan_path}.runtime_target_seconds must be an integer between 600 and 720")
         if "youtube=1" not in str(youtube_plan.get("capture_entrypoint", "")):
             errors.append(f"{plan_path}.capture_entrypoint must use youtube=1")
 

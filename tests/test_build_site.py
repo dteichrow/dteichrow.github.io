@@ -587,7 +587,8 @@ def test_maritime_atlas_public_exhibit_metadata_and_video_package() -> None:
     assert "archival sources" in build_text
     assert "Final narration: Devin" in video_package
     assert "AI voice: scratch timing only" in video_package
-    assert "?youtube=1&scenario=<scenario_id>&pace=2.05" in video_package
+    assert "?youtube=1&scenario=<scenario_id>&pace=2.3" in video_package
+    assert "Yellow Fever, Malaria, Scurvy, Flux, Typhoid, Ship Fever, Smallpox, Measles, Wounds + Sepsis, Middle Passage, Pirate Ports" in video_package
 
 
 def test_pathogen_atlas_renders_geography_layers() -> None:

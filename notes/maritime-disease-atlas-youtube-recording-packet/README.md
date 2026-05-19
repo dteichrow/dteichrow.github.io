@@ -5,7 +5,7 @@ This folder is the recording handoff for the Maritime Disease Ecology Atlas YouT
 ## Files
 
 - `narration-recording-script.md` - timestamped read script with pacing and source-caution notes.
-- `caption-draft.srt` - rough captions aligned to the 490-second structure.
+- `caption-draft.srt` - rough captions aligned to the 700-second exhibit-order structure.
 - `chapter-markers.txt` - YouTube chapter markers.
 - `capture-checklist.md` - capture and QA checklist.
 - `shot-replacement-guide.md` - URLs and rules for retaking individual sections.
@@ -13,15 +13,15 @@ This folder is the recording handoff for the Maritime Disease Ecology Atlas YouT
 ## Capture URL
 
 ```text
-/atlases/maritime/?youtube=1&tour=1&pace=2.05
+/atlases/maritime/?youtube=1&tour=1&pace=2.3
 ```
 
 Local development equivalent:
 
 ```text
-external/maritime_disease_atlas/index.html?youtube=1&tour=1&pace=2.05
+external/maritime_disease_atlas/index.html?youtube=1&tour=1&pace=2.3
 ```
 
 ## Production Rule
 
-Use AI voice only for scratch timing. Do not publish a final YouTube cut until Devin's final WAV/M4A narration has replaced scratch audio.
+Use AI voice only for scratch timing. Do not publish a final YouTube cut until Devin's final WAV/M4A narration has replaced scratch audio. The narration and capture order should match the exhibit station order exactly: Yellow Fever, Malaria, Scurvy, Flux, Typhoid, Ship Fever, Smallpox, Measles, Wounds + Sepsis, Middle Passage, Pirate Ports.

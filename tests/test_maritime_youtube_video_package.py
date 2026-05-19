@@ -43,7 +43,7 @@ def test_maritime_youtube_plan_is_capture_ready_and_source_backed() -> None:
     module_ids = {module["id"] for module in modules}
 
     assert plan["schema_version"] == "1.0.0"
-    assert 540 <= plan["runtime_target_seconds"] <= 660
+    assert 600 <= plan["runtime_target_seconds"] <= 720
     assert "youtube=1" in plan["capture_entrypoint"]
     assert plan["voice_plan"]["final_voice"] == "Devin"
     assert "scratch timing" in plan["voice_plan"]["scratch_voice"]
@@ -51,19 +51,36 @@ def test_maritime_youtube_plan_is_capture_ready_and_source_backed() -> None:
 
     chapter_ids = {chapter["id"] for chapter in plan["chapters"]}
     assert [
-        "cold_open",
-        "pirate_infrastructure",
-        "vector_ecology",
-        "provisions_ecology",
-        "crowding_contact",
-        "violence_coercion",
+        "intro",
+        "yellow_fever",
+        "malaria",
+        "scurvy",
+        "flux",
+        "typhoid",
+        "ship_fever",
+        "smallpox",
+        "measles",
+        "wounds_sepsis",
+        "middle_passage",
+        "pirate_ports",
         "close",
     ] == [chapter["id"] for chapter in plan["chapters"]]
 
+    assert plan["playback"]["scenario_order"] == [
+        "yellow_fever",
+        "malaria",
+        "scurvy",
+        "flux",
+        "typhoid",
+        "ship_fever",
+        "smallpox",
+        "measles",
+        "wounds_sepsis",
+        "middle_passage",
+        "pirate_network",
+    ]
     assert set(plan["playback"]["scenario_order"]) <= scenario_ids
-    assert plan["playback"]["scenario_order"][0] == "pirate_network"
-    assert plan["playback"]["scenario_order"][-1] == "middle_passage"
-    assert "algiers_plague_sanitary_ban_1818" in plan["chapters"][1]["module_ids"]
+    assert "algiers_plague_sanitary_ban_1818" in plan["chapters"][-2]["module_ids"]
 
     total_shot_seconds = sum(shot["duration_seconds"] for shot in plan["shots"])
     assert abs(total_shot_seconds - plan["runtime_target_seconds"]) <= 5
@@ -108,7 +125,8 @@ def test_maritime_youtube_mode_is_wired_into_atlas_ui() -> None:
     assert ".recording-mode .mechanism-first" in html
     assert ".recording-mode #module-browser" in html
 
-    assert "?youtube=1&tour=1&pace=2.05" in note
+    assert "?youtube=1&tour=1&pace=2.3" in note
+    assert "Yellow Fever, Malaria, Scurvy, Flux, Typhoid, Ship Fever, Smallpox, Measles, Wounds + Sepsis, Middle Passage, Pirate Ports" in note
     assert "Final narration: Devin" in note
     assert "Do not collapse Middle Passage mortality" in note
     assert "Do not turn pirate ports into disease-origin claims" in note
@@ -135,7 +153,8 @@ def test_maritime_recording_packet_is_ready_for_devin_voice() -> None:
 
     assert "Final voice: Devin" in script
     assert "Do not say plague decided the Barbary Wars" in script
-    assert "00:10:00,000" in captions
-    assert "1:00 Pirate ports as infrastructure" in chapters
+    assert "00:11:40,000" in captions
+    assert "0:45 Yellow fever: warm port ecology" in chapters
+    assert "10:15 Pirate ports: infrastructure at the end of the exhibit line" in chapters
     assert "Do not render or publish" not in checklist
     assert "Export the final MP4 only after narration" in checklist
