@@ -1,7 +1,7 @@
 window.MARITIME_DISEASE_MODULES = {
   "schema_version": "1.0.0",
   "generated_at": "2026-05-18",
-  "description": "Source-backed maritime disease ecology case modules for ships, ports, quarantine, naval medicine, forced movement, and modern closed-vessel comparisons.",
+  "description": "Cited maritime disease ecology case studies for ships, ports, quarantine, naval medicine, forced movement, and modern closed-vessel comparisons.",
   "confidence_legend": {
     "high": "Strong source support for the displayed claim, usually from multiple sources or a direct primary/official/technical source.",
     "moderate": "Supported, but the case depends on synthesis, general mechanism, or imperfect historical records.",
@@ -19,7 +19,7 @@ window.MARITIME_DISEASE_MODULES = {
     "empire/war"
   ],
   "source_audit": {
-    "summary": "V1 privileges primary historical texts, official public-health sources, peer-reviewed reviews, public datasets, and academic monographs. Routes are schematic unless marked documented.",
+    "summary": "This exhibit privileges primary historical texts, official public-health sources, peer-reviewed reviews, public datasets, and academic monographs. Routes are schematic unless marked documented.",
     "known_limits": [
       "Cause-specific mortality is often unavailable for older voyages.",
       "Historical labels such as flux, fever, pestilence, and ship fever are not automatically pathogen-specific diagnoses.",
@@ -30,7 +30,7 @@ window.MARITIME_DISEASE_MODULES = {
   "deferred_modules": [
     {
       "candidate": "Barbary captivity plague mortality",
-      "reason": "Narrowed. V1 now includes the 1817-1818 Algiers plague and American sanitary-ban case, but excludes unsupported claims that plague determined Barbary captivity outcomes or the Barbary Wars."
+      "reason": "Narrowed. The exhibit includes the 1817-1818 Algiers plague and American sanitary-ban case, but excludes unsupported claims that plague determined Barbary captivity outcomes or the Barbary Wars."
     },
     {
       "candidate": "Convict ships and prison hulks",
@@ -851,7 +851,7 @@ window.MARITIME_DISEASE_MODULES = {
       "historical_context": "Typhoid is useful for teaching why maritime disease ecology includes galley work and waste, not only exotic ports.",
       "human_burden": {
         "burden_type": "unknown",
-        "summary": "No voyage-specific typhoid burden is asserted in V1.",
+        "summary": "No voyage-specific typhoid burden is asserted here.",
         "source_ids": ["typhoid-cdc-yellowbook", "typhoid-who"]
       },
       "public_health_response": "Safe water, sanitation, food hygiene, vaccination for travelers or high-risk groups, and carrier control.",
@@ -977,7 +977,7 @@ window.MARITIME_DISEASE_MODULES = {
       "historical_context": "The San Francisco outbreak shows how maritime public health could be technically real and politically ugly at the same time.",
       "human_burden": {
         "burden_type": "estimated",
-        "summary": "Case and death counts exist in the historical literature, but this module foregrounds source-backed port response and avoids unsupported extrapolation.",
+        "summary": "Case and death counts exist in the historical literature, but this module foregrounds documented port response and avoids unsupported extrapolation.",
         "source_ids": ["maritime-dolan-sf-plague-1900", "niaid-sf-plague"]
       },
       "public_health_response": "Quarantine, inspection, rat control, laboratory confirmation, federal intervention, and contested enforcement.",
@@ -1019,7 +1019,7 @@ window.MARITIME_DISEASE_MODULES = {
       "historical_context": "This module is a comparison, not a claim that cruise ships are equivalent to migrant ships, slave ships, or naval vessels.",
       "human_burden": {
         "burden_type": "estimated",
-        "summary": "Vessel Sanitation Program reports provide outbreak-specific illness counts; V1 does not collapse them into a single historic burden.",
+        "summary": "Vessel Sanitation Program reports provide outbreak-specific illness counts; this module does not collapse them into a single historical burden.",
         "source_ids": ["maritime-cdc-vsp-outbreaks", "maritime-cdc-cruise-norovirus-2023"]
       },
       "public_health_response": "Sanitation protocols, isolation, reporting, environmental cleaning, hand hygiene, and outbreak investigation.",
@@ -1061,7 +1061,7 @@ window.MARITIME_DISEASE_MODULES = {
       "historical_context": "COVID-19 gives the atlas a modern comparison for why ships are ecological systems, not just vehicles.",
       "human_burden": {
         "burden_type": "estimated",
-        "summary": "Official outbreak investigations report ship-specific case and death counts; V1 keeps the module qualitative unless a named outbreak is opened.",
+        "summary": "Official outbreak investigations report ship-specific case and death counts; this module stays qualitative unless a named outbreak is opened.",
         "source_ids": ["maritime-cdc-cruise-covid-2020", "covid-who"]
       },
       "public_health_response": "Isolation, quarantine, contact tracing, port negotiation, evacuation, testing, crew/passenger restrictions, and later vaccination policies.",

@@ -597,10 +597,10 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             ],
             "confidence": "moderate",
             "claim_type": "map feature caption",
-            "notes": "This supports maritime quarantine infrastructure, not the contested deep-origin hypothesis."
+            "notes": "This supports maritime quarantine infrastructure; the deeper origin model remains debated."
           }
         ],
-        "uncertainty_note": "This supports maritime quarantine infrastructure, not the contested deep-origin hypothesis.",
+        "uncertainty_note": "This supports maritime quarantine infrastructure; the deeper origin model remains debated.",
         "claim_type": "quarantine station",
         "route_confidence": "moderate",
         "route_note": "Mapped geometry is schematic unless the claim_type says documented route or port location."
@@ -1176,7 +1176,7 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
           "smallpox-origin-babkin"
         ],
         "confidence": "contested",
-        "uncertainty_note": "This combines a contested deep-origin hypothesis with better-supported shipboard transmission and quarantine claims.",
+        "uncertainty_note": "This combines a debated deep-origin model with better-supported shipboard transmission and quarantine claims.",
         "claims": [
           {
             "claim": "A cautious deep-origin route from camel-linked orthopox hypothesis to shipboard transmission, isolation hulks, and port quarantine.",
@@ -1187,7 +1187,7 @@ window.MARITIME_DISEASE_ATLAS_GEOJSON = {
             ],
             "confidence": "contested",
             "claim_type": "map feature caption",
-            "notes": "This combines a contested deep-origin hypothesis with better-supported shipboard transmission and quarantine claims."
+            "notes": "This combines a debated deep-origin model with better-supported shipboard transmission and quarantine claims."
           }
         ],
         "claim_type": "inferred route",
@@ -2540,10 +2540,10 @@ window.MARITIME_DISEASE_SCENARIOS = {
             ],
             "confidence": "moderate",
             "claim_type": "guided-tour step",
-            "notes": "This step is source-backed for maritime transmission or quarantine context, not for the contested deep-origin hypothesis."
+            "notes": "This step concerns maritime transmission and quarantine; the deeper origin model remains debated."
           }
         ],
-        "uncertainty_note": "This step is source-backed for maritime transmission or quarantine context, not for the contested deep-origin hypothesis."
+        "uncertainty_note": "This step concerns maritime transmission and quarantine; the deeper origin model remains debated."
       },
       {
         "kind": "mechanism",
@@ -2569,10 +2569,10 @@ window.MARITIME_DISEASE_SCENARIOS = {
             ],
             "confidence": "moderate",
             "claim_type": "guided-tour step",
-            "notes": "This step is source-backed for maritime transmission or quarantine context, not for the contested deep-origin hypothesis."
+            "notes": "This step concerns maritime transmission and quarantine; the deeper origin model remains debated."
           }
         ],
-        "uncertainty_note": "This step is source-backed for maritime transmission or quarantine context, not for the contested deep-origin hypothesis."
+        "uncertainty_note": "This step concerns maritime transmission and quarantine; the deeper origin model remains debated."
       },
       {
         "kind": "plot",
@@ -2630,10 +2630,10 @@ window.MARITIME_DISEASE_SCENARIOS = {
             ],
             "confidence": "moderate",
             "claim_type": "guided-tour step",
-            "notes": "This step is source-backed for maritime transmission or quarantine context, not for the contested deep-origin hypothesis."
+            "notes": "This step concerns maritime transmission and quarantine; the deeper origin model remains debated."
           }
         ],
-        "uncertainty_note": "This step is source-backed for maritime transmission or quarantine context, not for the contested deep-origin hypothesis."
+        "uncertainty_note": "This step concerns maritime transmission and quarantine; the deeper origin model remains debated."
       },
       {
         "kind": "point",
@@ -2660,10 +2660,10 @@ window.MARITIME_DISEASE_SCENARIOS = {
             ],
             "confidence": "moderate",
             "claim_type": "guided-tour step",
-            "notes": "This step is source-backed for maritime transmission or quarantine context, not for the contested deep-origin hypothesis."
+            "notes": "This step concerns maritime transmission and quarantine; the deeper origin model remains debated."
           }
         ],
-        "uncertainty_note": "This step is source-backed for maritime transmission or quarantine context, not for the contested deep-origin hypothesis."
+        "uncertainty_note": "This step concerns maritime transmission and quarantine; the deeper origin model remains debated."
       },
       {
         "kind": "route",

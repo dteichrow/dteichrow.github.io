@@ -28,6 +28,6 @@ external/maritime_disease_atlas/index.html?youtube=1&scenario=<scenario_id>&pace
 
 - Do not add new narration claims during retakes.
 - Do not use a shot if it hides the map through the whole beat.
-- Preserve the source-backed order unless the edit explicitly needs a bridge shot.
+- Preserve the cited order unless the edit explicitly needs a bridge shot.
 - Keep `sound=1` and `audio=1` out of capture URLs by default.
 - If a retake changes timing, update `caption-draft.srt` and `chapter-markers.txt`.

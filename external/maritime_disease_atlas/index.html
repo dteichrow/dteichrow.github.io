@@ -1380,7 +1380,7 @@ html, body {
   <div id="story-evidence" aria-label="Evidence note" hidden></div>
   <details id="exhibit-guide" class="exhibit-guide">
     <summary>How to use this exhibit</summary>
-    <p>Choose a station group across the top, then use the case modules below as the source-backed reading layer. Guided Tour plays the exhibit without hiding the interface. Presentation Mode switches to the cinematic capture layout for a later YouTube cut.</p>
+    <p>Choose a station group across the top, then use the case studies below as the cited reading layer. Guided Tour keeps the exhibit interface visible. Presentation Mode switches to the cinematic view used for recording.</p>
   </details>
   <section class="mechanism-first" aria-label="Mechanism first guide">
     <h3>Mechanism first</h3>
@@ -1394,8 +1394,8 @@ html, body {
       <div class="mechanism-pill">Not all ship disease is infection</div>
     </div>
   </section>
-  <section id="module-browser" class="module-browser" aria-label="Source-backed maritime case modules">
-    <h3>Case modules</h3>
+  <section id="module-browser" class="module-browser" aria-label="Cited maritime case studies">
+    <h3>Case Studies</h3>
     <div class="module-filters">
       <label>Setting<select id="module-setting-filter"></select></label>
       <label>Condition<select id="module-condition-filter"></select></label>
@@ -1403,183 +1403,199 @@ html, body {
       <label>Century<select id="module-century-filter"></select></label>
       <label>Confidence<select id="module-confidence-filter"></select></label>
     </div>
-    <div id="module-count">16 of 16 source-backed modules</div>
+    <div id="module-count">16 cited case studies</div>
     <div id="module-list">
       <article class="module-card" data-module-id="scurvy_long_voyage_navy">
         <h4>Scurvy and the long-voyage provisioning clock</h4>
         <div class="module-meta">1747-1790s | naval voyage | British naval voyages and Atlantic routes</div>
         <div class="module-line"><strong>Condition</strong> scurvy</div>
         <div class="module-line"><strong>Mechanism</strong> A long voyage turned diet into exposure: preserved rations displaced fresh fruit and vegetables, and risk rose with time away from reliable provisioning.</div>
-        <div class="module-line"><strong>Burden</strong> qualitative: Severe morbidity and mortality occurred on long voyages, but this module does not assign an exact burden to all naval scurvy.</div>
+        <div class="module-line"><strong>Burden</strong> Qualitative evidence: Severe morbidity and mortality occurred on long voyages, but this module does not assign an exact burden to all naval scurvy.</div>
         <div class="module-line"><strong>Response</strong> Diet reform, citrus provisioning, naval medical observation, and logistical enforcement.</div>
         <div class="module-line"><strong>Uncertainty</strong> The mechanism is high confidence; voyage-specific rates should be sourced ship by ship.</div>
-        <div class="module-citation"><strong>Source IDs</strong> maritime-lind-scurvy-treatise; maritime-carpenter-scurvy-vitamin-c; maritime-james-lind-library-scurvy</div>
-        <div class="module-badges"><span class="module-badge">high confidence</span><span class="module-badge">Map: inferred route</span><span class="module-badge">diet</span><span class="module-badge">empire/war</span></div>
+        <div class="module-citation"><strong>Citations</strong> <a href="https://library.si.edu/digital-library/book/treatisescurvyt00lind" target="_blank" rel="noreferrer">Lind. A Treatise of the Scurvy. 1753.</a>; <a href="https://www.cambridge.org/core/books/history-of-scurvy-and-vitamin-c/8BF4FE6529793B8C131D5349C3D357EA" target="_blank" rel="noreferrer">Carpenter. The History of Scurvy and Vitamin C. 1986.</a>; <a href="https://www.jameslindlibrary.org/lind-j-1753/" target="_blank" rel="noreferrer">James Lind Library. Lind J (1753).</a></div>
+        <div class="module-badges"><span class="module-badge">High confidence</span><span class="module-badge">Map: Inferred route</span><span class="module-badge">diet</span><span class="module-badge">empire/war</span></div>
+        <button class="module-open" data-scenario="scurvy">Open station</button>
       </article>
       <article class="module-card" data-module-id="ship_fever_grosse_ile_1847">
         <h4>Ship fever and Grosse Ile quarantine</h4>
         <div class="module-meta">1847 | migrant ship and quarantine island | North Atlantic migration to Quebec</div>
         <div class="module-line"><strong>Condition</strong> epidemic typhus, ship fever</div>
         <div class="module-line"><strong>Mechanism</strong> Crowding, dirty clothing, body lice, poor hygiene, and delayed landing made the ship and quarantine station one connected exposure system.</div>
-        <div class="module-line"><strong>Burden</strong> qualitative: The case involved severe mortality among famine-era migrants and quarantine personnel; this module avoids an exact death count until a case-specific source is selected for that number.</div>
+        <div class="module-line"><strong>Burden</strong> Qualitative evidence: The case involved severe mortality among famine-era migrants and quarantine personnel; this module avoids an exact death count until a case-specific source is selected for that number.</div>
         <div class="module-line"><strong>Response</strong> Quarantine station processing, isolation, cleaning, delousing logic, and port health administration.</div>
         <div class="module-line"><strong>Uncertainty</strong> Ship fever is often typhus in this setting, but historical fever labels can include mixed illness and incomplete diagnosis.</div>
-        <div class="module-citation"><strong>Source IDs</strong> maritime-parks-canada-grosse-ile; epidemic-typhus-cdc; typhus-cdc-clinical</div>
-        <div class="module-badges"><span class="module-badge">high confidence</span><span class="module-badge">Map: typical route</span><span class="module-badge">crowding</span><span class="module-badge">quarantine</span><span class="module-badge">ports</span></div>
+        <div class="module-citation"><strong>Citations</strong> <a href="https://parks.canada.ca/culture/designation/lieu-site/grosse-ile" target="_blank" rel="noreferrer">Parks Canada. Grosse Ile and the Irish Memorial National Historic Site.</a>; <a href="https://www.cdc.gov/typhus/about/epidemic.html" target="_blank" rel="noreferrer">CDC. About Epidemic typhus. 2024.</a>; <a href="https://www.cdc.gov/typhus/hcp/clinical-overview/index.html" target="_blank" rel="noreferrer">CDC. Clinical Overview of Typhus Fevers. 2024.</a></div>
+        <div class="module-badges"><span class="module-badge">High confidence</span><span class="module-badge">Map: Typical route</span><span class="module-badge">crowding</span><span class="module-badge">quarantine</span><span class="module-badge">ports</span></div>
+        <button class="module-open" data-scenario="ship_fever">Open station</button>
       </article>
       <article class="module-card" data-module-id="cholera_steamship_quarantine_1892">
         <h4>Cholera and steamship-era New York quarantine</h4>
         <div class="module-meta">1892 | steamship route and port quarantine | European Atlantic migration to New York Harbor</div>
         <div class="module-line"><strong>Condition</strong> cholera</div>
         <div class="module-line"><strong>Mechanism</strong> Steamship movement could move infected people quickly, but cholera risk depended on fecal contamination, water systems, inspection, isolation, and port politics.</div>
-        <div class="module-line"><strong>Burden</strong> qualitative: This module emphasizes quarantine conflict and port response rather than assigning a citywide mortality estimate.</div>
+        <div class="module-line"><strong>Burden</strong> Qualitative evidence: This module emphasizes quarantine conflict and port response rather than assigning a citywide mortality estimate.</div>
         <div class="module-line"><strong>Response</strong> Inspection, quarantine detention, disinfection, isolation, and sanitary surveillance.</div>
         <div class="module-line"><strong>Uncertainty</strong> The route is a historically grounded port-health example, not a claim that all cholera spread was ship-imported.</div>
-        <div class="module-citation"><strong>Source IDs</strong> maritime-markel-quarantine-1892; maritime-rosenberg-cholera-years; cholera-who; cdc-cholera-us</div>
-        <div class="module-badges"><span class="module-badge">high confidence</span><span class="module-badge">Map: documented route</span><span class="module-badge">water</span><span class="module-badge">ports</span><span class="module-badge">quarantine</span></div>
+        <div class="module-citation"><strong>Citations</strong> <a href="https://www.press.jhu.edu/books/title/12880/quarantine" target="_blank" rel="noreferrer">Markel. Quarantine! 1997.</a>; <a href="https://press.uchicago.edu/ucp/books/book/chicago/C/bo3618588.html" target="_blank" rel="noreferrer">Rosenberg. The Cholera Years. 1962.</a>; <a href="https://www.who.int/news-room/fact-sheets/detail/cholera" target="_blank" rel="noreferrer">WHO. Cholera fact sheet.</a>; <a href="https://www.cdc.gov/cholera/about/about-cholera-in-the-united-states.html" target="_blank" rel="noreferrer">CDC. Cholera in the United States.</a></div>
+        <div class="module-badges"><span class="module-badge">High confidence</span><span class="module-badge">Map: Documented route</span><span class="module-badge">water</span><span class="module-badge">ports</span><span class="module-badge">quarantine</span></div>
+        <button class="module-open" data-scenario="flux">Open station</button>
       </article>
       <article class="module-card" data-module-id="yellow_fever_atlantic_ports_1793">
         <h4>Yellow fever in Atlantic port ecology</h4>
         <div class="module-meta">1793 and recurring Atlantic port epidemics | port city and shipping network | West African, Caribbean, and North American Atlantic ports</div>
         <div class="module-line"><strong>Condition</strong> yellow fever</div>
         <div class="module-line"><strong>Mechanism</strong> Ships connected warm ports, nonimmune travelers, stored water, and Aedes mosquito habitat, but the mosquito-human cycle still needed local ecological conditions.</div>
-        <div class="module-line"><strong>Burden</strong> estimated: Philadelphia's 1793 epidemic was severe; burden estimates vary by historical source and should be cited directly when displayed numerically.</div>
+        <div class="module-line"><strong>Burden</strong> Estimate: Philadelphia&#39;s 1793 epidemic was severe; burden estimates vary by historical source and should be cited directly when displayed numerically.</div>
         <div class="module-line"><strong>Response</strong> Flight, quarantine debate, port health measures, later mosquito-vector control, and vaccination in modern practice.</div>
         <div class="module-line"><strong>Uncertainty</strong> The vector mechanism is high confidence; specific eighteenth-century import chains are harder to prove.</div>
-        <div class="module-citation"><strong>Source IDs</strong> yellow-history; cdc-yellow-fever-spread; yellow-fever-who; nlm-yellow-fever-primary</div>
-        <div class="module-badges"><span class="module-badge">high confidence</span><span class="module-badge">Map: inferred route</span><span class="module-badge">vectors</span><span class="module-badge">ports</span><span class="module-badge">empire/war</span></div>
+        <div class="module-citation"><strong>Citations</strong> <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2596468/" target="_blank" rel="noreferrer">Downs. History of Epidemiological Aspects of Yellow Fever. 1982.</a>; <a href="https://www.cdc.gov/yellow-fever/causes-and-spread/index.html" target="_blank" rel="noreferrer">CDC. Yellow fever causes and spread.</a>; <a href="https://www.who.int/news-room/fact-sheets/detail/yellow-fever" target="_blank" rel="noreferrer">World Health Organization. Yellow fever fact sheet.</a>; <a href="https://collections.nlm.nih.gov/catalog/nlm:nlmuid-2551045R-bk" target="_blank" rel="noreferrer">NLM. 1793 Philadelphia Yellow Fever Primary Account.</a></div>
+        <div class="module-badges"><span class="module-badge">High confidence</span><span class="module-badge">Map: Inferred route</span><span class="module-badge">vectors</span><span class="module-badge">ports</span><span class="module-badge">empire/war</span></div>
+        <button class="module-open" data-scenario="yellow_fever">Open station</button>
       </article>
       <article class="module-card" data-module-id="mediterranean_plague_lazarettos">
         <h4>Plague, bills of health, and Mediterranean lazarettos</h4>
         <div class="module-meta">15th-18th centuries | quarantine island and trade network | Mediterranean port cities including Venice and other quarantine nodes</div>
         <div class="module-line"><strong>Condition</strong> plague</div>
         <div class="module-line"><strong>Mechanism</strong> Lazarettos, bills of health, isolation, and cargo control turned disease fear into maritime infrastructure that shaped trade as well as exposure.</div>
-        <div class="module-line"><strong>Burden</strong> qualitative: Plague mortality could be catastrophic, but this module is about infrastructure rather than a single quantified outbreak.</div>
+        <div class="module-line"><strong>Burden</strong> Qualitative evidence: Plague mortality could be catastrophic, but this module is about infrastructure rather than a single quantified outbreak.</div>
         <div class="module-line"><strong>Response</strong> Bills of health, lazarettos, detention, fumigation, cargo controls, and port sanitary boundaries.</div>
         <div class="module-line"><strong>Uncertainty</strong> The infrastructure is well documented; specific ship-to-city plague transmission chains need case-level evidence.</div>
-        <div class="module-citation"><strong>Source IDs</strong> maritime-booker-quarantine-2007; maritime-tognotti-quarantine-2013; maritime-crawshaw-plague-hospitals; plague-who</div>
-        <div class="module-badges"><span class="module-badge">high confidence</span><span class="module-badge">Map: typical route</span><span class="module-badge">quarantine</span><span class="module-badge">ports</span><span class="module-badge">empire/war</span></div>
+        <div class="module-citation"><strong>Citations</strong> <a href="https://www.routledge.com/Maritime-Quarantine-The-British-Experience-c1650-1900/Booker/p/book/9781138274129" target="_blank" rel="noreferrer">Booker. Maritime Quarantine. 2007.</a>; <a href="https://doi.org/10.3201/eid1902.120312" target="_blank" rel="noreferrer">Tognotti. Lessons from the History of Quarantine. 2013.</a>; <a href="https://www.routledge.com/Plague-Hospitals-Public-Health-for-the-City-in-Early-Modern-Venice/Crawshaw/p/book/9781472441201" target="_blank" rel="noreferrer">Crawshaw. Plague Hospitals. 2012.</a>; <a href="https://www.who.int/news-room/fact-sheets/detail/plague" target="_blank" rel="noreferrer">WHO. Plague fact sheet.</a></div>
+        <div class="module-badges"><span class="module-badge">High confidence</span><span class="module-badge">Map: Typical route</span><span class="module-badge">quarantine</span><span class="module-badge">ports</span><span class="module-badge">empire/war</span></div>
+        <button class="module-open" data-scenario="pirate_network">Open station</button>
       </article>
       <article class="module-card" data-module-id="algiers_plague_sanitary_ban_1818">
         <h4>Algiers plague and the American sanitary ban</h4>
         <div class="module-meta">1817-1818 | port quarantine and naval squadron | Algiers Bay and the western Mediterranean</div>
         <div class="module-line"><strong>Condition</strong> plague</div>
-        <div class="module-line"><strong>Mechanism</strong> The Algiers outbreak turned plague fear into a naval and diplomatic problem: U.S. consul William Shaler pushed to keep Algerine sailors from boarding American vessels while Mediterranean quarantine systems treated ships, ports, and crews as linked risks.</div>
-        <div class="module-line"><strong>Burden</strong> estimated: A scholar-authored synthesis reports Daniel Panzac's estimate that as much as one third of Algiers's urban population died between June and September 1817; the module does not assign mortality to American captives or the Barbary Wars.</div>
+        <div class="module-line"><strong>Mechanism</strong> The Algiers outbreak turned plague fear into a naval and diplomatic problem: U.S. consul William Shaler pushed to keep Algerine sailors from boarding American vessels while Mediterranean quarantine systems tre...</div>
+        <div class="module-line"><strong>Burden</strong> Estimate: A scholar-authored synthesis reports Daniel Panzac&#39;s estimate that as much as one third of Algiers&#39;s urban population died between June and September 1817; the module does not assign mortal...</div>
         <div class="module-line"><strong>Response</strong> Sanitary exclusion, restrictions on boarding American ships, Mediterranean quarantine routines, bills of health, and port-health surveillance.</div>
         <div class="module-line"><strong>Uncertainty</strong> The sanitary-ban case is supportable; claims that plague decided the Barbary Wars, drove American captivity outcomes, or killed most captives are not supported here.</div>
-        <div class="module-citation"><strong>Source IDs</strong> maritime-delange-algiers-sanitary-ban-1818; maritime-ini-quarantine-geographies-2023; maritime-state-barbary-wars; plague-who</div>
-        <div class="module-badges"><span class="module-badge">moderate confidence</span><span class="module-badge">Map: port location</span><span class="module-badge">quarantine</span><span class="module-badge">ports</span><span class="module-badge">empire/war</span></div>
+        <div class="module-citation"><strong>Citations</strong> <a href="https://securing-europe.wp.hum.uu.nl/the-plague-on-board-algiers-and-the-american-sanitary-ban-of-1818/" target="_blank" rel="noreferrer">de Lange. The Plague on Board. 2017.</a>; <a href="https://doi.org/10.1017/S0018246X23000596" target="_blank" rel="noreferrer">Ini. Quarantine and Diseased Geographies. 2024.</a>; <a href="https://history.state.gov/milestones/1801-1829/barbary-wars" target="_blank" rel="noreferrer">Office of the Historian. Barbary Wars.</a>; <a href="https://www.who.int/news-room/fact-sheets/detail/plague" target="_blank" rel="noreferrer">WHO. Plague fact sheet.</a></div>
+        <div class="module-badges"><span class="module-badge">Moderate confidence</span><span class="module-badge">Map: Port location</span><span class="module-badge">quarantine</span><span class="module-badge">ports</span><span class="module-badge">empire/war</span></div>
+
       </article>
       <article class="module-card" data-module-id="smallpox_maritime_isolation_hulks">
         <h4>Smallpox, bedding, and maritime isolation</h4>
         <div class="module-meta">18th-19th centuries | ship route and port quarantine | Atlantic ships and port isolation systems</div>
         <div class="module-line"><strong>Condition</strong> smallpox</div>
         <div class="module-line"><strong>Mechanism</strong> Close quarters, bedding, clothing, susceptible passengers, and arrival inspection made smallpox both a shipboard and port-health problem.</div>
-        <div class="module-line"><strong>Burden</strong> qualitative: Smallpox was historically severe and often fatal, but this module does not assign a burden to a particular voyage.</div>
+        <div class="module-line"><strong>Burden</strong> Qualitative evidence: Smallpox was historically severe and often fatal, but this module does not assign a burden to a particular voyage.</div>
         <div class="module-line"><strong>Response</strong> Isolation, quarantine, variolation or vaccination depending on period, and later eradication-era surveillance.</div>
         <div class="module-line"><strong>Uncertainty</strong> Deep-origin claims are excluded here; transmission and quarantine claims are better supported than origin hypotheses.</div>
-        <div class="module-citation"><strong>Source IDs</strong> smallpox-cdc; who-smallpox-eradication</div>
-        <div class="module-badges"><span class="module-badge">high confidence</span><span class="module-badge">Map: quarantine station</span><span class="module-badge">crowding</span><span class="module-badge">quarantine</span><span class="module-badge">ports</span></div>
+        <div class="module-citation"><strong>Citations</strong> <a href="https://www.cdc.gov/smallpox/about/history.html" target="_blank" rel="noreferrer">CDC. History of Smallpox. 2024.</a>; <a href="https://iris.who.int/handle/10665/39485" target="_blank" rel="noreferrer">WHO. Smallpox and Its Eradication.</a></div>
+        <div class="module-badges"><span class="module-badge">High confidence</span><span class="module-badge">Map: Quarantine station</span><span class="module-badge">crowding</span><span class="module-badge">quarantine</span><span class="module-badge">ports</span></div>
+        <button class="module-open" data-scenario="smallpox">Open station</button>
       </article>
       <article class="module-card" data-module-id="middle_passage_forced_transport">
         <h4>The Middle Passage as coercive disease ecology</h4>
         <div class="module-meta">16th-19th centuries | plantation/Atlantic system | Forced Atlantic slave voyages</div>
         <div class="module-line"><strong>Condition</strong> dysentery/flux, smallpox, measles, dehydration, malnutrition, violence, nonspecific fever</div>
         <div class="module-line"><strong>Mechanism</strong> Forced confinement, dehydration, malnutrition, heat, crowding, violence, waste, and infection compounded in a system where the captives had no meaningful agency.</div>
-        <div class="module-line"><strong>Burden</strong> estimated: SlaveVoyages supports voyage-level mortality analysis, but cause-specific mortality is uneven and should not be invented.</div>
+        <div class="module-line"><strong>Burden</strong> Estimate: SlaveVoyages supports voyage-level mortality analysis, but cause-specific mortality is uneven and should not be invented.</div>
         <div class="module-line"><strong>Response</strong> Not a welfare system; shipboard regulation, provisioning rules, and later abolitionist exposure are historically distinct from modern public health.</div>
         <div class="module-line"><strong>Uncertainty</strong> Total mortality is much better supported than precise cause-specific disease fractions.</div>
-        <div class="module-citation"><strong>Source IDs</strong> slavevoyages-methodology; eltis-richardson-atlas-transatlantic-slave-trade; curtin-epidemiology-slave-trade</div>
-        <div class="module-badges"><span class="module-badge">high confidence</span><span class="module-badge">Map: region only</span><span class="module-badge">crowding</span><span class="module-badge">water</span><span class="module-badge">diet</span></div>
+        <div class="module-citation"><strong>Citations</strong> <a href="https://legacy.slavevoyages.org/blog/methodology-trans-atlantic" target="_blank" rel="noreferrer">SlaveVoyages. Trans-Atlantic Slave Trade Database methodology.</a>; <a href="https://yalebooks.yale.edu/book/9780300185294/atlas-of-the-transatlantic-slave-trade/" target="_blank" rel="noreferrer">Eltis and Richardson. Atlas of the Transatlantic Slave Trade. 2010.</a>; <a href="https://doi.org/10.2307/2147089" target="_blank" rel="noreferrer">Curtin. Epidemiology and the Slave Trade. 1968.</a></div>
+        <div class="module-badges"><span class="module-badge">High confidence</span><span class="module-badge">Map: Regional context</span><span class="module-badge">crowding</span><span class="module-badge">water</span><span class="module-badge">diet</span></div>
+        <button class="module-open" data-scenario="middle_passage">Open station</button>
       </article>
       <article class="module-card" data-module-id="pirate_ports_caribbean_network">
         <h4>Pirate ports as maritime infrastructure, not disease origin</h4>
         <div class="module-meta">c. 1700-1730 | pirate and merchant port network | Nassau, Port Royal, Tortuga, Cape Fear, and Caribbean Atlantic ports</div>
         <div class="module-line"><strong>Condition</strong> wounds, enteric illness, vector-borne fevers, nonspecific fever</div>
         <div class="module-line"><strong>Mechanism</strong> Pirate ports are useful because they show how crews, stolen goods, provisions, water, injuries, sex, alcohol, insects, and ships passed through the same nodes.</div>
-        <div class="module-line"><strong>Burden</strong> unknown: No case-specific disease burden is displayed; this is a network and exposure module.</div>
+        <div class="module-line"><strong>Burden</strong> No reliable count: No case-specific disease burden is displayed; this is a network and exposure module.</div>
         <div class="module-line"><strong>Response</strong> Port regulation, naval suppression, provisioning, quarantine practice, and shipboard discipline varied by port and period.</div>
         <div class="module-line"><strong>Uncertainty</strong> Disease risk is inferred from maritime social ecology; no specific pirate-port outbreak burden is asserted.</div>
-        <div class="module-citation"><strong>Source IDs</strong> maritime-rediker-between-devil; maritime-rediker-villains</div>
-        <div class="module-badges"><span class="module-badge">moderate confidence</span><span class="module-badge">Map: typical route</span><span class="module-badge">ports</span><span class="module-badge">vectors</span><span class="module-badge">water</span></div>
+        <div class="module-citation"><strong>Citations</strong> <a href="https://www.cambridge.org/core/books/between-the-devil-and-the-deep-blue-sea/97443DB56227E213DB855B439A98D170" target="_blank" rel="noreferrer">Rediker. Between the Devil and the Deep Blue Sea. 1987.</a>; <a href="https://www.beacon.org/Villains-of-All-Nations-P2198.aspx" target="_blank" rel="noreferrer">Rediker. Villains of All Nations. 2004.</a></div>
+        <div class="module-badges"><span class="module-badge">Moderate confidence</span><span class="module-badge">Map: Typical route</span><span class="module-badge">ports</span><span class="module-badge">vectors</span><span class="module-badge">water</span></div>
+        <button class="module-open" data-scenario="pirate_network">Open station</button>
       </article>
       <article class="module-card" data-module-id="wounds_sepsis_shipboard_trauma">
         <h4>Wounds, surgery, and sepsis below deck</h4>
         <div class="module-meta">Age of sail, especially 17th-18th centuries | ship interior | Atlantic merchant, naval, and pirate ships</div>
         <div class="module-line"><strong>Condition</strong> wound infection, gangrene, sepsis</div>
         <div class="module-line"><strong>Mechanism</strong> Splinters, blades, burns, falls, dental injury, dirty dressings, delayed care, and shared bedding turned trauma into infectious risk.</div>
-        <div class="module-line"><strong>Burden</strong> qualitative: The burden is described qualitatively; no general rate is assigned across maritime labor settings.</div>
+        <div class="module-line"><strong>Burden</strong> Qualitative evidence: The burden is described qualitatively; no general rate is assigned across maritime labor settings.</div>
         <div class="module-line"><strong>Response</strong> Shipboard surgery, cleaning, bandaging, amputation, later antisepsis, and modern sepsis recognition.</div>
         <div class="module-line"><strong>Uncertainty</strong> Sepsis is a modern clinical concept; historical sources often describe wounds, gangrene, fever, or death rather than sepsis as a diagnosis.</div>
-        <div class="module-citation"><strong>Source IDs</strong> maritime-rediker-between-devil; cdc-sepsis-about</div>
-        <div class="module-badges"><span class="module-badge">moderate confidence</span><span class="module-badge">Map: region only</span><span class="module-badge">crowding</span><span class="module-badge">empire/war</span></div>
+        <div class="module-citation"><strong>Citations</strong> <a href="https://www.cambridge.org/core/books/between-the-devil-and-the-deep-blue-sea/97443DB56227E213DB855B439A98D170" target="_blank" rel="noreferrer">Rediker. Between the Devil and the Deep Blue Sea. 1987.</a>; <a href="https://www.cdc.gov/sepsis/about/index.html" target="_blank" rel="noreferrer">CDC. About Sepsis.</a></div>
+        <div class="module-badges"><span class="module-badge">Moderate confidence</span><span class="module-badge">Map: Regional context</span><span class="module-badge">crowding</span><span class="module-badge">empire/war</span></div>
+        <button class="module-open" data-scenario="wounds_sepsis">Open station</button>
       </article>
       <article class="module-card" data-module-id="typhoid_provisions_food_water">
         <h4>Typhoid, provisions, and fecal contamination</h4>
         <div class="module-meta">19th-20th centuries as a teaching mechanism | ship interior and provisioning system | Shipboard food-water systems and ports</div>
         <div class="module-line"><strong>Condition</strong> typhoid fever</div>
         <div class="module-line"><strong>Mechanism</strong> Water casks, food handling, carriers, hands, utensils, and waste boundaries could turn provisions into a transmission system.</div>
-        <div class="module-line"><strong>Burden</strong> unknown: No voyage-specific typhoid burden is asserted in V1.</div>
+        <div class="module-line"><strong>Burden</strong> No reliable count: No voyage-specific typhoid burden is asserted here.</div>
         <div class="module-line"><strong>Response</strong> Safe water, sanitation, food hygiene, vaccination for travelers or high-risk groups, and carrier control.</div>
         <div class="module-line"><strong>Uncertainty</strong> The biomedical mechanism is high confidence; historical fever diagnoses aboard ship can be nonspecific.</div>
-        <div class="module-citation"><strong>Source IDs</strong> typhoid-cdc-yellowbook; typhoid-who; cdc-drinking-water</div>
-        <div class="module-badges"><span class="module-badge">high confidence</span><span class="module-badge">Map: region only</span><span class="module-badge">water</span><span class="module-badge">diet</span><span class="module-badge">ports</span></div>
+        <div class="module-citation"><strong>Citations</strong> <a href="https://wwwnc.cdc.gov/travel/yellowbook/2024/infections-diseases/typhoid-and-paratyphoid-fever" target="_blank" rel="noreferrer">CDC Yellow Book. Typhoid and Paratyphoid Fever.</a>; <a href="https://www.who.int/news-room/fact-sheets/detail/typhoid" target="_blank" rel="noreferrer">WHO. Typhoid fact sheet. 2023.</a>; <a href="https://archive.cdc.gov/www_cdc_gov/healthywater/drinking/history.html" target="_blank" rel="noreferrer">CDC. History of Drinking Water Treatment.</a></div>
+        <div class="module-badges"><span class="module-badge">High confidence</span><span class="module-badge">Map: Regional context</span><span class="module-badge">water</span><span class="module-badge">diet</span><span class="module-badge">ports</span></div>
+        <button class="module-open" data-scenario="typhoid">Open station</button>
       </article>
       <article class="module-card" data-module-id="flux_dysentery_shipboard_water_waste">
         <h4>Flux, dysentery, water, and waste below deck</h4>
         <div class="module-meta">Early modern through 19th century | ship interior | Ship interiors, water storage, and latrine boundaries</div>
         <div class="module-line"><strong>Condition</strong> flux, dysentery, diarrheal disease</div>
         <div class="module-line"><strong>Mechanism</strong> Water storage, waste disposal, dirty hands, shared utensils, spoiled food, and crowding made enteric exposure hard to separate from ordinary ship operation.</div>
-        <div class="module-line"><strong>Burden</strong> qualitative: Diarrheal illness could be severe, especially in captive or crowded settings, but exact pathogen-specific burdens are not displayed.</div>
+        <div class="module-line"><strong>Burden</strong> Qualitative evidence: Diarrheal illness could be severe, especially in captive or crowded settings, but exact pathogen-specific burdens are not displayed.</div>
         <div class="module-line"><strong>Response</strong> Water protection, sanitation, food hygiene, isolation when possible, and later bacteriologic diagnosis.</div>
         <div class="module-line"><strong>Uncertainty</strong> Flux/dysentery labels are not one diagnosis; pathogen-specific claims require case-level evidence.</div>
-        <div class="module-citation"><strong>Source IDs</strong> shigella-cdc; cdc-drinking-water; curtin-epidemiology-slave-trade</div>
-        <div class="module-badges"><span class="module-badge">moderate confidence</span><span class="module-badge">Map: region only</span><span class="module-badge">water</span><span class="module-badge">crowding</span><span class="module-badge">diet</span></div>
+        <div class="module-citation"><strong>Citations</strong> <a href="https://www.cdc.gov/shigella/about/index.html" target="_blank" rel="noreferrer">CDC. About Shigellosis. 2024.</a>; <a href="https://archive.cdc.gov/www_cdc_gov/healthywater/drinking/history.html" target="_blank" rel="noreferrer">CDC. History of Drinking Water Treatment.</a>; <a href="https://doi.org/10.2307/2147089" target="_blank" rel="noreferrer">Curtin. Epidemiology and the Slave Trade. 1968.</a></div>
+        <div class="module-badges"><span class="module-badge">Moderate confidence</span><span class="module-badge">Map: Regional context</span><span class="module-badge">water</span><span class="module-badge">crowding</span><span class="module-badge">diet</span></div>
+        <button class="module-open" data-scenario="flux">Open station</button>
       </article>
       <article class="module-card" data-module-id="ellis_island_medical_inspection">
         <h4>Ellis Island and immigrant medical inspection</h4>
         <div class="module-meta">1892-1954 | port inspection station | New York Harbor</div>
         <div class="module-line"><strong>Condition</strong> trachoma, favus, visible disability, nonspecific inspection categories</div>
         <div class="module-line"><strong>Mechanism</strong> The ship ended at an inspection architecture where bodies, documents, disease categories, immigration law, and public-health authority met.</div>
-        <div class="module-line"><strong>Burden</strong> qualitative: The burden includes detention, treatment, exclusion, and family separation; no disease-specific burden estimate is displayed.</div>
+        <div class="module-line"><strong>Burden</strong> Qualitative evidence: The burden includes detention, treatment, exclusion, and family separation; no disease-specific burden estimate is displayed.</div>
         <div class="module-line"><strong>Response</strong> Line inspection, hospital inspection, detention, treatment, exclusion, and immigration medical bureaucracy.</div>
         <div class="module-line"><strong>Uncertainty</strong> Inspection categories mixed infectious risk, disability, labor assumptions, and immigration policy.</div>
-        <div class="module-citation"><strong>Source IDs</strong> maritime-nps-ellis-doctors; maritime-markel-quarantine-1892</div>
-        <div class="module-badges"><span class="module-badge">high confidence</span><span class="module-badge">Map: port location</span><span class="module-badge">ports</span><span class="module-badge">quarantine</span><span class="module-badge">crowding</span></div>
+        <div class="module-citation"><strong>Citations</strong> <a href="https://www.nps.gov/elis/learn/historyculture/people_doctor.htm" target="_blank" rel="noreferrer">NPS. Doctors at Ellis Island.</a>; <a href="https://www.press.jhu.edu/books/title/12880/quarantine" target="_blank" rel="noreferrer">Markel. Quarantine! 1997.</a></div>
+        <div class="module-badges"><span class="module-badge">High confidence</span><span class="module-badge">Map: Port location</span><span class="module-badge">ports</span><span class="module-badge">quarantine</span><span class="module-badge">crowding</span></div>
+        <button class="module-open" data-scenario="ship_fever">Open station</button>
       </article>
       <article class="module-card" data-module-id="san_francisco_plague_port_1900">
         <h4>San Francisco plague and port quarantine politics</h4>
         <div class="module-meta">1900-1904 | port city and quarantine conflict | San Francisco and Pacific shipping networks</div>
         <div class="module-line"><strong>Condition</strong> plague</div>
         <div class="module-line"><strong>Mechanism</strong> Pacific shipping, rats, fleas, Chinatown politics, federal-state conflict, and commerce made plague a port-health crisis rather than only a bacteriologic fact.</div>
-        <div class="module-line"><strong>Burden</strong> estimated: Case and death counts exist in the historical literature, but this module foregrounds source-backed port response and avoids unsupported extrapolation.</div>
+        <div class="module-line"><strong>Burden</strong> Estimate: Case and death counts exist in the historical literature, but this module foregrounds documented port response and avoids unsupported extrapolation.</div>
         <div class="module-line"><strong>Response</strong> Quarantine, inspection, rat control, laboratory confirmation, federal intervention, and contested enforcement.</div>
         <div class="module-line"><strong>Uncertainty</strong> Port association is strong; blaming a single ship or community is not supported by the module and is not displayed.</div>
-        <div class="module-citation"><strong>Source IDs</strong> maritime-dolan-sf-plague-1900; niaid-sf-plague; plague-who</div>
-        <div class="module-badges"><span class="module-badge">high confidence</span><span class="module-badge">Map: port location</span><span class="module-badge">ports</span><span class="module-badge">vectors</span><span class="module-badge">quarantine</span></div>
+        <div class="module-citation"><strong>Citations</strong> <a href="https://doi.org/10.1177/00333549061210S103" target="_blank" rel="noreferrer">Dolan. Plague in San Francisco. 2006.</a>; <a href="https://www.niaid.nih.gov/about/joseph-kinyoun-indispensable-man-plague-san-francisco" target="_blank" rel="noreferrer">NIAID. Plague in San Francisco, 1900.</a>; <a href="https://www.who.int/news-room/fact-sheets/detail/plague" target="_blank" rel="noreferrer">WHO. Plague fact sheet.</a></div>
+        <div class="module-badges"><span class="module-badge">High confidence</span><span class="module-badge">Map: Port location</span><span class="module-badge">ports</span><span class="module-badge">vectors</span><span class="module-badge">quarantine</span></div>
+        <button class="module-open" data-scenario="pirate_network">Open station</button>
       </article>
       <article class="module-card" data-module-id="cruise_ship_norovirus_modern">
         <h4>Cruise-ship norovirus as a modern closed-vessel comparison</h4>
         <div class="module-meta">21st century | modern cruise ship | Cruise ships under CDC Vessel Sanitation Program jurisdiction</div>
         <div class="module-line"><strong>Condition</strong> norovirus gastroenteritis</div>
         <div class="module-line"><strong>Mechanism</strong> Shared dining, surfaces, cabins, vomit/fecal contamination, rapid passenger turnover, and sanitation procedures make modern cruise ships useful closed-setting comparisons.</div>
-        <div class="module-line"><strong>Burden</strong> estimated: Vessel Sanitation Program reports provide outbreak-specific illness counts; V1 does not collapse them into a single historic burden.</div>
+        <div class="module-line"><strong>Burden</strong> Estimate: Vessel Sanitation Program reports provide outbreak-specific illness counts; this module does not collapse them into a single historical burden.</div>
         <div class="module-line"><strong>Response</strong> Sanitation protocols, isolation, reporting, environmental cleaning, hand hygiene, and outbreak investigation.</div>
         <div class="module-line"><strong>Uncertainty</strong> Useful for mechanism comparison only; it should not be used to generalize backward to all shipboard disease.</div>
-        <div class="module-citation"><strong>Source IDs</strong> noro-cdc; noro-yellowbook; maritime-cdc-vsp-outbreaks; maritime-cdc-cruise-norovirus-2023</div>
-        <div class="module-badges"><span class="module-badge">high confidence</span><span class="module-badge">Map: typical route</span><span class="module-badge">water</span><span class="module-badge">crowding</span><span class="module-badge">ports</span></div>
+        <div class="module-citation"><strong>Citations</strong> <a href="https://www.cdc.gov/norovirus/causes/index.html" target="_blank" rel="noreferrer">CDC. How Norovirus Spreads. 2024.</a>; <a href="https://www.cdc.gov/yellow-book/hcp/travel-associated-infections-diseases/norovirus.html" target="_blank" rel="noreferrer">CDC Yellow Book. Norovirus. 2025.</a>; <a href="https://www.cdc.gov/vessel-sanitation/cruise-ship-outbreaks/index.html" target="_blank" rel="noreferrer">CDC Vessel Sanitation Program. Cruise ship outbreak updates.</a>; <a href="https://www.cdc.gov/mmwr/volumes/72/wr/mm7230a5.htm" target="_blank" rel="noreferrer">CDC MMWR. Cruise ship norovirus outbreak. 2023.</a></div>
+        <div class="module-badges"><span class="module-badge">High confidence</span><span class="module-badge">Map: Typical route</span><span class="module-badge">water</span><span class="module-badge">crowding</span><span class="module-badge">ports</span></div>
+        <button class="module-open" data-scenario="flux">Open station</button>
       </article>
       <article class="module-card" data-module-id="cruise_ship_covid_2020">
         <h4>COVID-19 on cruise ships and the limits of quarantine at sea</h4>
         <div class="module-meta">2020 | modern cruise ship | International cruise ship outbreaks</div>
         <div class="module-line"><strong>Condition</strong> COVID-19</div>
         <div class="module-line"><strong>Mechanism</strong> Cabins, shared air, crew labor, passenger turnover, isolation logistics, evacuation, and port refusal turned a ship into both exposure site and quarantine problem.</div>
-        <div class="module-line"><strong>Burden</strong> estimated: Official outbreak investigations report ship-specific case and death counts; V1 keeps the module qualitative unless a named outbreak is opened.</div>
+        <div class="module-line"><strong>Burden</strong> Estimate: Official outbreak investigations report ship-specific case and death counts; this module stays qualitative unless a named outbreak is opened.</div>
         <div class="module-line"><strong>Response</strong> Isolation, quarantine, contact tracing, port negotiation, evacuation, testing, crew/passenger restrictions, and later vaccination policies.</div>
         <div class="module-line"><strong>Uncertainty</strong> This module is a modern comparison; it should not be projected backward onto premodern ships without changing the evidence base.</div>
-        <div class="module-citation"><strong>Source IDs</strong> maritime-cdc-cruise-covid-2020; covid-who; cdc-covid-timeline</div>
-        <div class="module-badges"><span class="module-badge">high confidence</span><span class="module-badge">Map: documented route</span><span class="module-badge">crowding</span><span class="module-badge">quarantine</span><span class="module-badge">ports</span></div>
+        <div class="module-citation"><strong>Citations</strong> <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6912e3.htm" target="_blank" rel="noreferrer">CDC MMWR. Public Health Responses to COVID-19 Outbreaks on Cruise Ships. 2020.</a>; <a href="https://www.who.int/news-room/fact-sheets/detail/coronavirus-disease-(covid-19)" target="_blank" rel="noreferrer">WHO. Coronavirus disease fact sheet.</a>; <a href="https://www.cdc.gov/museum/timeline/covid19.html" target="_blank" rel="noreferrer">CDC Museum COVID-19 Timeline.</a></div>
+        <div class="module-badges"><span class="module-badge">High confidence</span><span class="module-badge">Map: Documented route</span><span class="module-badge">crowding</span><span class="module-badge">quarantine</span><span class="module-badge">ports</span></div>
+        <button class="module-open" data-scenario="measles">Open station</button>
       </article>
     </div>
   </section>
@@ -2025,7 +2041,7 @@ const CONTEXT_ART = {
   smallpox_origin_camel: {
     src: "assets/context/camel_from_nubia_1838.jpg",
     title: "Dromedary camel from the coast of Nubia",
-    kicker: "Origin hypothesis visual",
+    kicker: "Debated origin model",
     credit: "J. R. Wellsted, 1838, via Wikimedia Commons, public domain",
     position: "center center",
     fit: "contain"
@@ -2742,6 +2758,31 @@ function sourceLinks(sourceIds) {
   }).join("; ");
 }
 
+function publicClaimTypeLabel(value) {
+  const labels = {
+    "documented route": "Documented route",
+    "typical route": "Typical route",
+    "inferred route": "Inferred route",
+    "port location": "Port location",
+    "quarantine station": "Quarantine station",
+    "region only": "Regional context",
+    "map feature caption": "Map context",
+    "guided-tour step": "Tour step",
+    "illustrative model": "Interpretive model"
+  };
+  return labels[value] || value;
+}
+
+function burdenTypeLabel(value) {
+  const labels = {
+    exact: "Exact count",
+    estimated: "Estimate",
+    qualitative: "Qualitative evidence",
+    unknown: "No reliable count"
+  };
+  return labels[value] || value || "No reliable count";
+}
+
 function sourceWhere(sourceId) {
   const appearances = [];
   maritimeModules.forEach(module => {
@@ -2976,11 +3017,11 @@ function evidenceHtml(item) {
   const routeConfidence = item.route_confidence || "";
   if (!sourceIds.length && !confidence && !note && !claimType && !routeConfidence) return "";
   return [
-    confidence ? `<span><strong>Evidence</strong> ${escapeHtml(confidence)}</span>` : "",
-    claimType ? `<span><strong>Mapped as</strong> ${escapeHtml(claimType)}</span>` : "",
+    confidence ? `<span><strong>Confidence</strong> ${escapeHtml(confidence)}</span>` : "",
+    claimType ? `<span><strong>Map context</strong> ${escapeHtml(publicClaimTypeLabel(claimType))}</span>` : "",
     routeConfidence ? `<span><strong>Route confidence</strong> ${escapeHtml(CONFIDENCE_LABELS[routeConfidence] || routeConfidence)}</span>` : "",
-    sourceIds.length ? `<span><strong>Sources</strong> ${sourceLinks(sourceIds)}</span>` : "",
-    note ? `<span><strong>Note</strong> ${escapeHtml(note)}</span>` : ""
+    sourceIds.length ? `<span><strong>Citations</strong> ${sourceLinks(sourceIds)}</span>` : "",
+    note ? `<span><strong>Caution</strong> ${escapeHtml(note)}</span>` : ""
   ].filter(Boolean).join("");
 }
 
@@ -3057,7 +3098,7 @@ function renderModuleCard(module) {
   const mapInfo = module.map_geometry_or_route || {};
   const badges = [
     module.confidence ? `${CONFIDENCE_LABELS[module.confidence] || module.confidence} confidence` : "",
-    mapInfo.claim_type ? `Map: ${mapInfo.claim_type}` : "",
+    mapInfo.claim_type ? `Map: ${publicClaimTypeLabel(mapInfo.claim_type)}` : "",
     ...(module.mechanism_tags || []).slice(0, 3)
   ].filter(Boolean);
   return `
@@ -3066,7 +3107,7 @@ function renderModuleCard(module) {
       <div class="module-meta">${escapeHtml(module.date_range)} | ${escapeHtml(module.route_or_setting)} | ${escapeHtml(module.geography)}</div>
       <div class="module-line"><strong>Condition</strong> ${escapeHtml((module.diseases_or_conditions || []).join(", "))}</div>
       <div class="module-line"><strong>Mechanism</strong> ${escapeHtml(truncateText(module.maritime_mechanism, 210))}</div>
-      <div class="module-line"><strong>Burden</strong> ${escapeHtml(burden.burden_type || "unknown")}: ${escapeHtml(truncateText(burden.summary, 190))}</div>
+      <div class="module-line"><strong>Burden</strong> ${escapeHtml(burdenTypeLabel(burden.burden_type))}: ${escapeHtml(truncateText(burden.summary, 190))}</div>
       <div class="module-line"><strong>Response</strong> ${escapeHtml(truncateText(module.public_health_response, 185))}</div>
       <div class="module-line"><strong>Uncertainty</strong> ${escapeHtml(truncateText(module.uncertainty_note, 185))}</div>
       <div class="module-citation"><strong>Citations</strong> ${sourceLinks(module.source_ids || [])}</div>
@@ -3081,8 +3122,8 @@ function renderModuleBrowser() {
   const count = document.getElementById("module-count");
   if (!list || !count) return;
   const matches = maritimeModules.filter(moduleMatchesFilters);
-  count.textContent = `${matches.length} of ${maritimeModules.length} source-backed modules`;
-  list.innerHTML = matches.map(renderModuleCard).join("") || `<article class="module-card"><h4>No matching modules</h4><div class="module-line">Adjust the filters to widen the evidence set.</div></article>`;
+  count.textContent = `${matches.length} of ${maritimeModules.length} cited case studies`;
+  list.innerHTML = matches.map(renderModuleCard).join("") || `<article class="module-card"><h4>No matching case studies</h4><div class="module-line">Adjust the filters to widen the case list.</div></article>`;
 }
 
 function initModuleBrowser() {

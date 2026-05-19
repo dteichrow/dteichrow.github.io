@@ -110,7 +110,7 @@ def validate_maritime_page(errors: list[str], project_root: Path, html: str) -> 
     if not modules:
         errors.append("maritime module data has no modules")
         return
-    expected_count = f"{len(modules)} of {len(modules)} source-backed modules"
+    expected_count = f"{len(modules)} cited case studies"
     if expected_count not in html:
         errors.append(f"maritime page does not expose module count {expected_count!r}")
     module_list_match = re.search(r'<div id="module-list">(.*?)</section>', html, flags=re.S)

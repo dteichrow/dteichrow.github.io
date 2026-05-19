@@ -1,6 +1,6 @@
 # Maritime Disease Atlas YouTube Guided Tour Package
 
-This is the derivative YouTube package for the Maritime Disease Ecology Atlas. The website exhibit remains the canonical public artifact at `/atlases/maritime/`; this package adapts it into about a 10-minute guided video without weakening the source-first rules.
+This is the derivative YouTube package for the Maritime Disease Ecology Atlas. The website exhibit remains the canonical public artifact at `/atlases/maritime/`; this package adapts it into about a 10-minute guided video without weakening the evidence rules.
 
 ## Capture Entrypoints
 
@@ -79,7 +79,7 @@ The full cited exhibit is linked below. The map is not the answer. It is the rea
 
 ## Shot List
 
-The machine-readable shot list lives in `external/maritime_disease_atlas/data/maritime_youtube_video_plan.js`. It includes 16 shots, chapter IDs, capture URLs, narration beats, edit notes, module IDs, and source IDs. Use the JS file as the production source of truth; this note is the human-readable briefing.
+The detailed shot list lives in `external/maritime_disease_atlas/data/maritime_youtube_video_plan.js`. It includes 16 shots, chapter markers, capture URLs, narration beats, edit notes, related case studies, and citations. Use the JS file for timing and URLs; this note is the human-readable briefing.
 
 ## YouTube Description Draft
 

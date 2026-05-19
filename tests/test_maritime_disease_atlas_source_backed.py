@@ -99,7 +99,7 @@ def test_maritime_ui_has_mechanism_filters_and_no_loading_placeholders() -> None
 
     for expected in [
         "Mechanism first",
-        "Case modules",
+        "Case Studies",
         "module-setting-filter",
         "module-condition-filter",
         "module-mechanism-filter",

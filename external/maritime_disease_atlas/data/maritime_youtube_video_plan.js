@@ -190,7 +190,7 @@ window.MARITIME_YOUTUBE_VIDEO_PLAN = {
         "curtin-epidemiology-slave-trade"
       ],
       "narration_job": "Treat wounds, dirty tools, delayed care, captivity, dehydration, crowding, violence, and coercion as disease ecology rather than background texture. Keep the on-screen cadence slow enough for the 10-minute narration track.",
-      "uncertainty_note": "Do not collapse Middle Passage mortality into a single disease story; source-backed mortality and cause-specific diagnosis are separate claims."
+      "uncertainty_note": "Do not collapse Middle Passage mortality into a single disease story; documented mortality and cause-specific diagnosis are separate questions."
     },
     {
       "id": "close",
@@ -508,7 +508,7 @@ window.MARITIME_YOUTUBE_VIDEO_PLAN = {
       "capture_url": "index.html?youtube=1&tour=1&pace=2.05",
       "scenario_id": null,
       "visual_beat": "Hold on a readable map frame with exhibit title and website route in the description, not as a large in-video card.",
-      "narration_beat": "The full source-backed exhibit is linked below. The map is not the answer. It is the reading surface.",
+      "narration_beat": "The full cited exhibit is linked below. The map is not the answer. It is the reading surface.",
       "edit_notes": "Fade out without music sting. Let the last line land cleanly.",
       "module_ids": [],
       "source_ids": [
@@ -639,7 +639,7 @@ window.MARITIME_YOUTUBE_VIDEO_PLAN = {
     }
   ],
   "source_policy": [
-    "Narration should use the exhibit and module source IDs as its evidence base.",
+    "Narration should use the exhibit citations as its evidence base.",
     "No precise mortality or route claim should be added in the video unless already supported in the exhibit data.",
     "Uncertain retrospective diagnosis should remain visibly cautious in narration.",
     "Credits live in the exhibit; the video description should link to the exhibit for full source and image metadata."
@@ -655,7 +655,7 @@ window.MARITIME_YOUTUBE_VIDEO_PLAN = {
     },
     {
       "item": "Exact disease proportions during the Middle Passage",
-      "reason": "Excluded because source-backed total mortality and voyage conditions are stronger than precise cause-specific disease attribution."
+      "reason": "Excluded because documented total mortality and voyage conditions are stronger than precise cause-specific disease attribution."
     },
     {
       "item": "Single-ship yellow fever import claims",

@@ -22,15 +22,15 @@ The YouTube version is a derivative guided tour, not the canonical source surfac
 external/maritime_disease_atlas/index.html?youtube=1&tour=1&pace=2.05
 ```
 
-`youtube=1` turns on Presentation Mode, applies the source-backed YouTube tour order, and brands the capture as a guided YouTube cut. Shot-level captures can use `?youtube=1&scenario=<scenario_id>&pace=2.05`. The production note is `notes/maritime-disease-atlas-youtube-guided-tour.md`.
+`youtube=1` turns on Presentation Mode, applies the cited YouTube tour order, and brands the capture as a guided YouTube cut. Shot-level captures can use `?youtube=1&scenario=<scenario_id>&pace=2.05`. The production note is `notes/maritime-disease-atlas-youtube-guided-tour.md`.
 
-The video script must not add claims beyond the exhibit data unless those claims are also added with source IDs, confidence, and uncertainty notes.
+The video script must not add claims beyond the exhibit data unless those claims are also added with citations, confidence, and uncertainty notes.
 
 The recording packet lives in `notes/maritime-disease-atlas-youtube-recording-packet/`. It includes the timestamped recording script, caption draft, chapter markers, capture checklist, and shot replacement guide. A public-final MP4 should wait for Devin's recorded narration.
 
 ## Evidence Standard
 
-Every displayed maritime case module must include source IDs. Retrospective diagnosis should remain conservative:
+Every displayed maritime case study must include citations. Retrospective diagnosis should remain conservative:
 
 - Do not treat all shipboard mortality as infection.
 - Do not turn "flux," "ship fever," "pestilence," or "fever" into a confirmed pathogen unless the source supports that identification.
@@ -54,11 +54,11 @@ Allowed map claim types follow the public UI language: documented route, typical
 
 ## Current Included Modules
 
-V1 includes 16 modules: scurvy and naval provisioning, Grosse Ile ship fever, New York cholera quarantine, Atlantic yellow fever port ecology, Mediterranean plague lazarettos, Algiers plague and the American sanitary ban, smallpox maritime isolation, the Middle Passage, pirate ports, wounds and sepsis, typhoid provisions, flux/dysentery, Ellis Island inspection, San Francisco plague, cruise-ship norovirus, and cruise-ship COVID-19.
+The current exhibit includes 16 case studies: scurvy and naval provisioning, Grosse Ile ship fever, New York cholera quarantine, Atlantic yellow fever port ecology, Mediterranean plague lazarettos, Algiers plague and the American sanitary ban, smallpox maritime isolation, the Middle Passage, pirate ports, wounds and sepsis, typhoid provisions, flux/dysentery, Ellis Island inspection, San Francisco plague, cruise-ship norovirus, and cruise-ship COVID-19.
 
 ## Deferred Modules
 
-Deferred candidates are listed in the module payload and explained in `notes/maritime-disease-atlas-source-triage.md`. The main V1 exclusions are unsupported Barbary captivity plague mortality claims, convict ships/prison hulks, hantavirus cruise-ship claims, precise Middle Passage cause-specific mortality fractions, and single-ship yellow-fever import reconstructions.
+Deferred candidates are listed in the module payload and explained in `notes/maritime-disease-atlas-source-triage.md`. The main exclusions are unsupported Barbary captivity plague mortality claims, convict ships/prison hulks, hantavirus cruise-ship claims, precise Middle Passage cause-specific mortality fractions, and single-ship yellow-fever import reconstructions.
 
 ## Not Included And Why
 
@@ -76,4 +76,4 @@ Run:
 python3 scripts/validate_tool_sources.py
 ```
 
-The validator checks module source IDs, route claim types, route confidence, burden type/source support, confidence categories, uncertainty notes, mapped geometry provenance, placeholder text, and unsupported causal language.
+The validator checks citation coverage, route claim types, route confidence, burden type/source support, confidence categories, uncertainty notes, mapped geometry provenance, placeholder text, and unsupported causal language.
