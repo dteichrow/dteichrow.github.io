@@ -826,7 +826,7 @@
   {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
-    "summary": "New publisher/source coverage joined this story cluster: 6abc Philadelphia, Doctors Without Borders, Forbes Africa.",
+    "summary": "New publisher/source coverage joined this story cluster: thehawk.in.",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
     "keywords": "new_official_source suspected_case confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission laboratory_or_genomic medical_countermeasure_gap Africa Democratic Republic of the Congo"
   },
@@ -854,16 +854,16 @@
   {
     "title": "Dengue and arboviruses",
     "section": "Newsdesk",
-    "summary": "New publisher/source coverage joined this story cluster: Outbreak News Today.",
+    "summary": "Outbreak News Today now includes deaths or fatal cases in the story frame.",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
     "keywords": "new_official_source severity_or_death transmission_change policy_or_travel North America United States"
   },
   {
     "title": "Historical epidemiology and ancient pathogens",
     "section": "Newsdesk",
-    "summary": "The lead item has changed to Eponymous neurologic signs of tabes dorsalis: A historical review (1846-1905). from PubMed Historical Pathogen Case Studies.",
+    "summary": "The lead item has changed to Memories of Memórias: shaping a century of plague research and public health policy in BrazilFIRST REVIEW ROUND from PubMed Historical Pathogen Case Studies.",
     "url": "/stories/story_b461b8ac8c062700-historical-epidemiology-and-ancient-pathogens.html",
-    "keywords": "new_official_source severity_or_death laboratory_or_genomic Africa United Kingdom / United States"
+    "keywords": "new_official_source severity_or_death transmission_change laboratory_or_genomic Africa Brazil"
   },
   {
     "title": "COVID-19 and SARS-CoV-2",
