@@ -826,16 +826,16 @@
   {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
-    "summary": "New publisher/source coverage joined this story cluster: Ars Technica, HarianBasis.co, WPDE.",
+    "summary": "New publisher/source coverage joined this story cluster: Bhaskar English, Bloomberg.com, Outlook India.",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
-    "keywords": "new_official_source suspected_case confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission laboratory_or_genomic medical_countermeasure_gap Africa Democratic Republic of the Congo"
+    "keywords": "new_official_source suspected_case confirmed_case severity_or_death policy_or_travel new_geography healthcare_transmission laboratory_or_genomic medical_countermeasure_gap Africa Democratic Republic of the Congo"
   },
   {
     "title": "Avian influenza and H5N1",
     "section": "Newsdesk",
     "summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
     "url": "/stories/story_28a91c6d89267872-avian-influenza-and-h5n1.html",
-    "keywords": "confirmed_case severity_or_death transmission_change East Asia "
+    "keywords": "transmission_change East Asia "
   },
   {
     "title": "Measles transmission and vaccination",
@@ -854,7 +854,7 @@
   {
     "title": "Dengue and arboviruses",
     "section": "Newsdesk",
-    "summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
+    "summary": "Outbreak News Today now includes deaths or fatal cases in the story frame.",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
     "keywords": "new_official_source severity_or_death transmission_change policy_or_travel North America United States"
   },
@@ -863,7 +863,7 @@
     "section": "Newsdesk",
     "summary": "The lead item has changed to Memories of Memórias: shaping a century of plague research and public health policy in BrazilFIRST REVIEW ROUND from PubMed Historical Pathogen Case Studies.",
     "url": "/stories/story_b461b8ac8c062700-historical-epidemiology-and-ancient-pathogens.html",
-    "keywords": "new_official_source severity_or_death transmission_change laboratory_or_genomic Africa Brazil"
+    "keywords": "new_official_source severity_or_death transmission_change laboratory_or_genomic Global / Maritime Brazil"
   },
   {
     "title": "COVID-19 and SARS-CoV-2",
