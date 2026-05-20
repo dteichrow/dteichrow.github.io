@@ -2400,15 +2400,6 @@ def import_external_american_epidemic_timeline(docs_dir: Path, base_url: str) ->
     shutil.copytree(src_root, dest_root)
 
 
-def import_external_histsearch(docs_dir: Path, base_url: str) -> None:
-    _ = base_url
-    src_root = PROJECT_ROOT / "external" / "histsearch"
-    dest_root = docs_dir / "tools" / "histsearch"
-    if dest_root.exists():
-        shutil.rmtree(dest_root)
-    shutil.copytree(src_root, dest_root)
-
-
 def copy_static_assets(docs_dir: Path) -> None:
     target = docs_dir / "assets"
     if target.exists():
@@ -2760,7 +2751,6 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
     import_external_viking(docs_dir, base_url)
     import_external_revolutionary_war_atlas(docs_dir, base_url)
     import_external_american_epidemic_timeline(docs_dir, base_url)
-    import_external_histsearch(docs_dir, base_url)
 
     posts = load_posts_manifest(CONTENT_DIR / "posts.yml")
     atlases = load_atlas_registry(CONTENT_DIR / "atlases.yml")
