@@ -789,6 +789,13 @@
     "keywords": "viking norse greenland vinland plague health"
   },
   {
+    "title": "Histsearch",
+    "section": "Tool",
+    "summary": "A historian-style research search interface for running new historical epidemiology source-discovery searches through a local Python backend.",
+    "url": "/tools/histsearch/",
+    "keywords": "historical epidemiology research search archives PubMed sources research search"
+  },
+  {
     "title": "American Epidemic Timeline",
     "section": "Tool",
     "summary": "A carefully cited timeline of major U.S.-linked epidemics, outbreaks, and public-health turning points.",
@@ -826,7 +833,7 @@
   {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
-    "summary": "The Guardian now foregrounds vaccination or vaccine policy in the story.",
+    "summary": "New publisher/source coverage joined this story cluster: Bhaskar English, CNBC Africa, Condé Nast Traveller Middle East.",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
     "keywords": "new_official_source suspected_case confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission laboratory_or_genomic medical_countermeasure_gap Africa Democratic Republic of the Congo"
   },

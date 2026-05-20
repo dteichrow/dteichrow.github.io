@@ -1,7 +1,25 @@
 {
-  "generated_at": "2026-05-20T06:14:59",
-  "count": 5,
+  "generated_at": "2026-05-20T06:16:54",
+  "count": 6,
   "tools": [
+    {
+      "tool_id": "histsearch",
+      "title": "Histsearch",
+      "tool_type": "research search",
+      "status": "open",
+      "status_label": "Local search frontend",
+      "summary": "A historian-style research search interface for running new historical epidemiology source-discovery searches through a local Python backend.",
+      "evidence_model": "Local connector runs with SQLite storage, manual search strings, source logs, dossiers, CSV, and JSON exports",
+      "public_route": "tools/histsearch/",
+      "keywords": [
+        "historical epidemiology",
+        "research search",
+        "archives",
+        "PubMed",
+        "sources"
+      ],
+      "long_note": "The public page is a GitHub Pages frontend for the local histsearch backend. It can search arbitrary new topics when `histsearch serve` is running on the user's machine; GitHub Pages itself does not run Python connectors."
+    },
     {
       "tool_id": "american-epidemic-timeline",
       "title": "American Epidemic Timeline",
