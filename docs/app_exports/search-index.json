@@ -826,16 +826,16 @@
   {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
-    "summary": "New publisher/source coverage joined this story cluster: Centers for Disease Control and Prevention, East Idaho News, Everyday Health.",
+    "summary": "New publisher/source coverage joined this story cluster: ABC7 Chicago, Azərtac, Click2Houston.",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
-    "keywords": "new_official_source suspected_case confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission laboratory_or_genomic medical_countermeasure_gap Africa Democratic Republic of the Congo / Uganda"
+    "keywords": "new_official_source suspected_case confirmed_case severity_or_death policy_or_travel new_geography healthcare_transmission laboratory_or_genomic medical_countermeasure_gap Africa Democratic Republic of the Congo / Uganda"
   },
   {
     "title": "Avian influenza and H5N1",
     "section": "Newsdesk",
-    "summary": "New official source(s) joined this story cluster: PubMed Infectious Disease Search.",
+    "summary": "Cambodianess now explicitly uses investigation or monitoring language.",
     "url": "/stories/story_28a91c6d89267872-avian-influenza-and-h5n1.html",
-    "keywords": "new_official_source transmission_change East Asia "
+    "keywords": "confirmed_case severity_or_death transmission_change East Asia "
   },
   {
     "title": "Measles transmission and vaccination",
@@ -854,16 +854,9 @@
   {
     "title": "Dengue and arboviruses",
     "section": "Newsdesk",
-    "summary": "Outbreak News Today now includes deaths or fatal cases in the story frame.",
+    "summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
     "keywords": "new_official_source severity_or_death transmission_change policy_or_travel North America United States"
-  },
-  {
-    "title": "COVID-19 and SARS-CoV-2",
-    "section": "Newsdesk",
-    "summary": "PubMed Infectious Disease Search now explicitly uses investigation or monitoring language.",
-    "url": "/stories/story_afd8f5934e291e02-covid-19-and-sars-cov-2.html",
-    "keywords": "new_official_source confirmed_case laboratory_or_genomic Africa "
   },
   {
     "title": "Historical epidemiology and ancient pathogens",
@@ -871,6 +864,13 @@
     "summary": "The lead item has changed to Eponymous neurologic signs of tabes dorsalis: A historical review (1846-1905). from PubMed Historical Pathogen Case Studies.",
     "url": "/stories/story_b461b8ac8c062700-historical-epidemiology-and-ancient-pathogens.html",
     "keywords": "new_official_source severity_or_death laboratory_or_genomic Africa United Kingdom / United States"
+  },
+  {
+    "title": "COVID-19 and SARS-CoV-2",
+    "section": "Newsdesk",
+    "summary": "PubMed Infectious Disease Search now explicitly uses investigation or monitoring language.",
+    "url": "/stories/story_afd8f5934e291e02-covid-19-and-sars-cov-2.html",
+    "keywords": "new_official_source confirmed_case laboratory_or_genomic Africa "
   },
   {
     "title": "Tuberculosis and antimicrobial resistance",
