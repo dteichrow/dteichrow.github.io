@@ -259,6 +259,7 @@ atlases:
     revolutionary_text = (docs_dir / "atlases" / "revolutionary-war" / "index.html").read_text()
     assert "Revolutionary War atlas" in revolutionary_text
     assert "Revolutionary War Disease Atlas | Edge of Epidemiology" in revolutionary_text
+    assert (docs_dir / "tools" / "histsearch" / "index.html").exists()
     assert (docs_dir / "historical" / "index.html").exists()
     assert (docs_dir / "opportunities" / "index.html").exists()
     assert (docs_dir / "app_exports" / "posts.json").exists()
@@ -524,6 +525,20 @@ def test_import_external_revolutionary_war_atlas_copies_bundle(tmp_path, monkeyp
     dest_root = docs_dir / "atlases" / "revolutionary-war"
     assert (dest_root / "index.html").read_text() == "<html><body>Revolutionary War Battle & Disease Atlas</body></html>"
     assert (dest_root / "assets" / "fixture.txt").read_text() == "asset"
+
+
+def test_import_external_histsearch_copies_bundle(tmp_path, monkeypatch) -> None:
+    project_root = tmp_path / "project"
+    src_root = project_root / "external" / "histsearch"
+    docs_dir = tmp_path / "docs"
+    src_root.mkdir(parents=True)
+    (src_root / "index.html").write_text("<html><body>Histsearch</body></html>")
+
+    monkeypatch.setattr(build_site, "PROJECT_ROOT", project_root)
+    build_site.import_external_histsearch(docs_dir, "/")
+
+    dest_root = docs_dir / "tools" / "histsearch"
+    assert (dest_root / "index.html").read_text() == "<html><body>Histsearch</body></html>"
 
 
 def test_pathogen_atlas_filters_do_not_fallback_to_all_entries() -> None:
