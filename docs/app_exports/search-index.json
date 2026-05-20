@@ -789,13 +789,6 @@
     "keywords": "viking norse greenland vinland plague health"
   },
   {
-    "title": "Histsearch",
-    "section": "Tool",
-    "summary": "A historian-style research search interface for running new historical epidemiology source-discovery searches through a local Python backend.",
-    "url": "/tools/histsearch/",
-    "keywords": "historical epidemiology research search archives PubMed sources research search"
-  },
-  {
     "title": "American Epidemic Timeline",
     "section": "Tool",
     "summary": "A carefully cited timeline of major U.S.-linked epidemics, outbreaks, and public-health turning points.",
@@ -833,16 +826,16 @@
   {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
-    "summary": "New publisher/source coverage joined this story cluster: Christian Post, India TV News, Inquirer.net.",
+    "summary": "New publisher/source coverage joined this story cluster: Anadolu Ajansı, CNBC Africa, CT Insider.",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
     "keywords": "new_official_source suspected_case confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission laboratory_or_genomic medical_countermeasure_gap Africa Democratic Republic of the Congo"
   },
   {
     "title": "Measles transmission and vaccination",
     "section": "Newsdesk",
-    "summary": "1 newly observed linked item(s) were added since the last saved snapshot.",
+    "summary": "New publisher/source coverage joined this story cluster: Devdiscourse, The Telegraph.",
     "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
-    "keywords": "new_official_source confirmed_case severity_or_death new_geography Southeast Asia "
+    "keywords": "severity_or_death new_geography South Asia United Kingdom"
   },
   {
     "title": "Hantavirus and cruise-ship outbreak",
@@ -854,7 +847,7 @@
   {
     "title": "Dengue and arboviruses",
     "section": "Newsdesk",
-    "summary": "New publisher/source coverage joined this story cluster: KJZZ.",
+    "summary": "New publisher/source coverage joined this story cluster: MSN.",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
     "keywords": "new_official_source transmission_change policy_or_travel North America United States"
   },
