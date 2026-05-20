@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-05-19
-Generated at: 2026-05-19T18:00
+Generated at: 2026-05-19T19:00
 Search window: 7 day(s) ending 2026-05-19
 
 ## Executive scan
@@ -12,25 +12,19 @@ Search window: 7 day(s) ending 2026-05-19
 - [ECDC activates the EU Health Task Force, deploying experts to support Ebola outbreak response](https://www.ecdc.europa.eu/en/news-events/ecdc-activates-eu-health-task-force-deploying-experts-support-ebola-outbreak-response) (ECDC News; 2026-05-18T14:14+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
 - [Eponymous neurologic signs of tabes dorsalis: A historical review (1846-1905).](https://pubmed.ncbi.nlm.nih.gov/42148461/) (PubMed Historical Pathogen Case Studies; 2026-05-18T00:00; Historical epidemiology / ancient disease / paleopathology; relevance 5/5)
 - [WHO declares Ebola outbreak in the Democratic Republic of the Congo a Public Health Emergency of International Concern: ECDC continues monitoring](https://www.ecdc.europa.eu/en/news-events/who-declares-ebola-outbreak-democratic-republic-congo-public-health-emergency) (ECDC News; 2026-05-17T13:38+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (173), Policy, surveillance, and public health infrastructure (32), Historical epidemiology / ancient disease / paleopathology (3)
+- Category mix: Outbreaks and emerging infections (175), Policy, surveillance, and public health infrastructure (29), Occupational and environmental epidemiology (3)
 - Source health: 2 source(s) failed during collection: Nigeria Centre for Disease Control, USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
-### Dengue and arboviruses
-- Lead item: [Recommendations and Reports: CDC Operational Guidance for Investigating Locally Acquired Mosquito-Transmitted Malaria](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765596) (CDC MMWR)
-- New publisher/source coverage joined this story cluster: MSN.
-- Story volume increased from 5 to 6 clustered item(s) in the current window.
-- 1 newly observed linked item(s) were added since the last saved snapshot.
-
 ### Ebola virus disease
 - Lead item: [ECDC activates the EU Health Task Force, deploying experts to support Ebola outbreak response](https://www.ecdc.europa.eu/en/news-events/ecdc-activates-eu-health-task-force-deploying-experts-support-ebola-outbreak-response) (ECDC News)
-- New publisher/source coverage joined this story cluster: Business Upturn, DD India, Doctors Without Borders.
-- 2 newly observed linked item(s) were added since the last saved snapshot.
+- New publisher/source coverage joined this story cluster: Anadolu Ajansı, McGill University, OkayAfrica.
+- 1 newly observed linked item(s) were added since the last saved snapshot.
 
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 193 item(s) across 127 source(s); 4 official/primary-source item(s).
+- Topic size: 192 item(s) across 126 source(s); 4 official/primary-source item(s).
 - Lead item: [ECDC activates the EU Health Task Force, deploying experts to support Ebola outbreak response](https://www.ecdc.europa.eu/en/news-events/ecdc-activates-eu-health-task-force-deploying-experts-support-ebola-outbreak-response) (ECDC News, 2026-05-18T14:14+02:00)
 - Detailed note: * Statement updated to include new figures Eugene Kabambi Communications Officer WHO DRC Tel : +243 81 715 1697 Office : +47 241 39 027 Email: kabambie [at] who.int (kabambie[at]who[dot]int) Collins Boakye-Agyemang Communications and marketing officer Tel: + 242 06 520 65 65 (WhatsApp) Email: boakyeagyemangc [at] who.int (boakyeagyemangc[at]who[dot]int) carousel-bg The Bundibugyo species was first identified in...
 - Evidence notes: [ECDC activates the EU Health Task Force, deploying experts to support Ebola outbreak response](https://www.ecdc.europa.eu/en/news-events/ecdc-activates-eu-health-task-force-deploying-experts-support-ebola-outbreak-response) (ECDC News); [WHO declares Ebola outbreak in the Democratic Republic of the Congo a Public Health Emergency of International Concern: ECDC continues monitoring](https://www.ecdc.europa.eu/en/news-events/who-declares-ebola-outbreak-democratic-republic-congo-public-health-emergency) (ECDC News); [Democratic Republic of the Congo confirms new Ebola outbreak, WHO scales up support](https://www.afro.who.int/countries/democratic-republic-of-congo/news/democratic-republic-congo-confirms-new-ebola-outbreak-who-scales-upsupport) (WHO Regional Office for Africa); [ECDC monitoring Ebola outbreak in the Democratic Republic of the Congo](https://www.ecdc.europa.eu/en/news-events/ecdc-monitoring-ebola-outbreak-democratic-republic-congo) (ECDC News); [WHO chief concerned over ‘scale and speed’ of Ebola outbreak as Congo reports 134 dead](https://apnews.com/article/congo-ebola-deadly-virus-bundibugyo-health-emergency-3c97cacf44e007127df5739199f32517) (AP News)
@@ -420,6 +414,8 @@ Search window: 7 day(s) ending 2026-05-19
   Limited detail was available from feed metadata alone.
 - [Details on Ebola outbreak as Americans urged to avoid travel to Congo, Uganda, South Sudan](https://www.cbsnews.com/video/details-on-ebola-outbreak-as-americans-urged-to-avoid-travel-to-congo-uganda-south-sudan/) | CBS News | 2026-05-19T23:09+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
+- [Relief group says Trump cuts ‘led to delayed detection of deadly Ebola outbreak’](https://www.politico.com/news/2026/05/19/relief-group-says-trump-cuts-forced-it-to-scale-back-surveillance-in-ebola-affected-region-00928578) | Politico | 2026-05-19T22:21+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - [Ebola Outbreak: What to Know About Bundibugyo Virus Symptoms and Spread](https://www.nytimes.com/2026/05/19/well/ebola-bundibugyo-virus-symptoms.html) | The New York Times | 2026-05-19T21:36+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Amid deadly Ebola outbreak in Congo and Uganda, Canada not banning travellers](https://www.cbc.ca/news/canada/ebola-congo-uganda-outbreak-travel-9.7204935) | CBC | 2026-05-19T21:29+00:00 | Outbreaks and emerging infections
@@ -431,8 +427,6 @@ Search window: 7 day(s) ending 2026-05-19
 - [What to know about the Bundibugyo virus, a species of Ebola causing an outbreak in Congo](https://apnews.com/article/ebola-bundibugyo-virus-outbreak-congo-baf5f9861a896ca027a9e40524d42e74) | AP News | 2026-05-19T21:04+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Former ‘Ebola czar’ on the current outbreak in Africa](https://www.npr.org/2026/05/19/nx-s1-5826814/former-ebola-czar-on-the-current-outbreak-in-africa) | NPR | 2026-05-19T20:54+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Ebola deaths rise sharply as outbreak’s ‘scale and speed’ worry WHO chief](https://www.nbcnews.com/world/africa/ebola-outbreak-deaths-rise-scale-speed-concerns-who-congo-uganda-rcna345833) | NBC News | 2026-05-19T20:40+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [DR Congo World Cup team still planning US trip despite Ebola outbreak](https://www.politico.com/news/2026/05/19/dr-congo-world-cup-team-still-planning-u-s-trip-despite-ebola-outbreak-00928354) | Politico | 2026-05-19T20:28+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
