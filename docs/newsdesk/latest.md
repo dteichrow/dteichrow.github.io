@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-05-20
-Generated at: 2026-05-20T18:29
+Generated at: 2026-05-20T19:30
 Search window: 7 day(s) ending 2026-05-20
 
 ## Executive scan
@@ -12,19 +12,21 @@ Search window: 7 day(s) ending 2026-05-20
 - [FDA outbreak investigation 1345: Salmonella Richmond linked to Moringa Leaf Powder](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-salmonella-moringa-leaf-powder-october-2025) (FDA Foodborne Outbreaks; 2026-05-20T00:00; Outbreaks and emerging infections; relevance 5/5)
 - [Epidemiological and virological characteristics of influenza in Zhejiang Province, China: A 15-year surveillance study.](https://pubmed.ncbi.nlm.nih.gov/42157696/) (PubMed Infectious Disease Search; 2026-05-20T00:00; Major epidemiology studies; relevance 5/5)
 - [Respiratory virus surveillance in the WHO African Region Epidemiological Week 19, May 4 to 10 2026](https://www.afro.who.int/publications/respiratory-virus-surveillance-who-african-region-epidemiological-week-19-may-4-10) (WHO Regional Office for Africa; 2026-05-19T22:30+00:00; Outbreaks and emerging infections; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (209), Policy, surveillance, and public health infrastructure (23), Historical epidemiology / ancient disease / paleopathology (3)
+- Category mix: Outbreaks and emerging infections (210), Policy, surveillance, and public health infrastructure (25), Historical epidemiology / ancient disease / paleopathology (3)
 - Source health: 2 source(s) failed during collection: Nigeria Centre for Disease Control, USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
 ### Ebola virus disease
 - Lead item: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 01, Data as of 18 May 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa)
-- New publisher/source coverage joined this story cluster: Doctors Without Borders, Forbes, Forbes Africa.
+- BBC now foregrounds vaccination or vaccine policy in the story.
+- New publisher/source coverage joined this story cluster: Anadolu Ajansı, Asharq Al-Awsat, BAL Immigration Law.
+- Story volume increased from 218 to 221 clustered item(s) in the current window.
 - 1 newly observed linked item(s) were added since the last saved snapshot.
 
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 218 item(s) across 142 source(s); 6 official/primary-source item(s).
+- Topic size: 221 item(s) across 146 source(s); 6 official/primary-source item(s).
 - Lead item: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 01, Data as of 18 May 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa, 2026-05-20T06:12+00:00)
 - Detailed note: * Statement updated to include new figures Eugene Kabambi Communications Officer WHO DRC Tel : +243 81 715 1697 Office : +47 241 39 027 Email: kabambie [at] who.int (kabambie[at]who[dot]int) Collins Boakye-Agyemang Communications and marketing officer Tel: + 242 06 520 65 65 (WhatsApp) Email: boakyeagyemangc [at] who.int (boakyeagyemangc[at]who[dot]int) carousel-bg The Bundibugyo species was first identified in...
 - Evidence notes: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 01, Data as of 18 May 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa); [ECDC activates the EU Health Task Force, deploying experts to support Ebola outbreak response](https://www.ecdc.europa.eu/en/news-events/ecdc-activates-eu-health-task-force-deploying-experts-support-ebola-outbreak-response) (ECDC News); [WHO declares Ebola outbreak in the Democratic Republic of the Congo and Uganda a Public Health Emergency of International Concern: ECDC continues monitoring](https://www.ecdc.europa.eu/en/news-events/who-declares-ebola-outbreak-democratic-republic-congo-and-uganda-public-health) (ECDC News); [Democratic Republic of the Congo confirms new Ebola outbreak, WHO scales up support](https://www.afro.who.int/countries/democratic-republic-of-congo/news/democratic-republic-congo-confirms-new-ebola-outbreak-who-scales-upsupport) (WHO Regional Office for Africa); [ECDC monitoring Ebola outbreak in the Democratic Republic of the Congo](https://www.ecdc.europa.eu/en/news-events/ecdc-monitoring-ebola-outbreak-democratic-republic-congo) (ECDC News)
@@ -414,7 +416,7 @@ Search window: 7 day(s) ending 2026-05-20
   The transcribed line list comprises of 3,255 incident cases and includes the following variables: national case serial number, age, sex, date of rash onset, date detected, village/locality, district, region, regional outbreak number, and national outbreak number. Over more than three thousand years, smallpox caused millions of deaths worldwide. Handwritten smallpox outbreak data from Somalia (1976-1977) were obtained from the World Health Organization by a Public Health England study team (now UK Health Security Agency).
 - [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) | Texas Department of State Health Services News | Unknown | Policy, surveillance, and public health infrastructure
   Limited detail was available from feed metadata alone.
-- [Some US-bound flyers being funneled to this airport amid Ebola outbreak](https://www.usatoday.com/story/travel/news/2026/05/20/africa-travelers-stop-at-dulles-airport/90180039007/) | USA Today | 2026-05-20T23:47+00:00 | Outbreaks and emerging infections
+- [Ebola outbreak in DR Congo: WHO says Ebola vaccine could take nine months](https://www.bbc.com/news/articles/cwy2g197dp8o) | BBC | 2026-05-20T23:47+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [UK commits $26.87 million to contain Ebola outbreak in DRC](https://www.reuters.com/business/healthcare-pharmaceuticals/uk-commits-2687-million-contain-ebola-outbreak-drc-2026-05-20/) | Reuters | 2026-05-20T23:13+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
@@ -424,6 +426,10 @@ Search window: 7 day(s) ending 2026-05-20
   Limited detail was available from feed metadata alone.
 - [What to know about Ebola and how it spreads, as the outbreak widens](https://www.washingtonpost.com/health/2026/05/20/what-know-about-ebola-how-it-spreads-outbreak-widens/) | The Washington Post | 2026-05-20T21:32+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
+- [Ebola Outbreak in Central Africa Could Last Months, W.H.O. Says](https://www.unmc.edu/healthsecurity/transmission/2026/05/20/ebola-outbreak-in-central-africa-could-last-months-w-h-o-says/) | University of Nebraska Medical Center | 2026-05-20T21:29+00:00 | Outbreaks and emerging infections
+  Says University of Nebraska Medical Center
+- [United States | State Department, DHS and CDC announce actions in response to Ebola outbreak](https://www.bal.com/immigration-news/united-states-state-department-dhs-and-cdc-announce-actions-in-response-to-ebola-outbreak/) | BAL Immigration Law | 2026-05-20T21:16+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - [At least 600 Ebola cases suspected as US pledges to fund 50 treatment clinics](https://www.cidrap.umn.edu/ebola/least-600-ebola-cases-suspected-us-pledges-fund-50-treatment-clinics) | CIDRAP | 2026-05-20T21:13+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Rare Ebola outbreak poses low risk globally but worries mount about its spread in Congo](https://www.pbs.org/newshour/world/rare-ebola-outbreak-poses-low-risk-globally-but-worries-mount-about-its-spread-in-congo) | PBS | 2026-05-20T20:30+00:00 | Outbreaks and emerging infections
@@ -432,15 +438,11 @@ Search window: 7 day(s) ending 2026-05-20
   Limited detail was available from feed metadata alone.
 - [Ebola likely circulating in Congo for two months, outbreak to grow, WHO says](https://www.reuters.com/business/healthcare-pharmaceuticals/who-says-139-suspected-ebola-deaths-congo-outbreak-numbers-expected-rise-2026-05-20/) | Reuters | 2026-05-20T19:21+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Ebola Outbreak Is Unlikely to Become Global Threat, W.H.O. Says](https://www.nytimes.com/2026/05/20/world/africa/ebola-congo-tedros-rubio.html) | The New York Times | 2026-05-20T19:05+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
 - [DR Congo cancels pre-World Cup camp due to Ebola outbreak, FIFA ‘monitoring’ situation](https://www.nytimes.com/athletic/7295322/2026/05/20/dr-congo-world-cup-ebola/) | The New York Times | 2026-05-20T19:01+00:00 | Outbreaks and emerging infections
   The World Health Organisation has called it “a public health emergency of international concern” with 139 suspected deaths and over 600 cases due to the disease, per the BBC . DR Congo have confirmed that they have moved the camp to Belgium, where they are due to play Denmark on June 3, with a further pre-tournament fixture in Spain on June 9. Simon Barber/Getty Images DR Congo have cancelled their pre-World Cup training camp in the capital Kinshasa due to the Ebola outbreak in the country.
 - [Unicef warned Bangladesh over measles vaccine shortage](https://theindianawaaz.com/unicef-warned-bangladesh-over-measles-vaccine-shortage/) | The Indian Awaaz | 2026-05-20T18:07+00:00 | Outbreaks and emerging infections
   Last Updated on May 20, 2026 7:42 pm by INDIAN AWAAZ Unicef has said Bangladesh faced a prolonged shortage of routine measles vaccines last year despite repeated warnings, noting that delays in supply worsened the situation even after at least 10 alerts were issued to the interim government led by Nobel laureate Muhammad Yunus, since 2024. According to Unicef, Bangladesh received 1.78 crore doses of measles vaccines between August and November 2025, only about one-third of the country’s annual requirement of nearly 7 crore doses, leading to prolonged disruption in routine immunisation. “The prolonged disruption in routine immunisation left many children without vaccination coverage, increasing the risk of measles transmission and contributing to a large-scale outbreak,” the agency said.
 - [Analysis of past Ebola outbreaks suggests 54% death rate, identifies hemorrhage as key risk factor](https://www.cidrap.umn.edu/ebola/analysis-past-ebola-outbreaks-suggests-54-death-rate-identifies-hemorrhage-key-risk-factor) | CIDRAP | 2026-05-20T18:05+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Ebola Outbreak in Central Africa Could Last Months, W.H.O. Says](https://www.nytimes.com/2026/05/19/world/africa/ebola-outbreak-deaths-congo-who.html) | The New York Times | 2026-05-20T16:39+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
