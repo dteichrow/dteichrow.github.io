@@ -826,16 +826,16 @@
   {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
-    "summary": "New publisher/source coverage joined this story cluster: Anadolu Ajansı, Business Today, CW39 Houston.",
+    "summary": "New publisher/source coverage joined this story cluster: ABP News, AOL.com, Ahram Online.",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
-    "keywords": "new_official_source suspected_case confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission laboratory_or_genomic medical_countermeasure_gap Africa Democratic Republic of the Congo"
+    "keywords": "new_official_source suspected_case confirmed_case severity_or_death policy_or_travel new_geography healthcare_transmission laboratory_or_genomic medical_countermeasure_gap Africa Democratic Republic of the Congo / Uganda"
   },
   {
     "title": "Measles transmission and vaccination",
     "section": "Newsdesk",
-    "summary": "香港電台新聞網 now includes deaths or fatal cases in the story frame.",
+    "summary": "New publisher/source coverage joined this story cluster: CNN.",
     "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
-    "keywords": "severity_or_death new_geography South Asia United States"
+    "keywords": "new_geography South Asia United States"
   },
   {
     "title": "Hantavirus and cruise-ship outbreak",
@@ -845,18 +845,11 @@
     "keywords": "East Asia United Kingdom"
   },
   {
-    "title": "Historical epidemiology and ancient pathogens",
-    "section": "Newsdesk",
-    "summary": "The lead item has changed to Memories of Memórias: shaping a century of plague research and public health policy in BrazilFIRST REVIEW ROUND from PubMed Historical Pathogen Case Studies.",
-    "url": "/stories/story_b461b8ac8c062700-historical-epidemiology-and-ancient-pathogens.html",
-    "keywords": "new_official_source severity_or_death transmission_change laboratory_or_genomic Global / Maritime Brazil"
-  },
-  {
     "title": "COVID-19 and SARS-CoV-2",
     "section": "Newsdesk",
-    "summary": "PubMed Infectious Disease Search now explicitly uses investigation or monitoring language.",
+    "summary": "The lead item has changed to Safety of COVID-19 mRNA-1273 booster doses in Asian populations: A literature review of post-marketing observational studies. from PubMed Infectious Disease Search.",
     "url": "/stories/story_afd8f5934e291e02-covid-19-and-sars-cov-2.html",
-    "keywords": "new_official_source confirmed_case laboratory_or_genomic Africa "
+    "keywords": "Southeast Asia "
   },
   {
     "title": "Dengue and arboviruses",
@@ -871,6 +864,13 @@
     "summary": "The lead item has changed to Understanding and exploiting superspreading to disrupt Mycobacterium tuberculosis transmission. from PubMed Historical Pathogen Case Studies.",
     "url": "/stories/story_8b3f807bbfd61cab-tuberculosis-and-antimicrobial-resistance.html",
     "keywords": "new_official_source transmission_change new_geography Cross-region / unassigned "
+  },
+  {
+    "title": "Historical epidemiology and ancient pathogens",
+    "section": "Newsdesk",
+    "summary": "The lead item has changed to Memories of Memórias: shaping a century of plague research and public health policy in BrazilFIRST REVIEW ROUND from PubMed Historical Pathogen Case Studies.",
+    "url": "/stories/story_b461b8ac8c062700-historical-epidemiology-and-ancient-pathogens.html",
+    "keywords": "new_official_source severity_or_death transmission_change laboratory_or_genomic Global / Maritime Brazil"
   },
   {
     "title": "Ebola virus disease",
