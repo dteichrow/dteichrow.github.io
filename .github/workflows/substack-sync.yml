@@ -2,8 +2,18 @@ name: substack_sync
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "12,27,42,57 * * * *"
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/substack-sync.yml"
+      - "src/**"
+      - "requirements.txt"
+      - "content/**"
+      - "external/**"
+      - "data/**"
 
 permissions:
   contents: write
