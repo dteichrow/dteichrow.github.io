@@ -1,7 +1,7 @@
 # Daily Infectious Disease & Epidemiology Dossier
-Date: 2026-05-21
-Generated at: 2026-05-21T23:17
-Search window: 7 day(s) ending 2026-05-21
+Date: 2026-05-22
+Generated at: 2026-05-22T00:05
+Search window: 7 day(s) ending 2026-05-22
 
 ## Executive scan
 - [Klebsiella pneumoniae Carbapenemase-Producing Enterobacterales Infection and Colonization in a Long-Term Care Facility](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765602) (CDC MMWR; 2026-05-21T17:00+00:00; Occupational and environmental epidemiology; relevance 5/5)
@@ -12,40 +12,25 @@ Search window: 7 day(s) ending 2026-05-21
 - [FDA outbreak investigation 1358: Salmonella Typhimurium & Newport linked to Moringa Leaf Powder](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-salmonella-moringa-leaf-powder-january-2026) (FDA Foodborne Outbreaks; 2026-05-20T00:00; Outbreaks and emerging infections; relevance 5/5)
 - [Epidemiological and virological characteristics of influenza in Zhejiang Province, China: A 15-year surveillance study.](https://pubmed.ncbi.nlm.nih.gov/42157696/) (PubMed Infectious Disease Search; 2026-05-20T00:00; Major epidemiology studies; relevance 5/5)
 - [ECDC activates the EU Health Task Force, deploying experts to support Ebola outbreak response](https://www.ecdc.europa.eu/en/news-events/ecdc-activates-eu-health-task-force-deploying-experts-support-ebola-outbreak-response) (ECDC News; 2026-05-18T14:14+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (212), Policy, surveillance, and public health infrastructure (27), Major epidemiology studies (3)
+- Category mix: Outbreaks and emerging infections (226), Policy, surveillance, and public health infrastructure (27), Major epidemiology studies (2)
 - Source health: 2 source(s) failed during collection: Nigeria Centre for Disease Control, USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
 ### Ebola virus disease
 - Lead item: [Bundibugyo virus disease in the Democratic Republic of the Congo](https://www.afro.who.int/node/23265) (WHO Regional Office for Africa)
-- New publisher/source coverage joined this story cluster: Africa Sustainability Matters, EWN, Radio-Canada.
-- 1 newly observed linked item(s) were added since the last saved snapshot.
+- New publisher/source coverage joined this story cluster: American Hospital Association, DW.com, Forbes Africa.
+- Story volume increased from 226 to 241 clustered item(s) in the current window.
+- 4 newly observed linked item(s) were added since the last saved snapshot.
 
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 226 item(s) across 134 source(s); 7 official/primary-source item(s).
+- Topic size: 241 item(s) across 146 source(s); 6 official/primary-source item(s).
 - Lead item: [Bundibugyo virus disease in the Democratic Republic of the Congo](https://www.afro.who.int/node/23265) (WHO Regional Office for Africa, 2026-05-21T08:46+00:00)
 - Detailed note: * Statement updated to include new figures Eugene Kabambi Communications Officer WHO DRC Tel : +243 81 715 1697 Office : +47 241 39 027 Email: kabambie [at] who.int (kabambie[at]who[dot]int) Collins Boakye-Agyemang Communications and marketing officer Tel: + 242 06 520 65 65 (WhatsApp) Email: boakyeagyemangc [at] who.int (boakyeagyemangc[at]who[dot]int) carousel-bg The Bundibugyo species was first identified in...
 - Evidence notes: [Bundibugyo virus disease in the Democratic Republic of the Congo](https://www.afro.who.int/node/23265) (WHO Regional Office for Africa); [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 01, Data as of 18 May 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa); [ECDC activates the EU Health Task Force, deploying experts to support Ebola outbreak response](https://www.ecdc.europa.eu/en/news-events/ecdc-activates-eu-health-task-force-deploying-experts-support-ebola-outbreak-response) (ECDC News); [WHO declares Ebola outbreak in the Democratic Republic of the Congo and Uganda a Public Health Emergency of International Concern: ECDC continues monitoring](https://www.ecdc.europa.eu/en/news-events/who-declares-ebola-outbreak-democratic-republic-congo-and-uganda-public-health) (ECDC News); [Democratic Republic of the Congo confirms new Ebola outbreak, WHO scales up support](https://www.afro.who.int/countries/democratic-republic-of-congo/news/democratic-republic-congo-confirms-new-ebola-outbreak-who-scales-upsupport) (WHO Regional Office for Africa)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
-
-### Miscellaneous signals
-- Topic size: 4 item(s) across 3 source(s); 3 official/primary-source item(s).
-- Lead item: [FDA outbreak investigation 1369: E. coli O157:H7 linked to Raw Cheddar Cheese](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-e-coli-o157h7-raw-cheddar-cheese-march-2026) (FDA Foodborne Outbreaks, 2026-05-20T00:00)
-- Detailed note: Several lower-volume signals passed the filters, but they do not resolve into one coherent topic cluster. Use the linked evidence notes directly rather than reading this as a single story.
-- Evidence notes: [FDA outbreak investigation 1369: E. coli O157:H7 linked to Raw Cheddar Cheese](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-e-coli-o157h7-raw-cheddar-cheese-march-2026) (FDA Foodborne Outbreaks); [FDA outbreak investigation 1358: Salmonella Typhimurium & Newport linked to Moringa Leaf Powder](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-salmonella-moringa-leaf-powder-january-2026) (FDA Foodborne Outbreaks); [Epidemiological and virological characteristics of influenza in Zhejiang Province, China: A 15-year surveillance study.](https://pubmed.ncbi.nlm.nih.gov/42157696/) (PubMed Infectious Disease Search); [Delhi airport steps up Ebola screening after WHO alert](https://www.msn.com/en-in/news/insight/delhi-airport-steps-up-ebola-screening-after-who-alert/gm-GM2B933CCF?gemSnapshotKey\=GM2B933CCF-snapshot-18\&uxmode\=ruby) (MSN)
-- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
-- Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
-
-### Occupational and environmental epidemiology
-- Topic size: 3 item(s) across 3 source(s); 3 official/primary-source item(s).
-- Lead item: [Klebsiella pneumoniae Carbapenemase-Producing Enterobacterales Infection and Colonization in a Long-Term Care Facility](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765602) (CDC MMWR, 2026-05-21T17:00+00:00)
-- Detailed note: Early antibiotic use-without documented infection in 40%-was associated with Enterococcus colonisation (HR 4.99, 95% CI 1.57-15.80), reduced butyrate-producer abundance, and infected necrosis (HR 3.56, 95% CI 1.23-10.28). After adjustment for baseline disease severity, biliary etiology, and prior antibiotic exposure, gastrointestinal Enterococcus colonization was associated with subsequent infected necrosis...
-- Evidence notes: [Klebsiella pneumoniae Carbapenemase-Producing Enterobacterales Infection and Colonization in a Long-Term Care Facility](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765602) (CDC MMWR); [Risk to Europe remains very low as Ebola outbreak intensifies in DRC](https://www.ecdc.europa.eu/en/news-events/risk-europe-remains-very-low-ebola-outbreak-intensifies-drc) (ECDC News); [Antibiotic-associated Enterococcus expansion in the gastrointestinal tract precedes infected necrosis in acute necrotizing pancreatitis.](https://pubmed.ncbi.nlm.nih.gov/42141757/) (PubMed Infectious Disease Search)
-- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
-- Caveats / uncertainty: These notes are limited to source text collected in this run.
 
 ### Measles transmission and vaccination
 - Topic size: 3 item(s) across 3 source(s); 0 official/primary-source item(s).
@@ -54,6 +39,22 @@ Search window: 7 day(s) ending 2026-05-21
 - Evidence notes: [Why a deadly, massive measles outbreak in Bangladesh has some U.S. health experts concerned](https://www.cbsnews.com/news/measles-outbreak-bangladesh-us-health-risk-world-cup-2026/) (CBS News); [2 more cases of measles reported in Lebanon County; no new Lancaster County cases](https://lancasteronline.com/news/health/2-more-cases-of-measles-reported-in-lebanon-county-no-new-lancaster-county-cases/article_ab59eaec-02cd-4e51-9058-69b11acd1585.html) (LancasterOnline); [A measles outbreak crossed into Mexico from Texas. A larger tragedy followed](https://www.cnn.com/2026/05/17/americas/mexico-texas-measles-outbreak-intl-latam) (CNN)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
+
+### Miscellaneous signals
+- Topic size: 3 item(s) across 2 source(s); 3 official/primary-source item(s).
+- Lead item: [FDA outbreak investigation 1369: E. coli O157:H7 linked to Raw Cheddar Cheese](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-e-coli-o157h7-raw-cheddar-cheese-march-2026) (FDA Foodborne Outbreaks, 2026-05-20T00:00)
+- Detailed note: Several lower-volume signals passed the filters, but they do not resolve into one coherent topic cluster. Use the linked evidence notes directly rather than reading this as a single story.
+- Evidence notes: [FDA outbreak investigation 1369: E. coli O157:H7 linked to Raw Cheddar Cheese](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-e-coli-o157h7-raw-cheddar-cheese-march-2026) (FDA Foodborne Outbreaks); [FDA outbreak investigation 1358: Salmonella Typhimurium & Newport linked to Moringa Leaf Powder](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-salmonella-moringa-leaf-powder-january-2026) (FDA Foodborne Outbreaks); [Epidemiological and virological characteristics of influenza in Zhejiang Province, China: A 15-year surveillance study.](https://pubmed.ncbi.nlm.nih.gov/42157696/) (PubMed Infectious Disease Search)
+- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may shape how new evidence is framed before broader consensus forms.
+- Caveats / uncertainty: These notes are limited to source text collected in this run.
+
+### Occupational and environmental epidemiology
+- Topic size: 2 item(s) across 2 source(s); 2 official/primary-source item(s).
+- Lead item: [Klebsiella pneumoniae Carbapenemase-Producing Enterobacterales Infection and Colonization in a Long-Term Care Facility](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765602) (CDC MMWR, 2026-05-21T17:00+00:00)
+- Detailed note: Weekly / May 21, 2026 / 75(19);241â245 Mehdi Aloosh, MD 1 ,2 ; Handreen Mohammed Saeed, MD 1 ,2 ; Laura F. coli sequence type 131 and a closely related, approximately 62-kb IncN1 bla KPC-3 plasmid across E. The likelihood of transmission within the EU/EEA is also considered very low, as imported cases are likely to be rapidly identified and isolated, and appropriate infection prevention and control measures...
+- Evidence notes: [Klebsiella pneumoniae Carbapenemase-Producing Enterobacterales Infection and Colonization in a Long-Term Care Facility](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765602) (CDC MMWR); [Risk to Europe remains very low as Ebola outbreak intensifies in DRC](https://www.ecdc.europa.eu/en/news-events/risk-europe-remains-very-low-ebola-outbreak-intensifies-drc) (ECDC News)
+- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
+- Caveats / uncertainty: These notes are limited to source text collected in this run.
 
 ### Polio and wastewater surveillance
 - Topic size: 1 item(s) across 1 source(s); 0 official/primary-source item(s).
@@ -402,13 +403,21 @@ Search window: 7 day(s) ending 2026-05-21
 
 
 ## Other notable readings
-- [ECDC monitoring Ebola outbreak in the Democratic Republic of the Congo](https://www.ecdc.europa.eu/en/news-events/ecdc-monitoring-ebola-outbreak-democratic-republic-congo) | ECDC News | 2026-05-15T16:21+02:00 | Policy, surveillance, and public health infrastructure
-  Preliminary laboratory results indicate a non-Zaire ebolavirus species, with further analysis ongoing.
 - [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) | Texas Department of State Health Services News | Unknown | Policy, surveillance, and public health infrastructure
   Limited detail was available from feed metadata alone.
-- [Local doctor speaks on Ebola outbreak concerns](https://www.cbsnews.com/miami/video/local-doctor-speaks-on-ebola-outbreak-concerns/) | CBS News | 2026-05-21T23:46+00:00 | Outbreaks and emerging infections
+- [Korea to widen travel ban in Congo to 3 provinces over Ebola outbreak](https://koreajoongangdaily.joins.com/news/2026-05-22/national/socialAffairs/Korea-to-widen-travel-ban-in-Congo-to-3-provinces-over-Ebola-outbreak/2599004) | Korea JoongAng Daily | 2026-05-22T06:26+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Residents burn Ebola treatment center in Congo as anger grows over the outbreak](https://www.pbs.org/newshour/world/residents-burn-ebola-treatment-center-in-congo-as-anger-grows-over-the-outbreak) | PBS | 2026-05-21T22:48+00:00 | Policy, surveillance, and public health infrastructure
+- [Delhi issues Ebola advisory for African arrivals; India-Africa Forum Summit postponed amid outbreak](https://www.ibtimes.co.in/delhi-issues-ebola-advisory-african-arrivals-india-africa-forum-summit-postponed-amid-outbreak-902239) | IBTimes India | 2026-05-22T05:22+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [The Ebola outbreak in Congo went unnoticed for weeks. This is what we know](https://norwalkreflector.com/news/992463/the-ebola-outbreak-in-congo-went-unnoticed-for-weeks-this-is-what-we-know/) | Norwalk Reflector | 2026-05-22T05:08+00:00 | Outbreaks and emerging infections
+  This is what we know Norwalk Reflector
+- [Gov't bans travel to Congo's Ituri Province amid Ebola surge](https://www.koreatimes.co.kr/amp/foreignaffairs/20260522/govt-bans-travel-to-congos-ituri-province-amid-ebola-surge) | The Korea Times | 2026-05-22T04:22+00:00 | Outbreaks and emerging infections
+  The Ministry of Foreign Affairs announced that the Level 4 travel alert — the highest in the country’s four-tier system — will take effect on Friday at 2 p.m. In addition to the ban on travel to the three provinces, Korea maintains a Level 3 "departure recommended" advisory for several border areas and regions, including territories within 50 kilometers of the Central African Republic border, Bas-Uele, Haut-Uele, Maniema and the Kasai regions. AP-Yonhap Korea has issued a blanket travel ban for the Ituri Province of the Democratic Republic of the Congo, responding to the mounting death toll from a worsening Ebola virus outbreak in the region.
+- [India-Africa summit postponed due to Ebola outbreak](https://guardian.ng/news/india-africa-summit-postponed-due-to-ebola-outbreak/) | The Guardian Nigeria News | 2026-05-22T04:02+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Residents burn an Ebola treatment center in Congo as anger grows over the outbreak](https://apnews.com/article/congo-ebola-outbreak-who-spread-response-18537353976a958687e55f95434c918c) | AP News | 2026-05-22T02:56+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Local doctor speaks on Ebola outbreak concerns](https://www.cbsnews.com/miami/video/local-doctor-speaks-on-ebola-outbreak-concerns/) | CBS News | 2026-05-21T23:46+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Ebola outbreak collides with NIH turmoil](https://www.washingtonpost.com/wp-intelligence/health-brief/2026/05/21/ebola-outbreak-collides-with-nih-turmoil/) | The Washington Post | 2026-05-21T22:05+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
@@ -417,8 +426,6 @@ Search window: 7 day(s) ending 2026-05-21
 - [As Ebola cases rise, Americans returning from DRC must enter US via Washington airport](https://www.reuters.com/business/healthcare-pharmaceuticals/ebola-cases-rise-americans-returning-drc-must-enter-us-via-washington-dulles-2026-05-21/) | Reuters | 2026-05-21T21:25+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Trump administration temporarily pauses deportation flights to Congo amid Ebola outbreak](https://www.politico.com/news/2026/05/21/trump-administration-temporarily-pauses-deportation-flights-to-congo-amid-ebola-outbreak-00932722) | Politico | 2026-05-21T21:06+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [U.S. imposes new travel restrictions over Ebola outbreak in Congo](https://www.cbsnews.com/video/us-new-travel-restrictions-ebola-outbreak-congo/) | CBS News | 2026-05-21T21:00+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [US begins enhanced airport screening as race to contain Ebola outbreak continues](https://www.cidrap.umn.edu/ebola/us-begins-enhanced-airport-screening-race-contain-ebola-outbreak-continues) | CIDRAP | 2026-05-21T20:42+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
@@ -436,12 +443,6 @@ Search window: 7 day(s) ending 2026-05-21
   Limited detail was available from feed metadata alone.
 - [Ebola outbreak gathering momentum, amid fears of spread, as angry crowd sets fire to treatment centre in Democratic Republic of Congo](https://news.sky.com/story/ebola-outbreak-gathering-momentum-amid-fears-of-spread-as-angry-crowd-sets-fire-to-treatment-centre-in-democratic-republic-of-congo-13546700) | Sky News | 2026-05-21T18:17+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [India-Africa Summit Postponed Indefinitely Over Ebola Outbreak](https://www.bloomberg.com/news/articles/2026-05-21/india-africa-summit-postponed-indefinitely-over-ebola-outbreak) | bloomberg.com | 2026-05-21T18:01+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [DR Congo cancels World Cup training camp over Ebola outbreak](https://www.bbc.com/news/articles/c8d80856q2go) | BBC | 2026-05-21T17:54+00:00 | Outbreaks and emerging infections
-  The virus is thought to have killed more than 130, including a person whose case was confirmed on Thursday in the South Kivu province, signalling the spread of the virus from the outbreak's epicentre. The Leopards are due to play friendly matches against Denmark, on 3 June in Belgium, and Chile, on 9 June in Spain, ahead of the World Cup finals. A spokesperson for DR Congo's football team told reporters that the training camp, part of the preparations for the team's first World Cup since 1974, would now take place in Belgium.
-- [What is Ebola, how does it spread and why is DR Congo outbreak an 'emergency'?](https://www.bbc.com/news/articles/cz72p75zg4qo) | BBC | 2026-05-21T17:52+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
 - [Epidemiological and virological characteristics of influenza in Zhejiang Province, China: A 15-year surveillance study.](https://pubmed.ncbi.nlm.nih.gov/42157696/)
@@ -456,12 +457,6 @@ Search window: 7 day(s) ending 2026-05-21
   Journal/preprint server: Human vaccines & immunotherapeutics
   Abstract link: https://pubmed.ncbi.nlm.nih.gov/42154963/
   Source URL: https://pubmed.ncbi.nlm.nih.gov/42154963/
-- [Antibiotic-associated Enterococcus expansion in the gastrointestinal tract precedes infected necrosis in acute necrotizing pancreatitis.](https://pubmed.ncbi.nlm.nih.gov/42141757/)
-  Source: PubMed Infectious Disease Search
-  DOI: 10.1080/19490976.2026.2670039
-  Journal/preprint server: Gut microbes
-  Abstract link: https://pubmed.ncbi.nlm.nih.gov/42141757/
-  Source URL: https://pubmed.ncbi.nlm.nih.gov/42141757/
 
 ## Historical epi / weird epi corner
 - [Congolese report constant burials as deaths in new Ebola outbreak reach 87](https://news.google.com/rss/articles/CBMiowFBVV95cUxPUXlQYzVuR3R5YnVkdHR3T29SY1lsZ0NubkNPZ0V0X2M1ZWp2WDdOWVNFVVRWT0loTmpjTHFIMjEtQlJ6ckZZU0RzMV8zZ0ZWUlprMGRYMlVOZmlxZl9LQ1pIS3V3dm5keXdZamdlX016NHoxeWJwaVJOWTZ2RFNvazVDc3lmejAxdFpxZ3BHZzVLaW9oLVQweE0zQlFNNXM4QjFv?oc=5) | AP News
