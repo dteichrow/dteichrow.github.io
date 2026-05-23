@@ -106,7 +106,7 @@ For the live desk:
 - local builds import from the sibling `../epi-dossier/docs`
 - CI builds can clone `https://github.com/dteichrow/epi-dossier.git` if the sibling path is unavailable
 - `substack_sync` updates the persisted repository content and generated docs, but it does not deploy GitHub Pages
-- `deploy_pages` is the only Pages deployer; it runs after normal pushes, on manual dispatch, and on a 15-minute cloud schedule offset from the Newsdesk source publisher
+- `deploy_pages` is the only Pages deployer; it runs after normal pushes, on manual dispatch, and on a cloud schedule with no more than a 10-minute gap between deploy attempts
 - the Pages deploy step retries once after a short delay so a transient GitHub Pages deployment error does not fail the whole publication path immediately
 
 For virtual teaching tools:
