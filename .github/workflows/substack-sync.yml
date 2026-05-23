@@ -2,7 +2,7 @@ name: substack_sync
 
 on:
   schedule:
-    - cron: "12,27,42,57 * * * *"
+    - cron: "27 * * * *"
   workflow_dispatch:
   push:
     branches:
@@ -17,19 +17,14 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
+  group: substack-sync
   cancel-in-progress: false
 
 jobs:
   sync-and-build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
@@ -59,18 +54,3 @@ jobs:
           git add content/posts.yml docs notes
           git commit -m "Sync Substack posts and rebuild site"
           git push
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        continue-on-error: true
-        uses: actions/deploy-pages@v4
-
-      - name: Retry GitHub Pages deploy
-        if: steps.deployment.outcome == 'failure'
-        id: deployment_retry
-        uses: actions/deploy-pages@v4
