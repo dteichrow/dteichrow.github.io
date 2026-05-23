@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-05-23
-Generated at: 2026-05-23T15:17
+Generated at: 2026-05-23T16:15
 Search window: 7 day(s) ending 2026-05-23
 
 ## Executive scan
@@ -12,23 +12,16 @@ Search window: 7 day(s) ending 2026-05-23
 - [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 01, Data as of 18 May 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa; 2026-05-20T06:12+00:00; Outbreaks and emerging infections; relevance 5/5)
 - [Epidemiological and virological characteristics of influenza in Zhejiang Province, China: A 15-year surveillance study.](https://pubmed.ncbi.nlm.nih.gov/42157696/) (PubMed Infectious Disease Search; 2026-05-20T00:00; Major epidemiology studies; relevance 5/5)
 - [ECDC activates the EU Health Task Force, deploying experts to support Ebola outbreak response](https://www.ecdc.europa.eu/en/news-events/ecdc-activates-eu-health-task-force-deploying-experts-support-ebola-outbreak-response) (ECDC News; 2026-05-18T14:14+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (262), Policy, surveillance, and public health infrastructure (28), Major epidemiology studies (1)
-- Source health: 2 source(s) failed during collection: Nigeria Centre for Disease Control, USDA APHIS Avian Influenza.
+- Category mix: Outbreaks and emerging infections (265), Policy, surveillance, and public health infrastructure (28), Occupational and environmental epidemiology (1)
+- Source health: 3 source(s) failed during collection: Nigeria Centre for Disease Control, FDA Foodborne Outbreaks, USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
 ### Ebola virus disease
 - Lead item: [Ebola virus disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-and-uganda) (ECDC News)
-- Newly tracked story cluster: 244 item(s) across 156 source(s).
-- Baseline snapshot created with 244 clustered item(s) across 156 source(s).
+- Newly tracked story cluster: 248 item(s) across 155 source(s).
+- Baseline snapshot created with 248 clustered item(s) across 155 source(s).
 - ECDC News now explicitly uses investigation or monitoring language.
 - ECDC News now includes deaths or fatal cases in the story frame.
-
-### Measles transmission and vaccination
-- Lead item: [Measles outbreak kills more than 500 children in Bangladesh](https://www.straitstimes.com/asia/south-asia/measles-outbreak-kills-more-than-500-children-in-bangladesh) (The Straits Times)
-- Newly tracked story cluster: 3 item(s) across 3 source(s).
-- Baseline snapshot created with 3 clustered item(s) across 3 source(s).
-- The Straits Times now includes deaths or fatal cases in the story frame.
-- The Straits Times now foregrounds vaccination or vaccine policy in the story.
 
 ### Occupational and environmental epidemiology
 - Lead item: [Klebsiella pneumoniae Carbapenemase-Producing Enterobacterales Infection and Colonization in a Long-Term Care Facility](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765602) (CDC MMWR)
@@ -46,7 +39,7 @@ Search window: 7 day(s) ending 2026-05-23
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 244 item(s) across 156 source(s); 6 official/primary-source item(s).
+- Topic size: 248 item(s) across 155 source(s); 6 official/primary-source item(s).
 - Lead item: [Ebola virus disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-and-uganda) (ECDC News, 2026-05-21T17:36+02:00)
 - Detailed note: * Statement updated to include new figures Eugene Kabambi Communications Officer WHO DRC Tel : +243 81 715 1697 Office : +47 241 39 027 Email: kabambie [at] who.int (kabambie[at]who[dot]int) Collins Boakye-Agyemang Communications and marketing officer Tel: + 242 06 520 65 65 (WhatsApp) Email: boakyeagyemangc [at] who.int (boakyeagyemangc[at]who[dot]int) carousel-bg The Bundibugyo species was first identified in...
 - Evidence notes: [Ebola virus disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-and-uganda) (ECDC News); [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 01, Data as of 18 May 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa); [ECDC activates the EU Health Task Force, deploying experts to support Ebola outbreak response](https://www.ecdc.europa.eu/en/news-events/ecdc-activates-eu-health-task-force-deploying-experts-support-ebola-outbreak-response) (ECDC News); [WHO declares Ebola outbreak in the Democratic Republic of the Congo and Uganda a Public Health Emergency of International Concern: ECDC continues monitoring](https://www.ecdc.europa.eu/en/news-events/who-declares-ebola-outbreak-democratic-republic-congo-and-uganda-public-health) (ECDC News); [Democratic Republic of the Congo confirms new Ebola outbreak, WHO scales up support](https://www.afro.who.int/countries/democratic-republic-of-congo/news/democratic-republic-congo-confirms-new-ebola-outbreak-who-scales-upsupport) (WHO Regional Office for Africa)
@@ -70,10 +63,10 @@ Search window: 7 day(s) ending 2026-05-23
 - Caveats / uncertainty: These notes are limited to source text collected in this run.
 
 ### Measles transmission and vaccination
-- Topic size: 3 item(s) across 3 source(s); 0 official/primary-source item(s).
-- Lead item: [Measles outbreak kills more than 500 children in Bangladesh](https://www.straitstimes.com/asia/south-asia/measles-outbreak-kills-more-than-500-children-in-bangladesh) (The Straits Times, 2026-05-23T13:38+00:00)
-- Detailed note: Deaths are still rising, with 13 children dying in the past 24 hours alone, taking the toll from the disaster to 512, according to health department figures since March 15. The South Asian nation has rolled out a mass vaccination drive to combat the outbreak, and UNICEF country chief Rana Flowers said this week that the campaign has now reached 18 million children.
-- Evidence notes: [Measles outbreak kills more than 500 children in Bangladesh](https://www.straitstimes.com/asia/south-asia/measles-outbreak-kills-more-than-500-children-in-bangladesh) (The Straits Times); [Deadly Measles Outbreak Sickens Thousands of Children in Bangladesh](https://www.nytimes.com/2026/05/22/world/asia/bangladesh-measles-outbreak-vaccines.html) (The New York Times); [A measles outbreak crossed into Mexico from Texas. A larger tragedy followed](https://www.cnn.com/2026/05/17/americas/mexico-texas-measles-outbreak-intl-latam) (CNN)
+- Topic size: 2 item(s) across 2 source(s); 0 official/primary-source item(s).
+- Lead item: [Deadly Measles Outbreak Sickens Thousands of Children in Bangladesh](https://www.nytimes.com/2026/05/22/world/asia/bangladesh-measles-outbreak-vaccines.html) (The New York Times, 2026-05-22T10:12+00:00)
+- Detailed note: Cluster remains active across 2 related item(s), but usable factual summary text was limited after cleanup.
+- Evidence notes: [Deadly Measles Outbreak Sickens Thousands of Children in Bangladesh](https://www.nytimes.com/2026/05/22/world/asia/bangladesh-measles-outbreak-vaccines.html) (The New York Times); [A measles outbreak crossed into Mexico from Texas. A larger tragedy followed](https://www.cnn.com/2026/05/17/americas/mexico-texas-measles-outbreak-intl-latam) (CNN)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
 
@@ -426,7 +419,7 @@ Search window: 7 day(s) ending 2026-05-23
 ## Other notable readings
 - [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) | Texas Department of State Health Services News | Unknown | Policy, surveillance, and public health infrastructure
   Limited detail was available from feed metadata alone.
-- [Ebola outbreak: 10 African Countries at risk as Virus spreads, Africa CDC Warns](https://nigerianbulletin.com/ams/ebola-outbreak-10-african-countries-at-risk-as-virus-spreads-africa-cdc-warns.27834/) | Nigerian Bulletin | 2026-05-23T20:54+00:00 | Outbreaks and emerging infections
+- [3 Red Cross volunteers die of Ebola as number of cases rises in Uganda](https://www.nbcnews.com/health/health-news/3-red-cross-volunteers-die-ebola-number-cases-rises-uganda-rcna346662) | NBC News | 2026-05-23T22:29+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Ebola treatment tent set ablaze again in Congo, with 18 suspected cases leaving](https://www.cbc.ca/news/world/ebola-tent-fire-congo-9.7210001) | CBC | 2026-05-23T19:09+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
@@ -448,21 +441,21 @@ Search window: 7 day(s) ending 2026-05-23
   Limited detail was available from feed metadata alone.
 - [DRC World Cup squad ordered to isolate before entry to US due to Ebola outbreak](https://www.theguardian.com/football/2026/may/23/dcr-world-cup-squad-isolate-ebola-outbreak-congo-united-states) | The Guardian | 2026-05-23T13:51+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Measles outbreak kills more than 500 children in Bangladesh](https://www.straitstimes.com/asia/south-asia/measles-outbreak-kills-more-than-500-children-in-bangladesh) | The Straits Times | 2026-05-23T13:38+00:00 | Outbreaks and emerging infections
-  Deaths are still rising, with 13 children dying in the past 24 hours alone, taking the toll from the disaster to 512, according to health department figures since March 15. The South Asian nation has rolled out a mass vaccination drive to combat the outbreak, and UNICEF country chief Rana Flowers said this week that the campaign has now reached 18 million children. Sign up now: Get insights on Asia's fast-moving developments Hospitals in the capital Dhaka have been overwhelmed with cases and set up dedicated wards to take patients.
 - [World Bank rushes emergency Ebola funding to Congo as outbreak spreads across East Africa](https://africa.businessinsider.com/lifestyle/world-bank-prepares-emergency-ebola-funding-as-congo-outbreak-spreads-to-uganda/63hh7ss) | Business Insider Africa | 2026-05-23T12:22+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Uganda confirms new Ebola cases as risk in DRC rises to highest level](https://www.rfi.fr/en/africa/20260523-travel-restrictions-on-dr-congo-as-ebola-threat-rises-to-highest-level) | RFI | 2026-05-23T11:05+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [White House Tells Congo’s Soccer Team to Isolate, Citing Ebola Outbreak](https://www.nytimes.com/2026/05/23/world/africa/congo-soccer-ebola-world-cup.html) | The New York Times | 2026-05-23T10:44+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Ebola Outbreak: 10 African Countries At Risk US Extends Travel Ban To Green Card Holders - 10 Points](https://menafn.com/1111158556/Ebola-Outbreak-10-African-Countries-At-Risk-US-Extends-Travel-Ban-To-Green-Card-Holders-10-Points) | Menafn.com | 2026-05-23T05:30+00:00 | Outbreaks and emerging infections
+- [Why travel restrictions may have unintended consequences as US bars some visitors amid Ebola outbreak - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/Health/travel-restrictions-unintended-consequences-us-bars-visitors-amid/story?id\=133181426) | ABC News - Breaking News, Latest News and Videos | 2026-05-23T09:15+00:00 | Policy, surveillance, and public health infrastructure
   Limited detail was available from feed metadata alone.
 - [US restricts arrivals from DRC, Uganda and South Sudan over Ebola outbreak](https://peopledaily.digital/news/us-restricts-arrivals-from-drc-uganda-and-south-sudan-over-ebola-outbreak) | People Daily | 2026-05-23T03:28+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Australia’s largest recorded diphtheria outbreak is spreading through remote Indigenous communities](https://www.theguardian.com/australia-news/2026/may/23/australia-diphtheria-outbreak-remote-indigenous-communities-ntwnfb) | The Guardian | 2026-05-23T01:52+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Mob Burns Congo Ebola Center Amid Rare Strain Outbreak](https://www.nytimes.com/2026/05/22/world/africa/ebola-congo-clinic-burned-protests.html) | The New York Times | 2026-05-23T00:12+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Ebola Outbreak Is Now Third Largest in History. Here’s What to Know.](https://www.wsj.com/world/africa/ebola-outbreak-explained-4ab4414f) | WSJ | 2026-05-22T23:06+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
