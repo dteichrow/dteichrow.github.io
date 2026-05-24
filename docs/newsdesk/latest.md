@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-05-24
-Generated at: 2026-05-24T11:17
+Generated at: 2026-05-24T12:17
 Search window: 7 day(s) ending 2026-05-24
 
 ## Executive scan
@@ -12,7 +12,7 @@ Search window: 7 day(s) ending 2026-05-24
 - [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 01, Data as of 18 May 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa; 2026-05-20T06:12+00:00; Outbreaks and emerging infections; relevance 5/5)
 - [Epidemiological and virological characteristics of influenza in Zhejiang Province, China: A 15-year surveillance study.](https://pubmed.ncbi.nlm.nih.gov/42157696/) (PubMed Infectious Disease Search; 2026-05-20T00:00; Major epidemiology studies; relevance 5/5)
 - [ECDC activates the EU Health Task Force, deploying experts to support Ebola outbreak response](https://www.ecdc.europa.eu/en/news-events/ecdc-activates-eu-health-task-force-deploying-experts-support-ebola-outbreak-response) (ECDC News; 2026-05-18T14:14+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (256), Policy, surveillance, and public health infrastructure (29), Major epidemiology studies (1)
+- Category mix: Outbreaks and emerging infections (255), Policy, surveillance, and public health infrastructure (28), Major epidemiology studies (1)
 - Source health: 2 source(s) failed during collection: Nigeria Centre for Disease Control, USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
@@ -25,8 +25,8 @@ Search window: 7 day(s) ending 2026-05-24
 
 ### Ebola virus disease
 - Lead item: [Ebola virus disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-and-uganda) (ECDC News)
-- Newly tracked story cluster: 243 item(s) across 155 source(s).
-- Baseline snapshot created with 243 clustered item(s) across 155 source(s).
+- Newly tracked story cluster: 242 item(s) across 156 source(s).
+- Baseline snapshot created with 242 clustered item(s) across 156 source(s).
 - ECDC News now includes deaths or fatal cases in the story frame.
 
 ### Hantavirus and cruise-ship outbreak
@@ -44,7 +44,7 @@ Search window: 7 day(s) ending 2026-05-24
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 243 item(s) across 155 source(s); 5 official/primary-source item(s).
+- Topic size: 242 item(s) across 156 source(s); 5 official/primary-source item(s).
 - Lead item: [Ebola virus disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-and-uganda) (ECDC News, 2026-05-21T17:36+02:00)
 - Detailed note: * Statement updated to include new figures Eugene Kabambi Communications Officer WHO DRC Tel : +243 81 715 1697 Office : +47 241 39 027 Email: kabambie [at] who.int (kabambie[at]who[dot]int) Collins Boakye-Agyemang Communications and marketing officer Tel: + 242 06 520 65 65 (WhatsApp) Email: boakyeagyemangc [at] who.int (boakyeagyemangc[at]who[dot]int) carousel-bg The Bundibugyo species was first identified in...
 - Evidence notes: [Ebola virus disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-and-uganda) (ECDC News); [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 01, Data as of 18 May 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa); [ECDC activates the EU Health Task Force, deploying experts to support Ebola outbreak response](https://www.ecdc.europa.eu/en/news-events/ecdc-activates-eu-health-task-force-deploying-experts-support-ebola-outbreak-response) (ECDC News); [Democratic Republic of the Congo confirms new Ebola outbreak, WHO scales up support](https://www.afro.who.int/countries/democratic-republic-of-congo/news/democratic-republic-congo-confirms-new-ebola-outbreak-who-scales-upsupport) (WHO Regional Office for Africa); [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) (Texas Department of State Health Services News)
@@ -68,11 +68,11 @@ Search window: 7 day(s) ending 2026-05-24
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Miscellaneous signals
-- Topic size: 3 item(s) across 3 source(s); 2 official/primary-source item(s).
+- Topic size: 2 item(s) across 2 source(s); 2 official/primary-source item(s).
 - Lead item: [Raaw Energy Expands Recall of Dog Food Because of Listeria Monocytogenes Health Risk](https://tools.cdc.gov/api/embed/downloader/download.asp?m=316422&c=765617) (CDC Travel Health Notices, 2026-05-22T18:22+00:00)
 - Detailed note: Several lower-volume signals passed the filters, but they do not resolve into one coherent topic cluster. Use the linked evidence notes directly rather than reading this as a single story.
-- Evidence notes: [Raaw Energy Expands Recall of Dog Food Because of Listeria Monocytogenes Health Risk](https://tools.cdc.gov/api/embed/downloader/download.asp?m=316422&c=765617) (CDC Travel Health Notices); [Epidemiological and virological characteristics of influenza in Zhejiang Province, China: A 15-year surveillance study.](https://pubmed.ncbi.nlm.nih.gov/42157696/) (PubMed Infectious Disease Search); [Gaza's battle with rising infectious disease risks](https://www.vaticannews.va/en/world/news/2026-05/gaza-s-battle-with-rising-infectious-disease-risks.html) (Vatican News)
-- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
+- Evidence notes: [Raaw Energy Expands Recall of Dog Food Because of Listeria Monocytogenes Health Risk](https://tools.cdc.gov/api/embed/downloader/download.asp?m=316422&c=765617) (CDC Travel Health Notices); [Epidemiological and virological characteristics of influenza in Zhejiang Province, China: A 15-year surveillance study.](https://pubmed.ncbi.nlm.nih.gov/42157696/) (PubMed Infectious Disease Search)
+- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may shape how new evidence is framed before broader consensus forms.
 - Caveats / uncertainty: These notes are limited to source text collected in this run.
 
 ### Occupational and environmental epidemiology
@@ -422,13 +422,13 @@ Search window: 7 day(s) ending 2026-05-24
 
 
 ## Other notable readings
+- [3 Red Cross Volunteers Died of Ebola in the Democratic Republic of Congo](https://voi.id/en/news/576866) | VOI.id | 2026-05-24T18:20+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - [Ebola ‘scouts’ raise awareness in Bunia amid eastern Congo outbreak](https://apnews.com/video/ebola-scouts-raise-awareness-in-bunia-amid-eastern-congo-outbreak-3e8c5303844d4c34840bbb3adf6bcc12) | AP News | 2026-05-24T17:53+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [DR Congo Ebola cases rise amid distrust, armed conflict zone](https://www.npr.org/2026/05/24/nx-s1-5833095/drc-ebola-africa) | NPR | 2026-05-24T17:18+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Ebola Threat Looms: Nigeria At High Risk Amid Regional Outbreaks, NCDC](https://independent.ng/ebola-threat-looms-nigeria-at-high-risk-amid-regional-outbreaks-ncdc/) | Independent Newspaper Nigeria | 2026-05-24T15:58+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Attacks on Ebola treatment centers are one of several problems affecting Congo's outbreak response - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/Health/wireStory/attacks-ebola-treatment-centers-problems-affecting-congos-outbreak-133266531) | ABC News - Breaking News, Latest News and Videos | 2026-05-24T15:36+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Ebola Deaths Exceed 200 in DR Congo Amid Attack](https://www.chosun.com/english/world-en/2026/05/24/EKYYKQUH5NBJPFHZ2J365JUKXQ/) | 조선일보 | 2026-05-24T12:48+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
@@ -442,15 +442,17 @@ Search window: 7 day(s) ending 2026-05-24
   Limited detail was available from feed metadata alone.
 - [India Issues Travel Advisory: Avoid DRC, Uganda & South Sudan Amid Ebola Outbreak](https://www.deccanherald.com/health/healthcare/ebola-outbreak-india-issues-travel-advisory-against-3-african-countries-4014297) | Deccan Herald | 2026-05-24T07:14+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
+- [Ebola outbreak in DRC is 'spreading rapidly' with almost 750 suspected cases: WHO chief - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/Health/ebola-outbreak-drc-spreading-rapidly-750-suspected-cases/story?id\=133219863) | ABC News - Breaking News, Latest News and Videos | 2026-05-24T07:02+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - [WHO raises DRC Ebola risk as suspected deaths climb above 170](https://news.google.com/rss/articles/CBMiZkFVX3lxTFB3Z3d6M0J0TUZqVnhHdGdUT0VmaGh3cWNqSEItSTVDd195cTZpVnpnT19MR0xwWjdiZ012TGdxOUFMR3dwR0NVU2JBbWdBUmwzX1NKekU4bkJPd3BsdDZBRm4yZlotZw?oc=5) | Nation Thailand | 2026-05-24T06:36+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [India issues travel advisory as WHO declares Ebola outbreak a public health emergency](https://news.google.com/rss/articles/CBMitAFBVV95cUxQMFhHa004c1c0RVBibVVPYnN4Q1Exa2doYURQOVdHRG91OHFmRzFEYlI0RFhuX2RzY3doZ2NVOXlkdW1sc3FuNXJISWdReERndmx1ZjhlZ2IyRVF1ckpjdEJlNk1GN0p5NnNvTzlDeks1OS1zOEdsU1ZjSE5WZS1SMGJldi1sbEN2WHpkeWUzNFJUZF9mLUR1cFpJT2hLOWF0ZXVOb3c0YkJ2QzdfYWJrME9EazfSAbsBQVVfeXFMUF9Uc2dxU2xnZVpkdmVzelFCZ1VWZllETmdJQlp1NERHcWV5MTlfMkhGUzJoOUc3aC1qc0VRSG96ejBEWXdtTHRvSVVLbmVfeG95OFZTUHI4Wm14WG1tTllHME5KcUZYdjAzcEZtVmg3Rms5RDF3b3lBSjB4WDVpOXhNZDJZaVlfMVhJV3dteS1KWnQ1T29CdmN0bjBBUDFNNDcyZ0tJeUVISUNCMmNyZTVjajA3STVIQ1F6cw?oc=5) | The Indian Express | 2026-05-24T06:15+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [India issues advisory against non-essential travel to Congo, Uganda and South Sudan amid Ebola outbreak](https://news.google.com/rss/articles/CBMiygFBVV95cUxQb1ljNzE2UHRnSGFWbUdpNm44ZUxudXFZc3JzbGx1S1UwYllqTVpyVGtweUZHeW45X2NJSjI1OUVHMU9kblR3dlZTV1g5YzA2U1JaQjAtVTZEbVhla2RWeENZY3hjVVBidGxUNFlhbTV0bnE5SE92aUY3VEhEUVhSaDByampZOTA2aTRycDRRSmtaWEFnT2NrZTNzMktRMDMtSThmYUc0cnV0eTk0bGx0dG5fbmVOS3kwNGFjbElvRmsxVnVGaW9KQldn0gHKAUFVX3lxTFBvWWM3MTZQdGdIYVZtR2k2bjhlTG51cVlzcnNsbHVLVTBiWWpNWnJUa3B5Rkd5bjlfY0lKMjU5RUcxT2RuVHd2VlNXWDljMDZTUlpCMC1VNkRtWGVrZFZ4Q1ljeGNVUGJ0bFQ0WWFtNXRucTlIT3ZpRjdUSERRWFJoMHJqalk5MDZpNHJwNFFKa1pYQWdPY2tlM3MyS1EwMy1JOGZhRzRydXR5OTRsbHR0bl9uZU5LeTA0YWNsSW9GazFWdUZpb0pCV2c?oc=5) | The Hindu | 2026-05-24T05:04+00:00 | Outbreaks and emerging infections
+- [Avoid non-essential travel to DRC, Uganda, South Sudan: India issues advisory over Ebola outbreak](https://news.google.com/rss/articles/CBMitAFBVV95cUxQMFhHa004c1c0RVBibVVPYnN4Q1Exa2doYURQOVdHRG91OHFmRzFEYlI0RFhuX2RzY3doZ2NVOXlkdW1sc3FuNXJISWdReERndmx1ZjhlZ2IyRVF1ckpjdEJlNk1GN0p5NnNvTzlDeks1OS1zOEdsU1ZjSE5WZS1SMGJldi1sbEN2WHpkeWUzNFJUZF9mLUR1cFpJT2hLOWF0ZXVOb3c0YkJ2QzdfYWJrME9EazfSAbsBQVVfeXFMUF9Uc2dxU2xnZVpkdmVzelFCZ1VWZllETmdJQlp1NERHcWV5MTlfMkhGUzJoOUc3aC1qc0VRSG96ejBEWXdtTHRvSVVLbmVfeG95OFZTUHI4Wm14WG1tTllHME5KcUZYdjAzcEZtVmg3Rms5RDF3b3lBSjB4WDVpOXhNZDJZaVlfMVhJV3dteS1KWnQ1T29CdmN0bjBBUDFNNDcyZ0tJeUVISUNCMmNyZTVjajA3STVIQ1F6cw?oc=5) | The Indian Express | 2026-05-24T06:15+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [India issues travel advisory for Congo, Uganda, South Sudan amid Ebola outbreak scare](https://news.google.com/rss/articles/CBMi4gFBVV95cUxNdVNGOFhNT2w2Vmx4T3lXTDhscnNvR3RXWjdsMmg4b3NTUGNwNmQ3NkxDSFNPR18wQXBtSkNIaWw0VnBqOEtIWllqa196WDFidjN0ZVYzUk9iM0hxTUJBbWlOckJDM1doU0pnbjFaa0hleG5lbXBCdGpqMU5SSksta0NHS29wcWhsbGpDSlgydGh5dThJR2FTc3V4ODJWTlJHSnNFVV82U2tIVXBnc2lQOTdfZjlmaXR6a0p0enozWENxYXd4UUtiS2hzdWVWc3pqVWFyclBWdXU0OFppOWE0ZmVn0gHnAUFVX3lxTE1JTnZRMjNlc2pwWWpoak1lLVhjNFQxVUNwS2lMODVFanJ2T3d1RWp0RWtodjliUXB0Q0VOT0NpZjRYMU94U2VLODlpS251VzNocTduWFpPakZjWDdqQWwtb3dJWVo0VXRURU9LbzZ1T2ZvVTZUQXRXREVYOGR5UV9iNXRVbXpacHhIaFVIenB4dU9SZGY5R0hJcy1TZ0JUeERkdVg5c2NDWDlwc2twVnlPYkRNZENhZHp1cll1eDBYTmoyWHZqTGZXM190NU5YX1o3Unl6S3hyQ2lqX2s4YkphUTN2bWNDSQ?oc=5) | The Economic Times | 2026-05-24T04:33+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - ["Avoid Travel To Congo, Uganda": India Issues Advisory Amid Ebola Outbreak](https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSzk0R2tIMjFoVm5FQzdSb09aajlmbk5Pa3VwdUZjMWQzMTJPbFJxb3JKRkVwX0RGenBEZ09SYllaUXU1WVFwMEd4N1c3QWNWUGJtNEFfT0dHLVg1Q0tZdUdYX1A3dWowTHBoV1NlcTcxQUMwQjBvVjZCdVE5TElaTlB5OGg2VWt6a05CV1YyMlB0Y2pOYi13eE4zUUhSeW1EMHBkOW5LUnRtc1FWb0FLREVpTXVaTnZJenREWU1TcV_SAcgBQVVfeXFMUGxaVk5aT05uLWtOYkVETS1rcUZWUnQzcS1vRWVlNVdVemNTS1J6R25GSzVfczJlQnROZXdBOGpicHd6d1YyZ211dTlyZncteURZQ051TEdIR0s3ejdoTmRpazJJSmZSbDJ0dHJBa2hpUjNDS09RSXQ1d213UmNvNVVZOURZZ2VQRHV3bk56SnI3TUZjYWFKLVQybk1Wa0pmMEpNdmIwZldyQlhvVDAwcHZXX1V4SUE3bjVjYXlJYzFUc25Tdm9HMjY?oc=5) | NDTV | 2026-05-24T04:06+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Govt toughens airport screening amid Ebola outbreak](https://news.google.com/rss/articles/CBMiSEFVX3lxTE95OEJuRFZBVDdnMUdVOXFmazA1SHZNRldKSFB1T3RaQjNadmZ3em1IRlRIVnF4SGMyV0dhdHdhMk9KdWJxRlVIRtIBTkFVX3lxTE51QnpZVXdwRDJZQ1ZXOHpEbXczNjZvQWFOMjV5ZWp3dnFSeUdPUVJqQVdkNHc2dFN3LUFCRTEtYUtEWnU5dEpnenZQdGVIQQ?oc=5) | Dawn | 2026-05-24T01:54+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [WHO confirms Ebola outbreak in Central Africa; Dallas experts say city is prepared](https://news.google.com/rss/articles/CBMiugFBVV95cUxQaXV2Yzd3TUVWS3FESW8zX0RobVdyTFkwU1lYWGw0QzVHYUhtVEpqZlBrNEZaSEVWVHJaQThZWXdpMHdlcTEyOF9RdHVkaEdRblFhUjFEakVtWHFHYzduYUg3bnYwNjJjai01ZmtnSHVfOVNmRzJKSl9QLVA5aEdtRTFiODJ3dUtHN2RuZkVwNXBwbk9OZU9aMU0wYldqTGFtVFFDSTUwalpPaXhfWmlidlJSOGJNVUtoMGc?oc=5) | CBS News | 2026-05-23T23:22+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
@@ -459,8 +461,6 @@ Search window: 7 day(s) ending 2026-05-24
 - [Uganda confirms three new Ebola cases, bringing total to five](https://news.google.com/rss/articles/CBMiyAFBVV95cUxQYTBDS0RiSEVLWjVKbHVvTEdVVXlIWUViUXV4WGRJYmY3ZVM5MUNZb0xoRVhQdVdwWlRaZWJGb3NTNk90RG94djdCMDJOLW1CS215V3NOVzZjSzBZU01aVlZtVTh2MlB4SFEtME1DaDBoR1lOazB1TVF2eXlfMkthTGRpbUo2WldDRkpMMnRCYW5lTjhJVy12V1hyVG9NTDlPX3FJZ3ZGTGFmMk55QlRrZG1oTzN1UGJtZGV4NkNvRUFHT3BVd21ZWQ?oc=5) | Reuters | 2026-05-23T19:57+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Ebola treatment tent set ablaze again in Congo, with 18 suspected cases leaving](https://news.google.com/rss/articles/CBMibkFVX3lxTE41R0dFQnRvZXZkOERVeTQwUDdPWFFlOEhzdzdBNkgyUkFtVVdvMWJwY1BXUWREVU56VFZhV3NDNFhsejBkVVNjRi1WVXNSNG10dDRIUWFoSkFyVnQtZllNTHdYT0N3anM3bG9SajVR?oc=5) | CBC | 2026-05-23T19:09+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Africa CDC warns 10 countries at risk as Ebola outbreak spreads](https://news.google.com/rss/articles/CBMirwFBVV95cUxQOTJ2bkhVcjM5Z0E2aGlJb0FUNEZUYS1rRk9CZ292c0IyX1N0V3ZHSHRxZ2dmZ3JsNjVIY212NG5sV25uM0ZGTl84THk2dmU0Z0xnX0dFdUtycExsTFdCcll3RzZka0VTdjQxemN2ZU5YY2hpQ2NRYm9YVnJuem91UkkwVFNyX0tKMDFpcXp6bEZLV2hyYXBuUUxBODdxOVI3d3FnZDVzMnRMLW9FRkln?oc=5) | Türkiye Today | 2026-05-23T18:58+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
