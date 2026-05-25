@@ -1,7 +1,45 @@
 {
-  "generated_at": "2026-05-25T09:17:34",
-  "count": 89,
+  "generated_at": "2026-05-25T10:17:31",
+  "count": 90,
   "posts": [
+    {
+      "substack_id": 199208467,
+      "slug": "what-the-viking-age-norse-died-from",
+      "title": "What the Viking Age Norse Died From",
+      "date": "2026-05-25",
+      "canonical_url": "https://theedgeofepidemiology.substack.com/p/what-the-viking-age-norse-died-from",
+      "excerpt": "I need to start this piece with a small caveat.",
+      "cover_image": "https://substackcdn.com/image/fetch/$s_!IGPy!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F695412e9-402b-4aa8-834c-9083fc47e8f7_1800x1013.png",
+      "upstream_tags": [
+        "science",
+        "History",
+        "Vikings",
+        "Big Epidemiology"
+      ],
+      "wordcount": 2578,
+      "status": "summary_only",
+      "dek": "",
+      "topics": [
+        "science",
+        "History",
+        "Vikings",
+        "Big Epidemiology"
+      ],
+      "series": [],
+      "seo_title": "",
+      "seo_description": "",
+      "primary_keyword": "",
+      "topic_cluster": "",
+      "related_atlases": [
+        "viking-health-atlas"
+      ],
+      "related_reference_slugs": [],
+      "related_story_ids": [],
+      "search_excerpt": "I need to start this piece with a small caveat.",
+      "local_body_path": "",
+      "hero_mode": "cover",
+      "notes": ""
+    },
     {
       "substack_id": 198344681,
       "slug": "ebola-in-drc-and-uganda-what-is-known",
