@@ -1,7 +1,7 @@
 posts:
 - substack_id: 199208467
   slug: what-the-viking-age-norse-died-from
-  title: What the Viking Age Norse Died From
+  title: The Ordinary Deaths of the Vikings
   date: '2026-05-25'
   canonical_url: https://theedgeofepidemiology.substack.com/p/what-the-viking-age-norse-died-from
   excerpt: I need to start this piece with a small caveat.
@@ -11,7 +11,7 @@ posts:
   - History
   - Vikings
   - Big Epidemiology
-  source_mode: substack_page
+  source_mode: substack_archive_api
   wordcount: 2578
   status: summary_only
   dek: ''
@@ -35,7 +35,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-25T17:17:43+00:00'
-  last_synced_at: '2026-05-25T17:17:43+00:00'
+  last_synced_at: '2026-05-25T18:17:45+00:00'
 - substack_id: 198344681
   slug: ebola-in-drc-and-uganda-what-is-known
   title: 'Ebola in DRC and Uganda: What Is Known So Far (Pathogen Dispatch #4)'
