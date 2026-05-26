@@ -88,9 +88,11 @@ def test_render_post_page_uses_explicit_study_cards() -> None:
         "related_atlases": ["revolutionary-war-atlas"],
         "flashcards": [
             {
-                "question": "Why does the essay say recall needs a focused prompt?",
-                "answer": "It forces retrieval of a specific claim.",
-                "cue": "Retrieval",
+                "question": "Which option best completes the essay point about recall?",
+                "choices": ["retrieval", "exposure", "confounding", "mortality"],
+                "answer": "retrieval",
+                "cue": "Multiple choice",
+                "explanation": "It forces retrieval of a specific claim.",
             }
         ],
     }
@@ -112,9 +114,11 @@ def test_render_post_page_uses_explicit_study_cards() -> None:
     assert 'id="study-cards"' in page_text
     assert '<li><a href="#study-cards">Study cards</a></li>' in page_text
     assert page_text.count("data-flashcard>") == 1
-    assert "Why does the essay say recall needs a focused prompt?" in page_text
+    assert "Which option best completes the essay point about recall?" in page_text
+    assert "flashcard-options" in page_text
+    assert "confounding" in page_text
+    assert "retrieval" in page_text
     assert "It forces retrieval of a specific claim." in page_text
-    assert "flashcard-options" not in page_text
     assert 'data-flashcard-counter>1 / 1</span>' in page_text
 
 
@@ -236,36 +240,38 @@ posts:
     hero_mode: cover
     notes: ""
     flashcards:
-      - question: What should readers remember from the first post?
-        answer: First source-body answer.
-        cue: Post text
+      - question: Which option best completes the first post?
+        choices: [First distractor, First answer, Second distractor, Third distractor]
+        answer: First answer
+        cue: Multiple choice
+        explanation: First source-body sentence.
       - question: What should readers remember from card 2?
         answer: B2
-        cue: Post text
+        cue: Short answer
       - question: What should readers remember from card 3?
         answer: C3
-        cue: Post text
+        cue: Short answer
       - question: What should readers remember from card 4?
         answer: D4
-        cue: Post text
+        cue: Short answer
       - question: What should readers remember from card 5?
         answer: A5
-        cue: Post text
+        cue: Short answer
       - question: What should readers remember from card 6?
         answer: B6
-        cue: Post text
+        cue: Short answer
       - question: What should readers remember from card 7?
         answer: C7
-        cue: Post text
+        cue: Short answer
       - question: What should readers remember from card 8?
         answer: D8
-        cue: Post text
+        cue: Short answer
       - question: What should readers remember from card 9?
         answer: A9
-        cue: Post text
+        cue: Short answer
       - question: What should readers remember from card 10?
         answer: B10
-        cue: Post text
+        cue: Short answer
     flashcards_source: substack_body_html
     flashcards_source_url: https://theedgeofepidemiology.substack.com/p/first-post
   - substack_id: 2
@@ -417,8 +423,9 @@ atlases:
     assert flashcards_export["count"] == 1
     assert flashcards_export["decks"][0]["s"] == "first-post"
     assert flashcards_export["decks"][0]["src"] == "substack_body_html"
-    assert flashcards_export["decks"][0]["cards"][0]["a"] == "First source-body answer."
-    assert "o" not in flashcards_export["decks"][0]["cards"][0]
+    assert flashcards_export["decks"][0]["cards"][0]["a"] == "First answer"
+    assert flashcards_export["decks"][0]["cards"][0]["o"] == ["First distractor", "First answer", "Second distractor", "Third distractor"]
+    assert flashcards_export["decks"][0]["cards"][0]["e"] == "First source-body sentence."
     assert (docs_dir / "CNAME").read_text() == "devinteichrow.com\n"
     assert (docs_dir / "robots.txt").exists()
     assert (docs_dir / "sitemap.xml").exists()
@@ -493,7 +500,7 @@ atlases:
     assert "Contents" in post_text
     assert 'id="study-cards"' in post_text
     assert "data-flashcard" in post_text
-    assert "First source-body answer." in post_text
+    assert "First answer" in post_text
     assert "Archive note" in post_text
     assert "This page keeps the essay connected to related topics, maps, and reference pages" in post_text
     topic_text = (docs_dir / "topics" / "historical-epidemiology" / "index.html").read_text()

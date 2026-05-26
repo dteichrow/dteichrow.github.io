@@ -18,6 +18,18 @@ from src.common import clean_text, extract_preloads_payload, load_posts_manifest
 
 
 TARGET_CARD_COUNT = 10
+CARD_PLAN = (
+    "multiple_choice",
+    "multiple_choice",
+    "fill_blank",
+    "multiple_choice",
+    "short_answer",
+    "multiple_choice",
+    "multiple_choice",
+    "fill_blank",
+    "short_answer",
+    "multiple_choice",
+)
 USER_AGENT = "Mozilla/5.0 (compatible; EdgeOfEpidemiologyFlashcards/1.0)"
 BLOCK_TAGS = {"p", "li", "blockquote", "h1", "h2", "h3", "h4"}
 HEADING_TAGS = {"h1", "h2", "h3", "h4"}
@@ -87,9 +99,17 @@ PHRASE_PATTERNS = [
         r"\b(?:ancient DNA|early-life mortality|childhood mortality|violent death|periapical disease|"
         r"cemetery evidence|case fatality rate|attack rate|epidemic curve|smallpox strains|"
         r"public health|disease ecology|biological age|age acceleration|interquartile range|"
-        r"epigenetic clocks|residual confounding|air-conditioning penetration|cooling access)\b",
+        r"epigenetic clocks|residual confounding|air-conditioning penetration|cooling access|"
+        r"meta-analysis|psilocybin|psychedelic assisted therapy|standard antidepressants|"
+        r"antidepressant trials|PAT trials|effect sizes|randomized controlled trials|adverse events|"
+        r"Hamilton Depression Rating Scale|depression questionnaire|placebo|MCID|LSD|PAT|"
+        r"optical sensors|accelerometers|proprietary algorithms|movement patterns|heart rate data|"
+        r"resting heart rate|total sleep time|HRV|sleep stages|caloric burn|polysomnography|"
+        r"brain waves|EEG|eye movement tracking|muscle tone measurements|Apple watches|Fitbits|"
+        r"Garmins|WHOOPs|Oura rings|fitness trackers|gold standard)\b",
         flags=re.I,
     ),
+    re.compile(r"\b[A-Z]{2,6}\b"),
     re.compile(
         r"\b(?:[a-z][a-z-]+(?:/[a-z-]+)?\s+){0,3}"
         r"(?:age|risk|exposure|workers|residents|confounding|association|evidence|methods|outcomes|"
@@ -116,6 +136,29 @@ REJECT_ANSWER_PHRASES = {
     "there",
     "these",
     "those",
+}
+REJECT_ANSWER_STARTS = {
+    "can",
+    "could",
+    "would",
+    "which",
+    "that",
+    "this",
+    "these",
+    "those",
+    "it",
+    "its",
+    "there",
+    "we",
+    "they",
+    "same",
+    "with",
+    "among",
+    "carried",
+    "quantify",
+    "greatest",
+    "some",
+    "while",
 }
 TOPIC_LABEL_OVERRIDES = {
     "ancient dna": "ancient DNA",
@@ -258,6 +301,7 @@ def score_sentence(sentence: str, heading: str, ordinal: int) -> int:
 
 def candidate_sentences(blocks: list[TextBlock]) -> list[Candidate]:
     candidates: list[Candidate] = []
+    fallback_candidates: list[Candidate] = []
     heading = ""
     ordinal = 0
     for block in blocks:
@@ -266,9 +310,12 @@ def candidate_sentences(blocks: list[TextBlock]) -> list[Candidate]:
             continue
         for sentence in split_sentences(block.text):
             score = score_sentence(sentence, heading, ordinal)
+            fallback_candidates.append(Candidate(sentence=sentence, heading=heading, score=score))
             if score >= 2:
                 candidates.append(Candidate(sentence=sentence, heading=heading, score=score))
             ordinal += 1
+    if len(candidates) < TARGET_CARD_COUNT:
+        candidates = fallback_candidates
     candidates.sort(key=lambda item: item.score, reverse=True)
     return candidates
 
@@ -299,6 +346,22 @@ def choose_answer_phrase(sentence: str) -> str:
     return sorted(clean_matches, key=lambda value: (value[0], -len(value[1].split()), -len(value[1])))[0][1]
 
 
+def valid_compact_answer(answer: str) -> bool:
+    words = answer.split()
+    if not words:
+        return False
+    if len(answer) > 80 or len(words) > 8:
+        return False
+    if words[0].strip(".,;:()[]“”\"'").lower() in REJECT_ANSWER_STARTS:
+        return False
+    return bool(re.search(r"[A-Za-z]", answer))
+
+
+def choose_compact_answer(sentence: str) -> str:
+    answer = choose_answer_phrase(sentence)
+    return answer if valid_compact_answer(answer) else ""
+
+
 def shortened_context(text: str, *, max_length: int = 235) -> str:
     text = normalize_text(text)
     if len(text) <= max_length:
@@ -306,8 +369,27 @@ def shortened_context(text: str, *, max_length: int = 235) -> str:
     return text[: max_length - 1].rsplit(" ", 1)[0].rstrip(".,;:") + "…"
 
 
+def cloze_context(sentence: str, answer: str, *, max_length: int = 220) -> str:
+    pattern = re.compile(re.escape(answer), flags=re.I)
+    redacted = pattern.sub("_____", normalize_text(sentence), count=1)
+    if "_____" not in redacted:
+        return ""
+    if len(redacted) <= max_length:
+        return redacted
+    blank_at = redacted.find("_____")
+    start = max(0, blank_at - max_length // 2)
+    end = min(len(redacted), start + max_length)
+    start = max(0, end - max_length)
+    snippet = redacted[start:end].strip()
+    if start > 0:
+        snippet = "..." + snippet.split(" ", 1)[-1]
+    if end < len(redacted):
+        snippet = snippet.rsplit(" ", 1)[0].rstrip(".,;:") + "..."
+    return snippet
+
+
 def topic_from_sentence(sentence: str, heading: str) -> str:
-    phrase = choose_answer_phrase(sentence)
+    phrase = choose_compact_answer(sentence)
     if phrase:
         return phrase
     if heading:
@@ -359,6 +441,57 @@ def why_answer(sentence: str) -> str:
     return shortened_context(after[0].upper() + after[1:], max_length=230)
 
 
+def answer_pool(candidates: list[Candidate]) -> list[str]:
+    answers: list[str] = []
+    seen: set[str] = set()
+    for candidate in candidates:
+        answer = choose_compact_answer(candidate.sentence)
+        if not answer:
+            continue
+        key = answer.casefold()
+        if key in seen:
+            continue
+        seen.add(key)
+        answers.append(answer)
+    return answers
+
+
+def ordered_choices(answer: str, pool: list[str]) -> list[str]:
+    answer_key = answer.casefold()
+    answer_words = set(re.findall(r"[a-z0-9]+", answer_key))
+    choices = [answer]
+    for option in pool:
+        option_key = option.casefold()
+        if option_key == answer_key:
+            continue
+        if answer_key in option_key or option_key in answer_key:
+            continue
+        option_words = set(re.findall(r"[a-z0-9]+", option_key))
+        if answer_words and len(answer_words & option_words) / max(len(answer_words), 1) > 0.5:
+            continue
+        choices.append(option)
+        if len(choices) == 4:
+            break
+    if len(choices) < 4:
+        return []
+    offset = sum(ord(char) for char in answer) % 4
+    return choices[offset:] + choices[:offset]
+
+
+def multiple_choice_question(sentence: str, answer: str, heading: str) -> str:
+    lowered = sentence.lower()
+    if answer.casefold() == "ancient dna" and "pathogen" in lowered:
+        return "Which evidence source does the essay say can identify pathogens directly in Viking Age remains?"
+    if answer.casefold() == "periapical disease":
+        return "Which dental condition does the essay identify as probably widespread?"
+    if "case fatality rate" in answer.casefold() or "attack rate" in answer.casefold():
+        return "Which outbreak metric does the essay say remains unknown?"
+    context = cloze_context(sentence, answer, max_length=190)
+    if context:
+        return f'Which option best completes this essay point? "{context}"'
+    return f"Which option best matches the essay's point about {topic_label(sentence, heading)}?"
+
+
 def recall_question(sentence: str, heading: str) -> tuple[str, str]:
     lowered = sentence.lower()
     topic = topic_label(sentence, heading)
@@ -372,6 +505,36 @@ def recall_question(sentence: str, heading: str) -> tuple[str, str]:
         return ("Why has the fungal STI outbreak drawn less attention than mpox?", why_answer(sentence))
     if lowered.startswith("species is important"):
         return ("Why does the specific Ebola virus species matter in this outbreak update?", why_answer(sentence))
+    if "effect sizes" in lowered and "antidepressant" in lowered:
+        return ("What comparison does the essay draw from the trial effect-size chart?", answer_sentence(sentence))
+    if "randomized controlled trials" in lowered:
+        return ("What did chemists do once they understood the compounds in ergot?", answer_sentence(sentence))
+    if "meta-analysis" in lowered and "clarify" in lowered:
+        return ("What did the new preregistered meta-analysis try to clarify?", answer_sentence(sentence))
+    if "williams and colleagues" in lowered or "does psychedelic assisted therapy" in lowered:
+        return ("What question did the Williams meta-analysis try to answer?", answer_sentence(sentence))
+    if "hamilton depression rating scale" in lowered:
+        return ("What scale were the depression trial results standardized to?", answer_sentence(sentence))
+    if "mcid" in lowered:
+        return ("What MCID threshold did the authors use for the depression measure?", answer_sentence(sentence))
+    if "psychedelics" in lowered and "standard anti-depressants" in lowered:
+        return ("How does the essay summarize psychedelics compared with standard antidepressants?", answer_sentence(sentence))
+    if "optical sensors" in lowered or "accelerometers" in lowered or "proprietary algorithms" in lowered:
+        return ("What inputs do wearables use instead of directly measuring physiology?", answer_sentence(sentence))
+    if "resting heart rate" in lowered or "total sleep time" in lowered or "hrv" in lowered or "caloric burn" in lowered:
+        return ("Which wearable measurements does the essay separate into stronger and weaker categories?", answer_sentence(sentence))
+    if "polysomnography" in lowered:
+        return ("What gold standard does the essay use for comparing wearable sleep-stage estimates?", answer_sentence(sentence))
+    if "brain waves" in lowered or "eeg" in lowered:
+        return ("What signals does polysomnography use to distinguish sleep stages?", answer_sentence(sentence))
+    if "apple watches" in lowered or "fitbits" in lowered or "whoops" in lowered or "oura rings" in lowered:
+        return ("Which wearable brands does the essay use as examples of mainstream health accessories?", answer_sentence(sentence))
+    if "caloric deficit" in lowered or "lose weight" in lowered:
+        return ("Why can wearable calorie-burn errors matter for weight-loss decisions?", answer_sentence(sentence))
+    if "watch saying you slept" in lowered:
+        return ("Why are small wearable sleep-duration errors less concerning?", answer_sentence(sentence))
+    if "marketing" in lowered and "oversell" in lowered:
+        return ("What caveat does the essay make about wearable accuracy marketing?", answer_sentence(sentence))
     if "there is enough evidence" in lowered and "rough look" in lowered:
         return ("What does the essay say the available evidence is good enough to reconstruct?", answer_sentence(sentence))
     if "if by viking we mean" in lowered or "narrower occupational group" in lowered:
@@ -408,28 +571,99 @@ def recall_question(sentence: str, heading: str) -> tuple[str, str]:
     return (f"What does the essay say about {topic}?", answer_sentence(sentence))
 
 
+def multiple_choice_card(candidate: Candidate, pool: list[str]) -> dict[str, Any] | None:
+    answer = choose_compact_answer(candidate.sentence)
+    if not answer:
+        return None
+    choices = ordered_choices(answer, pool)
+    if len(choices) != 4:
+        return None
+    return {
+        "question": multiple_choice_question(candidate.sentence, answer, candidate.heading),
+        "choices": choices,
+        "answer": answer,
+        "cue": "Multiple choice",
+        "explanation": answer_sentence(candidate.sentence),
+    }
+
+
+def fill_blank_card(candidate: Candidate) -> dict[str, Any] | None:
+    answer = choose_compact_answer(candidate.sentence)
+    if not answer:
+        return None
+    context = cloze_context(candidate.sentence, answer, max_length=220)
+    if not context:
+        return None
+    return {
+        "question": f'Fill in the blank: "{context}"',
+        "answer": answer,
+        "cue": "Fill in the blank",
+        "explanation": answer_sentence(candidate.sentence),
+    }
+
+
+def short_answer_card(candidate: Candidate) -> dict[str, Any]:
+    question, answer = recall_question(candidate.sentence, candidate.heading)
+    return {
+        "question": question,
+        "answer": answer,
+        "cue": "Short answer",
+    }
+
+
+def candidate_card(kind: str, candidate: Candidate, pool: list[str]) -> dict[str, Any] | None:
+    if kind == "multiple_choice":
+        return multiple_choice_card(candidate, pool)
+    if kind == "fill_blank":
+        return fill_blank_card(candidate)
+    return short_answer_card(candidate)
+
+
 def cards_from_body(body_html: str) -> list[dict[str, Any]]:
     cards: list[dict[str, Any]] = []
+    used_questions: set[str] = set()
     used_answers: set[str] = set()
+    used_sentences: set[str] = set()
     candidates = candidate_sentences(body_blocks(body_html))
-    for candidate in candidates:
+    pool = answer_pool(candidates)
+
+    def add_kind(kind: str) -> bool:
+        for candidate in candidates:
+            sentence_key = candidate.sentence.casefold()
+            if sentence_key in used_sentences:
+                continue
+            card = candidate_card(kind, candidate, pool)
+            if not card:
+                continue
+            question_key = card["question"].casefold()
+            if question_key in used_questions:
+                continue
+            answer = str(card["answer"])
+            if kind != "short_answer" and (len(answer) > 90 or len(answer.split()) > 9):
+                continue
+            answer_identity = f'{kind}:{answer.casefold()}'
+            if answer_identity in used_answers:
+                continue
+            cards.append(card)
+            used_questions.add(question_key)
+            used_answers.add(answer_identity)
+            used_sentences.add(sentence_key)
+            return True
+        return False
+
+    for kind in CARD_PLAN:
         if len(cards) >= TARGET_CARD_COUNT:
             break
-        question, answer = recall_question(candidate.sentence, candidate.heading)
-        answer_key = answer.casefold()
-        if answer_key in used_answers:
-            continue
-        used_answers.add(answer_key)
-        cards.append(
-            {
-                "question": question,
-                "answer": answer,
-                "cue": candidate.heading or "Post text",
-            }
-        )
+        if not add_kind(kind) and kind != "short_answer":
+            add_kind("short_answer")
+
+    for kind in ("multiple_choice", "fill_blank", "short_answer"):
+        while len(cards) < TARGET_CARD_COUNT and add_kind(kind):
+            pass
+
     if len(cards) < TARGET_CARD_COUNT:
         raise ValueError(f"Only generated {len(cards)} body-derived cards")
-    return cards
+    return cards[:TARGET_CARD_COUNT]
 
 
 def generate_for_posts(posts: list[dict[str, Any]], *, limit: int | None, timeout: int) -> tuple[list[dict[str, Any]], list[dict[str, str]]]:

@@ -3,7 +3,7 @@ from __future__ import annotations
 from scripts import generate_substack_flashcards as flashcards
 
 
-def test_cards_from_body_generates_recall_prompts_without_fake_choices() -> None:
+def test_cards_from_body_generates_mixed_study_cards() -> None:
     sentences = [
         "Ancient DNA can identify pathogens directly in burial samples, which changes how epidemiologists read old skeletal evidence.",
         "Cemetery evidence is biased toward the people who were buried and preserved, so it cannot act like a clean life table.",
@@ -23,15 +23,21 @@ def test_cards_from_body_generates_recall_prompts_without_fake_choices() -> None
     cards = flashcards.cards_from_body(body_html)
 
     assert len(cards) == 10
-    assert all("choices" not in card for card in cards)
+    choice_cards = [card for card in cards if "choices" in card]
+    fill_cards = [card for card in cards if card["question"].startswith("Fill in the blank:")]
+    short_cards = [card for card in cards if card.get("cue") == "Short answer"]
+    assert len(choice_cards) == 6
+    assert len(fill_cards) == 2
+    assert len(short_cards) == 2
+    assert all(len(card["choices"]) == 4 for card in choice_cards)
+    assert all(card["answer"] in card["choices"] for card in choice_cards)
+    assert all(len(option) <= 90 for card in choice_cards for option in card["choices"])
+    assert all("choices" not in card for card in fill_cards + short_cards)
     assert all(card["answer"] for card in cards)
-    assert any(card["question"] == "What can ancient DNA reveal about pathogens in Viking Age remains?" for card in cards)
-    assert any(card["question"] == "Why does the essay treat cemetery evidence cautiously?" for card in cards)
-    assert any(card["question"] == "What dental condition does the essay identify as probably widespread?" for card in cards)
+    assert any(card["answer"] == "Ancient DNA" for card in fill_cards + choice_cards)
+    assert any(card["answer"] == "Periapical disease" for card in choice_cards)
     question_text = " ".join(card["question"] for card in cards)
-    answer_text = " ".join(card["answer"] for card in cards)
     assert "cloze" not in question_text.lower()
-    assert "_____" not in question_text
     assert "this option" not in question_text.lower()
     assert "Which statement best matches" not in question_text
-    assert "Ancient DNA can identify pathogens directly" in answer_text
+    assert "Which option best matches" not in question_text
