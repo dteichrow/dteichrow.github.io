@@ -3,7 +3,6 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Revolutionary War Disease Atlas | Edge of Epidemiology</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230f0e0c'/%3E%3Cpath d='M11 5v22M21 8v16' stroke='%23a24d2f' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
   <!-- Leaflet styles -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
   <!-- Google Fonts used in the Viking map for a consistent look -->
@@ -12,7 +11,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  <script src="data/revolutionary_war_youtube_video_plan.js"></script>
   <style>
     /*
      * Base tokens and typographic scale.  These values mirror the
@@ -283,144 +281,6 @@
       font-size: var(--text-xs);
       z-index: 500;
     }
-    #video-controls {
-      position: fixed;
-      top: 78px;
-      left: 1rem;
-      z-index: 900;
-      display: none;
-      align-items: center;
-      gap: var(--space-2);
-      padding: var(--space-2);
-      background: color-mix(in srgb, var(--surface) 94%, transparent);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      box-shadow: var(--shadow-sm);
-    }
-    #video-controls button {
-      font-family: var(--font-display);
-      font-size: var(--text-xs);
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--text);
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: var(--space-2) var(--space-3);
-      cursor: pointer;
-    }
-    #video-controls button:hover {
-      border-color: var(--accent);
-      color: var(--accent-hover);
-    }
-    #video-status {
-      min-width: 170px;
-      font-family: var(--font-display);
-      font-size: var(--text-xs);
-      color: var(--text-muted);
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-    #video-card {
-      position: fixed;
-      left: 1rem;
-      bottom: 1rem;
-      z-index: 850;
-      display: none;
-      width: min(460px, calc(100vw - 2rem));
-      padding: var(--space-4);
-      background: color-mix(in srgb, var(--surface) 96%, transparent);
-      border: 1px solid var(--border);
-      border-left: 4px solid var(--accent);
-      border-radius: var(--radius-md);
-      box-shadow: var(--shadow);
-    }
-    #video-card .eyebrow {
-      font-family: var(--font-display);
-      font-size: var(--text-xs);
-      color: var(--accent-hover);
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-bottom: var(--space-2);
-    }
-    #video-card-title {
-      font-family: var(--font-display);
-      font-size: var(--text-lg);
-      line-height: 1.15;
-      margin-bottom: var(--space-2);
-    }
-    #video-card-copy,
-    #video-card-caveat {
-      font-size: var(--text-sm);
-      line-height: 1.35;
-      color: var(--text-muted);
-    }
-    #video-card-caveat {
-      margin-top: var(--space-3);
-      padding-top: var(--space-3);
-      border-top: 1px solid var(--divider);
-      color: var(--text);
-    }
-    #chapter-strip {
-      position: fixed;
-      top: 132px;
-      left: 1rem;
-      z-index: 820;
-      display: none;
-      flex-direction: column;
-      gap: 6px;
-      width: 230px;
-    }
-    .chapter-chip {
-      height: 8px;
-      border-radius: 999px;
-      background: var(--surface-3);
-      border: 1px solid var(--border);
-      opacity: 0.7;
-    }
-    .chapter-chip.active {
-      background: var(--accent);
-      border-color: var(--accent-hover);
-      opacity: 1;
-    }
-    .youtube-mode #video-controls,
-    .youtube-mode #chapter-strip {
-      display: flex;
-    }
-    .youtube-mode #video-card {
-      display: block;
-    }
-    .youtube-mode #filters,
-    .youtube-mode #legend,
-    .youtube-mode #hint,
-    .recording-mode .leaflet-control-zoom,
-    .recording-mode .leaflet-control-attribution {
-      display: none;
-    }
-    .youtube-mode #panel {
-      width: min(390px, 32vw);
-    }
-    .youtube-mode #panel-body {
-      gap: var(--space-4);
-    }
-    @media (max-width: 900px) {
-      #video-controls {
-        top: 96px;
-        left: 0.75rem;
-        right: 0.75rem;
-        flex-wrap: wrap;
-      }
-      #chapter-strip {
-        display: none !important;
-      }
-      .youtube-mode #panel {
-        width: min(360px, 88vw);
-      }
-      #video-card {
-        max-height: 32vh;
-        overflow: auto;
-      }
-    }
   </style>
 
     <link rel="canonical" href="https://devinteichrow.com/atlases/revolutionary-war/" />
@@ -451,8 +311,8 @@
         <path d="M10 22l-8-8 8 8z" transform="translate(6 -4) rotate(45 12 12)"></path>
       </svg>
       <div id="title-block">
-        <h1>Revolutionary War Disease Atlas</h1>
-        <p>Battles, smallpox &amp; camp disease, 1775-1783</p>
+        <h1>Revolutionary War Atlas</h1>
+        <p>Battles &amp; Disease, 1775–1783</p>
       </div>
     </div>
     <div id="header-spacer"></div>
@@ -512,20 +372,6 @@
     </div>
   </div>
   <div id="hint" role="status">Click a marker for more information</div>
-  <div id="video-controls" aria-label="YouTube tour controls">
-    <button id="video-play-btn" type="button">Play</button>
-    <button id="video-pause-btn" type="button">Pause</button>
-    <button id="video-next-btn" type="button">Next</button>
-    <button id="video-reset-btn" type="button">Reset</button>
-    <span id="video-status">Ready for capture</span>
-  </div>
-  <div id="chapter-strip" aria-hidden="true"></div>
-  <aside id="video-card" aria-live="polite">
-    <div class="eyebrow" id="video-card-time">YouTube guided tour</div>
-    <div id="video-card-title">The Revolution Had a Disease Front</div>
-    <p id="video-card-copy">Use <strong>?youtube=1&amp;tour=1&amp;pace=2.1</strong> for a capture-ready guided tour.</p>
-    <p id="video-card-caveat">The video should make disease visible without pretending every Revolutionary death has a clean modern diagnosis.</p>
-  </aside>
 
   <script>
     // Data for battles and encampments.  Each object contains
@@ -533,24 +379,22 @@
     // type (Battle or Encampment), date, casualty count (killed & wounded),
     // disease death estimate, an impact category (1–5) and notes.
     const EVENTS = [
-      { id: "battle_camden", name: "Battle of Camden", region: "Southern Theater", subregion: "South Carolina", lat: 34.34639, lon: -80.60750, type: "Battle", date: "Aug 16 1780", casualties: 1050, disease: null, impact: 5, videoRole: "battle contrast", notes: "American casualties (killed and wounded) at Camden. British forces routed the mixed Continental and militia army." },
-      { id: "battle_germantown", name: "Battle of Germantown", region: "Mid-Atlantic", subregion: "Pennsylvania", lat: 40.04344, lon: -75.18018, type: "Battle", date: "Oct 4 1777", casualties: 652, disease: null, impact: 4, videoRole: "battle contrast", notes: "Washington's divided columns failed to coordinate during this assault near Philadelphia, resulting in heavy casualties and retreat." },
-      { id: "battle_brandywine", name: "Battle of Brandywine", region: "Mid-Atlantic", subregion: "Pennsylvania", lat: 39.87178, lon: -75.59132, type: "Battle", date: "Sep 11 1777", casualties: 600, disease: null, impact: 4, videoRole: "battle contrast", notes: "All-day battle along Brandywine Creek ended in American retreat; casualties represent killed and wounded." },
-      { id: "battle_eutaw_springs", name: "Battle of Eutaw Springs", region: "Southern Theater", subregion: "South Carolina", lat: 33.40000, lon: -80.35000, type: "Battle", date: "Sep 8 1781", casualties: 513, disease: null, impact: 4, videoRole: "battle contrast", notes: "Continental and militia troops attacked a British camp near present-day Eutawville; casualties reflect killed and wounded." },
-      { id: "siege_savannah", name: "Siege of Savannah", region: "Southern Theater", subregion: "Georgia", lat: 32.08090, lon: -81.09120, type: "Battle", date: "Sep 16 - Oct 20 1779", casualties: 457, disease: null, impact: 3, videoRole: "battle contrast", notes: "Franco-American forces unsuccessfully besieged British-held Savannah; the assault resulted in heavy casualties." },
-      { id: "battle_bunker_hill", name: "Battle of Bunker Hill", region: "New England", subregion: "Massachusetts", lat: 42.37630, lon: -71.06050, type: "Battle", date: "Jun 17 1775", casualties: 411, disease: null, impact: 3, videoRole: "battle contrast", notes: "British troops overran American fortifications on Breed's Hill in Charlestown; casualties are American killed and wounded." },
-      { id: "battle_paoli", name: "Battle of Paoli", region: "Mid-Atlantic", subregion: "Pennsylvania", lat: 40.00000, lon: -75.48800, type: "Battle", date: "Sep 20 1777", casualties: 300, disease: null, impact: 2, videoRole: "battle contrast", notes: "British dragoons surprised sleeping Continental troops at night near Paoli, leading to significant casualties." },
-      { id: "saratoga_freemans_farm", name: "Freeman's Farm (Saratoga)", region: "Northern Theater", subregion: "New York", lat: 42.95470, lon: -73.61560, type: "Battle", date: "Sep 19 1777", casualties: 280, disease: null, impact: 2, videoRole: "battle contrast", notes: "First engagement of the Saratoga campaign; Burgoyne's army met stiff resistance from Gates's entrenched forces." },
-      { id: "battle_monmouth", name: "Battle of Monmouth", region: "Mid-Atlantic", subregion: "New Jersey", lat: 40.26022, lon: -74.27588, type: "Battle", date: "Jun 28 1778", casualties: 267, disease: null, impact: 2, videoRole: "battle contrast", notes: "Washington's rear guard caught the British retreat; intense heat and disorder marked the battle near Freehold." },
-      { id: "battle_guilford_courthouse", name: "Battle of Guilford Courthouse", region: "Southern Theater", subregion: "North Carolina", lat: 36.13225, lon: -79.84246, type: "Battle", date: "Mar 15 1781", casualties: 261, disease: null, impact: 2, videoRole: "battle contrast", notes: "Cornwallis held the field near Greensboro but lost a third of his army; American casualties listed are killed and wounded." },
-      { id: "battle_long_island", name: "Battle of Long Island", region: "Mid-Atlantic", subregion: "New York", lat: 40.66020, lon: -73.96900, type: "Battle", date: "Aug 27 1776", casualties: 200, disease: null, impact: 2, videoRole: "denominator contrast", notes: "First major battle after the Declaration; British victory opened the campaign for New York. In the YouTube tour this marker anchors a denominator contrast: famous battle geography differs from disease mortality geography." },
-      { id: "siege_yorktown", name: "Siege of Yorktown", region: "Southern Theater", subregion: "Virginia", lat: 37.23800, lon: -76.51000, type: "Battle", date: "Sep 28 - Oct 19 1781", casualties: 90, disease: null, impact: 1, videoRole: "closing military frame", notes: "Franco-American siege forced Cornwallis's surrender, effectively ending the war; casualties are American killed and wounded." },
-      { id: "valley_forge", name: "Valley Forge Encampment", region: "Mid-Atlantic", subregion: "Pennsylvania", lat: 40.09900, lon: -75.45000, type: "Encampment", date: "Dec 1777 - Jun 1778", casualties: 0, disease: 1850, impact: 5, videoRole: "camp disease ecology", notes: "NPS emphasizes that no battle took place at Valley Forge, but disease killed nearly 2,000 people. Influenza, typhus, typhoid, and dysentery appear in the park account; avoid overassigning diagnoses for individual deaths." },
-      { id: "morristown", name: "Morristown Encampment", region: "Mid-Atlantic", subregion: "New Jersey", lat: 40.79870, lon: -74.47850, type: "Encampment", date: "Dec 1779 - Jun 1780", casualties: 0, disease: 100, impact: 2, videoRole: "learning and inoculation contrast", notes: "The army endured a harsher winter than Valley Forge. The NPS Morristown FAQ notes that many troops were veterans and most had been inoculated against smallpox, making Morristown a useful contrast in camp learning and immunity." },
-      { id: "boston_smallpox", name: "Siege of Boston smallpox risk", region: "New England", subregion: "Massachusetts", lat: 42.36010, lon: -71.05890, type: "Disease setting", date: "Apr 1775 - Mar 1776", casualties: 0, disease: null, impact: 3, videoRole: "susceptibility around an infected city", notes: "A smallpox outbreak in and around Boston made susceptibility militarily visible. Washington's caution after the British evacuation reflected the danger of moving non-immune troops into infected urban space." },
-      { id: "quebec_smallpox", name: "Quebec smallpox crisis", region: "Canada", subregion: "Quebec", lat: 46.81390, lon: -71.20800, type: "Campaign disease crisis", date: "Dec 1775 - May 1776", casualties: 0, disease: null, impact: 5, videoRole: "smallpox as campaign constraint", notes: "The Continental invasion of Canada stalled as smallpox ravaged the army. The strongest claim is operational: infection, fear, enlistment pressure, and failed quarantine weakened the usable force." },
-      { id: "continental_inoculation", name: "Continental Army inoculation system", region: "Mid-Atlantic", subregion: "Morristown / army-wide", lat: 40.79870, lon: -74.47850, type: "Public-health intervention", date: "Feb 1777 onward", casualties: 0, disease: null, impact: 5, videoRole: "public health as military strategy", notes: "Washington's 1777 move toward mass inoculation treated smallpox as a strategic threat. This was variolation, not modern vaccination, and it required isolation, timing, and military discipline." },
-      { id: "wallabout_prison_ships", name: "Wallabout Bay prison ships", region: "Mid-Atlantic", subregion: "New York", lat: 40.70030, lon: -73.97490, type: "Captivity disease setting", date: "1776 - 1783", casualties: 0, disease: null, impact: 5, videoRole: "captivity as disease ecology", notes: "Fort Greene preserves the memorial geography of 11,500 prison ship martyrs. The number should be handled as memorial and historical geography rather than a disease-specific estimate; captivity, crowding, hunger, vermin, and historical fever labels overlapped." }
+      { name: "Battle of Camden",     region: "Southern Theater", subregion: "South Carolina", lat: 34.34639, lon: -80.60750, type: "Battle", date: "Aug 16 1780", casualties: 1050, disease: null, impact: 5, notes: "American casualties (killed and wounded) at Camden. British forces routed the mixed Continental and militia army." },
+      { name: "Battle of Germantown", region: "Mid-Atlantic",     subregion: "Pennsylvania",     lat: 40.04344, lon: -75.18018, type: "Battle", date: "Oct 4 1777", casualties: 652,  disease: null, impact: 4, notes: "Washington’s divided columns failed to coordinate during this assault near Philadelphia, resulting in heavy casualties and retreat." },
+      { name: "Battle of Brandywine", region: "Mid-Atlantic",     subregion: "Pennsylvania",     lat: 39.87178, lon: -75.59132, type: "Battle", date: "Sep 11 1777", casualties: 600,  disease: null, impact: 4, notes: "All-day battle along Brandywine Creek ended in American retreat; casualties represent killed and wounded." },
+      { name: "Battle of Eutaw Springs", region: "Southern Theater", subregion: "South Carolina", lat: 33.40000, lon: -80.35000, type: "Battle", date: "Sep 8 1781", casualties: 513,  disease: null, impact: 4, notes: "Continental and militia troops attacked a British camp near present-day Eutawville; casualties reflect killed and wounded." },
+      { name: "Siege of Savannah",    region: "Southern Theater", subregion: "Georgia",         lat: 32.08090, lon: -81.09120, type: "Battle", date: "Sep 16 – Oct 20 1779", casualties: 457, disease: null, impact: 3, notes: "Franco-American forces unsuccessfully besieged British-held Savannah; the assault resulted in heavy casualties." },
+      { name: "Battle of Bunker Hill", region: "New England",     subregion: "Massachusetts",    lat: 42.37630, lon: -71.06050, type: "Battle", date: "Jun 17 1775", casualties: 411,  disease: null, impact: 3, notes: "British troops overran American fortifications on Breed’s Hill in Charlestown; casualties are American killed and wounded." },
+      { name: "Battle of Paoli",      region: "Mid-Atlantic",     subregion: "Pennsylvania",     lat: 40.00000, lon: -75.48800, type: "Battle", date: "Sep 20 1777", casualties: 300,  disease: null, impact: 2, notes: "British dragoons surprised sleeping Continental troops at night near Paoli, leading to significant casualties." },
+      { name: "Freeman’s Farm (Saratoga)", region: "Northern Theater", subregion: "New York", lat: 42.95470, lon: -73.61560, type: "Battle", date: "Sep 19 1777", casualties: 280, disease: null, impact: 2, notes: "First engagement of the Saratoga campaign; Burgoyne’s army met stiff resistance from Gates’s entrenched forces." },
+      { name: "Battle of Monmouth",   region: "Mid-Atlantic",     subregion: "New Jersey",       lat: 40.26022, lon: -74.27588, type: "Battle", date: "Jun 28 1778", casualties: 267, disease: null, impact: 2, notes: "Washington’s rear guard caught the British retreat; intense heat and disorder marked the battle near Freehold." },
+      { name: "Battle of Guilford Courthouse", region: "Southern Theater", subregion: "North Carolina", lat: 36.13225, lon: -79.84246, type: "Battle", date: "Mar 15 1781", casualties: 261, disease: null, impact: 2, notes: "Cornwallis held the field near Greensboro but lost a third of his army; American casualties listed are killed and wounded." },
+      { name: "Battle of Long Island", region: "Mid-Atlantic",     subregion: "New York",       lat: 40.66020, lon: -73.96900, type: "Battle", date: "Aug 27 1776", casualties: 200, disease: null, impact: 2, notes: "First major battle after the Declaration; British victory opened the campaign for New York." },
+      { name: "Siege of Yorktown",    region: "Southern Theater", subregion: "Virginia",         lat: 37.23800, lon: -76.51000, type: "Battle", date: "Sep 28 – Oct 19 1781", casualties: 90,  disease: null, impact: 1, notes: "Franco-American siege forced Cornwallis’s surrender, effectively ending the war; casualties are American killed and wounded." },
+      { name: "Valley Forge Encampment", region: "Mid-Atlantic",     subregion: "Pennsylvania",     lat: 40.09900, lon: -75.45000, type: "Encampment", date: "Dec 1777 – Jun 1778", casualties: 0, disease: 1850, impact: 5, notes: "During the winter encampment an estimated 1,700–2,000 soldiers died from disease, likely exacerbated by malnutrition and exposure." },
+      { name: "Morristown Encampment", region: "Mid-Atlantic",     subregion: "New Jersey",       lat: 40.79870, lon: -74.47850, type: "Encampment", date: "Dec 1779 – Jun 1780", casualties: 0, disease: 100, impact: 1, notes: "The army endured the harshest winter of the 18th century but only about one hundred soldiers died, reflecting improved camp discipline and inoculation." },
+      { name: "Siege of Boston",      region: "New England",     subregion: "Massachusetts",    lat: 42.36010, lon: -71.05890, type: "Encampment", date: "Apr 1775 – Mar 1776", casualties: 0, disease: null, impact: 1, notes: "A smallpox outbreak raged during the siege; Washington initially opposed inoculation and infected refugees spread the disease through Massachusetts." },
+      { name: "Siege of Quebec",      region: "Canada",           subregion: "Quebec",          lat: 46.81390, lon: -71.20800, type: "Encampment", date: "Dec 1775 – May 1776", casualties: 0, disease: null, impact: 1, notes: "The Continental Army’s invasion of Quebec stalled as smallpox ravaged the camp; quarantine measures failed and exact death tolls are unknown." }
     ];
 
     // Assign colours to each region. These colours form the legend keys.
@@ -565,7 +409,7 @@
     // Helper to compute marker radius from impact value.  We treat
     // impact on a scale of 1–5, then map to diameters 12–30px.
     function markerSize(impact) {
-      return 8 + impact * 4.5; // 8 + (4.5 * impact) maps impact 1-5 to marker diameters 12-30px
+      return 8 + impact * 4.5; // 8 + (4.5×impact) = 12px for 1 → 30px for 5
     }
 
     // Initialize base map with dark and light tiles similar to the Viking atlas.
@@ -615,8 +459,8 @@
         <div class="popup-inner">
           <div class="popup-region-tag" style="color:${color}">${event.region}</div>
           <div class="popup-name">${event.name}</div>
-          <div class="popup-summary">${event.type} - ${event.date}</div>
-          <button class="popup-cta" onclick="openPanel(${EVENTS.indexOf(event)})">More details</button>
+          <div class="popup-summary">${event.type} – ${event.date}</div>
+          <button class="popup-cta" onclick="openPanel(${EVENTS.indexOf(event)})">More details →</button>
         </div>`;
       marker.bindPopup(popupContent, { maxWidth: 260, className:'', autoPanPaddingTopLeft:[20,80] });
       return marker;
@@ -628,7 +472,6 @@
       m.addTo(markerLayer);
       allMarkers.push(m);
     });
-    const markerById = new Map(EVENTS.map((ev, idx) => [ev.id, allMarkers[idx]]));
 
     // Detail panel open function
     function openPanel(idx) {
@@ -646,41 +489,6 @@
       panel.setAttribute('aria-hidden','false');
     }
     window.openPanel = openPanel; // expose to global scope for popup buttons
-
-    function openPanelById(eventId) {
-      const idx = EVENTS.findIndex(ev => ev.id === eventId);
-      if (idx >= 0) openPanel(idx);
-    }
-    window.openPanelById = openPanelById;
-
-    function clearRegionFilter() {
-      activeRegion = null;
-      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-      allMarkers.forEach(m => m.addTo(markerLayer));
-    }
-
-    function focusEventById(eventId, options = {}) {
-      const idx = EVENTS.findIndex(ev => ev.id === eventId);
-      if (idx < 0) return null;
-      const ev = EVENTS[idx];
-      clearRegionFilter();
-      const marker = markerById.get(eventId);
-      if (marker) marker.addTo(markerLayer);
-      map.flyTo([ev.lat, ev.lon], options.zoom || (ev.type === "Battle" ? 6 : 7), {
-        animate: true,
-        duration: options.duration || 1.25
-      });
-      window.setTimeout(() => {
-        if (document.documentElement.classList.contains('youtube-mode')) {
-          map.closePopup();
-        } else if (marker) {
-          marker.openPopup();
-        }
-        openPanel(idx);
-      }, options.popupDelay || 900);
-      return ev;
-    }
-    window.focusEventById = focusEventById;
 
     // Close button handler
     const panel = document.getElementById('panel');
@@ -767,139 +575,6 @@
         }
       });
     });
-
-    // YouTube recording mode. This keeps the public atlas exploratory while
-    // adding a predictable guided-tour URL for screen capture.
-    const query = new URLSearchParams(window.location.search);
-    function queryFlag(...names) {
-      return names.some(name => {
-        const value = query.get(name);
-        return value !== null && value !== "0" && value !== "false";
-      });
-    }
-
-    const youtubePlan = window.REVOLUTIONARY_WAR_YOUTUBE_VIDEO_PLAN || {};
-    const youtubeChapters = youtubePlan.chapters || [];
-    const youtubeTourOrder = (youtubePlan.playback && youtubePlan.playback.event_order) || [];
-    let youtubeTourIndex = 0;
-    let youtubeTourRunning = false;
-    let youtubeTourPaused = false;
-    let youtubeTourToken = 0;
-
-    function chapterForEvent(eventId) {
-      return youtubeChapters.find(ch => ch.focus_event_id === eventId || (ch.event_ids || []).includes(eventId)) || youtubeChapters[0] || null;
-    }
-
-    function buildChapterStrip() {
-      const strip = document.getElementById('chapter-strip');
-      strip.innerHTML = '';
-      youtubeChapters.forEach(chapter => {
-        const chip = document.createElement('div');
-        chip.className = 'chapter-chip';
-        chip.dataset.chapter = chapter.id;
-        chip.title = chapter.title;
-        strip.appendChild(chip);
-      });
-    }
-
-    function updateChapterStrip(chapter) {
-      document.querySelectorAll('.chapter-chip').forEach(chip => {
-        chip.classList.toggle('active', chapter && chip.dataset.chapter === chapter.id);
-      });
-    }
-
-    function setVideoCard(chapter, eventId) {
-      if (!chapter) return;
-      document.getElementById('video-card-time').textContent = `${chapter.start_time} | ${youtubePlan.title || 'YouTube guided tour'}`;
-      document.getElementById('video-card-title').textContent = chapter.title;
-      document.getElementById('video-card-copy').textContent = chapter.narration_job || '';
-      document.getElementById('video-card-caveat').textContent = chapter.uncertainty_note || '';
-      const position = Math.max(0, youtubeTourOrder.indexOf(eventId)) + 1;
-      const total = youtubeTourOrder.length || youtubeChapters.length || 1;
-      document.getElementById('video-status').textContent = `${position}/${total} capture beat`;
-      updateChapterStrip(chapter);
-    }
-
-    function sleep(ms) {
-      return new Promise(resolve => window.setTimeout(resolve, ms));
-    }
-
-    async function pacedDelay(ms, token) {
-      let elapsed = 0;
-      while (elapsed < ms && token === youtubeTourToken) {
-        if (!youtubeTourPaused) elapsed += 250;
-        await sleep(250);
-      }
-    }
-
-    async function playYouTubeTour(startIndex = 0) {
-      if (!youtubeTourOrder.length) return;
-      youtubeTourToken += 1;
-      const token = youtubeTourToken;
-      youtubeTourRunning = true;
-      youtubeTourPaused = false;
-      const pace = Number.parseFloat(query.get('pace') || youtubePlan.playback?.default_pace || '2.1') || 2.1;
-      for (let i = startIndex; i < youtubeTourOrder.length; i += 1) {
-        if (token !== youtubeTourToken) break;
-        youtubeTourIndex = i;
-        const eventId = youtubeTourOrder[i];
-        const chapter = chapterForEvent(eventId);
-        setVideoCard(chapter, eventId);
-        focusEventById(eventId, { duration: 1.1, popupDelay: 800 });
-        const durationSeconds = chapter ? chapter.duration_seconds : 55;
-        await pacedDelay((durationSeconds * 1000) / pace, token);
-      }
-      if (token === youtubeTourToken) {
-        youtubeTourRunning = false;
-        document.getElementById('video-status').textContent = 'Tour complete';
-      }
-    }
-    window.playYouTubeTour = playYouTubeTour;
-
-    function resetYouTubeTour() {
-      youtubeTourToken += 1;
-      youtubeTourRunning = false;
-      youtubeTourPaused = false;
-      youtubeTourIndex = 0;
-      const firstEventId = youtubeTourOrder[0] || 'valley_forge';
-      const chapter = chapterForEvent(firstEventId);
-      setVideoCard(chapter, firstEventId);
-      focusEventById(firstEventId, { duration: 0.8, popupDelay: 500 });
-      document.getElementById('video-status').textContent = 'Ready for capture';
-    }
-
-    function initYouTubeMode() {
-      document.documentElement.classList.add('youtube-mode', 'recording-mode');
-      buildChapterStrip();
-      const eventParam = query.get('event') || query.get('focus') || youtubeTourOrder[0] || 'valley_forge';
-      const chapter = chapterForEvent(eventParam);
-      setVideoCard(chapter, eventParam);
-      focusEventById(eventParam, { duration: 0.8, popupDelay: 500 });
-      document.getElementById('video-play-btn').addEventListener('click', () => {
-        if (youtubeTourRunning) {
-          youtubeTourPaused = false;
-          document.getElementById('video-status').textContent = 'Tour playing';
-        } else {
-          playYouTubeTour(youtubeTourIndex);
-        }
-      });
-      document.getElementById('video-pause-btn').addEventListener('click', () => {
-        youtubeTourPaused = true;
-        document.getElementById('video-status').textContent = 'Paused';
-      });
-      document.getElementById('video-next-btn').addEventListener('click', () => {
-        const nextIndex = Math.min(youtubeTourIndex + 1, Math.max(0, youtubeTourOrder.length - 1));
-        playYouTubeTour(nextIndex);
-      });
-      document.getElementById('video-reset-btn').addEventListener('click', resetYouTubeTour);
-      if (queryFlag('tour')) {
-        window.setTimeout(() => playYouTubeTour(0), 900);
-      }
-    }
-
-    if (queryFlag("youtube", "yt") || queryFlag("video", "recording", "record")) {
-      initYouTubeMode();
-    }
   </script>
 
 </body></html>
