@@ -288,62 +288,11 @@ def choose_answer_phrase(sentence: str) -> str:
     return sorted(clean_matches, key=lambda value: (value[0], -len(value[1].split()), -len(value[1])))[0][1]
 
 
-def answer_pool(candidates: list[Candidate]) -> list[str]:
-    answers: list[str] = []
-    seen: set[str] = set()
-    for candidate in candidates:
-        answer = choose_answer_phrase(candidate.sentence)
-        if not answer:
-            continue
-        key = answer.casefold()
-        if key in seen:
-            continue
-        seen.add(key)
-        answers.append(answer)
-    return answers
-
-
 def shortened_context(text: str, *, max_length: int = 235) -> str:
     text = normalize_text(text)
     if len(text) <= max_length:
         return text
     return text[: max_length - 1].rsplit(" ", 1)[0].rstrip(".,;:") + "…"
-
-
-def redacted_point(sentence: str, answer: str) -> str:
-    pattern = re.compile(re.escape(answer), flags=re.I)
-    match = pattern.search(sentence)
-    if not match:
-        return shortened_context(sentence)
-    if match.start() <= 3:
-        remainder = sentence[match.end() :].lstrip(" ,;:-")
-        if remainder:
-            return shortened_context(f"It {remainder[0].lower()}{remainder[1:]}")
-        return "It is the key item in this passage."
-    redacted = pattern.sub("this option", sentence, count=1)
-    return shortened_context(redacted)
-
-
-def ordered_choices(answer: str, pool: list[str]) -> list[str]:
-    choices = [answer]
-    answer_key = answer.casefold()
-    for option in pool:
-        option_key = option.casefold()
-        if option_key == answer_key:
-            continue
-        if answer_key in option_key or option_key in answer_key:
-            continue
-        choices.append(option)
-        if len(choices) == 4:
-            break
-    if len(choices) < 4:
-        return []
-    offset = sum(ord(char) for char in answer) % 4
-    return choices[offset:] + choices[:offset]
-
-
-def multiple_choice_question(sentence: str, answer: str) -> str:
-    return f"Which option best matches this point from the essay? {redacted_point(sentence, answer)}"
 
 
 def topic_from_sentence(sentence: str, heading: str) -> str:
