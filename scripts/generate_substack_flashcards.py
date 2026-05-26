@@ -117,6 +117,11 @@ REJECT_ANSWER_PHRASES = {
     "these",
     "those",
 }
+TOPIC_LABEL_OVERRIDES = {
+    "ancient dna": "ancient DNA",
+    "ebola": "Ebola",
+    "viking": "Viking Age evidence",
+}
 
 
 @dataclass
@@ -355,6 +360,21 @@ def topic_from_sentence(sentence: str, heading: str) -> str:
     return " ".join(words[:4]) or "this point"
 
 
+def topic_label(sentence: str, heading: str) -> str:
+    if heading:
+        return heading
+    lowered = sentence.lower()
+    matches = sorted((term for term in KEY_TERMS if term in lowered), key=lambda term: (-len(term), term))
+    if matches:
+        labels = [TOPIC_LABEL_OVERRIDES.get(term, term.replace("dna", "DNA")) for term in matches[:2]]
+        return " and ".join(labels)
+    return topic_from_sentence(sentence, heading)
+
+
+def statement_question(sentence: str, heading: str) -> str:
+    return f"Which statement best matches the essay's point about {topic_label(sentence, heading)}?"
+
+
 def sentence_pool(candidates: list[Candidate]) -> list[str]:
     sentences: list[str] = []
     seen: set[str] = set()
@@ -385,34 +405,9 @@ def ordered_sentence_choices(answer: str, pool: list[str]) -> list[str]:
 
 def cards_from_body(body_html: str) -> list[dict[str, Any]]:
     cards: list[dict[str, Any]] = []
-    used_answers: set[str] = set()
     used_sentences: set[str] = set()
     candidates = candidate_sentences(body_blocks(body_html))
-    pool = answer_pool(candidates)
     statements = sentence_pool(candidates)
-    for candidate in candidates:
-        if len(cards) >= TARGET_CARD_COUNT:
-            break
-        sentence_key = candidate.sentence.casefold()
-        if sentence_key in used_sentences:
-            continue
-        answer = choose_answer_phrase(candidate.sentence)
-        if not answer or answer.casefold() in used_answers:
-            continue
-        choices = ordered_choices(answer, pool)
-        if len(choices) < 4:
-            continue
-        used_sentences.add(sentence_key)
-        used_answers.add(answer.casefold())
-        cards.append(
-            {
-                "question": multiple_choice_question(candidate.sentence, answer),
-                "choices": choices,
-                "answer": answer,
-                "cue": candidate.heading or "Post text",
-                "explanation": candidate.sentence,
-            }
-        )
     for candidate in candidates:
         if len(cards) >= TARGET_CARD_COUNT:
             break
@@ -426,11 +421,10 @@ def cards_from_body(body_html: str) -> list[dict[str, Any]]:
         used_sentences.add(sentence_key)
         cards.append(
             {
-                "question": f"Which statement does the essay make about {topic_from_sentence(candidate.sentence, candidate.heading)}?",
+                "question": statement_question(candidate.sentence, candidate.heading),
                 "choices": choices,
                 "answer": answer,
                 "cue": candidate.heading or "Post text",
-                "explanation": candidate.sentence,
             }
         )
     if len(cards) < TARGET_CARD_COUNT:
