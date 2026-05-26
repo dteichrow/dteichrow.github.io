@@ -88,9 +88,11 @@ def test_render_post_page_uses_explicit_study_cards() -> None:
         "related_atlases": ["revolutionary-war-atlas"],
         "flashcards": [
             {
-                "question": "In the Substack essay text, what completes this cloze: \"It forces _____ of a specific claim.\"?",
+                "question": "Which option best matches this point from the essay? It forces retrieval of a specific claim.",
+                "choices": ["exposure", "retrieval", "confounding", "mortality"],
                 "answer": "retrieval",
                 "cue": "Retrieval",
+                "explanation": "The essay says it forces retrieval of a specific claim.",
             }
         ],
     }
@@ -112,8 +114,11 @@ def test_render_post_page_uses_explicit_study_cards() -> None:
     assert 'id="study-cards"' in page_text
     assert '<li><a href="#study-cards">Study cards</a></li>' in page_text
     assert page_text.count("data-flashcard>") == 1
-    assert "It forces _____ of a specific claim." in page_text
+    assert "It forces retrieval of a specific claim." in page_text
+    assert "flashcard-options" in page_text
+    assert "confounding" in page_text
     assert "retrieval" in page_text
+    assert "The essay says it forces retrieval of a specific claim." in page_text
     assert 'data-flashcard-counter>1 / 1</span>' in page_text
 
 
@@ -235,11 +240,73 @@ posts:
     hero_mode: cover
     notes: ""
     flashcards:
-      - question: In the Substack essay text, what completes this cloze?
+      - question: Which option best matches the first post?
+        choices: [First distractor, First answer, Second distractor, Third distractor]
         answer: First answer
+        cue: Post text
+        explanation: First source-body sentence.
+      - question: Which option best matches card 2?
+        choices: [A2, B2, C2, D2]
+        answer: B2
+        cue: Post text
+      - question: Which option best matches card 3?
+        choices: [A3, B3, C3, D3]
+        answer: C3
+        cue: Post text
+      - question: Which option best matches card 4?
+        choices: [A4, B4, C4, D4]
+        answer: D4
+        cue: Post text
+      - question: Which option best matches card 5?
+        choices: [A5, B5, C5, D5]
+        answer: A5
+        cue: Post text
+      - question: Which option best matches card 6?
+        choices: [A6, B6, C6, D6]
+        answer: B6
+        cue: Post text
+      - question: Which option best matches card 7?
+        choices: [A7, B7, C7, D7]
+        answer: C7
+        cue: Post text
+      - question: Which option best matches card 8?
+        choices: [A8, B8, C8, D8]
+        answer: D8
+        cue: Post text
+      - question: Which option best matches card 9?
+        choices: [A9, B9, C9, D9]
+        answer: A9
+        cue: Post text
+      - question: Which option best matches card 10?
+        choices: [A10, B10, C10, D10]
+        answer: B10
         cue: Post text
     flashcards_source: substack_body_html
     flashcards_source_url: https://theedgeofepidemiology.substack.com/p/first-post
+  - substack_id: 2
+    slug: removed-post
+    title: Removed Post
+    display_title: Removed Post
+    canonical_url: https://theedgeofepidemiology.substack.com/p/removed-post
+    date: 2026-05-09
+    author: Devin Teichrow
+    excerpt: This post was removed upstream.
+    summary: This post was removed upstream.
+    dek: ""
+    topics: [History]
+    series: []
+    seo_title: Removed Post
+    seo_description: A removed post should not remain in the public essay archive.
+    primary_keyword: removed post
+    topic_cluster: historical-epidemiology
+    indexing_strategy: noindex_stub
+    related_atlases: []
+    related_reference_slugs: []
+    related_story_ids: []
+    search_excerpt: Removed excerpt
+    local_body_path: ""
+    hero_mode: cover
+    notes: ""
 """
     )
     (content_dir / "atlases.yml").write_text(
@@ -341,11 +408,13 @@ atlases:
 
     result = build_site.build_site(docs_dir=docs_dir, base_url="/")
     assert result["posts"] == 1
+    assert result["all_posts"] == 2
     assert result["seo"]["html_pages"] >= 20
     assert result["seo"]["indexable_pages"] >= 10
     assert result["seo"]["noindex_pages"] >= 1
     assert (docs_dir / "index.html").exists()
     assert (docs_dir / "essays" / "first-post" / "index.html").exists()
+    assert not (docs_dir / "essays" / "removed-post").exists()
     assert (docs_dir / "topics" / "index.html").exists()
     assert (docs_dir / "topics" / "historical-epidemiology" / "index.html").exists()
     assert (docs_dir / "atlases" / "index.html").exists()
@@ -356,11 +425,16 @@ atlases:
     assert (docs_dir / "historical" / "index.html").exists()
     assert (docs_dir / "opportunities" / "index.html").exists()
     assert (docs_dir / "app_exports" / "posts.json").exists()
+    posts_export = json.loads((docs_dir / "app_exports" / "posts.json").read_text())
+    assert posts_export["count"] == 1
+    assert posts_export["posts"][0]["slug"] == "first-post"
     flashcards_export = json.loads((docs_dir / "app_exports" / "essay-flashcards.json").read_text())
     assert flashcards_export["count"] == 1
     assert flashcards_export["decks"][0]["s"] == "first-post"
     assert flashcards_export["decks"][0]["src"] == "substack_body_html"
     assert flashcards_export["decks"][0]["cards"][0]["a"] == "First answer"
+    assert flashcards_export["decks"][0]["cards"][0]["o"] == ["First distractor", "First answer", "Second distractor", "Third distractor"]
+    assert flashcards_export["decks"][0]["cards"][0]["e"] == "First source-body sentence."
     assert (docs_dir / "CNAME").read_text() == "devinteichrow.com\n"
     assert (docs_dir / "robots.txt").exists()
     assert (docs_dir / "sitemap.xml").exists()
@@ -388,6 +462,9 @@ atlases:
     assert "reference-card" in home_text
     assert "Read the essays" in home_text
     assert 'href="/opportunities/"' in home_text
+    essays_index = (docs_dir / "essays" / "index.html").read_text()
+    assert "<h2>1 essays</h2>" in essays_index
+    assert "Removed Post" not in essays_index
     assert "Selected projects, collaborations, and commissions" in home_text
     assert "devinteichrow@gmail.com" in home_text
     assert "site-brand-byline" in home_text

@@ -798,22 +798,42 @@ def normalize_flashcard_text(value: Any) -> str:
     return re.sub(r"\s+", " ", str(value or "")).strip()
 
 
+def normalize_flashcard_choices(value: Any, answer: str) -> list[str]:
+    if not isinstance(value, list):
+        return []
+    choices: list[str] = []
+    seen: set[str] = set()
+    for option in value:
+        option_text = normalize_flashcard_text(option)
+        if not option_text:
+            continue
+        key = option_text.casefold()
+        if key in seen:
+            continue
+        seen.add(key)
+        choices.append(option_text)
+    if answer and answer.casefold() not in seen:
+        choices.insert(0, answer)
+    return choices[:4]
+
+
 def post_flashcards(
     post: dict[str, Any],
     atlases: dict[str, dict[str, Any]],
     posts: list[dict[str, Any]],
     *,
     target_count: int = 10,
-) -> list[dict[str, str]]:
-    cards: list[dict[str, str]] = []
+) -> list[dict[str, Any]]:
+    cards: list[dict[str, Any]] = []
     seen: set[tuple[str, str]] = set()
 
-    def add_card(question: Any, answer: Any, cue: Any = "") -> None:
+    def add_card(question: Any, answer: Any, cue: Any = "", choices: Any = None, explanation: Any = "") -> None:
         if len(cards) >= target_count:
             return
         question_text = normalize_flashcard_text(question)
         answer_text = normalize_flashcard_text(answer)
         cue_text = normalize_flashcard_text(cue)
+        explanation_text = normalize_flashcard_text(explanation)
         if not question_text or not answer_text:
             return
         key = (question_text.casefold(), answer_text.casefold())
@@ -823,6 +843,11 @@ def post_flashcards(
         card = {"question": question_text, "answer": answer_text}
         if cue_text:
             card["cue"] = cue_text
+        choice_texts = normalize_flashcard_choices(choices, answer_text)
+        if choice_texts:
+            card["choices"] = choice_texts
+        if explanation_text:
+            card["explanation"] = explanation_text
         cards.append(card)
 
     for card in post.get("flashcards", []):
@@ -832,16 +857,35 @@ def post_flashcards(
             card.get("question") or card.get("front") or card.get("prompt"),
             card.get("answer") or card.get("back") or card.get("response"),
             card.get("cue") or card.get("label"),
+            card.get("choices") or card.get("options"),
+            card.get("explanation") or card.get("context"),
         )
 
     return cards[:target_count]
 
 
-def render_flashcard_deck(cards: list[dict[str, str]]) -> str:
+def render_flashcard_deck(cards: list[dict[str, Any]]) -> str:
     card_markup = []
     for index, card in enumerate(cards, start=1):
         classes = "flashcard is-active" if index == 1 else "flashcard"
         cue = f'<p class="flashcard-cue">{html.escape(card["cue"])}</p>' if card.get("cue") else ""
+        choices = card.get("choices") or []
+        options = (
+            '<ol class="flashcard-options">'
+            + "".join(
+                f'<li><span class="flashcard-option-label">{chr(65 + option_index)}</span>'
+                f'<span>{html.escape(str(option))}</span></li>'
+                for option_index, option in enumerate(choices[:4])
+            )
+            + "</ol>"
+            if choices
+            else ""
+        )
+        explanation = (
+            f'<p class="flashcard-explanation">{html.escape(card["explanation"])}</p>'
+            if card.get("explanation")
+            else ""
+        )
         card_markup.append(
             f"""
           <article class="{classes}" data-flashcard>
@@ -849,10 +893,12 @@ def render_flashcard_deck(cards: list[dict[str, str]]) -> str:
               <p class="flashcard-index">Card {index:02d}</p>
               {cue}
               <h3>{html.escape(card["question"])}</h3>
+              {options}
             </div>
             <div class="flashcard-face flashcard-back">
               <p class="flashcard-index">Answer {index:02d}</p>
-              <p>{html.escape(card["answer"])}</p>
+              <p class="flashcard-answer">{html.escape(card["answer"])}</p>
+              {explanation}
             </div>
           </article>
         """
@@ -885,6 +931,14 @@ def post_indexing_strategy(post: dict[str, Any]) -> str:
 
 def post_should_index(post: dict[str, Any]) -> bool:
     return post_indexing_strategy(post).lower() not in NOINDEX_POST_STRATEGIES
+
+
+def is_public_essay_post(post: dict[str, Any]) -> bool:
+    return post.get("flashcards_source") == "substack_body_html" and len(post.get("flashcards") or []) >= 10
+
+
+def public_essay_posts(posts: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    return [post for post in posts if is_public_essay_post(post)]
 
 
 def post_topic_cluster(post: dict[str, Any]) -> str:
@@ -2863,6 +2917,7 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
     import_external_american_epidemic_timeline(docs_dir, base_url)
 
     posts = load_posts_manifest(CONTENT_DIR / "posts.yml")
+    public_posts = public_essay_posts(posts)
     atlases = load_atlas_registry(CONTENT_DIR / "atlases.yml")
     tools = load_tool_registry(CONTENT_DIR / "tools.yml", CONTENT_DIR / "atlases.yml")
     atlas_by_id = {entry["atlas_id"]: entry for entry in atlases}
@@ -2870,12 +2925,12 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
     stories = latest.get("stories", [])
 
     page_specs = {
-        docs_dir / "index.html": render_home(posts, tools, latest, base_url),
-        docs_dir / "essays" / "index.html": render_essays_index(posts, base_url),
-        docs_dir / "topics" / "index.html": render_topic_hub_index(posts, base_url),
+        docs_dir / "index.html": render_home(public_posts, tools, latest, base_url),
+        docs_dir / "essays" / "index.html": render_essays_index(public_posts, base_url),
+        docs_dir / "topics" / "index.html": render_topic_hub_index(public_posts, base_url),
         docs_dir / "tools" / "index.html": render_tools_hub(tools, base_url),
         docs_dir / "atlases" / "index.html": render_atlas_hub(atlases, base_url),
-        docs_dir / "historical" / "index.html": render_historical_page(posts, atlases, base_url),
+        docs_dir / "historical" / "index.html": render_historical_page(public_posts, atlases, base_url),
         docs_dir / "methods" / "index.html": render_methods_page(base_url),
         docs_dir / "about" / "index.html": render_about_page(base_url),
         docs_dir / "opportunities" / "index.html": render_opportunities_page(base_url),
@@ -2888,15 +2943,15 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
         ensure_dir(path.parent)
         path.write_text(page_html)
 
-    for post in posts:
+    for post in public_posts:
         path = docs_dir / "essays" / post.get("slug", "untitled") / "index.html"
         ensure_dir(path.parent)
-        path.write_text(render_post_page(post, atlas_by_id, posts, base_url))
+        path.write_text(render_post_page(post, atlas_by_id, public_posts, base_url))
 
     for hub in TOPIC_HUBS:
         path = docs_dir / "topics" / str(hub["slug"]) / "index.html"
         ensure_dir(path.parent)
-        path.write_text(render_topic_hub_page(hub, posts, base_url))
+        path.write_text(render_topic_hub_page(hub, public_posts, base_url))
 
     for atlas_entry in atlases:
         if atlas_entry.get("atlas_id") == "pathogen-atlas":
@@ -2909,12 +2964,12 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
             continue
         path = docs_dir / atlas_entry["public_route"].strip("/") / "index.html"
         ensure_dir(path.parent)
-        path.write_text(render_curated_atlas_page(atlas_entry, posts, base_url))
+        path.write_text(render_curated_atlas_page(atlas_entry, public_posts, base_url))
 
     posts_export = {
         "generated_at": latest.get("generated_at"),
-        "count": len(posts),
-        "posts": [public_post_export(post) for post in posts],
+        "count": len(public_posts),
+        "posts": [public_post_export(post) for post in public_posts],
     }
     atlases_export = {
         "generated_at": latest.get("generated_at"),
@@ -2927,7 +2982,7 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
         "tools": [public_tool_export(tool) for tool in tools],
     }
     flashcard_decks = []
-    for post in posts:
+    for post in public_posts:
         cards = post_flashcards(post, atlas_by_id, posts)
         if not cards:
             continue
@@ -2941,6 +2996,8 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
                     {
                         **{"q": card["question"], "a": card["answer"]},
                         **({"c": card["cue"]} if card.get("cue") else {}),
+                        **({"o": card["choices"]} if card.get("choices") else {}),
+                        **({"e": card["explanation"]} if card.get("explanation") else {}),
                     }
                     for card in cards
                 ],
@@ -2952,7 +3009,7 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
         "decks": flashcard_decks,
     }
     search_index = []
-    for post in posts:
+    for post in public_posts:
         search_index.append(
             {
                 "title": post.get("title"),
@@ -3030,11 +3087,12 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
     ensure_dir(flashcards_export_path.parent)
     flashcards_export_path.write_text(json.dumps(flashcards_export, ensure_ascii=False, separators=(",", ":")))
     write_json(docs_dir / "app_exports" / "search-index.json", search_index)
-    seo_report = finalize_seo(docs_dir, posts)
+    seo_report = finalize_seo(docs_dir, public_posts)
 
     return {
         "generated_at": latest.get("generated_at"),
-        "posts": len(posts),
+        "posts": len(public_posts),
+        "all_posts": len(posts),
         "atlases": len(atlases),
         "tools": len(tools),
         "stories": len(stories),

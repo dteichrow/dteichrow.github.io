@@ -107,6 +107,16 @@ PHRASE_PATTERNS = [
     ),
 ]
 TRAILING_PHRASE_WORDS = {"and", "the", "of", "in", "for", "to", "de", "la"}
+REJECT_ANSWER_PHRASES = {
+    "because",
+    "most",
+    "this",
+    "that",
+    "they",
+    "there",
+    "these",
+    "those",
+}
 
 
 @dataclass
@@ -264,7 +274,7 @@ def choose_answer_phrase(sentence: str) -> str:
         phrase = " ".join(words)
         if len(phrase) < 4 or phrase.casefold() in seen:
             continue
-        if phrase.lower() in {"this", "that", "they", "there", "these", "those"}:
+        if phrase.lower() in REJECT_ANSWER_PHRASES:
             continue
         seen.add(phrase.casefold())
         clean_matches.append((priority, phrase))
@@ -273,20 +283,62 @@ def choose_answer_phrase(sentence: str) -> str:
     return sorted(clean_matches, key=lambda value: (value[0], -len(value[1].split()), -len(value[1])))[0][1]
 
 
-def cloze_sentence(sentence: str, answer: str) -> str:
+def answer_pool(candidates: list[Candidate]) -> list[str]:
+    answers: list[str] = []
+    seen: set[str] = set()
+    for candidate in candidates:
+        answer = choose_answer_phrase(candidate.sentence)
+        if not answer:
+            continue
+        key = answer.casefold()
+        if key in seen:
+            continue
+        seen.add(key)
+        answers.append(answer)
+    return answers
+
+
+def shortened_context(text: str, *, max_length: int = 235) -> str:
+    text = normalize_text(text)
+    if len(text) <= max_length:
+        return text
+    return text[: max_length - 1].rsplit(" ", 1)[0].rstrip(".,;:") + "…"
+
+
+def redacted_point(sentence: str, answer: str) -> str:
     pattern = re.compile(re.escape(answer), flags=re.I)
-    cloze = pattern.sub("_____", sentence, count=1)
-    if len(cloze) <= 235:
-        return cloze
-    blank_at = cloze.find("_____")
-    start = max(0, blank_at - 95)
-    end = min(len(cloze), blank_at + 140)
-    shortened = cloze[start:end].strip()
-    if start > 0:
-        shortened = "..." + shortened
-    if end < len(cloze):
-        shortened = shortened + "..."
-    return shortened
+    match = pattern.search(sentence)
+    if not match:
+        return shortened_context(sentence)
+    if match.start() <= 3:
+        remainder = sentence[match.end() :].lstrip(" ,;:-")
+        if remainder:
+            return shortened_context(f"It {remainder[0].lower()}{remainder[1:]}")
+        return "It is the key item in this passage."
+    redacted = pattern.sub("this option", sentence, count=1)
+    return shortened_context(redacted)
+
+
+def ordered_choices(answer: str, pool: list[str]) -> list[str]:
+    choices = [answer]
+    answer_key = answer.casefold()
+    for option in pool:
+        option_key = option.casefold()
+        if option_key == answer_key:
+            continue
+        if answer_key in option_key or option_key in answer_key:
+            continue
+        choices.append(option)
+        if len(choices) == 4:
+            break
+    if len(choices) < 4:
+        return []
+    offset = sum(ord(char) for char in answer) % 4
+    return choices[offset:] + choices[:offset]
+
+
+def multiple_choice_question(sentence: str, answer: str) -> str:
+    return f"Which option best matches this point from the essay? {redacted_point(sentence, answer)}"
 
 
 def topic_from_sentence(sentence: str, heading: str) -> str:
@@ -303,11 +355,41 @@ def topic_from_sentence(sentence: str, heading: str) -> str:
     return " ".join(words[:4]) or "this point"
 
 
-def cards_from_body(body_html: str) -> list[dict[str, str]]:
-    cards: list[dict[str, str]] = []
+def sentence_pool(candidates: list[Candidate]) -> list[str]:
+    sentences: list[str] = []
+    seen: set[str] = set()
+    for candidate in candidates:
+        sentence = shortened_context(candidate.sentence, max_length=210)
+        key = sentence.casefold()
+        if key in seen:
+            continue
+        seen.add(key)
+        sentences.append(sentence)
+    return sentences
+
+
+def ordered_sentence_choices(answer: str, pool: list[str]) -> list[str]:
+    choices = [answer]
+    answer_key = answer.casefold()
+    for option in pool:
+        if option.casefold() == answer_key:
+            continue
+        choices.append(option)
+        if len(choices) == 4:
+            break
+    if len(choices) < 4:
+        return []
+    offset = sum(ord(char) for char in answer) % 4
+    return choices[offset:] + choices[:offset]
+
+
+def cards_from_body(body_html: str) -> list[dict[str, Any]]:
+    cards: list[dict[str, Any]] = []
     used_answers: set[str] = set()
     used_sentences: set[str] = set()
     candidates = candidate_sentences(body_blocks(body_html))
+    pool = answer_pool(candidates)
+    statements = sentence_pool(candidates)
     for candidate in candidates:
         if len(cards) >= TARGET_CARD_COUNT:
             break
@@ -317,13 +399,18 @@ def cards_from_body(body_html: str) -> list[dict[str, str]]:
         answer = choose_answer_phrase(candidate.sentence)
         if not answer or answer.casefold() in used_answers:
             continue
+        choices = ordered_choices(answer, pool)
+        if len(choices) < 4:
+            continue
         used_sentences.add(sentence_key)
         used_answers.add(answer.casefold())
         cards.append(
             {
-                "question": f'In the Substack essay text, what completes this cloze: "{cloze_sentence(candidate.sentence, answer)}"?',
+                "question": multiple_choice_question(candidate.sentence, answer),
+                "choices": choices,
                 "answer": answer,
                 "cue": candidate.heading or "Post text",
+                "explanation": candidate.sentence,
             }
         )
     for candidate in candidates:
@@ -332,13 +419,18 @@ def cards_from_body(body_html: str) -> list[dict[str, str]]:
         sentence_key = candidate.sentence.casefold()
         if sentence_key in used_sentences:
             continue
+        answer = shortened_context(candidate.sentence, max_length=210)
+        choices = ordered_sentence_choices(answer, statements)
+        if len(choices) < 4:
+            continue
         used_sentences.add(sentence_key)
-        topic = topic_from_sentence(candidate.sentence, candidate.heading)
         cards.append(
             {
-                "question": f"What point does the Substack essay make about {topic}?",
-                "answer": candidate.sentence,
+                "question": f"Which statement does the essay make about {topic_from_sentence(candidate.sentence, candidate.heading)}?",
+                "choices": choices,
+                "answer": answer,
                 "cue": candidate.heading or "Post text",
+                "explanation": candidate.sentence,
             }
         )
     if len(cards) < TARGET_CARD_COUNT:
