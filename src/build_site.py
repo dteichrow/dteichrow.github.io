@@ -693,6 +693,10 @@ def public_tool_export(entry: dict[str, Any]) -> dict[str, Any]:
 
 def public_post_export(post: dict[str, Any]) -> dict[str, Any]:
     internal_keys = {
+        "flashcards",
+        "flashcards_generated_at",
+        "flashcards_source",
+        "flashcards_source_url",
         "source_mode",
         "indexing_strategy",
         "first_seen_at",
@@ -700,6 +704,7 @@ def public_post_export(post: dict[str, Any]) -> dict[str, Any]:
         "sync_source",
         "source_path",
         "original_title",
+        "site_visibility",
     }
     return {key: value for key, value in post.items() if key not in internal_keys}
 
@@ -794,130 +799,6 @@ def post_overview_paragraphs(post: dict[str, Any]) -> list[str]:
     return paragraphs
 
 
-def normalize_flashcard_text(value: Any) -> str:
-    return re.sub(r"\s+", " ", str(value or "")).strip()
-
-
-def normalize_flashcard_choices(value: Any, answer: str) -> list[str]:
-    if not isinstance(value, list):
-        return []
-    choices: list[str] = []
-    seen: set[str] = set()
-    for option in value:
-        option_text = normalize_flashcard_text(option)
-        if not option_text:
-            continue
-        key = option_text.casefold()
-        if key in seen:
-            continue
-        seen.add(key)
-        choices.append(option_text)
-    if answer and answer.casefold() not in seen:
-        choices.insert(0, answer)
-    return choices[:4]
-
-
-def post_flashcards(
-    post: dict[str, Any],
-    atlases: dict[str, dict[str, Any]],
-    posts: list[dict[str, Any]],
-    *,
-    target_count: int = 10,
-) -> list[dict[str, Any]]:
-    cards: list[dict[str, Any]] = []
-    seen: set[tuple[str, str]] = set()
-
-    def add_card(question: Any, answer: Any, cue: Any = "", choices: Any = None, explanation: Any = "") -> None:
-        if len(cards) >= target_count:
-            return
-        question_text = normalize_flashcard_text(question)
-        answer_text = normalize_flashcard_text(answer)
-        cue_text = normalize_flashcard_text(cue)
-        explanation_text = normalize_flashcard_text(explanation)
-        if not question_text or not answer_text:
-            return
-        key = (question_text.casefold(), answer_text.casefold())
-        if key in seen:
-            return
-        seen.add(key)
-        card = {"question": question_text, "answer": answer_text}
-        if cue_text:
-            card["cue"] = cue_text
-        choice_texts = normalize_flashcard_choices(choices, answer_text)
-        if choice_texts:
-            card["choices"] = choice_texts
-        if explanation_text:
-            card["explanation"] = explanation_text
-        cards.append(card)
-
-    for card in post.get("flashcards", []):
-        if not isinstance(card, dict):
-            continue
-        add_card(
-            card.get("question") or card.get("front") or card.get("prompt"),
-            card.get("answer") or card.get("back") or card.get("response"),
-            card.get("cue") or card.get("label"),
-            card.get("choices") or card.get("options"),
-            card.get("explanation") or card.get("context"),
-        )
-
-    return cards[:target_count]
-
-
-def render_flashcard_deck(cards: list[dict[str, Any]]) -> str:
-    card_markup = []
-    for index, card in enumerate(cards, start=1):
-        classes = "flashcard is-active" if index == 1 else "flashcard"
-        cue = f'<p class="flashcard-cue">{html.escape(card["cue"])}</p>' if card.get("cue") else ""
-        choices = card.get("choices") or []
-        options = (
-            '<ol class="flashcard-options">'
-            + "".join(
-                f'<li><span class="flashcard-option-label">{chr(65 + option_index)}</span>'
-                f'<span>{html.escape(str(option))}</span></li>'
-                for option_index, option in enumerate(choices[:4])
-            )
-            + "</ol>"
-            if choices
-            else ""
-        )
-        explanation = (
-            f'<p class="flashcard-explanation">{html.escape(card["explanation"])}</p>'
-            if card.get("explanation")
-            else ""
-        )
-        card_markup.append(
-            f"""
-          <article class="{classes}" data-flashcard>
-            <div class="flashcard-face flashcard-front">
-              <p class="flashcard-index">Card {index:02d}</p>
-              {cue}
-              <h3>{html.escape(card["question"])}</h3>
-              {options}
-            </div>
-            <div class="flashcard-face flashcard-back">
-              <p class="flashcard-index">Answer {index:02d}</p>
-              <p class="flashcard-answer">{html.escape(card["answer"])}</p>
-              {explanation}
-            </div>
-          </article>
-        """
-        )
-    return f"""
-        <div class="flashcard-stage" data-flashcard-deck>
-          <div class="flashcard-stack">
-            {"".join(card_markup)}
-          </div>
-          <div class="flashcard-controls" aria-label="Study card controls">
-            <button class="button secondary flashcard-control" type="button" data-flashcard-prev>Previous</button>
-            <button class="button primary flashcard-control" type="button" data-flashcard-flip aria-pressed="false">Flip</button>
-            <button class="button secondary flashcard-control" type="button" data-flashcard-next>Next</button>
-            <span class="flashcard-counter" data-flashcard-counter>1 / {len(cards)}</span>
-          </div>
-        </div>
-    """
-
-
 def post_indexing_strategy(post: dict[str, Any]) -> str:
     strategy = str(post.get("indexing_strategy") or "").strip()
     if strategy == "noindex_stub":
@@ -934,7 +815,7 @@ def post_should_index(post: dict[str, Any]) -> bool:
 
 
 def is_public_essay_post(post: dict[str, Any]) -> bool:
-    return post.get("flashcards_source") == "substack_body_html" and len(post.get("flashcards") or []) >= 10
+    return str(post.get("site_visibility") or "").strip().lower() == "public" and post_should_index(post)
 
 
 def public_essay_posts(posts: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -1149,34 +1030,12 @@ def render_post_page(post: dict[str, Any], atlases: dict[str, dict[str, Any]], p
         else ""
     )
     keyword = post.get("primary_keyword") or cluster_title
-    flashcards = post_flashcards(post, atlases, posts)
     contents_items = [
         '<li><a href="#overview">Overview</a></li>',
         '<li><a href="#read">Read the essay</a></li>',
         '<li><a href="#related-work">Related work</a></li>',
     ]
-    if flashcards:
-        contents_items.insert(1, '<li><a href="#study-cards">Study cards</a></li>')
     contents_links = "\n            ".join(contents_items)
-    flashcard_section = (
-        f"""
-<section class="panel flashcard-panel" id="study-cards">
-        <div class="section-head section-head-split">
-          <div>
-            <p class="kicker">Study cards</p>
-            <h2>Retain the essay</h2>
-          </div>
-          <div class="section-sidecar">
-            <p class="section-sidecar-label">Deck</p>
-            <p>{len(flashcards)} prompts drawn from the Substack essay text.</p>
-          </div>
-        </div>
-        {render_flashcard_deck(flashcards)}
-      </section>
-      """
-        if flashcards
-        else ""
-    )
     return base_html(
         title=f"{display_title} | Edge of Epidemiology",
         description=description,
@@ -1223,7 +1082,7 @@ def render_post_page(post: dict[str, Any], atlases: dict[str, dict[str, Any]], p
           {overview_paragraphs}
         </div>
       </section>
-      {flashcard_section}<section class="panel detail-grid" id="read">
+      <section class="panel detail-grid" id="read">
         <div class="detail-block">
           <h3>Read the full essay</h3>
           <p><a href="{html.escape(read_url)}">{html.escape(read_url)}</a></p>
@@ -2981,32 +2840,10 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
         "count": len(tools),
         "tools": [public_tool_export(tool) for tool in tools],
     }
-    flashcard_decks = []
-    for post in public_posts:
-        cards = post_flashcards(post, atlas_by_id, posts)
-        if not cards:
-            continue
-        flashcard_decks.append(
-            {
-                "s": post.get("slug"),
-                "t": post_display_title(post),
-                "src": post.get("flashcards_source"),
-                "u": post.get("flashcards_source_url"),
-                "cards": [
-                    {
-                        **{"q": card["question"], "a": card["answer"]},
-                        **({"c": card["cue"]} if card.get("cue") else {}),
-                        **({"o": card["choices"]} if card.get("choices") else {}),
-                        **({"e": card["explanation"]} if card.get("explanation") else {}),
-                    }
-                    for card in cards
-                ],
-            }
-        )
     flashcards_export = {
         "generated_at": latest.get("generated_at"),
-        "count": len(flashcard_decks),
-        "decks": flashcard_decks,
+        "count": 0,
+        "decks": [],
     }
     search_index = []
     for post in public_posts:
