@@ -32,6 +32,10 @@ def test_cards_from_body_generates_mixed_study_cards() -> None:
     assert all(len(card["choices"]) == 4 for card in choice_cards)
     assert all(card["answer"] in card["choices"] for card in choice_cards)
     assert all(len(option) <= 90 for card in choice_cards for option in card["choices"])
+    for card in choice_cards:
+        category = flashcards.answer_category(card["answer"])
+        assert all(flashcards.valid_option_phrase(option) for option in card["choices"])
+        assert all(flashcards.answer_category(option) == category for option in card["choices"])
     assert all("choices" not in card for card in fill_cards + short_cards)
     assert all(card["answer"] for card in cards)
     assert any(card["answer"] == "Ancient DNA" for card in fill_cards + choice_cards)
@@ -41,3 +45,32 @@ def test_cards_from_body_generates_mixed_study_cards() -> None:
     assert "this option" not in question_text.lower()
     assert "Which statement best matches" not in question_text
     assert "Which option best matches" not in question_text
+
+
+def test_rejects_fragment_answers_that_make_bad_choices() -> None:
+    bad_phrases = [
+        "missionaries and the disease",
+        "power shaped unequal risk",
+        "protect workers",
+        "population",
+        "table or actuarial analysis",
+        "CGRP",
+        "SEIR",
+        "Population Y",
+        "best of ancient pathogen",
+    ]
+
+    assert all(not flashcards.valid_option_phrase(phrase) for phrase in bad_phrases)
+
+
+def test_specialized_distractor_banks_keep_choices_on_topic() -> None:
+    sensor_choices = flashcards.ordered_choices(
+        "proprietary algorithms",
+        ["optical sensors", "accelerometers", "motion sensors"],
+    )
+    assert "Aedes aegypti mosquito" not in sensor_choices
+    assert {"optical sensors", "accelerometers"} & set(sensor_choices)
+
+    org_choices = flashcards.ordered_choices("American Headache Society Scientific Meeting", [])
+    assert "Lloyds Bank" not in org_choices
+    assert "International Headache Society" in org_choices

@@ -95,6 +95,7 @@ KEY_TERMS = {
 }
 PHRASE_PATTERNS = [
     re.compile(r"[“\"]([^“”\"]{4,64})[”\"]"),
+    re.compile(r"\b\d{1,2}\s*(?:st|nd|rd|th)\s+century\s+[A-Za-z -]{3,48}?(?:epidemic|outbreak)\b", flags=re.I),
     re.compile(
         r"\b(?:ancient DNA|early-life mortality|childhood mortality|violent death|periapical disease|"
         r"cemetery evidence|case fatality rate|attack rate|epidemic curve|smallpox strains|"
@@ -129,6 +130,10 @@ PHRASE_PATTERNS = [
 TRAILING_PHRASE_WORDS = {"and", "the", "of", "in", "for", "to", "de", "la"}
 REJECT_ANSWER_PHRASES = {
     "because",
+    "choice",
+    "evidence",
+    "overall",
+    "whatever",
     "most",
     "this",
     "that",
@@ -138,10 +143,53 @@ REJECT_ANSWER_PHRASES = {
     "those",
 }
 REJECT_ANSWER_STARTS = {
+    "a",
+    "an",
+    "the",
+    "and",
+    "or",
+    "but",
+    "all",
+    "another",
+    "before",
+    "beyond",
     "can",
+    "cambridge",
+    "close-quarters",
+    "common",
+    "compared",
+    "concerns",
+    "consistent",
+    "currently",
+    "date",
+    "despite",
+    "diseases",
+    "drinking",
+    "due",
+    "during",
+    "epicenters",
     "could",
+    "did",
+    "do",
+    "does",
+    "done",
+    "had",
+    "has",
+    "have",
+    "having",
+    "habitats",
+    "higher",
+    "is",
+    "are",
+    "was",
+    "were",
     "would",
     "which",
+    "what",
+    "why",
+    "where",
+    "when",
+    "how",
     "that",
     "this",
     "these",
@@ -158,13 +206,727 @@ REJECT_ANSWER_STARTS = {
     "quantify",
     "greatest",
     "some",
+    "as",
+    "so",
+    "three",
+    "trajectory",
+    "understand",
     "while",
+    "though",
+    "although",
+    "after",
+    "because",
+    "from",
+    "on",
+    "at",
+    "by",
+    "into",
+    "onto",
+    "exactly",
+    "acting",
+    "become",
+    "beautiful",
+    "cut",
+    "deaths",
+    "die",
+    "died",
+    "dramatic",
+    "describes",
+    "environments",
+    "experienced",
+    "every",
+    "even",
+    "factor",
+    "find",
+    "flaw",
+    "further",
+    "funding",
+    "fractured",
+    "grew",
+    "heavily",
+    "however",
+    "if",
+    "including",
+    "initial",
+    "individuals",
+    "learned",
+    "litany",
+    "locally",
+    "looking",
+    "leading",
+    "likely",
+    "making",
+    "missionaries",
+    "models",
+    "more",
+    "most",
+    "much",
+    "namely",
+    "noted",
+    "once",
+    "one",
+    "outpaced",
+    "part",
+    "power",
+    "preceded",
+    "progression",
+    "proportions",
+    "protect",
+    "previously",
+    "problems",
+    "pathway",
+    "put",
+    "reduce",
+    "reduces",
+    "regional",
+    "represent",
+    "referenced",
+    "regards",
+    "relationship",
+    "relationships",
+    "researchers",
+    "said",
+    "say",
+    "showed",
+    "shown",
+    "sharing",
+    "smaller",
+    "story",
+    "suggests",
+    "survive",
+    "survival",
+    "taking",
+    "than",
+    "trial",
+    "trouble",
+    "strip",
+    "trying",
+    "using",
+    "whether",
+    "war",
+    "ve",
+    "welcome",
+    "without",
+    "years",
+}
+REJECT_ANSWER_ENDS = {
+    "a",
+    "an",
+    "the",
+    "and",
+    "or",
+    "but",
+    "if",
+    "by",
+    "at",
+    "on",
+    "of",
+    "for",
+    "to",
+    "from",
+    "with",
+    "without",
+    "into",
+    "onto",
+    "over",
+    "under",
+    "as",
+    "because",
+    "while",
+    "though",
+    "although",
+    "what",
+    "which",
+    "who",
+    "why",
+    "how",
+    "is",
+    "are",
+    "was",
+    "were",
+    "be",
+    "being",
+    "been",
+    "have",
+    "has",
+    "had",
+    "do",
+    "does",
+    "did",
+    "can",
+    "could",
+    "would",
+    "should",
+    "may",
+    "might",
+    "must",
+}
+REJECT_ANSWER_VERBS = {
+    "acting",
+    "become",
+    "being",
+    "compared",
+    "cut",
+    "describes",
+    "experienced",
+    "did",
+    "does",
+    "doing",
+    "done",
+    "had",
+    "has",
+    "have",
+    "having",
+    "killed",
+    "learned",
+    "is",
+    "leading",
+    "look",
+    "making",
+    "noted",
+    "put",
+    "reduces",
+    "represent",
+    "referenced",
+    "said",
+    "sharing",
+    "strip",
+    "trying",
+    "using",
+    "understand",
+    "was",
+    "welcome",
+    "were",
 }
 TOPIC_LABEL_OVERRIDES = {
     "ancient dna": "ancient DNA",
     "ebola": "Ebola",
     "viking": "Viking Age evidence",
 }
+ANSWER_CATEGORY_TERMS: dict[str, set[str]] = {
+    "disease_pathogen": {
+        "andes virus",
+        "andv",
+        "chagas",
+        "cholera",
+        "cocoliztli",
+        "copd",
+        "covid",
+        "covid-19",
+        "dementia",
+        "dengue",
+        "diphtheria",
+        "dysentery",
+        "ebola",
+        "enteric fever",
+        "fungal infection",
+        "hantavirus",
+        "hfrs",
+        "hookworm",
+        "influenza",
+        "leprosy",
+        "malaria",
+        "measles",
+        "migraine",
+        "mpox",
+        "plague",
+        "pneumonia",
+        "salmonella",
+        "smallpox",
+        "syphilis",
+        "tmvii",
+        "trichophyton",
+        "tuberculosis",
+        "typhoid",
+        "typhus",
+        "variola",
+        "yellow fever",
+        "yersinia pestis",
+    },
+    "evidence_method": {
+        "ancient dna",
+        "archaeological findings",
+        "archival evidence",
+        "brain waves",
+        "cemetery evidence",
+        "depression questionnaire",
+        "documentary evidence",
+        "eeg",
+        "epigenetic clocks",
+        "genetic evidence",
+        "genomic analysis",
+        "hamilton depression rating scale",
+        "isotope analysis",
+        "meta-analysis",
+        "osteological evidence",
+        "paleopathology",
+        "pcr",
+        "ascend",
+        "crispr",
+        "phase iv",
+        "polysomnography",
+        "randomized controlled trials",
+        "survey study",
+    },
+    "metric_measure": {
+        "attack rate",
+        "caloric burn",
+        "case fatality rate",
+        "effect size",
+        "epidemic curve",
+        "fatality rate",
+        "heart rate data",
+        "hrv",
+        "interquartile range",
+        "life table",
+        "monthly headache days",
+        "morbidity and mortality",
+        "mortality rate",
+        "population density",
+        "prevalence",
+        "resting heart rate",
+        "risk factor",
+        "sleep stages",
+        "total sleep time",
+    },
+    "measurement_device": {
+        "accelerometers",
+        "algorithm",
+        "algorithms",
+        "heart-rate sensors",
+        "motion sensors",
+        "optical sensors",
+        "proprietary algorithms",
+        "wearable sensors",
+    },
+    "place_region": {
+        "africa",
+        "alaska",
+        "america",
+        "argentine",
+        "britain",
+        "canada",
+        "canary islands",
+        "caribbean",
+        "charleston",
+        "chaco canyon",
+        "chilean",
+        "drc and uganda",
+        "eastern woodlands",
+        "europe",
+        "france",
+        "goma",
+        "hispaniola",
+        "iceland",
+        "ituri",
+        "kampala",
+        "kivu",
+        "manchuria",
+        "mexico",
+        "naples",
+        "new york",
+        "northeastern brazil",
+        "north atlantic",
+        "old world",
+        "philadelphia",
+        "saint-domingue",
+        "savannah",
+        "south america",
+        "turkey",
+        "united states",
+        "west eurasia",
+    },
+    "organization_source": {
+        "american academy of neurology",
+        "american headache society",
+        "american battlefield trust",
+        "cdc",
+        "centers for disease control",
+        "city hall",
+        "department of epidemiology",
+        "eli lilly",
+        "european cdc",
+        "global burden of disease",
+        "hhs",
+        "jorvik viking center",
+        "lloyds bank",
+        "mash",
+        "nature ecology",
+        "new york hospital",
+        "new york marine hospital",
+        "nkvd",
+        "northern army",
+        "oecd",
+        "red cross",
+        "reich lab",
+        "royal navy",
+        "state department",
+        "unmc",
+        "usaid",
+        "pfizer",
+        "international headache society",
+        "wall street journal",
+        "war department",
+        "who",
+        "world health organization",
+    },
+    "population_group": {
+        "african residents",
+        "american patriots",
+        "children",
+        "french and british",
+        "hessians",
+        "migraine patients",
+        "msms",
+        "native americans",
+        "nigerian sex workers",
+        "older adults",
+        "patients",
+        "red cross volunteers",
+        "refugees",
+        "residents",
+        "sex workers",
+        "shift workers",
+        "staten islanders",
+        "staten island residents",
+        "troops",
+        "un soldiers",
+        "vegetarians",
+        "vegans",
+        "viking age norse",
+        "women",
+    },
+    "clinical_condition": {
+        "bipolar disorder",
+        "celiac disease",
+        "chronic insomnia",
+        "congenital syphilis",
+        "high blood pressure",
+        "kidney or liver disease",
+        "mci and ad",
+        "mild cognitive impairment",
+        "periapical disease",
+        "severe tuberculosis infection",
+    },
+    "substance_treatment": {
+        "antidepressants",
+        "barbie drug",
+        "cbt-i",
+        "creatine",
+        "glp-1",
+        "lsd",
+        "melanotan ii",
+        "melatonin",
+        "placebo",
+        "psilocybin",
+        "psychedelic assisted therapy",
+        "rimegepant",
+    },
+    "historical_event": {
+        "american revolution",
+        "bell beaker",
+        "black death",
+        "bronze age",
+        "columbian exchange",
+        "corded ware",
+        "crimean war",
+        "industrial revolution",
+        "justinianic plague",
+        "middle passage",
+        "naples outbreak",
+        "north atlantic viking age",
+        "satanic panic",
+        "third plague pandemic",
+        "viking age",
+        "wwii",
+        "yamnaya",
+        "declaration of independence",
+    },
+    "publication_title": {
+        "a terrible mistake",
+        "big epidemiology",
+        "creatine is overrated",
+        "le pain maudit",
+        "plagues and peoples",
+        "secret cold war experiments",
+        "super agers",
+        "lancet countdown",
+        "new york times",
+        "wall street journal",
+        "edge of epidemiology",
+        "journal of headache and pain",
+        "pnas",
+        "pubmed",
+        "openalex",
+        "retraction watch",
+    },
+    "legal_policy": {
+        "act to prevent the spread",
+        "leprosy ordinance",
+        "matter of human tissue litigation",
+        "quarantine act",
+        "public health act",
+        "public health law",
+        "quarantine ordinance",
+    },
+    "person_author": {
+        "benjamin rush",
+        "benedict arnold",
+        "david christian",
+        "frank olson",
+        "francisco hernandez",
+        "general charles leclerc",
+        "huayna capac",
+        "john mcneill",
+        "luigi bragazzi",
+        "richard lipton",
+        "robert mccaa",
+        "steven kaplan",
+        "tedros adhanom ghebreyesus",
+        "teodoro hampe",
+        "thorsten lehr",
+        "william h",
+        "william mcneill",
+    },
+    "ship_vessel": {
+        "mv hondius",
+    },
+    "vector_reservoir": {
+        "aedes aegypti",
+        "mosquito",
+        "rodent reservoir",
+        "sandfly vector",
+        "stagnant water barrels",
+        "vector",
+    },
+    "concept": {
+        "critical community size",
+        "disease ecology",
+        "early-life mortality",
+        "epidemic fade-out",
+        "fine-grained osteological evidence",
+        "gold standard",
+        "herd immunity",
+        "public health",
+        "residual confounding",
+        "social determinants of health",
+        "virgin-soil population",
+    },
+}
+DISTRACTOR_BANKS: dict[str, tuple[str, ...]] = {
+    "disease_pathogen": (
+        "smallpox",
+        "yellow fever",
+        "tuberculosis",
+        "malaria",
+        "cholera",
+        "measles",
+        "plague",
+        "hantavirus",
+        "syphilis",
+        "influenza",
+        "COVID",
+        "TMVII",
+        "Trichophyton infection",
+    ),
+    "evidence_method": (
+        "ancient DNA",
+        "cemetery evidence",
+        "archival evidence",
+        "osteological evidence",
+        "isotope analysis",
+        "genomic analysis",
+        "polysomnography",
+        "randomized controlled trials",
+        "meta-analysis",
+        "survey data",
+        "Phase IV trial",
+        "CRISPR research",
+    ),
+    "metric_measure": (
+        "attack rate",
+        "case fatality rate",
+        "epidemic curve",
+        "mortality rate",
+        "prevalence",
+        "effect size",
+        "monthly headache days",
+        "population density",
+        "resting heart rate",
+        "total sleep time",
+        "HRV",
+    ),
+    "measurement_device": (
+        "optical sensors",
+        "accelerometers",
+        "proprietary algorithms",
+        "motion sensors",
+        "heart-rate sensors",
+        "wearable sensors",
+    ),
+    "place_region": (
+        "United States",
+        "Europe",
+        "West Eurasia",
+        "Old World",
+        "South America",
+        "Caribbean",
+        "Philadelphia",
+        "New York City",
+        "Hispaniola",
+        "Saint-Domingue",
+        "North Kivu and Ituri",
+        "Kampala and Goma",
+        "Northeastern Brazil",
+        "Eastern Woodlands",
+        "Chaco Canyon",
+    ),
+    "organization_source": (
+        "WHO",
+        "CDC",
+        "USAID",
+        "HHS",
+        "War Department",
+        "Global Burden of Disease",
+        "American Headache Society",
+        "Reich Lab",
+        "state public health labs",
+        "Royal Navy",
+        "Northern Army",
+        "Continental Army",
+        "Lloyds Bank",
+        "Jorvik Viking Center",
+    ),
+    "population_group": (
+        "health workers",
+        "local residents",
+        "patients",
+        "field volunteers",
+        "troops",
+        "travelers",
+        "refugees",
+        "older adults",
+        "children",
+        "shift workers",
+        "sex workers",
+        "MSMs",
+        "colonists",
+        "soldiers",
+        "Viking Age Norse",
+    ),
+    "clinical_condition": (
+        "periapical disease",
+        "kidney or liver disease",
+        "high blood pressure",
+        "bipolar disorder",
+        "chronic insomnia",
+        "celiac disease",
+        "congenital syphilis",
+        "severe tuberculosis infection",
+        "mild cognitive impairment",
+        "Alzheimer's disease",
+    ),
+    "substance_treatment": (
+        "placebo",
+        "melatonin",
+        "creatine",
+        "Barbie Drug",
+        "psilocybin",
+        "LSD",
+        "CBT-I",
+        "antidepressants",
+        "Rimegepant",
+        "Melanotan II",
+        "GLP-1 medications",
+    ),
+    "historical_event": (
+        "Black Death",
+        "Viking Age",
+        "North Atlantic Viking Age",
+        "Middle Passage",
+        "American Revolution",
+        "Bronze Age",
+        "Industrial Revolution",
+        "Crimean War",
+        "Justinianic Plague",
+        "Satanic Panic",
+        "Columbian Exchange",
+        "Naples outbreak",
+        "Bell Beaker expansions",
+    ),
+    "publication_title": (
+        "Wall Street Journal",
+        "PNAS",
+        "Retraction Watch",
+        "PubMed",
+        "OpenAlex",
+        "Journal of Headache and Pain",
+        "Creatine Is Overrated",
+        "Le Pain Maudit",
+        "A Terrible Mistake",
+        "Big Epidemiology",
+        "Plagues and Peoples",
+        "Secret Cold War Experiments",
+        "Edge of Epidemiology",
+        "Super Agers",
+    ),
+    "legal_policy": (
+        "Act to Prevent the Spread",
+        "Leprosy Ordinance",
+        "Quarantine Act",
+        "Public Health Act",
+        "Quarantine Ordinance",
+        "State Board of Health order",
+        "Infectious Disease Act",
+        "Health Department regulation",
+    ),
+    "person_author": (
+        "Luigi Bragazzi and Thorsten Lehr",
+        "David Christian",
+        "William H. McNeill",
+        "John McNeill",
+        "Benjamin Rush",
+        "Benedict Arnold",
+        "Frank Olson",
+        "Francisco Hernandez",
+        "Huayna Capac",
+        "Richard Lipton",
+        "Robert McCaa",
+        "Steven Kaplan",
+        "Teodoro Hampe Martinez",
+    ),
+    "ship_vessel": (
+        "MV Hondius",
+        "Diamond Princess",
+        "Grand Princess",
+        "MS Zaandam",
+        "Ruby Princess",
+        "HMS Bounty",
+    ),
+    "vector_reservoir": (
+        "Aedes aegypti mosquito",
+        "sandfly vector",
+        "rodent reservoir",
+        "mosquito vector",
+        "stagnant water barrels",
+        "optical sensors",
+        "accelerometers",
+        "proprietary algorithms",
+    ),
+    "concept": (
+        "public health",
+        "disease ecology",
+        "early-life mortality",
+        "critical community size",
+        "epidemic fade-out",
+        "residual confounding",
+        "gold standard",
+        "social determinants of health",
+        "virgin-soil population",
+        "herd immunity",
+    ),
+}
+MULTIPLE_CHOICE_CATEGORIES = frozenset(category for category in DISTRACTOR_BANKS if category != "concept")
 
 
 @dataclass
@@ -335,6 +1097,10 @@ def choose_answer_phrase(sentence: str) -> str:
         while words and words[0].lower() in TRAILING_PHRASE_WORDS:
             words.pop(0)
         phrase = " ".join(words)
+        phrase = re.sub(r"^Researchers\s+", "", phrase).strip()
+        phrase = re.sub(r"^Three\s+Red Cross$", "Red Cross volunteers", phrase).strip()
+        phrase = re.sub(r"^Other paleopathologial evidence$", "paleopathological evidence", phrase).strip()
+        phrase = re.sub(r"\b(\d{1,2})\s+(st|nd|rd|th)\b", r"\1\2", phrase, flags=re.I)
         if len(phrase) < 4 or phrase.casefold() in seen:
             continue
         if phrase.lower() in REJECT_ANSWER_PHRASES:
@@ -352,7 +1118,16 @@ def valid_compact_answer(answer: str) -> bool:
         return False
     if len(answer) > 80 or len(words) > 8:
         return False
-    if words[0].strip(".,;:()[]“”\"'").lower() in REJECT_ANSWER_STARTS:
+    clean_words = [word.strip(".,;:()[]“”\"'").lower() for word in words]
+    if clean_words[0] in REJECT_ANSWER_STARTS:
+        return False
+    if clean_words[-1] in REJECT_ANSWER_ENDS:
+        return False
+    if any(word in REJECT_ANSWER_VERBS for word in clean_words):
+        return False
+    if re.search(r"\b(?:disease|evidence)\s+(?:was|were|is|are|had|has|does|did)\b", answer, flags=re.I):
+        return False
+    if re.search(r"\b(?:was|were|is|are|had|has|does|did)\s+(?:the|a|an|some|any)\b", answer, flags=re.I):
         return False
     return bool(re.search(r"[A-Za-z]", answer))
 
@@ -456,15 +1231,295 @@ def answer_pool(candidates: list[Candidate]) -> list[str]:
     return answers
 
 
+def normalized_option_key(option: str) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", option.casefold()).strip()
+
+
+def answer_category(answer: str) -> str:
+    lowered = answer.casefold()
+    if lowered in {"global burden of disease"}:
+        return "organization_source"
+    if lowered in {"viking age norse"}:
+        return "population_group"
+    if lowered in {"plagues and peoples", "wall street journal"}:
+        return "publication_title"
+    if re.search(r"\b\d{1,2}(?:st|nd|rd|th)\s+century\b.*\b(?:epidemic|outbreak)\b", lowered):
+        return "historical_event"
+    if lowered in {"american revolution", "korean war", "north atlantic viking age"}:
+        return "historical_event"
+    if lowered in {"diamond princess", "grand princess", "ruby princess"}:
+        return "ship_vessel"
+    if lowered in {"mv hondius"} or re.search(r"\b(?:mv|ms|hms)\s+[a-z]", answer, flags=re.I):
+        return "ship_vessel"
+    if re.search(r"\b(?:army|navy)\b", lowered):
+        return "organization_source"
+    if re.search(r"\b(?:center|department|agency|society|organization|who|cdc|hhs|usaid)\b", lowered):
+        return "organization_source"
+    if re.search(r"\b(?:sensor|sensors|accelerometer|accelerometers|algorithm|algorithms)\b", lowered):
+        return "measurement_device"
+    if re.search(r"\b(?:vector|reservoir|mosquito)\b", lowered):
+        return "vector_reservoir"
+    if re.search(r"\b(?:americans|patients|workers|soldiers|troops|residents|islanders|citizens|children|adults|women|men|group|volunteers)\b", lowered):
+        return "population_group"
+    if re.search(r"\b\d{3,4}s?(?:[-–]\d{2,4})?\b", answer):
+        return "historical_event"
+    for category in (
+        "legal_policy",
+        "clinical_condition",
+        "publication_title",
+        "evidence_method",
+        "metric_measure",
+        "measurement_device",
+        "substance_treatment",
+        "disease_pathogen",
+        "historical_event",
+        "population_group",
+        "organization_source",
+        "person_author",
+        "ship_vessel",
+        "vector_reservoir",
+    ):
+        if any(term in lowered for term in ANSWER_CATEGORY_TERMS[category]):
+            return category
+    if re.search(r"\b(disease|infection|fever|virus|pathogen|plague|pox|malaria|migraine|dementia|syphilis)\b", lowered):
+        return "disease_pathogen"
+    for category, terms in ANSWER_CATEGORY_TERMS.items():
+        if any(term in lowered for term in terms):
+            return category
+    if re.search(r"\b(rate|ratio|prevalence|mortality|density|risk|curve|score|scale|measure|measurement|percent|%)\b", lowered):
+        return "metric_measure"
+    if re.search(r"\b(evidence|analysis|data|study|trial|method|genome|dna|survey|test|testing|pcr|clock|questionnaire)\b", lowered):
+        return "evidence_method"
+    if re.search(r"\b(americans|population|patients|workers|soldiers|troops|residents|islanders|citizens|children|adults|women|men|group|volunteers)\b", lowered):
+        return "population_group"
+    if re.search(r"\b(lab|labs|agency|department|journal|society|organization|who|cdc|hhs|usaid)\b", lowered):
+        return "organization_source"
+    if re.search(r"\b(sensor|sensors|accelerometer|accelerometers|algorithm|algorithms)\b", lowered):
+        return "measurement_device"
+    if re.search(r"\b(mosquito|vector|reservoir)\b", lowered):
+        return "vector_reservoir"
+    if re.search(r"\b[A-Z]{2,6}\b", answer):
+        return "organization_source"
+    if re.search(r"\b[A-Z][a-z]+(?:\s+(?:[A-Z][a-z]+|of|and|the|in|for|to|de|la)){1,5}\b", answer):
+        return "place_region"
+    return "concept"
+
+
+def valid_option_phrase(option: str) -> bool:
+    option = normalize_text(option).strip(".,;:()[]“”\"'")
+    if "," in option:
+        return False
+    if not valid_compact_answer(option):
+        return False
+    if option.casefold() in REJECT_ANSWER_PHRASES:
+        return False
+    if len(option.split()) == 1 and option.casefold() in {"disease", "evidence", "risk", "choice", "overall", "whatever"}:
+        return False
+    if option.casefold() in {
+        "asthma to autoimmune disease",
+        "attributable to infectious disease",
+        "after disease",
+        "been any more evidence",
+        "birth rates and population",
+        "break and the infection",
+        "broad-scale study of disease",
+        "cases to map disease",
+        "cgrp",
+        "city friendly malarial vector",
+        "compatibility for multiple vector",
+        "consistent with hantavirus disease",
+        "contact equals bringing disease",
+        "congressional congress",
+        "confront the disease",
+        "childhood disease",
+        "close-quarters missions allowed infection",
+        "course of infection",
+        "countries departments of disease",
+        "date of variola infection",
+        "disease ecology",
+        "disease unheard",
+        "diseases like diarrheal disease",
+        "difference with this disease",
+        "distinct disease",
+        "dramatic post-bronze age",
+        "driven them into disease",
+        "due to infectious disease",
+        "end up reducing disease",
+        "even contracting the disease",
+        "esprit to frank olson",
+        "factor for celiac disease",
+        "flaw in the study",
+        "james lind of the hms salisbury",
+        "funding because the disease",
+        "get some stronger evidence",
+        "global population",
+        "grew alongside the disease",
+        "grotesquely virulent disease",
+        "helped to sustain disease",
+        "cycles and shoot vector",
+        "heavy increase in population",
+        "heavy on the evidence",
+        "he understood the disease",
+        "highly deadly disease",
+        "highest disease",
+        "impacts of endemic disease",
+        "infectious disease",
+        "individuals and african residents",
+        "johannesburg and in the netherlands",
+        "lady gaga",
+        "belgian catholic",
+        "lbna",
+        "lines between early evidence",
+        "lnba",
+        "longer course of infection",
+        "major agent of infection",
+        "meant increased adult mortality",
+        "mildly pcr positive",
+        "models for cardiovascular disease",
+        "mechanism for the pathogen",
+        "modern human population",
+        "modern standards adult mortality",
+        "next deadliest disease",
+        "not the best population",
+        "naomi",
+        "origin whereby the disease",
+        "override every risk",
+        "panmictic population",
+        "pathway through spatial analysis",
+        "pinnacle of epidemiological evidence",
+        "presentation of the disease",
+        "problems with the evidence",
+        "population",
+        "population y",
+        "poverty and weak vector",
+        "people still believed disease",
+        "quantifying the effects",
+        "increasing for multiple vector",
+        "regional emerging special pathogen",
+        "regards to infectious disease",
+        "real cia",
+        "rule out any pathogen",
+        "rising in the population",
+        "school of medicine professor david",
+        "seir",
+        "sort of ranked mortality",
+        "species for this infection",
+        "standard american diet",
+        "survive radically changing disease",
+        "table or actuarial analysis",
+        "tearing through the population",
+        "than the general population",
+        "terrible gut infection",
+        "tm seven",
+        "trial data to population",
+        "their own significant population",
+        "two-thirds of the population",
+        "two extremely high mortality",
+        "ulcers or heart disease",
+        "untreated infection",
+        "us population",
+        "viking and norse",
+        "want to isolate disease",
+        "ichd",
+        "best of ancient pathogen",
+        "missionaries and the disease",
+        "power shaped unequal risk",
+        "protect workers",
+        "higher near-term disease",
+        "concerns of rickettsial disease",
+        "habitats aligning with vector",
+        "survival of the vector",
+        "drinking water and risk",
+        "smaller study",
+        "study",
+        "york harbor of disease",
+    }:
+        return False
+    if re.search(r"\b(?:and|of)\s+(?:the\s+)?(?:disease|evidence|risk|vector)\b", option, flags=re.I):
+        return False
+    return True
+
+
+def distractor_bank_for_answer(category: str, answer: str) -> tuple[str, ...]:
+    lowered = answer.casefold()
+    if category == "metric_measure" and re.search(r"\b(?:heart|sleep|hrv|caloric|headache)\b", lowered):
+        return (
+            "resting heart rate",
+            "heart rate data",
+            "total sleep time",
+            "sleep stages",
+            "HRV",
+            "monthly headache days",
+            "caloric burn",
+        )
+    if category != "organization_source":
+        return DISTRACTOR_BANKS.get(category, ())
+    if re.search(r"\b(?:army|navy|war department|mash|nkvd|hemorrhagic fever center)\b", lowered):
+        return (
+            "Royal Navy",
+            "Northern Army",
+            "Continental Army",
+            "War Department",
+            "MASH",
+            "Hemorrhagic Fever Center",
+        )
+    if re.search(r"\b(?:headache society|scientific meeting|neurology|pfizer)\b", lowered):
+        return (
+            "American Headache Society Scientific Meeting",
+            "American Headache Society",
+            "International Headache Society",
+            "American Academy of Neurology",
+            "Pfizer",
+            "Eli Lilly",
+        )
+    if re.search(r"\b(?:bank|jorvik|hospital|city hall|museum|scientific meeting)\b", lowered):
+        return (
+            "Lloyds Bank",
+            "Jorvik Viking Center",
+            "City Hall",
+            "New York Hospital",
+            "New York Marine Hospital",
+            "American Headache Society Scientific Meeting",
+        )
+    return (
+        "WHO",
+        "CDC",
+        "USAID",
+        "HHS",
+        "European CDC",
+        "State Department",
+        "OECD",
+        "UNMC",
+        "Department of Epidemiology",
+    )
+
+
 def ordered_choices(answer: str, pool: list[str]) -> list[str]:
+    if not valid_option_phrase(answer):
+        return []
+    category = answer_category(answer)
+    if category not in MULTIPLE_CHOICE_CATEGORIES:
+        return []
     answer_key = answer.casefold()
     answer_words = set(re.findall(r"[a-z0-9]+", answer_key))
     choices = [answer]
-    for option in pool:
+    category_pool = [
+        option
+        for option in pool
+        if answer_category(option) == category and valid_option_phrase(option)
+    ]
+    bank_pool = [
+        option
+        for option in distractor_bank_for_answer(category, answer)
+        if valid_option_phrase(option)
+    ]
+    for option in [*category_pool, *bank_pool]:
         option_key = option.casefold()
         if option_key == answer_key:
             continue
         if answer_key in option_key or option_key in answer_key:
+            continue
+        if normalized_option_key(option) in {normalized_option_key(choice) for choice in choices}:
             continue
         option_words = set(re.findall(r"[a-z0-9]+", option_key))
         if answer_words and len(answer_words & option_words) / max(len(answer_words), 1) > 0.5:
@@ -574,6 +1629,8 @@ def recall_question(sentence: str, heading: str) -> tuple[str, str]:
 def multiple_choice_card(candidate: Candidate, pool: list[str]) -> dict[str, Any] | None:
     answer = choose_compact_answer(candidate.sentence)
     if not answer:
+        return None
+    if answer_category(answer) not in MULTIPLE_CHOICE_CATEGORIES:
         return None
     choices = ordered_choices(answer, pool)
     if len(choices) != 4:
