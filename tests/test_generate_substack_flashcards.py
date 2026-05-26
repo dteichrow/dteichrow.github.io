@@ -3,7 +3,7 @@ from __future__ import annotations
 from scripts import generate_substack_flashcards as flashcards
 
 
-def test_cards_from_body_generates_statement_choices_without_cloze() -> None:
+def test_cards_from_body_generates_recall_prompts_without_fake_choices() -> None:
     sentences = [
         "Ancient DNA can identify pathogens directly in burial samples, which changes how epidemiologists read old skeletal evidence.",
         "Cemetery evidence is biased toward the people who were buried and preserved, so it cannot act like a clean life table.",
@@ -23,10 +23,15 @@ def test_cards_from_body_generates_statement_choices_without_cloze() -> None:
     cards = flashcards.cards_from_body(body_html)
 
     assert len(cards) == 10
-    assert all(len(card["choices"]) == 4 for card in cards)
-    assert all(card["answer"] in card["choices"] for card in cards)
-    assert all(card["question"].startswith("Which statement best matches") for card in cards)
+    assert all("choices" not in card for card in cards)
+    assert all(card["answer"] for card in cards)
+    assert any(card["question"] == "What can ancient DNA reveal about pathogens in Viking Age remains?" for card in cards)
+    assert any(card["question"] == "Why does the essay treat cemetery evidence cautiously?" for card in cards)
+    assert any(card["question"] == "What dental condition does the essay identify as probably widespread?" for card in cards)
     question_text = " ".join(card["question"] for card in cards)
+    answer_text = " ".join(card["answer"] for card in cards)
     assert "cloze" not in question_text.lower()
     assert "_____" not in question_text
     assert "this option" not in question_text.lower()
+    assert "Which statement best matches" not in question_text
+    assert "Ancient DNA can identify pathogens directly" in answer_text

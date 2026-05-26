@@ -88,11 +88,9 @@ def test_render_post_page_uses_explicit_study_cards() -> None:
         "related_atlases": ["revolutionary-war-atlas"],
         "flashcards": [
             {
-                "question": "Which option best matches this point from the essay? It forces retrieval of a specific claim.",
-                "choices": ["exposure", "retrieval", "confounding", "mortality"],
-                "answer": "retrieval",
+                "question": "Why does the essay say recall needs a focused prompt?",
+                "answer": "It forces retrieval of a specific claim.",
                 "cue": "Retrieval",
-                "explanation": "The essay says it forces retrieval of a specific claim.",
             }
         ],
     }
@@ -114,11 +112,9 @@ def test_render_post_page_uses_explicit_study_cards() -> None:
     assert 'id="study-cards"' in page_text
     assert '<li><a href="#study-cards">Study cards</a></li>' in page_text
     assert page_text.count("data-flashcard>") == 1
+    assert "Why does the essay say recall needs a focused prompt?" in page_text
     assert "It forces retrieval of a specific claim." in page_text
-    assert "flashcard-options" in page_text
-    assert "confounding" in page_text
-    assert "retrieval" in page_text
-    assert "The essay says it forces retrieval of a specific claim." in page_text
+    assert "flashcard-options" not in page_text
     assert 'data-flashcard-counter>1 / 1</span>' in page_text
 
 
@@ -240,45 +236,34 @@ posts:
     hero_mode: cover
     notes: ""
     flashcards:
-      - question: Which option best matches the first post?
-        choices: [First distractor, First answer, Second distractor, Third distractor]
-        answer: First answer
+      - question: What should readers remember from the first post?
+        answer: First source-body answer.
         cue: Post text
-        explanation: First source-body sentence.
-      - question: Which option best matches card 2?
-        choices: [A2, B2, C2, D2]
+      - question: What should readers remember from card 2?
         answer: B2
         cue: Post text
-      - question: Which option best matches card 3?
-        choices: [A3, B3, C3, D3]
+      - question: What should readers remember from card 3?
         answer: C3
         cue: Post text
-      - question: Which option best matches card 4?
-        choices: [A4, B4, C4, D4]
+      - question: What should readers remember from card 4?
         answer: D4
         cue: Post text
-      - question: Which option best matches card 5?
-        choices: [A5, B5, C5, D5]
+      - question: What should readers remember from card 5?
         answer: A5
         cue: Post text
-      - question: Which option best matches card 6?
-        choices: [A6, B6, C6, D6]
+      - question: What should readers remember from card 6?
         answer: B6
         cue: Post text
-      - question: Which option best matches card 7?
-        choices: [A7, B7, C7, D7]
+      - question: What should readers remember from card 7?
         answer: C7
         cue: Post text
-      - question: Which option best matches card 8?
-        choices: [A8, B8, C8, D8]
+      - question: What should readers remember from card 8?
         answer: D8
         cue: Post text
-      - question: Which option best matches card 9?
-        choices: [A9, B9, C9, D9]
+      - question: What should readers remember from card 9?
         answer: A9
         cue: Post text
-      - question: Which option best matches card 10?
-        choices: [A10, B10, C10, D10]
+      - question: What should readers remember from card 10?
         answer: B10
         cue: Post text
     flashcards_source: substack_body_html
@@ -432,9 +417,8 @@ atlases:
     assert flashcards_export["count"] == 1
     assert flashcards_export["decks"][0]["s"] == "first-post"
     assert flashcards_export["decks"][0]["src"] == "substack_body_html"
-    assert flashcards_export["decks"][0]["cards"][0]["a"] == "First answer"
-    assert flashcards_export["decks"][0]["cards"][0]["o"] == ["First distractor", "First answer", "Second distractor", "Third distractor"]
-    assert flashcards_export["decks"][0]["cards"][0]["e"] == "First source-body sentence."
+    assert flashcards_export["decks"][0]["cards"][0]["a"] == "First source-body answer."
+    assert "o" not in flashcards_export["decks"][0]["cards"][0]
     assert (docs_dir / "CNAME").read_text() == "devinteichrow.com\n"
     assert (docs_dir / "robots.txt").exists()
     assert (docs_dir / "sitemap.xml").exists()
@@ -509,7 +493,7 @@ atlases:
     assert "Contents" in post_text
     assert 'id="study-cards"' in post_text
     assert "data-flashcard" in post_text
-    assert "First answer" in post_text
+    assert "First source-body answer." in post_text
     assert "Archive note" in post_text
     assert "This page keeps the essay connected to related topics, maps, and reference pages" in post_text
     topic_text = (docs_dir / "topics" / "historical-epidemiology" / "index.html").read_text()

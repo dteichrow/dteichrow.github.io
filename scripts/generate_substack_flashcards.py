@@ -231,10 +231,21 @@ def reject_sentence(sentence: str) -> bool:
     return False
 
 
+def key_term_pattern(term: str) -> re.Pattern[str]:
+    return re.compile(rf"(?<![a-z0-9]){re.escape(term)}(?![a-z0-9])", flags=re.I)
+
+
+KEY_TERM_PATTERNS = {term: key_term_pattern(term) for term in KEY_TERMS}
+
+
+def matched_key_terms(text: str) -> list[str]:
+    return [term for term, pattern in KEY_TERM_PATTERNS.items() if pattern.search(text)]
+
+
 def score_sentence(sentence: str, heading: str, ordinal: int) -> int:
     lowered = sentence.lower()
     score = 0
-    score += sum(3 for term in KEY_TERMS if term in lowered)
+    score += 3 * len(matched_key_terms(sentence))
     score += 3 if re.search(r"\b\d{3,4}s?\b", sentence) else 0
     score += 2 if re.search(r"\b(because|therefore|instead|rather|means|suggests|shows|explains|turned|reveals)\b", lowered) else 0
     score += 2 if heading else 0
@@ -312,66 +323,106 @@ def topic_from_sentence(sentence: str, heading: str) -> str:
 def topic_label(sentence: str, heading: str) -> str:
     if heading:
         return heading
-    lowered = sentence.lower()
-    matches = sorted((term for term in KEY_TERMS if term in lowered), key=lambda term: (-len(term), term))
+    matches = sorted(matched_key_terms(sentence), key=lambda term: (-len(term), term))
     if matches:
         labels = [TOPIC_LABEL_OVERRIDES.get(term, term.replace("dna", "DNA")) for term in matches[:2]]
         return " and ".join(labels)
     return topic_from_sentence(sentence, heading)
 
 
-def statement_question(sentence: str, heading: str) -> str:
-    return f"Which statement best matches the essay's point about {topic_label(sentence, heading)}?"
+def lowercase_leading_word(text: str) -> str:
+    text = text.strip()
+    if not text:
+        return text
+    return text[0].lower() + text[1:]
 
 
-def sentence_pool(candidates: list[Candidate]) -> list[str]:
-    sentences: list[str] = []
-    seen: set[str] = set()
-    for candidate in candidates:
-        sentence = shortened_context(candidate.sentence, max_length=210)
-        key = sentence.casefold()
-        if key in seen:
-            continue
-        seen.add(key)
-        sentences.append(sentence)
-    return sentences
+def sentence_fragment(text: str, *, max_length: int = 120) -> str:
+    fragment = shortened_context(text.strip(" .;:"), max_length=max_length)
+    fragment = re.sub(r",?\s+(likely|probably|possibly|mostly)$", "", fragment, flags=re.I)
+    return lowercase_leading_word(fragment)
 
 
-def ordered_sentence_choices(answer: str, pool: list[str]) -> list[str]:
-    choices = [answer]
-    answer_key = answer.casefold()
-    for option in pool:
-        if option.casefold() == answer_key:
-            continue
-        choices.append(option)
-        if len(choices) == 4:
-            break
-    if len(choices) < 4:
-        return []
-    offset = sum(ord(char) for char in answer) % 4
-    return choices[offset:] + choices[:offset]
+def answer_sentence(sentence: str) -> str:
+    return shortened_context(sentence, max_length=230)
+
+
+def why_answer(sentence: str) -> str:
+    before, _, after = sentence.partition(" because ")
+    if not after:
+        before, _, after = sentence.partition(" Because ")
+    if not after:
+        return answer_sentence(sentence)
+    after = after.strip()
+    if not after:
+        return answer_sentence(sentence)
+    return shortened_context(after[0].upper() + after[1:], max_length=230)
+
+
+def recall_question(sentence: str, heading: str) -> tuple[str, str]:
+    lowered = sentence.lower()
+    topic = topic_label(sentence, heading)
+
+    if "ancient dna" in lowered and "pathogen" in lowered:
+        return (
+            "What can ancient DNA reveal about pathogens in Viking Age remains?",
+            why_answer(sentence) if " because " in lowered else answer_sentence(sentence),
+        )
+    if "less headlines" in lowered and "mpox" in lowered:
+        return ("Why has the fungal STI outbreak drawn less attention than mpox?", why_answer(sentence))
+    if lowered.startswith("species is important"):
+        return ("Why does the specific Ebola virus species matter in this outbreak update?", why_answer(sentence))
+    if "there is enough evidence" in lowered and "rough look" in lowered:
+        return ("What does the essay say the available evidence is good enough to reconstruct?", answer_sentence(sentence))
+    if "if by viking we mean" in lowered or "narrower occupational group" in lowered:
+        return ("What distinction does the essay make between Viking raiders and the wider Viking Age Norse?", answer_sentence(sentence))
+    if "advanced ages" in lowered or "making it beyond" in lowered:
+        return ("What does the essay infer about survival to old age in ancient Scandinavian samples?", answer_sentence(sentence))
+    if "started out as me wanting" in lowered or "wanting to create a life table" in lowered:
+        return ("What was the author's original analytic goal for the Viking grave data?", answer_sentence(sentence))
+    if "people can die" in lowered and ("no trace" in lowered or "bones" in lowered):
+        return ("Why can skeletal evidence miss many infectious causes of death?", answer_sentence(sentence))
+    if "case fatality rate" in lowered or "attack rate" in lowered or "epidemic curve" in lowered:
+        return ("What outbreak details does the essay say remain uncertain?", answer_sentence(sentence))
+    if "periapical disease" in lowered:
+        return ("What dental condition does the essay identify as probably widespread?", answer_sentence(sentence))
+    if "life table" in lowered or "actuarial" in lowered:
+        return ("Why does the essay resist a clean life-table reconstruction?", answer_sentence(sentence))
+    if "cemetery evidence" in lowered:
+        return ("Why does the essay treat cemetery evidence cautiously?", answer_sentence(sentence))
+    if "early-life mortality" in lowered or "only lived to like 30" in lowered:
+        return ("What misconception about Viking Age lifespan does the essay complicate?", answer_sentence(sentence))
+    if " because " in lowered:
+        before = re.split(r"\s+because\s+", sentence, maxsplit=1, flags=re.I)[0]
+        return (f"Why does the essay say {sentence_fragment(before)}?", why_answer(sentence))
+    if "for example" in lowered or "example" in lowered:
+        return (f"What example does the essay use to make the point about {topic}?", answer_sentence(sentence))
+    if re.search(r"\b(found|finds|showed|shows|suggests|reveals|indicates|identified|reported)\b", lowered):
+        return (f"What does the essay say the evidence shows about {topic}?", answer_sentence(sentence))
+    if "unknown" in lowered or "we don’t know" in lowered or "we don't know" in lowered:
+        return (f"What uncertainty does the essay flag about {topic}?", answer_sentence(sentence))
+    if re.search(r"\b(not|isn’t|isn't|doesn’t|doesn't|cannot|can't)\b", lowered):
+        return (f"What caveat does the essay make about {topic}?", answer_sentence(sentence))
+    if re.search(r"\b(risk|mortality|death|died|killed|infection|outbreak|epidemic)\b", lowered):
+        return (f"What should readers remember about {topic}?", answer_sentence(sentence))
+    return (f"What does the essay say about {topic}?", answer_sentence(sentence))
 
 
 def cards_from_body(body_html: str) -> list[dict[str, Any]]:
     cards: list[dict[str, Any]] = []
-    used_sentences: set[str] = set()
+    used_answers: set[str] = set()
     candidates = candidate_sentences(body_blocks(body_html))
-    statements = sentence_pool(candidates)
     for candidate in candidates:
         if len(cards) >= TARGET_CARD_COUNT:
             break
-        sentence_key = candidate.sentence.casefold()
-        if sentence_key in used_sentences:
+        question, answer = recall_question(candidate.sentence, candidate.heading)
+        answer_key = answer.casefold()
+        if answer_key in used_answers:
             continue
-        answer = shortened_context(candidate.sentence, max_length=210)
-        choices = ordered_sentence_choices(answer, statements)
-        if len(choices) < 4:
-            continue
-        used_sentences.add(sentence_key)
+        used_answers.add(answer_key)
         cards.append(
             {
-                "question": statement_question(candidate.sentence, candidate.heading),
-                "choices": choices,
+                "question": question,
                 "answer": answer,
                 "cue": candidate.heading or "Post text",
             }
