@@ -66,9 +66,75 @@ def test_render_post_page_deduplicates_overview_paragraphs() -> None:
     }
 
     page_text = build_site.render_post_page(post, atlases={}, posts=[post], base_url="/")
+    overview_match = re.search(r'<section class="panel detail-grid" id="overview">(.*?)</section>', page_text, flags=re.S)
 
+    assert overview_match is not None
     assert page_text.count("<h3>Overview</h3>") == 1
-    assert page_text.count("<p>Same overview text.</p>") == 1
+    assert overview_match.group(1).count("<p>Same overview text.</p>") == 1
+
+
+def test_render_post_page_uses_explicit_study_cards() -> None:
+    post = {
+        "slug": "study-card-post",
+        "title": "Study Card Post",
+        "date": "2026-05-20",
+        "canonical_url": "https://theedgeofepidemiology.substack.com/p/study-card-post",
+        "excerpt": "A short essay about recall, evidence, and disease history.",
+        "seo_description": "A short essay about recall, evidence, and disease history.",
+        "topics": ["History", "Epidemiology"],
+        "upstream_tags": ["Retention"],
+        "primary_keyword": "study card epidemiology essay",
+        "topic_cluster": "historical-epidemiology",
+        "related_atlases": ["revolutionary-war-atlas"],
+        "flashcards": [
+            {
+                "question": "In the Substack essay text, what completes this cloze: \"It forces _____ of a specific claim.\"?",
+                "answer": "retrieval",
+                "cue": "Retrieval",
+            }
+        ],
+    }
+    related_post = {
+        "slug": "adjacent-essay",
+        "title": "Adjacent Essay",
+        "excerpt": "A neighboring essay.",
+        "topic_cluster": "historical-epidemiology",
+    }
+    atlases = {
+        "revolutionary-war-atlas": {
+            "title": "Revolutionary War Disease Atlas",
+            "public_route": "atlases/revolutionary-war/",
+        }
+    }
+
+    page_text = build_site.render_post_page(post, atlases=atlases, posts=[post, related_post], base_url="/")
+
+    assert 'id="study-cards"' in page_text
+    assert '<li><a href="#study-cards">Study cards</a></li>' in page_text
+    assert page_text.count("data-flashcard>") == 1
+    assert "It forces _____ of a specific claim." in page_text
+    assert "retrieval" in page_text
+    assert 'data-flashcard-counter>1 / 1</span>' in page_text
+
+
+def test_render_post_page_does_not_make_metadata_flashcards() -> None:
+    post = {
+        "slug": "metadata-only-post",
+        "title": "Metadata Only Post",
+        "date": "2026-05-20",
+        "canonical_url": "https://theedgeofepidemiology.substack.com/p/metadata-only-post",
+        "excerpt": "A summary is not enough for study cards.",
+        "topics": ["History", "Epidemiology"],
+        "primary_keyword": "metadata only",
+        "topic_cluster": "historical-epidemiology",
+        "related_atlases": ["revolutionary-war-atlas"],
+    }
+
+    page_text = build_site.render_post_page(post, atlases={}, posts=[post], base_url="/")
+
+    assert 'id="study-cards"' not in page_text
+    assert "data-flashcard" not in page_text
+    assert "Retain the essay" not in page_text
 
 
 def test_import_epidossier_public_imports_outbreak_terminal_routes(tmp_path, monkeypatch) -> None:
@@ -168,6 +234,12 @@ posts:
     local_body_path: ""
     hero_mode: cover
     notes: ""
+    flashcards:
+      - question: In the Substack essay text, what completes this cloze?
+        answer: First answer
+        cue: Post text
+    flashcards_source: substack_body_html
+    flashcards_source_url: https://theedgeofepidemiology.substack.com/p/first-post
 """
     )
     (content_dir / "atlases.yml").write_text(
@@ -284,6 +356,11 @@ atlases:
     assert (docs_dir / "historical" / "index.html").exists()
     assert (docs_dir / "opportunities" / "index.html").exists()
     assert (docs_dir / "app_exports" / "posts.json").exists()
+    flashcards_export = json.loads((docs_dir / "app_exports" / "essay-flashcards.json").read_text())
+    assert flashcards_export["count"] == 1
+    assert flashcards_export["decks"][0]["s"] == "first-post"
+    assert flashcards_export["decks"][0]["src"] == "substack_body_html"
+    assert flashcards_export["decks"][0]["cards"][0]["a"] == "First answer"
     assert (docs_dir / "CNAME").read_text() == "devinteichrow.com\n"
     assert (docs_dir / "robots.txt").exists()
     assert (docs_dir / "sitemap.xml").exists()
@@ -353,6 +430,9 @@ atlases:
     assert '"@type": "Article"' in post_text
     assert '"isBasedOn": "https://theedgeofepidemiology.substack.com/p/first-post"' in post_text
     assert "Contents" in post_text
+    assert 'id="study-cards"' in post_text
+    assert "data-flashcard" in post_text
+    assert "First answer" in post_text
     assert "Archive note" in post_text
     assert "This page keeps the essay connected to related topics, maps, and reference pages" in post_text
     topic_text = (docs_dir / "topics" / "historical-epidemiology" / "index.html").read_text()
