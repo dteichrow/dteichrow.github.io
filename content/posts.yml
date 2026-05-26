@@ -36,6 +36,66 @@ posts:
   notes: ''
   first_seen_at: '2026-05-25T17:17:43+00:00'
   last_synced_at: '2026-05-25T18:17:45+00:00'
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "_____ has changed
+      this a bit because it can sometimes identify pathogens directly with the most
+      striking example coming from smallpox-related variola virus strains found in
+      Viking Age samples."?'
+    answer: Ancient DNA
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "That said,
+      _____ out there for us to have a rough look at what life and death may have
+      looked like for the average Viking Age Norse and the sea-faring warriors we
+      call the Vikings."?'
+    answer: there is enough evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "If by Viking
+      we mean the narrower occupational group partaking in sea-raiding, trading, and
+      warfare, this piece isn’t totally about them since most _____ is more about
+      the Viking Age Norse and Scandinavian groups."?'
+    answer: cemetery evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "So that old
+      line where people will tell you “_____” isn’t especially helpful even though
+      it does point toward the real fact that early-life mortality in a pre-industrial
+      society tended to be severe."?'
+    answer: Vikings only lived to like 30
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The burial
+      evidence that has been quantified is also a bit too biased to give us any sort
+      of clean, authoritative Viking life _____."?'
+    answer: table or actuarial analysis
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "...cross those
+      eras, we can be rather certain that some did live to advanced ages though, as
+      even _____, such as the Norse Corded Ware culture from millennia before, had
+      individuals making it beyond estimated ages of 80 before 2,000 BC in..."?'
+    answer: much earlier Scandinavian samples
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The one condition
+      we can say was probably widespread was infection around the root of the tooth,
+      as 12 of 15 individuals examined had some form of _____."?'
+    answer: periapical disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "People can
+      die of a variety of _____, pneumonia, sepsis, puerperal infection, influenza,
+      respiratory infection, or even a battle wound infection and we see no trace
+      at all in the bones."?'
+    answer: diseases like diarrheal disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "We still don’t
+      know anything regarding the attack rate, _____, what the epidemic curve could
+      have looked like, or how it behaved compared to later smallpox strains."?'
+    answer: case fatality rate
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "This started
+      out as me wanting to create a _____ of the Vikings based on the numbers published
+      from various graves."?'
+    answer: life table style analysis
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/what-the-viking-age-norse-died-from
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 198344681
   slug: ebola-in-drc-and-uganda-what-is-known
   title: 'Ebola in DRC and Uganda: What Is Known So Far (Pathogen Dispatch #4)'
@@ -79,6 +139,61 @@ posts:
   notes: ''
   first_seen_at: '2026-05-19T02:25:26+00:00'
   last_synced_at: '2026-05-25T15:17:52+00:00'
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "_____ as first
+      appearing in 1976 in two near-simultaneous outbreaks, one of the Sudan virus
+      disease in Nzara, in what is now South Sudan, an..."?'
+    answer: WHO describes Ebola disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The Edge of
+      Epidemiology follows outbreaks, _____, and disease history with the context
+      most news stories leave out."?'
+    answer: medical evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Current estimates
+      suggest over 500 suspected cases (33 confirmed cases) and at least 131 deaths,
+      though WHO officials warn the true _____ size may be substantially larger due
+      to limited surveillance in conflict-affected regions."?'
+    answer: outbreak
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Species is
+      important here; I say that because when most people hear about Ebola, they’re
+      likely to think of the West Africa outbreak or the 2018-2020 outbreak in _____."?'
+    answer: North Kivu and Ituri
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "In 2014, the
+      outbreak occurred while _____ were still at a working capacity with regards
+      to combating infectious diseases like Ebola."?'
+    answer: USAID and the CDC
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "It’s a work
+      in progress (as is the whole site), but it served me well enough during the
+      _____ cruise for me to feel its sharable."?'
+    answer: Hantavirus
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Updates 5/25/2026
+      6:50am PST: The counts are up to 900+ cases and over 220 deaths according to
+      the WHO , who also say they are being _____."?'
+    answer: outpaced by the epidemic
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "5/24/2026 6:50am
+      PST: _____ volunteers have passed from suspected Ebola infections, thought to
+      have been infected back o0n March 27th."?'
+    answer: Three Red Cross
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "5/21/_____
+      12:13pm PST: The case identified in the rebel held region is far from the epicenter,
+      suggesting the outbreak may be more widespread than is currently thought."?'
+    answer: '2026'
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "5/19/2026 5:37am
+      PST: Officials are expressing growing concern over the speed and geographic
+      spread of the outbreak, which has now expanded into urban areas including _____."?'
+    answer: Kampala and Goma
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/ebola-in-drc-and-uganda-what-is-known
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 197437573
   slug: hantavirus-in-the-korean-war-korean
   title: Korean Hemorrhagic Fever in the Korean War
@@ -123,6 +238,62 @@ posts:
   primary_keyword: Korean War hantavirus
   topic_cluster: disease-and-war
   indexing_strategy: evergreen
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "It’s also thought
+      that Chinese medical literature from the year 960 contains descriptions _____."?'
+    answer: consistent with hantavirus disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The first hantavirus
+      outbreak recorded by western doctors is a story of a _____ that hid in plain
+      sight."?'
+    answer: disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ disease
+      consistent with HFRS seen in both Russian and Japanese troops along the Manchurian-Soviet
+      border; the linked citation also lists the incredible amount of names hemorrhagic
+      fevers had attained by publication in 1963."?'
+    answer: There was also epidemic
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Japanese Army
+      doctors in WWII Manchuria _____ of hemorrhagic fever among their troops with
+      10,000 said to have been affected and with a death rate up to 30%."?'
+    answer: would describe an epidemic
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The scientific
+      investigation into its HFRS’s cause would continue through the war, with the
+      Armed Forces Epidemiological Board’s Commission on Hemorrhagic Fever being tasked
+      _____."?'
+    answer: with investigating the disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Katz’s report
+      listed more than 25 diseases that could mimic early KHF, including _____, scrub
+      typhus, leptospirosis, and other hemorrhagic fevers."?'
+    answer: malaria
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The Andes virus,
+      cause of the current outbreak aboard the _____ vessel, was isolated in 1995
+      and was the first to be found to spread from person-to-person."?'
+    answer: MV Hondius
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Between Spring
+      of 1951 and the armistice of July 1953, _____ infected UN soldiers among the
+      ridge lines and rice paddies of central Korea."?'
+    answer: an unnamed disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Exactly what
+      killed them would remain a mystery for over 25 years until the isolation of
+      the Hantaan virus (named after the river in Korea) in _____."?'
+    answer: '1978'
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "An aspect of
+      the war itself that seems to have been crucial to an outbreak like was seen
+      is the fact that in summer of 1951 the _____ shifted from a mobile phase into
+      static trench warfare."?'
+    answer: Korean War
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/hantavirus-in-the-korean-war-korean
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 196425690
   slug: hantavirus-at-sea-what-we-know-about
   title: 'MV Hondius Hantavirus Outbreak: What We Know So Far'
@@ -168,6 +339,64 @@ posts:
   primary_keyword: MV Hondius hantavirus outbreak
   topic_cluster: pathogen-geography
   indexing_strategy: evergreen
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "The recent
+      fungal STI outbreak and ongoing hantavirus outbreak on a cruise ship make me
+      want to start a new segment here at The Edge of Epidemiology, so _____ Dispatch."?'
+    answer: welcome to The Pathogen
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "05/08/_____
+      Update 4:28pm PST: The WHO has confirmed that there are now 6 confirmed cases
+      of hantavirus associated with the cruise ship outbreak."?'
+    answer: '2026'
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "I definitely
+      didn’t have a hantavirus outbreak on a cruise ship on my 2026 _____ bingo board,
+      but at least I get to turn a previous paper from grad school into something
+      possibly useful for the public ."?'
+    answer: infectious disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The global
+      response has been excellent to shut down a _____ that already was unlikely to
+      get far (if the 2018 outbreak from a nearly identical variant is anything to
+      go off)."?'
+    answer: disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "05/14/2026:
+      All contacts of cases from _____ have tested negative for hantavirus."?'
+    answer: France and the Netherlands
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "No cases have
+      been identified that were not linked to the ship; a couple of contacts from
+      planes taken by those disembarking have not come back positive for _____ as
+      of yet."?'
+    answer: hantavirus
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "It’s thought
+      they may have caught hantavirus in the Neuquen, _____, or Chabut regions more
+      centrally located in the country and where previous cases had been found."?'
+    answer: Rio Negro
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Update 8:52am
+      PST: The Telegraph’s Global Health Security editor has spoken with experts who
+      _____ causing the outbreak is closely related to a well-known variant found
+      in South America, quieting the fears of some novel variant that..."?'
+    answer: say the Hantavirus strain
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Rats on ships
+      is not a new problem with _____ outbreaks with countless examples from history
+      (The Black Death and The Justinian Plague coming to mind)."?'
+    answer: regards to infectious disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "05/10/2026
+      Update 7:37am PST: The passengers are currently disembarking in the Canary Islands
+      to be taken back to their home countries, with the World Health Organization
+      and the housing _____ control both assisting in the effor."?'
+    answer: countries departments of disease
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/hantavirus-at-sea-what-we-know-about
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 196225500
   slug: the-new-fungal-sti-hiding-in-plain
   title: 'The New Fungal STI Hiding in Plain Sight (Pathogen Dispatch #1)'
@@ -209,6 +438,65 @@ posts:
   primary_keyword: fungal STI
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "It’s gotten
+      less headlines than the mpox _____ a couple of years ago, likely because a)
+      it’s not a “pox” virus and b) because the spread has been a bit more limited
+      comparatively."?'
+    answer: outbreak
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Starting in
+      2025, a _____ started spreading through cities in the United States that most
+      clinicians hadn’t heard of."?'
+    answer: new fungal infection
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "This is my
+      attempt to see what we know about this newly _____ roughly a year into the outbreak."?'
+    answer: emerging sexually transmitted infection
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The first hint
+      that this kind of thing might’ve been spreading came from surveys of _____ in
+      the early 2000s who had been reporting cases of possibly dermatophyte driven
+      infections."?'
+    answer: Nigerian sex workers
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The spread
+      seems to have accelerated from March _____ onward with notable clusters in Paris
+      including one where a tantric massage practitioner had infected 15 of their
+      clients and a roommate."?'
+    answer: '2021'
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Pre-symptomatic
+      transmission is considered well within the range of possibility though based
+      on the French outbreaks wide incubation range of 2-52 days, but _____ to say
+      for certain."?'
+    answer: we need direct evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Let’s hope
+      our STI surveillance systems can keep up with the ever-changing world that is
+      the infectious _____ of STIs."?'
+    answer: disease ecology
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The outbreak
+      of Trichophyton mentagrophytes genotype VII (TMVII, pronounced “_____”) in Minnesota
+      is currently the largest cluster to date and it started making headlines a few
+      months ago."?'
+    answer: TM seven
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The _____ that
+      is circulating is thankfully not the same one ( Trichophyton indotineae) causing
+      anti-fungal resistant dermatophytosis epidemics in South Asia to which terbinafine
+      is next to useless."?'
+    answer: TMVII strain
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "California’s
+      Department of _____ issued a warning that same month around the same time as
+      four more cases were found in New York City, all of which were MSM in the age..."?'
+    answer: Public Health
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/the-new-fungal-sti-hiding-in-plain
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 195413363
   slug: how-changing-disease-environments
   title: Ancient DNA and Disease Selection in West Eurasia
@@ -250,6 +538,68 @@ posts:
   primary_keyword: ancient DNA disease selection
   topic_cluster: historical-epidemiology
   indexing_strategy: evergreen
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "While reading
+      the new 2026 Reich Lab paper , one question came to mind: _____ and metabolic
+      environments drive a major share of recent human selection in West Eurasian
+      populations?"?'
+    answer: Did the changing disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The different
+      blood types carry different susceptibilities to specific pathogens with _____,
+      norovirus, some respiratory viruses, and others showing ABO-dependent susceptibility
+      patterns."?'
+    answer: cholera
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The major genetic
+      risk _____ (a variant at HLA-DQ) went from about 0% to roughly 20% in 4,000
+      years during and after the spread of wheat farming across West Eurasia."?'
+    answer: factor for celiac disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "With over 900
+      ancient genomes ranging from the Mesolithic to the _____, they found the oldest
+      carriers of this mutation dating back more than 6,700 years in the Western Eurasian
+      Steppe."?'
+    answer: Viking Age
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The _____ brought
+      massive migrations from the Pontic-Caspian Steppe into Europe about 5,000 years
+      ago and brought very genetically distinct populations into contact for the first
+      time."?'
+    answer: Bronze Age
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Taken together,
+      we have a couple of transitions that strongly suggest some of the most intense
+      periods of human selection in Western Eurasia happened to coincide with moments
+      of rapidly changing _____."?'
+    answer: disease ecology
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "An allele on
+      the TYK2 gene in its homozygous form is the strongest predictor of _____, so
+      it’s interesting to know that it rose from something like 2% to 9% from 5,500
+      to 3,000 years ago and then fell back to about 3%."?'
+    answer: clinically severe tuberculosis infection
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "...th almost
+      16,000 genomes , more than 10,000 of them ancient, spanning the past 18,000
+      years in _____, they used purpose-built computational models that were designed
+      to detect consistent directional trends in the frequency of alleles i..."?'
+    answer: West Eurasia and the Middle East
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The paper is
+      currently the biggest ancient-genomics research study on natural selection in
+      humans ever done (though sure to be outdone relatively quickly, as is always
+      the case in _____ research)."?'
+    answer: ancient DNA
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "I’ll also be
+      very clear when I’m moving from _____ tells us and into some healthy speculation
+      of my own."?'
+    answer: exactly what the evidence
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/how-changing-disease-environments
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 193856306
   slug: big-epidemiology-disease-at-the-scale
   title: 'Big Epidemiology: Disease at the Scale of Civilization'
@@ -292,6 +642,58 @@ posts:
   primary_keyword: big epidemiology
   topic_cluster: historical-epidemiology
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "He traced the
+      thread back 100,000 years to sub-Saharan Africa and the _____ density, contact
+      networks, zoology, and pathogen ecology in recorded history."?'
+    answer: relationships between population
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ published
+      a paper in November 2024 in the journal Epidemiologia titled “Big Epidemiology:
+      The Birth, Life, Death, and Resurgence of Diseases on a Global Timescale”."?'
+    answer: Researchers Luigi Bragazzi and Thorsten Lehr
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Which I don’t
+      find to be an entirely unfair characterization, as most historical epidemiology
+      work is backward-looking, more often descriptive, and reliant on _____."?'
+    answer: documentary or archival evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "...scale (outside
+      of pandemic times, that is), Big Epidemiology digs into archeological findings,
+      _____, historical chronicles or sagas, digitized art, and archived sources."?'
+    answer: ancient DNA
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "When I shifted
+      toward more historical epidemiology content here at The Edge of Epi, my driving
+      intuition was that we can’t _____ without understanding history and vice versa."?'
+    answer: understand disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "McNeill’s _____
+      , a book that opens with the question of why smallpox as opposed to Spanish
+      steel was the deciding factor in the fall of the Aztec Empire."?'
+    answer: Plagues and Peoples
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Measles causing
+      immune amnesia and _____ risk, for example."?'
+    answer: leading to secondary infection
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "What epidemiology
+      rarely asks are the questions like: _____ exist here at all?"?'
+    answer: why does this disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The argument
+      in the _____ disease had always been shaping human history, historians just
+      hadn’t been looking hard enough."?'
+    answer: book is that epidemic
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "At a 2011 TED
+      conference, historian _____ asked a deceptively simple question: when did history
+      begin?"?'
+    answer: David Christian
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/big-epidemiology-disease-at-the-scale
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 193176173
   slug: the-first-american-epidemic-how-yellow
   title: '1793 Philadelphia Yellow Fever: America''s First Epidemic Crisis'
@@ -338,6 +740,62 @@ posts:
   primary_keyword: 1793 Philadelphia yellow fever
   topic_cluster: historical-epidemiology
   indexing_strategy: evergreen
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "This, combined
+      with an exceptionally hot and humid summer, made for ideal breeding habitat
+      for the Aedes aegypti mosquito, the _____ for yellow fever."?'
+    answer: vector
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Between August
+      1 and November 9, 1793, a _____ killed more than 5,000 Philadelphia residents
+      with an estimated 20,000 fleeing the city by the end of September, including
+      just about every member of the federal government."?'
+    answer: devastating yellow fever epidemic
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "They arrived
+      aboard ships long suspected of helping introduce both _____ and the mosquitoes
+      that transmitted it."?'
+    answer: yellow fever
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ the route
+      of introduction, the first recognized deaths from yellow fever in the city occurred
+      in late July or early August 1793."?'
+    answer: Whatever
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Benjamin Rush,
+      the most prominent physician in Philadelphia at the time, signer of the _____,
+      and a former apprentice during the previous yellow fever outbreak in 1762 while
+      still under British rule."?'
+    answer: Declaration of Independence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "By August 19
+      th he was convinced the city faced an epidemic of what he called “ _____”."?'
+    answer: bilious remitting yellow fever
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The _____ is
+      thought to trace back to spring of 1793, when about 2,000 French colonial refugees
+      arrived in Philly from Saint-Domingue (modern-day Haiti), having fled the slave
+      revolution that engulfed the north of the island."?'
+    answer: epidemic
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Yellow fever
+      had made it _____ became proxies for arguments about commerce, immigration,
+      urban life, and the future directions the republic would go in."?'
+    answer: so theories of disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The town was
+      uniquely _____, being home to the nation’s busiest port with docking facilities
+      all along the Delaware River."?'
+    answer: vulnerable to an epidemic
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ event
+      it caused, the epidemic paralyzed the young government of a republic just four
+      years old under the new Constitution."?'
+    answer: Beyond the mortality
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/the-first-american-epidemic-how-yellow
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 192444219
   slug: did-the-vikings-bring-plague-across
   title: Did Vikings Spread Plague Across the North Sea?
@@ -383,6 +841,66 @@ posts:
   primary_keyword: Viking plague North Sea
   topic_cluster: historical-epidemiology
   indexing_strategy: evergreen
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "This is the
+      idea that below a certain host population size, infections like measles undergo
+      “_____”, where the pathogen exhausts all of the available susceptible victims."?'
+    answer: epidemic fade-out
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The standard
+      CE narrative is well established, in that after _____ European ships brought
+      an arsenal of pathogens like smallpox, measles, influenza, typhus, and others
+      into contact with immunologically..."?'
+    answer: '1492'
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "This pushed
+      back the definitive _____ in humans by around 1000 years and suggests a presence
+      of smallpox across Europe from the late 6 th century at the latest."?'
+    answer: date of variola infection
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Well, a 2020
+      study in Science by Mühlemann and colleagues recovered variola virus DNA from
+      teeth and bones of 13 individuals from Northern Europe, 11 of whom dated to
+      the _____ between 600 and 1050 CE."?'
+    answer: Viking Age
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The pathogen
+      combination required for the genocide-scale epidemic mortality was structurally
+      absent from the _____ expansions."?'
+    answer: North Atlantic Viking Age
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Roundworms,
+      whipworms, and liver flukes were all recovered through _____ analysis of parasite
+      eggs from Viking-era latrines across Scandinavia, with a latrine site in Viborg,
+      Denmark dated to 1018-1030 CE confirming all three species."?'
+    answer: ancient DNA
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The question
+      becomes whether that absence reflects a genuinely different disease impact on
+      the populations they came across or if we’re just hitting the limits of _____
+      can detect from the period."?'
+    answer: what sources and methods
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "...ld at around
+      200,000 to 500,000 individuals for a sustained endemic persistence, although
+      high _____ connectivity via trade routes can allow more persistent infectious
+      burden in smaller groups."?'
+    answer: birth rates and population
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "A 2018 _____
+      by Ebenesersdóttir et al. used genome-sequencing data from 27 ancient Icelanders
+      to estimate the founders as a mixture of Norse (57%)..."?'
+    answer: study
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "They also showed
+      that modern Icelanders have diverged substantially from those founders due to
+      more than 1,100 years of genetic drift, which the authors attribute to the repeated
+      famines and _____ bottlenecks."?'
+    answer: epidemics having created population
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/did-the-vikings-bring-plague-across
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 192334500
   slug: the-white-plague-returns-tuberculosis
   title: 'The White Plague Returns?: Tuberculosis and the Fragility of Public Health
@@ -422,6 +940,59 @@ posts:
   primary_keyword: tuberculosis public health
   topic_cluster: disease-ecology
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "_____ suggests
+      the disease may have arisen in early human populations in Africa some 70,000
+      years ago , predating and possibly reversing the old zoonotic origin from cattle
+      hypothesis."?'
+    answer: Other paleopathologial evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "In January
+      of 2024, _____ officials in Kansas City, KS identified a cluster of tuberculosis
+      cases , largely in Wyandotte and Johnson counties."?'
+    answer: public health
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Equally important
+      was the collapse of treatment completion rates which bred drug resistant bacteria
+      resulting in _____ in New York during the late 1980s."?'
+    answer: an MDR-TB epidemic
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Yes, there
+      is a real, documented outbreak of tuberculosis in the _____ with recent years
+      suggesting a national resurgence of cases."?'
+    answer: United States
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The White _____
+      on the skin tone of those with advanced disease, resulting in a pale, anemic
+      look."?'
+    answer: Plague referenced the effects
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "For a historical
+      epidemiologist, the 19 th _____ shows exactly how the social determinants of
+      health operated prior to the term even having been invented."?'
+    answer: century American TB epidemic
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "By 1990, as
+      a result of the control programs no longer having funding, New York City, at
+      3% of the _____, accounted for 15% of the nation’s TB cases alone."?'
+    answer: US population
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ has been
+      one of humankind’s companion diseases for millennia."?'
+    answer: Tuberculosis
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "In 1972 Congress
+      decided to stop TB _____ seemed to be disappearing."?'
+    answer: funding because the disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The CDC’s _____
+      surveillance report had documented 10,395 cases in 2024 (a 7.9% increase from
+      2023), the highest count since 2011."?'
+    answer: '2024'
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/the-white-plague-returns-tuberculosis
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 191686346
   slug: who-died-of-what-in-the-american
   title: 'Disease in the American Revolutionary War: Who Died of What?'
@@ -465,6 +1036,59 @@ posts:
   primary_keyword: disease in the American Revolutionary War
   topic_cluster: disease-and-war
   indexing_strategy: evergreen
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "Roughly 30,000
+      Hessians served, of which roughly 1,800 were killed in action and about 6,300
+      died of disease (_____ rate of ~20% over the war and an annual disease death
+      rate of about 62.5 per 1,000."?'
+    answer: an overall mortality
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ rates
+      from a natural infection were around 30% in the unimmunized populations."?'
+    answer: Smallpox mortality
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ was circulating
+      in the holds, with dysentery, typhus, smallpox, yellow fever, and more draining
+      the life of those on board."?'
+    answer: Disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "They’d die
+      of dysentery, typhus, smallpox, _____, and starvation."?'
+    answer: yellow fever
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "In the summer
+      and fall of 1780 the Hessian regiments in _____ were substantially reduced by
+      malaria and fever."?'
+    answer: Charleston and Savannah
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Any honest
+      attempt at an accounting of _____ has to start with the confession of uncertainty."?'
+    answer: Revolutionary War mortality
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "It has to be
+      done based on incomplete, biased, and sometimes lost-altogether records (notably
+      the _____ had fires in 1800 and 1814 that destroyed quite a few records)."?'
+    answer: War Department
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The historian
+      Howard Peckham attempted what is seen by many as the most rigorous systematic
+      attempt to count American military deaths in his 1974 _____ and book The Toll
+      of Independence ."?'
+    answer: study
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The most widely
+      cited estimate from Cirillo’s 2008 analysis have anywhere from 17,000 to 18,500
+      American _____."?'
+    answer: military deaths from disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Those higher
+      bounds take into account things like 22,000+ widows drawing pensions, the _____
+      in POW situations, and deaths among the militia that weren’t formally recorded."?'
+    answer: high mortality
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/who-died-of-what-in-the-american
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 191075721
   slug: invisible-killers-of-the-oregon-trail
   title: 'Disease on the Oregon Trail: Cholera, Dysentery, and Death'
@@ -509,6 +1133,62 @@ posts:
   primary_keyword: disease on the Oregon Trail
   topic_cluster: disease-and-war
   indexing_strategy: evergreen
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "Of the 9 out
+      of 10 _____, cholera, dysentery, typhoid, and measles were the major killers,
+      cholera being worst of all."?'
+    answer: deaths from disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "...olera, and
+      it was typically confined to the Platte River flood plain from 1849 to 1852
+      and was _____ dynamics, regional climate, and, importantly, the alkaline-saline
+      chemistry of the Platte River itself, which helped cholera to surviv..."?'
+    answer: heavily driven by population
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The demographic
+      collapse had been driven largely by _____, malaria, measles, and influenza introduced
+      through the fur trade, missionary contact, and overland emigration."?'
+    answer: smallpox
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The discovery
+      of gold at Sutter’s Fort ended up bringing tens of thousands of emigrants across
+      the plains, a mass migration event that would result in the _____."?'
+    answer: cholera epidemic
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ and medical
+      historian Brian Lee Altonen’s master’s thesis is an incredibly detailed spatia-epidemiological
+      analysis of disease transmission on the trail."?'
+    answer: Public health
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Dead oxen,
+      mules, and cattle that had collapsed _____ became new bacterial reservoirs."?'
+    answer: from exhaustion of disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The unlucky
+      post had an aqueduct connecting them to the Platte River, resulting in the _____
+      density for cholera at the time."?'
+    answer: highest disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "They described
+      the bad tasting water, foul odors from the carcasses, the crowded campgrounds,
+      and the sudden deaths, all capturing the environmental and behavioral conditions
+      that shaped the _____ of the Trail."?'
+    answer: disease ecology
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "While “_____”
+      in the broad term was killing off the European emigrants, the measles they brought
+      with them was the epidemic that would end up defin..."?'
+    answer: cholera
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The influential
+      anthropologist and ecologist Robert Boyd’s article _____ of 1847-48 , based
+      on fort records, missionary journals, baptismal registries, and emigrant diaries
+      became the definitive reconstructi..."?'
+    answer: on the measles epidemic
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/invisible-killers-of-the-oregon-trail
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 190210122
   slug: how-mosquitos-killed-napoleons-north
   title: How Yellow Fever Killed Napoleon's American Empire
@@ -556,6 +1236,63 @@ posts:
   primary_keyword: yellow fever Napoleon
   topic_cluster: disease-and-war
   indexing_strategy: evergreen
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "McNeill’s book
+      Mosquito Empires characterizes yellow fever and malaria as “_____” diseases
+      in how they functioned in the Greater Caribbean world, where they preferentially
+      attacked newcomers and favored the resident..."?'
+    answer: partisan
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "That ill-fated
+      _____ expedition remains one of the deadliest yellow fever epidemics ever recorded
+      to have hit a military force."?'
+    answer: 1802-1803
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Between the
+      years of 1791 and 1804, two mosquito-borne diseases destroyed the French expeditionary
+      armies in Saint-Domingue (modern day _____) and ended up tipping the balance
+      of power toward revolution."?'
+    answer: Haiti and the Dominican Republic
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The locally
+      born _____ suffered far lower death rates due to the prior exposure to yellow
+      fever and malaria."?'
+    answer: individuals and African residents
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Ports like
+      _____ were endemic with yellow fever; the invading forces of immunologically
+      naïve European adults living in dense camps became mosquito-fodder."?'
+    answer: Cartagena and Havana
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "They ended
+      up with casualty rates up to 80% in some units with the overwhelming proportion
+      being due to _____ and malaria."?'
+    answer: yellow fever
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "...poleon’s
+      ambitions, showing that an empire built on European manpower could not take
+      root in a _____ environment where Europeans were immunological outsiders."?'
+    answer: disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "By the late
+      _____ and early 1800s Napoleon was bothered by how much colonial trade had declined,
+      for which many blamed the abolishment of slavery in 1794."?'
+    answer: 1700s
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "That ended
+      up being a “_____” in the words of Leclerc, who upon the realization that they
+      could not suppress the rebellion set out to kill the entire adult Black population
+      on the island."?'
+    answer: war of extermination
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The newly arrived
+      soldiers were the most vulnerable to the _____ ecology which had an uptick from
+      around July to October."?'
+    answer: Caribbean seasonal vector
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/how-mosquitos-killed-napoleons-north
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 189373631
   slug: the-american-revolution-was-nearly
   title: The American Revolution Was Nearly Lost to Smallpox
@@ -596,6 +1333,64 @@ posts:
   primary_keyword: smallpox American Revolution
   topic_cluster: disease-and-war
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "The major infectious
+      diseases wreaking havoc were _____ ( Variola major ), dysentery, typhus, typhoid
+      fever, malaria, and influenza."?'
+    answer: smallpox
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Disease, on
+      the other hand, took 17,000 lives at the very least with some estimates suggesting
+      over 60,000 _____ when counting prisoners of war and those who died after returning
+      home."?'
+    answer: had passed of disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Estimates of
+      CFR for variolation _____ due to small pox were about 2% for variolation and
+      14% for infection using data from the 1721 Boston epidemic."?'
+    answer: compared to natural infection
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The deaths
+      of about 11,500 Americans on British prison ships in New _____ and starvation
+      alone exceeds the total of American deaths in battle."?'
+    answer: York Harbor of disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "John Adams,
+      writing to his wife Abigail in 1777, noted that “for _____,” which, is not far
+      off from the later analyses suggesting somewhere around a 9:1 ratio."?'
+    answer: every soldier killed in battle, disease killed ten
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "This was far
+      from unique though, as deaths in pre-modern warfare were more often _____ than
+      direct combat losses (although festering, infected wounds took their fair share
+      of soldiers through time)."?'
+    answer: due to infectious disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Due to medical
+      advancements the 9:1 ratio declined over time to about 2:1 by the American Civil
+      War, but it wasn’t until World _____ deaths in most armies finally had dropped
+      to about 10% of battle deaths."?'
+    answer: War II that disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Consensus places
+      the overall CFR at somewhere around 20-30% in unvaccinated populations, but
+      that masks the substantial variation that’s _____ pyramids, nutrition, and whether
+      smallpox is endemic of epidemic to the area."?'
+    answer: possible depending on age
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "By mid-March
+      of the following year, _____ was left with 617 rank and file men with another
+      400 in the hospital, largely due to smallpox."?'
+    answer: Benedict Arnold
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Less than a
+      quarter of the Continental Army had _____ when George Washington put in the
+      inoculation order in February of 1777."?'
+    answer: previously contracted the disease
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/the-american-revolution-was-nearly
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 187959272
   slug: disease-in-the-early-colonies-pre
   title: 'Disease in the Early Colonies: Pre-Revolutionary War Disease Ecology and
@@ -642,6 +1437,65 @@ posts:
   primary_keyword: colonial disease ecology
   topic_cluster: disease-and-war
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "British North
+      America during the pre-revolutionary war period was a region of fluctuating
+      _____ shaped by repeated incursions of smallpox, measles, diphtheria, enteric
+      infections (the nice way of saying feces got in their mouths s..."?'
+    answer: disease ecology
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Smallpox and
+      _____ based as opposed to endemic (meaning brought in vs lasting in the area),
+      which meant decades could pass between major outbreaks of disease."?'
+    answer: measles were mostly epidemic
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ crowd
+      based diseases were the major killers in the area, with smallpox, measles, and
+      diphtheria all doing their own damage."?'
+    answer: Epidemic
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The plantations
+      of the _____ built their compounds with rice fields that would stay flooded
+      for major stretches of the warm season, significantly boosting the mosq..."?'
+    answer: Low Country
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "From the relatively
+      safer, cooler climate of New England to the mosquito and enteric fever‑ridden
+      Tidewater and the deeply malarial Low Country, each region developed a distinct
+      _____."?'
+    answer: relationship with infectious disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Fourth would
+      be the immune profiles of the migrants, especially the contrast between the
+      immunologically naïve European adults and Africans who had been heavily exposed
+      to malarial and _____ rich zones."?'
+    answer: yellow fever
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "There were
+      also seasonal waves of _____ that would largely impact the infant population
+      and scattered cases of malaria as a background hazard."?'
+    answer: diarrheal and respiratory disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The settlement
+      patterns also played a part, with small, dispersed towns of modest populations
+      being below the critical community size for _____ or measles to become a permanent
+      fixture of the towns."?'
+    answer: smallpox
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The big, dramatic
+      epidemics arose when a ship or traveler would reintroduce the virus and were
+      often followed by long, quiet intervals _____."?'
+    answer: without that specific disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Maximizing
+      the amount of standing warm water when the mosquitos were most active meant
+      an increase in rice yields but also turned the area into something much closer
+      to the malarial homelands of _____."?'
+    answer: West Africa
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/disease-in-the-early-colonies-pre
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 186425026
   slug: why-europeans-didnt-get-hit-by-disease
   title: Why Europeans Didn’t Die of New World Diseases (but did from diseases in
@@ -690,6 +1544,65 @@ posts:
   primary_keyword: New World diseases Europeans
   topic_cluster: pathogen-geography
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "I was recently
+      asked why Europeans didn’t end up suffering as much at the hands of New World
+      diseases compared to how the _____ were impacted by the likes of smallpox, measles,
+      malaria, and yellow fever."?'
+    answer: Native Americans
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "India was one
+      of the major _____ in South Asia, with cholera, malaria, leishmaniasis, and
+      even plague either being endemic to specific areas or having been spread along
+      trade routes."?'
+    answer: epicenters of infectious disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "In the 1800s
+      quinine became the way Europeans would combat the newly encountered parasites,
+      _____ from malaria by between 50-75% and was what enabled the further colonial
+      expansion that was previously blocked by high-malaria density..."?'
+    answer: reducing mortality
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Yellow fever
+      was _____, this time transmitted by the Aedes aegypti mosquito, which killed
+      Europeans at similar catastrophically high rates in West Africa and the Caribbean
+      (where it had been introduced via the slave trade)."?'
+    answer: another African mosquito-borne disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "...d a deadly
+      trio that killed colonial troops throughout the region and had major impacts
+      on the _____ (a topic that will be getting its own post)."?'
+    answer: Crimean War
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "It’s important
+      to note that this is a huge trade-off because in populations where that gene
+      becomes too common, a higher percentage of children are born with a _____."?'
+    answer: fatal sickle cell disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Colonial ambitions
+      had _____ zones that their ancestors had either avoided, or slowly adapted to
+      through genetics, childhood exposures, and avoidance of the habitats associated
+      with certain vectors."?'
+    answer: driven them into disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "It boils down
+      to the _____ of the pre-contact Americas and what that ecology was missing (you
+      can check out my pieces on what was infecting the natives of North America and
+      South America pre-contact here)."?'
+    answer: disease ecology
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Camelpox gave
+      us the likes of _____, rinderpest from cattle gave us measles, and influenza
+      came from various birds or pig species to name a couple of sources."?'
+    answer: smallpox
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ does
+      seem to have made its way over from the Americas to Europe, and that is syphilis."?'
+    answer: One major infectious disease
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/why-europeans-didnt-get-hit-by-disease
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 184989953
   slug: they-came-from-the-steppe-the-genetic
   title: 'They Came from the Steppe: The Genetic Legacy of Plague and Steppe Migrations'
@@ -733,6 +1646,63 @@ posts:
   primary_keyword: plague steppe migrations
   topic_cluster: historical-epidemiology
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "Britain’s Y.
+      pestis genomes from about 4000 years ago _____ we have for the plague in Europe’s
+      most northwesterly region, arriving either after or with the Bell Beaker populations."?'
+    answer: represent the earliest evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Until recently
+      all of the LNBA plague genomes we had were recovered from human remains, _____
+      undetermined."?'
+    answer: leaving the zoonotic reservoir
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "There’s also
+      some good evidence that these Late Neolithic Bronze Age steppe migrations were
+      associated with infectious diseases, _____ we have of Plague in Eurasia and
+      evidence of immune adaptation."?'
+    answer: including the first evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "We don’t have
+      an overall idea of _____ was in the area, but a study of 108 individuals from
+      graves dated to Neolithic Sweden and Denmark showed 18 (~17%) were infected
+      with the plague at their time of death."?'
+    answer: how prevalent the disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The infections
+      also didn’t fit a single _____ model with rapid spread, as multiple plague strains
+      were seen in multiple generations, and the genomic rearrangements in the higher
+      vi..."?'
+    answer: outbreak
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The study of
+      _____ has made the Yamnaya and other early pastoralist groups of the Eurasian
+      steppe some of the better understood prehistoric populations out there."?'
+    answer: ancient DNA
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Thankfully
+      we have a _____ to look at in Yersinia pestis , the bacteria responsible for
+      The Black Death and the Plague of Justinian."?'
+    answer: beautiful case study
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The plague
+      has been found in individuals from the Late _____ (LNBA) from over 5000 years
+      ago ."?'
+    answer: Neolithic and Bronze Age
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "This was a
+      unique site, in that it _____ events across a span of about 120 years, or six
+      generations, at the site in Falbygden, Sweden."?'
+    answer: showed three distinct infection
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "A major breakthrough
+      came in early _____ when researchers published a Y. pestis genome from a roughly
+      4000-year-old domesticated sheep from a Sintashta site in the southern Urals."?'
+    answer: '2025'
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/they-came-from-the-steppe-the-genetic
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 184243719
   slug: when-worlds-collided-disease-and
   title: 'When Worlds Collided: Disease and Population Collapse in the Americas After
@@ -778,6 +1748,64 @@ posts:
   primary_keyword: disease population collapse Americas
   topic_cluster: pathogen-geography
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "It’s possible
+      the first smallpox outbreak occurred on the in 1507 , _____ was devastating
+      the populations of the island."?'
+    answer: when disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The _____ in
+      the Americas post-1492 is usually told in a blunt manner, with Europeans arriving,
+      Old World pathogens hitching a ride, and then causing a total collapse of the
+      Indigenous Populations."?'
+    answer: story of disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "In 1493 , both
+      native Taíno people and the Spanish in the town of La Isabela, Hispaniola succumbed
+      to a likely influenza outbreak, with fever, malaise, and _____ rates."?'
+    answer: high mortality
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "It is safe
+      to _____ collapse was well underway by the time of the 1518-1519 (and first
+      confirmed) smallpox epidemic."?'
+    answer: say that population
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "War and smallpox
+      came together to kill off massive _____, with mortality estimates as high as
+      40% for populations in the Valley of Mexico and somewhere around 8 million deaths
+      total."?'
+    answer: proportions of the population
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The term “muru
+      oncoy” (“_____”) describing smallpox first appeared in the 1586 dictionary,
+      well-after the 1558-58 epidemic."?'
+    answer: spotted disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "A _____ census
+      showed about 60,000 Taíno on the island but just 8 years later that number was
+      down to 23,000, but it’s possible this was due to swine flu and other diseases
+      as opposed to smallpox."?'
+    answer: '1508'
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Smallpox first
+      showed up in slaves working the mines in 1518 and by the next year, a third
+      of the remaining natives had _____."?'
+    answer: died of the disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The research
+      team of Robert McCaa, Aleta Nimlos, and Teodoro Hampe Martínez _____ of a much
+      later smallpox introduction to the area, dating it to around 1558, where they
+      argue the prior collapse and death of Huayna C..."?'
+    answer: put forward evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "In the Andes,
+      civil war and famine _____ of smallpox giving a clear example of why disease
+      severity cannot be separated from the political economy of conquest."?'
+    answer: preceded any clear evidence
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/when-worlds-collided-disease-and
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 183258463
   slug: disease-on-the-high-seas-early-maritime
   title: 'Scourges of the High Seas: Early Maritime Disease Ecology'
@@ -822,6 +1850,62 @@ posts:
   primary_keyword: maritime disease ecology
   topic_cluster: pathogen-geography
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "_____ rates
+      crossing the Middle Passage were up to 25% with dysentery, dehydration, smallpox,
+      measles, scurvy, malaria, yellow fever, and malnutrition doing the bulk of the
+      killing at sea."?'
+    answer: Mortality
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Those stagnant
+      water barrels also brought along another _____ in yellow fever ."?'
+    answer: catastrophic mosquito driven infection
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The bark became
+      a part of the _____ medicine chests by 1814, but by the 1820s quinine alkaloids
+      were isolated and purified, becoming a widely accepted treatment for malarial
+      fevers."?'
+    answer: Royal Navy
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Smallpox had
+      a _____, presenting with fever, vomiting, ulcers of the mouth, and its heavily
+      identifiable skin rash, blisters, scabs, and scars."?'
+    answer: longer course of infection
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Of course,
+      the burden varied by the route taken, with trips across the northern Atlantic
+      having less of _____ risk to them compared to those going through the tropics."?'
+    answer: an infectious disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ of Exploration,
+      mosquito transmitted malarial fevers (then known as intermittent fever) was
+      endemic in West Africa and the Caribbean,..."?'
+    answer: By the Age
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Our old friend
+      James Lind also played a large part in developing hygienic and ventilation practices
+      to _____ of various fevers in the Royal Navy."?'
+    answer: reduce the risk
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "After observing
+      cases of ship fever in his naval career and later in hospital settings, he realized
+      it _____ linked to the crowded, unhygienic spaces and contaminated clothing."?'
+    answer: was an infectious disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Most of his
+      recommendations regarding cleanliness also helped with typhoid fever, a _____
+      with similar symptoms to typhus that is caused by salmonella in contaminated
+      food and water."?'
+    answer: disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Officers, with
+      their more spacious quarters and ventilation _____ risk, although it was far
+      from null."?'
+    answer: had much less disease
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/disease-on-the-high-seas-early-maritime
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 182976217
   slug: mexicos-mystery-epidemics-of-the
   title: 'Cocoliztli: Mexico''s 16th-Century Mystery Epidemic'
@@ -865,6 +1949,63 @@ posts:
   primary_keyword: cocoliztli epidemic
   topic_cluster: historical-epidemiology
   indexing_strategy: evergreen
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "In 2018 researcher
+      published a study in Nature Ecology & Evolution using _____ from skeletal remains
+      from a cemetery in Oaxaca dated to the first epidemic."?'
+    answer: ancient DNA
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "In 16 th century
+      Mexico (New Spain at the time), _____ epidemics swept through Mesoamerica, decimating
+      the population."?'
+    answer: two extremely high mortality
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Hernandez _____
+      had a greater effect on those living in the highlands than those of the lowlands
+      and a seasonality with both epidemics first showing up in the warmer summer
+      months."?'
+    answer: noted that the disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Other researchers,
+      like Rodolfo Acuna-Soto, propose an indigenous viral hemorrhagic fever as the
+      _____, possibly an arenavirus or similar virus."?'
+    answer: major agent of infection
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The largest
+      of the 12 cocoliztli epidemics (Nahuatl for “_____”) ran from 1545-1548 and
+      1576-1580 and killed anywhere from 5-15 million (or 80% of the population) and
+      2-2.5 million (45% of the population at the time) indigenous people."?'
+    answer: pestilence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Across history,
+      the deadliest epidemics have tended to occur when a _____ collides with some
+      other type of societal breakdown, be it nutritional stress, environmental disaster,
+      or population displacement."?'
+    answer: novel pathogen
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Today, _____
+      and enteric fever from that species have a fatality rate of about 10-15%, with
+      bleeding happening in 10%, and upper gastrointestinal hemorrhage being rare."?'
+    answer: untreated infection
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "This feasibly
+      could explain some of the _____ between the indigenous and Spanish populations,
+      with forced labor and a maize monoculture leading to nutritional issues."?'
+    answer: difference in mortality
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "In the case
+      of cocoliztli, we’ve likely got multiple pathogens _____, one definitely being
+      Salmonella , and the other likely being some kind of viral hemorrhagic fever
+      already native to the area or broug..."?'
+    answer: tearing through the population
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Francisco Hernandez,
+      former physician to the king, and a witness to the 1576 _____."?'
+    answer: epidemic
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/mexicos-mystery-epidemics-of-the
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 182520634
   slug: inherited-infections-what-our-oldest
   title: 'Inherited Infections: What Our Oldest Diseases Reveal About Human Prehistory'
@@ -907,6 +2048,60 @@ posts:
   primary_keyword: oldest human diseases
   topic_cluster: historical-epidemiology
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "Interestingly
+      enough, these all fall (somewhat awkwardly) under the modern “_____” label."?'
+    answer: sexually transmitted infection
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Today’s most
+      common variant only became dominant in the last few thousand years, with recent
+      _____ studies finding a date of about 5000 years ago during Bronze Age expansions."?'
+    answer: ancient DNA
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "A timing that
+      aligns well with the estimated divergence of HSV-2 from the other herpes viruses
+      and strongly suggests that Neanderthals, Denisovans, and modern humans would
+      later inherit HSV-2 as _____ repertoire."?'
+    answer: part of our pathogen
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "...n a transfer
+      of an already somewhat familiar virus (to the immune system), likely causing
+      less _____ than a totally novel introduction."?'
+    answer: trouble for the population
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "What struck
+      me most in my reading for this piece is that a parasite being picky about its
+      host or a _____ mutating slowly can turn a genome into a kind of historical
+      document."?'
+    answer: pathogen
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ of the
+      talk around ancient diseases tends to be linked to diseases of civilization
+      that arose from domestication of animals, farming, crowding, and poor sanitation
+      practices."?'
+    answer: Most
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The _____ causing
+      cold sores shows a deep co-evolution with our hominid ancestors."?'
+    answer: common infection
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ suggests
+      these two last shared a common ancestor somewhere around 3.5 million years ago,
+      long after the human-gorilla lineage split around 7-8 million years ago."?'
+    answer: Genetic evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The _____ likely
+      occurred via P. boisei scavenging or butchering an HSV-infected chimpanzee carcass."?'
+    answer: initial infection
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ that
+      certain immune gene variants present in Eurasians (some inherited from Neanderthals)
+      increase the susceptibility to HPV-related c..."?'
+    answer: We even see evidence
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/inherited-infections-what-our-oldest
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 181844122
   slug: the-disease-ecology-of-the-pre-contact
   title: 'The Disease Ecology of the Pre-Contact Americas (Part 2: South America)'
@@ -950,6 +2145,61 @@ posts:
   primary_keyword: pre-contact South America disease
   topic_cluster: pathogen-geography
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "The disease
+      was likely more chronic, causing prolonged periods of illness (thus the skeletal
+      lesions), but it still would have been a large driver of _____ in the pre-contact
+      populations."?'
+    answer: morbidity and mortality
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Hantaviruses
+      in the jungle or arenaviruses in Bolivia were likely causing hemorrhagic fever,
+      _____ to definitively say so."?'
+    answer: though we lack evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The infection
+      is currently endemic in the Andean valleys, _____ thrives in the warm river
+      valleys."?'
+    answer: where the sandfly vector
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "There is evidence
+      for ancient chagas in _____ in 4000-year-old human mummies from the coastal
+      region."?'
+    answer: ancient DNA
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Like everywhere
+      else, pathogens found their niches in the environment and produced a mixture
+      of chronic endemic diseases and the occasional deadly _____."?'
+    answer: outbreak
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "A pre-contact
+      mummy from around 900 to 1000 CE showed that the young man was covered with
+      wart-like skin lesions and bone damage, _____ confirming its presence by the
+      clumps of tiny, rod-shaped bacteria."?'
+    answer: with histological analysis
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The _____ was
+      likely most prevalent in the oasis and valley populations of the desert coastal
+      regions and the eastern Andean slopes, as that’s w..."?'
+    answer: disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "...agas disease,
+      treponemal infections, leishmaniasis, bartonellosis, intestinal parasites, and
+      a _____-borne and zoonotic threats."?'
+    answer: wide array of vector
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The mummified
+      case is thought to have arisen from such an environment, _____ outbreaks occurring
+      periodically."?'
+    answer: with it suggesting epidemic
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Before 1492,
+      the Andes had an incredibly rich and challenging _____."?'
+    answer: disease ecology
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/the-disease-ecology-of-the-pre-contact
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 181195168
   slug: the-disease-ecology-of-pre-contact
   title: 'The Disease Ecology of Pre-Contact Americas (Part 1: North and Central America)'
@@ -992,6 +2242,62 @@ posts:
   primary_keyword: pre-contact Americas disease ecology
   topic_cluster: pathogen-geography
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "Before 1492,
+      the indigenous people of the Americas lived in a long-term isolation _____ that
+      was Eurasia’s disease pool."?'
+    answer: from the vast reservoir
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Due to being
+      more dispersed and less commonly packed densely into large urban centers, they
+      largely avoided the crowd-amplified diseases of the _____ like smallpox and
+      measles."?'
+    answer: Old World
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "That said,
+      a variety of infectious diseases were endemic (continually present in the area)
+      and there _____ outbreak in pre-Columbian societies."?'
+    answer: was the occasional epidemic
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Paleopathology,
+      _____, and indigenous oral/early colonial accounts reveal just what was going
+      on in the ecological landscape of infectious disease in the Americas."?'
+    answer: ancient DNA
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "While I _____
+      density was rather low in the Arctic and Subarctic, diseases known for being
+      much more crowd-dependent weren’t entirely absent from the area."?'
+    answer: said the population
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "This might
+      bring to mind diseases like malaria or dengue, _____ suggests that Plasmodium
+      (malaria) was either absent or extremely rare before the European/African introductions."?'
+    answer: but evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "...possible
+      source was with Norse colonies in Greenland or Newfoundland between 1000 and
+      1400 CE, _____ of this transmission remains, and likely will remain, elusive."?'
+    answer: however direct evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Later chronicles
+      reported that around 1330 CE in the area around Lake Texcoco a _____ with a
+      high mortality rate."?'
+    answer: mysterious epidemic
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____, New
+      Mexico from around 1100 AD showed bone related changes indicative of treponemal
+      infections."?'
+    answer: Burials in Chaco Canyon
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "This is backed
+      up by a 2022 study that recovered TB genomes from inland human remains in the
+      U.S southwest and highland Arizona/Mexico _____ of TB found in coastal Peru
+      ."?'
+    answer: that matched the strain
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/the-disease-ecology-of-pre-contact
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 180554125
   slug: when-did-syphilis-enter-europe-the
   title: When Did Syphilis Enter Europe? The Origins Debate
@@ -1033,6 +2339,64 @@ posts:
   primary_keyword: syphilis origins debate
   topic_cluster: historical-epidemiology
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "It’s not exactly
+      a shocking coincident that Columbus returned in 1493, the Italian Wars broke
+      out in 1494 with a massive multinational army existing in Naples by 1495, and
+      then the epidemic explodes with soldiers _____ across Europe."?'
+    answer: likely spreading the disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The Naples
+      outbreak in 1495 was its first major outbreak in a _____, although it likely
+      existed in some small pockets somewhere."?'
+    answer: virgin-soil population
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "We’ve got no
+      _____ of the pallidum variant before 1492 in Europe and no medieval texts describe
+      venereal lesions of congenital syphilis prior to 1495."?'
+    answer: ancient DNA
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The core problem
+      is that venereal syphilis pops up suddenly in _____ in 1495, with contemporary
+      physicians describing it as new, horrifying, and unprecedented."?'
+    answer: Europe
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ becomes
+      chronic due to immune evasion, you end up with rubbery growths called tertiary
+      gummas and the possibility of neurosyphilis (which, BTW, killed prohibition
+      era mobster Al Capone)."?'
+    answer: When the infection
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Between 1495
+      and 1500 it spread across the continent incredibly rapidly, being called a “new
+      plague” and a “_____ of.” No medieval European text described anything remotely
+      resembling this awful new disease prior to the 1490s."?'
+    answer: disease unheard
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "One would think
+      that’s a pretty normal year for a _____ outbreak given the people coming back
+      from a newly discovered continent half-way around the world in which they were
+      exploring while immunologically naïve."?'
+    answer: new disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Early descriptions
+      reported large, ulcerative pustules, debilitating bone pain, rapid deterioration
+      of the health, and a _____ rate for a bacterial STI."?'
+    answer: shockingly high mortality
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The first being
+      the naïve European population which had zero antibodies to _____ until it was
+      already inside of them."?'
+    answer: confront the disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "We’_____ for
+      it in the Americas, North Africa, the Near East, and in the Mediterranean, but
+      again, it had little to no emphasis on the genitals."?'
+    answer: ve got evidence
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/when-did-syphilis-enter-europe-the
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 179321195
   slug: the-mystery-of-hookworm-in-ancient
   title: 'Ancient Hookworm in the Americas: A Parasite Out of Place'
@@ -1077,6 +2441,59 @@ posts:
   primary_keyword: ancient hookworm Americas
   topic_cluster: historical-epidemiology
   indexing_strategy: evergreen
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "Not the Cocoliztli
+      epidemics , and what I think might’_____ at hand, that one is for another time."?'
+    answer: ve been the vector
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "That’s the
+      question I started asking myself which sent me down the rabbit hole and turned
+      into a standalone thought-process type of post on the _____ of the early Americas."?'
+    answer: most mysterious disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "I’m currently
+      researching for a piece on the _____ of the early Americas."?'
+    answer: disease ecology
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ turnover
+      through the ages and the later admixture from European and African groups makes
+      this hypothesis difficult to find evidence for."?'
+    answer: That combined with population
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "But the northern
+      Pacific rim around Northern Japan, Russia, Alaska, _____, Washington, and Oregon
+      were likely too cold and hookworm would have probably died out before reaching
+      a warm enough stopover."?'
+    answer: British Columbia
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "But during
+      my reading I came across a genuine unsolved mystery of the _____ landscape."?'
+    answer: ancient American disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ for this
+      beyond the existence of hookworm in South America, but a short period of contact
+      would have likely left negligible detectable archeological or genetic imprints."?'
+    answer: There is no evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Today I’ll
+      be guiding you through the mystery that is hookworm in ancient South America
+      and why the question of “_____” is one of the most thorny in paleopathology."?'
+    answer: how did hookworm get to the Americas?
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The story starts
+      in _____, where paleoparasitologists in an early Holocene rock shelter were
+      analyzing human coprolites where they found the unmistakable hookworm eggs from
+      the Ancylostoma family."?'
+    answer: Northeastern Brazil
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "To get at why
+      this is such a mystery we have to get _____ and some of the questions I asked
+      along the way while looking into this."?'
+    answer: into some hookworm biology
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/the-mystery-of-hookworm-in-ancient
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 178663608
   slug: the-ghosts-of-meals-past-what-weve
   title: 'The Ghosts of Meals Past: What We’ve Learned from Fossilized Poop'
@@ -1118,6 +2535,64 @@ posts:
   primary_keyword: fossilized poop coprolites
   topic_cluster: historical-epidemiology
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "To their surprise,
+      and likely their amusement, the lump of 9 th century waste would become one
+      of the crown jewels in Viking archeology, giving us a gut-level record of diet,
+      _____, and daily life."?'
+    answer: disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Some _____
+      years ago a Viking squatted down and left us, from what I can tell, what is
+      still the largest known human coprolite."?'
+    answer: '1200'
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "When construction
+      first broke ground for the _____ building in York in 1972, within a moist layer
+      of peat was something each of the crew would have seen countless times before,
+      although never one like this."?'
+    answer: Lloyds Bank
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Now it’s on
+      display at the _____, in what is likely one of the least glamorous museum spotlights
+      imaginable."?'
+    answer: Jorvik Viking Center
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Before there
+      was a _____ against the Clovis First hypothesis of the peopling of the Americas
+      in the form of artifacts or the White Sands footprints (found in 2..."?'
+    answer: litany of evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Eggs like these
+      can be seen even in dinosaur coprolites, as I mentioned in my previous post
+      The _____ ."?'
+    answer: Oldest Diseases We Know
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "More recent
+      sterol and bile acid tests confirmed that at least three coprolites were genuinely
+      human and date to around 13,_____,500 years ago, possibly just before Clovis,
+      but not by much."?'
+    answer: 200–13
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Another from
+      Saskatchewan , nearly the length of a forearm, carries splintered bone throughout
+      its matrix, _____ that Tyrannosaurus rex not only hunted but crunched through
+      carcasses wholesale."?'
+    answer: evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ coprolite
+      from York tells us about a single day in one person’s life, these ancient ones
+      tell us about the state of entire ecosystems."?'
+    answer: If the Viking
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "It also shouts
+      “malnutrition” and “_____” in today’s terms, as the parasites likely thrived
+      in latrines that drained into the same soil used for growing food."?'
+    answer: poor sanitation
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/the-ghosts-of-meals-past-what-weve
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 177940071
   slug: the-oldest-diseases-we-know-of
   title: The Oldest Diseases We Know Of
@@ -1158,6 +2633,62 @@ posts:
   primary_keyword: oldest diseases
   topic_cluster: historical-epidemiology
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "The _____ in
+      a terrestrial vertebrate comes in the form of the jawbone of the reptilian Labidosaurus
+      hamatus that’s roughly 275 million years old ."?'
+    answer: oldest confirmed bacterial infection
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "A Triassic
+      marine reptile was found to have tuberculosis-like bone lesions, in the form
+      of patterns of granuloma-like damage in its ribs and vertebrae, which resembles
+      a _____."?'
+    answer: chronic bacterial infection
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Shark coprolites
+      from 270 million _____ of tapeworm eggs, with one even possibly showing a developing
+      larvae inside."?'
+    answer: years ago show evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ from
+      roughly 230 million years ago can be seen in parasitic worm eggs that were found
+      in vertebrate coprolites in Thailand."?'
+    answer: More early evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "In _____ the
+      infections had not healed fully, with the dinosaurs dying either from or with
+      the infection."?'
+    answer: this case with evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ the earth
+      was covered in predators and prey with diseases that we’d recognize as such,
+      before the dinosaurs or flowers of the land or shells of the sea, there was
+      a primordial arms race between microbes."?'
+    answer: Before
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "For reference,
+      life has been around for about 3.5 billion years with complex organisms only
+      arising about _____ million years ago."?'
+    answer: 600-800
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The CRISPR-Cas
+      system was an extremely early evolutionary pivot that implies _____ pressure
+      was around well before Kingdom Animalia existed."?'
+    answer: some serious viral infection
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The oldest
+      viral “_____” we’re able to see come in the form of endogenous viral elements
+      in vertebrate genomes."?'
+    answer: fossils
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Every fever,
+      tumor, _____ ties us back to the creatures that lived and suffered long before
+      there were names for anything I covered here."?'
+    answer: or infection
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/the-oldest-diseases-we-know-of
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 177329295
   slug: humanitys-deadliest-companions-checking
   title: 'Humanity’s Deadliest Companions: Checking the Till on the Deadliest Microbes
@@ -1201,6 +2732,64 @@ posts:
   primary_keyword: deadliest microbes
   topic_cluster: historical-epidemiology
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "But we can
+      be confident in some things, like _____ having killed more than the plague or
+      that malaria’ death dwarf influenza deaths in the cumulative toll, but any precise
+      number is just an educated guess at best."?'
+    answer: smallpox
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Given where
+      it, and we, originate, malaria likely holds the distinction of being the oldest
+      sustained human-pathogen relationship, _____ of the causal Plasmodium being
+      present before homo sapiens ."?'
+    answer: with evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Certified as
+      eradicated across the globe in _____, the smallpox virus has a more mysterious
+      origin, with it still not being fully understood."?'
+    answer: '1980'
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "We can’t reconstruct
+      some Bronze Age cholera outbreak when all we’ve got is clay tablet with something
+      like “and the _____” tapped into it."?'
+    answer: god smote those along the river
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "For malaria,
+      this issue came to a bit of a head when a Nature news brief came out in 2002
+      claiming malaria had killed half of people who ever lived (roughly _____ billion)."?'
+    answer: 110-120
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Possibly the
+      _____ is also the only clear epidemiological victory in history (technically
+      alongside rinderpest as of 2011, which I’ll get into in its own post at some
+      point)."?'
+    answer: next deadliest disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Smallpox was
+      a catastrophic import into the New World arriving with the Spanish and Portuguese
+      in the late 15 th and early 16 th centuries, _____ reaching 90% in some areas."?'
+    answer: with mortality
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "In the 20 th
+      century alone smallpox claimed the lives of _____ million people, with a death
+      toll likely topping a billion throughout history."?'
+    answer: 300-500
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "This post,
+      as well as a few recent ones you may have noticed and the War Epidemiology book
+      in progress (still working on the Black Plague chapter, but it’ll come), marks
+      a bit of a shift for what I’ll be covering here on The _____."?'
+    answer: Edge of Epidemiology
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Historians
+      of diseases usually end up with one unanswerable question: “_____” The further
+      back you go the more difficult this becomes to answer."?'
+    answer: just how many people did X disease kill?
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/humanitys-deadliest-companions-checking
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 176802554
   slug: islands-of-affliction-leprosy-and
   title: 'Islands of Affliction: Leprosy and Empire in the South Pacific'
@@ -1243,6 +2832,63 @@ posts:
   primary_keyword: leprosy South Pacific
   topic_cluster: historical-epidemiology
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "Fragments of
+      its causal bacteria, Mycobacterium leprae, genomes have been recovered from
+      medieval skeletons in England as well as from burials along the _____."?'
+    answer: Silk Road
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "That said,
+      the Austin report from 1936 reported 1,365 total cases having been treated since
+      the founding, with three quarters _____ hovering around 50% 6 ."?'
+    answer: being men and mortality
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Their language
+      of discipline and servitude to their God fit nearly into one of colonial medicine’s
+      metaphors, _____ as disorder and labor as the cure."?'
+    answer: disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "By the 1920’s
+      the colonial governments across the _____ had fine-tuned the isolation structure
+      into policy."?'
+    answer: South Pacific
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Surveillance
+      was conducted, but more with simple inspection tours by a colonial doctor as
+      opposed to anything _____ prevention practices us epidemiologists or medical
+      practitioners learn about."?'
+    answer: looking like modern infection
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Using _____,
+      it’s thought to have diverged tens of thousands of years ago, likely sometime
+      after humans started clustering in settlements large enough for chronic infections
+      to matter."?'
+    answer: estimates from genomic clocks
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "As 19 th century
+      medicine started to name and classify diseases, _____ was just a bit too ancient
+      and socially charge to fit neatly into that new clinical lexicon being developed."?'
+    answer: leprosy
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "It somehow
+      lingered in the space between sin and modernizing science, with treatment often
+      conducted by _____ itself feared by governments and societies."?'
+    answer: missionaries and the disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "In 1865 the
+      Kingdom of Hawaii was under pressure from missionaries and merchants, leading
+      to the passage of the _____ of Leprosy 1 ."?'
+    answer: Act to Prevent the Spread
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "By 1900, the
+      island of Beqa had been established as a leprosy station for _____, on which
+      a handful of patients were living in huts built from scavenged wood and guarded
+      more by social stigma than by soldiers."?'
+    answer: British Fiji
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/islands-of-affliction-leprosy-and
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 176091810
   slug: the-night-staten-island-burned-its
   title: 'The Night Staten Island Burned Its Hospital: Fear, Fire, and the Forgotten
@@ -1281,6 +2927,60 @@ posts:
   primary_keyword: Staten Island quarantine
   topic_cluster: historical-epidemiology
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "Stephenson
+      notes “the primary complaint of _____ was that the Quarantine imported diseases
+      into their communities, particularly yellow fever, which inspired intense fear”
+      ."?'
+    answer: Staten Island residents
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "It was founded
+      in 1799 , when _____ came from filth, not vectors, and that the solution was
+      to wall off the sick from the healthy and hope for the best."?'
+    answer: people still believed disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Behind those
+      walls lay a few dozen patients recovering (or not) from _____ and cholera."?'
+    answer: yellow fever
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Editorials
+      praised the courage of “our Staten Island citizens” for “_____.” The same newspapers
+      that had once decried yellow fever panic now printed its apology."?'
+    answer: removing a menace to their homes
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Just after
+      dusk, men with torches crept toward the walls of the _____, a sprawling brick
+      compound referred to by locals as the Quarantine ."?'
+    answer: New York Marine Hospital
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Every yellow-fever
+      season there seemed to be new cases popping up around the grounds, and to _____,
+      that correlation was enough to claim causation."?'
+    answer: Staten Islanders
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ probably
+      did spread near the Quarantine , but not because of it."?'
+    answer: Disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "To understand
+      why Staten Islanders brought torches to a hospital, we need to rewind (or maybe
+      recent _____ events give you a decent idea why this happened)."?'
+    answer: public health
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "By the 1850s,
+      _____ had changed from a remote buffer zone for contagious seamen to an area
+      filling with homes, farms and hotels ready to cater to well-off New Yorkers
+      looking for a bit of fresh air."?'
+    answer: Staten Island
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The next site
+      at Seguine’s Point on the southern tip of the island seemed perfect until the
+      new buildings there mysteriously burned down as well in May of _____."?'
+    answer: '1857'
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/the-night-staten-island-burned-its
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 175470298
   slug: when-diabetes-drugs-start-treating
   title: 'When Diabetes Drugs Start Treating Headaches: GLP-1 Agonists and the Migraine
@@ -1325,6 +3025,59 @@ posts:
   primary_keyword: GLP-1 migraine
   topic_cluster: neuroepidemiology
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "The _____ for
+      migraine relief is still thin but biologically plausible, and in medicine that’s
+      usually where revolutions start."?'
+    answer: evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____-1 receptors
+      also sit in odd places like the hypothalamus, hippocampus, and, most relevant
+      here, the choroid plexus, the brain’s cerebrospinal-fluid factory."?'
+    answer: But GLP
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "A 2024 systematic
+      review in The _____ gathered forty-two studies linking GLP-1 signaling to pain
+      or headache."?'
+    answer: Journal of Headache and Pain
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ the 2025
+      Headache paper by Braca et al ., a real-world pilot aimed at migraine itself."?'
+    answer: Enter
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Thirty-one
+      obese adults with chronic or high-frequency _____ who had already failed at
+      least two preventive therapies, including CGRP monoclonal antibodies, were put
+      on liraglutide 1.2 mg daily for twelve weeks."?'
+    answer: migraine
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ were
+      standard with nausea and constipation, as well as the general sense of being
+      too aware of your GI tract, but no one quit."?'
+    answer: Side effects
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ the type-2
+      diabetes drug helps with obesity (and the host of issues with it like sleep
+      apnea and fatty liver)."?'
+    answer: First
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "That’s an unintentional
+      recipe for treating a headache disorder, even if the drug label still says “_____.”"?'
+    answer: Type 2 diabetes
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "So when animal
+      studies showed that GLP-1 agonists not only lower ICP but also reduce _____
+      and c-Fos (a marker of neuronal activation) in the trigeminocervical complex
+      (the hub for headache pain) neurologists perked up."?'
+    answer: CGRP
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "• _____ dropped
+      from 19.8 to 10.7 (-9.1 days, p < 0.001)."?'
+    answer: Monthly Headache Days
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/when-diabetes-drugs-start-treating
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 174580810
   slug: the-us-life-expectancy-gap-sounds
   title: The U.S. Life Expectancy Gap Sounds Worse Than It Is and (Hypothetically)
@@ -1361,6 +3114,57 @@ posts:
   primary_keyword: US life expectancy gap
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "_____ is ~223
+      per million, versus an OECD average near 30 ."?'
+    answer: Our opioid mortality
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "On “_____,”
+      we hemorrhage about 4,721 per 100,000 people, versus 2,723 in comparable OECD
+      countries ."?'
+    answer: potential years of life lost
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The _____ of
+      death inches upward not because the old are immortal, but because more young
+      people make it to ordinary oldness."?'
+    answer: average age
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Car deaths
+      are way too high: Road deaths ~ 13.3 per 100,000 here versus 2.2 in _____ ."?'
+    answer: England and Wales
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ keeps
+      generating massive volumes of high-velocity trauma and overdose, even great
+      hospitals become janitors as opposed to our saviors."?'
+    answer: If the population
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "But that gap
+      feels more closable when you realize it’s concentrated in a handful of premature
+      deaths and not some universal _____."?'
+    answer: shortening of old age
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Not “_____.”
+      Not “seed oils.” Not “food dyes.” It’s pills and powder, steel and asphalt,
+      brass and lead."?'
+    answer: processed bread
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Between _____
+      and 2013, rich countries cut road deaths by 56%; we managed 31% ."?'
+    answer: '2000'
+    cue: Post text
+  - question: What point does the Substack essay make about dying young because selecting?
+    answer: We are dying young because we keep selecting into risky behaviors, individually
+      and collectively, and then acting surprised when the bill comes.
+    cue: Post text
+  - question: What point does the Substack essay make about arterial roads runways
+      adding?
+    answer: Make arterial roads less like runways by adding center medians, protected
+      turns, fewer slip lanes, and saner lighting laws instead of being blinded by
+      the chick in the lifted truck behind you.
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/the-us-life-expectancy-gap-sounds
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 173900942
   slug: psychedelics-for-anxiety-what-the
   title: 'Psychedelics for Anxiety: What the New LSD Trial Does and Doesn’t Change'
@@ -1400,6 +3204,58 @@ posts:
   primary_keyword: psychedelics anxiety trial
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "The result
+      was that _____ µg beat placebo by ~5–6 HAM-A points at 4 weeks, with durable
+      separation to week 12 and response/remission rates roughly double placebo."?'
+    answer: 100–200
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Out of that
+      mess chemists eventually pulled out ergotamine, a clean(ish) tool for _____."?'
+    answer: migraine
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The practical
+      “_____” was 100 µg mark, where they saw more benefit per side effect than at
+      200."?'
+    answer: sweet spot
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "37 of the 40
+      people on the 100 µg dose had _____ and everyone at 200 µg did."?'
+    answer: hallucination like side effects
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "That was the
+      “_____” preprint by Szigeti et al ., and it was a necessary reality check on
+      the field."?'
+    answer: equal-unblinding
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Participants
+      tapered meds, were mostly _____ and medically tidy, and spent ~12 hours in a
+      curated dosing room with two monitors."?'
+    answer: White
+    cue: Post text
+  - question: What point does the Substack essay make about phase multicenter randomized
+      double-blind?
+    answer: A phase 2b, multicenter, randomized, double-blind, placebo-controlled
+      trial gave one supervised dose of either 25, 50, 100, or 200 µg to adults with
+      moderate to severe GAD and followed them for 12 weeks.
+    cue: Post text
+  - question: What point does the Substack essay make about pretty milestone drug-forward
+      psychedelic?
+    answer: 'This is a pretty big milestone for drug-forward psychedelic pharmacotherapy:
+      a signal that survives without the expensive therapy wrapper.'
+    cue: Post text
+  - question: What point does the Substack essay make about claim quote single mm120?
+    answer: '• Claim you can quote: A single 100 µg dose of MM120 produced a medium,
+      clinically meaningful reduction in GAD symptoms without trial-provided psychotherapy
+      at four weeks that was somewhat sustained up to 12 weeks.'
+    cue: Post text
+  - question: What point does the Substack essay make about gnawing moldy bread isolating?
+    answer: Not by gnawing on moldy bread, but by isolating molecules, dosing them
+      precisely, and testing them like adults.
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/psychedelics-for-anxiety-what-the
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 173324414
   slug: body-snatching-the-doctors-riot-and
   title: Body-Snatching, the Doctors’ Riot, and How Cadavers Built American Medicine
@@ -1437,6 +3293,60 @@ posts:
   primary_keyword: Doctors Riot body snatching
   topic_cluster: historical-epidemiology
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "From the standpoint
+      of social epidemiology, you can think of it as a repeated outbreak of the _____
+      (in this case misaligned incentives) finding the same susceptible hosts."?'
+    answer: same pathogen
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "If the _____
+      riot was just a freak convergence of a bad joke and a bad day, it would make
+      for good dinner-party trivia."?'
+    answer: '1788'
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "In _____ the
+      FDA shut down a human tissue company amid allegations that bone and tissue had
+      been recovered without proper consent, triggering recalls and litigation 10
+      ."?'
+    answer: '2006'
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Unequal _____,
+      with those students wanting to impress the doctors."?'
+    answer: power shaped unequal risk
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Administrators
+      solved the problem with a classic American innovation pipeline: look away while
+      students “_____” outside of the formal market."?'
+    answer: source materials
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Poor cemeteries
+      and Black burial grounds were more exposed, having less security, being more
+      distant from centers of power, and with fewer people _____ felt obliged to answer
+      to 4 ."?'
+    answer: City Hall
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Crowds gathered,
+      stormed _____, exposed dissected remains, and dragged physicians and students
+      into the street."?'
+    answer: New York Hospital
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The New York
+      courts wrestled with the legal fallout in _____ (2012) 11 ."?'
+    answer: Matter of Human Tissue Litigation
+    cue: Post text
+  - question: What point does the Substack essay make about you’ve wondered ethics
+      lecture?
+    answer: If you’ve ever wondered when an ethics lecture gets scheduled, it’s usually
+      a short time after the scandal breaks.
+    cue: Post text
+  - question: What point does the Substack essay make about medical training cadavers
+      legal?
+    answer: Medical training ran on cadavers and the legal market could not or would
+      not provide them, so the shadow market stepped in 1,3 .
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/body-snatching-the-doctors-riot-and
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 172614829
   slug: heat-doesnt-age-everyone-equally
   title: Heat Doesn’t Age Everyone Equally
@@ -1474,6 +3384,64 @@ posts:
   primary_keyword: heat aging risk
   topic_cluster: disease-ecology
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "“_____” is
+      a summary score extracted from health signals that correlate with future risk:
+      either clinical-marker composites (the Taiwan study’s approach) or epigenetic
+      clocks (built from DNA methylation)."?'
+    answer: Biological age
+    cue: What “biological age” actually is (and isn’t)
+  - question: 'In the Substack essay text, what completes this cloze: "Think of it
+      as a noisy, unit-converted risk meter where higher biological age relative to
+      your actual age, so-called “_____”, generally tracks with worse outcomes in
+      longitudinal studies."?'
+    answer: age acceleration
+    cue: What “biological age” actually is (and isn’t)
+  - question: 'In the Substack essay text, what completes this cloze: "The models
+      adjust for a lot, but _____ (housing quality, occupational exposures, neighborhood
+      SES, UV exposure) is always a risk."?'
+    answer: residual confounding
+    cue: 'The part that convinces me: who moves the average'
+  - question: 'In the Substack essay text, what completes this cloze: "Because (a)
+      it’s consistent with other datasets using different “_____,” and (b) the average
+      hides bigger impacts where exposure is chronic and unavoidable."?'
+    answer: clocks
+    cue: What “biological age” actually is (and isn’t)
+  - question: 'In the Substack essay text, what completes this cloze: "That likely
+      reflects changing behavior and infrastructure (more AC, better warnings, work-practice
+      shifts) at least as much as biological “_____.” It’s a useful signal that context
+      evolves."?'
+    answer: adaptation
+    cue: 'The part that convinces me: who moves the average'
+  - question: 'In the Substack essay text, what completes this cloze: "Neither study
+      is causal proof, _____ across methods is what you want to see before you take
+      something seriously."?'
+    answer: but converging evidence
+    cue: 'The part that convinces me: who moves the average'
+  - question: 'In the Substack essay text, what completes this cloze: "Decreasing
+      confidence: A well-controlled study showing the heterogeneity disappears (e.g.,
+      no bigger effects for outdoor workers or low-AC regions) would push me toward
+      “_____.”"?'
+    answer: artifact
+    cue: 'The part that convinces me: who moves the average'
+  - question: 'In the Substack essay text, what completes this cloze: "But to me,
+      that just means we probably should file it _____ with plausible mechanisms,
+      clear subgroup differences, and the usual suspect of caveats that come with
+      an observational study."?'
+    answer: under small average association
+    cue: 'The part that convinces me: who moves the average'
+  - question: 'In the Substack essay text, what completes this cloze: "That’s known
+      as the _____ (IQR), which is basically the middle half of the exposure distribution."?'
+    answer: interquartile range
+    cue: What “biological age” actually is (and isn’t)
+  - question: 'In the Substack essay text, what completes this cloze: "The association
+      is stronger in subgroups that are plausibly more exposed: outdoor/manual workers,
+      rural residents, and places with low _____."?'
+    answer: air-conditioning penetration
+    cue: 'The part that convinces me: who moves the average'
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/heat-doesnt-age-everyone-equally
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 172135919
   slug: finding-risk-where-history-put-it
   title: 'Finding Risk Where History Put It: Founder Effects, Population Bottlenecks,
@@ -1515,6 +3483,63 @@ posts:
   primary_keyword: founder effects rare disease
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "...ned, carriers
+      are identified, and at-risk couples are counseled 2 resulting in a founder-aware
+      _____ program that prevents suffering down the road."?'
+    answer: public health
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The key point
+      for epidemiology: both increase the fraction of the genome in long runs of homozygosity
+      (ROH), which raises the probability of _____, especially for variants that drifted
+      to higher frequency during founder events 8 ."?'
+    answer: homozygous recessive disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "That matters
+      because a recent, strong founder event yields longer ROH and _____ risk than
+      an ancient, weak one."?'
+    answer: higher near-term disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "I’m approaching
+      this as an epidemiologist trying to explain how population history can make
+      “_____” diseases locally common, along with how that shapes screening and prevention
+      practices."?'
+    answer: rare
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "If a deleterious
+      recessive variant survives the bottleneck, the homozygote rate scales with the
+      square of its frequency, so small frequency bumps can create large disease burdens
+      _____ 1 ."?'
+    answer: locally in the population
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Long ROH are
+      footprints of small effective population size and endogamy; they localize recessive
+      loci and _____ burden 8 ."?'
+    answer: correlate with recessive disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The map above
+      from Bchetnia et al (2021) shows the _____ in the region and when they happened."?'
+    answer: three identified founder effects
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The “_____”
+      review shows the other half of the loop: decades of clinical genetics in an
+      isolated population shorten diagnostic odysseys and clarify natural history
+      across a set of recurrent recessive disorders 4 ."?'
+    answer: Finnish Disease Heritage
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The _____ work
+      adds a reminder that founder burdens exist in diverse urban populations and
+      that grouping by identity-by-descent can reveal risks..."?'
+    answer: New York City
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Successes of
+      _____-based carrier screening program for 4 prevalent recessive hereditary diseases
+      in a population with a founder effect in Quebec, Canada."?'
+    answer: an innovative population
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/finding-risk-where-history-put-it
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 171521367
   slug: infectious-diseases-on-the-move-2025
   title: 'Infectious Diseases on the Move (2025): How Warmer Weather and Urbanicity
@@ -1554,6 +3579,62 @@ posts:
   primary_keyword: climate infectious disease risk
   topic_cluster: disease-ecology
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "Editorial:
+      Climate Change and the Spread of Vector-Borne Diseases, Including Dengue, Malaria,
+      Lyme Disease, and _____."?'
+    answer: West Nile Virus Infection
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The weight
+      of the recent evidence shows that climatic suitability is _____-borne diseases,
+      with earlier seasonal onsets and expanding ranges (though these are highly variable
+      by pathogen and place)."?'
+    answer: increasing for multiple vector
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Warmer summers
+      and nights lengthen the amplification window in bird-mosquito _____ numbers
+      upward."?'
+    answer: cycles and shoot vector
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Amblyomma americanum
+      (the lone star tick) are another species expanding their range, this time toward
+      the Northeast, bringing with them a risk of alpha-gal syndrome and _____ 6 ."?'
+    answer: concerns of rickettsial disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The county
+      I live in runs a _____ control program with educational content around getting
+      rid of environmental factors like stagnant water to prevent mosquitoes from
+      using it as a breeding ground."?'
+    answer: vector
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The indications
+      are that Europe is showing increasing climatic _____-borne infections, including
+      West Nile 2,3 ."?'
+    answer: compatibility for multiple vector
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "As you can
+      see in the map below, the entirety of the Horn has invasive malarial mosquitoes,
+      as well as the west coast countries of _____ 18."?'
+    answer: Nigeria and Ghana
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ of temperature
+      on mosquito and parasite traits that determine the transmission potential of
+      human malaria."?'
+    answer: Quantifying the effects
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "In the US,
+      the CDC’s potential range-graphic still places _____ across the Gulf and Southeastern
+      states, as well as into the Mid-Atlantic and West (although the maps – below-
+      themselves haven’t been updated since 2017."?'
+    answer: most of Aedes risk
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Seasonal risk
+      is tied to similar variables in warmer months and _____ management."?'
+    answer: poor urban water infrastructure
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/infectious-diseases-on-the-move-2025
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 171024347
   slug: does-lithium-lower-alzheimers-risk
   title: Does Lithium Lower Alzheimer’s Risk? A Guide to the Evidence
@@ -1593,6 +3674,62 @@ posts:
   primary_keyword: lithium Alzheimer’s risk
   topic_cluster: neuroepidemiology
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "But it’s a
+      bit more nuanced than “_____.” Continued lithium treatment seemed to reduce
+      dementia back to levels of that in the general population compared to those
+      who did not continue treatment."?'
+    answer: taking lithium reduced risk of dementia
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Lithium Therapy’s
+      Potential to _____ and the Prevalence of Alzheimer’s Disease: A Meta-Analysis."?'
+    answer: Lower Dementia Risk
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "A fourth line
+      comes from large sample environmental epidemiology work showing those living
+      in areas with higher ground levels of lithium had lower _____ rates than those
+      in areas with lower ground levels 6 ."?'
+    answer: dementia
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "A recent meta-analysis
+      on therapeutic lithium studies reported lower dementia risk and prevalence overall,
+      while noting _____ qualities to temper any strong claims 3 ."?'
+    answer: heterogeneity and differing study
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "That said,
+      the _____ evidence sits with low-dose lithium carbonate under clinical monitoring."?'
+    answer: current human outcomes
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Similarly,
+      a _____ of daily lithium microdoses of 300 mg for 15 months showed no decrease
+      in cognitive performance while the control group had the expected decline 1
+      ."?'
+    answer: randomized controlled study
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ to 2–5
+      µg/L, dementia rates were a bit higher at ~5–10 µg/L, flat around ~10–15 µg/L,
+      and lower by about 17% for those in areas above ~15 µg/L."?'
+    answer: Compared
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Because many
+      readers may be asking “_____”, and because I’m not a doctor, I won’t be making
+      any claims of which is better for people to take."?'
+    answer: which kind of lithium is best?
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "One point people
+      miss: the high-lithium East (Copenhagen region) also has _____; if anything
+      that should mean more dementia being diagnosed there, not less."?'
+    answer: more health care access
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "A new paper
+      in Nature by _____ and colleagues combined mouse models and post-mortem brain
+      and serum data from humans to argue that the Alzheimer’s brain is short on available
+      lithium, partly because amyloid binds it like a sponge."?'
+    answer: Aron
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/does-lithium-lower-alzheimers-risk
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 170328251
   slug: paper-mills-are-poisoning-science
   title: Paper Mills are Poisoning Science
@@ -1632,6 +3769,64 @@ posts:
   primary_keyword: paper mills scientific fraud
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "A new paper
+      in PNAS titled “ The entities enabling scientific fraud at scale are large,
+      resilient, and growing rapidly ” shows that this goes beyond a handful of rogue
+      researchers fudging data a la _____."?'
+    answer: Dan Ariely
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Examples given
+      are a paper about roasting hazelnuts appearing in a journal on HIV/_____ and
+      an article on malware detection showing up in a special education journal."?'
+    answer: AIDS
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "In what could
+      turn out to be one of the most consequential meta-science papers of this decade,
+      _____ and colleagues set out to see how scientific fraud actually works as an
+      industry."?'
+    answer: Richardson
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "With massive
+      datasets taken from PubMed, OpenAlex, _____, and PubPeer, the researchers traced
+      the footprints of thousands of bogus papers, zeroing in on the editors who greenlit
+      them."?'
+    answer: Retraction Watch
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "- One outfit
+      known as the Academic Research and Development Association (ARDA) lists the
+      journals where it can “_____” publication"?'
+    answer: guarantee
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "“_____” garbage
+      that could have zero truth to them could be hoisted up by ‘influencers’ as evidence
+      against real science, fooling those unable to tell the difference."?'
+    answer: Peer-reviewed
+    cue: Post text
+  - question: What point does the Substack essay make about think something college
+      deemed?
+    answer: Think something like a college that was deemed a diploma mill, but instead
+      of selling fake degrees, they sell authorship on peer-reviewed articles.
+    cue: Post text
+  - question: What point does the Substack essay make about because incentives skewed
+      favoring?
+    answer: And because the incentives can be skewed, favoring quantity over quality,
+      speed over substance, there are always editors, journals, and brokers ready
+      to make it happen.
+    cue: Post text
+  - question: What point does the Substack essay make about through these corrosive
+      groups?
+    answer: Through these corrosive groups people are buying their slots on ‘indexed’
+      publications the same way you can buy fake followers on social media.
+    cue: Post text
+  - question: What point does the Substack essay make about mapped networks articles
+      sharing?
+    answer: '- They mapped networks of articles sharing duplicated images (like the
+      same Western blot being used across multiple, unrelated studies).'
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/paper-mills-are-poisoning-science
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 169716392
   slug: eric-topols-super-agers-the-medical
   title: 'Eric Topol’s Super Agers: The Medical System We Ought to Build'
@@ -1675,6 +3870,59 @@ posts:
   primary_keyword: super agers preventive medicine
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "These are a
+      group of over _____ individuals who aged without major chronic diseases that
+      his team has been studying."?'
+    answer: '1400'
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Those are becoming
+      more common in the form of AI-based risk _____, polygenic screening for cancer
+      predisposition, or blood-based biomarkers for Alzheimer’s, the focus is fully
+      on shifting the timeline of diagnosis forward."?'
+    answer: models for cardiovascular disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The chapters
+      in _____ that deal with rare diseases, immune system rewiring, and the near-future
+      of brain and cancer therapeutics have a thread of ‘precision medicine’ throughout."?'
+    answer: Super Agers
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "However, they
+      were thinner, more active, more educated, and more socially engaged _____."?'
+    answer: than the general population
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "His indictment
+      of UPFs is passionate and _____, but it doesn’t really differentiate between
+      nutritionally engineered shakes and shelf-stable garbage snacks."?'
+    answer: heavy on the evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "I too want
+      things like whole genome sequencing, immune profiling, and _____ prediction
+      to become routine clinical tools as opposed to concierge-level add-ons."?'
+    answer: multi-omic risk
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Larger hospitals
+      or niche, longevity _____ to do whole genome sequencing on each patient, but
+      not the average clinic."?'
+    answer: doctors may have access
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "These tools
+      could become the templates for how we treat everything from _____ and cancers."?'
+    answer: asthma to autoimmune disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The people
+      at this scenic old folk’s home were taking part in a trial run by UC Davis’
+      _____."?'
+    answer: School of Medicine Professor David
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "K Johnson looking
+      at how diet and exercise could be _____-related memory decline and insulin resistance
+      issues; a simple question, can lifestyle changes keep people healthier longer."?'
+    answer: used to prevent age
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/eric-topols-super-agers-the-medical
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 169015790
   slug: migraine-and-brain-fog
   title: Migraine and brain fog
@@ -1716,6 +3964,64 @@ posts:
   primary_keyword: migraine brain fog
   topic_cluster: neuroepidemiology
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "_____ the cognitive
+      burden we see in migraine patients has been estimated to be responsible for
+      a €50 billion annual cost to the EU (as of 2011), 93% of which is due to productivity
+      loss 8 ."?'
+    answer: Overall
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Coming up in
+      the migraine series on the blog: a post on medications, a post on economic impacts,
+      and a post on long-term impacts and what migraine is a _____ factor for."?'
+    answer: risk
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Most often
+      these complaints arise during the _____ phase but also tend to be noticed during
+      the postictal period (after the migraine) and sometimes in the preictal period."?'
+    answer: migraine
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Some studies
+      suggest minor impairments in working memory or attention may begin during this
+      period 1 , _____ is mixed on objective cognitive impairment in this phase."?'
+    answer: but the evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "- Postictal
+      (after the attack) : recovery can vary, but some individuals report some lingering
+      cognitive issues for hours or days after their pain subsides, _____ here is
+      far from conclusive."?'
+    answer: though the evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Although a
+      _____ of 60 patients without a control group, this suggests Botox, either directly
+      or indirectly, benefits attention and executive function in migraineurs 11 ."?'
+    answer: smaller study
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ of why
+      chronic migraineurs have more problems in the interictal period is the shorter
+      distance in time between attacks, while episodic migraine allows for a bit more
+      time to recover 7 ."?'
+    answer: Part
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "- Topiramate
+      is commonly prescribed for migraine (and epilepsy), but is more notorious for
+      _____ on cognition, especially at higher doses 9 ."?'
+    answer: its side effects
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Migraine patients
+      tend to report _____ than epilepsy patients, but I hesitate to put that down
+      to the drug and could be because seizures can also impact memory and cognition
+      (pretty severely if I do say so myself)."?'
+    answer: fewer cognitive side effects
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "In _____, patients
+      had better cognitive scores post injections, and those gains didn’t just track
+      with fewer migraines."?'
+    answer: one study
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/migraine-and-brain-fog
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 168528776
   slug: memetics-is-dead-long-live-memetics
   title: Memetics is dead, long live memetics
@@ -1757,6 +4063,57 @@ posts:
   primary_keyword: memetics viral ideas
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "What started
+      as a clever metaphor for cultural evolution seemed more like an addition to
+      the _____ modeling books and lectures I had read and been to."?'
+    answer: outbreak
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ Spreading
+      in Scale-Free Networks 1 show that the language of information as contagion
+      is alive and well."?'
+    answer: Paper titles like Epidemic
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Some memes
+      spread fast and wide, like _____ of COVID, with short incubation periods and
+      high transmission rates (think celebrity gossip, viral videos, or tiktok dances)."?'
+    answer: measles
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "You also see
+      co-infections in the form of “_____” (bundles of ideas that increase one another’s
+      transmissibility, like cultures or religions)."?'
+    answer: memeplexes
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "From a memetics-as-epidemiology
+      point of view, the _____ was a textbook outbreak."?'
+    answer: Satanic Panic
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "If you _____,
+      many models used to study pathogen spread apply to the spread of ideas."?'
+    answer: strip away the biology
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ frameworks
+      have been adapted in network science to model the diffusion of rumors and misinformation
+      1,2 ."?'
+    answer: SIR and SEIR
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "In public health,
+      we often talk in terms of “_____” the public with accurate information before
+      misinformation takes hold 3,4 (even if that’s often difficult), an idea that
+      has similari..."?'
+    answer: inoculating
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "If that’s not
+      a _____, I’m not sure what would count as one."?'
+    answer: full-on memetic epidemic
+    cue: Post text
+  - question: What point does the Substack essay make about Satanic Panic?
+    answer: Few memes have infected the American psyche with the speed and fervor
+      as the Satanic Panic of the 1980s and 90s.
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/memetics-is-dead-long-live-memetics
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 167965967
   slug: shrooms-vs-antidepressants-a-meta
   title: 'Shrooms vs antidepressants: A meta-analysis calls it a tie'
@@ -1796,6 +4153,61 @@ posts:
   primary_keyword: psilocybin antidepressants meta-analysis
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "The chart below
+      (figure 1) shows the effect _____ and the averages of the antidepressant trials
+      and of the PAT trials."?'
+    answer: sizes for each study
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Antidepressants
+      are used in the real world already and this _____ people have been looking for
+      to make PAT more available."?'
+    answer: could be the evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "A new preregistered
+      (preprint) meta-_____ recently came out that helps to clarify what’s actually
+      happening with psilocybin and depression."?'
+    answer: analysis
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The trials
+      had used different questionnaires, so all results were standardized to a common
+      depression questionnaire called the _____ ."?'
+    answer: Hamilton Depression Rating Scale
+    cue: Post text
+  - question: What point does the Substack essay make about chemists figured ergot
+      other?
+    answer: Chemists figured out what was in ergot (other than LSD), figured out how
+      to dole out doses in a controlled manner, and ran randomized controlled trials
+      to understand the efficacy and adverse events.
+    cue: Post text
+  - question: What point does the Substack essay make about recent decades psychedelic
+      therapies?
+    answer: Recent decades have seen psychedelic therapies like psilocybin have been
+      touted as nearly a miracle cure on blogs and podcasts.
+    cue: Post text
+  - question: What point does the Substack essay make about thinking pretty difficult
+      randomize?
+    answer: As you may be thinking, it’s pretty difficult to randomize someone to
+      a powerful dose of a hallucinogenic substance and have them not realize they
+      were given the drug and not the placebo.
+    cue: Post text
+  - question: What point does the Substack essay make about analysis?
+    answer: 'The meta-analysis by Williams and colleagues tried to answer a pretty
+      simple question: if both groups know what they’re taking, does psychedelic assisted
+      therapy (PAT) truly outperform standard antidepressants.'
+    cue: Post text
+  - question: What point does the Substack essay make about analysis?
+    answer: 3-5 units is deemed the MCID on the depression measure in question (the
+      authors went with the lower bound of 3 for the MCID in this meta-analysis).
+    cue: Post text
+  - question: What point does the Substack essay make about psychedelics don’t standard
+      anti-depressants?
+    answer: Psychedelics don’t seem to help any more than standard anti-depressants
+      do (which already have small treatment – placebo differences).
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/shrooms-vs-antidepressants-a-meta
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 167544796
   slug: the-poison-nobody-could-agree-on
   title: 'The Poison Nobody Could Agree On: The Unsolved 1951 Outbreak of Pont-Saint-Esprit'
@@ -1835,6 +4247,62 @@ posts:
   primary_keyword: Pont-Saint-Esprit outbreak
   topic_cluster: historical-epidemiology
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "The _____ boils
+      down to a few declassified documents that tie Pont-Saint-Esprit to Frank Olson,
+      a US Army biochemist who died under suspicious circumstances in 1953 after being
+      dosed with LSD a week earlier."?'
+    answer: evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Albarelli on
+      the other hand heavily champions the CIA theory in his 2005, twelve-hundred-page
+      book A Terrible Mistake: The Murder of Frank Olson and the CIA’s _____ ."?'
+    answer: Secret Cold War Experiments
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The truth is,
+      we don’t know, and there hasn’t really _____ coming forward that makes one theory
+      more likely than the others."?'
+    answer: been any more evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Investigative
+      journalist _____ published a book claiming the outbreak in southern France was
+      part of a covert experiment under the name of MK-NAOMI (a cousin of MK-ULTRA)."?'
+    answer: Hank Albarelli
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "In a 2012 interview
+      he called it “_____” and “harebrained” 5 ."?'
+    answer: clinically incoherent
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "His reasoning
+      was that LSD takes a much quicker effect, doesn’t cause vomiting, fever, or
+      convulsions, degrades under heat (so much for baking it), and he didn’t like
+      the “_____” of the town for the CIA."?'
+    answer: choice
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "But the truth
+      here is that every explanation offered, whether it be ergot, LSD testing, fungicides,
+      bleaching agents, or even mass psychogenic illness, has serious _____."?'
+    answer: problems with the evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The French
+      bread historian’s 2008 book _____ is regarded as the most serious investigation
+      of the case."?'
+    answer: Le Pain Maudit
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "It’s apparently
+      incredibly thorough (I’m relying on select quotes and interviews due to the
+      book being in _____ and 1164 pages) going through the history of ergotism and
+      bread in France."?'
+    answer: French
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "In _____ of
+      1951, something toxic ripped through the town of Pont-Saint-Esprit in southern
+      France."?'
+    answer: August
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/the-poison-nobody-could-agree-on
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 167022011
   slug: migraine-what-we-know-and-who-it
   title: 'Migraine: What We Know and Who It Hits Hardest'
@@ -1878,6 +4346,59 @@ posts:
   primary_keyword: migraine epidemiology
   topic_cluster: neuroepidemiology
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "The WHO reports
+      that about 50% of the population are impacted by headaches 1 , while migraine
+      in particular impacts roughly 14-15% of the _____ at any given time 2 ."?'
+    answer: global population
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The chart below
+      from the _____ data shows the change in migraine prevalence across the globe
+      over time 7 ."?'
+    answer: Global Burden of Disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "This is backed
+      up by large, _____ level datasets such as Buse et al. (2020) which examined
+      commonly co-occuring conditions with migraine."?'
+    answer: population
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "It’s more common
+      than diabetes or asthma, but ~46% of people with _____ go undiagnosed, likely
+      stuck taking over-the-counter medications instead of a more tailored treatment
+      4 ."?'
+    answer: migraine
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Diagnoses for
+      migraine start _____ starting around the age of 8, rising steeply through adolescence
+      and peaking in early adulthood around."?'
+    answer: rising in the population
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Using the Danish
+      Migraine Population Cohort and a _____ in Saudi Arabia as examples, we see estimates
+      of 16.6% for the Danish to nearly 58% for the Saudi study 9,10 ."?'
+    answer: community based cross-sectional study
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The _____ (ICHD-3)
+      uses the following criteria for migraine (without aura):"?'
+    answer: International Classification of Headache Disorders
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Are these comorbidities
+      downstream of migraine, _____ factor, or just coincidentally co-occurring in
+      stressed-out bodies that have overlapping vulnerability profiles?"?'
+    answer: sharing some risk
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____-level
+      estimates of menstrual migraine vary so widely across studies despite applying
+      the same diagnostic criteria?"?'
+    answer: Why do population
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Global epidemiology
+      of migraine and its implications for _____ and health policy."?'
+    answer: public health
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/migraine-what-we-know-and-who-it
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 166858843
   slug: something-i-noticed-at-the-american
   title: Something I Noticed at the American Headache Society Conference
@@ -1911,6 +4432,61 @@ posts:
   primary_keyword: American Headache Society migraine
   topic_cluster: neuroepidemiology
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "Instead, they
+      do what medicine has always _____ runs thin: extrapolate carefully, lean on
+      experience, use their best clinical judgement, and try to tailor the care to
+      the person in front of them."?'
+    answer: done when the evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "In the case
+      of chronic _____, that means trying a drug like Rimegepant even if the trial
+      didn’t include someone with 20+ headaches a month."?'
+    answer: migraine
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "While I was
+      there I presented a poster on _____ looking at predictors of treatment response
+      in migraine and comparing the medication classes of triptans and gepants."?'
+    answer: an app-based survey study
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "A neurologist
+      will still prescribe a drug that was tested on less severe patients to those
+      with a more severe _____, but they don’t quite know just what kind of results
+      to expect."?'
+    answer: form of the disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "And while practical
+      to exclude _____, it creates an awkward tension in which the people most in
+      need of treatment are the ones clinicians know the least about."?'
+    answer: from an early study
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "I hope to see
+      someone like _____, who is currently doing commercials for a migraine medication,
+      start up a foundation and fund some life-changing research."?'
+    answer: Lady Gaga
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The past few
+      days I’ve been at the _____ in Minneapolis talking with researchers in academia,
+      industry, and various pharmaceutical and device companies."?'
+    answer: American Headache Society Scientific Meeting
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "This problem
+      became more clear to me when I was watching a Pfizer presentation I attended
+      discussing a _____ trial of rimegepant."?'
+    answer: Phase IV
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "While it’s
+      not a _____ design, it limits how confidently we can extend those results to
+      those suffering most."?'
+    answer: flaw in the study
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "They’re not
+      going to blindly apply the _____ the research may not generalize too."?'
+    answer: trial data to population
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/something-i-noticed-at-the-american
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 164702703
   slug: snort-this-to-tan-the-bizarre-and
   title: 'Snort This to Tan: The Bizarre and Dangerous Barbie Drug'
@@ -1952,6 +4528,58 @@ posts:
   primary_keyword: melanotan Barbie drug
   topic_cluster: wellness-claims
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "The FDA sent
+      warning letters in _____ but the company kept selling it in the US and abroad."?'
+    answer: '2007'
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "For both sexes,
+      we see darkening of moles, new mole formation, and a _____ in melanoma risk."?'
+    answer: likely increased risk
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "A company called
+      Melanocorp, run by _____, began selling it online as a tanning injection."?'
+    answer: Edward Manookian
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "It’s called
+      _____, a synthetic analog of α – MSH (a peptide hormone involved in pigmentation,
+      appetite regulation, and sexual activity) that was originally intended for subcutaneous
+      injection."?'
+    answer: Melanotan II
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "What’s now
+      colloquially called the ‘_____’ was never meant to be a supplement peddled in
+      the TikTok store."?'
+    answer: Barbie Drug
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "That is how
+      we end up with a rogue’s _____ like nausea, spontaneous erections, darkened
+      moles, and more 1,2 ."?'
+    answer: gallery of side effects
+    cue: Post text
+  - question: What point does the Substack essay make about compound abandoned pharma
+      safety?
+    answer: A compound abandoned by pharma due to safety risks ends up finding new
+      life in influencers, wrapped in a Barbie-pink wrapper, and sold at high costs
+      in the name of self-improvement.
+    cue: Post text
+  - question: What point does the Substack essay make about there’s black-market peptide
+      that’ll?
+    answer: There’s a black-market peptide that’ll give you a tan, a hard-on, and
+      possibly cancer; and it’s going up people’s noses in Barbie-core packaging.
+    cue: Post text
+  - question: What point does the Substack essay make about there’s facial flushing
+      abdominal?
+    answer: In men, there’s facial flushing, abdominal pain, and sometimes priapism
+      (the medical term for erections that last for hours).
+    cue: Post text
+  - question: What point does the Substack essay make about women users report rapid?
+    answer: In women, users report rapid nausea, allergic reactions, and breathing
+      difficulty that has caused hospitalization on more than one occasion.
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/snort-this-to-tan-the-bizarre-and
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 166112010
   slug: how-accurate-are-wearable-fitness
   title: How Accurate is Your Apple Watch? What Fitness Trackers are Good For and
@@ -1994,6 +4622,61 @@ posts:
   primary_keyword: Apple Watch accuracy
   topic_cluster: epidemiologic-methods
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "_____ of these
+      guesses end up being quite close to the gold standard, and at the price of a
+      wearable that could be worth it to some."?'
+    answer: Some
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ the marketing
+      of these devices tend to oversell just how accurate these devices are, some
+      of the core measurements are surprisingly solid."?'
+    answer: While
+    cue: Post text
+  - question: What point does the Substack essay make about sleep stages would compared?
+    answer: Sleep stages would be compared to polysomnography, which tracks brainwaves,
+      eye movement, and muscle activity.
+    cue: Post text
+  - question: What point does the Substack essay make about instead estimate based
+      other?
+    answer: Instead, they estimate based on other factors like optical sensors, accelerometers,
+      and proprietary algorithms that estimate what’s happening based on movement
+      patterns and heart rate data.
+    cue: Post text
+  - question: What point does the Substack essay make about someone working weight
+      thinking?
+    answer: But someone working to lose weight thinking they burned 750 calories in
+      a workout when it was actually 450?
+    cue: Post text
+  - question: What point does the Substack essay make about brain waves movement tracking?
+    answer: It uses brain waves (EEG), eye movement tracking, and muscle tone measurements
+      to help distinguish between sleep stages.
+    cue: Post text
+  - question: What point does the Substack essay make about wearables apple watches
+      fitbits?
+    answer: Wearables like Apple watches, Fitbits, Garmins, WHOOPs, and Oura rings
+      have gone from strange tools used by fitness nerds to being mainstream health
+      accessories.
+    cue: Post text
+  - question: What point does the Substack essay make about we’ll through wearables
+      measure?
+    answer: Here we’ll walk through what wearables measure well (resting heart rate,
+      total sleep time), where they still could use a bit of work (HRV, sleep stages,
+      caloric burn), and what that means for people trying to implement some of this
+      data into their lives.
+    cue: Post text
+  - question: What point does the Substack essay make about watch saying slept hours?
+    answer: A watch saying you slept 7 hours instead of 6 and a half probably won’t
+      be too impactful.
+    cue: Post text
+  - question: What point does the Substack essay make about that’s scenario might
+      someone?
+    answer: That’s a scenario that might lead someone to think they’re in a caloric
+      deficit when they aren’t and stifle any possibility of weight loss.
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/how-accurate-are-wearable-fitness
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 165597582
   slug: war-on-many-fronts-during-the-justinianic
   title: War on Many Fronts During the Justinianic Plague (541 CE)
@@ -2038,6 +4721,61 @@ posts:
   primary_keyword: Justinianic Plague war
   topic_cluster: disease-and-war
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "Earlier theories
+      had tied the _____ to smallpox or an unknown hemorrhagic virus, but modern genomics
+      has confirmed the diagnosis."?'
+    answer: outbreak
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "By the time
+      scientists had used _____ to confirm Y. pestis as the cause of the plague, it
+      was the 2010s."?'
+    answer: ancient DNA
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Unlike modern
+      governments which respond to outbreak with _____ campaigns or emergency protocols,
+      the response from the Byzantine empire was largely theological."?'
+    answer: public health
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Others simply
+      fled the area, but there was really nowhere to _____ was already well beyond
+      Constantinople, further radiating outward through trade networks."?'
+    answer: run since the disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Eight centuries
+      later, we know the bacteria responsible for this plague was Yersinia pestis
+      , the same bacteria responsible for the _____ eight centuries later that ravaged
+      Europe."?'
+    answer: Black Death
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "That’s part
+      of the reason that even as the first waves were fading away, local outbreaks
+      would continue for over two centuries in what historians now call the _____."?'
+    answer: First Plague Pandemic
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ of the
+      speed it could travel along those routes there were no warnings or quarantines."?'
+    answer: Because
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "The same routes
+      that had knit the empire together through trade and commerce had swiftly become
+      the transmission lines of a _____."?'
+    answer: deadly pathogen
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Some blamed
+      foul air or miasma arising from the _____ for the outbreak while others pointed
+      to eclipses, comets, or divine wrath to comprehend what was happening around
+      them."?'
+    answer: Nile
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "In a world
+      with no understanding of microbiology, _____ was often seen as a theological
+      problem as well as a medical one."?'
+    answer: plague
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/war-on-many-fronts-during-the-justinianic
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 165244625
   slug: magnesium-for-sleep-mocktails-hype
   title: Magnesium is Overrated (Especially by the Mocktail Crowd)
@@ -2164,6 +4902,63 @@ posts:
   primary_keyword: melatonin sleep evidence
   topic_cluster: wellness-claims
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "If you’ve got
+      insomnia that is chronic or tied to anxiety, racing thoughts, or stress, something
+      like CBT-I (Cognitive Behavioral Therapy for Insomnia) has quite a _____ as
+      a successful option."?'
+    answer: bit of evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Outside of
+      those uses, the _____ for efficacy honestly starts to look fuzzier."?'
+    answer: evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "It seems particularly
+      helpful for those with delayed sleep phase syndrome (night owls who can’t sleep
+      til after 2-3am but need or would like to sleep earlier), _____, and people
+      experiencing jet-lag 1,2 ."?'
+    answer: shift workers
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Someone more
+      _____ or placebo effects may knock out quickly, but that’s not the melatonin."?'
+    answer: prone to expectation effects
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "I can lay out
+      the evidence as I see it and say who does and doesn’t seem to benefit, but this
+      next section is less of a “_____” and more of a guide of what’s worth bringing
+      up to a healthcare provider."?'
+    answer: try this at home
+    cue: Post text
+  - question: What point does the Substack essay make about things worse average timing?
+    answer: To make things worse for the average user, the timing and dosages in commercial
+      products are often inaccurate, with some doseges being off by as much as 478%
+      from the label 3 .
+    cue: Post text
+  - question: What point does the Substack essay make about means melatonin tends
+      shift?
+    answer: This means melatonin tends to work best when it’s used to shift or reinforce
+      that internal circadian clock, not as a last-minute fix taken after midnight
+      because a person can’t fall asleep.
+    cue: Post text
+  - question: What point does the Substack essay make about that’s where problem because?
+    answer: That’s where the problem is, because most people are popping melatonin
+      for general or transient insomnia, which is really a misuse of it.
+    cue: Post text
+  - question: What point does the Substack essay make about combo overactive thoughts
+      sleep?
+    answer: A combo of overactive thoughts and poor sleep hygiene led me to melatonin,
+      an easy answer that was natural and available easily over the counter (so I
+      thought).
+    cue: Post text
+  - question: What point does the Substack essay make about whether melatonin yourself
+      thought?
+    answer: So, whether you use melatonin yourself, have thought about it, or are
+      just curious about the gummy supplements your roommate or significant other
+      pops like candy before bed, this post is for you.
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/melatonin-is-misunderstood-especially
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 164691083
   slug: the-raw-truth-about-raw-milk
   title: The Raw Truth About Raw Milk
@@ -2291,6 +5086,62 @@ posts:
   primary_keyword: vitamin D dementia Rhonda Patrick
   topic_cluster: wellness-claims
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "By _____ nearly
+      follows the same trend over and over, she gives the impression that the causal
+      link between vitamin D and dementia in the overall population is settled, but
+      it’s not."?'
+    answer: acting like the evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Tracing the
+      mechanistic threads without checking them against outcome data risks falling
+      into the same trap that has plagued Alzheimer’s and Dementia research for years:
+      chasing elegant ideas that never _____ burden."?'
+    answer: end up reducing disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Saying vitamin
+      D “_____” makes it sound like a causal guarantee, but that’s not what the evidence
+      says."?'
+    answer: reduces dementia risk by 40%
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "And I think
+      she means well, even adding an asterisk to the video thumbnail to say “_____”."?'
+    answer: '*in observational studies'
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "So, with that
+      said, let’s look _____ really shows us and how a little too much optimism can
+      quietly slip into the realm of misinformation."?'
+    answer: at what the evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "I’d bet, dollars
+      to donuts, that they were also more likely to see a doctor regularly, follow
+      their directions, and exercise more, all of which would contribute to a _____
+      of dementia."?'
+    answer: decreased risk
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "If those people
+      have higher rates of dementia, despite everything else being equal, we _____
+      that low vitamin D might be causing dementia."?'
+    answer: get some stronger evidence
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "One paper found
+      that genetically predicted vitamin D deficiency of below 10ng/mL was associated
+      with a 54% _____ of dementia."?'
+    answer: increased risk
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "One of the
+      largest to date had over 170,000 participants (28k of which had serum vitamin
+      D measured in the form of 25(OH)D) and found no causal link between vitamin
+      D and _____ 4 ."?'
+    answer: dementia
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Rhonda Patrick
+      explaining how vitamin D supplements can _____ by 40% 2 ."?'
+    answer: cut your dementia risk
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/when-the-influencers-claims-are-stronger
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 163976211
   slug: your-body-already-detoxifies-itself
   title: Your Body Already Detoxifies Itself. You Don’t Need a “Cleanse”
@@ -2408,6 +5259,59 @@ posts:
   primary_keyword: creatine benefits evidence
   topic_cluster: wellness-claims
   indexing_strategy: noindex_stub
+  flashcards:
+  - question: 'In the Substack essay text, what completes this cloze: "The warning
+      earlier is more in line with the conservative view the medical establishment
+      has against recommending something that hasn’t been tested in a _____."?'
+    answer: specific population
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "A recent _____
+      article framed creatine as a trendy, potentially serious supplement for brain
+      health, bone density, biological aging, sleep, and even mood."?'
+    answer: Wall Street Journal
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "If you have
+      _____, high blood pressure, bipolar disorder, or you’re pregnant or breastfeeding
+      , you should avoid it or talk to your doctor before supplementing."?'
+    answer: kidney or liver disease
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "A few days
+      before that I came across a twitter thread by Brady Holmer (titled _____) offering
+      an extremely thoughtful take on the topic, arguing that creatine is safe, helpful,
+      but wildly overhyped."?'
+    answer: Creatine Is Overrated
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Vegetarians/vegans,
+      women, older adults, those of us on the ‘_____’, and those who eat minimal or
+      avoid red meat altogether."?'
+    answer: Standard American Diet
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "_____ of the
+      creatine in the body is stored in skeletal muscles, and once those stores are
+      full, adding more doesn’t do much."?'
+    answer: Most
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "But they’re
+      _____ to show the true potential of creatine."?'
+    answer: not the best population
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "Improving strength
+      by a few percent at 75 years old might mean standing up without help _____ of
+      a fall."?'
+    answer: or reducing the risk
+    cue: Post text
+  - question: 'In the Substack essay text, what completes this cloze: "It’s a supplement
+      with plenty of upside and no established downside in _____ in a healthy population."?'
+    answer: terms of side effects
+    cue: Post text
+  - question: What point does the Substack essay make about you’re already eating
+      saturation?
+    answer: If you’re already eating a lot of red meat, you may be near that saturation
+      point and further supplementation, while not risky, may be rather pointless.
+    cue: Post text
+  flashcards_source: substack_body_html
+  flashcards_source_url: https://theedgeofepidemiology.substack.com/p/creatine-is-underrated-by-those-who
+  flashcards_generated_at: '2026-05-26T14:54:10+00:00'
 - substack_id: 163595595
   slug: why-i-write-the-edge-of-epidemiology
   title: Why I Write ‘The Edge of Epidemiology’
