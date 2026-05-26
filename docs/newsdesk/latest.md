@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-05-26
-Generated at: 2026-05-26T10:17
+Generated at: 2026-05-26T11:17
 Search window: 7 day(s) ending 2026-05-26
 
 ## Executive scan
@@ -12,28 +12,27 @@ Search window: 7 day(s) ending 2026-05-26
 - [Risk to Europe remains very low as Ebola outbreak intensifies in DRC](https://www.ecdc.europa.eu/en/news-events/risk-europe-remains-very-low-ebola-outbreak-intensifies-drc) (ECDC News; 2026-05-21T18:33+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
 - [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 01, Data as of 18 May 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa; 2026-05-20T06:12+00:00; Outbreaks and emerging infections; relevance 5/5)
 - [Epidemiological and virological characteristics of influenza in Zhejiang Province, China: A 15-year surveillance study.](https://pubmed.ncbi.nlm.nih.gov/42157696/) (PubMed Infectious Disease Search; 2026-05-20T00:00; Major epidemiology studies; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (238), Policy, surveillance, and public health infrastructure (17), Historical epidemiology / ancient disease / paleopathology (1)
+- Category mix: Outbreaks and emerging infections (242), Policy, surveillance, and public health infrastructure (16), Historical epidemiology / ancient disease / paleopathology (1)
 - Source health: 1 source(s) failed during collection: USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
 ### Ebola virus disease
 - Lead item: [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-and-uganda) (ECDC News)
-- Newly tracked story cluster: 224 item(s) across 140 source(s).
-- Baseline snapshot created with 224 clustered item(s) across 140 source(s).
+- Newly tracked story cluster: 226 item(s) across 139 source(s).
+- Baseline snapshot created with 226 clustered item(s) across 139 source(s).
 - WHO Regional Office for Africa now includes deaths or fatal cases in the story frame.
 - ECDC News currently frames broader public risk as low.
 
 ### Hantavirus and cruise-ship outbreak
 - Lead item: [Andes hantavirus outbreak in cruise ship](https://www.ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/andes-hantavirus-outbreak) (ECDC News)
-- Newly tracked story cluster: 24 item(s) across 18 source(s).
-- Baseline snapshot created with 24 clustered item(s) across 18 source(s).
+- Newly tracked story cluster: 26 item(s) across 19 source(s).
+- Baseline snapshot created with 26 clustered item(s) across 19 source(s).
 - CNN now includes evacuation reporting.
-- NPR now includes quarantine language.
 
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 224 item(s) across 140 source(s); 5 official/primary-source item(s).
+- Topic size: 226 item(s) across 139 source(s); 5 official/primary-source item(s).
 - Lead item: [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-and-uganda) (ECDC News, 2026-05-26T17:36+02:00)
 - Detailed note: * Statement updated to include new figures Eugene Kabambi Communications Officer WHO DRC Tel : +243 81 715 1697 Office : +47 241 39 027 Email: kabambie [at] who.int (kabambie[at]who[dot]int) Collins Boakye-Agyemang Communications and marketing officer Tel: + 242 06 520 65 65 (WhatsApp) Email: boakyeagyemangc [at] who.int (boakyeagyemangc[at]who[dot]int) carousel-bg The Bundibugyo species was first identified in...
 - Evidence notes: [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-and-uganda) (ECDC News); [Risk to Europe remains very low as Ebola outbreak intensifies in DRC](https://www.ecdc.europa.eu/en/news-events/risk-europe-remains-very-low-ebola-outbreak-intensifies-drc) (ECDC News); [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 01, Data as of 18 May 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa); [Democratic Republic of the Congo confirms new Ebola outbreak, WHO scales up support](https://www.afro.who.int/countries/democratic-republic-of-congo/news/democratic-republic-congo-confirms-new-ebola-outbreak-who-scales-upsupport) (WHO Regional Office for Africa); [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) (Texas Department of State Health Services News)
@@ -41,10 +40,10 @@ Search window: 7 day(s) ending 2026-05-26
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Hantavirus and cruise-ship outbreak
-- Topic size: 24 item(s) across 18 source(s); 1 official/primary-source item(s).
+- Topic size: 26 item(s) across 19 source(s); 1 official/primary-source item(s).
 - Lead item: [Andes hantavirus outbreak in cruise ship](https://www.ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/andes-hantavirus-outbreak) (ECDC News, 2026-05-26T17:56+02:00)
 - Detailed note: ECDC was notified on 2 May 2026 of a cluster of severe respiratory illness on MV Hondius, a Dutch-flagged cruise ship with passengers and crew from 23 countries, including nine EU/EEA countries. The virus has been identified as Andes hantavirus.
-- Evidence notes: [Andes hantavirus outbreak in cruise ship](https://www.ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/andes-hantavirus-outbreak) (ECDC News); [Spanish government confirms new case of hantavirus](https://www.nbcnews.com/health/health-news/hantavirus-spanish-government-confirms-new-case-rcna346825) (NBC News); [Spanish citizen evacuated from hantavirus-hit cruise ship tests positive](https://www.cnn.com/2026/05/25/europe/spain-hantavirus-cruise-ship-intl-latam) (CNN); [Spanish national evacuated from hantavirus cruise ship tests positive](https://www.reuters.com/business/healthcare-pharmaceuticals/spanish-national-evacuated-hantavirus-cruise-ship-tests-positive-2026-05-25/) (Reuters); [Ebola and hantavirus outbreaks prompt raft of conspiracy theories in divided US](https://www.theguardian.com/us-news/2026/may/25/ebola-hantavirus-conspiracy-theories) (The Guardian)
+- Evidence notes: [Andes hantavirus outbreak in cruise ship](https://www.ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/andes-hantavirus-outbreak) (ECDC News); [The cruise ship at center of a deadly hantavirus outbreak has to undergo extra cleaning - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/Health/wireStory/cruise-ship-center-deadly-hantavirus-outbreak-undergo-extra-133318326) (ABC News - Breaking News, Latest News and Videos); [Spanish government confirms new case of hantavirus](https://www.nbcnews.com/health/health-news/hantavirus-spanish-government-confirms-new-case-rcna346825) (NBC News); [Spanish citizen evacuated from hantavirus-hit cruise ship tests positive](https://www.cnn.com/2026/05/25/europe/spain-hantavirus-cruise-ship-intl-latam) (CNN); [Spanish national evacuated from hantavirus cruise ship tests positive](https://www.reuters.com/business/healthcare-pharmaceuticals/spanish-national-evacuated-hantavirus-cruise-ship-tests-positive-2026-05-25/) (Reuters)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
@@ -55,14 +54,6 @@ Search window: 7 day(s) ending 2026-05-26
 - Evidence notes: [Strengthening disease outbreak preparedness through partnership on joint scenario training](https://www.ecdc.europa.eu/en/news-events/strengthening-disease-outbreak-preparedness-through-partnership-joint-scenario-training) (ECDC News); [FSIS Issues Public Health Alert for Beef Kofta Products Served at The Kebab Shop Restaurant Locations Due to Possible E. Coli O157:H7 Contaminationpha](https://tools.cdc.gov/api/embed/downloader/download.asp?m=316422&c=765628) (CDC Travel Health Notices); [Epidemiological and virological characteristics of influenza in Zhejiang Province, China: A 15-year surveillance study.](https://pubmed.ncbi.nlm.nih.gov/42157696/) (PubMed Infectious Disease Search)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: These notes are limited to source text collected in this run.
-
-### Measles transmission and vaccination
-- Topic size: 2 item(s) across 2 source(s); 0 official/primary-source item(s).
-- Lead item: [Mexico measles cases top 11,000 in 2026, Additional death in Zacatecas](https://outbreaknewstoday.substack.com/p/mexico-measles-cases-top-11000-in) (Outbreak News Today, 2026-05-23T20:54+00:00)
-- Detailed note: Regarding deaths, 41 cumulative cases have been confirmed for the 2025–2026 period, distributed across 11 states: Chihuahua (21), Jalisco (5), Zacatecas (4), Mexico City (3), Durango (2), Chiapas (1), Guerrero (1), Michoacán (1), Sinaloa (1), Sonora (1), and Tlaxcala (1). Jalisco state has seen the most confirmed cases with 6,198, followed by Mexico City (951), Chiapas (810), Durango (356) and Sonora (345).
-- Evidence notes: [Mexico measles cases top 11,000 in 2026, Additional death in Zacatecas](https://outbreaknewstoday.substack.com/p/mexico-measles-cases-top-11000-in) (Outbreak News Today); [Deadly Measles Outbreak Sickens Thousands of Children in Bangladesh](https://www.nytimes.com/2026/05/22/world/asia/bangladesh-measles-outbreak-vaccines.html) (The New York Times)
-- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
-- Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Occupational and environmental epidemiology
 - Topic size: 1 item(s) across 1 source(s); 0 official/primary-source item(s).
@@ -79,6 +70,14 @@ Search window: 7 day(s) ending 2026-05-26
 - Evidence notes: [A historical perspective on animal modeling of infectious diseases.](https://pubmed.ncbi.nlm.nih.gov/42178020/) (PubMed Historical Pathogen Case Studies)
 - Why this topic matters now: It may shape how new evidence is framed before broader consensus forms. It also has value for historical epidemiology and blog-idea generation.
 - Caveats / uncertainty: Source diversity is limited so corroboration is thin.
+
+### Diphtheria
+- Topic size: 1 item(s) across 1 source(s); 0 official/primary-source item(s).
+- Lead item: [Australia’s largest recorded diphtheria outbreak is spreading through remote Indigenous communities](https://www.theguardian.com/australia-news/2026/may/23/australia-diphtheria-outbreak-remote-indigenous-communities-ntwnfb) (The Guardian, 2026-05-23T00:00+00:00)
+- Detailed note: Cluster remains active across 1 related item(s), but usable factual summary text was limited after cleanup.
+- Evidence notes: [Australia’s largest recorded diphtheria outbreak is spreading through remote Indigenous communities](https://www.theguardian.com/australia-news/2026/may/23/australia-diphtheria-outbreak-remote-indigenous-communities-ntwnfb) (The Guardian)
+- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
+- Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Source diversity is limited so corroboration is thin.
 
 
 ## Last major outbreaks on file
@@ -411,13 +410,17 @@ Search window: 7 day(s) ending 2026-05-26
 
 
 ## Other notable readings
+- [The cruise ship at center of a deadly hantavirus outbreak has to undergo extra cleaning - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/Health/wireStory/cruise-ship-center-deadly-hantavirus-outbreak-undergo-extra-133318326) | ABC News - Breaking News, Latest News and Videos | 2026-05-26T18:00+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Ebola Outbreak Is Now Third Largest in History. Here’s What to Know.](https://www.wsj.com/world/africa/ebola-outbreak-explained-4ab4414f) | WSJ | 2026-05-26T17:22+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Ebola outbreak risks becoming 'deadliest on record,' IRC warns - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/International/ebola-outbreak-risks-becoming-deadliest-record-irc-warns/story?id\=133305446) | ABC News - Breaking News, Latest News and Videos | 2026-05-26T17:04+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - [New travel restrictions go into effect as deadly Ebola outbreak continues](https://www.cbsnews.com/newyork/video/new-travel-restrictions-go-into-effect-as-deadly-ebola-outbreak-continues/) | CBS News | 2026-05-26T16:38+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Texas airport authorized to use advanced screening for Ebola amid outbreak overseas](https://www.cbsnews.com/texas/video/texas-airport-authorized-to-use-advanced-screening-for-ebola-amid-outbreak-overseas/) | CBS News | 2026-05-26T16:25+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [WHO warns of playing catch up with large Ebola outbreak](https://www.cidrap.umn.edu/ebola/who-warns-playing-catch-large-ebola-outbreak) | CIDRAP | 2026-05-26T16:04+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Ebola outbreak risks becoming 'deadliest on record,' IRC warns - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/International/ebola-outbreak-risks-becoming-deadliest-record-irc-warns/story?id\=133305446) | ABC News - Breaking News, Latest News and Videos | 2026-05-26T14:40+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Scenes from the frontlines of the Ebola outbreak](https://www.reuters.com/pictures/scenes-frontlines-ebola-outbreak-2026-05-26/) | Reuters | 2026-05-26T14:37+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
@@ -425,17 +428,15 @@ Search window: 7 day(s) ending 2026-05-26
   Limited detail was available from feed metadata alone.
 - [Ebola outbreak continues to worsen, with new collateral risks for girls and women](https://www.statnews.com/2026/05/26/health-news-ebola-outbreak-continues-to-worsen/) | statnews.com | 2026-05-26T13:14+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [What to Know About the Ebola Outbreak as Cases and Deaths Rise](https://www.nytimes.com/2026/05/17/world/africa/what-to-know-ebola-africa.html) | The New York Times | 2026-05-26T13:12+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
 - [Ebola outbreak kills at least 200 people in DRC, Uganda-Africa CDC - APAnews](https://apanews.net/ebola-outbreak-kills-at-least-200-people-in-drc-uganda-africa-cdc/) | APAnews - Agence de Presse Africaine | 2026-05-26T13:08+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Video Ebola outbreak continues spreading in Central Africa - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/video/133308911/) | ABC News - Breaking News, Latest News and Videos | 2026-05-26T12:19+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
+- [Details on the response to the Ebola outbreak and whether it's expected to spread further](https://www.cbsnews.com/video/details-on-the-response-to-the-ebola-outbreak-and-whether-its-expected-to-spread-further/) | CBS News | 2026-05-26T12:02+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - ['Race against time' to contain Ebola outbreak in central Africa](https://www.cbc.ca/news/health/ebola-outbreak-may-26-9.7211604) | CBC | 2026-05-26T11:13+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [The Ebola outbreak will lead to devastating violence against women and girls](https://www.statnews.com/2026/05/26/ebola-outbreak-congo-violence-women-girls/) | statnews.com | 2026-05-26T08:32+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [177 deaths, 750 suspected Ebola cases; resurgence raises alarm as WHO raises DRC risk to ‘very high’](https://freepresskashmir.news/2026/05/26/177-deaths-750-suspected-ebola-cases-resurgence-raises-alarm-as-who-raises-drc-risk-to-very-high/amp/) | Free Press Kashmir | 2026-05-26T07:13+00:00 | Outbreaks and emerging infections
+- [177 deaths, 750 suspected Ebola cases; resurgence raises alarm as WHO raises DRC risk to ‘very high’](https://news.google.com/rss/articles/CBMi2gFBVV95cUxPYjdNMUNuRGc2LTVjTkV1cE1aZmN1RUd5SFYwbXlVbVRNVlY1TEdwWFVIVEozb0toYTJzVGE1MkJBV18zeFltUEEycGdJRUt6Q0M1NTRFaWxKS0JNV2Zjdjg0ZUxjc2FXZjRtME1zbzNRVHpWMWxTUmJBY29Id3VfREhvcEtSbi1CNlIxZVpobmp4NFZCSEc3Mk9kUl9MeEdmVVcwTXJXYnNWZldyTl9lQXVFTEsxZm1rNTVWTE5DU09WS21BTFhPbDFsN3Rib21PSnNFS01LX0ZlUdIB2gFBVV95cUxPYjdNMUNuRGc2LTVjTkV1cE1aZmN1RUd5SFYwbXlVbVRNVlY1TEdwWFVIVEozb0toYTJzVGE1MkJBV18zeFltUEEycGdJRUt6Q0M1NTRFaWxKS0JNV2Zjdjg0ZUxjc2FXZjRtME1zbzNRVHpWMWxTUmJBY29Id3VfREhvcEtSbi1CNlIxZVpobmp4NFZCSEc3Mk9kUl9MeEdmVVcwTXJXYnNWZldyTl9lQXVFTEsxZm1rNTVWTE5DU09WS21BTFhPbDFsN3Rib21PSnNFS01LX0ZlUQ?oc=5) | Free Press Kashmir | 2026-05-26T07:13+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [DRC is no stranger to Ebola outbreaks. Why isn’t there a vaccine or treatment to help now?](https://news.google.com/rss/articles/CBMifEFVX3lxTE42c1hOcWhIOVI3Q2lPSlFEY05RdmhybXNmTDRjTUNRWTBwcmhvN1N6RHdZY28tMkx4eXhweThza0VUNXNXcXlzek53ZmVoRlpMcEVDdHZrN2IwaTlyaTVtQ3JIQVRvZFJBRlhBQ2ZMTXBvVk45RWpNUEh6cFA?oc=5) | CNN | 2026-05-26T07:00+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
@@ -446,8 +447,6 @@ Search window: 7 day(s) ending 2026-05-26
 - [Ebola Outbreak Could Be Major Global Health Hazard](https://news.google.com/rss/articles/CBMilAFBVV95cUxQQlpXclJTMUNyUTZsZlQteFhIb2JWSmV4LVRrNmp0ejhPV0lQMWpVX05TQXQ0RmFfZ2M3OFhOVzhCcXRub0RYVDRocjk5eHluTDJiNGVBZ21vOV9UV3JyX3RxbzBHdGxvcVhvaE8zUGdPVWViUkdhc1dvZE51SVpJZ1J4SUx6NnVCRktYRE5uQTNuTjdv?oc=5) | The Common Sense | 2026-05-26T03:03+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Ebola Cases Hit 900 in Congo DRC, WHO Confirms](https://news.google.com/rss/articles/CBMiaEFVX3lxTE9LUG9lSFNMVVA4U3BOWXhQUllPbnR1NEZaYlR5Q1oweGFBYldZSGgzY1AxTFliMmtPcG55b2U0OFdxX1g2QkhEVkh5TG0tamdCUG8ySTlpVUVYM0hxN2V5WXJiX2pWemo1?oc=5) | Punch Newspapers | 2026-05-26T01:30+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Details on the response to the Ebola outbreak and whether it's expected to spread further](https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYnU1Z1JETFBjOXhNY3cxblJURTRZR2oyRkVoSjJxdUJQNHVaYkRaUUpKTUtPTFNiTEV2NXA1eEFURUVjLUtUOWMtOU9rRzd6SnJJNmtFUTJiVUV2NHJuVEF0ODloMFpOTUlSdHhNdkUzUW11T3JzblpoMDViR0ZrTWZoWlJKQkdZZW13ZEwzdXJkT2RZVzJQTzRqbTg1R3Z2TkNhT3ZCOWdiQUlzR3RmTmZtZ3A4VUphTldj?oc=5) | CBS News | 2026-05-25T23:40+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [South Africa Joins Efforts To Combat Ebola Outbreak](https://news.google.com/rss/articles/CBMilgFBVV95cUxQVV93aEwzLTVxWHlRTG9JcmtIWThOS1pudElqaHlsTG5IMGN5NzJVUkViNUthMjdPQzRLN3N6empRcDVrZTZwNlFZRXJ3YmJaQUl5aHVjMmo0UXh1Zy1QUnBDdVZiLTBWdUtuZ05UaUQtTWhkM25qel9TeFl1cV96amEyWUhXZnpZS0poLUtIaE9zd1hMa3c?oc=5) | Eurasia Review | 2026-05-25T23:20+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
@@ -469,7 +468,7 @@ Search window: 7 day(s) ending 2026-05-26
 ## Historical epi / weird epi corner
 - [A historical perspective on animal modeling of infectious diseases.](https://pubmed.ncbi.nlm.nih.gov/42178020/) | PubMed Historical Pathogen Case Studies
   Casimir Davaine was the first, in 1863, to demonstrate the involvement of bacteria in the transmission of anthrax in mammals; he also conducted important comparative studies on septicemia in different animal species. In the 19th century, researchers primarily used rabbits and guinea pigs to study the transmissibility of pathogens, while different animal species were studied for their susceptibility to various microbial agents. In 1835, Agostino Bassi demonstrated that muscardine in silkworms was a fungal disease, thus providing one of the very first pieces of evidence for an infectious etiology.
-- [Dr Congo adapts burials amid Ebola outbreak](https://www.france24.com/en/dr-congo-adapts-burials-amid-ebola-outbreak) | France 24
+- [Dr Congo adapts burials amid Ebola outbreak](https://news.google.com/rss/articles/CBMie0FVX3lxTE1ua3VnZ0pFb3ZIa3NSMTZJcExvMmd2dEdsQjVGWDBUU1R3d1JTNEdGeUt5N1ZzZkpmWHpBUGhKdUtnb2Y2YVV2c0ZURmRiX2lhekJGNTQ3Wlo2TWRLbjJrenFITkhkWFludDgyekVXMnZnMnhVQTJta2prNA?oc=5) | France 24
   Limited detail was available from feed metadata alone.
 
 ## Possible blog/video angles
