@@ -134,28 +134,16 @@
         const index = cardIndex + 1;
         const classes = index === 1 ? "flashcard is-active" : "flashcard";
         const cue = card.cue ? `<p class="flashcard-cue">${escapeHtml(card.cue)}</p>` : "";
-        const options = Array.isArray(card.choices)
-          ? `<ol class="flashcard-options">${card.choices
-              .slice(0, 4)
-              .map(
-                (choice, choiceIndex) =>
-                  `<li><span class="flashcard-option-label">${String.fromCharCode(65 + choiceIndex)}</span><span>${escapeHtml(choice)}</span></li>`
-              )
-              .join("")}</ol>`
-          : "";
-        const explanation = card.explanation ? `<p class="flashcard-explanation">${escapeHtml(card.explanation)}</p>` : "";
         return `
           <article class="${classes}" data-flashcard>
             <div class="flashcard-face flashcard-front">
               <p class="flashcard-index">Card ${String(index).padStart(2, "0")}</p>
               ${cue}
               <h3>${escapeHtml(card.question)}</h3>
-              ${options}
             </div>
             <div class="flashcard-face flashcard-back">
               <p class="flashcard-index">Answer ${String(index).padStart(2, "0")}</p>
-              <p class="flashcard-answer">${escapeHtml(card.answer)}</p>
-              ${explanation}
+              <p>${escapeHtml(card.answer)}</p>
             </div>
           </article>
         `;
@@ -183,8 +171,6 @@
         question: card.question || card.q || "",
         answer: card.answer || card.a || "",
         cue: card.cue || card.c || "",
-        choices: card.choices || card.options || card.o || [],
-        explanation: card.explanation || card.context || card.e || "",
       }))
       .filter((card) => card.question && card.answer);
   }
@@ -245,19 +231,15 @@
       .flashcard-panel{overflow:hidden}
       .flashcard-stage{display:grid;gap:1rem}
       .flashcard-stack{position:relative;min-height:20rem}
-      .flashcard{position:absolute;inset:0;display:grid;min-height:20rem;opacity:0;pointer-events:none;transform:translateY(.75rem) scale(.98);transition:opacity .18s ease,transform .18s ease}
+      .flashcard{position:absolute;inset:0;display:grid;grid-template-areas:"card";min-height:20rem;opacity:0;pointer-events:none;transform:translateY(.75rem) scale(.98);transition:opacity .18s ease,transform .18s ease}
       .flashcard.is-active{opacity:1;pointer-events:auto;transform:translateY(0) scale(1)}
-      .flashcard-face{display:flex;min-height:20rem;flex-direction:column;justify-content:space-between;gap:1rem;border:1px solid var(--line);border-radius:18px;padding:1.25rem;background:linear-gradient(135deg,rgba(255,255,255,.96),rgba(247,244,238,.92));box-shadow:var(--shadow)}
-      .flashcard-back{display:none;background:linear-gradient(135deg,rgba(25,92,86,.12),rgba(140,49,38,.1))}
-      .flashcard.is-flipped .flashcard-front{display:none}
-      .flashcard.is-flipped .flashcard-back{display:flex}
+      .flashcard-face{grid-area:card;display:flex;min-height:20rem;flex-direction:column;justify-content:space-between;gap:1rem;border:1px solid var(--line);border-radius:18px;padding:1.25rem;background:linear-gradient(135deg,rgba(255,255,255,.96),rgba(247,244,238,.92));box-shadow:var(--shadow);backface-visibility:hidden;transition:transform .22s ease}
+      .flashcard-back{transform:rotateY(180deg);background:linear-gradient(135deg,rgba(25,92,86,.12),rgba(140,49,38,.1))}
+      .flashcard.is-flipped .flashcard-front{transform:rotateY(180deg)}
+      .flashcard.is-flipped .flashcard-back{transform:rotateY(360deg)}
       .flashcard-index,.flashcard-cue{margin:0;color:var(--muted);font-family:var(--font-sans);font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
       .flashcard h3{margin:0;color:var(--ink);font-size:clamp(1.05rem,2vw,1.45rem);line-height:1.35}
-      .flashcard-options{display:grid;gap:.55rem;margin:.25rem 0 0;padding:0;list-style:none}
-      .flashcard-options li{display:grid;grid-template-columns:auto 1fr;gap:.55rem;align-items:start;padding:.6rem .7rem;border:1px solid var(--line);border-radius:8px;background:rgba(255,255,255,.64);font-family:var(--font-sans);line-height:1.35}
-      .flashcard-option-label{display:inline-grid;place-items:center;width:1.5rem;height:1.5rem;border-radius:999px;background:var(--ink);color:var(--paper);font-size:.78rem;font-weight:800}
-      .flashcard-answer{margin:0;color:var(--ink);font-size:clamp(1.35rem,2vw,1.9rem);font-weight:800;line-height:1.2}
-      .flashcard-explanation{margin:0;color:var(--muted);font-size:1rem;line-height:1.55}
+      .flashcard p:last-child{margin:0;color:var(--ink);font-size:1.05rem;line-height:1.55}
       .flashcard-controls{display:flex;align-items:center;gap:.65rem;flex-wrap:wrap}
       .flashcard-counter{color:var(--muted);font-family:var(--font-sans);font-size:.9rem;font-weight:800}
       @media (max-width:640px){.flashcard-stack,.flashcard,.flashcard-face{min-height:25rem}.flashcard-face{padding:1rem}.flashcard-controls .button{flex:1 1 7rem}}
@@ -279,13 +261,13 @@
       // Fall through to chunked deck files.
     }
 
-    const chunkSources = Array.from({ length: 8 }, (_, index) => `/app_exports/essay-flashcards-${String(index + 1).padStart(2, "0")}.json`);
+    const chunkSources = Array.from({ length: 8 }, (_, index) => `/app_exports/essay-flashcards-${String(index + 1).padStart(2, "0")}.json.gz.b64`);
     const chunks = await Promise.all(
       chunkSources.map(async (source) => {
         try {
-          const response = await fetch(source, { headers: { Accept: "application/json" } });
+          const response = await fetch(source, { headers: { Accept: "text/plain" } });
           if (!response.ok) return [];
-          const payload = await response.json();
+          const payload = await decodeGzipBase64Json(await response.text());
           return Array.isArray(payload.decks) ? payload.decks : [];
         } catch (error) {
           return [];
@@ -293,6 +275,17 @@
       })
     );
     return chunks.flat();
+  }
+
+  async function decodeGzipBase64Json(value) {
+    if (!("DecompressionStream" in window)) return { decks: [] };
+    const binary = window.atob(String(value || "").trim());
+    const bytes = new Uint8Array(binary.length);
+    for (let index = 0; index < binary.length; index += 1) {
+      bytes[index] = binary.charCodeAt(index);
+    }
+    const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream("gzip"));
+    return new Response(stream).json();
   }
 
   async function initDynamicFlashcards() {
