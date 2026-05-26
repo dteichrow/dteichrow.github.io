@@ -32,6 +32,9 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Sync Substack post manifest
+        run: python -m src.substack_sync --mode incremental
+
       - name: Build umbrella site
         run: python -m src.build_site --site-base-url /
 

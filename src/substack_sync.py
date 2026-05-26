@@ -121,6 +121,34 @@ def _parse_sitemap_urls(xml_text: str) -> list[str]:
     return [entry["url"] for entry in _parse_sitemap_entries(xml_text)]
 
 
+def _is_substack_post_url(url: str) -> bool:
+    parsed = urlparse(url)
+    base = urlparse(SUBSTACK_BASE)
+    return parsed.netloc == base.netloc and parsed.path.startswith("/p/")
+
+
+def _current_sitemap_post_urls() -> set[str]:
+    sitemap_xml = fetch_text(
+        SITEMAP_URL,
+        headers={"Accept": "application/xml,text/xml;q=0.9,*/*;q=0.8"},
+    )
+    return set(_parse_sitemap_urls(sitemap_xml))
+
+
+def _prune_missing_substack_posts(
+    merged: dict[str, dict[str, Any]],
+    current_urls: set[str],
+) -> list[dict[str, Any]]:
+    pruned: list[dict[str, Any]] = []
+    for url in list(merged):
+        if not _is_substack_post_url(url):
+            continue
+        if url in current_urls:
+            continue
+        pruned.append(merged.pop(url))
+    return sort_posts(pruned)
+
+
 def _parse_sitemap_entries(xml_text: str) -> list[dict[str, str]]:
     root = ET.fromstring(xml_text)
     ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
@@ -283,8 +311,7 @@ def backfill_posts(manifest_path: Path | None = None) -> dict[str, Any]:
         for post in _recent_posts_from_archive_api()
         if post.get("canonical_url")
     }
-    sitemap_xml = fetch_text(SITEMAP_URL)
-    sitemap_urls = _parse_sitemap_urls(sitemap_xml)
+    sitemap_urls = _current_sitemap_post_urls()
 
     discovered = 0
     created = 0
@@ -310,6 +337,7 @@ def backfill_posts(manifest_path: Path | None = None) -> dict[str, Any]:
         except Exception as exc:  # noqa: BLE001
             failures.append({"url": url, "error": str(exc)})
 
+    pruned = _prune_missing_substack_posts(merged, sitemap_urls)
     final_posts = sort_posts(list(merged.values()))
     save_posts_manifest(final_posts, manifest_path)
     report = {
@@ -319,6 +347,8 @@ def backfill_posts(manifest_path: Path | None = None) -> dict[str, Any]:
         "total_manifest_records": len(final_posts),
         "created_records": created,
         "updated_records": updated,
+        "pruned_records": len(pruned),
+        "pruned_slugs": [post.get("slug", "") for post in pruned],
         "archive_seed_count": len(recent_posts),
         "failed_posts": failures,
     }
@@ -332,6 +362,12 @@ def incremental_sync(manifest_path: Path | None = None) -> dict[str, Any]:
         post["canonical_url"]: post for post in posts if post.get("canonical_url")
     }
     feed_posts, source_mode, fallback_reason = _load_incremental_candidates(posts)
+    current_sitemap_urls: set[str] | None = None
+    sitemap_prune_error = ""
+    try:
+        current_sitemap_urls = _current_sitemap_post_urls()
+    except Exception as exc:  # noqa: BLE001
+        sitemap_prune_error = str(exc)
 
     created = 0
     updated = 0
@@ -355,6 +391,10 @@ def incremental_sync(manifest_path: Path | None = None) -> dict[str, Any]:
         else:
             updated += 1
 
+    pruned: list[dict[str, Any]] = []
+    if current_sitemap_urls is not None:
+        pruned = _prune_missing_substack_posts(merged, current_sitemap_urls)
+
     final_posts = sort_posts(list(merged.values()))
     save_posts_manifest(final_posts, manifest_path)
     report = {
@@ -368,9 +408,13 @@ def incremental_sync(manifest_path: Path | None = None) -> dict[str, Any]:
         "total_manifest_records": len(final_posts),
         "created_records": created,
         "updated_records": updated,
+        "pruned_records": len(pruned),
+        "pruned_slugs": [post.get("slug", "") for post in pruned],
         "enriched_from_post_pages": enriched,
         "degraded": source_mode in {"sitemap_fallback", "manifest_only"},
         "fallback_reason": fallback_reason or "",
+        "sitemap_prune_degraded": current_sitemap_urls is None,
+        "sitemap_prune_error": sitemap_prune_error,
         "enrichment_failures": failures,
     }
     _write_report("incremental", report, manifest_path)

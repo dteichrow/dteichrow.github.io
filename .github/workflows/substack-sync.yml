@@ -45,12 +45,12 @@ jobs:
 
       - name: Commit changes
         run: |
-          if git diff --quiet; then
-            echo "No changes to commit"
-            exit 0
-          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add content/posts.yml docs notes
+          git add content/posts.yml docs
+          if git diff --cached --quiet; then
+            echo "No content or docs changes to commit"
+            exit 0
+          fi
           git commit -m "Sync Substack posts and rebuild site"
           git push

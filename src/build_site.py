@@ -4,6 +4,7 @@ import argparse
 import datetime as dt
 import html
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -1455,8 +1456,13 @@ def render_curated_atlas_page(entry: dict[str, Any], posts: list[dict[str, Any]]
 
 
 def resolve_epidossier_docs() -> Path:
-    env_path = Path(str(Path.cwd()))
-    _ = env_path  # keep lint calm in static script environments
+    configured_docs = os.environ.get("EOE_EPI_DOSSIER_DOCS")
+    if configured_docs:
+        docs_path = Path(configured_docs).expanduser()
+        if not docs_path.exists():
+            raise FileNotFoundError(f"Configured epi-dossier docs path does not exist: {docs_path}")
+        return docs_path
+
     local_candidate = PROJECT_ROOT.parent / "epi-dossier" / "docs"
     if local_candidate.exists():
         return local_candidate
@@ -1464,7 +1470,7 @@ def resolve_epidossier_docs() -> Path:
     temp_root = temporary_directory("epi-dossier-import-")
     clone_dir = temp_root / "epi-dossier"
     subprocess.run(
-        ["git", "clone", "--depth", "1", DEFAULT_EPI_DOSSIER_REPO, str(clone_dir)],
+        ["git", "clone", "--depth", "1", os.environ.get("EOE_EPI_DOSSIER_REPO", DEFAULT_EPI_DOSSIER_REPO), str(clone_dir)],
         check=True,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,

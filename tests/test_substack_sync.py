@@ -10,6 +10,7 @@ from src.substack_sync import (
     _extract_recent_archive_api_posts,
     _parse_rss_feed,
     _parse_sitemap_urls,
+    _prune_missing_substack_posts,
 )
 
 
@@ -153,6 +154,7 @@ def test_incremental_sync_uses_archive_api_without_degraded_mode(tmp_path, monke
 
     monkeypatch.setattr(substack_sync, "fetch_text", fake_fetch_text)
     monkeypatch.setattr(substack_sync, "_recent_posts_from_archive_api", lambda: [archive_record])
+    monkeypatch.setattr(substack_sync, "_current_sitemap_post_urls", lambda: {archive_record["canonical_url"]})
     monkeypatch.setattr(substack_sync, "_extract_post_record_from_page", lambda html_text, url: archive_record)
 
     report = substack_sync.incremental_sync(manifest_path)
@@ -161,6 +163,8 @@ def test_incremental_sync_uses_archive_api_without_degraded_mode(tmp_path, monke
     assert report["candidate_source"] == "archive_api"
     assert report["archive_api_count"] == 1
     assert report["created_records"] == 1
+    assert report["pruned_records"] == 0
+    assert report["sitemap_prune_degraded"] is False
     assert report["degraded"] is False
     assert report["fallback_reason"] == ""
     assert "api-post" in saved_manifest
@@ -171,6 +175,7 @@ def test_incremental_sync_writes_report_next_to_external_manifest(tmp_path, monk
     manifest_path.write_text("posts: []\n")
 
     monkeypatch.setattr(substack_sync, "_recent_posts_from_archive_api", lambda: [])
+    monkeypatch.setattr(substack_sync, "_current_sitemap_post_urls", lambda: set())
 
     substack_sync.incremental_sync(manifest_path)
     report_path = tmp_path / "substack-sync-incremental.json"
@@ -208,6 +213,7 @@ def test_incremental_sync_falls_back_to_sitemap_when_primary_sources_fail(tmp_pa
     monkeypatch.setattr(substack_sync, "_recent_posts_from_archive_api", lambda: (_ for _ in ()).throw(HTTPError(substack_sync.ARCHIVE_API_URL, 403, "Forbidden", hdrs=None, fp=None)))
     monkeypatch.setattr(substack_sync, "fetch_text", fake_fetch_text)
     monkeypatch.setattr(substack_sync, "_recent_posts_from_sitemap", lambda existing_posts: [sitemap_candidate])
+    monkeypatch.setattr(substack_sync, "_current_sitemap_post_urls", lambda: {sitemap_candidate["canonical_url"]})
     monkeypatch.setattr(substack_sync, "_extract_post_record_from_page", lambda html_text, url: enriched)
 
     report = substack_sync.incremental_sync(manifest_path)
@@ -216,6 +222,7 @@ def test_incremental_sync_falls_back_to_sitemap_when_primary_sources_fail(tmp_pa
     assert report["candidate_source"] == "sitemap_fallback"
     assert report["sitemap_fallback_count"] == 1
     assert report["created_records"] == 1
+    assert report["pruned_records"] == 0
     assert report["degraded"] is True
     assert "archive_api=" in report["fallback_reason"]
     assert "rss=" in report["fallback_reason"]
@@ -252,12 +259,14 @@ posts:
     }
 
     monkeypatch.setattr(substack_sync, "_recent_posts_from_archive_api", lambda: [same_record])
+    monkeypatch.setattr(substack_sync, "_current_sitemap_post_urls", lambda: {same_record["canonical_url"]})
 
     report = substack_sync.incremental_sync(manifest_path)
     saved_manifest = manifest_path.read_text()
 
     assert report["candidate_source"] == "archive_api"
     assert report["updated_records"] == 0
+    assert report["pruned_records"] == 0
     assert "2026-05-10T00:00:00+00:00" in saved_manifest
 
 
@@ -280,6 +289,7 @@ posts:
     monkeypatch.setattr(substack_sync, "_recent_posts_from_archive_api", lambda: (_ for _ in ()).throw(HTTPError(substack_sync.ARCHIVE_API_URL, 403, "Forbidden", hdrs=None, fp=None)))
     monkeypatch.setattr(substack_sync, "fetch_text", fake_fetch_text)
     monkeypatch.setattr(substack_sync, "_recent_posts_from_sitemap", lambda existing_posts: (_ for _ in ()).throw(HTTPError(substack_sync.SITEMAP_URL, 403, "Forbidden", hdrs=None, fp=None)))
+    monkeypatch.setattr(substack_sync, "_current_sitemap_post_urls", lambda: (_ for _ in ()).throw(HTTPError(substack_sync.SITEMAP_URL, 403, "Forbidden", hdrs=None, fp=None)))
 
     report = substack_sync.incremental_sync(manifest_path)
     saved_manifest = manifest_path.read_text()
@@ -288,5 +298,65 @@ posts:
     assert report["candidate_count"] == 0
     assert report["created_records"] == 0
     assert report["updated_records"] == 0
+    assert report["pruned_records"] == 0
+    assert report["sitemap_prune_degraded"] is True
     assert report["degraded"] is True
     assert "existing-post" in saved_manifest
+
+
+def test_prune_missing_substack_posts_removes_only_absent_substack_urls() -> None:
+    active_url = "https://theedgeofepidemiology.substack.com/p/active-post"
+    removed_url = "https://theedgeofepidemiology.substack.com/p/removed-post"
+    external_url = "https://example.com/p/keep-external"
+    merged = {
+        active_url: {"canonical_url": active_url, "slug": "active-post", "date": "2026-05-10"},
+        removed_url: {"canonical_url": removed_url, "slug": "removed-post", "date": "2026-05-09"},
+        external_url: {"canonical_url": external_url, "slug": "keep-external", "date": "2026-05-08"},
+    }
+
+    pruned = _prune_missing_substack_posts(merged, {active_url})
+
+    assert [post["slug"] for post in pruned] == ["removed-post"]
+    assert set(merged) == {active_url, external_url}
+
+
+def test_incremental_sync_prunes_deleted_substack_posts_when_sitemap_is_available(tmp_path, monkeypatch) -> None:
+    manifest_path = tmp_path / "posts.yml"
+    manifest_path.write_text(
+        """
+posts:
+  - canonical_url: https://theedgeofepidemiology.substack.com/p/active-post
+    slug: active-post
+    title: Active post
+    date: 2026-05-10
+    status: summary_only
+  - canonical_url: https://theedgeofepidemiology.substack.com/p/removed-post
+    slug: removed-post
+    title: Removed post
+    date: 2026-05-09
+    status: summary_only
+"""
+    )
+    active_record = {
+        "substack_id": None,
+        "slug": "active-post",
+        "title": "Active post",
+        "date": "2026-05-10",
+        "canonical_url": "https://theedgeofepidemiology.substack.com/p/active-post",
+        "excerpt": "",
+        "cover_image": "",
+        "upstream_tags": [],
+        "source_mode": "substack_archive_api",
+        "wordcount": None,
+    }
+
+    monkeypatch.setattr(substack_sync, "_recent_posts_from_archive_api", lambda: [active_record])
+    monkeypatch.setattr(substack_sync, "_current_sitemap_post_urls", lambda: {active_record["canonical_url"]})
+
+    report = substack_sync.incremental_sync(manifest_path)
+    saved_manifest = manifest_path.read_text()
+
+    assert report["pruned_records"] == 1
+    assert report["pruned_slugs"] == ["removed-post"]
+    assert "active-post" in saved_manifest
+    assert "removed-post" not in saved_manifest

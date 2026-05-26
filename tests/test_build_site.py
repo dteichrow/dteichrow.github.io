@@ -109,6 +109,27 @@ def test_import_epidossier_public_imports_outbreak_terminal_routes(tmp_path, mon
     assert 'href="/newsdesk/"' in root_alias.read_text()
 
 
+def test_resolve_epidossier_docs_prefers_configured_docs_path(tmp_path, monkeypatch) -> None:
+    docs_path = tmp_path / "epi-docs"
+    docs_path.mkdir()
+
+    monkeypatch.setenv("EOE_EPI_DOSSIER_DOCS", str(docs_path))
+
+    assert build_site.resolve_epidossier_docs() == docs_path
+
+
+def test_resolve_epidossier_docs_rejects_missing_configured_docs_path(tmp_path, monkeypatch) -> None:
+    docs_path = tmp_path / "missing-docs"
+    monkeypatch.setenv("EOE_EPI_DOSSIER_DOCS", str(docs_path))
+
+    try:
+        build_site.resolve_epidossier_docs()
+    except FileNotFoundError as exc:
+        assert "Configured epi-dossier docs path does not exist" in str(exc)
+    else:
+        raise AssertionError("resolve_epidossier_docs should fail on a missing configured docs path")
+
+
 def test_build_site_writes_core_routes(tmp_path, monkeypatch) -> None:
     content_dir = tmp_path / "content"
     assets_dir = tmp_path / "assets"
