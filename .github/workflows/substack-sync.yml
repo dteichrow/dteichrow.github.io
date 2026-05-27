@@ -40,10 +40,36 @@ jobs:
       - name: Sync recent Substack posts
         run: python -m src.substack_sync --mode incremental
 
+      - name: Check Substack sync authority
+        id: substack_health
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          report = json.loads(Path("notes/substack-sync-incremental.json").read_text())
+          degraded = bool(report.get("sitemap_prune_degraded"))
+          with open(os.environ["GITHUB_OUTPUT"], "a") as output:
+              output.write(f"degraded={'true' if degraded else 'false'}\n")
+          if degraded:
+              print(
+                  "Substack sitemap fetch failed; skipping rebuild/commit so stale "
+                  "essay records are not republished."
+              )
+          else:
+              print(
+                  "Substack sitemap fetch succeeded; manifest is authoritative for "
+                  f"{report.get('total_manifest_records')} records."
+              )
+          PY
+
       - name: Build site
+        if: steps.substack_health.outputs.degraded != 'true'
         run: python -m src.build_site --site-base-url /
 
       - name: Commit changes
+        if: steps.substack_health.outputs.degraded != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
