@@ -55,6 +55,66 @@ def test_transform_imported_html_rewrites_known_paths() -> None:
     assert "Expanding coverage" in transformed
 
 
+def test_import_epidossier_public_keeps_wrapped_newsdesk_pages(tmp_path, monkeypatch) -> None:
+    source_docs = tmp_path / "epi_docs"
+    app_exports = source_docs / "app_exports"
+    app_exports.mkdir(parents=True)
+    latest = {
+        "generated_at": "2026-05-27T10:50:00",
+        "stories": [],
+        "reference": [],
+    }
+    for name, payload in {
+        "latest.json": latest,
+        "atlas.json": {"atlas": []},
+        "archive.json": {"items": []},
+        "health.json": {"ok": True},
+        "manifest.json": {"generated_at": latest["generated_at"]},
+    }.items():
+        (app_exports / name).write_text(json.dumps(payload))
+
+    page_html = """
+    <html>
+      <head><title>Pathogen Dispatch</title></head>
+      <body><main><a href="./index.html">Desk home</a></main></body>
+    </html>
+    """
+    for filename in [
+        "index.html",
+        "latest.html",
+        "outbreaks.html",
+        "watch.html",
+        "africa.html",
+        "asia.html",
+        "research.html",
+        "official.html",
+        "historical.html",
+        "notebook.html",
+    ]:
+        (source_docs / filename).write_text(page_html)
+    (source_docs / "latest.md").write_text("# Latest\n")
+    (source_docs / "archive").mkdir()
+    (source_docs / "archive" / "index.html").write_text(page_html)
+    (source_docs / "stories").mkdir()
+    (source_docs / "stories" / "story.html").write_text(page_html)
+    (source_docs / "reference").mkdir()
+    (source_docs / "reference" / "ref.html").write_text(page_html)
+
+    monkeypatch.setattr(build_site, "resolve_epidossier_docs", lambda: source_docs)
+
+    target_docs = tmp_path / "docs"
+    result = build_site.import_epidossier_public(target_docs, "/")
+
+    assert result["generated_at"] == "2026-05-27T10:50:00"
+    for route in [target_docs / "newsdesk" / "index.html", target_docs / "newsdesk" / "latest.html"]:
+        text = route.read_text()
+        assert "eoe-shell-nav" in text
+        assert 'href="/"' in text
+        assert 'href="/newsdesk/"' in text
+        assert "window.location.replace" not in text
+        assert 'http-equiv="refresh"' not in text
+
+
 def test_render_post_page_deduplicates_overview_paragraphs() -> None:
     post = {
         "slug": "duplicate-overview",
@@ -179,8 +239,10 @@ def test_import_epidossier_public_imports_outbreak_terminal_routes(tmp_path, mon
     assert 'href="/newsdesk/outbreaks/"' in reference_page.read_text()
     assert 'href="/newsdesk/outbreaks/"' in story_page.read_text()
     assert 'href="/newsdesk/"' in root_alias.read_text()
-    assert 'window.location.replace("/epi-dossier/")' in newsdesk_home.read_text()
-    assert 'content="0; url=/epi-dossier/latest.html"' in newsdesk_latest.read_text()
+    assert 'href="/"' in newsdesk_home.read_text()
+    assert 'href="/"' in newsdesk_latest.read_text()
+    assert "window.location.replace" not in newsdesk_home.read_text()
+    assert 'http-equiv="refresh"' not in newsdesk_latest.read_text()
 
 
 def test_resolve_epidossier_docs_prefers_configured_docs_path(tmp_path, monkeypatch) -> None:

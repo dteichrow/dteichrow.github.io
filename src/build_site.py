@@ -2100,7 +2100,6 @@ def import_epidossier_public(docs_dir: Path, base_url: str) -> dict[str, Any]:
             ensure_dir(dest.parent)
             dest.write_text(transformed)
 
-    write_live_newsdesk_redirects(docs_dir, base_url)
     ensure_archived_story_placeholders(docs_dir, base_url)
     latest = sanitize_public_copy(load_json(app_exports_dest / "latest.json"))
     return latest
