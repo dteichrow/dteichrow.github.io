@@ -1,5 +1,421 @@
 [
   {
+    "title": "The Ordinary Deaths of the Vikings",
+    "display_title": "The Ordinary Deaths of the Vikings",
+    "section": "Essay",
+    "summary": "I need to start this piece with a small caveat.",
+    "url": "/essays/what-the-viking-age-norse-died-from/",
+    "keywords": "science History Vikings Big Epidemiology science History Vikings Big Epidemiology  historical-epidemiology"
+  },
+  {
+    "title": "Ebola in DRC and Uganda: What Is Known So Far (Pathogen Dispatch #4)",
+    "display_title": "Ebola in DRC and Uganda: Outbreak Update",
+    "section": "Essay",
+    "summary": "Live outbreak notes on Ebola virus disease in DRC and Uganda, with what is confirmed, what remains uncertain, and why regional spread matters.",
+    "url": "/essays/ebola-in-drc-and-uganda-what-is-known/",
+    "keywords": "science infectious disease ebola epidemiology Africa science infectious disease ebola epidemiology Africa Ebola DRC Uganda outbreak disease-ecology"
+  },
+  {
+    "title": "Korean Hemorrhagic Fever in the Korean War",
+    "display_title": "Korean War Hantavirus: Hemorrhagic Fever History",
+    "section": "Essay",
+    "summary": "How Korean War trench warfare, rodent ecology, and Hantaan virus turned a mysterious military outbreak into hantavirus history.",
+    "url": "/essays/hantavirus-in-the-korean-war-korean/",
+    "keywords": "science History hantavirus Military History Korean War science History hantavirus Military History Korean War Korean War hantavirus disease-and-war"
+  },
+  {
+    "title": "MV Hondius Hantavirus Outbreak: What We Know So Far",
+    "display_title": "MV Hondius Hantavirus Outbreak: What We Know",
+    "section": "Essay",
+    "summary": "A source-first guide to the MV Hondius hantavirus outbreak, Andes virus, cruise-ship exposure, travel risk, and what investigators could know.",
+    "url": "/essays/hantavirus-at-sea-what-we-know-about/",
+    "keywords": "science infectious disease news hantavirus MV Hondius science infectious disease news hantavirus MV Hondius MV Hondius hantavirus outbreak pathogen-geography"
+  },
+  {
+    "title": "The New Fungal STI Hiding in Plain Sight (Pathogen Dispatch #1)",
+    "display_title": "New Fungal STI: Epidemiology and Transmission Risk",
+    "section": "Essay",
+    "summary": "A source-aware look at a newly reported sexually transmitted fungal infection, including MSM networks, case evidence, transmission questions, and reporting limits.",
+    "url": "/essays/the-new-fungal-sti-hiding-in-plain/",
+    "keywords": "science public health MSMs LGBTQ STIs science public health MSMs LGBTQ STIs fungal STI epidemiologic-methods"
+  },
+  {
+    "title": "Ancient DNA and Disease Selection in West Eurasia",
+    "display_title": "Ancient DNA and Disease Selection in West Eurasia",
+    "section": "Essay",
+    "summary": "How ancient DNA, infectious disease pressure, immunity, and changing environments help explain genomic selection in West Eurasian populations.",
+    "url": "/essays/how-changing-disease-environments/",
+    "keywords": "information science History Genetics epidemiology Reich Lab 2026 information science History Genetics epidemiology Reich Lab 2026 ancient DNA disease selection historical-epidemiology"
+  },
+  {
+    "title": "Big Epidemiology: Disease at the Scale of Civilization",
+    "display_title": "Big Epidemiology: Disease at Civilization Scale",
+    "section": "Essay",
+    "summary": "A framework essay for thinking about disease across deep time, infrastructure, migration, ecology, empire, and the systems civilizations build.",
+    "url": "/essays/big-epidemiology-disease-at-the-scale/",
+    "keywords": "science History big History Big Epidemiology history of medicine science History big History Big Epidemiology history of medicine big epidemiology historical-epidemiology"
+  },
+  {
+    "title": "1793 Philadelphia Yellow Fever: America's First Epidemic Crisis",
+    "display_title": "1793 Philadelphia Yellow Fever: America’s First Epidemic Crisis",
+    "section": "Essay",
+    "summary": "The 1793 Philadelphia yellow fever epidemic as an early American public-health crisis shaped by urban ecology, politics, race, and mosquito-borne disease.",
+    "url": "/essays/the-first-american-epidemic-how-yellow/",
+    "keywords": "american history US History History yellow fever Big Epidemiology 1793 american history US History History yellow fever Big Epidemiology 1793 1793 Philadelphia yellow fever historical-epidemiology"
+  },
+  {
+    "title": "Did Vikings Spread Plague Across the North Sea?",
+    "display_title": "Did Vikings Spread Plague Across the North Sea?",
+    "section": "Essay",
+    "summary": "A careful look at Viking movement, North Sea disease ecology, plague evidence, Norse voyages, and the limits of reconstructing medieval pathogen spread.",
+    "url": "/essays/did-the-vikings-bring-plague-across/",
+    "keywords": "science infectious disease History Vikings big History Big Epidemiology science infectious disease History Vikings big History Big Epidemiology Viking plague North Sea historical-epidemiology"
+  },
+  {
+    "title": "The White Plague Returns?: Tuberculosis and the Fragility of Public Health (The Pathogen Dispatch)",
+    "display_title": "Tuberculosis and the Fragility of Public Health",
+    "section": "Essay",
+    "summary": "A Pathogen Dispatch essay on tuberculosis, public-health capacity, drug resistance, airborne transmission, and why old diseases keep returning.",
+    "url": "/essays/the-white-plague-returns-tuberculosis/",
+    "keywords": "science History public health tuberculosis science History public health tuberculosis tuberculosis public health disease-ecology"
+  },
+  {
+    "title": "Disease in the American Revolutionary War: Who Died of What?",
+    "display_title": "Disease in the American Revolutionary War: Who Died of What?",
+    "section": "Essay",
+    "summary": "Disease mortality in the American Revolutionary War, including battle deaths, smallpox, camp disease, military medicine, and eighteenth-century survival.",
+    "url": "/essays/who-died-of-what-in-the-american/",
+    "keywords": "infectious disease american history History american revolution revolutionary war infectious disease american history History american revolution revolutionary war disease in the American Revolutionary War disease-and-war"
+  },
+  {
+    "title": "Disease on the Oregon Trail: Cholera, Dysentery, and Death",
+    "display_title": "Disease on the Oregon Trail: Cholera, Dysentery, and Death",
+    "section": "Essay",
+    "summary": "Disease on the Oregon Trail, from cholera and dysentery to overland migration, sanitation, graves, and nineteenth-century westward travel.",
+    "url": "/essays/invisible-killers-of-the-oregon-trail/",
+    "keywords": "information science infectious disease Oregon Trail History Pacific North West information science infectious disease Oregon Trail History Pacific North West disease on the Oregon Trail disease-and-war"
+  },
+  {
+    "title": "How Yellow Fever Killed Napoleon's American Empire",
+    "display_title": "Yellow Fever and Napoleon’s American Empire",
+    "section": "Essay",
+    "summary": "How yellow fever, mosquitoes, Saint-Domingue, military failure, and disease ecology helped destroy Napoleon’s North American empire plans.",
+    "url": "/essays/how-mosquitos-killed-napoleons-north/",
+    "keywords": "science infectious disease History Mosquitos Vector Ecology Military History science infectious disease History Mosquitos Vector Ecology Military History Medical History yellow fever Napoleon disease-and-war"
+  },
+  {
+    "title": "The American Revolution Was Nearly Lost to Smallpox",
+    "display_title": "Smallpox and the American Revolution",
+    "section": "Essay",
+    "summary": "How smallpox threatened the American Revolution, why inoculation mattered, and how disease shaped military survival during the founding war.",
+    "url": "/essays/the-american-revolution-was-nearly/",
+    "keywords": "science american history History Medical History revolutionary war science american history History Medical History revolutionary war smallpox American Revolution disease-and-war"
+  },
+  {
+    "title": "Disease in the Early Colonies: Pre-Revolutionary War Disease Ecology and Outbreaks",
+    "display_title": "Colonial Disease Ecology Before the Revolution",
+    "section": "Essay",
+    "summary": "Smallpox, measles, malaria, diphtheria, enteric disease, and vector-borne fevers in early British North America before the Revolution.",
+    "url": "/essays/disease-in-the-early-colonies-pre/",
+    "keywords": "science History malaria colonial era science History malaria colonial era colonial disease ecology disease-and-war"
+  },
+  {
+    "title": "Why Europeans Didn’t Die of New World Diseases (but did from diseases in Africa and Asia)",
+    "display_title": "Why Europeans Didn’t Die of New World Diseases",
+    "section": "Essay",
+    "summary": "Why Old World pathogens devastated Indigenous Americans while New World diseases rarely reversed the catastrophe in Europe, Africa, and Asia.",
+    "url": "/essays/why-europeans-didnt-get-hit-by-disease/",
+    "keywords": "science infectious disease History epidemiology colonial era Medical History science infectious disease History epidemiology colonial era Medical History New World diseases Europeans pathogen-geography"
+  },
+  {
+    "title": "They Came from the Steppe: The Genetic Legacy of Plague and Steppe Migrations",
+    "display_title": "Plague, Steppe Migrations, and Ancient DNA",
+    "section": "Essay",
+    "summary": "Ancient DNA, Yamnaya and steppe migrations, plague evidence, and how pathogen history intersects with population-genetic change.",
+    "url": "/essays/they-came-from-the-steppe-the-genetic/",
+    "keywords": "History Genetics Yamnaya epidemiology Steppe History Genetics Yamnaya epidemiology Steppe plague steppe migrations historical-epidemiology"
+  },
+  {
+    "title": "When Worlds Collided: Disease and Population Collapse in the Americas After 1492",
+    "display_title": "Disease and Population Collapse After 1492",
+    "section": "Essay",
+    "summary": "A careful look at disease, colonial disruption, Indigenous population collapse, Old World pathogens, and the limits of simple post-1492 stories.",
+    "url": "/essays/when-worlds-collided-disease-and/",
+    "keywords": "infectious disease columbian exchange History Americas 1493 infectious disease columbian exchange History Americas 1493 disease population collapse Americas pathogen-geography"
+  },
+  {
+    "title": "Scourges of the High Seas: Early Maritime Disease Ecology",
+    "display_title": "Maritime Disease Ecology on Early Ships",
+    "section": "Essay",
+    "summary": "Shipboard disease ecology before modern medicine: scurvy, infection, crowding, ports, naval history, and the epidemiology of life at sea.",
+    "url": "/essays/disease-on-the-high-seas-early-maritime/",
+    "keywords": "science disease ecology naval history History Military History medicine science disease ecology naval history History Military History medicine epidemiology pirates maritime disease ecology pathogen-geography"
+  },
+  {
+    "title": "Cocoliztli: Mexico's 16th-Century Mystery Epidemic",
+    "display_title": "Cocoliztli: Mexico’s 16th-Century Mystery Epidemic",
+    "section": "Essay",
+    "summary": "Cocoliztli and Mexico’s sixteenth-century mystery epidemics, including retrospective diagnosis, colonial records, ancient DNA, and pathogen uncertainty.",
+    "url": "/essays/mexicos-mystery-epidemics-of-the/",
+    "keywords": "science infectious disease cocoliztli History Mexico science infectious disease cocoliztli History Mexico cocoliztli epidemic historical-epidemiology"
+  },
+  {
+    "title": "Inherited Infections: What Our Oldest Diseases Reveal About Human Prehistory",
+    "display_title": "Oldest Human Diseases and Prehistory",
+    "section": "Essay",
+    "summary": "What ancient infections, inherited pathogens, and human prehistory can reveal about disease pressure before written medical history.",
+    "url": "/essays/inherited-infections-what-our-oldest/",
+    "keywords": "science infectious disease anthropology evolution History human origins science infectious disease anthropology evolution History human origins oldest human diseases historical-epidemiology"
+  },
+  {
+    "title": "The Disease Ecology of the Pre-Contact Americas (Part 2: South America)",
+    "display_title": "Pre-Contact South American Disease Ecology",
+    "section": "Essay",
+    "summary": "Part two of a pre-contact Americas disease ecology series, focused on South America, isolation, endemic infections, and ecological context.",
+    "url": "/essays/the-disease-ecology-of-the-pre-contact/",
+    "keywords": "science infectious disease anthropology History pre-colonial era science infectious disease anthropology History pre-colonial era pre-contact South America disease pathogen-geography"
+  },
+  {
+    "title": "The Disease Ecology of Pre-Contact Americas (Part 1: North and Central America)",
+    "display_title": "Pre-Contact North and Central American Disease Ecology",
+    "section": "Essay",
+    "summary": "Disease ecology in North and Central America before 1492, including isolation from Eurasian disease pools and Indigenous health context.",
+    "url": "/essays/the-disease-ecology-of-pre-contact/",
+    "keywords": "science infectious disease disease ecology History Medical History science infectious disease disease ecology History Medical History pre-contact Americas disease ecology pathogen-geography"
+  },
+  {
+    "title": "When Did Syphilis Enter Europe? The Origins Debate",
+    "display_title": "Syphilis Origins Debate: When Did It Reach Europe?",
+    "section": "Essay",
+    "summary": "A historical epidemiology guide to the syphilis origins debate, Treponema evidence, ancient DNA, and the Columbian versus pre-Columbian question.",
+    "url": "/essays/when-did-syphilis-enter-europe-the/",
+    "keywords": "science History syphilis medicine epidemiology science History syphilis medicine epidemiology syphilis origins debate historical-epidemiology"
+  },
+  {
+    "title": "Ancient Hookworm in the Americas: A Parasite Out of Place",
+    "display_title": "Ancient Hookworm in the Americas",
+    "section": "Essay",
+    "summary": "Ancient hookworm in the Americas, parasite geography, archaeology, migration, and why a tropical helminth complicates disease-history origin stories.",
+    "url": "/essays/the-mystery-of-hookworm-in-ancient/",
+    "keywords": "science infectious disease anthropology History paleontology paleopathology science infectious disease anthropology History paleontology paleopathology ancient hookworm Americas historical-epidemiology"
+  },
+  {
+    "title": "The Ghosts of Meals Past: What We’ve Learned from Fossilized Poop",
+    "display_title": "Fossilized Poop: What Coprolites Reveal",
+    "section": "Essay",
+    "summary": "What fossilized feces, archaeology, parasite evidence, diet, and microbial remains can tell us about ancient health and disease.",
+    "url": "/essays/the-ghosts-of-meals-past-what-weve/",
+    "keywords": "science anthropology Scatology History science anthropology Scatology History fossilized poop coprolites historical-epidemiology"
+  },
+  {
+    "title": "The Oldest Diseases We Know Of",
+    "display_title": "Oldest Diseases in the Fossil Record",
+    "section": "Essay",
+    "summary": "A deep-time disease essay on the oldest known evidence for infection, cancer, parasites, and what paleopathology can reveal.",
+    "url": "/essays/the-oldest-diseases-we-know-of/",
+    "keywords": "science History paleontology infection cancer science History paleontology infection cancer oldest diseases historical-epidemiology"
+  },
+  {
+    "title": "Humanity’s Deadliest Companions: Checking the Till on the Deadliest Microbes in History",
+    "display_title": "Deadliest Microbes in Human History",
+    "section": "Essay",
+    "summary": "A critical look at claims about history’s deadliest microbes, mortality estimates, infectious disease rankings, and what counts as a deadly companion.",
+    "url": "/essays/humanitys-deadliest-companions-checking/",
+    "keywords": "science infectious disease History malaria smallpox science infectious disease History malaria smallpox deadliest microbes historical-epidemiology"
+  },
+  {
+    "title": "Islands of Affliction: Leprosy and Empire in the South Pacific",
+    "display_title": "Leprosy and Empire in the South Pacific",
+    "section": "Essay",
+    "summary": "Leprosy, colonial rule, island isolation, stigma, and the public-health geography of empire in the South Pacific.",
+    "url": "/essays/islands-of-affliction-leprosy-and/",
+    "keywords": "information science Leprosy health policy History Leper Colony health journalism information science Leprosy health policy History Leper Colony health journalism Medical History leprosy South Pacific historical-epidemiology"
+  },
+  {
+    "title": "The Night Staten Island Burned Its Hospital: Fear, Fire, and the Forgotten Quarantine War of 1858",
+    "display_title": "Staten Island Quarantine War of 1858",
+    "section": "Essay",
+    "summary": "The 1858 Staten Island quarantine hospital fire, immigrant disease fear, port quarantine, yellow fever panic, and public-health violence.",
+    "url": "/essays/the-night-staten-island-burned-its/",
+    "keywords": "quarantine History medicine epidemiology quarantine History medicine epidemiology Staten Island quarantine historical-epidemiology"
+  },
+  {
+    "title": "When Diabetes Drugs Start Treating Headaches: GLP-1 Agonists and the Migraine Connection",
+    "display_title": "GLP-1 Drugs and Migraine: Evidence Guide",
+    "section": "Essay",
+    "summary": "What GLP-1 agonists might mean for migraine, headache biology, metabolic drugs, clinical evidence, and what remains speculative.",
+    "url": "/essays/when-diabetes-drugs-start-treating/",
+    "keywords": "science GLP-1 obesity neurology neuroscience ozempic science GLP-1 obesity neurology neuroscience ozempic GLP-1 migraine neuroepidemiology"
+  },
+  {
+    "title": "The U.S. Life Expectancy Gap Sounds Worse Than It Is and (Hypothetically) Easier to Fix Than You Think",
+    "display_title": "U.S. Life Expectancy Gap: What the Numbers Mean",
+    "section": "Essay",
+    "summary": "A methods-first look at the U.S. life expectancy gap, why it sounds worse than it is, and what the counterfactuals imply.",
+    "url": "/essays/the-us-life-expectancy-gap-sounds/",
+    "keywords": "science epidemiology mortality science epidemiology mortality US life expectancy gap epidemiologic-methods"
+  },
+  {
+    "title": "Psychedelics for Anxiety: What the New LSD Trial Does and Doesn’t Change",
+    "display_title": "Psychedelics for Anxiety: LSD Trial Evidence",
+    "section": "Essay",
+    "summary": "What a new LSD trial does and does not show about psychedelics for anxiety, trial design, clinical endpoints, and evidence limits.",
+    "url": "/essays/psychedelics-for-anxiety-what-the/",
+    "keywords": "science clinical trials medicine psychiatry psychedelics science clinical trials medicine psychiatry psychedelics psychedelics anxiety trial epidemiologic-methods"
+  },
+  {
+    "title": "Body-Snatching, the Doctors’ Riot, and How Cadavers Built American Medicine",
+    "display_title": "Body Snatching and the Doctors’ Riot",
+    "section": "Essay",
+    "summary": "How cadaver shortages, grave robbing, riots, and medical education shaped the history of American anatomy and public trust.",
+    "url": "/essays/body-snatching-the-doctors-riot-and/",
+    "keywords": "science History medicine riots science History medicine riots Doctors Riot body snatching historical-epidemiology"
+  },
+  {
+    "title": "Heat Doesn’t Age Everyone Equally",
+    "display_title": "Heat Exposure and Unequal Aging Risk",
+    "section": "Essay",
+    "summary": "Why heat exposure may not age everyone equally, including climate risk, social vulnerability, occupational exposure, and epidemiologic measurement.",
+    "url": "/essays/heat-doesnt-age-everyone-equally/",
+    "keywords": "science heat waves aging longevity science heat waves aging longevity heat aging risk disease-ecology"
+  },
+  {
+    "title": "Finding Risk Where History Put It: Founder Effects, Population Bottlenecks, Rare Diseases, and Screening Programs",
+    "display_title": "Founder Effects, Rare Disease, and Screening",
+    "section": "Essay",
+    "summary": "Founder effects, population bottlenecks, rare disease risk, genetic ancestry, and why screening programs often follow history.",
+    "url": "/essays/finding-risk-where-history-put-it/",
+    "keywords": "science Genetics public health epidemiology rare diseases science Genetics public health epidemiology rare diseases founder effects rare disease epidemiologic-methods"
+  },
+  {
+    "title": "Infectious Diseases on the Move (2025): How Warmer Weather and Urbanicity are Shifting Risks",
+    "display_title": "Climate, Urbanization, and Infectious Disease Risk",
+    "section": "Essay",
+    "summary": "How warmer weather, urbanization, vector range, travel, and ecological change are shifting infectious disease risks in 2025.",
+    "url": "/essays/infectious-diseases-on-the-move-2025/",
+    "keywords": "science infectious disease Climate Change epidemiology science infectious disease Climate Change epidemiology climate infectious disease risk disease-ecology"
+  },
+  {
+    "title": "Does Lithium Lower Alzheimer’s Risk? A Guide to the Evidence",
+    "display_title": "Lithium and Alzheimer’s Risk: Evidence Guide",
+    "section": "Essay",
+    "summary": "A guide to the evidence on lithium and Alzheimer’s risk, including observational data, mechanisms, trial limits, and causal uncertainty.",
+    "url": "/essays/does-lithium-lower-alzheimers-risk/",
+    "keywords": "science alzheimer's dementia aging lithium science alzheimer's dementia aging lithium lithium Alzheimer’s risk neuroepidemiology"
+  },
+  {
+    "title": "Paper Mills are Poisoning Science",
+    "display_title": "Paper Mills and Scientific Fraud",
+    "section": "Essay",
+    "summary": "How paper mills poison science, why fake studies spread, and what scientific publishing loses when quantity beats credibility.",
+    "url": "/essays/paper-mills-are-poisoning-science/",
+    "keywords": "science AI science communication Pseudoscience science AI science communication Pseudoscience paper mills scientific fraud epidemiologic-methods"
+  },
+  {
+    "title": "Eric Topol’s Super Agers: The Medical System We Ought to Build",
+    "display_title": "Super Agers and Preventive Medicine",
+    "section": "Essay",
+    "summary": "A response to Eric Topol’s super-agers argument and the medical system needed for aging, prevention, function, and long-term health.",
+    "url": "/essays/eric-topols-super-agers-the-medical/",
+    "keywords": "Eric Topol aging longevity AI medicine Eric Topol aging longevity AI medicine super agers preventive medicine epidemiologic-methods"
+  },
+  {
+    "title": "Migraine and brain fog",
+    "display_title": "Migraine Brain Fog and Cognition",
+    "section": "Essay",
+    "summary": "Migraine brain fog, cognition, medication trade-offs, attack phases, and how cognitive symptoms complicate the lived burden of migraine.",
+    "url": "/essays/migraine-and-brain-fog/",
+    "keywords": "science cognition neurology Migraine neuroscience science cognition neurology Migraine neuroscience migraine brain fog neuroepidemiology"
+  },
+  {
+    "title": "Memetics is dead, long live memetics",
+    "display_title": "Memetics After Memetics",
+    "section": "Essay",
+    "summary": "Why the word memetics faded while viral ideas, imitation, information spread, and cultural transmission kept shaping public life.",
+    "url": "/essays/memetics-is-dead-long-live-memetics/",
+    "keywords": "science information science culture viral memetics science information science culture viral memetics memetics viral ideas epidemiologic-methods"
+  },
+  {
+    "title": "Shrooms vs antidepressants: A meta-analysis calls it a tie",
+    "display_title": "Psilocybin vs Antidepressants: Meta-Analysis",
+    "section": "Essay",
+    "summary": "A meta-analysis comparison of psilocybin and antidepressants for depression, with attention to study design, endpoints, and overstated certainty.",
+    "url": "/essays/shrooms-vs-antidepressants-a-meta/",
+    "keywords": "depression science clinical trials psychiatry psychedelics depression science clinical trials psychiatry psychedelics psilocybin antidepressants meta-analysis epidemiologic-methods"
+  },
+  {
+    "title": "The Poison Nobody Could Agree On: The Unsolved 1951 Outbreak of Pont-Saint-Esprit",
+    "display_title": "Pont-Saint-Esprit Poisoning Outbreak of 1951",
+    "section": "Essay",
+    "summary": "The unsolved 1951 Pont-Saint-Esprit outbreak, ergot theories, poisoning claims, CIA rumors, and why retrospective diagnosis stays hard.",
+    "url": "/essays/the-poison-nobody-could-agree-on/",
+    "keywords": "science History CIA epidemiology science History CIA epidemiology Pont-Saint-Esprit outbreak historical-epidemiology"
+  },
+  {
+    "title": "Migraine: What We Know and Who It Hits Hardest",
+    "display_title": "Migraine Epidemiology: Who Gets Hit Hardest",
+    "section": "Essay",
+    "summary": "Migraine is disabling and unevenly treated. Here is what the data says about who gets it, who lacks help, and why uncertainty remains.",
+    "url": "/essays/migraine-what-we-know-and-who-it/",
+    "keywords": "science neurology Migraine neuroscience science communication science neurology Migraine neuroscience science communication migraine epidemiology neuroepidemiology"
+  },
+  {
+    "title": "Something I Noticed at the American Headache Society Conference",
+    "display_title": "American Headache Society Conference Notes",
+    "section": "Essay",
+    "summary": "A short migraine research note from the American Headache Society meeting, focused on clinical questions, evidence gaps, and field direction.",
+    "url": "/essays/something-i-noticed-at-the-american/",
+    "keywords": "science Migraine science Migraine American Headache Society migraine neuroepidemiology"
+  },
+  {
+    "title": "Snort This to Tan: The Bizarre and Dangerous Barbie Drug",
+    "display_title": "Melanotan Nasal Spray and Barbie Drug Risks",
+    "section": "Essay",
+    "summary": "A risk-communication essay on melanotan nasal sprays, tanning peptides, sexual side effects, black-market marketing, and safety concerns.",
+    "url": "/essays/snort-this-to-tan-the-bizarre-and/",
+    "keywords": "science risk communication public health Wellness Industry supplements science risk communication public health Wellness Industry supplements melanotan Barbie drug wellness-claims"
+  },
+  {
+    "title": "How Accurate is Your Apple Watch? What Fitness Trackers are Good For and Where They Still Need Work",
+    "display_title": "Apple Watch Accuracy and Fitness Trackers",
+    "section": "Essay",
+    "summary": "What fitness trackers and Apple Watch data are good for, where wearable measurements fail, and how to interpret consumer health metrics.",
+    "url": "/essays/how-accurate-are-wearable-fitness/",
+    "keywords": "science fitness trackers fitness science communication Health Misinformation science fitness trackers fitness science communication Health Misinformation Apple Watch accuracy epidemiologic-methods"
+  },
+  {
+    "title": "War on Many Fronts During the Justinianic Plague (541 CE)",
+    "display_title": "Justinianic Plague and War Epidemiology",
+    "section": "Essay",
+    "summary": "A War Epidemiology chapter draft on the Justinianic Plague, military stress, empire, logistics, and disease pressure in 541 CE.",
+    "url": "/essays/war-on-many-fronts-during-the-justinianic/",
+    "keywords": "science infectious disease History War epidemiology science infectious disease History War epidemiology Justinianic Plague war disease-and-war"
+  },
+  {
+    "title": "Melatonin is Misunderstood (Especially By Those Who Use It Most)",
+    "display_title": "Melatonin Misuse and Sleep Evidence",
+    "section": "Essay",
+    "summary": "Why melatonin is misunderstood, who may benefit, how timing matters, and where sleep supplement claims outrun the evidence.",
+    "url": "/essays/melatonin-is-misunderstood-especially/",
+    "keywords": "science Melatonin supplements Sleep science Melatonin supplements Sleep melatonin sleep evidence wellness-claims"
+  },
+  {
+    "title": "When the Influencer’s Claims are Stronger than the Evidence: A Look at Rhonda Patrick’s Vitamin D Claims",
+    "display_title": "Vitamin D, Dementia, and Rhonda Patrick’s Claims",
+    "section": "Essay",
+    "summary": "An evidence check on Rhonda Patrick’s vitamin D and dementia claims, observational studies, confounding, and supplement certainty.",
+    "url": "/essays/when-the-influencers-claims-are-stronger/",
+    "keywords": "science dementia vitamins vitamin D science communication supplements science dementia vitamins vitamin D science communication supplements vitamin D dementia Rhonda Patrick wellness-claims"
+  },
+  {
+    "title": "Creatine Is Underrated (By Those Who Would Benefit Most)",
+    "display_title": "Creatine Benefits and Evidence",
+    "section": "Essay",
+    "summary": "Why creatine may be underrated for people who could benefit, including muscle, aging, cognition claims, and supplement evidence limits.",
+    "url": "/essays/creatine-is-underrated-by-those-who/",
+    "keywords": "science public health epidemiology science communication supplements creatine science public health epidemiology science communication supplements creatine creatine benefits evidence wellness-claims"
+  },
+  {
     "title": "Historical Epidemiology",
     "section": "Topic",
     "summary": "Essays on epidemics as historical forces: ancient pathogens, colonial encounters, disease ecology, and the long memory of public health.",
@@ -114,7 +530,7 @@
   {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
-    "summary": "Baseline snapshot created with 247 clustered item(s) across 158 source(s).",
+    "summary": "Baseline snapshot created with 238 clustered item(s) across 153 source(s).",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
     "keywords": "new_official_source suspected_case confirmed_case severity_or_death policy_or_travel new_geography healthcare_transmission laboratory_or_genomic medical_countermeasure_gap Africa Democratic Republic of the Congo"
   },
@@ -124,13 +540,6 @@
     "summary": "Baseline snapshot created with 27 clustered item(s) across 18 source(s).",
     "url": "/stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
     "keywords": "new_official_source severity_or_death policy_or_travel Global / Maritime Spain"
-  },
-  {
-    "title": "Measles transmission and vaccination",
-    "section": "Newsdesk",
-    "summary": "Baseline snapshot created with 3 clustered item(s) across 3 source(s).",
-    "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
-    "keywords": "new_official_source confirmed_case severity_or_death South Asia United States"
   },
   {
     "title": "Ebola virus disease",
