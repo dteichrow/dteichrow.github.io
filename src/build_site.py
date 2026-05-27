@@ -1760,6 +1760,10 @@ def rewrite_imported_paths(html_text: str, base_url: str) -> str:
         html_text = html_text.replace(f"src='{needle}", f"src='{replacement}")
         html_text = html_text.replace(f'fetch("{needle}', f'fetch("{replacement}')
         html_text = html_text.replace(f"fetch('{needle}", f"fetch('{replacement}")
+        if "app_exports/" in needle:
+            html_text = html_text.replace(f'"{needle}', f'"{replacement}')
+            html_text = html_text.replace(f"'{needle}", f"'{replacement}")
+            html_text = html_text.replace(f"`{needle}", f"`{replacement}")
     return html_text
 
 

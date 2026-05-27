@@ -28,6 +28,7 @@ def test_transform_imported_html_rewrites_known_paths() -> None:
           <div class="meta-row"><span class="badge accent">56 item(s)</span><span class="badge">26 source(s)</span><span class="badge">Expanding coverage</span><span class="badge">Global / Maritime</span></div>
         </article>
         <script>fetch("../app_exports/manifest.json")</script>
+        <script>const manifestPath = '../../app_exports/manifest.json';</script>
       </body>
     </html>
     """
@@ -41,6 +42,7 @@ def test_transform_imported_html_rewrites_known_paths() -> None:
     assert 'href="/atlases/pathogen/?pathogen=cholera"' in transformed
     assert 'href="/newsdesk/archive/"' in transformed
     assert 'fetch("/app_exports/manifest.json")' in transformed
+    assert "const manifestPath = '/app_exports/manifest.json';" in transformed
     assert '<meta name="description"' in transformed
     assert "Edge of Epidemiology" in transformed
     assert "touch-action: pan-x" in transformed
