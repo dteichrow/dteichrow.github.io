@@ -1971,6 +1971,66 @@ def transform_imported_html(html_text: str, *, active: str, base_url: str) -> st
     return html_text
 
 
+def live_newsdesk_redirect_html(*, title: str, target_url: str) -> str:
+    escaped_title = html.escape(title)
+    escaped_target = html.escape(target_url, quote=True)
+    return f"""<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,follow" />
+    <meta http-equiv="refresh" content="0; url={escaped_target}" />
+    <link rel="canonical" href="{escaped_target}" />
+    <title>{escaped_title}</title>
+    <script>
+      window.location.replace("{escaped_target}");
+    </script>
+    <style>
+      body {{
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+        color: #173046;
+        background: #fbf8f0;
+      }}
+      main {{
+        max-width: 34rem;
+        padding: 2rem;
+        text-align: center;
+      }}
+      a {{
+        color: #8d3f2f;
+        font-weight: 700;
+      }}
+    </style>
+</head>
+<body>
+    <main>
+      <h1>{escaped_title}</h1>
+      <p><a href="{escaped_target}">Open the current Pathogen Dispatch</a></p>
+    </main>
+  </body>
+</html>
+"""
+
+
+def write_live_newsdesk_redirects(docs_dir: Path, base_url: str) -> None:
+    redirects = [
+        (docs_dir / "newsdesk" / "index.html", "Opening live Newsdesk", link_for(base_url, "epi-dossier/")),
+        (
+            docs_dir / "newsdesk" / "latest.html",
+            "Opening latest Pathogen Dispatch",
+            link_for(base_url, "epi-dossier/latest.html"),
+        ),
+    ]
+    for dest, title, target_url in redirects:
+        ensure_dir(dest.parent)
+        dest.write_text(live_newsdesk_redirect_html(title=title, target_url=target_url))
+
+
 def import_epidossier_public(docs_dir: Path, base_url: str) -> dict[str, Any]:
     source_docs = resolve_epidossier_docs()
 
@@ -2024,6 +2084,7 @@ def import_epidossier_public(docs_dir: Path, base_url: str) -> dict[str, Any]:
             ensure_dir(dest.parent)
             dest.write_text(transformed)
 
+    write_live_newsdesk_redirects(docs_dir, base_url)
     ensure_archived_story_placeholders(docs_dir, base_url)
     latest = sanitize_public_copy(load_json(app_exports_dest / "latest.json"))
     return latest
@@ -2498,7 +2559,7 @@ def seo_profile_for_route(route: str, html_text: str, post_by_route: dict[str, d
     heading = extract_primary_heading(html_text)
     description = extract_meta_description_from_html(html_text)
     image = public_url_for_route(DEFAULT_SOCIAL_IMAGE)
-    noindex = route in {"search/", "newsdesk/latest.html"}
+    noindex = route in {"search/", "newsdesk/", "newsdesk/latest.html"}
     schema_type = "CollectionPage" if route_is_collection(route) else "WebPage"
     date_published = ""
     date_modified = ""

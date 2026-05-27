@@ -169,12 +169,16 @@ def test_import_epidossier_public_imports_outbreak_terminal_routes(tmp_path, mon
     root_alias = docs_dir / "outbreaks.html"
     reference_page = docs_dir / "reference" / "ebola-virus-disease.html"
     story_page = docs_dir / "stories" / "demo-story.html"
+    newsdesk_home = docs_dir / "newsdesk" / "index.html"
+    newsdesk_latest = docs_dir / "newsdesk" / "latest.html"
     assert terminal_page.exists()
     assert root_alias.exists()
     assert "Outbreak Terminal" in terminal_page.read_text()
     assert 'href="/newsdesk/outbreaks/"' in reference_page.read_text()
     assert 'href="/newsdesk/outbreaks/"' in story_page.read_text()
     assert 'href="/newsdesk/"' in root_alias.read_text()
+    assert 'window.location.replace("/epi-dossier/")' in newsdesk_home.read_text()
+    assert 'content="0; url=/epi-dossier/latest.html"' in newsdesk_latest.read_text()
 
 
 def test_resolve_epidossier_docs_prefers_configured_docs_path(tmp_path, monkeypatch) -> None:
