@@ -267,6 +267,25 @@ posts:
     local_body_path: ""
     hero_mode: cover
     notes: ""
+  - substack_id: 3
+    slug: legacy-visible-post
+    title: Legacy Visible Post
+    date: 2026-05-08
+    canonical_url: https://theedgeofepidemiology.substack.com/p/legacy-visible-post
+    excerpt: A synced post without a site_visibility field should remain public.
+    upstream_tags: [History]
+    source_mode: substack_archive_api
+    status: summary_only
+    indexing_strategy: noindex_stub
+    topics: [History]
+    topic_cluster: historical-epidemiology
+    related_atlases: []
+    related_reference_slugs: []
+    related_story_ids: []
+    search_excerpt: A synced post without a site_visibility field should remain public.
+    local_body_path: ""
+    hero_mode: cover
+    notes: ""
 """
     )
     (content_dir / "atlases.yml").write_text(
@@ -367,13 +386,14 @@ atlases:
     monkeypatch.setattr(build_site, "import_external_revolutionary_war_atlas", fake_import_external_revolutionary_war_atlas)
 
     result = build_site.build_site(docs_dir=docs_dir, base_url="/")
-    assert result["posts"] == 1
-    assert result["all_posts"] == 2
+    assert result["posts"] == 2
+    assert result["all_posts"] == 3
     assert result["seo"]["html_pages"] >= 20
     assert result["seo"]["indexable_pages"] >= 10
     assert result["seo"]["noindex_pages"] >= 1
     assert (docs_dir / "index.html").exists()
     assert (docs_dir / "essays" / "first-post" / "index.html").exists()
+    assert (docs_dir / "essays" / "legacy-visible-post" / "index.html").exists()
     assert not (docs_dir / "essays" / "removed-post").exists()
     assert (docs_dir / "topics" / "index.html").exists()
     assert (docs_dir / "topics" / "historical-epidemiology" / "index.html").exists()
@@ -386,8 +406,9 @@ atlases:
     assert (docs_dir / "opportunities" / "index.html").exists()
     assert (docs_dir / "app_exports" / "posts.json").exists()
     posts_export = json.loads((docs_dir / "app_exports" / "posts.json").read_text())
-    assert posts_export["count"] == 1
+    assert posts_export["count"] == 2
     assert posts_export["posts"][0]["slug"] == "first-post"
+    assert {post["slug"] for post in posts_export["posts"]} == {"first-post", "legacy-visible-post"}
     assert "site_visibility" not in posts_export["posts"][0]
     assert "flashcards" not in posts_export["posts"][0]
     flashcards_export = json.loads((docs_dir / "app_exports" / "essay-flashcards.json").read_text())
@@ -421,7 +442,8 @@ atlases:
     assert "Read the essays" in home_text
     assert 'href="/opportunities/"' in home_text
     essays_index = (docs_dir / "essays" / "index.html").read_text()
-    assert "<h2>1 essays</h2>" in essays_index
+    assert "<h2>2 essays</h2>" in essays_index
+    assert "Legacy Visible Post" in essays_index
     assert "Removed Post" not in essays_index
     assert "Selected projects, collaborations, and commissions" in home_text
     assert "devinteichrow@gmail.com" in home_text

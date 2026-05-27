@@ -814,8 +814,20 @@ def post_should_index(post: dict[str, Any]) -> bool:
     return post_indexing_strategy(post).lower() not in NOINDEX_POST_STRATEGIES
 
 
+def post_site_visibility(post: dict[str, Any]) -> str:
+    visibility = str(post.get("site_visibility") or "").strip().lower()
+    if visibility:
+        return visibility
+    # Existing Substack records predate site_visibility. Treat synced records
+    # that already have a publication status as public, while keeping bare
+    # tombstone/test records without status out of the essay archive.
+    if str(post.get("status") or "").strip():
+        return "public"
+    return ""
+
+
 def is_public_essay_post(post: dict[str, Any]) -> bool:
-    return str(post.get("site_visibility") or "").strip().lower() == "public" and post_should_index(post)
+    return post_site_visibility(post) == "public" and post_should_index(post)
 
 
 def public_essay_posts(posts: list[dict[str, Any]]) -> list[dict[str, Any]]:
