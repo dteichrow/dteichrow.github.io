@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Historical Desk | The Pathogen Dispatch</title>
+    <title>Measles | The Pathogen Dispatch</title>
     <style>
       :root { --bg: #e8e1d3; --bg-deep: #d8cebc; --surface: #f8f4ea; --surface-alt: #f2ebde; --paper: #fffdf8; --ink: #1b2836; --ink-soft: #42515e; --line: #d6cab7; --accent: #8d3f2f; --accent-soft: rgba(141,63,47,0.10); --signal: #1f5b89; --signal-soft: rgba(31,91,137,0.12); --shadow: 0 24px 56px rgba(49, 36, 22, 0.10); }
       * { box-sizing: border-box; }
@@ -121,223 +121,65 @@
       @media (max-width: 900px) { .page { padding: 16px 14px 42px; } .hero, .panel, .site-header, .section-nav { padding: 18px; border-radius: 22px; } .site-header { align-items: flex-start; flex-direction: column; } .story-filter-grid { grid-template-columns: 1fr; } .story-grid, .atlas-selector-grid { grid-template-columns: 1fr; } .atlas-map { min-height: 340px; } h1 { font-size: clamp(1.9rem, 10vw, 3.2rem); } }
       @media (max-width: 620px) { .site-nav, .section-nav-links { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 2px; } .site-header-copy { min-width: 0; } .archive-row { flex-direction: column; align-items: flex-start; } .badge, .link-pill { line-height: 1.2; } .outbreak-dashboard { grid-template-columns: 1fr; } .dashboard-item { padding: 11px 12px; } .live-update-banner { right: 12px; bottom: 12px; width: calc(100vw - 24px); } .live-update-actions { justify-content: space-between; } }
     </style>
-<style id="eoe-shell-import-style">
-  body { padding-top: 112px !important; }
-  .eoe-shell-nav {
-    position: fixed;
-    inset: 0 0 auto 0;
-    z-index: 10000;
-    background: linear-gradient(180deg, rgba(15, 20, 27, 0.98), rgba(21, 29, 39, 0.98));
-    color: #efe6d6;
-    border-bottom: 1px solid rgba(214, 202, 183, 0.2);
-    box-shadow: 0 14px 34px rgba(4, 7, 10, 0.28);
-  }
-  .eoe-shell-nav-inner {
-    max-width: 1160px;
-    margin: 0 auto;
-    padding: 18px 18px 16px;
-    display: grid;
-    gap: 12px;
-    font-family: "Avenir Next", "Helvetica Neue", sans-serif;
-  }
-  .eoe-shell-brand {
-    display: inline-flex;
-    flex-wrap: wrap;
-    column-gap: 0.32em;
-    row-gap: 0.12em;
-    align-items: baseline;
-    color: #f5ecdd;
-    font: 700 clamp(1.2rem, 2vw, 1.65rem)/1.05 "Iowan Old Style", Georgia, serif;
-    text-decoration: none;
-    letter-spacing: 0;
-  }
-  .eoe-shell-byline {
-    color: #8fb8d8;
-    font: 600 0.48em/1 "Avenir Next", "Helvetica Neue", sans-serif;
-  }
-  .eoe-shell-brand:hover { text-decoration: none; }
-  .eoe-shell-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 18px;
-    padding-top: 10px;
-    border-top: 1px solid rgba(214, 202, 183, 0.18);
-  }
-  .eoe-shell-links a {
-    flex: 0 0 auto;
-    padding: 0 0 6px;
-    border-bottom: 2px solid transparent;
-    color: rgba(239, 230, 214, 0.76);
-    text-decoration: none;
-    background: transparent;
-    font-size: 0.95rem;
-    font-weight: 500;
-    white-space: nowrap;
-    transition: color 180ms ease, border-color 180ms ease;
-  }
-  .eoe-shell-links a.active {
-    border-color: rgba(201, 168, 76, 0.88);
-    color: #f8f1e6;
-    font-weight: 700;
-  }
-  .eoe-shell-links a:hover {
-    color: #f8f1e6;
-    text-decoration: none;
-    border-color: rgba(201, 168, 76, 0.52);
-  }
-  /* Cleaner fix would live in the Pathogen Dispatch renderer, but this import-layer pass
-     keeps the simplification isolated to the umbrella site. */
-  .site-header,
-  .hero,
-  .panel,
-  .section-nav {
-    background: transparent !important;
-    border: 0 !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-  }
-  .site-header {
-    padding: 0 0 12px !important;
-    gap: 12px !important;
-  }
-  .site-header-title {
-    font-size: 1rem !important;
-    color: #42515e !important;
-  }
-  .site-nav,
-  .section-nav-links {
-    gap: 14px !important;
-  }
-  .site-nav-link,
-  .section-nav-link {
-    padding: 0 0 5px !important;
-    border: 0 !important;
-    border-radius: 0 !important;
-    border-bottom: 2px solid transparent !important;
-    background: transparent !important;
-    box-shadow: none !important;
-    color: #42515e !important;
-    font-weight: 500 !important;
-  }
-  .site-nav-link:hover,
-  .section-nav-link:hover {
-    background: transparent !important;
-    color: #173046 !important;
-    text-decoration: underline !important;
-  }
-  .site-nav-link.active {
-    color: #173046 !important;
-    font-weight: 700 !important;
-    text-decoration: none !important;
-    border-color: rgba(141, 63, 47, 0.48) !important;
-  }
-  .hero {
-    padding: 0 0 6px !important;
-    overflow: visible !important;
-  }
-  .hero::before,
-  .hero::after,
-  .panel::before,
-  .panel::after,
-  .site-header::before,
-  .site-header::after {
-    display: none !important;
-  }
-  .panel,
-  .panel-grid {
-    gap: 16px !important;
-  }
-  .panel > h2:first-child,
-  .panel > .muted-note:first-child {
-    margin-top: 0 !important;
-  }
-  .section-nav {
-    display: none !important;
-  }
-  .meta-row-plain {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
-    margin-top: 10px;
-  }
-  .meta-inline,
-  .card-meta-text {
-    color: #42515e;
-    font: 500 0.86rem/1.55 "Avenir Next", "Helvetica Neue", sans-serif;
-  }
-  .card-meta-text {
-    margin: 0;
-  }
-  .atlas-status-pill,
-  .story-status-pill {
-    letter-spacing: 0.08em !important;
-    text-transform: uppercase !important;
-  }
-  .site-card .meta-row .badge {
-    max-width: none;
-  }
-  .link-pill {
-    background: rgba(255,252,245,0.92) !important;
-  }
-  @media (max-width: 760px) {
-    body { padding-top: 148px !important; }
-    .eoe-shell-links {
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      overflow-y: hidden;
-      width: 100%;
-      padding-bottom: 2px;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
-      touch-action: pan-x;
-      overscroll-behavior-x: contain;
-    }
-    .eoe-shell-links::-webkit-scrollbar { display: none; }
-  }
-</style>
-
-    <link rel="canonical" href="https://devinteichrow.com/newsdesk/historical/" />
-    <link rel="alternate" type="application/rss+xml" title="The Edge of Epidemiology RSS" href="https://theedgeofepidemiology.substack.com/feed" />
-    <meta name="description" content="Historical Desk from The Pathogen Dispatch, the Edge of Epidemiology source-first infectious-disease reporting desk." />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="The Edge of Epidemiology" />
-    <meta property="og:title" content="Historical Desk | The Pathogen Dispatch" />
-    <meta property="og:description" content="Historical Desk from The Pathogen Dispatch, the Edge of Epidemiology source-first infectious-disease reporting desk." />
-    <meta property="og:url" content="https://devinteichrow.com/newsdesk/historical/" />
-    <meta property="og:image" content="https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Historical Desk | The Pathogen Dispatch" />
-    <meta name="twitter:description" content="Historical Desk from The Pathogen Dispatch, the Edge of Epidemiology source-first infectious-disease reporting desk." />
-    <meta name="twitter:image" content="https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png" />
-    <script type="application/ld+json" data-eoe-seo>{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Historical Desk | The Pathogen Dispatch", "url": "https://devinteichrow.com/newsdesk/historical/", "description": "Historical Desk from The Pathogen Dispatch, the Edge of Epidemiology source-first infectious-disease reporting desk.", "image": "https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png", "isPartOf": {"@type": "WebSite", "name": "The Edge of Epidemiology", "url": "https://devinteichrow.com/"}, "author": {"@type": "Person", "name": "Devin Teichrow", "url": "https://devinteichrow.com/about/", "sameAs": ["https://theedgeofepidemiology.substack.com", "https://x.com/edgeofepi", "https://www.instagram.com/edgeofepi/", "https://www.linkedin.com/in/devin-teichrow-msc-938942254", "https://medium.com/@EdgeofEpi"]}}</script>
-</head>
-  <body><div class="eoe-shell-nav"><div class="eoe-shell-nav-inner"><a class="eoe-shell-brand" href="/"><span>The Edge of Epidemiology</span> <span class="eoe-shell-byline">by Devin Teichrow</span></a><nav class="eoe-shell-links" aria-label="Umbrella navigation"><a class="" href="/">Home</a><a class="active" href="/newsdesk/">Newsdesk</a><a class="" href="/notebook/">Notebook</a><a class="" href="/atlases/pathogen/">Pathogen Atlas</a><a class="" href="/atlases/maritime/">Maritime Atlas</a><a class="" href="/essays/">Essays</a><a class="" href="/topics/">Topics</a><a class="" href="/historical/">Historical</a><a class="" href="/reference/">Reference</a><a class="" href="/opportunities/">Opportunities</a><a class="" href="/search/">Search</a></nav></div></div>
+  </head>
+  <body>
     <main class="page">
-      <header class="site-header"><div class="site-header-copy"><div class="kicker">The Pathogen Dispatch</div><p class="site-header-title">Source-first newsroom desks</p></div><nav class="site-nav" aria-label="Site navigation"><a class="site-nav-link" href="/newsdesk/">Home</a><a class="site-nav-link" href="/notebook/">Notebook</a><a class="site-nav-link" href="/atlases/pathogen/">Atlas</a><a class="site-nav-link" href="/newsdesk/outbreaks/">Outbreak terminal</a><a class="site-nav-link" href="/newsdesk/watch/">Global watch</a><a class="site-nav-link" href="/newsdesk/africa/">Africa</a><a class="site-nav-link" href="/newsdesk/asia/">Asia</a><a class="site-nav-link" href="/newsdesk/research/">Research</a><a class="site-nav-link" href="/newsdesk/official/">Official alerts</a><a class="site-nav-link" href="/newsdesk/archive/">Archive</a></nav></header>
+      <header class="site-header"><div class="site-header-copy"><div class="kicker">The Pathogen Dispatch</div><p class="site-header-title">Source-first newsroom desks</p></div><nav class="site-nav" aria-label="Site navigation"><a class="site-nav-link" href="../index.html">Home</a><a class="site-nav-link" href="../notebook.html">Notebook</a><a class="site-nav-link" href="../atlas.html">Atlas</a><a class="site-nav-link" href="../outbreaks.html">Outbreak terminal</a><a class="site-nav-link" href="../watch.html">Global watch</a><a class="site-nav-link" href="../africa.html">Africa</a><a class="site-nav-link" href="../asia.html">Asia</a><a class="site-nav-link" href="../research.html">Research</a><a class="site-nav-link" href="../official.html">Official alerts</a><a class="site-nav-link" href="../archive/index.html">Archive</a></nav></header>
       <section class="live-update-banner panel utility-panel" id="live-update-banner" hidden aria-live="polite" role="status" data-live-update-banner="true"><div class="live-update-copy"><div class="section-nav-label">New edition available</div><p class="live-update-text" id="live-update-text">An updated edition is available. Load the latest run when you are ready.</p></div><div class="live-update-actions"><button class="live-update-dismiss" id="live-update-dismiss" type="button" onclick="(function(btn){const banner=btn.closest('[data-live-update-banner]');if(banner){banner.hidden=true;banner.style.display='none';const runId=(banner.dataset&&banner.dataset.pendingRunId)||'';const key=(banner.dataset&&banner.dataset.dismissKey)||('pathogen-dispatch-live-update-dismissed:'+window.location.pathname);try{window.sessionStorage.setItem(key, window.location.pathname+'::'+(runId||'unknown'));}catch(error){}}return false;})(this)">Keep reading</button><button class="live-update-button" id="live-update-refresh" type="button" onclick="(function(btn){const banner=btn.closest('[data-live-update-banner]');if(banner){banner.hidden=true;banner.style.display='none';}const url=new URL(window.location.href);url.searchParams.set('_edition', String(Date.now()));window.location.replace(url.toString());return false;})(this)">Load latest</button></div></section>
-      <section class="hero" id="desk-top">
-        <p class="kicker">Source-first desk</p>
-        <h1>Historical Desk</h1>
-        <p class="subtitle">Slow-moving historical epidemiology and ancient pathogen context that belongs beside, not inside, the live outbreak watch.</p>
+      <section class="hero" id="story-overview">
+        <p class="kicker">Disease intelligence sheet</p>
+        <h1>Measles</h1>
+        <p class="subtitle">Curated desk background for reporters who need the pathogen, transmission, and outbreak frame fast.</p>
+        <div class="meta-row"><span class="badge">Vaccine-preventable</span><span class="badge">Respiratory</span><span class="badge">High-R0</span><span class="badge">Schools</span><span class="badge">Households</span><span class="badge">Travel-linked spread</span><span class="badge">Under-immunized communities</span></div>
+        <div class="meta-row"><a class="link-pill" href="../atlas.html?pathogen=measles">View in Atlas</a></div>
+        <p><strong>Pathogen / agent:</strong> Measles virus</p>
+        <p><strong>Transmission:</strong> Airborne and respiratory</p>
+        <p><strong>Reservoir / vector:</strong> Humans are the only reservoir.</p>
+        <p><strong>Incubation:</strong> Usually 7 to 14 days from exposure to rash onset.</p>
+        <p><strong>Severity:</strong> Can lead to pneumonia, encephalitis, and death, especially in under-immunized populations.</p>
+        <p><strong>Diagnostics:</strong> PCR and serology, paired with travel and exposure tracing.</p>
+        <p><strong>Treatment:</strong> Supportive care; vitamin A is relevant in specific clinical settings.</p>
+        <p><strong>Prevention:</strong> Two-dose measles vaccination and rapid outbreak control around exposed contacts.</p>
+        <p><strong>Vaccine / prevention status:</strong> Highly effective routine vaccination exists; most outbreak stories are really immunity-gap stories.</p>
       </section>
-      <section class="panel" id="tracked-files">
-        <h2>Tracked Files</h2>
-        <div class="story-grid"><p class="empty-note">No tracked story files matched this desk in the current run.</p></div>
-      </section>
-      <section class="panel" id="latest-signals">
-        <h2>Latest Signals</h2>
-        <div class="card-grid"><p class="empty-note">No item cards matched this desk in the current run.</p></div>
-      </section>
+
+      <nav class="section-nav panel utility-panel" aria-label="Section navigation"><div class="section-nav-label">On this page</div><div class="section-nav-links"><a class="section-nav-link" href="#story-overview">Overview</a><a class="section-nav-link" href="#clinical-pattern">Clinical Pattern</a><a class="section-nav-link" href="#current-story-files">Current Story Files</a><a class="section-nav-link" href="#why-reporters-care">Why Reporters Care</a><a class="section-nav-link" href="#desk-notes">Desk Notes</a></div></nav>
+
       <section class="panel-grid">
-        <section class="panel" id="reference-links">
-          <h2>Related Disease Sheets</h2>
-          <div class="card-grid"><article class="site-card"><div class="kicker">Reference</div><h3><a href="/reference/ebola-virus-disease.html">Ebola virus disease</a></h3><p><strong>Pathogen:</strong> Ebola viruses, including Bundibugyo virus in the current DRC/Uganda outbreak</p><p>Ebola remains a defining outbreak-desk disease because healthcare transmission, funeral practices, laboratory capacity, community trust, and international alarm can all move faster than the confirmed count.</p></article><article class="site-card"><div class="kicker">Reference</div><h3><a href="/reference/hantavirus-syndrome.html">Hantavirus syndrome</a></h3><p><strong>Pathogen:</strong> Hantaviruses, including Andes virus in the Americas</p><p>This is a rare but frightening severe-disease story where a single unusual cluster can force questions about travel safety, rodent exposure, and whether Andes-virus-style person-to-person spread is in play.</p><div class="meta-row"><a class="link-pill" href="/atlases/pathogen/?pathogen=hantavirus">View in Atlas</a></div></article><article class="site-card"><div class="kicker">Reference</div><h3><a href="/reference/measles.html">Measles</a></h3><p><strong>Pathogen:</strong> Measles virus</p><p>Measles is a clean reporter desk disease because it reveals vaccination gaps, school and household spread, travel-linked importation, and public-health capacity all at once.</p><div class="meta-row"><a class="link-pill" href="/atlases/pathogen/?pathogen=measles">View in Atlas</a></div></article><article class="site-card"><div class="kicker">Reference</div><h3><a href="/reference/anthrax.html">Anthrax</a></h3><p><strong>Pathogen:</strong> Bacillus anthracis</p><p>Anthrax is a strong local accountability story because livestock practices, slaughter exposure, and rural reporting gaps can hide serious outbreaks in plain sight.</p></article></div>
+        <section class="panel" id="clinical-pattern">
+          <h2>Symptoms And Clinical Pattern</h2>
+          <ul class="bullet-list"><li>Fever, cough, coryza, and conjunctivitis.</li><li>Koplik spots can appear before rash.</li><li>A descending maculopapular rash follows the prodrome.</li></ul>
         </section>
-        <section class="panel" id="archive-links">
-          <h2>Recent Archive Days</h2>
-          <div class="archive-table"><article class="archive-row"><a href="/newsdesk/2026/05/2026-05-27.html"><strong>2026-05-27</strong></a><span class="archive-row-meta">May 2026</span></article></div>
+        <section class="panel">
+          <h2>Official Background Links</h2>
+          <div class="meta-row"><a class="link-pill" href="https://www.cdc.gov/measles/about/index.html">CDC overview</a><a class="link-pill" href="https://www.who.int/news-room/fact-sheets/detail/measles">WHO fact sheet</a></div>
         </section>
+      </section>
+
+      <section class="panel" id="current-story-files">
+        <h2>Current Story Files</h2>
+        <div class="card-grid"><p class="empty-note">No active tracked stories are linked to this disease in the current run.</p></div>
+      </section>
+
+      <section class="panel" id="why-reporters-care">
+        <h2>Why Reporters Care</h2>
+        <p><strong>Why this keeps becoming news:</strong> Measles is a clean reporter desk disease because it reveals vaccination gaps, school and household spread, travel-linked importation, and public-health capacity all at once.</p>
+        <p><strong>What journalists often get wrong:</strong> Reporters often overfocus on raw case counts and underplay outbreak size, exposure settings, and vaccination status, which are usually the more informative signals.</p>
+        <ul class="bullet-list"><li>Confirmed cases and outbreak-associated cases rather than rumor-level totals.</li><li>Vaccination status of cases and affected communities.</li><li>School, childcare, household, and travel links that show whether containment is failing.</li></ul>
+      </section>
+
+      <section class="panel">
+        <h2>Last Major Outbreak On File</h2>
+        <p><strong>United States resurgence</strong> | United States, including major Texas-New Mexico spread | 2025</p>
+        <p>CDC's national measles summary reported 2,288 confirmed U.S. measles cases in 2025, with most cases outbreak-associated and many linked to outbreaks that crossed jurisdictions.</p>
+        <p><strong>Source:</strong> <a href="https://www.cdc.gov/measles/data-research/index.html">CDC Measles Cases and Outbreaks</a> (2026-04-24 page update covering 2025 totals)</p>
+      </section>
+
+      <section class="panel" id="desk-notes">
+        <h2>Desk Notes And Historical Signals</h2>
+        <p><strong>Desk note:</strong> This is the disease to watch when vaccination gaps, school clusters, or travel-linked introductions begin to stack.</p>
+        <p><strong>Research caveats:</strong> Administrative case totals and media tallies can lag or mix confirmed and probable cases across jurisdictions.</p>
+        <ul class="bullet-list"><li>2019 Democratic Republic of the Congo epidemic.</li><li>2019 Samoa outbreak.</li></ul>
       </section>
     </main>
     <script>
@@ -345,9 +187,9 @@
       const liveUpdateButton = document.getElementById("live-update-refresh");
       const liveUpdateDismiss = document.getElementById("live-update-dismiss");
       const liveUpdateText = document.getElementById("live-update-text");
-      const currentRunId = 'run_30b22050256cc79d';
-      const currentGeneratedAt = '2026-05-27T08:19:46';
-      const manifestPath = '/app_exports/manifest.json';
+      const currentRunId = 'run_bf9a045e0d2db52c';
+      const currentGeneratedAt = '2026-05-27T08:29:42';
+      const manifestPath = '../app_exports/manifest.json';
       const liveUpdateStorageKey = `pathogen-dispatch-live-update-dismissed:${window.location.pathname}`;
       const liveUpdateStart = Date.now();
       let pendingLiveUpdateRunId = "";
