@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Official Alerts | The Pathogen Dispatch</title>
+    <title>Rabies | The Pathogen Dispatch</title>
     <style>
       :root { --bg: #e8e1d3; --bg-deep: #d8cebc; --surface: #f8f4ea; --surface-alt: #f2ebde; --paper: #fffdf8; --ink: #1b2836; --ink-soft: #42515e; --line: #d6cab7; --accent: #8d3f2f; --accent-soft: rgba(141,63,47,0.10); --signal: #1f5b89; --signal-soft: rgba(31,91,137,0.12); --shadow: 0 24px 56px rgba(49, 36, 22, 0.10); }
       * { box-sizing: border-box; }
@@ -121,223 +121,65 @@
       @media (max-width: 900px) { .page { padding: 16px 14px 42px; } .hero, .panel, .site-header, .section-nav { padding: 18px; border-radius: 22px; } .site-header { align-items: flex-start; flex-direction: column; } .story-filter-grid { grid-template-columns: 1fr; } .story-grid, .atlas-selector-grid { grid-template-columns: 1fr; } .atlas-map { min-height: 340px; } h1 { font-size: clamp(1.9rem, 10vw, 3.2rem); } }
       @media (max-width: 620px) { .site-nav, .section-nav-links { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 2px; } .site-header-copy { min-width: 0; } .archive-row { flex-direction: column; align-items: flex-start; } .badge, .link-pill { line-height: 1.2; } .outbreak-dashboard { grid-template-columns: 1fr; } .dashboard-item { padding: 11px 12px; } .live-update-banner { right: 12px; bottom: 12px; width: calc(100vw - 24px); } .live-update-actions { justify-content: space-between; } }
     </style>
-<style id="eoe-shell-import-style">
-  body { padding-top: 112px !important; }
-  .eoe-shell-nav {
-    position: fixed;
-    inset: 0 0 auto 0;
-    z-index: 10000;
-    background: linear-gradient(180deg, rgba(15, 20, 27, 0.98), rgba(21, 29, 39, 0.98));
-    color: #efe6d6;
-    border-bottom: 1px solid rgba(214, 202, 183, 0.2);
-    box-shadow: 0 14px 34px rgba(4, 7, 10, 0.28);
-  }
-  .eoe-shell-nav-inner {
-    max-width: 1160px;
-    margin: 0 auto;
-    padding: 18px 18px 16px;
-    display: grid;
-    gap: 12px;
-    font-family: "Avenir Next", "Helvetica Neue", sans-serif;
-  }
-  .eoe-shell-brand {
-    display: inline-flex;
-    flex-wrap: wrap;
-    column-gap: 0.32em;
-    row-gap: 0.12em;
-    align-items: baseline;
-    color: #f5ecdd;
-    font: 700 clamp(1.2rem, 2vw, 1.65rem)/1.05 "Iowan Old Style", Georgia, serif;
-    text-decoration: none;
-    letter-spacing: 0;
-  }
-  .eoe-shell-byline {
-    color: #8fb8d8;
-    font: 600 0.48em/1 "Avenir Next", "Helvetica Neue", sans-serif;
-  }
-  .eoe-shell-brand:hover { text-decoration: none; }
-  .eoe-shell-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 18px;
-    padding-top: 10px;
-    border-top: 1px solid rgba(214, 202, 183, 0.18);
-  }
-  .eoe-shell-links a {
-    flex: 0 0 auto;
-    padding: 0 0 6px;
-    border-bottom: 2px solid transparent;
-    color: rgba(239, 230, 214, 0.76);
-    text-decoration: none;
-    background: transparent;
-    font-size: 0.95rem;
-    font-weight: 500;
-    white-space: nowrap;
-    transition: color 180ms ease, border-color 180ms ease;
-  }
-  .eoe-shell-links a.active {
-    border-color: rgba(201, 168, 76, 0.88);
-    color: #f8f1e6;
-    font-weight: 700;
-  }
-  .eoe-shell-links a:hover {
-    color: #f8f1e6;
-    text-decoration: none;
-    border-color: rgba(201, 168, 76, 0.52);
-  }
-  /* Cleaner fix would live in the Pathogen Dispatch renderer, but this import-layer pass
-     keeps the simplification isolated to the umbrella site. */
-  .site-header,
-  .hero,
-  .panel,
-  .section-nav {
-    background: transparent !important;
-    border: 0 !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-  }
-  .site-header {
-    padding: 0 0 12px !important;
-    gap: 12px !important;
-  }
-  .site-header-title {
-    font-size: 1rem !important;
-    color: #42515e !important;
-  }
-  .site-nav,
-  .section-nav-links {
-    gap: 14px !important;
-  }
-  .site-nav-link,
-  .section-nav-link {
-    padding: 0 0 5px !important;
-    border: 0 !important;
-    border-radius: 0 !important;
-    border-bottom: 2px solid transparent !important;
-    background: transparent !important;
-    box-shadow: none !important;
-    color: #42515e !important;
-    font-weight: 500 !important;
-  }
-  .site-nav-link:hover,
-  .section-nav-link:hover {
-    background: transparent !important;
-    color: #173046 !important;
-    text-decoration: underline !important;
-  }
-  .site-nav-link.active {
-    color: #173046 !important;
-    font-weight: 700 !important;
-    text-decoration: none !important;
-    border-color: rgba(141, 63, 47, 0.48) !important;
-  }
-  .hero {
-    padding: 0 0 6px !important;
-    overflow: visible !important;
-  }
-  .hero::before,
-  .hero::after,
-  .panel::before,
-  .panel::after,
-  .site-header::before,
-  .site-header::after {
-    display: none !important;
-  }
-  .panel,
-  .panel-grid {
-    gap: 16px !important;
-  }
-  .panel > h2:first-child,
-  .panel > .muted-note:first-child {
-    margin-top: 0 !important;
-  }
-  .section-nav {
-    display: none !important;
-  }
-  .meta-row-plain {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
-    margin-top: 10px;
-  }
-  .meta-inline,
-  .card-meta-text {
-    color: #42515e;
-    font: 500 0.86rem/1.55 "Avenir Next", "Helvetica Neue", sans-serif;
-  }
-  .card-meta-text {
-    margin: 0;
-  }
-  .atlas-status-pill,
-  .story-status-pill {
-    letter-spacing: 0.08em !important;
-    text-transform: uppercase !important;
-  }
-  .site-card .meta-row .badge {
-    max-width: none;
-  }
-  .link-pill {
-    background: rgba(255,252,245,0.92) !important;
-  }
-  @media (max-width: 760px) {
-    body { padding-top: 148px !important; }
-    .eoe-shell-links {
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      overflow-y: hidden;
-      width: 100%;
-      padding-bottom: 2px;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
-      touch-action: pan-x;
-      overscroll-behavior-x: contain;
-    }
-    .eoe-shell-links::-webkit-scrollbar { display: none; }
-  }
-</style>
-
-    <link rel="canonical" href="https://devinteichrow.com/newsdesk/official/" />
-    <link rel="alternate" type="application/rss+xml" title="The Edge of Epidemiology RSS" href="https://theedgeofepidemiology.substack.com/feed" />
-    <meta name="description" content="Official Alerts from The Pathogen Dispatch, the Edge of Epidemiology source-first infectious-disease reporting desk." />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="The Edge of Epidemiology" />
-    <meta property="og:title" content="Official Alerts | The Pathogen Dispatch" />
-    <meta property="og:description" content="Official Alerts from The Pathogen Dispatch, the Edge of Epidemiology source-first infectious-disease reporting desk." />
-    <meta property="og:url" content="https://devinteichrow.com/newsdesk/official/" />
-    <meta property="og:image" content="https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Official Alerts | The Pathogen Dispatch" />
-    <meta name="twitter:description" content="Official Alerts from The Pathogen Dispatch, the Edge of Epidemiology source-first infectious-disease reporting desk." />
-    <meta name="twitter:image" content="https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png" />
-    <script type="application/ld+json" data-eoe-seo>{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Official Alerts | The Pathogen Dispatch", "url": "https://devinteichrow.com/newsdesk/official/", "description": "Official Alerts from The Pathogen Dispatch, the Edge of Epidemiology source-first infectious-disease reporting desk.", "image": "https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png", "isPartOf": {"@type": "WebSite", "name": "The Edge of Epidemiology", "url": "https://devinteichrow.com/"}, "author": {"@type": "Person", "name": "Devin Teichrow", "url": "https://devinteichrow.com/about/", "sameAs": ["https://theedgeofepidemiology.substack.com", "https://x.com/edgeofepi", "https://www.instagram.com/edgeofepi/", "https://www.linkedin.com/in/devin-teichrow-msc-938942254", "https://medium.com/@EdgeofEpi"]}}</script>
-</head>
-  <body><div class="eoe-shell-nav"><div class="eoe-shell-nav-inner"><a class="eoe-shell-brand" href="/"><span>The Edge of Epidemiology</span> <span class="eoe-shell-byline">by Devin Teichrow</span></a><nav class="eoe-shell-links" aria-label="Umbrella navigation"><a class="" href="/">Home</a><a class="active" href="/newsdesk/">Newsdesk</a><a class="" href="/notebook/">Notebook</a><a class="" href="/atlases/pathogen/">Pathogen Atlas</a><a class="" href="/atlases/maritime/">Maritime Atlas</a><a class="" href="/essays/">Essays</a><a class="" href="/topics/">Topics</a><a class="" href="/historical/">Historical</a><a class="" href="/reference/">Reference</a><a class="" href="/opportunities/">Opportunities</a><a class="" href="/search/">Search</a></nav></div></div>
+  </head>
+  <body>
     <main class="page">
-      <header class="site-header"><div class="site-header-copy"><div class="kicker">The Pathogen Dispatch</div><p class="site-header-title">Source-first newsroom desks</p></div><nav class="site-nav" aria-label="Site navigation"><a class="site-nav-link" href="/newsdesk/">Home</a><a class="site-nav-link" href="/notebook/">Notebook</a><a class="site-nav-link" href="/atlases/pathogen/">Atlas</a><a class="site-nav-link" href="/newsdesk/outbreaks/">Outbreak terminal</a><a class="site-nav-link" href="/newsdesk/watch/">Global watch</a><a class="site-nav-link" href="/newsdesk/africa/">Africa</a><a class="site-nav-link" href="/newsdesk/asia/">Asia</a><a class="site-nav-link" href="/newsdesk/research/">Research</a><a class="site-nav-link active" href="/newsdesk/official/" aria-current="page">Official alerts</a><a class="site-nav-link" href="/newsdesk/archive/">Archive</a></nav></header>
+      <header class="site-header"><div class="site-header-copy"><div class="kicker">The Pathogen Dispatch</div><p class="site-header-title">Source-first newsroom desks</p></div><nav class="site-nav" aria-label="Site navigation"><a class="site-nav-link" href="../index.html">Home</a><a class="site-nav-link" href="../notebook.html">Notebook</a><a class="site-nav-link" href="../atlas.html">Atlas</a><a class="site-nav-link" href="../outbreaks.html">Outbreak terminal</a><a class="site-nav-link" href="../watch.html">Global watch</a><a class="site-nav-link" href="../africa.html">Africa</a><a class="site-nav-link" href="../asia.html">Asia</a><a class="site-nav-link" href="../research.html">Research</a><a class="site-nav-link" href="../official.html">Official alerts</a><a class="site-nav-link" href="../archive/index.html">Archive</a></nav></header>
       <section class="live-update-banner panel utility-panel" id="live-update-banner" hidden aria-live="polite" role="status" data-live-update-banner="true"><div class="live-update-copy"><div class="section-nav-label">New edition available</div><p class="live-update-text" id="live-update-text">An updated edition is available. Load the latest run when you are ready.</p></div><div class="live-update-actions"><button class="live-update-dismiss" id="live-update-dismiss" type="button" onclick="(function(btn){const banner=btn.closest('[data-live-update-banner]');if(banner){banner.hidden=true;banner.style.display='none';const runId=(banner.dataset&&banner.dataset.pendingRunId)||'';const key=(banner.dataset&&banner.dataset.dismissKey)||('pathogen-dispatch-live-update-dismissed:'+window.location.pathname);try{window.sessionStorage.setItem(key, window.location.pathname+'::'+(runId||'unknown'));}catch(error){}}return false;})(this)">Keep reading</button><button class="live-update-button" id="live-update-refresh" type="button" onclick="(function(btn){const banner=btn.closest('[data-live-update-banner]');if(banner){banner.hidden=true;banner.style.display='none';}const url=new URL(window.location.href);url.searchParams.set('_edition', String(Date.now()));window.location.replace(url.toString());return false;})(this)">Load latest</button></div></section>
-      <section class="hero" id="desk-top">
-        <p class="kicker">Source-first desk</p>
-        <h1>Official Alerts</h1>
-        <p class="subtitle">Agency updates, surveillance reports, travel notices, investigations, and official follow-up worth scanning directly.</p>
+      <section class="hero" id="story-overview">
+        <p class="kicker">Disease intelligence sheet</p>
+        <h1>Rabies</h1>
+        <p class="subtitle">Curated desk background for reporters who need the pathogen, transmission, and outbreak frame fast.</p>
+        <div class="meta-row"><span class="badge">Zoonotic</span><span class="badge">High-fatality</span><span class="badge">Neglected tropical</span><span class="badge">Rural dog-bite exposure</span><span class="badge">Wildlife interfaces</span><span class="badge">Areas with weak post-exposure prophylaxis access</span></div>
+        
+        <p><strong>Pathogen / agent:</strong> Rabies virus and related lyssaviruses</p>
+        <p><strong>Transmission:</strong> Animal bites and saliva exposure</p>
+        <p><strong>Reservoir / vector:</strong> Dogs remain the main source of human rabies globally, though wildlife reservoirs matter regionally.</p>
+        <p><strong>Incubation:</strong> Usually weeks to months, but highly variable.</p>
+        <p><strong>Severity:</strong> Essentially universally fatal once symptomatic, which is why exposure response is the real public-health battleground.</p>
+        <p><strong>Diagnostics:</strong> Exposure assessment is central; laboratory confirmation often comes late and may require specialized testing.</p>
+        <p><strong>Treatment:</strong> Post-exposure prophylaxis before symptoms; supportive care after disease onset.</p>
+        <p><strong>Prevention:</strong> Dog vaccination, bite prevention, and rapid access to post-exposure prophylaxis.</p>
+        <p><strong>Vaccine / prevention status:</strong> Pre-exposure vaccination is selective, but the real population-level control tool is dog vaccination plus reliable access to post-exposure prophylaxis.</p>
       </section>
-      <section class="panel" id="tracked-files">
-        <h2>Tracked Files</h2>
-        <div class="story-grid"><article class="site-card feature-card"><div class="kicker">Outbreak file</div><h3><a href="/stories/story_56666e9c6c86e976-ebola-virus-disease.html">Ebola virus disease</a></h3><p>Baseline snapshot created with 262 clustered item(s) across 160 source(s).</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Expanding coverage</span><span class="meta-inline">Africa · Democratic Republic of the Congo</span></div></article><article class="site-card feature-card"><div class="kicker">Outbreak file</div><h3><a href="/stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html">Hantavirus and cruise-ship outbreak</a></h3><p>Baseline snapshot created with 24 clustered item(s) across 18 source(s).</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Expanding coverage</span><span class="meta-inline">Global / Maritime · Spain</span></div></article></div>
-      </section>
-      <section class="panel" id="latest-signals">
-        <h2>Latest Signals</h2>
-        <div class="card-grid"><article class="site-card"><div class="kicker">Official update</div><h3><a href="https://www.ecdc.europa.eu/en/news-events/ecdc-increases-activities-ebola-outbreak-drc-and-uganda-intensifies">ECDC increases activities as Ebola outbreak in DRC and Uganda intensifies</a></h3><p>As the Ebola disease outbreak in the Democratic Republic of the Congo (DRC) and Uganda develops rapidly, the European Centre for Disease Prevention and Control (ECDC) is ratcheting up its support on the ground, while continuing to emphasise that the risk of infection to the general population in Europe remains very low.</p><div class="meta-row meta-row-plain"><span class="meta-inline">ECDC News · 2026-05-27T10:00+02:00</span></div></article><article class="site-card"><div class="kicker">Official update</div><h3><a href="https://www.ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/andes-hantavirus-outbreak">Andes hantavirus outbreak in cruise ship</a></h3><p>ECDC was notified on 2 May 2026 of a cluster of severe respiratory illness on MV Hondius, a Dutch-flagged cruise ship with passengers and crew from 23 countries, including nine EU/EEA countries. The virus has been identified as Andes hantavirus.</p><div class="meta-row meta-row-plain"><span class="meta-inline">ECDC News · 2026-05-26T17:56+02:00</span></div></article><article class="site-card"><div class="kicker">Official update</div><h3><a href="https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-and-uganda">Ebola disease outbreak in the Democratic Republic of the Congo and Uganda</a></h3><p>Limited usable detail remained after boilerplate cleanup.</p><div class="meta-row meta-row-plain"><span class="meta-inline">ECDC News · 2026-05-26T17:36+02:00</span></div></article><article class="site-card"><div class="kicker">Official update</div><h3><a href="https://www.ecdc.europa.eu/en/news-events/strengthening-disease-outbreak-preparedness-through-partnership-joint-scenario-training">Strengthening disease outbreak preparedness through partnership on joint scenario training</a></h3><p>As rising global interconnection increases public health risks worldwide, ECDC, building on the success of its previous programme through European Health Task Force (EUHTF), will once again host the Global Outbreak Alert and Response Network (GOARN) Outbreak Response Scenario Programme in Stockholm, Sweden, on 24-29 May.</p><div class="meta-row meta-row-plain"><span class="meta-inline">ECDC News · 2026-05-25T13:23+02:00</span></div></article><article class="site-card"><div class="kicker">Official update</div><h3><a href="https://www.ecdc.europa.eu/en/news-events/risk-europe-remains-very-low-ebola-outbreak-intensifies-drc">Risk to Europe remains very low as Ebola outbreak intensifies in DRC</a></h3><p>The risk to the general population in Europe from the current Ebola outbreak in the Democratic Republic of the Congo (DRC) and also Uganda remains very low, ECDC said in a new...</p><div class="meta-row meta-row-plain"><span class="meta-inline">ECDC News · 2026-05-21T18:33+02:00</span></div></article><article class="site-card"><div class="kicker">Official update</div><h3><a href="https://www.afro.who.int/countries/democratic-republic-of-congo/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation">EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 01, Data as of 18 May 2026</a></h3><p>Publications orlunwop@who.int Wed, 20/05/2026 - 07:12 Event description On 5 May 2026, the World Health Organization (WHO) received an alert regarding an unknown illness with high mortality in Mongbwalu Health Zone (HZ), Ituri Province, Democratic Republic of the Congo (DRC), including reports of four health workers who died within four days. Uganda subsequently confirmed two imported cases on 15 and 16 May 2026. On 16 May 2026, the WHO Director-General determined that the outbreak constituted a Public Health Emergency of International Concern (PHEIC) under the International Health Regulations (2005).</p><div class="meta-row meta-row-plain"><span class="meta-inline">WHO Regional Office for Africa · 2026-05-20T06:12+00:00</span></div></article><article class="site-card"><div class="kicker">Official update</div><h3><a href="https://www.afro.who.int/countries/democratic-republic-of-congo/news/democratic-republic-congo-confirms-new-ebola-outbreak-who-scales-upsupport">Democratic Republic of the Congo confirms new Ebola outbreak, WHO scales up support</a></h3><p>* Statement updated to include new figures Eugene Kabambi Communications Officer WHO DRC Tel : +243 81 715 1697 Office : +47 241 39 027 Email: kabambie [at] who.int (kabambie[at]who[dot]int) Collins Boakye-Agyemang Communications and marketing officer Tel: + 242 06 520 65 65 (WhatsApp) Email: boakyeagyemangc [at] who.int (boakyeagyemangc[at]who[dot]int) carousel-bg The Bundibugyo species was first identified in 2007 in Bundibugyo district in western Uganda, during which 131 cases were reported with 42 deaths (case fatality rate of 32%). Laboratory analysis conducted by the National Institute of Biomedical Research (INRB), the country’s reference laboratory in the capital Kinshasa, confirmed the Ebola outbreak caused by the Bundibugyo species in 8 of 13 samples* collected from suspected cases linked to a cluster of severe illness and deaths reported in Mongbwalu and Rwampara health zones in Ituri Province.</p><div class="meta-row meta-row-plain"><span class="meta-inline">WHO Regional Office for Africa · 2026-05-15T18:57+00:00</span></div></article></div>
-      </section>
+
+      <nav class="section-nav panel utility-panel" aria-label="Section navigation"><div class="section-nav-label">On this page</div><div class="section-nav-links"><a class="section-nav-link" href="#story-overview">Overview</a><a class="section-nav-link" href="#clinical-pattern">Clinical Pattern</a><a class="section-nav-link" href="#current-story-files">Current Story Files</a><a class="section-nav-link" href="#why-reporters-care">Why Reporters Care</a><a class="section-nav-link" href="#desk-notes">Desk Notes</a></div></nav>
+
       <section class="panel-grid">
-        <section class="panel" id="reference-links">
-          <h2>Related Disease Sheets</h2>
-          <div class="card-grid"><article class="site-card"><div class="kicker">Reference</div><h3><a href="/reference/ebola-virus-disease.html">Ebola virus disease</a></h3><p><strong>Pathogen:</strong> Ebola viruses, including Bundibugyo virus in the current DRC/Uganda outbreak</p><p>Ebola remains a defining outbreak-desk disease because healthcare transmission, funeral practices, laboratory capacity, community trust, and international alarm can all move faster than the confirmed count.</p></article><article class="site-card"><div class="kicker">Reference</div><h3><a href="/reference/hantavirus-syndrome.html">Hantavirus syndrome</a></h3><p><strong>Pathogen:</strong> Hantaviruses, including Andes virus in the Americas</p><p>This is a rare but frightening severe-disease story where a single unusual cluster can force questions about travel safety, rodent exposure, and whether Andes-virus-style person-to-person spread is in play.</p><div class="meta-row"><a class="link-pill" href="/atlases/pathogen/?pathogen=hantavirus">View in Atlas</a></div></article><article class="site-card"><div class="kicker">Reference</div><h3><a href="/reference/measles.html">Measles</a></h3><p><strong>Pathogen:</strong> Measles virus</p><p>Measles is a clean reporter desk disease because it reveals vaccination gaps, school and household spread, travel-linked importation, and public-health capacity all at once.</p><div class="meta-row"><a class="link-pill" href="/atlases/pathogen/?pathogen=measles">View in Atlas</a></div></article><article class="site-card"><div class="kicker">Reference</div><h3><a href="/reference/anthrax.html">Anthrax</a></h3><p><strong>Pathogen:</strong> Bacillus anthracis</p><p>Anthrax is a strong local accountability story because livestock practices, slaughter exposure, and rural reporting gaps can hide serious outbreaks in plain sight.</p></article></div>
+        <section class="panel" id="clinical-pattern">
+          <h2>Symptoms And Clinical Pattern</h2>
+          <ul class="bullet-list"><li>Early fever and paresthesia at the bite site can precede neurologic illness.</li><li>Hydrophobia, aerophobia, agitation, or paralysis mark advanced disease.</li><li>Once clinical disease begins, the prognosis is overwhelmingly poor.</li></ul>
         </section>
-        <section class="panel" id="archive-links">
-          <h2>Recent Archive Days</h2>
-          <div class="archive-table"><article class="archive-row"><a href="/newsdesk/2026/05/2026-05-27.html"><strong>2026-05-27</strong></a><span class="archive-row-meta">May 2026</span></article></div>
+        <section class="panel">
+          <h2>Official Background Links</h2>
+          <div class="meta-row"><a class="link-pill" href="https://www.cdc.gov/rabies/about/index.html">CDC overview</a><a class="link-pill" href="https://www.who.int/news-room/fact-sheets/detail/rabies">WHO fact sheet</a></div>
         </section>
+      </section>
+
+      <section class="panel" id="current-story-files">
+        <h2>Current Story Files</h2>
+        <div class="card-grid"><p class="empty-note">No active tracked stories are linked to this disease in the current run.</p></div>
+      </section>
+
+      <section class="panel" id="why-reporters-care">
+        <h2>Why Reporters Care</h2>
+        <p><strong>Why this keeps becoming news:</strong> Rabies remains one of the starkest diseases in communications because nearly every symptomatic human case is a preventable systems failure.</p>
+        <p><strong>What journalists often get wrong:</strong> Coverage often fixates on the horror of symptomatic disease and underreports the policy issue that actually matters: whether bite victims can get prompt prophylaxis.</p>
+        <ul class="bullet-list"><li>Access to post-exposure prophylaxis and immunoglobulin.</li><li>Dog vaccination coverage and bite-source ecology.</li><li>Whether cases are clustered in rural underserved areas.</li></ul>
+      </section>
+
+      <section class="panel">
+        <h2>Last Major Outbreak On File</h2>
+        <p><strong>Persistent rural dog-mediated burden</strong> | Africa and Asia | Ongoing</p>
+        <p>WHO continues to frame rabies as a preventable but still deadly disease concentrated in underserved settings where dog vaccination and post-exposure prophylaxis access remain inadequate.</p>
+        <p><strong>Source:</strong> <a href="https://www.who.int/news-room/fact-sheets/detail/rabies">WHO fact sheet</a> (WHO fact sheet)</p>
+      </section>
+
+      <section class="panel" id="desk-notes">
+        <h2>Desk Notes And Historical Signals</h2>
+        <p><strong>Desk note:</strong> This is exactly the kind of severe rural infectious-disease burden that can disappear if the intake is too urban and too English-headline dependent.</p>
+        <p><strong>Research caveats:</strong> Human case counts are often severe underestimates because diagnostic confirmation is limited where burden is highest.</p>
+        <ul class="bullet-list"><li>For desk purposes, rabies matters because devastating local stories keep happening even when rich-country editors barely notice.</li></ul>
       </section>
     </main>
     <script>
@@ -345,9 +187,9 @@
       const liveUpdateButton = document.getElementById("live-update-refresh");
       const liveUpdateDismiss = document.getElementById("live-update-dismiss");
       const liveUpdateText = document.getElementById("live-update-text");
-      const currentRunId = 'run_0069bc400ada6bb5';
-      const currentGeneratedAt = '2026-05-27T10:19:25';
-      const manifestPath = '/app_exports/manifest.json';
+      const currentRunId = 'run_e8267a105f676680';
+      const currentGeneratedAt = '2026-05-27T10:29:32';
+      const manifestPath = '../app_exports/manifest.json';
       const liveUpdateStorageKey = `pathogen-dispatch-live-update-dismissed:${window.location.pathname}`;
       const liveUpdateStart = Date.now();
       let pendingLiveUpdateRunId = "";
