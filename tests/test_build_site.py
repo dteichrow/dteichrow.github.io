@@ -481,7 +481,7 @@ atlases:
     assert (docs_dir / "sitemap.xml").exists()
     home_text = (docs_dir / "index.html").read_text()
     assert "Devin Teichrow" in home_text
-    assert "Disease travels with people, through the worlds they build" in home_text
+    assert "Disease follows human arrangements" in home_text
     assert '<h1 class="hero-title">' in home_text
     assert '<h1 class="site-brand">' not in home_text
     assert '<link rel="canonical" href="https://devinteichrow.com/" />' in home_text

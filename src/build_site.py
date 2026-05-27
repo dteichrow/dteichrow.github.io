@@ -869,7 +869,7 @@ def render_home(posts: list[dict[str, Any]], tools: list[dict[str, Any]], latest
       <section class="hero hero-home hero-open">
         <div class="hero-main">
           <p class="kicker">Devin Teichrow</p>
-          <h2 class="hero-title">Disease travels with people, through the worlds they build, and alongside the organisms that exploit those worlds: ships, barracks, markets, wells, crowded rooms, mosquitoes, rats, and decisions made too late.</h2>
+          <h2 class="hero-title">Disease follows human arrangements: ships and barracks, markets and wells, crowded rooms and delayed decisions, while mosquitoes and rodent reservoirs take advantage of the ecologies those arrangements create.</h2>
           <div class="hero-prose">
             <p class="subtitle">I&apos;m Devin Teichrow, a UCLA-trained epidemiologist and neuroscience researcher at UC Irvine working on migraine and Alzheimer&apos;s Disease and Related Dementias. My public science work focuses on how disease moves through populations, history, war, ecology, and infrastructure, including everything from modern outbreak reporting to historical epidemic reconstruction and interactive disease mapping.</p>
             <p class="subtitle">The Edge of Epidemiology is my home for longform essays, live outbreak coverage, disease atlases, methodological explainers, and projects exploring the intersection of epidemiology, geography, and history.</p>
