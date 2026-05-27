@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-05-26
-Generated at: 2026-05-26T16:17
+Generated at: 2026-05-26T17:17
 Search window: 7 day(s) ending 2026-05-26
 
 ## Executive scan
@@ -12,28 +12,27 @@ Search window: 7 day(s) ending 2026-05-26
 - [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 01, Data as of 18 May 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa; 2026-05-20T06:12+00:00; Outbreaks and emerging infections; relevance 5/5)
 - [Epidemiological and virological characteristics of influenza in Zhejiang Province, China: A 15-year surveillance study.](https://pubmed.ncbi.nlm.nih.gov/42157696/) (PubMed Infectious Disease Search; 2026-05-20T00:00; Major epidemiology studies; relevance 5/5)
 - [Democratic Republic of the Congo confirms new Ebola outbreak, WHO scales up support](https://www.afro.who.int/countries/democratic-republic-of-congo/news/democratic-republic-congo-confirms-new-ebola-outbreak-who-scales-upsupport) (WHO Regional Office for Africa; 2026-05-15T18:57+00:00; Outbreaks and emerging infections; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (247), Policy, surveillance, and public health infrastructure (26), Major epidemiology studies (1)
+- Category mix: Outbreaks and emerging infections (246), Policy, surveillance, and public health infrastructure (27), Major epidemiology studies (1)
 - Source health: 1 source(s) failed during collection: USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
 ### Ebola virus disease
 - Lead item: [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-and-uganda) (ECDC News)
-- Newly tracked story cluster: 240 item(s) across 161 source(s).
-- Baseline snapshot created with 240 clustered item(s) across 161 source(s).
+- Newly tracked story cluster: 238 item(s) across 153 source(s).
+- Baseline snapshot created with 238 clustered item(s) across 153 source(s).
 - WHO Regional Office for Africa now includes deaths or fatal cases in the story frame.
 - ECDC News currently frames broader public risk as low.
 
 ### Hantavirus and cruise-ship outbreak
 - Lead item: [Andes hantavirus outbreak in cruise ship](https://www.ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/andes-hantavirus-outbreak) (ECDC News)
-- Newly tracked story cluster: 26 item(s) across 18 source(s).
-- Baseline snapshot created with 26 clustered item(s) across 18 source(s).
+- Newly tracked story cluster: 28 item(s) across 19 source(s).
+- Baseline snapshot created with 28 clustered item(s) across 19 source(s).
 - CNN now includes evacuation reporting.
-- NPR now includes quarantine language.
 
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 240 item(s) across 161 source(s); 5 official/primary-source item(s).
+- Topic size: 238 item(s) across 153 source(s); 5 official/primary-source item(s).
 - Lead item: [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-and-uganda) (ECDC News, 2026-05-26T17:36+02:00)
 - Detailed note: * Statement updated to include new figures Eugene Kabambi Communications Officer WHO DRC Tel : +243 81 715 1697 Office : +47 241 39 027 Email: kabambie [at] who.int (kabambie[at]who[dot]int) Collins Boakye-Agyemang Communications and marketing officer Tel: + 242 06 520 65 65 (WhatsApp) Email: boakyeagyemangc [at] who.int (boakyeagyemangc[at]who[dot]int) carousel-bg The Bundibugyo species was first identified in...
 - Evidence notes: [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-and-uganda) (ECDC News); [Risk to Europe remains very low as Ebola outbreak intensifies in DRC](https://www.ecdc.europa.eu/en/news-events/risk-europe-remains-very-low-ebola-outbreak-intensifies-drc) (ECDC News); [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 01, Data as of 18 May 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa); [Democratic Republic of the Congo confirms new Ebola outbreak, WHO scales up support](https://www.afro.who.int/countries/democratic-republic-of-congo/news/democratic-republic-congo-confirms-new-ebola-outbreak-who-scales-upsupport) (WHO Regional Office for Africa); [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) (Texas Department of State Health Services News)
@@ -41,7 +40,7 @@ Search window: 7 day(s) ending 2026-05-26
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Hantavirus and cruise-ship outbreak
-- Topic size: 26 item(s) across 18 source(s); 1 official/primary-source item(s).
+- Topic size: 28 item(s) across 19 source(s); 1 official/primary-source item(s).
 - Lead item: [Andes hantavirus outbreak in cruise ship](https://www.ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/andes-hantavirus-outbreak) (ECDC News, 2026-05-26T17:56+02:00)
 - Detailed note: ECDC was notified on 2 May 2026 of a cluster of severe respiratory illness on MV Hondius, a Dutch-flagged cruise ship with passengers and crew from 23 countries, including nine EU/EEA countries. The virus has been identified as Andes hantavirus.
 - Evidence notes: [Andes hantavirus outbreak in cruise ship](https://www.ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/andes-hantavirus-outbreak) (ECDC News); [Spanish passenger from the MV Hondius cruise ship tests positive for hantavirus](https://www.cbc.ca/news/world/hantavirus-hondius-cruise-ship-positive-spanish-passenger-9.7211446) (CBC); [Spanish government confirms new case of hantavirus](https://www.nbcnews.com/health/health-news/hantavirus-spanish-government-confirms-new-case-rcna346825) (NBC News); [Spanish citizen evacuated from hantavirus-hit cruise ship tests positive](https://www.cnn.com/2026/05/25/europe/spain-hantavirus-cruise-ship-intl-latam) (CNN); [Spanish national evacuated from hantavirus cruise ship tests positive](https://www.reuters.com/business/healthcare-pharmaceuticals/spanish-national-evacuated-hantavirus-cruise-ship-tests-positive-2026-05-25/) (Reuters)
@@ -399,10 +398,10 @@ Search window: 7 day(s) ending 2026-05-26
 - Caveats / uncertainty: Usable source detail was limited after cleanup. Publication timestamp was not reliably available.
 - Relevance score: 5/5
 
-### Canada clamping down on travel, immigration from central Africa amid Ebola outbreak
-- Source: CBC
-- Date: 2026-05-26T21:14+00:00
-- URL: https://www.cbc.ca/news/canada/congo-ebola-outbreak-canada-health-officials-9.7212846
+### How violence, misinformation and years of war are impacting the Ebola outbreak in the DRC
+- Source: NBC News
+- Date: 2026-05-26T23:58+00:00
+- URL: https://www.nbcnews.com/video/who-official-warns-we-re-running-behind-ebola-outbreak-in-the-drc-263980101833
 - Category: Outbreaks and emerging infections
 - Summary: Limited detail was available from feed metadata alone.
 - Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response.
@@ -411,15 +410,19 @@ Search window: 7 day(s) ending 2026-05-26
 
 
 ## Other notable readings
+- [Canada clamping down on travel, immigration from central Africa amid Ebola outbreak](https://www.cbc.ca/news/canada/congo-ebola-outbreak-canada-health-officials-9.7212846) | CBC | 2026-05-26T22:08+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [What to Know About the Ebola Outbreak as Cases and Deaths Rise](https://www.nytimes.com/2026/05/17/world/africa/what-to-know-ebola-africa.html) | The New York Times | 2026-05-26T22:03+00:00 | Policy, surveillance, and public health infrastructure
+  Limited detail was available from feed metadata alone.
 - [Canada will require self-isolation for travelers from Ebola-affected countries](https://www.boston25news.com/news/health/canada-will-require/5TTWLBMPRM5KPKJ3YQXIOXDZAQ/?outputType\=amp) | Boston 25 News | 2026-05-26T21:06+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [CDC asks staff to volunteer to help with Ebola screenings at airports amid DRC outbreak - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/International/ebola-outbreak-risks-becoming-deadliest-record-irc-warns/story?id\=133305446) | ABC News - Breaking News, Latest News and Videos | 2026-05-26T20:28+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [As Ebola spreads, Canada to require 21-day isolation for those from region - National](https://globalnews.ca/news/11865087/as-ebola-spreads-canada-to-require-21-day-isolation-for-those-from-region/) | Global News | 2026-05-26T20:16+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [‘We’re running out of time,’ says health expert on Ebola outbreak](https://www.cnn.com/2026/05/26/tv/video/ebola-nahid-bhadelia-heather-kerr-amanpour) | CNN | 2026-05-26T17:46+00:00 | Outbreaks and emerging infections
+- [‘We’re running out of time,’ says health expert on Ebola outbreak](https://news.google.com/rss/articles/CBMiigFBVV95cUxPanBYNWh5b09kbk1MaVRIUEZpWXpoUVZ5c3loMW5TVjNscUFoLVB3dHFpdTduUWcxWlg4dVJ5TXNKUVVVUTFmWDJzb1hkbGMxUU9OSVJ4TmVLMFdwNHpOR2ktaU5PY0ZJQmZXaGRJTXl0RUtGTTVNTnA4N0V5SXRWbG9BRHJ4dEs0Q0E?oc=5) | CNN | 2026-05-26T17:46+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [What is the Bundibugyo Virus Involved in the Ebola Outbreak?](https://www.nytimes.com/2026/05/19/well/ebola-bundibugyo-virus-symptoms.html) | The New York Times | 2026-05-26T17:28+00:00 | Outbreaks and emerging infections
+- [What is the Bundibugyo Virus Involved in the Ebola Outbreak?](https://news.google.com/rss/articles/CBMiggFBVV95cUxOLWFtUi1YT0d4TzJnQkVYNmJQNmhsa3RMMi1yS3dweXhvbVZXNmFNZUFUQmtfenRrcXZyVGNnUlJXWV9fRXRFZlFfMWVyeWhBTVBWRlBFa0pHaU5pT2JxOUI1cHJjRm9pR2c0UmdLRzYxdnVjMTZXZi1SSUJJaVVtcExR?oc=5) | The New York Times | 2026-05-26T17:28+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - ['Danger to the region': EU and UNICEF send 100 tonnes of aid to DR Congo amid Ebola outbreak](https://news.google.com/rss/articles/CBMipAFBVV95cUxQRGtQOTJLOVp0MGE2ZVA1S0VHWXRmSmZkd04wMTFacmxUdU9XVW1RMzBmWkFRTW9rV0VrMDVTQWN3OE1WTjJzaHlLQlZBXzBLdVVyT2VxUnlURGU5SnlpNklvTFFQY01lbzEtWXQyRi1zeHh1QXdVU1JpWm1QT3p4QkJzTl9VWGJVRmh1bEFzNWU1T0JTaTF6cXpvQ3Q4VjQ1M3gxaw?oc=5) | Euronews.com | 2026-05-26T16:52+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
@@ -433,9 +436,13 @@ Search window: 7 day(s) ending 2026-05-26
   Limited detail was available from feed metadata alone.
 - [DR Congo seek World Cup ticket refunds after Ebola outbreak](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9qazR1cndGUnFiY291TEdNM254cGhjVzRGWENoWVZzT1Q4QXk1UG1kZHZvRGMyMjU0c3dnY3R0RnI3MHBaTW04X3ZrQldUeHMxSE8yeElBLThZWGNobDVGbnE2dWNLd1U?oc=5) | BBC | 2026-05-26T13:53+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
+- [Ebola outbreak kills at least 200 people in DRC, Uganda-Africa CDC - APAnews](https://news.google.com/rss/articles/CBMijwFBVV95cUxOQ09xX2Vsem9yNjkzd0liRUtWcGFCTjgyVVFkdlBZLUZaWGxEUzZMemFEcEI3ci05dTE1R2JNZ3lKUVhBS2FxTlFHQWlFRWtDNGN0cDZXajd5MTg5dU1mUzRXOTIzQ21jVE5rREVvT1JCOHpuRi1WV19mekh6V0NPZjE3cEJqemcwdC1KNHBodw?oc=5) | APAnews - Agence de Presse Africaine | 2026-05-26T13:08+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Details on the response to the Ebola outbreak and whether it's expected to spread further](https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYnU1Z1JETFBjOXhNY3cxblJURTRZR2oyRkVoSjJxdUJQNHVaYkRaUUpKTUtPTFNiTEV2NXA1eEFURUVjLUtUOWMtOU9rRzd6SnJJNmtFUTJiVUV2NHJuVEF0ODloMFpOTUlSdHhNdkUzUW11T3JzblpoMDViR0ZrTWZoWlJKQkdZZW13ZEwzdXJkT2RZVzJQTzRqbTg1R3Z2TkNhT3ZCOWdiQUlzR3RmTmZtZ3A4VUphTldj?oc=5) | CBS News | 2026-05-26T12:02+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - ['Race against time' to contain Ebola outbreak in central Africa](https://news.google.com/rss/articles/CBMib0FVX3lxTE5SSTVTbFJFbEs2YTNRd1RfOUt2aktGbFRtcmJnUTVwNkdDbjltcWVXNHhYTXFkcjM0RzB3RGdNc0pzUW9VVDFocFpCTUY0a3JHcDF6VDJCWER5MzNCbW5Zb0lFU0tIR1BfVXpGMnduWQ?oc=5) | CBC | 2026-05-26T11:13+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [177 deaths, 750 suspected Ebola cases; resurgence raises alarm as WHO raises DRC risk to ‘very high’](https://news.google.com/rss/articles/CBMi1AFBVV95cUxNY09rZGhEcE9TeFg0X3R1VUVVRmdYUHNrUlNJajdoMHI0d3MyOVMtZEUxLW5qNFUzb3A3Z2JlNHBjb0RfZW9RR1N2V3UwQ21yNkQzcU92RTVMTlNrdHdRWExDcVBtc01EUkVxdlplQjg5QTNXRmdtbkhQLVpOT2w4WUd1bU9DOWxGYWxfXzJwUkFkc3pPWDBfSUNpY25VdC14amJXSnBkeC1QdmZfdkFkU2xkQk9FNExZNnJtRFBOZkZtQVJVUWJZanlROUhfU2tRSXdaRNIB2gFBVV95cUxPYjdNMUNuRGc2LTVjTkV1cE1aZmN1RUd5SFYwbXlVbVRNVlY1TEdwWFVIVEozb0toYTJzVGE1MkJBV18zeFltUEEycGdJRUt6Q0M1NTRFaWxKS0JNV2Zjdjg0ZUxjc2FXZjRtME1zbzNRVHpWMWxTUmJBY29Id3VfREhvcEtSbi1CNlIxZVpobmp4NFZCSEc3Mk9kUl9MeEdmVVcwTXJXYnNWZldyTl9lQXVFTEsxZm1rNTVWTE5DU09WS21BTFhPbDFsN3Rib21PSnNFS01LX0ZlUQ?oc=5) | Free Press Kashmir | 2026-05-26T07:12+00:00 | Outbreaks and emerging infections
+- [177 deaths, 750 suspected Ebola cases; resurgence raises alarm as WHO raises DRC risk to ‘very high’](https://news.google.com/rss/articles/CBMi2gFBVV95cUxPYjdNMUNuRGc2LTVjTkV1cE1aZmN1RUd5SFYwbXlVbVRNVlY1TEdwWFVIVEozb0toYTJzVGE1MkJBV18zeFltUEEycGdJRUt6Q0M1NTRFaWxKS0JNV2Zjdjg0ZUxjc2FXZjRtME1zbzNRVHpWMWxTUmJBY29Id3VfREhvcEtSbi1CNlIxZVpobmp4NFZCSEc3Mk9kUl9MeEdmVVcwTXJXYnNWZldyTl9lQXVFTEsxZm1rNTVWTE5DU09WS21BTFhPbDFsN3Rib21PSnNFS01LX0ZlUdIB2gFBVV95cUxPYjdNMUNuRGc2LTVjTkV1cE1aZmN1RUd5SFYwbXlVbVRNVlY1TEdwWFVIVEozb0toYTJzVGE1MkJBV18zeFltUEEycGdJRUt6Q0M1NTRFaWxKS0JNV2Zjdjg0ZUxjc2FXZjRtME1zbzNRVHpWMWxTUmJBY29Id3VfREhvcEtSbi1CNlIxZVpobmp4NFZCSEc3Mk9kUl9MeEdmVVcwTXJXYnNWZldyTl9lQXVFTEsxZm1rNTVWTE5DU09WS21BTFhPbDFsN3Rib21PSnNFS01LX0ZlUQ?oc=5) | Free Press Kashmir | 2026-05-26T07:13+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Africa: Ebola Outbreak in DR Congo Spreading Rapidly, Says WHO Head Tedros](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9lSE84U0FoTmZpaG9rRkxiRXVtVlkwdHZFYTR1T0d3MlhRZEFQZzVySWhNQ1psWU9qTEYxalNaN2ZKaklmVDlHUU9qV3U2SlFJTkNnWGJoSGtSTEE?oc=5) | allAfrica.com | 2026-05-26T07:07+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
@@ -443,14 +450,6 @@ Search window: 7 day(s) ending 2026-05-26
   Limited detail was available from feed metadata alone.
 - [Ebola Outbreak: Andhra Pradesh Sets Up Ebola Screening Camp at Vijayawada Airport Amid Global Health Alert](https://www.latestly.com/agency-news/ebola-outbreak-andhra-pradesh-sets-up-ebola-screening-camp-at-vijayawada-airport-amid-global-health-alert-7446640.html) | LatestLY | 2026-05-26T05:25+00:00 | Outbreaks and emerging infections
   However, he cautioned that the actual scale of the epidemic is significantly higher, with more than 900 suspected cases and 220 suspected deaths under investigation. Sharing an update on the outbreak in a post on X, Tedros said 101 cases have so far been confirmed in the DRC, including 10 confirmed deaths. He further noted that neighbouring Uganda has also reported fresh infections, including two additional confirmed cases among healthcare workers, taking the total number of confirmed cases in the country to seven, including one death.
-- [Ebola death toll surpasses 200 as virus spreads to Uganda, 10 African countries at risk](https://news.google.com/rss/articles/CBMirwFBVV95cUxNS3BqMUxNTjdTNjNzSEVmaDdITi1sS0txQnpNeHRiSHdyQmx0VDRac0lpSzlLQjJyMzZzSms0WFpIOC1xdEFKakdfaU5xY09tamZJMm51aU9SOGU1eGYwdGJmeG93cGZYVC1pdlMtUVJNaGpzT3NYX2xWc1NheWFTZTlTWjRuQXdVN3Rab1R4TlZCUmpLSEJsRWFybk11WTZkRkllVFhSQ3dwWEFYR1U4?oc=5) | novanews.co.za | 2026-05-26T03:15+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Ebola Outbreak Could Be Major Global Health Hazard](https://news.google.com/rss/articles/CBMilAFBVV95cUxQQlpXclJTMUNyUTZsZlQteFhIb2JWSmV4LVRrNmp0ejhPV0lQMWpVX05TQXQ0RmFfZ2M3OFhOVzhCcXRub0RYVDRocjk5eHluTDJiNGVBZ21vOV9UV3JyX3RxbzBHdGxvcVhvaE8zUGdPVWViUkdhc1dvZE51SVpJZ1J4SUx6NnVCRktYRE5uQTNuTjdv?oc=5) | The Common Sense | 2026-05-26T03:03+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Ebola Cases Hit 900 in Congo DRC, WHO Confirms](https://news.google.com/rss/articles/CBMiaEFVX3lxTE9LUG9lSFNMVVA4U3BOWXhQUllPbnR1NEZaYlR5Q1oweGFBYldZSGgzY1AxTFliMmtPcG55b2U0OFdxX1g2QkhEVkh5TG0tamdCUG8ySTlpVUVYM0hxN2V5WXJiX2pWemo1?oc=5) | Punch Newspapers | 2026-05-26T01:30+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Ethiopia and Rwanda Added to Key Ebola Quarantine Management Areas](https://news.google.com/rss/articles/CBMieEFVX3lxTE43VTNOM1FEaW1BSHM5a01uVXdjbUN4clk2M0k1WnFXVVRiLURRb0hBTnJ0Y0g1ZW9RUzd6WWRyQ3lLMm5PVVZKQ1MtSlB2Y09LaG1Bem96VlBRQml2T3c2ZUttRGs0WFAyTTNIcXBOcU5oUmRRck54bA?oc=5) | 아시아경제 | 2026-05-26T01:28+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
 - [Epidemiological and virological characteristics of influenza in Zhejiang Province, China: A 15-year surveillance study.](https://pubmed.ncbi.nlm.nih.gov/42157696/)
