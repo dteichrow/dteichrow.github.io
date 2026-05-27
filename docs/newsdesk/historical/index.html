@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Historical Desk | The Pathogen Dispatch</title>
+    <style>
+      :root { --bg: #e8e1d3; --bg-deep: #d8cebc; --surface: #f8f4ea; --surface-alt: #f2ebde; --paper: #fffdf8; --ink: #1b2836; --ink-soft: #42515e; --line: #d6cab7; --accent: #8d3f2f; --accent-soft: rgba(141,63,47,0.10); --signal: #1f5b89; --signal-soft: rgba(31,91,137,0.12); --shadow: 0 24px 56px rgba(49, 36, 22, 0.10); }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: radial-gradient(circle at top left, rgba(181,138,49,0.10), transparent 28%), radial-gradient(circle at bottom right, rgba(31,91,137,0.12), transparent 24%), linear-gradient(180deg, #f2ede3 0%, var(--bg) 40%, var(--bg-deep) 100%); color: var(--ink); font-family: "Iowan Old Style", Georgia, serif; line-height: 1.58; overflow-x: hidden; }
+      a { color: var(--signal); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .page { width: 100%; max-width: 1120px; margin: 0 auto; padding: 24px 16px 56px; display: grid; gap: 20px; overflow-x: clip; }
+      .page > *, .hero > *, .panel > *, .site-header > *, .section-nav > *, .live-update-banner > * { min-width: 0; }
+      h1, h2, h3, p, li, .subtitle, .empty-note, .muted-note, .section-note, .live-update-text, .site-header-title, .archive-row, .lede { overflow-wrap: anywhere; word-break: break-word; }
+      .site-header, .section-nav { background: linear-gradient(180deg, rgba(255,253,248,0.98), rgba(248,243,233,0.98)); border: 1px solid rgba(187,169,143,0.85); border-radius: 24px; box-shadow: var(--shadow); }
+      .site-header { padding: 16px 20px; display: flex; justify-content: space-between; gap: 18px; align-items: center; flex-wrap: wrap; }
+      .site-header-title { margin: 0; color: var(--ink-soft); font-family: "Avenir Next", "Helvetica Neue", sans-serif; font-size: 0.96rem; }
+      .live-update-banner { position: fixed; right: 18px; bottom: 18px; width: min(420px, calc(100vw - 28px)); padding: 14px 16px; display: grid; gap: 12px; z-index: 40; box-shadow: 0 18px 36px rgba(29, 24, 18, 0.16); }
+      .live-update-banner[hidden] { display: none !important; }
+      .live-update-copy { min-width: 0; display: grid; gap: 4px; }
+      .live-update-text { margin: 0; color: var(--ink-soft); font-family: "Avenir Next", "Helvetica Neue", sans-serif; }
+      .live-update-actions { display: flex; justify-content: flex-end; gap: 10px; flex-wrap: wrap; }
+      .live-update-dismiss { border: 0; background: transparent; color: var(--ink-soft); font-family: "Avenir Next", "Helvetica Neue", sans-serif; font-weight: 600; cursor: pointer; padding: 10px 4px; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+      .live-update-dismiss:hover { color: var(--ink); }
+      .live-update-button { border-radius: 999px; padding: 10px 14px; border: 1px solid rgba(31,91,137,0.26); background: rgba(31,91,137,0.12); color: var(--signal); font-family: "Avenir Next", "Helvetica Neue", sans-serif; font-weight: 700; cursor: pointer; white-space: nowrap; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+      .live-update-button:hover { background: rgba(31,91,137,0.18); }
+      .site-nav, .section-nav-links { display: flex; flex-wrap: wrap; gap: 10px; }
+      .site-nav-link, .section-nav-link { border-radius: 999px; padding: 9px 14px; border: 1px solid rgba(187,169,143,0.78); background: rgba(255,252,245,0.94); color: var(--ink); font-family: "Avenir Next", "Helvetica Neue", sans-serif; font-size: 0.92rem; white-space: nowrap; }
+      .site-nav-link:hover, .section-nav-link:hover { text-decoration: none; background: var(--accent-soft); }
+      .site-nav-link.active { background: rgba(31,91,137,0.10); color: var(--signal); border-color: rgba(31,91,137,0.22); }
+      .section-nav { padding: 16px 18px; display: grid; gap: 10px; }
+      .section-nav-label { font-family: "Avenir Next Condensed", "Franklin Gothic Medium", sans-serif; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent); font-size: 0.74rem; }
+      .hero, .panel { background: linear-gradient(180deg, rgba(255,253,248,0.98), rgba(248,243,233,0.98)); border: 1px solid rgba(187,169,143,0.85); border-radius: 28px; box-shadow: var(--shadow); padding: 24px; }
+      .hero { background: linear-gradient(180deg, rgba(255,255,255,0.42), rgba(255,255,255,0)), linear-gradient(135deg, rgba(248,244,234,0.98), rgba(242,235,222,0.98)); position: relative; overflow: hidden; }
+      .hero::before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(rgba(23,48,70,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(23,48,70,0.04) 1px, transparent 1px); background-size: 28px 28px; opacity: 0.35; pointer-events: none; }
+      .hero > * { position: relative; z-index: 1; }
+      .atlas-hero-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.95fr); gap: 18px; align-items: stretch; }
+      .atlas-layout { align-items: start; grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.95fr); }
+      .atlas-map { min-height: 460px; border-radius: 22px; overflow: hidden; border: 1px solid rgba(187,169,143,0.74); background: linear-gradient(180deg, rgba(223,231,236,0.92), rgba(214,223,228,0.92)); }
+      .atlas-legend { margin-top: 14px; }
+      .atlas-selector-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); }
+      .atlas-selector-card { text-align: left; cursor: pointer; width: 100%; }
+      .atlas-selector-card.atlas-selector-active { border-color: rgba(31,91,137,0.32); box-shadow: inset 0 0 0 2px rgba(31,91,137,0.14); background: linear-gradient(180deg, rgba(245,250,255,0.96), rgba(239,246,252,0.96)); }
+      .atlas-plate { background: linear-gradient(160deg, rgba(24,43,60,0.96), rgba(48,69,93,0.94)); color: #f2ebde; border-radius: 24px; padding: 20px; min-height: 220px; box-shadow: 0 18px 36px rgba(29, 24, 18, 0.14); }
+      .atlas-plate h3, .atlas-plate p, .atlas-plate .muted-note { color: inherit; }
+      .atlas-plate-kicker, .atlas-plate-note { font-family: "Avenir Next Condensed", "Franklin Gothic Medium", sans-serif; letter-spacing: 0.12em; text-transform: uppercase; }
+      .atlas-plate-kicker { color: rgba(248,244,234,0.88); font-size: 0.74rem; }
+      .atlas-plate-note { color: rgba(248,244,234,0.72); font-size: 0.72rem; }
+      .atlas-plate-subtitle { font-size: 1rem; margin: 8px 0 12px; }
+      .atlas-evidence-stack, .atlas-route-list { display: grid; gap: 14px; }
+      .atlas-evidence-section { display: grid; gap: 8px; }
+      .atlas-route-row { background: rgba(255,252,247,0.92); border: 1px solid rgba(187,169,143,0.64); border-radius: 18px; padding: 14px; }
+      .atlas-route-head { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+      .atlas-teaser-card p:last-child { margin-bottom: 0; }
+      .atlas-citation-list li, .atlas-blog-list li, .atlas-story-list li { margin-bottom: 10px; }
+      .panel-grid { display: grid; gap: 22px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .story-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); }
+      .card-grid { display: grid; gap: 14px; }
+      .archive-table { display: grid; gap: 12px; }
+      .archive-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 16px; background: rgba(255,252,247,0.9); border: 1px solid rgba(187,169,143,0.68); border-radius: 18px; font-family: "Avenir Next", "Helvetica Neue", sans-serif; }
+      .archive-row-meta { color: var(--ink-soft); font-size: 0.92rem; }
+      .sort-bar { display: flex; justify-content: flex-end; margin: 10px 0 14px; }
+      .sort-control { display: inline-flex; align-items: center; gap: 8px; font-family: "Avenir Next", "Helvetica Neue", sans-serif; color: var(--ink-soft); font-size: 0.88rem; }
+      .sort-select { border: 1px solid rgba(187,169,143,0.88); background: rgba(255,252,247,0.96); border-radius: 999px; padding: 8px 12px; color: var(--ink); font: inherit; }
+      .sort-select:hover { background: var(--accent-soft); }
+      .outbreak-dashboard-block { margin-top: 18px; }
+      .outbreak-dashboard { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+      .dashboard-item { min-width: 0; display: grid; gap: 5px; padding: 12px 14px; border: 1px solid rgba(187,169,143,0.70); border-radius: 16px; background: rgba(255,252,247,0.70); }
+      .dashboard-label, .dashboard-note, .story-location-line, .story-card-labels { font-family: "Avenir Next", "Helvetica Neue", sans-serif; }
+      .dashboard-label { color: var(--accent); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; }
+      .dashboard-item strong { color: var(--ink); font-size: 1rem; line-height: 1.2; }
+      .dashboard-note { color: var(--ink-soft); font-size: 0.82rem; line-height: 1.35; }
+      .intelligence-panel { background: linear-gradient(180deg, rgba(255,253,248,0.98), rgba(245,239,228,0.96)); }
+      .intelligence-bullets li { margin-bottom: 8px; }
+      .historical-context-panel { background: linear-gradient(180deg, rgba(248,243,233,0.98), rgba(242,235,222,0.96)); }
+      .context-callout-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+      .context-callout { min-width: 0; border-left: 3px solid rgba(141,63,47,0.35); padding: 2px 0 2px 14px; }
+      .context-callout h3 { margin-bottom: 8px; font-size: 1rem; }
+      .context-callout p { margin: 0; color: var(--ink-soft); font-size: 0.95rem; }
+      .story-card-labels { display: flex; flex-wrap: wrap; gap: 7px; margin: -2px 0 10px; }
+      .story-location-line { margin: 8px 0 0; color: var(--ink-soft); font-size: 0.9rem; }
+      .source-status-confirmed, .source-status-official-report { background: rgba(31,91,137,0.12); color: #1f5b89; border-color: rgba(31,91,137,0.24); }
+      .source-status-media-report { background: rgba(60,88,48,0.10); color: #35552b; border-color: rgba(60,88,48,0.20); }
+      .source-status-preliminary, .source-status-needs-verification { background: rgba(181,138,49,0.12); color: #8c6a17; border-color: rgba(181,138,49,0.22); }
+      .source-status-commentary { background: rgba(110,89,68,0.10); color: #6e5944; border-color: rgba(110,89,68,0.22); }
+      .story-category-scientific-vaccine-therapeutic-context { background: rgba(31,91,137,0.09); color: #1f5b89; border-color: rgba(31,91,137,0.20); }
+      .story-category-border-regional-spread-concerns { background: rgba(141,63,47,0.10); color: #8d3f2f; border-color: rgba(141,63,47,0.20); }
+      .story-category-operational-response { background: rgba(60,88,48,0.10); color: #35552b; border-color: rgba(60,88,48,0.20); }
+      .story-category-commentary-political-reaction-media-discourse { background: rgba(110,89,68,0.10); color: #6e5944; border-color: rgba(110,89,68,0.22); }
+      .story-filter-shell { display: grid; gap: 10px; }
+      .story-filter-grid { display: grid; grid-template-columns: minmax(0, 1.6fr) repeat(4, minmax(130px, 1fr)); gap: 10px; align-items: end; }
+      .filter-group { display: grid; gap: 6px; }
+      .filter-search-wide { min-width: 0; }
+      .filter-label { font-family: "Avenir Next Condensed", "Franklin Gothic Medium", sans-serif; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-soft); }
+      .filter-input, .filter-select { border: 1px solid rgba(187,169,143,0.88); background: rgba(255,252,247,0.96); border-radius: 14px; padding: 10px 12px; color: var(--ink); font: inherit; font-family: "Avenir Next", "Helvetica Neue", sans-serif; }
+      .filter-input::placeholder { color: var(--ink-soft); }
+      .utility-panel { background: linear-gradient(180deg, rgba(248,243,233,0.98), rgba(240,232,220,0.96)); }
+      .site-card, .timeline-row { background: var(--paper); border: 1px solid rgba(187,169,143,0.68); border-radius: 22px; padding: 18px 18px 16px; box-shadow: 0 12px 26px rgba(49, 36, 22, 0.06); }
+      .feature-card { background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(245,239,228,0.98)); }
+      .compact-card { padding-top: 16px; padding-bottom: 14px; }
+      .meta-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; font-family: "Avenir Next", "Helvetica Neue", sans-serif; min-width: 0; }
+      .badge, .link-pill { border-radius: 999px; padding: 6px 10px; font-size: 0.78rem; line-height: 1.2; border: 1px solid rgba(187,169,143,0.72); background: rgba(255,252,245,0.94); color: var(--ink-soft); display: inline-flex; align-items: center; max-width: 100%; }
+      .badge.accent { background: var(--accent-soft); color: var(--accent); border-color: rgba(141,63,47,0.24); }
+      .badge.tone-official { background: rgba(31,91,137,0.12); color: #1f5b89; border-color: rgba(31,91,137,0.24); }
+      .badge.tone-wire { background: rgba(60,88,48,0.10); color: #35552b; border-color: rgba(60,88,48,0.20); }
+      .badge.tone-major { background: rgba(181,138,49,0.12); color: #8c6a17; border-color: rgba(181,138,49,0.22); }
+      .badge.tone-specialist { background: rgba(141,63,47,0.10); color: #8d3f2f; border-color: rgba(141,63,47,0.20); }
+      .kicker { font-family: "Avenir Next Condensed", "Franklin Gothic Medium", sans-serif; text-transform: uppercase; letter-spacing: 0.16em; color: var(--accent); font-size: 0.74rem; margin: 0 0 10px; }
+      .subtitle, .empty-note, .muted-note { color: var(--ink-soft); font-family: "Avenir Next", "Helvetica Neue", sans-serif; }
+      .section-note { margin: 0 0 10px; color: var(--ink-soft); font-family: "Avenir Next", "Helvetica Neue", sans-serif; font-size: 0.95rem; }
+      .lede { font-size: 1.06rem; }
+      .hero-subhead { margin: 16px 0 8px; font-size: 1.08rem; }
+      .bullet-list { margin: 10px 0 0; padding-left: 18px; }
+      h1, h2, h3 { margin: 0; color: #173046; }
+      h1 { font-size: clamp(2rem, 4.2vw, 4rem); line-height: 0.98; letter-spacing: -0.03em; }
+      h2 { font-size: 1.4rem; }
+      h3 { font-size: 1.06rem; }
+      .site-card h3 { line-height: 1.12; }
+      @media (max-width: 1180px) { .panel-grid, .atlas-layout, .atlas-hero-grid, .context-callout-grid { grid-template-columns: 1fr; } .story-filter-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .outbreak-dashboard { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+      @media (max-width: 900px) { .page { padding: 16px 14px 42px; } .hero, .panel, .site-header, .section-nav { padding: 18px; border-radius: 22px; } .site-header { align-items: flex-start; flex-direction: column; } .story-filter-grid { grid-template-columns: 1fr; } .story-grid, .atlas-selector-grid { grid-template-columns: 1fr; } .atlas-map { min-height: 340px; } h1 { font-size: clamp(1.9rem, 10vw, 3.2rem); } }
+      @media (max-width: 620px) { .site-nav, .section-nav-links { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 2px; } .site-header-copy { min-width: 0; } .archive-row { flex-direction: column; align-items: flex-start; } .badge, .link-pill { line-height: 1.2; } .outbreak-dashboard { grid-template-columns: 1fr; } .dashboard-item { padding: 11px 12px; } .live-update-banner { right: 12px; bottom: 12px; width: calc(100vw - 24px); } .live-update-actions { justify-content: space-between; } }
+    </style>
+<style id="eoe-shell-import-style">
+  body { padding-top: 112px !important; }
+  .eoe-shell-nav {
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 10000;
+    background: linear-gradient(180deg, rgba(15, 20, 27, 0.98), rgba(21, 29, 39, 0.98));
+    color: #efe6d6;
+    border-bottom: 1px solid rgba(214, 202, 183, 0.2);
+    box-shadow: 0 14px 34px rgba(4, 7, 10, 0.28);
+  }
+  .eoe-shell-nav-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 18px 18px 16px;
+    display: grid;
+    gap: 12px;
+    font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+  }
+  .eoe-shell-brand {
+    display: inline-flex;
+    flex-wrap: wrap;
+    column-gap: 0.32em;
+    row-gap: 0.12em;
+    align-items: baseline;
+    color: #f5ecdd;
+    font: 700 clamp(1.2rem, 2vw, 1.65rem)/1.05 "Iowan Old Style", Georgia, serif;
+    text-decoration: none;
+    letter-spacing: 0;
+  }
+  .eoe-shell-byline {
+    color: #8fb8d8;
+    font: 600 0.48em/1 "Avenir Next", "Helvetica Neue", sans-serif;
+  }
+  .eoe-shell-brand:hover { text-decoration: none; }
+  .eoe-shell-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(214, 202, 183, 0.18);
+  }
+  .eoe-shell-links a {
+    flex: 0 0 auto;
+    padding: 0 0 6px;
+    border-bottom: 2px solid transparent;
+    color: rgba(239, 230, 214, 0.76);
+    text-decoration: none;
+    background: transparent;
+    font-size: 0.95rem;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: color 180ms ease, border-color 180ms ease;
+  }
+  .eoe-shell-links a.active {
+    border-color: rgba(201, 168, 76, 0.88);
+    color: #f8f1e6;
+    font-weight: 700;
+  }
+  .eoe-shell-links a:hover {
+    color: #f8f1e6;
+    text-decoration: none;
+    border-color: rgba(201, 168, 76, 0.52);
+  }
+  /* Cleaner fix would live in the Pathogen Dispatch renderer, but this import-layer pass
+     keeps the simplification isolated to the umbrella site. */
+  .site-header,
+  .hero,
+  .panel,
+  .section-nav {
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  .site-header {
+    padding: 0 0 12px !important;
+    gap: 12px !important;
+  }
+  .site-header-title {
+    font-size: 1rem !important;
+    color: #42515e !important;
+  }
+  .site-nav,
+  .section-nav-links {
+    gap: 14px !important;
+  }
+  .site-nav-link,
+  .section-nav-link {
+    padding: 0 0 5px !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    border-bottom: 2px solid transparent !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #42515e !important;
+    font-weight: 500 !important;
+  }
+  .site-nav-link:hover,
+  .section-nav-link:hover {
+    background: transparent !important;
+    color: #173046 !important;
+    text-decoration: underline !important;
+  }
+  .site-nav-link.active {
+    color: #173046 !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    border-color: rgba(141, 63, 47, 0.48) !important;
+  }
+  .hero {
+    padding: 0 0 6px !important;
+    overflow: visible !important;
+  }
+  .hero::before,
+  .hero::after,
+  .panel::before,
+  .panel::after,
+  .site-header::before,
+  .site-header::after {
+    display: none !important;
+  }
+  .panel,
+  .panel-grid {
+    gap: 16px !important;
+  }
+  .panel > h2:first-child,
+  .panel > .muted-note:first-child {
+    margin-top: 0 !important;
+  }
+  .section-nav {
+    display: none !important;
+  }
+  .meta-row-plain {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .meta-inline,
+  .card-meta-text {
+    color: #42515e;
+    font: 500 0.86rem/1.55 "Avenir Next", "Helvetica Neue", sans-serif;
+  }
+  .card-meta-text {
+    margin: 0;
+  }
+  .atlas-status-pill,
+  .story-status-pill {
+    letter-spacing: 0.08em !important;
+    text-transform: uppercase !important;
+  }
+  .site-card .meta-row .badge {
+    max-width: none;
+  }
+  .link-pill {
+    background: rgba(255,252,245,0.92) !important;
+  }
+  @media (max-width: 760px) {
+    body { padding-top: 148px !important; }
+    .eoe-shell-links {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+      width: 100%;
+      padding-bottom: 2px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      touch-action: pan-x;
+      overscroll-behavior-x: contain;
+    }
+    .eoe-shell-links::-webkit-scrollbar { display: none; }
+  }
+</style>
+
+    <link rel="canonical" href="https://devinteichrow.com/newsdesk/historical/" />
+    <link rel="alternate" type="application/rss+xml" title="The Edge of Epidemiology RSS" href="https://theedgeofepidemiology.substack.com/feed" />
+    <meta name="description" content="Historical Desk from The Pathogen Dispatch, the Edge of Epidemiology source-first infectious-disease reporting desk." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="The Edge of Epidemiology" />
+    <meta property="og:title" content="Historical Desk | The Pathogen Dispatch" />
+    <meta property="og:description" content="Historical Desk from The Pathogen Dispatch, the Edge of Epidemiology source-first infectious-disease reporting desk." />
+    <meta property="og:url" content="https://devinteichrow.com/newsdesk/historical/" />
+    <meta property="og:image" content="https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Historical Desk | The Pathogen Dispatch" />
+    <meta name="twitter:description" content="Historical Desk from The Pathogen Dispatch, the Edge of Epidemiology source-first infectious-disease reporting desk." />
+    <meta name="twitter:image" content="https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png" />
+    <script type="application/ld+json" data-eoe-seo>{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Historical Desk | The Pathogen Dispatch", "url": "https://devinteichrow.com/newsdesk/historical/", "description": "Historical Desk from The Pathogen Dispatch, the Edge of Epidemiology source-first infectious-disease reporting desk.", "image": "https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png", "isPartOf": {"@type": "WebSite", "name": "The Edge of Epidemiology", "url": "https://devinteichrow.com/"}, "author": {"@type": "Person", "name": "Devin Teichrow", "url": "https://devinteichrow.com/about/", "sameAs": ["https://theedgeofepidemiology.substack.com", "https://x.com/edgeofepi", "https://www.instagram.com/edgeofepi/", "https://www.linkedin.com/in/devin-teichrow-msc-938942254", "https://medium.com/@EdgeofEpi"]}}</script>
+</head>
+  <body><div class="eoe-shell-nav"><div class="eoe-shell-nav-inner"><a class="eoe-shell-brand" href="/"><span>The Edge of Epidemiology</span> <span class="eoe-shell-byline">by Devin Teichrow</span></a><nav class="eoe-shell-links" aria-label="Umbrella navigation"><a class="" href="/">Home</a><a class="active" href="/newsdesk/">Newsdesk</a><a class="" href="/notebook/">Notebook</a><a class="" href="/atlases/pathogen/">Pathogen Atlas</a><a class="" href="/atlases/maritime/">Maritime Atlas</a><a class="" href="/essays/">Essays</a><a class="" href="/topics/">Topics</a><a class="" href="/historical/">Historical</a><a class="" href="/reference/">Reference</a><a class="" href="/opportunities/">Opportunities</a><a class="" href="/search/">Search</a></nav></div></div>
+    <main class="page">
+      <header class="site-header"><div class="site-header-copy"><div class="kicker">The Pathogen Dispatch</div><p class="site-header-title">Source-first newsroom desks</p></div><nav class="site-nav" aria-label="Site navigation"><a class="site-nav-link" href="/newsdesk/">Home</a><a class="site-nav-link" href="/notebook/">Notebook</a><a class="site-nav-link" href="/atlases/pathogen/">Atlas</a><a class="site-nav-link" href="/newsdesk/outbreaks/">Outbreak terminal</a><a class="site-nav-link" href="/newsdesk/watch/">Global watch</a><a class="site-nav-link" href="/newsdesk/africa/">Africa</a><a class="site-nav-link" href="/newsdesk/asia/">Asia</a><a class="site-nav-link" href="/newsdesk/research/">Research</a><a class="site-nav-link" href="/newsdesk/official/">Official alerts</a><a class="site-nav-link" href="/newsdesk/archive/">Archive</a></nav></header>
+      <section class="live-update-banner panel utility-panel" id="live-update-banner" hidden aria-live="polite" role="status" data-live-update-banner="true"><div class="live-update-copy"><div class="section-nav-label">New edition available</div><p class="live-update-text" id="live-update-text">An updated edition is available. Load the latest run when you are ready.</p></div><div class="live-update-actions"><button class="live-update-dismiss" id="live-update-dismiss" type="button" onclick="(function(btn){const banner=btn.closest('[data-live-update-banner]');if(banner){banner.hidden=true;banner.style.display='none';const runId=(banner.dataset&&banner.dataset.pendingRunId)||'';const key=(banner.dataset&&banner.dataset.dismissKey)||('pathogen-dispatch-live-update-dismissed:'+window.location.pathname);try{window.sessionStorage.setItem(key, window.location.pathname+'::'+(runId||'unknown'));}catch(error){}}return false;})(this)">Keep reading</button><button class="live-update-button" id="live-update-refresh" type="button" onclick="(function(btn){const banner=btn.closest('[data-live-update-banner]');if(banner){banner.hidden=true;banner.style.display='none';}const url=new URL(window.location.href);url.searchParams.set('_edition', String(Date.now()));window.location.replace(url.toString());return false;})(this)">Load latest</button></div></section>
+      <section class="hero" id="desk-top">
+        <p class="kicker">Source-first desk</p>
+        <h1>Historical Desk</h1>
+        <p class="subtitle">Slow-moving historical epidemiology and ancient pathogen context that belongs beside, not inside, the live outbreak watch.</p>
+      </section>
+      <section class="panel" id="tracked-files">
+        <h2>Tracked Files</h2>
+        <div class="story-grid"><p class="empty-note">No tracked story files matched this desk in the current run.</p></div>
+      </section>
+      <section class="panel" id="latest-signals">
+        <h2>Latest Signals</h2>
+        <div class="card-grid"><p class="empty-note">No item cards matched this desk in the current run.</p></div>
+      </section>
+      <section class="panel-grid">
+        <section class="panel" id="reference-links">
+          <h2>Related Disease Sheets</h2>
+          <div class="card-grid"><article class="site-card"><div class="kicker">Reference</div><h3><a href="/reference/ebola-virus-disease.html">Ebola virus disease</a></h3><p><strong>Pathogen:</strong> Ebola viruses, including Bundibugyo virus in the current DRC/Uganda outbreak</p><p>Ebola remains a defining outbreak-desk disease because healthcare transmission, funeral practices, laboratory capacity, community trust, and international alarm can all move faster than the confirmed count.</p></article><article class="site-card"><div class="kicker">Reference</div><h3><a href="/reference/hantavirus-syndrome.html">Hantavirus syndrome</a></h3><p><strong>Pathogen:</strong> Hantaviruses, including Andes virus in the Americas</p><p>This is a rare but frightening severe-disease story where a single unusual cluster can force questions about travel safety, rodent exposure, and whether Andes-virus-style person-to-person spread is in play.</p><div class="meta-row"><a class="link-pill" href="/atlases/pathogen/?pathogen=hantavirus">View in Atlas</a></div></article><article class="site-card"><div class="kicker">Reference</div><h3><a href="/reference/measles.html">Measles</a></h3><p><strong>Pathogen:</strong> Measles virus</p><p>Measles is a clean reporter desk disease because it reveals vaccination gaps, school and household spread, travel-linked importation, and public-health capacity all at once.</p><div class="meta-row"><a class="link-pill" href="/atlases/pathogen/?pathogen=measles">View in Atlas</a></div></article><article class="site-card"><div class="kicker">Reference</div><h3><a href="/reference/anthrax.html">Anthrax</a></h3><p><strong>Pathogen:</strong> Bacillus anthracis</p><p>Anthrax is a strong local accountability story because livestock practices, slaughter exposure, and rural reporting gaps can hide serious outbreaks in plain sight.</p></article></div>
+        </section>
+        <section class="panel" id="archive-links">
+          <h2>Recent Archive Days</h2>
+          <div class="archive-table"><article class="archive-row"><a href="/newsdesk/2026/05/2026-05-27.html"><strong>2026-05-27</strong></a><span class="archive-row-meta">May 2026</span></article></div>
+        </section>
+      </section>
+    </main>
+    <script>
+      const liveUpdateBanner = document.getElementById("live-update-banner");
+      const liveUpdateButton = document.getElementById("live-update-refresh");
+      const liveUpdateDismiss = document.getElementById("live-update-dismiss");
+      const liveUpdateText = document.getElementById("live-update-text");
+      const currentRunId = 'run_0069bc400ada6bb5';
+      const currentGeneratedAt = '2026-05-27T10:19:25';
+      const manifestPath = '/app_exports/manifest.json';
+      const liveUpdateStorageKey = `pathogen-dispatch-live-update-dismissed:${window.location.pathname}`;
+      const liveUpdateStart = Date.now();
+      let pendingLiveUpdateRunId = "";
+
+      function liveUpdateShouldRun() {
+        return window.location.protocol === "https:" || window.location.protocol === "http:";
+      }
+
+      function getManifestRunId(manifest) {
+        return String(manifest.latest_run_id || manifest.run_id || "").trim();
+      }
+
+      function liveUpdateDismissValue(runId) {
+        return `${window.location.pathname}::${runId || "unknown"}`;
+      }
+
+      function isLiveUpdateDismissed(runId) {
+        try {
+          return window.sessionStorage.getItem(liveUpdateStorageKey) === liveUpdateDismissValue(runId);
+        } catch (error) {
+          return false;
+        }
+      }
+
+      function dismissLiveUpdate(runId) {
+        if (!liveUpdateBanner) return;
+        liveUpdateBanner.hidden = true;
+        liveUpdateBanner.dataset.pendingRunId = "";
+        pendingLiveUpdateRunId = "";
+        try {
+          window.sessionStorage.setItem(liveUpdateStorageKey, liveUpdateDismissValue(runId));
+        } catch (error) {
+          // Ignore storage failures and simply hide the notice for this page view.
+        }
+      }
+
+      function formatManifestTime(generatedAt) {
+        const parsed = new Date(generatedAt);
+        if (Number.isNaN(parsed.getTime())) {
+          return "";
+        }
+        return parsed.toLocaleString([], {
+          month: "short",
+          day: "numeric",
+          hour: "numeric",
+          minute: "2-digit",
+        });
+      }
+
+      function markLiveUpdateAvailable(manifest) {
+        if (!liveUpdateBanner) return;
+        const nextRunId = getManifestRunId(manifest);
+        if (isLiveUpdateDismissed(nextRunId)) {
+          return;
+        }
+        pendingLiveUpdateRunId = nextRunId;
+        liveUpdateBanner.dataset.pendingRunId = nextRunId;
+        liveUpdateBanner.dataset.dismissKey = liveUpdateStorageKey;
+        if (liveUpdateText) {
+          const publishedAt = formatManifestTime(manifest.generated_at);
+          const nextRun = publishedAt
+            ? `Updated edition available from ${publishedAt}. Load the latest run when you are ready.`
+            : "An updated edition is available. Load the latest run when you are ready.";
+          liveUpdateText.textContent = nextRun;
+        }
+        liveUpdateBanner.hidden = false;
+      }
+
+      function isNewerManifest(manifest) {
+        const nextRunId = String(manifest.latest_run_id || "").trim();
+        const nextGeneratedAt = String(manifest.generated_at || "").trim();
+        if (currentRunId && nextRunId) {
+          return nextRunId !== currentRunId;
+        }
+        if (currentGeneratedAt && nextGeneratedAt) {
+          return nextGeneratedAt !== currentGeneratedAt;
+        }
+        return false;
+      }
+
+      function liveUpdatePageHasAged() {
+        return Date.now() - liveUpdateStart >= 360000;
+      }
+
+      async function checkForLiveUpdate() {
+        if (!liveUpdateShouldRun()) return;
+        if (!liveUpdatePageHasAged()) return;
+        try {
+          const response = await fetch(`${manifestPath}?ts=${Date.now()}`, { cache: "no-store" });
+          if (!response.ok) return;
+          const manifest = await response.json();
+          if (isNewerManifest(manifest)) {
+            markLiveUpdateAvailable(manifest);
+          }
+        } catch (error) {
+          // Ignore polling failures; readers should never see an error state for this.
+        }
+      }
+
+      window.__pathogenDismissLiveUpdate = function (button) {
+        const banner = button && button.closest ? button.closest("[data-live-update-banner]") : liveUpdateBanner;
+        const pendingRunId = banner && banner.dataset ? banner.dataset.pendingRunId || "" : "";
+        dismissLiveUpdate(pendingRunId);
+      };
+
+      window.__pathogenLoadLatest = function (button) {
+        const banner = button && button.closest ? button.closest("[data-live-update-banner]") : liveUpdateBanner;
+        if (banner) {
+          banner.hidden = true;
+        }
+        const url = new URL(window.location.href);
+        url.searchParams.set("_edition", String(Date.now()));
+        window.location.replace(url.toString());
+      };
+
+      if (liveUpdateButton) {
+        liveUpdateButton.addEventListener("click", (event) => {
+          event.preventDefault();
+          window.__pathogenLoadLatest(liveUpdateButton);
+        });
+      }
+      if (liveUpdateDismiss) {
+        liveUpdateDismiss.addEventListener("click", (event) => {
+          event.preventDefault();
+          window.__pathogenDismissLiveUpdate(liveUpdateDismiss);
+        });
+      }
+      if (liveUpdateShouldRun()) {
+        window.setTimeout(checkForLiveUpdate, 360000);
+        window.setInterval(checkForLiveUpdate, 600000);
+      }
+    </script>
+  </body>
+</html>
