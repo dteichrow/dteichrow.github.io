@@ -201,6 +201,55 @@ def test_render_post_page_does_not_make_metadata_flashcards() -> None:
     assert "Retain the essay" not in page_text
 
 
+def test_render_post_page_uses_local_body_when_available(tmp_path, monkeypatch) -> None:
+    body_path = tmp_path / "content" / "post_bodies" / "local-body.html"
+    body_path.parent.mkdir(parents=True)
+    body_path.write_text("<h2>Full local essay</h2><p>This paragraph came from the mirrored Substack body.</p>")
+    monkeypatch.setattr(build_site, "PROJECT_ROOT", tmp_path)
+
+    post = {
+        "slug": "local-body",
+        "title": "Local Body",
+        "date": "2026-05-20",
+        "canonical_url": "https://theedgeofepidemiology.substack.com/p/local-body",
+        "excerpt": "A summary.",
+        "topics": ["History"],
+        "topic_cluster": "historical-epidemiology",
+        "related_atlases": [],
+        "local_body_path": "content/post_bodies/local-body.html",
+    }
+
+    page_text = build_site.render_post_page(post, atlases={}, posts=[post], base_url="/")
+
+    assert '<article class="prose essay-body">' in page_text
+    assert "Full local essay" in page_text
+    assert "This paragraph came from the mirrored Substack body." in page_text
+    assert "Originally published" in page_text
+    assert "Read original" in page_text
+    assert "Subscribe" in page_text
+    assert "Archive note" not in page_text
+
+
+def test_render_post_page_keeps_substack_fallback_without_local_body() -> None:
+    post = {
+        "slug": "no-local-body",
+        "title": "No Local Body",
+        "date": "2026-05-20",
+        "canonical_url": "https://theedgeofepidemiology.substack.com/p/no-local-body",
+        "excerpt": "A summary.",
+        "topics": ["History"],
+        "topic_cluster": "historical-epidemiology",
+        "related_atlases": [],
+        "local_body_path": "",
+    }
+
+    page_text = build_site.render_post_page(post, atlases={}, posts=[post], base_url="/")
+
+    assert '<article class="prose essay-body">' not in page_text
+    assert "Read the full essay" in page_text
+    assert "Archive note" in page_text
+
+
 def test_import_epidossier_public_imports_outbreak_terminal_routes(tmp_path, monkeypatch) -> None:
     source_docs = tmp_path / "source_docs"
     docs_dir = tmp_path / "docs"
@@ -472,10 +521,14 @@ atlases:
     assert posts_export["posts"][0]["slug"] == "first-post"
     assert {post["slug"] for post in posts_export["posts"]} == {"first-post", "legacy-visible-post"}
     assert "site_visibility" not in posts_export["posts"][0]
+    assert "local_body_path" not in posts_export["posts"][0]
+    assert "body_synced_at" not in posts_export["posts"][0]
+    assert "body_source_url" not in posts_export["posts"][0]
+    assert "body_source_mode" not in posts_export["posts"][0]
+    assert "body_source_file" not in posts_export["posts"][0]
+    assert "body_wordcount" not in posts_export["posts"][0]
     assert "flashcards" not in posts_export["posts"][0]
-    flashcards_export = json.loads((docs_dir / "app_exports" / "essay-flashcards.json").read_text())
-    assert flashcards_export["count"] == 0
-    assert flashcards_export["decks"] == []
+    assert not (docs_dir / "app_exports" / "essay-flashcards.json").exists()
     assert (docs_dir / "CNAME").read_text() == "devinteichrow.com\n"
     assert (docs_dir / "robots.txt").exists()
     assert (docs_dir / "sitemap.xml").exists()

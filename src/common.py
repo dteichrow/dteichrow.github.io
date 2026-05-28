@@ -56,6 +56,11 @@ CURATED_FIELDS = [
     "related_story_ids",
     "search_excerpt",
     "local_body_path",
+    "body_synced_at",
+    "body_source_url",
+    "body_source_mode",
+    "body_source_file",
+    "body_wordcount",
     "hero_mode",
     "notes",
 ]
@@ -74,6 +79,11 @@ CURATED_DEFAULTS = {
     "related_story_ids": [],
     "search_excerpt": "",
     "local_body_path": "",
+    "body_synced_at": "",
+    "body_source_url": "",
+    "body_source_mode": "",
+    "body_source_file": "",
+    "body_wordcount": None,
     "hero_mode": "cover",
     "notes": "",
 }

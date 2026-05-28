@@ -76,7 +76,6 @@ a:hover {
 a:focus-visible,
 .site-nav-link:focus-visible,
 .button:focus-visible,
-.flashcard:focus-visible,
 .filter-input:focus-visible,
 .filter-select:focus-visible {
   outline: 2px solid rgba(31, 91, 137, 0.52);
@@ -878,6 +877,127 @@ h3 {
   margin-bottom: 4px;
 }
 
+.essay-body-panel {
+  grid-template-columns: minmax(0, 76ch) minmax(220px, 280px);
+  align-items: start;
+  gap: 28px;
+  border-top: 1px solid rgba(150, 130, 103, 0.24);
+  padding-top: 26px;
+}
+
+.essay-body {
+  max-width: 76ch;
+  color: #222;
+  font-family: var(--display);
+}
+
+.essay-body > :first-child {
+  margin-top: 0;
+}
+
+.essay-body > :last-child {
+  margin-bottom: 0;
+}
+
+.essay-body p,
+.essay-body li {
+  font-size: 1.08rem;
+  line-height: 1.82;
+}
+
+.essay-body p {
+  margin: 0 0 1.18em;
+}
+
+.essay-body h1,
+.essay-body h2,
+.essay-body h3,
+.essay-body h4,
+.essay-body h5,
+.essay-body h6 {
+  margin: 1.6em 0 0.55em;
+  color: #173046;
+  line-height: 1.12;
+}
+
+.essay-body h1,
+.essay-body h2 {
+  font-size: clamp(1.72rem, 2.4vw, 2.25rem);
+}
+
+.essay-body h3 {
+  font-size: 1.42rem;
+}
+
+.essay-body ul,
+.essay-body ol {
+  margin: 0 0 1.25em;
+  padding-left: 1.3em;
+}
+
+.essay-body blockquote {
+  margin: 1.6em 0;
+  padding: 0.2em 0 0.2em 1.1em;
+  border-left: 3px solid rgba(107, 30, 35, 0.42);
+  color: var(--ink-soft);
+}
+
+.essay-body figure {
+  margin: 1.8em 0;
+}
+
+.essay-body figcaption {
+  margin-top: 0.6em;
+  color: var(--ink-soft);
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.essay-body img {
+  width: auto;
+  max-height: 720px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-soft);
+}
+
+.essay-body pre {
+  overflow-x: auto;
+  padding: 14px;
+  border: 1px solid rgba(187, 169, 143, 0.68);
+  border-radius: 8px;
+  background: rgba(255, 252, 245, 0.86);
+}
+
+.essay-body code {
+  font-family: var(--mono);
+  font-size: 0.92em;
+}
+
+.substack-origin-note {
+  position: sticky;
+  top: 18px;
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+  border: 1px solid rgba(187, 169, 143, 0.68);
+  border-radius: 8px;
+  background: rgba(255, 252, 245, 0.76);
+  box-shadow: var(--shadow-soft);
+}
+
+.substack-origin-note p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.substack-origin-note .hero-actions {
+  margin-top: 4px;
+}
+
 .about-layout {
   display: grid;
   gap: 18px;
@@ -1599,6 +1719,14 @@ h3 {
 
   .about-layout {
     grid-template-columns: 1fr;
+  }
+
+  .essay-body-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .substack-origin-note {
+    position: static;
   }
 
   .opportunities-showcase,

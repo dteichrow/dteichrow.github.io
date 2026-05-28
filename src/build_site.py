@@ -697,6 +697,12 @@ def public_post_export(post: dict[str, Any]) -> dict[str, Any]:
         "flashcards_generated_at",
         "flashcards_source",
         "flashcards_source_url",
+        "local_body_path",
+        "body_synced_at",
+        "body_source_url",
+        "body_source_mode",
+        "body_source_file",
+        "body_wordcount",
         "source_mode",
         "indexing_strategy",
         "first_seen_at",
@@ -797,6 +803,22 @@ def post_overview_paragraphs(post: dict[str, Any]) -> list[str]:
         seen.add(key)
         paragraphs.append(paragraph)
     return paragraphs
+
+
+def local_post_body_html(post: dict[str, Any]) -> str:
+    body_path = str(post.get("local_body_path") or "").strip()
+    if not body_path:
+        return ""
+    candidate = Path(body_path)
+    if not candidate.is_absolute():
+        candidate = PROJECT_ROOT / candidate
+    try:
+        candidate.resolve().relative_to(PROJECT_ROOT.resolve())
+    except ValueError:
+        return ""
+    if not candidate.exists() or not candidate.is_file():
+        return ""
+    return candidate.read_text()
 
 
 def post_indexing_strategy(post: dict[str, Any]) -> str:
@@ -1048,6 +1070,36 @@ def render_post_page(post: dict[str, Any], atlases: dict[str, dict[str, Any]], p
         '<li><a href="#related-work">Related work</a></li>',
     ]
     contents_links = "\n            ".join(contents_items)
+    body_html = local_post_body_html(post)
+    if body_html:
+        read_section = f"""
+      <section class="panel essay-body-panel" id="read">
+        <article class="prose essay-body">
+          {body_html}
+        </article>
+        <aside class="substack-origin-note">
+          <p class="kicker">Originally published</p>
+          <p>This essay was first published at The Edge of Epidemiology on Substack. The version here is a local mirror for reading, search, and preservation.</p>
+          <div class="hero-actions">
+            <a class="button secondary" href="{html.escape(read_url)}">Read original</a>
+            <a class="button secondary" href="{html.escape('https://theedgeofepidemiology.substack.com/subscribe')}">Subscribe</a>
+          </div>
+        </aside>
+      </section>
+        """
+    else:
+        read_section = f"""
+      <section class="panel detail-grid" id="read">
+        <div class="detail-block">
+          <h3>Read the full essay</h3>
+          <p><a href="{html.escape(read_url)}">{html.escape(read_url)}</a></p>
+        </div>
+        <div class="detail-block">
+          <h3>Archive note</h3>
+          <p>This page keeps the essay connected to related topics, maps, and reference pages on The Edge of Epidemiology.</p>
+        </div>
+      </section>
+        """
     return base_html(
         title=f"{display_title} | Edge of Epidemiology",
         description=description,
@@ -1094,16 +1146,7 @@ def render_post_page(post: dict[str, Any], atlases: dict[str, dict[str, Any]], p
           {overview_paragraphs}
         </div>
       </section>
-      <section class="panel detail-grid" id="read">
-        <div class="detail-block">
-          <h3>Read the full essay</h3>
-          <p><a href="{html.escape(read_url)}">{html.escape(read_url)}</a></p>
-        </div>
-        <div class="detail-block">
-          <h3>Archive note</h3>
-          <p>This page keeps the essay connected to related topics, maps, and reference pages on The Edge of Epidemiology.</p>
-        </div>
-      </section>
+      {read_section}
       <section class="panel detail-grid" id="related-work">
         {related_block}
         {related_essay_block}
@@ -2916,11 +2959,6 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
         "count": len(tools),
         "tools": [public_tool_export(tool) for tool in tools],
     }
-    flashcards_export = {
-        "generated_at": latest.get("generated_at"),
-        "count": 0,
-        "decks": [],
-    }
     search_index = []
     for post in public_posts:
         search_index.append(
@@ -2996,9 +3034,6 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
     write_json(docs_dir / "app_exports" / "posts.json", posts_export)
     write_json(docs_dir / "app_exports" / "atlases.json", atlases_export)
     write_json(docs_dir / "app_exports" / "tools.json", tools_export)
-    flashcards_export_path = docs_dir / "app_exports" / "essay-flashcards.json"
-    ensure_dir(flashcards_export_path.parent)
-    flashcards_export_path.write_text(json.dumps(flashcards_export, ensure_ascii=False, separators=(",", ":")))
     write_json(docs_dir / "app_exports" / "search-index.json", search_index)
     seo_report = finalize_seo(docs_dir, public_posts)
 
