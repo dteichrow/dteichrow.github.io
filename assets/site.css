@@ -23,6 +23,8 @@
   --masthead-accent: #b28b3e;
   --shadow: 0 24px 56px rgba(49, 36, 22, 0.1);
   --shadow-soft: 0 16px 32px rgba(49, 36, 22, 0.06);
+  --site-width: 1400px;
+  --essay-width: 92ch;
   --mono: "SFMono-Regular", Menlo, Consolas, monospace;
   --display: "Fraunces", "Libre Baskerville", "Iowan Old Style", Georgia, serif;
   --sans: "Inter", "IBM Plex Sans", "Avenir Next", "Helvetica Neue", sans-serif;
@@ -878,17 +880,28 @@ h3 {
 }
 
 .essay-body-panel {
-  grid-template-columns: minmax(0, 76ch) minmax(220px, 280px);
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 280px);
   align-items: start;
-  gap: 28px;
+  gap: 36px;
   border-top: 1px solid rgba(150, 130, 103, 0.24);
   padding-top: 26px;
 }
 
 .essay-body {
-  max-width: 76ch;
+  width: 100%;
+  max-width: none;
   color: #222;
   font-family: var(--display);
+}
+
+.essay-body > * {
+  max-width: var(--essay-width);
+}
+
+.essay-body > figure,
+.essay-body > pre,
+.essay-body > hr {
+  max-width: none;
 }
 
 .essay-body > :first-child {
@@ -946,6 +959,10 @@ h3 {
   margin: 1.8em 0;
 }
 
+.essay-body figure > a {
+  display: block;
+}
+
 .essay-body figcaption {
   margin-top: 0.6em;
   color: var(--ink-soft);
@@ -956,9 +973,15 @@ h3 {
 
 .essay-body img {
   width: auto;
-  max-height: 720px;
+  height: auto;
+  max-height: none;
   border-radius: 8px;
   box-shadow: var(--shadow-soft);
+}
+
+.essay-body figure img {
+  width: 100%;
+  object-fit: contain;
 }
 
 .essay-body pre {
@@ -1075,7 +1098,7 @@ h3 {
 .site-header-inner {
   position: relative;
   z-index: 1;
-  max-width: 1240px;
+  max-width: var(--site-width);
 }
 
 .site-brand,
@@ -1093,7 +1116,7 @@ h3 {
 }
 
 .page {
-  max-width: 1240px;
+  max-width: var(--site-width);
   gap: 56px;
 }
 
