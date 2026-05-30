@@ -15,11 +15,11 @@
       "Reuters",
       "Sky News"
     ],
-    "metadata_only_count": 280,
+    "metadata_only_count": 279,
     "sources_cached": 0,
     "sources_failed": 1,
     "sources_live": 299,
-    "story_count_change": 4,
+    "story_count_change": 5,
     "wrapper_only_count": 8
   },
   "freshness_summary": {
@@ -29,7 +29,7 @@
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-05-29T19:52:36",
+  "generated_at": "2026-05-30T00:03:09",
   "source_failures": [
     {
       "error": "HTTPSConnectionPool(host='www.aphis.usda.gov', port=443): Read timed out. (read timeout=8)",
