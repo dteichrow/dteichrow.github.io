@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rift Valley fever | The Pathogen Dispatch</title>
+    <title>Archive | The Pathogen Dispatch</title>
     <style>
       :root { --bg: #e8e1d3; --bg-deep: #d8cebc; --surface: #f8f4ea; --surface-alt: #f2ebde; --paper: #fffdf8; --ink: #1b2836; --ink-soft: #42515e; --line: #d6cab7; --accent: #8d3f2f; --accent-soft: rgba(141,63,47,0.10); --signal: #1f5b89; --signal-soft: rgba(31,91,137,0.12); --shadow: 0 24px 56px rgba(49, 36, 22, 0.10); }
       * { box-sizing: border-box; }
@@ -124,62 +124,22 @@
   </head>
   <body>
     <main class="page">
-      <header class="site-header"><div class="site-header-copy"><div class="kicker">The Pathogen Dispatch</div><p class="site-header-title">Source-first newsroom desks</p></div><nav class="site-nav" aria-label="Site navigation"><a class="site-nav-link" href="/">Edge home</a><a class="site-nav-link" href="../index.html">Home</a><a class="site-nav-link" href="../notebook.html">Notebook</a><a class="site-nav-link" href="../atlas.html">Atlas</a><a class="site-nav-link" href="../outbreaks.html">Outbreak terminal</a><a class="site-nav-link" href="../watch.html">Global watch</a><a class="site-nav-link" href="../africa.html">Africa</a><a class="site-nav-link" href="../asia.html">Asia</a><a class="site-nav-link" href="../research.html">Research</a><a class="site-nav-link" href="../official.html">Official alerts</a><a class="site-nav-link" href="../archive/index.html">Archive</a></nav></header>
+      <header class="site-header"><div class="site-header-copy"><div class="kicker">The Pathogen Dispatch</div><p class="site-header-title">Source-first newsroom desks</p></div><nav class="site-nav" aria-label="Site navigation"><a class="site-nav-link" href="/">Edge home</a><a class="site-nav-link" href="../index.html">Home</a><a class="site-nav-link" href="../notebook.html">Notebook</a><a class="site-nav-link" href="../atlas.html">Atlas</a><a class="site-nav-link" href="../outbreaks.html">Outbreak terminal</a><a class="site-nav-link" href="../watch.html">Global watch</a><a class="site-nav-link" href="../africa.html">Africa</a><a class="site-nav-link" href="../asia.html">Asia</a><a class="site-nav-link" href="../research.html">Research</a><a class="site-nav-link" href="../official.html">Official alerts</a><a class="site-nav-link active" href="../archive/index.html" aria-current="page">Archive</a></nav></header>
       <section class="live-update-banner panel utility-panel" id="live-update-banner" hidden aria-live="polite" role="status" data-live-update-banner="true"><div class="live-update-copy"><div class="section-nav-label">New edition available</div><p class="live-update-text" id="live-update-text">An updated edition is available. Load the latest run when you are ready.</p></div><div class="live-update-actions"><button class="live-update-dismiss" id="live-update-dismiss" type="button" onclick="(function(btn){const banner=btn.closest('[data-live-update-banner]');if(banner){banner.hidden=true;banner.style.display='none';const runId=(banner.dataset&&banner.dataset.pendingRunId)||'';const key=(banner.dataset&&banner.dataset.dismissKey)||('pathogen-dispatch-live-update-dismissed:'+window.location.pathname);try{window.sessionStorage.setItem(key, window.location.pathname+'::'+(runId||'unknown'));}catch(error){}}return false;})(this)">Keep reading</button><button class="live-update-button" id="live-update-refresh" type="button" onclick="(function(btn){const banner=btn.closest('[data-live-update-banner]');if(banner){banner.hidden=true;banner.style.display='none';}const url=new URL(window.location.href);url.searchParams.set('_edition', String(Date.now()));window.location.replace(url.toString());return false;})(this)">Load latest</button></div></section>
-      <section class="hero" id="story-overview">
-        <p class="kicker">Disease intelligence sheet</p>
-        <h1>Rift Valley fever</h1>
-        <p class="subtitle">Curated desk background for reporters who need the pathogen, transmission, and outbreak frame fast.</p>
-        <div class="meta-row"><span class="badge">Zoonotic</span><span class="badge">Vector-borne</span><span class="badge">Livestock-linked</span><span class="badge">Flooding-linked mosquito surges</span><span class="badge">Livestock markets</span><span class="badge">Pastoral and agro-pastoral regions</span></div>
-        
-        <p><strong>Pathogen / agent:</strong> Rift Valley fever virus</p>
-        <p><strong>Transmission:</strong> Mosquito-borne and direct animal exposure</p>
-        <p><strong>Reservoir / vector:</strong> Mosquito vectors and infected livestock are both central.</p>
-        <p><strong>Incubation:</strong> Usually 2 to 6 days.</p>
-        <p><strong>Severity:</strong> Often mild in humans but capable of severe complications and major livestock disruption.</p>
-        <p><strong>Diagnostics:</strong> PCR or serology interpreted with animal and vector context.</p>
-        <p><strong>Treatment:</strong> Supportive care.</p>
-        <p><strong>Prevention:</strong> Mosquito control, livestock vaccination policy, and safer animal-handling practices.</p>
-        <p><strong>Vaccine / prevention status:</strong> Human vaccination is not the routine anchor; livestock policy and vector ecology drive most prevention decisions.</p>
+      <section class="hero">
+        <p class="kicker">Archive + Backfile</p>
+        <h1>Archive</h1>
+        <p class="subtitle">Daily briefing backfile plus quick paths into the active outbreak files and the disease reference directory.</p>
       </section>
-
-      <nav class="section-nav panel utility-panel" aria-label="Section navigation"><div class="section-nav-label">On this page</div><div class="section-nav-links"><a class="section-nav-link" href="#story-overview">Overview</a><a class="section-nav-link" href="#clinical-pattern">Clinical Pattern</a><a class="section-nav-link" href="#current-story-files">Current Story Files</a><a class="section-nav-link" href="#why-reporters-care">Why Reporters Care</a><a class="section-nav-link" href="#desk-notes">Desk Notes</a></div></nav>
-
-      <section class="panel-grid">
-        <section class="panel" id="clinical-pattern">
-          <h2>Symptoms And Clinical Pattern</h2>
-          <ul class="bullet-list"><li>Fever and flu-like illness in many cases.</li><li>Some patients develop ocular, hemorrhagic, or encephalitic complications.</li><li>Animal abortion storms are part of the wider outbreak signal.</li></ul>
-        </section>
-        <section class="panel">
-          <h2>Official Background Links</h2>
-          <div class="meta-row"><a class="link-pill" href="https://www.cdc.gov/rift-valley-fever/about/index.html">CDC overview</a><a class="link-pill" href="https://www.who.int/news-room/fact-sheets/detail/rift-valley-fever">WHO fact sheet</a></div>
-        </section>
+      <nav class="section-nav panel utility-panel" aria-label="Section navigation"><div class="section-nav-label">On this page</div><div class="section-nav-links"><a class="section-nav-link" href="#archive-days">Archive Days</a><a class="section-nav-link" href="#active-files">Active Files</a><a class="section-nav-link" href="#reference-directory">Reference Directory</a></div></nav>
+      <div id="archive-days"><section class="panel"><h2>May 2026</h2><div class="archive-table"><article class="archive-row"><a href="../2026/05/2026-05-30.html"><strong>2026-05-30</strong></a><span class="archive-row-meta">May 2026</span></article></div></section></div>
+      <section class="panel" id="active-files">
+        <h2>Active Files</h2>
+        <div class="story-grid"><article class="site-card feature-card"><div class="kicker">Outbreak file</div><h3><a href="../stories/story_56666e9c6c86e976-ebola-virus-disease.html">Ebola virus disease</a></h3><p>Baseline snapshot created with 233 clustered item(s) across 130 source(s).</p><div class="meta-row"><span class="badge accent">233 item(s)</span><span class="badge">130 source(s)</span><span class="badge">Expanding coverage</span><span class="badge">Africa</span><span class="badge">Democratic Republic of the Congo</span></div></article><article class="site-card feature-card"><div class="kicker">Outbreak file</div><h3><a href="../stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html">Measles transmission and vaccination</a></h3><p>Baseline snapshot created with 28 clustered item(s) across 26 source(s).</p><div class="meta-row"><span class="badge accent">28 item(s)</span><span class="badge">26 source(s)</span><span class="badge">Expanding coverage</span><span class="badge">North America</span><span class="badge">United States</span></div></article><article class="site-card feature-card"><div class="kicker">Outbreak file</div><h3><a href="../stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html">Hantavirus and cruise-ship outbreak</a></h3><p>Baseline snapshot created with 22 clustered item(s) across 17 source(s).</p><div class="meta-row"><span class="badge accent">22 item(s)</span><span class="badge">17 source(s)</span><span class="badge">Expanding coverage</span><span class="badge">Global / Maritime</span><span class="badge">United Kingdom</span></div></article><article class="site-card feature-card"><div class="kicker">Outbreak file</div><h3><a href="../stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html">Dengue and arboviruses</a></h3><p>Baseline snapshot created with 3 clustered item(s) across 3 source(s).</p><div class="meta-row"><span class="badge accent">3 item(s)</span><span class="badge">3 source(s)</span><span class="badge">Expanding coverage</span><span class="badge">Southeast Asia</span><span class="badge">Brazil</span></div></article><article class="site-card feature-card"><div class="kicker">Outbreak file</div><h3><a href="../stories/story_17a354bcafcca4ce-occupational-and-environmental-epidemiology.html">Occupational and environmental epidemiology</a></h3><p>Baseline snapshot created with 2 clustered item(s) across 2 source(s).</p><div class="meta-row"><span class="badge accent">2 item(s)</span><span class="badge">2 source(s)</span><span class="badge">Official follow-up only</span><span class="badge">North America</span><span class="badge">United States</span></div></article></div>
       </section>
-
-      <section class="panel" id="current-story-files">
-        <h2>Current Story Files</h2>
-        <div class="card-grid"><p class="empty-note">No active tracked stories are linked to this disease in the current run.</p></div>
-      </section>
-
-      <section class="panel" id="why-reporters-care">
-        <h2>Why Reporters Care</h2>
-        <p><strong>Why this keeps becoming news:</strong> Rift Valley fever is one of the best One Health reporting files because rainfall, livestock, mosquitoes, and human disease all move together.</p>
-        <p><strong>What journalists often get wrong:</strong> It is often framed as just another mosquito story, when livestock abortion storms and animal-trade movement are usually central to the real outbreak picture.</p>
-        <ul class="bullet-list"><li>Human cases and deaths.</li><li>Animal illness, abortion storms, and livestock movement.</li><li>Flooding, mosquito surges, and cross-border spread.</li></ul>
-      </section>
-
-      <section class="panel">
-        <h2>Last Major Outbreak On File</h2>
-        <p><strong>West African cross-border outbreak</strong> | Mauritania and Senegal | September-October 2025</p>
-        <p>WHO reported 404 confirmed human Rift Valley fever cases and 42 deaths across Mauritania and Senegal, with continued concern about mosquito ecology and livestock movement.</p>
-        <p><strong>Source:</strong> <a href="https://www.who.int/emergencies/disease-outbreak-news/item/2025-DON584">WHO Disease Outbreak News</a> (2025-11-05)</p>
-      </section>
-
-      <section class="panel" id="desk-notes">
-        <h2>Desk Notes And Historical Signals</h2>
-        <p><strong>Desk note:</strong> This is classic One Health territory: weather, vectors, herds and human illness all move together.</p>
-        <p><strong>Research caveats:</strong> Human and animal surveillance rarely line up perfectly, so early burden estimates can understate the scale.</p>
-        <ul class="bullet-list"><li>Cross-border livestock movement is one of the recurring reasons RVF repeatedly defeats narrow national framing.</li></ul>
+      <section class="panel" id="reference-directory">
+        <h2>Reference Directory</h2>
+        <div class="card-grid"><article class="site-card"><div class="kicker">Reference</div><h3><a href="../reference/ebola-virus-disease.html">Ebola virus disease</a></h3><p><strong>Pathogen:</strong> Ebola viruses, including Bundibugyo virus in the current DRC/Uganda outbreak</p><p>Ebola remains a defining outbreak-desk disease because healthcare transmission, funeral practices, laboratory capacity, community trust, and international alarm can all move faster than the confirmed count.</p></article><article class="site-card"><div class="kicker">Reference</div><h3><a href="../reference/hantavirus-syndrome.html">Hantavirus syndrome</a></h3><p><strong>Pathogen:</strong> Hantaviruses, including Andes virus in the Americas</p><p>This is a rare but frightening severe-disease story where a single unusual cluster can force questions about travel safety, rodent exposure, and whether Andes-virus-style person-to-person spread is in play.</p><div class="meta-row"><a class="link-pill" href="../atlas.html?pathogen=hantavirus">View in Atlas</a></div></article><article class="site-card"><div class="kicker">Reference</div><h3><a href="../reference/measles.html">Measles</a></h3><p><strong>Pathogen:</strong> Measles virus</p><p>Measles is a clean reporter desk disease because it reveals vaccination gaps, school and household spread, travel-linked importation, and public-health capacity all at once.</p><div class="meta-row"><a class="link-pill" href="../atlas.html?pathogen=measles">View in Atlas</a></div></article><article class="site-card"><div class="kicker">Reference</div><h3><a href="../reference/anthrax.html">Anthrax</a></h3><p><strong>Pathogen:</strong> Bacillus anthracis</p><p>Anthrax is a strong local accountability story because livestock practices, slaughter exposure, and rural reporting gaps can hide serious outbreaks in plain sight.</p></article><article class="site-card"><div class="kicker">Reference</div><h3><a href="../reference/avian-influenza-a-h5n1.html">Avian influenza A(H5N1)</a></h3><p><strong>Pathogen:</strong> Influenza A(H5N1)</p><p>H5N1 is one of the few diseases where occupational exposure, food systems, animal surveillance, and pandemic-risk communications all converge in the same file.</p><div class="meta-row"><a class="link-pill" href="../atlas.html?pathogen=avian-influenza-h5n1">View in Atlas</a></div></article><article class="site-card"><div class="kicker">Reference</div><h3><a href="../reference/chikungunya.html">Chikungunya</a></h3><p><strong>Pathogen:</strong> Chikungunya virus</p><p>Chikungunya is a high-quality reporter disease because explosive outbreaks can be large, visually obvious, and politically disruptive even when mortality stays low.</p></article></div>
       </section>
     </main>
     <script>
