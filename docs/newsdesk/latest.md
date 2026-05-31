@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-05-31
-Generated at: 2026-05-31T09:22
+Generated at: 2026-05-31T09:32
 Search window: 7 day(s) ending 2026-05-31
 
 ## Executive scan
@@ -12,7 +12,7 @@ Search window: 7 day(s) ending 2026-05-31
 - [FDA outbreak investigation 1369: E. coli O157:H7 linked to Raw Cheddar Cheese](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-e-coli-o157h7-raw-cheddar-cheese-march-2026) (FDA Foodborne Outbreaks; 2026-05-28T00:00; Outbreaks and emerging infections; relevance 5/5)
 - [FDA outbreak investigation 1365: Salmonella Newport & Kentucky linked to Moringa Powder](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-extensively-drug-resistant-salmonella-moringa-powder-february-2026) (FDA Foodborne Outbreaks; 2026-05-28T00:00; Outbreaks and emerging infections; relevance 5/5)
 - [ECDC increases activities as Ebola outbreak in DRC and Uganda intensifies](https://www.ecdc.europa.eu/en/news-events/ecdc-increases-activities-ebola-outbreak-drc-and-uganda-intensifies) (ECDC News; 2026-05-27T10:00+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (271), Policy, surveillance, and public health infrastructure (19), Major epidemiology studies (4)
+- Category mix: Outbreaks and emerging infections (260), Policy, surveillance, and public health infrastructure (19), Major epidemiology studies (4)
 - Source health: 1 source(s) failed during collection: USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
@@ -26,8 +26,8 @@ Search window: 7 day(s) ending 2026-05-31
 
 ### Ebola virus disease
 - Lead item: [ECDC increases activities as Ebola outbreak in DRC and Uganda intensifies](https://www.ecdc.europa.eu/en/news-events/ecdc-increases-activities-ebola-outbreak-drc-and-uganda-intensifies) (ECDC News)
-- Newly tracked story cluster: 241 item(s) across 137 source(s).
-- Baseline snapshot created with 241 clustered item(s) across 137 source(s).
+- Newly tracked story cluster: 231 item(s) across 129 source(s).
+- Baseline snapshot created with 231 clustered item(s) across 129 source(s).
 - WHO Regional Office for Africa now includes deaths or fatal cases in the story frame.
 - ECDC News currently frames broader public risk as low.
 
@@ -46,10 +46,10 @@ Search window: 7 day(s) ending 2026-05-31
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 241 item(s) across 137 source(s); 3 official/primary-source item(s).
+- Topic size: 231 item(s) across 129 source(s); 3 official/primary-source item(s).
 - Lead item: [ECDC increases activities as Ebola outbreak in DRC and Uganda intensifies](https://www.ecdc.europa.eu/en/news-events/ecdc-increases-activities-ebola-outbreak-drc-and-uganda-intensifies) (ECDC News, 2026-05-27T10:00+02:00)
 - Detailed note: Publications orlunwop@who.int Wed, 20/05/2026 - 07:12 Event description On 5 May 2026, the World Health Organization (WHO) received an alert regarding an unknown illness with high mortality in Mongbwalu Health Zone (HZ), Ituri Province, Democratic Republic of the Congo (DRC), including reports of four health workers who died within four days. Uganda subsequently confirmed two imported cases on 15 and 16 May 2026....
-- Evidence notes: [ECDC increases activities as Ebola outbreak in DRC and Uganda intensifies](https://www.ecdc.europa.eu/en/news-events/ecdc-increases-activities-ebola-outbreak-drc-and-uganda-intensifies) (ECDC News); [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 01, Data as of 18 May 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa); [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) (Texas Department of State Health Services News); [Suspected Ebola case in Cagliari, patient taken to hospital](https://www.euronews.com/health/2026/05/31/suspected-ebola-case-in-cagliari-patient-in-hospital) (Euronews); [Over 40 dead in Ebola outbreak in DR Congo and Uganda](https://www.nbcnews.com/world/africa/40-dead-ebola-outbreak-dr-congo-uganda-rcna347745) (NBC News)
+- Evidence notes: [ECDC increases activities as Ebola outbreak in DRC and Uganda intensifies](https://www.ecdc.europa.eu/en/news-events/ecdc-increases-activities-ebola-outbreak-drc-and-uganda-intensifies) (ECDC News); [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 01, Data as of 18 May 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa); [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) (Texas Department of State Health Services News); [Suspected Ebola case in Cagliari: patient in hospital](https://sg.news.yahoo.com/suspected-ebola-case-cagliari-patient-160628127.html) (Yahoo News Singapore); [Over 40 dead in Ebola outbreak in DR Congo and Uganda](https://www.nbcnews.com/world/africa/40-dead-ebola-outbreak-dr-congo-uganda-rcna347745) (NBC News)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
@@ -85,13 +85,13 @@ Search window: 7 day(s) ending 2026-05-31
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
 - Caveats / uncertainty: These notes are limited to source text collected in this run.
 
-### Dengue and arboviruses
-- Topic size: 2 item(s) across 2 source(s); 0 official/primary-source item(s).
-- Lead item: [53 dengue cases reported in Singapore last week, highest weekly total so far in 2026](https://www.straitstimes.com/singapore/53-dengue-cases-reported-in-singapore-last-week-highest-weekly-total-so-far-in-2026) (The Straits Times, 2026-05-27T02:10+00:00)
-- Detailed note: From Jan 4 to Jan 10, there were 53 reported cases, and 52 reported cases from May 3 to May 9. This is the third time in 2026 that weekly reported cases exceeded 50.
-- Evidence notes: [53 dengue cases reported in Singapore last week, highest weekly total so far in 2026](https://www.straitstimes.com/singapore/53-dengue-cases-reported-in-singapore-last-week-highest-weekly-total-so-far-in-2026) (The Straits Times); [Europe could become a chikungunya virus hotspot as heat expands mosquito habitats](https://sg.news.yahoo.com/europe-could-become-chikungunya-virus-145107553.html) (Yahoo News Singapore)
+### Diphtheria
+- Topic size: 1 item(s) across 1 source(s); 0 official/primary-source item(s).
+- Lead item: [Australia confirms first diphtheria death amid worst outbreak in decades](https://www.bbc.com/news/articles/c759q6y26w3o) (BBC, 2026-05-26T07:09+00:00)
+- Detailed note: Cluster remains active across 1 related item(s), but usable factual summary text was limited after cleanup.
+- Evidence notes: [Australia confirms first diphtheria death amid worst outbreak in decades](https://www.bbc.com/news/articles/c759q6y26w3o) (BBC)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
-- Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting.
+- Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Source diversity is limited so corroboration is thin.
 
 
 ## Last major outbreaks on file
@@ -430,8 +430,8 @@ Search window: 7 day(s) ending 2026-05-31
   Limited detail was available from feed metadata alone.
 - [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) | Texas Department of State Health Services News | Unknown | Policy, surveillance, and public health infrastructure
   Limited detail was available from feed metadata alone.
-- [Suspected Ebola case in Cagliari, patient taken to hospital](https://www.euronews.com/health/2026/05/31/suspected-ebola-case-in-cagliari-patient-in-hospital) | Euronews | 2026-05-31T16:06+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
+- [Suspected Ebola case in Cagliari: patient in hospital](https://sg.news.yahoo.com/suspected-ebola-case-cagliari-patient-160628127.html) | Yahoo News Singapore | 2026-05-31T16:06+00:00 | Outbreaks and emerging infections
+  A person was taken to Santissima Trinità Hospital, to the infectious diseases unit, after being picked up from home because they were showing symptoms consistent with the virus. Limited detail was available from feed metadata alone.
 - [Over 40 dead in Ebola outbreak in DR Congo and Uganda](https://www.nbcnews.com/world/africa/40-dead-ebola-outbreak-dr-congo-uganda-rcna347745) | NBC News | 2026-05-31T15:53+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [WHO calls for community cooperation to contain DRC Ebola outbreak](https://www.theguardian.com/world/2026/may/31/who-calls-for-community-cooperation-to-contain-drc-ebola-outbreak) | The Guardian | 2026-05-31T15:49+00:00 | Outbreaks and emerging infections
@@ -458,11 +458,11 @@ Search window: 7 day(s) ending 2026-05-31
   Limited detail was available from feed metadata alone.
 - [WHO chief has 'real confidence' in Congo's ability to battle latest Ebola outbreak](https://www.cbc.ca/news/world/who-chief-ebola-outbreak-eastern-congo-tedros-adhanom-ghebreyesus-9.7218009) | CBC | 2026-05-30T17:58+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
+- [Ebola outbreak confirmed in DR Congo, Uganda](https://www.dw.com/en/ebola-outbreak-confirmed-in-dr-congo-uganda-african-health-agency/a-77166606) | dw.com | 2026-05-30T16:53+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - [Congo Ebola outbreak highlights risk of hunting, eating wild animals](https://www.theglobeandmail.com/world/article-congo-ebola-outbreak-highlights-risk-of-hunting-eating-wild-animals/) | The Globe and Mail | 2026-05-30T16:34+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [The New York Times. . At the epicenter of the Ebola outbreak in the Democratic Republic of Congo, the front line is completely overwhelmed. Our chief Africa correspondent, Declan Walsh, describes what he saw in the Ebola ward at Mongbwalu General Hospi](https://www.facebook.com/nytimes/videos/what-i-saw-inside-an-ebola-ward/1659881291838756/) | facebook.com | 2026-05-30T15:20+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [WHO chief visits Ebola epicentre in DR Congo, as death toll rises](https://www.france24.com/en/who-chief-visits-ebola-epicentre-in-dr-congo-as-death-toll-rises) | France 24 | 2026-05-30T12:25+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
