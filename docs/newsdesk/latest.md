@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-06-02
-Generated at: 2026-06-02T15:50
+Generated at: 2026-06-02T16:00
 Search window: 7 day(s) ending 2026-06-02
 
 ## Executive scan
@@ -9,17 +9,17 @@ Search window: 7 day(s) ending 2026-06-02
 - [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News; 2026-06-01T17:36+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
 - [WHO Sierra Leone 1st Quarter 2026 Newsletter](https://www.afro.who.int/countries/sierra-leone/publication/who-sierra-leone-1st-quarter-2026-newsletter) (WHO Regional Office for Africa; 2026-06-01T09:28+00:00; Outbreaks and emerging infections; relevance 5/5)
 - [Four health workers recover from Ebola in the Democratic Republic of the Congo](https://www.afro.who.int/countries/democratic-republic-of-congo/news/four-health-workers-recover-ebola-democratic-republic-congo) (WHO Regional Office for Africa; 2026-05-31T19:07+00:00; Outbreaks and emerging infections; relevance 5/5)
+- [Post-marketing safety surveillance of Haemophilus influenzae Type b conjugate vaccine in children aged 3 months to 5 years in Jiangsu, China.](https://pubmed.ncbi.nlm.nih.gov/42216576/) (PubMed Infectious Disease Search; 2026-05-30T00:00; Major epidemiology studies; relevance 5/5)
 - [Amanita Species Mushroom Poisonings](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765642) (CDC MMWR; 2026-05-28T17:00+00:00; Occupational and environmental epidemiology; relevance 5/5)
 - [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 02, Data as of 24 May 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/ebola-bundibugyo-virus-disease-outbreak-0) (WHO Regional Office for Africa; 2026-05-27T08:52+00:00; Outbreaks and emerging infections; relevance 5/5)
-- [ECDC increases activities as Ebola outbreak in DRC and Uganda intensifies](https://www.ecdc.europa.eu/en/news-events/ecdc-increases-activities-ebola-outbreak-drc-and-uganda-intensifies) (ECDC News; 2026-05-27T10:00+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (216), Policy, surveillance, and public health infrastructure (25), Major epidemiology studies (3)
+- Category mix: Outbreaks and emerging infections (208), Policy, surveillance, and public health infrastructure (33), Major epidemiology studies (3)
 - Source health: 1 source(s) failed during collection: USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
 ### Ebola virus disease
 - Lead item: [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News)
-- Newly tracked story cluster: 231 item(s) across 120 source(s).
-- Baseline snapshot created with 231 clustered item(s) across 120 source(s).
+- Newly tracked story cluster: 231 item(s) across 127 source(s).
+- Baseline snapshot created with 231 clustered item(s) across 127 source(s).
 - WHO Regional Office for Africa now explicitly uses investigation or monitoring language.
 - WHO Regional Office for Africa now includes deaths or fatal cases in the story frame.
 - ECDC News currently frames broader public risk as low.
@@ -46,7 +46,7 @@ Search window: 7 day(s) ending 2026-06-02
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 231 item(s) across 120 source(s); 5 official/primary-source item(s).
+- Topic size: 231 item(s) across 127 source(s); 5 official/primary-source item(s).
 - Lead item: [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News, 2026-06-01T17:36+02:00)
 - Detailed note: Eugene Kabambi Communications Officer WHO DRC Tel : +243 81 715 1697 Office : +47 241 39 027 Email: kabambie [at] who.int (kabambie[at]who[dot]int) Collins Boakye-Agyemang Communications and marketing officer Tel: + 242 06 520 65 65 (WhatsApp) Email: boakyeagyemangc [at] who.int (boakyeagyemangc[at]who[dot]int) Related Links Bundibugyo virus disease outbreak - Democratic Republic of the Congo carousel-bg As of 31...
 - Evidence notes: [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News); [Four health workers recover from Ebola in the Democratic Republic of the Congo](https://www.afro.who.int/countries/democratic-republic-of-congo/news/four-health-workers-recover-ebola-democratic-republic-congo) (WHO Regional Office for Africa); [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 02, Data as of 24 May 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/ebola-bundibugyo-virus-disease-outbreak-0) (WHO Regional Office for Africa); [ECDC increases activities as Ebola outbreak in DRC and Uganda intensifies](https://www.ecdc.europa.eu/en/news-events/ecdc-increases-activities-ebola-outbreak-drc-and-uganda-intensifies) (ECDC News); [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) (Texas Department of State Health Services News)
@@ -372,6 +372,16 @@ Search window: 7 day(s) ending 2026-06-02
 - Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
 - Relevance score: 5/5
 
+### Post-marketing safety surveillance of Haemophilus influenzae Type b conjugate vaccine in children aged 3 months to 5 years in Jiangsu, China.
+- Source: PubMed Infectious Disease Search
+- Date: 2026-05-30T00:00
+- URL: https://pubmed.ncbi.nlm.nih.gov/42216576/
+- Category: Major epidemiology studies
+- Summary: Active surveillance revealed an overall adverse event incidence of 6.7% (181/2,714), with 6.3% (170/2,714) classified as adverse reactions, predominantly mild to moderate in severity (Grade 1-2: 6.0%; Grade 3: 0.3%). Passive surveillance identified a substantially lower adverse reaction incidence of 0.33% (21/6,347), with pyrexia (0.25%) being the most frequent. This post-marketing surveillance study confirms that the Hib conjugate vaccine demonstrates a favorable safety profile in children aged 3 months to 5 y, with no safety-associated risks identified.
+- Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.
+- Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
+- Relevance score: 5/5
+
 ### Amanita Species Mushroom Poisonings
 - Source: CDC MMWR
 - Date: 2026-05-28T17:00+00:00
@@ -412,18 +422,10 @@ Search window: 7 day(s) ending 2026-06-02
 - Caveats / uncertainty: Usable source detail was limited after cleanup. Publication timestamp was not reliably available.
 - Relevance score: 5/5
 
-### Funeral rites upended by Ebola outbreak
-- Source: CNN
-- Date: 2026-06-02T21:38+00:00
-- URL: https://edition.cnn.com/2026/06/02/world/video/ebola-outbreak-drc-clarissa-ward-digvid-vrtc
-- Category: Outbreaks and emerging infections
-- Summary: Limited detail was available from feed metadata alone.
-- Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response.
-- Caveats / uncertainty: Usable source detail was limited after cleanup.
-- Relevance score: 5/5
-
 
 ## Other notable readings
+- [Funeral rites upended by Ebola outbreak](https://edition.cnn.com/2026/06/02/world/video/ebola-outbreak-drc-clarissa-ward-digvid-vrtc) | CNN | 2026-06-02T21:38+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - [Philippines: Measles vaccination campaign targets over 1.2 million children in Metro Manila](https://outbreaknewstoday.substack.com/p/philippines-measles-vaccination-campaign) | Outbreak News Today | 2026-06-02T21:28+00:00 | Outbreaks and emerging infections
   According to the Department of Health–Metro Manila Center for Health Development (DOH-MMCHD), the Ligtas Tigdas campaign aims to immunize 1,200,428 children aged 6 to 59 months across Metro Manila through a supplemental immunization activity. It can cause severe complications such as pneumonia, brain inflammation, blindness and even death, especially in unvaccinated children”. The immunization drive is a critical step toward rebuilding herd immunity against vaccine-preventable diseases amid the lingering threat of measles outbreaks in several parts of the country.
 - [U.S. plan to open Ebola quarantine center in Kenya faces growing backlash and protests](https://www.nbcnews.com/world/africa/us-ebola-quarantine-plan-protests-kenya-rcna348014) | NBC News | 2026-06-02T21:27+00:00 | Outbreaks and emerging infections
@@ -438,11 +440,15 @@ Search window: 7 day(s) ending 2026-06-02
   Limited detail was available from feed metadata alone.
 - [HHS official defends US Ebola response, quarantine plan in Kenya](https://www.nbc26.com/health/hhs-official-defends-us-ebola-response-quarantine-plan-in-kenya) | NBC26 | 2026-06-02T20:13+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
+- [Watch: Dr. Oz takes questions on Ebola outbreak, Trump's health at White House press briefing](https://www.cbsnews.com/video/watch-dr-oz-takes-questions-on-ebola-outbreak-trumps-health-at-white-house-press-briefing/) | CBS News | 2026-06-02T17:27+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - [Aid Group: Ebola outbreak likely far larger than first thought](https://www.cnn.com/2026/06/02/health/video/cnn-sitroom-blitzer-brown-ebola-outbreak-aid-group-warning) | CNN | 2026-06-02T17:12+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Africa races for Ebola vaccine as outbreak outpaces response](https://www.scidev.net/global/news/africa-races-for-ebola-vaccine-as-outbreak-outpaces-response/) | SciDev.Net | 2026-06-02T16:32+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Uganda health ministry confirms six new cases of Ebola](https://www.reuters.com/business/healthcare-pharmaceuticals/uganda-health-ministry-confirms-six-new-cases-ebola-2026-06-02/) | Reuters | 2026-06-02T15:13+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Inside the Ebola Outbreak](https://www.nytimes.com/2026/06/02/briefing/inside-the-ebola-outbreak.html) | The New York Times | 2026-06-02T14:59+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [‘We don’t have another country to run to’: Kenyans fear US plan for Ebola quarantine site](https://www.theguardian.com/world/2026/jun/02/kenyans-fear-us-plan-for-ebola-quarantine-site) | The Guardian | 2026-06-02T14:49+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
@@ -452,20 +458,20 @@ Search window: 7 day(s) ending 2026-06-02
   She said the two sides discussed reopening the Strait of Hormuz, which remains blocked amid the US-Iran war, the conflict in Ukraine and the Ebola outbreak in the Democratic Republic of Congo and Uganda, where the disease has killed at least 18 people in recent weeks. According to a Chinese Foreign Ministry readout, Wang said the current international situation is "complex and turbulent," with the world experiencing its most profound changes since the end of the Cold War. Chinese and British foreign ministers met Tuesday in Beijing to discuss the situation in the Strait of Hormuz, the war in Ukraine, the Ebola outbreak in Africa and bilateral ties.
 - [WHO scales back number of suspected Ebola cases in Congo, but front-line medics say major challenges remain](https://www.cbsnews.com/news/ebola-outbreak-congo-uganda-who-suspected-cases/) | CBS News | 2026-06-02T13:09+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Canada Pauses Visas From Three African Nations Over Ebola Outbreak](https://punchng.com/canada-pauses-visas-from-three-african-nations-over-ebola-outbreak/) | Punch Newspapers | 2026-06-02T13:02+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
 - [Uganda confirms 6 new Ebola cases, total rises to 15](https://thepeninsulaqatar.com/article/02/06/2026/uganda-confirms-6-new-ebola-cases-total-rises-to-15) | The Peninsula Qatar | 2026-06-02T12:48+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Video: Battling a Deadly Ebola Outbreak in Eastern Congo](https://www.nytimes.com/video/world/africa/100000010936755/ebola-virus-outbreak-congo-treatment.html) | The New York Times | 2026-06-02T12:48+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Senior Presidential Envoy backs emergency preparedness in South Sudan amid Ebola outbreaks in Uganda and DRC - WHO | Regional Office for Africa](https://www.afro.who.int/countries/south-sudan/news/senior-presidential-envoy-backs-emergency-preparedness-south-sudan-amid-ebola-outbreaks-uganda-and) | WHO | 2026-06-02T12:00+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Race for Ebola vaccine intensifies as outbreak spreads in Congo](https://www.newsnationnow.com/health/ebola-outbreak-bundibugyo-congo/) | NewsNation | 2026-06-02T11:43+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Ebola outbreak may have been spreading since early January](https://www.cbsnews.com/video/ebola-outbreak-may-have-been-spreading-since-early-january/) | CBS News | 2026-06-02T11:13+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
+- [Post-marketing safety surveillance of Haemophilus influenzae Type b conjugate vaccine in children aged 3 months to 5 years in Jiangsu, China.](https://pubmed.ncbi.nlm.nih.gov/42216576/)
+  Source: PubMed Infectious Disease Search
+  DOI: 10.1080/21645515.2026.2677876
+  Journal/preprint server: Human vaccines & immunotherapeutics
+  Abstract link: https://pubmed.ncbi.nlm.nih.gov/42216576/
+  Source URL: https://pubmed.ncbi.nlm.nih.gov/42216576/
 - [Maternal and newborn health services in Papua New Guinea: Health system stakeholder priorities for health system strengthening.](https://pubmed.ncbi.nlm.nih.gov/42224048/)
   Source: PubMed Infectious Disease Search
   DOI: 10.1080/17441692.2026.2682017
@@ -478,12 +484,6 @@ Search window: 7 day(s) ending 2026-06-02
   Journal/preprint server: Human vaccines & immunotherapeutics
   Abstract link: https://pubmed.ncbi.nlm.nih.gov/42223189/
   Source URL: https://pubmed.ncbi.nlm.nih.gov/42223189/
-- [Delineating the "who-where-how" of persistent HIV epidemics: a 23-year longitudinal genetic network, phylodynamic, and spatial analysis for precise intervention in rural China.](https://pubmed.ncbi.nlm.nih.gov/42126236/)
-  Source: PubMed Infectious Disease Search
-  DOI: 10.1080/22221751.2026.2671470
-  Journal/preprint server: Emerging microbes & infections
-  Abstract link: https://pubmed.ncbi.nlm.nih.gov/42126236/
-  Source URL: https://pubmed.ncbi.nlm.nih.gov/42126236/
 
 ## Historical epi / weird epi corner
 - [WHO Chief: Unsafe Burials Contributing to Spread of Ebola in Congo](https://news.google.com/rss/articles/CBMikgFBVV95cUxOZHJsNy02YzFmOWlHSFRHdUlaRHRnYlJ6VGRGRm9Ublh2OENOLV93b3lYUjBoLUtUVmdmcmdIV1lGMUkzWFQ2TEdMVkxyTlRDU3hXUFdWb09UTDZfRXpGTnA5cWlvODhORDJCdkNuRTFmVzhPbnNhRTFNb3h6akVORVI5QlJiMlFoWjZsQUpBendpQQ?oc=5) | Hasht-e Subh Daily
