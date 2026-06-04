@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /app_exports/
-Disallow: /search/
-Sitemap: https://devinteichrow.com/sitemap.xml
