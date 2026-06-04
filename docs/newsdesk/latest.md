@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-06-04
-Generated at: 2026-06-04T16:31
+Generated at: 2026-06-04T17:18
 Search window: 7 day(s) ending 2026-06-04
 
 ## Executive scan
@@ -12,22 +12,22 @@ Search window: 7 day(s) ending 2026-06-04
 - [UHPR CCS Sierra Leone](https://www.afro.who.int/publications/uhpr-ccs-sierra-leone) (WHO Regional Office for Africa; 2026-06-03T12:27+00:00; Outbreaks and emerging infections; relevance 5/5)
 - [Targeted pneumococcal conjugate vaccination strategies for high-risk children.](https://pubmed.ncbi.nlm.nih.gov/42234765/) (PubMed Infectious Disease Search; 2026-06-03T00:00; Major epidemiology studies; relevance 5/5)
 - [Brucellosis Surveillance](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765690) (CDC MMWR; 2026-06-02T17:13+00:00; Occupational and environmental epidemiology; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (257), Policy, surveillance, and public health infrastructure (21), Major epidemiology studies (6)
+- Category mix: Outbreaks and emerging infections (238), Policy, surveillance, and public health infrastructure (23), Major epidemiology studies (6)
 - Source health: 1 source(s) failed during collection: USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
 ### Ebola virus disease
 - Lead item: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 03, Data as of 31 May 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa)
-- Newly tracked story cluster: 237 item(s) across 137 source(s).
-- Baseline snapshot created with 237 clustered item(s) across 137 source(s).
+- Newly tracked story cluster: 223 item(s) across 129 source(s).
+- Baseline snapshot created with 223 clustered item(s) across 129 source(s).
 - WHO Regional Office for Africa now explicitly uses investigation or monitoring language.
 - The Australian now reports conflict over body retrieval or burial practices.
 - WHO Regional Office for Africa now includes deaths or fatal cases in the story frame.
 
 ### Measles transmission and vaccination
 - Lead item: [Measles Outbreak in a Child Care Facility](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765694) (CDC MMWR)
-- Newly tracked story cluster: 39 item(s) across 35 source(s).
-- Baseline snapshot created with 39 clustered item(s) across 35 source(s).
+- Newly tracked story cluster: 36 item(s) across 33 source(s).
+- Baseline snapshot created with 36 clustered item(s) across 33 source(s).
 - Seoul Economic Daily now includes deaths or fatal cases in the story frame.
 - CDC MMWR now foregrounds vaccination or vaccine policy in the story.
 
@@ -46,7 +46,7 @@ Search window: 7 day(s) ending 2026-06-04
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 237 item(s) across 137 source(s); 4 official/primary-source item(s).
+- Topic size: 223 item(s) across 129 source(s); 4 official/primary-source item(s).
 - Lead item: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 03, Data as of 31 May 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa, 2026-06-04T18:25+00:00)
 - Detailed note: Eugene Kabambi Communications Officer WHO DRC Tel : +243 81 715 1697 Office : +47 241 39 027 Email: kabambie [at] who.int (kabambie[at]who[dot]int) Collins Boakye-Agyemang Communications and marketing officer Tel: + 242 06 520 65 65 (WhatsApp) Email: boakyeagyemangc [at] who.int (boakyeagyemangc[at]who[dot]int) Related Links Bundibugyo virus disease outbreak - Democratic Republic of the Congo carousel-bg As of 31...
 - Evidence notes: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 03, Data as of 31 May 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa); [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News); [Four health workers recover from Ebola in the Democratic Republic of the Congo](https://www.afro.who.int/countries/democratic-republic-of-congo/news/four-health-workers-recover-ebola-democratic-republic-congo) (WHO Regional Office for Africa); [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) (Texas Department of State Health Services News); [Aid organization says trust is key in combatting Ebola outbreak as cases grow - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/Health/aid-organization-trust-key-combatting-ebola-outbreak-cases/story?id\=133587949) (ABC News - Breaking News, Latest News and Videos)
@@ -54,7 +54,7 @@ Search window: 7 day(s) ending 2026-06-04
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Measles transmission and vaccination
-- Topic size: 39 item(s) across 35 source(s); 3 official/primary-source item(s).
+- Topic size: 36 item(s) across 33 source(s); 3 official/primary-source item(s).
 - Lead item: [Measles Outbreak in a Child Care Facility](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765694) (CDC MMWR, 2026-06-04T17:00+00:00)
 - Detailed note: Sugerman, MD 5 ; Carolyn Crisp, PhD 6 ,7 ; Gretchen Rodriguez, MPH 7 ; Thi Dang, MPH 7 ; Diana Martinez, PhD 7 ; Saroj Rai, PhD 7 ; Varun Shetty, MD 7 ; Ashley Meehan, MPH 8 ; Susan Hocevar Adkins, MD 8 ; Thomas D. Of these, 90 deaths were confirmed as measles infections through laboratory testing, while the remaining 511 were classified as suspected cases. Of these, around 9,200 are confirmed cases, but due to a...
 - Evidence notes: [Measles Outbreak in a Child Care Facility](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765694) (CDC MMWR); [Targeted pneumococcal conjugate vaccination strategies for high-risk children.](https://pubmed.ncbi.nlm.nih.gov/42234765/) (PubMed Infectious Disease Search); [Measles Outbreaks 2025](https://www.cdc.gov/measles/data-research/) (CDC Current Outbreak List); [Measles Outbreak Kills More Than 600 in Bangladesh](https://en.sedaily.com/culture/2026/06/05/measles-outbreak-kills-more-than-600-in-bangladesh) (Seoul Economic Daily); [Philippines: Measles vaccination campaign targets over 1.2 million children in Metro Manila](https://outbreaknewstoday.substack.com/p/philippines-measles-vaccination-campaign) (Outbreak News Today)
@@ -428,23 +428,29 @@ Search window: 7 day(s) ending 2026-06-04
   Limited detail was available from feed metadata alone.
 - [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) | Texas Department of State Health Services News | Unknown | Policy, surveillance, and public health infrastructure
   Limited detail was available from feed metadata alone.
-- [Aid organization says trust is key in combatting Ebola outbreak as cases grow - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/Health/aid-organization-trust-key-combatting-ebola-outbreak-cases/story?id\=133587949) | ABC News - Breaking News, Latest News and Videos | 2026-06-04T19:35+00:00 | Outbreaks and emerging infections
+- [Aid organization says trust is key in combatting Ebola outbreak as cases grow - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/Health/aid-organization-trust-key-combatting-ebola-outbreak-cases/story?id\=133587949) | ABC News - Breaking News, Latest News and Videos | 2026-06-04T19:41+00:00 | Policy, surveillance, and public health infrastructure
   Limited detail was available from feed metadata alone.
 - [Experts criticise plan for American-only Ebola quarantine centre in Kenya](https://www.theguardian.com/world/2026/jun/04/experts-criticise-plan-for-american-only-ebola-quarantine-centre-in-kenya) | The Guardian | 2026-06-04T19:29+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [What to Know About the Ebola Outbreak](https://www.nytimes.com/2026/05/17/world/africa/what-to-know-ebola-africa.html) | The New York Times | 2026-06-04T19:23+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
 - [Congo reports attack on Ebola burial team as cases rise](https://www.theaustralian.com.au/news/congo-reports-attack-on-ebola-burial-team-as-cases-rise/video/2abbe7684ab6814ede64681bb423d0fb) | The Australian | 2026-06-04T19:19+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Louisville nonprofit responds to Ebola outbreak in Central Africa](https://www.whas11.com/article/news/local/louisville-nonprofit-responds-ebola-outbreak-central-africa-waterstep/417-4f7838c3-8327-4a79-8583-41787bc2c1c4) | WHAS11 | 2026-06-04T19:13+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [WaterStep seeks to combat central Africa Ebola outbreak through new tech](https://www.courier-journal.com/story/News/local/louisville/2026/06/04/kentucky-nonprofit-waterstep-creates-ebola-prevention-technologies/90385287007/) | The Courier-Journal | 2026-06-04T18:26+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Measles Outbreak Kills More Than 600 in Bangladesh](https://en.sedaily.com/culture/2026/06/05/measles-outbreak-kills-more-than-600-in-bangladesh) | Seoul Economic Daily | 2026-06-04T18:11+00:00 | Outbreaks and emerging infections
   Of these, 90 deaths were confirmed as measles infections through laboratory testing, while the remaining 511 were classified as suspected cases. Of these, around 9,200 are confirmed cases, but due to a shortage of diagnostic kits at local health centers, the actual scale of infections and deaths is believed to far exceed the official figures. According to foreign media including Turkey's state-run Anadolu Agency on Tuesday (local time), Bangladesh's health authorities reported that seven more people died in a single day the previous day, bringing the total to 601 deaths since the first outbreak in mid-March.
-- [EU, UNICEF send emergency Ebola supplies to Congo as outbreak spreads](https://www.reuters.com/video/watch/idRW609604062026RP1/) | Reuters | 2026-06-04T17:19+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
 - [Democratic Republic of the Congo, Uganda | Ebola Bundibugyo virus disease outbreak and EU response - DG ECHO Daily Map | 04/06/2026](https://reliefweb.int/map/democratic-republic-congo/democratic-republic-congo-uganda-ebola-bundibugyo-virus-disease-outbreak-and-eu-response-dg-echo-daily-map-04062026) | ReliefWeb | 2026-06-04T16:17+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [What will it take to get a vaccine for the Ebola strain driving the current outbreak?](https://news.google.com/rss/articles/CBMiigFBVV95cUxPd296Q19PYTRSX25qX2ZycDlWLUNWQU1fOVA3c2tDT0pNbjdIN3lsanl1bkFQUE9Oc09sNnlsMld6TE54VkJEVl9Ia01lVnFKWE1ST0tFRjVQa0pCQ0pkVnNkRWk4UEh1RnpzTElnSHdRektOR181N2MwTWRhUU5ESWV2bDg0bTlKU3c?oc=5) | NPR | 2026-06-04T14:12+00:00 | Outbreaks and emerging infections
+- [Sudanese National With Suspected Ebola Symptoms Shifted To Gandhi Hospital](https://www.etvbharat.com/en/bharat/sudanese-national-shows-ebola-symptoms-at-shamshabad-airport-in-hyderabad-shifted-to-gandhi-hospital-enn26060406168) | ETV Bharat | 2026-06-04T15:28+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [What will it take to get a vaccine for the Ebola strain driving the current outbreak?](https://www.npr.org/2026/06/04/g-s1-125822/vaccine-ebola-democratic-republic-congo) | NPR | 2026-06-04T14:12+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Ebola Burial Team Attacked, 11 Patients Flee Isolation In Congo](https://thewhistler.ng/ebola-burial-team-attacked-11-patients-flee-isolation-in-congo/) | The Whistler Newspaper | 2026-06-04T13:48+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [DC United cancels match against Ethiopian team over Ebola outbreak](https://www.nbcwashington.com/news/health/dc-united-cancels-match-against-ethiopian-team-over-ebola-outbreak/4112508/) | NBC4 Washington | 2026-06-04T13:34+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Democratic Republic of Congo Ebola Outbreak Overview: Context, Vulnerabilities, and Response (4 June 2026)](https://reliefweb.int/report/democratic-republic-congo/democratic-republic-congo-ebola-outbreak-overview-context-vulnerabilities-and-response-4-june-2026) | ReliefWeb | 2026-06-04T12:12+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Latest news on U.S. plans for facility in Kenya to navigate Ebola outbreak](https://www.cbsnews.com/video/latest-news-on-us-plans-for-facility-in-kenya-to-navigate-ebola-outbreak/) | CBS News | 2026-06-04T11:46+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
@@ -456,13 +462,7 @@ Search window: 7 day(s) ending 2026-06-04
   Limited detail was available from feed metadata alone.
 - [Uganda Ebola outbreak highlights need for trained medical workers](https://www.mnnonline.org/news/uganda-ebola-outbreak-highlights-need-for-trained-medical-workers/) | Mission Network News | 2026-06-04T04:07+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Ebola burial team attacked and 11 patients flee care in widening outbreak in Congo](https://www.japantimes.co.jp/news/2026/06/04/world/ebola-burial-team-attacked-congo/) | The Japan Times | 2026-06-04T01:33+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Direct Relief Responds to Ebola Outbreak in Central Africa](https://keyt.com/health/2026/06/03/direct-relief-responds-to-ebola-outbreak-in-drc/) | News Channel 3-12 | 2026-06-04T01:01+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [As Ebola Outbreak Widens, Trump Has Yet to Outline a Plan](https://www.nytimes.com/2026/06/03/us/politics/trump-administration-ebola-response.html) | The New York Times | 2026-06-03T23:31+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Health workers struggle to contain Ebola outbreak](https://www.pbs.org/newshour/show/health-workers-struggle-to-contain-ebola-outbreak) | PBS | 2026-06-03T22:25+00:00 | Outbreaks and emerging infections
+- [Health workers struggle to contain Ebola outbreak](https://www.pbs.org/video/ebola-outbreak-1780515613/) | PBS | 2026-06-04T02:37+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
@@ -505,6 +505,8 @@ Search window: 7 day(s) ending 2026-06-04
 
 ## Historical epi / weird epi corner
 - [Congo reports attack on Ebola burial team as cases rise](https://www.theaustralian.com.au/news/congo-reports-attack-on-ebola-burial-team-as-cases-rise/video/2abbe7684ab6814ede64681bb423d0fb) | The Australian
+  Limited detail was available from feed metadata alone.
+- [Ebola Burial Team Attacked, 11 Patients Flee Isolation In Congo](https://thewhistler.ng/ebola-burial-team-attacked-11-patients-flee-isolation-in-congo/) | The Whistler Newspaper
   Limited detail was available from feed metadata alone.
 - [Ebola burial team attacked and 11 patients flee care in widening outbreak in Congo](https://www.japantimes.co.jp/news/2026/06/04/world/ebola-burial-team-attacked-congo/) | The Japan Times
   Limited detail was available from feed metadata alone.
