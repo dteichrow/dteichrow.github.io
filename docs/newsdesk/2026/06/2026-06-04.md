@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-06-04
-Generated at: 2026-06-04T17:51
+Generated at: 2026-06-04T18:08
 Search window: 7 day(s) ending 2026-06-04
 
 ## Executive scan
@@ -12,22 +12,22 @@ Search window: 7 day(s) ending 2026-06-04
 - [UHPR CCS Sierra Leone](https://www.afro.who.int/publications/uhpr-ccs-sierra-leone) (WHO Regional Office for Africa; 2026-06-03T12:27+00:00; Outbreaks and emerging infections; relevance 5/5)
 - [Targeted pneumococcal conjugate vaccination strategies for high-risk children.](https://pubmed.ncbi.nlm.nih.gov/42234765/) (PubMed Infectious Disease Search; 2026-06-03T00:00; Major epidemiology studies; relevance 5/5)
 - [The Iceman's microbiome: unveiling millennia of microbial diversity and continuity.](https://pubmed.ncbi.nlm.nih.gov/42231509/) (PubMed Ancient Pathogen Genomics; 2026-06-03T00:00; Historical epidemiology / ancient disease / paleopathology; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (241), Policy, surveillance, and public health infrastructure (20), Major epidemiology studies (6)
-- Source health: 2 source(s) failed during collection: USDA APHIS Avian Influenza, California Department of Public Health News.
+- Category mix: Outbreaks and emerging infections (266), Policy, surveillance, and public health infrastructure (20), Major epidemiology studies (6)
+- Source health: 1 source(s) failed during collection: USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
 ### Ebola virus disease
 - Lead item: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 03, Data as of 31 May 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa)
-- Newly tracked story cluster: 207 item(s) across 128 source(s).
-- Baseline snapshot created with 207 clustered item(s) across 128 source(s).
+- Newly tracked story cluster: 237 item(s) across 142 source(s).
+- Baseline snapshot created with 237 clustered item(s) across 142 source(s).
 - WHO Regional Office for Africa now explicitly uses investigation or monitoring language.
 - WHO Regional Office for Africa now includes deaths or fatal cases in the story frame.
 - The Guardian now includes quarantine language.
 
 ### Measles transmission and vaccination
 - Lead item: [Measles Outbreak in a Child Care Facility](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765694) (CDC MMWR)
-- Newly tracked story cluster: 51 item(s) across 45 source(s).
-- Baseline snapshot created with 51 clustered item(s) across 45 source(s).
+- Newly tracked story cluster: 47 item(s) across 42 source(s).
+- Baseline snapshot created with 47 clustered item(s) across 42 source(s).
 - bdnews24.com now includes deaths or fatal cases in the story frame.
 - CDC MMWR now foregrounds vaccination or vaccine policy in the story.
 
@@ -52,7 +52,7 @@ Search window: 7 day(s) ending 2026-06-04
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 207 item(s) across 128 source(s); 4 official/primary-source item(s).
+- Topic size: 237 item(s) across 142 source(s); 4 official/primary-source item(s).
 - Lead item: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 03, Data as of 31 May 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa, 2026-06-04T18:25+00:00)
 - Detailed note: Eugene Kabambi Communications Officer WHO DRC Tel : +243 81 715 1697 Office : +47 241 39 027 Email: kabambie [at] who.int (kabambie[at]who[dot]int) Collins Boakye-Agyemang Communications and marketing officer Tel: + 242 06 520 65 65 (WhatsApp) Email: boakyeagyemangc [at] who.int (boakyeagyemangc[at]who[dot]int) Related Links Bundibugyo virus disease outbreak - Democratic Republic of the Congo carousel-bg As of 31...
 - Evidence notes: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 03, Data as of 31 May 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa); [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News); [Four health workers recover from Ebola in the Democratic Republic of the Congo](https://www.afro.who.int/countries/democratic-republic-of-congo/news/four-health-workers-recover-ebola-democratic-republic-congo) (WHO Regional Office for Africa); [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) (Texas Department of State Health Services News); [Ebola spreads to area under Islamic State control as cases mount](https://www.cidrap.umn.edu/new-world-screwworm/ebola-spreads-area-under-islamic-state-control-cases-mount) (CIDRAP)
@@ -60,7 +60,7 @@ Search window: 7 day(s) ending 2026-06-04
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Measles transmission and vaccination
-- Topic size: 51 item(s) across 45 source(s); 3 official/primary-source item(s).
+- Topic size: 47 item(s) across 42 source(s); 3 official/primary-source item(s).
 - Lead item: [Measles Outbreak in a Child Care Facility](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765694) (CDC MMWR, 2026-06-04T17:00+00:00)
 - Detailed note: Sugerman, MD 5 ; Carolyn Crisp, PhD 6 ,7 ; Gretchen Rodriguez, MPH 7 ; Thi Dang, MPH 7 ; Diana Martinez, PhD 7 ; Saroj Rai, PhD 7 ; Varun Shetty, MD 7 ; Ashley Meehan, MPH 8 ; Susan Hocevar Adkins, MD 8 ; Thomas D. • Only 91 are listed as lab-confirmed measles deaths; 514 are recorded as “suspected” measles, a breakdown experts call confusing. According to the Department of Health–Metro Manila Center for Health...
 - Evidence notes: [Measles Outbreak in a Child Care Facility](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765694) (CDC MMWR); [Targeted pneumococcal conjugate vaccination strategies for high-risk children.](https://pubmed.ncbi.nlm.nih.gov/42234765/) (PubMed Infectious Disease Search); [Measles Outbreaks 2025](https://www.cdc.gov/measles/data-research/) (CDC Current Outbreak List); [Bangladesh measles outbreak: Why experts contest the child death count](https://bdnews24.com/bangladesh/aa8c107c88b4) (bdnews24.com); [Philippines: Measles vaccination campaign targets over 1.2 million children in Metro Manila](https://outbreaknewstoday.substack.com/p/philippines-measles-vaccination-campaign) (Outbreak News Today)
@@ -91,13 +91,13 @@ Search window: 7 day(s) ending 2026-06-04
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Source diversity is limited so corroboration is thin.
 
-### Dengue and arboviruses
-- Topic size: 2 item(s) across 2 source(s); 0 official/primary-source item(s).
-- Lead item: [Sri Lanka: Dengue cases and deaths rise](https://outbreaknewstoday.substack.com/p/sri-lanka-dengue-cases-and-deaths) (Outbreak News Today, 2026-06-03T21:47+00:00)
-- Detailed note: In a follow-up on the dengue fever outbreak in Sri Lanka, the National Dengue Control Unit (NDCU) of the Ministry of Health now reports 33,864 total dengue cases. On June 8-10, the NDCU said special dengue control programs will be implemented during this time in high-risk dengue areas.
-- Evidence notes: [Sri Lanka: Dengue cases and deaths rise](https://outbreaknewstoday.substack.com/p/sri-lanka-dengue-cases-and-deaths) (Outbreak News Today); [Dengue, Chikungunya cases surge after rains - Daily Mirror](https://www.dailymirror.lk/breaking-news/Dengue-Chikungunya-cases-surge-after-rains/108-341668) (Daily Mirror - Sri Lanka)
-- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
-- Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting.
+### Historical epidemiology and ancient pathogens
+- Topic size: 2 item(s) across 2 source(s); 2 official/primary-source item(s).
+- Lead item: [The Iceman's microbiome: unveiling millennia of microbial diversity and continuity.](https://pubmed.ncbi.nlm.nih.gov/42231509/) (PubMed Ancient Pathogen Genomics, 2026-06-03T00:00)
+- Detailed note: While internal bacterial communities remained stable, these external yeast populations showed increased relative abundance and reduced DNA damage signatures between 2010 and 2019, indicating active, modern colonization. The Iceman mummy, a 5300-year-old natural alpine glacier mummy, provides a unique opportunity to study ancient microbial ecosystems. The research shows how new identities have been created in the...
+- Evidence notes: [The Iceman's microbiome: unveiling millennia of microbial diversity and continuity.](https://pubmed.ncbi.nlm.nih.gov/42231509/) (PubMed Ancient Pathogen Genomics); [Leprosy and Christian conversion in twentieth-century Inhambane, Mozambique.](https://pubmed.ncbi.nlm.nih.gov/42233808/) (PubMed Historical Pathogen Case Studies)
+- Why this topic matters now: It may shape how new evidence is framed before broader consensus forms. It also has value for historical epidemiology and blog-idea generation.
+- Caveats / uncertainty: These notes are limited to source text collected in this run.
 
 
 ## Last major outbreaks on file
@@ -454,8 +454,6 @@ Search window: 7 day(s) ending 2026-06-04
   Limited detail was available from feed metadata alone.
 - [Democratic Republic of the Congo, Uganda | Ebola Bundibugyo virus disease outbreak and EU response - DG ECHO Daily Map | 04/06/2026](https://reliefweb.int/map/democratic-republic-congo/democratic-republic-congo-uganda-ebola-bundibugyo-virus-disease-outbreak-and-eu-response-dg-echo-daily-map-04062026) | ReliefWeb | 2026-06-04T16:17+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [DR Congo's Ebola cases hit 363, as Uganda reports four recoveries](https://tripuratimes.com/ttimes/dr-congos-ebola-cases-hit-363-as-uganda-reports-four-recoveries-37732.html) | Tripuratimes | 2026-06-04T15:03+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
 - [What will it take to get a vaccine for the Ebola strain driving the current outbreak?](https://www.npr.org/2026/06/04/g-s1-125822/vaccine-ebola-democratic-republic-congo) | NPR | 2026-06-04T14:12+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Priest’s Ebola Death Stirs Fear and Doubt in Congolese Town](https://www.nytimes.com/2026/06/04/world/africa/ebola-congo-funeral-photo.html) | The New York Times | 2026-06-04T13:15+00:00 | Outbreaks and emerging infections
@@ -469,6 +467,8 @@ Search window: 7 day(s) ending 2026-06-04
 - [Uganda Ebola outbreak highlights need for trained medical workers](https://www.mnnonline.org/news/uganda-ebola-outbreak-highlights-need-for-trained-medical-workers/) | Mission Network News | 2026-06-04T04:07+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Ebola burial team attacked and 11 patients flee care in widening outbreak in Congo](https://www.japantimes.co.jp/news/2026/06/04/world/ebola-burial-team-attacked-congo/) | The Japan Times | 2026-06-04T01:33+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Direct Relief Responds to Ebola Outbreak in Central Africa](https://keyt.com/health/2026/06/03/direct-relief-responds-to-ebola-outbreak-in-drc/) | News Channel 3-12 | 2026-06-04T01:01+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
