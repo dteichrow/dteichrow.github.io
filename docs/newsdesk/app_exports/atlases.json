@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-05-27T10:19:25",
+  "count": 4,
+  "atlases": [
+    {
+      "atlas_id": "pathogen-atlas",
+      "title": "Pathogen Atlas",
+      "status": "open",
+      "status_label": "Open now",
+      "summary": "An origin-and-spread atlas that links geography, uncertainty, papers, and prior writing instead of flattening pathogens into another story stream.",
+      "evidence_model": "Origin claims, route confidence, and linked papers",
+      "public_route": "atlases/pathogen/",
+      "keywords": [
+        "pathogen",
+        "routes",
+        "origin",
+        "infectious disease",
+        "spread"
+      ],
+      "long_note": "A dark atlas of pathogen origins, spread routes, uncertainty, papers, and disease geography."
+    },
+    {
+      "atlas_id": "maritime-disease-atlas",
+      "title": "Maritime Disease Atlas",
+      "status": "open",
+      "status_label": "Open now",
+      "summary": "A darker, map-forward atlas of shipboard disease ecology, ports, vectors, and the movement constraints of life at sea.",
+      "evidence_model": "Map scenarios with route, mechanism, and historical narrative",
+      "public_route": "atlases/maritime/",
+      "keywords": [
+        "maritime",
+        "ports",
+        "ships",
+        "yellow fever",
+        "scurvy",
+        "piracy",
+        "vector"
+      ],
+      "long_note": "A map-forward atlas of shipboard disease ecology, ports, vectors, provisions, quarantine, violence, and the movement constraints of life at sea."
+    },
+    {
+      "atlas_id": "revolutionary-war-atlas",
+      "title": "Revolutionary War Disease Atlas",
+      "status": "section",
+      "status_label": "Historical section",
+      "summary": "A historical epidemiology section focused on colonial and Revolutionary-era disease ecology, troop movement, and the public-health constraints around the founding period.",
+      "evidence_model": "Essay-linked historical synthesis",
+      "public_route": "atlases/revolutionary-war/",
+      "keywords": [
+        "revolutionary war",
+        "colonies",
+        "smallpox",
+        "inoculation",
+        "military disease"
+      ],
+      "long_note": "A structured historical atlas page connecting colonial disease ecology, military movement, smallpox, inoculation, and public-health constraints around the founding period."
+    },
+    {
+      "atlas_id": "viking-health-atlas",
+      "title": "Viking Health Atlas",
+      "status": "section",
+      "status_label": "Norse-world atlas",
+      "summary": "A Norse-world disease and health map that ties Greenland, Vinland, settlement ecology, and pre-Columbian contact arguments into one visual surface.",
+      "evidence_model": "Map-based historical synthesis plus linked essays",
+      "public_route": "atlases/viking/",
+      "keywords": [
+        "viking",
+        "norse",
+        "greenland",
+        "vinland",
+        "plague",
+        "health"
+      ],
+      "long_note": "A Norse-world health and disease map connecting Greenland, Vinland, settlement ecology, pre-Columbian contact arguments, and epidemic uncertainty."
+    }
+  ]
+}

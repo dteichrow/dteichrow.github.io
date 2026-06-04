@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revolutionary War Disease Atlas | Edge of Epidemiology</title>
+  <!-- Leaflet styles -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <!-- Google Fonts used in the Viking map for a consistent look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <style>
+    /*
+     * Base tokens and typographic scale.  These values mirror the
+     * Norse health atlas to provide a cohesive visual experience.
+     */
+    :root {
+      --font-display: 'Cinzel', 'Georgia', serif;
+      --font-body:    'EB Garamond', 'Georgia', serif;
+      --text-xs:   clamp(0.75rem,  0.7rem + 0.25vw, 0.875rem);
+      --text-sm:   clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem,     0.95rem + 0.25vw, 1.125rem);
+      --text-lg:   clamp(1.125rem, 1rem   + 0.75vw, 1.5rem);
+      --text-xl:   clamp(1.5rem,   1.2rem + 1.25vw, 2.25rem);
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem;
+      --space-4: 1rem;    --space-5: 1.25rem; --space-6: 1.5rem;
+      --space-8: 2rem;
+      --radius-sm: 0.375rem; --radius-md: 0.5rem; --radius-lg: 0.75rem;
+      --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    /* Dark mode palette */
+    [data-theme="dark"] {
+      --bg:           #0f0e0c;
+      --surface:      #181714;
+      --surface-2:    #1e1d1a;
+      --surface-3:    #252320;
+      --border:       rgba(255,255,255,0.10);
+      --divider:      rgba(255,255,255,0.06);
+      --text:         #d8d3c8;
+      --text-muted:   #7a7570;
+      --text-faint:   #454240;
+      --accent:       #a24d2f; /* war red-brown accent */
+      --accent-hover: #c96a4f;
+      --accent-glow:  rgba(162,77,47,0.15);
+      --shadow:       0 8px 32px rgba(0,0,0,0.6);
+      --shadow-sm:    0 2px 8px rgba(0,0,0,0.4);
+    }
+    /* Light mode palette */
+    [data-theme="light"] {
+      --bg:           #f4f0e8;
+      --surface:      #f9f7f2;
+      --surface-2:    #ffffff;
+      --surface-3:    #eeebe2;
+      --border:       rgba(0,0,0,0.12);
+      --divider:      rgba(0,0,0,0.07);
+      --text:         #1e1c17;
+      --text-muted:   #6b6560;
+      --text-faint:   #b0aa9e;
+      --accent:       #a24d2f;
+      --accent-hover: #c96a4f;
+      --accent-glow:  rgba(162,77,47,0.10);
+      --shadow:       0 8px 32px rgba(0,0,0,0.12);
+      --shadow-sm:    0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    /* Global resets */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      height: 100%; overflow: hidden;
+      font-family: var(--font-body); font-size: var(--text-base);
+      background: var(--bg); color: var(--text);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Map container takes up full viewport */
+    #map { position: fixed; inset: 0; z-index: 0; }
+    .leaflet-container {
+      background: var(--surface) !important;
+      font-family: var(--font-body) !important;
+    }
+
+    /* Header bar at top with title, filters and theme toggle */
+    #header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      display: flex; align-items: center; gap: var(--space-4);
+      padding: var(--space-3) var(--space-6);
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+    }
+    #logo-wrap { display: flex; align-items: center; gap: var(--space-3); flex-shrink: 0; }
+    #logo-wrap svg { width: 36px; height: 36px; color: var(--accent); }
+    #title-block { line-height: 1.1; }
+    #title-block h1 {
+      font-family: var(--font-display); font-size: var(--text-lg); font-weight: 600;
+      color: var(--text); letter-spacing: 0.02em;
+    }
+    #title-block p {
+      font-size: var(--text-xs); color: var(--text-muted);
+      letter-spacing: 0.06em; text-transform: uppercase;
+      font-family: var(--font-display);
+    }
+    #header-spacer { flex: 1; }
+    /* Filter buttons for region categories */
+    #filters {
+      display: flex; align-items: center; gap: var(--space-2);
+      flex-wrap: wrap;
+    }
+    #filters-label {
+      font-size: var(--text-xs); color: var(--text-muted);
+      text-transform: uppercase; letter-spacing: 0.08em;
+      font-family: var(--font-display); margin-right: var(--space-1);
+      white-space: nowrap;
+    }
+    .filter-btn {
+      font-family: var(--font-display); font-size: var(--text-xs);
+      padding: var(--space-1) var(--space-3);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: transparent; color: var(--text-muted);
+      cursor: pointer; white-space: nowrap;
+      transition: all var(--transition);
+      letter-spacing: 0.04em;
+    }
+    .filter-btn:hover { color: var(--text); border-color: var(--accent); }
+    .filter-btn.active {
+      background: var(--accent-glow);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    /* Theme toggle icon */
+    #theme-toggle {
+      width: 36px; height: 36px; border-radius: 50%;
+      border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      background: transparent; color: var(--text-muted);
+      cursor: pointer; flex-shrink: 0;
+      transition: all var(--transition);
+    }
+    #theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* Slide-in detail panel */
+    #panel {
+      position: fixed; top: 68px; right: 0; bottom: 0; z-index: 800;
+      width: 340px;
+      background: var(--surface);
+      border-left: 1px solid var(--border);
+      display: flex; flex-direction: column;
+      box-shadow: var(--shadow);
+      transform: translateX(100%);
+      transition: transform 0.35s cubic-bezier(0.16,1,0.3,1);
+    }
+    #panel.open { transform: translateX(0); }
+    #panel-close {
+      position: absolute; top: var(--space-3); right: var(--space-4);
+      background: none; border: none; color: var(--text-muted);
+      cursor: pointer; font-size: 1.2rem; line-height: 1;
+      transition: color var(--transition);
+    }
+    #panel-close:hover { color: var(--text); }
+    #panel-header {
+      padding: var(--space-5) var(--space-6) var(--space-4);
+      border-bottom: 1px solid var(--divider);
+      flex-shrink: 0;
+    }
+    #panel-region-badge {
+      font-family: var(--font-display);
+      font-size: var(--text-xs); letter-spacing: 0.1em; text-transform: uppercase;
+      margin-bottom: var(--space-2);
+    }
+    #panel-title {
+      font-family: var(--font-display); font-size: var(--text-lg);
+      font-weight: 600; line-height: 1.2; margin-bottom: var(--space-1);
+    }
+    #panel-subregion {
+      font-size: var(--text-xs); color: var(--text-muted);
+    }
+    #panel-body {
+      flex: 1; overflow-y: auto; padding: var(--space-5) var(--space-6);
+      display: flex; flex-direction: column; gap: var(--space-5);
+    }
+    #panel-body::-webkit-scrollbar { width: 4px; }
+    #panel-body::-webkit-scrollbar-track { background: transparent; }
+    #panel-body::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+    .detail-block { display: flex; flex-direction: column; gap: var(--space-2); }
+    .detail-label {
+      font-family: var(--font-display); font-size: var(--text-xs);
+      text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted);
+    }
+    .detail-value {
+      font-size: var(--text-sm); color: var(--text); line-height: 1.5;
+    }
+    /* Popup content on marker hover/click */
+    .popup-inner {
+      font-family: var(--font-body);
+      display: flex; flex-direction: column; gap: var(--space-2);
+    }
+    .popup-region-tag {
+      font-family: var(--font-display);
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .popup-name {
+      font-family: var(--font-display);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      color: var(--text);
+    }
+    .popup-summary {
+      font-size: var(--text-xs);
+      color: var(--text-muted);
+    }
+    .popup-cta {
+      font-family: var(--font-display);
+      font-size: var(--text-xs);
+      color: var(--accent);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      align-self: flex-start;
+      padding: 0;
+      margin-top: var(--space-1);
+    }
+    .popup-cta:hover { text-decoration: underline; }
+
+    /* Marker styling via inline HTML (see JS) */
+    .site-marker {
+      border-radius: 50%;
+      border-style: solid;
+    }
+
+    /* Legend styling */
+    #legend {
+      position: fixed;
+      left: 1rem; bottom: 1rem;
+      background: var(--surface);
+      padding: var(--space-3);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      z-index: 500;
+      width: 200px;
+    }
+    #legend h4 {
+      margin-bottom: var(--space-2);
+      font-family: var(--font-display);
+      font-size: var(--text-sm);
+      font-weight: 600;
+    }
+    #legend .legend-row {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      margin-bottom: var(--space-2);
+    }
+    #legend .color-box {
+      width: 14px; height: 14px;
+      border-radius: 3px;
+    }
+    #legend .legend-circle {
+      border-radius: 50%;
+      border: 2px solid var(--text-muted);
+      background: transparent;
+    }
+    #legend .legend-size-row {
+      display: flex; align-items: center;
+      gap: var(--space-2);
+      margin-bottom: var(--space-1);
+    }
+    #hint {
+      position: fixed; bottom: 80px; right: 1rem;
+      background: var(--surface);
+      padding: var(--space-3) var(--space-4);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      font-size: var(--text-xs);
+      z-index: 500;
+    }
+  </style>
+
+    <link rel="canonical" href="https://devinteichrow.com/atlases/revolutionary-war/" />
+    <link rel="alternate" type="application/rss+xml" title="The Edge of Epidemiology RSS" href="https://theedgeofepidemiology.substack.com/feed" />
+    <meta name="description" content="Interactive Revolutionary War disease atlas mapping battles, encampments, smallpox pressure, disease deaths, and the military geography of the American Revolution." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="The Edge of Epidemiology" />
+    <meta property="og:title" content="Revolutionary War Disease Atlas | Edge of Epidemiology" />
+    <meta property="og:description" content="Interactive Revolutionary War disease atlas mapping battles, encampments, smallpox pressure, disease deaths, and the military geography of the American Revolution." />
+    <meta property="og:url" content="https://devinteichrow.com/atlases/revolutionary-war/" />
+    <meta property="og:image" content="https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Revolutionary War Disease Atlas | Edge of Epidemiology" />
+    <meta name="twitter:description" content="Interactive Revolutionary War disease atlas mapping battles, encampments, smallpox pressure, disease deaths, and the military geography of the American Revolution." />
+    <meta name="twitter:image" content="https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png" />
+    <script type="application/ld+json" data-eoe-seo>{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Revolutionary War Disease Atlas | Edge of Epidemiology", "url": "https://devinteichrow.com/atlases/revolutionary-war/", "description": "Interactive Revolutionary War disease atlas mapping battles, encampments, smallpox pressure, disease deaths, and the military geography of the American Revolution.", "image": "https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png", "isPartOf": {"@type": "WebSite", "name": "The Edge of Epidemiology", "url": "https://devinteichrow.com/"}, "author": {"@type": "Person", "name": "Devin Teichrow", "url": "https://devinteichrow.com/about/", "sameAs": ["https://theedgeofepidemiology.substack.com", "https://x.com/edgeofepi", "https://www.instagram.com/edgeofepi/", "https://www.linkedin.com/in/devin-teichrow-msc-938942254", "https://medium.com/@EdgeofEpi"]}}</script>
+</head>
+
+<body>
+  <!-- Map container -->
+  <div id="map"></div>
+  <!-- Header bar with logo, title, filters and theme toggle -->
+  <div id="header">
+    <div id="logo-wrap">
+      <!-- Simple crossed swords icon drawn in SVG -->
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 2l8 8-8-8z" transform="translate(-6 4) rotate(45 12 12)"></path>
+        <path d="M10 22l-8-8 8 8z" transform="translate(6 -4) rotate(45 12 12)"></path>
+      </svg>
+      <div id="title-block">
+        <h1>Revolutionary War Atlas</h1>
+        <p>Battles &amp; Disease, 1775–1783</p>
+      </div>
+    </div>
+    <div id="header-spacer"></div>
+    <div id="filters">
+      <span id="filters-label">Filter by region</span>
+      <!-- filter buttons injected via JS -->
+    </div>
+    <button id="theme-toggle" aria-label="Toggle dark/light theme">
+      <!-- light/dark icon will be inserted via JS -->
+      <span id="theme-icon">🌙</span>
+    </button>
+  </div>
+  <!-- Detail panel that slides in from the right -->
+  <div id="panel" aria-hidden="true">
+    <button id="panel-close" aria-label="Close details">×</button>
+    <div id="panel-header">
+      <div id="panel-region-badge">Region</div>
+      <div id="panel-title">Site Title</div>
+      <div id="panel-subregion">Subregion · Type</div>
+    </div>
+    <div id="panel-body">
+      <div class="detail-block">
+        <div class="detail-label">Date</div>
+        <div class="detail-value" id="panel-date">—</div>
+      </div>
+      <div class="detail-block">
+        <div class="detail-label">Casualties (killed &amp; wounded)</div>
+        <div class="detail-value" id="panel-casualties">—</div>
+      </div>
+      <div class="detail-block">
+        <div class="detail-label">Disease deaths</div>
+        <div class="detail-value" id="panel-disease">—</div>
+      </div>
+      <div class="detail-block">
+        <div class="detail-label">Notes</div>
+        <div class="detail-value" id="panel-notes">—</div>
+      </div>
+    </div>
+  </div>
+  <!-- Legend explaining colours and sizes -->
+  <div id="legend">
+    <h4>Legend</h4>
+    <!-- Region colours appended via JS -->
+    <div id="legend-colors"></div>
+    <h4 style="margin-top:var(--space-3);">Impact scale</h4>
+    <div class="legend-size-row">
+      <div class="legend-circle" style="width:12px;height:12px"></div>
+      <span class="legend-text">Low</span>
+    </div>
+    <div class="legend-size-row">
+      <div class="legend-circle" style="width:18px;height:18px"></div>
+      <span class="legend-text">Moderate</span>
+    </div>
+    <div class="legend-size-row">
+      <div class="legend-circle" style="width:26px;height:26px"></div>
+      <span class="legend-text">High</span>
+    </div>
+  </div>
+  <div id="hint" role="status">Click a marker for more information</div>
+
+  <script>
+    // Data for battles and encampments.  Each object contains
+    // the site name, region category, specific subregion, coordinates,
+    // type (Battle or Encampment), date, casualty count (killed & wounded),
+    // disease death estimate, an impact category (1–5) and notes.
+    const EVENTS = [
+      { name: "Battle of Camden",     region: "Southern Theater", subregion: "South Carolina", lat: 34.34639, lon: -80.60750, type: "Battle", date: "Aug 16 1780", casualties: 1050, disease: null, impact: 5, notes: "American casualties (killed and wounded) at Camden. British forces routed the mixed Continental and militia army." },
+      { name: "Battle of Germantown", region: "Mid-Atlantic",     subregion: "Pennsylvania",     lat: 40.04344, lon: -75.18018, type: "Battle", date: "Oct 4 1777", casualties: 652,  disease: null, impact: 4, notes: "Washington’s divided columns failed to coordinate during this assault near Philadelphia, resulting in heavy casualties and retreat." },
+      { name: "Battle of Brandywine", region: "Mid-Atlantic",     subregion: "Pennsylvania",     lat: 39.87178, lon: -75.59132, type: "Battle", date: "Sep 11 1777", casualties: 600,  disease: null, impact: 4, notes: "All-day battle along Brandywine Creek ended in American retreat; casualties represent killed and wounded." },
+      { name: "Battle of Eutaw Springs", region: "Southern Theater", subregion: "South Carolina", lat: 33.40000, lon: -80.35000, type: "Battle", date: "Sep 8 1781", casualties: 513,  disease: null, impact: 4, notes: "Continental and militia troops attacked a British camp near present-day Eutawville; casualties reflect killed and wounded." },
+      { name: "Siege of Savannah",    region: "Southern Theater", subregion: "Georgia",         lat: 32.08090, lon: -81.09120, type: "Battle", date: "Sep 16 – Oct 20 1779", casualties: 457, disease: null, impact: 3, notes: "Franco-American forces unsuccessfully besieged British-held Savannah; the assault resulted in heavy casualties." },
+      { name: "Battle of Bunker Hill", region: "New England",     subregion: "Massachusetts",    lat: 42.37630, lon: -71.06050, type: "Battle", date: "Jun 17 1775", casualties: 411,  disease: null, impact: 3, notes: "British troops overran American fortifications on Breed’s Hill in Charlestown; casualties are American killed and wounded." },
+      { name: "Battle of Paoli",      region: "Mid-Atlantic",     subregion: "Pennsylvania",     lat: 40.00000, lon: -75.48800, type: "Battle", date: "Sep 20 1777", casualties: 300,  disease: null, impact: 2, notes: "British dragoons surprised sleeping Continental troops at night near Paoli, leading to significant casualties." },
+      { name: "Freeman’s Farm (Saratoga)", region: "Northern Theater", subregion: "New York", lat: 42.95470, lon: -73.61560, type: "Battle", date: "Sep 19 1777", casualties: 280, disease: null, impact: 2, notes: "First engagement of the Saratoga campaign; Burgoyne’s army met stiff resistance from Gates’s entrenched forces." },
+      { name: "Battle of Monmouth",   region: "Mid-Atlantic",     subregion: "New Jersey",       lat: 40.26022, lon: -74.27588, type: "Battle", date: "Jun 28 1778", casualties: 267, disease: null, impact: 2, notes: "Washington’s rear guard caught the British retreat; intense heat and disorder marked the battle near Freehold." },
+      { name: "Battle of Guilford Courthouse", region: "Southern Theater", subregion: "North Carolina", lat: 36.13225, lon: -79.84246, type: "Battle", date: "Mar 15 1781", casualties: 261, disease: null, impact: 2, notes: "Cornwallis held the field near Greensboro but lost a third of his army; American casualties listed are killed and wounded." },
+      { name: "Battle of Long Island", region: "Mid-Atlantic",     subregion: "New York",       lat: 40.66020, lon: -73.96900, type: "Battle", date: "Aug 27 1776", casualties: 200, disease: null, impact: 2, notes: "First major battle after the Declaration; British victory opened the campaign for New York." },
+      { name: "Siege of Yorktown",    region: "Southern Theater", subregion: "Virginia",         lat: 37.23800, lon: -76.51000, type: "Battle", date: "Sep 28 – Oct 19 1781", casualties: 90,  disease: null, impact: 1, notes: "Franco-American siege forced Cornwallis’s surrender, effectively ending the war; casualties are American killed and wounded." },
+      { name: "Valley Forge Encampment", region: "Mid-Atlantic",     subregion: "Pennsylvania",     lat: 40.09900, lon: -75.45000, type: "Encampment", date: "Dec 1777 – Jun 1778", casualties: 0, disease: 1850, impact: 5, notes: "During the winter encampment an estimated 1,700–2,000 soldiers died from disease, likely exacerbated by malnutrition and exposure." },
+      { name: "Morristown Encampment", region: "Mid-Atlantic",     subregion: "New Jersey",       lat: 40.79870, lon: -74.47850, type: "Encampment", date: "Dec 1779 – Jun 1780", casualties: 0, disease: 100, impact: 1, notes: "The army endured the harshest winter of the 18th century but only about one hundred soldiers died, reflecting improved camp discipline and inoculation." },
+      { name: "Siege of Boston",      region: "New England",     subregion: "Massachusetts",    lat: 42.36010, lon: -71.05890, type: "Encampment", date: "Apr 1775 – Mar 1776", casualties: 0, disease: null, impact: 1, notes: "A smallpox outbreak raged during the siege; Washington initially opposed inoculation and infected refugees spread the disease through Massachusetts." },
+      { name: "Siege of Quebec",      region: "Canada",           subregion: "Quebec",          lat: 46.81390, lon: -71.20800, type: "Encampment", date: "Dec 1775 – May 1776", casualties: 0, disease: null, impact: 1, notes: "The Continental Army’s invasion of Quebec stalled as smallpox ravaged the camp; quarantine measures failed and exact death tolls are unknown." }
+    ];
+
+    // Assign colours to each region. These colours form the legend keys.
+    const REGION_COLORS = {
+      "New England":      "#c17878",
+      "Mid-Atlantic":    "#a58ad3",
+      "Southern Theater": "#6da468",
+      "Northern Theater": "#e0b34e",
+      "Canada":          "#4fa0b7"
+    };
+
+    // Helper to compute marker radius from impact value.  We treat
+    // impact on a scale of 1–5, then map to diameters 12–30px.
+    function markerSize(impact) {
+      return 8 + impact * 4.5; // 8 + (4.5×impact) = 12px for 1 → 30px for 5
+    }
+
+    // Initialize base map with dark and light tiles similar to the Viking atlas.
+    const TILE_DARK  = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png', {
+      attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+      subdomains:'abcd', maxZoom:19
+    });
+    const TILE_LIGHT = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
+      attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+      subdomains:'abcd', maxZoom:19
+    });
+    // Labels layer shown over base map for dark/light modes
+    const LABEL_LAYER_DARK = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png', { subdomains:'abcd', maxZoom:19, opacity:0.5 });
+    const LABEL_LAYER_LIGHT = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png', { subdomains:'abcd', maxZoom:19, opacity:0.7 });
+
+    // Create the Leaflet map. Center roughly on eastern North America.
+    const map = L.map('map', {
+      center: [39.5, -79.0],
+      zoom: 5,
+      zoomControl: false,
+      attributionControl: false
+    });
+    // Add dark tiles and labels by default
+    TILE_DARK.addTo(map);
+    LABEL_LAYER_DARK.addTo(map);
+    L.control.zoom({ position:'bottomright' }).addTo(map);
+    L.control.attribution({ position:'bottomleft', prefix:false }).addTo(map).addAttribution('© OpenStreetMap © CARTO');
+
+    // Keep references to marker instances for filtering later
+    const allMarkers = [];
+    const markerLayer = L.layerGroup().addTo(map);
+
+    // Create a marker for each event and add to the map
+    function createMarker(event) {
+      const color = REGION_COLORS[event.region] || '#888';
+      const size  = markerSize(event.impact);
+      const icon  = L.divIcon({
+        className: '',
+        iconSize:  [size, size],
+        iconAnchor:[size/2, size/2],
+        popupAnchor:[0, -(size/2 + 4)],
+        html: `<div class="site-marker" style="width:${size}px;height:${size}px;background:${color}22;border-color:${color};border-width:2px;box-shadow:0 0 ${size/2}px ${color}44;"><svg width="${size*0.45}" height="${size*0.45}" viewBox="0 0 12 12"><circle cx="6" cy="6" r="3" fill="${color}" opacity="0.9"/></svg></div>`
+      });
+      const marker = L.marker([event.lat, event.lon], { icon });
+      marker.eventData = event;
+      const popupContent = `
+        <div class="popup-inner">
+          <div class="popup-region-tag" style="color:${color}">${event.region}</div>
+          <div class="popup-name">${event.name}</div>
+          <div class="popup-summary">${event.type} – ${event.date}</div>
+          <button class="popup-cta" onclick="openPanel(${EVENTS.indexOf(event)})">More details →</button>
+        </div>`;
+      marker.bindPopup(popupContent, { maxWidth: 260, className:'', autoPanPaddingTopLeft:[20,80] });
+      return marker;
+    }
+
+    // Populate markers
+    EVENTS.forEach(ev => {
+      const m = createMarker(ev);
+      m.addTo(markerLayer);
+      allMarkers.push(m);
+    });
+
+    // Detail panel open function
+    function openPanel(idx) {
+      const ev = EVENTS[idx];
+      const color = REGION_COLORS[ev.region] || '#a24d2f';
+      document.getElementById('panel-region-badge').textContent = ev.region;
+      document.getElementById('panel-region-badge').style.color = color;
+      document.getElementById('panel-title').textContent  = ev.name;
+      document.getElementById('panel-subregion').textContent = `${ev.subregion} · ${ev.type}`;
+      document.getElementById('panel-date').textContent   = ev.date || '—';
+      document.getElementById('panel-casualties').textContent = ev.casualties ? ev.casualties.toLocaleString() : '—';
+      document.getElementById('panel-disease').textContent    = ev.disease ? ev.disease.toLocaleString() : '—';
+      document.getElementById('panel-notes').textContent      = ev.notes || '';
+      panel.classList.add('open');
+      panel.setAttribute('aria-hidden','false');
+    }
+    window.openPanel = openPanel; // expose to global scope for popup buttons
+
+    // Close button handler
+    const panel = document.getElementById('panel');
+    document.getElementById('panel-close').addEventListener('click', () => {
+      panel.classList.remove('open');
+      panel.setAttribute('aria-hidden','true');
+    });
+
+    // Theme toggle behaviour
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next    = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      // Swap base tiles and label layers when toggling themes
+      if (next === 'light') {
+        map.removeLayer(TILE_DARK);
+        map.removeLayer(LABEL_LAYER_DARK);
+        TILE_LIGHT.addTo(map);
+        LABEL_LAYER_LIGHT.addTo(map);
+        document.getElementById('theme-icon').textContent = '☀️';
+      } else {
+        map.removeLayer(TILE_LIGHT);
+        map.removeLayer(LABEL_LAYER_LIGHT);
+        TILE_DARK.addTo(map);
+        LABEL_LAYER_DARK.addTo(map);
+        document.getElementById('theme-icon').textContent = '🌙';
+      }
+    });
+
+    // Create filter buttons from the unique regions in the data
+    const uniqueRegions = Array.from(new Set(EVENTS.map(ev => ev.region)));
+    const filtersContainer = document.getElementById('filters');
+    uniqueRegions.forEach(region => {
+      const btn = document.createElement('button');
+      btn.className = 'filter-btn';
+      btn.textContent = region;
+      btn.dataset.region = region;
+      btn.addEventListener('click', () => toggleRegion(region, btn));
+      filtersContainer.appendChild(btn);
+    });
+
+    let activeRegion = null;
+    function toggleRegion(region, button) {
+      if (activeRegion === region) {
+        // Deactivate filter
+        activeRegion = null;
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        // Show all markers
+        allMarkers.forEach(m => m.addTo(markerLayer));
+      } else {
+        activeRegion = region;
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.toggle('active', b.dataset.region === region));
+        // Filter markers
+        allMarkers.forEach(m => {
+          if (m.eventData.region === region) m.addTo(markerLayer); else markerLayer.removeLayer(m);
+        });
+      }
+    }
+
+    // Populate legend colour keys
+    const legendColors = document.getElementById('legend-colors');
+    Object.keys(REGION_COLORS).forEach(region => {
+      const row = document.createElement('div');
+      row.className = 'legend-row';
+      const box = document.createElement('span');
+      box.className = 'color-box';
+      box.style.background = REGION_COLORS[region];
+      const label = document.createElement('span');
+      label.textContent = region;
+      row.appendChild(box);
+      row.appendChild(label);
+      legendColors.appendChild(row);
+    });
+
+    // Hide hint after first marker click
+    const hintEl = document.getElementById('hint');
+    let hintHidden = false;
+    allMarkers.forEach(marker => {
+      marker.on('click', () => {
+        if (!hintHidden) {
+          hintEl.style.display = 'none';
+          hintHidden = true;
+        }
+      });
+    });
+  </script>
+
+</body></html>
