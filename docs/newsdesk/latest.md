@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-06-04
-Generated at: 2026-06-04T19:54
+Generated at: 2026-06-04T20:01
 Search window: 7 day(s) ending 2026-06-04
 
 ## Executive scan
@@ -12,22 +12,22 @@ Search window: 7 day(s) ending 2026-06-04
 - [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News; 2026-06-03T17:36+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
 - [UHPR CCS Sierra Leone](https://www.afro.who.int/publications/uhpr-ccs-sierra-leone) (WHO Regional Office for Africa; 2026-06-03T12:27+00:00; Outbreaks and emerging infections; relevance 5/5)
 - [Targeted pneumococcal conjugate vaccination strategies for high-risk children.](https://pubmed.ncbi.nlm.nih.gov/42234765/) (PubMed Infectious Disease Search; 2026-06-03T00:00; Major epidemiology studies; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (254), Policy, surveillance, and public health infrastructure (21), Major epidemiology studies (5)
+- Category mix: Outbreaks and emerging infections (263), Policy, surveillance, and public health infrastructure (19), Major epidemiology studies (5)
 - Source health: 1 source(s) failed during collection: USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
 ### Ebola virus disease
 - Lead item: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 03, Data as of 31 May 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa)
-- Newly tracked story cluster: 232 item(s) across 140 source(s).
-- Baseline snapshot created with 232 clustered item(s) across 140 source(s).
+- Newly tracked story cluster: 236 item(s) across 142 source(s).
+- Baseline snapshot created with 236 clustered item(s) across 142 source(s).
 - WHO Regional Office for Africa now explicitly uses investigation or monitoring language.
 - WHO Regional Office for Africa now includes deaths or fatal cases in the story frame.
 - The Guardian now includes quarantine language.
 
 ### Measles transmission and vaccination
 - Lead item: [Measles Outbreak in a Child Care Facility](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765694) (CDC MMWR)
-- Newly tracked story cluster: 40 item(s) across 36 source(s).
-- Baseline snapshot created with 40 clustered item(s) across 36 source(s).
+- Newly tracked story cluster: 42 item(s) across 38 source(s).
+- Baseline snapshot created with 42 clustered item(s) across 38 source(s).
 - albd.org now includes deaths or fatal cases in the story frame.
 - CDC MMWR now foregrounds vaccination or vaccine policy in the story.
 
@@ -46,7 +46,7 @@ Search window: 7 day(s) ending 2026-06-04
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 232 item(s) across 140 source(s); 4 official/primary-source item(s).
+- Topic size: 236 item(s) across 142 source(s); 4 official/primary-source item(s).
 - Lead item: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 03, Data as of 31 May 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa, 2026-06-04T18:25+00:00)
 - Detailed note: Eugene Kabambi Communications Officer WHO DRC Tel : +243 81 715 1697 Office : +47 241 39 027 Email: kabambie [at] who.int (kabambie[at]who[dot]int) Collins Boakye-Agyemang Communications and marketing officer Tel: + 242 06 520 65 65 (WhatsApp) Email: boakyeagyemangc [at] who.int (boakyeagyemangc[at]who[dot]int) Related Links Bundibugyo virus disease outbreak - Democratic Republic of the Congo carousel-bg As of 31...
 - Evidence notes: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 03, Data as of 31 May 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa); [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News); [Four health workers recover from Ebola in the Democratic Republic of the Congo](https://www.afro.who.int/countries/democratic-republic-of-congo/news/four-health-workers-recover-ebola-democratic-republic-congo) (WHO Regional Office for Africa); [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) (Texas Department of State Health Services News); [Ebola spreads to area under Islamic State control as cases mount](https://www.cidrap.umn.edu/new-world-screwworm/ebola-spreads-area-under-islamic-state-control-cases-mount) (CIDRAP)
@@ -54,7 +54,7 @@ Search window: 7 day(s) ending 2026-06-04
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Measles transmission and vaccination
-- Topic size: 40 item(s) across 36 source(s); 3 official/primary-source item(s).
+- Topic size: 42 item(s) across 38 source(s); 3 official/primary-source item(s).
 - Lead item: [Measles Outbreak in a Child Care Facility](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765694) (CDC MMWR, 2026-06-04T17:00+00:00)
 - Detailed note: As of June 3, 2026, over 600 children have died from measles and measles-like symptoms since mid-March, 90 confirmed measles deaths and 504 suspected. Sugerman, MD 5 ; Carolyn Crisp, PhD 6 ,7 ; Gretchen Rodriguez, MPH 7 ; Thi Dang, MPH 7 ; Diana Martinez, PhD 7 ; Saroj Rai, PhD 7 ; Varun Shetty, MD 7 ; Ashley Meehan, MPH 8 ; Susan Hocevar Adkins, MD 8 ; Thomas D. According to the Department of Health–Metro Manila...
 - Evidence notes: [Measles Outbreak in a Child Care Facility](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765694) (CDC MMWR); [Targeted pneumococcal conjugate vaccination strategies for high-risk children.](https://pubmed.ncbi.nlm.nih.gov/42234765/) (PubMed Infectious Disease Search); [Measles Outbreaks 2025](https://www.cdc.gov/measles/data-research/) (CDC Current Outbreak List); [Bangladesh’s Child Measles Tragedy: How Many More Graves Before Leadership Acts?](https://albd.org/articles/news/41714/Bangladesh%E2%80%99s-Child-Measles-Tragedy:-How-Many-More-Graves-Before-Leadership-Acts%3F) (albd.org); [Philippines: Measles vaccination campaign targets over 1.2 million children in Metro Manila](https://outbreaknewstoday.substack.com/p/philippines-measles-vaccination-campaign) (Outbreak News Today)
@@ -81,7 +81,7 @@ Search window: 7 day(s) ending 2026-06-04
 - Topic size: 2 item(s) across 2 source(s); 1 official/primary-source item(s).
 - Lead item: [Tuberculosis in households with infectious cases in Kampala city: Harnessing health data science for new insights on an ancient disease with persistent, unresolved problems.](https://pubmed.ncbi.nlm.nih.gov/42241447/) (PubMed Historical Epidemiology, 2026-06-04T00:00)
 - Detailed note: These will aim to: (1) identify patients at baseline (month 0) unlikely to convert their sputum or culture results by months 2 and 5, thus at risk of failing TB treatment; (2) identify household contacts of TB cases who are at risk of developing TB disease, as well as contacts who may resist TB infection despite repeated exposure to M. Achieving these objectives will provide evidence that data science methods are...
-- Evidence notes: [Tuberculosis in households with infectious cases in Kampala city: Harnessing health data science for new insights on an ancient disease with persistent, unresolved problems.](https://pubmed.ncbi.nlm.nih.gov/42241447/) (PubMed Historical Epidemiology); [Tuberculosis contact tracing underway after case reported at NKY school](https://www.fox19.com/2026/06/04/tuberculosis-contact-tracing-underway-after-case-reported-nky-school/) (FOX19)
+- Evidence notes: [Tuberculosis in households with infectious cases in Kampala city: Harnessing health data science for new insights on an ancient disease with persistent, unresolved problems.](https://pubmed.ncbi.nlm.nih.gov/42241447/) (PubMed Historical Epidemiology); [Tuberculosis contact tracing underway after case reported at NKY school](https://news.google.com/rss/articles/CBMipAFBVV95cUxQeGxCQ3Yyc3J2bl83UURoSzdZN1RKYzJqM0RCRzZnYndGV0NReGUtajNnS3NES3BtWG94Q2VqZm9zRmNNTi01RVB4T2lSN2lCdGZ5WjhSS1ZFNG1ud3RvSmFvZlloU0JZVm96STNkRmR5MnFlR0tiWjJ2RnhzRXNtYXNPX0drRmZDV2VUQTBQdHRzN21mazJGSlVjM1diWGNKUGtjb9IBuAFBVV95cUxQYTYxZ0F2MkNhVXdwSzdZelp1SUo3RWUtUFdNSHk3eTFEN3Z4cVBySUxva05zN0tXT0hLUlpLMVhBOE9RRHFXMy02RlBJeEtXR01yYzVhNXpJVXhfQW4yZDk1cF9CZ0NsLWJaVF9NWU1FTjlub3JGZXRNVTFoLVlKWW01VFh6eEhOdWFDMWl5NFQ4bWx1N0M3alA2aGZuOWtHZWp6bUxXSlBVN29ObDd2b29jSlhuYjlH?oc=5) (FOX19)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
@@ -456,13 +456,13 @@ Search window: 7 day(s) ending 2026-06-04
   Limited detail was available from feed metadata alone.
 - [Latest news on U.S. plans for facility in Kenya to navigate Ebola outbreak](https://www.cbsnews.com/video/latest-news-on-us-plans-for-facility-in-kenya-to-navigate-ebola-outbreak/) | CBS News | 2026-06-04T11:46+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Fever in Sudan traveller triggers Ebola surveillance and isolation at Hyderabad’s Gandhi Hospital](https://news.google.com/rss/articles/CBMizwFBVV95cUxPVmFoV2JJX1AxcG1vNktMakFVTzhRT2NxQWs5QmxQMlVrNXA1QmVGSU4zeTJXRW5HTmxfVGxBWVFoT0U1Z1RqTWtsVllyVTJsN1NiTEYyb29falo3MlhQbjVXNEtaUm4xdWJfUE1UZWdZTVA4cVdDcG1adVp3Y2d3YVFZNk8wSXpiY1dSV0JmbndNV3Itc01uQ1hfYUptR1dYazJTV0dZbXh2My1OdDc2ME4zNEhPT2d2Qmp2MnhTMGZkZ2lHUHMwcVltUEstaEU?oc=5) | NewsMeter | 2026-06-04T10:32+00:00 | Outbreaks and emerging infections
+- [Fever in Sudan traveller triggers Ebola surveillance and isolation at Hyderabad’s Gandhi Hospital](https://newsmeter.in/hyderabad/fever-in-sudan-traveller-triggers-ebola-surveillance-and-isolation-at-hyderabads-gandhi-hospital-769338) | NewsMeter | 2026-06-04T10:32+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [The Ebola Outbreak and the Need for Stronger Global Health Governance - Middle East Council on Global Affairs](https://mecouncil.org/publication/the-ebola-outbreak-and-the-need-for-stronger-global-health-governance/) | Middle East Council on Global Affairs | 2026-06-04T09:12+00:00 | Outbreaks and emerging infections
   Stay updated and subscribe to our newsletters About Us Open menu Core activities Our Team Our Partners Our Initiatives Archives News Open menu Press Releases In The News About Us Open menu Core activities Our Team Our Partners Our Initiatives Archives News Open menu Press Releases In The News On 17 May 2026, the World Health Organization (WHO) declared the Ebola outbreak in the Democratic Republic of the Congo (DRC) and Uganda a public health emergency of international concern (PHEIC), noting that while the overall global risk remains low, national and regional risks are elevated due to ongoing transmission, population movement, weak health infrastructure, and the outbreak’s emergence in conflict-affected areas. The small number of secondary transmissions to Europe and North America that occurred during the 2014-2016 West African Ebola epidemic highlights Ebola’s continued risk to highly connected economies and international transit hubs beyond affected regions. At present, according to WHO, the likelihood of widespread international transmission, remains low , as the outbreak is limited to DRC with confirmed exportation of cases to Uganda.
-- [Uganda Ebola outbreak highlights need for trained medical workers](https://www.mnnonline.org/news/uganda-ebola-outbreak-highlights-need-for-trained-medical-workers/) | Mission Network News | 2026-06-04T04:07+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
 - [Ebola burial team attacked and 11 patients flee care in widening outbreak in Congo](https://www.japantimes.co.jp/news/2026/06/04/world/ebola-burial-team-attacked-congo/) | The Japan Times | 2026-06-04T01:33+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Direct Relief Responds to Ebola Outbreak in Central Africa](https://keyt.com/health/2026/06/03/direct-relief-responds-to-ebola-outbreak-in-drc/) | News Channel 3-12 | 2026-06-04T01:01+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
@@ -511,6 +511,8 @@ Search window: 7 day(s) ending 2026-06-04
 - [Ebola burial team attacked and 11 patients flee care in widening outbreak in Congo](https://www.japantimes.co.jp/news/2026/06/04/world/ebola-burial-team-attacked-congo/) | The Japan Times
   Limited detail was available from feed metadata alone.
 - [WHO chief urges safe burials in visit to heart of Ebola outbreak](https://news.google.com/rss/articles/CBMi1wFBVV95cUxNY3p3TDZ6X2ZHa0swZ2tHRXFNSkExdGNzSHZoV2NISk9jVUl2cXVQVll6eVZJMGhwMExZR3FRRUd0TTVqN2tQVExrVlhTUHJQZHQ1a091NWlYd3NfWEd3RnRrUjNQT09HYkdtX0owV0s3NzZrdGVjSFlBTjJsSkU1MVVLNTU0ZDBKaWRRNnI4V2lpblprak83bkFGSW51Q0FhdVlDZkNUYTQzRnRENUNzQkZ6RXZuVHg5RVVabk05QTR6NlVSQkhhMzdvcWNGUVpJN0hzMHFXMA?oc=5) | Reuters
+  Limited detail was available from feed metadata alone.
+- [DW News. . Carpenters were reconstructing an Ebola treatment center in in eastern DR Congo on Friday. The facilities were burned down earlier this month when a crowd angry over the burial of an Ebola victim stormed the hospital. #dwnews](https://news.google.com/rss/articles/CBMiuwFBVV95cUxPaFZHTlZGQjI1VlpkazZXRFJHekhnb2pibVcwbW9jSWNVSkl6T1A1X0hjR3NhczdhaDJ0dVA5Zk9rSklOdFFPRVBsaUxsMm52bWd5S3MyQTdBLUpBM21BVVpqdW9UMWpQdVJsMlFwUmgtMmpJQjVoaExUSm9ib1RTLUVOMjcyZEYtdHhpbFpmQ1RxcC1helpaX19SWnpBMG9keE9vMWd0UTQ2eWpNRGdiS2o5QmpsUUEyRGlR?oc=5) | facebook.com
   Limited detail was available from feed metadata alone.
 
 ## Possible blog/video angles
