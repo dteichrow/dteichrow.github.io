@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-06-06
-Generated at: 2026-06-06T08:54
+Generated at: 2026-06-06T09:04
 Search window: 7 day(s) ending 2026-06-06
 
 ## Executive scan
@@ -12,14 +12,14 @@ Search window: 7 day(s) ending 2026-06-06
 - [Notes from the Field: Borrelia mayonii Lyme Disease](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765695) (CDC MMWR; 2026-06-04T17:00+00:00; Occupational and environmental epidemiology; relevance 5/5)
 - [Tuberculosis in households with infectious cases in Kampala city: Harnessing health data science for new insights on an ancient disease with persistent, unresolved problems.](https://pubmed.ncbi.nlm.nih.gov/42241447/) (PubMed Historical Epidemiology; 2026-06-04T00:00; Historical epidemiology / ancient disease / paleopathology; relevance 5/5)
 - [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News; 2026-06-03T17:36+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (210), Policy, surveillance, and public health infrastructure (13), Occupational and environmental epidemiology (5)
+- Category mix: Outbreaks and emerging infections (213), Policy, surveillance, and public health infrastructure (19), Occupational and environmental epidemiology (5)
 - Source health: 1 source(s) failed during collection: USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
 ### Ebola virus disease
 - Lead item: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 03, Data as of 31 May 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa)
-- Newly tracked story cluster: 218 item(s) across 134 source(s).
-- Baseline snapshot created with 218 clustered item(s) across 134 source(s).
+- Newly tracked story cluster: 226 item(s) across 141 source(s).
+- Baseline snapshot created with 226 clustered item(s) across 141 source(s).
 - WHO Regional Office for Africa now explicitly uses investigation or monitoring language.
 - WHO Regional Office for Africa now includes deaths or fatal cases in the story frame.
 
@@ -32,7 +32,7 @@ Search window: 7 day(s) ending 2026-06-06
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 218 item(s) across 134 source(s); 4 official/primary-source item(s).
+- Topic size: 226 item(s) across 141 source(s); 4 official/primary-source item(s).
 - Lead item: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 03, Data as of 31 May 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa, 2026-06-04T18:25+00:00)
 - Detailed note: Eugene Kabambi Communications Officer WHO DRC Tel : +243 81 715 1697 Office : +47 241 39 027 Email: kabambie [at] who.int (kabambie[at]who[dot]int) Collins Boakye-Agyemang Communications and marketing officer Tel: + 242 06 520 65 65 (WhatsApp) Email: boakyeagyemangc [at] who.int (boakyeagyemangc[at]who[dot]int) Related Links Bundibugyo virus disease outbreak - Democratic Republic of the Congo carousel-bg As of 31...
 - Evidence notes: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 03, Data as of 31 May 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa); [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News); [Four health workers recover from Ebola in the Democratic Republic of the Congo](https://www.afro.who.int/countries/democratic-republic-of-congo/news/four-health-workers-recover-ebola-democratic-republic-congo) (WHO Regional Office for Africa); [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) (Texas Department of State Health Services News); [Ebola outbreak nears 500 cases in Central Africa as WHO warns epidemic is accelerating](https://www.firstpost.com/health/ebola-outbreak-nears-500-cases-in-central-africa-as-who-warns-epidemic-is-accelerating-14019596.html) (Firstpost)
@@ -430,8 +430,6 @@ Search window: 7 day(s) ending 2026-06-06
   Limited detail was available from feed metadata alone.
 - [In a town at the center of eastern Congo's Ebola outbreak, patients arrive too late](https://ca.news.yahoo.com/town-center-eastern-congos-ebola-012839851.html) | Yahoo News Canada | 2026-06-06T01:28+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Ebola outbreak could exceed 20,000 cases in 3 months without urgent public health measures: CDC - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/Health/ebola-outbreak-exceed-20000-cases-3-months-urgent/story?id\=133632631) | ABC News - Breaking News, Latest News and Videos | 2026-06-05T23:15+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
 - [Ebola Cases May Top 20,000 in Three Months, C.D.C. Says](https://www.nytimes.com/2026/06/05/us/politics/cdc-ebola-projection.html) | The New York Times | 2026-06-05T22:04+00:00 | Policy, surveillance, and public health infrastructure
   Limited detail was available from feed metadata alone.
 - [US domestic treatment centers ready for Ebola even as Kenya plans persist](https://www.reuters.com/business/healthcare-pharmaceuticals/us-domestic-treatment-centers-ready-ebola-even-kenya-plans-persist-2026-06-05/) | Reuters | 2026-06-05T21:39+00:00 | Outbreaks and emerging infections
@@ -442,13 +440,15 @@ Search window: 7 day(s) ending 2026-06-06
   Limited detail was available from feed metadata alone.
 - [WHO launches $518 million plan to curb Africa Ebola outbreak](https://www.reuters.com/business/healthcare-pharmaceuticals/who-announces-580-million-six-month-plan-fight-ebola-2026-06-05/) | Reuters | 2026-06-05T15:23+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Hyderabad Ebola alert: Second Sudanese traveller admitted to hospital isolation ward](https://timesofindia.indiatimes.com/city/hyderabad/hyderabad-ebola-alert-second-sudanese-traveller-admitted-to-hospital-isolation-ward/articleshow/131535189.cms) | The Times of India | 2026-06-05T15:20+00:00 | Outbreaks and emerging infections
-  Read More US-Iran War News Live Updates: Israeli strikes continue, 12 killed near Lebanon hospital RBI MPC Meeting 2026 Live Updates: Will RBI governor Sanjay Malhotra announce repo rate hike to keep inflation under check amid US-Iran war? He has reported on ITE&C, Transport, Telangana assembly elections and other political events in the past. He has a special corner for sports and regular photography.
 - [Uganda: More cases, death in Ebola outbreak](https://outbreaknewstoday.substack.com/p/uganda-more-cases-death-in-ebola) | Outbreak News Today | 2026-06-05T15:16+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [What is Ebola, how does it spread and why is DR Congo outbreak an 'emergency'?](https://www.bbc.com/news/articles/cz72p75zg4qo) | BBC | 2026-06-05T15:14+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [The Gold Mines at the Heart of This Ebola Outbreak](https://www.nytimes.com/2026/06/05/world/africa/congo-ebola-gold-mine.html) | The New York Times | 2026-06-05T15:13+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Congo’s Ebola Outbreak Was a Disaster Waiting to Happen](https://www.bloomberg.com/news/newsletters/2026-06-05/congo-s-ebola-outbreak-was-a-disaster-waiting-to-happen) | Bloomberg.com | 2026-06-05T13:00+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [UAE suspends new visas for nationals of three African countries amid Ebola outbreak](https://www.cntravellerme.com/story/uae-suspends-new-visas-for-nationals-of-three-african-countries-amid-ebola-outbreak) | Condé Nast Traveller Middle East | 2026-06-05T12:59+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
