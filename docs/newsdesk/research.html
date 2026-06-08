@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Norovirus | The Pathogen Dispatch</title>
+    <title>Research Brief | The Pathogen Dispatch</title>
     <style>
       :root { --bg: #e8e1d3; --bg-deep: #d8cebc; --surface: #f8f4ea; --surface-alt: #f2ebde; --paper: #fffdf8; --ink: #1b2836; --ink-soft: #42515e; --line: #d6cab7; --accent: #8d3f2f; --accent-soft: rgba(141,63,47,0.10); --signal: #1f5b89; --signal-soft: rgba(31,91,137,0.12); --shadow: 0 24px 56px rgba(49, 36, 22, 0.10); }
       * { box-sizing: border-box; }
@@ -124,62 +124,37 @@
   </head>
   <body>
     <main class="page">
-      <header class="site-header"><div class="site-header-copy"><div class="kicker">The Pathogen Dispatch</div><p class="site-header-title">Source-first newsroom desks</p></div><nav class="site-nav" aria-label="Site navigation"><a class="site-nav-link" href="/">Edge home</a><a class="site-nav-link" href="../index.html">Home</a><a class="site-nav-link" href="../notebook.html">Notebook</a><a class="site-nav-link" href="../atlas.html">Atlas</a><a class="site-nav-link" href="../outbreaks.html">Outbreak terminal</a><a class="site-nav-link" href="../watch.html">Global watch</a><a class="site-nav-link" href="../africa.html">Africa</a><a class="site-nav-link" href="../asia.html">Asia</a><a class="site-nav-link" href="../research.html">Research</a><a class="site-nav-link" href="../official.html">Official alerts</a><a class="site-nav-link" href="../archive/index.html">Archive</a></nav></header>
+      <header class="site-header"><div class="site-header-copy"><div class="kicker">The Pathogen Dispatch</div><p class="site-header-title">Source-first newsroom desks</p></div><nav class="site-nav" aria-label="Site navigation"><a class="site-nav-link" href="/">Edge home</a><a class="site-nav-link" href="./index.html">Home</a><a class="site-nav-link" href="./notebook.html">Notebook</a><a class="site-nav-link" href="./atlas.html">Atlas</a><a class="site-nav-link" href="./outbreaks.html">Outbreak terminal</a><a class="site-nav-link" href="./watch.html">Global watch</a><a class="site-nav-link" href="./africa.html">Africa</a><a class="site-nav-link" href="./asia.html">Asia</a><a class="site-nav-link active" href="./research.html" aria-current="page">Research</a><a class="site-nav-link" href="./official.html">Official alerts</a><a class="site-nav-link" href="./archive/index.html">Archive</a></nav></header>
       <section class="live-update-banner panel utility-panel" id="live-update-banner" hidden aria-live="polite" role="status" data-live-update-banner="true"><div class="live-update-copy"><div class="section-nav-label">New edition available</div><p class="live-update-text" id="live-update-text">An updated edition is available. Load the latest run when you are ready.</p></div><div class="live-update-actions"><button class="live-update-dismiss" id="live-update-dismiss" type="button" onclick="(function(btn){const banner=btn.closest('[data-live-update-banner]');if(banner){banner.hidden=true;banner.style.display='none';const runId=(banner.dataset&&banner.dataset.pendingRunId)||'';const key=(banner.dataset&&banner.dataset.dismissKey)||('pathogen-dispatch-live-update-dismissed:'+window.location.pathname);try{window.sessionStorage.setItem(key, window.location.pathname+'::'+(runId||'unknown'));}catch(error){}}return false;})(this)">Keep reading</button><button class="live-update-button" id="live-update-refresh" type="button" onclick="(function(btn){const banner=btn.closest('[data-live-update-banner]');if(banner){banner.hidden=true;banner.style.display='none';}const url=new URL(window.location.href);url.searchParams.set('_edition', String(Date.now()));window.location.replace(url.toString());return false;})(this)">Load latest</button></div></section>
-      <section class="hero" id="story-overview">
-        <p class="kicker">Disease intelligence sheet</p>
-        <h1>Norovirus</h1>
-        <p class="subtitle">Curated desk background for reporters who need the pathogen, transmission, and outbreak frame fast.</p>
-        <div class="meta-row"><span class="badge">Enteric</span><span class="badge">Foodborne</span><span class="badge">Cruise and congregate settings</span><span class="badge">Cruise ships</span><span class="badge">Long-term care</span><span class="badge">Schools</span><span class="badge">Food-service outbreaks</span></div>
-        
-        <p><strong>Pathogen / agent:</strong> Norovirus</p>
-        <p><strong>Transmission:</strong> Fecal-oral, foodborne, waterborne, and environmental contamination</p>
-        <p><strong>Reservoir / vector:</strong> Humans and contaminated environments are the practical outbreak reservoir frame.</p>
-        <p><strong>Incubation:</strong> Usually 12 to 48 hours.</p>
-        <p><strong>Severity:</strong> Usually self-limited but highly disruptive, especially for institutions and travel settings.</p>
-        <p><strong>Diagnostics:</strong> PCR panels, outbreak epidemiology, and facility investigation.</p>
-        <p><strong>Treatment:</strong> Supportive care and rehydration.</p>
-        <p><strong>Prevention:</strong> Hand hygiene, environmental cleaning, exclusion of ill food handlers, and rapid institution-level control.</p>
-        <p><strong>Vaccine / prevention status:</strong> No routine population vaccine drives present-day outbreak control.</p>
+      <section class="hero" id="desk-top">
+        <p class="kicker">Source-first desk</p>
+        <h1>Research Brief</h1>
+        <p class="subtitle">Papers, preprints, and research-linked reporting that adds context beyond the daily outbreak stream.</p>
       </section>
-
-      <nav class="section-nav panel utility-panel" aria-label="Section navigation"><div class="section-nav-label">On this page</div><div class="section-nav-links"><a class="section-nav-link" href="#story-overview">Overview</a><a class="section-nav-link" href="#clinical-pattern">Clinical Pattern</a><a class="section-nav-link" href="#current-story-files">Current Story Files</a><a class="section-nav-link" href="#why-reporters-care">Why Reporters Care</a><a class="section-nav-link" href="#desk-notes">Desk Notes</a></div></nav>
-
+      <nav class="section-nav panel utility-panel" aria-label="Section navigation"><div class="section-nav-label">On this page</div><div class="section-nav-links"><a class="section-nav-link" href="#latest-papers">Latest Papers And Preprints</a><a class="section-nav-link" href="#virology-evolution">Virology + Evolution</a><a class="section-nav-link" href="#research-linked-files">Research-Linked Active Files</a><a class="section-nav-link" href="#reference-links">Disease Sheets</a><a class="section-nav-link" href="#archive-links">Archive</a></div></nav>
+      <section class="panel" id="latest-papers">
+        <h2>Latest Papers And Preprints</h2>
+        <p class="muted-note">Research that adds mechanism, surveillance, transmission, or outbreak context beyond the daily news stream.</p>
+        <div class="card-grid"><article class="site-card"><div class="kicker">Journal article</div><h3><a href="https://pubmed.ncbi.nlm.nih.gov/42243068/">A new clade of H9N2 avian influenza virus circulating in Laos.</a></h3><p>This new clade is phylogenetically distinct from the previously described clades, and the representative strains in this new Clade 4.6.20 presented a low cross reactivity to the antisera of other clades, suggesting antigenic drift of the viruses between the new Clade 4.6.20, and other clades in the dominant lineage of Clade 4.6. Using the established H9N2 genomic classification system, a novel HA gene clade of the A/chicken/Beijing/1/94-like (BJ/94-like) lineage, designated Clade 4.6.20, was identified. In addition, all the newly identified viruses in Clade 4.6.20 possessed HA-L226 and NP-N52 mutations, which are associated with human-type receptor binding and human MxA-related innate immunity escape, respectively.</p><p><strong>Source:</strong> Emerging microbes &amp; infections</p><p><strong>Why it matters:</strong> Useful for mechanism, transmission, or surveillance context beyond the daily story file.</p><p><strong>Evidence caveat:</strong> Interpret in light of study design, setting, sample size, and how directly the findings travel to the current outbreak picture.</p><div class="meta-row"><span class="badge">2026-06-04T00:00</span><span class="badge">Live fetch</span><span class="badge">DOI: 10.1080/22221751.2026.2678641</span><a class="link-pill" href="https://pubmed.ncbi.nlm.nih.gov/42243068/">Abstract</a></div></article><article class="site-card"><div class="kicker">Journal article</div><h3><a href="https://pubmed.ncbi.nlm.nih.gov/42228981/">HPV vaccination scenario and parental willingness to pay among girls aged 9-14 y in the Yangtze River Delta, China.</a></h3><p>Overall, 62.6% intended to vaccinate their daughters (39.9% for themselves or their wives), and 8.1% had completed/scheduled HPV vaccination in daughters (35.5% in mothers). The average WTP was CNY 2,373 for daughters; it was higher among higher-income parents and those with daughters who received influenza vaccine, but lower among parents expecting governmental funding or unwilling to vaccinate daughters (each P &lt; .05). A cross-sectional survey was conducted among parents of girls aged 9-14 in the Yangtze River Delta, one of the socioeconomically developed regions in China, between March and August 2025.</p><p><strong>Source:</strong> Human vaccines &amp; immunotherapeutics</p><p><strong>Why it matters:</strong> Useful for mechanism, transmission, or surveillance context beyond the daily story file.</p><p><strong>Evidence caveat:</strong> Interpret in light of study design, setting, sample size, and how directly the findings travel to the current outbreak picture.</p><div class="meta-row"><span class="badge">2026-06-02T00:00</span><span class="badge">Live fetch</span><span class="badge">DOI: 10.1080/21645515.2026.2681241</span><a class="link-pill" href="https://pubmed.ncbi.nlm.nih.gov/42228981/">Abstract</a></div></article></div>
+      </section>
+      <section class="panel" id="virology-evolution">
+        <h2>Virology + Pathogen Evolution</h2>
+        <p class="muted-note">Genomics, evolution, and laboratory-linked findings that shape how the desk should interpret the current signal environment.</p>
+        <div class="card-grid"><p class="empty-note">No virology or pathogen-evolution briefs were surfaced in this run.</p></div>
+      </section>
+      <section class="panel" id="research-linked-files">
+        <h2>Research-Linked Active Files</h2>
+        <div class="story-grid"><article class="site-card feature-card"><div class="kicker">Outbreak file</div><h3><a href="./stories/story_56666e9c6c86e976-ebola-virus-disease.html">Ebola virus disease</a></h3><p>Baseline snapshot created with 181 clustered item(s) across 120 source(s).</p></article><article class="site-card feature-card"><div class="kicker">Outbreak file</div><h3><a href="./stories/story_17a354bcafcca4ce-occupational-and-environmental-epidemiology.html">Occupational and environmental epidemiology</a></h3><p>Baseline snapshot created with 7 clustered item(s) across 3 source(s).</p></article></div>
+      </section>
       <section class="panel-grid">
-        <section class="panel" id="clinical-pattern">
-          <h2>Symptoms And Clinical Pattern</h2>
-          <ul class="bullet-list"><li>Abrupt vomiting and diarrhea.</li><li>Abdominal cramps and low-grade fever are common.</li><li>Explosive facility outbreaks are typical.</li></ul>
+        <section class="panel" id="reference-links">
+          <h2>Disease Sheets</h2>
+          <div class="card-grid"><article class="site-card"><div class="kicker">Reference</div><h3><a href="./reference/ebola-virus-disease.html">Ebola virus disease</a></h3><p><strong>Pathogen:</strong> Ebola viruses, including Bundibugyo virus in the current DRC/Uganda outbreak</p><p>Ebola remains a defining outbreak-desk disease because healthcare transmission, funeral practices, laboratory capacity, community trust, and international alarm can all move faster than the confirmed count.</p></article><article class="site-card"><div class="kicker">Reference</div><h3><a href="./reference/hantavirus-syndrome.html">Hantavirus syndrome</a></h3><p><strong>Pathogen:</strong> Hantaviruses, including Andes virus in the Americas</p><p>This is a rare but frightening severe-disease story where a single unusual cluster can force questions about travel safety, rodent exposure, and whether Andes-virus-style person-to-person spread is in play.</p><div class="meta-row"><a class="link-pill" href="./atlas.html?pathogen=hantavirus">View in Atlas</a></div></article><article class="site-card"><div class="kicker">Reference</div><h3><a href="./reference/measles.html">Measles</a></h3><p><strong>Pathogen:</strong> Measles virus</p><p>Measles is a clean reporter desk disease because it reveals vaccination gaps, school and household spread, travel-linked importation, and public-health capacity all at once.</p><div class="meta-row"><a class="link-pill" href="./atlas.html?pathogen=measles">View in Atlas</a></div></article><article class="site-card"><div class="kicker">Reference</div><h3><a href="./reference/anthrax.html">Anthrax</a></h3><p><strong>Pathogen:</strong> Bacillus anthracis</p><p>Anthrax is a strong local accountability story because livestock practices, slaughter exposure, and rural reporting gaps can hide serious outbreaks in plain sight.</p></article><article class="site-card"><div class="kicker">Reference</div><h3><a href="./reference/avian-influenza-a-h5n1.html">Avian influenza A(H5N1)</a></h3><p><strong>Pathogen:</strong> Influenza A(H5N1)</p><p>H5N1 is one of the few diseases where occupational exposure, food systems, animal surveillance, and pandemic-risk communications all converge in the same file.</p><div class="meta-row"><a class="link-pill" href="./atlas.html?pathogen=avian-influenza-h5n1">View in Atlas</a></div></article><article class="site-card"><div class="kicker">Reference</div><h3><a href="./reference/chikungunya.html">Chikungunya</a></h3><p><strong>Pathogen:</strong> Chikungunya virus</p><p>Chikungunya is a high-quality reporter disease because explosive outbreaks can be large, visually obvious, and politically disruptive even when mortality stays low.</p></article></div>
         </section>
-        <section class="panel">
-          <h2>Official Background Links</h2>
-          <div class="meta-row"><a class="link-pill" href="https://www.cdc.gov/norovirus/about/index.html">CDC overview</a><a class="link-pill" href="https://www.who.int/teams/integrated-health-services/food-safety">WHO outbreak resources</a></div>
+        <section class="panel" id="archive-links">
+          <h2>Recent Archive Days</h2>
+          <div class="archive-table"><article class="archive-row"><a href="./2026/06/2026-06-08.html"><strong>2026-06-08</strong></a><span class="archive-row-meta">June 2026</span></article></div>
         </section>
-      </section>
-
-      <section class="panel" id="current-story-files">
-        <h2>Current Story Files</h2>
-        <div class="card-grid"><p class="empty-note">No active tracked stories are linked to this disease in the current run.</p></div>
-      </section>
-
-      <section class="panel" id="why-reporters-care">
-        <h2>Why Reporters Care</h2>
-        <p><strong>Why this keeps becoming news:</strong> Norovirus is highly useful for a desk because it produces the kind of explosive local outbreak that readers immediately understand, especially on cruise ships and in institutions.</p>
-        <p><strong>What journalists often get wrong:</strong> It is often treated as trivial because mortality is low, but the real story is rapid attack rate, institutional disruption, and public confidence.</p>
-        <ul class="bullet-list"><li>Attack rate and facility type.</li><li>Cruise, school, long-term-care, or food-service setting.</li><li>Whether the source is environmental, person-to-person, or foodborne.</li></ul>
-      </section>
-
-      <section class="panel">
-        <h2>Last Major Outbreak On File</h2>
-        <p><strong>Recurring cruise and institutional outbreaks</strong> | Global | Ongoing</p>
-        <p>Norovirus remains one of the most recurrent outbreak categories for cruise ships, schools, and long-term-care facilities, with rapid attack rates and heavy local reporting but inconsistent national attention.</p>
-        <p><strong>Source:</strong> <a href="https://www.cdc.gov/norovirus/about/index.html">CDC overview</a> (CDC overview)</p>
-      </section>
-
-      <section class="panel" id="desk-notes">
-        <h2>Desk Notes And Historical Signals</h2>
-        <p><strong>Desk note:</strong> This is one of the most reliable high-volume local outbreak categories and should be surfaced more aggressively.</p>
-        <p><strong>Research caveats:</strong> Local outbreaks are numerous and inconsistently reported, so media visibility can badly misrepresent actual burden.</p>
-        <ul class="bullet-list"><li>Cruise-ship outbreaks keep reminding editors that enormous audience interest can attach to pathogens that are usually medically self-limited.</li></ul>
       </section>
     </main>
     <script>
@@ -189,7 +164,7 @@
       const liveUpdateText = document.getElementById("live-update-text");
       const currentRunId = 'run_00854f73277c71db';
       const currentGeneratedAt = '2026-06-08T06:06:50';
-      const manifestPath = '../app_exports/manifest.json';
+      const manifestPath = './app_exports/manifest.json';
       const liveUpdateStorageKey = `pathogen-dispatch-live-update-dismissed:${window.location.pathname}`;
       const liveUpdateStart = Date.now();
       let pendingLiveUpdateRunId = "";
@@ -323,4 +298,4 @@
       }
     </script>
   </body>
-</html>
+    </html>
