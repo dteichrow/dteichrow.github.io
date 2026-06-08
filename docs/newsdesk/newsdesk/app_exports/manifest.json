@@ -1,0 +1,11 @@
+{
+  "files": {
+    "archive": "archive.json",
+    "atlas": "atlas.json",
+    "health": "health.json",
+    "home": "index.html",
+    "latest": "latest.json"
+  },
+  "generated_at": "2026-06-08T05:21:58",
+  "latest_run_id": "run_e261290bccfaa55c"
+}
