@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-06-11
-Generated at: 2026-06-11T14:10
+Generated at: 2026-06-11T14:16
 Search window: 7 day(s) ending 2026-06-11
 
 ## Executive scan
@@ -23,18 +23,17 @@ Search window: 7 day(s) ending 2026-06-11
 - WHO Regional Office for Africa now explicitly uses investigation or monitoring language.
 - WHO Regional Office for Africa now includes deaths or fatal cases in the story frame.
 
-### Dengue and arboviruses
-- Lead item: [Vietnam dengue surge 2026 raises red flags for travelers](https://www.thetraveler.org/vietnam-dengue-surge-2026-raises-red-flags-for-travelers/) (thetraveler.org)
-- Newly tracked story cluster: 3 item(s) across 3 source(s).
-- Baseline snapshot created with 3 clustered item(s) across 3 source(s).
-- Ada Derana now includes deaths or fatal cases in the story frame.
-- thetraveler.org now includes evacuation reporting.
-
 ### Occupational and environmental epidemiology
 - Lead item: [Alcohol Consumption During Pregnancy Among Women Aged 18-49 Years](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765814) (CDC MMWR)
 - Newly tracked story cluster: 7 item(s) across 3 source(s).
 - Baseline snapshot created with 7 clustered item(s) across 3 source(s).
 - CDC MMWR now explicitly uses investigation or monitoring language.
+
+### Dengue and arboviruses
+- Lead item: [Health authorities warn of spike in dengue and chikungunya cases](https://adaderana.lk/news/109066) (Ada Derana)
+- Newly tracked story cluster: 3 item(s) across 3 source(s).
+- Baseline snapshot created with 3 clustered item(s) across 3 source(s).
+- Ada Derana now includes deaths or fatal cases in the story frame.
 
 
 ## Major topics
@@ -56,11 +55,11 @@ Search window: 7 day(s) ending 2026-06-11
 
 ### Dengue and arboviruses
 - Topic size: 3 item(s) across 3 source(s); 0 official/primary-source item(s).
-- Lead item: [Vietnam dengue surge 2026 raises red flags for travelers](https://www.thetraveler.org/vietnam-dengue-surge-2026-raises-red-flags-for-travelers/) (thetraveler.org, 2026-06-11T21:02+00:00)
-- Detailed note: Flights With Hundreds Delayed and Canceled United Warning as East Coast Airports Plunge Into Chaos Iraq Travel Warnings Tighten as Airspace Closes and Evacuations Rise Vietnam’s fast escalating dengue fever surge in early 2026 is beginning to reshape travel decisions, as rapidly rising case numbers in major tourist cities coincide with the onset of the rainy season and trigger a wave of health advisories directed...
-- Evidence notes: [Vietnam dengue surge 2026 raises red flags for travelers](https://www.thetraveler.org/vietnam-dengue-surge-2026-raises-red-flags-for-travelers/) (thetraveler.org); [Health authorities warn of spike in dengue and chikungunya cases](https://adaderana.lk/news/109066) (Ada Derana); [Dengue Fever Cases Surge in Yemen's Aden: 12 Deaths Reported](https://yemenonline.info/special-reports/12754) (Yemen Online)
+- Lead item: [Health authorities warn of spike in dengue and chikungunya cases](https://adaderana.lk/news/109066) (Ada Derana, 2026-06-09T20:56+00:00)
+- Detailed note: He warned that dengue can be fatal, while children affected by chikungunya may suffer from severe joint pain for months after infection. Deepal Perera noted that chikungunya can be fatal for pregnant women and the elderly, and it may even affect unborn babies if the mother is infected.
+- Evidence notes: [Health authorities warn of spike in dengue and chikungunya cases](https://adaderana.lk/news/109066) (Ada Derana); [Vietnam Travel Alert Escalates as Dengue Fever Surge 2026 Spreads Rapidly Across Tourist Hotspots Triggering Widespread Health Warnings and Forcing Travelers to Rethink Plans Amid Expanding Outbreak Crisis – New Update You Need to Know](https://www.travelandtourworld.com/news/article/gdiiwip8jp70/) (Travel And Tour World); [Dengue Fever Cases Surge in Yemen's Aden: 12 Deaths Reported](https://yemenonline.info/special-reports/12754) (Yemen Online)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
-- Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting.
+- Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Miscellaneous signals
 - Topic size: 2 item(s) across 2 source(s); 2 official/primary-source item(s).
@@ -417,8 +416,6 @@ Search window: 7 day(s) ending 2026-06-11
 
 
 ## Other notable readings
-- [Vietnam dengue surge 2026 raises red flags for travelers](https://www.thetraveler.org/vietnam-dengue-surge-2026-raises-red-flags-for-travelers/) | thetraveler.org | 2026-06-11T21:02+00:00 | Outbreaks and emerging infections
-  Flights With Hundreds Delayed and Canceled United Warning as East Coast Airports Plunge Into Chaos Iraq Travel Warnings Tighten as Airspace Closes and Evacuations Rise Vietnam’s fast escalating dengue fever surge in early 2026 is beginning to reshape travel decisions, as rapidly rising case numbers in major tourist cities coincide with the onset of the rainy season and trigger a wave of health advisories directed at visitors. A sharp rise in dengue cases across Vietnam’s key tourist hubs in 2026 is prompting new health warnings and forcing many international travelers to reassess itineraries. If you click through and make a purchase, we may earn a small commission at no extra cost to you.
 - [Kenya among 10 countries at risk of Ebola amid outbreak in DRC and Uganda- Africa CDC](https://eastleighvoice.co.ke/says%20un%20report-%20africa%20cdc%20ebola-%20bundibugyo%20strain-%20ebola-%20ebola%20kenya-%20ebola%20outbreak%20drc-%20ebola%20response%20africa/355964/kenya-among-10-countries-at-risk-of-ebola-amid-outbreak-in-drc-and-uganda--africa-cdc) | The Eastleigh Voice | 2026-06-11T19:39+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Nipah virus resurfaces in Kerala with 43-year-old bizman testing positive; 72 people in contact list | India News](https://www.hindustantimes.com/india-news/nipah-virus-resurfaces-in-kerala-with-43-year-old-bizman-testing-positive-72-people-in-contact-list-101781205999883-amp.html) | Hindustan Times | 2026-06-11T19:28+00:00 | Outbreaks and emerging infections
@@ -456,6 +453,8 @@ Search window: 7 day(s) ending 2026-06-11
 - [Kenya protests US-funded Ebola ward amid fears of ‘double standards’](https://www.turnto23.com/videos/news/national-news/kenya-protests-us-funded-ebola-ward-amid-fears-of-double-standards) | 23ABC News Bakersfield | 2026-06-10T08:12+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [What’s changed since the last major Ebola outbreak](https://www.statnews.com/2026/06/09/health-news-whats-changed-since-the-last-ebola-outbreak/) | statnews.com | 2026-06-10T07:23+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [2026 Ebola outbreak in Central Africa](https://www.britannica.com/event/2026-Ebola-outbreak-in-Central-Africa) | Britannica | 2026-06-10T05:00+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
