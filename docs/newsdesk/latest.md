@@ -1,25 +1,33 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-06-12
-Generated at: 2026-06-12T02:16
+Generated at: 2026-06-12T05:00
 Search window: 7 day(s) ending 2026-06-12
 
 ## Executive scan
+- [Respiratory virus surveillance in the WHO African Region Epidemiological Week 22, May 25 to 31 2026](https://www.afro.who.int/publications/respiratory-virus-surveillance-who-african-region-epidemiological-week-22-may-25-31) (WHO Regional Office for Africa; 2026-06-12T09:58+00:00; Outbreaks and emerging infections; relevance 5/5)
 - [Alcohol Consumption During Pregnancy Among Women Aged 18-49 Years](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765814) (CDC MMWR; 2026-06-11T17:00+00:00; Occupational and environmental epidemiology; relevance 5/5)
 - [Legionnaires Disease Associated with a Private-Use Hot Tub in a Vacation Rental Property](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765813) (CDC MMWR; 2026-06-11T17:00+00:00; Occupational and environmental epidemiology; relevance 5/5)
 - [Notes from the Field: Outbreak of Ebola Disease Caused by Bundibugyo Virus - Democratic Republic of the Congo and Uganda, May 2026](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765735) (CDC MMWR; 2026-06-11T17:00+00:00; Occupational and environmental epidemiology; relevance 5/5)
 - [Assessment of Risk to the U.S. Population from the Ebola Disease Outbreak Caused by Bundibugyo Virus, 2026](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765736) (CDC MMWR; 2026-06-11T17:00+00:00; Occupational and environmental epidemiology; relevance 5/5)
 - [Modeled Scenario Projections for the Ebola Disease Outbreak Caused by Bundibugyo Virus, 2026](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765739) (CDC MMWR; 2026-06-11T17:00+00:00; Occupational and environmental epidemiology; relevance 5/5)
 - [Predictors of prolonged decision-to-delivery interval in emergency caesarean section in Northern Uganda: a historical cohort study.](https://pubmed.ncbi.nlm.nih.gov/42275299/) (PubMed Infectious Disease Search; 2026-06-11T00:00; Major epidemiology studies; relevance 5/5)
-- [FDA outbreak investigation 1380: Listeria monocytogenes linked to Requeson/Soft Ricotta Cheese](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-listeria-monocytogenes-soft-cheese-june-2026) (FDA Foodborne Outbreaks; 2026-06-10T14:00; Outbreaks and emerging infections; relevance 5/5)
-- [Bundibugyo Ebola virus | Continental preparedness and response plan: June-November 2026](https://www.afro.who.int/publications/bundibugyo-ebola-virus-continental-preparedness-and-response-plan-june-november-2026) (WHO Regional Office for Africa; 2026-06-05T12:16+00:00; Outbreaks and emerging infections; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (29), Occupational and environmental epidemiology (6), Major epidemiology studies (3)
+- [Impact of SARS-CoV-2 infection history on the clinical features and outcomes of patients with recurrent pulmonary tuberculosis: a retrospective case-control study.](https://pubmed.ncbi.nlm.nih.gov/42262973/) (PubMed Infectious Disease Search; 2026-06-09T00:00; Major epidemiology studies; relevance 5/5)
+- Category mix: Outbreaks and emerging infections (32), Major epidemiology studies (7), Occupational and environmental epidemiology (6)
 - Source health: 1 source(s) failed during collection: USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
+### COVID-19 and SARS-CoV-2
+- Lead item: [Respiratory virus surveillance in the WHO African Region Epidemiological Week 22, May 25 to 31 2026](https://www.afro.who.int/publications/respiratory-virus-surveillance-who-african-region-epidemiological-week-22-may-25-31) (WHO Regional Office for Africa)
+- Newly tracked story cluster: 7 item(s) across 3 source(s).
+- Baseline snapshot created with 7 clustered item(s) across 3 source(s).
+- PubMed Infectious Disease Search now explicitly uses investigation or monitoring language.
+- PubMed Infectious Disease Search now includes deaths or fatal cases in the story frame.
+- PubMed Infectious Disease Search now foregrounds vaccination or vaccine policy in the story.
+
 ### Ebola virus disease
-- Lead item: [Africa Races for Ebola Vaccine as Outbreak Outpaces Response](https://goodmenproject.com/featured-content/africa-races-for-ebola-vaccine-as-outbreak-outpaces-response/) (The Good Men Project)
-- Newly tracked story cluster: 19 item(s) across 18 source(s).
-- Baseline snapshot created with 19 clustered item(s) across 18 source(s).
+- Lead item: ['Blind spots' could hide full spread of Congo's Ebola outbreak, WHO suggests](https://www.reuters.com/business/healthcare-pharmaceuticals/blind-spots-could-hide-full-spread-congos-ebola-outbreak-who-suggests-2026-06-12/) (Reuters)
+- Newly tracked story cluster: 20 item(s) across 17 source(s).
+- Baseline snapshot created with 20 clustered item(s) across 17 source(s).
 - Al Jazeera now includes quarantine language.
 - The Good Men Project now foregrounds vaccination or vaccine policy in the story.
 
@@ -32,10 +40,10 @@ Search window: 7 day(s) ending 2026-06-12
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 19 item(s) across 18 source(s); 0 official/primary-source item(s).
-- Lead item: [Africa Races for Ebola Vaccine as Outbreak Outpaces Response](https://goodmenproject.com/featured-content/africa-races-for-ebola-vaccine-as-outbreak-outpaces-response/) (The Good Men Project, 2026-06-12T05:33+00:00)
-- Detailed note: Cluster remains active across 19 related item(s), but usable factual summary text was limited after cleanup.
-- Evidence notes: [Africa Races for Ebola Vaccine as Outbreak Outpaces Response](https://goodmenproject.com/featured-content/africa-races-for-ebola-vaccine-as-outbreak-outpaces-response/) (The Good Men Project); [Ebola outbreak in DR Congo spreads to new areas](https://cphpost.dk/2026-06-12/global/ebola-outbreak-in-dr-congo-spreads-to-new-areas/) (The Copenhagen Post); [DR Congo arrive in the US for the World Cup after Ebola quarantine](https://www.aljazeera.com/sports/2026/6/12/dr-congo-arrive-in-the-us-for-the-world-cup-after-ebola-quarantine) (Al Jazeera); [Congo’s Ebola outbreak spreads to new health zones](https://www.straitstimes.com/world/congos-ebola-outbreak-spreads-to-new-health-zones) (The Straits Times); [Tracking the 2026 Ebola outbreak in maps and figures: Locations, severity, how contagious it is and more](https://www.nbcnews.com/data-graphics/ebola-outbreak-2026-cases-virus-tracking-maps-spread-congo-ugangda-us-rcna347102) (NBC News)
+- Topic size: 20 item(s) across 17 source(s); 0 official/primary-source item(s).
+- Lead item: ['Blind spots' could hide full spread of Congo's Ebola outbreak, WHO suggests](https://www.reuters.com/business/healthcare-pharmaceuticals/blind-spots-could-hide-full-spread-congos-ebola-outbreak-who-suggests-2026-06-12/) (Reuters, 2026-06-12T10:18+00:00)
+- Detailed note: Cluster remains active across 20 related item(s), but usable factual summary text was limited after cleanup.
+- Evidence notes: ['Blind spots' could hide full spread of Congo's Ebola outbreak, WHO suggests](https://www.reuters.com/business/healthcare-pharmaceuticals/blind-spots-could-hide-full-spread-congos-ebola-outbreak-who-suggests-2026-06-12/) (Reuters); [Cepheid Delivers Xpert® Hemorrhagic Fever Panel Tests to Africa to Address Diagnostic Gaps in Ebola Bundibugyo Outbreak](https://finance.yahoo.com/sectors/healthcare/articles/cepheid-delivers-xpert-hemorrhagic-fever-100000337.html) (Yahoo Finance); [Ebola outbreak: Uganda’s movement restrictions cripple cross-border trade](https://www.thenewhumanitarian.org/feature/2026/06/12/ebola-outbreak-uganda-movement-restrictions-cross-border-trade) (The New Humanitarian); [Africa Races for Ebola Vaccine as Outbreak Outpaces Response](https://goodmenproject.com/featured-content/africa-races-for-ebola-vaccine-as-outbreak-outpaces-response/) (The Good Men Project); [Ebola outbreak in DR Congo spreads to new areas](https://cphpost.dk/2026-06-12/global/ebola-outbreak-in-dr-congo-spreads-to-new-areas/) (The Copenhagen Post)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
 
@@ -47,21 +55,21 @@ Search window: 7 day(s) ending 2026-06-12
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
+### COVID-19 and SARS-CoV-2
+- Topic size: 7 item(s) across 3 source(s); 7 official/primary-source item(s).
+- Lead item: [Respiratory virus surveillance in the WHO African Region Epidemiological Week 22, May 25 to 31 2026](https://www.afro.who.int/publications/respiratory-virus-surveillance-who-african-region-epidemiological-week-22-may-25-31) (WHO Regional Office for Africa, 2026-06-12T09:58+00:00)
+- Detailed note: Multivariable regression identified extra-pulmonary TB (adjusted OR = 5.30, 95%CI: 1.91-14.72) and drug resistance (adjusted OR = 11.92, 95%CI: 1.48-96.23) as independent risk factors for unfavorable outcomes, but not a history of SARS-CoV-2 infection (aOR = 1.18, 95%CI: 0.68-2.05, p = 0.55). Cumulatively from weeks 1 to 22, the WHO AFR influenza laboratory network has tested 29,831 sentinelsurveillance specimens...
+- Evidence notes: [Respiratory virus surveillance in the WHO African Region Epidemiological Week 22, May 25 to 31 2026](https://www.afro.who.int/publications/respiratory-virus-surveillance-who-african-region-epidemiological-week-22-may-25-31) (WHO Regional Office for Africa); [Impact of SARS-CoV-2 infection history on the clinical features and outcomes of patients with recurrent pulmonary tuberculosis: a retrospective case-control study.](https://pubmed.ncbi.nlm.nih.gov/42262973/) (PubMed Infectious Disease Search); [UHPR CCS Sierra Leone](https://www.afro.who.int/publications/uhpr-ccs-sierra-leone) (WHO Regional Office for Africa); [Safety and immunogenicity of a booster dose of COVAC-2, a Sepivac SWE™ adjuvanted SARS-CoV-2 recombinant protein vaccine in previously vaccinated healthy adults; a randomized controlled multicentre trial.](https://pubmed.ncbi.nlm.nih.gov/42268674/) (PubMed Infectious Disease Search); [Agreement between seroprevalence- and model-based estimates of COVID-19 burden.](https://pubmed.ncbi.nlm.nih.gov/42261140/) (PubMed Infectious Disease Search)
+- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
+- Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
+
 ### Miscellaneous signals
-- Topic size: 3 item(s) across 2 source(s); 3 official/primary-source item(s).
+- Topic size: 3 item(s) across 2 source(s); 2 official/primary-source item(s).
 - Lead item: [Predictors of prolonged decision-to-delivery interval in emergency caesarean section in Northern Uganda: a historical cohort study.](https://pubmed.ncbi.nlm.nih.gov/42275299/) (PubMed Infectious Disease Search, 2026-06-11T00:00)
 - Detailed note: Several lower-volume signals passed the filters, but they do not resolve into one coherent topic cluster. Use the linked evidence notes directly rather than reading this as a single story.
-- Evidence notes: [Predictors of prolonged decision-to-delivery interval in emergency caesarean section in Northern Uganda: a historical cohort study.](https://pubmed.ncbi.nlm.nih.gov/42275299/) (PubMed Infectious Disease Search); [FDA outbreak investigation 1380: Listeria monocytogenes linked to Requeson/Soft Ricotta Cheese](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-listeria-monocytogenes-soft-cheese-june-2026) (FDA Foodborne Outbreaks); [Transmitted and pretreatment drug resistance among 69 HIV-1 CRFs in China: the first systematic analysis.](https://pubmed.ncbi.nlm.nih.gov/42261238/) (PubMed Infectious Disease Search)
+- Evidence notes: [Predictors of prolonged decision-to-delivery interval in emergency caesarean section in Northern Uganda: a historical cohort study.](https://pubmed.ncbi.nlm.nih.gov/42275299/) (PubMed Infectious Disease Search); [Nipah virus returns to Keralam: State govt issues high alert; 55 hospitalised with Shigella infection](https://www.bhaskarenglish.in/national/news/kerala-nipah-virus-outbreak-kozikhode-businessman-ventilator-138164065.html) (Bhaskar English); [Transmitted and pretreatment drug resistance among 69 HIV-1 CRFs in China: the first systematic analysis.](https://pubmed.ncbi.nlm.nih.gov/42261238/) (PubMed Infectious Disease Search)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may shape how new evidence is framed before broader consensus forms.
-- Caveats / uncertainty: These notes are limited to source text collected in this run.
-
-### Nipah virus disease
-- Topic size: 2 item(s) across 2 source(s); 0 official/primary-source item(s).
-- Lead item: [Nipah virus returns to Keralam: State govt issues high alert; 55 hospitalised with Shigella infection](https://www.bhaskarenglish.in/national/news/kerala-nipah-virus-outbreak-kozikhode-businessman-ventilator-138164065.html) (Bhaskar English, 2026-06-11T05:15+00:00)
-- Detailed note: Health authorities have identified 578 suspected cases, and test results for seven samples are still awaited. So far, 20 people have tested positive for Shigella, while 55 patients are being treated in hospitals.
-- Evidence notes: [Nipah virus returns to Keralam: State govt issues high alert; 55 hospitalised with Shigella infection](https://www.bhaskarenglish.in/national/news/kerala-nipah-virus-outbreak-kozikhode-businessman-ventilator-138164065.html) (Bhaskar English); [Suspected Nipah Infection Prompts High Alert in Kerala](https://theindianpractitioner.com/suspected-nipah-infection-prompts-high-alert-in-kerala/) (The Indian Practitioner)
-- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
-- Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
+- Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Historical epidemiology and ancient pathogens
 - Topic size: 2 item(s) across 2 source(s); 0 official/primary-source item(s).
@@ -308,6 +316,16 @@ Search window: 7 day(s) ending 2026-06-12
   Desk note: This is exactly the kind of severe rural infectious-disease burden that can disappear if the intake is too urban and too English-headline dependent.
 
 ## Highest priority items
+### Respiratory virus surveillance in the WHO African Region Epidemiological Week 22, May 25 to 31 2026
+- Source: WHO Regional Office for Africa
+- Date: 2026-06-12T09:58+00:00
+- URL: https://www.afro.who.int/publications/respiratory-virus-surveillance-who-african-region-epidemiological-week-22-may-25-31
+- Category: Outbreaks and emerging infections
+- Summary: Cumulatively from weeks 1 to 22, the WHO AFR influenza laboratory network has tested 29,831 sentinelsurveillance specimens for SARS-CoV-2, of which 857 were positive for SARS-CoV-2 (cumulative positivity rate 2.9%). SARS-CoV-2 In Epiweek 22, of the 876 specimens processed by 11 laboratories in the African Region, a total of 15 specimens tested positive for SARS-CoV-2 (positivity of 1.7%). The following influenza viruses were identified: Influenza A (H1N1)pdm09 (n = 26), Influenza A (H3) (n = 31), Influenza A (subtyping not performed) (n = 19), Influenza B (lineage not determined) (n = 81), and Influenza B (Victoria) (n = 29).
+- Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.
+- Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
+- Relevance score: 5/5
+
 ### Alcohol Consumption During Pregnancy Among Women Aged 18-49 Years
 - Source: CDC MMWR
 - Date: 2026-06-11T17:00+00:00
@@ -368,13 +386,13 @@ Search window: 7 day(s) ending 2026-06-12
 - Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
 - Relevance score: 5/5
 
-### FDA outbreak investigation 1380: Listeria monocytogenes linked to Requeson/Soft Ricotta Cheese
-- Source: FDA Foodborne Outbreaks
-- Date: 2026-06-10T14:00
-- URL: https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-listeria-monocytogenes-soft-cheese-june-2026
-- Category: Outbreaks and emerging infections
-- Summary: FDA lists reference 1380 with date posted 6/3/2026. Outbreak or event status: Ongoing See Advisory. Product linked to illnesses: Requeson/Soft Ricotta Cheese.
-- Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.
+### Impact of SARS-CoV-2 infection history on the clinical features and outcomes of patients with recurrent pulmonary tuberculosis: a retrospective case-control study.
+- Source: PubMed Infectious Disease Search
+- Date: 2026-06-09T00:00
+- URL: https://pubmed.ncbi.nlm.nih.gov/42262973/
+- Category: Major epidemiology studies
+- Summary: Multivariable regression identified extra-pulmonary TB (adjusted OR = 5.30, 95%CI: 1.91-14.72) and drug resistance (adjusted OR = 11.92, 95%CI: 1.48-96.23) as independent risk factors for unfavorable outcomes, but not a history of SARS-CoV-2 infection (aOR = 1.18, 95%CI: 0.68-2.05, p = 0.55). After PSM (105 matched pairs), the infection history group had a significantly higher proportion of patients undergoing invasive procedures (51.4% vs 36.2%) and a shorter median time to radiographic lung recovery (93 days vs 108 days). The difference in dyspnea (35.2% vs 25.7%) became non-significant after FDR correction ( q = 0.12).
+- Why it matters: Comes from an official or primary-source channel.
 - Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
 - Relevance score: 5/5
 
@@ -388,35 +406,35 @@ Search window: 7 day(s) ending 2026-06-12
 - Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
 - Relevance score: 5/5
 
-### Africa Races for Ebola Vaccine as Outbreak Outpaces Response
-- Source: The Good Men Project
-- Date: 2026-06-12T05:33+00:00
-- URL: https://goodmenproject.com/featured-content/africa-races-for-ebola-vaccine-as-outbreak-outpaces-response/
+### UHPR CCS Sierra Leone
+- Source: WHO Regional Office for Africa
+- Date: 2026-06-03T12:27+00:00
+- URL: https://www.afro.who.int/publications/uhpr-ccs-sierra-leone
 - Category: Outbreaks and emerging infections
-- Summary: Limited detail was available from feed metadata alone.
-- Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response.
-- Caveats / uncertainty: Usable source detail was limited after cleanup.
-- Relevance score: 5/5
-
-### Ebola outbreak in DR Congo spreads to new areas
-- Source: The Copenhagen Post
-- Date: 2026-06-12T05:03+00:00
-- URL: https://cphpost.dk/2026-06-12/global/ebola-outbreak-in-dr-congo-spreads-to-new-areas/
-- Category: Outbreaks and emerging infections
-- Summary: Limited detail was available from feed metadata alone.
-- Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response.
-- Caveats / uncertainty: Usable source detail was limited after cleanup.
+- Summary: Following the COVID-19 pandemic, the UHPR was established to help countries assess and enhance their preparedness for health emergencies by engaging the highest levels of government. The UHPR follows a five-year cycle comprising preparation, national review, global peer review, and follow-up implementation phases. Sierra Leone became the first country in the ECOWAS region, the second in Africa, and the fifth worldwide to participate in the review.
+- Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.
+- Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
 - Relevance score: 5/5
 
 
 ## Other notable readings
+- ['Blind spots' could hide full spread of Congo's Ebola outbreak, WHO suggests](https://www.reuters.com/business/healthcare-pharmaceuticals/blind-spots-could-hide-full-spread-congos-ebola-outbreak-who-suggests-2026-06-12/) | Reuters | 2026-06-12T10:18+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Cepheid Delivers Xpert® Hemorrhagic Fever Panel Tests to Africa to Address Diagnostic Gaps in Ebola Bundibugyo Outbreak](https://finance.yahoo.com/sectors/healthcare/articles/cepheid-delivers-xpert-hemorrhagic-fever-100000337.html) | Yahoo Finance | 2026-06-12T10:00+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Ebola outbreak: Uganda’s movement restrictions cripple cross-border trade](https://www.thenewhumanitarian.org/feature/2026/06/12/ebola-outbreak-uganda-movement-restrictions-cross-border-trade) | The New Humanitarian | 2026-06-12T07:28+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Africa Races for Ebola Vaccine as Outbreak Outpaces Response](https://goodmenproject.com/featured-content/africa-races-for-ebola-vaccine-as-outbreak-outpaces-response/) | The Good Men Project | 2026-06-12T05:33+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Ebola outbreak in DR Congo spreads to new areas](https://cphpost.dk/2026-06-12/global/ebola-outbreak-in-dr-congo-spreads-to-new-areas/) | The Copenhagen Post | 2026-06-12T05:03+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - [A cracked coffin, a funeral and the hunt for Ebola’s patient zero](https://www.japantimes.co.jp/news/2026/06/12/world/science-health/ebola-patient-zero/) | The Japan Times | 2026-06-12T04:57+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [DR Congo arrive in the US for the World Cup after Ebola quarantine](https://www.aljazeera.com/sports/2026/6/12/dr-congo-arrive-in-the-us-for-the-world-cup-after-ebola-quarantine) | Al Jazeera | 2026-06-12T00:41+00:00 | Outbreaks and emerging infections
+- [DR Congo arrive in the US for the World Cup after Ebola quarantine](https://news.google.com/rss/articles/CBMirgFBVV95cUxPcDJBUUlBMTAtMXZUYkRtSXJqNlJZZ0JUWkJqeTZ5WFdHeldMTi1LTzliMkZWRGZBX3NvbEFyOHJvc3VkUHpOcUtnUjdjSnNxSXZBQU5uWTRRX2ZFckhUZUJiV25ja1BudzhGOWE1X19ORGg4SGNPRkNEemcxb092U2NwLVZsTnktRVd3UVJCMkpka3preWpkQTB5OHBlU0psbDRqNDNZekNUUU51dmfSAbMBQVVfeXFMTmFUSmVUeDMzQ2dzQ0lmM2syem12RFJOMHdjb2h0R190WEc4anlCRXBvS0JCQVZXNEU5TkJ6YzhPX09kbjZkRFNMRzhQUUxnNGJMSXFRVkk3ejNPSG9wRWNMRUhVUzlVTk9hQURVSVhmNWI0M0dSRHRsTXdIN0x6dTNVQ0VRbjYwQzgwSUZJMXhnaklfWGF2SVdqWjVSbUoxQkxvV2swQmhMczcwUWo1X3JwOEk?oc=5) | Al Jazeera | 2026-06-12T00:41+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Congo’s Ebola outbreak spreads to new health zones](https://www.straitstimes.com/world/congos-ebola-outbreak-spreads-to-new-health-zones) | The Straits Times | 2026-06-11T22:38+00:00 | Outbreaks and emerging infections
+- [Congo's Ebola outbreak spreads to new health zones](https://news.google.com/rss/articles/CBMivgFBVV95cUxObk1mRG1HNnVtMnFsaTJIV1J0RGdGSXJuR0VNRjRBVVZFdVB4cTUzaTZlMHk0OFJHdFZRUThlNTdUbm1peDBqV1gyQnB2VjlWeTYzcmlxVVNqcTl2blJNV2laQTRYSXVEQTJHbGVNZk5qTHhzTkJwX080clNDZWd5dTJJa29VNXJzcUh5ekdOR1A5M3pMR0JGRlZmcXRVTUhFbEVXNDUzMENCa1AwZ01HaVN6WnN5RmZLRFFlOGtn?oc=5) | Reuters | 2026-06-11T22:47+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Tracking the 2026 Ebola outbreak in maps and figures: Locations, severity, how contagious it is and more](https://www.nbcnews.com/data-graphics/ebola-outbreak-2026-cases-virus-tracking-maps-spread-congo-ugangda-us-rcna347102) | NBC News | 2026-06-11T22:09+00:00 | Outbreaks and emerging infections
+- [Tracking the 2026 Ebola outbreak in maps and figures: Locations, severity, how contagious it is and more](https://news.google.com/rss/articles/CBMiugFBVV95cUxPYlp6R1NSS2NVNndwMkV0N1lna2dKNkN5WU9vUnpneUVjeVFPcXZTdF9LWHByR0xlN0tpeVRGaW9faWRNcEowajVNaU90RFJhcEhXM3JnRXhTYXI2M0psMTNacG5FTU0xVnN4ZnhiUmZOXzk1XzMteXRDMUJyQ3FPMzlPQ1R2VE9SVl9QRVBzN0s5bXhFX1kxSk5ybmZHS2JWNzN5bi1tRTRvcGxIMnZxU2R0WnNxbWRoZEE?oc=5) | NBC News | 2026-06-11T22:09+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Kenya among 10 countries at risk of Ebola amid outbreak in DRC and Uganda- Africa CDC](https://news.google.com/rss/articles/CBMiggNBVV95cUxPamluRmFWTXNJRF9POVA3ZkdvN1BDOGxmcG8ydFZTdE9nSlgwdER0V3p0ay16NFhWQ3NJa19UMHJILWlsZE45WmtCaHNRLVROaG52OVRrUU94NVZGZkRvTEJpdzdaUC1UMmt0S3pOazZDVVlwNXdneUF3bENXTGpQQUpycnR2czA0NDY2QzVuOUtjOEppNHZIbEdaQlo5ZU41YjdvNGgwRVFDeUJxTHczWHFUc0hpTmtSV0RXQWw3RkxNTnlSQy1wbGZEVW9RUFRmQ005Y0NYb2JEMDZaaEI2S21wNGRLRU5LcDZKNlFSWVNfYjcxLVNLRzJ2Z1pjSDdnUDM2LW5FVXlvTE8zMGc2bjlYd0RBUWY5c1UwQjNiUU9leVlVQm0ydTVPT1RNcTRlR3lHclVuVEVJSnZMUV9uUnZZdkhDMWtodkhDb09qMkx0amI3WHcxa01NdFBubEd2ZTQtNHNYcDJyTTA2elhBUWJLU2ItZWN5YlVwRHJTN1pjQQ?oc=5) | The Eastleigh Voice | 2026-06-11T19:39+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
@@ -426,19 +444,13 @@ Search window: 7 day(s) ending 2026-06-12
   Limited detail was available from feed metadata alone.
 - [Measles kills hundreds in Bangladesh, but a large-scale vaccine roll-out brings hope](https://www.gavi.org/vaccineswork/measles-kills-hundreds-bangladesh-large-scale-vaccine-roll-out-brings-hope) | Gavi, the Vaccine Alliance | 2026-06-11T13:43+00:00 | Outbreaks and emerging infections
   Transmission continues, with 933 new patients admitted on hospital ledgers in the 24 hours to 08:00 on 9 June.</p><p>This hospital alone has treated 1,133 measles patients and lost 42 to the virus since January. Now, measles is a static situation in Bangladesh.”</p><aside class="pquote"><blockquote><p>We have inoculated 102% of the children of our target.</p></blockquote><p>- Dr Hasanul Mahmud, Assistant Director (EPI) of the DGHS</p></aside><p>WHO, meanwhile, linked the declines in coverage to gaps in routine immunisation and the absence of regular, nationwide supplementary MR campaigns since 2020, which were compounded by stockouts of the vaccine in the country in 2024-2025.</p><h3>Fire-fighting with vaccines</h3><p>Dr Hasanul Mahmud, Assistant Director (EPI) of the DGHS, said under the directive of the health ministry the EPI mapped out a microplan for a nationwide MR vaccination drive. “We missed [her appointment for the] first dose of the MR vaccine due to her illness,” said her mother.</p><p>Bangladesh has been battling a large-scale measles outbreak, with 66,170 suspected measles patients admitted to hospitals across the country between 15 March and 9 June.
-- [Congo motorcyclists mobilise as Ebola outbreak fuels fear](https://news.google.com/rss/articles/CBMijAFBVV95cUxQREJkb3VYYVo0dVFWRk5NR3R3TjlZUHB4ZDVQQzlyX0J4RGlydEozcFpjWC02TmRkRl9ESmtyQmxtaFUtdFhkb0UyclExekJnWnV5WENNSDBKbEFIZmg2NE1mRXlXWkpKSHlRSVRMNTBxSmpLd1gxb3JVMkdtTThaZ2ZYdEczMkVDTXBpTg?oc=5) | Yahoo News Singapore | 2026-06-11T11:22+00:00 | Outbreaks and emerging infections
+- [Video. Congo motorcyclists mobilise as Ebola outbreak fuels fear](https://news.google.com/rss/articles/CBMioAFBVV95cUxPRU9Pc1R6Z21TX1pHeno0MEhBcWRMaHRBcXU0b1BodTFxUGItbUxCdjRydkU1MWJSQTRVTjhpMkdSc24tNUg0bUl0cTVsY2QtUXIydldvUG5yRHpJUmhyUThxMUFkYW1Rb2Z4Q0FrMWM0MXdjMGxnMFI4a2lHeGxsdWdJZlBzMWhDQkQydHRodkRZeFVNaFRKTkJlS0hURkd0?oc=5) | Euronews.com | 2026-06-11T11:22+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Why the DRC’s Ebola Outbreak Is an American Strategic Failure](https://news.google.com/rss/articles/CBMingFBVV95cUxQS1YtZTdWd1hjcm5RUTBkM3MzWFpHbUxLSnkzdlE5MnNqc09wS1lucUdUdTVJRVFrdTViTmM5OE1NY2I5eHZRMFhVUUNRN0xaRl9PdnhBMFZQcWx0ZDJLMDZzX1VVQ00wS0ZhN2pnSlhMTHhYZ3o0WHA2c1ZaNDZlM2tTWUJVZjdKVC1RcElzU2hZalhCeTNyakR4NUxZZw?oc=5) | The National Interest | 2026-06-11T06:24+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Nipah virus returns to Keralam: State govt issues high alert; 55 hospitalised with Shigella infection](https://www.bhaskarenglish.in/national/news/kerala-nipah-virus-outbreak-kozikhode-businessman-ventilator-138164065.html) | Bhaskar English | 2026-06-11T05:15+00:00 | Outbreaks and emerging infections
-  Health authorities have identified 578 suspected cases, and test results for seven samples are still awaited. So far, 20 people have tested positive for Shigella, while 55 patients are being treated in hospitals. 77 people came into contact with the patient, two of them in the highest risk category
 - [Quick takes: Less funding for global health; dengue vaccine campaign halted in Brazil; more US hantavirus patients head home](https://www.cidrap.umn.edu/dengue/quick-takes-less-funding-global-health-dengue-vaccine-campaign-halted-brazil-more-us) | CIDRAP | 2026-06-10T12:20-05:00 | Outbreaks and emerging infections
   An analysis indicates that health and development programs in 29 countries could see a more than $4 billion drop in funding from the US government and the Global Fund by 2029.
 - [Recovered orphans leave an Ebola treatment center in Congo's Bunia](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8xb1ZmTV9pYWxwUTNzVDA5djJiMjJVOHRTOEViYmsyMzJIdnR0REVDMFIxVkxWZkVSZktEb1V2UG54ZFlHZTFXR0Z3dTV6b2NsZFpvalJCS2FpTEs2R3I3RFJBYUtVQ1U?oc=5) | Reuters | 2026-06-10T17:13+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Saint Lucia Strengthens National Preparedness Systems Amid Global Ebola Virus Disease Outbreak](https://news.google.com/rss/articles/CBMixgFBVV95cUxNRTBnQ3RJTWhPX0I5N2lBd3N4Mm9JMENZaDZfSlR5dVdfaThqZWR1YU5wZy1rSF9FRlZjSDExd0NnSDAwbTJYSFBiZE1nM2p4ODNSZ29QNXNmRDdlZUVxMmx0R0dwRmRqNkdSeUo5SXZmOG42MWswOWZ6WmR6OXpMN3RMc0V2dmV3OXNOb2I4UnRrNjJ3MFVqSWNMQVFMNHZ4ZXQwU3hUdG5QTGJmTzh3OHIxaVdXQ0c5d0MtaHBzc2FnbWNlbXc?oc=5) | The Voice St. Lucia News | 2026-06-10T15:04+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Belgium rejects US World Cup demand for Congo travel ban amid Ebola outbreak](https://news.google.com/rss/articles/CBMinAFBVV95cUxQeDBJM1VyQWZ2czlVbjBGeV9ETHd3c2RYNFNmdDJWVXh6cjM3WWo5T3diQ01sNTMtNEZfNHRzQ2d1Q21uNDFWM2llbjU4Njd5RjVNSjAybEJzVGd5YnpoRUFERXh3U09mOHlFeWNXa0hFWk42clljUFRIWGd3QUVqSVpteGduWmgzLTVqNzJ1c2w1QnM4VVU5V0dINzA?oc=5) | politico.eu | 2026-06-10T12:49+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [US urges Europe to impose travel restrictions over Ebola outbreak in Central Africa](https://news.google.com/rss/articles/CBMiywFBVV95cUxPc2hYUURxTFhhVUczWjQ3Qm5sX1A3MFNEdTlVdXgydjlWZENwWEJNVHQzcE0zVmF6VGktQVkxUHpTcm0tdFFDZDFjRGR5ckIxejVUTVl1TkVuV0FIYURVMkVYSWJBLTBzNVV3Q29ybDBjMHpmRmZhWUFrXzFvQVprYUV2VzZoLTRoMjFwVktYLU43MURPQmFmYm1YenlHbmFUZ0FveEoyVkliSW02cWs3ZWdyc2ppVTRwV1dLLUNkTy1icW1SSC12WUpoUQ?oc=5) | The Eastleigh Voice | 2026-06-10T09:51+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
@@ -446,10 +458,6 @@ Search window: 7 day(s) ending 2026-06-12
   Limited detail was available from feed metadata alone.
 - [2026 Ebola outbreak in Central Africa](https://news.google.com/rss/articles/CBMiekFVX3lxTE81eFIxVFlfNlk5SFdGZDRyN0JjQ2RWVlB0Y2Q0VkJIaTUyWjV5TXVNbmUxRnJycVFSZ1VwMGl4SkhkS0FXT0ZWbkNSeTQxLVlSYTZvT29FWmFyeGhuRzd6WWhMbmJTMEJZZHE3elgwUkdFb0hGdEppdlFn?oc=5) | Britannica | 2026-06-10T05:00+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Ebola outbreak: Anger mounts in Kenya over quarantine center for American patients](https://news.google.com/rss/articles/CBMi8AFBVV95cUxQd3lSdFdJSko5VlFFcWtGN2FRUzZxQkFHVkI1bWU4emVyclQ4YzNxSjFmRlU4d1Jra0tSeW9sOGtoOEJNNTVXOUlCcTlYUWNCUGhmZTBEcFk3RW9nR0xYRHM5bml5UDA5UjFYdnlEM3VuOGN1dUpwX3lnWlJOclU2QTJJYkl6b3hFNWRhR0lfNl9WMmNYSHk0dm9WTW41WWxYSTl0Z0N4OFNqaENTa0ZtbEd1OUNpTktHQ21MNVhCRzNQczhEUGhCZXZqdG83YUwzQXZ0bjdXcFRKVmtzdUlhcEExMm1vREFxWWVNanJoNW8?oc=5) | Le Monde.fr | 2026-06-09T23:46+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Health authorities warn of spike in dengue and chikungunya cases](https://adaderana.lk/news/109066) | Ada Derana | 2026-06-09T20:56+00:00 | Outbreaks and emerging infections
-  He warned that dengue can be fatal, while children affected by chikungunya may suffer from severe joint pain for months after infection. Deepal Perera noted that chikungunya can be fatal for pregnant women and the elderly, and it may even affect unborn babies if the mother is infected. Perera also urged the public to be vigilant about the rising number of influenza cases, stressing that this illness can spread rapidly among children.
 
 ## Papers worth saving
 - [Predictors of prolonged decision-to-delivery interval in emergency caesarean section in Northern Uganda: a historical cohort study.](https://pubmed.ncbi.nlm.nih.gov/42275299/)
@@ -458,18 +466,42 @@ Search window: 7 day(s) ending 2026-06-12
   Journal/preprint server: Journal of obstetrics and gynaecology : the journal of the Institute of Obstetrics and Gynaecology
   Abstract link: https://pubmed.ncbi.nlm.nih.gov/42275299/
   Source URL: https://pubmed.ncbi.nlm.nih.gov/42275299/
+- [Impact of SARS-CoV-2 infection history on the clinical features and outcomes of patients with recurrent pulmonary tuberculosis: a retrospective case-control study.](https://pubmed.ncbi.nlm.nih.gov/42262973/)
+  Source: PubMed Infectious Disease Search
+  DOI: 10.1080/07853890.2026.2683160
+  Journal/preprint server: Annals of medicine
+  Abstract link: https://pubmed.ncbi.nlm.nih.gov/42262973/
+  Source URL: https://pubmed.ncbi.nlm.nih.gov/42262973/
 - [Fatty acids-based compounds as novel prophylaxis or treatment for oropharyngeal Neisseria gonorrhoeae: an in vitro study.](https://pubmed.ncbi.nlm.nih.gov/42175634/)
   Source: PubMed Infectious Disease Search
   DOI: 10.1080/22221751.2026.2678644
   Journal/preprint server: Emerging microbes & infections
   Abstract link: https://pubmed.ncbi.nlm.nih.gov/42175634/
   Source URL: https://pubmed.ncbi.nlm.nih.gov/42175634/
+- [Safety and immunogenicity of a booster dose of COVAC-2, a Sepivac SWE™ adjuvanted SARS-CoV-2 recombinant protein vaccine in previously vaccinated healthy adults; a randomized controlled multicentre trial.](https://pubmed.ncbi.nlm.nih.gov/42268674/)
+  Source: PubMed Infectious Disease Search
+  DOI: 10.1080/21645515.2026.2683765
+  Journal/preprint server: Human vaccines & immunotherapeutics
+  Abstract link: https://pubmed.ncbi.nlm.nih.gov/42268674/
+  Source URL: https://pubmed.ncbi.nlm.nih.gov/42268674/
 - [Transmitted and pretreatment drug resistance among 69 HIV-1 CRFs in China: the first systematic analysis.](https://pubmed.ncbi.nlm.nih.gov/42261238/)
   Source: PubMed Infectious Disease Search
   DOI: 10.1080/22221751.2026.2673651
   Journal/preprint server: Emerging microbes & infections
   Abstract link: https://pubmed.ncbi.nlm.nih.gov/42261238/
   Source URL: https://pubmed.ncbi.nlm.nih.gov/42261238/
+- [Agreement between seroprevalence- and model-based estimates of COVID-19 burden.](https://pubmed.ncbi.nlm.nih.gov/42261140/)
+  Source: PubMed Infectious Disease Search
+  DOI: 10.1080/16549716.2026.2683286
+  Journal/preprint server: Global health action
+  Abstract link: https://pubmed.ncbi.nlm.nih.gov/42261140/
+  Source URL: https://pubmed.ncbi.nlm.nih.gov/42261140/
+- [Modeling the cost-effectiveness of the COVID-19 mRNA-1273 vaccine in the United States.](https://pubmed.ncbi.nlm.nih.gov/42258466/)
+  Source: PubMed Infectious Disease Search
+  DOI: 10.1080/13696998.2026.2670958
+  Journal/preprint server: Journal of medical economics
+  Abstract link: https://pubmed.ncbi.nlm.nih.gov/42258466/
+  Source URL: https://pubmed.ncbi.nlm.nih.gov/42258466/
 
 ## Historical epi / weird epi corner
 - [Predictors of prolonged decision-to-delivery interval in emergency caesarean section in Northern Uganda: a historical cohort study.](https://pubmed.ncbi.nlm.nih.gov/42275299/) | PubMed Infectious Disease Search
