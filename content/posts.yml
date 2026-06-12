@@ -1,13 +1,59 @@
 posts:
+- substack_id: 201672365
+  slug: the-countries-we-cant-measure-how
+  title: 'The Deaths We Can’t Count: How Researchers Estimate Mortality Where Nobody
+    Keeping the Toll'
+  date: '2026-06-12'
+  canonical_url: https://theedgeofepidemiology.substack.com/p/the-countries-we-cant-measure-how
+  excerpt: 'The ongoing Ebola outbreak in Central Africa had me wanting to better
+    understand the answer to a question I hadn’t really considered beyond surface
+    level curiosity: “how do researchers get anything resembling real-world data in
+    the areas controlled by rebel forces?” How do they get an estimate of mortality
+    when nobody is counting carefully?'
+  cover_image: https://substackcdn.com/image/fetch/$s_!nMN1!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5b268f5c-4fdb-4160-9757-e34ca671b51b_2048x1459.png
+  upstream_tags:
+  - global health
+  - developing nations
+  - epidemiology
+  source_mode: substack_page
+  wordcount: 3064
+  status: summary_only
+  dek: ''
+  topics:
+  - global health
+  - developing nations
+  - epidemiology
+  series: []
+  seo_title: ''
+  seo_description: ''
+  primary_keyword: ''
+  topic_cluster: ''
+  indexing_strategy: noindex_stub
+  related_atlases:
+  - maritime-disease-atlas
+  related_reference_slugs: []
+  related_story_ids: []
+  search_excerpt: 'The ongoing Ebola outbreak in Central Africa had me wanting to
+    better understand the answer to a question I hadn’t really considered beyond surface
+    level curiosity: “how do researchers get anything resembling real-world data in
+    the areas controlled by rebel forces?” How do they g'
+  local_body_path: ''
+  body_synced_at: ''
+  body_source_url: ''
+  body_source_mode: ''
+  body_source_file: ''
+  body_wordcount: null
+  hero_mode: cover
+  notes: ''
+  first_seen_at: '2026-06-12T15:11:24+00:00'
+  last_synced_at: '2026-06-12T15:11:24+00:00'
 - substack_id: 200849173
   slug: new-world-screwworm-returns-to-the
-  title: New World Screwworm Returns to the United States
+  title: The Flesh-Eating Fly America Thought It Had Beaten Is Back
   date: '2026-06-06'
   canonical_url: https://theedgeofepidemiology.substack.com/p/new-world-screwworm-returns-to-the
-  excerpt: On June 3rd, 2026, the USDA confirmed that Cochliomyia hominivorax, indigenous
-    New World screwworm (NWS) fly, was detected on American soil for the first time
-    in 60 years in a three-week-old calf in Zavala County, Texas (roughly 90 miles
-    southwest of San Antonio and about 50 miles north of the border with Mexico).
+  excerpt: 'Updates June 11th 6:50pm: We are up to nine cases of NWS, eight of which
+    are in Texas.'
   cover_image: https://substackcdn.com/image/fetch/$s_!GriU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F88f4ef7b-8fca-40e4-8fcc-95bafcda7c9c_1600x1000.png
   upstream_tags:
   - US History
@@ -15,8 +61,8 @@ posts:
   - veterinary medicine
   - Screwworm
   - Agriculture
-  source_mode: substack_page
-  wordcount: 2266
+  source_mode: substack_archive_api
+  wordcount: 2499
   status: summary_only
   dek: ''
   topics:
@@ -42,7 +88,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-06-06T12:22:41+00:00'
-  last_synced_at: '2026-06-06T12:22:41+00:00'
+  last_synced_at: '2026-06-12T15:11:24+00:00'
   flashcards:
   - question: Which option best completes this essay point? "The _____ had serious
       post-eradication incursions in the 1970s, and Florida had a contained outbreak
@@ -145,6 +191,11 @@ posts:
   flashcards_source: substack_body_html
   flashcards_source_url: https://theedgeofepidemiology.substack.com/p/new-world-screwworm-returns-to-the
   flashcards_generated_at: '2026-06-06T12:24:07+00:00'
+  body_synced_at: ''
+  body_source_url: ''
+  body_source_mode: ''
+  body_source_file: ''
+  body_wordcount: null
 - substack_id: 199208467
   slug: what-the-viking-age-norse-died-from
   title: The Ordinary Deaths of the Vikings
@@ -298,7 +349,7 @@ posts:
   - epidemiology
   - Africa
   source_mode: substack_archive_api
-  wordcount: 2358
+  wordcount: 2416
   status: summary_only
   dek: ''
   topics:
@@ -325,7 +376,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-19T02:25:26+00:00'
-  last_synced_at: '2026-06-06T12:22:41+00:00'
+  last_synced_at: '2026-06-12T15:11:24+00:00'
   flashcards:
   - question: Which option best completes this essay point? "Species is important
       here; I say that because when most people hear about Ebola, they’re likely to
@@ -428,6 +479,11 @@ posts:
   flashcards_source: substack_body_html
   flashcards_source_url: https://theedgeofepidemiology.substack.com/p/ebola-in-drc-and-uganda-what-is-known
   flashcards_generated_at: '2026-05-26T18:57:26+00:00'
+  body_synced_at: ''
+  body_source_url: ''
+  body_source_mode: ''
+  body_source_file: ''
+  body_wordcount: null
 - substack_id: 197437573
   slug: hantavirus-in-the-korean-war-korean
   title: Korean Hemorrhagic Fever in the Korean War

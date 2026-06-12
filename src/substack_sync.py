@@ -234,9 +234,27 @@ def _body_wordcount(body_html: str) -> int:
 
 def _strip_legacy_flashcard_fields(post: dict[str, Any]) -> dict[str, Any]:
     cleaned = dict(post)
+    flashcards = _valid_flashcards(cleaned.get("flashcards"))
+    if flashcards:
+        cleaned["flashcards"] = flashcards
+        return cleaned
     for field in LEGACY_FLASHCARD_FIELDS:
         cleaned.pop(field, None)
     return cleaned
+
+
+def _valid_flashcards(value: Any) -> list[dict[str, Any]]:
+    if not isinstance(value, list):
+        return []
+    valid_cards: list[dict[str, Any]] = []
+    for card in value:
+        if not isinstance(card, dict):
+            continue
+        question = clean_text(card.get("question") or card.get("front") or card.get("prompt"))
+        answer = clean_text(card.get("answer") or card.get("back") or card.get("response"))
+        if question and answer:
+            valid_cards.append(card)
+    return valid_cards
 
 
 def _post_is_public(post: dict[str, Any]) -> bool:

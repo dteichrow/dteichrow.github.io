@@ -6,3 +6,10 @@ __pycache__/
 *.swp
 .venv/
 .python-version
+
+# Generated sync reports and local media/test artifacts.
+notes/substack-sync-*.json
+output/
+notes/*/scratch-render/
+notes/*/voice-auditions/
+notes/*/*scratch*-latest.mp4
