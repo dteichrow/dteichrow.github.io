@@ -15,7 +15,7 @@ posts:
   - global health
   - developing nations
   - epidemiology
-  source_mode: substack_page
+  source_mode: substack_archive_api
   wordcount: 3064
   status: summary_only
   dek: ''
@@ -46,7 +46,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-06-12T15:11:24+00:00'
-  last_synced_at: '2026-06-12T15:11:24+00:00'
+  last_synced_at: '2026-06-13T06:55:38+00:00'
 - substack_id: 200849173
   slug: new-world-screwworm-returns-to-the
   title: The Flesh-Eating Fly America Thought It Had Beaten Is Back
