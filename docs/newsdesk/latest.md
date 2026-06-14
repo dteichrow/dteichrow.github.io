@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-06-14
-Generated at: 2026-06-14T05:30
+Generated at: 2026-06-14T06:10
 Search window: 7 day(s) ending 2026-06-14
 
 ## Executive scan
@@ -18,8 +18,8 @@ Search window: 7 day(s) ending 2026-06-14
 ## Ongoing stories and what changed
 ### Ebola virus disease
 - Lead item: [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News)
-- Newly tracked story cluster: 116 item(s) across 83 source(s).
-- Baseline snapshot created with 116 clustered item(s) across 83 source(s).
+- Newly tracked story cluster: 116 item(s) across 82 source(s).
+- Baseline snapshot created with 116 clustered item(s) across 82 source(s).
 - Yahoo now reports conflict over body retrieval or burial practices.
 - WHO Regional Office for Africa now includes deaths or fatal cases in the story frame.
 
@@ -46,10 +46,10 @@ Search window: 7 day(s) ending 2026-06-14
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 116 item(s) across 83 source(s); 3 official/primary-source item(s).
+- Topic size: 116 item(s) across 82 source(s); 3 official/primary-source item(s).
 - Lead item: [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News, 2026-06-12T17:36+02:00)
 - Detailed note: Since our previous update (Sitrep #2) with data as of 24 May 2026, the Democratic Republic of the Congo has reported an additional 216 laboratory-confirmed cases, including an additional 38 confirmed deaths. Democratic Republic of the Congo As of 31 May 2026, a total of 321 laboratory-confirmed cases, including 48 confirmed deaths, have been reported across the three affected provinces of Ituri, North Kivu and...
-- Evidence notes: [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News); [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 03, Data as of 31 May 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa); [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) (Texas Department of State Health Services News); [Ebola outbreak in eastern Democratic Republic of the Congo continues to spread](https://halifax.citynews.ca/video/2026/06/13/ebola-outbreak-in-eastern-democratic-republic-of-the-congo-continues-to-spread/) (CityNews Halifax); [Congo's burial teams fight Ebola one coffin at a time](https://www.yahoo.com/news/videos/congos-burial-teams-fight-ebola-175034357.html) (Yahoo)
+- Evidence notes: [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News); [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 03, Data as of 31 May 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation) (WHO Regional Office for Africa); [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) (Texas Department of State Health Services News); [Ebola one month on: will the latest outbreak in DRC become the most deadly yet?](https://www.theguardian.com/world/2026/jun/14/drcs-ebola-outbreak-become-the-most-deadly-yet) (The Guardian); [Ebola outbreak in eastern Democratic Republic of the Congo continues to spread](https://halifax.citynews.ca/video/2026/06/13/ebola-outbreak-in-eastern-democratic-republic-of-the-congo-continues-to-spread/) (CityNews Halifax)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
@@ -428,6 +428,8 @@ Search window: 7 day(s) ending 2026-06-14
   Following the COVID-19 pandemic, the UHPR was established to help countries assess and enhance their preparedness for health emergencies by engaging the highest levels of government. The UHPR follows a five-year cycle comprising preparation, national review, global peer review, and follow-up implementation phases. Sierra Leone became the first country in the ECOWAS region, the second in Africa, and the fifth worldwide to participate in the review.
 - [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) | Texas Department of State Health Services News | Unknown | Policy, surveillance, and public health infrastructure
   Limited detail was available from feed metadata alone.
+- [Ebola one month on: will the latest outbreak in DRC become the most deadly yet?](https://www.theguardian.com/world/2026/jun/14/drcs-ebola-outbreak-become-the-most-deadly-yet) | The Guardian | 2026-06-14T13:00+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - [Malaysia sees sharp rise in dengue cases as new virus variant spreads](https://www.turkiyetoday.com/world/malaysia-sees-sharp-rise-in-dengue-cases-as-new-virus-variant-spreads-3221913) | Türkiye Today | 2026-06-14T11:17+00:00 | Outbreaks and emerging infections
   Authorities are especially concerned about Sabah state, where cases have surged by 50.4% to 2,866, up from 1,905 during the same period in 2024. M alaysia has recorded 33,367 dengue cases, a 27% increase from the 27,640 cases reported during the same period last year, according to state media reports from Bernama. 'Apart from the cyclical trend, the ministry has also identified a shift in the circulating dengue virus sub-variants, with DEN-3 now becoming dominant, as a contributing factor,' he said.
 - [Ebola outbreak in eastern Democratic Republic of the Congo continues to spread](https://halifax.citynews.ca/video/2026/06/13/ebola-outbreak-in-eastern-democratic-republic-of-the-congo-continues-to-spread/) | CityNews Halifax | 2026-06-14T10:06+00:00 | Outbreaks and emerging infections
@@ -461,8 +463,6 @@ Search window: 7 day(s) ending 2026-06-14
 - ['Blind spots' could hide full spread of Congo's Ebola outbreak, WHO suggests](https://www.reuters.com/business/healthcare-pharmaceuticals/blind-spots-could-hide-full-spread-congos-ebola-outbreak-who-suggests-2026-06-12/) | Reuters | 2026-06-12T10:43+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Ebola cases in DR Congo rise to 676 amid community transmission](https://eastleighvoice.co.ke/regional/366773/ebola-cases-in-dr-congo-rise-to-676-amid-community-transmission) | The Eastleigh Voice | 2026-06-12T10:36+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Ebola outbreak response requires engaging with religious traditions and leaders](https://www.statnews.com/2026/06/12/ebola-response-drc-uganda-religion-burial-rites/) | statnews.com | 2026-06-12T08:34+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
