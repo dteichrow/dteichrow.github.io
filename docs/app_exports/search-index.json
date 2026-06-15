@@ -11,7 +11,7 @@
     "title": "The Flesh-Eating Fly America Thought It Had Beaten Is Back",
     "display_title": "The Flesh-Eating Fly America Thought It Had Beaten Is Back",
     "section": "Essay",
-    "summary": "Updates June 11th 6:50pm: We are up to nine cases of NWS, eight of which are in Texas.",
+    "summary": "Updates June 14th 7:30am: The USDA’s dashboard now notes 12 cases, all but one of which are in Texas.",
     "url": "/essays/new-world-screwworm-returns-to-the/",
     "keywords": "US History History veterinary medicine Screwworm Agriculture US History History veterinary medicine Screwworm Agriculture  historical-epidemiology"
   },
@@ -546,16 +546,16 @@
   {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
-    "summary": "Baseline snapshot created with 106 clustered item(s) across 76 source(s).",
+    "summary": "Baseline snapshot created with 113 clustered item(s) across 81 source(s).",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
-    "keywords": "new_official_source suspected_case confirmed_case severity_or_death policy_or_travel new_geography healthcare_transmission laboratory_or_genomic Africa Democratic Republic of the Congo"
+    "keywords": "new_official_source suspected_case confirmed_case severity_or_death transmission_change policy_or_travel new_geography laboratory_or_genomic Africa Democratic Republic of the Congo"
   },
   {
-    "title": "Dengue and arboviruses",
+    "title": "Measles transmission and vaccination",
     "section": "Newsdesk",
     "summary": "Baseline snapshot created with 3 clustered item(s) across 3 source(s).",
-    "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
-    "keywords": "severity_or_death Latin America and Caribbean India"
+    "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
+    "keywords": "new_official_source suspected_case confirmed_case severity_or_death new_geography healthcare_transmission laboratory_or_genomic South Asia India"
   },
   {
     "title": "Occupational and environmental epidemiology",
