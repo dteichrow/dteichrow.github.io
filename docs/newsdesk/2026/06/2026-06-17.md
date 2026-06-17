@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-06-17
-Generated at: 2026-06-17T11:20
+Generated at: 2026-06-17T11:50
 Search window: 7 day(s) ending 2026-06-17
 
 ## Executive scan
@@ -12,7 +12,7 @@ Search window: 7 day(s) ending 2026-06-17
 - [Respiratory virus surveillance in the WHO African Region Epidemiological Week 23, June 1 to 7 2026](https://www.afro.who.int/publications/respiratory-virus-surveillance-who-african-region-epidemiological-week-23-june-1-7) (WHO Regional Office for Africa; 2026-06-16T11:55+00:00; Outbreaks and emerging infections; relevance 5/5)
 - [The Pandemic Fund 2026 1st Quarter Newsletter](https://www.afro.who.int/countries/ghana/publication/pandemic-fund-2026-1st-quarter-newsletter) (WHO Regional Office for Africa; 2026-06-16T08:53+00:00; Outbreaks and emerging infections; relevance 5/5)
 - [Dans l’ombre de l’épidémie, un outil innovant accélère la riposte à Ebola en Ituri](https://www.afro.who.int/fr/countries/democratic-republic-of-congo/news/dans-lombre-de-lepidemie-un-outil-innovant-accelere-la-riposte-ebola-en-ituri) (WHO Regional Office for Africa; 2026-06-15T09:13+00:00; Outbreaks and emerging infections; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (149), Policy, surveillance, and public health infrastructure (13), Occupational and environmental epidemiology (8)
+- Category mix: Outbreaks and emerging infections (151), Policy, surveillance, and public health infrastructure (12), Occupational and environmental epidemiology (8)
 - Source health: 1 source(s) failed during collection: USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
@@ -89,13 +89,13 @@ Search window: 7 day(s) ending 2026-06-17
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
-### Miscellaneous signals
-- Topic size: 2 item(s) across 2 source(s); 2 official/primary-source item(s).
-- Lead item: [The development of biologically contained Sudan virus as an alternative and safe tool for fundamental filovirus research.](https://pubmed.ncbi.nlm.nih.gov/42304944/) (PubMed Infectious Disease Search, 2026-06-17T00:00)
-- Detailed note: Several lower-volume signals passed the filters, but they do not resolve into one coherent topic cluster. Use the linked evidence notes directly rather than reading this as a single story.
-- Evidence notes: [The development of biologically contained Sudan virus as an alternative and safe tool for fundamental filovirus research.](https://pubmed.ncbi.nlm.nih.gov/42304944/) (PubMed Infectious Disease Search); [The Pandemic Fund 2026 1st Quarter Newsletter](https://www.afro.who.int/countries/ghana/publication/pandemic-fund-2026-1st-quarter-newsletter) (WHO Regional Office for Africa)
+### Dengue and arboviruses
+- Topic size: 3 item(s) across 3 source(s); 0 official/primary-source item(s).
+- Lead item: [Vietnam warns of rising dengue cases as peak season begins - Tuoi Tre News | The News Gateway to Vietnam](https://news.tuoitre.vn/vietnam-warns-of-rising-dengue-cases-as-peak-season-begins-10326061315022553.htm) (Tuoi Tre News, 2026-06-13T06:53+00:00)
+- Detailed note: Vietnam's Ministry of Health warned on Saturday that dengue fever cases could continue to rise as the country enters the peak transmission season, with more than 50,000 infections and five deaths reported nationwide so far this year. Vietnam reports over 50,000 dengue cases in 5 months as outbreak patterns shift READ NOW "If preventive measures are not implemented proactively and early, the risk of further...
+- Evidence notes: [Vietnam warns of rising dengue cases as peak season begins - Tuoi Tre News | The News Gateway to Vietnam](https://news.tuoitre.vn/vietnam-warns-of-rising-dengue-cases-as-peak-season-begins-10326061315022553.htm) (Tuoi Tre News); [Monsoon threatens dengue surge as disease is already widespread across Nepal](https://kathmandupost.com/health/2026/06/15/monsoon-threatens-dengue-surge-as-disease-is-already-widespread-across-nepal) (The Kathmandu Post); [Kaohsiung hospital dengue cluster linked to imported case: CDC](https://focustaiwan.tw/society/202606160023) (Focus Taiwan)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
-- Caveats / uncertainty: These notes are limited to source text collected in this run.
+- Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting.
 
 
 ## Last major outbreaks on file
