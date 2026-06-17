@@ -1423,7 +1423,7 @@ def render_opportunities_page(base_url: str) -> str:
     packages = [
         (
             "Evidence Translation Sprint",
-            "$750-$2,000",
+            "$400-$1,000",
             "A focused evidence product for a clinical, epidemiologic, policy, or research question that needs to become usable quickly.",
             [
                 "PICOT-style question framing when useful, literature search logic, inclusion boundaries, and evidence tables",
@@ -1433,7 +1433,7 @@ def render_opportunities_page(base_url: str) -> str:
         ),
         (
             "Analysis and Dashboard Sprint",
-            "$1,500-$4,000",
+            "$750-$1,750",
             "A small reproducible analysis project for teams with data, a question, and not enough time to turn the work into something legible.",
             [
                 "R or Python data cleaning, exploratory analysis, statistical summaries, and visualization",
@@ -1443,7 +1443,7 @@ def render_opportunities_page(base_url: str) -> str:
         ),
         (
             "Science Writing Package",
-            "$500-$2,500",
+            "$250-$900",
             "Writing and editing for health, medicine, epidemiology, neuroscience, and public-facing research projects.",
             [
                 "Explainers, research summaries, medical education copy, project descriptions, or grant-adjacent language",
@@ -1453,7 +1453,7 @@ def render_opportunities_page(base_url: str) -> str:
         ),
         (
             "Lab Website Starter",
-            "$900-$1,500",
+            "$500-$900",
             "A clean static website for a PI, lab, or small research group that needs a professional public home.",
             [
                 "Home, people, research, publications, contact, and recruitment-ready pages",
@@ -1463,7 +1463,7 @@ def render_opportunities_page(base_url: str) -> str:
         ),
         (
             "Website + PubMed Publications",
-            "$1,800-$3,000",
+            "$950-$1,750",
             "The starter site plus an automated publication table built around the lab's authors, PMIDs, or search logic.",
             [
                 "Configurable PubMed/NCBI query rules for author, lab, topic, or grant-linked publication lists",
@@ -1473,7 +1473,7 @@ def render_opportunities_page(base_url: str) -> str:
         ),
         (
             "Research Exhibit or Topic Monitor",
-            "$1,500-$4,000",
+            "$750-$2,000",
             "A public-facing page, tracker, or mini-exhibit for a disease, dataset, topic, outbreak, grant, or research program.",
             [
                 "Source-first structure for updates, maps, timelines, dashboards, or reference layers",
@@ -1483,7 +1483,7 @@ def render_opportunities_page(base_url: str) -> str:
         ),
         (
             "AI Workflow Prototype",
-            "$1,000-$3,000",
+            "$500-$1,500",
             "A practical internal workflow for researchers or writers who want AI help without pretending the model is a magic oracle.",
             [
                 "Codex-style support for coding tasks, analysis checks, structured notes, and research operations",
@@ -1493,7 +1493,7 @@ def render_opportunities_page(base_url: str) -> str:
         ),
         (
             "Research Presence System",
-            "$3,000-$5,000",
+            "$1,500-$3,000",
             "A fuller public-facing package for labs, centers, or projects that need to communicate their work to researchers, funders, participants, or the public.",
             [
                 "Project pages, plain-language summaries, recruitment-facing copy, and selected visuals or maps",
@@ -1503,7 +1503,7 @@ def render_opportunities_page(base_url: str) -> str:
         ),
         (
             "Maintenance Retainer",
-            "$100-$300/month",
+            "$75-$200/month",
             "Light monthly support for groups that already have a site but do not want the public-facing parts to decay.",
             [
                 "Publication automation checks, people page updates, news items, broken-link fixes, and small copy edits",
@@ -1590,11 +1590,11 @@ def render_opportunities_page(base_url: str) -> str:
           <div class="services-section-head section-head">
             <p class="kicker">Freelance services</p>
             <h2>Research groups need public infrastructure, not just a prettier homepage.</h2>
-            <p class="muted-note">A good academic site should answer basic questions quickly, show the work clearly, and stop publication lists from becoming museum pieces. But the same skill set also applies to evidence briefs, analysis sprints, public-health monitors, research exhibits, science writing, and AI-assisted research workflows. I build small, durable public and internal systems for people who need research to become legible, useful, and maintained.</p>
+            <p class="muted-note">A good academic site should answer basic questions quickly, show the work clearly, and stop publication lists from becoming museum pieces. But the same skill set also applies to evidence briefs, analysis sprints, public-health monitors, research exhibits, science writing, and AI-assisted research workflows. I am currently treating these as early-client packages: tight scope, useful delivery, clear handoff, and pricing that makes sense for smaller research groups.</p>
           </div>
           <div class="service-package-grid">{package_cards}</div>
           <div class="service-process-row">{process_items}</div>
-          <p class="service-note">Publication automation is built around PubMed/NCBI E-utilities and structured update rules rather than brittle page scraping. Ranges are typical starting points; tighter scopes can be smaller, and multi-page research products can be larger. I am not offering expert-witness services or paid advocacy; the useful lane here is evidence, writing, analysis, public research infrastructure, and practical workflow building.</p>
+          <p class="service-note">Publication automation is built around PubMed/NCBI E-utilities and structured update rules rather than brittle page scraping. Ranges are early-client starting points; tighter scopes can be smaller, and multi-page research products can be quoted once the work is clear. I am not offering expert-witness services or paid advocacy; the useful lane here is evidence, writing, analysis, public research infrastructure, and practical workflow building.</p>
         </div>
         <aside class="opportunities-contact-card">
           <div>
