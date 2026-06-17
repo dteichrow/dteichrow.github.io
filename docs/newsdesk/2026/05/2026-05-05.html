@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Infectious Disease &amp; Epidemiology Dossier</title>
+    <title>Pathogen Dispatch for May 5, 2026 | Edge of Epidemiology</title>
     <style>
       :root {
         --bg: #eef3f7;
@@ -262,8 +262,198 @@
         }
       }
     </style>
-  </head>
-  <body>
+<style id="eoe-shell-import-style">
+  body { padding-top: 112px !important; }
+  .eoe-shell-nav {
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 10000;
+    background: linear-gradient(180deg, rgba(15, 20, 27, 0.98), rgba(21, 29, 39, 0.98));
+    color: #efe6d6;
+    border-bottom: 1px solid rgba(214, 202, 183, 0.2);
+    box-shadow: 0 14px 34px rgba(4, 7, 10, 0.28);
+  }
+  .eoe-shell-nav-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 18px 18px 16px;
+    display: grid;
+    gap: 12px;
+    font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+  }
+  .eoe-shell-brand {
+    display: inline-flex;
+    flex-wrap: wrap;
+    column-gap: 0.32em;
+    row-gap: 0.12em;
+    align-items: baseline;
+    color: #f5ecdd;
+    font: 700 clamp(1.2rem, 2vw, 1.65rem)/1.05 "Iowan Old Style", Georgia, serif;
+    text-decoration: none;
+    letter-spacing: 0;
+  }
+  .eoe-shell-byline {
+    color: #8fb8d8;
+    font: 600 0.48em/1 "Avenir Next", "Helvetica Neue", sans-serif;
+  }
+  .eoe-shell-brand:hover { text-decoration: none; }
+  .eoe-shell-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(214, 202, 183, 0.18);
+  }
+  .eoe-shell-links a {
+    flex: 0 0 auto;
+    padding: 0 0 6px;
+    border-bottom: 2px solid transparent;
+    color: rgba(239, 230, 214, 0.76);
+    text-decoration: none;
+    background: transparent;
+    font-size: 0.95rem;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: color 180ms ease, border-color 180ms ease;
+  }
+  .eoe-shell-links a.active {
+    border-color: rgba(201, 168, 76, 0.88);
+    color: #f8f1e6;
+    font-weight: 700;
+  }
+  .eoe-shell-links a:hover {
+    color: #f8f1e6;
+    text-decoration: none;
+    border-color: rgba(201, 168, 76, 0.52);
+  }
+  /* Cleaner fix would live in the Pathogen Dispatch renderer, but this import-layer pass
+     keeps the simplification isolated to the umbrella site. */
+  .site-header,
+  .hero,
+  .panel,
+  .section-nav {
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  .site-header {
+    padding: 0 0 12px !important;
+    gap: 12px !important;
+  }
+  .site-header-title {
+    font-size: 1rem !important;
+    color: #42515e !important;
+  }
+  .site-nav,
+  .section-nav-links {
+    gap: 14px !important;
+  }
+  .site-nav-link,
+  .section-nav-link {
+    padding: 0 0 5px !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    border-bottom: 2px solid transparent !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #42515e !important;
+    font-weight: 500 !important;
+  }
+  .site-nav-link:hover,
+  .section-nav-link:hover {
+    background: transparent !important;
+    color: #173046 !important;
+    text-decoration: underline !important;
+  }
+  .site-nav-link.active {
+    color: #173046 !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    border-color: rgba(141, 63, 47, 0.48) !important;
+  }
+  .hero {
+    padding: 0 0 6px !important;
+    overflow: visible !important;
+  }
+  .hero::before,
+  .hero::after,
+  .panel::before,
+  .panel::after,
+  .site-header::before,
+  .site-header::after {
+    display: none !important;
+  }
+  .panel,
+  .panel-grid {
+    gap: 16px !important;
+  }
+  .panel > h2:first-child,
+  .panel > .muted-note:first-child {
+    margin-top: 0 !important;
+  }
+  .section-nav {
+    display: none !important;
+  }
+  .meta-row-plain {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .meta-inline,
+  .card-meta-text {
+    color: #42515e;
+    font: 500 0.86rem/1.55 "Avenir Next", "Helvetica Neue", sans-serif;
+  }
+  .card-meta-text {
+    margin: 0;
+  }
+  .atlas-status-pill,
+  .story-status-pill {
+    letter-spacing: 0.08em !important;
+    text-transform: uppercase !important;
+  }
+  .site-card .meta-row .badge {
+    max-width: none;
+  }
+  .link-pill {
+    background: rgba(255,252,245,0.92) !important;
+  }
+  @media (max-width: 760px) {
+    body { padding-top: 148px !important; }
+    .eoe-shell-links {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+      width: 100%;
+      padding-bottom: 2px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      touch-action: pan-x;
+      overscroll-behavior-x: contain;
+    }
+    .eoe-shell-links::-webkit-scrollbar { display: none; }
+  }
+</style>
+
+    <link rel="canonical" href="https://devinteichrow.com/newsdesk/2026/05/2026-05-05.html" />
+    <link rel="alternate" type="application/rss+xml" title="The Edge of Epidemiology RSS" href="https://theedgeofepidemiology.substack.com/feed" />
+    <meta name="description" content="The Pathogen Dispatch archive for May 5, 2026, with source-first infectious-disease reporting, outbreak tracking, and daily evidence notes." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="The Edge of Epidemiology" />
+    <meta property="og:title" content="Pathogen Dispatch for May 5, 2026 | Edge of Epidemiology" />
+    <meta property="og:description" content="The Pathogen Dispatch archive for May 5, 2026, with source-first infectious-disease reporting, outbreak tracking, and daily evidence notes." />
+    <meta property="og:url" content="https://devinteichrow.com/newsdesk/2026/05/2026-05-05.html" />
+    <meta property="og:image" content="https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pathogen Dispatch for May 5, 2026 | Edge of Epidemiology" />
+    <meta name="twitter:description" content="The Pathogen Dispatch archive for May 5, 2026, with source-first infectious-disease reporting, outbreak tracking, and daily evidence notes." />
+    <meta name="twitter:image" content="https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png" />
+    <script type="application/ld+json" data-eoe-seo>{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Pathogen Dispatch for May 5, 2026 | Edge of Epidemiology", "url": "https://devinteichrow.com/newsdesk/2026/05/2026-05-05.html", "description": "The Pathogen Dispatch archive for May 5, 2026, with source-first infectious-disease reporting, outbreak tracking, and daily evidence notes.", "image": "https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png", "isPartOf": {"@type": "WebSite", "name": "The Edge of Epidemiology", "url": "https://devinteichrow.com/"}, "author": {"@type": "Person", "name": "Devin Teichrow", "url": "https://devinteichrow.com/about/", "sameAs": ["https://theedgeofepidemiology.substack.com", "https://x.com/edgeofepi", "https://www.instagram.com/edgeofepi/", "https://www.linkedin.com/in/devin-teichrow-msc-938942254", "https://medium.com/@EdgeofEpi"]}}</script>
+</head>
+  <body><div class="eoe-shell-nav"><div class="eoe-shell-nav-inner"><a class="eoe-shell-brand" href="/"><span>The Edge of Epidemiology</span> <span class="eoe-shell-byline">by Devin Teichrow</span></a><nav class="eoe-shell-links" aria-label="Umbrella navigation"><a class="" href="/">Home</a><a class="active" href="/newsdesk/">Newsdesk</a><a class="" href="/notebook/">Notebook</a><a class="" href="/atlases/pathogen/">Pathogen Atlas</a><a class="" href="/atlases/maritime/">Maritime Atlas</a><a class="" href="/essays/">Essays</a><a class="" href="/topics/">Topics</a><a class="" href="/historical/">Historical</a><a class="" href="/reference/">Reference</a><a class="" href="/opportunities/">Opportunities</a><a class="" href="/search/">Search</a></nav></div></div>
     <main class="page">
       <section class="hero">
         <div class="brand-row">
@@ -321,7 +511,7 @@
 
           <section class="panel">
             <h2>Highest Priority Items</h2>
-            <div class="priority-grid"><article class="priority-card"><div class="eyebrow">Policy, surveillance, and public health infrastructure</div><h3><a href="https://www.ecdc.europa.eu/en/news-events/after-action-review-slovakia-following-2025-hepatitis-outbreak">After-action review in Slovakia, following 2025 hepatitis A outbreak</a></h3><div class="item-meta"><span class="badge accent">5/5</span><span class="badge">ECDC News</span><span class="badge">2026-05-05T14:46+02:00</span></div><p>The outbreak of hepatitis A virus, which peaked in 2025, affected several EU countries, and disproportionately impacted vulnerable groups. These included ethnic minorities, particularly Roma communities in Slovakia and Czechia, people experiencing homelessness, people who use or inject drugs, and people living in poor sanitary conditions.</p><p><strong>Why it matters:</strong> Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.</p><p><strong>Caveats:</strong> Summary stays within source text and metadata; no outside facts were added.</p></article><article class="priority-card"><div class="eyebrow">Policy, surveillance, and public health infrastructure</div><h3><a href="https://www.ecdc.europa.eu/en/news-events/suspected-hantavirus-outbreak-cruise-ship-under-investigation-risk-europeans-very-low">Suspected hantavirus outbreak on cruise ship under investigation: risk for Europeans very low</a></h3><div class="item-meta"><span class="badge accent">5/5</span><span class="badge">ECDC News</span><span class="badge">2026-05-04T19:33+02:00</span></div><p>A cluster of severe acute respiratory illness, including three deaths and one severely ill individual, has been reported among passengers on a cruise ship travelling in the Atlantic and registered in the Netherlands. The ship is currently located off the coast of Cabo Verde, with 149 people on board.</p><p><strong>Why it matters:</strong> Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.</p><p><strong>Caveats:</strong> Summary stays within source text and metadata; no outside facts were added.</p></article><article class="priority-card"><div class="eyebrow">Policy, surveillance, and public health infrastructure</div><h3><a href="https://www.ecdc.europa.eu/en/news-events/ecdc-monitoring-outbreak-associated-cruise-ship">ECDC monitoring outbreak associated with cruise ship</a></h3><div class="item-meta"><span class="badge accent">5/5</span><span class="badge">ECDC News</span><span class="badge">2026-05-04T11:42+02:00</span></div><p>ECDC is aware of suspected cases of hantavirus infection, including three deaths, associated with a cruise ship travelling in the Atlantic. ECDC will provide updates as more information becomes available.</p><p><strong>Why it matters:</strong> Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.</p><p><strong>Caveats:</strong> Summary stays within source text and metadata; no outside facts were added.</p></article><article class="priority-card"><div class="eyebrow">Major epidemiology studies</div><h3><a href="https://pubmed.ncbi.nlm.nih.gov/42081288/">Incidence of Bacille Calmette-Guérin associated lymphadenitis in healthy children: A systematic review and meta-analysis.</a></h3><div class="item-meta"><span class="badge accent">5/5</span><span class="badge">PubMed Infectious Disease Search</span><span class="badge">2026-05-04T00:00</span></div><p>The pooled incidence proportion was 2.5% (95% CI, 1.6-3.6; I 2 = 99%). A total of 52 peer-reviewed journal articles (about 1.8 million children) were included in meta-analyses. This study highlights substantial variability in the incidence of BCG lymphadenitis among diverse studies and underscores the influence of surveillance methods, study design, and vaccine strain on reported outcomes.</p><p><strong>Why it matters:</strong> Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.</p><p><strong>Caveats:</strong> Summary stays within source text and metadata; no outside facts were added.</p><p><strong>DOI:</strong> 10.1080/21645515.2026.2662756</p></article><article class="priority-card"><div class="eyebrow">Major epidemiology studies</div><h3><a href="https://pubmed.ncbi.nlm.nih.gov/42059835/">COVID-19 in pediatrics in Latin America: six years later.</a></h3><div class="item-meta"><span class="badge accent">5/5</span><span class="badge">PubMed Infectious Disease Search</span><span class="badge">2026-05-04T00:00</span></div><p>Vaccination coverage against COVID-19 in children is suboptimal, particularly among those with high-risk underlying conditions, and the disruption of routine immunization programs has led to outbreaks of vaccine preventable diseases in the region. Addressing these challenges requires strengthening both COVID-19 vaccination strategies for high-risk pediatric populations and routine childhood immunization programs, along with effective communication to combat misinformation, prioritization of educational recovery, social protection, and resilient health systems. This paper is presented as a perspective from SLIPE on COVID-19, providing expert insight into the current epidemiological situation in the region.</p><p><strong>Why it matters:</strong> Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.</p><p><strong>Caveats:</strong> Summary stays within source text and metadata; no outside facts were added.</p><p><strong>DOI:</strong> 10.1080/14760584.2026.2667741</p></article><article class="priority-card"><div class="eyebrow">Historical epidemiology / ancient disease / paleopathology</div><h3><a href="https://pubmed.ncbi.nlm.nih.gov/42081432/">Editorial Note: Immuno-PCR - A New Tool for Paleomicrobiology: The Plague Paradigm.</a></h3><div class="item-meta"><span class="badge accent">5/5</span><span class="badge">PubMed Historical Epidemiology</span><span class="badge">2026-05-04T00:00</span></div><p>Publication type: Journal Article, Comment.</p><p><strong>Why it matters:</strong> Comes from an official or primary-source channel. Useful for historical epidemiology or paleopathology coverage.</p><p><strong>Caveats:</strong> Summary stays within source text and metadata; no outside facts were added.</p><p><strong>DOI:</strong> 10.1371/journal.pone.0348536</p></article></div>
+            <div class="priority-grid"><article class="priority-card"><div class="eyebrow">Policy, surveillance, and public health infrastructure</div><h3><a href="https://www.ecdc.europa.eu/en/news-events/after-action-review-slovakia-following-2025-hepatitis-outbreak">After-action review in Slovakia, following 2025 hepatitis A outbreak</a></h3><div class="item-meta"><span class="badge accent">5/5</span><span class="badge">ECDC News</span><span class="badge">2026-05-05T14:46+02:00</span></div><p>The outbreak of hepatitis A virus, which peaked in 2025, affected several EU countries, and disproportionately impacted vulnerable groups. These included ethnic minorities, particularly Roma communities in Slovakia and Czechia, people experiencing homelessness, people who use or inject drugs, and people living in poor sanitary conditions.</p><p><strong>Why it matters:</strong> Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.</p><p><strong>Caveats:</strong> The summary stays close to the source language and should be read as an initial source note, not a final interpretation.</p></article><article class="priority-card"><div class="eyebrow">Policy, surveillance, and public health infrastructure</div><h3><a href="https://www.ecdc.europa.eu/en/news-events/suspected-hantavirus-outbreak-cruise-ship-under-investigation-risk-europeans-very-low">Suspected hantavirus outbreak on cruise ship under investigation: risk for Europeans very low</a></h3><div class="item-meta"><span class="badge accent">5/5</span><span class="badge">ECDC News</span><span class="badge">2026-05-04T19:33+02:00</span></div><p>A cluster of severe acute respiratory illness, including three deaths and one severely ill individual, has been reported among passengers on a cruise ship travelling in the Atlantic and registered in the Netherlands. The ship is currently located off the coast of Cabo Verde, with 149 people on board.</p><p><strong>Why it matters:</strong> Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.</p><p><strong>Caveats:</strong> The summary stays close to the source language and should be read as an initial source note, not a final interpretation.</p></article><article class="priority-card"><div class="eyebrow">Policy, surveillance, and public health infrastructure</div><h3><a href="https://www.ecdc.europa.eu/en/news-events/ecdc-monitoring-outbreak-associated-cruise-ship">ECDC monitoring outbreak associated with cruise ship</a></h3><div class="item-meta"><span class="badge accent">5/5</span><span class="badge">ECDC News</span><span class="badge">2026-05-04T11:42+02:00</span></div><p>ECDC is aware of suspected cases of hantavirus infection, including three deaths, associated with a cruise ship travelling in the Atlantic. ECDC will provide updates as more information becomes available.</p><p><strong>Why it matters:</strong> Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.</p><p><strong>Caveats:</strong> The summary stays close to the source language and should be read as an initial source note, not a final interpretation.</p></article><article class="priority-card"><div class="eyebrow">Major epidemiology studies</div><h3><a href="https://pubmed.ncbi.nlm.nih.gov/42081288/">Incidence of Bacille Calmette-Guérin associated lymphadenitis in healthy children: A systematic review and meta-analysis.</a></h3><div class="item-meta"><span class="badge accent">5/5</span><span class="badge">PubMed Infectious Disease Search</span><span class="badge">2026-05-04T00:00</span></div><p>The pooled incidence proportion was 2.5% (95% CI, 1.6-3.6; I 2 = 99%). A total of 52 peer-reviewed journal articles (about 1.8 million children) were included in meta-analyses. This study highlights substantial variability in the incidence of BCG lymphadenitis among diverse studies and underscores the influence of surveillance methods, study design, and vaccine strain on reported outcomes.</p><p><strong>Why it matters:</strong> Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.</p><p><strong>Caveats:</strong> The summary stays close to the source language and should be read as an initial source note, not a final interpretation.</p><p><strong>DOI:</strong> 10.1080/21645515.2026.2662756</p></article><article class="priority-card"><div class="eyebrow">Major epidemiology studies</div><h3><a href="https://pubmed.ncbi.nlm.nih.gov/42059835/">COVID-19 in pediatrics in Latin America: six years later.</a></h3><div class="item-meta"><span class="badge accent">5/5</span><span class="badge">PubMed Infectious Disease Search</span><span class="badge">2026-05-04T00:00</span></div><p>Vaccination coverage against COVID-19 in children is suboptimal, particularly among those with high-risk underlying conditions, and the disruption of routine immunization programs has led to outbreaks of vaccine preventable diseases in the region. Addressing these challenges requires strengthening both COVID-19 vaccination strategies for high-risk pediatric populations and routine childhood immunization programs, along with effective communication to combat misinformation, prioritization of educational recovery, social protection, and resilient health systems. This paper is presented as a perspective from SLIPE on COVID-19, providing expert insight into the current epidemiological situation in the region.</p><p><strong>Why it matters:</strong> Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.</p><p><strong>Caveats:</strong> The summary stays close to the source language and should be read as an initial source note, not a final interpretation.</p><p><strong>DOI:</strong> 10.1080/14760584.2026.2667741</p></article><article class="priority-card"><div class="eyebrow">Historical epidemiology / ancient disease / paleopathology</div><h3><a href="https://pubmed.ncbi.nlm.nih.gov/42081432/">Editorial Note: Immuno-PCR - A New Tool for Paleomicrobiology: The Plague Paradigm.</a></h3><div class="item-meta"><span class="badge accent">5/5</span><span class="badge">PubMed Historical Epidemiology</span><span class="badge">2026-05-04T00:00</span></div><p>Publication type: Journal Article, Comment.</p><p><strong>Why it matters:</strong> Comes from an official or primary-source channel. Useful for historical epidemiology or paleopathology coverage.</p><p><strong>Caveats:</strong> The summary stays close to the source language and should be read as an initial source note, not a final interpretation.</p><p><strong>DOI:</strong> 10.1371/journal.pone.0348536</p></article></div>
           </section>
 
           <section class="panel">
@@ -452,7 +642,7 @@
     const text = document.getElementById("public-live-update-text");
     const currentRunId = 'run_7641238a65f5c569';
     const currentGeneratedAt = '2026-05-22T05:17:29';
-    const manifestPath = '../../app_exports/manifest.json';
+    const manifestPath = '/app_exports/manifest.json';
     const storageKey = `pathogen-dispatch-live-update-dismissed:${window.location.pathname}`;
     const liveUpdateStart = Date.now();
     let pendingRunId = "";
