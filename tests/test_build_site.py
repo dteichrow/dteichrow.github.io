@@ -578,7 +578,9 @@ atlases:
     assert "The Edge of Epidemiology on Substack" in about_text
     assert "diseases do not move only through bodies" not in about_text
     opportunities_text = (docs_dir / "opportunities" / "index.html").read_text()
-    assert "Bring me the projects where disease, data, history, and public understanding collide." in opportunities_text
+    assert "Send me research work that needs to become clearer, public, or usable." in opportunities_text
+    assert "Three easy ways to send work my way." in opportunities_text
+    assert "Download referral one-pager" in opportunities_text
     assert "devinteichrow@gmail.com" in opportunities_text
     assert "https://x.com/edgeofepi" in opportunities_text
     assert "https://www.instagram.com/edgeofepi/" in opportunities_text

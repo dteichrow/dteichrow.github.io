@@ -1634,6 +1634,50 @@ h3 {
   gap: 14px;
 }
 
+.referral-offer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.referral-offer-card {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid rgba(31, 91, 137, 0.18);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(251, 252, 253, 0.86), rgba(255, 250, 240, 0.72)),
+    url("visuals/paper-grain.svg");
+}
+
+.referral-offer-card h3 {
+  margin: 0;
+  color: #173046;
+  font-size: 1.1rem;
+  line-height: 1.18;
+}
+
+.referral-offer-card p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-family: var(--sans);
+  font-size: 0.94rem;
+  line-height: 1.58;
+}
+
+.referral-offer-card ul {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding-left: 18px;
+  color: var(--ink-soft);
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  line-height: 1.48;
+}
+
 .service-package-card {
   display: grid;
   gap: 12px;
@@ -1895,6 +1939,7 @@ h3 {
   }
 
   .opportunities-showcase,
+  .referral-offer-grid,
   .opportunity-mini-grid,
   .service-package-grid,
   .service-process-row {
