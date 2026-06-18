@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-06-18
-Generated at: 2026-06-18T04:40
+Generated at: 2026-06-18T04:42
 Search window: 7 day(s) ending 2026-06-18
 
 ## Executive scan
@@ -32,8 +32,8 @@ Search window: 7 day(s) ending 2026-06-18
 
 ### Ebola virus disease
 - Lead item: [AIRA Infodemic Trends Report 1–15 May 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/aira-infodemic-trends-report-1-15-may-2026) (WHO Regional Office for Africa)
-- Newly tracked story cluster: 127 item(s) across 92 source(s).
-- Baseline snapshot created with 127 clustered item(s) across 92 source(s).
+- Newly tracked story cluster: 127 item(s) across 93 source(s).
+- Baseline snapshot created with 127 clustered item(s) across 93 source(s).
 - WHO Regional Office for Africa now includes deaths or fatal cases in the story frame.
 
 ### Dengue and arboviruses
@@ -51,7 +51,7 @@ Search window: 7 day(s) ending 2026-06-18
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 127 item(s) across 92 source(s); 5 official/primary-source item(s).
+- Topic size: 127 item(s) across 93 source(s); 5 official/primary-source item(s).
 - Lead item: [AIRA Infodemic Trends Report 1–15 May 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/aira-infodemic-trends-report-1-15-may-2026) (WHO Regional Office for Africa, 2026-06-17T19:31+00:00)
 - Detailed note: Eugene Kabambi Communications Officer WHO DRC Tel : +243 81 715 1697 Office : +47 241 39 027 Email: kabambie [at] who.int (kabambie[at]who[dot]int) Saida Swaleh Communications and Media Relations Officer WHO Regional Office for Africa Email: saida.swaleh [at] who.int (saida[dot]swaleh[at]who[dot]int) Related Links https://www.afro.who.int/fr/countries/democratic-republic-of-congo/news/dans-lo… carousel-bg...
 - Evidence notes: [AIRA Infodemic Trends Report 1–15 May 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/aira-infodemic-trends-report-1-15-may-2026) (WHO Regional Office for Africa); [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 05, Data as of 14 June 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-1) (WHO Regional Office for Africa); [Dans l’ombre de l’épidémie, un outil innovant accélère la riposte à Ebola en Ituri](https://www.afro.who.int/fr/countries/democratic-republic-of-congo/news/dans-lombre-de-lepidemie-un-outil-innovant-accelere-la-riposte-ebola-en-ituri) (WHO Regional Office for Africa); [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News); [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) (Texas Department of State Health Services News)
@@ -461,13 +461,13 @@ Search window: 7 day(s) ending 2026-06-18
   Limited detail was available from feed metadata alone.
 - [China stands ready to provide more medical support to Africa amid Ebola outbreak](https://www.globaltimes.cn/page/202606/1363845.shtml) | Global Times | 2026-06-17T15:22+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
+- [Ebola outbreak may be worst ever, Africa CDC warns](https://www.trtafrika.com/article/0033dfbc3a5d) | TRT Afrika | 2026-06-17T14:05+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - [DR Congo Ebola outbreak could become worst in history as thousands not being traced](https://www.france24.com/en/dr-congo-ebola-outbreak-could-become-worst-in-history-as-thousands-not-being-traced) | France 24 | 2026-06-17T09:24+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Africa's Ebola outbreaks complicated by victims who prefer traditional healers over hospitals - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/International/wireStory/africas-ebola-outbreaks-complicated-victims-prefer-traditional-healers-133951028) | ABC News - Breaking News, Latest News and Videos | 2026-06-17T06:16+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Hantavirus cruise passenger says she’s being forced to quarantine in Nebraska](https://news.google.com/rss/articles/CBMivAFBVV95cUxQbmdhOG91MXdneHhIUnR4U1VlVWxRVjlfWko5YU1zQWNvcm1JRzE3ZVpXbW84VDVrRkRXVWpnRzE1bnRpTEFadnh0MjJ3b2JBNzlicG5CWi1OY0NRc3c2a0FpWnM2d3JxUUhyLWYtbVVzSTNGRVdvczVzODVXOU1pTW5DYkl2UEd4V2kyUGVtZ3daWE5wZmw3TU9nbjZDY2hfc0N2a3dQc3hFdjYwUXdnWno2ZTFSM19BZFFTRQ?oc=5) | The Washington Post | 2026-06-17T03:43+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [7 patients said to have recovered from Ebola leave DR Congo treatment center](https://ca.news.yahoo.com/7-patients-said-recovered-ebola-220314604.html) | Yahoo News Canada | 2026-06-16T22:03+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
@@ -505,8 +505,6 @@ Search window: 7 day(s) ending 2026-06-18
 ## Historical epi / weird epi corner
 - [Liposomal multimodal theranostics for bone disorders: from rational responsive delivery and biomimetic strategies to clinical translation.](https://pubmed.ncbi.nlm.nih.gov/42288907/) | PubMed Historical Pathogen Case Studies
   We then discuss their diagnostic and therapeutic applications in osteomyelitis, joint tuberculosis, rheumatoid arthritis, osteoarthritis, osteoporosis, bone defects, fracture nonunion, bone tumors, and spinal cord injury, with particular attention to radiolabeled liposomes, fluorescent probes, imaging-guided therapy, and microenvironment-responsive systems. Moreover, biomimetic liposomes, such as cell membrane-camouflaged, macrophage- or erythrocyte membrane-engineered, membrane-fusion-inspired, and organelle-delivering liposomal systems, are highlighted for their roles in immune evasion, lesion targeting, barrier penetration, and intercellular delivery. Bone and bone-related disorders remain difficult to diagnose and treat because of the dense mineralized matrix, limited vascular perfusion, complex pathological microenvironment, and insufficient site-specific accumulation of conventional agents.
-- [Congo's burial teams fight Ebola one coffin at a time](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1oMnJBVTZjeE5KWk4zdWpKVEtMckdvd05IcFowN3c1UVhGdDh2T2JjQUYwRTg4eFB1dVdqb1lMUmdaMW90Z0I4NDJwS18xWmgyNXFvSWFEUkk5c2FQemhCbWE3LS1XdlE?oc=5) | Reuters
-  Limited detail was available from feed metadata alone.
 - [Ebola outbreak in DR Congo expands into large displacement camp](https://www.cidrap.umn.edu/ebola/ebola-outbreak-dr-congo-expands-large-displacement-camp) | CIDRAP
   Topics & Projects Antimicrobial Stewardship Chronic Wasting Disease Osterholm Update Podcasts About CIDRAP CIDRAP in the News Our Staff Our Director Osterholm in the Press Shop Merchandise Contact Us About The number of confirmed cases in the growing Ebola outbreak in the Democratic Republic of the Congo (DRC) has risen to 676, including 136 deaths, as health officials warn it’s likely to get worse. According to Reuters , the mother and daughter, who died on May 31 and June 1 and later tested positive for Ebola, were living in a camp that’s hosting 30,000 internally displaced people in cramped and unsanitary conditions. Among the dead are two victims who were living in a displacement camp in eastern DRC, which has been plagued by conflict between the government and rebel groups.
 
