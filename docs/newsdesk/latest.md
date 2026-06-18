@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-06-17
-Generated at: 2026-06-17T23:31
+Generated at: 2026-06-17T23:45
 Search window: 7 day(s) ending 2026-06-17
 
 ## Executive scan
@@ -12,7 +12,7 @@ Search window: 7 day(s) ending 2026-06-17
 - [Surveillance Summaries: Foodborne Disease Outbreaks Associated with Marine Toxins - Foodborne Disease Outbreak Surveillance System, United States, 2011-2023](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765851) (CDC MMWR; 2026-06-16T17:10+00:00; Occupational and environmental epidemiology; relevance 5/5)
 - [Respiratory virus surveillance in the WHO African Region Epidemiological Week 23, June 1 to 7 2026](https://www.afro.who.int/publications/respiratory-virus-surveillance-who-african-region-epidemiological-week-23-june-1-7) (WHO Regional Office for Africa; 2026-06-16T11:55+00:00; Outbreaks and emerging infections; relevance 5/5)
 - [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 05, Data as of 14 June 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-1) (WHO Regional Office for Africa; 2026-06-16T09:58+00:00; Outbreaks and emerging infections; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (147), Policy, surveillance, and public health infrastructure (9), Occupational and environmental epidemiology (8)
+- Category mix: Outbreaks and emerging infections (146), Policy, surveillance, and public health infrastructure (10), Occupational and environmental epidemiology (8)
 - Source health: 1 source(s) failed during collection: USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
@@ -458,8 +458,6 @@ Search window: 7 day(s) ending 2026-06-17
   Limited detail was available from feed metadata alone.
 - [DR Congo Ebola outbreak could become worst in history as thousands not being traced](https://www.france24.com/en/dr-congo-ebola-outbreak-could-become-worst-in-history-as-thousands-not-being-traced) | France 24 | 2026-06-17T09:24+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Africa CDC warns Bundibugyo Ebola outbreak could become continent’s worst as cases exceed 800, deaths pass190](https://africa.businessinsider.com/local/markets/africa-cdc-warns-bundibugyo-ebola-outbreak-could-become-continents-worst-as-cases/1wlex34) | Business Insider Africa | 2026-06-17T07:33+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
 - [Africa's Ebola outbreaks complicated by victims who prefer traditional healers over hospitals - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/International/wireStory/africas-ebola-outbreaks-complicated-victims-prefer-traditional-healers-133951028) | ABC News - Breaking News, Latest News and Videos | 2026-06-17T06:16+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Ebola: Latest UAE advice as cases spike in Congo](https://www.arabianbusiness.com/business/healthcare/latest-uae-ebola-congo) | Arabian Business | 2026-06-17T05:36+00:00 | Outbreaks and emerging infections
@@ -467,6 +465,8 @@ Search window: 7 day(s) ending 2026-06-17
 - [Ebola outbreak in Democratic Republic of Congo could become worst ever, warns Africa CDC chief](https://news.ssbcrack.com/ebola-outbreak-in-democratic-republic-of-congo-could-become-worst-ever-warns-africa-cdc-chief/) | SSBCrack | 2026-06-17T03:55+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [7 patients said to have recovered from Ebola leave DR Congo treatment center](https://ca.news.yahoo.com/7-patients-said-recovered-ebola-220314604.html) | Yahoo News Canada | 2026-06-16T22:03+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Africa CDC head warns Ebola outbreak could be worst ever](https://www.cidrap.umn.edu/ebola/africa-cdc-head-warns-ebola-outbreak-could-be-worst-ever) | CIDRAP | 2026-06-16T21:23+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
