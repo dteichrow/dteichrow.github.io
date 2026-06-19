@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-06-19
-Generated at: 2026-06-19T00:32
+Generated at: 2026-06-19T01:02
 Search window: 7 day(s) ending 2026-06-19
 
 ## Executive scan
@@ -12,7 +12,7 @@ Search window: 7 day(s) ending 2026-06-19
 - [Tracking the roots of zoonoses.](https://pubmed.ncbi.nlm.nih.gov/42313956/) (PubMed Historical Epidemiology; 2026-06-18T00:00; Historical epidemiology / ancient disease / paleopathology; relevance 5/5)
 - [AIRA Infodemic Trends Report 1–15 May 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/aira-infodemic-trends-report-1-15-may-2026) (WHO Regional Office for Africa; 2026-06-17T19:31+00:00; Outbreaks and emerging infections; relevance 5/5)
 - [Comparative safety assessment of measles-containing vaccination schedules in Jiangsu Province, China: A population-based pharmacovigilance study (2014-2024).](https://pubmed.ncbi.nlm.nih.gov/42306971/) (PubMed Infectious Disease Search; 2026-06-17T00:00; Major epidemiology studies; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (165), Policy, surveillance, and public health infrastructure (16), Historical epidemiology / ancient disease / paleopathology (2)
+- Category mix: Outbreaks and emerging infections (162), Policy, surveillance, and public health infrastructure (15), Major epidemiology studies (2)
 - Source health: 1 source(s) failed during collection: USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
@@ -37,8 +37,8 @@ Search window: 7 day(s) ending 2026-06-19
 
 ### Dengue and arboviruses
 - Lead item: [Leptospirosis is associated with severity, increased resource utilization, and mortality among acute febrile illnesses from Karnataka, Southwestern India.](https://pubmed.ncbi.nlm.nih.gov/42311109/) (PubMed Infectious Disease Search)
-- Newly tracked story cluster: 13 item(s) across 12 source(s).
-- Baseline snapshot created with 13 clustered item(s) across 12 source(s).
+- Newly tracked story cluster: 9 item(s) across 8 source(s).
+- Baseline snapshot created with 9 clustered item(s) across 8 source(s).
 - PubMed Infectious Disease Search now includes deaths or fatal cases in the story frame.
 
 ### Historical epidemiology and ancient pathogens
@@ -66,11 +66,11 @@ Search window: 7 day(s) ending 2026-06-19
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Dengue and arboviruses
-- Topic size: 13 item(s) across 12 source(s); 1 official/primary-source item(s).
+- Topic size: 9 item(s) across 8 source(s); 1 official/primary-source item(s).
 - Lead item: [Leptospirosis is associated with severity, increased resource utilization, and mortality among acute febrile illnesses from Karnataka, Southwestern India.](https://pubmed.ncbi.nlm.nih.gov/42311109/) (PubMed Infectious Disease Search, 2026-06-18T00:00)
 - Detailed note: Etiologies included undifferentiated fever (38.5%), dengue (33.1%), scrub typhus (10.2%), leptospirosis (7.6%), malaria (5.1%), and alternate diagnoses (6.4%), with seasonal peaks during monsoon (June to October). Since the beginning of the year, Kerala has reported 3,565 confirmed and 10, 428 probable cases of dengue. Fatality was 3.2%, with 60% due to undifferentiated fever and 40% due to...
-- Evidence notes: [Leptospirosis is associated with severity, increased resource utilization, and mortality among acute febrile illnesses from Karnataka, Southwestern India.](https://pubmed.ncbi.nlm.nih.gov/42311109/) (PubMed Infectious Disease Search); [India: Kerala reports uptick in dengue](https://outbreaknewstoday.substack.com/p/india-kerala-reports-uptick-in-dengue) (Outbreak News Today); [119 dengue cases recorded in Singapore in second week of June, highest so far in 2026](https://www.straitstimes.com/singapore/119-dengue-cases-recorded-in-singapore-in-second-week-of-june-highest-so-far-in-2026) (The Straits Times); [42-year-old man dies of dengue fever in Kerala’s Palakkad district](https://timesofindia.indiatimes.com/city/kochi/42-year-old-man-dies-of-dengue-fever-in-keralas-palakkad-district/articleshow/131806862.cms) (The Times of India); [Sri Lanka dengue outbreak grows, a Special Dengue Prevention Week declared this week](https://news.google.com/rss/articles/CBMif0FVX3lxTE96S2hNUHlPcmtsMExQRk9adXE4X0k5RkVCNjc3N3h3TFRnNFkyOTk0aG5YUkM0bGNkZ3F1d1RBSHBDcXdfa19QZlZxU3RRcXN1SkFwazZNT0JjMjF6MUpZYzJQcVM2ak5CbDFHdi1Hc0dpU2twRldfNnFRVE41aTA?oc=5) (Outbreak News Today)
-- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
+- Evidence notes: [Leptospirosis is associated with severity, increased resource utilization, and mortality among acute febrile illnesses from Karnataka, Southwestern India.](https://pubmed.ncbi.nlm.nih.gov/42311109/) (PubMed Infectious Disease Search); [India: Kerala reports uptick in dengue](https://outbreaknewstoday.substack.com/p/india-kerala-reports-uptick-in-dengue) (Outbreak News Today); [42-year-old man dies of dengue fever in Kerala’s Palakkad district](https://timesofindia.indiatimes.com/city/kochi/42-year-old-man-dies-of-dengue-fever-in-keralas-palakkad-district/articleshow/131806862.cms) (The Times of India); [Sri Lanka dengue outbreak grows, a Special Dengue Prevention Week declared this week](https://news.google.com/rss/articles/CBMif0FVX3lxTE96S2hNUHlPcmtsMExQRk9adXE4X0k5RkVCNjc3N3h3TFRnNFkyOTk0aG5YUkM0bGNkZ3F1d1RBSHBDcXdfa19QZlZxU3RRcXN1SkFwazZNT0JjMjF6MUpZYzJQcVM2ak5CbDFHdi1Hc0dpU2twRldfNnFRVE41aTA?oc=5) (Outbreak News Today); [Delhi Records 162 Dengue Cases Before Monsoon; Health Experts Stress Early Prevention](https://news.google.com/rss/articles/CBMie0FVX3lxTE9zb2t4djZLdGtfaWU4WGp4THpHRzV0SXpER3FRdWZMX1N6b0RSZlVJWnJGNjZsRXZfeTMyODVvT0ZQRjN2WmxHUXNlOE1NdVFMN0daSHN0ZmxoZGNxWHRfMVRQZlNNQ3dhTEcxMjVUVW9BcTRZWVdFY3pZNA?oc=5) (Live India)
+- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Hantavirus and cruise-ship outbreak
