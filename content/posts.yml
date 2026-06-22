@@ -1,4 +1,51 @@
 posts:
+- substack_id: 202975620
+  slug: what-did-your-job-do-to-your-body
+  title: What Did Your Job Do to Your Body?
+  date: '2026-06-21'
+  canonical_url: https://theedgeofepidemiology.substack.com/p/what-did-your-job-do-to-your-body
+  excerpt: Occupational disease starts with a boring question that can change the
+    whole diagnosis.
+  cover_image: https://substackcdn.com/image/fetch/$s_!jE9c!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6cf3091d-463f-45bd-a5c6-e25992c978a8_1620x911.png
+  upstream_tags:
+  - science
+  - occupational health
+  - History
+  - health
+  - Ramazzini
+  - epidemiology
+  source_mode: substack_page
+  wordcount: 1733
+  status: summary_only
+  dek: ''
+  topics:
+  - science
+  - occupational health
+  - History
+  - health
+  - Ramazzini
+  - epidemiology
+  series: []
+  seo_title: ''
+  seo_description: ''
+  primary_keyword: ''
+  topic_cluster: ''
+  indexing_strategy: noindex_stub
+  related_atlases: []
+  related_reference_slugs: []
+  related_story_ids: []
+  search_excerpt: Occupational disease starts with a boring question that can change
+    the whole diagnosis.
+  local_body_path: ''
+  body_synced_at: ''
+  body_source_url: ''
+  body_source_mode: ''
+  body_source_file: ''
+  body_wordcount: null
+  hero_mode: cover
+  notes: ''
+  first_seen_at: '2026-06-22T17:24:32+00:00'
+  last_synced_at: '2026-06-22T17:24:32+00:00'
 - substack_id: 201672365
   slug: the-countries-we-cant-measure-how
   title: 'The Deaths We Can’t Count: How Researchers Estimate Mortality Where Nobody
@@ -47,8 +94,8 @@ posts:
   title: The Flesh-Eating Fly America Thought It Had Beaten Is Back
   date: '2026-06-06'
   canonical_url: https://theedgeofepidemiology.substack.com/p/new-world-screwworm-returns-to-the
-  excerpt: 'Updates June 14th 7:30am: The USDA’s dashboard now notes 12 cases, all
-    but one of which are in Texas.'
+  excerpt: 'Updates June 22nd 6:30am: The USDA dashboard counts 15 cases as of today,
+    with three new cases identified (two yesterday, one on the 20th).'
   cover_image: https://substackcdn.com/image/fetch/$s_!GriU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F88f4ef7b-8fca-40e4-8fcc-95bafcda7c9c_1600x1000.png
   upstream_tags:
   - US History
@@ -57,7 +104,7 @@ posts:
   - Screwworm
   - Agriculture
   source_mode: substack_archive_api
-  wordcount: 2548
+  wordcount: 2609
   status: summary_only
   dek: ''
   topics:
@@ -83,7 +130,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-06-06T12:22:41+00:00'
-  last_synced_at: '2026-06-18T06:45:41+00:00'
+  last_synced_at: '2026-06-22T17:24:32+00:00'
   flashcards:
   - question: Which option best completes this essay point? "The _____ had serious
       post-eradication incursions in the 1970s, and Florida had a contained outbreak
@@ -186,6 +233,11 @@ posts:
   flashcards_source: substack_body_html
   flashcards_source_url: https://theedgeofepidemiology.substack.com/p/new-world-screwworm-returns-to-the
   flashcards_generated_at: '2026-06-06T12:24:07+00:00'
+  body_synced_at: ''
+  body_source_url: ''
+  body_source_mode: ''
+  body_source_file: ''
+  body_wordcount: null
 - substack_id: 199208467
   slug: what-the-viking-age-norse-died-from
   title: The Ordinary Deaths of the Vikings
@@ -339,7 +391,7 @@ posts:
   - epidemiology
   - Africa
   source_mode: substack_archive_api
-  wordcount: 2416
+  wordcount: 2479
   status: summary_only
   dek: ''
   topics:
@@ -366,7 +418,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-19T02:25:26+00:00'
-  last_synced_at: '2026-06-12T15:02:15+00:00'
+  last_synced_at: '2026-06-22T17:24:32+00:00'
   flashcards:
   - question: Which option best completes this essay point? "Species is important
       here; I say that because when most people hear about Ebola, they’re likely to
@@ -469,6 +521,11 @@ posts:
   flashcards_source: substack_body_html
   flashcards_source_url: https://theedgeofepidemiology.substack.com/p/ebola-in-drc-and-uganda-what-is-known
   flashcards_generated_at: '2026-05-26T18:57:26+00:00'
+  body_synced_at: ''
+  body_source_url: ''
+  body_source_mode: ''
+  body_source_file: ''
+  body_wordcount: null
 - substack_id: 197437573
   slug: hantavirus-in-the-korean-war-korean
   title: Korean Hemorrhagic Fever in the Korean War
