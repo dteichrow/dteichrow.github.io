@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-06-22
-Generated at: 2026-06-22T12:50
+Generated at: 2026-06-22T13:00
 Search window: 7 day(s) ending 2026-06-22
 
 ## Executive scan
@@ -12,7 +12,7 @@ Search window: 7 day(s) ending 2026-06-22
 - [Tracking the roots of zoonoses.](https://pubmed.ncbi.nlm.nih.gov/42313956/) (PubMed Historical Epidemiology; 2026-06-18T00:00; Historical epidemiology / ancient disease / paleopathology; relevance 5/5)
 - [Comparative safety assessment of measles-containing vaccination schedules in Jiangsu Province, China: A population-based pharmacovigilance study (2014-2024).](https://pubmed.ncbi.nlm.nih.gov/42306971/) (PubMed Infectious Disease Search; 2026-06-17T00:00; Major epidemiology studies; relevance 5/5)
 - [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 05, Data as of 14 June 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-1) (WHO Regional Office for Africa; 2026-06-16T09:58+00:00; Outbreaks and emerging infections; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (134), Policy, surveillance, and public health infrastructure (15), Historical epidemiology / ancient disease / paleopathology (2)
+- Category mix: Outbreaks and emerging infections (136), Policy, surveillance, and public health infrastructure (16), Historical epidemiology / ancient disease / paleopathology (2)
 - Source health: 1 source(s) failed during collection: USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
@@ -33,8 +33,8 @@ Search window: 7 day(s) ending 2026-06-22
 
 ### Ebola virus disease
 - Lead item: [ECDC publishes practical guidance to improve Ebola preparedness](https://www.ecdc.europa.eu/en/news-events/ecdc-publishes-practical-guidance-improve-ebola-preparedness) (ECDC News)
-- Newly tracked story cluster: 109 item(s) across 87 source(s).
-- Baseline snapshot created with 109 clustered item(s) across 87 source(s).
+- Newly tracked story cluster: 113 item(s) across 91 source(s).
+- Baseline snapshot created with 113 clustered item(s) across 91 source(s).
 - WHO Regional Office for Africa now includes deaths or fatal cases in the story frame.
 
 ### Measles transmission and vaccination
@@ -43,16 +43,16 @@ Search window: 7 day(s) ending 2026-06-22
 - Baseline snapshot created with 19 clustered item(s) across 19 source(s).
 - CDC MMWR now foregrounds vaccination or vaccine policy in the story.
 
-### Dengue and arboviruses
-- Lead item: [Sri Lanka dengue fever cases surge to 44,000 cases this year](https://www.reuters.com/video/watch/idRW065019062026RP1/) (Reuters)
-- Newly tracked story cluster: 3 item(s) across 2 source(s).
-- Baseline snapshot created with 3 clustered item(s) across 2 source(s).
-- Story tracking is now active for this cluster; future runs will report only new developments against this baseline.
+### Historical epidemiology and ancient pathogens
+- Lead item: [Neutralising antibody responses to MPXV clades Ia, Ib, and IIb after infection or vaccination: a multicountry observational study.](https://pubmed.ncbi.nlm.nih.gov/42314719/) (PubMed Historical Pathogen Case Studies)
+- Newly tracked story cluster: 2 item(s) across 2 source(s).
+- Baseline snapshot created with 2 clustered item(s) across 2 source(s).
+- PubMed Historical Pathogen Case Studies now foregrounds vaccination or vaccine policy in the story.
 
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 109 item(s) across 87 source(s); 4 official/primary-source item(s).
+- Topic size: 113 item(s) across 91 source(s); 4 official/primary-source item(s).
 - Lead item: [ECDC publishes practical guidance to improve Ebola preparedness](https://www.ecdc.europa.eu/en/news-events/ecdc-publishes-practical-guidance-improve-ebola-preparedness) (ECDC News, 2026-06-18T16:35+02:00)
 - Detailed note: Eugene Kabambi Communications Officer WHO DRC Tel : +243 81 715 1697 Office : +47 241 39 027 Email: kabambie [at] who.int (kabambie[at]who[dot]int) Saida Swaleh Communications and Media Relations Officer WHO Regional Office for Africa Email: saida.swaleh [at] who.int (saida[dot]swaleh[at]who[dot]int) Related Links https://www.afro.who.int/fr/countries/democratic-republic-of-congo/news/dans-lo… carousel-bg...
 - Evidence notes: [ECDC publishes practical guidance to improve Ebola preparedness](https://www.ecdc.europa.eu/en/news-events/ecdc-publishes-practical-guidance-improve-ebola-preparedness) (ECDC News); [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 05, Data as of 14 June 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-1) (WHO Regional Office for Africa); [Dans l’ombre de l’épidémie, un outil innovant accélère la riposte à Ebola en Ituri](https://www.afro.who.int/fr/countries/democratic-republic-of-congo/news/dans-lombre-de-lepidemie-un-outil-innovant-accelere-la-riposte-ebola-en-ituri) (WHO Regional Office for Africa); [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) (Texas Department of State Health Services News); [DR Congo Ebola outbreak tops 1,000 cases, kills 254](https://www.jamaicaobserver.com/2026/06/22/dr-congo-ebola-outbreak-tops-1000-cases-kills-254/) (Jamaica Observer)
@@ -83,14 +83,6 @@ Search window: 7 day(s) ending 2026-06-22
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may shape how new evidence is framed before broader consensus forms.
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
 
-### Dengue and arboviruses
-- Topic size: 3 item(s) across 2 source(s); 0 official/primary-source item(s).
-- Lead item: [Sri Lanka dengue fever cases surge to 44,000 cases this year](https://www.reuters.com/video/watch/idRW065019062026RP1/) (Reuters, 2026-06-19T16:13+00:00)
-- Detailed note: News Politics Business Society Science & Tech Culture Sports Edition Focus Taiwan 中央通訊社 フォーカス台湾 Fokus Taiwan Latest National women's softball into world championship finals All Taiwanese reservists now must undergo 14-day intensive training Mekkhala could come closest to Taiwan on Thursday: CWA Suspect in Taipei knife attack on cheerleader detained UBS raises Taiwan's GDP growth forecast to 9.9% for 2026 National...
-- Evidence notes: [Sri Lanka dengue fever cases surge to 44,000 cases this year](https://www.reuters.com/video/watch/idRW065019062026RP1/) (Reuters); [Sri Lanka battles surge in dengue fever, with more than 44,000 cases so far this year](https://www.reuters.com/business/healthcare-pharmaceuticals/sri-lanka-battles-surge-dengue-fever-with-more-than-44000-cases-so-far-this-year-2026-06-19/) (Reuters); [Kaohsiung hospital dengue cluster linked to imported case: CDC](https://focustaiwan.tw/society/202606160023) (Focus Taiwan)
-- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
-- Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
-
 ### Miscellaneous signals
 - Topic size: 2 item(s) across 2 source(s); 1 official/primary-source item(s).
 - Lead item: [AIRA Infodemic Trends Report 16–31 May 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/aira-infodemic-trends-report-16-31-may-2026) (WHO Regional Office for Africa, 2026-06-19T13:16+00:00)
@@ -98,6 +90,14 @@ Search window: 7 day(s) ending 2026-06-22
 - Evidence notes: [AIRA Infodemic Trends Report 16–31 May 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/aira-infodemic-trends-report-16-31-may-2026) (WHO Regional Office for Africa); [5 things to know for June 22: World Cup, UK prime minister, Iran deal, tornado outbreak, reflecting pool](https://www.cnn.com/2026/06/22/us/5-things-to-know-for-june-22-world-cup-uk-prime-minister-iran-deal-tornado-outbreak-reflecting-pool) (CNN)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: These notes are limited to source text collected in this run.
+
+### Dengue and arboviruses
+- Topic size: 2 item(s) across 1 source(s); 0 official/primary-source item(s).
+- Lead item: [Sri Lanka dengue fever cases surge to 44,000 cases this year](https://www.reuters.com/video/watch/idRW065019062026RP1/) (Reuters, 2026-06-19T16:13+00:00)
+- Detailed note: Cluster remains active across 2 related item(s), but usable factual summary text was limited after cleanup.
+- Evidence notes: [Sri Lanka dengue fever cases surge to 44,000 cases this year](https://www.reuters.com/video/watch/idRW065019062026RP1/) (Reuters); [Sri Lanka battles surge in dengue fever, with more than 44,000 cases so far this year](https://www.reuters.com/business/healthcare-pharmaceuticals/sri-lanka-battles-surge-dengue-fever-with-more-than-44000-cases-so-far-this-year-2026-06-19/) (Reuters)
+- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
+- Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Source diversity is limited so corroboration is thin.
 
 
 ## Last major outbreaks on file
@@ -448,6 +448,8 @@ Search window: 7 day(s) ending 2026-06-22
   Limited detail was available from feed metadata alone.
 - [WHO Issues First Comprehensive Guidelines For Ebola And Marburg Care Amid Congo Outbreak](https://www.bwhealthcareworld.com/article/who-issues-first-comprehensive-guidelines-for-ebola-and-marburg-care-amid-congo-outbreak-611712) | BW Healthcare World | 2026-06-22T14:03+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
+- [Ebola death toll rises to 254 in DR Congo](https://www.plataformamedia.com/en/2026/06/22/ebola-death-toll-dr-congo-bundibugyo-virus-outbreak/) | Plataforma Media | 2026-06-22T12:54+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - [Ebola cases surpass 1,000 in DR Congo amid violence and displacement](https://www.aljazeera.com/gallery/2026/6/22/ebola-cases-surpass-1000-in-congo-amid-violence-and-displacement) | Al Jazeera | 2026-06-22T12:06+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [True scale of Congo Ebola outbreak still unknown one month in, responders say](https://www.postandcourier.com/nation-world/news/true-scale-of-congo-ebola-outbreak-still-unknown-one-month-in-responders-say/article_b3233192-c042-43d1-9a3e-2cf219b12804.html) | Post and Courier | 2026-06-22T08:00+00:00 | Outbreaks and emerging infections
@@ -456,7 +458,7 @@ Search window: 7 day(s) ending 2026-06-22
   Limited detail was available from feed metadata alone.
 - [Australia reports second H5N1 bird flu case in migratory seabird](https://www.reuters.com/business/healthcare-pharmaceuticals/australia-confirms-second-h5-bird-flu-case-2026-06-22/) | Reuters | 2026-06-22T03:45+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [DR Congo Ebola cases top 1,000](https://news.cgtn.com/news/2026-06-22/DR-Congo-Ebola-cases-top-1-000-1OaRxl8HAK4/p.html) | news.cgtn.com | 2026-06-22T01:54+00:00 | Outbreaks and emerging infections
+- [DR Congo Ebola cases top 1,000](https://news.google.com/rss/articles/CBMikAFBVV95cUxQUFZiT3BYNU43R0RIMkNRYjQ4S3F0bDVKNUt4dDVHQ3lOSUZVc19rY2FiYlU0YW05eUZqYUlOb3RKdzJYOE8yUklkSEQxMmRMbWstR3VfWFV6aXQtOWI5Qm1PMy1kLWh1UGFLbFNjQUFnOFF1UWNkaENMam5MWHlxUU9TUGxpV0ZhUW1sRFczMmw?oc=5) | news.cgtn.com | 2026-06-22T01:54+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Ebola outbreak worsening in Congo, response hampered by Trump's USAID cuts](https://news.google.com/rss/articles/CBMipgFBVV95cUxOeG1BUVlidmJlV1p3bnJNMHpCYmE5TFdRYTFDaVBwYU5CcEo1ME9UbXFjclloenVILWJhU2QwSnptcndMaWFxU0pPVVNyWHRuNEt1aVVrN3dkN3BzX01RNDJfeEpwX0dFLXhpOU5yV05KdGlUNVBzZ0hmd1IxN3VtTUJlcWVnM0hWbzNRM09BM2hERVFZVFR5SE1ad0hNbEVLcWZ0Mk93?oc=5) | CBS News | 2026-06-22T00:46+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
@@ -468,8 +470,6 @@ Search window: 7 day(s) ending 2026-06-22
   Limited detail was available from feed metadata alone.
 - [H5N1 bird flu found on mainland Australia for the first time](https://www.nationthailand.com/news/world/40067683) | Nation Thailand | 2026-06-21T03:20+00:00 | Outbreaks and emerging infections
   According to a report by Xinhua , Julie Collins, Australia’s Minister for Agriculture, Fisheries and Forestry, confirmed on Saturday (June 20) that H5N1 had been detected in a brown skua discovered on June 14 in a national park in southern Western Australia. A second sick bird, a giant petrel, was discovered in a nearby area and has been placed in quarantine for monitoring and further investigation. In response, authorities are using pre-allocated funds for disease control and have warned the public not to touch sick or dead birds.
-- [Officials say the Ebola outbreak in Democratic Republic of Congo outpaces the response](https://news.google.com/rss/articles/CBMiywFBVV95cUxONUNsQlgyRXNOVjE4cWwyMDJ1TVpzVG9zR2NOY2IwYTNMWVBSeFlDNHFvSThhWEZyMXBNakY3NmdlQmVpZm44bndBd2ptY3N0TFUwNXlhM3dIaU1QVkFycEZicnptWnN1U2dGeXVNNk16ZExyUXN0ekJ1eG9mNkFGcDJ6S0R3QVlxT29qWmtrc3N5SnFXSU82UHJpTEw4enoxZm5adjBReVVScWJYVjhYNkY5UUpmZUxOUlhJQzhtZUhRRTdhWkpobjRSUQ?oc=5) | NPR | 2026-06-20T11:40+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
 - [Neutralising antibody responses to MPXV clades Ia, Ib, and IIb after infection or vaccination: a multicountry observational study.](https://pubmed.ncbi.nlm.nih.gov/42314719/)
