@@ -216,7 +216,7 @@ def test_incremental_sync_uses_archive_api_without_degraded_mode(tmp_path, monke
     assert "api-post" in saved_manifest
 
 
-def test_incremental_sync_preserves_valid_local_flashcards(tmp_path, monkeypatch) -> None:
+def test_incremental_sync_strips_legacy_flashcards(tmp_path, monkeypatch) -> None:
     manifest_path = tmp_path / "posts.yml"
     url = "https://theedgeofepidemiology.substack.com/p/enriched-post"
     manifest_path.write_text(
@@ -260,9 +260,10 @@ posts:
 
     assert report["updated_records"] == 1
     assert "Enriched post, updated upstream" in saved_manifest
-    assert "What should survive a Substack metadata refresh?" in saved_manifest
-    assert "The local study card deck." in saved_manifest
-    assert "flashcards_source: substack_body_html" in saved_manifest
+    assert "What should survive a Substack metadata refresh?" not in saved_manifest
+    assert "The local study card deck." not in saved_manifest
+    assert "flashcards:" not in saved_manifest
+    assert "flashcards_source:" not in saved_manifest
 
 
 def test_incremental_sync_writes_report_next_to_external_manifest(tmp_path, monkeypatch) -> None:

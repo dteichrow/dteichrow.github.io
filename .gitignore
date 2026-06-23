@@ -13,3 +13,7 @@ output/
 notes/*/scratch-render/
 notes/*/voice-auditions/
 notes/*/*scratch*-latest.mp4
+notes/*/generated-deck-assets/
+notes/*/*deck*.pptx
+notes/*/*deck*-contact-sheet.png
+notes/*/*deck*-layout-qa.json
