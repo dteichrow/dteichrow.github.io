@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-06-24
-Generated at: 2026-06-24T08:09
+Generated at: 2026-06-24T08:16
 Search window: 7 day(s) ending 2026-06-24
 
 ## Executive scan
@@ -12,22 +12,22 @@ Search window: 7 day(s) ending 2026-06-24
 - [Notes from the Field: Initial Public Health Response to a Measles Outbreak in a Close-Knit West Texas Community](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765860) (CDC MMWR; 2026-06-18T17:00+00:00; Occupational and environmental epidemiology; relevance 5/5)
 - [ECDC publishes practical guidance to improve Ebola preparedness](https://www.ecdc.europa.eu/en/news-events/ecdc-publishes-practical-guidance-improve-ebola-preparedness) (ECDC News; 2026-06-18T16:35+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
 - [Ebola outbreak in DRC and Uganda - ECDC scales up support on the ground](https://www.ecdc.europa.eu/en/news-events/ebola-outbreak-drc-and-uganda-ecdc-scales-support-ground) (ECDC News; 2026-06-18T09:49+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (146), Policy, surveillance, and public health infrastructure (21), Major epidemiology studies (2)
-- Source health: 1 source(s) failed during collection: USDA APHIS Avian Influenza.
+- Category mix: Outbreaks and emerging infections (147), Policy, surveillance, and public health infrastructure (20), Major epidemiology studies (2)
+- Source health: 2 source(s) failed during collection: USDA APHIS Avian Influenza, California Department of Public Health News.
 
 ## Ongoing stories and what changed
 ### Hantavirus and cruise-ship outbreak
 - Lead item: [As first imported Ebola case is recorded in Europe, ECDC calls on EU member states to continue investing in preparedness](https://www.ecdc.europa.eu/en/news-events/first-imported-ebola-case-recorded-europe-ecdc-calls-eu-member-states-continue) (ECDC News)
-- Newly tracked story cluster: 22 item(s) across 18 source(s).
-- Baseline snapshot created with 22 clustered item(s) across 18 source(s).
+- Newly tracked story cluster: 21 item(s) across 17 source(s).
+- Baseline snapshot created with 21 clustered item(s) across 17 source(s).
 - Texas Department of State Health Services News now explicitly uses investigation or monitoring language.
 - ECDC News currently frames broader public risk as low.
 - The Guardian now includes quarantine language.
 
 ### Avian influenza and H5N1
 - Lead item: [Dong Thap detects H5N1 avian influenza outbreak, culls infected ducks](https://english.vov.vn/en/society/dong-thap-detects-h5n1-avian-influenza-outbreak-culls-infected-ducks-post1309296.vov) (VOV.VN)
-- Newly tracked story cluster: 3 item(s) across 3 source(s).
-- Baseline snapshot created with 3 clustered item(s) across 3 source(s).
+- Newly tracked story cluster: 4 item(s) across 4 source(s).
+- Baseline snapshot created with 4 clustered item(s) across 4 source(s).
 - VOV.VN now explicitly uses investigation or monitoring language.
 - Nation Thailand now includes deaths or fatal cases in the story frame.
 - Nation Thailand now includes quarantine language.
@@ -61,7 +61,7 @@ Search window: 7 day(s) ending 2026-06-24
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Hantavirus and cruise-ship outbreak
-- Topic size: 22 item(s) across 18 source(s); 2 official/primary-source item(s).
+- Topic size: 21 item(s) across 17 source(s); 2 official/primary-source item(s).
 - Lead item: [As first imported Ebola case is recorded in Europe, ECDC calls on EU member states to continue investing in preparedness](https://www.ecdc.europa.eu/en/news-events/first-imported-ebola-case-recorded-europe-ecdc-calls-eu-member-states-continue) (ECDC News, 2026-06-24T16:24+02:00)
 - Detailed note: Topics A-Z A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Public health topics Spotlight Antimicrobial resistance (AMR) Dengue Ebola disease Hantavirus infection Mpox West Nile virus infection Video: Fighting a Candida auris outbreak - healthcare workers leading the change Emerging threats Emerging threats Andes hantavirus outbreak in cruise ship Ebola disease outbreak in the Democratic Republic of the Congo...
 - Evidence notes: [As first imported Ebola case is recorded in Europe, ECDC calls on EU member states to continue investing in preparedness](https://www.ecdc.europa.eu/en/news-events/first-imported-ebola-case-recorded-europe-ecdc-calls-eu-member-states-continue) (ECDC News); [News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....](https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius) (Texas Department of State Health Services News); [International public health response helped contain Andes hantavirus outbreak on Dutch cruise ship](https://www.cidrap.umn.edu/hantavirus/international-public-health-response-helped-contain-andes-hantavirus-outbreak-dutch) (CIDRAP); [Exclusive | CDC to End Hantavirus Response as U.S. Outbreak Risk Diminishes](https://www.wsj.com/politics/policy/cdc-to-end-hantavirus-response-as-u-s-outbreak-risk-diminishes-8e069b3c) (WSJ); [Hantavirus quarantine ends for Americans held for six weeks in Nebraska](https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMVhVLUFrQkotUGt1dVRrdUJEcTg5aVZKeU5TejFha2stMlcyMTFBQUhqWVVvLU42T0tma2pEa2UzNDdDNmVfQTAtOS0tUjNUMmw5TFpOZk1NeG5QYm5kcVAzZjhubnJjMVFyb2hGZ3RmdTJjZVdrQVNJdVNmWVhhWDJKQkZITndIN2hR?oc=5) (The Guardian)
@@ -76,19 +76,19 @@ Search window: 7 day(s) ending 2026-06-24
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
+### Avian influenza and H5N1
+- Topic size: 4 item(s) across 4 source(s); 0 official/primary-source item(s).
+- Lead item: [Dong Thap detects H5N1 avian influenza outbreak, culls infected ducks](https://english.vov.vn/en/society/dong-thap-detects-h5n1-avian-influenza-outbreak-culls-infected-ducks-post1309296.vov) (VOV.VN, 2026-06-24T08:49+00:00)
+- Detailed note: Before the disease was officially detected, 230 ducks had already died. According to a report by Xinhua , Julie Collins, Australia’s Minister for Agriculture, Fisheries and Forestry, confirmed on Saturday (June 20) that H5N1 had been detected in a brown skua discovered on June 14 in a national park in southern Western Australia. According to the provincial Department of Agriculture and Environment, the outbreak...
+- Evidence notes: [Dong Thap detects H5N1 avian influenza outbreak, culls infected ducks](https://english.vov.vn/en/society/dong-thap-detects-h5n1-avian-influenza-outbreak-culls-infected-ducks-post1309296.vov) (VOV.VN); [Bird flu confirmed in South Australia as infected petrel brings deadly H5N1 cases to three](https://www.theguardian.com/environment/2026/jun/24/bird-flu-case-confirmed-south-australia-western-australia-suspected) (The Guardian); [H5N1 bird flu found on mainland Australia for the first time](https://www.nationthailand.com/news/world/40067683) (Nation Thailand); [Philippines reopens poultry trade with Argentina following avian influenza clearance](https://www.msn.com/en-in/health/other/philippines-reopens-poultry-trade-with-argentina-following-avian-influenza-clearance/ar-AA25bFY1) (MSN)
+- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
+- Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
+
 ### Dengue and arboviruses
 - Topic size: 3 item(s) across 3 source(s); 0 official/primary-source item(s).
 - Lead item: [Sri Lanka dengue outbreak update](https://outbreaknewstoday.substack.com/p/sri-lanka-dengue-outbreak-update) (Outbreak News Today, 2026-06-24T11:33+00:00)
 - Detailed note: Colombo district accounts for 10,085 cases, or 20.89% of all cases. 14,446 cases reported in June alone.
 - Evidence notes: [Sri Lanka dengue outbreak update](https://outbreaknewstoday.substack.com/p/sri-lanka-dengue-outbreak-update) (Outbreak News Today); [Sri Lanka battles surge in dengue fever, with more than 44,000 cases so far this year](https://www.reuters.com/business/healthcare-pharmaceuticals/sri-lanka-battles-surge-dengue-fever-with-more-than-44000-cases-so-far-this-year-2026-06-19/) (Reuters); [Yemen : Health Authorities in Taiz Report Dengue Outbreak in Dhubab al-Mandeb](https://www.yemenonline.info/special-reports/12867) (Yemen Online)
-- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
-- Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
-
-### Avian influenza and H5N1
-- Topic size: 3 item(s) across 3 source(s); 0 official/primary-source item(s).
-- Lead item: [Dong Thap detects H5N1 avian influenza outbreak, culls infected ducks](https://english.vov.vn/en/society/dong-thap-detects-h5n1-avian-influenza-outbreak-culls-infected-ducks-post1309296.vov) (VOV.VN, 2026-06-24T08:49+00:00)
-- Detailed note: Before the disease was officially detected, 230 ducks had already died. According to a report by Xinhua , Julie Collins, Australia’s Minister for Agriculture, Fisheries and Forestry, confirmed on Saturday (June 20) that H5N1 had been detected in a brown skua discovered on June 14 in a national park in southern Western Australia. According to the provincial Department of Agriculture and Environment, the outbreak...
-- Evidence notes: [Dong Thap detects H5N1 avian influenza outbreak, culls infected ducks](https://english.vov.vn/en/society/dong-thap-detects-h5n1-avian-influenza-outbreak-culls-infected-ducks-post1309296.vov) (VOV.VN); [Bird flu confirmed in South Australia as infected petrel brings deadly H5N1 cases to three](https://www.theguardian.com/environment/2026/jun/24/bird-flu-case-confirmed-south-australia-western-australia-suspected) (The Guardian); [H5N1 bird flu found on mainland Australia for the first time](https://www.nationthailand.com/news/world/40067683) (Nation Thailand)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
 
@@ -435,6 +435,8 @@ Search window: 7 day(s) ending 2026-06-24
   Limited detail was available from feed metadata alone.
 - [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) | Texas Department of State Health Services News | Unknown | Policy, surveillance, and public health infrastructure
   Limited detail was available from feed metadata alone.
+- [The Ebola Outbreak’s Central Mystery: Where Did This Virus Come From?](https://www.nytimes.com/2026/06/24/science/ebola-bundibugyo-animal-reservoir.html) | The New York Times | 2026-06-24T15:03+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - [As Ebola cases hit 1,000, almost 3 million children and adolescents face rising risks in eastern DR Congo](https://www.unicef.org/press-releases/ebola-cases-hit-1000-almost-3-million-children-and-adolescents-face-rising-risks) | Unicef | 2026-06-24T14:26+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [France reports first Ebola patient as cases in Africa surge above 1,000](https://www.washingtonpost.com/world/2026/06/24/ebola-outbreak-could-be-worst-ever-cases-surge-past-1000-congo/) | The Washington Post | 2026-06-24T14:10+00:00 | Outbreaks and emerging infections
@@ -451,11 +453,7 @@ Search window: 7 day(s) ending 2026-06-24
   Limited detail was available from feed metadata alone.
 - [Sri Lanka dengue outbreak update](https://outbreaknewstoday.substack.com/p/sri-lanka-dengue-outbreak-update) | Outbreak News Today | 2026-06-24T11:33+00:00 | Outbreaks and emerging infections
   Colombo district accounts for 10,085 cases, or 20.89% of all cases. 14,446 cases reported in June alone. Outbreak News Today is a reader-supported publication.
-- [Congo needs "more resources" to halt Ebola outbreak, Africa CDC doctor says](https://www.cbsnews.com/video/congo-needs-more-resources-to-halt-ebola-outbreak-africa-cdc-doctor-says/) | CBS News | 2026-06-24T11:17+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
 - [France confirms 1st Ebola case linked to outbreak in the DRC - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/International/france-confirms-1st-ebola-case-linked-outbreak-drc/story?id\=134160026) | ABC News - Breaking News, Latest News and Videos | 2026-06-24T10:31+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Inside the gold-mining town where the Ebola outbreak likely started](https://www.npr.org/2026/06/24/nx-s1-5863157/ebola-outbreak-democratic-republic-congo-health-crisis) | NPR | 2026-06-24T09:00+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Exclusive | CDC to End Hantavirus Response as U.S. Outbreak Risk Diminishes](https://www.wsj.com/politics/policy/cdc-to-end-hantavirus-response-as-u-s-outbreak-risk-diminishes-8e069b3c) | WSJ | 2026-06-24T09:00+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
@@ -470,6 +468,8 @@ Search window: 7 day(s) ending 2026-06-24
 - [WHO Reports 277 Deaths in Ebola Outbreak in Democratic Republic of Congo](https://english.ratopati.com/story/67982/more-than-1000-confirmed-ebola-cases-in-congo-who) | Ratopati | 2026-06-24T06:00+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [UNFPA Ebola Outbreak - Democratic Republic of the Congo Appeal (June - November 2026)](https://reliefweb.int/report/democratic-republic-congo/unfpa-ebola-outbreak-democratic-republic-congo-appeal-june-november-2026) | ReliefWeb | 2026-06-24T03:35+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Hantavirus quarantine ends for Americans held for six weeks in Nebraska](https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMVhVLUFrQkotUGt1dVRrdUJEcTg5aVZKeU5TejFha2stMlcyMTFBQUhqWVVvLU42T0tma2pEa2UzNDdDNmVfQTAtOS0tUjNUMmw5TFpOZk1NeG5QYm5kcVAzZjhubnJjMVFyb2hGZ3RmdTJjZVdrQVNJdVNmWVhhWDJKQkZITndIN2hR?oc=5) | The Guardian | 2026-06-24T03:20+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
