@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-06-23
-Generated at: 2026-06-23T21:31
+Generated at: 2026-06-23T21:41
 Search window: 7 day(s) ending 2026-06-23
 
 ## Executive scan
@@ -12,7 +12,7 @@ Search window: 7 day(s) ending 2026-06-23
 - [Ebola outbreak in DRC and Uganda - ECDC scales up support on the ground](https://www.ecdc.europa.eu/en/news-events/ebola-outbreak-drc-and-uganda-ecdc-scales-support-ground) (ECDC News; 2026-06-18T09:49+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
 - [Comparative safety assessment of measles-containing vaccination schedules in Jiangsu Province, China: A population-based pharmacovigilance study (2014-2024).](https://pubmed.ncbi.nlm.nih.gov/42306971/) (PubMed Infectious Disease Search; 2026-06-17T00:00; Major epidemiology studies; relevance 5/5)
 - [Dans l’ombre de l’épidémie, un outil innovant accélère la riposte à Ebola en Ituri](https://www.afro.who.int/fr/countries/democratic-republic-of-congo/news/dans-lombre-de-lepidemie-un-outil-innovant-accelere-la-riposte-ebola-en-ituri) (WHO Regional Office for Africa; 2026-06-15T09:13+00:00; Outbreaks and emerging infections; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (146), Policy, surveillance, and public health infrastructure (16), Major epidemiology studies (2)
+- Category mix: Outbreaks and emerging infections (139), Policy, surveillance, and public health infrastructure (16), Major epidemiology studies (2)
 - Source health: 1 source(s) failed during collection: USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
@@ -32,8 +32,8 @@ Search window: 7 day(s) ending 2026-06-23
 
 ### Measles transmission and vaccination
 - Lead item: [Notes from the Field: Initial Public Health Response to a Measles Outbreak in a Close-Knit West Texas Community](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765860) (CDC MMWR)
-- Newly tracked story cluster: 27 item(s) across 25 source(s).
-- Baseline snapshot created with 27 clustered item(s) across 25 source(s).
+- Newly tracked story cluster: 20 item(s) across 18 source(s).
+- Baseline snapshot created with 20 clustered item(s) across 18 source(s).
 - Outbreak News Today now includes deaths or fatal cases in the story frame.
 - CDC MMWR now foregrounds vaccination or vaccine policy in the story.
 
@@ -56,10 +56,10 @@ Search window: 7 day(s) ending 2026-06-23
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Measles transmission and vaccination
-- Topic size: 27 item(s) across 25 source(s); 3 official/primary-source item(s).
+- Topic size: 20 item(s) across 18 source(s); 3 official/primary-source item(s).
 - Lead item: [Notes from the Field: Initial Public Health Response to a Measles Outbreak in a Close-Knit West Texas Community](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765860) (CDC MMWR, 2026-06-18T17:00+00:00)
 - Detailed note: The incidence of allergic rash also showed a 31% increase in the MMR8 group (45.39 per 100,000) compared to the MR8 group (34.71 per 100,000), though it remained below global safety thresholds. During January 29–February 28, 2025, Texas reported 207 confirmed measles cases, primarily among members of a close-knit west Texas community. China's immunization policy was updated in 2020, replacing the sequence of MR...
-- Evidence notes: [Notes from the Field: Initial Public Health Response to a Measles Outbreak in a Close-Knit West Texas Community](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765860) (CDC MMWR); [Comparative safety assessment of measles-containing vaccination schedules in Jiangsu Province, China: A population-based pharmacovigilance study (2014-2024).](https://pubmed.ncbi.nlm.nih.gov/42306971/) (PubMed Infectious Disease Search); [Measles Outbreaks 2025](https://www.cdc.gov/measles/data-research/) (CDC Current Outbreak List); [As measles cases rise across the country, Mass. legislators face a decision on a key vaccine bill](https://news.google.com/rss/articles/CBMi1gFBVV95cUxPTnV5b0VBMU00Y2VnQ1FBdTN5TDg0VnNqMWJvTDdUZEJOYUZVY29GZ1M2V1JYanJRZWY4ZE5CZ0psZlFzR21pbkFEU1lQZmlXLUZhVmo0QmR4QkxyQVluWl8wbk92dlFqaFg4V0VWTXNhbFhoTEZ6VmRta0xCNXA1ZW5jUjlDVERFbVg2TEJxZTdvRUlWOWxoSldSR0VJM2F5a2czUlJZVzFHVGtNSTh6RW5Ea2RDcXNTQ2ZhZ1JCRDNab29SZzlkZHNTQVJTa1BkSFgwOGVR?oc=5) (CommonWealth Beacon); [US tops 2,100 measles cases so far this year, putting it on track to surpass 2025 total](https://news.google.com/rss/articles/CBMirgFBVV95cUxQMm43MnpicTlGcGsyMEs1VDU4NTBkZHVrWGFGeUV3NWJhYnFpcGpLS2RHN0xNRDNfVXJkWC11ZEFjY0UydThaTHlhZm5seGNxaFJFX1pQMllXMDRHUnZNRTB2Z2NoeEQ1akhPaTJMZVAySU5DYWpKVkRORmJKYTVJcTlIS3BLSE9sNkstb2xMTllsbklNU0hycnhiMFBDdjBpVDJBVnNkU3doUndfU3c?oc=5) (CIDRAP)
+- Evidence notes: [Notes from the Field: Initial Public Health Response to a Measles Outbreak in a Close-Knit West Texas Community](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765860) (CDC MMWR); [Comparative safety assessment of measles-containing vaccination schedules in Jiangsu Province, China: A population-based pharmacovigilance study (2014-2024).](https://pubmed.ncbi.nlm.nih.gov/42306971/) (PubMed Infectious Disease Search); [Measles Outbreaks 2025](https://www.cdc.gov/measles/data-research/) (CDC Current Outbreak List); [US tops 2,100 measles cases so far this year, putting it on track to surpass 2025 total](https://news.google.com/rss/articles/CBMirgFBVV95cUxQMm43MnpicTlGcGsyMEs1VDU4NTBkZHVrWGFGeUV3NWJhYnFpcGpLS2RHN0xNRDNfVXJkWC11ZEFjY0UydThaTHlhZm5seGNxaFJFX1pQMllXMDRHUnZNRTB2Z2NoeEQ1akhPaTJMZVAySU5DYWpKVkRORmJKYTVJcTlIS3BLSE9sNkstb2xMTllsbklNU0hycnhiMFBDdjBpVDJBVnNkU3doUndfU3c?oc=5) (CIDRAP); [Public Health Alerts: Measles outbreak in Cook County, Illinois, September-October 2025](https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZGV1cTNjX1l0Nl94ZzEyTVVVUHVoaXpDc1gwRjlmSTRWM3hEQzY3WWtIVzdQOXBZdmdERV8yNTBoNGNlNEZkOVBJaG4wdHA4T0s0THBGdUlobk8zY0xOU29vQlQ4ckIyODhPSG9VbTV0bVhsV3k4S3RsbHdCRFVNTUhSZlJxUmxzZTdxWHFmc1VlajRMRExtc3VXN191d2FSa0Flb3p4SXZjOXhOdnQ2NXZra1R2cnFFN24xY3pUTFVidw?oc=5) (CIDRAP)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
@@ -450,13 +450,13 @@ Search window: 7 day(s) ending 2026-06-23
   Limited detail was available from feed metadata alone.
 - [Confirmed Ebola cases in Congo outbreak top 1,000 with 254 deaths, authorities say](https://www.sbsun.com/2026/06/22/confirmed-ebola-cases-congo/) | San Bernardino Sun | 2026-06-22T21:34+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [As measles cases rise across the country, Mass. legislators face a decision on a key vaccine bill](https://news.google.com/rss/articles/CBMi1gFBVV95cUxPTnV5b0VBMU00Y2VnQ1FBdTN5TDg0VnNqMWJvTDdUZEJOYUZVY29GZ1M2V1JYanJRZWY4ZE5CZ0psZlFzR21pbkFEU1lQZmlXLUZhVmo0QmR4QkxyQVluWl8wbk92dlFqaFg4V0VWTXNhbFhoTEZ6VmRta0xCNXA1ZW5jUjlDVERFbVg2TEJxZTdvRUlWOWxoSldSR0VJM2F5a2czUlJZVzFHVGtNSTh6RW5Ea2RDcXNTQ2ZhZ1JCRDNab29SZzlkZHNTQVJTa1BkSFgwOGVR?oc=5) | CommonWealth Beacon | 2026-06-22T21:24+00:00 | Outbreaks and emerging infections
-  legislators face a decision on a key vaccine bill CommonWealth Beacon
 - [As Ebola cases hit 1,000, almost 3 million children and adolescents face rising risks in eastern DR Congo](https://www.unicef.org/press-releases/ebola-cases-hit-1000-almost-3-million-children-and-adolescents-face-rising-risks) | Unicef | 2026-06-22T21:04+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Ebola outbreak in DR Congo tops 1,000 cases, at least 254 dead](https://www.cidrap.umn.edu/ebola/ebola-outbreak-dr-congo-tops-1000-cases-least-254-dead) | CIDRAP | 2026-06-22T20:17+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [US tops 2,100 measles cases so far this year, putting it on track to surpass 2025 total](https://news.google.com/rss/articles/CBMirgFBVV95cUxQMm43MnpicTlGcGsyMEs1VDU4NTBkZHVrWGFGeUV3NWJhYnFpcGpLS2RHN0xNRDNfVXJkWC11ZEFjY0UydThaTHlhZm5seGNxaFJFX1pQMllXMDRHUnZNRTB2Z2NoeEQ1akhPaTJMZVAySU5DYWpKVkRORmJKYTVJcTlIS3BLSE9sNkstb2xMTllsbklNU0hycnhiMFBDdjBpVDJBVnNkU3doUndfU3c?oc=5) | CIDRAP | 2026-06-22T19:57+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Public Health Alerts: Measles outbreak in Cook County, Illinois, September-October 2025](https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZGV1cTNjX1l0Nl94ZzEyTVVVUHVoaXpDc1gwRjlmSTRWM3hEQzY3WWtIVzdQOXBZdmdERV8yNTBoNGNlNEZkOVBJaG4wdHA4T0s0THBGdUlobk8zY0xOU29vQlQ4ckIyODhPSG9VbTV0bVhsV3k4S3RsbHdCRFVNTUhSZlJxUmxzZTdxWHFmc1VlajRMRExtc3VXN191d2FSa0Flb3p4SXZjOXhOdnQ2NXZra1R2cnFFN24xY3pUTFVidw?oc=5) | CIDRAP | 2026-06-22T17:00+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
