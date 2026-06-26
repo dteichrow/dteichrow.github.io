@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-06-26
-Generated at: 2026-06-26T05:23
+Generated at: 2026-06-26T05:53
 Search window: 7 day(s) ending 2026-06-26
 
 ## Executive scan
@@ -33,8 +33,8 @@ Search window: 7 day(s) ending 2026-06-26
 
 ### Ebola virus disease
 - Lead item: [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News)
-- Newly tracked story cluster: 134 item(s) across 98 source(s).
-- Baseline snapshot created with 134 clustered item(s) across 98 source(s).
+- Newly tracked story cluster: 133 item(s) across 97 source(s).
+- Baseline snapshot created with 133 clustered item(s) across 97 source(s).
 - Story tracking is now active for this cluster; future runs will report only new developments against this baseline.
 
 ### Polio and wastewater surveillance
@@ -43,12 +43,18 @@ Search window: 7 day(s) ending 2026-06-26
 - Baseline snapshot created with 3 clustered item(s) across 3 source(s).
 - Story tracking is now active for this cluster; future runs will report only new developments against this baseline.
 
+### Dengue and arboviruses
+- Lead item: [Don’t guess at home whether it’s dengue or flu-get checked early: Doctors - Daily Mirror](https://www.dailymirror.lk/print/front-page/Dont-guess-at-home-whether-its-dengue-or-flu-get-checked-early-Doctors/238-343856) (Daily Mirror - Sri Lanka)
+- Newly tracked story cluster: 3 item(s) across 3 source(s).
+- Baseline snapshot created with 3 clustered item(s) across 3 source(s).
+- Daily Mirror - Sri Lanka now explicitly uses investigation or monitoring language.
+
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 134 item(s) across 98 source(s); 2 official/primary-source item(s).
+- Topic size: 133 item(s) across 97 source(s); 2 official/primary-source item(s).
 - Lead item: [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News, 2026-06-23T17:36+02:00)
-- Detailed note: Cluster remains active across 134 related item(s), but usable factual summary text was limited after cleanup.
+- Detailed note: Cluster remains active across 133 related item(s), but usable factual summary text was limited after cleanup.
 - Evidence notes: [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News); [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) (Texas Department of State Health Services News); [White House asks Congress for $1.4B to fight Ebola outbreak](https://www.newsnationnow.com/health/white-house-congress-1-4b-ebola/) (NewsNation); [South Sudan says suspected Ebola cases test negative](https://www.radiotamazuj.org/en/news/article/south-sudan-says-suspected-ebola-cases-test-negative) (Radio Tamazuj); [Fastest-spreading Ebola outbreak could reach South Sudan within weeks, experts warn](https://ca.news.yahoo.com/fastest-spreading-ebola-outbreak-could-091246742.html) (Yahoo News Canada)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
@@ -69,6 +75,14 @@ Search window: 7 day(s) ending 2026-06-26
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
+### Dengue and arboviruses
+- Topic size: 3 item(s) across 3 source(s); 0 official/primary-source item(s).
+- Lead item: [Don’t guess at home whether it’s dengue or flu-get checked early: Doctors - Daily Mirror](https://www.dailymirror.lk/print/front-page/Dont-guess-at-home-whether-its-dengue-or-flu-get-checked-early-Doctors/238-343856) (Daily Mirror - Sri Lanka, 2026-06-25T05:02+00:00)
+- Detailed note: Sports Should not drop someone just to give Sooryavanshi an opportunity: Sitanshu Kotak Hetmyer, Stoinis and Jasdeep combine to hand Freedom 88-run defeat Japan draw 1-1 with Sweden at World Cup to finish second in Group F Netherlands beat Tunisia 3-1, enter World Cup knockouts as group winners Australia reach 2026 World Cup knockouts after 0-0 draw with Paraguay Should not drop someone just to give Sooryavanshi...
+- Evidence notes: [Don’t guess at home whether it’s dengue or flu-get checked early: Doctors - Daily Mirror](https://www.dailymirror.lk/print/front-page/Dont-guess-at-home-whether-its-dengue-or-flu-get-checked-early-Doctors/238-343856) (Daily Mirror - Sri Lanka); [Special Dengue Prevention Week declared in Colombo District from June 15 to 21](http://island.lk/special-dengue-prevention-week-declared-in-colombo-district-from-june-15-to-21/) (Island.lk); [Military deployed in Sri Lanka to fight surging dengue outbreak](https://www.telegraph.co.uk/global-health/science-and-disease/military-deployed-in-sri-lanka-to-fight-dengue-outbreak/) (The Telegraph)
+- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
+- Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
+
 ### Miscellaneous signals
 - Topic size: 3 item(s) across 2 source(s); 3 official/primary-source item(s).
 - Lead item: [FDA outbreak investigation 1383: Clostridium botulinum linked to Powdered Infant Formula](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-infant-botulism-powdered-infant-formula-june-2026) (FDA Foodborne Outbreaks, 2026-06-24T14:00)
@@ -84,14 +98,6 @@ Search window: 7 day(s) ending 2026-06-26
 - Evidence notes: [Bird flu confirmed in South Australia as infected petrel brings deadly H5N1 cases to three](https://www.theguardian.com/environment/2026/jun/24/bird-flu-case-confirmed-south-australia-western-australia-suspected) (The Guardian); [H9N2 avian flu case in China and first H5N1 detection in Australian birds](https://www.cidrap.umn.edu/avian-influenza-bird-flu/h9n2-avian-flu-case-china-and-first-h5n1-detection-australian-birds) (CIDRAP); [H5N1 bird flu found on mainland Australia for the first time](https://www.nationthailand.com/news/world/40067683) (Nation Thailand)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
-
-### Dengue and arboviruses
-- Topic size: 2 item(s) across 2 source(s); 0 official/primary-source item(s).
-- Lead item: [Don’t guess at home whether it’s dengue or flu-get checked early: Doctors - Daily Mirror](https://www.dailymirror.lk/print/front-page/Dont-guess-at-home-whether-its-dengue-or-flu-get-checked-early-Doctors/238-343856) (Daily Mirror - Sri Lanka, 2026-06-25T05:02+00:00)
-- Detailed note: Sports Should not drop someone just to give Sooryavanshi an opportunity: Sitanshu Kotak Hetmyer, Stoinis and Jasdeep combine to hand Freedom 88-run defeat Japan draw 1-1 with Sweden at World Cup to finish second in Group F Netherlands beat Tunisia 3-1, enter World Cup knockouts as group winners Australia reach 2026 World Cup knockouts after 0-0 draw with Paraguay Should not drop someone just to give Sooryavanshi...
-- Evidence notes: [Don’t guess at home whether it’s dengue or flu-get checked early: Doctors - Daily Mirror](https://www.dailymirror.lk/print/front-page/Dont-guess-at-home-whether-its-dengue-or-flu-get-checked-early-Doctors/238-343856) (Daily Mirror - Sri Lanka); [Special Dengue Prevention Week declared in Colombo District from June 15 to 21](http://island.lk/special-dengue-prevention-week-declared-in-colombo-district-from-june-15-to-21/) (Island.lk)
-- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
-- Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting.
 
 
 ## Last major outbreaks on file
@@ -454,8 +460,6 @@ Search window: 7 day(s) ending 2026-06-26
   Limited detail was available from feed metadata alone.
 - [Ebola outbreak 'serious' but not 'out of control', head of Africa CDC says - Tête à tête](https://www.france24.com/en/tv-shows/t%C3%AAte-%C3%A0-t%C3%AAte/20260625-ebola-outbreak-serious-but-not-out-of-control-head-of-africa-cdc-says) | France 24 | 2026-06-25T14:11+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [France Detects First Ebola Case Outside Africa Amid Rising Congo Outbreak](https://webvarta.com/international/global/france-first-ebola-outbreak/) | Webvarta News Agency | 2026-06-25T12:46+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
 - [First Ebola Case Outside Africa in 2026 Outbreak Confirmed](https://www.sciencealert.com/first-ebola-case-outside-africa-in-2026-outbreak-confirmed) | ScienceAlert | 2026-06-25T08:04+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Trump shifts Africa strategy as worsening Ebola outbreak triggers $1.4 billion response from Washington](https://africa.businessinsider.com/local/lifestyle/trump-shifts-africa-strategy-as-worsening-ebola-outbreak-triggers-dollar14-billion/7k0ff86) | Business Insider Africa | 2026-06-25T07:29+00:00 | Outbreaks and emerging infections
@@ -463,6 +467,8 @@ Search window: 7 day(s) ending 2026-06-26
 - [Don’t guess at home whether it’s dengue or flu-get checked early: Doctors - Daily Mirror](https://www.dailymirror.lk/print/front-page/Dont-guess-at-home-whether-its-dengue-or-flu-get-checked-early-Doctors/238-343856) | Daily Mirror - Sri Lanka | 2026-06-25T05:02+00:00 | Outbreaks and emerging infections
   Doctors warn that waiting too long at home can be risky, especially if the illness turns out to be dengue, where early monitoring is important. Seasonal influenza—commonly known as flu—remains a regular public health concern in Sri Lanka, particularly during two peak periods from April to June and again from November to January. Health experts say the early symptoms of dengue and influenza are very similar, especially in the first few days, which often leads to confusion and delay in proper treatment.
 - [France reports first Ebola patient as cases in Africa surge above 1,000](https://www.redlakenationnews.com/story/2026/06/25/news/france-reports-first-ebola-patient-as-cases-in-africa-surge-above-1000/141113.html) | Red Lake Nation News | 2026-06-25T02:57+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Deadly haemorrhagic fever: France detects first Ebola case outside Africa in current outbreak](https://today.rtl.lu/news/world/france-detects-first-ebola-case-outside-africa-in-current-outbreak-1522651301) | RTL Today | 2026-06-24T23:57+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving

@@ -2,7 +2,6 @@
   "degraded": true,
   "editor_summary": {
     "major_publisher_families_seen": [
-      "BBC",
       "CBS News",
       "CIDRAP",
       "CNN",
@@ -16,7 +15,7 @@
     "sources_cached": 0,
     "sources_failed": 1,
     "sources_live": 173,
-    "story_count_change": 4,
+    "story_count_change": 5,
     "wrapper_only_count": 5
   },
   "freshness_summary": {
@@ -26,7 +25,7 @@
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-06-26T05:23:04",
+  "generated_at": "2026-06-26T05:53:07",
   "source_failures": [
     {
       "error": "HTTPSConnectionPool(host='www.aphis.usda.gov', port=443): Read timed out. (read timeout=8)",
