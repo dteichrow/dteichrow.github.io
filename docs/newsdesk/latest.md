@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-06-26
-Generated at: 2026-06-26T11:17
+Generated at: 2026-06-26T11:20
 Search window: 7 day(s) ending 2026-06-26
 
 ## Executive scan
@@ -33,8 +33,8 @@ Search window: 7 day(s) ending 2026-06-26
 
 ### Ebola virus disease
 - Lead item: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 06, Data as of 21 June 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-2) (WHO Regional Office for Africa)
-- Newly tracked story cluster: 140 item(s) across 97 source(s).
-- Baseline snapshot created with 140 clustered item(s) across 97 source(s).
+- Newly tracked story cluster: 140 item(s) across 98 source(s).
+- Baseline snapshot created with 140 clustered item(s) across 98 source(s).
 - WHO Regional Office for Africa now includes deaths or fatal cases in the story frame.
 
 ### Polio and wastewater surveillance
@@ -52,10 +52,10 @@ Search window: 7 day(s) ending 2026-06-26
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 140 item(s) across 97 source(s); 3 official/primary-source item(s).
+- Topic size: 140 item(s) across 98 source(s); 3 official/primary-source item(s).
 - Lead item: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 06, Data as of 21 June 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-2) (WHO Regional Office for Africa, 2026-06-26T16:55+00:00)
 - Detailed note: Democratic Republic of the Congo Since 14 June 2026, a total of 240 new laboratory-confirmed cases, including 75 new confirmed deaths, have been reported, representing a 29.7% increase in cumulative confirmed cases and a 39.1% increase in cumulative confirmed deaths. As of 21 June 2026, a cumulative total of 1048 laboratory-confirmed cases, including 267 confirmed deaths [case fatality ratio (CFR) 25.5%], has...
-- Evidence notes: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 06, Data as of 21 June 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-2) (WHO Regional Office for Africa); [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News); [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) (Texas Department of State Health Services News); [US to ship experimental Ebola therapy to DRC and Uganda as outbreak worsens](https://www.reuters.com/business/healthcare-pharmaceuticals/us-ship-experimental-ebola-therapy-drc-uganda-outbreak-worsens-2026-06-26/) (Reuters); [What is behind DR Congo's latest Ebola outbreak, and should the world be concerned?](https://news.az/news/what-is-behind-dr-congo-s-latest-ebola-outbreak-and-should-the-world-be-concerned) (Latest news from Azerbaijan)
+- Evidence notes: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 06, Data as of 21 June 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-2) (WHO Regional Office for Africa); [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News); [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) (Texas Department of State Health Services News); [What is behind DR Congo's latest Ebola outbreak, and should the world be concerned?](https://news.az/news/what-is-behind-dr-congo-s-latest-ebola-outbreak-and-should-the-world-be-concerned) (Latest news from Azerbaijan); [Ebola outbreak surpasses 1,000 cases in Congo: New study warns of high risk of spread to neighbouring cou](https://timesofindia.indiatimes.com/health/ebola-outbreak-surpasses-1000-cases-in-congo-new-study-warns-of-high-risk-of-spread-to-neighbouring-countries/articleshow/132018818.cms) (The Times of India)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
@@ -430,8 +430,6 @@ Search window: 7 day(s) ending 2026-06-26
 
 
 ## Other notable readings
-- [US to ship experimental Ebola therapy to DRC and Uganda as outbreak worsens](https://www.reuters.com/business/healthcare-pharmaceuticals/us-ship-experimental-ebola-therapy-drc-uganda-outbreak-worsens-2026-06-26/) | Reuters | 2026-06-26T16:02+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
 - [What is behind DR Congo's latest Ebola outbreak, and should the world be concerned?](https://news.az/news/what-is-behind-dr-congo-s-latest-ebola-outbreak-and-should-the-world-be-concerned) | Latest news from Azerbaijan | 2026-06-26T15:03+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Ebola outbreak surpasses 1,000 cases in Congo: New study warns of high risk of spread to neighbouring cou](https://timesofindia.indiatimes.com/health/ebola-outbreak-surpasses-1000-cases-in-congo-new-study-warns-of-high-risk-of-spread-to-neighbouring-countries/articleshow/132018818.cms) | The Times of India | 2026-06-26T14:36+00:00 | Outbreaks and emerging infections
@@ -469,6 +467,8 @@ Search window: 7 day(s) ending 2026-06-26
 - [World News in Brief: Ebola prevention, Yemen child deaths, Colombia elections, Japan climate campaign](https://news.un.org/en/story/2026/06/1167812) | UN News | 2026-06-25T21:02+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [As Ebola Bundibugyo outbreak rages, knowledge gaps still challenge response](https://www.reuters.com/business/healthcare-pharmaceuticals/ebola-bundibugyo-outbreak-rages-knowledge-gaps-still-challenge-response-2026-06-25/) | Reuters | 2026-06-25T15:10+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Ebola outbreak 'serious' but not 'out of control', head of Africa CDC says - Tête à tête](https://www.france24.com/en/tv-shows/t%C3%AAte-%C3%A0-t%C3%AAte/20260625-ebola-outbreak-serious-but-not-out-of-control-head-of-africa-cdc-says) | France 24 | 2026-06-25T14:11+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
