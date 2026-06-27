@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-06-26
-Generated at: 2026-06-26T22:14
+Generated at: 2026-06-27T01:21
 Search window: 7 day(s) ending 2026-06-26
 
 ## Executive scan
@@ -12,7 +12,7 @@ Search window: 7 day(s) ending 2026-06-26
 - [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News; 2026-06-23T17:36+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
 - [The equity and effectiveness of China's 2009 folic acid supplementation programme for long-term child development.](https://pubmed.ncbi.nlm.nih.gov/42328968/) (PubMed Infectious Disease Search; 2026-06-22T00:00; Major epidemiology studies; relevance 5/5)
 - [News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....](https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius) (Texas Department of State Health Services News; Unknown; Policy, surveillance, and public health infrastructure; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (163), Policy, surveillance, and public health infrastructure (19), Virology and pathogen evolution (2)
+- Category mix: Outbreaks and emerging infections (167), Policy, surveillance, and public health infrastructure (19), Virology and pathogen evolution (2)
 - Source health: 1 source(s) failed during collection: USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
@@ -26,24 +26,17 @@ Search window: 7 day(s) ending 2026-06-26
 
 ### Ebola virus disease
 - Lead item: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 06, Data as of 21 June 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-2) (WHO Regional Office for Africa)
-- Newly tracked story cluster: 143 item(s) across 94 source(s).
-- Baseline snapshot created with 143 clustered item(s) across 94 source(s).
+- Newly tracked story cluster: 148 item(s) across 99 source(s).
+- Baseline snapshot created with 148 clustered item(s) across 99 source(s).
 - WHO Regional Office for Africa now includes deaths or fatal cases in the story frame.
 - ECDC News currently frames broader public risk as low.
 
 ### Hantavirus and cruise-ship outbreak
 - Lead item: [Multi-country Salmonella outbreak linked to alfalfa sprouted seeds](https://www.ecdc.europa.eu/en/news-events/multi-country-salmonella-outbreak-linked-alfalfa-sprouted-seeds) (ECDC News)
-- Newly tracked story cluster: 26 item(s) across 24 source(s).
-- Baseline snapshot created with 26 clustered item(s) across 24 source(s).
+- Newly tracked story cluster: 25 item(s) across 23 source(s).
+- Baseline snapshot created with 25 clustered item(s) across 23 source(s).
 - Texas Department of State Health Services News now explicitly uses investigation or monitoring language.
 - The Guardian now includes quarantine language.
-
-### Measles transmission and vaccination
-- Lead item: [Bangladesh measles death toll tops 700](https://outbreaknewstoday.substack.com/p/bangladesh-measles-death-toll-tops) (Outbreak News Today)
-- Newly tracked story cluster: 4 item(s) across 3 source(s).
-- Baseline snapshot created with 4 clustered item(s) across 3 source(s).
-- Outbreak News Today now includes deaths or fatal cases in the story frame.
-- FOX43 now foregrounds vaccination or vaccine policy in the story.
 
 ### Polio and wastewater surveillance
 - Lead item: [The Big Actions: May 2026](https://www.afro.who.int/countries/nigeria/publication/big-actions-may-2026) (WHO Regional Office for Africa)
@@ -51,10 +44,16 @@ Search window: 7 day(s) ending 2026-06-26
 - Baseline snapshot created with 4 clustered item(s) across 4 source(s).
 - Story tracking is now active for this cluster; future runs will report only new developments against this baseline.
 
+### Measles transmission and vaccination
+- Lead item: [Bangladesh measles death toll tops 700](https://outbreaknewstoday.substack.com/p/bangladesh-measles-death-toll-tops) (Outbreak News Today)
+- Newly tracked story cluster: 3 item(s) across 2 source(s).
+- Baseline snapshot created with 3 clustered item(s) across 2 source(s).
+- Outbreak News Today now includes deaths or fatal cases in the story frame.
+
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 143 item(s) across 94 source(s); 4 official/primary-source item(s).
+- Topic size: 148 item(s) across 99 source(s); 4 official/primary-source item(s).
 - Lead item: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 06, Data as of 21 June 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-2) (WHO Regional Office for Africa, 2026-06-26T16:55+00:00)
 - Detailed note: Democratic Republic of the Congo Since 14 June 2026, a total of 240 new laboratory-confirmed cases, including 75 new confirmed deaths, have been reported, representing a 29.7% increase in cumulative confirmed cases and a 39.1% increase in cumulative confirmed deaths. As of 21 June 2026, a cumulative total of 1048 laboratory-confirmed cases, including 267 confirmed deaths [case fatality ratio (CFR) 25.5%], has...
 - Evidence notes: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 06, Data as of 21 June 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-2) (WHO Regional Office for Africa); [As first imported Ebola case is recorded in Europe, ECDC calls on EU Member States to continue investing in preparedness](https://www.ecdc.europa.eu/en/news-events/first-imported-ebola-case-recorded-europe-ecdc-calls-eu-member-states-continue) (ECDC News); [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News); [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) (Texas Department of State Health Services News); [Ebola outbreak spreads to France as DRC cases surpass 1,150](https://www.msn.com/en-in/news/insight/ebola-outbreak-spreads-to-france-as-drc-cases-surpass-1-150/gm-GMFB9C8B5F?gemSnapshotKey\=GMFB9C8B5F-snapshot-19\&uxmode\=ruby) (MSN)
@@ -62,20 +61,12 @@ Search window: 7 day(s) ending 2026-06-26
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Hantavirus and cruise-ship outbreak
-- Topic size: 26 item(s) across 24 source(s); 3 official/primary-source item(s).
+- Topic size: 25 item(s) across 23 source(s); 3 official/primary-source item(s).
 - Lead item: [Multi-country Salmonella outbreak linked to alfalfa sprouted seeds](https://www.ecdc.europa.eu/en/news-events/multi-country-salmonella-outbreak-linked-alfalfa-sprouted-seeds) (ECDC News, 2026-06-25T14:01+02:00)
 - Detailed note: You can now register to attend this year’s European Scientific Conference on Applied Infectious Disease Epidemiology (ESCAIDE), taking place in Stockholm and online on 18–20 November 2026. Topics A-Z A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Public health topics Spotlight Antimicrobial resistance (AMR) Dengue Ebola disease Hantavirus infection Mpox West Nile virus infection Video: Fighting a Candida...
 - Evidence notes: [Multi-country Salmonella outbreak linked to alfalfa sprouted seeds](https://www.ecdc.europa.eu/en/news-events/multi-country-salmonella-outbreak-linked-alfalfa-sprouted-seeds) (ECDC News); [Registrations now open for online attendance of ESCAIDE 2026, Europe’s leading public health conference](https://www.ecdc.europa.eu/en/news-events/registrations-now-open-online-attendance-escaide-2026-europes-leading-public-health) (ECDC News); [News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....](https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius) (Texas Department of State Health Services News); [Deadly Hantavirus outbreak should end on 2 July, WHO says](https://news.google.com/rss/articles/CBMioAFBVV95cUxNRkZPelVPQ1JaSkx5VzZTOHg5S0F3aWZUcFNXZXVHcWRQOEZXTDh4ZDdjdzc1TmgtTEc4MzltcGtXR21QZk1VQy00bGhLT2QyMmJnSDlqaDJPVDVLWTl3SVI3NXZXcGdXNE9wZm4zR2Z0RmFja2dFc1Zvbnd0ZnBhY3hLb0czN2Y2X1pFQ25UOVBNQk5ZbVg5QXJfdE9UYkJF?oc=5) (Euronews); [US CDC concludes hantavirus response as outbreak eases](https://news.google.com/rss/articles/CBMitAFBVV95cUxObGVfZGhnMVdqX0ttM2FMeXR4UDVEQWxuUEtsZFFJOHZocjZHUkxiNmZDWHZwWE8wYnhfUDJqSV85b2VtNEx0LVBsRmI0VVpIZTZrZXRuSjdTUVl2XzhOdmZvc3k3d3ptTkcteVFpdmpfX0Rsc1Foc0FqV3JYSS1JbHJvZmJBVkw3S0VDRW1sTnpXZlJxVEZhVk1oRXhNamxBUlZueFY2WXg3MzVhSE9HNHdRWGM?oc=5) (Reuters)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
-
-### Measles transmission and vaccination
-- Topic size: 4 item(s) across 3 source(s); 0 official/primary-source item(s).
-- Lead item: [Bangladesh measles death toll tops 700](https://outbreaknewstoday.substack.com/p/bangladesh-measles-death-toll-tops) (Outbreak News Today, 2026-06-26T22:17+00:00)
-- Detailed note: The Directorate General of Health Services (DGHS) in Bangladesh report four additional suspected measles deaths in the past 24 hours, bringing the total deaths to 702, including 93 deaths from confirmed cases, since March 15. During the 24 hours, 869 suspected measles cases were recorded, while the confirmed cases were 107, according to the DGHS, bringing the totals to 97,522 and 11,549, respectively.
-- Evidence notes: [Bangladesh measles death toll tops 700](https://outbreaknewstoday.substack.com/p/bangladesh-measles-death-toll-tops) (Outbreak News Today); [Mexico reports 3 additional measles deaths in Zacatecas and Mexico City](https://outbreaknewstoday.substack.com/p/mexico-reports-3-additional-measles) (Outbreak News Today); [Measles Alerts Issued at 3 US Airports](https://www.newsmax.com/newsfront/measles-airports-chicago/2026/06/26/id/1261032/) (Newsmax); [Rising number of measles cases in Lancaster-Lebanon areas prompts increased vaccine efforts](https://www.fox43.com/video/news/local/lancaster-county/rising-number-of-measles-cases-in-lancaster-lebanon-areas-prompts-increased-vaccine-efforts/521-231af3f8-ab1f-403f-8a3b-2552eee11d92) (FOX43)
-- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
-- Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Polio and wastewater surveillance
 - Topic size: 4 item(s) across 4 source(s); 1 official/primary-source item(s).
@@ -93,10 +84,18 @@ Search window: 7 day(s) ending 2026-06-26
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
 
+### Measles transmission and vaccination
+- Topic size: 3 item(s) across 2 source(s); 0 official/primary-source item(s).
+- Lead item: [Bangladesh measles death toll tops 700](https://outbreaknewstoday.substack.com/p/bangladesh-measles-death-toll-tops) (Outbreak News Today, 2026-06-26T22:17+00:00)
+- Detailed note: The Directorate General of Health Services (DGHS) in Bangladesh report four additional suspected measles deaths in the past 24 hours, bringing the total deaths to 702, including 93 deaths from confirmed cases, since March 15. During the 24 hours, 869 suspected measles cases were recorded, while the confirmed cases were 107, according to the DGHS, bringing the totals to 97,522 and 11,549, respectively.
+- Evidence notes: [Bangladesh measles death toll tops 700](https://outbreaknewstoday.substack.com/p/bangladesh-measles-death-toll-tops) (Outbreak News Today); [Mexico reports 3 additional measles deaths in Zacatecas and Mexico City](https://outbreaknewstoday.substack.com/p/mexico-reports-3-additional-measles) (Outbreak News Today); [Measles Alerts Issued at 3 US Airports](https://www.newsmax.com/newsfront/measles-airports-chicago/2026/06/26/id/1261032/) (Newsmax)
+- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
+- Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
+
 ### Dengue and arboviruses
 - Topic size: 2 item(s) across 2 source(s); 0 official/primary-source item(s).
 - Lead item: [Don’t guess at home whether it’s dengue or flu-get checked early: Doctors - Daily Mirror](https://www.dailymirror.lk/print/front-page/Dont-guess-at-home-whether-its-dengue-or-flu-get-checked-early-Doctors/238-343856) (Daily Mirror - Sri Lanka, 2026-06-25T05:02+00:00)
-- Detailed note: Doctors warn that waiting too long at home can be risky, especially if the illness turns out to be dengue, where early monitoring is important. Sports Jangoo, Chase’s defiant stand takes West Indies close to parity Heartbreak for Scotland as Sri Lanka clinch thriller to stay alive Finals of CDB – MCA T10 cricket tournament under lights on Sunday Should not drop someone just to give Sooryavanshi an opportunity:...
+- Detailed note: Doctors warn that waiting too long at home can be risky, especially if the illness turns out to be dengue, where early monitoring is important. Seasonal influenza—commonly known as flu—remains a regular public health concern in Sri Lanka, particularly during two peak periods from April to June and again from November to January. Sports Ben Stokes four-for, Ben Duckett hundred as England roar back Jangoo, Chase’s...
 - Evidence notes: [Don’t guess at home whether it’s dengue or flu-get checked early: Doctors - Daily Mirror](https://www.dailymirror.lk/print/front-page/Dont-guess-at-home-whether-its-dengue-or-flu-get-checked-early-Doctors/238-343856) (Daily Mirror - Sri Lanka); [Special Dengue Prevention Week declared in Colombo District from June 15 to 21](http://island.lk/special-dengue-prevention-week-declared-in-colombo-district-from-june-15-to-21/) (Island.lk)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting.
@@ -454,7 +453,7 @@ Search window: 7 day(s) ending 2026-06-26
   Limited detail was available from feed metadata alone.
 - [Ebola death toll in DRC passes 300 as outbreak widens](https://www.msn.com/en-ca/news/insight/ebola-death-toll-in-drc-passes-300-as-outbreak-widens/gm-GMD886BB2D?gemSnapshotKey\=GMD886BB2D-snapshot-45\&uxmode\=ruby) | MSN | 2026-06-26T14:35+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Chaotic Push to Train Staff for US Ebola Outbreak Facility Alarms Health Workers](https://www.bloomberg.com/news/features/2026-06-26/trump-administration-s-ebola-response-raises-alarm-among-us-health-workers) | Bloomberg | 2026-06-26T13:15+00:00 | Outbreaks and emerging infections
+- [Chaotic Push to Train Staff for US Ebola Outbreak Facility Alarms Health Workers](https://www.bloomberg.com/news/features/2026-06-26/trump-administration-s-ebola-response-raises-alarm-among-us-health-workers) | Bloomberg.com | 2026-06-26T13:15+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [WHO warns Ebola outbreak could hit South Sudan within weeks](https://www.msn.com/en-gb/news/insight/france-confirms-first-ebola-case-in-returning-doctor/gm-GME76B07DC?gemSnapshotKey\=GME76B07DC-snapshot-4\&uxmode\=ruby) | MSN | 2026-06-26T12:01+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
@@ -468,9 +467,9 @@ Search window: 7 day(s) ending 2026-06-26
   Limited detail was available from feed metadata alone.
 - [Fastest-spreading Ebola outbreak could reach South Sudan within weeks, experts warn](https://www.independent.co.uk/news/world/africa/ebola-congo-south-sudan-uganda-b3003525.html) | The Independent | 2026-06-26T09:12+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Ebola Outbreak in DRC: High Risk of Spread to South Sudan, Says Lancet Study - News and Statistics](https://www.indexbox.io/blog/ebola-outbreak-in-drc-could-reach-south-sudan-lancet-study-warns/) | IndexBox | 2026-06-26T05:50+00:00 | Outbreaks and emerging infections
+- [Ebola Outbreak in Congo Spreads to Uganda, Study Warns South Sudan At High Risk](https://www.outlookindia.com/international/ebola-outbreak-in-congo-spreads-to-uganda-study-warns-south-sudan-at-high-risk) | Outlook India | 2026-06-26T07:31+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Ebola outbreak in Congo surpasses 1,150 cases as France reports first case](https://www.msn.com/en-in/news/insight/ebola-outbreak-in-congo-surpasses-1-150-cases-as-france-reports-first-case/gm-GMFB9C8B5F?gemSnapshotKey\=GMFB9C8B5F-snapshot-45\&uxmode\=ruby) | MSN | 2026-06-26T05:09+00:00 | Outbreaks and emerging infections
+- [Ebola Outbreak in DRC: High Risk of Spread to South Sudan, Says Lancet Study - News and Statistics](https://www.indexbox.io/blog/ebola-outbreak-in-drc-could-reach-south-sudan-lancet-study-warns/) | IndexBox | 2026-06-26T05:50+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
