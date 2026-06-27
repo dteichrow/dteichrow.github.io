@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-06-27
-Generated at: 2026-06-27T13:29
+Generated at: 2026-06-27T14:09
 Search window: 7 day(s) ending 2026-06-27
 
 ## Executive scan
@@ -12,7 +12,7 @@ Search window: 7 day(s) ending 2026-06-27
 - [The Big Actions: May 2026](https://www.afro.who.int/countries/nigeria/publication/big-actions-may-2026) (WHO Regional Office for Africa; 2026-06-25T07:56+00:00; Outbreaks and emerging infections; relevance 5/5)
 - [As first imported Ebola case is recorded in Europe, ECDC calls on EU Member States to continue investing in preparedness](https://www.ecdc.europa.eu/en/news-events/first-imported-ebola-case-recorded-europe-ecdc-calls-eu-member-states-continue) (ECDC News; 2026-06-24T16:24+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
 - [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News; 2026-06-23T17:36+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (163), Policy, surveillance, and public health infrastructure (17), Major epidemiology studies (4)
+- Category mix: Outbreaks and emerging infections (163), Policy, surveillance, and public health infrastructure (16), Major epidemiology studies (4)
 - Source health: 1 source(s) failed during collection: USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
@@ -26,8 +26,8 @@ Search window: 7 day(s) ending 2026-06-27
 
 ### Ebola virus disease
 - Lead item: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 06, Data as of 21 June 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-2) (WHO Regional Office for Africa)
-- Newly tracked story cluster: 143 item(s) across 92 source(s).
-- Baseline snapshot created with 143 clustered item(s) across 92 source(s).
+- Newly tracked story cluster: 142 item(s) across 91 source(s).
+- Baseline snapshot created with 142 clustered item(s) across 91 source(s).
 - WHO Regional Office for Africa now includes deaths or fatal cases in the story frame.
 - ECDC News currently frames broader public risk as low.
 
@@ -53,7 +53,7 @@ Search window: 7 day(s) ending 2026-06-27
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 143 item(s) across 92 source(s); 4 official/primary-source item(s).
+- Topic size: 142 item(s) across 91 source(s); 4 official/primary-source item(s).
 - Lead item: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 06, Data as of 21 June 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-2) (WHO Regional Office for Africa, 2026-06-26T16:55+00:00)
 - Detailed note: Democratic Republic of the Congo Since 14 June 2026, a total of 240 new laboratory-confirmed cases, including 75 new confirmed deaths, have been reported, representing a 29.7% increase in cumulative confirmed cases and a 39.1% increase in cumulative confirmed deaths. As of 21 June 2026, a cumulative total of 1048 laboratory-confirmed cases, including 267 confirmed deaths [case fatality ratio (CFR) 25.5%], has...
 - Evidence notes: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 06, Data as of 21 June 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-2) (WHO Regional Office for Africa); [As first imported Ebola case is recorded in Europe, ECDC calls on EU Member States to continue investing in preparedness](https://www.ecdc.europa.eu/en/news-events/first-imported-ebola-case-recorded-europe-ecdc-calls-eu-member-states-continue) (ECDC News); [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News); [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) (Texas Department of State Health Services News); [Ebola outbreak raises fresh fears as virus crosses into Uganda](https://www.thedailystar.net/health/news/ebola-outbreak-raises-fresh-fears-virus-crosses-uganda-4209721) (The Daily Star)
@@ -84,6 +84,14 @@ Search window: 7 day(s) ending 2026-06-27
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
 
+### Measles transmission and vaccination
+- Topic size: 2 item(s) across 2 source(s); 0 official/primary-source item(s).
+- Lead item: [As measles outbreak continues, state officials push for vaccination](https://www.ldnews.com/story/news/local/2026/06/26/measles-outbreak-rising-in-lancaster-lebanon-region-vaccination-urged/90670940007/) (Lebanon Daily News, 2026-06-26T19:31+00:00)
+- Detailed note: State officials have confirmed more than 70 measles cases in Pennsylvania, primarily in the Lancaster-Lebanon region. Since late April, the Lancaster and Lebanon area has seen 70 cases of measles, leading to calls for more people to get vaccinated.
+- Evidence notes: [As measles outbreak continues, state officials push for vaccination](https://www.ldnews.com/story/news/local/2026/06/26/measles-outbreak-rising-in-lancaster-lebanon-region-vaccination-urged/90670940007/) (Lebanon Daily News); [Measles deaths cross 700 in Bangladesh](https://www.newagebd.net/post/childrens-health/304169/measles-deaths-cross-700-in-bangladesh) (Newagebd.net)
+- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
+- Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting.
+
 ### Tuberculosis and antimicrobial resistance
 - Topic size: 2 item(s) across 2 source(s); 2 official/primary-source item(s).
 - Lead item: [Quantifying the community transmission of Mycobacterium tuberculosis in a rapidly growing Chinese city: a nine-year population-based genomic and spatial analysis.](https://pubmed.ncbi.nlm.nih.gov/42360842/) (PubMed Infectious Disease Search, 2026-06-26T00:00)
@@ -91,14 +99,6 @@ Search window: 7 day(s) ending 2026-06-27
 - Evidence notes: [Quantifying the community transmission of Mycobacterium tuberculosis in a rapidly growing Chinese city: a nine-year population-based genomic and spatial analysis.](https://pubmed.ncbi.nlm.nih.gov/42360842/) (PubMed Infectious Disease Search); [WHO South Africa 2025 Annual Report](https://www.afro.who.int/countries/south-africa/publication/who-south-africa-2025-annual-report) (WHO Regional Office for Africa)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: These notes are limited to source text collected in this run.
-
-### Dengue and arboviruses
-- Topic size: 1 item(s) across 1 source(s); 0 official/primary-source item(s).
-- Lead item: [Don’t guess at home whether it’s dengue or flu-get checked early: Doctors - Daily Mirror](https://www.dailymirror.lk/print/front-page/Dont-guess-at-home-whether-its-dengue-or-flu-get-checked-early-Doctors/238-343856) (Daily Mirror - Sri Lanka, 2026-06-25T05:02+00:00)
-- Detailed note: Doctors warn that waiting too long at home can be risky, especially if the illness turns out to be dengue, where early monitoring is important. Seasonal influenza—commonly known as flu—remains a regular public health concern in Sri Lanka, particularly during two peak periods from April to June and again from November to January.
-- Evidence notes: [Don’t guess at home whether it’s dengue or flu-get checked early: Doctors - Daily Mirror](https://www.dailymirror.lk/print/front-page/Dont-guess-at-home-whether-its-dengue-or-flu-get-checked-early-Doctors/238-343856) (Daily Mirror - Sri Lanka)
-- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
-- Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Source diversity is limited so corroboration is thin.
 
 
 ## Last major outbreaks on file
@@ -457,6 +457,8 @@ Search window: 7 day(s) ending 2026-06-27
   Limited detail was available from feed metadata alone.
 - [As Ebola deaths top 300, African officials meet to boost regional readiness](https://www.cidrap.umn.edu/ebola/ebola-deaths-top-300-african-officials-meet-boost-regional-readiness) | CIDRAP | 2026-06-26T20:37+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
+- [As measles outbreak continues, state officials push for vaccination](https://www.ldnews.com/story/news/local/2026/06/26/measles-outbreak-rising-in-lancaster-lebanon-region-vaccination-urged/90670940007/) | Lebanon Daily News | 2026-06-26T19:31+00:00 | Outbreaks and emerging infections
+  State officials have confirmed more than 70 measles cases in Pennsylvania, primarily in the Lancaster-Lebanon region. Since late April, the Lancaster and Lebanon area has seen 70 cases of measles, leading to calls for more people to get vaccinated. State officials provided an update on the Department of Health's response to rising measles cases in the Lancaster-Lebanon region, and continued to urge residents to get vaccinated amid the increased outbreak.
 - [Quick takes: More New World screwworm cases, Salmonella outbreak in Europe, polio in 4 nations](https://www.cidrap.umn.edu/new-world-screwworm/quick-takes-more-new-world-screwworm-cases-salmonella-outbreak-europe-polio-4) | CIDRAP | 2026-06-26T19:12+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [US CDC raises Ebola outbreak response to highest level](https://www.reuters.com/business/healthcare-pharmaceuticals/cdc-raises-response-ebola-outbreak-highest-level-says-risk-spread-us-is-low-2026-06-26/) | Reuters | 2026-06-26T18:34+00:00 | Outbreaks and emerging infections
@@ -468,8 +470,6 @@ Search window: 7 day(s) ending 2026-06-27
 - [Ebola outbreak spreads to Europe as France confirms first case](https://www.msn.com/en-in/news/insight/ebola-outbreak-spreads-to-europe-as-france-confirms-first-case/gm-GMFB9C8B5F?gemSnapshotKey\=GMFB9C8B5F-snapshot-35\&uxmode\=ruby) | MSN | 2026-06-26T15:27+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Ebola Ebola Outbreak Exceeds 1,000 Cases, And Is Detected In France And Uganda](https://www.iflscience.com/bundibugyo-ebola-outbreak-exceeds-1000-cases-with-first-case-outside-africa-and-70-chance-of-spread-to-a-new-country-83929) | IFLScience | 2026-06-26T15:18+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Ebola outbreak spreads to France as DRC cases surpass 1,150](https://www.msn.com/en-in/news/insight/ebola-outbreak-spreads-to-france-as-drc-cases-surpass-1-150/gm-GMFB9C8B5F?gemSnapshotKey\=GMFB9C8B5F-snapshot-19\&uxmode\=ruby) | MSN | 2026-06-26T14:57+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
