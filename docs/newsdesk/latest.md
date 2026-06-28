@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-06-28
-Generated at: 2026-06-28T07:19
+Generated at: 2026-06-28T07:40
 Search window: 7 day(s) ending 2026-06-28
 
 ## Executive scan
@@ -12,8 +12,8 @@ Search window: 7 day(s) ending 2026-06-28
 - [The Big Actions: May 2026](https://www.afro.who.int/countries/nigeria/publication/big-actions-may-2026) (WHO Regional Office for Africa; 2026-06-25T07:56+00:00; Outbreaks and emerging infections; relevance 5/5)
 - [As first imported Ebola case is recorded in Europe, ECDC calls on EU Member States to continue investing in preparedness](https://www.ecdc.europa.eu/en/news-events/first-imported-ebola-case-recorded-europe-ecdc-calls-eu-member-states-continue) (ECDC News; 2026-06-24T16:24+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
 - [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News; 2026-06-23T17:36+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (160), Policy, surveillance, and public health infrastructure (18), Major epidemiology studies (4)
-- Source health: 3 source(s) failed during collection: USDA APHIS Avian Influenza, medRxiv Infectious Disease, bioRxiv Infectious Disease.
+- Category mix: Outbreaks and emerging infections (159), Policy, surveillance, and public health infrastructure (18), Major epidemiology studies (4)
+- Source health: 2 source(s) failed during collection: USDA APHIS Avian Influenza, medRxiv Infectious Disease.
 
 ## Ongoing stories and what changed
 ### Avian influenza and H5N1
@@ -26,8 +26,8 @@ Search window: 7 day(s) ending 2026-06-28
 
 ### Ebola virus disease
 - Lead item: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 06, Data as of 21 June 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-2) (WHO Regional Office for Africa)
-- Newly tracked story cluster: 140 item(s) across 90 source(s).
-- Baseline snapshot created with 140 clustered item(s) across 90 source(s).
+- Newly tracked story cluster: 139 item(s) across 91 source(s).
+- Baseline snapshot created with 139 clustered item(s) across 91 source(s).
 - WHO Regional Office for Africa now includes deaths or fatal cases in the story frame.
 - ECDC News currently frames broader public risk as low.
 
@@ -53,7 +53,7 @@ Search window: 7 day(s) ending 2026-06-28
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 140 item(s) across 90 source(s); 4 official/primary-source item(s).
+- Topic size: 139 item(s) across 91 source(s); 4 official/primary-source item(s).
 - Lead item: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 06, Data as of 21 June 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-2) (WHO Regional Office for Africa, 2026-06-26T16:55+00:00)
 - Detailed note: Democratic Republic of the Congo Since 14 June 2026, a total of 240 new laboratory-confirmed cases, including 75 new confirmed deaths, have been reported, representing a 29.7% increase in cumulative confirmed cases and a 39.1% increase in cumulative confirmed deaths. As of 21 June 2026, a cumulative total of 1048 laboratory-confirmed cases, including 267 confirmed deaths [case fatality ratio (CFR) 25.5%], has...
 - Evidence notes: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 06, Data as of 21 June 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-2) (WHO Regional Office for Africa); [As first imported Ebola case is recorded in Europe, ECDC calls on EU Member States to continue investing in preparedness](https://www.ecdc.europa.eu/en/news-events/first-imported-ebola-case-recorded-europe-ecdc-calls-eu-member-states-continue) (ECDC News); [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News); [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) (Texas Department of State Health Services News); [11 African nations join forces in Kampala to combat Ebola outbreak](https://www.monitor.co.ug/uganda/news/national/11-african-nations-join-forces-in-kampala-to-combat-ebola-outbreak-5511432) (Daily Monitor)
@@ -87,7 +87,7 @@ Search window: 7 day(s) ending 2026-06-28
 ### Dengue and arboviruses
 - Topic size: 3 item(s) across 3 source(s); 0 official/primary-source item(s).
 - Lead item: [Drones Used to Fight Mosquitoes as Dengue Fever Surges in Sri Lanka](https://www.nytimes.com/2026/06/28/world/asia/sri-lanka-dengue-mosquito-drones-military.html) (The New York Times, 2026-06-28T04:00+00:00)
-- Detailed note: Others Obituary: Barrister Mainul Hosein Today’s Newspaper Front Page Back Page Editorial Editor’s Pick Election 2026 Literature Technology Law and Justice Campus Life Chattogram Anniversary Issue Eid Magazine Let the decision to form a task force to combat dengue demonstrate positive steps Let the decision to form a task force to combat dengue demonstrate positive steps New era of partnership with China unveiled...
+- Detailed note: Others Obituary: Barrister Mainul Hosein Today’s Newspaper Front Page Back Page Editorial Editor’s Pick Election 2026 Literature Technology Law and Justice Campus Life Chattogram Anniversary Issue Eid Magazine Govt to hire 125,000 health staff, midwives Govt to hire 125,000 health staff, midwives ‘People look at actresses in a way that isn’t normal’ ‘People look at actresses in a way that isn’t normal’ 9th Urban...
 - Evidence notes: [Drones Used to Fight Mosquitoes as Dengue Fever Surges in Sri Lanka](https://www.nytimes.com/2026/06/28/world/asia/sri-lanka-dengue-mosquito-drones-military.html) (The New York Times); [Don’t guess at home whether it’s dengue or flu-get checked early: Doctors - Daily Mirror](https://www.dailymirror.lk/print/front-page/Dont-guess-at-home-whether-its-dengue-or-flu-get-checked-early-Doctors/238-343856) (Daily Mirror - Sri Lanka); [Local Government, Rural Development and Cooperatives (LGRD) Minister Mirza Fakhrul Islam Alamgir speaks at the first meeting of the National Committee on the Prevention of Dengue and Other Mosquito-Borne Diseases at the Secretariat in the capital on T](https://dailynewnation.com/news/837087) (The New Nation)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.

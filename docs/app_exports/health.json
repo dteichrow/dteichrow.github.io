@@ -13,21 +13,21 @@
       "New York Times",
       "Reuters"
     ],
-    "metadata_only_count": 168,
+    "metadata_only_count": 167,
     "sources_cached": 0,
-    "sources_failed": 3,
-    "sources_live": 184,
+    "sources_failed": 2,
+    "sources_live": 183,
     "story_count_change": 7,
     "wrapper_only_count": 6
   },
   "freshness_summary": {
     "fallback_cache": 0,
-    "live": 184,
+    "live": 183,
     "refresh_cache": 0,
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-06-28T07:19:01",
+  "generated_at": "2026-06-28T07:40:18",
   "source_failures": [
     {
       "error": "HTTPSConnectionPool(host='www.aphis.usda.gov', port=443): Read timed out. (read timeout=8)",
@@ -38,11 +38,6 @@
       "error": "HTTPSConnectionPool(host='api.biorxiv.org', port=443): Read timed out. (read timeout=20)",
       "source": "medRxiv Infectious Disease",
       "source_type": "medrxiv"
-    },
-    {
-      "error": "HTTPSConnectionPool(host='api.biorxiv.org', port=443): Read timed out. (read timeout=20)",
-      "source": "bioRxiv Infectious Disease",
-      "source_type": "biorxiv"
     }
   ]
 }
