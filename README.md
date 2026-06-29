@@ -19,7 +19,7 @@ This site turns the existing public surfaces into one navigable publication shel
 - `content/tools.yml` is the teaching-tool registry for timelines, atlases, maps, and interactives
 - `content/atlases.yml` remains supported for legacy atlas URLs and post relationships
 - the public Substack sitemap powers full historical backfill
-- the public Substack RSS feed powers 15-minute incremental new-post sync
+- the public Substack archive API, RSS feed, and sitemap power incremental new-post sync when those endpoints are reachable
 - every post gets a local public page immediately
 - posts default to `summary_only` stub pages with canonical outbound links
 - `epi-dossier` public outputs are imported into this site under the new route map
@@ -106,7 +106,9 @@ For the live desk:
 - local builds import from the sibling `../epi-dossier/docs`
 - CI builds can clone `https://github.com/dteichrow/epi-dossier.git` if the sibling path is unavailable
 - `substack_sync` updates the persisted repository content and generated docs, but it does not deploy GitHub Pages
-- `deploy_pages` is the only Pages deployer; it runs after normal pushes, on manual dispatch, and on a 5-minute cloud schedule
+- Substack may block GitHub-hosted runners; when the sync report is degraded, CI skips rebuild/commit rather than republishing stale essay state as authoritative
+- `deploy_pages` is the only Pages deployer; it publishes committed content after normal pushes or manual dispatches
+- Pages deployments are queued instead of canceled so automated Newsdesk mirror pushes do not interrupt an in-progress deploy
 - the Pages deploy step retries once after a short delay so a transient GitHub Pages deployment error does not fail the whole publication path immediately
 
 For virtual teaching tools:
