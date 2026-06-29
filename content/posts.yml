@@ -1,4 +1,48 @@
 posts:
+- substack_id: 203888402
+  slug: the-public-health-evidence-on-policing
+  title: The Public Health Evidence on Policing Is Stranger Than Either Side Admits
+  date: '2026-06-28'
+  canonical_url: https://theedgeofepidemiology.substack.com/p/the-public-health-evidence-on-policing
+  excerpt: Policing is not one exposure. Homicide prevention, traffic stops, arrests,
+    and police violence need separate causal accounting.
+  cover_image: https://substackcdn.com/image/fetch/$s_!SND_!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7ae698e7-139e-44b0-b382-78d7530e0917_1024x692.jpeg
+  upstream_tags:
+  - american history
+  - Policing
+  - public health
+  - Police
+  - epidemiology
+  source_mode: substack_page
+  wordcount: 3145
+  status: mirrored
+  dek: ''
+  topics:
+  - american history
+  - Policing
+  - public health
+  - Police
+  - epidemiology
+  series: []
+  seo_title: ''
+  seo_description: ''
+  primary_keyword: ''
+  topic_cluster: ''
+  indexing_strategy: mirrored
+  related_atlases: []
+  related_reference_slugs: []
+  related_story_ids: []
+  search_excerpt: Policing is not one exposure. Homicide prevention, traffic stops,
+    arrests, and police violence need separate causal accounting.
+  local_body_path: content/post_bodies/the-public-health-evidence-on-policing.html
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/the-public-health-evidence-on-policing
+  body_source_mode: substack_body_html
+  body_wordcount: 3268
+  hero_mode: cover
+  notes: ''
+  first_seen_at: '2026-06-29T15:00:04+00:00'
+  last_synced_at: '2026-06-29T15:00:04+00:00'
 - substack_id: 202975620
   slug: what-did-your-job-do-to-your-body
   title: What Did Your Job Do to Your Body?
@@ -14,9 +58,9 @@ posts:
   - health
   - Ramazzini
   - epidemiology
-  source_mode: substack_page
+  source_mode: substack_archive_api
   wordcount: 1733
-  status: summary_only
+  status: mirrored
   dek: ''
   topics:
   - science
@@ -30,22 +74,21 @@ posts:
   seo_description: ''
   primary_keyword: ''
   topic_cluster: ''
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
   search_excerpt: Occupational disease starts with a boring question that can change
     the whole diagnosis.
-  local_body_path: ''
-  body_synced_at: ''
-  body_source_url: ''
-  body_source_mode: ''
-  body_source_file: ''
-  body_wordcount: null
+  local_body_path: content/post_bodies/what-did-your-job-do-to-your-body.html
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/what-did-your-job-do-to-your-body
+  body_source_mode: substack_body_html
+  body_wordcount: 1845
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-06-22T17:24:32+00:00'
-  last_synced_at: '2026-06-22T17:24:32+00:00'
+  last_synced_at: '2026-06-29T15:00:04+00:00'
 - substack_id: 201672365
   slug: the-countries-we-cant-measure-how
   title: The Deaths We Can't Count
@@ -63,7 +106,7 @@ posts:
   - epidemiology
   source_mode: substack_archive_api
   wordcount: 3064
-  status: summary_only
+  status: mirrored
   dek: Some deaths pass through a bureaucracy. Others have to be reconstructed from
     fragments.
   topics:
@@ -76,7 +119,7 @@ posts:
     from fragments.
   primary_keyword: ''
   topic_cluster: ''
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
   related_atlases:
   - maritime-disease-atlas
   related_reference_slugs: []
@@ -85,18 +128,22 @@ posts:
     better understand the answer to a question I hadn’t really considered beyond surface
     level curiosity: “how do researchers get anything resembling real-world data in
     the areas controlled by rebel forces?” How do they g'
-  local_body_path: ''
+  local_body_path: content/post_bodies/the-countries-we-cant-measure-how.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-06-12T15:02:15+00:00'
   last_synced_at: '2026-06-18T06:45:41+00:00'
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/the-countries-we-cant-measure-how
+  body_source_mode: substack_body_html
+  body_wordcount: 3107
 - substack_id: 200849173
   slug: new-world-screwworm-returns-to-the
   title: The Flesh-Eating Fly America Thought It Had Beaten Is Back
   date: '2026-06-06'
   canonical_url: https://theedgeofepidemiology.substack.com/p/new-world-screwworm-returns-to-the
-  excerpt: 'Updates June 22nd 6:30am: The USDA dashboard counts 15 cases as of today,
-    with three new cases identified (two yesterday, one on the 20th).'
+  excerpt: The U.S. spent decades pushing New World screwworm south. Now the old livestock
+    nightmare is moving back into view.
   cover_image: https://substackcdn.com/image/fetch/$s_!GriU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F88f4ef7b-8fca-40e4-8fcc-95bafcda7c9c_1600x1000.png
   upstream_tags:
   - US History
@@ -105,8 +152,8 @@ posts:
   - Screwworm
   - Agriculture
   source_mode: substack_archive_api
-  wordcount: 2609
-  status: summary_only
+  wordcount: 2654
+  status: mirrored
   dek: The U.S. spent decades pushing New World screwworm south. Now the old livestock
     nightmare is moving back into view.
   topics:
@@ -121,7 +168,7 @@ posts:
     old livestock nightmare is moving back into view.
   primary_keyword: ''
   topic_cluster: ''
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
   related_atlases: []
   related_reference_slugs: []
   related_story_ids: []
@@ -129,22 +176,22 @@ posts:
     indigenous New World screwworm (NWS) fly, was detected on American soil for the
     first time in 60 years in a three-week-old calf in Zavala County, Texas (roughly
     90 miles southwest of San Antonio and about 50 mile
-  local_body_path: ''
+  local_body_path: content/post_bodies/new-world-screwworm-returns-to-the.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-06-06T12:22:41+00:00'
-  last_synced_at: '2026-06-22T17:24:32+00:00'
-  body_synced_at: ''
-  body_source_url: ''
-  body_source_mode: ''
-  body_source_file: ''
-  body_wordcount: null
+  last_synced_at: '2026-06-29T15:00:04+00:00'
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/new-world-screwworm-returns-to-the
+  body_source_mode: substack_body_html
+  body_wordcount: 2697
 - substack_id: 199208467
   slug: what-the-viking-age-norse-died-from
   title: The Ordinary Deaths of the Vikings
   date: '2026-05-25'
   canonical_url: https://theedgeofepidemiology.substack.com/p/what-the-viking-age-norse-died-from
-  excerpt: I need to start this piece with a small caveat.
+  excerpt: The saga version is raids and swords. The burial evidence points to infection,
+    injury, childhood death, and ordinary premodern risk.
   cover_image: https://substackcdn.com/image/fetch/$s_!IGPy!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F695412e9-402b-4aa8-834c-9083fc47e8f7_1800x1013.png
   upstream_tags:
   - science
@@ -153,7 +200,7 @@ posts:
   - Big Epidemiology
   source_mode: substack_archive_api
   wordcount: 2578
-  status: summary_only
+  status: mirrored
   dek: The saga version is raids and swords. The burial evidence points to infection,
     injury, childhood death, and ordinary premodern risk.
   topics:
@@ -167,24 +214,28 @@ posts:
     to infection, injury, childhood death, and ordinary premodern risk.
   primary_keyword: ''
   topic_cluster: ''
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
   related_atlases:
   - viking-health-atlas
   related_reference_slugs: []
   related_story_ids: []
   search_excerpt: I need to start this piece with a small caveat.
-  local_body_path: ''
+  local_body_path: content/post_bodies/what-the-viking-age-norse-died-from.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-25T17:17:43+00:00'
-  last_synced_at: '2026-05-25T18:17:45+00:00'
+  last_synced_at: '2026-06-29T15:00:04+00:00'
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/what-the-viking-age-norse-died-from
+  body_source_mode: substack_body_html
+  body_wordcount: 2639
 - substack_id: 198344681
   slug: ebola-in-drc-and-uganda-what-is-known
   title: 'Ebola in DRC and Uganda: What Is Known So Far'
   date: '2026-05-19'
   canonical_url: https://theedgeofepidemiology.substack.com/p/ebola-in-drc-and-uganda-what-is-known
-  excerpt: I’ll keep updates at the top of this post; you can expect two or three
-    updates per day.
+  excerpt: What we know, what we don't, and why an outbreak in a conflict zone is
+    so hard to read from the outside.
   cover_image: https://substackcdn.com/image/fetch/$s_!hwSr!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F69aa395c-0747-4e3b-814b-f5c650960284_1600x900.png
   upstream_tags:
   - science
@@ -193,8 +244,8 @@ posts:
   - epidemiology
   - Africa
   source_mode: substack_archive_api
-  wordcount: 2479
-  status: summary_only
+  wordcount: 2589
+  status: mirrored
   dek: What we know, what we don't, and why an outbreak in a conflict zone is so hard
     to read from the outside.
   topics:
@@ -209,7 +260,7 @@ posts:
     zone is so hard to read from the outside.
   primary_keyword: Ebola DRC Uganda outbreak
   topic_cluster: disease-ecology
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
   related_atlases:
   - pathogen-atlas
   - maritime-disease-atlas
@@ -217,16 +268,15 @@ posts:
   related_story_ids: []
   search_excerpt: I’ll keep updates at the top of this post; you can expect two or
     three updates per day.
-  local_body_path: ''
+  local_body_path: content/post_bodies/ebola-in-drc-and-uganda-what-is-known.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-19T02:25:26+00:00'
-  last_synced_at: '2026-06-22T17:24:32+00:00'
-  body_synced_at: ''
-  body_source_url: ''
-  body_source_mode: ''
-  body_source_file: ''
-  body_wordcount: null
+  last_synced_at: '2026-06-29T15:00:04+00:00'
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/ebola-in-drc-and-uganda-what-is-known
+  body_source_mode: substack_body_html
+  body_wordcount: 2692
 - substack_id: 197437573
   slug: hantavirus-in-the-korean-war-korean
   title: Korean Hemorrhagic Fever in the Korean War
@@ -243,7 +293,7 @@ posts:
   - Korean War
   source_mode: substack_archive_api
   wordcount: 2361
-  status: summary_only
+  status: mirrored
   dek: ''
   topics:
   - science
@@ -260,7 +310,7 @@ posts:
   search_excerpt: Between Spring of 1951 and the armistice of July 1953, an unnamed
     disease infected UN soldiers among the ridge lines and rice paddies of central
     Korea.
-  local_body_path: ''
+  local_body_path: content/post_bodies/hantavirus-in-the-korean-war-korean.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-13T14:25:47+00:00'
@@ -271,6 +321,10 @@ posts:
   primary_keyword: Korean War hantavirus
   topic_cluster: disease-and-war
   indexing_strategy: evergreen
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/hantavirus-in-the-korean-war-korean
+  body_source_mode: substack_body_html
+  body_wordcount: 2434
 - substack_id: 196425690
   slug: hantavirus-at-sea-what-we-know-about
   title: 'MV Hondius Hantavirus Outbreak: What We Know So Far'
@@ -288,7 +342,7 @@ posts:
   - MV Hondius
   source_mode: substack_archive_api
   wordcount: 2753
-  status: summary_only
+  status: mirrored
   dek: ''
   topics:
   - science
@@ -305,7 +359,7 @@ posts:
   search_excerpt: The recent fungal STI outbreak and ongoing hantavirus outbreak on
     a cruise ship make me want to start a new segment here at The Edge of Epidemiology,
     so welcome to The Pathogen Dispatch.
-  local_body_path: ''
+  local_body_path: content/post_bodies/hantavirus-at-sea-what-we-know-about.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
@@ -316,6 +370,10 @@ posts:
   primary_keyword: MV Hondius hantavirus outbreak
   topic_cluster: pathogen-geography
   indexing_strategy: evergreen
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/hantavirus-at-sea-what-we-know-about
+  body_source_mode: substack_body_html
+  body_wordcount: 2881
 - substack_id: 196225500
   slug: the-new-fungal-sti-hiding-in-plain
   title: 'The New Fungal STI Hiding in Plain Sight (Pathogen Dispatch #1)'
@@ -331,7 +389,7 @@ posts:
   - STIs
   source_mode: substack_archive_api
   wordcount: 1301
-  status: summary_only
+  status: mirrored
   dek: ''
   topics:
   - science
@@ -345,7 +403,7 @@ posts:
   related_reference_slugs: []
   related_story_ids: []
   search_excerpt: What is TMVII, where did it come from, and who is most at risk?
-  local_body_path: ''
+  local_body_path: content/post_bodies/the-new-fungal-sti-hiding-in-plain.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
@@ -356,7 +414,11 @@ posts:
     reporting limits.
   primary_keyword: fungal STI
   topic_cluster: epidemiologic-methods
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/the-new-fungal-sti-hiding-in-plain
+  body_source_mode: substack_body_html
+  body_wordcount: 1395
 - substack_id: 195413363
   slug: how-changing-disease-environments
   title: Ancient DNA and Disease Selection in West Eurasia
@@ -373,7 +435,7 @@ posts:
   - Reich Lab 2026
   source_mode: substack_archive_api
   wordcount: 2593
-  status: summary_only
+  status: mirrored
   dek: ''
   topics:
   - information science
@@ -387,7 +449,7 @@ posts:
   related_reference_slugs: []
   related_story_ids: []
   search_excerpt: Am epidemiologists look at the 2026 Reich Lab paper.
-  local_body_path: ''
+  local_body_path: content/post_bodies/how-changing-disease-environments.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
@@ -398,13 +460,17 @@ posts:
   primary_keyword: ancient DNA disease selection
   topic_cluster: historical-epidemiology
   indexing_strategy: evergreen
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/how-changing-disease-environments
+  body_source_mode: substack_body_html
+  body_wordcount: 2673
 - substack_id: 193856306
   slug: big-epidemiology-disease-at-the-scale
   title: 'Big Epidemiology: Disease at the Scale of Civilization'
   date: '2026-04-11'
   canonical_url: https://theedgeofepidemiology.substack.com/p/big-epidemiology-disease-at-the-scale
-  excerpt: 'At a 2011 TED conference, historian David Christian asked a deceptively
-    simple question: when did history begin?'
+  excerpt: What happens when you stop treating disease as background and start treating
+    it as one of history's operating forces.
   cover_image: https://substackcdn.com/image/fetch/$s_!F2yF!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6c35b218-4016-4b59-85c0-db81dc767d92_960x766.png
   upstream_tags:
   - science
@@ -414,7 +480,7 @@ posts:
   - history of medicine
   source_mode: substack_archive_api
   wordcount: 1947
-  status: summary_only
+  status: mirrored
   dek: What happens when you stop treating disease as background and start treating
     it as one of history's operating forces.
   topics:
@@ -430,17 +496,21 @@ posts:
   related_story_ids: []
   search_excerpt: 'At a 2011 TED conference, historian David Christian asked a deceptively
     simple question: when did history begin?'
-  local_body_path: ''
+  local_body_path: content/post_bodies/big-epidemiology-disease-at-the-scale.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-10T21:44:18+00:00'
+  last_synced_at: '2026-06-29T15:00:04+00:00'
   seo_title: 'Big Epidemiology: Disease at the Scale of Civilization'
   seo_description: What happens when you stop treating disease as background and start
     treating it as one of history's operating forces.
   primary_keyword: big epidemiology
   topic_cluster: historical-epidemiology
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/big-epidemiology-disease-at-the-scale
+  body_source_mode: substack_body_html
+  body_wordcount: 2020
 - substack_id: 193176173
   slug: the-first-american-epidemic-how-yellow
   title: '1793 Philadelphia Yellow Fever: America''s First Epidemic Crisis'
@@ -458,7 +528,7 @@ posts:
   - '1793'
   source_mode: substack_archive_api
   wordcount: 2993
-  status: summary_only
+  status: mirrored
   dek: ''
   topics:
   - american history
@@ -475,7 +545,7 @@ posts:
   search_excerpt: In late summer of 1793, approaching a full decade of independence,
     Philadelphia was the most populous city in the United States and was the temporary
     seat of the federal government.
-  local_body_path: ''
+  local_body_path: content/post_bodies/the-first-american-epidemic-how-yellow.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
@@ -487,6 +557,10 @@ posts:
   primary_keyword: 1793 Philadelphia yellow fever
   topic_cluster: historical-epidemiology
   indexing_strategy: evergreen
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/the-first-american-epidemic-how-yellow
+  body_source_mode: substack_body_html
+  body_wordcount: 3145
 - substack_id: 192444219
   slug: did-the-vikings-bring-plague-across
   title: Did Vikings Spread Plague Across the North Sea?
@@ -504,7 +578,7 @@ posts:
   - Big Epidemiology
   source_mode: substack_archive_api
   wordcount: 2316
-  status: summary_only
+  status: mirrored
   dek: ''
   topics:
   - science
@@ -521,7 +595,7 @@ posts:
   related_story_ids: []
   search_excerpt: This piece was written for The Viking Herald (where copyediting
     has likely enhanced the draft you see here).
-  local_body_path: ''
+  local_body_path: content/post_bodies/did-the-vikings-bring-plague-across.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
@@ -532,12 +606,17 @@ posts:
   primary_keyword: Viking plague North Sea
   topic_cluster: historical-epidemiology
   indexing_strategy: evergreen
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/did-the-vikings-bring-plague-across
+  body_source_mode: substack_body_html
+  body_wordcount: 2732
 - substack_id: 192334500
   slug: the-white-plague-returns-tuberculosis
   title: Is the White Plague Returning?
   date: '2026-03-27'
   canonical_url: https://theedgeofepidemiology.substack.com/p/the-white-plague-returns-tuberculosis
-  excerpt: First for the headline question.
+  excerpt: TB never really left. The question is why public health keeps giving it
+    room to come back.
   cover_image: https://substackcdn.com/image/fetch/$s_!Wsfu!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3724bfa7-d0b4-40d7-b8a9-34f2c1f71bab_2361x3364.jpeg
   upstream_tags:
   - science
@@ -545,8 +624,8 @@ posts:
   - public health
   - tuberculosis
   source_mode: substack_archive_api
-  wordcount: 1692
-  status: summary_only
+  wordcount: 1695
+  status: mirrored
   dek: TB never really left. The question is why public health keeps giving it room
     to come back.
   topics:
@@ -560,17 +639,21 @@ posts:
   related_reference_slugs: []
   related_story_ids: []
   search_excerpt: First for the headline question.
-  local_body_path: ''
+  local_body_path: content/post_bodies/the-white-plague-returns-tuberculosis.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-10T21:44:18+00:00'
+  last_synced_at: '2026-06-29T15:00:04+00:00'
   seo_title: Is the White Plague Returning?
   seo_description: TB never really left. The question is why public health keeps giving
     it room to come back.
   primary_keyword: tuberculosis public health
   topic_cluster: disease-ecology
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/the-white-plague-returns-tuberculosis
+  body_source_mode: substack_body_html
+  body_wordcount: 2015
 - substack_id: 191686346
   slug: who-died-of-what-in-the-american
   title: 'Disease in the American Revolutionary War: Who Died of What?'
@@ -587,7 +670,7 @@ posts:
   - revolutionary war
   source_mode: substack_archive_api
   wordcount: 3042
-  status: summary_only
+  status: mirrored
   dek: ''
   topics:
   - infectious disease
@@ -602,7 +685,7 @@ posts:
   related_reference_slugs: []
   related_story_ids: []
   search_excerpt: The Dead of the Jersey
-  local_body_path: ''
+  local_body_path: content/post_bodies/who-died-of-what-in-the-american.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
@@ -614,6 +697,10 @@ posts:
   primary_keyword: disease in the American Revolutionary War
   topic_cluster: disease-and-war
   indexing_strategy: evergreen
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/who-died-of-what-in-the-american
+  body_source_mode: substack_body_html
+  body_wordcount: 3127
 - substack_id: 191075721
   slug: invisible-killers-of-the-oregon-trail
   title: 'Disease on the Oregon Trail: Cholera, Dysentery, and Death'
@@ -630,7 +717,7 @@ posts:
   - Pacific North West
   source_mode: substack_archive_api
   wordcount: 1707
-  status: summary_only
+  status: mirrored
   dek: ''
   topics:
   - information science
@@ -647,7 +734,7 @@ posts:
   search_excerpt: “Started out soon this morning, passed several graves, we hear that
     it is sickly on the route…” noted Lodisa Frizzell in May of 1852 in her journal
     documenting her family’s journey from Illinois to Wyoming.
-  local_body_path: ''
+  local_body_path: content/post_bodies/invisible-killers-of-the-oregon-trail.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
@@ -658,6 +745,10 @@ posts:
   primary_keyword: disease on the Oregon Trail
   topic_cluster: disease-and-war
   indexing_strategy: evergreen
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/invisible-killers-of-the-oregon-trail
+  body_source_mode: substack_body_html
+  body_wordcount: 1652
 - substack_id: 190210122
   slug: how-mosquitos-killed-napoleons-north
   title: How Yellow Fever Killed Napoleon's American Empire
@@ -676,7 +767,7 @@ posts:
   - Medical History
   source_mode: substack_archive_api
   wordcount: 1611
-  status: summary_only
+  status: mirrored
   dek: ''
   topics:
   - science
@@ -694,7 +785,7 @@ posts:
   search_excerpt: Between the years of 1791 and 1804, two mosquito-borne diseases
     destroyed the French expeditionary armies in Saint-Domingue (modern day Haiti
     and the Dominican Republic) and ended up tipping the balance of power toward revolution.
-  local_body_path: ''
+  local_body_path: content/post_bodies/how-mosquitos-killed-napoleons-north.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
@@ -705,12 +796,17 @@ posts:
   primary_keyword: yellow fever Napoleon
   topic_cluster: disease-and-war
   indexing_strategy: evergreen
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/how-mosquitos-killed-napoleons-north
+  body_source_mode: substack_body_html
+  body_wordcount: 1764
 - substack_id: 189373631
   slug: the-american-revolution-was-nearly
   title: The American Revolution Was Nearly Lost to Smallpox
   date: '2026-02-27'
   canonical_url: https://theedgeofepidemiology.substack.com/p/the-american-revolution-was-nearly
-  excerpt: Disease as History’s Invisible Army
+  excerpt: Before the Revolution was won on the battlefield, Washington had to solve
+    a smallpox problem inside the army.
   cover_image: https://substackcdn.com/image/fetch/$s_!gcoS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F277805f2-4844-4ec1-9ca6-4b5f9af2ba3e_1920x1491.jpeg
   upstream_tags:
   - science
@@ -720,7 +816,7 @@ posts:
   - revolutionary war
   source_mode: substack_archive_api
   wordcount: 2128
-  status: summary_only
+  status: mirrored
   dek: Before the Revolution was won on the battlefield, Washington had to solve a
     smallpox problem inside the army.
   topics:
@@ -735,27 +831,29 @@ posts:
   related_reference_slugs: []
   related_story_ids: []
   search_excerpt: Disease as History’s Invisible Army
-  local_body_path: ''
+  local_body_path: content/post_bodies/the-american-revolution-was-nearly.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-10T21:44:18+00:00'
+  last_synced_at: '2026-06-29T15:00:04+00:00'
   seo_title: The American Revolution Was Nearly Lost to Smallpox
   seo_description: Before the Revolution was won on the battlefield, Washington had
     to solve a smallpox problem inside the army.
   primary_keyword: smallpox American Revolution
   topic_cluster: disease-and-war
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/the-american-revolution-was-nearly
+  body_source_mode: substack_body_html
+  body_wordcount: 2183
 - substack_id: 187959272
   slug: disease-in-the-early-colonies-pre
   title: 'Disease in the Early Colonies: Pre-Revolutionary War Disease Ecology and
     Outbreaks'
   date: '2026-02-14'
   canonical_url: https://theedgeofepidemiology.substack.com/p/disease-in-the-early-colonies-pre
-  excerpt: British North America during the pre-revolutionary war period was a region
-    of fluctuating disease ecology shaped by repeated incursions of smallpox, measles,
-    diphtheria, enteric infections (the nice way of saying feces got in their mouths
-    somehow), and vector-borne fevers.
+  excerpt: Before the Revolution, British North America was already being shaped by
+    smallpox, measles, enteric disease, mosquitoes, war, trade, and settlement.
   cover_image: https://substackcdn.com/image/fetch/$s_!JEMI!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb0718958-e95f-4016-addb-5f9c55ff6d2b_960x748.jpeg
   upstream_tags:
   - science
@@ -764,7 +862,7 @@ posts:
   - colonial era
   source_mode: substack_archive_api
   wordcount: 1726
-  status: summary_only
+  status: mirrored
   dek: Before the Revolution, British North America was already being shaped by smallpox,
     measles, enteric disease, mosquitoes, war, trade, and settlement.
   topics:
@@ -782,26 +880,29 @@ posts:
     a region of fluctuating disease ecology shaped by repeated incursions of smallpox,
     measles, diphtheria, enteric infections (the nice way of saying feces got in their
     mouths somehow), and vector-borne fevers.
-  local_body_path: ''
+  local_body_path: content/post_bodies/disease-in-the-early-colonies-pre.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-10T21:44:18+00:00'
+  last_synced_at: '2026-06-29T15:00:04+00:00'
   seo_title: 'Disease in the Early Colonies: Pre-Revolutionary War Disease Ecology
     and Outbreaks'
   seo_description: Before the Revolution, British North America was already being
     shaped by smallpox, measles, enteric disease, mosquitoes, war, trade, and settlement.
   primary_keyword: colonial disease ecology
   topic_cluster: disease-and-war
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/disease-in-the-early-colonies-pre
+  body_source_mode: substack_body_html
+  body_wordcount: 1779
 - substack_id: 186425026
   slug: why-europeans-didnt-get-hit-by-disease
   title: Why the Columbian Exchange Did Not Run in Reverse
   date: '2026-01-31'
   canonical_url: https://theedgeofepidemiology.substack.com/p/why-europeans-didnt-get-hit-by-disease
-  excerpt: I was recently asked why Europeans didn’t end up suffering as much at the
-    hands of New World diseases compared to how the Native Americans were impacted
-    by the likes of smallpox, measles, malaria, and yellow fever.
+  excerpt: The usual story breaks when you look at childhood exposure, vectors, cities,
+    empire, and where Europeans actually died abroad.
   cover_image: https://substackcdn.com/image/fetch/$s_!ix5P!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F77696bba-58af-41da-b8fc-f82d06e67ba9_658x401.jpeg
   upstream_tags:
   - science
@@ -812,7 +913,7 @@ posts:
   - Medical History
   source_mode: substack_archive_api
   wordcount: 1534
-  status: summary_only
+  status: mirrored
   dek: The usual story breaks when you look at childhood exposure, vectors, cities,
     empire, and where Europeans actually died abroad.
   topics:
@@ -831,25 +932,28 @@ posts:
   search_excerpt: I was recently asked why Europeans didn’t end up suffering as much
     at the hands of New World diseases compared to how the Native Americans were impacted
     by the likes of smallpox, measles, malaria, and yellow fever.
-  local_body_path: ''
+  local_body_path: content/post_bodies/why-europeans-didnt-get-hit-by-disease.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-10T21:44:18+00:00'
+  last_synced_at: '2026-06-29T15:00:04+00:00'
   seo_title: Why the Columbian Exchange Did Not Run in Reverse
   seo_description: The usual story breaks when you look at childhood exposure, vectors,
     cities, empire, and where Europeans actually died abroad.
   primary_keyword: New World diseases Europeans
   topic_cluster: pathogen-geography
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/why-europeans-didnt-get-hit-by-disease
+  body_source_mode: substack_body_html
+  body_wordcount: 1586
 - substack_id: 184989953
   slug: they-came-from-the-steppe-the-genetic
   title: Plague, Steppe Migrations, and the Diseases Written Into European DNA
   date: '2026-01-18'
   canonical_url: https://theedgeofepidemiology.substack.com/p/they-came-from-the-steppe-the-genetic
-  excerpt: The study of ancient DNA has made the Yamnaya and other early pastoralist
-    groups of the Eurasian steppe some of the better understood prehistoric populations
-    out there.
+  excerpt: Ancient DNA lets us ask what migration, livestock, plague, and immune trade-offs
+    left behind.
   cover_image: https://substackcdn.com/image/fetch/$s_!w9MU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb8ae8dc5-8615-49db-a0d2-1c12edd1b2b5_730x730.jpeg
   upstream_tags:
   - History
@@ -859,7 +963,7 @@ posts:
   - Steppe
   source_mode: substack_archive_api
   wordcount: 1489
-  status: summary_only
+  status: mirrored
   dek: Ancient DNA lets us ask what migration, livestock, plague, and immune trade-offs
     left behind.
   topics:
@@ -875,26 +979,29 @@ posts:
   search_excerpt: The study of ancient DNA has made the Yamnaya and other early pastoralist
     groups of the Eurasian steppe some of the better understood prehistoric populations
     out there.
-  local_body_path: ''
+  local_body_path: content/post_bodies/they-came-from-the-steppe-the-genetic.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:49+00:00'
-  last_synced_at: '2026-05-10T21:44:18+00:00'
+  last_synced_at: '2026-06-29T15:00:04+00:00'
   seo_title: Plague, Steppe Migrations, and the Diseases Written Into European DNA
   seo_description: Ancient DNA lets us ask what migration, livestock, plague, and
     immune trade-offs left behind.
   primary_keyword: plague steppe migrations
   topic_cluster: historical-epidemiology
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/they-came-from-the-steppe-the-genetic
+  body_source_mode: substack_body_html
+  body_wordcount: 1512
 - substack_id: 184243719
   slug: when-worlds-collided-disease-and
   title: 'When Worlds Collided: Disease and Population Collapse in the Americas After
     1492'
   date: '2026-01-11'
   canonical_url: https://theedgeofepidemiology.substack.com/p/when-worlds-collided-disease-and
-  excerpt: The story of disease in the Americas post-1492 is usually told in a blunt
-    manner, with Europeans arriving, Old World pathogens hitching a ride, and then
-    causing a total collapse of the Indigenous Populations.
+  excerpt: The collapse after 1492 was real, but the usual story is too flat. Ecology,
+    labor, war, and institutions mattered too.
   cover_image: https://substackcdn.com/image/fetch/$s_!QWFS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6cfc1a7c-09ad-4137-ab03-2f75703f7482_975x768.jpeg
   upstream_tags:
   - infectious disease
@@ -904,7 +1011,7 @@ posts:
   - '1493'
   source_mode: substack_archive_api
   wordcount: 2044
-  status: summary_only
+  status: mirrored
   dek: The collapse after 1492 was real, but the usual story is too flat. Ecology,
     labor, war, and institutions mattered too.
   topics:
@@ -921,24 +1028,29 @@ posts:
   search_excerpt: The story of disease in the Americas post-1492 is usually told in
     a blunt manner, with Europeans arriving, Old World pathogens hitching a ride,
     and then causing a total collapse of the Indigenous Populations.
-  local_body_path: ''
+  local_body_path: content/post_bodies/when-worlds-collided-disease-and.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:49+00:00'
-  last_synced_at: '2026-05-10T21:44:18+00:00'
+  last_synced_at: '2026-06-29T15:00:04+00:00'
   seo_title: 'When Worlds Collided: Disease and Population Collapse in the Americas
     After 1492'
   seo_description: The collapse after 1492 was real, but the usual story is too flat.
     Ecology, labor, war, and institutions mattered too.
   primary_keyword: disease population collapse Americas
   topic_cluster: pathogen-geography
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/when-worlds-collided-disease-and
+  body_source_mode: substack_body_html
+  body_wordcount: 2107
 - substack_id: 183258463
   slug: disease-on-the-high-seas-early-maritime
   title: Scourges of the High Seas
   date: '2026-01-03'
   canonical_url: https://theedgeofepidemiology.substack.com/p/disease-on-the-high-seas-early-maritime
-  excerpt: Life aboard a ship before modern medicine was a hellish experience.
+  excerpt: Ships carried more than cargo. They moved crowding, hunger, rats, mosquitoes,
+    bad water, and disease across the world.
   cover_image: https://substackcdn.com/image/fetch/$s_!g6Su!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1f85055c-a962-4932-902e-2b97f16ca324_800x569.jpeg
   upstream_tags:
   - science
@@ -951,7 +1063,7 @@ posts:
   - pirates
   source_mode: substack_archive_api
   wordcount: 2105
-  status: summary_only
+  status: mirrored
   dek: Ships carried more than cargo. They moved crowding, hunger, rats, mosquitoes,
     bad water, and disease across the world.
   topics:
@@ -967,17 +1079,21 @@ posts:
   related_reference_slugs: []
   related_story_ids: []
   search_excerpt: Life aboard a ship before modern medicine was a hellish experience.
-  local_body_path: ''
+  local_body_path: content/post_bodies/disease-on-the-high-seas-early-maritime.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:50+00:00'
-  last_synced_at: '2026-05-10T21:44:18+00:00'
+  last_synced_at: '2026-06-29T15:00:04+00:00'
   seo_title: Scourges of the High Seas
   seo_description: Ships carried more than cargo. They moved crowding, hunger, rats,
     mosquitoes, bad water, and disease across the world.
   primary_keyword: maritime disease ecology
   topic_cluster: pathogen-geography
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/disease-on-the-high-seas-early-maritime
+  body_source_mode: substack_body_html
+  body_wordcount: 2140
 - substack_id: 182976217
   slug: mexicos-mystery-epidemics-of-the
   title: 'Cocoliztli: Mexico''s 16th-Century Mystery Epidemic'
@@ -995,7 +1111,7 @@ posts:
   - Mexico
   source_mode: substack_archive_api
   wordcount: 1325
-  status: summary_only
+  status: mirrored
   dek: ''
   topics:
   - science
@@ -1010,7 +1126,7 @@ posts:
   related_story_ids: []
   search_excerpt: In 16th century Mexico (New Spain at the time), two extremely high
     mortality epidemics swept through Mesoamerica, decimating the population.
-  local_body_path: ''
+  local_body_path: content/post_bodies/mexicos-mystery-epidemics-of-the.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:50+00:00'
@@ -1021,6 +1137,10 @@ posts:
   primary_keyword: cocoliztli epidemic
   topic_cluster: historical-epidemiology
   indexing_strategy: evergreen
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/mexicos-mystery-epidemics-of-the
+  body_source_mode: substack_body_html
+  body_wordcount: 1350
 - substack_id: 182520634
   slug: inherited-infections-what-our-oldest
   title: 'Inherited Infections: What Our Oldest Diseases Reveal About Human Prehistory'
@@ -1037,7 +1157,7 @@ posts:
   - human origins
   source_mode: substack_archive_api
   wordcount: 1361
-  status: summary_only
+  status: mirrored
   dek: Ancient pathogens killed people, but they also left clues about migration,
     settlement, immunity, and the disease history carried in bodies.
   topics:
@@ -1053,7 +1173,7 @@ posts:
   related_reference_slugs: []
   related_story_ids: []
   search_excerpt: Happy holidays!
-  local_body_path: ''
+  local_body_path: content/post_bodies/inherited-infections-what-our-oldest.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:51+00:00'
@@ -1063,7 +1183,11 @@ posts:
     migration, settlement, immunity, and the disease history carried in bodies.
   primary_keyword: oldest human diseases
   topic_cluster: historical-epidemiology
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/inherited-infections-what-our-oldest
+  body_source_mode: substack_body_html
+  body_wordcount: 1410
 - substack_id: 181844122
   slug: the-disease-ecology-of-the-pre-contact
   title: 'The Disease Ecology of the Pre-Contact Americas (Part 2: South America)'
@@ -1080,7 +1204,7 @@ posts:
   - pre-colonial era
   source_mode: substack_archive_api
   wordcount: 2027
-  status: summary_only
+  status: mirrored
   dek: Altitude, settlement, parasites, animal reservoirs, and the limits of the evidence
     make South America harder than the simple version.
   topics:
@@ -1097,7 +1221,7 @@ posts:
   related_story_ids: []
   search_excerpt: Last time we went over some of the infectious diseases that were
     prominent in pre-contact North America and Central America.
-  local_body_path: ''
+  local_body_path: content/post_bodies/the-disease-ecology-of-the-pre-contact.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:51+00:00'
@@ -1107,7 +1231,11 @@ posts:
     of the evidence make South America harder than the simple version.
   primary_keyword: pre-contact South America disease
   topic_cluster: pathogen-geography
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/the-disease-ecology-of-the-pre-contact
+  body_source_mode: substack_body_html
+  body_wordcount: 2073
 - substack_id: 181195168
   slug: the-disease-ecology-of-pre-contact
   title: 'The Disease Ecology of Pre-Contact Americas (Part 1: North and Central America)'
@@ -1124,7 +1252,7 @@ posts:
   - Medical History
   source_mode: substack_archive_api
   wordcount: 1653
-  status: summary_only
+  status: mirrored
   dek: Before 1492, the Americas were not disease-free. Their disease ecology was
     different, uneven, and badly served by easy summaries.
   topics:
@@ -1140,7 +1268,7 @@ posts:
   related_story_ids: []
   search_excerpt: Before 1492, the indigenous people of the Americas lived in a long-term
     isolation from the vast reservoir that was Eurasia’s disease pool.
-  local_body_path: ''
+  local_body_path: content/post_bodies/the-disease-ecology-of-pre-contact.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:51+00:00'
@@ -1151,7 +1279,11 @@ posts:
     ecology was different, uneven, and badly served by easy summaries.
   primary_keyword: pre-contact Americas disease ecology
   topic_cluster: pathogen-geography
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/the-disease-ecology-of-pre-contact
+  body_source_mode: substack_body_html
+  body_wordcount: 1696
 - substack_id: 180554125
   slug: when-did-syphilis-enter-europe-the
   title: When Did Syphilis Enter Europe? The Origins Debate
@@ -1168,7 +1300,7 @@ posts:
   - epidemiology
   source_mode: substack_archive_api
   wordcount: 1693
-  status: summary_only
+  status: mirrored
   dek: Everyone wants a clean origin story. The bones, genomes, and old chronicles
     keep refusing to give one.
   topics:
@@ -1183,7 +1315,7 @@ posts:
   related_story_ids: []
   search_excerpt: For a family of pathogens that has likely been with humanity since
     the dawn of agriculture, Treponema has a funny way of keeping its secrets.
-  local_body_path: ''
+  local_body_path: content/post_bodies/when-did-syphilis-enter-europe-the.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:52+00:00'
@@ -1193,7 +1325,11 @@ posts:
     chronicles keep refusing to give one.
   primary_keyword: syphilis origins debate
   topic_cluster: historical-epidemiology
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/when-did-syphilis-enter-europe-the
+  body_source_mode: substack_body_html
+  body_wordcount: 1741
 - substack_id: 179321195
   slug: the-mystery-of-hookworm-in-ancient
   title: 'Ancient Hookworm in the Americas: A Parasite Out of Place'
@@ -1211,7 +1347,7 @@ posts:
   - paleopathology
   source_mode: substack_archive_api
   wordcount: 1344
-  status: summary_only
+  status: mirrored
   dek: ''
   topics:
   - science
@@ -1227,7 +1363,7 @@ posts:
   related_story_ids: []
   search_excerpt: I’m currently researching for a piece on the disease ecology of
     the early Americas.
-  local_body_path: ''
+  local_body_path: content/post_bodies/the-mystery-of-hookworm-in-ancient.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:52+00:00'
@@ -1238,6 +1374,10 @@ posts:
   primary_keyword: ancient hookworm Americas
   topic_cluster: historical-epidemiology
   indexing_strategy: evergreen
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/the-mystery-of-hookworm-in-ancient
+  body_source_mode: substack_body_html
+  body_wordcount: 1392
 - substack_id: 178663608
   slug: the-ghosts-of-meals-past-what-weve
   title: 'The Ghosts of Meals Past: What We''ve Learned from Fossilized Poop'
@@ -1254,7 +1394,7 @@ posts:
   - History
   source_mode: substack_archive_api
   wordcount: 1269
-  status: summary_only
+  status: mirrored
   dek: It is fossilized poop, yes. It is also one of the better archives we have for
     diet, parasites, and ordinary life.
   topics:
@@ -1269,7 +1409,7 @@ posts:
   search_excerpt: When construction first broke ground for the Lloyds Bank building
     in York in 1972, within a moist layer of peat was something each of the crew would
     have seen countless times before, although never one like this.
-  local_body_path: ''
+  local_body_path: content/post_bodies/the-ghosts-of-meals-past-what-weve.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:53+00:00'
@@ -1279,7 +1419,11 @@ posts:
     we have for diet, parasites, and ordinary life.
   primary_keyword: fossilized poop coprolites
   topic_cluster: historical-epidemiology
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/the-ghosts-of-meals-past-what-weve
+  body_source_mode: substack_body_html
+  body_wordcount: 1324
 - substack_id: 177940071
   slug: the-oldest-diseases-we-know-of
   title: The Oldest Diseases We Know Of
@@ -1295,7 +1439,7 @@ posts:
   - cancer
   source_mode: substack_page
   wordcount: 1508
-  status: summary_only
+  status: mirrored
   dek: ''
   topics:
   - science
@@ -1309,7 +1453,7 @@ posts:
   related_reference_slugs: []
   related_story_ids: []
   search_excerpt: What they tell us about life, survival, and our place in deep time.
-  local_body_path: ''
+  local_body_path: content/post_bodies/the-oldest-diseases-we-know-of.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:53+00:00'
@@ -1319,7 +1463,11 @@ posts:
     cancer, parasites, and what paleopathology can reveal.
   primary_keyword: oldest diseases
   topic_cluster: historical-epidemiology
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/the-oldest-diseases-we-know-of
+  body_source_mode: substack_body_html
+  body_wordcount: 1572
 - substack_id: 177329295
   slug: humanitys-deadliest-companions-checking
   title: 'Humanity''s Deadliest Companions: Checking the Till on the Deadliest Microbes
@@ -1337,7 +1485,7 @@ posts:
   - smallpox
   source_mode: substack_page
   wordcount: 1577
-  status: summary_only
+  status: mirrored
   dek: Ranking history's deadliest microbes sounds simple until the denominator, timescale,
     diagnosis, and archives start fighting back.
   topics:
@@ -1353,7 +1501,7 @@ posts:
   related_story_ids: []
   search_excerpt: I was reorganizing parts of my bookshelf the other day when I came
     across my copy of Deadly Companions by Dorothy Crawford.
-  local_body_path: ''
+  local_body_path: content/post_bodies/humanitys-deadliest-companions-checking.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:53+00:00'
@@ -1364,7 +1512,11 @@ posts:
     timescale, diagnosis, and archives start fighting back.
   primary_keyword: deadliest microbes
   topic_cluster: historical-epidemiology
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/humanitys-deadliest-companions-checking
+  body_source_mode: substack_body_html
+  body_wordcount: 1624
 - substack_id: 176802554
   slug: islands-of-affliction-leprosy-and
   title: 'Islands of Affliction: Leprosy and Empire in the South Pacific'
@@ -1382,7 +1534,7 @@ posts:
   - Medical History
   source_mode: substack_page
   wordcount: 1868
-  status: summary_only
+  status: mirrored
   dek: Isolation was never just medical. It was stigma, empire, surveillance, exile,
     and disease control forced onto islands.
   topics:
@@ -1397,7 +1549,7 @@ posts:
   related_reference_slugs: []
   related_story_ids: []
   search_excerpt: Leprosy is much older than any empire.
-  local_body_path: ''
+  local_body_path: content/post_bodies/islands-of-affliction-leprosy-and.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:54+00:00'
@@ -1407,7 +1559,11 @@ posts:
     exile, and disease control forced onto islands.
   primary_keyword: leprosy South Pacific
   topic_cluster: historical-epidemiology
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/islands-of-affliction-leprosy-and
+  body_source_mode: substack_body_html
+  body_wordcount: 1964
 - substack_id: 176091810
   slug: the-night-staten-island-burned-its
   title: 'The Night Staten Island Burned Its Hospital: Fear, Fire, and the Forgotten
@@ -1423,7 +1579,7 @@ posts:
   - epidemiology
   source_mode: substack_page
   wordcount: 1590
-  status: summary_only
+  status: mirrored
   dek: In 1858, quarantine policy met local panic, and Staten Island answered with
     fire.
   topics:
@@ -1436,7 +1592,7 @@ posts:
   related_reference_slugs: []
   related_story_ids: []
   search_excerpt: Staten Island, September 1858.
-  local_body_path: ''
+  local_body_path: content/post_bodies/the-night-staten-island-burned-its.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:54+00:00'
@@ -1447,7 +1603,11 @@ posts:
     with fire.
   primary_keyword: Staten Island quarantine
   topic_cluster: historical-epidemiology
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/the-night-staten-island-burned-its
+  body_source_mode: substack_body_html
+  body_wordcount: 1636
 - substack_id: 175470298
   slug: when-diabetes-drugs-start-treating
   title: 'When Diabetes Drugs Start Treating Headaches: GLP-1 Agonists and the Migraine
@@ -1466,7 +1626,7 @@ posts:
   - ozempic
   source_mode: substack_page
   wordcount: 962
-  status: summary_only
+  status: mirrored
   dek: GLP-1 drugs keep escaping the box they were built for. Migraine might be another
     place metabolism and neurology overlap.
   topics:
@@ -1482,7 +1642,7 @@ posts:
   related_story_ids: []
   search_excerpt: The story of GLP-1 drugs have had so many plot twists it would almost
     sound lazy in a medical fiction novel.
-  local_body_path: ''
+  local_body_path: content/post_bodies/when-diabetes-drugs-start-treating.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:55+00:00'
@@ -1493,7 +1653,11 @@ posts:
     might be another place metabolism and neurology overlap.
   primary_keyword: GLP-1 migraine
   topic_cluster: neuroepidemiology
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/when-diabetes-drugs-start-treating
+  body_source_mode: substack_body_html
+  body_wordcount: 977
 - substack_id: 174580810
   slug: the-us-life-expectancy-gap-sounds
   title: The U.S. Life Expectancy Gap Sounds Worse Than It Is and (Hypothetically)
@@ -1508,7 +1672,7 @@ posts:
   - mortality
   source_mode: substack_page
   wordcount: 1353
-  status: summary_only
+  status: mirrored
   dek: America's life expectancy gap is real. The shape of the problem matters if
     you want to fix it instead of just despair over it.
   topics:
@@ -1520,7 +1684,7 @@ posts:
   related_reference_slugs: []
   related_story_ids: []
   search_excerpt: America isn’t cursed.
-  local_body_path: ''
+  local_body_path: content/post_bodies/the-us-life-expectancy-gap-sounds.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:55+00:00'
@@ -1531,7 +1695,11 @@ posts:
     matters if you want to fix it instead of just despair over it.
   primary_keyword: US life expectancy gap
   topic_cluster: epidemiologic-methods
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/the-us-life-expectancy-gap-sounds
+  body_source_mode: substack_body_html
+  body_wordcount: 1396
 - substack_id: 173900942
   slug: psychedelics-for-anxiety-what-the
   title: 'Psychedelics for Anxiety: What the New LSD Trial Does and Doesn''t Change'
@@ -1547,7 +1715,7 @@ posts:
   - psychedelics
   source_mode: substack_page
   wordcount: 817
-  status: summary_only
+  status: mirrored
   dek: 'The LSD trial is interesting. The boring questions still matter: comparator,
     blinding, durability, harms, and who actually benefits.'
   topics:
@@ -1561,7 +1729,7 @@ posts:
   related_reference_slugs: []
   related_story_ids: []
   search_excerpt: In the Middle Ages, ergot was a curse with a Latin name.
-  local_body_path: ''
+  local_body_path: content/post_bodies/psychedelics-for-anxiety-what-the.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:56+00:00'
@@ -1571,7 +1739,11 @@ posts:
     comparator, blinding, durability, harms, and who actually benefits.'
   primary_keyword: psychedelics anxiety trial
   topic_cluster: epidemiologic-methods
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/psychedelics-for-anxiety-what-the
+  body_source_mode: substack_body_html
+  body_wordcount: 831
 - substack_id: 173324414
   slug: body-snatching-the-doctors-riot-and
   title: Body-Snatching, the Doctors' Riot, and How Cadavers Built American Medicine
@@ -1586,7 +1758,7 @@ posts:
   - riots
   source_mode: substack_page
   wordcount: 1088
-  status: summary_only
+  status: mirrored
   dek: Anatomy needed bodies. Poverty, graveyards, the law, and medical ambition decided
     whose bodies were taken.
   topics:
@@ -1599,7 +1771,7 @@ posts:
   related_reference_slugs: []
   related_story_ids: []
   search_excerpt: Why cadavers were scarce in the first place
-  local_body_path: ''
+  local_body_path: content/post_bodies/body-snatching-the-doctors-riot-and.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:56+00:00'
@@ -1609,7 +1781,11 @@ posts:
     ambition decided whose bodies were taken.
   primary_keyword: Doctors Riot body snatching
   topic_cluster: historical-epidemiology
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/body-snatching-the-doctors-riot-and
+  body_source_mode: substack_body_html
+  body_wordcount: 1222
 - substack_id: 172614829
   slug: heat-doesnt-age-everyone-equally
   title: Heat Doesn’t Age Everyone Equally
@@ -1624,7 +1800,7 @@ posts:
   - longevity
   source_mode: substack_page
   wordcount: 1122
-  status: summary_only
+  status: mirrored
   dek: ''
   topics:
   - science
@@ -1636,7 +1812,7 @@ posts:
   related_reference_slugs: []
   related_story_ids: []
   search_excerpt: Tiny on average, bigger where exposure is high.
-  local_body_path: ''
+  local_body_path: content/post_bodies/heat-doesnt-age-everyone-equally.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:56+00:00'
@@ -1646,7 +1822,11 @@ posts:
     risk, social vulnerability, occupational exposure, and epidemiologic measurement.
   primary_keyword: heat aging risk
   topic_cluster: disease-ecology
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/heat-doesnt-age-everyone-equally
+  body_source_mode: substack_body_html
+  body_wordcount: 1158
 - substack_id: 172135919
   slug: finding-risk-where-history-put-it
   title: Finding Risk Where History Put It
@@ -1662,7 +1842,7 @@ posts:
   - rare diseases
   source_mode: substack_page
   wordcount: 2030
-  status: summary_only
+  status: mirrored
   dek: Some medical risk is inherited through DNA. Some is inherited through history.
   topics:
   - science
@@ -1676,7 +1856,7 @@ posts:
   related_reference_slugs: []
   related_story_ids: []
   search_excerpt: 'Opening Disclaimer: I’m not a geneticist.'
-  local_body_path: ''
+  local_body_path: content/post_bodies/finding-risk-where-history-put-it.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:57+00:00'
@@ -1686,7 +1866,11 @@ posts:
     history.
   primary_keyword: founder effects rare disease
   topic_cluster: epidemiologic-methods
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/finding-risk-where-history-put-it
+  body_source_mode: substack_body_html
+  body_wordcount: 2208
 - substack_id: 171521367
   slug: infectious-diseases-on-the-move-2025
   title: Infectious Diseases on the Move
@@ -1701,7 +1885,7 @@ posts:
   - epidemiology
   source_mode: substack_page
   wordcount: 1651
-  status: summary_only
+  status: mirrored
   dek: Disease ranges are changing, but not every outbreak is a climate story. The
     details still matter.
   topics:
@@ -1715,7 +1899,7 @@ posts:
   related_reference_slugs: []
   related_story_ids: []
   search_excerpt: Why ranges change
-  local_body_path: ''
+  local_body_path: content/post_bodies/infectious-diseases-on-the-move-2025.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:58+00:00'
@@ -1725,7 +1909,11 @@ posts:
     story. The details still matter.
   primary_keyword: climate infectious disease risk
   topic_cluster: disease-ecology
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/infectious-diseases-on-the-move-2025
+  body_source_mode: substack_body_html
+  body_wordcount: 1854
 - substack_id: 171024347
   slug: does-lithium-lower-alzheimers-risk
   title: Does Lithium Lower Alzheimer's Risk?
@@ -1741,7 +1929,7 @@ posts:
   - lithium
   source_mode: substack_page
   wordcount: 1270
-  status: summary_only
+  status: mirrored
   dek: The dementia signal is interesting. It is not strong enough to turn a trace
     exposure story into a prevention claim.
   topics:
@@ -1755,7 +1943,7 @@ posts:
   related_reference_slugs: []
   related_story_ids: []
   search_excerpt: Lithium used to be used in 7-Up as an upper.
-  local_body_path: ''
+  local_body_path: content/post_bodies/does-lithium-lower-alzheimers-risk.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:58+00:00'
@@ -1765,7 +1953,11 @@ posts:
     turn a trace exposure story into a prevention claim.
   primary_keyword: lithium Alzheimer’s risk
   topic_cluster: neuroepidemiology
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/does-lithium-lower-alzheimers-risk
+  body_source_mode: substack_body_html
+  body_wordcount: 1444
 - substack_id: 170328251
   slug: paper-mills-are-poisoning-science
   title: Paper Mills Are Poisoning Science
@@ -1781,7 +1973,7 @@ posts:
   - Pseudoscience
   source_mode: substack_page
   wordcount: 1681
-  status: summary_only
+  status: mirrored
   dek: Fake papers clutter journals, poison reviews and guidelines, reward bad incentives,
     and leave trash in the scientific record.
   topics:
@@ -1795,7 +1987,7 @@ posts:
   related_story_ids: []
   search_excerpt: You can now pay a few hundred bucks to publish your name on a scientific
     study.
-  local_body_path: ''
+  local_body_path: content/post_bodies/paper-mills-are-poisoning-science.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:58+00:00'
@@ -1805,7 +1997,11 @@ posts:
     bad incentives, and leave trash in the scientific record.
   primary_keyword: paper mills scientific fraud
   topic_cluster: epidemiologic-methods
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/paper-mills-are-poisoning-science
+  body_source_mode: substack_body_html
+  body_wordcount: 1957
 - substack_id: 169716392
   slug: eric-topols-super-agers-the-medical
   title: Eric Topol's Super Agers and the Medical System We Ought to Build
@@ -1823,7 +2019,7 @@ posts:
   - medicine
   source_mode: substack_page
   wordcount: 1717
-  status: summary_only
+  status: mirrored
   dek: 'The super-ager story starts with lucky biology and ends at a harder question:
     what would medicine look like if prevention were infrastructure?'
   topics:
@@ -1839,7 +2035,7 @@ posts:
   search_excerpt: I remember sitting in a gymnasium in Walnut Creek, California working
     with a group of elderly folk at an independent living facility measuring things
     like grip strength, up and down speed, and walking speed.
-  local_body_path: ''
+  local_body_path: content/post_bodies/eric-topols-super-agers-the-medical.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:59+00:00'
@@ -1849,7 +2045,11 @@ posts:
     question: what would medicine look like if prevention were infrastructure?'
   primary_keyword: super agers preventive medicine
   topic_cluster: epidemiologic-methods
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/eric-topols-super-agers-the-medical
+  body_source_mode: substack_body_html
+  body_wordcount: 1771
 - substack_id: 169015790
   slug: migraine-and-brain-fog
   title: Migraine and brain fog
@@ -1866,7 +2066,7 @@ posts:
   - neuroscience
   source_mode: substack_page
   wordcount: 1426
-  status: summary_only
+  status: mirrored
   dek: ''
   topics:
   - science
@@ -1880,7 +2080,7 @@ posts:
   related_story_ids: []
   search_excerpt: impacts across multiple cognitive domains, migraine phases, and
     medication trade-offs
-  local_body_path: ''
+  local_body_path: content/post_bodies/migraine-and-brain-fog.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:59+00:00'
@@ -1890,7 +2090,11 @@ posts:
     and how cognitive symptoms complicate the lived burden of migraine.
   primary_keyword: migraine brain fog
   topic_cluster: neuroepidemiology
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/migraine-and-brain-fog
+  body_source_mode: substack_body_html
+  body_wordcount: 1508
 - substack_id: 168528776
   slug: memetics-is-dead-long-live-memetics
   title: Memetics is dead, long live memetics
@@ -1907,7 +2111,7 @@ posts:
   - memetics
   source_mode: substack_page
   wordcount: 1092
-  status: summary_only
+  status: mirrored
   dek: ''
   topics:
   - science
@@ -1921,7 +2125,7 @@ posts:
   related_story_ids: []
   search_excerpt: On stealth memetics, viral ideas, and why the term may have died
     while the logic behind it lived on.
-  local_body_path: ''
+  local_body_path: content/post_bodies/memetics-is-dead-long-live-memetics.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:00+00:00'
@@ -1931,7 +2135,11 @@ posts:
     spread, and cultural transmission kept shaping public life.
   primary_keyword: memetics viral ideas
   topic_cluster: epidemiologic-methods
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/memetics-is-dead-long-live-memetics
+  body_source_mode: substack_body_html
+  body_wordcount: 1172
 - substack_id: 167965967
   slug: shrooms-vs-antidepressants-a-meta
   title: 'Shrooms vs. Antidepressants: A Meta-Analysis Calls It a Tie'
@@ -1947,7 +2155,7 @@ posts:
   - psychedelics
   source_mode: substack_page
   wordcount: 946
-  status: summary_only
+  status: mirrored
   dek: Psychedelic hype makes the results feel cleaner than they are. Design, dose,
     expectancy, and follow-up still matter.
   topics:
@@ -1961,7 +2169,7 @@ posts:
   related_reference_slugs: []
   related_story_ids: []
   search_excerpt: In the middle ages people feared ergot like a curse.
-  local_body_path: ''
+  local_body_path: content/post_bodies/shrooms-vs-antidepressants-a-meta.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:00+00:00'
@@ -1971,7 +2179,11 @@ posts:
     Design, dose, expectancy, and follow-up still matter.
   primary_keyword: psilocybin antidepressants meta-analysis
   topic_cluster: epidemiologic-methods
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/shrooms-vs-antidepressants-a-meta
+  body_source_mode: substack_body_html
+  body_wordcount: 973
 - substack_id: 167544796
   slug: the-poison-nobody-could-agree-on
   title: The Poison Nobody Could Agree On
@@ -1987,7 +2199,7 @@ posts:
   - epidemiology
   source_mode: substack_page
   wordcount: 1475
-  status: summary_only
+  status: mirrored
   dek: One French town got sick in 1951, and the diagnosis has been argued over ever
     since.
   topics:
@@ -2001,7 +2213,7 @@ posts:
   related_story_ids: []
   search_excerpt: In August of 1951, something toxic ripped through the town of Pont-Saint-Esprit
     in southern France.
-  local_body_path: ''
+  local_body_path: content/post_bodies/the-poison-nobody-could-agree-on.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:00+00:00'
@@ -2011,7 +2223,11 @@ posts:
     over ever since.
   primary_keyword: Pont-Saint-Esprit outbreak
   topic_cluster: historical-epidemiology
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/the-poison-nobody-could-agree-on
+  body_source_mode: substack_body_html
+  body_wordcount: 1573
 - substack_id: 167022011
   slug: migraine-what-we-know-and-who-it
   title: 'Migraine: What We Know and Who It Hits Hardest'
@@ -2029,7 +2245,7 @@ posts:
   - science communication
   source_mode: substack_page
   wordcount: 2409
-  status: summary_only
+  status: mirrored
   dek: ''
   topics:
   - science
@@ -2044,7 +2260,7 @@ posts:
   search_excerpt: Migraine is one of the most disabling conditions we know of. Here's
     what the data says about who gets it, who doesn't get help, and why we still don't
     quite understand it.
-  local_body_path: ''
+  local_body_path: content/post_bodies/migraine-what-we-know-and-who-it.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:01+00:00'
@@ -2054,7 +2270,11 @@ posts:
     says about who gets it, who lacks help, and why uncertainty remains.
   primary_keyword: migraine epidemiology
   topic_cluster: neuroepidemiology
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/migraine-what-we-know-and-who-it
+  body_source_mode: substack_body_html
+  body_wordcount: 2688
 - substack_id: 166858843
   slug: something-i-noticed-at-the-american
   title: Something I Noticed at the American Headache Society Conference
@@ -2067,7 +2287,7 @@ posts:
   - Migraine
   source_mode: substack_page
   wordcount: 843
-  status: summary_only
+  status: mirrored
   dek: ''
   topics:
   - science
@@ -2077,7 +2297,7 @@ posts:
   related_reference_slugs: []
   related_story_ids: []
   search_excerpt: A short post on my time at AHS and a question I had during the conference.
-  local_body_path: ''
+  local_body_path: content/post_bodies/something-i-noticed-at-the-american.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:01+00:00'
@@ -2087,7 +2307,11 @@ posts:
     meeting, focused on clinical questions, evidence gaps, and field direction.
   primary_keyword: American Headache Society migraine
   topic_cluster: neuroepidemiology
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/something-i-noticed-at-the-american
+  body_source_mode: substack_body_html
+  body_wordcount: 866
 - substack_id: 164702703
   slug: snort-this-to-tan-the-bizarre-and
   title: 'Snort This to Tan: The Bizarre and Dangerous Barbie Drug'
@@ -2104,7 +2328,7 @@ posts:
   - supplements
   source_mode: substack_page
   wordcount: 723
-  status: summary_only
+  status: mirrored
   dek: A black-market peptide promises a tan and a libido boost. The evidence is messier
     and uglier than the marketing.
   topics:
@@ -2119,7 +2343,7 @@ posts:
   related_story_ids: []
   search_excerpt: There’s a black-market peptide that’ll give you a tan, a hard-on,
     and possibly cancer; and it’s going up people’s noses in Barbie-core packaging.
-  local_body_path: ''
+  local_body_path: content/post_bodies/snort-this-to-tan-the-bizarre-and.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:02+00:00'
@@ -2129,7 +2353,11 @@ posts:
     is messier and uglier than the marketing.
   primary_keyword: melanotan Barbie drug
   topic_cluster: wellness-claims
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/snort-this-to-tan-the-bizarre-and
+  body_source_mode: substack_body_html
+  body_wordcount: 786
 - substack_id: 166112010
   slug: how-accurate-are-wearable-fitness
   title: How Accurate Is Your Apple Watch?
@@ -2146,7 +2374,7 @@ posts:
   - Health Misinformation
   source_mode: substack_page
   wordcount: 2266
-  status: summary_only
+  status: mirrored
   dek: Fitness trackers are useful. They are also only as good as the signal, algorithm,
     body, and question being measured.
   topics:
@@ -2161,7 +2389,7 @@ posts:
   related_story_ids: []
   search_excerpt: I’ve had an Apple watch for a while and have mostly used it to track
     my sleep.
-  local_body_path: ''
+  local_body_path: content/post_bodies/how-accurate-are-wearable-fitness.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:02+00:00'
@@ -2171,7 +2399,11 @@ posts:
     signal, algorithm, body, and question being measured.
   primary_keyword: Apple Watch accuracy
   topic_cluster: epidemiologic-methods
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/how-accurate-are-wearable-fitness
+  body_source_mode: substack_body_html
+  body_wordcount: 2389
 - substack_id: 165597582
   slug: war-on-many-fronts-during-the-justinianic
   title: War on Many Fronts During the Justinianic Plague (541 CE)
@@ -2189,7 +2421,7 @@ posts:
   - epidemiology
   source_mode: substack_page
   wordcount: 2702
-  status: summary_only
+  status: mirrored
   dek: ''
   topics:
   - science
@@ -2205,7 +2437,7 @@ posts:
   search_excerpt: Draft number 2 of this post. Thought I tackled a few topics too
     early and will be re-releasing some very early posts. Enjoy War Epidemiology chapter
     drafts again!
-  local_body_path: ''
+  local_body_path: content/post_bodies/war-on-many-fronts-during-the-justinianic.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:03+00:00'
@@ -2215,7 +2447,11 @@ posts:
     stress, empire, logistics, and disease pressure in 541 CE.
   primary_keyword: Justinianic Plague war
   topic_cluster: disease-and-war
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/war-on-many-fronts-during-the-justinianic
+  body_source_mode: substack_body_html
+  body_wordcount: 2769
 - substack_id: 164856375
   slug: melatonin-is-misunderstood-especially
   title: Melatonin Is Misunderstood
@@ -2230,7 +2466,7 @@ posts:
   - Sleep
   source_mode: substack_page
   wordcount: 1313
-  status: summary_only
+  status: mirrored
   dek: Melatonin is treated like a harmless sleep switch. Timing, dose, circadian
     rhythm, and biology make it stranger than that.
   topics:
@@ -2243,7 +2479,7 @@ posts:
   related_reference_slugs: []
   related_story_ids: []
   search_excerpt: When I was in my early teens I had some trouble falling asleep.
-  local_body_path: ''
+  local_body_path: content/post_bodies/melatonin-is-misunderstood-especially.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:04+00:00'
@@ -2253,7 +2489,11 @@ posts:
     circadian rhythm, and biology make it stranger than that.
   primary_keyword: melatonin sleep evidence
   topic_cluster: wellness-claims
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/melatonin-is-misunderstood-especially
+  body_source_mode: substack_body_html
+  body_wordcount: 1411
 - substack_id: 164052573
   slug: when-the-influencers-claims-are-stronger
   title: When the Influencer's Claims Are Stronger Than the Evidence
@@ -2273,7 +2513,7 @@ posts:
   - supplements
   source_mode: substack_page
   wordcount: 1382
-  status: summary_only
+  status: mirrored
   dek: Vitamin D has real biology behind it. That does not mean the dementia claim
     is as strong as the clip makes it sound.
   topics:
@@ -2291,7 +2531,7 @@ posts:
     have seen the new video of Dr. Rhonda Patrick explaining how vitamin D supplements
     can cut your dementia risk by 40%2. That’s a bold, hopeful claim based on an observational
     study of over 12,000 people. And I
-  local_body_path: ''
+  local_body_path: content/post_bodies/when-the-influencers-claims-are-stronger.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:05+00:00'
@@ -2301,7 +2541,11 @@ posts:
     claim is as strong as the clip makes it sound.
   primary_keyword: vitamin D dementia Rhonda Patrick
   topic_cluster: wellness-claims
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/when-the-influencers-claims-are-stronger
+  body_source_mode: substack_body_html
+  body_wordcount: 1454
 - substack_id: 163752277
   slug: creatine-is-underrated-by-those-who
   title: Creatine Is Underrated
@@ -2318,7 +2562,7 @@ posts:
   - creatine
   source_mode: substack_page
   wordcount: 2097
-  status: summary_only
+  status: mirrored
   dek: Creatine is not magic. It is just better supported than a lot of people still
     seem to think.
   topics:
@@ -2333,7 +2577,7 @@ posts:
   related_reference_slugs: []
   related_story_ids: []
   search_excerpt: Creatine is having another moment in the news.
-  local_body_path: ''
+  local_body_path: content/post_bodies/creatine-is-underrated-by-those-who.html
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:46:06+00:00'
@@ -2343,4 +2587,8 @@ posts:
     people still seem to think.
   primary_keyword: creatine benefits evidence
   topic_cluster: wellness-claims
-  indexing_strategy: noindex_stub
+  indexing_strategy: mirrored
+  body_synced_at: '2026-06-29T15:00:19+00:00'
+  body_source_url: https://theedgeofepidemiology.substack.com/p/creatine-is-underrated-by-those-who
+  body_source_mode: substack_body_html
+  body_wordcount: 2259
