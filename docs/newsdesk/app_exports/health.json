@@ -12,21 +12,21 @@
       "STAT",
       "Sky News"
     ],
-    "metadata_only_count": 139,
+    "metadata_only_count": 143,
     "sources_cached": 0,
     "sources_failed": 1,
-    "sources_live": 154,
+    "sources_live": 158,
     "story_count_change": 4,
     "wrapper_only_count": 6
   },
   "freshness_summary": {
     "fallback_cache": 0,
-    "live": 154,
+    "live": 158,
     "refresh_cache": 0,
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-06-30T14:16:43",
+  "generated_at": "2026-06-30T14:30:55",
   "source_failures": [
     {
       "error": "HTTPSConnectionPool(host='www.aphis.usda.gov', port=443): Read timed out. (read timeout=8)",
