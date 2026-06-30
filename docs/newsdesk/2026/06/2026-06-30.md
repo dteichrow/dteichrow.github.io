@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-06-30
-Generated at: 2026-06-30T03:01
+Generated at: 2026-06-30T03:12
 Search window: 7 day(s) ending 2026-06-30
 
 ## Executive scan
@@ -54,7 +54,7 @@ Search window: 7 day(s) ending 2026-06-30
 - Topic size: 124 item(s) across 86 source(s); 3 official/primary-source item(s).
 - Lead item: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 06, Data as of 21 June 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-2) (WHO Regional Office for Africa, 2026-06-26T16:55+00:00)
 - Detailed note: Democratic Republic of the Congo Since 14 June 2026, a total of 240 new laboratory-confirmed cases, including 75 new confirmed deaths, have been reported, representing a 29.7% increase in cumulative confirmed cases and a 39.1% increase in cumulative confirmed deaths. As of 21 June 2026, a cumulative total of 1048 laboratory-confirmed cases, including 267 confirmed deaths [case fatality ratio (CFR) 25.5%], has...
-- Evidence notes: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 06, Data as of 21 June 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-2) (WHO Regional Office for Africa); [As first imported Ebola case is recorded in Europe, ECDC calls on EU Member States to continue investing in preparedness](https://www.ecdc.europa.eu/en/news-events/first-imported-ebola-case-recorded-europe-ecdc-calls-eu-member-states-continue) (ECDC News); [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) (Texas Department of State Health Services News); [Ebola outbreak could cost Africa up to $3.6 billion, UN says](https://www.internazionale.it/ultime-notizie-reuters/2026/06/30/ebola-outbreak-could-cost-africa-up-to-3-6-billion-un-says) (Internazionale); [Ebola Outbreak Threatens Africa's Economic Stability](https://www.devdiscourse.com/article/health/3942851-ebola-outbreak-threatens-africas-economic-stability) (Devdiscourse)
+- Evidence notes: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 06, Data as of 21 June 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-2) (WHO Regional Office for Africa); [As first imported Ebola case is recorded in Europe, ECDC calls on EU Member States to continue investing in preparedness](https://www.ecdc.europa.eu/en/news-events/first-imported-ebola-case-recorded-europe-ecdc-calls-eu-member-states-continue) (ECDC News); [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) (Texas Department of State Health Services News); [UN warns Ebola outbreak could cost Africa up to $3.6 billion](https://www.thecitizen.co.tz/tanzania/news/africa/un-warns-ebola-outbreak-could-cost-africa-up-to-3-6-billion-5513722) (thecitizen.co.tz); [Ebola outbreak could cost Africa up to $3.6 billion, UN says](https://www.internazionale.it/ultime-notizie-reuters/2026/06/30/ebola-outbreak-could-cost-africa-up-to-3-6-billion-un-says) (Internazionale)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
@@ -429,6 +429,8 @@ Search window: 7 day(s) ending 2026-06-30
 
 
 ## Other notable readings
+- [UN warns Ebola outbreak could cost Africa up to $3.6 billion](https://www.thecitizen.co.tz/tanzania/news/africa/un-warns-ebola-outbreak-could-cost-africa-up-to-3-6-billion-5513722) | thecitizen.co.tz | 2026-06-30T09:39+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - [Ebola outbreak could cost Africa up to $3.6 billion, UN says](https://www.internazionale.it/ultime-notizie-reuters/2026/06/30/ebola-outbreak-could-cost-africa-up-to-3-6-billion-un-says) | Internazionale | 2026-06-30T08:59+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Ebola Outbreak Threatens Africa's Economic Stability](https://www.devdiscourse.com/article/health/3942851-ebola-outbreak-threatens-africas-economic-stability) | Devdiscourse | 2026-06-30T08:59+00:00 | Outbreaks and emerging infections
@@ -467,8 +469,6 @@ Search window: 7 day(s) ending 2026-06-30
   Limited detail was available from feed metadata alone.
 - [Africa CDC warns Ebola outbreak in DR Congo risks becoming largest on record](https://www.dongascience.com/en/news/78679) | 동아사이언스 | 2026-06-29T07:00+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [DENGUE: SYMPTOMS, WARNING SIGNS AND PREVENTION | Daily Mirror - Sri Lanka - newspaper](https://www.magzter.com/stories/newspaper/Daily-Mirror-Sri-Lanka/DENGUE-SYMPTOMS-WARNING-SIGNS-AND-PREVENTION) | Magzter | 2026-06-29T06:16+00:00 | Outbreaks and emerging infections
-  Most cases are mild to moderate. A smaller share progress to severe dengue, which is the phase that requires hospital monitoring and, occasionally, intensive care. Dengue and seasonal influenza look almost identical for the first two or three days, and that overlap costs lives every single year, not just during outbreak years.
 
 ## Papers worth saving
 - [The role of hyperbaric oxygen treatment in a case of pyomyositis.](https://pubmed.ncbi.nlm.nih.gov/42290580/)
