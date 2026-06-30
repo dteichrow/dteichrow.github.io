@@ -1,170 +1,110 @@
-# Edge of Epidemiology Umbrella Site
+# The Edge of Epidemiology Public Site
 
-Static umbrella site for:
+Public repository for [The Edge of Epidemiology](https://dteichrow.github.io/), a health-evidence and historical-epidemiology publication built by Devin Teichrow, MSc.
 
-- `The Pathogen Dispatch` newsdesk
-- `Virtual Teaching Tools` static interactives
-- `American Epidemic Timeline`
-- `Pathogen Atlas`
-- `Maritime Disease Atlas`
-- `Viking Health Atlas`
-- `Revolutionary War` historical atlas section
-- the published `Edge of Epidemiology` writing archive
+The site combines long-form science writing, outbreak monitoring, disease reference pages, and interactive teaching tools. It is meant to make epidemiologic evidence easier to inspect: what is known, what is uncertain, what sources support a claim, and how historical context changes the interpretation.
 
-## What this repo does
+## What To Look At First
 
-This site turns the existing public surfaces into one navigable publication shell.
+- [Public site](https://dteichrow.github.io/): umbrella home page for essays, tools, reference pages, and the newsdesk.
+- [Essays](https://dteichrow.github.io/essays/): public archive of epidemiology, infectious-disease history, neuroepidemiology, and evidence-methods writing.
+- [Virtual Teaching Tools](https://dteichrow.github.io/tools/): interactive maps, timelines, atlases, and evidence exhibits.
+- [Pathogen and disease reference pages](https://dteichrow.github.io/reference/): concise pages organized around outbreak and disease-literacy needs.
+- [Opportunities / portfolio page](https://dteichrow.github.io/opportunities/): summary of research communication, evidence translation, and applied public-health work.
 
-- `content/posts.yml` is the authoritative essay registry
-- `content/tools.yml` is the teaching-tool registry for timelines, atlases, maps, and interactives
-- `content/atlases.yml` remains supported for legacy atlas URLs and post relationships
-- the public Substack sitemap powers full historical backfill
-- the public Substack archive API, RSS feed, and sitemap power incremental new-post sync when those endpoints are reachable
-- every post gets a local public page immediately
-- posts default to `summary_only` stub pages with canonical outbound links
-- `epi-dossier` public outputs are imported into this site under the new route map
+## Why This Exists
 
-## Routes
+Most public health writing either collapses uncertainty into a clean story or buries the story inside technical documents. This project tries to do the opposite: keep the narrative readable while making the evidence trail visible.
 
-- `/`
-- `/newsdesk/`
-- `/stories/`
-- `/reference/`
-- `/notebook/`
-- `/tools/`
-- `/tools/american-epidemic-timeline/`
-- `/atlases/`
-- `/atlases/pathogen/`
-- `/atlases/maritime/`
-- `/atlases/revolutionary-war/`
-- `/atlases/viking/`
-- `/historical/`
-- `/essays/`
-- `/essays/<slug>/`
-- `/methods/`
-- `/about/`
-- `/opportunities/`
-- `/search/`
+The recurring design principles are:
 
-## Local commands
+- separate evidence from interpretation;
+- show source trails for factual claims;
+- keep uncertainty visible when evidence is thin, contested, or retrospective;
+- make historical epidemiology useful for modern health questions;
+- turn dense scientific material into tools a reader can actually navigate.
 
-Use the existing `epi-dossier` virtualenv or a new Python 3.12 environment with `PyYAML` and `pytest` installed.
+## Technical Scope
 
-Backfill the full Substack archive:
+This is a static publishing system built around Python-generated content and GitHub Pages. It is not a generic blog theme. The repo contains the publication shell, data registries, build scripts, generated public pages, and tests used to keep the site from quietly breaking.
 
-```bash
-python -m src.substack_sync --mode backfill
-```
+Core pieces:
 
-Run the 15-minute incremental-style sync manually:
+- `content/posts.yml`: authoritative essay registry.
+- `content/tools.yml`: registry for interactive teaching tools, maps, timelines, and atlases.
+- `content/atlases.yml`: legacy atlas relationships and stable atlas routes.
+- `data/sources/sources.json`: structured source registry for cited claims in public tools.
+- `src/build_site.py`: static-site generation.
+- `src/substack_sync.py`: Substack archive and incremental-post sync.
+- `scripts/smoke_test_tool_pages.py`: production-facing checks for broken interactive pages.
+- `tests/`: regression tests for site generation and sync behavior.
 
-```bash
-python -m src.substack_sync --mode incremental
-```
+The public site is generated into `docs/` and deployed through GitHub Pages.
 
-Validate source provenance for the interactive learning tools:
+## Evidence Standard
 
-```bash
-python scripts/validate_tool_sources.py
-```
+The interactive tools are teaching tools, not exhaustive historical or epidemiologic databases. Entries prioritize claims supported by historical scholarship, epidemiologic literature, public-health records, public datasets, or clearly labeled primary sources.
 
-Smoke-test the built public tool pages for placeholder shells, zero-count regressions, and missing static fallback content:
+Displayed claims use confidence categories:
 
-```bash
-python scripts/smoke_test_tool_pages.py
-```
+- `high`: multiple strong sources, or one definitive primary/technical source for the displayed claim.
+- `moderate`: supported but limited, indirect, source-type dependent, or interpretive.
+- `low`: plausible but thin evidence.
+- `contested`: serious scholarly disagreement or disputed retrospective diagnosis.
+- `speculative`: teaching model or hypothesis only, displayed only with an explicit caveat.
 
-Build the umbrella site:
+Disease origin claims, mortality claims, date ranges, route claims, reservoir/vector claims, public-health interpretations, and historical consequences should have a source trail. If the literature does not support a claim, the claim should be omitted or explicitly framed as uncertain.
+
+## Relevance To Evidence, Data, And AI-Assisted Workflows
+
+This project is a practical example of the kind of work I enjoy: turning messy source material into structured, reviewable outputs.
+
+It involves:
+
+- building content registries and data contracts for public-facing evidence products;
+- using automation to keep a large writing archive navigable;
+- checking generated pages for broken states and missing public content;
+- translating research into clear narrative, tabular, and interactive formats;
+- using AI-assisted workflows as drafting, search, and coding support while preserving human review of claims, sources, and interpretation.
+
+For clinical evidence or real-world-data roles, the closest transferable habits are not the specific disease-history content. They are the workflow habits: define the question, inspect source structure, track uncertainty, generate a usable artifact, and QA the result before a reader or stakeholder relies on it.
+
+## Local Development
+
+Use Python 3.12 with `PyYAML` and `pytest` installed.
+
+Build the site:
 
 ```bash
 python -m src.build_site --site-base-url /
 ```
 
-Discover and stage Pathogen Atlas candidates:
+Run the incremental Substack sync manually:
 
 ```bash
-python -m src.pathogen_atlas_ingest discover --limit 300
-python -m src.pathogen_atlas_ingest enrich
-python -m src.pathogen_atlas_ingest validate
-python -m src.pathogen_atlas_ingest promote
+python -m src.substack_sync --mode incremental
 ```
 
-The ingestion workflow uses Wikipedia/Wikidata only for candidate discovery.
-Public atlas entries are promoted only after reviewed, non-Wikipedia evidence
-has been attached in `external/pathogen_atlas/catalog/drafts.json`.
+Backfill the Substack archive:
 
-## How the import works
+```bash
+python -m src.substack_sync --mode backfill
+```
 
-For the historical essay archive:
+Run smoke checks for public tool pages:
 
-- full URL inventory comes from the public Substack sitemap
-- richer current metadata can come from the archive page
-- individual public post pages are used to fill title, excerpt, cover, tags, and dates
+```bash
+python scripts/smoke_test_tool_pages.py
+```
 
-For the live desk:
+Run tests:
 
-- local builds import from the sibling `../epi-dossier/docs`
-- CI builds can clone `https://github.com/dteichrow/epi-dossier.git` if the sibling path is unavailable
-- `substack_sync` updates the persisted repository content and generated docs, but it does not deploy GitHub Pages
-- Substack may block GitHub-hosted runners; when the sync report is degraded, CI skips rebuild/commit rather than republishing stale essay state as authoritative
-- `deploy_pages` is the only Pages deployer; it publishes committed content after normal pushes or manual dispatches
-- Pages deployments are queued instead of canceled so automated Newsdesk mirror pushes do not interrupt an in-progress deploy
-- the Pages deploy step retries once after a short delay so a transient GitHub Pages deployment error does not fail the whole publication path immediately
+```bash
+pytest
+```
 
-For virtual teaching tools:
+## Notes For Reviewers
 
-- `content/tools.yml` drives `/tools/`, the home-page tool cards, search export entries, and the `tools.json` app export
-- existing atlas cards have been migrated into the tool registry while `content/atlases.yml` keeps `/atlases/` and `/atlases/<name>/` routes stable
-- `external/american_epidemic_timeline/` is copied into `docs/tools/american-epidemic-timeline/`
-- the timeline data contract lives in `external/american_epidemic_timeline/data/american_epidemic_timeline_data.js`
-- the Pathogen Atlas public payload is generated into `external/pathogen_atlas/data/pathogen_atlas_data.js` and copied into `docs/atlases/pathogen/`
-- the Maritime Disease Atlas uses `external/maritime_disease_atlas/data/maritime_disease_atlas_data.js` for map features and guided-tour scenario text, plus local archival image credits in the atlas app
-- `data/sources/sources.json` is the central source registry used by `scripts/validate_tool_sources.py`
-- `scripts/smoke_test_tool_pages.py` checks the built `docs/` pages for production-facing hydration failures: timeline counters stuck at zero, pathogen loading shells, empty origin panels, and maritime module lists not exposed as readable page content
+The generated `docs/` tree is intentionally committed because GitHub Pages publishes from it. The more useful review targets are usually the registries, source data, build scripts, and tests rather than the generated HTML itself.
 
-## Learning tool evidence standard
-
-These tools are teaching tools, not exhaustive historical or epidemiologic databases. Entries privilege claims supported by historical scholarship, epidemiologic literature, public-health records, public datasets, or clearly labeled primary sources. Absence from a tool does not mean absence from history.
-
-Every displayed factual claim should have a source trail. Disease origin claims, mortality claims, date ranges, route claims, reservoir/vector claims, public-health interpretations, and historical consequences need source IDs. Uncertain or contested claims should remain visibly uncertain rather than being smoothed into certainty. If the literature does not support a claim, omit it.
-
-Use the shared confidence categories consistently:
-
-- `high`: multiple strong sources, or one definitive primary/technical source for the displayed claim
-- `moderate`: supported but limited, indirect, source-type dependent, or interpretive
-- `low`: plausible but thin evidence
-- `contested`: serious scholarly disagreement or disputed retrospective diagnosis
-- `speculative`: teaching model or hypothesis only, displayed only with an explicit caveat
-
-Source records live in `data/sources/sources.json` and should keep the fields `source_id`, `full_citation`, `short_citation`, `authors`, `year`, `title`, `publication_or_publisher`, `url_or_doi`, `source_type`, `topic_tags`, `notes_on_use`, and `reliability_notes`. Tool records should cite those IDs directly, and interpretive records can add a `claims` list with `claim`, `source_ids`, `confidence`, `claim_type`, and optional `notes` or `uncertainty_note`.
-
-## GitHub Actions
-
-- `.github/workflows/substack-sync.yml`
-  - runs every 15 minutes
-  - pulls the RSS feed
-  - updates `content/posts.yml`
-  - rebuilds `docs/`
-  - commits changes only when something changed
-
-- `.github/workflows/archive-backfill.yml`
-  - manual full re-hydration
-  - useful when historical archive integrity needs to be refreshed
-
-- `.github/workflows/deploy-pages.yml`
-  - builds the umbrella site on every push to `main`
-  - uploads `docs/` as the Pages artifact
-  - deploys the public site through GitHub Pages
-
-## GitHub Pages settings
-
-This repo is set up for the GitHub Actions deployment model rather than the older
-`docs/` branch-folder publishing toggle.
-
-- set the repository Pages source to `GitHub Actions`
-- keep `docs/.nojekyll` in place
-- if you publish under a custom root domain, `--site-base-url /` is correct
-- the recommended personal custom domain is `devinteichrow.com`; add `docs/CNAME`
-  only after DNS is ready and GitHub Pages is configured for that domain
-- if you publish under a repository subpath instead, rebuild with the matching
-  base URL before deployment
+This project is actively evolving, so some local experiments may be cleaner than others. The core public-facing standard is simple: the live site should help readers understand evidence without pretending uncertainty has disappeared.
