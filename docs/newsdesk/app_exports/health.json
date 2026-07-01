@@ -5,13 +5,14 @@
       "ABC News",
       "BBC",
       "CIDRAP",
+      "CNN",
       "New York Times"
     ],
     "metadata_only_count": 25,
     "sources_cached": 0,
     "sources_failed": 1,
     "sources_live": 42,
-    "story_count_change": 4,
+    "story_count_change": 5,
     "wrapper_only_count": 2
   },
   "freshness_summary": {
@@ -21,7 +22,7 @@
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-07-01T13:40:02",
+  "generated_at": "2026-07-01T14:00:06",
   "source_failures": [
     {
       "error": "HTTPSConnectionPool(host='www.aphis.usda.gov', port=443): Read timed out. (read timeout=8)",
