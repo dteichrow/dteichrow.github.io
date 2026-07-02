@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-07-02
-Generated at: 2026-07-02T12:16
+Generated at: 2026-07-02T13:00
 Search window: 7 day(s) ending 2026-07-02
 
 ## Executive scan
@@ -17,10 +17,10 @@ Search window: 7 day(s) ending 2026-07-02
 
 ## Ongoing stories and what changed
 ### Ebola virus disease
-- Lead item: [Researchers launch study on Ebola treatments as Congo outbreak worsens - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/Technology/wireStory/researchers-launch-study-ebola-treatments-congo-outbreak-worsens-134414986) (ABC News - Breaking News, Latest News and Videos)
+- Lead item: [Ramaphosa in DR Congo as Africa races to contain expanding Ebola outbreak](https://eastleighvoice.co.ke/africa/374908/ramaphosa-in-dr-congo-as-africa-races-to-contain-expanding-ebola-outbreak) (The Eastleigh Voice)
 - Newly tracked story cluster: 19 item(s) across 17 source(s).
 - Baseline snapshot created with 19 clustered item(s) across 17 source(s).
-- KMVU FOX 26 Medford now includes deaths or fatal cases in the story frame.
+- Outbreak News Today now includes deaths or fatal cases in the story frame.
 - The Eastern Herald now foregrounds vaccination or vaccine policy in the story.
 
 ### Dengue and arboviruses
@@ -46,9 +46,9 @@ Search window: 7 day(s) ending 2026-07-02
 ## Major topics
 ### Ebola virus disease
 - Topic size: 19 item(s) across 17 source(s); 0 official/primary-source item(s).
-- Lead item: [Researchers launch study on Ebola treatments as Congo outbreak worsens - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/Technology/wireStory/researchers-launch-study-ebola-treatments-congo-outbreak-worsens-134414986) (ABC News - Breaking News, Latest News and Videos, 2026-07-02T16:50+00:00)
+- Lead item: [Ramaphosa in DR Congo as Africa races to contain expanding Ebola outbreak](https://eastleighvoice.co.ke/africa/374908/ramaphosa-in-dr-congo-as-africa-races-to-contain-expanding-ebola-outbreak) (The Eastleigh Voice, 2026-07-02T19:30+00:00)
 - Detailed note: The Bundibugyo strain behind this outbreak, DRC’s 17th, has now confirmed 1,307 cases and 377 deaths since the government declared the emergency on May 15, with nearly 200 new infections recorded since last week’s already-alarming tallies, Al Jazeera reported . Under the worst case, if the virus crosses into Rwanda and Angola while fuel costs remain elevated by the conflict in Iran, the projection reaches $3.6...
-- Evidence notes: [Researchers launch study on Ebola treatments as Congo outbreak worsens - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/Technology/wireStory/researchers-launch-study-ebola-treatments-congo-outbreak-worsens-134414986) (ABC News - Breaking News, Latest News and Videos); [More than 400 dead in DR Congo's spreading Ebola outbreak](https://www.fox26medford.com/news/national/more-than-400-dead-in-dr-congos-spreading-ebola-outbreak/article_38d67348-5284-57b8-b19d-22f05b3ce9a2.html) (KMVU FOX 26 Medford); [Malaria fears grow in Congo's Ebola outbreak hotspots](https://news.google.com/rss/articles/CBMingFBVV95cUxNQVNRaWUtVklJWFI4bmRPeTlaeTVRMTBiMVNYTU1mcFhuN0RyUUx2VXk1UnNNcTZvcU5Ddk5mYlZ1TTUtblZNRmx0cE0zU3UtYUVQMjVLbTdWRG5ULWlNRng5Vkprd05PcFNPOFJ1RlZKdVpueUYtWW1icmJSV0VkQnh6NjNwemg3bVkzOEFQZ21SOHJwVnl1VW1CbW1ZQQ?oc=5) (Polity.org.za); [Ebola outbreak cases and deaths rise in Congo](https://news.google.com/rss/articles/CBMigwFBVV95cUxOVUwtN2xwMXNQb3oyQkhPWU4yWmN2MU9vMzZfd1NEdWZ0cHRHUFRkdURhN2p2YXJBQTVoV1NZMWFrWnZfcG1CMlRJZWp0b1I4QU5xTlJqckoyZjVNRkFxZktfRkdsSzZ0OUotemRIR0JFSW1MTlA4VGNSVkcydWpUTWZ5VQ?oc=5) (Outbreak News Today); [Ebola Spreads to Fourth Province in Congo as U.N. Warns of $3.6 Billion Economic Hit](https://easternherald.com/2026/07/02/ebola-congo-fourth-province-undp-economic-warning/) (The Eastern Herald)
+- Evidence notes: [Ramaphosa in DR Congo as Africa races to contain expanding Ebola outbreak](https://eastleighvoice.co.ke/africa/374908/ramaphosa-in-dr-congo-as-africa-races-to-contain-expanding-ebola-outbreak) (The Eastleigh Voice); [Researchers launch study on Ebola treatments as Congo outbreak worsens - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/Technology/wireStory/researchers-launch-study-ebola-treatments-congo-outbreak-worsens-134414986) (ABC News - Breaking News, Latest News and Videos); [Researchers launch study on Ebola treatments as Congo outbreak worsens](https://news.google.com/rss/articles/CBMivAFBVV95cUxOY1ZYUFNKaTRGUFl4YlZVMkVITjBqY2RlWFVVYVAyTUtHNFRoMjJzNmlFYlZieG9QdndhZlI5Z2hZd29KRFVmYl85cHFwZF81N1N0VUNFSnB4MWJSMGRmQzB6cUYxZ244UktEZFNVSHVKRjJVN0k4T0gyX211SFVVMXhUXzMyMVhMNVduaC1Ud0NQLUxST2twV01pMEhmSVlFbVFUVEJEcnpzdzlMSG51Z2xTNkNIS3VVS2tWcA?oc=5) (The Seattle Times); [Malaria fears grow in Congo's Ebola outbreak hotspots](https://news.google.com/rss/articles/CBMingFBVV95cUxNQVNRaWUtVklJWFI4bmRPeTlaeTVRMTBiMVNYTU1mcFhuN0RyUUx2VXk1UnNNcTZvcU5Ddk5mYlZ1TTUtblZNRmx0cE0zU3UtYUVQMjVLbTdWRG5ULWlNRng5Vkprd05PcFNPOFJ1RlZKdVpueUYtWW1icmJSV0VkQnh6NjNwemg3bVkzOEFQZ21SOHJwVnl1VW1CbW1ZQQ?oc=5) (Polity.org.za); [Ebola outbreak cases and deaths rise in Congo](https://news.google.com/rss/articles/CBMigwFBVV95cUxOVUwtN2xwMXNQb3oyQkhPWU4yWmN2MU9vMzZfd1NEdWZ0cHRHUFRkdURhN2p2YXJBQTVoV1NZMWFrWnZfcG1CMlRJZWp0b1I4QU5xTlJqckoyZjVNRkFxZktfRkdsSzZ0OUotemRIR0JFSW1MTlA4VGNSVkcydWpUTWZ5VQ?oc=5) (Outbreak News Today)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
 
@@ -87,7 +87,7 @@ Search window: 7 day(s) ending 2026-07-02
 ### Avian influenza and H5N1
 - Topic size: 1 item(s) across 1 source(s); 0 official/primary-source item(s).
 - Lead item: [H5N1 emerged in Asia 30 years ago. Here's what happened next - ABC News & Headlines – Australian Broadcasting Corporation](https://www.abc.net.au/news/2026-06-26/asia-response-to-h5n1-variant-bird-flu/106839290) (ABC News & Headlines – Australian Broadcasting Corporation, 2026-06-25T19:11+00:00)
-- Detailed note: Please let us know Hong Kong was first to respond to an outbreak of H5N1 bird flu three decades ago.
+- Detailed note: Cluster remains active across 1 related item(s), but usable factual summary text was limited after cleanup.
 - Evidence notes: [H5N1 emerged in Asia 30 years ago. Here's what happened next - ABC News & Headlines – Australian Broadcasting Corporation](https://www.abc.net.au/news/2026-06-26/asia-response-to-h5n1-variant-bird-flu/106839290) (ABC News & Headlines – Australian Broadcasting Corporation)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Source diversity is limited so corroboration is thin.
@@ -423,9 +423,11 @@ Search window: 7 day(s) ending 2026-07-02
 
 
 ## Other notable readings
+- [Ramaphosa in DR Congo as Africa races to contain expanding Ebola outbreak](https://eastleighvoice.co.ke/africa/374908/ramaphosa-in-dr-congo-as-africa-races-to-contain-expanding-ebola-outbreak) | The Eastleigh Voice | 2026-07-02T19:30+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - [Researchers launch study on Ebola treatments as Congo outbreak worsens - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/Technology/wireStory/researchers-launch-study-ebola-treatments-congo-outbreak-worsens-134414986) | ABC News - Breaking News, Latest News and Videos | 2026-07-02T16:50+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [More than 400 dead in DR Congo's spreading Ebola outbreak](https://www.fox26medford.com/news/national/more-than-400-dead-in-dr-congos-spreading-ebola-outbreak/article_38d67348-5284-57b8-b19d-22f05b3ce9a2.html) | KMVU FOX 26 Medford | 2026-07-02T14:33+00:00 | Outbreaks and emerging infections
+- [Researchers launch study on Ebola treatments as Congo outbreak worsens](https://news.google.com/rss/articles/CBMivAFBVV95cUxOY1ZYUFNKaTRGUFl4YlZVMkVITjBqY2RlWFVVYVAyTUtHNFRoMjJzNmlFYlZieG9QdndhZlI5Z2hZd29KRFVmYl85cHFwZF81N1N0VUNFSnB4MWJSMGRmQzB6cUYxZ244UktEZFNVSHVKRjJVN0k4T0gyX211SFVVMXhUXzMyMVhMNVduaC1Ud0NQLUxST2twV01pMEhmSVlFbVFUVEJEcnpzdzlMSG51Z2xTNkNIS3VVS2tWcA?oc=5) | The Seattle Times | 2026-07-02T16:26+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Malaria fears grow in Congo's Ebola outbreak hotspots](https://news.google.com/rss/articles/CBMingFBVV95cUxNQVNRaWUtVklJWFI4bmRPeTlaeTVRMTBiMVNYTU1mcFhuN0RyUUx2VXk1UnNNcTZvcU5Ddk5mYlZ1TTUtblZNRmx0cE0zU3UtYUVQMjVLbTdWRG5ULWlNRng5Vkprd05PcFNPOFJ1RlZKdVpueUYtWW1icmJSV0VkQnh6NjNwemg3bVkzOEFQZ21SOHJwVnl1VW1CbW1ZQQ?oc=5) | Polity.org.za | 2026-07-02T13:38+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
@@ -442,8 +444,6 @@ Search window: 7 day(s) ending 2026-07-02
 - [Ebola cases traced to Congo province, bordering on ‘high-risk’ South Sudan](https://www.magzter.com/stories/newspaper/The-Straits-Times/EBOLA-CASES-TRACED-TO-CONGO-PROVINCE-BORDERING-ON-HIGHRISK-SOUTH-SUDAN) | Magzter | 2026-07-01T21:21+00:00 | Outbreaks and emerging infections
   Any outbreak in the Haut-Uele region would significantly raise the threat to neighbouring South Sudan, which is âa high-risk country because of its proximity to the affected areas and cross-border population movementâ, Africa Centres for Disease Control and Prevention said in a response to questions on June 30. The new infections involve two of the contacts of a confirmed Ituri case, who then travelled to Haut-Uele and were later diagnosed there, Congoâs government spokesman Patrick Muyaya said. Learn more about our privacy policy Three people exposed to the Ebola outbreak in the Democratic Republic of Congo have been traced to a province bordering South Sudan, increasing the chances the virus could spill into one of the worldâs most fragile states.
 - [Ebola deaths in Africa top 400 as Uganda reports death of child from Marburg](https://news.google.com/rss/articles/CBMimwFBVV95cUxNa0dCRFo5Y1RXVElpMWw1WFBQem5PeVE3WWdmaXQ4a2RhMFBqZFZwaFNNcVUxblplM0RveEhESk5QRDJFM1VZUVc0dE43dEI3aDVwdkZJQUNhampjd2xfUnRRdW81SF9GN0YzVnc3Nm8tbFhqVlRJT3NsLTk0QnJCYlRucmZLSGxXMDZEMG9Sd0hOejYwbmJSUHB1SQ?oc=5) | CIDRAP | 2026-07-01T20:42+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Mob burns Ebola treatment centre in eastern Congo, killing policeman](https://news.google.com/rss/articles/CBMikwFBVV95cUxPeUFnYWtFTFlDeGhXQ25XMmhRZXVXTzB2eTZiRXhEY0daOFRrNkZlU05WUkp4TmEyZ05lY25MQTlIdVkxbUZTaGh4RGxWSC05YWYzOUk3bjFlQ1laaGlGY2cyd1Y5MmVXS29CRkE0ZzlCVlR3QW84OWVmOHdKbWtXZTlNbmZCcERhR0hBLXpramNEek0?oc=5) | Yahoo | 2026-07-01T19:34+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Ebola outbreak in DR Congo, Uganda](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5TQWdYcFp0Ykw2V1NKMzhrOWpuNlZMNVpmeFNSQjFmZVVoZDdNT3psWEZBbXNDVktQUFBzbEJpUVlsaFM1dE5lMG1sNnZ0WTk2ckVYRWdXZEJCRk0?oc=5) | Anadolu Ajansı | 2026-07-01T16:12+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
