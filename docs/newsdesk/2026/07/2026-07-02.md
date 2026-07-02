@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-07-02
-Generated at: 2026-07-02T07:58
+Generated at: 2026-07-02T08:16
 Search window: 7 day(s) ending 2026-07-02
 
 ## Executive scan
@@ -12,16 +12,16 @@ Search window: 7 day(s) ending 2026-07-02
 - [Multi-country outbreak of Salmonella Stanley infections linked to flavoured noodle products](https://www.ecdc.europa.eu/en/news-events/multi-country-outbreak-salmonella-stanley-infections-linked-flavoured-noodle-products) (ECDC News; 2026-07-01T14:00+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
 - [Syndemics, violence and injury: exploring historical relationships between infectious disease epidemics and violent crime in South Africa.](https://pubmed.ncbi.nlm.nih.gov/42385127/) (PubMed Historical Pathogen Case Studies; 2026-07-01T00:00; Historical epidemiology / ancient disease / paleopathology; relevance 5/5)
 - [Genomic landscape and phylogenetic insights of Burkholderia pseudomallei over two decades in southern China and its global surveillance.](https://pubmed.ncbi.nlm.nih.gov/42377320/) (PubMed Infectious Disease Search; 2026-06-30T00:00; Major epidemiology studies; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (43), Major epidemiology studies (3), Policy, surveillance, and public health infrastructure (2)
+- Category mix: Outbreaks and emerging infections (42), Major epidemiology studies (3), Policy, surveillance, and public health infrastructure (2)
 - Source health: 1 source(s) failed during collection: USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
 ### Hantavirus and cruise-ship outbreak
 - Lead item: [Multi-country outbreak of Salmonella Stanley infections linked to flavoured noodle products](https://www.ecdc.europa.eu/en/news-events/multi-country-outbreak-salmonella-stanley-infections-linked-flavoured-noodle-products) (ECDC News)
-- Newly tracked story cluster: 11 item(s) across 10 source(s).
-- Baseline snapshot created with 11 clustered item(s) across 10 source(s).
+- Newly tracked story cluster: 10 item(s) across 9 source(s).
+- Baseline snapshot created with 10 clustered item(s) across 9 source(s).
 - Texas Department of State Health Services News now explicitly uses investigation or monitoring language.
-- ABC News - Breaking News, Latest News and Videos now includes deaths or fatal cases in the story frame.
+- Forbes now includes deaths or fatal cases in the story frame.
 
 ### Dengue and arboviruses
 - Lead item: [Jaipur among ‘most vulnerable’ dists to dengue, scrub typhus in monsoon](https://timesofindia.indiatimes.com/city/jaipur/jaipur-among-most-vulnerable-dists-to-dengue-scrub-typhus-in-monsoon/amp_articleshow/132139419.cms) (The Times of India)
@@ -53,20 +53,20 @@ Search window: 7 day(s) ending 2026-07-02
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Hantavirus and cruise-ship outbreak
-- Topic size: 11 item(s) across 10 source(s); 2 official/primary-source item(s).
+- Topic size: 10 item(s) across 9 source(s); 2 official/primary-source item(s).
 - Lead item: [Multi-country outbreak of Salmonella Stanley infections linked to flavoured noodle products](https://www.ecdc.europa.eu/en/news-events/multi-country-outbreak-salmonella-stanley-infections-linked-flavoured-noodle-products) (ECDC News, 2026-07-01T14:00+02:00)
 - Detailed note: Topics A-Z A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Public health topics Spotlight Antimicrobial resistance (AMR) Dengue Ebola disease Hantavirus infection Mpox West Nile virus infection Video: Fighting a Candida auris outbreak - healthcare workers leading the change Emerging threats Emerging threats Andes hantavirus outbreak in cruise ship Ebola disease outbreak in the Democratic Republic of the Congo...
-- Evidence notes: [Multi-country outbreak of Salmonella Stanley infections linked to flavoured noodle products](https://www.ecdc.europa.eu/en/news-events/multi-country-outbreak-salmonella-stanley-infections-linked-flavoured-noodle-products) (ECDC News); [News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....](https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius) (Texas Department of State Health Services News); [3 dead in suspected hantavirus outbreak aboard a cruise ship: What to know - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/Health/deadly-hantavirus-outbreak-suspected-aboard-cruise-ship/story?id\=132631359) (ABC News - Breaking News, Latest News and Videos); [The WHO declares the hantavirus outbreak concluded globally](https://www.democrata.es/en/health/the-who-declares-the-hantavirus-outbreak-concluded-globally/) (Demócrata); [WHO says cruise ship-linked hantavirus outbreak over](https://www.jamaicaobserver.com/2026/07/02/says-cruise-ship-linked-hantavirus-outbreak/) (Jamaica Observer)
+- Evidence notes: [Multi-country outbreak of Salmonella Stanley infections linked to flavoured noodle products](https://www.ecdc.europa.eu/en/news-events/multi-country-outbreak-salmonella-stanley-infections-linked-flavoured-noodle-products) (ECDC News); [News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....](https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius) (Texas Department of State Health Services News); [The WHO declares the hantavirus outbreak concluded globally](https://www.democrata.es/en/health/the-who-declares-the-hantavirus-outbreak-concluded-globally/) (Demócrata); [WHO says cruise ship-linked hantavirus outbreak over](https://www.jamaicaobserver.com/2026/07/02/says-cruise-ship-linked-hantavirus-outbreak/) (Jamaica Observer); [Norovirus outbreak on Ruby Princess cruise ship sickens 125 people](https://www.independent.co.uk/bulletin/news/ruby-princess-norovirus-outbreak-cruise-ship-b3007656.html) (The Independent)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Miscellaneous signals
-- Topic size: 7 item(s) across 3 source(s); 6 official/primary-source item(s).
+- Topic size: 6 item(s) across 2 source(s); 6 official/primary-source item(s).
 - Lead item: [FDA outbreak investigation 1383: Clostridium botulinum linked to Powdered Infant Formula](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-infant-botulism-powdered-infant-formula-june-2026) (FDA Foodborne Outbreaks, 2026-07-01T14:00)
 - Detailed note: Several lower-volume signals passed the filters, but they do not resolve into one coherent topic cluster. Use the linked evidence notes directly rather than reading this as a single story.
 - Evidence notes: [FDA outbreak investigation 1383: Clostridium botulinum linked to Powdered Infant Formula](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-infant-botulism-powdered-infant-formula-june-2026) (FDA Foodborne Outbreaks); [FDA outbreak investigation 1380: Listeria monocytogenes linked to Requeson/Soft Ricotta Cheese](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-listeria-monocytogenes-soft-cheese-june-2026) (FDA Foodborne Outbreaks); [FDA outbreak investigation 1358: Salmonella Typhimurium & Newport linked to Moringa Leaf Powder](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-salmonella-moringa-leaf-powder-january-2026) (FDA Foodborne Outbreaks); [FDA outbreak investigation 1369: E. coli O157:H7 linked to Raw Cheddar Cheese](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-e-coli-o157h7-raw-cheddar-cheese-march-2026) (FDA Foodborne Outbreaks); [FDA outbreak investigation 1365: Salmonella Newport & Kentucky linked to Moringa Powder](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-extensively-drug-resistant-salmonella-moringa-powder-february-2026) (FDA Foodborne Outbreaks)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may shape how new evidence is framed before broader consensus forms.
-- Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
+- Caveats / uncertainty: These notes are limited to source text collected in this run.
 
 ### Dengue and arboviruses
 - Topic size: 4 item(s) across 4 source(s); 0 official/primary-source item(s).
@@ -461,7 +461,7 @@ Search window: 7 day(s) ending 2026-07-02
   Limited detail was available from feed metadata alone.
 - [Ebola cases on the rise: These countries are at risk](https://news.google.com/rss/articles/CBMijwFBVV95cUxOVjZhUEVJY3VhVHlfLUZLWmlBVkNzU3FNdFpBVHVsUHFtMDZwQUtiQ0FPcWJ2UGxDUkNFWEJDYVR3TXpTTFBNR1B2MXNqT2VVaTMxNl84LXRlWVpWRWlJWFZONWExRzh2c05GczgxWWxrZE9TTHRJUnFZc3lfTnlpc0xZSWlxUzF5R0ZDQWtkUQ?oc=5) | Modern.az | 2026-07-01T08:18+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [3 dead in suspected hantavirus outbreak aboard a cruise ship: What to know - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/Health/deadly-hantavirus-outbreak-suspected-aboard-cruise-ship/story?id\=132631359) | ABC News - Breaking News, Latest News and Videos | 2026-07-01T07:04+00:00 | Outbreaks and emerging infections
+- [Ebola Scare In UK: Suspected Patient At Glasgow Hospital Tests Negative](https://news.google.com/rss/articles/CBMixwFBVV95cUxQbzg0S0Ywb21jdXZkMUh4NGZMQ3g0YnU3dHhRVFlIR0txMDIwajJxcWM2eDY0ejBLTWRkTEVfa0M5OERFRWRZN2xNb3dORk1QWEE3dmVoVGQtQ0Z0amRDU2RvR1duOUw5bkd3ZmZqellaYi1TcDRSMGlxODN4RlpJbTRfdElOVFUwV1FGSDNkbHJDQ0VOMmd5ZGxjLWJJbjQ0SEk4ZDZyeGZiU3V3SzlJQmd0cnFmQ1hrNVcxUzhIYWFBd3RWOUFJ?oc=5) | Health and Me | 2026-07-01T05:35+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
