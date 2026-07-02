@@ -8,7 +8,7 @@
       "Guardian",
       "New York Times"
     ],
-    "metadata_only_count": 29,
+    "metadata_only_count": 30,
     "sources_cached": 0,
     "sources_failed": 1,
     "sources_live": 48,
@@ -22,7 +22,7 @@
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-07-02T08:16:27",
+  "generated_at": "2026-07-02T08:39:02",
   "source_failures": [
     {
       "error": "HTTPSConnectionPool(host='www.aphis.usda.gov', port=443): Read timed out. (read timeout=8)",
