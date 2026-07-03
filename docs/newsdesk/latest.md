@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-07-03
-Generated at: 2026-07-03T06:16
+Generated at: 2026-07-03T06:32
 Search window: 7 day(s) ending 2026-07-03
 
 ## Executive scan
@@ -12,7 +12,7 @@ Search window: 7 day(s) ending 2026-07-03
 - [FDA outbreak investigation 1369: E. coli O157:H7 linked to Raw Cheddar Cheese](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-e-coli-o157h7-raw-cheddar-cheese-march-2026) (FDA Foodborne Outbreaks; 2026-07-01T14:00; Outbreaks and emerging infections; relevance 5/5)
 - [Syndemics, violence and injury: exploring historical relationships between infectious disease epidemics and violent crime in South Africa.](https://pubmed.ncbi.nlm.nih.gov/42385127/) (PubMed Historical Pathogen Case Studies; 2026-07-01T00:00; Historical epidemiology / ancient disease / paleopathology; relevance 5/5)
 - [Surveillance Summaries: Surveillance for Candida auris](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=765938) (CDC MMWR; 2026-06-30T17:00+00:00; Occupational and environmental epidemiology; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (32), Major epidemiology studies (3), Occupational and environmental epidemiology (3)
+- Category mix: Outbreaks and emerging infections (34), Major epidemiology studies (3), Occupational and environmental epidemiology (3)
 - Source health: 1 source(s) failed during collection: USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
@@ -25,8 +25,8 @@ Search window: 7 day(s) ending 2026-07-03
 
 ### Ebola virus disease
 - Lead item: [Ramaphosa pledges South African support as DRC battles Ebola outbreak](https://iol.co.za/news/politics/2026-07-03-ramaphosa-pledges-south-african-support-as-drc-battles-ebola-outbreak/) (IOL)
-- Newly tracked story cluster: 18 item(s) across 16 source(s).
-- Baseline snapshot created with 18 clustered item(s) across 16 source(s).
+- Newly tracked story cluster: 19 item(s) across 17 source(s).
+- Baseline snapshot created with 19 clustered item(s) across 17 source(s).
 - The Japan Times now includes deaths or fatal cases in the story frame.
 
 ### Occupational and environmental epidemiology
@@ -44,10 +44,10 @@ Search window: 7 day(s) ending 2026-07-03
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 18 item(s) across 16 source(s); 0 official/primary-source item(s).
+- Topic size: 19 item(s) across 17 source(s); 0 official/primary-source item(s).
 - Lead item: [Ramaphosa pledges South African support as DRC battles Ebola outbreak](https://iol.co.za/news/politics/2026-07-03-ramaphosa-pledges-south-african-support-as-drc-battles-ebola-outbreak/) (IOL, 2026-07-03T05:04+00:00)
 - Detailed note: Congo’s spreading Ebola outbreak The Japan Times
-- Evidence notes: [Ramaphosa pledges South African support as DRC battles Ebola outbreak](https://iol.co.za/news/politics/2026-07-03-ramaphosa-pledges-south-african-support-as-drc-battles-ebola-outbreak/) (IOL); [Africa CDC chief warns DRC Ebola outbreak remains "very serious" as clinical trial begins](https://eastleighvoice.co.ke/index.php/regional/374986/africa-cdc-chief-warns-drc-ebola-outbreak-remains-very-serious-as-clinical-trial-begins) (The Eastleigh Voice); [UN: Ebola outbreak in DRC could cost Africa $3.6 bln, put 300,000 jobs at risk](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNX2xhTk96bEtQUHFaaVJuYnZQQUlueVMtVVNpRVFud3pMd3pjdV8xZzNXRnN6VTlfRFgtREJkakpWWVBkVHA3ZWVCTFA0NjVLNV9xc1RCWVEtcF9WT3FQNndvOUV6YUMxZndIU29qTzZfX2JNczZUV2xEWEpzOTlGX0sydmZaTUxKTjA3TVF1S1Z0VkJNLVZ5YklOdG4xTjdYclRMQzJIbXM?oc=5) (The Independent Uganda); [More than 400 dead in Dr. Congo’s spreading Ebola outbreak](https://news.google.com/rss/articles/CBMiekFVX3lxTE5RSTN0VnRyaEhyUno4cVhVa24wemZuWXV5clY1WmdnbzYwNDBJUFd4YzNZYTB6NUktUW9SUXlaVWNjbWpjRDVvdXMzVS1UWERHamZjY0d0dDZ3YTBIb1QzcklEc2l2SDVLc2dIRXZlT1k5a0psU1hmTXhB?oc=5) (The Japan Times); [Ramaphosa calls for African solidarity as DRC battles Ebola outbreak](https://news.google.com/rss/articles/CBMiogFBVV95cUxQZWJvWFBXQmVrQU9fOF9GWVNSSVptVEEtVDR0Nk5GUERUMzZvRmV4cVJzeElfVE9nU0dEMzhWb0w2Zk1MdFVGaENpTmdoRXFWSDRCXzhPMy1XZk8zQ2l6T1lxM05JUVJsNHNaYnpYSGZfTGJ6M0ZxQ1ZHb3lpZk50T0JJMURvVm5ZZmpoQUF1NzIyekE1VTloclNySkpENFFLR2c?oc=5) (South African Government News Agency)
+- Evidence notes: [Ramaphosa pledges South African support as DRC battles Ebola outbreak](https://iol.co.za/news/politics/2026-07-03-ramaphosa-pledges-south-african-support-as-drc-battles-ebola-outbreak/) (IOL); [Africa CDC chief warns DRC Ebola outbreak remains "very serious" as clinical trial begins](https://news.google.com/rss/articles/CBMi2gFBVV95cUxNMXUwU3VrTjZPdlVndmZSUHlPMmp3dzloakh3QTc2UnQ1WGdpbEZJa1hRRHZLZENoa0xHUXNoOTh0bjZBSTZFUlZiZExDQVJRUlhHd2lFWW1qX0YyYW5IeHNDMk1zaWhLdE9OaXg4TmRqT3dZTF9UZTNyYjg3S0dfMTRFejZwQWFSd3BraEU3Y2lMajgtWVZLX1V1SWNGU2hMczE0TzlyalBtV0l1NWpHOGJ6WE9CeVR1dEk0c2NpVHRvb25yWlBrdEFKRVdrVXBvcTJNOUFxT3BLdw?oc=5) (The Eastleigh Voice); [UN: Ebola outbreak in DRC could cost Africa $3.6 bln, put 300,000 jobs at risk](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNX2xhTk96bEtQUHFaaVJuYnZQQUlueVMtVVNpRVFud3pMd3pjdV8xZzNXRnN6VTlfRFgtREJkakpWWVBkVHA3ZWVCTFA0NjVLNV9xc1RCWVEtcF9WT3FQNndvOUV6YUMxZndIU29qTzZfX2JNczZUV2xEWEpzOTlGX0sydmZaTUxKTjA3TVF1S1Z0VkJNLVZ5YklOdG4xTjdYclRMQzJIbXM?oc=5) (The Independent Uganda); [More than 400 dead in Dr. Congo’s spreading Ebola outbreak](https://news.google.com/rss/articles/CBMiekFVX3lxTE5RSTN0VnRyaEhyUno4cVhVa24wemZuWXV5clY1WmdnbzYwNDBJUFd4YzNZYTB6NUktUW9SUXlaVWNjbWpjRDVvdXMzVS1UWERHamZjY0d0dDZ3YTBIb1QzcklEc2l2SDVLc2dIRXZlT1k5a0psU1hmTXhB?oc=5) (The Japan Times); [Ramaphosa calls for African solidarity as DRC battles Ebola outbreak](https://news.google.com/rss/articles/CBMiogFBVV95cUxQZWJvWFBXQmVrQU9fOF9GWVNSSVptVEEtVDR0Nk5GUERUMzZvRmV4cVJzeElfVE9nU0dEMzhWb0w2Zk1MdFVGaENpTmdoRXFWSDRCXzhPMy1XZk8zQ2l6T1lxM05JUVJsNHNaYnpYSGZfTGJ6M0ZxQ1ZHb3lpZk50T0JJMURvVm5ZZmpoQUF1NzIyekE1VTloclNySkpENFFLR2c?oc=5) (South African Government News Agency)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
 
@@ -83,11 +83,11 @@ Search window: 7 day(s) ending 2026-07-03
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
 
-### Avian influenza and H5N1
+### Measles transmission and vaccination
 - Topic size: 1 item(s) across 1 source(s); 0 official/primary-source item(s).
-- Lead item: [H5N1 emerged in Asia 30 years ago. Here's what happened next - ABC News & Headlines – Australian Broadcasting Corporation](https://www.abc.net.au/news/2026-06-26/asia-response-to-h5n1-variant-bird-flu/106839290) (ABC News & Headlines – Australian Broadcasting Corporation, 2026-06-25T07:00+00:00)
-- Detailed note: Please let us know Hong Kong was first to respond to an outbreak of H5N1 bird flu three decades ago.
-- Evidence notes: [H5N1 emerged in Asia 30 years ago. Here's what happened next - ABC News & Headlines – Australian Broadcasting Corporation](https://www.abc.net.au/news/2026-06-26/asia-response-to-h5n1-variant-bird-flu/106839290) (ABC News & Headlines – Australian Broadcasting Corporation)
+- Lead item: [Zambia Records 119 Confirmed Measles Cases, Western Province Hardest Hit](https://www.mwebantu.com/zambia-records-119-confirmed-measles-cases-western-province-hardest-hit/) (Mwebantu, 2026-07-03T12:03+00:00)
+- Detailed note: BUSINESS Airtel Africa Sustainability Report Media Roundtable Investors have regained appetite for Zambia after default, Citi says Mikalo Finance Official Relaunch Mikalo Finance Official Relaunch ZRA seizes smuggled heavy-duty grader in Kapiri Mposhi, prevents K615,000 revenue loss Airtel Africa Sustainability Report Media Roundtable Airtel Africa Sustainability Report Media Roundtable Investors have regained...
+- Evidence notes: [Zambia Records 119 Confirmed Measles Cases, Western Province Hardest Hit](https://www.mwebantu.com/zambia-records-119-confirmed-measles-cases-western-province-hardest-hit/) (Mwebantu)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Source diversity is limited so corroboration is thin.
 
@@ -400,6 +400,16 @@ Search window: 7 day(s) ending 2026-07-03
 - Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
 - Relevance score: 5/5
 
+### Zambia Records 119 Confirmed Measles Cases, Western Province Hardest Hit
+- Source: Mwebantu
+- Date: 2026-07-03T12:03+00:00
+- URL: https://www.mwebantu.com/zambia-records-119-confirmed-measles-cases-western-province-hardest-hit/
+- Category: Outbreaks and emerging infections
+- Summary: BUSINESS Airtel Africa Sustainability Report Media Roundtable Investors have regained appetite for Zambia after default, Citi says Mikalo Finance Official Relaunch Mikalo Finance Official Relaunch ZRA seizes smuggled heavy-duty grader in Kapiri Mposhi, prevents K615,000 revenue loss Airtel Africa Sustainability Report Media Roundtable Airtel Africa Sustainability Report Media Roundtable Investors have regained appetite for Zambia after default, Citi says Investors have regained appetite for Zambia after default, Citi says ZRA seizes smuggled heavy-duty grader in Kapiri Mposhi, prevents K615,000 revenue loss Limited detail was available from feed metadata alone.
+- Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response.
+- Caveats / uncertainty: Usable source detail was limited after cleanup.
+- Relevance score: 5/5
+
 ### Dengue alert in Puttur as monsoon sets in
 - Source: The Times of India
 - Date: 2026-07-03T11:02+00:00
@@ -410,19 +420,11 @@ Search window: 7 day(s) ending 2026-07-03
 - Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
 - Relevance score: 5/5
 
-### Ramaphosa pledges South African support as DRC battles Ebola outbreak
-- Source: IOL
-- Date: 2026-07-03T05:04+00:00
-- URL: https://iol.co.za/news/politics/2026-07-03-ramaphosa-pledges-south-african-support-as-drc-battles-ebola-outbreak/
-- Category: Outbreaks and emerging infections
-- Summary: Limited detail was available from feed metadata alone.
-- Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response.
-- Caveats / uncertainty: Usable source detail was limited after cleanup.
-- Relevance score: 5/5
-
 
 ## Other notable readings
-- [Africa CDC chief warns DRC Ebola outbreak remains "very serious" as clinical trial begins](https://eastleighvoice.co.ke/index.php/regional/374986/africa-cdc-chief-warns-drc-ebola-outbreak-remains-very-serious-as-clinical-trial-begins) | The Eastleigh Voice | 2026-07-03T04:55+00:00 | Outbreaks and emerging infections
+- [Ramaphosa pledges South African support as DRC battles Ebola outbreak](https://iol.co.za/news/politics/2026-07-03-ramaphosa-pledges-south-african-support-as-drc-battles-ebola-outbreak/) | IOL | 2026-07-03T05:04+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Africa CDC chief warns DRC Ebola outbreak remains "very serious" as clinical trial begins](https://news.google.com/rss/articles/CBMi2gFBVV95cUxNMXUwU3VrTjZPdlVndmZSUHlPMmp3dzloakh3QTc2UnQ1WGdpbEZJa1hRRHZLZENoa0xHUXNoOTh0bjZBSTZFUlZiZExDQVJRUlhHd2lFWW1qX0YyYW5IeHNDMk1zaWhLdE9OaXg4TmRqT3dZTF9UZTNyYjg3S0dfMTRFejZwQWFSd3BraEU3Y2lMajgtWVZLX1V1SWNGU2hMczE0TzlyalBtV0l1NWpHOGJ6WE9CeVR1dEk0c2NpVHRvb25yWlBrdEFKRVdrVXBvcTJNOUFxT3BLdw?oc=5) | The Eastleigh Voice | 2026-07-03T04:55+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Legionnaires' disease cluster on NYC's Upper East Side under investigation](https://www.cbsnews.com/newyork/video/legionnaires-disease-cluster-on-nycs-upper-east-side-under-investigation/) | CBS News | 2026-07-03T03:09+00:00 | Occupational and environmental epidemiology
   Limited detail was available from feed metadata alone.
@@ -456,12 +458,10 @@ Search window: 7 day(s) ending 2026-07-03
   Limited detail was available from feed metadata alone.
 - [Bethlehem-made test could help in Africa's Ebola outbreak](https://news.google.com/rss/articles/CBMiiwJBVV95cUxNRFFnS0xPdkt4ZVVVdl9kLUYxdlVORGdpcnc0b3JGYWhxRGtDaWluS3A1UmRzQ0NNVVhPTW5QNXZLZS1BaGg0NklTelE5Qkx4Ti1Hbm5IOHVudzlVRXlGTkZMMFMyWi1xX0N6TWoteDdLQVpIMVE4Q1dmekZ1V3U3SGRwYzVPby1DaWlwV0U3Wnd3X0hLVXpUVWNhbWZwNGZEc21ZdlJOeXk3c3lWcnE1Ty1QOWRQLUF2V05zTkQyYm9UOXFKVEJMcDNIZ2JXaUFyajgtQjFwR1ZkUUVRdlBqQlBvWW9Na2w5b2FCbFdjUl85UDNpbTB2VkhVY0pzcWk2T3J2V0VFYU5RcmM?oc=5) | WFMZ.com | 2026-07-01T13:22+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
+- [What is Ebola, how does it spread and why is DR Congo outbreak an 'emergency'?](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1wVERtZkpCMzNrZ1lKNHVlQ1RaS2N1QVcyaVRMT3JTV2puMTVvWm1IUEhVWklQVVFteDkyWEtXbmRiRHY5alpBN0hydEJuZDF6WXhxa003NXRqdw?oc=5) | BBC | 2026-07-01T12:02+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - [Sri Lankan Christians join anti-dengue drive on Buddhist feast day](https://www.heraldmalaysia.com/news/sri-lankan-christians-join-anti-dengue-drive-on-buddhist-feast-day/90054/1) | Herald Malaysia Online | 2026-07-01T04:47+00:00 | Outbreaks and emerging infections
   Sri Lanka registered about 53,159 dengue cases and 31 deaths this year Jul 01, 2026 Related News Delegation of Ecumenical Patriarchate of Constantinople visits Rome Archbishop Hicks of New York: Don't lose hope, Jesus is on the boat with us Beyond the Shipwreck: Transforming the Global Migrant Phenomenon Lefebvrians consecrate four new bishops without a papal mandate Lebanese Christians remember Br Estephan, the mountain monk A Buddhist monk prays alongside devotees on the occasion of Poson Poya (full moon), a religious festival that marks the arrival of Buddhism in Sri Lanka, at the Kelaniya temple on the outskirts of Colombo on June 29. Sri Lanka recorded more than 51,000 dengue cases and 28 deaths in the first six months of this year, according to government data. According to the latest government data, Sri Lanka registered 53,159 dengue cases and 31 deaths until June.
-- [What it’s like to be a healthcare worker at the center of an Ebola outbreak](https://www.northcountrypublicradio.org/news/npr/nx-s1-5876431/what-it-s-like-to-be-a-healthcare-worker-at-the-center-of-an-ebola-outbreak) | NCPR: North Country Public Radio | 2026-06-30T19:41+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [DENGUE: SYMPTOMS, WARNING SIGNS AND PREVENTION | Daily Mirror - Sri Lanka](https://www.magzter.com/stories/newspaper/Daily-Mirror-Sri-Lanka/DENGUE-SYMPTOMS-WARNING-SIGNS-AND-PREVENTION) | Magzter | 2026-06-29T06:16+00:00 | Outbreaks and emerging infections
-  Most cases are mild to moderate. A smaller share progress to severe dengue, which is the phase that requires hospital monitoring and, occasionally, intensive care. Dengue and seasonal influenza look almost identical for the first two or three days, and that overlap costs lives every single year, not just during outbreak years.
 
 ## Papers worth saving
 - [A historical overview of the anti-vaccine movement and its public health implications.](https://pubmed.ncbi.nlm.nih.gov/42391692/)
