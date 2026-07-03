@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-07-03
-Generated at: 2026-07-03T06:32
+Generated at: 2026-07-03T07:16
 Search window: 7 day(s) ending 2026-07-03
 
 ## Executive scan
@@ -24,7 +24,7 @@ Search window: 7 day(s) ending 2026-07-03
 - Herald Malaysia Online now includes deaths or fatal cases in the story frame.
 
 ### Ebola virus disease
-- Lead item: [Ramaphosa pledges South African support as DRC battles Ebola outbreak](https://iol.co.za/news/politics/2026-07-03-ramaphosa-pledges-south-african-support-as-drc-battles-ebola-outbreak/) (IOL)
+- Lead item: [Africa CDC chief warns DRC Ebola outbreak remains "very serious" as clinical trial begins](https://eastleighvoice.co.ke/index.php/regional/374986/africa-cdc-chief-warns-drc-ebola-outbreak-remains-very-serious-as-clinical-trial-begins) (The Eastleigh Voice)
 - Newly tracked story cluster: 19 item(s) across 17 source(s).
 - Baseline snapshot created with 19 clustered item(s) across 17 source(s).
 - The Japan Times now includes deaths or fatal cases in the story frame.
@@ -45,9 +45,9 @@ Search window: 7 day(s) ending 2026-07-03
 ## Major topics
 ### Ebola virus disease
 - Topic size: 19 item(s) across 17 source(s); 0 official/primary-source item(s).
-- Lead item: [Ramaphosa pledges South African support as DRC battles Ebola outbreak](https://iol.co.za/news/politics/2026-07-03-ramaphosa-pledges-south-african-support-as-drc-battles-ebola-outbreak/) (IOL, 2026-07-03T05:04+00:00)
+- Lead item: [Africa CDC chief warns DRC Ebola outbreak remains "very serious" as clinical trial begins](https://eastleighvoice.co.ke/index.php/regional/374986/africa-cdc-chief-warns-drc-ebola-outbreak-remains-very-serious-as-clinical-trial-begins) (The Eastleigh Voice, 2026-07-03T04:55+00:00)
 - Detailed note: Congo’s spreading Ebola outbreak The Japan Times
-- Evidence notes: [Ramaphosa pledges South African support as DRC battles Ebola outbreak](https://iol.co.za/news/politics/2026-07-03-ramaphosa-pledges-south-african-support-as-drc-battles-ebola-outbreak/) (IOL); [Africa CDC chief warns DRC Ebola outbreak remains "very serious" as clinical trial begins](https://news.google.com/rss/articles/CBMi2gFBVV95cUxNMXUwU3VrTjZPdlVndmZSUHlPMmp3dzloakh3QTc2UnQ1WGdpbEZJa1hRRHZLZENoa0xHUXNoOTh0bjZBSTZFUlZiZExDQVJRUlhHd2lFWW1qX0YyYW5IeHNDMk1zaWhLdE9OaXg4TmRqT3dZTF9UZTNyYjg3S0dfMTRFejZwQWFSd3BraEU3Y2lMajgtWVZLX1V1SWNGU2hMczE0TzlyalBtV0l1NWpHOGJ6WE9CeVR1dEk0c2NpVHRvb25yWlBrdEFKRVdrVXBvcTJNOUFxT3BLdw?oc=5) (The Eastleigh Voice); [UN: Ebola outbreak in DRC could cost Africa $3.6 bln, put 300,000 jobs at risk](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNX2xhTk96bEtQUHFaaVJuYnZQQUlueVMtVVNpRVFud3pMd3pjdV8xZzNXRnN6VTlfRFgtREJkakpWWVBkVHA3ZWVCTFA0NjVLNV9xc1RCWVEtcF9WT3FQNndvOUV6YUMxZndIU29qTzZfX2JNczZUV2xEWEpzOTlGX0sydmZaTUxKTjA3TVF1S1Z0VkJNLVZ5YklOdG4xTjdYclRMQzJIbXM?oc=5) (The Independent Uganda); [More than 400 dead in Dr. Congo’s spreading Ebola outbreak](https://news.google.com/rss/articles/CBMiekFVX3lxTE5RSTN0VnRyaEhyUno4cVhVa24wemZuWXV5clY1WmdnbzYwNDBJUFd4YzNZYTB6NUktUW9SUXlaVWNjbWpjRDVvdXMzVS1UWERHamZjY0d0dDZ3YTBIb1QzcklEc2l2SDVLc2dIRXZlT1k5a0psU1hmTXhB?oc=5) (The Japan Times); [Ramaphosa calls for African solidarity as DRC battles Ebola outbreak](https://news.google.com/rss/articles/CBMiogFBVV95cUxQZWJvWFBXQmVrQU9fOF9GWVNSSVptVEEtVDR0Nk5GUERUMzZvRmV4cVJzeElfVE9nU0dEMzhWb0w2Zk1MdFVGaENpTmdoRXFWSDRCXzhPMy1XZk8zQ2l6T1lxM05JUVJsNHNaYnpYSGZfTGJ6M0ZxQ1ZHb3lpZk50T0JJMURvVm5ZZmpoQUF1NzIyekE1VTloclNySkpENFFLR2c?oc=5) (South African Government News Agency)
+- Evidence notes: [Africa CDC chief warns DRC Ebola outbreak remains "very serious" as clinical trial begins](https://eastleighvoice.co.ke/index.php/regional/374986/africa-cdc-chief-warns-drc-ebola-outbreak-remains-very-serious-as-clinical-trial-begins) (The Eastleigh Voice); [Ramaphosa pledges South African support as DRC battles Ebola outbreak](https://news.google.com/rss/articles/CBMiswFBVV95cUxPWFVBWGdmbmJySGt6VGZ6R1FOaURTZUJzVXYtbmk4ajRZWGFtS2QtVGRxbHpUamVFa2YySjBJX2ItTGpUVldSOHpxaWhlamptSnFhaDk3RXIwblNmNlo1Y0h3RGpGZXJVd1VaOGktY3pVbkI5eUtGU01WSnEwWlVyck1mcVB5X1NkQzJjanUwSkk5c1hKNG9zNjlSQnhfSFVqSVpHaTZqRjhmNExkX0IzVDNsVQ?oc=5) (IOL); [UN: Ebola outbreak in DRC could cost Africa $3.6 bln, put 300,000 jobs at risk](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNX2xhTk96bEtQUHFaaVJuYnZQQUlueVMtVVNpRVFud3pMd3pjdV8xZzNXRnN6VTlfRFgtREJkakpWWVBkVHA3ZWVCTFA0NjVLNV9xc1RCWVEtcF9WT3FQNndvOUV6YUMxZndIU29qTzZfX2JNczZUV2xEWEpzOTlGX0sydmZaTUxKTjA3TVF1S1Z0VkJNLVZ5YklOdG4xTjdYclRMQzJIbXM?oc=5) (The Independent Uganda); [More than 400 dead in Dr. Congo’s spreading Ebola outbreak](https://news.google.com/rss/articles/CBMiekFVX3lxTE5RSTN0VnRyaEhyUno4cVhVa24wemZuWXV5clY1WmdnbzYwNDBJUFd4YzNZYTB6NUktUW9SUXlaVWNjbWpjRDVvdXMzVS1UWERHamZjY0d0dDZ3YTBIb1QzcklEc2l2SDVLc2dIRXZlT1k5a0psU1hmTXhB?oc=5) (The Japan Times); [Ramaphosa calls for African solidarity as DRC battles Ebola outbreak](https://news.google.com/rss/articles/CBMiogFBVV95cUxQZWJvWFBXQmVrQU9fOF9GWVNSSVptVEEtVDR0Nk5GUERUMzZvRmV4cVJzeElfVE9nU0dEMzhWb0w2Zk1MdFVGaENpTmdoRXFWSDRCXzhPMy1XZk8zQ2l6T1lxM05JUVJsNHNaYnpYSGZfTGJ6M0ZxQ1ZHb3lpZk50T0JJMURvVm5ZZmpoQUF1NzIyekE1VTloclNySkpENFFLR2c?oc=5) (South African Government News Agency)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
 
@@ -422,9 +422,9 @@ Search window: 7 day(s) ending 2026-07-03
 
 
 ## Other notable readings
-- [Ramaphosa pledges South African support as DRC battles Ebola outbreak](https://iol.co.za/news/politics/2026-07-03-ramaphosa-pledges-south-african-support-as-drc-battles-ebola-outbreak/) | IOL | 2026-07-03T05:04+00:00 | Outbreaks and emerging infections
+- [Africa CDC chief warns DRC Ebola outbreak remains "very serious" as clinical trial begins](https://eastleighvoice.co.ke/index.php/regional/374986/africa-cdc-chief-warns-drc-ebola-outbreak-remains-very-serious-as-clinical-trial-begins) | The Eastleigh Voice | 2026-07-03T04:55+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Africa CDC chief warns DRC Ebola outbreak remains "very serious" as clinical trial begins](https://news.google.com/rss/articles/CBMi2gFBVV95cUxNMXUwU3VrTjZPdlVndmZSUHlPMmp3dzloakh3QTc2UnQ1WGdpbEZJa1hRRHZLZENoa0xHUXNoOTh0bjZBSTZFUlZiZExDQVJRUlhHd2lFWW1qX0YyYW5IeHNDMk1zaWhLdE9OaXg4TmRqT3dZTF9UZTNyYjg3S0dfMTRFejZwQWFSd3BraEU3Y2lMajgtWVZLX1V1SWNGU2hMczE0TzlyalBtV0l1NWpHOGJ6WE9CeVR1dEk0c2NpVHRvb25yWlBrdEFKRVdrVXBvcTJNOUFxT3BLdw?oc=5) | The Eastleigh Voice | 2026-07-03T04:55+00:00 | Outbreaks and emerging infections
+- [Ramaphosa pledges South African support as DRC battles Ebola outbreak](https://news.google.com/rss/articles/CBMiswFBVV95cUxPWFVBWGdmbmJySGt6VGZ6R1FOaURTZUJzVXYtbmk4ajRZWGFtS2QtVGRxbHpUamVFa2YySjBJX2ItTGpUVldSOHpxaWhlamptSnFhaDk3RXIwblNmNlo1Y0h3RGpGZXJVd1VaOGktY3pVbkI5eUtGU01WSnEwWlVyck1mcVB5X1NkQzJjanUwSkk5c1hKNG9zNjlSQnhfSFVqSVpHaTZqRjhmNExkX0IzVDNsVQ?oc=5) | IOL | 2026-07-03T04:32+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Legionnaires' disease cluster on NYC's Upper East Side under investigation](https://www.cbsnews.com/newyork/video/legionnaires-disease-cluster-on-nycs-upper-east-side-under-investigation/) | CBS News | 2026-07-03T03:09+00:00 | Occupational and environmental epidemiology
   Limited detail was available from feed metadata alone.
