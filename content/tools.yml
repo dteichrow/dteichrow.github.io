@@ -1,4 +1,16 @@
 tools:
+  - tool_id: histsearch
+    title: Histsearch
+    tool_type: research search
+    status: live
+    status_label: Local research system
+    summary: A historian-style source discovery interface for historical epidemiology topics, built around source logs, exportable records, and transparent search paths.
+    evidence_model: Local connector runs with source logs, manual search strings, SQLite-backed storage, dossiers, CSV exports, and JSON records
+    public_route: tools/histsearch/
+    source_path: external/histsearch/index.html plus the local histsearch Python backend
+    launch_priority: research workflow
+    keywords: [historical epidemiology, research search, archives, PubMed, source discovery, bibliography]
+    long_note: The public page documents the search interface and local workflow. Live connector searches run through the local Python backend; GitHub Pages hosts the frontend but does not run Python or store private research outputs.
   - tool_id: american-epidemic-timeline
     title: American Epidemic Timeline
     tool_type: timeline
