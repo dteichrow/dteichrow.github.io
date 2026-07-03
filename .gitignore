@@ -6,10 +6,13 @@ __pycache__/
 *.swp
 .venv/
 .python-version
+.env
+.env.*
 
 # Generated sync reports and local media/test artifacts.
 notes/substack-sync-*.json
 output/
+tmp/
 notes/*/scratch-render/
 notes/*/voice-auditions/
 notes/*/*scratch*-latest.mp4
@@ -17,3 +20,13 @@ notes/*/generated-deck-assets/
 notes/*/*deck*.pptx
 notes/*/*deck*-contact-sheet.png
 notes/*/*deck*-layout-qa.json
+
+# Private/local application, outreach, and referral material. Force-add only
+# when a file is deliberately meant to become part of the public portfolio.
+notes/*job*
+notes/*resume*
+notes/*application*
+notes/*outreach*
+notes/*referral*
+assets/referral/
+docs/assets/referral/

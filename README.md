@@ -108,3 +108,15 @@ pytest
 The generated `docs/` tree is intentionally committed because GitHub Pages publishes from it. The more useful review targets are usually the registries, source data, build scripts, and tests rather than the generated HTML itself.
 
 This project is actively evolving, so some local experiments may be cleaner than others. The core public-facing standard is simple: the live site should help readers understand evidence without pretending uncertainty has disappeared.
+
+## Public Repo Hygiene
+
+This repository is public and doubles as a portfolio surface. Tracked files should be limited to the public site, source registries, build code, tests, public assets, and intentional project notes.
+
+Keep private application material, outreach notes, referral packets, resumes, local `.env` files, browser-control output, and scratch media out of git unless a file is deliberately being published as part of the portfolio. The `.gitignore` blocks common local spillover paths, but still inspect the staged set before committing:
+
+```bash
+git status --short
+git diff --stat
+git diff --cached --stat
+```
