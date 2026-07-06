@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-07-06
-Generated at: 2026-07-06T05:30
+Generated at: 2026-07-06T06:23
 Search window: 7 day(s) ending 2026-07-06
 
 ## Executive scan
@@ -17,17 +17,17 @@ Search window: 7 day(s) ending 2026-07-06
 
 ## Ongoing stories and what changed
 ### Ebola virus disease
-- Lead item: [DR Congo opens new Ebola treatment center as outbreak response gains momentum](https://www.bastillepost.com/global/article/5989960-dr-congo-opens-new-ebola-treatment-center-as-outbreak-response-gains-momentum) (巴士的報)
-- Newly tracked story cluster: 17 item(s) across 8 source(s).
-- Baseline snapshot created with 17 clustered item(s) across 8 source(s).
+- Lead item: [Congo Says Confirmed Ebola Cases Rise to 1,561, Including 506 Deaths](https://www.usnews.com/news/world/articles/2026-07-06/congo-says-confirmed-ebola-cases-rise-to-1-561-including-506-deaths) (U.S. News & World Report)
+- Newly tracked story cluster: 17 item(s) across 7 source(s).
+- Baseline snapshot created with 17 clustered item(s) across 7 source(s).
 - U.S. News & World Report now includes deaths or fatal cases in the story frame.
 - The Eastleigh Voice now foregrounds vaccination or vaccine policy in the story.
 
 ### Measles transmission and vaccination
-- Lead item: [Measles outbreak in Dagahaley Refugee Camp calls for urgent response](https://eastleighvoice.co.ke/index.php/health/29434/measles-outbreak-in-dagahaley-refugee-camp-calls-for-urgent-response) (The Eastleigh Voice)
+- Lead item: [Bangladesh reports 3 more suspected measles deaths, toll reaches 741](https://en.prothomalo.com/bangladesh/mj60eada3r) (Prothom Alo English)
 - Newly tracked story cluster: 3 item(s) across 3 source(s).
 - Baseline snapshot created with 3 clustered item(s) across 3 source(s).
-- The Eastleigh Voice now includes deaths or fatal cases in the story frame.
+- Prothom Alo English now includes deaths or fatal cases in the story frame.
 - The Eastleigh Voice now foregrounds vaccination or vaccine policy in the story.
 
 ### Occupational and environmental epidemiology
@@ -45,10 +45,10 @@ Search window: 7 day(s) ending 2026-07-06
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 17 item(s) across 8 source(s); 0 official/primary-source item(s).
-- Lead item: [DR Congo opens new Ebola treatment center as outbreak response gains momentum](https://www.bastillepost.com/global/article/5989960-dr-congo-opens-new-ebola-treatment-center-as-outbreak-response-gains-momentum) (巴士的報, 2026-07-06T11:17+00:00)
+- Topic size: 17 item(s) across 7 source(s); 0 official/primary-source item(s).
+- Lead item: [Congo Says Confirmed Ebola Cases Rise to 1,561, Including 506 Deaths](https://www.usnews.com/news/world/articles/2026-07-06/congo-says-confirmed-ebola-cases-rise-to-1-561-including-506-deaths) (U.S. News & World Report, 2026-07-06T05:14+00:00)
 - Detailed note: Cluster remains active across 17 related item(s), but usable factual summary text was limited after cleanup.
-- Evidence notes: [DR Congo opens new Ebola treatment center as outbreak response gains momentum](https://www.bastillepost.com/global/article/5989960-dr-congo-opens-new-ebola-treatment-center-as-outbreak-response-gains-momentum) (巴士的報); [Congo Says Confirmed Ebola Cases Rise to 1,561, Including 506 Deaths](https://www.usnews.com/news/world/articles/2026-07-06/congo-says-confirmed-ebola-cases-rise-to-1-561-including-506-deaths) (U.S. News & World Report); [Ebola deaths in DR Congo top 500 amid continued community transmission - China Daily](https://global.chinadaily.com.cn/a/202607/06/WS6a4b0701a310986e2b463ab1.html) (China Daily - Global Edition); [Ebola death toll in DR Congo surpasses 500](https://news.google.com/rss/articles/CBMicEFVX3lxTE9KSVdNc1lQNE04Q1hHQ3pKc0JYVXBpTjBMNHBDdnBSSlYxbENFMFpOTFdRakRzemtpUUY1THd6Nll4SGZWZ0hhd0w2b3hoV3NnUnowaEotZXQ2bHdmTGl5NVgxb3NFZlFJV2xBckVmMFI?oc=5) (Latest news from Azerbaijan); [Ebola treatment trial begins in Congo as outbreak continues to grow - ABC News & Headlines – Australian Broadcasting Corporation](https://news.google.com/rss/articles/CBMiggFBVV95cUxQNzBQWldoc1BPeTRfUkhjVGpMY3FSaDlIMHowYWc2dzNwdlZINEYzd0t1RFBDS3lnM3l2aDlYY0c2SF9XcjNXejBKZ2tkcGVmLThQano3SFU4Y2hXZnNpNWpSbU1IMHdPVV9vakJlMml3Q1B3NXNkQktZSmpWbjlqQU9n?oc=5) (ABC News & Headlines – Australian Broadcasting Corporation)
+- Evidence notes: [Congo Says Confirmed Ebola Cases Rise to 1,561, Including 506 Deaths](https://www.usnews.com/news/world/articles/2026-07-06/congo-says-confirmed-ebola-cases-rise-to-1-561-including-506-deaths) (U.S. News & World Report); [Ebola deaths in DR Congo top 500 amid continued community transmission - China Daily](https://global.chinadaily.com.cn/a/202607/06/WS6a4b0701a310986e2b463ab1.html) (China Daily - Global Edition); [Ebola death toll in DR Congo surpasses 500](https://news.az/news/ebola-death-toll-in-dr-congo-surpasses-500) (Latest news from Azerbaijan); [Ebola treatment trial begins in Congo as outbreak continues to grow - ABC News & Headlines – Australian Broadcasting Corporation](https://news.google.com/rss/articles/CBMiggFBVV95cUxQNzBQWldoc1BPeTRfUkhjVGpMY3FSaDlIMHowYWc2dzNwdlZINEYzd0t1RFBDS3lnM3l2aDlYY0c2SF9XcjNXejBKZ2tkcGVmLThQano3SFU4Y2hXZnNpNWpSbU1IMHdPVV9vakJlMml3Q1B3NXNkQktZSmpWbjlqQU9n?oc=5) (ABC News & Headlines – Australian Broadcasting Corporation); [DR Congo Ebola death toll hits 87 as outbreak strain lacks vaccine, poses high risk](https://news.google.com/rss/articles/CBMi7gFBVV95cUxNNklHQ1Vuem05eG5YUnZUaTFjNEh4ZlI3ZVhTOXRzcGZCY1JCWE0tWU1SLWtscXU0OGhDcUw0R3NGWjJsX0hJVWdkMmtoSi1vMFhxdThySU54WDE1UGtBRUJCN292VHUtUmUyS0s2bEV3a05IZmdDRFJyaGZERVlTTXZvcllfcjBYV2NVeWxDbk1GSVhNeDZQUWc4WkRLM2ZPaVNSUUpuZFZsUjBjRDBsVk45ajJ2OG45YWNmR0R4VWNaYXFOMk56dV9pTk11aEszekRkUnJjR2ZMUkgzUS04NUlDSElIRnF6QW0tYVN3?oc=5) (The Eastleigh Voice)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
 
@@ -78,10 +78,10 @@ Search window: 7 day(s) ending 2026-07-06
 
 ### Measles transmission and vaccination
 - Topic size: 3 item(s) across 3 source(s); 0 official/primary-source item(s).
-- Lead item: [Measles outbreak in Dagahaley Refugee Camp calls for urgent response](https://eastleighvoice.co.ke/index.php/health/29434/measles-outbreak-in-dagahaley-refugee-camp-calls-for-urgent-response) (The Eastleigh Voice, 2026-07-04T22:16+00:00)
-- Detailed note: According to MSF, the first suspected case of measles was identified on February 26, 2024, and since then, there have been 100 suspected and 10 confirmed measles cases in the camp. They noted that since February, seven deaths among children under five and 460 cases have been recorded from March 24, in three health facilities in Yambio and Nzara counties.
-- Evidence notes: [Measles outbreak in Dagahaley Refugee Camp calls for urgent response](https://eastleighvoice.co.ke/index.php/health/29434/measles-outbreak-in-dagahaley-refugee-camp-calls-for-urgent-response) (The Eastleigh Voice); [Bangladesh reports 3 more suspected measles deaths](https://www.newagebd.net/post/country/305110/bangladesh-reports-3-more-suspected-measles-deaths) (Newagebd.net); [Yemen: Sharp Rise in Measles Cases Leaves Nearly 90 Dead, Over 14,000 Infected in Gov't-Held Areas](https://yemenonline.info/special-reports/12981) (Yemen Online)
-- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
+- Lead item: [Bangladesh reports 3 more suspected measles deaths, toll reaches 741](https://en.prothomalo.com/bangladesh/mj60eada3r) (Prothom Alo English, 2026-07-06T12:35+00:00)
+- Detailed note: Three more children died with symptoms consistent with measles in 24 hours until 8:00 am today, Monday, bringing Bangladesh’s combined tally of confirmed and suspected measles-related deaths to 741. According to MSF, the first suspected case of measles was identified on February 26, 2024, and since then, there have been 100 suspected and 10 confirmed measles cases in the camp. Since 15 March, a total of 89,734...
+- Evidence notes: [Bangladesh reports 3 more suspected measles deaths, toll reaches 741](https://en.prothomalo.com/bangladesh/mj60eada3r) (Prothom Alo English); [Measles outbreak in Dagahaley Refugee Camp calls for urgent response](https://eastleighvoice.co.ke/index.php/health/29434/measles-outbreak-in-dagahaley-refugee-camp-calls-for-urgent-response) (The Eastleigh Voice); [Yemen: Sharp Rise in Measles Cases Leaves Nearly 90 Dead, Over 14,000 Infected in Gov't-Held Areas](https://yemenonline.info/special-reports/12981) (Yemen Online)
+- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Malaria
@@ -401,14 +401,14 @@ Search window: 7 day(s) ending 2026-07-06
 - Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
 - Relevance score: 5/5
 
-### DR Congo opens new Ebola treatment center as outbreak response gains momentum
-- Source: 巴士的報
-- Date: 2026-07-06T11:17+00:00
-- URL: https://www.bastillepost.com/global/article/5989960-dr-congo-opens-new-ebola-treatment-center-as-outbreak-response-gains-momentum
+### Bangladesh reports 3 more suspected measles deaths, toll reaches 741
+- Source: Prothom Alo English
+- Date: 2026-07-06T12:35+00:00
+- URL: https://en.prothomalo.com/bangladesh/mj60eada3r
 - Category: Outbreaks and emerging infections
-- Summary: Limited detail was available from feed metadata alone.
+- Summary: Three more children died with symptoms consistent with measles in 24 hours until 8:00 am today, Monday, bringing Bangladesh’s combined tally of confirmed and suspected measles-related deaths to 741. Since 15 March, a total of 89,734 patients with suspected measles have been hospitalised across the country, of whom 86,062 have recovered, according to DGHS data. With the latest update, the number of suspected measles deaths has risen to 648, while the number of laboratory-confirmed measles deaths remained unchanged at 93.
 - Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response.
-- Caveats / uncertainty: Usable source detail was limited after cleanup.
+- Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
 - Relevance score: 5/5
 
 ### Health Volunteers in Myanmar's Karenni (Kayah) State Rely on Borrowed Medicine Amid Severe Malaria Outbreak
@@ -427,7 +427,7 @@ Search window: 7 day(s) ending 2026-07-06
   Limited detail was available from feed metadata alone.
 - [Ebola deaths in DR Congo top 500 amid continued community transmission - China Daily](https://global.chinadaily.com.cn/a/202607/06/WS6a4b0701a310986e2b463ab1.html) | China Daily - Global Edition | 2026-07-06T01:38+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Ebola death toll in DR Congo surpasses 500](https://news.google.com/rss/articles/CBMicEFVX3lxTE9KSVdNc1lQNE04Q1hHQ3pKc0JYVXBpTjBMNHBDdnBSSlYxbENFMFpOTFdRakRzemtpUUY1THd6Nll4SGZWZ0hhd0w2b3hoV3NnUnowaEotZXQ2bHdmTGl5NVgxb3NFZlFJV2xBckVmMFI?oc=5) | Latest news from Azerbaijan | 2026-07-05T23:45+00:00 | Outbreaks and emerging infections
+- [Ebola death toll in DR Congo surpasses 500](https://news.az/news/ebola-death-toll-in-dr-congo-surpasses-500) | Latest news from Azerbaijan | 2026-07-05T23:45+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - ['Biological terrorism' in occupied Ukraine? Kyiv accuses Russia of creating anthrax outbreak risk](https://timesofindia.indiatimes.com/world/europe/biological-terrorism-in-occupied-ukraine-kyiv-accuses-russia-of-creating-anthrax-outbreak-risk/articleshow/132197985.cms) | The Times of India | 2026-07-05T15:59+00:00 | Outbreaks and emerging infections
   Voltaireâs quote has the answer Watch: Two 2,000-pound bison clash on Yellowstone road as tourists watch With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep you informed about the ever-evolving world, delivering a nuanced understanding of international affairs to our readers. Join us on a journey across continents as we unravel the stories that shape our interconnected world.
@@ -440,7 +440,7 @@ Search window: 7 day(s) ending 2026-07-06
 - [Africa CDC declares Ebola outbreak public health emergency of continental security](https://news.google.com/rss/articles/CBMi0AFBVV95cUxOc2VBYnpiVlZ2bW5tTmdiZ05QQ25tXzZycVh4Mll0N1NkN0JzY3kzWXpwaTJVUHZNRUhsYkVnVzRjcTh1b2FkS2xKZjJhbmFiZk81cVFHblAxV3pIWGlMbkpvaG5aaWc5U1ItZ0JmVE9aM19ZRGt5SFRpMUpXMUtkM0NTaFljSHY3aWQ1b0ZPcmptUUwwdHA5MUc4SVVuSmwwcmlXNGRLV2xwcVVnWV9MMVJCU1lKR0dITUhoR3BfczcxZVpmeGNvU28tTlNzSVBR?oc=5) | The Eastleigh Voice | 2026-07-04T22:42+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Measles outbreak in Dagahaley Refugee Camp calls for urgent response](https://eastleighvoice.co.ke/index.php/health/29434/measles-outbreak-in-dagahaley-refugee-camp-calls-for-urgent-response) | The Eastleigh Voice | 2026-07-04T22:16+00:00 | Outbreaks and emerging infections
-  According to MSF, the first suspected case of measles was identified on February 26, 2024, and since then, there have been 100 suspected and 10 confirmed measles cases in the camp. They noted that since February, seven deaths among children under five and 460 cases have been recorded from March 24, in three health facilities in Yambio and Nzara counties. Latest Stories Fresh cracks emerge in United Opposition over selection of 2027 flagbearer 2026 FIFA World Cup fixtures (Round of 16) Youths storm National Youth Council offices, give ministry two-week ultimatum after delayed polls EACC sues Mandera Governor over Nairobi school land allegedly grabbed for private housing The organisation also warned that due to its highly contagious nature, measles could result in severe complications, including pneumonia, malnutrition and death, exacerbated by overcrowded living conditions in the camps.
+  According to MSF, the first suspected case of measles was identified on February 26, 2024, and since then, there have been 100 suspected and 10 confirmed measles cases in the camp. They noted that since February, seven deaths among children under five and 460 cases have been recorded from March 24, in three health facilities in Yambio and Nzara counties. The centre, run by the United Nations High Commissioner for Refugees (UNHCR) hosts about 302,805 registered refugees and asylum seekers in three camps (Dagahaley, Hagadera and Ifo) as of October 31, 2023.
 - [Did US aid cuts worsen Ebola outbreak in Central Africa?](https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNGxQSmVCRE1kVlVnN0c5VTYzNkR5NWlrQ1BuMjNIN2YzOFVrSG5hdC1DdTN3aXRXWWRFaG41c19VRmJFLTZGTzl5V05zUnFYMng2NFJLeFVHNmFYMjk5ajctaHgyTDdCNWJKZHNNbG85YWk2Q25hTlZvZE5yQVNWanRJQ3owN2xrRDNsNWFZNVVPc1RvS01GYzdNNktDSjIzclJxMEVyRWpnQQ?oc=5) | The Eastleigh Voice | 2026-07-04T21:08+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Ebola outbreak: ‘Every epidemic begins in a community and ends in a community’](https://news.google.com/rss/articles/CBMixwFBVV95cUxOT0RtbW1oaWlWMHAtOFk2aVZHbjI1WThXX2prUzd0MTFXaHc1N01NUFVrTnNZSUxFSG82aEdXYUFZN3FsSlZ6Q3l4REFaVmFsVzY2ZVJ6WWJxamo3OE54MnNzY01PbnVjcHlwY2lGZVAzUFpONHB3bXNtNGs5cjBtNmJ4RjdKeFN5aG5UeGJDR0FaMkh2S09ndHJzVUZoTF8zd0FuM21qSXFxSEdUSjZXdHpac090dWZzdG1qMG5oYVM3NTh1T0RR?oc=5) | The Eastleigh Voice | 2026-07-04T20:29+00:00 | Outbreaks and emerging infections
@@ -455,14 +455,14 @@ Search window: 7 day(s) ending 2026-07-06
   Limited detail was available from feed metadata alone.
 - [US–Africa Business Summit in Mauritius postponed over Ebola outbreak concerns](https://news.google.com/rss/articles/CBMiygFBVV95cUxPMVJhLXJkeWRQaHJkYkw5TXc4QmdwS1ZlS3JnaE1ncnl3eTBLVXdSbVVNaENWOUszWkRLUHlsU1pRbHI4NXJYWHFXMW02N0NXSG5RTm5PbmpSS09mSkNNbm9SZk91dlo2Tm8zNFl6Wnpud3hPRmJfLWZaem9obDY5QWZlQmQzRjBMWTFTY2J0NFdOWElDTXdDdWc5T0ZFQzU4Q1MyTFl1QlMxb05BVFc1Nk9GRzA5RFB5Nks4bWcxQ293dmN5OGF1OExB?oc=5) | The Eastleigh Voice | 2026-07-04T19:13+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
+- [Americans exposed to Ebola to get experimental antibody therapy amid Kenya quarantine row](https://news.google.com/rss/articles/CBMi1wFBVV95cUxOYTdZMzNqd3BjWmlzZTVRanJHRHVIcVBKWGR3VkM5Y2xVd2VnamN5b3NyV3QwM1gyNzlKckRCRVpSc3hMTEU3Y1Fsb1A0ZU5PQTF2Nk5mMHFPeVVOYjVMY25vTUpUV3E5WkpST0VfVFVyTEkwczU3MVktY05Ua3BtNHlBT0Z2TzcwZ1VWdjQ1SnE4dktEY3dtY2FCZkZLeTBtdzBZSWpSUTd6eVpFV3ZqLUt6VUpXaHAzMEMxMzNzd2VUNDdsWUk1T0xfMWdDV3pDMW5hdHlpWQ?oc=5) | The Eastleigh Voice | 2026-07-04T19:05+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - [Legionnaires' disease cluster on NYC's Upper East Side under investigation](https://www.cbsnews.com/newyork/video/legionnaires-disease-cluster-on-nycs-upper-east-side-under-investigation-1/) | CBS News | 2026-07-04T03:47+00:00 | Occupational and environmental epidemiology
   Limited detail was available from feed metadata alone.
 - [Liberia reports yellow fever case in Grand Gedah County](https://outbreaknewstoday.substack.com/p/liberia-reports-yellow-fever-case) | Outbreak News Today | 2026-07-04T00:15+00:00 | Outbreaks and emerging infections
   Liberia reported two confirmed yellow fever cases and no deaths last year. Confirmation for yellow fever was performed at Institut Pasteur in Dakar, Senegal on June 16. He was vaccinated against yellow fever in 2009.
 - [DR Congo Ebola outbreak spreads to fourth province, 360 dead](https://www.msn.com/en-in/health/health-news/dr-congo-ebola-outbreak-spreads-to-fourth-province-360-dead/ar-AA26ONXg) | MSN | 2026-06-29T18:08+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Nipah: WHO DON Report & A Narrative Review On Nipah Pandemic Preparedness](https://afludiary.blogspot.com/2026/06/nipah-who-don-report-narrative-review.html) | Avian Flu Diary | 2026-06-29T11:26+00:00 | Outbreaks and emerging infections
-  As of 18 June 2026, a total of 104 contacts had been identified and were under monitoring, including health and care workers, with no reported secondary cases to date. The case is an adult male who developed symptoms on 30 May 2026 and was hospitalized on 10 June 2026. While most outbreaks have remained small , in July of 2018, in IJID: Enhancing Preparation For Large Nipah Outbreaks Beyond Bangladesh , we looked at an article that appeared in the International Journal of Infectious Diseases , that discussed the potential of the Nipah virus producing a large urban epidemic , similar to what we saw in West Africa with Ebola in 2014.
 
 ## Papers worth saving
 - [A historical overview of the anti-vaccine movement and its public health implications.](https://pubmed.ncbi.nlm.nih.gov/42391692/)
