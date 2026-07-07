@@ -32,6 +32,8 @@ python -m src.build_site --site-base-url /
 
 The workflow `.github/workflows/substack-sync.yml` skips rebuild and commit when the incremental sync report is degraded. That is intentional: a stale manifest is safer than republishing a partially pruned essay archive.
 
+Newsdesk import ownership is explicit. `epi-dossier` publishes its own generated `docs/` artifact, then dispatches a `newsdesk_published` event here when the cross-repo dispatch token is configured. This repo also runs `.github/workflows/deploy-pages.yml` hourly at minute `:32` UTC and imports `dteichrow/epi-dossier` directly during `src.build_site`, so the public Pages artifact does not depend on a sibling repo checkout.
+
 ## Routine Health Check
 
 Run the structural health check:
@@ -65,7 +67,7 @@ Start with the source of truth that matches the symptom:
 
 - Missing or stale essay: inspect `content/posts.yml`, `notes/substack-sync-incremental.json`, and the `substack_sync` workflow log.
 - Live page stale but `docs/` current: inspect `deploy_pages` workflow and GitHub Pages deployment status.
-- Newsdesk mirror stale: inspect the `epi-dossier` publish run first, then `docs/newsdesk/` in this repo.
+- Newsdesk mirror stale: inspect the `epi-dossier` publish run first, then the latest `deploy_pages` run here. The expected triggers are `repository_dispatch` event `newsdesk_published`, the hourly scheduled import, manual dispatch, or a push to `main`.
 - Broken tool page: run `scripts/validate_tool_sources.py`, `scripts/smoke_test_tool_pages.py`, then `pytest`.
 
 ## Generated File Policy

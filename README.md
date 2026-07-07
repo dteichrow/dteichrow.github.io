@@ -41,6 +41,8 @@ Core pieces:
 
 The public site is generated into `docs/` and deployed through GitHub Pages.
 
+Newsdesk updates cross repositories through an explicit contract: `dteichrow/epi-dossier` publishes the upstream Newsdesk artifact, then this repo imports that artifact during the Pages build. The import runs immediately on the `newsdesk_published` repository-dispatch event when configured and also runs hourly as a pull-based fallback.
+
 ## Evidence Standard
 
 The interactive tools are teaching tools, not exhaustive historical or epidemiologic databases. Entries prioritize claims supported by historical scholarship, epidemiologic literature, public-health records, public datasets, or clearly labeled primary sources.

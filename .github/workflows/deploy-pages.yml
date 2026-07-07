@@ -1,6 +1,12 @@
 name: deploy_pages
 
 on:
+  schedule:
+    # Pull the latest committed Newsdesk artifact after the upstream hourly publish.
+    - cron: "32 * * * *"
+  repository_dispatch:
+    types:
+      - newsdesk_published
   push:
     branches:
       - main
