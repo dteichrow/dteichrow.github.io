@@ -103,6 +103,17 @@ Run tests:
 pytest
 ```
 
+## Operational Health
+
+Use the repo doctor before deployment work or after a stale-site/sync failure:
+
+```bash
+python scripts/repo_doctor.py
+python scripts/repo_doctor.py --json
+```
+
+The operational runbook is in [OPERATIONS.md](OPERATIONS.md). It defines the source-of-truth files, Substack sync boundary, generated-file policy, live-route checks, and recovery path.
+
 ## Notes For Reviewers
 
 The generated `docs/` tree is intentionally committed because GitHub Pages publishes from it. The more useful review targets are usually the registries, source data, build scripts, and tests rather than the generated HTML itself.
