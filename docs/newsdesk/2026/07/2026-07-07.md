@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-07-07
-Generated at: 2026-07-07T17:07
+Generated at: 2026-07-07T18:47
 Search window: 7 day(s) ending 2026-07-07
 
 ## Executive scan
@@ -12,14 +12,14 @@ Search window: 7 day(s) ending 2026-07-07
 - [FDA outbreak investigation 1369: E. coli O157:H7 linked to Raw Cheddar Cheese](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-e-coli-o157h7-raw-cheddar-cheese-march-2026) (FDA Foodborne Outbreaks; 2026-07-06T14:00; Outbreaks and emerging infections; relevance 5/5)
 - [Immunodominant B-cell epitopes for precision surveillance of Plasmodium vivax malaria.](https://pubmed.ncbi.nlm.nih.gov/42405907/) (PubMed Infectious Disease Search; 2026-07-06T00:00; Major epidemiology studies; relevance 5/5)
 - [Next-generation vaccine adjuvants: Integrating nanotechnology, systems immunology, and computational approaches for precision vaccinology.](https://pubmed.ncbi.nlm.nih.gov/42405958/) (PubMed Infectious Disease Search; 2026-07-06T00:00; Major epidemiology studies; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (122), Policy, surveillance, and public health infrastructure (5), Major epidemiology studies (3)
-- Source health: 2 source(s) failed during collection: USDA APHIS Avian Influenza, California Department of Public Health News.
+- Category mix: Outbreaks and emerging infections (120), Policy, surveillance, and public health infrastructure (5), Major epidemiology studies (3)
+- Source health: 1 source(s) failed during collection: USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
 ### Ebola virus disease
 - Lead item: [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News)
-- Newly tracked story cluster: 113 item(s) across 73 source(s).
-- Baseline snapshot created with 113 clustered item(s) across 73 source(s).
+- Newly tracked story cluster: 112 item(s) across 72 source(s).
+- Baseline snapshot created with 112 clustered item(s) across 72 source(s).
 - WHO Regional Office for Africa now includes deaths or fatal cases in the story frame.
 
 ### COVID-19 and SARS-CoV-2
@@ -37,10 +37,10 @@ Search window: 7 day(s) ending 2026-07-07
 
 ## Major topics
 ### Ebola virus disease
-- Topic size: 113 item(s) across 73 source(s); 3 official/primary-source item(s).
+- Topic size: 112 item(s) across 72 source(s); 3 official/primary-source item(s).
 - Lead item: [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News, 2026-07-06T17:36+02:00)
 - Detailed note: Democratic Republic of the Congo Since 14 June 2026, a total of 240 new laboratory-confirmed cases, including 75 new confirmed deaths, have been reported, representing a 29.7% increase in cumulative confirmed cases and a 39.1% increase in cumulative confirmed deaths. As of 21 June 2026, a cumulative total of 1048 laboratory-confirmed cases, including 267 confirmed deaths [case fatality ratio (CFR) 25.5%], has...
-- Evidence notes: [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News); [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 06, Data as of 21 June 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-2) (WHO Regional Office for Africa); [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) (Texas Department of State Health Services News); [Ebola Outbreak in Congo: Health Sector Faces New Challenges](https://www.devdiscourse.com/article/health/3946820-ebola-outbreak-in-congo-health-sector-faces-new-challenges) (Devdiscourse); [Ebola outbreak in Congo still in ‘expansion phase’, WHO says](https://www.arabnews.pk/node/2650001/world) (Arab News PK)
+- Evidence notes: [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News); [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 06, Data as of 21 June 2026](https://www.afro.who.int/countries/uganda/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-2) (WHO Regional Office for Africa); [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) (Texas Department of State Health Services News); [Ebola Death Toll in DR Congo Surpasses 500 as WHO Warns Outbreak Still Spreading](https://www.dawan.africa/news/ebola-death-toll-in-dr-congo-surpasses-500-as-who-warns-outbreak-still-spreading) (Dawan Africa); [South Africa Prepares for Ebola Risk as Congo Outbreak Spreads](https://www.bloomberg.com/news/articles/2026-07-07/south-africa-prepares-for-ebola-risk-as-congo-outbreak-spreads) (Bloomberg.com)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
@@ -68,19 +68,19 @@ Search window: 7 day(s) ending 2026-07-07
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting.
 
-### Chikungunya
-- Topic size: 1 item(s) across 1 source(s); 0 official/primary-source item(s).
-- Lead item: [Costa Rica: Chikungunya outbreak in Playa Langosta, Santa Cruz](https://outbreaknewstoday.substack.com/p/costa-rica-chikungunya-outbreak-in) (Outbreak News Today, 2026-07-07T21:17+00:00)
-- Detailed note: During epidemiological surveillance, 45 suspected cases were identified, and samples were taken for analysis. As a result, four cases were laboratory-confirmed, and another 17 are considered probable and are associated with the outbreak.
-- Evidence notes: [Costa Rica: Chikungunya outbreak in Playa Langosta, Santa Cruz](https://outbreaknewstoday.substack.com/p/costa-rica-chikungunya-outbreak-in) (Outbreak News Today)
-- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
-- Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Source diversity is limited so corroboration is thin.
-
 ### Cholera
 - Topic size: 1 item(s) across 1 source(s); 0 official/primary-source item(s).
 - Lead item: [Cholera outbreak in Lamu County claims two lives, affects 50 others](https://eastleighvoice.co.ke/index.php/coast/59536/cholera-outbreak-in-lamu-county-claims-two-lives-affects-50-others) (The Eastleigh Voice, 2026-07-06T11:20+00:00)
 - Detailed note: Health officials in Lamu County have reported a cholera outbreak that has resulted in two deaths and affected 50 residents. More To Read Cholera outbreak kills 24 in Central African Republic Lamu makes history as first Kenyan county and African local authority to win global peace prize Bajuni elders give government 7-day ultimatum to reopen Lamu highway, threaten protests Intercommunal clashes add to warfare in...
 - Evidence notes: [Cholera outbreak in Lamu County claims two lives, affects 50 others](https://eastleighvoice.co.ke/index.php/coast/59536/cholera-outbreak-in-lamu-county-claims-two-lives-affects-50-others) (The Eastleigh Voice)
+- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
+- Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Source diversity is limited so corroboration is thin.
+
+### Measles transmission and vaccination
+- Topic size: 1 item(s) across 1 source(s); 0 official/primary-source item(s).
+- Lead item: [Measles outbreak in Dagahaley Refugee Camp calls for urgent response](https://eastleighvoice.co.ke/index.php/health/29434/measles-outbreak-in-dagahaley-refugee-camp-calls-for-urgent-response) (The Eastleigh Voice, 2026-07-04T22:16+00:00)
+- Detailed note: According to MSF, the first suspected case of measles was identified on February 26, 2024, and since then, there have been 100 suspected and 10 confirmed measles cases in the camp. They noted that since February, seven deaths among children under five and 460 cases have been recorded from March 24, in three health facilities in Yambio and Nzara counties.
+- Evidence notes: [Measles outbreak in Dagahaley Refugee Camp calls for urgent response](https://eastleighvoice.co.ke/index.php/health/29434/measles-outbreak-in-dagahaley-refugee-camp-calls-for-urgent-response) (The Eastleigh Voice)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
 - Caveats / uncertainty: This cluster leans on secondary coverage rather than official primary-source reporting. Source diversity is limited so corroboration is thin.
 
@@ -419,17 +419,9 @@ Search window: 7 day(s) ending 2026-07-07
   Democratic Republic of the Congo Since 14 June 2026, a total of 240 new laboratory-confirmed cases, including 75 new confirmed deaths, have been reported, representing a 29.7% increase in cumulative confirmed cases and a 39.1% increase in cumulative confirmed deaths. As of 21 June 2026, a cumulative total of 1048 laboratory-confirmed cases, including 267 confirmed deaths [case fatality ratio (CFR) 25.5%], has been reported across the three affected provinces of Ituri, North Kivu, and South Kivu. Publications orlunwop@who.int Fri, 26/06/2026 - 17:55 Event description Since the last update of 14 June 2026 (Situation Report #5), the Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo has continued to evolve, with cumulative incidence surpassing the milestone of 1000 laboratory-confirmed cases and the number of affected health zones continuing to increase.
 - [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) | Texas Department of State Health Services News | Unknown | Policy, surveillance, and public health infrastructure
   Limited detail was available from feed metadata alone.
-- [Costa Rica: Chikungunya outbreak in Playa Langosta, Santa Cruz](https://outbreaknewstoday.substack.com/p/costa-rica-chikungunya-outbreak-in) | Outbreak News Today | 2026-07-07T21:17+00:00 | Outbreaks and emerging infections
-  During epidemiological surveillance, 45 suspected cases were identified, and samples were taken for analysis. As a result, four cases were laboratory-confirmed, and another 17 are considered probable and are associated with the outbreak. From the moment the situation was detected, the MOH immediately activated epidemiological surveillance and vector control actions to contain the transmission of the virus and protect the health of people who reside, work or visit this community.
-- [Ebola Outbreak in Congo: Health Sector Faces New Challenges](https://www.devdiscourse.com/article/health/3946820-ebola-outbreak-in-congo-health-sector-faces-new-challenges) | Devdiscourse | 2026-07-07T21:00+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
 - [Sri Lanka reports more than 1,000 dengue cases a day in July](https://outbreaknewstoday.substack.com/p/sri-lanka-reports-more-than-1000) | Outbreak News Today | 2026-07-07T20:51+00:00 | Outbreaks and emerging infections
   The total cases since the beginning of the year is now 62,422 with Colombo and Gampaha districts reporting the most with 12,663 and 12,582 cases, respectively. Large epidemics were recorded in 2002, 2004, 2009, 2017, and 2019. The largest outbreak in Sri Lankan history occurred in 2017, with more than 186,000 reported dengue cases nationally.
-- [Ebola outbreak in Congo still in ‘expansion phase’, WHO says](https://www.arabnews.pk/node/2650001/world) | Arab News PK | 2026-07-07T16:07+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
 - [Ebola Death Toll in DR Congo Surpasses 500 as WHO Warns Outbreak Still Spreading](https://www.dawan.africa/news/ebola-death-toll-in-dr-congo-surpasses-500-as-who-warns-outbreak-still-spreading) | Dawan Africa | 2026-07-07T16:03+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [WHO: Congo Ebola outbreak still expanding as deaths pass 500](https://www.theaustralian.com.au/news/who-congo-ebola-outbreak-still-expanding-as-deaths-pass-500/video/e2d89b498eb739f71e1fe94272186b83) | The Australian | 2026-07-07T15:19+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [South Africa Prepares for Ebola Risk as Congo Outbreak Spreads](https://www.bloomberg.com/news/articles/2026-07-07/south-africa-prepares-for-ebola-risk-as-congo-outbreak-spreads) | Bloomberg.com | 2026-07-07T14:03+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
@@ -437,9 +429,9 @@ Search window: 7 day(s) ending 2026-07-07
   Limited detail was available from feed metadata alone.
 - [Ebola outbreak exposes a fractured outbreak response system](https://www.statnews.com/2026/07/07/health-news-ebola-outbreak-exposes-a-fractured-outbreak-response-system/) | STAT | 2026-07-07T12:10+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Ebola outbreak in Congo still expanding, not stabilized, WHO official says](https://www.jpost.com/international/article-901732) | The Jerusalem Post | 2026-07-07T10:15+00:00 | Outbreaks and emerging infections
+- [Ebola outbreak in Congo still in 'expansion phase', WHO says](https://www.deccanherald.com/world/rest-of-world/ebola-outbreak-in-congo-still-in-expansion-phase-who-says-4065075) | Deccan Herald | 2026-07-07T10:25+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Ebola Outbreak in Congo: A Growing Concern](https://www.devdiscourse.com/article/health/3946385-ebola-outbreak-in-congo-a-growing-concern) | Devdiscourse | 2026-07-07T09:05+00:00 | Outbreaks and emerging infections
+- [Ebola outbreak in Congo still expanding, not stabilized, WHO official says](https://www.jpost.com/international/article-901732) | The Jerusalem Post | 2026-07-07T10:15+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [What if this Ebola outbreak can’t be stopped?](https://www.statnews.com/2026/07/07/ebola-outbreak-drc-uganda-endemic-control/) | STAT | 2026-07-07T08:30+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
@@ -453,7 +445,15 @@ Search window: 7 day(s) ending 2026-07-07
   Limited detail was available from feed metadata alone.
 - [Cholera outbreak in Lamu County claims two lives, affects 50 others](https://eastleighvoice.co.ke/index.php/coast/59536/cholera-outbreak-in-lamu-county-claims-two-lives-affects-50-others) | The Eastleigh Voice | 2026-07-06T11:20+00:00 | Outbreaks and emerging infections
   Health officials in Lamu County have reported a cholera outbreak that has resulted in two deaths and affected 50 residents. More To Read Cholera outbreak kills 24 in Central African Republic Lamu makes history as first Kenyan county and African local authority to win global peace prize Bajuni elders give government 7-day ultimatum to reopen Lamu highway, threaten protests Intercommunal clashes add to warfare in western Sudan: UN Leaders demand probe after alleged assaults by armed men in Siyu, Lamu County High Court suspends Lamu night curfew pending determination of petition “Residents are urged to maintain high hygiene standards and promptly report any cholera cases or symptoms to the nearest health centre to prevent further spread of the disease,” Muhsin said. Reporting symptoms such as severe diarrhoea and vomiting immediately is vital for early treatment, which can significantly reduce the risk of severe illness and death.
+- [DR Congo opens new Ebola treatment center as outbreak response gains momentum](https://www.bastillepost.com/global/article/5989960-dr-congo-opens-new-ebola-treatment-center-as-outbreak-response-gains-momentum) | 巴士的報 | 2026-07-06T11:17+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [DR Congo opens second Ebola treatment centre [Africanews Today]](https://www.africanews.com/2026/07/06/dr-congo-opens-second-ebola-treatment-centre-africanews-today/) | africanews.com | 2026-07-06T09:52+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - [The number of deaths from Ebola in the DRC has exceeded 500](https://open.kg/en/news/in-the-world/108123-chislo-smertej-ot-jeboly-v-dr-kongo-prevysilo-500.html) | open.kg | 2026-07-06T08:37+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Congo Says Confirmed Ebola Cases Rise to 1,561, Including 506 Deaths](https://www.usnews.com/news/world/articles/2026-07-06/congo-says-confirmed-ebola-cases-rise-to-1-561-including-506-deaths) | U.S. News & World Report | 2026-07-06T05:14+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Ebola deaths in DR Congo top 500 amid continued community transmission](https://www.chinadaily.com.cn/a/202607/06/WS6a4b0701a310986e2b463ab1.html) | China Daily | 2026-07-06T01:38+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
