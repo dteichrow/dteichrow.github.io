@@ -10,6 +10,12 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      # Mirror-only Newsdesk commits can arrive more often than Pages can
+      # deploy. Let the hourly schedule and manual/repository dispatches publish
+      # those artifacts instead of starting overlapping deploy jobs.
+      - "docs/app_exports/**"
+      - "docs/newsdesk/**"
   workflow_dispatch:
 
 permissions:
