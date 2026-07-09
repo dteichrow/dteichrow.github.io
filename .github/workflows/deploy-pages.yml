@@ -2,8 +2,9 @@ name: deploy_pages
 
 on:
   schedule:
-    # Pull the latest committed Newsdesk artifact after the upstream hourly publish.
-    - cron: "32 * * * *"
+    # Pull the latest committed Newsdesk artifact twice hourly, offset from the
+    # 10-minute mirror commits so GitHub Pages deploys do not pile up.
+    - cron: "23,53 * * * *"
   repository_dispatch:
     types:
       - newsdesk_published
@@ -12,8 +13,8 @@ on:
       - main
     paths-ignore:
       # Mirror-only Newsdesk commits can arrive more often than Pages can
-      # deploy. Let the hourly schedule and manual/repository dispatches publish
-      # those artifacts instead of starting overlapping deploy jobs.
+      # deploy. Let the twice-hourly schedule and manual/repository dispatches
+      # publish those artifacts instead of starting overlapping deploy jobs.
       - "docs/app_exports/**"
       - "docs/newsdesk/**"
   workflow_dispatch:
