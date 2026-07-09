@@ -1,6 +1,6 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-07-08
-Generated at: 2026-07-08T22:07
+Generated at: 2026-07-08T22:17
 Search window: 7 day(s) ending 2026-07-08
 
 ## Executive scan
@@ -13,22 +13,17 @@ Search window: 7 day(s) ending 2026-07-08
 - [FDA outbreak investigation 1380: Listeria monocytogenes linked to Requeson/Soft Ricotta Cheese](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-listeria-monocytogenes-soft-cheese-june-2026) (FDA Foodborne Outbreaks; 2026-07-06T14:00; Outbreaks and emerging infections; relevance 5/5)
 - [Overcoming the bottleneck in Treponema pallidum quantification: a novel flow cytometric assay for rapid, precise, and cost-effective detection.](https://pubmed.ncbi.nlm.nih.gov/42401834/) (PubMed Historical Pathogen Case Studies; 2026-07-04T00:00; Historical epidemiology / ancient disease / paleopathology; relevance 5/5)
 - Category mix: Outbreaks and emerging infections (109), Policy, surveillance, and public health infrastructure (4), Major epidemiology studies (3)
-- Source health: 2 source(s) failed during collection: CDC Current Outbreak List, USDA APHIS Avian Influenza.
+- Source health: 1 source(s) failed during collection: USDA APHIS Avian Influenza.
 
 ## Ongoing stories and what changed
 ### Ebola virus disease
 - Lead item: [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News)
-- Newly tracked story cluster: 103 item(s) across 61 source(s).
-- Baseline snapshot created with 103 clustered item(s) across 61 source(s).
-- WHO Regional Office for Africa now includes deaths or fatal cases in the story frame.
-- AJMC now foregrounds vaccination or vaccine policy in the story.
+- New publisher/source coverage joined this story cluster: Bangladesh Sangbad Sangstha (BSS), China Daily - Global Edition, Messenger-Inquirer.
+- 2 newly observed linked item(s) were added since the last saved snapshot.
 
 ### Historical epidemiology and ancient pathogens
 - Lead item: [A field-deployable high-resolution SNP genotyping platform for rapid surveillance of Yersinia pestis.](https://pubmed.ncbi.nlm.nih.gov/42418343/) (PubMed Infectious Disease Search)
-- Newly tracked story cluster: 3 item(s) across 2 source(s).
-- Baseline snapshot created with 3 clustered item(s) across 2 source(s).
 - PubMed Infectious Disease Search now explicitly uses investigation or monitoring language.
-- PubMed Historical Pathogen Case Studies now foregrounds vaccination or vaccine policy in the story.
 
 
 ## Major topics
