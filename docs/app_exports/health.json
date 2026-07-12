@@ -7,32 +7,37 @@
       "CBS News",
       "CIDRAP",
       "Guardian",
+      "NBC News",
       "NPR",
-      "Reuters"
+      "New York Times",
+      "Reuters",
+      "STAT"
     ],
-    "metadata_only_count": 119,
+    "metadata_only_count": 193,
     "sources_cached": 0,
     "sources_failed": 2,
-    "sources_live": 139,
-    "story_count_change": 4,
-    "wrapper_only_count": 5
+    "sources_live": 218,
+    "story_count_change": 8,
+    "wrapper_only_count": 8
   },
   "freshness_summary": {
     "fallback_cache": 0,
-    "live": 139,
+    "live": 218,
     "refresh_cache": 0,
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-07-11T05:57:09",
+  "generated_at": "2026-07-12T14:18:20",
   "source_failures": [
     {
       "error": "403 Client Error: Forbidden for url: https://www.cdc.gov/outbreaks/rss/us-outbreaks.html",
+      "required": true,
       "source": "CDC Current Outbreak List",
       "source_type": "html_list"
     },
     {
-      "error": "HTTPSConnectionPool(host='www.aphis.usda.gov', port=443): Read timed out. (read timeout=8)",
+      "error": "HTTPSConnectionPool(host='www.aphis.usda.gov', port=443): Read timed out. (read timeout=30)",
+      "required": true,
       "source": "USDA APHIS Avian Influenza",
       "source_type": "html_list"
     }

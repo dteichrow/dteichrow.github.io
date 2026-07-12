@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rift Valley fever | The Pathogen Dispatch</title>
+    <title>Cyclosporiasis | The Pathogen Dispatch</title>
     <style>
       :root { --bg: #e8e1d3; --bg-deep: #d8cebc; --surface: #f8f4ea; --surface-alt: #f2ebde; --paper: #fffdf8; --ink: #1b2836; --ink-soft: #42515e; --line: #d6cab7; --accent: #8d3f2f; --accent-soft: rgba(141,63,47,0.10); --signal: #1f5b89; --signal-soft: rgba(31,91,137,0.12); --shadow: 0 24px 56px rgba(49, 36, 22, 0.10); }
       * { box-sizing: border-box; }
@@ -131,19 +131,19 @@
       <section class="live-update-banner panel utility-panel" id="live-update-banner" hidden aria-live="polite" role="status" data-live-update-banner="true"><div class="live-update-copy"><div class="section-nav-label">New edition available</div><p class="live-update-text" id="live-update-text">An updated edition is available. Load the latest run when you are ready.</p></div><div class="live-update-actions"><button class="live-update-dismiss" id="live-update-dismiss" type="button" onclick="(function(btn){const banner=btn.closest('[data-live-update-banner]');if(banner){banner.hidden=true;banner.style.display='none';const runId=(banner.dataset&&banner.dataset.pendingRunId)||'';const key=(banner.dataset&&banner.dataset.dismissKey)||('pathogen-dispatch-live-update-dismissed:'+window.location.pathname);try{window.sessionStorage.setItem(key, window.location.pathname+'::'+(runId||'unknown'));}catch(error){}}return false;})(this)">Keep reading</button><button class="live-update-button" id="live-update-refresh" type="button" onclick="(function(btn){const banner=btn.closest('[data-live-update-banner]');if(banner){banner.hidden=true;banner.style.display='none';}const url=new URL(window.location.href);url.searchParams.set('_edition', String(Date.now()));window.location.replace(url.toString());return false;})(this)">Load latest</button></div></section>
       <section class="hero" id="story-overview">
         <p class="kicker">Disease intelligence sheet</p>
-        <h1>Rift Valley fever</h1>
+        <h1>Cyclosporiasis</h1>
         <p class="subtitle">Curated desk background for reporters who need the pathogen, transmission, and outbreak frame fast.</p>
-        <div class="meta-row"><span class="badge">Zoonotic</span><span class="badge">Vector-borne</span><span class="badge">Livestock-linked</span><span class="badge">Flooding-linked mosquito surges</span><span class="badge">Livestock markets</span><span class="badge">Pastoral and agro-pastoral regions</span></div>
+        <div class="meta-row"><span class="badge">Enteric</span><span class="badge">Foodborne</span><span class="badge">Produce-associated outbreaks</span><span class="badge">Fresh-produce supply chains</span><span class="badge">Restaurants and food-service settings</span><span class="badge">Cross-border state clusters</span></div>
         
-        <p><strong>Pathogen / agent:</strong> Rift Valley fever virus</p>
-        <p><strong>Transmission:</strong> Mosquito-borne and direct animal exposure</p>
-        <p><strong>Reservoir / vector:</strong> Mosquito vectors and infected livestock are both central.</p>
-        <p><strong>Incubation:</strong> Usually 2 to 6 days.</p>
-        <p><strong>Severity:</strong> Often mild in humans but capable of severe complications and major livestock disruption.</p>
-        <p><strong>Diagnostics:</strong> PCR or serology interpreted with animal and vector context.</p>
-        <p><strong>Treatment:</strong> Supportive care.</p>
-        <p><strong>Prevention:</strong> Mosquito control, livestock vaccination policy, and safer animal-handling practices.</p>
-        <p><strong>Vaccine / prevention status:</strong> Human vaccination is not the routine anchor; livestock policy and vector ecology drive most prevention decisions.</p>
+        <p><strong>Pathogen / agent:</strong> Cyclospora cayetanensis</p>
+        <p><strong>Transmission:</strong> Foodborne and waterborne fecal contamination; direct person-to-person spread is not the usual route.</p>
+        <p><strong>Reservoir / vector:</strong> Human fecal contamination of food or water is the practical outbreak frame; fresh produce has been implicated repeatedly in prior North American outbreaks.</p>
+        <p><strong>Incubation:</strong> Usually about one week, with a reported range of roughly 2 days to 2 weeks or more.</p>
+        <p><strong>Severity:</strong> Usually not life-threatening, but outbreaks can be large, prolonged, and disruptive; severe dehydration and delayed diagnosis matter.</p>
+        <p><strong>Diagnostics:</strong> Laboratories need a Cyclospora-specific stool test or molecular gastrointestinal panel; routine ova-and-parasite testing may not include it.</p>
+        <p><strong>Treatment:</strong> Trimethoprim-sulfamethoxazole is the usual treatment when indicated, with hydration and clinical assessment for more severe illness.</p>
+        <p><strong>Prevention:</strong> Source tracing, produce-control measures, safe food handling, and rapid provider awareness; washing alone may not eliminate risk from contaminated produce.</p>
+        <p><strong>Vaccine / prevention status:</strong> No vaccine is available.</p>
       </section>
 
       <nav class="section-nav panel utility-panel" aria-label="Section navigation"><div class="section-nav-label">On this page</div><div class="section-nav-links"><a class="section-nav-link" href="#story-overview">Overview</a><a class="section-nav-link" href="#clinical-pattern">Clinical Pattern</a><a class="section-nav-link" href="#current-story-files">Current Story Files</a><a class="section-nav-link" href="#why-reporters-care">Why Reporters Care</a><a class="section-nav-link" href="#desk-notes">Desk Notes</a></div></nav>
@@ -151,38 +151,38 @@
       <section class="panel-grid">
         <section class="panel" id="clinical-pattern">
           <h2>Symptoms And Clinical Pattern</h2>
-          <ul class="bullet-list"><li>Fever and flu-like illness in many cases.</li><li>Some patients develop ocular, hemorrhagic, or encephalitic complications.</li><li>Animal abortion storms are part of the wider outbreak signal.</li></ul>
+          <ul class="bullet-list"><li>Prolonged or relapsing watery diarrhea, often with abdominal cramping, bloating, nausea, anorexia, and weight loss.</li><li>Dehydration and delayed clinical recognition can drive the practical burden, especially in younger, older, or immunocompromised people.</li></ul>
         </section>
         <section class="panel">
           <h2>Official Background Links</h2>
-          <div class="meta-row"><a class="link-pill" href="https://www.cdc.gov/rift-valley-fever/about/index.html">CDC overview</a><a class="link-pill" href="https://www.who.int/news-room/fact-sheets/detail/rift-valley-fever">WHO fact sheet</a></div>
+          <div class="meta-row"><a class="link-pill" href="https://www.cdc.gov/cyclosporiasis/about/index.html">CDC Cyclospora overview</a><a class="link-pill" href="https://www.michigan.gov/mdhhs/keep-mi-healthy/infectious-diseases">MDHHS infectious disease updates</a></div>
         </section>
       </section>
 
       <section class="panel" id="current-story-files">
         <h2>Current Story Files</h2>
-        <div class="card-grid"><p class="empty-note">No active tracked stories are linked to this disease in the current run.</p></div>
+        <div class="card-grid"><article class="site-card"><div class="kicker">Active story file</div><h3><a href="../stories/story_7ecd65705353b55c-cyclosporiasis.html">Cyclosporiasis</a></h3><p>Baseline snapshot created with 81 clustered item(s) across 52 source(s).</p></article></div>
       </section>
 
       <section class="panel" id="why-reporters-care">
         <h2>Why Reporters Care</h2>
-        <p><strong>Why this keeps becoming news:</strong> Rift Valley fever is one of the best One Health reporting files because rainfall, livestock, mosquitoes, and human disease all move together.</p>
-        <p><strong>What journalists often get wrong:</strong> It is often framed as just another mosquito story, when livestock abortion storms and animal-trade movement are usually central to the real outbreak picture.</p>
-        <ul class="bullet-list"><li>Human cases and deaths.</li><li>Animal illness, abortion storms, and livestock movement.</li><li>Flooding, mosquito surges, and cross-border spread.</li></ul>
+        <p><strong>Why this keeps becoming news:</strong> Cyclospora can produce a large, fast-moving foodborne cluster before a specific product is identified, making state surveillance and laboratory testing more informative than early recall speculation.</p>
+        <p><strong>What journalists often get wrong:</strong> A produce-associated outbreak does not establish a specific food vehicle. Early case growth, cross-border clustering, and a missing source are signals to follow, not proof about lettuce, berries, or any restaurant chain.</p>
+        <ul class="bullet-list"><li>Case counts, hospitalizations, onset window, and the number of affected jurisdictions.</li><li>Whether officials have identified a common exposure, product, grower, or supplier.</li><li>Provider-testing guidance and evidence of delayed recognition or under-testing.</li></ul>
       </section>
 
       <section class="panel">
         <h2>Last Major Outbreak On File</h2>
-        <p><strong>West African cross-border outbreak</strong> | Mauritania and Senegal | September-October 2025</p>
-        <p>WHO reported 404 confirmed human Rift Valley fever cases and 42 deaths across Mauritania and Senegal, with continued concern about mosquito ecology and livestock movement.</p>
-        <p><strong>Source:</strong> <a href="https://www.who.int/emergencies/disease-outbreak-news/item/2025-DON584">WHO Disease Outbreak News</a> (2025-11-05)</p>
+        <p><strong>Large and growing cyclosporiasis outbreak</strong> | Southeast Michigan, with related Ohio surveillance concern | July 2026</p>
+        <p>MDHHS reported 784 Michigan cases since June 22 as of July 7, 2026, while the source investigation remained unresolved. The state warned that standard stool testing may miss Cyclospora unless it is specifically requested.</p>
+        <p><strong>Source:</strong> <a href="https://www.michigan.gov/mdhhs/-/media/Project/Websites/mdhhs/Keeping-Michigan-Healthy/Public-Health-Admin/Bulletins/Cyclosporiasis-Provider-Bulletin-NB-Copy.pdf">Michigan Department of Health and Human Services provider bulletin</a> (2026-07-07)</p>
       </section>
 
       <section class="panel" id="desk-notes">
         <h2>Desk Notes And Historical Signals</h2>
-        <p><strong>Desk note:</strong> This is classic One Health territory: weather, vectors, herds and human illness all move together.</p>
-        <p><strong>Research caveats:</strong> Human and animal surveillance rarely line up perfectly, so early burden estimates can understate the scale.</p>
-        <ul class="bullet-list"><li>Cross-border livestock movement is one of the recurring reasons RVF repeatedly defeats narrow national framing.</li></ul>
+        <p><strong>Desk note:</strong> A sudden state-level rise is a serious signal even before a recall exists. The practical question is whether the increase reflects one source, several clusters, improved testing, or a combination of all three.</p>
+        <p><strong>Research caveats:</strong> State counts can move quickly as laboratories add targeted testing and retrospective case finding. Similar illness clusters across states do not by themselves prove a single multistate outbreak.</p>
+        <ul class="bullet-list"><li>North American Cyclospora outbreaks have repeatedly been linked to fresh produce, but the food vehicle often remains unresolved early in investigation.</li></ul>
       </section>
     </main>
     <script>
