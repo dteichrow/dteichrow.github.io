@@ -1,7 +1,42 @@
 {
-  "generated_at": "2026-06-29T07:59:57",
-  "count": 56,
+  "generated_at": "2026-07-13T09:18:16",
+  "count": 57,
   "posts": [
+    {
+      "substack_id": 206517724,
+      "slug": "were-the-dark-ages-really-dark-how",
+      "title": "Were the Dark Ages Really Dark? What Rome’s Collapse Made Harder to See",
+      "date": "2026-07-11",
+      "canonical_url": "https://theedgeofepidemiology.substack.com/p/were-the-dark-ages-really-dark-how",
+      "excerpt": "Across much of the West, thinner supply systems and weaker administration made bad years harder to survive.",
+      "cover_image": "https://substack-post-media.s3.amazonaws.com/public/images/38993893-d510-4b4b-b72d-d4ca2e51f232_1400x937.jpeg",
+      "upstream_tags": [
+        "Big Epidemiology",
+        "Dark Ages",
+        "epidemiology",
+        "Medieval History"
+      ],
+      "wordcount": 4330,
+      "status": "mirrored",
+      "dek": "",
+      "topics": [
+        "Big Epidemiology",
+        "Dark Ages",
+        "epidemiology",
+        "Medieval History"
+      ],
+      "series": [],
+      "seo_title": "",
+      "seo_description": "",
+      "primary_keyword": "",
+      "topic_cluster": "",
+      "related_atlases": [],
+      "related_reference_slugs": [],
+      "related_story_ids": [],
+      "search_excerpt": "Across much of the West, thinner supply systems and weaker administration made bad years harder to survive.",
+      "hero_mode": "cover",
+      "notes": ""
+    },
     {
       "substack_id": 203888402,
       "slug": "the-public-health-evidence-on-policing",
@@ -202,7 +237,7 @@
         "epidemiology",
         "Africa"
       ],
-      "wordcount": 2589,
+      "wordcount": 2721,
       "status": "mirrored",
       "dek": "What we know, what we don't, and why an outbreak in a conflict zone is so hard to read from the outside.",
       "topics": [

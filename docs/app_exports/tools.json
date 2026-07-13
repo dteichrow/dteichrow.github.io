@@ -1,7 +1,26 @@
 {
-  "generated_at": "2026-06-17T23:45:32",
-  "count": 5,
+  "generated_at": "2026-07-13T09:18:16",
+  "count": 6,
   "tools": [
+    {
+      "tool_id": "histsearch",
+      "title": "Histsearch",
+      "tool_type": "research search",
+      "status": "open",
+      "status_label": "Local research system",
+      "summary": "A historian-style source discovery interface for historical epidemiology topics, built around source logs, exportable records, and transparent search paths.",
+      "evidence_model": "Local connector runs with source logs, manual search strings, SQLite-backed storage, dossiers, CSV exports, and JSON records",
+      "public_route": "tools/histsearch/",
+      "keywords": [
+        "historical epidemiology",
+        "research search",
+        "archives",
+        "PubMed",
+        "source discovery",
+        "bibliography"
+      ],
+      "long_note": "The public page documents the search interface and local workflow. Live connector searches run through the local Python backend; GitHub Pages hosts the frontend but does not run Python or store private research outputs."
+    },
     {
       "tool_id": "american-epidemic-timeline",
       "title": "American Epidemic Timeline",
@@ -66,10 +85,10 @@
       "tool_id": "revolutionary-war-atlas",
       "title": "Revolutionary War Disease Atlas",
       "tool_type": "atlas",
-      "status": "open",
-      "status_label": "Video-ready exhibit",
+      "status": "section",
+      "status_label": "Historical section",
       "summary": "A historical epidemiology section focused on colonial and Revolutionary-era disease ecology, troop movement, and the public-health constraints around the founding period.",
-      "evidence_model": "Essay-linked historical synthesis with source-backed guided-tour and recording mode",
+      "evidence_model": "Essay-linked historical synthesis",
       "public_route": "atlases/revolutionary-war/",
       "keywords": [
         "revolutionary war",
@@ -78,7 +97,7 @@
         "inoculation",
         "military disease"
       ],
-      "long_note": "A structured historical atlas page connecting colonial disease ecology, military movement, smallpox, inoculation, camp disease, prison ships, and public-health constraints around the founding period. Includes a YouTube capture mode for the Revolutionary War disease video."
+      "long_note": "A structured historical atlas page connecting colonial disease ecology, military movement, smallpox, inoculation, and public-health constraints around the founding period."
     },
     {
       "tool_id": "viking-health-atlas",

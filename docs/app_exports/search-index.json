@@ -1,5 +1,13 @@
 [
   {
+    "title": "Were the Dark Ages Really Dark? What Rome’s Collapse Made Harder to See",
+    "display_title": "Were the Dark Ages Really Dark? What Rome’s Collapse Made Harder to See",
+    "section": "Essay",
+    "summary": "Across much of the West, thinner supply systems and weaker administration made bad years harder to survive.",
+    "url": "/essays/were-the-dark-ages-really-dark-how/",
+    "keywords": "Big Epidemiology Dark Ages epidemiology Medieval History Big Epidemiology Dark Ages epidemiology Medieval History  historical-epidemiology"
+  },
+  {
     "title": "The Public Health Evidence on Policing Is Stranger Than Either Side Admits",
     "display_title": "The Public Health Evidence on Policing Is Stranger Than Either Side Admits",
     "section": "Essay",
@@ -525,6 +533,13 @@
     "keywords": "viking norse greenland vinland plague health"
   },
   {
+    "title": "Histsearch",
+    "section": "Tool",
+    "summary": "A historian-style source discovery interface for historical epidemiology topics, built around source logs, exportable records, and transparent search paths.",
+    "url": "/tools/histsearch/",
+    "keywords": "historical epidemiology research search archives PubMed source discovery bibliography research search"
+  },
+  {
     "title": "American Epidemic Timeline",
     "section": "Tool",
     "summary": "A carefully cited timeline of major U.S.-linked epidemics, outbreaks, and public-health turning points.",
@@ -562,51 +577,58 @@
   {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
-    "summary": "Baseline snapshot created with 136 clustered item(s) across 95 source(s).",
+    "summary": "Baseline snapshot created with 90 clustered item(s) across 61 source(s).",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
-    "keywords": "new_official_source suspected_case confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission laboratory_or_genomic Africa Democratic Republic of the Congo"
+    "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission Africa Democratic Republic of the Congo"
   },
   {
     "title": "Hantavirus and cruise-ship outbreak",
     "section": "Newsdesk",
-    "summary": "Baseline snapshot created with 22 clustered item(s) across 21 source(s).",
+    "summary": "Baseline snapshot created with 8 clustered item(s) across 7 source(s).",
     "url": "/stories/story_f6d225b01f3f7094-hantavirus-and-cruise-ship-outbreak.html",
-    "keywords": "new_official_source policy_or_travel healthcare_transmission Cross-region / unassigned United Kingdom"
+    "keywords": "new_official_source policy_or_travel Global / Maritime United Kingdom"
   },
   {
-    "title": "Avian influenza and H5N1",
+    "title": "Cyclosporiasis",
     "section": "Newsdesk",
-    "summary": "Baseline snapshot created with 3 clustered item(s) across 3 source(s).",
-    "url": "/stories/story_28a91c6d89267872-avian-influenza-and-h5n1.html",
-    "keywords": "confirmed_case severity_or_death Southeast Asia "
+    "summary": "Baseline snapshot created with 85 clustered item(s) across 58 source(s).",
+    "url": "/stories/story_7ecd65705353b55c-cyclosporiasis.html",
+    "keywords": "new_official_source confirmed_case severity_or_death new_geography healthcare_transmission Cross-region / unassigned United Kingdom"
   },
   {
-    "title": "Dengue and arboviruses",
+    "title": "Occupational and environmental epidemiology",
+    "section": "Newsdesk",
+    "summary": "Baseline snapshot created with 13 clustered item(s) across 10 source(s).",
+    "url": "/stories/story_17a354bcafcca4ce-occupational-and-environmental-epidemiology.html",
+    "keywords": "new_official_source severity_or_death North America United States"
+  },
+  {
+    "title": "Historical epidemiology and ancient pathogens",
     "section": "Newsdesk",
     "summary": "Baseline snapshot created with 4 clustered item(s) across 4 source(s).",
-    "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
-    "keywords": "new_official_source new_geography South Asia Canada / India"
+    "url": "/stories/story_b461b8ac8c062700-historical-epidemiology-and-ancient-pathogens.html",
+    "keywords": "new_official_source policy_or_travel Africa Democratic Republic of the Congo"
   },
   {
-    "title": "Polio and wastewater surveillance",
+    "title": "Hepatitis A",
     "section": "Newsdesk",
-    "summary": "Baseline snapshot created with 4 clustered item(s) across 4 source(s).",
-    "url": "/stories/story_9ccdd822481fa2b6-polio-and-wastewater-surveillance.html",
-    "keywords": "new_official_source Europe Spain"
-  },
-  {
-    "title": "Tuberculosis and antimicrobial resistance",
-    "section": "Newsdesk",
-    "summary": "Baseline snapshot created with 2 clustered item(s) across 2 source(s).",
-    "url": "/stories/story_8b3f807bbfd61cab-tuberculosis-and-antimicrobial-resistance.html",
-    "keywords": "new_official_source transmission_change laboratory_or_genomic East Asia "
+    "summary": "Baseline snapshot created with 3 clustered item(s) across 2 source(s).",
+    "url": "/stories/story_7d73f3a0252609da-hepatitis-a.html",
+    "keywords": "policy_or_travel Cross-region / unassigned "
   },
   {
     "title": "COVID-19 and SARS-CoV-2",
     "section": "Newsdesk",
-    "summary": "Baseline snapshot created with 2 clustered item(s) across 2 source(s).",
+    "summary": "Baseline snapshot created with 4 clustered item(s) across 2 source(s).",
     "url": "/stories/story_afd8f5934e291e02-covid-19-and-sars-cov-2.html",
-    "keywords": "severity_or_death Latin America and Caribbean "
+    "keywords": "new_official_source severity_or_death policy_or_travel North America United States"
+  },
+  {
+    "title": "Tuberculosis and antimicrobial resistance",
+    "section": "Newsdesk",
+    "summary": "Baseline snapshot created with 2 clustered item(s) across 1 source(s).",
+    "url": "/stories/story_8b3f807bbfd61cab-tuberculosis-and-antimicrobial-resistance.html",
+    "keywords": "Africa "
   },
   {
     "title": "Ebola virus disease",
@@ -656,6 +678,13 @@
     "summary": "Cholera is one of the clearest diseases for showing how water, war, displacement, climate shocks, and state capacity become mortality.",
     "url": "/reference/cholera.html",
     "keywords": "Waterborne Enteric Humanitarian settings acute watery diarrhea"
+  },
+  {
+    "title": "Cyclosporiasis",
+    "section": "Reference",
+    "summary": "Cyclospora can produce a large, fast-moving foodborne cluster before a specific product is identified, making state surveillance and laboratory testing more informative than early recall speculation.",
+    "url": "/reference/cyclosporiasis.html",
+    "keywords": "Enteric Foodborne Produce-associated outbreaks cyclospora cyclospora cayetanensis cyclospora infection"
   },
   {
     "title": "Dengue",
