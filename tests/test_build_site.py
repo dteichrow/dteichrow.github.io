@@ -277,16 +277,24 @@ def test_import_epidossier_public_imports_outbreak_terminal_routes(tmp_path, mon
     build_site.import_epidossier_public(docs_dir, "/")
 
     terminal_page = docs_dir / "newsdesk" / "outbreaks" / "index.html"
+    legacy_terminal_page = docs_dir / "newsdesk" / "outbreaks.html"
     root_alias = docs_dir / "outbreaks.html"
     reference_page = docs_dir / "reference" / "ebola-virus-disease.html"
+    legacy_reference_page = docs_dir / "newsdesk" / "reference" / "ebola-virus-disease.html"
     story_page = docs_dir / "stories" / "demo-story.html"
+    legacy_story_page = docs_dir / "newsdesk" / "stories" / "demo-story.html"
     newsdesk_home = docs_dir / "newsdesk" / "index.html"
     newsdesk_latest = docs_dir / "newsdesk" / "latest.html"
     assert terminal_page.exists()
+    assert legacy_terminal_page.exists()
     assert root_alias.exists()
+    assert (docs_dir / "newsdesk" / "app_exports" / "latest.json").exists()
     assert "Outbreak Terminal" in terminal_page.read_text()
+    assert "Outbreak Terminal" in legacy_terminal_page.read_text()
     assert 'href="/newsdesk/outbreaks/"' in reference_page.read_text()
     assert 'href="/newsdesk/outbreaks/"' in story_page.read_text()
+    assert 'href="/newsdesk/outbreaks/"' in legacy_reference_page.read_text()
+    assert 'href="/newsdesk/outbreaks/"' in legacy_story_page.read_text()
     assert 'href="/newsdesk/"' in root_alias.read_text()
     assert 'href="/"' in newsdesk_home.read_text()
     assert 'href="/"' in newsdesk_latest.read_text()
@@ -791,6 +799,9 @@ def test_import_external_revolutionary_war_atlas_copies_bundle(tmp_path, monkeyp
     docs_dir = tmp_path / "docs"
     src_root.mkdir(parents=True)
     (src_root / "index.html").write_text("<html><body>Revolutionary War Battle & Disease Atlas</body></html>")
+    (src_root / "README.md").write_text("# Revolutionary War Disease Atlas Source Backbone\n")
+    (src_root / "data").mkdir()
+    (src_root / "data" / "revolutionary_war_youtube_video_plan.js").write_text("window.PLAN = {};\n")
     (src_root / "assets").mkdir()
     (src_root / "assets" / "fixture.txt").write_text("asset")
 
@@ -799,6 +810,8 @@ def test_import_external_revolutionary_war_atlas_copies_bundle(tmp_path, monkeyp
 
     dest_root = docs_dir / "atlases" / "revolutionary-war"
     assert (dest_root / "index.html").read_text() == "<html><body>Revolutionary War Battle & Disease Atlas</body></html>"
+    assert (dest_root / "README.md").read_text() == "# Revolutionary War Disease Atlas Source Backbone\n"
+    assert (dest_root / "data" / "revolutionary_war_youtube_video_plan.js").read_text() == "window.PLAN = {};\n"
     assert (dest_root / "assets" / "fixture.txt").read_text() == "asset"
 
 

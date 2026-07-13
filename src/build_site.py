@@ -1716,6 +1716,15 @@ def import_copy(src: Path, dest: Path) -> None:
     shutil.copy2(src, dest)
 
 
+def sync_legacy_newsdesk_app_exports(docs_dir: Path) -> None:
+    """Keep the previous public JSON location available for existing clients."""
+    source = docs_dir / "app_exports"
+    destination = docs_dir / "newsdesk" / "app_exports"
+    if destination.exists():
+        shutil.rmtree(destination)
+    shutil.copytree(source, destination)
+
+
 def shell_wrapper_css(base_url: str) -> str:
     return f"""
 <style id="eoe-shell-import-style">
@@ -2266,15 +2275,23 @@ def import_epidossier_public(docs_dir: Path, base_url: str) -> dict[str, Any]:
     html_pages = [
         (source_docs / "index.html", docs_dir / "newsdesk" / "index.html", "newsdesk"),
         (source_docs / "outbreaks.html", docs_dir / "newsdesk" / "outbreaks" / "index.html", "newsdesk"),
+        (source_docs / "outbreaks.html", docs_dir / "newsdesk" / "outbreaks.html", "newsdesk"),
         (source_docs / "outbreaks.html", docs_dir / "outbreaks.html", "newsdesk"),
         (source_docs / "watch.html", docs_dir / "newsdesk" / "watch" / "index.html", "newsdesk"),
+        (source_docs / "watch.html", docs_dir / "newsdesk" / "watch.html", "newsdesk"),
         (source_docs / "africa.html", docs_dir / "newsdesk" / "africa" / "index.html", "newsdesk"),
+        (source_docs / "africa.html", docs_dir / "newsdesk" / "africa.html", "newsdesk"),
         (source_docs / "asia.html", docs_dir / "newsdesk" / "asia" / "index.html", "newsdesk"),
+        (source_docs / "asia.html", docs_dir / "newsdesk" / "asia.html", "newsdesk"),
         (source_docs / "research.html", docs_dir / "newsdesk" / "research" / "index.html", "newsdesk"),
+        (source_docs / "research.html", docs_dir / "newsdesk" / "research.html", "newsdesk"),
         (source_docs / "official.html", docs_dir / "newsdesk" / "official" / "index.html", "newsdesk"),
+        (source_docs / "official.html", docs_dir / "newsdesk" / "official.html", "newsdesk"),
         (source_docs / "historical.html", docs_dir / "newsdesk" / "historical" / "index.html", "newsdesk"),
+        (source_docs / "historical.html", docs_dir / "newsdesk" / "historical.html", "newsdesk"),
         (source_docs / "archive" / "index.html", docs_dir / "newsdesk" / "archive" / "index.html", "newsdesk"),
         (source_docs / "notebook.html", docs_dir / "notebook" / "index.html", "notebook"),
+        (source_docs / "notebook.html", docs_dir / "newsdesk" / "notebook.html", "notebook"),
     ]
     for src, dest, active in html_pages:
         transformed = transform_imported_html(src.read_text(), active=active, base_url=base_url)
@@ -2290,17 +2307,26 @@ def import_epidossier_public(docs_dir: Path, base_url: str) -> dict[str, Any]:
             dest = docs_dir / dest_subdir / src.name
             ensure_dir(dest.parent)
             dest.write_text(transformed)
+            legacy_dest = docs_dir / "newsdesk" / source_subdir / src.name
+            ensure_dir(legacy_dest.parent)
+            legacy_dest.write_text(transformed)
 
     dated_source_root = source_docs / "2026"
     if dated_source_root.exists():
-        for src in dated_source_root.rglob("*.html"):
+        for src in dated_source_root.rglob("*"):
+            if not src.is_file():
+                continue
             rel = src.relative_to(source_docs)
             dest = docs_dir / "newsdesk" / rel
-            transformed = transform_imported_html(src.read_text(), active="newsdesk", base_url=base_url)
-            ensure_dir(dest.parent)
-            dest.write_text(transformed)
+            if src.suffix == ".html":
+                transformed = transform_imported_html(src.read_text(), active="newsdesk", base_url=base_url)
+                ensure_dir(dest.parent)
+                dest.write_text(transformed)
+            else:
+                import_copy(src, dest)
 
     ensure_archived_story_placeholders(docs_dir, base_url)
+    sync_legacy_newsdesk_app_exports(docs_dir)
     latest = sanitize_public_copy(load_json(app_exports_dest / "latest.json"))
     return latest
 
@@ -3202,6 +3228,7 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
     write_json(docs_dir / "app_exports" / "atlases.json", atlases_export)
     write_json(docs_dir / "app_exports" / "tools.json", tools_export)
     write_json(docs_dir / "app_exports" / "search-index.json", search_index)
+    sync_legacy_newsdesk_app_exports(docs_dir)
     seo_report = finalize_seo(docs_dir, public_posts)
 
     return {
