@@ -2193,7 +2193,7 @@ def transform_imported_html(html_text: str, *, active: str, base_url: str) -> st
     html_text = ensure_meta_description(html_text, description)
     html_text = html_text.replace("</head>", f"{shell_wrapper_css(base_url)}</head>")
     html_text = html_text.replace("<body>", f"<body>{imported_shell_nav(active, base_url)}", 1)
-    return html_text
+    return re.sub(r"[ \t]+\n", "\n", html_text)
 
 
 def live_newsdesk_redirect_html(*, title: str, target_url: str) -> str:
