@@ -13,28 +13,22 @@
       "Reuters",
       "STAT"
     ],
-    "metadata_only_count": 201,
+    "metadata_only_count": 198,
     "sources_cached": 0,
-    "sources_failed": 2,
-    "sources_live": 224,
+    "sources_failed": 1,
+    "sources_live": 221,
     "story_count_change": 7,
     "wrapper_only_count": 4
   },
   "freshness_summary": {
     "fallback_cache": 0,
-    "live": 224,
+    "live": 221,
     "refresh_cache": 0,
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-07-13T13:18:17",
+  "generated_at": "2026-07-13T14:17:08",
   "source_failures": [
-    {
-      "error": "HTTPSConnectionPool(host='www.cidrap.umn.edu', port=443): Read timed out. (read timeout=20)",
-      "required": true,
-      "source": "CIDRAP",
-      "source_type": "rss"
-    },
     {
       "error": "cannot access local variable 'reference' where it is not associated with a value",
       "required": true,
