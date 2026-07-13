@@ -49,29 +49,38 @@ jobs:
           from pathlib import Path
 
           report = json.loads(Path("notes/substack-sync-incremental.json").read_text())
-          degraded = bool(report.get("sitemap_prune_degraded"))
+          publish_blocked = bool(report.get("publish_blocked"))
+          body_sync_available = bool(report.get("body_sync_available"))
           with open(os.environ["GITHUB_OUTPUT"], "a") as output:
-              output.write(f"degraded={'true' if degraded else 'false'}\n")
-          if degraded:
+              output.write(f"publish_blocked={'true' if publish_blocked else 'false'}\n")
+              output.write(f"body_sync_available={'true' if body_sync_available else 'false'}\n")
+          if publish_blocked:
               print(
-                  "Substack sitemap fetch failed; skipping rebuild/commit so stale "
-                  "essay records are not republished."
+                  "All Substack discovery routes failed; skipping rebuild/commit so "
+                  "the last successful essay archive stays intact."
+              )
+          elif body_sync_available:
+              print(
+                  "Substack discovery and sitemap confirmation succeeded; mirroring "
+                  f"and publishing {report.get('total_manifest_records')} essay records."
               )
           else:
               print(
-                  "Substack sitemap fetch succeeded; manifest is authoritative for "
-                  f"{report.get('total_manifest_records')} records."
+                  "Substack discovery succeeded without sitemap confirmation; publishing "
+                  "new essay records without pruning or body mirroring."
               )
           PY
 
       - name: Build site
-        if: steps.substack_health.outputs.degraded != 'true'
+        if: steps.substack_health.outputs.publish_blocked != 'true'
         run: |
-          python -m src.substack_sync --mode bodies
+          if [ "${{ steps.substack_health.outputs.body_sync_available }}" = "true" ]; then
+            python -m src.substack_sync --mode bodies
+          fi
           python -m src.build_site --site-base-url /
 
       - name: Commit changes
-        if: steps.substack_health.outputs.degraded != 'true'
+        if: steps.substack_health.outputs.publish_blocked != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

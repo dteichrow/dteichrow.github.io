@@ -38,6 +38,11 @@ SITEMAP_URL = f"{SUBSTACK_BASE}/sitemap.xml"
 ARCHIVE_URL = f"{SUBSTACK_BASE}/archive"
 ARCHIVE_API_URL = f"{SUBSTACK_BASE}/api/v1/archive?sort=new"
 RSS_URL = f"{SUBSTACK_BASE}/feed"
+# GitHub-hosted runners are sometimes blocked by Substack even when the public
+# feed is available. This reader relay is discovery-only: canonical URLs remain
+# Substack URLs, and relay data is never used to prune the local archive.
+READER_BASE_URL = "https://r.jina.ai/http://"
+READER_RSS_URL = f"{READER_BASE_URL}{urlparse(SUBSTACK_BASE).netloc}/feed"
 POST_BODIES_DIR = CONTENT_DIR / "post_bodies"
 NOINDEX_POST_STRATEGIES = {"noindex", "noindex_stub_private", "private", "draft", "hidden"}
 LEGACY_FLASHCARD_FIELDS = {
@@ -434,6 +439,73 @@ def _parse_rss_feed(xml_text: str) -> list[dict[str, Any]]:
     return items
 
 
+def _reader_url(url: str) -> str:
+    return f"{READER_BASE_URL}{url.removeprefix('https://').removeprefix('http://')}"
+
+
+def _parse_reader_rss(reader_text: str) -> list[dict[str, Any]]:
+    records: list[dict[str, Any]] = []
+    seen_urls: set[str] = set()
+    link_pattern = re.compile(r"\]\((https://theedgeofepidemiology\.substack\.com/p/[^)\s]+)\)")
+    date_pattern = re.compile(r"(?m)^([A-Z][a-z]{2}, \d{2} [A-Z][a-z]{2} \d{4} \d{2}:\d{2}:\d{2} GMT)$")
+    for match in link_pattern.finditer(reader_text):
+        url = match.group(1)
+        if url in seen_urls:
+            continue
+        seen_urls.add(url)
+        date_match = date_pattern.search(reader_text, match.end())
+        published_at = ""
+        if date_match:
+            try:
+                published_at = parsedate_to_datetime(date_match.group(1)).date().isoformat()
+            except (TypeError, ValueError):
+                pass
+        records.append(
+            {
+                "substack_id": None,
+                "slug": slug_from_canonical(url),
+                "title": "",
+                "date": published_at,
+                "canonical_url": url,
+                "excerpt": "",
+                "cover_image": "",
+                "upstream_tags": [],
+                "source_mode": "substack_reader_rss",
+                "wordcount": None,
+            }
+        )
+    return records
+
+
+def _extract_post_record_from_reader(reader_text: str, url: str) -> dict[str, Any]:
+    title_match = re.search(r"(?m)^Title:\s*(.+)$", reader_text)
+    published_match = re.search(r"(?m)^Published Time:\s*(.+)$", reader_text)
+    content_match = re.search(r"(?ms)^Markdown Content:\s*(.*)$", reader_text)
+    title = clean_text(title_match.group(1) if title_match else "")
+    if not title:
+        raise ValueError("Could not find an essay title in reader fallback output")
+
+    published_at = ""
+    if published_match:
+        published_at = parse_iso_date(published_match.group(1))
+    markdown_content = content_match.group(1) if content_match else ""
+    cleaned_content = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", markdown_content)
+    cleaned_content = re.sub(r"[*_#>`]", " ", cleaned_content)
+    excerpt = clean_text(cleaned_content)[:600]
+    return {
+        "substack_id": None,
+        "slug": slug_from_canonical(url),
+        "title": title,
+        "date": published_at,
+        "canonical_url": url,
+        "excerpt": excerpt,
+        "cover_image": "",
+        "upstream_tags": [],
+        "source_mode": "substack_reader",
+        "wordcount": len(re.findall(r"[A-Za-z0-9]+(?:['-][A-Za-z0-9]+)?", cleaned_content)),
+    }
+
+
 def _report_dir_for_manifest(manifest_path: Path | None) -> Path:
     if manifest_path is None:
         return NOTES_DIR
@@ -497,6 +569,11 @@ def _recent_posts_from_sitemap(existing_posts: list[dict[str, Any]]) -> list[dic
     return candidates
 
 
+def _recent_posts_from_reader() -> list[dict[str, Any]]:
+    reader_text = fetch_text(READER_RSS_URL, headers={"Accept": "text/plain, text/markdown;q=0.9, */*;q=0.8"})
+    return _parse_reader_rss(reader_text)
+
+
 def _load_incremental_candidates(existing_posts: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], str, str | None]:
     errors: list[str] = []
     try:
@@ -515,7 +592,11 @@ def _load_incremental_candidates(existing_posts: list[dict[str, Any]]) -> tuple[
             return _recent_posts_from_sitemap(existing_posts), "sitemap_fallback", "; ".join(errors)
         except Exception as sitemap_exc:  # noqa: BLE001
             errors.append(f"sitemap={sitemap_exc}")
-            return [], "manifest_only", "; ".join(errors)
+            try:
+                return _recent_posts_from_reader(), "reader_rss", "; ".join(errors)
+            except Exception as reader_exc:  # noqa: BLE001
+                errors.append(f"reader_rss={reader_exc}")
+                return [], "manifest_only", "; ".join(errors)
 
 
 def _upstream_fields_changed(existing: dict[str, Any] | None, incoming: dict[str, Any]) -> bool:
@@ -610,9 +691,16 @@ def incremental_sync(manifest_path: Path | None = None) -> dict[str, Any]:
     for incoming in feed_posts:
         url = incoming["canonical_url"]
         existing = merged.get(url)
+        if existing is not None and incoming.get("source_mode") == "substack_reader_rss":
+            # Reader RSS is intentionally sparse; never let it overwrite a
+            # previously captured canonical record.
+            continue
         if existing is None:
             try:
-                incoming = _extract_post_record_from_page(fetch_text(url), url)
+                if incoming.get("source_mode") == "substack_reader_rss":
+                    incoming = _extract_post_record_from_reader(fetch_text(_reader_url(url)), url)
+                else:
+                    incoming = _extract_post_record_from_page(fetch_text(url), url)
                 enriched += 1
             except Exception as exc:  # noqa: BLE001
                 failures.append({"url": url, "error": str(exc)})
@@ -639,16 +727,19 @@ def incremental_sync(manifest_path: Path | None = None) -> dict[str, Any]:
         "archive_api_count": len(feed_posts) if source_mode == "archive_api" else 0,
         "rss_entry_count": len(feed_posts) if source_mode == "rss" else 0,
         "sitemap_fallback_count": len(feed_posts) if source_mode == "sitemap_fallback" else 0,
+        "reader_rss_count": len(feed_posts) if source_mode == "reader_rss" else 0,
         "total_manifest_records": len(final_posts),
         "created_records": created,
         "updated_records": updated,
         "pruned_records": len(pruned),
         "pruned_slugs": [post.get("slug", "") for post in pruned],
         "enriched_from_post_pages": enriched,
-        "degraded": source_mode in {"sitemap_fallback", "manifest_only"},
+        "degraded": source_mode in {"sitemap_fallback", "reader_rss", "manifest_only"},
         "fallback_reason": fallback_reason or "",
         "sitemap_prune_degraded": current_sitemap_urls is None,
         "sitemap_prune_error": sitemap_prune_error,
+        "publish_blocked": source_mode == "manifest_only",
+        "body_sync_available": current_sitemap_urls is not None,
         "enrichment_failures": failures,
     }
     _write_report("incremental", report, manifest_path)

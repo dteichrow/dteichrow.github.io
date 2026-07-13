@@ -17,7 +17,7 @@ def test_deploy_pages_accepts_newsdesk_dispatch_and_scheduled_pull() -> None:
     triggers = workflow["on"]
 
     assert triggers["repository_dispatch"]["types"] == ["newsdesk_published"]
-    assert triggers["schedule"] == [{"cron": "32 * * * *"}]
+    assert triggers["schedule"] == [{"cron": "23,53 * * * *"}]
 
     build_steps = workflow["jobs"]["build"]["steps"]
     build_commands = "\n".join(step.get("run", "") for step in build_steps)

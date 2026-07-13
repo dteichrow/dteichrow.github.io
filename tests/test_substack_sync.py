@@ -7,8 +7,10 @@ from src.common import merge_post_record
 from src import substack_sync
 from src.substack_sync import (
     _extract_post_body_html_from_page,
+    _extract_post_record_from_reader,
     _extract_post_record_from_page,
     _extract_recent_archive_api_posts,
+    _parse_reader_rss,
     _parse_rss_feed,
     _parse_sitemap_urls,
     _prune_missing_substack_posts,
@@ -49,6 +51,84 @@ def test_parse_rss_feed_extracts_recent_items() -> None:
     assert records[0]["slug"] == "test-post"
     assert records[0]["date"] == "2026-05-04"
     assert records[0]["cover_image"] == "https://images.example/test.jpg"
+
+
+def test_parse_reader_rss_discovers_canonical_post_urls_and_dates() -> None:
+    reader_text = """
+### [](https://theedgeofepidemiology.substack.com/p/test-post)
+
+[https://theedgeofepidemiology.substack.com/p/test-post](https://theedgeofepidemiology.substack.com/p/test-post)
+
+Mon, 04 May 2026 14:21:43 GMT
+"""
+
+    records = _parse_reader_rss(reader_text)
+
+    assert len(records) == 1
+    assert records[0]["slug"] == "test-post"
+    assert records[0]["date"] == "2026-05-04"
+    assert records[0]["source_mode"] == "substack_reader_rss"
+
+
+def test_extract_post_record_from_reader_keeps_canonical_metadata() -> None:
+    reader_text = """Title: Test post title
+
+URL Source: http://theedgeofepidemiology.substack.com/p/test-post
+
+Published Time: 2026-05-04T14:21:43+00:00
+
+Markdown Content:
+This is the opening paragraph of the essay. It has enough detail to form an excerpt.
+"""
+
+    record = _extract_post_record_from_reader(reader_text, "https://theedgeofepidemiology.substack.com/p/test-post")
+
+    assert record["title"] == "Test post title"
+    assert record["date"] == "2026-05-04"
+    assert record["canonical_url"] == "https://theedgeofepidemiology.substack.com/p/test-post"
+    assert record["source_mode"] == "substack_reader"
+
+
+def test_incremental_sync_reader_fallback_publishes_new_records_without_sitemap(tmp_path, monkeypatch) -> None:
+    manifest_path = tmp_path / "posts.yml"
+    manifest_path.write_text("posts: []\n")
+    url = "https://theedgeofepidemiology.substack.com/p/test-post"
+    reader_feed = f"""### []({url})
+
+[{url}]({url})
+
+Mon, 04 May 2026 14:21:43 GMT
+"""
+    reader_post = """Title: Reader fallback post
+
+Published Time: 2026-05-04T14:21:43+00:00
+
+Markdown Content:
+The reader fallback captured this public essay after direct collection was blocked.
+"""
+
+    monkeypatch.setattr(substack_sync, "_recent_posts_from_archive_api", lambda: (_ for _ in ()).throw(HTTPError("archive", 403, "Forbidden", {}, None)))
+    monkeypatch.setattr(substack_sync, "_recent_posts_from_sitemap", lambda posts: (_ for _ in ()).throw(HTTPError("sitemap", 403, "Forbidden", {}, None)))
+    monkeypatch.setattr(substack_sync, "_current_sitemap_post_urls", lambda: (_ for _ in ()).throw(HTTPError("sitemap", 403, "Forbidden", {}, None)))
+
+    def fake_fetch_text(requested_url: str, *args, **kwargs) -> str:
+        if requested_url == substack_sync.RSS_URL:
+            raise HTTPError(requested_url, 403, "Forbidden", {}, None)
+        if requested_url == substack_sync.READER_RSS_URL:
+            return reader_feed
+        if requested_url == substack_sync._reader_url(url):
+            return reader_post
+        raise AssertionError(f"Unexpected URL: {requested_url}")
+
+    monkeypatch.setattr(substack_sync, "fetch_text", fake_fetch_text)
+
+    report = substack_sync.incremental_sync(manifest_path)
+
+    assert report["candidate_source"] == "reader_rss"
+    assert report["created_records"] == 1
+    assert report["publish_blocked"] is False
+    assert report["body_sync_available"] is False
+    assert "Reader fallback post" in manifest_path.read_text()
 
 
 def test_extract_recent_archive_api_posts_extracts_records() -> None:
