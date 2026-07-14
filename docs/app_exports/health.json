@@ -13,21 +13,21 @@
       "Reuters",
       "STAT"
     ],
-    "metadata_only_count": 226,
+    "metadata_only_count": 230,
     "sources_cached": 0,
     "sources_failed": 1,
-    "sources_live": 246,
+    "sources_live": 251,
     "story_count_change": 6,
-    "wrapper_only_count": 5
+    "wrapper_only_count": 4
   },
   "freshness_summary": {
     "fallback_cache": 0,
-    "live": 246,
+    "live": 251,
     "refresh_cache": 0,
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-07-14T10:18:32",
+  "generated_at": "2026-07-14T11:17:39",
   "source_failures": [
     {
       "error": "cannot access local variable 'reference' where it is not associated with a value",
