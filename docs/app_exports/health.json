@@ -10,24 +10,25 @@
       "NBC News",
       "NPR",
       "New York Times",
+      "PBS",
       "Reuters",
       "STAT"
     ],
-    "metadata_only_count": 205,
+    "metadata_only_count": 198,
     "sources_cached": 0,
     "sources_failed": 1,
-    "sources_live": 227,
+    "sources_live": 219,
     "story_count_change": 7,
     "wrapper_only_count": 4
   },
   "freshness_summary": {
     "fallback_cache": 0,
-    "live": 227,
+    "live": 219,
     "refresh_cache": 0,
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-07-13T20:17:06",
+  "generated_at": "2026-07-13T21:17:17",
   "source_failures": [
     {
       "error": "cannot access local variable 'reference' where it is not associated with a value",
