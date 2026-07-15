@@ -26,7 +26,7 @@
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-07-14T17:17:10",
+  "generated_at": "2026-07-14T18:17:35",
   "source_failures": [
     {
       "error": "cannot access local variable 'reference' where it is not associated with a value",
