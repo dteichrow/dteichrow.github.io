@@ -2,7 +2,6 @@
   "degraded": true,
   "editor_summary": {
     "major_publisher_families_seen": [
-      "ABC News",
       "BBC",
       "CBS News",
       "CIDRAP",
@@ -27,7 +26,7 @@
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-07-15T08:17:23",
+  "generated_at": "2026-07-15T09:17:21",
   "source_failures": [
     {
       "error": "cannot access local variable 'reference' where it is not associated with a value",
