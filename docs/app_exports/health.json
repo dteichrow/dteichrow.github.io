@@ -2,7 +2,6 @@
   "degraded": true,
   "editor_summary": {
     "major_publisher_families_seen": [
-      "ABC News",
       "BBC",
       "CBS News",
       "CIDRAP",
@@ -13,26 +12,32 @@
       "PBS",
       "Reuters"
     ],
-    "metadata_only_count": 255,
+    "metadata_only_count": 256,
     "sources_cached": 0,
-    "sources_failed": 1,
-    "sources_live": 278,
+    "sources_failed": 2,
+    "sources_live": 282,
     "story_count_change": 5,
-    "wrapper_only_count": 9
+    "wrapper_only_count": 11
   },
   "freshness_summary": {
     "fallback_cache": 0,
-    "live": 278,
+    "live": 282,
     "refresh_cache": 0,
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-07-15T10:18:44",
+  "generated_at": "2026-07-15T11:17:32",
   "source_failures": [
     {
       "error": "cannot access local variable 'reference' where it is not associated with a value",
       "required": true,
       "source": "FDA Foodborne Outbreaks",
+      "source_type": "html_list"
+    },
+    {
+      "error": "HTTPSConnectionPool(host='www.cdph.ca.gov', port=443): Read timed out. (read timeout=8)",
+      "required": true,
+      "source": "California Department of Public Health News",
       "source_type": "html_list"
     }
   ]
