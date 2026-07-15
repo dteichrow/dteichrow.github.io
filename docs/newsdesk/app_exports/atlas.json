@@ -148,7 +148,7 @@
         "surface": "hero"
       },
       "visual_asset_id": "atlas-yellow-fever-hero",
-      "why_it_matters": "It lets the atlas show how a pathogen can move with people, water storage, ships, and vector habitat rather than by human travel alone.",
+      "why_it_matters": "Yellow fever moves with people, water storage, ships, and vector habitat, not by human travel alone.",
       "withheld_citations": [
         {
           "id": "yellow-handbook",
@@ -394,7 +394,7 @@
       "status": "mixed",
       "story_count": 0,
       "subtitle": "Dense settlement, cattle-linked ancestry, and colonial spread into immunologically naive populations",
-      "summary": "Measles is a useful atlas pathogen because its deeper origin story is partly reconstructed from molecular-clock work, while its colonial spread story is brutally visible in the Americas and Pacific.",
+      "summary": "Measles has a partly reconstructed deeper origin story from molecular-clock work, while its colonial spread is brutally visible in the Americas and Pacific.",
       "variant_count": 0,
       "variants": [],
       "visual_asset": {
@@ -420,7 +420,7 @@
         {
           "id": "measles-science",
           "reason": "DOI link withheld pending manual verification",
-          "short_citation": "D\u00fcx A, Lequime S, Patrono LV et al. Measles virus and rinderpest virus divergence dated to the sixth century BCE. Science. 2020."
+          "short_citation": "Düx A, Lequime S, Patrono LV et al. Measles virus and rinderpest virus divergence dated to the sixth century BCE. Science. 2020."
         },
         {
           "id": "measles-lancet",
@@ -535,7 +535,7 @@
       "status": "mixed",
       "story_count": 0,
       "subtitle": "Forest-zone recognition, animal trade jumps, and networked global spread",
-      "summary": "Mpox belongs in the atlas because it combines a geographically anchored Central/West African history with abrupt export through wildlife trade and then a very different twenty-first century global transmission pattern.",
+      "summary": "Mpox combines a geographically anchored Central and West African history with wildlife-trade export events and a distinct twenty-first-century pattern of networked global transmission.",
       "variant_count": 0,
       "variants": [],
       "visual_asset": {
@@ -551,7 +551,7 @@
         "surface": "hero"
       },
       "visual_asset_id": "atlas-mpox-hero",
-      "why_it_matters": "It forces the site to distinguish clades, transport mode, and transmission network rather than collapsing everything into one map pin.",
+      "why_it_matters": "Mpox geography separates clades, transport events, animal reservoirs, and transmission networks instead of collapsing them into a single point of origin.",
       "withheld_citations": [
         {
           "id": "mpox-handbook",
@@ -566,12 +566,12 @@
         {
           "id": "mpox-review",
           "reason": "DOI link withheld pending manual verification",
-          "short_citation": "Bunge EM, Hoet B, Chen L et al. The changing epidemiology of human monkeypox\u2014A potential threat? PLoS Negl Trop Dis. 2022."
+          "short_citation": "Bunge EM, Hoet B, Chen L et al. The changing epidemiology of human monkeypox—A potential threat? PLoS Negl Trop Dis. 2022."
         },
         {
           "id": "mpox-lancet",
           "reason": "DOI link withheld pending manual verification",
-          "short_citation": "Mitj\u00e0 O, Ogoina D, Titanji BK et al. Monkeypox. Lancet. 2023."
+          "short_citation": "Mitjà O, Ogoina D, Titanji BK et al. Monkeypox. Lancet. 2023."
         }
       ],
       "writing_state": "not_yet_written"
@@ -689,7 +689,7 @@
       "status": "mixed",
       "story_count": 0,
       "subtitle": "Bird flyways, poultry systems, mammalian spillover, and farm-interface risk",
-      "summary": "H5N1 belongs in the atlas because its contemporary geography is not a human epidemic map first; it is a bird-route, farm-system, and spillover map whose human layer remains contingent.",
+      "summary": "H5N1 is not primarily a human epidemic map. Its geography follows bird migration, poultry systems, mammal spillover, dairy-herd events, and occupational exposure.",
       "variant_count": 0,
       "variants": [],
       "visual_asset": {
@@ -705,7 +705,7 @@
         "surface": "hero"
       },
       "visual_asset_id": "atlas-h5n1-hero",
-      "why_it_matters": "It creates a genuinely different map grammar from the classic human-to-human pathogens and foregrounds One Health risk.",
+      "why_it_matters": "The spatial problem is One Health risk: animal movement, farm systems, and spillover opportunities before sustained human-to-human transmission.",
       "withheld_citations": [
         {
           "id": "h5n1-handbook",
@@ -725,7 +725,7 @@
         {
           "id": "h5n1-mink",
           "reason": "DOI link withheld pending manual verification",
-          "short_citation": "Ag\u00fcero M, Monne I, S\u00e1nchez A et al. Highly pathogenic avian influenza A(H5N1) virus infection in farmed minks, Spain, October 2022. Euro Surveill. 2023."
+          "short_citation": "Agüero M, Monne I, Sánchez A et al. Highly pathogenic avian influenza A(H5N1) virus infection in farmed minks, Spain, October 2022. Euro Surveill. 2023."
         }
       ],
       "writing_state": "not_yet_written"
@@ -828,7 +828,7 @@
       "status": "mixed",
       "story_count": 1,
       "subtitle": "Rodent-host lineages, hemorrhagic fever versus cardiopulmonary syndromes, and one crucial Andes-virus exception",
-      "summary": "Hantaviruses belong in the atlas because they break the habit of pretending every pathogen has one clean human-travel route. The real map is rodent-host biogeography, ecological exposure settings, and the split between Old World hemorrhagic-fever viruses and New World cardiopulmonary viruses.",
+      "summary": "Hantavirus geography follows rodent-host biogeography, ecological exposure settings, and the split between Old World hemorrhagic-fever viruses and New World cardiopulmonary viruses.",
       "variant_count": 3,
       "variants": [
         {
@@ -1082,7 +1082,7 @@
             {
               "id": "hanta-americas",
               "reason": "DOI link withheld pending manual verification",
-              "short_citation": "Hjelle B, Torres-P\u00e9rez F. Hantaviruses in the Americas and their role as emerging pathogens. Viruses. 2010."
+              "short_citation": "Hjelle B, Torres-Pérez F. Hantaviruses in the Americas and their role as emerging pathogens. Viruses. 2010."
             }
           ],
           "writing_state": "direct"
@@ -1205,7 +1205,7 @@
             {
               "id": "hanta-andes",
               "reason": "DOI link withheld pending manual verification",
-              "short_citation": "Mart\u00ednez-Valdebenito C, Calvo M, Vial C et al. Person-to-person household and nosocomial transmission of Andes hantavirus, southern Chile, 2011. Emerg Infect Dis. 2014."
+              "short_citation": "Martínez-Valdebenito C, Calvo M, Vial C et al. Person-to-person household and nosocomial transmission of Andes hantavirus, southern Chile, 2011. Emerg Infect Dis. 2014."
             },
             {
               "id": "hanta-climate",
@@ -1229,7 +1229,7 @@
         "surface": "hero"
       },
       "visual_asset_id": "atlas-hantavirus-hero",
-      "why_it_matters": "It forces the atlas to behave like an encyclopedia rather than a single-route animation and keeps us honest about host ecology, geography, and syndrome differences.",
+      "why_it_matters": "Hantavirus geography follows rodent-host biogeography, ecological exposure settings, and the split between Old World hemorrhagic-fever viruses and New World cardiopulmonary viruses.",
       "withheld_citations": [
         {
           "id": "hanta-family-review",
@@ -1239,7 +1239,7 @@
         {
           "id": "hanta-americas",
           "reason": "DOI link withheld pending manual verification",
-          "short_citation": "Hjelle B, Torres-P\u00e9rez F. Hantaviruses in the Americas and their role as emerging pathogens. Viruses. 2010."
+          "short_citation": "Hjelle B, Torres-Pérez F. Hantaviruses in the Americas and their role as emerging pathogens. Viruses. 2010."
         },
         {
           "id": "hanta-hfrs",
@@ -1249,7 +1249,7 @@
         {
           "id": "hanta-andes",
           "reason": "DOI link withheld pending manual verification",
-          "short_citation": "Mart\u00ednez-Valdebenito C, Calvo M, Vial C et al. Person-to-person household and nosocomial transmission of Andes hantavirus, southern Chile, 2011. Emerg Infect Dis. 2014."
+          "short_citation": "Martínez-Valdebenito C, Calvo M, Vial C et al. Person-to-person household and nosocomial transmission of Andes hantavirus, southern Chile, 2011. Emerg Infect Dis. 2014."
         },
         {
           "id": "hanta-climate",
@@ -1388,7 +1388,7 @@
         "surface": "hero"
       },
       "visual_asset_id": "atlas-dengue-hero",
-      "why_it_matters": "It turns the atlas toward contemporary global change instead of leaving it stranded in historical imperial routes.",
+      "why_it_matters": "Dengue shows how urbanization, climate, vector range, water storage, travel, and surveillance reshape disease geography in real time.",
       "withheld_citations": [
         {
           "id": "dengue-handbook",
@@ -1437,7 +1437,7 @@
         {
           "published_at": "2025-10-28",
           "relation": "adjacent_context",
-          "title": "Humanity\u2019s Deadliest Companions: Checking the Till on the Deadliest Microbes in History",
+          "title": "Humanity’s Deadliest Companions: Checking the Till on the Deadliest Microbes in History",
           "url": "https://theedgeofepidemiology.substack.com/p/humanitys-deadliest-companions-checking"
         }
       ],
@@ -1533,12 +1533,12 @@
       "status": "mixed",
       "story_count": 0,
       "subtitle": "Anopheles ecologies, empire, labor, and the long retreat and return of a mosquito-borne world disease",
-      "summary": "Malaria belongs in the atlas because it shows how vector ecology, land use, labor systems, altitude, war, and climate can redraw disease geography across centuries without one neat origin story doing all the work.",
+      "summary": "Malaria shows how vector ecology, land use, labor systems, altitude, war, and climate can redraw disease geography across centuries without a single tidy origin story.",
       "variant_count": 0,
       "variants": [],
       "visual_asset": {},
       "visual_asset_id": "atlas-malaria-hero",
-      "why_it_matters": "It keeps the atlas from becoming virus-only and forces a map grammar built around mosquitoes, species differences, and ecological receptivity.",
+      "why_it_matters": "Its geography is built around mosquitoes, parasite species, ecological receptivity, control programs, and uneven health-system reach.",
       "withheld_citations": [
         {
           "id": "malaria-handbook",
@@ -1685,12 +1685,12 @@
       "status": "mixed",
       "story_count": 0,
       "subtitle": "Human coexpansion, crowding, industry, migration, and the stubborn durability of airborne inequality",
-      "summary": "Tuberculosis belongs in the atlas because it is both ancient and modern at once: a human co-traveler that thrives in crowding, poverty, institutional confinement, and uneven public health capacity.",
+      "summary": "Tuberculosis is ancient and modern at once: a human co-traveler that thrives in crowding, poverty, institutional confinement, migration, HIV, and uneven public-health capacity.",
       "variant_count": 0,
       "variants": [],
       "visual_asset": {},
       "visual_asset_id": "atlas-tuberculosis-hero",
-      "why_it_matters": "It turns the atlas toward chronic structural transmission instead of one spectacular frontier jump.",
+      "why_it_matters": "Its map is chronic and structural: airborne transmission shaped by housing, labor, prisons, care access, and drug-resistance systems.",
       "withheld_citations": [
         {
           "id": "tb-handbook",
@@ -1705,7 +1705,7 @@
         {
           "id": "tb-migration",
           "reason": "DOI link withheld pending manual verification",
-          "short_citation": "Hargreaves S, L\u00f6nnroth K, Nellums LB et al. Multidrug-resistant tuberculosis and migration to Europe. Clin Microbiol Infect. 2017."
+          "short_citation": "Hargreaves S, Lönnroth K, Nellums LB et al. Multidrug-resistant tuberculosis and migration to Europe. Clin Microbiol Infect. 2017."
         }
       ],
       "writing_state": "direct"
@@ -1831,12 +1831,12 @@
       "status": "mixed",
       "story_count": 0,
       "subtitle": "Steppe reservoirs, siege and shipping, and the repeated collision of rodents, fleas, and empire",
-      "summary": "Plague belongs in the atlas because it is one of the clearest historical demonstrations that reservoir ecology, trade corridors, warfare, and maritime ports can repeatedly rewire a continent.",
+      "summary": "Plague is one of the clearest historical demonstrations that reservoir ecology, trade corridors, warfare, and maritime ports can repeatedly rewire a continent.",
       "variant_count": 0,
       "variants": [],
       "visual_asset": {},
       "visual_asset_id": "atlas-plague-hero",
-      "why_it_matters": "It lets the atlas bridge deep historical fear, genomic reconstruction, and the very practical map logic of rodents, fleas, and ports.",
+      "why_it_matters": "Plague links deep historical fear, genomic reconstruction, and the practical geography of rodents, fleas, and ports.",
       "withheld_citations": [
         {
           "id": "plague-handbook",
