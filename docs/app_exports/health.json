@@ -16,18 +16,18 @@
     "metadata_only_count": 256,
     "sources_cached": 0,
     "sources_failed": 1,
-    "sources_live": 279,
-    "story_count_change": 3,
-    "wrapper_only_count": 8
+    "sources_live": 278,
+    "story_count_change": 4,
+    "wrapper_only_count": 7
   },
   "freshness_summary": {
     "fallback_cache": 0,
-    "live": 279,
+    "live": 278,
     "refresh_cache": 0,
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-07-16T03:17:21",
+  "generated_at": "2026-07-16T04:17:37",
   "source_failures": [
     {
       "error": "cannot access local variable 'reference' where it is not associated with a value",
