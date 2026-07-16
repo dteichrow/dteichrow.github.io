@@ -6,7 +6,6 @@
       "CBS News",
       "CIDRAP",
       "CNN",
-      "Guardian",
       "NBC News",
       "NPR",
       "New York Times",
@@ -14,21 +13,21 @@
       "Reuters",
       "Sky News"
     ],
-    "metadata_only_count": 272,
+    "metadata_only_count": 281,
     "sources_cached": 0,
     "sources_failed": 1,
-    "sources_live": 298,
+    "sources_live": 307,
     "story_count_change": 6,
     "wrapper_only_count": 12
   },
   "freshness_summary": {
     "fallback_cache": 0,
-    "live": 298,
+    "live": 307,
     "refresh_cache": 0,
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-07-16T15:17:39",
+  "generated_at": "2026-07-16T16:17:32",
   "source_failures": [
     {
       "error": "cannot access local variable 'reference' where it is not associated with a value",
