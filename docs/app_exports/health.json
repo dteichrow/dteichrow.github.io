@@ -5,13 +5,13 @@
       "BBC",
       "CBS News",
       "CIDRAP",
-      "CNN",
       "Guardian",
       "NBC News",
       "NPR",
       "New York Times",
       "PBS",
-      "Reuters"
+      "Reuters",
+      "Sky News"
     ],
     "metadata_only_count": 269,
     "sources_cached": 0,
@@ -27,7 +27,7 @@
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-07-15T19:17:23",
+  "generated_at": "2026-07-15T20:17:23",
   "source_failures": [
     {
       "error": "cannot access local variable 'reference' where it is not associated with a value",
