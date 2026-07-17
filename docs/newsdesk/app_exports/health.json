@@ -18,7 +18,7 @@
     "sources_failed": 0,
     "sources_live": 321,
     "story_count_change": 7,
-    "wrapper_only_count": 9
+    "wrapper_only_count": 8
   },
   "freshness_summary": {
     "fallback_cache": 0,
@@ -27,6 +27,6 @@
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-07-17T07:17:20",
+  "generated_at": "2026-07-17T08:17:16",
   "source_failures": []
 }
