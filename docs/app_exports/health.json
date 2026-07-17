@@ -2,11 +2,11 @@
   "degraded": true,
   "editor_summary": {
     "major_publisher_families_seen": [
-      "ABC News",
       "BBC",
       "CBS News",
       "CIDRAP",
       "CNN",
+      "Guardian",
       "NBC News",
       "NPR",
       "New York Times",
@@ -14,21 +14,21 @@
       "Reuters",
       "Sky News"
     ],
-    "metadata_only_count": 265,
+    "metadata_only_count": 259,
     "sources_cached": 0,
     "sources_failed": 1,
-    "sources_live": 290,
-    "story_count_change": 6,
+    "sources_live": 284,
+    "story_count_change": 5,
     "wrapper_only_count": 11
   },
   "freshness_summary": {
     "fallback_cache": 0,
-    "live": 290,
+    "live": 284,
     "refresh_cache": 0,
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-07-16T22:17:17",
+  "generated_at": "2026-07-16T23:17:18",
   "source_failures": [
     {
       "error": "cannot access local variable 'reference' where it is not associated with a value",
