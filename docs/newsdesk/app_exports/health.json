@@ -13,11 +13,11 @@
       "Reuters",
       "Sky News"
     ],
-    "metadata_only_count": 270,
+    "metadata_only_count": 269,
     "sources_cached": 0,
     "sources_failed": 1,
     "sources_live": 296,
-    "story_count_change": 6,
+    "story_count_change": 7,
     "wrapper_only_count": 12
   },
   "freshness_summary": {
@@ -27,7 +27,7 @@
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-07-16T18:17:26",
+  "generated_at": "2026-07-16T19:17:22",
   "source_failures": [
     {
       "error": "cannot access local variable 'reference' where it is not associated with a value",
