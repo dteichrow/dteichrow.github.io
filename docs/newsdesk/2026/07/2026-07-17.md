@@ -1,10 +1,10 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-07-17
-Generated at: 2026-07-17T19:17
+Generated at: 2026-07-17T20:17
 Search window: 7 day(s) ending 2026-07-17
 
 ## Executive scan
-- [News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....](https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius) (Texas Department of State Health Services News; 2026-07-18T02:16+00:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
+- [News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....](https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius) (Texas Department of State Health Services News; 2026-07-18T03:16+00:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
 - [FDA outbreak investigation 1390: Cyclospora linked to Iceberg Lettuce](https://www.fda.gov/food/outbreaks-foodborne-illness/investigations-foodborne-illness-outbreaks) (FDA Foodborne Outbreaks; 2026-07-17T14:00; Outbreaks and emerging infections; relevance 5/5)
 - [FDA outbreak investigation 1143: Hepatitis A Virus linked to Frozen Strawberries](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-hepatitis-virus-infections-frozen-strawberries-february-2023) (FDA Foodborne Outbreaks; 2026-07-17T14:00; Outbreaks and emerging infections; relevance 5/5)
 - [FDA outbreak investigation 1066: Hepatitis A Virus linked to Strawberries](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-hepatitis-virus-strawberries-may-2022) (FDA Foodborne Outbreaks; 2026-07-17T14:00; Outbreaks and emerging infections; relevance 5/5)
@@ -12,13 +12,13 @@ Search window: 7 day(s) ending 2026-07-17
 - [Health and demographic surveillance sites in Ethiopia: a scoping review of infrastructure and gaps for longitudinal studies on health and aging.](https://pubmed.ncbi.nlm.nih.gov/42466594/) (PubMed Infectious Disease Search; 2026-07-17T00:00; Major epidemiology studies; relevance 5/5)
 - [Accuracy and safety of C-TST for tuberculosis infection: A clinical trial in Brazil.](https://pubmed.ncbi.nlm.nih.gov/42467493/) (PubMed Infectious Disease Search; 2026-07-17T00:00; Major epidemiology studies; relevance 5/5)
 - [Genotype-Specific Detection of Measles Virus Using Wastewater Surveillance](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=766003) (CDC MMWR; 2026-07-16T17:00+00:00; Occupational and environmental epidemiology; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (256), Policy, surveillance, and public health infrastructure (58), Historical epidemiology / ancient disease / paleopathology (5)
+- Category mix: Outbreaks and emerging infections (257), Policy, surveillance, and public health infrastructure (53), Historical epidemiology / ancient disease / paleopathology (5)
 
 ## Ongoing stories and what changed
 ### Ebola virus disease
 - Lead item: [Uganda begins countdown to end of Ebola outbreak](https://www.afro.who.int/countries/uganda/news/uganda-begins-countdown-end-ebola-outbreak) (WHO Regional Office for Africa)
-- Newly tracked story cluster: 107 item(s) across 70 source(s).
-- Baseline snapshot created with 107 clustered item(s) across 70 source(s).
+- Newly tracked story cluster: 108 item(s) across 69 source(s).
+- Baseline snapshot created with 108 clustered item(s) across 69 source(s).
 - WHO Regional Office for Africa now includes deaths or fatal cases in the story frame.
 - Politico now includes quarantine language.
 
@@ -38,8 +38,8 @@ Search window: 7 day(s) ending 2026-07-17
 
 ### Cyclosporiasis
 - Lead item: [FDA outbreak investigation 1390: Cyclospora linked to Iceberg Lettuce](https://www.fda.gov/food/outbreaks-foodborne-illness/investigations-foodborne-illness-outbreaks) (FDA Foodborne Outbreaks)
-- Newly tracked story cluster: 195 item(s) across 122 source(s).
-- Baseline snapshot created with 195 clustered item(s) across 122 source(s).
+- Newly tracked story cluster: 191 item(s) across 118 source(s).
+- Baseline snapshot created with 191 clustered item(s) across 118 source(s).
 - FDA Foodborne Outbreaks now explicitly uses investigation or monitoring language.
 
 ### Hantavirus and cruise-ship outbreak
@@ -51,15 +51,15 @@ Search window: 7 day(s) ending 2026-07-17
 
 ## Major topics
 ### Cyclosporiasis
-- Topic size: 195 item(s) across 122 source(s); 3 official/primary-source item(s).
+- Topic size: 191 item(s) across 118 source(s); 3 official/primary-source item(s).
 - Lead item: [FDA outbreak investigation 1390: Cyclospora linked to Iceberg Lettuce](https://www.fda.gov/food/outbreaks-foodborne-illness/investigations-foodborne-illness-outbreaks) (FDA Foodborne Outbreaks, 2026-07-17T14:00)
 - Detailed note: FDA lists reference 1390 with date posted 7/15/2026. Outbreak or event status: Ongoing See Advisory. The health department labels these counts preliminary.
-- Evidence notes: [FDA outbreak investigation 1390: Cyclospora linked to Iceberg Lettuce](https://www.fda.gov/food/outbreaks-foodborne-illness/investigations-foodborne-illness-outbreaks) (FDA Foodborne Outbreaks); [Toledo-Lucas County Health Department Cyclosporiasis Update](https://lucascountyhealth.com/cyclo/) (Toledo-Lucas County Health Department Cyclosporiasis Update); [MDHHS makes recommendations on preventing foodborne illness amid growing cyclosporiasis outbreak (7/4/2026)](https://www.michigan.gov/mdhhs/inside-mdhhs/newsroom/2026/07/04/mdhhs-makes-recommendations-on-preventing-foodborne-illness-amid-growing-cyclosporiasis-outbreak) (Michigan Department of Health and Human Services Infectious Disease Updates); [Cases of cyclosporiasis in Michigan surpass 5,000, health officials say - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/Health/cyclosporiasis-cases-michigan-surpass-2600-health-officials/story?id\=134709100) (ABC News - Breaking News, Latest News and Videos); [What to know about the cyclosporiasis outbreak as Taylor Farms pulls iceberg lettuce](https://www.cbsnews.com/video/what-to-know-cyclosporiasis-outbreak-taylor-farms-pulls-iceberg-lettuce/) (CBS News)
+- Evidence notes: [FDA outbreak investigation 1390: Cyclospora linked to Iceberg Lettuce](https://www.fda.gov/food/outbreaks-foodborne-illness/investigations-foodborne-illness-outbreaks) (FDA Foodborne Outbreaks); [Toledo-Lucas County Health Department Cyclosporiasis Update](https://lucascountyhealth.com/cyclo/) (Toledo-Lucas County Health Department Cyclosporiasis Update); [MDHHS makes recommendations on preventing foodborne illness amid growing cyclosporiasis outbreak (7/4/2026)](https://www.michigan.gov/mdhhs/inside-mdhhs/newsroom/2026/07/04/mdhhs-makes-recommendations-on-preventing-foodborne-illness-amid-growing-cyclosporiasis-outbreak) (Michigan Department of Health and Human Services Infectious Disease Updates); [FDA identifies potential culprit in cyclosporiasis outbreak as illness spreads nationwide](https://www.cbsnews.com/video/fda-identifies-potential-culprit-in-cyclosporiasis-outbreak/) (CBS News); [What to know about the cyclosporiasis outbreak as Taylor Farms pulls iceberg lettuce](https://www.cbsnews.com/video/what-to-know-cyclosporiasis-outbreak-taylor-farms-pulls-iceberg-lettuce/) (CBS News)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Ebola virus disease
-- Topic size: 107 item(s) across 70 source(s); 4 official/primary-source item(s).
+- Topic size: 108 item(s) across 69 source(s); 4 official/primary-source item(s).
 - Lead item: [Uganda begins countdown to end of Ebola outbreak](https://www.afro.who.int/countries/uganda/news/uganda-begins-countdown-end-ebola-outbreak) (WHO Regional Office for Africa, 2026-07-16T09:37+00:00)
 - Detailed note: An additional 317 confirmed cases and 144 confirmed deaths have been reported, representing increases of 24.3% and 38.2%, in cumulative cases and deaths respectively. Uganda declared the outbreak on 15 May 2026 and as of 16 July 2026, 20 confirmed cases and two deaths have been reported. As of 16 July 2026, all 836 contacts have been followed up, while surveillance systems were strengthened across 36 high-risk...
 - Evidence notes: [Uganda begins countdown to end of Ebola outbreak](https://www.afro.who.int/countries/uganda/news/uganda-begins-countdown-end-ebola-outbreak) (WHO Regional Office for Africa); [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 08, Data as of 05 July 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/ebola-bundibugyo-virus-disease-outbreak-1) (WHO Regional Office for Africa); [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News); [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) (Texas Department of State Health Services News); [Ebola Outbreak in Congo: Alarming Spike in Cases and Deaths](https://www.devdiscourse.com/article/health/3952200-ebola-outbreak-in-congo-alarming-spike-in-cases-and-deaths) (Devdiscourse)
@@ -74,17 +74,9 @@ Search window: 7 day(s) ending 2026-07-17
 - Why this topic matters now: It may shape how new evidence is framed before broader consensus forms. It also has value for historical epidemiology and blog-idea generation.
 - Caveats / uncertainty: These notes are limited to source text collected in this run.
 
-### Miscellaneous signals
-- Topic size: 4 item(s) across 3 source(s); 2 official/primary-source item(s).
-- Lead item: [Health and demographic surveillance sites in Ethiopia: a scoping review of infrastructure and gaps for longitudinal studies on health and aging.](https://pubmed.ncbi.nlm.nih.gov/42466594/) (PubMed Infectious Disease Search, 2026-07-17T00:00)
-- Detailed note: Several lower-volume signals passed the filters, but they do not resolve into one coherent topic cluster. Use the linked evidence notes directly rather than reading this as a single story.
-- Evidence notes: [Health and demographic surveillance sites in Ethiopia: a scoping review of infrastructure and gaps for longitudinal studies on health and aging.](https://pubmed.ncbi.nlm.nih.gov/42466594/) (PubMed Infectious Disease Search); [An outbreak of diarrhea from a parasite is surging. Here’s what to eat and what to avoid](https://www.cnn.com/2026/07/15/health/cyclosporiasis-parasite-food-safe-avoid) (CNN); [Vaccination coverage and influencing factors of four non‑National Immunization Program vaccines: A cross‑sectional survey among children aged 1‒6 years in Beijing, China.](https://pubmed.ncbi.nlm.nih.gov/42441828/) (PubMed Infectious Disease Search); [Argentina: Trichinosis outbreak in General Madariaga, Buenos Aires Province](https://outbreaknewstoday.substack.com/p/argentina-trichinosis-outbreak-in-cbb) (Outbreak News Today)
-- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may shape how new evidence is framed before broader consensus forms.
-- Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
-
 ### Hantavirus and cruise-ship outbreak
 - Topic size: 3 item(s) across 3 source(s); 1 official/primary-source item(s).
-- Lead item: [News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....](https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius) (Texas Department of State Health Services News, 2026-07-18T02:16+00:00)
+- Lead item: [News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....](https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius) (Texas Department of State Health Services News, 2026-07-18T03:16+00:00)
 - Detailed note: Learn more about the Sunset process and provide feedback.
 - Evidence notes: [News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....](https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius) (Texas Department of State Health Services News); [Opinion | The hantavirus outbreak has officially ended. Here are 5 lessons.](https://news.google.com/rss/articles/CBMisgFBVV95cUxOdDFTbkFaV3VvX2Fmc1VuY2E0Y2JZUXZ0RVJFSk1CN0x1eVdkVFExejdmQzc4V2NYMHJsRTZnUEJYQ1pjeC16SmR1ZEpNM0cwSDM4cldrSHpZWGotenRiX2V4X0NwSVRiQkJkdnNEUF96TFh4cjgzZTJEQTJUako4bXJfYS10ZlF5aklNZDRQNzVpdUpWU0hUZ0dGejJaYnFxZ2xMMFgycUE0Sl9UY0w3OF9n?oc=5) (The Washington Post); [Postscript to the Hantavirus Outbreak](https://news.google.com/rss/articles/CBMidkFVX3lxTFBZcnNXUjBSSHRyVGw4TlhhX2prZXNhT0hGV0stM3BkOW5ncXBENDBobzJ1aWJMMW8wNDk3VVFMaG9SUC0yRzJJV3hRYWxxZEJJaXp3ZDNlQ3BQbHg3clBZWUJwMU9NUUg1ZGVSS2E1bnUzMnBmU1E?oc=5) (tristandc.com)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
@@ -96,6 +88,14 @@ Search window: 7 day(s) ending 2026-07-17
 - Detailed note: FDA lists reference 1143 with date posted 3/1/2023. Outbreak or event status: Ended See Advisory.
 - Evidence notes: [FDA outbreak investigation 1143: Hepatitis A Virus linked to Frozen Strawberries](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-hepatitis-virus-infections-frozen-strawberries-february-2023) (FDA Foodborne Outbreaks); [FDA outbreak investigation 1066: Hepatitis A Virus linked to Strawberries](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-hepatitis-virus-strawberries-may-2022) (FDA Foodborne Outbreaks); [Hepatitis-A outbreak in Kaithal puts Haryanas Health Dept on alert](https://news.google.com/rss/articles/CBMirgFBVV95cUxNcjZTYWdleGRfd1ZRN2l6eEZpV3haN1p3N1ZTUjFLU1hhMnRralcwN1NoalRJa2hBbkpTSXExS2NDWlEtMGw3dDdzUTR4SUx3X2V4VDM3elhZRVloZm92QXlGV2ZJaC1mc1RVREdMZVhHc0xSM25ZWFBwbXQwakthY3h3elY3eG1mekJVckRTNGxoWThfNkN3WnVCa1doYW5kQjZpN0pDeWJxdUE2eFHSAbIBQVVfeXFMUHNfd01XS3JKTW1OWG9GRWF4UVotZ3JVdEhCRHJrRldmWjVDbmlPUTdPc0NoV0VuNllSc09mZXZCQy1sRWlUcUUtNm54aHhvSEVHQ05MQnpoQkN2bWJQbmtha1A3NUJjcGNfWDY5VTFBZDJCd1FmNGltV3NpYTIwNFQ1N3Y2YmJKaWoyaVdhWF8xLTlRbm5XWExFd2p5SHp1cGtsSlZHc2RhTXMyZ1B0NkVUZw?oc=5) (The Tribune)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
+- Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
+
+### Miscellaneous signals
+- Topic size: 3 item(s) across 2 source(s); 2 official/primary-source item(s).
+- Lead item: [Health and demographic surveillance sites in Ethiopia: a scoping review of infrastructure and gaps for longitudinal studies on health and aging.](https://pubmed.ncbi.nlm.nih.gov/42466594/) (PubMed Infectious Disease Search, 2026-07-17T00:00)
+- Detailed note: Several lower-volume signals passed the filters, but they do not resolve into one coherent topic cluster. Use the linked evidence notes directly rather than reading this as a single story.
+- Evidence notes: [Health and demographic surveillance sites in Ethiopia: a scoping review of infrastructure and gaps for longitudinal studies on health and aging.](https://pubmed.ncbi.nlm.nih.gov/42466594/) (PubMed Infectious Disease Search); [Vaccination coverage and influencing factors of four non‑National Immunization Program vaccines: A cross‑sectional survey among children aged 1‒6 years in Beijing, China.](https://pubmed.ncbi.nlm.nih.gov/42441828/) (PubMed Infectious Disease Search); [Argentina: Trichinosis outbreak in General Madariaga, Buenos Aires Province](https://outbreaknewstoday.substack.com/p/argentina-trichinosis-outbreak-in-cbb) (Outbreak News Today)
+- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may shape how new evidence is framed before broader consensus forms.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
 
@@ -338,7 +338,7 @@ Search window: 7 day(s) ending 2026-07-17
 ## Highest priority items
 ### News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....
 - Source: Texas Department of State Health Services News
-- Date: 2026-07-18T02:16+00:00
+- Date: 2026-07-18T03:16+00:00
 - URL: https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius
 - Category: Policy, surveillance, and public health infrastructure
 - Summary: Learn more about the Sunset process and provide feedback. Limited detail was available from feed metadata alone.
@@ -460,7 +460,7 @@ Search window: 7 day(s) ending 2026-07-17
   Limited detail was available from feed metadata alone.
 - [Ebola Outbreak in Congo: Alarming Spike in Cases and Deaths](https://www.devdiscourse.com/article/health/3952200-ebola-outbreak-in-congo-alarming-spike-in-cases-and-deaths) | Devdiscourse | 2026-07-17T23:36+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Cases of cyclosporiasis in Michigan surpass 5,000, health officials say - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/Health/cyclosporiasis-cases-michigan-surpass-2600-health-officials/story?id\=134709100) | ABC News - Breaking News, Latest News and Videos | 2026-07-17T23:05+00:00 | Outbreaks and emerging infections
+- [FDA identifies potential culprit in cyclosporiasis outbreak as illness spreads nationwide](https://www.cbsnews.com/video/fda-identifies-potential-culprit-in-cyclosporiasis-outbreak/) | CBS News | 2026-07-17T23:07+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [What to know about the cyclosporiasis outbreak as Taylor Farms pulls iceberg lettuce](https://www.cbsnews.com/video/what-to-know-cyclosporiasis-outbreak-taylor-farms-pulls-iceberg-lettuce/) | CBS News | 2026-07-17T21:32+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
@@ -470,13 +470,13 @@ Search window: 7 day(s) ending 2026-07-17
   Limited detail was available from feed metadata alone.
 - [Cyclospora Cases Are Rising. Here’s What to Know.](https://www.nytimes.com/2026/07/15/well/eat/cyclospora-stomach-bug-what-to-know.html) | The New York Times | 2026-07-17T20:44+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
+- [Taylor Farms pulls iceberg lettuce linked to cyclosporiasis outbreak](https://www.cbsnews.com/news/taylor-farms-pulls-iceberg-lettuce/) | CBS News | 2026-07-17T20:29+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - [US aid workers quarantined in Kenya as CDC expands Ebola travel restrictions](https://news.google.com/rss/articles/CBMipgFBVV95cUxPMWhRRU9CU3pRb1N1cFpsc0FUa1dac0xDc1JVS0VZQ1RqdnFXZmtfOVQwMWtWOU1FUXV6T1RMN2I2X2NoX1cwellzbWI0NThrMTlxa3h4LWZkN1FhQjhXaktfaGhhQVNCY0tVckFidzdNeExFSlM2ZzM1Rm5ES1pzY0dYblJmZUdzdUpVUW1TV3N1VGlWTlVOSFBCR29fZmt4RUNTLWdn?oc=5) | CIDRAP | 2026-07-17T19:25+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Taylor Farms recalls iceberg lettuce amid cyclosporiasis outbreak](https://www.nbcnews.com/health/health-news/fda-names-source-cyclosporiasis-outbreak-rcna587899) | NBC News | 2026-07-17T19:24+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [What to Know About the Cyclosporiasis Outbreak and How to Stay Safe](https://www.wsj.com/health/wellness/cyclosporiasis-symptoms-treatment-diagnosis-a7885dff) | WSJ | 2026-07-17T19:12+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [How health officials are tracking the cyclospora outbreaks](https://www.nbcnews.com/health/health-news/cyclospora-outbreak-foods-2026-how-health-officials-track-parasite-rcna587354) | NBC News | 2026-07-17T18:17+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
@@ -554,6 +554,8 @@ Search window: 7 day(s) ending 2026-07-17
   Using ancient DNA, we traced the dynamics of LRRK2 and PRKN variants in Europe and showed that the common PD risk allele LRRK2 G2019S-also protective against salmonellosis-was absent in Paleolithic populations but rose rapidly during the Early Neolithic, likely driven by selection from emerging human-adapted Salmonella. LRRK2 (leucine-rich repeat kinase 2) and Parkin (PRKN) act in shared pathways and are implicated in Parkinson's disease (PD), leprosy, and other diseases. We examined the evolutionary history of LRRK2 and PRKN in primates and human populations and found evidence of positive selection on both genes, alongside strong constraint at LRRK2 disease-associated sites.
 - [The Perils of Cross-District Ebola Burial Practices in Congo](https://www.devdiscourse.com/article/health/3951862-the-perils-of-cross-district-ebola-burial-practices-in-congo) | Devdiscourse
   As of July 14, more than 2,000 Ebola cases and 700 deaths have been documented in Congo and Uganda. The majority of deaths have been outside medical facilities, the International Organization for Migration (IOM) revealed. HOME NEWS RESEARCH LIVE DISCOURSE PERSPECTIVES AND INSIGHTS SUBMIT PRESS RELEASE The transport of Ebola victims' bodies for funerals in their home communities poses a significant risk of spreading the virus, according to the U.N.
+- [A Risky Burial in the Heart of an Ebola Outbreak](https://news.google.com/rss/articles/CBMifEFVX3lxTFBTcnZwT0trM2RkdDJYb3JpMGo4cldHRHF3TDFtc3BJeG95QVpzNmx3YVg0dE94dWo5T2p4VGNrMHpqNjlTSjB3bTdfeFRyYmdSdjhkRHFKTWdLMHpyNlJRM21fc0NyS05FZHlQVnA1aUZ2OFA5NkFSWnRSMzE?oc=5) | The New York Times
+  Limited detail was available from feed metadata alone.
 
 ## Possible blog/video angles
 - Vaccination coverage versus outbreak control: what the day’s measles or vaccine items actually show.
