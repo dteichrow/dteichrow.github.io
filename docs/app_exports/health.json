@@ -14,12 +14,12 @@
       "PBS",
       "Reuters"
     ],
-    "metadata_only_count": 269,
+    "metadata_only_count": 270,
     "sources_cached": 0,
     "sources_failed": 0,
     "sources_live": 290,
     "story_count_change": 5,
-    "wrapper_only_count": 8
+    "wrapper_only_count": 7
   },
   "freshness_summary": {
     "fallback_cache": 0,
@@ -28,6 +28,6 @@
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-07-20T02:17:12",
+  "generated_at": "2026-07-20T03:17:13",
   "source_failures": []
 }
