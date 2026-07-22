@@ -1,10 +1,10 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-07-22
-Generated at: 2026-07-22T08:17
+Generated at: 2026-07-22T09:17
 Search window: 7 day(s) ending 2026-07-22
 
 ## Executive scan
-- [News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....](https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius) (Texas Department of State Health Services News; 2026-07-22T15:16+00:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
+- [News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....](https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius) (Texas Department of State Health Services News; 2026-07-22T16:16+00:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
 - [The Virus Will Not Wait—Neither Can We: Two Months Into the Ebola Emergency](https://www.afro.who.int/media-centre/statements-commentaries/virus-will-not-wait-neither-can-we-two-months-ebola-emergency) (WHO Regional Office for Africa; 2026-07-22T09:50+00:00; Outbreaks and emerging infections; relevance 5/5)
 - [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News; 2026-07-21T17:36+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
 - [Toledo-Lucas County Health Department Cyclosporiasis Update](https://lucascountyhealth.com/cyclo/) (Toledo-Lucas County Health Department Cyclosporiasis Update; 2026-07-21T00:00; Outbreaks and emerging infections; relevance 5/5)
@@ -12,28 +12,28 @@ Search window: 7 day(s) ending 2026-07-22
 - [FDA outbreak investigation 1143: Hepatitis A Virus linked to Frozen Strawberries](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-hepatitis-virus-infections-frozen-strawberries-february-2023) (FDA Foodborne Outbreaks; 2026-07-17T14:00; Outbreaks and emerging infections; relevance 5/5)
 - [FDA outbreak investigation 1390: Cyclospora linked to Iceberg Lettuce](https://www.fda.gov/food/outbreaks-foodborne-illness/investigations-foodborne-illness-outbreaks) (FDA Foodborne Outbreaks; 2026-07-17T14:00; Outbreaks and emerging infections; relevance 5/5)
 - [FDA outbreak investigation 1066: Hepatitis A Virus linked to Strawberries](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-hepatitis-virus-strawberries-may-2022) (FDA Foodborne Outbreaks; 2026-07-17T14:00; Outbreaks and emerging infections; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (225), Policy, surveillance, and public health infrastructure (62), Virology and pathogen evolution (3)
+- Category mix: Outbreaks and emerging infections (224), Policy, surveillance, and public health infrastructure (62), Virology and pathogen evolution (3)
 
 ## Ongoing stories and what changed
 ### Hantavirus and cruise-ship outbreak
 - Lead item: [News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....](https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius) (Texas Department of State Health Services News)
-- Newly tracked story cluster: 5 item(s) across 5 source(s).
-- Baseline snapshot created with 5 clustered item(s) across 5 source(s).
+- Newly tracked story cluster: 6 item(s) across 6 source(s).
+- Baseline snapshot created with 6 clustered item(s) across 6 source(s).
 - Texas Department of State Health Services News now explicitly uses investigation or monitoring language.
 - NDTV now includes deaths or fatal cases in the story frame.
 - The New York Times now includes quarantine language.
 
 ### Polio and wastewater surveillance
 - Lead item: [Genotype-Specific Detection of Measles Virus Using Wastewater Surveillance](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=766003) (CDC MMWR)
-- Newly tracked story cluster: 5 item(s) across 5 source(s).
-- Baseline snapshot created with 5 clustered item(s) across 5 source(s).
-- The Star now foregrounds vaccination or vaccine policy in the story.
+- Newly tracked story cluster: 4 item(s) across 4 source(s).
+- Baseline snapshot created with 4 clustered item(s) across 4 source(s).
+- WDRB now foregrounds vaccination or vaccine policy in the story.
 - CDC MMWR now brings wastewater surveillance into the story.
 
 ### Cyclosporiasis
 - Lead item: [Toledo-Lucas County Health Department Cyclosporiasis Update](https://lucascountyhealth.com/cyclo/) (Toledo-Lucas County Health Department Cyclosporiasis Update)
-- Newly tracked story cluster: 185 item(s) across 117 source(s).
-- Baseline snapshot created with 185 clustered item(s) across 117 source(s).
+- Newly tracked story cluster: 183 item(s) across 116 source(s).
+- Baseline snapshot created with 183 clustered item(s) across 116 source(s).
 - FDA Foodborne Outbreaks now explicitly uses investigation or monitoring language.
 
 ### Ebola virus disease
@@ -51,10 +51,10 @@ Search window: 7 day(s) ending 2026-07-22
 
 ## Major topics
 ### Cyclosporiasis
-- Topic size: 185 item(s) across 117 source(s); 2 official/primary-source item(s).
+- Topic size: 183 item(s) across 116 source(s); 2 official/primary-source item(s).
 - Lead item: [Toledo-Lucas County Health Department Cyclosporiasis Update](https://lucascountyhealth.com/cyclo/) (Toledo-Lucas County Health Department Cyclosporiasis Update, 2026-07-21T00:00)
 - Detailed note: FDA lists reference 1390 with date posted 7/15/2026. Outbreak or event status: Ongoing See Advisory. The health department labels these counts preliminary.
-- Evidence notes: [Toledo-Lucas County Health Department Cyclosporiasis Update](https://lucascountyhealth.com/cyclo/) (Toledo-Lucas County Health Department Cyclosporiasis Update); [FDA outbreak investigation 1390: Cyclospora linked to Iceberg Lettuce](https://www.fda.gov/food/outbreaks-foodborne-illness/investigations-foodborne-illness-outbreaks) (FDA Foodborne Outbreaks); [Michigan's cyclosporiasis outbreak count tops 7,100; increases by 600 from Tuesday](https://www.cbsnews.com/detroit/news/michigan-cyclosporiasis-count-july-22/) (CBS News); [Is the Cyclospora outbreak under control? Texas still tracking parasite as 98 cases confirmed](https://www.cbsnews.com/texas/video/is-the-cyclospora-outbreak-under-control-texas-still-tracking-parasite-as-98-cases-confirmed/) (CBS News); [Cyclosporiasis outbreak hits Taco Bell sales, unlikely to cause lasting scar, analysts say](https://www.reuters.com/business/healthcare-pharmaceuticals/cyclosporiasis-outbreak-hits-taco-bell-sales-unlikely-cause-lasting-scar-2026-07-22/) (Reuters)
+- Evidence notes: [Toledo-Lucas County Health Department Cyclosporiasis Update](https://lucascountyhealth.com/cyclo/) (Toledo-Lucas County Health Department Cyclosporiasis Update); [FDA outbreak investigation 1390: Cyclospora linked to Iceberg Lettuce](https://www.fda.gov/food/outbreaks-foodborne-illness/investigations-foodborne-illness-outbreaks) (FDA Foodborne Outbreaks); [Michigan's cyclosporiasis outbreak count tops 7,100; increases by 600 from Tuesday](https://www.cbsnews.com/detroit/news/michigan-cyclosporiasis-count-july-22/) (CBS News); [Cyclosporiasis outbreak hits Taco Bell sales, unlikely to cause lasting scar, analysts say](https://news.google.com/rss/articles/CBMi3AFBVV95cUxOR1JTcVJFMUJqdGdCbmNHRk5PZ01GTFUzQ1BHNWVwRGlMQS0zX1ZUQm9zYjVIUXA4WTFyOG4tbVBnUWhZNks3MnlEZFo0Mk9KOS1UX01DTFoxOFRmX0JnNDJpeXNJaU5EZWgyUDYzMVZaWTF3QjVBemRlVnR5bmFSWjFia1J5NEJTX25HVlM1bHdoX2JMaUlUTVFDczVzNjJTdG1sNTJhS1ZJUkI1Q1RxMldKRGhhbWxjcHhqcF9HbFRwR3hmQVJWalNtQ194OXRsUVVNbWdVTi1RU1RW?oc=5) (Reuters); [Did the Cyclospora Outbreak Start Here? ‘They’re Always Going to Blame Us’](https://news.google.com/rss/articles/CBMilgFBVV95cUxQUWdTbEU3blNLcVBtU3hPUkFIdVZTeFhkSjRJMDNydkhlZS0tZG9jeDEtMlhNMFFWcG5VM09TcUM4YW9RdTBuTERrSUlYSThUSFVFLVR0VnpqZUh5VHJxRE94dHBoUFlETTVFeEpyRThsY1pqME5hU05ZbkZyRVNZMFZnb3RReFJPci1kR0tZSlJDam9wdmc?oc=5) (The New York Times)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
@@ -67,18 +67,18 @@ Search window: 7 day(s) ending 2026-07-22
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Hantavirus and cruise-ship outbreak
-- Topic size: 5 item(s) across 5 source(s); 1 official/primary-source item(s).
-- Lead item: [News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....](https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius) (Texas Department of State Health Services News, 2026-07-22T15:16+00:00)
+- Topic size: 6 item(s) across 6 source(s); 1 official/primary-source item(s).
+- Lead item: [News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....](https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius) (Texas Department of State Health Services News, 2026-07-22T16:16+00:00)
 - Detailed note: Learn more about the Sunset process and provide feedback.
 - Evidence notes: [News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....](https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius) (Texas Department of State Health Services News); [The Ordeal of a 42-Day Hantavirus Quarantine: ‘I Felt Like a Prisoner’](https://news.google.com/rss/articles/CBMihAFBVV95cUxNdE5XWHRDeVJ0TktuNU9YT3I2SkRVb3JRd1N0NnZfSGJ6MVRwZGFSS3cxWF9XYlA0aHZKQ04yaGlBWDZVc193N3VENGpGcWxEYzd4QWZVbDRyLVZmWWdwX0NKaDhMVm4wZGdPb2FfakxSN0VNUG84SlNJazRjZDRWNExFSkI?oc=5) (The New York Times); [After cruise ship outbreak, review examines how hantavirus affects the brain](https://news.google.com/rss/articles/CBMirgFBVV95cUxPWFpISWdEa0kzWm1RTDU5dk85U09ZX2IwbjVweXlkMWZTMUpFSGpXYVVFcEhEaU45OU9uSk9sQ1BOaTVNVE1ZS1VMamx3a1lkWjVCLWFjQkQ0aGhoZkoyVGNwSDZ3T040WkpTc19VWXZXcG1jSVZTbXV2VzV0ZTlETTN1NlhSdDY1Sl9mZ0o3TElrQWVFWTFSQTNLWU9fdC1uT1E5UnRBWWJxUzRiX3c?oc=5) (CIDRAP); [Hantavirus Outbreak In Venezuela: 3 Dead, 2 More Suspected Deaths](https://news.google.com/rss/articles/CBMiogFBVV95cUxPVnhQaXQtSDI3ZzNtTWZKM1F6SFY3UFphVFVwTk8wbFJWLUxUX2Y5UVlVSFVZZmxOSDNKOTdDR2czY3JJM3BGMVoyeWJGNjJWQXR2Qmd5RUdRNDR2MlFXSG8yLUZlUjh6R05tLV9BTGYwZHlFczZ5S2syZ0kySmhQa1JBOGZiVkppSC16NWU2dWRTX3lfa0JERUFvUHdQSUJYMHc?oc=5) (NDTV); [Postscript to the Hantavirus Outbreak](https://news.google.com/rss/articles/CBMidkFVX3lxTFBZcnNXUjBSSHRyVGw4TlhhX2prZXNhT0hGV0stM3BkOW5ncXBENDBobzJ1aWJMMW8wNDk3VVFMaG9SUC0yRzJJV3hRYWxxZEJJaXp3ZDNlQ3BQbHg3clBZWUJwMU9NUUg1ZGVSS2E1bnUzMnBmU1E?oc=5) (tristandc.com)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Polio and wastewater surveillance
-- Topic size: 5 item(s) across 5 source(s); 1 official/primary-source item(s).
+- Topic size: 4 item(s) across 4 source(s); 1 official/primary-source item(s).
 - Lead item: [Genotype-Specific Detection of Measles Virus Using Wastewater Surveillance](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=766003) (CDC MMWR, 2026-07-16T17:00+00:00)
 - Detailed note: Auguste Dutcher, PhD 3 ; Stephanie Schauer, PhD 2 ; Matthew Deraedt, PharmD 2 ,4 ; Megan Rasmussen, MPH 2 ; Ryan Westergaard, MD, PhD 1 ; Dagmara Antkiewicz, PhD 3 ; Erica Henning 3 ; Devin Everett 3 ; Martin Shafer, PhD 3 ( View author affiliations ) Wastewater (sewage) surveillance has been increasingly used to support public health surveillance for infectious diseases, including measles, in the United States....
-- Evidence notes: [Genotype-Specific Detection of Measles Virus Using Wastewater Surveillance](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=766003) (CDC MMWR); [Utah Detects Measles in Wastewater Before Cases Are Reported, Changing How Outbreaks Are Fought](https://www.medicaldaily.com/utah-measles-wastewater-surveillance-early-detection-weeks-before-clinical-cases-2026-476240) (Medical Daily); [Afghanistan inks US$5.3 million deal to boost polio vaccination in remote provinces](https://www.thestar.com.my/aseanplus/2026/07/22/afghanistan-inks-53-mln-usd-deal-to-boost-polio-vaccination-in-remote-provinces) (The Star); [JCPS encourages vaccination after measles found during Jefferson County wastewater surveillance](https://news.google.com/rss/articles/CBMigAJBVV95cUxOUHo3UnBfQ1pnWHZ6bHU3WENwZmZTUEFyRURWeEVEdG1pYlBqaUZQa2pocjU2Tkt2eWtBS0FSUmxUOHJSaXR4cVZlWV9iWDBzZ3dDdE1UU3NaZ01pSHc2STJBQ3FVLVhnai1EUFlvZDdkY2xmdVExQ2RZSllCUlo1aF9iMmxIRE1NQVhkaDFpMUszdWpiTmJMZHU2WWdaaTVGOVpoV1pmRDZNUmJhZDE1NzhzVDBEZVpKMkZCWC1XbnBsMmIwaUxDOU01Tnk0MXBvYjdsNUNlc0VDMzRqS2k2S1E4QzhpN1pCUnBzOGNTSVR1VkFTbzhBOWlWZkt0dHVy?oc=5) (WDRB); [Measles detected in Louisville wastewater, no reported cases](https://news.google.com/rss/articles/CBMimwFBVV95cUxQU3A2RzhNRExzb3IzNWdpT0Nia2Q4LU4yY20zMmk4a2RUc0dBZ1ZtQXFUaDV1QjZ6SkpfOS1NYXJUdWNRRFNZc3d3bnBfcTJsZ2xkX24tNVZ0Q01zWGc4VVpGcGVUd19HdHVQUlV0Wkl2dVZNUGNQVi1zWXhFc2l1SzBqUkxKN0pMUlhWdU5FeUFYUTAwNEZCdzZvSQ?oc=5) (Louisville Public Media)
+- Evidence notes: [Genotype-Specific Detection of Measles Virus Using Wastewater Surveillance](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=766003) (CDC MMWR); [Utah Detects Measles in Wastewater Before Cases Are Reported, Changing How Outbreaks Are Fought](https://www.medicaldaily.com/utah-measles-wastewater-surveillance-early-detection-weeks-before-clinical-cases-2026-476240) (Medical Daily); [JCPS encourages vaccination after measles found during Jefferson County wastewater surveillance](https://news.google.com/rss/articles/CBMigAJBVV95cUxOUHo3UnBfQ1pnWHZ6bHU3WENwZmZTUEFyRURWeEVEdG1pYlBqaUZQa2pocjU2Tkt2eWtBS0FSUmxUOHJSaXR4cVZlWV9iWDBzZ3dDdE1UU3NaZ01pSHc2STJBQ3FVLVhnai1EUFlvZDdkY2xmdVExQ2RZSllCUlo1aF9iMmxIRE1NQVhkaDFpMUszdWpiTmJMZHU2WWdaaTVGOVpoV1pmRDZNUmJhZDE1NzhzVDBEZVpKMkZCWC1XbnBsMmIwaUxDOU01Tnk0MXBvYjdsNUNlc0VDMzRqS2k2S1E4QzhpN1pCUnBzOGNTSVR1VkFTbzhBOWlWZkt0dHVy?oc=5) (WDRB); [Measles detected in Louisville wastewater, no reported cases](https://news.google.com/rss/articles/CBMimwFBVV95cUxQU3A2RzhNRExzb3IzNWdpT0Nia2Q4LU4yY20zMmk4a2RUc0dBZ1ZtQXFUaDV1QjZ6SkpfOS1NYXJUdWNRRFNZc3d3bnBfcTJsZ2xkX24tNVZ0Q01zWGc4VVpGcGVUd19HdHVQUlV0Wkl2dVZNUGNQVi1zWXhFc2l1SzBqUkxKN0pMUlhWdU5FeUFYUTAwNEZCdzZvSQ?oc=5) (Louisville Public Media)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
@@ -338,7 +338,7 @@ Search window: 7 day(s) ending 2026-07-22
 ## Highest priority items
 ### News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....
 - Source: Texas Department of State Health Services News
-- Date: 2026-07-22T15:16+00:00
+- Date: 2026-07-22T16:16+00:00
 - URL: https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius
 - Category: Policy, surveillance, and public health infrastructure
 - Summary: Learn more about the Sunset process and provide feedback. Limited detail was available from feed metadata alone.
@@ -446,6 +446,8 @@ Search window: 7 day(s) ending 2026-07-22
   An additional 317 confirmed cases and 144 confirmed deaths have been reported, representing increases of 24.3% and 38.2%, in cumulative cases and deaths respectively. The crude case fatality ratio (CFR) rose from 28.8% to 32.1%. The outbreak is marked by growing numbers of community deaths, and the continued spread of infection into previously unaffected health zones.
 - [Health Advisory May 20, 2026 Health Advisory: Ebola Disease Outbreak in the Democratic Republic of the Congo and Uganda The CDC has issued the Health Advisory linked below about the ongoing Ebola Bundibugyo outbreak in .....](https://www.dshs.texas.gov/news-alerts/health-advisory-ebola-disease-outbreak-democratic-republic-congo-and-uganda) | Texas Department of State Health Services News | Unknown | Policy, surveillance, and public health infrastructure
   Limited detail was available from feed metadata alone.
+- [Nearly 1,000 people have died from Ebola in DR Congo](https://www.aljazeera.com/news/2026/7/22/nearly-1000-people-have-died-from-ebola-in-dr-congo) | Al Jazeera | 2026-07-22T14:14+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - [Congo's Ebola outbreak has killed nearly 1,000 people - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/Health/wireStory/congos-ebola-outbreak-killed-1000-people-134975874) | ABC News - Breaking News, Latest News and Videos | 2026-07-22T13:52+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Michigan's cyclosporiasis outbreak count tops 7,100; increases by 600 from Tuesday](https://www.cbsnews.com/detroit/news/michigan-cyclosporiasis-count-july-22/) | CBS News | 2026-07-22T13:50+00:00 | Outbreaks and emerging infections
@@ -454,13 +456,13 @@ Search window: 7 day(s) ending 2026-07-22
   Limited detail was available from feed metadata alone.
 - [Congo's Ebola outbreak has killed nearly 1,000 people](https://www.transylvaniatimes.com/news/nation_world/congos-ebola-outbreak-has-killed-nearly-1-000-people/article_55eaecca-a86f-5c94-a33a-f7bac1167e31.html) | The Transylvania Times | 2026-07-22T12:24+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Is the Cyclospora outbreak under control? Texas still tracking parasite as 98 cases confirmed](https://www.cbsnews.com/texas/video/is-the-cyclospora-outbreak-under-control-texas-still-tracking-parasite-as-98-cases-confirmed/) | CBS News | 2026-07-22T11:44+00:00 | Outbreaks and emerging infections
+- [Congo’s Ebola outbreak kills nearly 1,000 people, warning of worse to come](https://www.scmp.com/news/world/africa/article/3361493/congos-ebola-outbreak-kills-nearly-1000-people-warning-worse-come) | South China Morning Post | 2026-07-22T11:54+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Cyclosporiasis outbreak hits Taco Bell sales, unlikely to cause lasting scar, analysts say](https://www.reuters.com/business/healthcare-pharmaceuticals/cyclosporiasis-outbreak-hits-taco-bell-sales-unlikely-cause-lasting-scar-2026-07-22/) | Reuters | 2026-07-22T11:25+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [RFK Jr. says cyclosporiasis outbreak "under control" as CDC reports over 4,000 confirmed cases](https://news.google.com/rss/articles/CBMivgFBVV95cUxPbnVoZW5yWF8wYmRjNjgxemZLY2ZXVlVBdk5HRG41US1BSXJtaURUTlBRQk9VbUJha1REWktEdzUtSEJFeE5jaVY3RTV2b2gwTHc3YUpQMXFZUWl3cXg4U0hGYk1oN3A2VGVWV2hjd29udk1RU2dEbkY3a2NqWm50N1REOUVreVJEUXpzdHFWckEyYzIxRGR3TWlxS3Y1VnU2NUM5X2NFNnVVaE9VQWRFTFVlbjdmdmxraHJjRHVR?oc=5) | CBS News | 2026-07-22T11:13+00:00 | Outbreaks and emerging infections
+- [Cyclosporiasis outbreak hits Taco Bell sales, unlikely to cause lasting scar, analysts say](https://news.google.com/rss/articles/CBMi3AFBVV95cUxOR1JTcVJFMUJqdGdCbmNHRk5PZ01GTFUzQ1BHNWVwRGlMQS0zX1ZUQm9zYjVIUXA4WTFyOG4tbVBnUWhZNks3MnlEZFo0Mk9KOS1UX01DTFoxOFRmX0JnNDJpeXNJaU5EZWgyUDYzMVZaWTF3QjVBemRlVnR5bmFSWjFia1J5NEJTX25HVlM1bHdoX2JMaUlUTVFDczVzNjJTdG1sNTJhS1ZJUkI1Q1RxMldKRGhhbWxjcHhqcF9HbFRwR3hmQVJWalNtQ194OXRsUVVNbWdVTi1RU1RW?oc=5) | Reuters | 2026-07-22T11:25+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Over 1,000 deaths recorded in Ebola outbreak in DRC, Uganda: WHO](https://www.bssnews.net/news/407933) | Bangladesh Sangbad Sangstha (BSS) | 2026-07-22T10:49+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Did the Cyclospora Outbreak Start Here? ‘They’re Always Going to Blame Us’](https://news.google.com/rss/articles/CBMilgFBVV95cUxQUWdTbEU3blNLcVBtU3hPUkFIdVZTeFhkSjRJMDNydkhlZS0tZG9jeDEtMlhNMFFWcG5VM09TcUM4YW9RdTBuTERrSUlYSThUSFVFLVR0VnpqZUh5VHJxRE94dHBoUFlETTVFeEpyRThsY1pqME5hU05ZbkZyRVNZMFZnb3RReFJPci1kR0tZSlJDam9wdmc?oc=5) | The New York Times | 2026-07-22T09:02+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Ebola outbreak highlights need for increased public health funding in South Sudan, foreign embassies say](https://www.eyeradio.org/ebola-outbreak-highlights-need-for-increased-public-health-funding-in-south-sudan-foreign-embassies-say/) | Eye Radio | 2026-07-22T08:34+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
@@ -470,13 +472,11 @@ Search window: 7 day(s) ending 2026-07-22
   Limited detail was available from feed metadata alone.
 - [Health: AfDB $13m to bolster Ebola response-outbreak in DRC,](https://www.newvision.co.ug/category/health/afdb-13m-to-bolster-ebola-response-outbreak-i-NV_237461_072026) | NewVision.co.ug | 2026-07-22T05:00+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
+- [RFK Jr. says cyclosporiasis outbreak "under control" as CDC reports over 4,000 confirmed cases](https://news.google.com/rss/articles/CBMivgFBVV95cUxPbnVoZW5yWF8wYmRjNjgxemZLY2ZXVlVBdk5HRG41US1BSXJtaURUTlBRQk9VbUJha1REWktEdzUtSEJFeE5jaVY3RTV2b2gwTHc3YUpQMXFZUWl3cXg4U0hGYk1oN3A2VGVWV2hjd29udk1RU2dEbkY3a2NqWm50N1REOUVreVJEUXpzdHFWckEyYzIxRGR3TWlxS3Y1VnU2NUM5X2NFNnVVaE9VQWRFTFVlbjdmdmxraHJjRHVR?oc=5) | CBS News | 2026-07-21T23:51+00:00 | Policy, surveillance, and public health infrastructure
+  Limited detail was available from feed metadata alone.
 - [Mass. lettuce farm says product safe to eat amid Cyclospora outbreak: "We do things fundamentally differently"](https://news.google.com/rss/articles/CBMiowFBVV95cUxPc19jSC1yQ1ZCMzRuTEtNemxuR1p4V1ZZZ1FOaHZwOFBsM2d5T1M5R2NRdDdFbC10d0dscWc0MWJ6QzJCSmJSLTh6OTRRNmszQUtRYjZuaUszLTdUUXo3b3g4dGhQX2lNbXNmbnRhTmlCdmk3QzlvdjJ5cXdpOGVJM3FJMHNneXE2R0Eyd1NhbHAtSldLcWN2eE51MkQxdlVKRWVr?oc=5) | CBS News | 2026-07-21T23:19+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [RFK Jr. says cyclosporiasis outbreak is ‘under control’ as Mexico casts doubt on link to Taylor Farms facility](https://news.google.com/rss/articles/CBMiwgFBVV95cUxPcWwyWWJKZ0FaUW9vUUtXMTJXTFpNY1NlNWVhQnh4cFB5bm9wNGQ0WVFfQ0JiWWZDcW12N0dsN25Vb3B1c09MWXFwRlN6cy1CYzJmOFQ5c1BCSzZsT2JqQlR4dlU3UXlGWEJ5UVNlMmYzUW5xbGtYQnJwZTFfSWUwbmJFYUVjc2hpX2hSMW5wdllSVnVRQzJqNkVnWVh0RVR2OUJ2V3BINXJOZ2NYUVVjUzhJUkw1QTRpSDEtNXJRQ1NQdw?oc=5) | NBC News | 2026-07-21T21:58+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [How can women give birth safely in the middle of an Ebola outbreak?](https://www.unfpa.org/video/how-can-women-give-birth-safely-middle-ebola-outbreak) | United Nations Population Fund | 2026-07-21T21:23+00:00 | Outbreaks and emerging infections
-  United Nations Population Fund
-- [What the Cyclospora Outbreak Reveals](https://news.google.com/rss/articles/CBMidEFVX3lxTE1sMHdpRkVHQ29YYkVrS1ZZRk11M1l6ZDA0ME1KTWFVZVRCOURTbUdDbWs3am9KQnVLd1IyWFQxSi1pMWdFNDNBaFh1N29TZVY0OXo2enl6QUd1UnUzc1g2YzZEVTZPUENLSjFFVmE5bG1GbHNo?oc=5) | The New York Times | 2026-07-21T20:52+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
