@@ -1,5 +1,5 @@
 {
-  "degraded": true,
+  "degraded": false,
   "editor_summary": {
     "major_publisher_families_seen": [
       "ABC News",
@@ -12,11 +12,12 @@
       "NPR",
       "New York Times",
       "PBS",
-      "Reuters"
+      "Reuters",
+      "STAT"
     ],
     "metadata_only_count": 268,
     "sources_cached": 0,
-    "sources_failed": 1,
+    "sources_failed": 0,
     "sources_live": 294,
     "story_count_change": 5,
     "wrapper_only_count": 9
@@ -28,13 +29,6 @@
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-07-24T12:19:13",
-  "source_failures": [
-    {
-      "error": "HTTPSConnectionPool(host='api.biorxiv.org', port=443): Read timed out. (read timeout=20)",
-      "required": true,
-      "source": "bioRxiv Infectious Disease",
-      "source_type": "biorxiv"
-    }
-  ]
+  "generated_at": "2026-07-24T13:18:23",
+  "source_failures": []
 }
