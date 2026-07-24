@@ -15,21 +15,21 @@
       "STAT",
       "Sky News"
     ],
-    "metadata_only_count": 288,
+    "metadata_only_count": 277,
     "sources_cached": 0,
     "sources_failed": 1,
-    "sources_live": 310,
+    "sources_live": 299,
     "story_count_change": 5,
     "wrapper_only_count": 7
   },
   "freshness_summary": {
     "fallback_cache": 0,
-    "live": 310,
+    "live": 299,
     "refresh_cache": 0,
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-07-23T19:17:25",
+  "generated_at": "2026-07-23T20:17:32",
   "source_failures": [
     {
       "error": "HTTPSConnectionPool(host='www.cdph.ca.gov', port=443): Read timed out. (read timeout=8)",
