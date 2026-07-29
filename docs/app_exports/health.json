@@ -6,7 +6,6 @@
       "BBC",
       "CBS News",
       "CIDRAP",
-      "CNN",
       "Guardian",
       "NBC News",
       "NPR",
@@ -19,7 +18,7 @@
     "sources_cached": 0,
     "sources_failed": 0,
     "sources_live": 353,
-    "story_count_change": 6,
+    "story_count_change": 5,
     "wrapper_only_count": 11
   },
   "freshness_summary": {
@@ -29,6 +28,6 @@
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-07-29T07:17:34",
+  "generated_at": "2026-07-29T08:17:56",
   "source_failures": []
 }
