@@ -2,6 +2,7 @@
   "degraded": false,
   "editor_summary": {
     "major_publisher_families_seen": [
+      "ABC News",
       "BBC",
       "CBS News",
       "CIDRAP",
@@ -14,20 +15,20 @@
       "Reuters",
       "Sky News"
     ],
-    "metadata_only_count": 330,
+    "metadata_only_count": 337,
     "sources_cached": 0,
     "sources_failed": 0,
-    "sources_live": 353,
+    "sources_live": 360,
     "story_count_change": 6,
-    "wrapper_only_count": 10
+    "wrapper_only_count": 11
   },
   "freshness_summary": {
     "fallback_cache": 0,
-    "live": 353,
+    "live": 360,
     "refresh_cache": 0,
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-07-29T13:17:37",
+  "generated_at": "2026-07-29T14:17:26",
   "source_failures": []
 }
