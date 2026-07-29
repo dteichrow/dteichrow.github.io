@@ -6,6 +6,7 @@
       "BBC",
       "CBS News",
       "CIDRAP",
+      "CNN",
       "Guardian",
       "NBC News",
       "NPR",
@@ -14,20 +15,20 @@
       "Reuters",
       "Sky News"
     ],
-    "metadata_only_count": 264,
+    "metadata_only_count": 263,
     "sources_cached": 0,
     "sources_failed": 0,
-    "sources_live": 287,
+    "sources_live": 286,
     "story_count_change": 5,
     "wrapper_only_count": 13
   },
   "freshness_summary": {
     "fallback_cache": 0,
-    "live": 287,
+    "live": 286,
     "refresh_cache": 0,
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-07-29T03:17:50",
+  "generated_at": "2026-07-29T04:17:20",
   "source_failures": []
 }
