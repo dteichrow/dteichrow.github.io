@@ -11,15 +11,17 @@
       "NBC News",
       "NPR",
       "New York Times",
+      "PBS",
       "Reuters",
+      "STAT",
       "Sky News"
     ],
-    "metadata_only_count": 332,
+    "metadata_only_count": 328,
     "sources_cached": 0,
     "sources_failed": 0,
     "sources_live": 353,
     "story_count_change": 5,
-    "wrapper_only_count": 9
+    "wrapper_only_count": 12
   },
   "freshness_summary": {
     "fallback_cache": 0,
@@ -28,6 +30,6 @@
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-07-30T10:17:26",
+  "generated_at": "2026-07-30T11:17:32",
   "source_failures": []
 }
