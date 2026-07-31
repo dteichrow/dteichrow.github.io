@@ -8,12 +8,12 @@
       "CNN",
       "Guardian",
       "NBC News",
-      "NPR",
+      "New York Times",
       "Reuters",
       "STAT",
       "Sky News"
     ],
-    "metadata_only_count": 332,
+    "metadata_only_count": 333,
     "sources_cached": 0,
     "sources_failed": 0,
     "sources_live": 361,
@@ -27,6 +27,6 @@
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-07-30T21:17:24",
+  "generated_at": "2026-07-30T22:17:26",
   "source_failures": []
 }
