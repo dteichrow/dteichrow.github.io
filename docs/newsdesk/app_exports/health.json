@@ -2,7 +2,6 @@
   "degraded": false,
   "editor_summary": {
     "major_publisher_families_seen": [
-      "BBC",
       "CBS News",
       "CIDRAP",
       "CNN",
@@ -20,7 +19,7 @@
     "sources_failed": 0,
     "sources_live": 369,
     "story_count_change": 8,
-    "wrapper_only_count": 14
+    "wrapper_only_count": 13
   },
   "freshness_summary": {
     "fallback_cache": 0,
@@ -29,6 +28,6 @@
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-07-31T13:17:25",
+  "generated_at": "2026-07-31T14:17:19",
   "source_failures": []
 }
