@@ -14,20 +14,20 @@
       "STAT",
       "Sky News"
     ],
-    "metadata_only_count": 332,
+    "metadata_only_count": 336,
     "sources_cached": 0,
     "sources_failed": 0,
-    "sources_live": 365,
+    "sources_live": 367,
     "story_count_change": 8,
-    "wrapper_only_count": 13
+    "wrapper_only_count": 12
   },
   "freshness_summary": {
     "fallback_cache": 0,
-    "live": 365,
+    "live": 367,
     "refresh_cache": 0,
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-08-01T00:17:20",
+  "generated_at": "2026-08-01T01:17:14",
   "source_failures": []
 }
