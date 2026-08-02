@@ -1,4 +1,43 @@
 posts:
+- slug: the-rabies-denominator-problem
+  title: The Rabies Denominator Problem
+  date: '2026-08-02'
+  canonical_url: https://theedgeofepidemiology.substack.com/p/the-rabies-denominator-problem
+  excerpt: '![Image 1](https://substackcdn.com/image/fetch/$s !duXc!,f auto,q auto:good,fl
+    progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F29eaa2d7-ccd8-4a0e-b5a6-8ec5fe45686a
+    2920x1866.jpeg) Desmodus rotundus , from Alcide d’Orbigny’s Voyage dans l’Amérique
+    méridionale (1847). Public domain via Wikimedia Commons. The idea for this piece
+    came from a reader who asked me about cases of asymptomatic rabies, as they had
+    read a few papers and reports from the CDC on human-to-human transmission of rabies
+    through organ transplantation and a study of Peruvian people from t'
+  source_mode: substack_reader
+  wordcount: 2087
+  status: summary_only
+  dek: ''
+  topics: []
+  series: []
+  seo_title: ''
+  seo_description: ''
+  primary_keyword: ''
+  topic_cluster: ''
+  indexing_strategy: noindex_stub
+  related_atlases: []
+  related_reference_slugs: []
+  related_story_ids: []
+  search_excerpt: '![Image 1](https://substackcdn.com/image/fetch/$s !duXc!,f auto,q
+    auto:good,fl progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F29eaa2d7-ccd8-4a0e-b5a6-8ec5fe45686a
+    2920x1866.jpeg) Desmodus rotundus , from Alcide d’Orbigny’s Voyage dans l’A'
+  local_body_path: ''
+  body_synced_at: ''
+  body_source_url: ''
+  body_source_mode: ''
+  body_source_file: ''
+  body_wordcount: null
+  hero_mode: cover
+  notes: ''
+  first_seen_at: '2026-08-02T15:34:25+00:00'
+  last_synced_at: '2026-08-02T15:34:25+00:00'
+  upstream_tags: []
 - slug: before-the-odyssey-apollo-sent-a
   title: Before the Odyssey, Apollo Sent a Plague
   date: '2026-07-26'
