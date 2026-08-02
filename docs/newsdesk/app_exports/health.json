@@ -3,7 +3,6 @@
   "editor_summary": {
     "major_publisher_families_seen": [
       "BBC",
-      "CBS News",
       "CIDRAP",
       "CNN",
       "Guardian",
@@ -11,23 +10,24 @@
       "NPR",
       "New York Times",
       "PBS",
+      "Reuters",
       "STAT",
       "Sky News"
     ],
-    "metadata_only_count": 309,
+    "metadata_only_count": 313,
     "sources_cached": 0,
     "sources_failed": 0,
-    "sources_live": 340,
+    "sources_live": 344,
     "story_count_change": 8,
     "wrapper_only_count": 12
   },
   "freshness_summary": {
     "fallback_cache": 0,
-    "live": 340,
+    "live": 344,
     "refresh_cache": 0,
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-08-01T21:17:20",
+  "generated_at": "2026-08-01T22:17:02",
   "source_failures": []
 }
