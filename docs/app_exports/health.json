@@ -6,29 +6,27 @@
       "CBS News",
       "CIDRAP",
       "CNN",
-      "Guardian",
       "NBC News",
-      "NPR",
       "New York Times",
       "PBS",
       "Reuters",
       "STAT",
       "Sky News"
     ],
-    "metadata_only_count": 310,
+    "metadata_only_count": 311,
     "sources_cached": 0,
     "sources_failed": 0,
-    "sources_live": 339,
+    "sources_live": 340,
     "story_count_change": 8,
-    "wrapper_only_count": 10
+    "wrapper_only_count": 11
   },
   "freshness_summary": {
     "fallback_cache": 0,
-    "live": 339,
+    "live": 340,
     "refresh_cache": 0,
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-08-01T23:17:12",
+  "generated_at": "2026-08-02T00:17:15",
   "source_failures": []
 }
