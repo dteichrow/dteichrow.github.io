@@ -1,33 +1,26 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-08-03
-Generated at: 2026-08-03T15:17
+Generated at: 2026-08-03T16:17
 Search window: 7 day(s) ending 2026-08-03
 
 ## Executive scan
-- [News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....](https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius) (Texas Department of State Health Services News; 2026-08-03T22:16+00:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
-- [News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....](https://www.dshs.texas.gov/news-alerts/dshs-alerts-clinicians-public-about-montgomery-county-measles-outbreak) (Texas Department of State Health Services News; 2026-08-03T22:16+00:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
+- [News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....](https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius) (Texas Department of State Health Services News; 2026-08-03T23:16+00:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
+- [News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....](https://www.dshs.texas.gov/news-alerts/dshs-alerts-clinicians-public-about-montgomery-county-measles-outbreak) (Texas Department of State Health Services News; 2026-08-03T23:14+00:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
 - [WHO Zambia Newsletter – Second Quarter 2026 (April–June 2026)](https://www.afro.who.int/publications/who-zambia-newsletter-second-quarter-2026-april-june-2026) (WHO Regional Office for Africa; 2026-08-03T11:19+00:00; Outbreaks and emerging infections; relevance 5/5)
 - [Toledo-Lucas County Health Department Cyclosporiasis Update](https://lucascountyhealth.com/cyclo/) (Toledo-Lucas County Health Department Cyclosporiasis Update; 2026-08-03T00:00; Outbreaks and emerging infections; relevance 5/5)
 - [Between the hype and harm: does artificial intelligence in health offer solace or further exclusion for marginalised populations in Sub-Saharan Africa? A scoping review.](https://pubmed.ncbi.nlm.nih.gov/42544917/) (PubMed Infectious Disease Search; 2026-08-03T00:00; Major epidemiology studies; relevance 5/5)
+- [A Humoral Dilemma: Reassessing Monkeypox Virus Neutralizing Antibodies at More Than 2 Years From Mpox or Modified Vaccinia Ankara-Bavarian Nordic Vaccination.](https://pubmed.ncbi.nlm.nih.gov/41492703/) (PubMed Historical Pathogen Case Studies; 2026-08-03T00:00; Historical epidemiology / ancient disease / paleopathology; relevance 5/5)
 - [Respiratory virus surveillance in the WHO African Region Epidemiological Week 26, June 22 to 28 2026](https://www.afro.who.int/publications/respiratory-virus-surveillance-who-african-region-epidemiological-week-26-june-22-28) (WHO Regional Office for Africa; 2026-07-31T19:19+00:00; Outbreaks and emerging infections; relevance 5/5)
 - [NATIONAL HEALTH ACCOUNTS ESTIMATES FOR ZAMBIA 2022- 2024](https://www.afro.who.int/publications/national-health-accounts-estimates-zambia-2022-2024) (WHO Regional Office for Africa; 2026-07-31T13:53+00:00; Outbreaks and emerging infections; relevance 5/5)
-- [Effect of Diagnostic Test Type on Detection of Salmonella Infections - Foodborne Diseases Active Surveillance Network, 2004-2024](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=766111) (CDC MMWR; 2026-07-30T17:00+00:00; Occupational and environmental epidemiology; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (281), Policy, surveillance, and public health infrastructure (36), Major epidemiology studies (4)
+- Category mix: Outbreaks and emerging infections (270), Policy, surveillance, and public health infrastructure (39), Historical epidemiology / ancient disease / paleopathology (5)
 
 ## Ongoing stories and what changed
 ### Cyclosporiasis
 - Lead item: [Toledo-Lucas County Health Department Cyclosporiasis Update](https://lucascountyhealth.com/cyclo/) (Toledo-Lucas County Health Department Cyclosporiasis Update)
-- Newly tracked story cluster: 129 item(s) across 89 source(s).
-- Baseline snapshot created with 129 clustered item(s) across 89 source(s).
+- Newly tracked story cluster: 127 item(s) across 88 source(s).
+- Baseline snapshot created with 127 clustered item(s) across 88 source(s).
 - FDA Foodborne Outbreaks now explicitly uses investigation or monitoring language.
 - The Washington Post now includes deaths or fatal cases in the story frame.
-
-### Ebola virus disease
-- Lead item: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 11, Data as of 26 July 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/ebola-bundibugyo-virus-disease-outbreak-3) (WHO Regional Office for Africa)
-- Newly tracked story cluster: 105 item(s) across 77 source(s).
-- Baseline snapshot created with 105 clustered item(s) across 77 source(s).
-- CIDRAP now includes deaths or fatal cases in the story frame.
-- CIDRAP now foregrounds vaccination or vaccine policy in the story.
 
 ### Occupational and environmental epidemiology
 - Lead item: [Effect of Diagnostic Test Type on Detection of Salmonella Infections - Foodborne Diseases Active Surveillance Network, 2004-2024](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=766111) (CDC MMWR)
@@ -43,16 +36,22 @@ Search window: 7 day(s) ending 2026-08-03
 - WHO Regional Office for Africa now foregrounds vaccination or vaccine policy in the story.
 - WSMH now brings wastewater surveillance into the story.
 
+### Ebola virus disease
+- Lead item: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 11, Data as of 26 July 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/ebola-bundibugyo-virus-disease-outbreak-3) (WHO Regional Office for Africa)
+- Newly tracked story cluster: 97 item(s) across 70 source(s).
+- Baseline snapshot created with 97 clustered item(s) across 70 source(s).
+- Story tracking is now active for this cluster; future runs will report only new developments against this baseline.
+
 ### Measles transmission and vaccination
 - Lead item: [News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....](https://www.dshs.texas.gov/news-alerts/dshs-alerts-clinicians-public-about-montgomery-county-measles-outbreak) (Texas Department of State Health Services News)
-- Newly tracked story cluster: 71 item(s) across 66 source(s).
-- Baseline snapshot created with 71 clustered item(s) across 66 source(s).
+- Newly tracked story cluster: 72 item(s) across 68 source(s).
+- Baseline snapshot created with 72 clustered item(s) across 68 source(s).
 - Story tracking is now active for this cluster; future runs will report only new developments against this baseline.
 
 
 ## Major topics
 ### Cyclosporiasis
-- Topic size: 129 item(s) across 89 source(s); 4 official/primary-source item(s).
+- Topic size: 127 item(s) across 88 source(s); 4 official/primary-source item(s).
 - Lead item: [Toledo-Lucas County Health Department Cyclosporiasis Update](https://lucascountyhealth.com/cyclo/) (Toledo-Lucas County Health Department Cyclosporiasis Update, 2026-08-03T00:00)
 - Detailed note: FDA lists reference 1392 with date posted 7/22/2026. Reported total case count: 93. An update on the Cyclospora outbreak available here .
 - Evidence notes: [Toledo-Lucas County Health Department Cyclosporiasis Update](https://lucascountyhealth.com/cyclo/) (Toledo-Lucas County Health Department Cyclosporiasis Update); [FDA outbreak investigation 1143: Hepatitis A Virus linked to Frozen Strawberries](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-hepatitis-virus-infections-frozen-strawberries-february-2023) (FDA Foodborne Outbreaks); [FDA outbreak investigation 1392: Cyclospora](https://www.fda.gov/food/outbreaks-foodborne-illness/investigations-foodborne-illness-outbreaks) (FDA Foodborne Outbreaks); [FDA outbreak investigation 1066: Hepatitis A Virus linked to Strawberries](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-hepatitis-virus-strawberries-may-2022) (FDA Foodborne Outbreaks); [First deaths related to cyclosporiasis outbreak reported in Michigan](https://www.washingtonpost.com/health/2026/08/03/two-cyclospora-related-deaths-reported-michigan/) (The Washington Post)
@@ -60,18 +59,18 @@ Search window: 7 day(s) ending 2026-08-03
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Ebola virus disease
-- Topic size: 105 item(s) across 77 source(s); 3 official/primary-source item(s).
+- Topic size: 97 item(s) across 70 source(s); 3 official/primary-source item(s).
 - Lead item: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 11, Data as of 26 July 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/ebola-bundibugyo-virus-disease-outbreak-3) (WHO Regional Office for Africa, 2026-07-28T15:31+00:00)
-- Detailed note: As of yesterday, DRC officials reported 3,695 cases and 1,623 deaths. Transmission rates are increasing, and in the last week of July, the highest weekly number of reported cases (567) and deaths (296) to date were recorded, the WHO said. Although no new cases have been reported outside the Democratic Republic of the Congo, persistent transmission in areas connected by major national and cross-border mobility...
-- Evidence notes: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 11, Data as of 26 July 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/ebola-bundibugyo-virus-disease-outbreak-3) (WHO Regional Office for Africa); [Infodemic Trends Report- Special issue on the Ebola Bundibugyo virus disease 01–30 June 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/infodemic-trends-report-special-issue-ebola-bundibugyo-virus-disease-01-30-june-2026) (WHO Regional Office for Africa); [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News); [Ebola outbreak in DR Congo now second-deadliest in history](https://www.cidrap.umn.edu/ebola/ebola-outbreak-dr-congo-now-second-deadliest-history) (CIDRAP); [CDC asks staff to volunteer to help with Ebola screenings at airports amid DRC outbreak - ABC News - Breaking News, Latest News and Videos](https://news.google.com/rss/articles/CBMirgFBVV95cUxNbjhrSXk5N050MzMwOFlsa053OUpaOGNtYnEtLXBjRDJ0eG1aZ01EeG9kYWFaMVBpVGpxYUxORkV6SDNkM1B2UFZBcGNWaEFvNG83NUdqYm92MlNRLS1zRlA2V0Z1eV9iNUlLQjlNSGRqbkY4ZmxobzdWbldNcXBudC1NczY0RkJDeHBlU0F4aThoZUZmUDc2SHBNT05DVGctT0FGREtLY29GZUYzY0HSAbMBQVVfeXFMTXFnUksta0FSUTNuYXVCVzRvS2V3S3VnbkdhY0N1dmhfX20yUlpZMmltVEYwcGZIanl2alVrLWpIQi1uUl9rbHllN2hHTUE0Q2h3OHR3Nkc0Tk5BRDB3Tnoza3V2bnlVUnJNVEhmTVRPbFhTOGtSMDFqaUhBMlNzaXU4eEtHZkhMNnh1UmtfN0VmS1RWT3dycmgwR1FxbmhCU3NWR2FyalhORnRDekUtUjU0TnM?oc=5) (ABC News - Breaking News, Latest News and Videos)
+- Detailed note: Although no new cases have been reported outside the Democratic Republic of the Congo, persistent transmission in areas connected by major national and cross-border mobility corridors continues to sustain a high risk of regional spread. 🗓 Reporting period: 1–30 June 2026 📌 Key highlights: 🦠 Bundibugyo Ebola Virus Disease (BVD), Democratic Republic of the Congo: Communities remained highly engaged throughout the...
+- Evidence notes: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 11, Data as of 26 July 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/ebola-bundibugyo-virus-disease-outbreak-3) (WHO Regional Office for Africa); [Infodemic Trends Report- Special issue on the Ebola Bundibugyo virus disease 01–30 June 2026](https://www.afro.who.int/countries/democratic-republic-of-congo/publication/infodemic-trends-report-special-issue-ebola-bundibugyo-virus-disease-01-30-june-2026) (WHO Regional Office for Africa); [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News); [WHO: DR Congo Faces Largest Ebola Outbreak on Record](https://www.islamtimes.com/en/news/1297043/who-dr-congo-faces-largest-ebola-outbreak-on-record) (اسلام تايمز); [Ebola outbreak in DR Congo now second-deadliest in history](https://www.cidrap.umn.edu/ebola/ebola-outbreak-dr-congo-now-second-deadliest-history) (CIDRAP)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Measles transmission and vaccination
-- Topic size: 71 item(s) across 66 source(s); 1 official/primary-source item(s).
-- Lead item: [News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....](https://www.dshs.texas.gov/news-alerts/dshs-alerts-clinicians-public-about-montgomery-county-measles-outbreak) (Texas Department of State Health Services News, 2026-08-03T22:16+00:00)
+- Topic size: 72 item(s) across 68 source(s); 1 official/primary-source item(s).
+- Lead item: [News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....](https://www.dshs.texas.gov/news-alerts/dshs-alerts-clinicians-public-about-montgomery-county-measles-outbreak) (Texas Department of State Health Services News, 2026-08-03T23:14+00:00)
 - Detailed note: Denos su opinión sobre sus experiencias con las instalaciones, el personal, la comunicación y los servicios del DSHS. Provide feedback on your experience with DSHS facilities, staff, communication, and services.
-- Evidence notes: [News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....](https://www.dshs.texas.gov/news-alerts/dshs-alerts-clinicians-public-about-montgomery-county-measles-outbreak) (Texas Department of State Health Services News); [A single US measles outbreak can cost millions of dollars, study estimates](https://www.reuters.com/legal/litigation/single-us-measles-outbreak-can-cost-millions-dollars-study-estimates-2026-08-03/) (Reuters); [Quebec’s latest measles outbreak is over after no cases reported in over a month](https://www.cbc.ca/news/canada/montreal/quebecs-measles-outbreak-is-over-9.7295051) (CBC); [Public Health Officials Investigate Confirmed Measles Case](https://news.google.com/rss/articles/CBMijgFBVV95cUxQZTNUVWVNWVlQZ3lXb2NQcFF4UG9MbG1PUVV3UVpWWWdvcnRUN0lHMjUzNjZhTUxTc2JJMWRJUnZSUlItN0UwNW9EeExQUmd4M2N2eTZGaExmNm1fMVN0ai1YSmF4SlZocXIxMUZ0ekhYdGM0MGRmbWVjajNrXzA4QVQ3ZFlnUldzdTBQSGRB?oc=5) (Solomon's Words for the Wise); [RFK Jr tells US families to vaccinate children against measles amid outbreak](https://news.google.com/rss/articles/CBMif0FVX3lxTE9ZMU9OZ2liMWJPUmUwLUlpZUVwVkRRbTBCOEg0ZXBpQ05kZDVsQVdnMTBaby1tM0kyWG1jTjd6N05VT09BREVVT1NGbkZIbkJUb0FoUmxTTFNsT0czNTVfWjlXR0tQOGg4MzFjdVpDWmRyZ00tbmxERFR6VXE5SGM?oc=5) (The Guardian)
+- Evidence notes: [News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....](https://www.dshs.texas.gov/news-alerts/dshs-alerts-clinicians-public-about-montgomery-county-measles-outbreak) (Texas Department of State Health Services News); [Quebec’s latest measles outbreak is over after no cases reported in over a month](https://news.google.com/rss/articles/CBMiigFBVV95cUxNQU9TU1NyWUtVMkFWbXhZMHMyNGd3ZDRiOFUyX2FnSzhKTVYwb3A2ZmZzOEpGc1ZmeDgtazN4ckhlbHZWdHAzLTRXcTlONDdsUC01WUZtbEhNQUE5RjFSMHJOVmJyQl9OUUpLcGVSWm04X0Q2ampFcFlSeW9pNGJNTWtwLTIxVU1feEE?oc=5) (CBC); [Public Health Officials Investigate Confirmed Measles Case](https://news.google.com/rss/articles/CBMijgFBVV95cUxQZTNUVWVNWVlQZ3lXb2NQcFF4UG9MbG1PUVV3UVpWWWdvcnRUN0lHMjUzNjZhTUxTc2JJMWRJUnZSUlItN0UwNW9EeExQUmd4M2N2eTZGaExmNm1fMVN0ai1YSmF4SlZocXIxMUZ0ekhYdGM0MGRmbWVjajNrXzA4QVQ3ZFlnUldzdTBQSGRB?oc=5) (Solomon's Words for the Wise); [Bangladesh measles outbreak drives families into debt: aid groups](https://news.google.com/rss/articles/CBMi7gFBVV95cUxQaVF1Y1pITWRnUWFSbm5KdVpVZ3VydnJXTDBsbkNhWUdHOGo4dkF1UW9wNURmUFg1RXFDd1lWRE45QjlIa2JmMGpfcHFaY1BlcGtmcHBoMW5HNGJTZWV4Q01kRjliZE5wQy1UbGlRT3ZZbDFJeHc5TlZKMVczaWh2STUyekZqY0dFZWd4WExkOXlBdHlvekhKTU5DbUxmZC1VVUZUc3FmY0JFSklydS1tcjdhREQwVXMyX2twaGlPN0JZTjQtZ3ZqNGZaeE5zelNWWDhkZFFsT3U3VVk0OEpjS251ZWlBRE5PRGxwekxR?oc=5) (KMVU FOX 26 Medford); [RFK Jr tells US families to vaccinate children against measles amid outbreak](https://news.google.com/rss/articles/CBMif0FVX3lxTE9ZMU9OZ2liMWJPUmUwLUlpZUVwVkRRbTBCOEg0ZXBpQ05kZDVsQVdnMTBaby1tM0kyWG1jTjd6N05VT09BREVVT1NGbkZIbkJUb0FoUmxTTFNsT0czNTVfWjlXR0tQOGg4MzFjdVpDWmRyZ00tbmxERFR6VXE5SGM?oc=5) (The Guardian)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
@@ -83,19 +82,19 @@ Search window: 7 day(s) ending 2026-08-03
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may shape how new evidence is framed before broader consensus forms.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
+### Historical epidemiology and ancient pathogens
+- Topic size: 5 item(s) across 2 source(s); 5 official/primary-source item(s).
+- Lead item: [A Humoral Dilemma: Reassessing Monkeypox Virus Neutralizing Antibodies at More Than 2 Years From Mpox or Modified Vaccinia Ankara-Bavarian Nordic Vaccination.](https://pubmed.ncbi.nlm.nih.gov/41492703/) (PubMed Historical Pathogen Case Studies, 2026-08-03T00:00)
+- Detailed note: In multivariate analysis, historical smallpox vaccination was associated with higher titers at > 2 years (OR = 5.37; 95% CI, 1.31-22.00; P = .020), whilst previous mpox was marginally associated (OR = 2.08; 95% CI, .94-4.62; P = .073). At IC50 previous mpox was associated with positive titers (68.75% vs 47.62%; P = .042), with univariate analysis associating higher titers at 6 months to higher titers at > 2 years...
+- Evidence notes: [A Humoral Dilemma: Reassessing Monkeypox Virus Neutralizing Antibodies at More Than 2 Years From Mpox or Modified Vaccinia Ankara-Bavarian Nordic Vaccination.](https://pubmed.ncbi.nlm.nih.gov/41492703/) (PubMed Historical Pathogen Case Studies); [The genomic identity of early smallpox in South America.](https://pubmed.ncbi.nlm.nih.gov/42531397/) (PubMed Historical Pathogen Case Studies); [Ancient DNA shows how smallpox got to the Americas.](https://pubmed.ncbi.nlm.nih.gov/42531407/) (PubMed Historical Pathogen Case Studies); [Ancient genomics study reveals low HLA diversity in eastern hunter-gatherers.](https://pubmed.ncbi.nlm.nih.gov/42527941/) (PubMed Ancient Pathogen Genomics); [How smallpox reached the Americas: first genomic evidence points to Europeans.](https://pubmed.ncbi.nlm.nih.gov/42538353/) (PubMed Historical Pathogen Case Studies)
+- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may shape how new evidence is framed before broader consensus forms.
+- Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
+
 ### Polio and wastewater surveillance
 - Topic size: 4 item(s) across 4 source(s); 1 official/primary-source item(s).
 - Lead item: [WHO Zambia Newsletter – Second Quarter 2026 (April–June 2026)](https://www.afro.who.int/publications/who-zambia-newsletter-second-quarter-2026-april-june-2026) (WHO Regional Office for Africa, 2026-08-03T11:19+00:00)
 - Detailed note: Featured interventions include support for polio vaccination campaigns, Ebola preparedness and simulation exercises, cholera prevention, digital health transformation, health workforce development, primary health care investment planning, noncommunicable disease surveillance, and strengthening health security systems. It showcases progress across leadership and partnership engagement, health systems...
 - Evidence notes: [WHO Zambia Newsletter – Second Quarter 2026 (April–June 2026)](https://www.afro.who.int/publications/who-zambia-newsletter-second-quarter-2026-april-june-2026) (WHO Regional Office for Africa); [MSU researchers to explore wastewater studies for cyclosporiasis outbreak](https://midmichigannow.com/news/local/msu-researchers-explore-wastewater-studies-cyclosporiasis-outbreak-death-michigan-state-university-research-water-covid-pandemic-sickness-illness) (WSMH); [MSU researchers explore wastewater testing amid cyclospora outbreak](https://www.wilx.com/2026/08/03/msu-researchers-explore-wastewater-testing-amid-cyclospora-outbreak/) (WILX); [Afghanistan launches polio vaccination drive as cases rise to 15 this year](https://amu.tv/248927/) (Amu TV)
-- Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
-- Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
-
-### Miscellaneous signals
-- Topic size: 4 item(s) across 2 source(s); 3 official/primary-source item(s).
-- Lead item: [Between the hype and harm: does artificial intelligence in health offer solace or further exclusion for marginalised populations in Sub-Saharan Africa? A scoping review.](https://pubmed.ncbi.nlm.nih.gov/42544917/) (PubMed Infectious Disease Search, 2026-08-03T00:00)
-- Detailed note: Several lower-volume signals passed the filters, but they do not resolve into one coherent topic cluster. Use the linked evidence notes directly rather than reading this as a single story.
-- Evidence notes: [Between the hype and harm: does artificial intelligence in health offer solace or further exclusion for marginalised populations in Sub-Saharan Africa? A scoping review.](https://pubmed.ncbi.nlm.nih.gov/42544917/) (PubMed Infectious Disease Search); [Addressing HPV vaccine hesitancy and misinformation in India through public health communication strategies.](https://pubmed.ncbi.nlm.nih.gov/42544634/) (PubMed Infectious Disease Search); [Changes in HPV vaccine hesitancy and influencing factors among female university students in China: A national repeated study.](https://pubmed.ncbi.nlm.nih.gov/42525964/) (PubMed Infectious Disease Search); [Parasite outbreak tied to two deaths in Michigan, says CDC](https://theedgemalaysia.com/node/813193) (The Edge Malaysia)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
@@ -339,7 +338,7 @@ Search window: 7 day(s) ending 2026-08-03
 ## Highest priority items
 ### News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....
 - Source: Texas Department of State Health Services News
-- Date: 2026-08-03T22:16+00:00
+- Date: 2026-08-03T23:16+00:00
 - URL: https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius
 - Category: Policy, surveillance, and public health infrastructure
 - Summary: Denos su opinión sobre sus experiencias con las instalaciones, el personal, la comunicación y los servicios del DSHS. Provide feedback on your experience with DSHS facilities, staff, communication, and services. Learn more about the Sunset process and provide feedback.
@@ -349,7 +348,7 @@ Search window: 7 day(s) ending 2026-08-03
 
 ### News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....
 - Source: Texas Department of State Health Services News
-- Date: 2026-08-03T22:16+00:00
+- Date: 2026-08-03T23:14+00:00
 - URL: https://www.dshs.texas.gov/news-alerts/dshs-alerts-clinicians-public-about-montgomery-county-measles-outbreak
 - Category: Policy, surveillance, and public health infrastructure
 - Summary: Denos su opinión sobre sus experiencias con las instalaciones, el personal, la comunicación y los servicios del DSHS. Provide feedback on your experience with DSHS facilities, staff, communication, and services. Learn more about the Sunset process and provide feedback.
@@ -383,6 +382,16 @@ Search window: 7 day(s) ending 2026-08-03
 - URL: https://pubmed.ncbi.nlm.nih.gov/42544917/
 - Category: Major epidemiology studies
 - Summary: Conversely, AI has the potential to improve health equity by expanding healthcare access, strengthening disease surveillance, supporting health system planning, and improving access to specialised services. PubMed, Web of Science, Scopus, and selected grey literature sources were searched between February and March 2026. The review followed the Arksey and O'Malley methodological framework and the PRISMA-ScR reporting guideline.
+- Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.
+- Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
+- Relevance score: 5/5
+
+### A Humoral Dilemma: Reassessing Monkeypox Virus Neutralizing Antibodies at More Than 2 Years From Mpox or Modified Vaccinia Ankara-Bavarian Nordic Vaccination.
+- Source: PubMed Historical Pathogen Case Studies
+- Date: 2026-08-03T00:00
+- URL: https://pubmed.ncbi.nlm.nih.gov/41492703/
+- Category: Historical epidemiology / ancient disease / paleopathology
+- Summary: In multivariate analysis, historical smallpox vaccination was associated with higher titers at > 2 years (OR = 5.37; 95% CI, 1.31-22.00; P = .020), whilst previous mpox was marginally associated (OR = 2.08; 95% CI, .94-4.62; P = .073). At IC50 previous mpox was associated with positive titers (68.75% vs 47.62%; P = .042), with univariate analysis associating higher titers at 6 months to higher titers at > 2 years (odds ratio [OR] = 6.45; 95% confidence interval [CI], 1.89-22.07; P = .003). At > 2 years from mpox or vaccination, 22 of 90 (24.44%) and 53 of 90 (58.8%) had positive nAb titers, respectively, at IC90 and IC50.
 - Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.
 - Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
 - Relevance score: 5/5
@@ -427,18 +436,10 @@ Search window: 7 day(s) ending 2026-08-03
 - Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
 - Relevance score: 5/5
 
-### Informal PrEP: Rethinking approaches to pharmaceutical access and HIV prevention pathways.
-- Source: PubMed Infectious Disease Search
-- Date: 2026-07-30T00:00
-- URL: https://pubmed.ncbi.nlm.nih.gov/42533522/
-- Category: Major epidemiology studies
-- Summary: Although informal PrEP access raises public health concerns, particularly around suboptimal dosing and the potential emergence of antiretroviral resistance, we argue that focusing solely on these type of risks obscures its political and infrastructural significance. We first clarify the concept of informal PrEP and then situate the analysis through dimensions of pharmaceutical capitalism and logistics, the entanglement of social infrastructures with biomedical technologies, and the biopolitics of biomedical surveillance. Informal access to HIV pre-exposure prophylaxis (PrEP) is often represented as risky and marginal to formal HIV prevention services.
-- Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.
-- Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
-- Relevance score: 5/5
-
 
 ## Other notable readings
+- [Informal PrEP: Rethinking approaches to pharmaceutical access and HIV prevention pathways.](https://pubmed.ncbi.nlm.nih.gov/42533522/) | PubMed Infectious Disease Search | 2026-07-30T00:00 | Major epidemiology studies
+  Although informal PrEP access raises public health concerns, particularly around suboptimal dosing and the potential emergence of antiretroviral resistance, we argue that focusing solely on these type of risks obscures its political and infrastructural significance. We first clarify the concept of informal PrEP and then situate the analysis through dimensions of pharmaceutical capitalism and logistics, the entanglement of social infrastructures with biomedical technologies, and the biopolitics of biomedical surveillance. Informal access to HIV pre-exposure prophylaxis (PrEP) is often represented as risky and marginal to formal HIV prevention services.
 - [Ancient DNA shows how smallpox got to the Americas.](https://pubmed.ncbi.nlm.nih.gov/42531407/) | PubMed Historical Pathogen Case Studies | 2026-07-30T00:00 | Historical epidemiology / ancient disease / paleopathology
   " Landmark" paper finds European contact introduced the disease.
 - [FDA outbreak investigation 1143: Hepatitis A Virus linked to Frozen Strawberries](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-hepatitis-virus-infections-frozen-strawberries-february-2023) | FDA Foodborne Outbreaks | 2026-07-29T14:00 | Outbreaks and emerging infections
@@ -457,27 +458,25 @@ Search window: 7 day(s) ending 2026-08-03
   🗓 Reporting period: 1–30 June 2026 📌 Key highlights: 🦠 Bundibugyo Ebola Virus Disease (BVD), Democratic Republic of the Congo: Communities remained highly engaged throughout the outbreak, but continued to raise important questions about transmission, symptoms, care pathways, and supportive treatment. Narratives suggesting that the outbreak was politically or financially motivated persisted, alongside misinformation about medicines and traditional remedies, increasing the risk of delayed care-seeking and self-medication. The report highlights that widespread awareness of the outbreak has not yet translated into the practical understanding needed to seek timely care and fully cooperate with response efforts.
 - [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) | ECDC News | 2026-07-21T17:36+02:00 | Policy, surveillance, and public health infrastructure
   Limited usable detail remained after boilerplate cleanup.
+- [WHO: DR Congo Faces Largest Ebola Outbreak on Record](https://www.islamtimes.com/en/news/1297043/who-dr-congo-faces-largest-ebola-outbreak-on-record) | اسلام تايمز | 2026-08-03T23:06+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - [First deaths related to cyclosporiasis outbreak reported in Michigan](https://www.washingtonpost.com/health/2026/08/03/two-cyclospora-related-deaths-reported-michigan/) | The Washington Post | 2026-08-03T22:11+00:00 | Policy, surveillance, and public health infrastructure
   Limited detail was available from feed metadata alone.
 - [Health Alert: 2 dead, 18K cases reported in cyclosporiasis outbreak](https://www.cbsnews.com/miami/video/health-alert-2-dead-18k-cases-reported-in-cyclosporiasis-outbreak/) | CBS News | 2026-08-03T21:55+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [A single US measles outbreak can cost millions of dollars, study estimates](https://www.reuters.com/legal/litigation/single-us-measles-outbreak-can-cost-millions-dollars-study-estimates-2026-08-03/) | Reuters | 2026-08-03T21:07+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Cyclospora outbreak causes first two deaths](https://www.axios.com/2026/08/03/cyclospora-outbreak-deaths-illness-symptoms) | Axios | 2026-08-03T20:34+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Michigan health officials report 2 deaths among recent cyclosporiasis cases](https://www.cbsnews.com/detroit/video/michigan-health-officials-report-2-deaths-among-recent-cyclosporiasis-cases/) | CBS News | 2026-08-03T20:17+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Ebola outbreak in DR Congo now second-deadliest in history](https://www.cidrap.umn.edu/ebola/ebola-outbreak-dr-congo-now-second-deadliest-history) | CIDRAP | 2026-08-03T19:38+00:00 | Outbreaks and emerging infections
-  As of yesterday, DRC officials reported 3,695 cases and 1,623 deaths. Transmission rates are increasing, and in the last week of July, the highest weekly number of reported cases (567) and deaths (296) to date were recorded, the WHO said. The deadliest outbreak in history remains the 2014-2016 West African outbreak, which resulted in more than 11,000 deaths.
-- [Video Michigan reports 1st deaths in cyclosporiasis outbreak - ABC News - Breaking News, Latest News and Videos](https://abcnews.com/video/135334290/) | ABC News - Breaking News, Latest News and Videos | 2026-08-03T19:02+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Quebec’s latest measles outbreak is over after no cases reported in over a month](https://www.cbc.ca/news/canada/montreal/quebecs-measles-outbreak-is-over-9.7295051) | CBC | 2026-08-03T18:46+00:00 | Outbreaks and emerging infections
+- [Quebec’s latest measles outbreak is over after no cases reported in over a month](https://news.google.com/rss/articles/CBMiigFBVV95cUxNQU9TU1NyWUtVMkFWbXhZMHMyNGd3ZDRiOFUyX2FnSzhKTVYwb3A2ZmZzOEpGc1ZmeDgtazN4ckhlbHZWdHAzLTRXcTlONDdsUC01WUZtbEhNQUE5RjFSMHJOVmJyQl9OUUpLcGVSWm04X0Q2ampFcFlSeW9pNGJNTWtwLTIxVU1feEE?oc=5) | CBC | 2026-08-03T18:46+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Michigan officials confirm first 2 deaths in cyclosporiasis outbreak](https://www.newsnationnow.com/health/2-dead-from-cyclosporiasis-in-michigan-officials-confirm/) | NewsNation | 2026-08-03T18:31+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
+- [Michigan Reports Two Deaths in Connection With Cyclosporiasis Outbreak](https://www.wsj.com/us-news/cyclosporiasis-outbreak-michigan-deaths-87d7569f) | WSJ | 2026-08-03T18:23+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [US cyclosporiasis outbreak kills two people in Michigan, officials say](https://www.theguardian.com/us-news/2026/aug/03/cyclospora-deaths-michigan) | The Guardian | 2026-08-03T16:57+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [CDC asks staff to volunteer to help with Ebola screenings at airports amid DRC outbreak - ABC News - Breaking News, Latest News and Videos](https://news.google.com/rss/articles/CBMirgFBVV95cUxNbjhrSXk5N050MzMwOFlsa053OUpaOGNtYnEtLXBjRDJ0eG1aZ01EeG9kYWFaMVBpVGpxYUxORkV6SDNkM1B2UFZBcGNWaEFvNG83NUdqYm92MlNRLS1zRlA2V0Z1eV9iNUlLQjlNSGRqbkY4ZmxobzdWbldNcXBudC1NczY0RkJDeHBlU0F4aThoZUZmUDc2SHBNT05DVGctT0FGREtLY29GZUYzY0HSAbMBQVVfeXFMTXFnUksta0FSUTNuYXVCVzRvS2V3S3VnbkdhY0N1dmhfX20yUlpZMmltVEYwcGZIanl2alVrLWpIQi1uUl9rbHllN2hHTUE0Q2h3OHR3Nkc0Tk5BRDB3Tnoza3V2bnlVUnJNVEhmTVRPbFhTOGtSMDFqaUhBMlNzaXU4eEtHZkhMNnh1UmtfN0VmS1RWT3dycmgwR1FxbmhCU3NWR2FyalhORnRDekUtUjU0TnM?oc=5) | ABC News - Breaking News, Latest News and Videos | 2026-08-03T16:55+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Two Deaths Linked to Cyclosporiasis in Michigan](https://www.nytimes.com/2026/08/03/well/eat/cyclospora-deaths-michigan.html) | The New York Times | 2026-08-03T16:41+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 
 ## Papers worth saving
@@ -487,6 +486,12 @@ Search window: 7 day(s) ending 2026-08-03
   Journal/preprint server: Global health action
   Abstract link: https://pubmed.ncbi.nlm.nih.gov/42544917/
   Source URL: https://pubmed.ncbi.nlm.nih.gov/42544917/
+- [A Humoral Dilemma: Reassessing Monkeypox Virus Neutralizing Antibodies at More Than 2 Years From Mpox or Modified Vaccinia Ankara-Bavarian Nordic Vaccination.](https://pubmed.ncbi.nlm.nih.gov/41492703/)
+  Source: PubMed Historical Pathogen Case Studies
+  DOI: 10.1093/infdis/jiag009
+  Journal/preprint server: The Journal of infectious diseases
+  Abstract link: https://pubmed.ncbi.nlm.nih.gov/41492703/
+  Source URL: https://pubmed.ncbi.nlm.nih.gov/41492703/
 - [The genomic identity of early smallpox in South America.](https://pubmed.ncbi.nlm.nih.gov/42531397/)
   Source: PubMed Historical Pathogen Case Studies
   DOI: 10.1126/science.aee6957
@@ -517,20 +522,22 @@ Search window: 7 day(s) ending 2026-08-03
   Journal/preprint server: Human vaccines & immunotherapeutics
   Abstract link: https://pubmed.ncbi.nlm.nih.gov/42544634/
   Source URL: https://pubmed.ncbi.nlm.nih.gov/42544634/
+- [Mothers' intentions for adolescent sons' human papillomavirus vaccination in Japan: Psychosocial factors and relative influences across intention groups.](https://pubmed.ncbi.nlm.nih.gov/42546173/)
+  Source: PubMed Infectious Disease Search
+  DOI: 10.1080/21645515.2026.2686497
+  Journal/preprint server: Human vaccines & immunotherapeutics
+  Abstract link: https://pubmed.ncbi.nlm.nih.gov/42546173/
+  Source URL: https://pubmed.ncbi.nlm.nih.gov/42546173/
 - [How smallpox reached the Americas: first genomic evidence points to Europeans.](https://pubmed.ncbi.nlm.nih.gov/42538353/)
   Source: PubMed Historical Pathogen Case Studies
   DOI: 10.1038/d41586-026-02366-y
   Journal/preprint server: Nature
   Abstract link: https://pubmed.ncbi.nlm.nih.gov/42538353/
   Source URL: https://pubmed.ncbi.nlm.nih.gov/42538353/
-- [Changes in HPV vaccine hesitancy and influencing factors among female university students in China: A national repeated study.](https://pubmed.ncbi.nlm.nih.gov/42525964/)
-  Source: PubMed Infectious Disease Search
-  DOI: 10.1080/21645515.2026.2701549
-  Journal/preprint server: Human vaccines & immunotherapeutics
-  Abstract link: https://pubmed.ncbi.nlm.nih.gov/42525964/
-  Source URL: https://pubmed.ncbi.nlm.nih.gov/42525964/
 
 ## Historical epi / weird epi corner
+- [A Humoral Dilemma: Reassessing Monkeypox Virus Neutralizing Antibodies at More Than 2 Years From Mpox or Modified Vaccinia Ankara-Bavarian Nordic Vaccination.](https://pubmed.ncbi.nlm.nih.gov/41492703/) | PubMed Historical Pathogen Case Studies
+  In multivariate analysis, historical smallpox vaccination was associated with higher titers at > 2 years (OR = 5.37; 95% CI, 1.31-22.00; P = .020), whilst previous mpox was marginally associated (OR = 2.08; 95% CI, .94-4.62; P = .073). At IC50 previous mpox was associated with positive titers (68.75% vs 47.62%; P = .042), with univariate analysis associating higher titers at 6 months to higher titers at > 2 years (odds ratio [OR] = 6.45; 95% confidence interval [CI], 1.89-22.07; P = .003). At > 2 years from mpox or vaccination, 22 of 90 (24.44%) and 53 of 90 (58.8%) had positive nAb titers, respectively, at IC90 and IC50.
 - [The genomic identity of early smallpox in South America.](https://pubmed.ncbi.nlm.nih.gov/42531397/) | PubMed Historical Pathogen Case Studies
   Here, we report the first ancient smallpox genomes in the Americas, dating to approximately 1492-1631 common era (CE), recovered from two Inca-Colonial individuals in northern Chile. These genomes form a now-extinct lineage that diverged around 1296 CE, after the splitting of early medieval European strains but before the emergence of modern variola lineages, providing direct molecular evidence for smallpox introduction through European colonization. We further identify a constant tempo of gene inactivation until the late 16th century, followed by a phase of constraint and a subsequent rebound in substitution rates, linking variola virus evolution to major shifts in human demography and epidemiology.
 - [Ancient DNA shows how smallpox got to the Americas.](https://pubmed.ncbi.nlm.nih.gov/42531407/) | PubMed Historical Pathogen Case Studies
