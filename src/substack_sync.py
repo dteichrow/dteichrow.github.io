@@ -9,7 +9,7 @@ from email.utils import parsedate_to_datetime
 from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
-from urllib.parse import urlparse
+from urllib.parse import unquote, urlparse
 from xml.etree import ElementTree as ET
 
 from .common import (
@@ -95,6 +95,11 @@ DROP_BODY_CONTENT_TAGS = {
 }
 DROP_BODY_VOID_TAGS = {"embed", "input", "param"}
 SAFE_URL_SCHEMES = {"http", "https", "mailto"}
+MARKDOWN_IMAGE_RE = re.compile(r"!\[[^\]]*\]\((https?://[^\s)]+)\)")
+SUBSTACK_POST_MEDIA_RE = re.compile(
+    r"https://substack-post-media\.s3\.amazonaws\.com/public/images/[^\s?#)]+",
+    flags=re.I,
+)
 
 
 class SubstackBodySanitizer(HTMLParser):
@@ -288,7 +293,7 @@ def _archive_post_to_record(post: dict[str, Any], *, source_mode: str) -> dict[s
         "date": parse_iso_date(post.get("post_date")),
         "canonical_url": canonical_url,
         "excerpt": clean_text(post.get("description") or post.get("truncated_body_text") or post.get("search_engine_description")),
-        "cover_image": post.get("cover_image") or "",
+        "cover_image": normalize_cover_image_url(str(post.get("cover_image") or "")),
         "upstream_tags": [tag.get("name") for tag in post.get("postTags", []) if isinstance(tag, dict) and tag.get("name")],
         "source_mode": source_mode,
         "wordcount": post.get("wordcount"),
@@ -347,9 +352,14 @@ def _extract_post_record_from_page(html_text: str, url: str) -> dict[str, Any]:
         "date": parse_iso_date(post.get("post_date")),
         "canonical_url": canonical_url,
         "excerpt": excerpt,
-        "cover_image": post.get("cover_image")
-        or meta_content(html_text, "property", "og:image")
-        or meta_content(html_text, "name", "twitter:image"),
+        "cover_image": normalize_cover_image_url(
+            str(
+                post.get("cover_image")
+                or meta_content(html_text, "property", "og:image")
+                or meta_content(html_text, "name", "twitter:image")
+                or ""
+            )
+        ),
         "upstream_tags": tags,
         "source_mode": "substack_page",
         "wordcount": post.get("wordcount"),
@@ -430,7 +440,7 @@ def _parse_rss_feed(xml_text: str) -> list[dict[str, Any]]:
                 "date": date,
                 "canonical_url": link,
                 "excerpt": description,
-                "cover_image": image_url,
+                "cover_image": normalize_cover_image_url(image_url),
                 "upstream_tags": [],
                 "source_mode": "substack_rss",
                 "wordcount": None,
@@ -499,11 +509,47 @@ def _extract_post_record_from_reader(reader_text: str, url: str) -> dict[str, An
         "date": published_at,
         "canonical_url": url,
         "excerpt": excerpt,
-        "cover_image": "",
+        "cover_image": extract_cover_image_from_markdown(markdown_content),
         "upstream_tags": [],
         "source_mode": "substack_reader",
         "wordcount": len(re.findall(r"[A-Za-z0-9]+(?:['-][A-Za-z0-9]+)?", cleaned_content)),
     }
+
+
+def normalize_cover_image_url(value: str) -> str:
+    candidate = html.unescape(value).strip()
+    if not candidate:
+        return ""
+    direct_match = SUBSTACK_POST_MEDIA_RE.search(unquote(candidate))
+    if direct_match:
+        return direct_match.group(0)
+    return candidate
+
+
+def extract_cover_image_from_markdown(markdown_content: str) -> str:
+    match = MARKDOWN_IMAGE_RE.search(markdown_content)
+    return normalize_cover_image_url(match.group(1)) if match else ""
+
+
+def enrich_missing_cover_image(url: str, source_mode: str) -> str:
+    fetchers = (
+        (lambda: _extract_post_record_from_reader(fetch_text(_reader_url(url)), url),
+         lambda: _extract_post_record_from_page(fetch_text(url), url))
+        if source_mode.startswith("substack_reader")
+        else (lambda: _extract_post_record_from_page(fetch_text(url), url),
+              lambda: _extract_post_record_from_reader(fetch_text(_reader_url(url)), url))
+    )
+    last_error: Exception | None = None
+    for fetch_record in fetchers:
+        try:
+            cover_image = str(fetch_record().get("cover_image") or "")
+            if cover_image:
+                return cover_image
+        except Exception as exc:  # noqa: BLE001
+            last_error = exc
+    if last_error is not None:
+        raise last_error
+    return ""
 
 
 def _report_dir_for_manifest(manifest_path: Path | None) -> Path:
@@ -687,13 +733,26 @@ def incremental_sync(manifest_path: Path | None = None) -> dict[str, Any]:
     created = 0
     updated = 0
     enriched = 0
+    cover_images_enriched = 0
     failures: list[dict[str, str]] = []
     for incoming in feed_posts:
         url = incoming["canonical_url"]
         existing = merged.get(url)
+        if existing is not None and not existing.get("cover_image") and not incoming.get("cover_image"):
+            try:
+                cover_image = enrich_missing_cover_image(url, str(incoming.get("source_mode") or ""))
+                if cover_image:
+                    incoming = {**incoming, "cover_image": cover_image}
+                    cover_images_enriched += 1
+            except Exception as exc:  # noqa: BLE001
+                failures.append({"url": url, "error": f"cover image enrichment: {exc}"})
         if existing is not None and incoming.get("source_mode") == "substack_reader_rss":
             # Reader RSS is intentionally sparse; never let it overwrite a
-            # previously captured canonical record.
+            # previously captured canonical record. It can still repair a
+            # record that was previously ingested without a cover image.
+            if incoming.get("cover_image"):
+                existing["cover_image"] = incoming["cover_image"]
+                existing["last_synced_at"] = now_iso()
             continue
         if existing is None:
             try:
@@ -734,6 +793,7 @@ def incremental_sync(manifest_path: Path | None = None) -> dict[str, Any]:
         "pruned_records": len(pruned),
         "pruned_slugs": [post.get("slug", "") for post in pruned],
         "enriched_from_post_pages": enriched,
+        "cover_images_enriched": cover_images_enriched,
         "degraded": source_mode in {"sitemap_fallback", "reader_rss", "manifest_only"},
         "fallback_reason": fallback_reason or "",
         "sitemap_prune_degraded": current_sitemap_urls is None,

@@ -3,15 +3,10 @@ posts:
   title: The Rabies Denominator Problem
   date: '2026-08-02'
   canonical_url: https://theedgeofepidemiology.substack.com/p/the-rabies-denominator-problem
-  excerpt: '![Image 1](https://substackcdn.com/image/fetch/$s !duXc!,f auto,q auto:good,fl
-    progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F29eaa2d7-ccd8-4a0e-b5a6-8ec5fe45686a
-    2920x1866.jpeg) Desmodus rotundus , from Alcide d’Orbigny’s Voyage dans l’Amérique
-    méridionale (1847). Public domain via Wikimedia Commons. The idea for this piece
-    came from a reader who asked me about cases of asymptomatic rabies, as they had
-    read a few papers and reports from the CDC on human-to-human transmission of rabies
-    through organ transplantation and a study of Peruvian people from t'
-  source_mode: substack_reader
-  wordcount: 2087
+  excerpt: Clinical rabies is known to be fatal, but its human infection-fatality
+    rate is still unknown
+  source_mode: substack_archive_api
+  wordcount: 1986
   status: summary_only
   dek: ''
   topics: []
@@ -36,21 +31,22 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-08-02T15:34:25+00:00'
-  last_synced_at: '2026-08-02T15:34:25+00:00'
-  upstream_tags: []
+  last_synced_at: '2026-08-04T14:29:16+00:00'
+  upstream_tags:
+  - science
+  - infectious disease
+  - rabies
+  - epidemiology
+  substack_id: 209500725
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/c0a204df-34f3-403a-a834-39c9812a3547_2920x1866.jpeg
 - slug: before-the-odyssey-apollo-sent-a
   title: Before the Odyssey, Apollo Sent a Plague
   date: '2026-07-26'
   canonical_url: https://theedgeofepidemiology.substack.com/p/before-the-odyssey-apollo-sent-a
-  excerpt: '![Image 1: File:Chryses Agamemnon Louvre K1.jpg](https://substackcdn.com/image/fetch/$s
-    !Skbo!,f auto,q auto:good,fl progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd64e095d-615c-47b4-9342-e3e2336c0a22
-    960x767.jpeg) Chryses attempts to ransom Chryseis from Agamemnon, Apulian red-figure
-    volute-krater, ca. 360–350 BCE, Louvre K 1. Photograph by Jastrow, public domain
-    via Wikimedia Commons. Christopher Nolan’s The Odyssey is sending a lot of people
-    to read translations of the Homeric epic poems set in the Late Bronze Age. Follow
-    the story backward and you '
-  source_mode: substack_reader
-  wordcount: 2033
+  excerpt: The Iliad, a Hittite mortality-crisis, and the limits of diagnosing ancient
+    diseases
+  source_mode: substack_archive_api
+  wordcount: 1799
   status: summary_only
   dek: ''
   topics: []
@@ -75,22 +71,23 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-07-26T14:05:34+00:00'
-  last_synced_at: '2026-07-26T14:05:34+00:00'
-  upstream_tags: []
+  last_synced_at: '2026-08-04T14:29:16+00:00'
+  upstream_tags:
+  - History
+  - Ancient Greece
+  - Odyssey
+  - Iliad
+  substack_id: 208503211
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/d64e095d-615c-47b4-9342-e3e2336c0a22_960x767.jpeg
 - slug: the-group-prohibition-helped-most
   title: 'The Group Prohibition Helped Most: What Prohibition did for the unborn before
     pregnancy came with an alcohol warning'
   date: '2026-07-19'
   canonical_url: https://theedgeofepidemiology.substack.com/p/the-group-prohibition-helped-most
-  excerpt: '![Image 1](https://substackcdn.com/image/fetch/$s !LVPf!,f auto,q auto:good,fl
-    progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F139232bd-330a-43e3-9767-a33bcfe99c30
-    1427x1759.jpeg) “I Want a Drink!” cover of Judge, January 3, 1920. Illustration
-    by Guy Hoff. From https://commons.wikimedia.org/wiki/Category:Alcohol\ prohibition\
-    in\ the\ United\ States /media/File:JudgeMagazine3Jan1920.jpg The Prohibition
-    of alcohol in early 20 th century American history became the policy everyone
-    knows failed. It was a constitutional ban on booze that ended up producing '
-  source_mode: substack_reader
-  wordcount: 1459
+  excerpt: The Prohibition of alcohol in early 20th century American history became
+    the policy everyone knows failed.
+  source_mode: substack_archive_api
+  wordcount: 1384
   status: summary_only
   dek: ''
   topics: []
@@ -115,8 +112,15 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-07-19T15:28:53+00:00'
-  last_synced_at: '2026-07-19T15:28:53+00:00'
-  upstream_tags: []
+  last_synced_at: '2026-08-04T14:29:16+00:00'
+  upstream_tags:
+  - american history
+  - health policy
+  - History
+  - prohibition
+  - epidemiology
+  substack_id: 207572671
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/139232bd-330a-43e3-9767-a33bcfe99c30_1427x1759.jpeg
 - substack_id: 206517724
   slug: were-the-dark-ages-really-dark-how
   title: Were the Dark Ages Really Dark? What Rome’s Collapse Made Harder to See
@@ -130,8 +134,8 @@ posts:
   - Dark Ages
   - epidemiology
   - Medieval History
-  source_mode: substack_page
-  wordcount: 4330
+  source_mode: substack_archive_api
+  wordcount: 4370
   status: mirrored
   dek: ''
   topics:
@@ -158,7 +162,8 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-07-13T16:18:53+00:00'
-  last_synced_at: '2026-07-13T16:18:53+00:00'
+  last_synced_at: '2026-08-04T14:29:16+00:00'
+  body_source_file: ''
 - substack_id: 203888402
   slug: the-public-health-evidence-on-policing
   title: The Public Health Evidence on Policing Is Stranger Than Either Side Admits
@@ -166,7 +171,7 @@ posts:
   canonical_url: https://theedgeofepidemiology.substack.com/p/the-public-health-evidence-on-policing
   excerpt: Policing is not one exposure. Homicide prevention, traffic stops, arrests,
     and police violence need separate causal accounting.
-  cover_image: https://substackcdn.com/image/fetch/$s_!SND_!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7ae698e7-139e-44b0-b382-78d7530e0917_1024x692.jpeg
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/7ae698e7-139e-44b0-b382-78d7530e0917_1024x692.jpeg
   upstream_tags:
   - american history
   - Policing
@@ -174,7 +179,7 @@ posts:
   - Police
   - epidemiology
   source_mode: substack_archive_api
-  wordcount: 3145
+  wordcount: 3151
   status: mirrored
   dek: ''
   topics:
@@ -202,7 +207,8 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-06-29T15:00:04+00:00'
-  last_synced_at: '2026-07-13T16:18:53+00:00'
+  last_synced_at: '2026-08-04T14:29:16+00:00'
+  body_source_file: ''
 - substack_id: 202975620
   slug: what-did-your-job-do-to-your-body
   title: What Did Your Job Do to Your Body?
@@ -210,7 +216,7 @@ posts:
   canonical_url: https://theedgeofepidemiology.substack.com/p/what-did-your-job-do-to-your-body
   excerpt: Occupational disease starts with a boring question that can change the
     whole diagnosis.
-  cover_image: https://substackcdn.com/image/fetch/$s_!jE9c!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6cf3091d-463f-45bd-a5c6-e25992c978a8_1620x911.png
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/6cf3091d-463f-45bd-a5c6-e25992c978a8_1620x911.png
   upstream_tags:
   - science
   - occupational health
@@ -219,7 +225,7 @@ posts:
   - Ramazzini
   - epidemiology
   source_mode: substack_archive_api
-  wordcount: 1733
+  wordcount: 1739
   status: mirrored
   dek: ''
   topics:
@@ -248,7 +254,8 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-06-22T17:24:32+00:00'
-  last_synced_at: '2026-06-29T15:00:04+00:00'
+  last_synced_at: '2026-08-04T14:29:16+00:00'
+  body_source_file: ''
 - substack_id: 201672365
   slug: the-countries-we-cant-measure-how
   title: The Deaths We Can't Count
@@ -259,13 +266,13 @@ posts:
     level curiosity: “how do researchers get anything resembling real-world data in
     the areas controlled by rebel forces?” How do they get an estimate of mortality
     when nobody is counting carefully?'
-  cover_image: https://substackcdn.com/image/fetch/$s_!nMN1!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5b268f5c-4fdb-4160-9757-e34ca671b51b_2048x1459.png
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/5b268f5c-4fdb-4160-9757-e34ca671b51b_2048x1459.png
   upstream_tags:
   - global health
   - developing nations
   - epidemiology
   source_mode: substack_archive_api
-  wordcount: 3064
+  wordcount: 3070
   status: mirrored
   dek: Some deaths pass through a bureaucracy. Others have to be reconstructed from
     fragments.
@@ -292,11 +299,12 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-06-12T15:02:15+00:00'
-  last_synced_at: '2026-06-18T06:45:41+00:00'
+  last_synced_at: '2026-08-04T14:29:16+00:00'
   body_synced_at: '2026-07-13T16:19:43+00:00'
   body_source_url: https://theedgeofepidemiology.substack.com/p/the-countries-we-cant-measure-how
   body_source_mode: substack_body_html
   body_wordcount: 3107
+  body_source_file: ''
 - substack_id: 200849173
   slug: new-world-screwworm-returns-to-the
   title: The Flesh-Eating Fly America Thought It Had Beaten Is Back
@@ -304,7 +312,7 @@ posts:
   canonical_url: https://theedgeofepidemiology.substack.com/p/new-world-screwworm-returns-to-the
   excerpt: The U.S. spent decades pushing New World screwworm south. Now the old livestock
     nightmare is moving back into view.
-  cover_image: https://substackcdn.com/image/fetch/$s_!GriU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F88f4ef7b-8fca-40e4-8fcc-95bafcda7c9c_1600x1000.png
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/88f4ef7b-8fca-40e4-8fcc-95bafcda7c9c_1600x1000.png
   upstream_tags:
   - US History
   - History
@@ -312,7 +320,7 @@ posts:
   - Screwworm
   - Agriculture
   source_mode: substack_archive_api
-  wordcount: 2654
+  wordcount: 2714
   status: mirrored
   dek: The U.S. spent decades pushing New World screwworm south. Now the old livestock
     nightmare is moving back into view.
@@ -340,11 +348,12 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-06-06T12:22:41+00:00'
-  last_synced_at: '2026-06-29T15:00:04+00:00'
+  last_synced_at: '2026-08-04T14:29:16+00:00'
   body_synced_at: '2026-07-13T16:19:43+00:00'
   body_source_url: https://theedgeofepidemiology.substack.com/p/new-world-screwworm-returns-to-the
   body_source_mode: substack_body_html
   body_wordcount: 2697
+  body_source_file: ''
 - substack_id: 199208467
   slug: what-the-viking-age-norse-died-from
   title: The Ordinary Deaths of the Vikings
@@ -352,14 +361,14 @@ posts:
   canonical_url: https://theedgeofepidemiology.substack.com/p/what-the-viking-age-norse-died-from
   excerpt: The saga version is raids and swords. The burial evidence points to infection,
     injury, childhood death, and ordinary premodern risk.
-  cover_image: https://substackcdn.com/image/fetch/$s_!IGPy!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F695412e9-402b-4aa8-834c-9083fc47e8f7_1800x1013.png
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/695412e9-402b-4aa8-834c-9083fc47e8f7_1800x1013.png
   upstream_tags:
   - science
   - History
   - Vikings
   - Big Epidemiology
   source_mode: substack_archive_api
-  wordcount: 2578
+  wordcount: 2584
   status: mirrored
   dek: The saga version is raids and swords. The burial evidence points to infection,
     injury, childhood death, and ordinary premodern risk.
@@ -384,11 +393,12 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-25T17:17:43+00:00'
-  last_synced_at: '2026-06-29T15:00:04+00:00'
+  last_synced_at: '2026-08-04T14:29:16+00:00'
   body_synced_at: '2026-07-13T16:19:43+00:00'
   body_source_url: https://theedgeofepidemiology.substack.com/p/what-the-viking-age-norse-died-from
   body_source_mode: substack_body_html
   body_wordcount: 2639
+  body_source_file: ''
 - substack_id: 198344681
   slug: ebola-in-drc-and-uganda-what-is-known
   title: 'Ebola in DRC and Uganda: What Is Known So Far'
@@ -396,7 +406,7 @@ posts:
   canonical_url: https://theedgeofepidemiology.substack.com/p/ebola-in-drc-and-uganda-what-is-known
   excerpt: What we know, what we don't, and why an outbreak in a conflict zone is
     so hard to read from the outside.
-  cover_image: https://substackcdn.com/image/fetch/$s_!hwSr!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F69aa395c-0747-4e3b-814b-f5c650960284_1600x900.png
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/69aa395c-0747-4e3b-814b-f5c650960284_1600x900.png
   upstream_tags:
   - science
   - infectious disease
@@ -404,7 +414,7 @@ posts:
   - epidemiology
   - Africa
   source_mode: substack_archive_api
-  wordcount: 2721
+  wordcount: 2882
   status: mirrored
   dek: What we know, what we don't, and why an outbreak in a conflict zone is so hard
     to read from the outside.
@@ -432,11 +442,12 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-19T02:25:26+00:00'
-  last_synced_at: '2026-07-13T16:18:53+00:00'
+  last_synced_at: '2026-08-04T14:29:16+00:00'
   body_synced_at: '2026-07-13T16:19:43+00:00'
   body_source_url: https://theedgeofepidemiology.substack.com/p/ebola-in-drc-and-uganda-what-is-known
   body_source_mode: substack_body_html
   body_wordcount: 2829
+  body_source_file: ''
 - substack_id: 197437573
   slug: hantavirus-in-the-korean-war-korean
   title: Korean Hemorrhagic Fever in the Korean War
@@ -444,7 +455,7 @@ posts:
   canonical_url: https://theedgeofepidemiology.substack.com/p/hantavirus-in-the-korean-war-korean
   excerpt: How Korean War trench warfare, rodent ecology, and Hantaan virus turned
     a mysterious military outbreak into hantavirus history.
-  cover_image: https://substackcdn.com/image/fetch/$s_!w6UP!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcc7f1a29-bdc6-4096-8997-21550a5bc7d0_600x632.jpeg
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/cc7f1a29-bdc6-4096-8997-21550a5bc7d0_600x632.jpeg
   upstream_tags:
   - science
   - History
@@ -474,7 +485,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-13T14:25:47+00:00'
-  last_synced_at: '2026-05-17T19:40:45+00:00'
+  last_synced_at: '2026-08-04T14:29:16+00:00'
   seo_title: 'Korean War Hantavirus: Hemorrhagic Fever History'
   seo_description: How Korean War trench warfare, rodent ecology, and Hantaan virus
     turned a mysterious military outbreak into hantavirus history.
@@ -485,6 +496,7 @@ posts:
   body_source_url: https://theedgeofepidemiology.substack.com/p/hantavirus-in-the-korean-war-korean
   body_source_mode: substack_body_html
   body_wordcount: 2434
+  body_source_file: ''
 - substack_id: 196425690
   slug: hantavirus-at-sea-what-we-know-about
   title: 'MV Hondius Hantavirus Outbreak: What We Know So Far'
@@ -493,7 +505,7 @@ posts:
   excerpt: A source-first guide to the MV Hondius hantavirus outbreak, Andes virus,
     cruise-ship exposure, travel risk, and what investigators could and could not
     yet know.
-  cover_image: https://substackcdn.com/image/fetch/$s_!jeza!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6e9fa99a-2b15-4e8f-8dcc-97f6dc5b7705_1920x1080.jpeg
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/6e9fa99a-2b15-4e8f-8dcc-97f6dc5b7705_1920x1080.jpeg
   upstream_tags:
   - science
   - infectious disease
@@ -523,7 +535,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-17T19:40:45+00:00'
+  last_synced_at: '2026-08-04T14:29:16+00:00'
   seo_title: 'MV Hondius Hantavirus Outbreak: What We Know'
   seo_description: A source-first guide to the MV Hondius hantavirus outbreak, Andes
     virus, cruise-ship exposure, travel risk, and what investigators could know.
@@ -534,13 +546,14 @@ posts:
   body_source_url: https://theedgeofepidemiology.substack.com/p/hantavirus-at-sea-what-we-know-about
   body_source_mode: substack_body_html
   body_wordcount: 2881
+  body_source_file: ''
 - substack_id: 196225500
   slug: the-new-fungal-sti-hiding-in-plain
   title: 'The New Fungal STI Hiding in Plain Sight (Pathogen Dispatch #1)'
   date: '2026-05-02'
   canonical_url: https://theedgeofepidemiology.substack.com/p/the-new-fungal-sti-hiding-in-plain
   excerpt: What is TMVII, where did it come from, and who is most at risk?
-  cover_image: https://substackcdn.com/image/fetch/$s_!7Zy3!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffad7360a-467b-4dbe-b070-91d82ff307d9_700x466.jpeg
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/fad7360a-467b-4dbe-b070-91d82ff307d9_700x466.jpeg
   upstream_tags:
   - science
   - public health
@@ -548,7 +561,7 @@ posts:
   - LGBTQ
   - STIs
   source_mode: substack_archive_api
-  wordcount: 1301
+  wordcount: 1307
   status: mirrored
   dek: ''
   topics:
@@ -567,7 +580,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-10T21:44:18+00:00'
+  last_synced_at: '2026-08-04T14:29:16+00:00'
   seo_title: 'New Fungal STI: Epidemiology and Transmission Risk'
   seo_description: A source-aware look at a newly reported sexually transmitted fungal
     infection, including MSM networks, case evidence, transmission questions, and
@@ -579,6 +592,7 @@ posts:
   body_source_url: https://theedgeofepidemiology.substack.com/p/the-new-fungal-sti-hiding-in-plain
   body_source_mode: substack_body_html
   body_wordcount: 1395
+  body_source_file: ''
 - substack_id: 195413363
   slug: how-changing-disease-environments
   title: Ancient DNA and Disease Selection in West Eurasia
@@ -586,7 +600,7 @@ posts:
   canonical_url: https://theedgeofepidemiology.substack.com/p/how-changing-disease-environments
   excerpt: How ancient DNA, infectious disease pressure, immunity, and changing environments
     can help explain genomic selection in West Eurasian populations.
-  cover_image: https://substackcdn.com/image/fetch/$s_!uXvG!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F41886fa8-7d51-49d0-b395-676dd0e17e4c_1920x2482.jpeg
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/41886fa8-7d51-49d0-b395-676dd0e17e4c_1920x2482.jpeg
   upstream_tags:
   - information science
   - History
@@ -613,7 +627,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-17T19:40:45+00:00'
+  last_synced_at: '2026-08-04T14:29:16+00:00'
   seo_title: Ancient DNA and Disease Selection in West Eurasia
   seo_description: How ancient DNA, infectious disease pressure, immunity, and changing
     environments help explain genomic selection in West Eurasian populations.
@@ -624,6 +638,7 @@ posts:
   body_source_url: https://theedgeofepidemiology.substack.com/p/how-changing-disease-environments
   body_source_mode: substack_body_html
   body_wordcount: 2673
+  body_source_file: ''
 - substack_id: 193856306
   slug: big-epidemiology-disease-at-the-scale
   title: 'Big Epidemiology: Disease at the Scale of Civilization'
@@ -631,7 +646,7 @@ posts:
   canonical_url: https://theedgeofepidemiology.substack.com/p/big-epidemiology-disease-at-the-scale
   excerpt: What happens when you stop treating disease as background and start treating
     it as one of history's operating forces.
-  cover_image: https://substackcdn.com/image/fetch/$s_!F2yF!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6c35b218-4016-4b59-85c0-db81dc767d92_960x766.png
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/6c35b218-4016-4b59-85c0-db81dc767d92_960x766.png
   upstream_tags:
   - science
   - History
@@ -660,7 +675,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-06-29T15:00:04+00:00'
+  last_synced_at: '2026-08-04T14:29:16+00:00'
   seo_title: 'Big Epidemiology: Disease at the Scale of Civilization'
   seo_description: What happens when you stop treating disease as background and start
     treating it as one of history's operating forces.
@@ -671,6 +686,7 @@ posts:
   body_source_url: https://theedgeofepidemiology.substack.com/p/big-epidemiology-disease-at-the-scale
   body_source_mode: substack_body_html
   body_wordcount: 2020
+  body_source_file: ''
 - substack_id: 193176173
   slug: the-first-american-epidemic-how-yellow
   title: '1793 Philadelphia Yellow Fever: America''s First Epidemic Crisis'
@@ -678,7 +694,7 @@ posts:
   canonical_url: https://theedgeofepidemiology.substack.com/p/the-first-american-epidemic-how-yellow
   excerpt: The 1793 Philadelphia yellow fever epidemic as an early American public-health
     crisis shaped by urban ecology, politics, race, medicine, and mosquito-borne disease.
-  cover_image: https://substackcdn.com/image/fetch/$s_!fDf-!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdeb97c57-38a6-4430-95c6-7eb516119752_883x620.png
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/deb97c57-38a6-4430-95c6-7eb516119752_883x620.png
   upstream_tags:
   - american history
   - US History
@@ -709,7 +725,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-17T19:40:45+00:00'
+  last_synced_at: '2026-08-04T14:29:16+00:00'
   seo_title: '1793 Philadelphia Yellow Fever: America’s First Epidemic Crisis'
   seo_description: The 1793 Philadelphia yellow fever epidemic as an early American
     public-health crisis shaped by urban ecology, politics, race, and mosquito-borne
@@ -721,6 +737,7 @@ posts:
   body_source_url: https://theedgeofepidemiology.substack.com/p/the-first-american-epidemic-how-yellow
   body_source_mode: substack_body_html
   body_wordcount: 3145
+  body_source_file: ''
 - substack_id: 192444219
   slug: did-the-vikings-bring-plague-across
   title: Did Vikings Spread Plague Across the North Sea?
@@ -728,7 +745,7 @@ posts:
   canonical_url: https://theedgeofepidemiology.substack.com/p/did-the-vikings-bring-plague-across
   excerpt: A careful look at Viking movement, North Sea disease ecology, plague evidence,
     Norse voyages, and the limits of reconstructing medieval pathogen spread.
-  cover_image: https://substackcdn.com/image/fetch/$s_!7WgR!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F45398610-393d-47c9-ae4e-7df83dab1403_640x389.jpeg
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/45398610-393d-47c9-ae4e-7df83dab1403_640x389.jpeg
   upstream_tags:
   - science
   - infectious disease
@@ -759,7 +776,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-17T19:40:45+00:00'
+  last_synced_at: '2026-08-04T14:29:16+00:00'
   seo_title: Did Vikings Spread Plague Across the North Sea?
   seo_description: A careful look at Viking movement, North Sea disease ecology, plague
     evidence, Norse voyages, and the limits of reconstructing medieval pathogen spread.
@@ -770,6 +787,7 @@ posts:
   body_source_url: https://theedgeofepidemiology.substack.com/p/did-the-vikings-bring-plague-across
   body_source_mode: substack_body_html
   body_wordcount: 2732
+  body_source_file: ''
 - substack_id: 192334500
   slug: the-white-plague-returns-tuberculosis
   title: Is the White Plague Returning?
@@ -777,7 +795,7 @@ posts:
   canonical_url: https://theedgeofepidemiology.substack.com/p/the-white-plague-returns-tuberculosis
   excerpt: TB never really left. The question is why public health keeps giving it
     room to come back.
-  cover_image: https://substackcdn.com/image/fetch/$s_!Wsfu!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3724bfa7-d0b4-40d7-b8a9-34f2c1f71bab_2361x3364.jpeg
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/3724bfa7-d0b4-40d7-b8a9-34f2c1f71bab_2361x3364.jpeg
   upstream_tags:
   - science
   - History
@@ -803,7 +821,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-06-29T15:00:04+00:00'
+  last_synced_at: '2026-08-04T14:29:16+00:00'
   seo_title: Is the White Plague Returning?
   seo_description: TB never really left. The question is why public health keeps giving
     it room to come back.
@@ -814,6 +832,7 @@ posts:
   body_source_url: https://theedgeofepidemiology.substack.com/p/the-white-plague-returns-tuberculosis
   body_source_mode: substack_body_html
   body_wordcount: 2015
+  body_source_file: ''
 - substack_id: 191686346
   slug: who-died-of-what-in-the-american
   title: 'Disease in the American Revolutionary War: Who Died of What?'
@@ -821,7 +840,7 @@ posts:
   canonical_url: https://theedgeofepidemiology.substack.com/p/who-died-of-what-in-the-american
   excerpt: How disease, smallpox, camp fever, prison ships, and military medicine
     shaped mortality in the American Revolutionary War.
-  cover_image: https://substackcdn.com/image/fetch/$s_!egyW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff2019e74-efac-479f-bd33-3a14093932d7_1431x1370.png
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/f2019e74-efac-479f-bd33-3a14093932d7_1431x1370.png
   upstream_tags:
   - infectious disease
   - american history
@@ -849,7 +868,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-17T19:40:45+00:00'
+  last_synced_at: '2026-08-04T14:29:16+00:00'
   seo_title: 'Disease in the American Revolutionary War: Who Died of What?'
   seo_description: Disease mortality in the American Revolutionary War, including
     battle deaths, smallpox, camp disease, military medicine, and eighteenth-century
@@ -861,6 +880,7 @@ posts:
   body_source_url: https://theedgeofepidemiology.substack.com/p/who-died-of-what-in-the-american
   body_source_mode: substack_body_html
   body_wordcount: 3127
+  body_source_file: ''
 - substack_id: 191075721
   slug: invisible-killers-of-the-oregon-trail
   title: 'Disease on the Oregon Trail: Cholera, Dysentery, and Death'
@@ -868,7 +888,7 @@ posts:
   canonical_url: https://theedgeofepidemiology.substack.com/p/invisible-killers-of-the-oregon-trail
   excerpt: Disease on the Oregon Trail, from cholera and dysentery to overland migration,
     sanitation, graves, and the epidemiology of nineteenth-century westward travel.
-  cover_image: https://substackcdn.com/image/fetch/$s_!mNB2!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2ffccbcf-be76-4b52-8068-8607c6a9ec94_810x477.png
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/2ffccbcf-be76-4b52-8068-8607c6a9ec94_810x477.png
   upstream_tags:
   - information science
   - infectious disease
@@ -898,7 +918,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-17T19:40:45+00:00'
+  last_synced_at: '2026-08-04T14:29:16+00:00'
   seo_title: 'Disease on the Oregon Trail: Cholera, Dysentery, and Death'
   seo_description: Disease on the Oregon Trail, from cholera and dysentery to overland
     migration, sanitation, graves, and nineteenth-century westward travel.
@@ -909,6 +929,7 @@ posts:
   body_source_url: https://theedgeofepidemiology.substack.com/p/invisible-killers-of-the-oregon-trail
   body_source_mode: substack_body_html
   body_wordcount: 1652
+  body_source_file: ''
 - substack_id: 190210122
   slug: how-mosquitos-killed-napoleons-north
   title: How Yellow Fever Killed Napoleon's American Empire
@@ -916,7 +937,7 @@ posts:
   canonical_url: https://theedgeofepidemiology.substack.com/p/how-mosquitos-killed-napoleons-north
   excerpt: How yellow fever, mosquitoes, Saint-Domingue, military failure, and disease
     ecology helped destroy Napoleon's North American empire plans.
-  cover_image: https://substackcdn.com/image/fetch/$s_!CBSc!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7be4ce1a-bd5c-409b-9860-5f84fba53a06_960x952.jpeg
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/7be4ce1a-bd5c-409b-9860-5f84fba53a06_960x952.jpeg
   upstream_tags:
   - science
   - infectious disease
@@ -949,7 +970,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-05-17T19:40:45+00:00'
+  last_synced_at: '2026-08-04T14:29:16+00:00'
   seo_title: Yellow Fever and Napoleon’s American Empire
   seo_description: How yellow fever, mosquitoes, Saint-Domingue, military failure,
     and disease ecology helped destroy Napoleon’s North American empire plans.
@@ -960,6 +981,7 @@ posts:
   body_source_url: https://theedgeofepidemiology.substack.com/p/how-mosquitos-killed-napoleons-north
   body_source_mode: substack_body_html
   body_wordcount: 1764
+  body_source_file: ''
 - substack_id: 189373631
   slug: the-american-revolution-was-nearly
   title: The American Revolution Was Nearly Lost to Smallpox
@@ -967,7 +989,7 @@ posts:
   canonical_url: https://theedgeofepidemiology.substack.com/p/the-american-revolution-was-nearly
   excerpt: Before the Revolution was won on the battlefield, Washington had to solve
     a smallpox problem inside the army.
-  cover_image: https://substackcdn.com/image/fetch/$s_!gcoS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F277805f2-4844-4ec1-9ca6-4b5f9af2ba3e_1920x1491.jpeg
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/277805f2-4844-4ec1-9ca6-4b5f9af2ba3e_1920x1491.jpeg
   upstream_tags:
   - science
   - american history
@@ -995,7 +1017,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-06-29T15:00:04+00:00'
+  last_synced_at: '2026-08-04T14:29:16+00:00'
   seo_title: The American Revolution Was Nearly Lost to Smallpox
   seo_description: Before the Revolution was won on the battlefield, Washington had
     to solve a smallpox problem inside the army.
@@ -1006,6 +1028,7 @@ posts:
   body_source_url: https://theedgeofepidemiology.substack.com/p/the-american-revolution-was-nearly
   body_source_mode: substack_body_html
   body_wordcount: 2183
+  body_source_file: ''
 - substack_id: 187959272
   slug: disease-in-the-early-colonies-pre
   title: 'Disease in the Early Colonies: Pre-Revolutionary War Disease Ecology and
@@ -1014,7 +1037,7 @@ posts:
   canonical_url: https://theedgeofepidemiology.substack.com/p/disease-in-the-early-colonies-pre
   excerpt: Before the Revolution, British North America was already being shaped by
     smallpox, measles, enteric disease, mosquitoes, war, trade, and settlement.
-  cover_image: https://substackcdn.com/image/fetch/$s_!JEMI!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb0718958-e95f-4016-addb-5f9c55ff6d2b_960x748.jpeg
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/b0718958-e95f-4016-addb-5f9c55ff6d2b_960x748.jpeg
   upstream_tags:
   - science
   - History
@@ -1044,7 +1067,7 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-05-10T15:45:48+00:00'
-  last_synced_at: '2026-06-29T15:00:04+00:00'
+  last_synced_at: '2026-08-04T14:29:16+00:00'
   seo_title: 'Disease in the Early Colonies: Pre-Revolutionary War Disease Ecology
     and Outbreaks'
   seo_description: Before the Revolution, British North America was already being
@@ -1056,6 +1079,7 @@ posts:
   body_source_url: https://theedgeofepidemiology.substack.com/p/disease-in-the-early-colonies-pre
   body_source_mode: substack_body_html
   body_wordcount: 1779
+  body_source_file: ''
 - substack_id: 186425026
   slug: why-europeans-didnt-get-hit-by-disease
   title: Why the Columbian Exchange Did Not Run in Reverse

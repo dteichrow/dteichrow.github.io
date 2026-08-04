@@ -78,6 +78,8 @@ URL Source: http://theedgeofepidemiology.substack.com/p/test-post
 Published Time: 2026-05-04T14:21:43+00:00
 
 Markdown Content:
+![Cover image](https://substackcdn.com/image/fetch/$s_!abc!,f_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcover_1200x800.jpeg)
+
 This is the opening paragraph of the essay. It has enough detail to form an excerpt.
 """
 
@@ -87,6 +89,46 @@ This is the opening paragraph of the essay. It has enough detail to form an exce
     assert record["date"] == "2026-05-04"
     assert record["canonical_url"] == "https://theedgeofepidemiology.substack.com/p/test-post"
     assert record["source_mode"] == "substack_reader"
+    assert record["cover_image"] == "https://substack-post-media.s3.amazonaws.com/public/images/cover_1200x800.jpeg"
+
+
+def test_incremental_sync_reader_fallback_repairs_blank_cover_images(tmp_path, monkeypatch) -> None:
+    url = "https://theedgeofepidemiology.substack.com/p/test-post"
+    manifest_path = tmp_path / "posts.yml"
+    manifest_path.write_text(
+        """
+posts:
+  - slug: test-post
+    title: Test post
+    date: "2026-05-04"
+    canonical_url: https://theedgeofepidemiology.substack.com/p/test-post
+    excerpt: Existing record
+    cover_image: ""
+    source_mode: substack_reader
+""".strip()
+    )
+    reader_post = """Title: Test post
+
+Published Time: 2026-05-04T14:21:43+00:00
+
+Markdown Content:
+![Cover image](https://substack-post-media.s3.amazonaws.com/public/images/cover_1200x800.jpeg)
+
+The reader has the image even when the sparse feed does not.
+"""
+
+    monkeypatch.setattr(
+        substack_sync,
+        "_load_incremental_candidates",
+        lambda _posts: ([{"canonical_url": url, "source_mode": "substack_reader_rss"}], "reader_rss", ""),
+    )
+    monkeypatch.setattr(substack_sync, "_current_sitemap_post_urls", lambda: {url})
+    monkeypatch.setattr(substack_sync, "fetch_text", lambda requested_url, *args, **kwargs: reader_post)
+
+    report = substack_sync.incremental_sync(manifest_path)
+
+    assert report["cover_images_enriched"] == 1
+    assert "cover_image: https://substack-post-media.s3.amazonaws.com/public/images/cover_1200x800.jpeg" in manifest_path.read_text()
 
 
 def test_incremental_sync_reader_fallback_publishes_new_records_without_sitemap(tmp_path, monkeypatch) -> None:
