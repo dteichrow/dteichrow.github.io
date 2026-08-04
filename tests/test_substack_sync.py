@@ -546,6 +546,7 @@ posts:
     assert report["updated_records"] == 0
     assert report["pruned_records"] == 0
     assert "2026-05-10T00:00:00+00:00" in saved_manifest
+    assert "cover_image:" not in saved_manifest
 
 
 def test_incremental_sync_preserves_manifest_when_all_upstreams_fail(tmp_path, monkeypatch) -> None:

@@ -738,7 +738,12 @@ def incremental_sync(manifest_path: Path | None = None) -> dict[str, Any]:
     for incoming in feed_posts:
         url = incoming["canonical_url"]
         existing = merged.get(url)
-        if existing is not None and not existing.get("cover_image") and not incoming.get("cover_image"):
+        if (
+            existing is not None
+            and "cover_image" in existing
+            and not str(existing.get("cover_image") or "").strip()
+            and not incoming.get("cover_image")
+        ):
             try:
                 cover_image = enrich_missing_cover_image(url, str(incoming.get("source_mode") or ""))
                 if cover_image:
