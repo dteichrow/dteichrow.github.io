@@ -1,12 +1,11 @@
 {
-  "degraded": true,
+  "degraded": false,
   "editor_summary": {
     "major_publisher_families_seen": [
       "BBC",
       "CBS News",
       "CIDRAP",
       "CNN",
-      "Guardian",
       "NBC News",
       "NPR",
       "New York Times",
@@ -14,27 +13,20 @@
       "Reuters",
       "Sky News"
     ],
-    "metadata_only_count": 296,
+    "metadata_only_count": 302,
     "sources_cached": 0,
-    "sources_failed": 1,
-    "sources_live": 324,
+    "sources_failed": 0,
+    "sources_live": 327,
     "story_count_change": 6,
-    "wrapper_only_count": 12
+    "wrapper_only_count": 10
   },
   "freshness_summary": {
     "fallback_cache": 0,
-    "live": 324,
+    "live": 327,
     "refresh_cache": 0,
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-08-03T17:17:12",
-  "source_failures": [
-    {
-      "error": "HTTPSConnectionPool(host='www.cdph.ca.gov', port=443): Read timed out. (read timeout=8)",
-      "required": true,
-      "source": "California Department of Public Health News",
-      "source_type": "html_list"
-    }
-  ]
+  "generated_at": "2026-08-03T18:17:30",
+  "source_failures": []
 }
