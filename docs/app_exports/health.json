@@ -5,8 +5,8 @@
       "CBS News",
       "CIDRAP",
       "CNN",
-      "Guardian",
       "NBC News",
+      "New York Times",
       "PBS",
       "Reuters",
       "Sky News"
@@ -25,6 +25,6 @@
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-08-05T11:17:25",
+  "generated_at": "2026-08-05T12:17:35",
   "source_failures": []
 }
