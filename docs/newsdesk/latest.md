@@ -1,24 +1,24 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-08-05
-Generated at: 2026-08-05T04:18
+Generated at: 2026-08-05T05:18
 Search window: 7 day(s) ending 2026-08-05
 
 ## Executive scan
-- [News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....](https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius) (Texas Department of State Health Services News; 2026-08-05T11:16+00:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
-- [News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....](https://www.dshs.texas.gov/news-alerts/dshs-alerts-clinicians-public-about-montgomery-county-measles-outbreak) (Texas Department of State Health Services News; 2026-08-05T11:07+00:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
+- [News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....](https://www.dshs.texas.gov/news-alerts/dshs-alerts-clinicians-public-about-montgomery-county-measles-outbreak) (Texas Department of State Health Services News; 2026-08-05T12:16+00:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
+- [News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....](https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius) (Texas Department of State Health Services News; 2026-08-05T12:07+00:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
 - [Vacancy: Public Health Support Officer – Disease Control (Data Management Assistant) G7](https://www.afro.who.int/countries/lesotho/publication/vacancy-public-health-support-officer-disease-control-data-management-assistant-g7) (WHO Regional Office for Africa; 2026-08-04T14:55+00:00; Outbreaks and emerging infections; relevance 5/5)
 - [FDA outbreak investigation 1392: Cyclospora](https://www.fda.gov/food/outbreaks-foodborne-illness/investigations-foodborne-illness-outbreaks) (FDA Foodborne Outbreaks; 2026-08-04T09:30; Outbreaks and emerging infections; relevance 5/5)
 - [FDA outbreak investigation 1143: Hepatitis A Virus linked to Frozen Strawberries](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-hepatitis-virus-infections-frozen-strawberries-february-2023) (FDA Foodborne Outbreaks; 2026-08-04T09:30; Outbreaks and emerging infections; relevance 5/5)
 - [FDA outbreak investigation 1066: Hepatitis A Virus linked to Strawberries](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-hepatitis-virus-strawberries-may-2022) (FDA Foodborne Outbreaks; 2026-08-04T09:30; Outbreaks and emerging infections; relevance 5/5)
 - [Toledo-Lucas County Health Department Cyclosporiasis Update](https://lucascountyhealth.com/cyclo/) (Toledo-Lucas County Health Department Cyclosporiasis Update; 2026-08-04T00:00; Outbreaks and emerging infections; relevance 5/5)
 - [Beyond the surface: A review of current and potential micro-CT applications in paleopathology.](https://pubmed.ncbi.nlm.nih.gov/42551142/) (PubMed Historical Epidemiology; 2026-08-04T00:00; Historical epidemiology / ancient disease / paleopathology; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (173), Policy, surveillance, and public health infrastructure (40), Historical epidemiology / ancient disease / paleopathology (5)
+- Category mix: Outbreaks and emerging infections (178), Policy, surveillance, and public health infrastructure (36), Historical epidemiology / ancient disease / paleopathology (5)
 
 ## Ongoing stories and what changed
 ### Cyclosporiasis
 - Lead item: [FDA outbreak investigation 1392: Cyclospora](https://www.fda.gov/food/outbreaks-foodborne-illness/investigations-foodborne-illness-outbreaks) (FDA Foodborne Outbreaks)
-- Newly tracked story cluster: 129 item(s) across 85 source(s).
-- Baseline snapshot created with 129 clustered item(s) across 85 source(s).
+- Newly tracked story cluster: 129 item(s) across 86 source(s).
+- Baseline snapshot created with 129 clustered item(s) across 86 source(s).
 - FDA Foodborne Outbreaks now explicitly uses investigation or monitoring language.
 - CBS News now includes deaths or fatal cases in the story frame.
 
@@ -30,7 +30,7 @@ Search window: 7 day(s) ending 2026-08-05
 - WWMT now brings wastewater surveillance into the story.
 
 ### Ebola virus disease
-- Lead item: [WHO chief arrives in Congo to support Ebola response as cases near 4,000](https://www.washingtonpost.com/world/2026/08/05/congo-ebola-outbreak-ituri-tedros-tshisekedi-kinshasa/3b73571e-90ad-11f1-9fdc-0a725c989a7b_story.html) (The Washington Post)
+- Lead item: [Tedros reaches Congo as Ebola outbreak spreads at record pace](https://www.indiatoday.in/amp/world/story/congo-ebola-outbreak-tedros-visit-health-worker-strike-contact-tracing-failures-ptag-2964269-2026-08-05) (indiatoday.in)
 - Newly tracked story cluster: 3 item(s) across 3 source(s).
 - Baseline snapshot created with 3 clustered item(s) across 3 source(s).
 - Free Malaysia Today now explicitly uses investigation or monitoring language.
@@ -38,8 +38,8 @@ Search window: 7 day(s) ending 2026-08-05
 
 ### Measles transmission and vaccination
 - Lead item: [News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....](https://www.dshs.texas.gov/news-alerts/dshs-alerts-clinicians-public-about-montgomery-county-measles-outbreak) (Texas Department of State Health Services News)
-- Newly tracked story cluster: 72 item(s) across 60 source(s).
-- Baseline snapshot created with 72 clustered item(s) across 60 source(s).
+- Newly tracked story cluster: 73 item(s) across 61 source(s).
+- Baseline snapshot created with 73 clustered item(s) across 61 source(s).
 - Los Banos Enterprise now explicitly uses investigation or monitoring language.
 
 ### Occupational and environmental epidemiology
@@ -51,7 +51,7 @@ Search window: 7 day(s) ending 2026-08-05
 
 ## Major topics
 ### Cyclosporiasis
-- Topic size: 129 item(s) across 85 source(s); 4 official/primary-source item(s).
+- Topic size: 129 item(s) across 86 source(s); 4 official/primary-source item(s).
 - Lead item: [FDA outbreak investigation 1392: Cyclospora](https://www.fda.gov/food/outbreaks-foodborne-illness/investigations-foodborne-illness-outbreaks) (FDA Foodborne Outbreaks, 2026-08-04T09:30)
 - Detailed note: FDA lists reference 1392 with date posted 7/22/2026. Reported total case count: 93. The health department labels these counts preliminary.
 - Evidence notes: [FDA outbreak investigation 1392: Cyclospora](https://www.fda.gov/food/outbreaks-foodborne-illness/investigations-foodborne-illness-outbreaks) (FDA Foodborne Outbreaks); [FDA outbreak investigation 1143: Hepatitis A Virus linked to Frozen Strawberries](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-hepatitis-virus-infections-frozen-strawberries-february-2023) (FDA Foodborne Outbreaks); [FDA outbreak investigation 1066: Hepatitis A Virus linked to Strawberries](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-hepatitis-virus-strawberries-may-2022) (FDA Foodborne Outbreaks); [Toledo-Lucas County Health Department Cyclosporiasis Update](https://lucascountyhealth.com/cyclo/) (Toledo-Lucas County Health Department Cyclosporiasis Update); [CDC expands largest known cyclosporiasis outbreak to 15 states](https://www.washingtonpost.com/health/2026/08/04/cdc-expands-largest-known-cyclospora-outbreak-15-states/) (The Washington Post)
@@ -59,8 +59,8 @@ Search window: 7 day(s) ending 2026-08-05
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Measles transmission and vaccination
-- Topic size: 72 item(s) across 60 source(s); 1 official/primary-source item(s).
-- Lead item: [News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....](https://www.dshs.texas.gov/news-alerts/dshs-alerts-clinicians-public-about-montgomery-county-measles-outbreak) (Texas Department of State Health Services News, 2026-08-05T11:07+00:00)
+- Topic size: 73 item(s) across 61 source(s); 1 official/primary-source item(s).
+- Lead item: [News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....](https://www.dshs.texas.gov/news-alerts/dshs-alerts-clinicians-public-about-montgomery-county-measles-outbreak) (Texas Department of State Health Services News, 2026-08-05T12:16+00:00)
 - Detailed note: Denos su opinión sobre sus experiencias con las instalaciones, el personal, la comunicación y los servicios del DSHS. Provide feedback on your experience with DSHS facilities, staff, communication, and services.
 - Evidence notes: [News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....](https://www.dshs.texas.gov/news-alerts/dshs-alerts-clinicians-public-about-montgomery-county-measles-outbreak) (Texas Department of State Health Services News); [New Mexico's measles outbreak cost $5.4 million, CDC finds](https://www.cbsnews.com/video/new-mexicos-measles-outbreak-cost-54-million-cdc-finds/) (CBS News); [New Mexico's 2025 measles outbreak cost $5.4 million](https://news.google.com/rss/articles/CBMijAFBVV95cUxOMWNkNzJLYWNkbmdGVlluVkFGbWlHTlVzdmdGNHdnV2VXblhCX1dGOWFHQ1U0WWY3MER2UDJGWEoyN2FUV2ZKa29KSDhOODlTUTFnOE5sVE9FaWEwazlSSkhHcGNDdHNvV2p0d3l0cFRaYlc4aDRMMm9FVENGcFViR0NpbHNPVEtUcUFucQ?oc=5) (CIDRAP); [First measles case in "recent memory" confirmed in Lehigh Valley, Pennsylvania](https://news.google.com/rss/articles/CBMidkFVX3lxTE1pR29iQnljUllvZGREaWE2c3h4OGRZMlZkSjJhVk1oU1JXRnlfWjI3SWVJMzljbGc5MHNXeEIwaGRBZmYtYmJZX1dKQ2gxMlA0VmNDTG1xTzQ1b2lPNloyNXNYV3VxdHowcXNtSTBLYmRsVHh6MEE?oc=5) (CBS News); [Merced County Monitoring Farmworkers Exposed to Measles During Arizona Outbreak](https://news.google.com/rss/articles/CBMixwFBVV95cUxNMWJLUFF2WkZhRC14T2dHMHFRYUlIdk43VkZBdUZhenBSMEFyeHR2SFEwU0hYT1VPOFpVdzYtUlRhbFRTTGxKWU1POUJSLTV0ZlBoLURSR2g1b0diSlJiWS1VdUFwMUZnUVN5UGM0eVVOcEI0RTZjakpKd3JNVzJFaGV1Wi1tZm5DX3NISHNJYi1CZG5RdDh5aWtpM0duc0tJVnJNMlJOSlhOak9IS2ZvR0EtdmxEcUota2F2d185YUlnMG5NaUFv?oc=5) (Los Banos Enterprise)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
@@ -70,7 +70,7 @@ Search window: 7 day(s) ending 2026-08-05
 - Topic size: 5 item(s) across 5 source(s); 2 official/primary-source item(s).
 - Lead item: [Effect of Diagnostic Test Type on Detection of Salmonella Infections - Foodborne Diseases Active Surveillance Network, 2004-2024](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=766111) (CDC MMWR, 2026-07-30T17:00+00:00)
 - Detailed note: Weekly / July 30, 2026 / 75(29);377â383 Reese Tierney, MPH 1 ; Robin Pendley Louis, DrPH 1 ; David J. Overall Salmonella incidence in the Foodborne Diseases Active Surveillance Network catchment area remained stable during 2004–2024, but diagnostic patterns shifted substantially. Although informal PrEP access raises public health concerns, particularly around suboptimal dosing and the potential emergence of...
-- Evidence notes: [Effect of Diagnostic Test Type on Detection of Salmonella Infections - Foodborne Diseases Active Surveillance Network, 2004-2024](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=766111) (CDC MMWR); [Informal PrEP: Rethinking approaches to pharmaceutical access and HIV prevention pathways.](https://pubmed.ncbi.nlm.nih.gov/42533522/) (PubMed Infectious Disease Search); [Several cases of Legionnaires' disease confirmed at a Fairfield County nursing facility](https://www.10tv.com/article/news/local/legionnaires-disease-cases-fairfield-county-nursing-facility/530-d00cc916-f1ed-411c-af61-0935bad9640e) (10TV); [Health officials probe 8 Legionnaires’ cases at Thornville nursing home](https://news.google.com/rss/articles/CBMiiAJBVV95cUxPZnppOGxpUk05UF9IZmRMZk50aTU5MXByam44ZWM5cGhLbTU1bzJzMlBWdkFBckdDSk0ydU9LeUdpNnBiZzR5ZF9PLTBhRVVZT0NCekVKRV9ZbDEzS3o4R1BzZVNrci1XS2VzeDJ3LXc0SzRZNlc3Vjc5VXU3ZWM0bldfLXdWRmcyTWlEWnJUeGpSb0JkaGxuR2ZtYXNEbDB3VnpyZ1NSb2VyTzNSaXdjM2ROblJQaWxGLUxNdm5wclM4aXBmLUxPNHZHUktyQXptWW1UU1RaMUVwSVRZQjRXQ0VDLVp5ZnZwS19QZWs3OGNqdFFTeTBsR0o5QzMzdFA3MzF6d0tfQXQ?oc=5) (cwcolumbus.com); [Source of exposure for Legionnaires' disease cluster in New York City 'eliminated': Health officials - ABC News - Breaking News, Latest News and Videos](https://news.google.com/rss/articles/CBMipwFBVV95cUxOclIxcHR5MU1ZVUVTbzZzZWVOVW5ZRl8yb0hETGExdUtXbFpZeVBMQjNDd0poTFRncXYxWEtfU29BY1hDbjZRNUVVUnJmaVktMXNlNHVUT3JadTJ6aUQtY2lodzVDMlZIY0ppbmtFUmYxLTdra3hDSnp0VEFIYk9lbjJrQmNSWVl3REk1bUFsZUN4OEtIOWFtbHBwWU1PZnpqdG40dHBvY9IBrAFBVV95cUxQdXhCYVRGWVZMa1BxYi1JNjViSDhZOElqZE5jM1hNM3UxaXpxeFpUU3NlTFdadHNCNGNoSzdMNURHVnVGOTVGSjVnSDg4SnVKRmM3Z192c1pQcDg5cDd5em43bm5VTWxWQnJaYzhDcm5MNWg3TEZJTk1hTlU5MndBRU5obzZFSmlXTEJCa3VsOVdxYU1EamZTNFhmdTIwaGo4QlFjRDd5SURtWVp3?oc=5) (ABC News - Breaking News, Latest News and Videos)
+- Evidence notes: [Effect of Diagnostic Test Type on Detection of Salmonella Infections - Foodborne Diseases Active Surveillance Network, 2004-2024](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=766111) (CDC MMWR); [Informal PrEP: Rethinking approaches to pharmaceutical access and HIV prevention pathways.](https://pubmed.ncbi.nlm.nih.gov/42533522/) (PubMed Infectious Disease Search); [Several cases of Legionnaires' disease confirmed at a Fairfield County nursing facility](https://www.10tv.com/article/news/local/legionnaires-disease-cases-fairfield-county-nursing-facility/530-d00cc916-f1ed-411c-af61-0935bad9640e) (10TV); [Health officials probe 8 Legionnaires’ cases at Thornville nursing home](https://news.google.com/rss/articles/CBMijwJBVV95cUxOWGZtN29NbkFDLWNIalhjbWMwNG9vVWhKWlFjREY2QnVfc2U0SnJ4SDZJZ1BxTHdRN1JTYVE1aElPUlhNLUdOVENKRlNURXI1S1oydk0yc1ktRjNqdmpRMjQ5ZlpCNmtpeTk4ZjNBUTRyRTNkMnZzdkluSkNXd1RHZ1p6MDRyclBuaHp5c3ZnZkZ4UWxZU29xMTlFSjhReGZoUGN3WEFEUkNNUzZrMk5LcFF6RXdLSkhmaWJWVEx0dzlEcjc1YXVGWjBGZXFjZjUtRkxwUVV3Y1BNMFdLZUlNN2lzVldFa085ZWRzT3haRDFFeWJMMUFzcWxuVl9tSkVrSU5tWTVoUi1hSWFwNmhj?oc=5) (myfox28columbus.com); [Source of exposure for Legionnaires' disease cluster in New York City 'eliminated': Health officials - ABC News - Breaking News, Latest News and Videos](https://news.google.com/rss/articles/CBMipwFBVV95cUxOclIxcHR5MU1ZVUVTbzZzZWVOVW5ZRl8yb0hETGExdUtXbFpZeVBMQjNDd0poTFRncXYxWEtfU29BY1hDbjZRNUVVUnJmaVktMXNlNHVUT3JadTJ6aUQtY2lodzVDMlZIY0ppbmtFUmYxLTdra3hDSnp0VEFIYk9lbjJrQmNSWVl3REk1bUFsZUN4OEtIOWFtbHBwWU1PZnpqdG40dHBvY9IBrAFBVV95cUxQdXhCYVRGWVZMa1BxYi1JNjViSDhZOElqZE5jM1hNM3UxaXpxeFpUU3NlTFdadHNCNGNoSzdMNURHVnVGOTVGSjVnSDg4SnVKRmM3Z192c1pQcDg5cDd5em43bm5VTWxWQnJaYzhDcm5MNWg3TEZJTk1hTlU5MndBRU5obzZFSmlXTEJCa3VsOVdxYU1EamZTNFhmdTIwaGo4QlFjRDd5SURtWVp3?oc=5) (ABC News - Breaking News, Latest News and Videos)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may shape how new evidence is framed before broader consensus forms.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
@@ -336,20 +336,20 @@ Search window: 7 day(s) ending 2026-08-05
   Desk note: This is exactly the kind of severe rural infectious-disease burden that can disappear if the intake is too urban and too English-headline dependent.
 
 ## Highest priority items
-### News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....
+### News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....
 - Source: Texas Department of State Health Services News
-- Date: 2026-08-05T11:16+00:00
-- URL: https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius
+- Date: 2026-08-05T12:16+00:00
+- URL: https://www.dshs.texas.gov/news-alerts/dshs-alerts-clinicians-public-about-montgomery-county-measles-outbreak
 - Category: Policy, surveillance, and public health infrastructure
 - Summary: Denos su opinión sobre sus experiencias con las instalaciones, el personal, la comunicación y los servicios del DSHS. Provide feedback on your experience with DSHS facilities, staff, communication, and services. Learn more about the Sunset process and provide feedback.
 - Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.
 - Caveats / uncertainty: Summary stays within source text and metadata; no outside facts were added.
 - Relevance score: 5/5
 
-### News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....
+### News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....
 - Source: Texas Department of State Health Services News
-- Date: 2026-08-05T11:07+00:00
-- URL: https://www.dshs.texas.gov/news-alerts/dshs-alerts-clinicians-public-about-montgomery-county-measles-outbreak
+- Date: 2026-08-05T12:07+00:00
+- URL: https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius
 - Category: Policy, surveillance, and public health infrastructure
 - Summary: Denos su opinión sobre sus experiencias con las instalaciones, el personal, la comunicación y los servicios del DSHS. Provide feedback on your experience with DSHS facilities, staff, communication, and services. Learn more about the Sunset process and provide feedback.
 - Why it matters: Directly relevant to outbreak detection, transmission monitoring, or response. Comes from an official or primary-source channel.
@@ -452,9 +452,9 @@ Search window: 7 day(s) ending 2026-08-05
   Although informal PrEP access raises public health concerns, particularly around suboptimal dosing and the potential emergence of antiretroviral resistance, we argue that focusing solely on these type of risks obscures its political and infrastructural significance. We first clarify the concept of informal PrEP and then situate the analysis through dimensions of pharmaceutical capitalism and logistics, the entanglement of social infrastructures with biomedical technologies, and the biopolitics of biomedical surveillance. Informal access to HIV pre-exposure prophylaxis (PrEP) is often represented as risky and marginal to formal HIV prevention services.
 - [Ancient DNA shows how smallpox got to the Americas.](https://pubmed.ncbi.nlm.nih.gov/42531407/) | PubMed Historical Pathogen Case Studies | 2026-07-30T00:00 | Historical epidemiology / ancient disease / paleopathology
   " Landmark" paper finds European contact introduced the disease.
-- [WHO chief arrives in Congo to support Ebola response as cases near 4,000](https://www.washingtonpost.com/world/2026/08/05/congo-ebola-outbreak-ituri-tedros-tshisekedi-kinshasa/3b73571e-90ad-11f1-9fdc-0a725c989a7b_story.html) | The Washington Post | 2026-08-05T10:50+00:00 | Outbreaks and emerging infections
+- [Tedros reaches Congo as Ebola outbreak spreads at record pace](https://www.indiatoday.in/amp/world/story/congo-ebola-outbreak-tedros-visit-health-worker-strike-contact-tracing-failures-ptag-2964269-2026-08-05) | indiatoday.in | 2026-08-05T11:56+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
-- [Tedros arrives in Congo as Ebola outbreak spreads beyond known contacts](https://www.indiatoday.in/world/story/congo-ebola-outbreak-tedros-arrives-spread-outpaces-contact-tracing-ptag-2964106-2026-08-05) | indiatoday.in | 2026-08-05T09:36+00:00 | Outbreaks and emerging infections
+- [WHO chief arrives in Congo to support Ebola response as cases near 4,000](https://www.washingtonpost.com/world/2026/08/05/congo-ebola-outbreak-ituri-tedros-tshisekedi-kinshasa/3b73571e-90ad-11f1-9fdc-0a725c989a7b_story.html) | The Washington Post | 2026-08-05T10:50+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [WHO pleads for more support to tackle Ebola outbreak](https://www.freemalaysiatoday.com/category/highlight/2026/08/05/who-pleads-for-more-support-to-tackle-ebola-outbreak) | Free Malaysia Today | 2026-08-05T09:06+00:00 | Outbreaks and emerging infections
   “The outbreak is unfortunately still expanding beyond the capacity of the response,” WHO spokesman Tarik Jasarevic told reporters in Geneva. “We need more support in terms of finances, but also other resources to scale up all areas of response: treatment capacity, field investigation teams, safe burial teams and community workers.” Limited detail was available from feed metadata alone.
