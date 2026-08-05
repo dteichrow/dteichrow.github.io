@@ -6,33 +6,32 @@
       "CIDRAP",
       "CNN",
       "Guardian",
-      "NBC News",
       "New York Times",
       "PBS",
       "Reuters",
       "Sky News"
     ],
-    "metadata_only_count": 212,
+    "metadata_only_count": 214,
     "sources_cached": 0,
     "sources_failed": 1,
-    "sources_live": 238,
+    "sources_live": 240,
     "story_count_change": 8,
     "wrapper_only_count": 8
   },
   "freshness_summary": {
     "fallback_cache": 0,
-    "live": 238,
+    "live": 240,
     "refresh_cache": 0,
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-08-05T15:18:56",
+  "generated_at": "2026-08-05T16:18:30",
   "source_failures": [
     {
-      "error": "HTTPSConnectionPool(host='www.michigan.gov', port=443): Read timed out. (read timeout=20)",
+      "error": "HTTPSConnectionPool(host='africacdc.org', port=443): Read timed out. (read timeout=20)",
       "required": true,
-      "source": "Michigan Department of Health and Human Services Infectious Disease Updates",
-      "source_type": "html_list"
+      "source": "Africa CDC",
+      "source_type": "rss"
     }
   ]
 }
