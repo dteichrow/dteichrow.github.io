@@ -9,23 +9,22 @@
       "NBC News",
       "New York Times",
       "PBS",
-      "Reuters",
       "Sky News"
     ],
-    "metadata_only_count": 209,
+    "metadata_only_count": 202,
     "sources_cached": 0,
     "sources_failed": 0,
-    "sources_live": 234,
-    "story_count_change": 8,
-    "wrapper_only_count": 8
+    "sources_live": 228,
+    "story_count_change": 7,
+    "wrapper_only_count": 7
   },
   "freshness_summary": {
     "fallback_cache": 0,
-    "live": 234,
+    "live": 228,
     "refresh_cache": 0,
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-08-05T18:17:38",
+  "generated_at": "2026-08-05T19:17:22",
   "source_failures": []
 }
