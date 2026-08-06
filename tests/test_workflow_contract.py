@@ -48,4 +48,5 @@ def test_pages_deployer_observes_without_cancelling() -> None:
     assert "/pages/deployments" in source
     assert "/cancel" not in source
     assert 'repository.partition("/")' in source
+    assert 'SUCCESS_STATUSES = {"deployment_success", "succeed"}' in source
     assert "leaving the accepted deployment running" in source

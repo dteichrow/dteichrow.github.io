@@ -17,7 +17,7 @@ from typing import Any
 API_VERSION = "2026-03-10"
 ARTIFACT_NAME = "github-pages"
 PENDING_STATUSES = {"deployment_queued", "deployment_in_progress", "deployment_pending"}
-SUCCESS_STATUS = "deployment_success"
+SUCCESS_STATUSES = {"deployment_success", "succeed"}
 
 
 def required_env(name: str) -> str:
@@ -100,7 +100,7 @@ def wait_for_deployment(
         response = request_json(status_url, token=token)
         status = response.get("status")
         print(f"Pages deployment status: {status}", flush=True)
-        if status == SUCCESS_STATUS:
+        if status in SUCCESS_STATUSES:
             return
         if status not in PENDING_STATUSES:
             raise RuntimeError(f"Pages deployment ended with status: {status}")
