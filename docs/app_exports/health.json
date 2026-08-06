@@ -5,28 +5,26 @@
       "ABC News",
       "BBC",
       "CBS News",
-      "CIDRAP",
       "CNN",
       "NBC News",
       "New York Times",
       "PBS",
-      "Reuters",
       "Sky News"
     ],
     "metadata_only_count": 201,
     "sources_cached": 0,
     "sources_failed": 0,
-    "sources_live": 218,
+    "sources_live": 221,
     "story_count_change": 5,
-    "wrapper_only_count": 5
+    "wrapper_only_count": 7
   },
   "freshness_summary": {
     "fallback_cache": 0,
-    "live": 218,
+    "live": 221,
     "refresh_cache": 0,
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-08-06T04:17:23",
+  "generated_at": "2026-08-06T05:17:21",
   "source_failures": []
 }
