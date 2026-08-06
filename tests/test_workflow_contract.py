@@ -19,6 +19,7 @@ def test_deploy_pages_uses_scheduled_serial_delivery() -> None:
     assert triggers["schedule"] == [{"cron": "23,53 * * * *"}]
     assert "repository_dispatch" not in triggers
     assert "push" not in triggers
+    assert "concurrency" not in workflow
 
     build_steps = workflow["jobs"]["build"]["steps"]
     build_commands = "\n".join(step.get("run", "") for step in build_steps)
