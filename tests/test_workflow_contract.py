@@ -36,6 +36,7 @@ def test_deploy_pages_uses_scheduled_content_delivery_and_immediate_code_deploys
     deploy_commands = "\n".join(step.get("run", "") for step in deploy_steps)
 
     assert deploy["timeout-minutes"] == "35"
+    assert any(step.get("uses") == "actions/checkout@v7" for step in deploy_steps)
     assert "actions/deploy-pages" not in "\n".join(str(step) for step in deploy_steps)
     assert "python scripts/deploy_pages.py --max-wait-seconds 1800 --poll-seconds 10" in deploy_commands
 

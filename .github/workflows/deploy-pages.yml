@@ -67,6 +67,9 @@ jobs:
       name: github-pages
       url: https://dteichrow.github.io/
     steps:
+      - name: Check out deployment client
+        uses: actions/checkout@v7
+
       - name: Let Pages settle before deployment
         run: sleep 45
 
