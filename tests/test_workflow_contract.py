@@ -33,10 +33,10 @@ def test_deploy_pages_uses_scheduled_content_delivery_and_immediate_code_deploys
     deploy_steps = deploy["steps"]
     deployment_steps = [step for step in deploy_steps if step.get("uses") == "actions/deploy-pages@v5"]
 
-    assert deploy["timeout-minutes"] == "6"
+    assert deploy["timeout-minutes"] == "12"
     assert len(deployment_steps) == 1
     assert deployment_steps[0]["with"] == {
         "reporting_interval": "10000",
-        "error_count": "12",
-        "timeout": "120000",
+        "error_count": "20",
+        "timeout": "600000",
     }

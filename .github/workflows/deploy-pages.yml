@@ -56,7 +56,11 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    timeout-minutes: 6
+    # Pages normally completes quickly, but successful deployments can take
+    # several minutes while the provider drains its queue. Allow one full
+    # attempt, then let the next scheduled delivery retry rather than stacking
+    # several long attempts in the same concurrency lane.
+    timeout-minutes: 12
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -69,5 +73,5 @@ jobs:
         uses: actions/deploy-pages@v5
         with:
           reporting_interval: 10000
-          error_count: 12
-          timeout: 120000
+          error_count: 20
+          timeout: 600000
