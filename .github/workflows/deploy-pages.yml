@@ -2,21 +2,20 @@ name: deploy_pages
 
 on:
   schedule:
-    # Pull the latest committed Newsdesk artifact twice hourly, offset from the
-    # 10-minute mirror commits so GitHub Pages deploys do not pile up.
+    # Content producers commit throughout the hour. Publish the latest settled
+    # state twice hourly instead of queueing a separate Pages deployment per
+    # Newsdesk or Substack update.
     - cron: "23,53 * * * *"
-  repository_dispatch:
-    types:
-      - newsdesk_published
   push:
     branches:
       - main
-    paths-ignore:
-      # Mirror-only Newsdesk commits can arrive more often than Pages can
-      # deploy. Let the twice-hourly schedule and manual/repository dispatches
-      # publish those artifacts instead of starting overlapping deploy jobs.
-      - "docs/app_exports/**"
-      - "docs/newsdesk/**"
+    paths:
+      # Code and workflow edits still deploy immediately. Content updates use
+      # the scheduled delivery path above, which prevents duplicate requests
+      # while Pages is draining a prior deployment.
+      - ".github/workflows/deploy-pages.yml"
+      - "src/**"
+      - "requirements.txt"
   workflow_dispatch:
 
 permissions:
@@ -25,7 +24,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: pages-deployment
   cancel-in-progress: false
 
 jobs:
@@ -57,42 +56,18 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    timeout-minutes: 6
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url || steps.deployment_retry_2.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Let Pages settle before deployment
         run: sleep 45
 
       - name: Deploy to GitHub Pages
         id: deployment
-        continue-on-error: true
         uses: actions/deploy-pages@v5
         with:
           reporting_interval: 10000
-          error_count: 20
-
-      - name: Wait before retrying Pages deploy
-        if: steps.deployment.outcome == 'failure'
-        run: sleep 75
-
-      - name: Retry GitHub Pages deploy
-        if: steps.deployment.outcome == 'failure'
-        id: deployment_retry
-        continue-on-error: true
-        uses: actions/deploy-pages@v5
-        with:
-          reporting_interval: 10000
-          error_count: 20
-
-      - name: Wait before final Pages deploy retry
-        if: steps.deployment.outcome == 'failure' && steps.deployment_retry.outcome == 'failure'
-        run: sleep 150
-
-      - name: Final GitHub Pages deploy retry
-        if: steps.deployment.outcome == 'failure' && steps.deployment_retry.outcome == 'failure'
-        id: deployment_retry_2
-        uses: actions/deploy-pages@v5
-        with:
-          reporting_interval: 10000
-          error_count: 20
+          error_count: 12
+          timeout: 120000
