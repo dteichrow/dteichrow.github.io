@@ -16,6 +16,8 @@ def test_deploy_pages_uses_scheduled_content_delivery_and_immediate_code_deploys
     workflow = load_workflow(".github/workflows/deploy-pages.yml")
     triggers = workflow["on"]
 
+    assert workflow["permissions"]["actions"] == "read"
+
     assert triggers["schedule"] == [{"cron": "23,53 * * * *"}]
     assert "repository_dispatch" not in triggers
     assert triggers["push"]["paths"] == [
@@ -31,12 +33,16 @@ def test_deploy_pages_uses_scheduled_content_delivery_and_immediate_code_deploys
 
     deploy = workflow["jobs"]["deploy"]
     deploy_steps = deploy["steps"]
-    deployment_steps = [step for step in deploy_steps if step.get("uses") == "actions/deploy-pages@v5"]
+    deploy_commands = "\n".join(step.get("run", "") for step in deploy_steps)
 
     assert deploy["timeout-minutes"] == "35"
-    assert len(deployment_steps) == 1
-    assert deployment_steps[0]["with"] == {
-        "reporting_interval": "10000",
-        "error_count": "180",
-        "timeout": "1800000",
-    }
+    assert "actions/deploy-pages" not in "\n".join(str(step) for step in deploy_steps)
+    assert "python scripts/deploy_pages.py --max-wait-seconds 1800 --poll-seconds 10" in deploy_commands
+
+
+def test_pages_deployer_observes_without_cancelling() -> None:
+    source = (REPO_ROOT / "scripts/deploy_pages.py").read_text()
+
+    assert "/pages/deployments" in source
+    assert "/cancel" not in source
+    assert "leaving the accepted deployment running" in source

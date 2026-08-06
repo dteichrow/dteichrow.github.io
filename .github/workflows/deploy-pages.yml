@@ -19,6 +19,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: read
   contents: read
   pages: write
   id-token: write
@@ -64,15 +65,12 @@ jobs:
     timeout-minutes: 35
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: https://dteichrow.github.io/
     steps:
       - name: Let Pages settle before deployment
         run: sleep 45
 
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
-        with:
-          reporting_interval: 10000
-          error_count: 180
-          timeout: 1800000
+      - name: Create and observe Pages deployment
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/deploy_pages.py --max-wait-seconds 1800 --poll-seconds 10
