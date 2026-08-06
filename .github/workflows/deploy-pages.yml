@@ -3,24 +3,11 @@ name: deploy_pages
 on:
   schedule:
     # Content producers commit throughout the hour. Publish the latest settled
-    # state twice hourly instead of queueing a separate Pages deployment per
-    # Newsdesk or Substack update.
+    # state twice hourly through one standard Pages delivery.
     - cron: "23,53 * * * *"
-  push:
-    branches:
-      - main
-    paths:
-      # Code and workflow edits still deploy immediately. Content updates use
-      # the scheduled delivery path above, which prevents duplicate requests
-      # while Pages is draining a prior deployment.
-      - ".github/workflows/deploy-pages.yml"
-      - "src/**"
-      - "scripts/deploy_pages.py"
-      - "requirements.txt"
   workflow_dispatch:
 
 permissions:
-  actions: read
   contents: read
   pages: write
   id-token: write
@@ -58,23 +45,14 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    # The site artifact is built before this job starts. GitHub Pages can
-    # occasionally hold a valid artifact in its provider queue for well beyond
-    # the usual few minutes, so retain one serialized deployment long enough
-    # for that work to complete. A genuinely stuck provider still fails within
-    # a bounded window and is retried by the next scheduled delivery.
-    timeout-minutes: 35
+    timeout-minutes: 12
     environment:
       name: github-pages
-      url: https://dteichrow.github.io/
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Check out deployment client
-        uses: actions/checkout@v7
-
       - name: Let Pages settle before deployment
         run: sleep 45
 
-      - name: Create and observe Pages deployment
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        run: python scripts/deploy_pages.py --max-wait-seconds 1800 --poll-seconds 10
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
