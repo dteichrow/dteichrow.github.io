@@ -58,7 +58,8 @@ def request_oidc_token(repository: str) -> str:
     request_url = required_env("ACTIONS_ID_TOKEN_REQUEST_URL")
     request_token = required_env("ACTIONS_ID_TOKEN_REQUEST_TOKEN")
     separator = "&" if "?" in request_url else "?"
-    audience = urllib.parse.quote(f"https://github.com/{repository}", safe="")
+    owner, _, _ = repository.partition("/")
+    audience = urllib.parse.quote(f"https://github.com/{owner}", safe="")
     response = request_json(
         f"{request_url}{separator}audience={audience}",
         token=request_token,
