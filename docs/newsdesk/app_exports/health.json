@@ -2,6 +2,7 @@
   "degraded": false,
   "editor_summary": {
     "major_publisher_families_seen": [
+      "BBC",
       "CBS News",
       "CIDRAP",
       "CNN",
@@ -9,9 +10,10 @@
       "NBC News",
       "New York Times",
       "PBS",
+      "Reuters",
       "Sky News"
     ],
-    "metadata_only_count": 196,
+    "metadata_only_count": 197,
     "sources_cached": 0,
     "sources_failed": 0,
     "sources_live": 223,
@@ -25,6 +27,6 @@
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-08-05T22:17:24",
+  "generated_at": "2026-08-05T23:17:23",
   "source_failures": []
 }
