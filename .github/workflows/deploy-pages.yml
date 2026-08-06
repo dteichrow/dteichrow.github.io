@@ -56,11 +56,12 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    # Pages normally completes quickly, but successful deployments can take
-    # several minutes while the provider drains its queue. Allow one full
-    # attempt, then let the next scheduled delivery retry rather than stacking
-    # several long attempts in the same concurrency lane.
-    timeout-minutes: 12
+    # The site artifact is built before this job starts. GitHub Pages can
+    # occasionally hold a valid artifact in its provider queue for well beyond
+    # the usual few minutes, so retain one serialized deployment long enough
+    # for that work to complete. A genuinely stuck provider still fails within
+    # a bounded window and is retried by the next scheduled delivery.
+    timeout-minutes: 35
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -73,5 +74,5 @@ jobs:
         uses: actions/deploy-pages@v5
         with:
           reporting_interval: 10000
-          error_count: 20
-          timeout: 600000
+          error_count: 180
+          timeout: 1800000
