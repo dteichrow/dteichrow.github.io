@@ -23,6 +23,7 @@ def test_deploy_pages_uses_scheduled_content_delivery_and_immediate_code_deploys
     assert triggers["push"]["paths"] == [
         ".github/workflows/deploy-pages.yml",
         "src/**",
+        "scripts/deploy_pages.py",
         "requirements.txt",
     ]
 

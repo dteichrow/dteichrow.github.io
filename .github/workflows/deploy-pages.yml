@@ -15,6 +15,7 @@ on:
       # while Pages is draining a prior deployment.
       - ".github/workflows/deploy-pages.yml"
       - "src/**"
+      - "scripts/deploy_pages.py"
       - "requirements.txt"
   workflow_dispatch:
 
