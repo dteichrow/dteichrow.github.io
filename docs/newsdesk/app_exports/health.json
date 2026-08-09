@@ -7,7 +7,6 @@
       "CIDRAP",
       "CNN",
       "Guardian",
-      "NBC News",
       "New York Times",
       "PBS",
       "Reuters",
@@ -16,17 +15,17 @@
     "metadata_only_count": 261,
     "sources_cached": 0,
     "sources_failed": 0,
-    "sources_live": 285,
+    "sources_live": 284,
     "story_count_change": 7,
-    "wrapper_only_count": 8
+    "wrapper_only_count": 7
   },
   "freshness_summary": {
     "fallback_cache": 0,
-    "live": 285,
+    "live": 284,
     "refresh_cache": 0,
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-08-08T21:17:19",
+  "generated_at": "2026-08-08T22:17:16",
   "source_failures": []
 }
