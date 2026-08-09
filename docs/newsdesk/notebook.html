@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Reporter's Notebook | The Pathogen Dispatch</title>
+    <title>Reporter&#x27;s Notebook | The Pathogen Dispatch</title>
     <style>
       :root { --bg: #e8e1d3; --bg-deep: #d8cebc; --surface: #f8f4ea; --surface-alt: #f2ebde; --paper: #fffdf8; --ink: #1b2836; --ink-soft: #42515e; --line: #d6cab7; --accent: #8d3f2f; --accent-soft: rgba(141,63,47,0.10); --signal: #1f5b89; --signal-soft: rgba(31,91,137,0.12); --shadow: 0 24px 56px rgba(49, 36, 22, 0.10); }
       * { box-sizing: border-box; }
@@ -124,10 +124,200 @@
       @media (max-width: 900px) { .page { padding: 16px 14px 42px; } .hero, .panel, .site-header, .section-nav { padding: 18px; border-radius: 22px; } .site-header { align-items: flex-start; flex-direction: column; } .story-filter-grid { grid-template-columns: 1fr; } .story-grid, .atlas-selector-grid { grid-template-columns: 1fr; } .atlas-map { min-height: 340px; } h1 { font-size: clamp(1.9rem, 10vw, 3.2rem); } }
       @media (max-width: 620px) { .site-nav, .section-nav-links { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 2px; } .site-header-copy { min-width: 0; } .archive-row { flex-direction: column; align-items: flex-start; } .badge, .link-pill { line-height: 1.2; } .outbreak-dashboard { grid-template-columns: 1fr; } .dashboard-item { padding: 11px 12px; } .live-update-banner { right: 12px; bottom: 12px; width: calc(100vw - 24px); } .live-update-actions { justify-content: space-between; } }
     </style>
-  </head>
-  <body>
+<style id="eoe-shell-import-style">
+  body { padding-top: 112px !important; }
+  .eoe-shell-nav {
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 10000;
+    background: linear-gradient(180deg, rgba(15, 20, 27, 0.98), rgba(21, 29, 39, 0.98));
+    color: #efe6d6;
+    border-bottom: 1px solid rgba(214, 202, 183, 0.2);
+    box-shadow: 0 14px 34px rgba(4, 7, 10, 0.28);
+  }
+  .eoe-shell-nav-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 18px 18px 16px;
+    display: grid;
+    gap: 12px;
+    font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+  }
+  .eoe-shell-brand {
+    display: inline-flex;
+    flex-wrap: wrap;
+    column-gap: 0.32em;
+    row-gap: 0.12em;
+    align-items: baseline;
+    color: #f5ecdd;
+    font: 700 clamp(1.2rem, 2vw, 1.65rem)/1.05 "Iowan Old Style", Georgia, serif;
+    text-decoration: none;
+    letter-spacing: 0;
+  }
+  .eoe-shell-byline {
+    color: #8fb8d8;
+    font: 600 0.48em/1 "Avenir Next", "Helvetica Neue", sans-serif;
+  }
+  .eoe-shell-brand:hover { text-decoration: none; }
+  .eoe-shell-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(214, 202, 183, 0.18);
+  }
+  .eoe-shell-links a {
+    flex: 0 0 auto;
+    padding: 0 0 6px;
+    border-bottom: 2px solid transparent;
+    color: rgba(239, 230, 214, 0.76);
+    text-decoration: none;
+    background: transparent;
+    font-size: 0.95rem;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: color 180ms ease, border-color 180ms ease;
+  }
+  .eoe-shell-links a.active {
+    border-color: rgba(201, 168, 76, 0.88);
+    color: #f8f1e6;
+    font-weight: 700;
+  }
+  .eoe-shell-links a:hover {
+    color: #f8f1e6;
+    text-decoration: none;
+    border-color: rgba(201, 168, 76, 0.52);
+  }
+  /* Cleaner fix would live in the Pathogen Dispatch renderer, but this import-layer pass
+     keeps the simplification isolated to the umbrella site. */
+  .site-header,
+  .hero,
+  .panel,
+  .section-nav {
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  .site-header {
+    padding: 0 0 12px !important;
+    gap: 12px !important;
+  }
+  .site-header-title {
+    font-size: 1rem !important;
+    color: #42515e !important;
+  }
+  .site-nav,
+  .section-nav-links {
+    gap: 14px !important;
+  }
+  .site-nav-link,
+  .section-nav-link {
+    padding: 0 0 5px !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    border-bottom: 2px solid transparent !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #42515e !important;
+    font-weight: 500 !important;
+  }
+  .site-nav-link:hover,
+  .section-nav-link:hover {
+    background: transparent !important;
+    color: #173046 !important;
+    text-decoration: underline !important;
+  }
+  .site-nav-link.active {
+    color: #173046 !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    border-color: rgba(141, 63, 47, 0.48) !important;
+  }
+  .hero {
+    padding: 0 0 6px !important;
+    overflow: visible !important;
+  }
+  .hero::before,
+  .hero::after,
+  .panel::before,
+  .panel::after,
+  .site-header::before,
+  .site-header::after {
+    display: none !important;
+  }
+  .panel,
+  .panel-grid {
+    gap: 16px !important;
+  }
+  .panel > h2:first-child,
+  .panel > .muted-note:first-child {
+    margin-top: 0 !important;
+  }
+  .section-nav {
+    display: none !important;
+  }
+  .meta-row-plain {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .meta-inline,
+  .card-meta-text {
+    color: #42515e;
+    font: 500 0.86rem/1.55 "Avenir Next", "Helvetica Neue", sans-serif;
+  }
+  .card-meta-text {
+    margin: 0;
+  }
+  .atlas-status-pill,
+  .story-status-pill {
+    letter-spacing: 0.08em !important;
+    text-transform: uppercase !important;
+  }
+  .site-card .meta-row .badge {
+    max-width: none;
+  }
+  .link-pill {
+    background: rgba(255,252,245,0.92) !important;
+  }
+  @media (max-width: 760px) {
+    body { padding-top: 148px !important; }
+    .eoe-shell-links {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+      width: 100%;
+      padding-bottom: 2px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      touch-action: pan-x;
+      overscroll-behavior-x: contain;
+    }
+    .eoe-shell-links::-webkit-scrollbar { display: none; }
+  }
+</style>
+
+    <link rel="canonical" href="https://devinteichrow.com/newsdesk/notebook.html" />
+    <link rel="alternate" type="application/rss+xml" title="The Edge of Epidemiology RSS" href="https://theedgeofepidemiology.substack.com/feed" />
+    <meta name="description" content="Reporter&#x27;s Notebook from The Pathogen Dispatch, the Edge of Epidemiology source-first infectious-disease reporting desk." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="The Edge of Epidemiology" />
+    <meta property="og:title" content="Reporter&#x27;s Notebook | The Pathogen Dispatch" />
+    <meta property="og:description" content="Reporter&#x27;s Notebook from The Pathogen Dispatch, the Edge of Epidemiology source-first infectious-disease reporting desk." />
+    <meta property="og:url" content="https://devinteichrow.com/newsdesk/notebook.html" />
+    <meta property="og:image" content="https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Reporter&#x27;s Notebook | The Pathogen Dispatch" />
+    <meta name="twitter:description" content="Reporter&#x27;s Notebook from The Pathogen Dispatch, the Edge of Epidemiology source-first infectious-disease reporting desk." />
+    <meta name="twitter:image" content="https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png" />
+    <script type="application/ld+json" data-eoe-seo>{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Reporter's Notebook | The Pathogen Dispatch", "url": "https://devinteichrow.com/newsdesk/notebook.html", "description": "Reporter's Notebook from The Pathogen Dispatch, the Edge of Epidemiology source-first infectious-disease reporting desk.", "image": "https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png", "isPartOf": {"@type": "WebSite", "name": "The Edge of Epidemiology", "url": "https://devinteichrow.com/"}, "author": {"@type": "Person", "name": "Devin Teichrow", "url": "https://devinteichrow.com/about/", "sameAs": ["https://theedgeofepidemiology.substack.com", "https://x.com/edgeofepi", "https://www.instagram.com/edgeofepi/", "https://www.linkedin.com/in/devin-teichrow-msc-938942254", "https://medium.com/@EdgeofEpi"]}}</script>
+</head>
+  <body><div class="eoe-shell-nav"><div class="eoe-shell-nav-inner"><a class="eoe-shell-brand" href="/"><span>The Edge of Epidemiology</span> <span class="eoe-shell-byline">by Devin Teichrow</span></a><nav class="eoe-shell-links" aria-label="Umbrella navigation"><a class="" href="/">Home</a><a class="" href="/newsdesk/">Newsdesk</a><a class="active" href="/notebook/">Notebook</a><a class="" href="/atlases/pathogen/">Pathogen Atlas</a><a class="" href="/atlases/maritime/">Maritime Atlas</a><a class="" href="/essays/">Essays</a><a class="" href="/topics/">Topics</a><a class="" href="/historical/">Historical</a><a class="" href="/reference/">Reference</a><a class="" href="/opportunities/">Opportunities</a><a class="" href="/search/">Search</a></nav></div></div>
     <main class="page">
-      <header class="site-header"><div class="site-header-copy"><div class="kicker">The Pathogen Dispatch</div><p class="site-header-title">Source-first newsroom desks</p></div><nav class="site-nav" aria-label="Site navigation"><a class="site-nav-link" href="/">Edge home</a><a class="site-nav-link" href="./index.html">Home</a><a class="site-nav-link active" href="./notebook.html" aria-current="page">Notebook</a><a class="site-nav-link" href="./atlas.html">Atlas</a><a class="site-nav-link" href="./outbreaks.html">Outbreak terminal</a><a class="site-nav-link" href="./watch.html">Global watch</a><a class="site-nav-link" href="./africa.html">Africa</a><a class="site-nav-link" href="./asia.html">Asia</a><a class="site-nav-link" href="./research.html">Research</a><a class="site-nav-link" href="./official.html">Official alerts</a><a class="site-nav-link" href="./archive/index.html">Archive</a></nav></header>
+      <header class="site-header"><div class="site-header-copy"><div class="kicker">The Pathogen Dispatch</div><p class="site-header-title">Source-first newsroom desks</p></div><nav class="site-nav" aria-label="Site navigation"><a class="site-nav-link" href="/">Edge home</a><a class="site-nav-link" href="/newsdesk/">Home</a><a class="site-nav-link active" href="/notebook/" aria-current="page">Notebook</a><a class="site-nav-link" href="/atlases/pathogen/">Atlas</a><a class="site-nav-link" href="/newsdesk/outbreaks/">Outbreak terminal</a><a class="site-nav-link" href="/newsdesk/watch/">Global watch</a><a class="site-nav-link" href="/newsdesk/africa/">Africa</a><a class="site-nav-link" href="/newsdesk/asia/">Asia</a><a class="site-nav-link" href="/newsdesk/research/">Research</a><a class="site-nav-link" href="/newsdesk/official/">Official alerts</a><a class="site-nav-link" href="/newsdesk/archive/">Archive</a></nav></header>
       <section class="live-update-banner panel utility-panel" id="live-update-banner" hidden aria-live="polite" role="status" data-live-update-banner="true"><div class="live-update-copy"><div class="section-nav-label">New edition available</div><p class="live-update-text" id="live-update-text">An updated edition is available. Load the latest run when you are ready.</p></div><div class="live-update-actions"><button class="live-update-dismiss" id="live-update-dismiss" type="button" onclick="(function(btn){const banner=btn.closest('[data-live-update-banner]');if(banner){banner.hidden=true;banner.style.display='none';const runId=(banner.dataset&&banner.dataset.pendingRunId)||'';const key=(banner.dataset&&banner.dataset.dismissKey)||('pathogen-dispatch-live-update-dismissed:'+window.location.pathname);try{window.sessionStorage.setItem(key, window.location.pathname+'::'+(runId||'unknown'));}catch(error){}}return false;})(this)">Keep reading</button><button class="live-update-button" id="live-update-refresh" type="button" onclick="(function(btn){const banner=btn.closest('[data-live-update-banner]');if(banner){banner.hidden=true;banner.style.display='none';}const url=new URL(window.location.href);url.searchParams.set('_edition', String(Date.now()));window.location.replace(url.toString());return false;})(this)">Load latest</button></div></section>
       <section class="hero" id="desk-top">
         <p class="kicker">Working layer</p>
@@ -135,11 +325,10 @@
         <p class="subtitle">A working layer for reporters: what to ask next, which numbers matter, and which framing traps to avoid before writing.</p>
         <div class="meta-row"><span class="badge accent">7 active assignment(s)</span><span class="badge">5 linked disease sheet(s)</span></div>
       </section>
-      <nav class="section-nav panel utility-panel" aria-label="Section navigation"><div class="section-nav-label">On this page</div><div class="section-nav-links"><a class="section-nav-link" href="#call-sheet">Call Sheet</a><a class="section-nav-link" href="#questions-to-chase">Questions To Chase</a><a class="section-nav-link" href="#numbers-to-watch">Numbers To Watch</a><a class="section-nav-link" href="#framing-traps">Framing Traps</a><a class="section-nav-link" href="#disease-sheets">Disease Sheets</a><a class="section-nav-link" href="#archive-links">Archive</a></div></nav>
       <section class="panel" id="call-sheet">
         <h2>Call Sheet</h2>
         <p class="muted-note">The current live files, why they matter, and the next move that would make the reporting stronger.</p>
-        <div class="story-grid"><article class="site-card feature-card"><div class="kicker">Call sheet</div><h3><a href="./stories/story_56666e9c6c86e976-ebola-virus-disease.html">Ebola virus disease</a></h3><p>Ebola remains a defining outbreak-desk disease because healthcare transmission, funeral practices, laboratory capacity, community trust, and international alarm can all move faster than the confirmed count.</p><p><strong>Next move:</strong> Pin down whether the transmission language reflects evidence, concern, or pure precaution.</p><p>Baseline snapshot created with 82 clustered item(s) across 57 source(s).</p><div class="meta-row"><span class="badge accent">82 item(s)</span><span class="badge">57 source(s)</span><span class="badge">Expanding coverage</span><span class="badge">Africa</span><span class="badge">Democratic Republic of the Congo / Uganda</span></div><div class="meta-row"><a class="link-pill" href="./reference/ebola-virus-disease.html">Field guide: Ebola virus disease</a></div></article><article class="site-card feature-card"><div class="kicker">Call sheet</div><h3><a href="./stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html">Measles transmission and vaccination</a></h3><p>Measles is a clean reporter desk disease because it reveals vaccination gaps, school and household spread, travel-linked importation, and public-health capacity all at once.</p><p><strong>Next move:</strong> Figure out whether the new place is a site of transmission, a site of care, or simply a site of detection.</p><p>Baseline snapshot created with 73 clustered item(s) across 56 source(s).</p><div class="meta-row"><span class="badge accent">73 item(s)</span><span class="badge">56 source(s)</span><span class="badge">Expanding coverage</span><span class="badge">Cross-region / unassigned</span><span class="badge">United States</span></div><div class="meta-row"><a class="link-pill" href="./reference/measles.html">Field guide: Measles</a></div></article><article class="site-card feature-card"><div class="kicker">Call sheet</div><h3><a href="./stories/story_7ecd65705353b55c-cyclosporiasis.html">Cyclosporiasis</a></h3><p>Cyclospora can produce a large, fast-moving foodborne cluster before a specific product is identified, making state surveillance and laboratory testing more informative than early recall speculation.</p><p><strong>Next move:</strong> Separate the operational move from the underlying epidemiology before you frame the story.</p><p>Baseline snapshot created with 110 clustered item(s) across 76 source(s).</p><div class="meta-row"><span class="badge accent">110 item(s)</span><span class="badge">76 source(s)</span><span class="badge">Expanding coverage</span><span class="badge">Cross-region / unassigned</span><span class="badge">United States</span></div><div class="meta-row"><a class="link-pill" href="./reference/cyclosporiasis.html">Field guide: Cyclosporiasis</a></div></article><article class="site-card feature-card"><div class="kicker">Call sheet</div><h3><a href="./stories/story_9ccdd822481fa2b6-polio-and-wastewater-surveillance.html">Polio and wastewater surveillance</a></h3><p>This story has both official follow-up and broad publisher corroboration across 3 newsroom source(s).</p><p><strong>Next move:</strong> Environmental detections matter here even when paralytic disease is not yet evident.</p><p>Baseline snapshot created with 4 clustered item(s) across 4 source(s).</p><div class="meta-row"><span class="badge accent">4 item(s)</span><span class="badge">4 source(s)</span><span class="badge">Expanding coverage</span><span class="badge">Cross-region / unassigned</span></div><div class="meta-row"><a class="link-pill" href="./reference/poliomyelitis-cvdpv2.html">Field guide: Poliomyelitis / cVDPV2</a></div></article><article class="site-card feature-card"><div class="kicker">Call sheet</div><h3><a href="./stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html">Dengue and arboviruses</a></h3><p>Dengue is now one of the best climate-and-city disease stories on earth because mosquito range, urban crowding, and health-system stress all show up in it.</p><p><strong>Next move:</strong> Get a direct official confirmation or denial before the next write-through.</p><p>Baseline snapshot created with 3 clustered item(s) across 3 source(s).</p><div class="meta-row"><span class="badge accent">3 item(s)</span><span class="badge">3 source(s)</span><span class="badge">Expanding coverage</span><span class="badge">South Asia</span></div><div class="meta-row"><a class="link-pill" href="./reference/dengue.html">Field guide: Dengue</a></div></article><article class="site-card feature-card"><div class="kicker">Call sheet</div><h3><a href="./stories/story_8b3f807bbfd61cab-tuberculosis-and-antimicrobial-resistance.html">Tuberculosis and antimicrobial resistance</a></h3><p>This file matters because official outbreak tracking remains active even if publisher coverage is thin.</p><p><strong>Next move:</strong> Pin down whether the transmission language reflects evidence, concern, or pure precaution.</p><p>Baseline snapshot created with 5 clustered item(s) across 2 source(s).</p><div class="meta-row"><span class="badge accent">5 item(s)</span><span class="badge">2 source(s)</span><span class="badge">Official follow-up only</span><span class="badge">Cross-region / unassigned</span><span class="badge">United States</span></div></article><article class="site-card feature-card"><div class="kicker">Call sheet</div><h3><a href="./stories/story_afd8f5934e291e02-covid-19-and-sars-cov-2.html">COVID-19 and SARS-CoV-2</a></h3><p>This file matters because official outbreak tracking remains active even if publisher coverage is thin.</p><p><strong>Next move:</strong> Compare the newest follow-up against the first official line and isolate what actually changed.</p><p>Baseline snapshot created with 2 clustered item(s) across 2 source(s).</p><div class="meta-row"><span class="badge accent">2 item(s)</span><span class="badge">2 source(s)</span><span class="badge">Official follow-up only</span><span class="badge">Africa</span></div></article></div>
+        <div class="story-grid"><article class="site-card feature-card"><div class="kicker">Call sheet</div><h3><a href="/stories/story_56666e9c6c86e976-ebola-virus-disease.html">Ebola virus disease</a></h3><p>Ebola remains a defining outbreak-desk disease because healthcare transmission, funeral practices, laboratory capacity, community trust, and international alarm can all move faster than the confirmed count.</p><p><strong>Next move:</strong> Pin down whether the transmission language reflects evidence, concern, or pure precaution.</p><p>Baseline snapshot created with 82 clustered item(s) across 57 source(s).</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Expanding coverage</span><span class="meta-inline">Africa · Democratic Republic of the Congo / Uganda</span></div><div class="meta-row"><a class="link-pill" href="/reference/ebola-virus-disease.html">Field guide: Ebola virus disease</a></div></article><article class="site-card feature-card"><div class="kicker">Call sheet</div><h3><a href="/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html">Measles transmission and vaccination</a></h3><p>Measles is a clean reporter desk disease because it reveals vaccination gaps, school and household spread, travel-linked importation, and public-health capacity all at once.</p><p><strong>Next move:</strong> Figure out whether the new place is a site of transmission, a site of care, or simply a site of detection.</p><p>Baseline snapshot created with 73 clustered item(s) across 56 source(s).</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Expanding coverage</span><span class="meta-inline">Cross-region / unassigned · United States</span></div><div class="meta-row"><a class="link-pill" href="/reference/measles.html">Field guide: Measles</a></div></article><article class="site-card feature-card"><div class="kicker">Call sheet</div><h3><a href="/stories/story_7ecd65705353b55c-cyclosporiasis.html">Cyclosporiasis</a></h3><p>Cyclospora can produce a large, fast-moving foodborne cluster before a specific product is identified, making state surveillance and laboratory testing more informative than early recall speculation.</p><p><strong>Next move:</strong> Separate the operational move from the underlying epidemiology before you frame the story.</p><p>Baseline snapshot created with 110 clustered item(s) across 76 source(s).</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Expanding coverage</span><span class="meta-inline">Cross-region / unassigned · United States</span></div><div class="meta-row"><a class="link-pill" href="/reference/cyclosporiasis.html">Field guide: Cyclosporiasis</a></div></article><article class="site-card feature-card"><div class="kicker">Call sheet</div><h3><a href="/stories/story_9ccdd822481fa2b6-polio-and-wastewater-surveillance.html">Polio and wastewater surveillance</a></h3><p>This story has both official follow-up and broad publisher corroboration across 3 newsroom source(s).</p><p><strong>Next move:</strong> Environmental detections matter here even when paralytic disease is not yet evident.</p><p>Baseline snapshot created with 4 clustered item(s) across 4 source(s).</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Expanding coverage</span><span class="meta-inline">Cross-region / unassigned</span></div><div class="meta-row"><a class="link-pill" href="/reference/poliomyelitis-cvdpv2.html">Field guide: Poliomyelitis / cVDPV2</a></div></article><article class="site-card feature-card"><div class="kicker">Call sheet</div><h3><a href="/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html">Dengue and arboviruses</a></h3><p>Dengue is now one of the best climate-and-city disease stories on earth because mosquito range, urban crowding, and health-system stress all show up in it.</p><p><strong>Next move:</strong> Get a direct official confirmation or denial before the next write-through.</p><p>Baseline snapshot created with 3 clustered item(s) across 3 source(s).</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Expanding coverage</span><span class="meta-inline">South Asia</span></div><div class="meta-row"><a class="link-pill" href="/reference/dengue.html">Field guide: Dengue</a></div></article><article class="site-card feature-card"><div class="kicker">Call sheet</div><h3><a href="/stories/story_8b3f807bbfd61cab-tuberculosis-and-antimicrobial-resistance.html">Tuberculosis and antimicrobial resistance</a></h3><p>This file matters because official outbreak tracking remains active even if publisher coverage is thin.</p><p><strong>Next move:</strong> Pin down whether the transmission language reflects evidence, concern, or pure precaution.</p><p>Baseline snapshot created with 5 clustered item(s) across 2 source(s).</p><div class="meta-row meta-row-plain"><span class="meta-inline">Cross-region / unassigned · United States</span></div></article><article class="site-card feature-card"><div class="kicker">Call sheet</div><h3><a href="/stories/story_afd8f5934e291e02-covid-19-and-sars-cov-2.html">COVID-19 and SARS-CoV-2</a></h3><p>This file matters because official outbreak tracking remains active even if publisher coverage is thin.</p><p><strong>Next move:</strong> Compare the newest follow-up against the first official line and isolate what actually changed.</p><p>Baseline snapshot created with 2 clustered item(s) across 2 source(s).</p><div class="meta-row meta-row-plain"><span class="meta-inline">Africa</span></div></article></div>
       </section>
       <section class="panel" id="questions-to-chase">
         <h2>Questions To Chase</h2>
@@ -153,17 +342,17 @@
         </section>
         <section class="panel" id="framing-traps">
           <h2>Framing Traps</h2>
-          <div class="card-grid"><article class="site-card"><div class="kicker">Framing trap</div><h3>Ebola virus disease</h3><ul class="bullet-list"><li>Coverage often defaults to cinematic fatality framing or distant-risk reassurance and misses the operational details that determine control: isolation delays, healthcare spread, burial practices, contact follow-up, laboratory turnaround, and whether the headline count is lagging the epidemic.</li><li>Do not confuse place of care, evacuation, or detection with place of transmission.</li><li>Do not treat evacuation, quarantine, or travel action as automatic proof that the underlying epidemiology has worsened.</li></ul></article><article class="site-card"><div class="kicker">Framing trap</div><h3>Measles transmission and vaccination</h3><ul class="bullet-list"><li>Reporters often overfocus on raw case counts and underplay outbreak size, exposure settings, and vaccination status, which are usually the more informative signals.</li><li>Do not confuse place of care, evacuation, or detection with place of transmission.</li><li>Do not let thin metadata-only follow-ups outrun what direct or fully reported sources actually establish.</li></ul></article><article class="site-card"><div class="kicker">Framing trap</div><h3>Cyclosporiasis</h3><ul class="bullet-list"><li>A produce-associated outbreak does not establish a specific food vehicle. Early case growth, cross-border clustering, and a missing source are signals to follow, not proof about lettuce, berries, or any restaurant chain.</li><li>Do not confuse place of care, evacuation, or detection with place of transmission.</li><li>Do not treat evacuation, quarantine, or travel action as automatic proof that the underlying epidemiology has worsened.</li></ul></article><article class="site-card"><div class="kicker">Framing trap</div><h3>Polio and wastewater surveillance</h3><ul class="bullet-list"><li>Do not let thin metadata-only follow-ups outrun what direct or fully reported sources actually establish.</li></ul></article><article class="site-card"><div class="kicker">Framing trap</div><h3>Dengue and arboviruses</h3><ul class="bullet-list"><li>Coverage frequently treats dengue as a generic tropical fever and underplays serotype history, hospitalization pressure, and the difference between routine seasonal burden and exceptional surge.</li><li>Do not confuse place of care, evacuation, or detection with place of transmission.</li><li>Do not let thin metadata-only follow-ups outrun what direct or fully reported sources actually establish.</li></ul></article><article class="site-card"><div class="kicker">Framing trap</div><h3>Tuberculosis and antimicrobial resistance</h3><ul class="bullet-list"><li>Do not treat evacuation, quarantine, or travel action as automatic proof that the underlying epidemiology has worsened.</li></ul></article><article class="site-card"><div class="kicker">Framing trap</div><h3>COVID-19 and SARS-CoV-2</h3><ul class="bullet-list"><li>Do not let the newest angle bury the basic accounting of who is confirmed, where exposure happened, and what officials have actually said.</li></ul></article></div>
+          <div class="card-grid"><article class="site-card"><div class="kicker">Framing trap</div><h3>Ebola virus disease</h3><ul class="bullet-list"><li>Coverage often defaults to cinematic fatality framing or distant-risk reassurance and misses the operational details that determine control: isolation delays, healthcare spread, burial practices, contact follow-up, laboratory turnaround, and whether the headline count is lagging the epidemic.</li><li>Do not confuse place of care, evacuation, or detection with place of transmission.</li><li>Do not treat evacuation, quarantine, or travel action as automatic proof that the underlying epidemiology has worsened.</li></ul></article><article class="site-card"><div class="kicker">Framing trap</div><h3>Measles transmission and vaccination</h3><ul class="bullet-list"><li>Reporters often overfocus on raw case counts and underplay outbreak size, exposure settings, and vaccination status, which are usually the more informative signals.</li><li>Do not confuse place of care, evacuation, or detection with place of transmission.</li><li>Do not let thin brief-source follow-ups outrun what direct or fully reported sources actually establish.</li></ul></article><article class="site-card"><div class="kicker">Framing trap</div><h3>Cyclosporiasis</h3><ul class="bullet-list"><li>A produce-associated outbreak does not establish a specific food vehicle. Early case growth, cross-border clustering, and a missing source are signals to follow, not proof about lettuce, berries, or any restaurant chain.</li><li>Do not confuse place of care, evacuation, or detection with place of transmission.</li><li>Do not treat evacuation, quarantine, or travel action as automatic proof that the underlying epidemiology has worsened.</li></ul></article><article class="site-card"><div class="kicker">Framing trap</div><h3>Polio and wastewater surveillance</h3><ul class="bullet-list"><li>Do not let thin brief-source follow-ups outrun what direct or fully reported sources actually establish.</li></ul></article><article class="site-card"><div class="kicker">Framing trap</div><h3>Dengue and arboviruses</h3><ul class="bullet-list"><li>Coverage frequently treats dengue as a generic tropical fever and underplays serotype history, hospitalization pressure, and the difference between routine seasonal burden and exceptional surge.</li><li>Do not confuse place of care, evacuation, or detection with place of transmission.</li><li>Do not let thin brief-source follow-ups outrun what direct or fully reported sources actually establish.</li></ul></article><article class="site-card"><div class="kicker">Framing trap</div><h3>Tuberculosis and antimicrobial resistance</h3><ul class="bullet-list"><li>Do not treat evacuation, quarantine, or travel action as automatic proof that the underlying epidemiology has worsened.</li></ul></article><article class="site-card"><div class="kicker">Framing trap</div><h3>COVID-19 and SARS-CoV-2</h3><ul class="bullet-list"><li>Do not let the newest angle bury the basic accounting of who is confirmed, where exposure happened, and what officials have actually said.</li></ul></article></div>
         </section>
       </section>
       <section class="panel-grid">
         <section class="panel" id="disease-sheets">
           <h2>Disease Sheets</h2>
-          <div class="card-grid"><article class="site-card"><div class="kicker">Disease sheet</div><h3><a href="./reference/ebola-virus-disease.html">Ebola virus disease</a></h3><p>Ebola remains a defining outbreak-desk disease because healthcare transmission, funeral practices, laboratory capacity, community trust, and international alarm can all move faster than the confirmed count.</p><ul class="bullet-list"><li>Suspected, probable, confirmed, and ruled-out cases by health zone and report date.</li><li>Deaths inside and outside formal care, especially community deaths and healthcare-worker deaths.</li></ul></article><article class="site-card"><div class="kicker">Disease sheet</div><h3><a href="./reference/measles.html">Measles</a></h3><p>Measles is a clean reporter desk disease because it reveals vaccination gaps, school and household spread, travel-linked importation, and public-health capacity all at once.</p><ul class="bullet-list"><li>Confirmed cases and outbreak-associated cases rather than rumor-level totals.</li><li>Vaccination status of cases and affected communities.</li></ul></article><article class="site-card"><div class="kicker">Disease sheet</div><h3><a href="./reference/cyclosporiasis.html">Cyclosporiasis</a></h3><p>Cyclospora can produce a large, fast-moving foodborne cluster before a specific product is identified, making state surveillance and laboratory testing more informative than early recall speculation.</p><ul class="bullet-list"><li>Case counts, hospitalizations, onset window, and the number of affected jurisdictions.</li><li>Whether officials have identified a common exposure, product, grower, or supplier.</li></ul></article><article class="site-card"><div class="kicker">Disease sheet</div><h3><a href="./reference/poliomyelitis-cvdpv2.html">Poliomyelitis / cVDPV2</a></h3><p></p><ul class="bullet-list"><li>Environmental detections and genomic linkage across sites.</li><li>Whether any acute flaccid paralysis cases have been confirmed.</li></ul></article><article class="site-card"><div class="kicker">Disease sheet</div><h3><a href="./reference/dengue.html">Dengue</a></h3><p>Dengue is now one of the best climate-and-city disease stories on earth because mosquito range, urban crowding, and health-system stress all show up in it.</p><ul class="bullet-list"><li>Cases, severe dengue, hospitalizations, and deaths.</li><li>Serotype shifts, if reported, because they can change severity expectations.</li></ul></article></div>
+          <div class="card-grid"><article class="site-card"><div class="kicker">Disease sheet</div><h3><a href="/reference/ebola-virus-disease.html">Ebola virus disease</a></h3><p>Ebola remains a defining outbreak-desk disease because healthcare transmission, funeral practices, laboratory capacity, community trust, and international alarm can all move faster than the confirmed count.</p><ul class="bullet-list"><li>Suspected, probable, confirmed, and ruled-out cases by health zone and report date.</li><li>Deaths inside and outside formal care, especially community deaths and healthcare-worker deaths.</li></ul></article><article class="site-card"><div class="kicker">Disease sheet</div><h3><a href="/reference/measles.html">Measles</a></h3><p>Measles is a clean reporter desk disease because it reveals vaccination gaps, school and household spread, travel-linked importation, and public-health capacity all at once.</p><ul class="bullet-list"><li>Confirmed cases and outbreak-associated cases rather than rumor-level totals.</li><li>Vaccination status of cases and affected communities.</li></ul></article><article class="site-card"><div class="kicker">Disease sheet</div><h3><a href="/reference/cyclosporiasis.html">Cyclosporiasis</a></h3><p>Cyclospora can produce a large, fast-moving foodborne cluster before a specific product is identified, making state surveillance and laboratory testing more informative than early recall speculation.</p><ul class="bullet-list"><li>Case counts, hospitalizations, onset window, and the number of affected jurisdictions.</li><li>Whether officials have identified a common exposure, product, grower, or supplier.</li></ul></article><article class="site-card"><div class="kicker">Disease sheet</div><h3><a href="/reference/poliomyelitis-cvdpv2.html">Poliomyelitis / cVDPV2</a></h3><p></p><ul class="bullet-list"><li>Environmental detections and genomic linkage across sites.</li><li>Whether any acute flaccid paralysis cases have been confirmed.</li></ul></article><article class="site-card"><div class="kicker">Disease sheet</div><h3><a href="/reference/dengue.html">Dengue</a></h3><p>Dengue is now one of the best climate-and-city disease stories on earth because mosquito range, urban crowding, and health-system stress all show up in it.</p><ul class="bullet-list"><li>Cases, severe dengue, hospitalizations, and deaths.</li><li>Serotype shifts, if reported, because they can change severity expectations.</li></ul></article></div>
         </section>
         <section class="panel" id="archive-links">
           <h2>Recent Archive Days</h2>
-          <div class="archive-table"><article class="archive-row"><a href="./2026/08/2026-08-08.html"><strong>2026-08-08</strong></a><span class="archive-row-meta">August 2026</span></article></div>
+          <div class="archive-table"><article class="archive-row"><a href="/newsdesk/2026/08/2026-08-08.html"><strong>2026-08-08</strong></a><span class="archive-row-meta">August 2026</span></article></div>
         </section>
       </section>
     </main>
@@ -174,7 +363,7 @@
       const liveUpdateText = document.getElementById("live-update-text");
       const currentRunId = 'run_076e23bb2dbdbd2f';
       const currentGeneratedAt = '2026-08-08T21:17:19';
-      const manifestPath = './app_exports/manifest.json';
+      const manifestPath = '/app_exports/manifest.json';
       const liveUpdateStorageKey = `pathogen-dispatch-live-update-dismissed:${window.location.pathname}`;
       const liveUpdateStart = Date.now();
       let pendingLiveUpdateRunId = "";
