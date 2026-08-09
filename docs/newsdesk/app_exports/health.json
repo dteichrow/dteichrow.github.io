@@ -9,22 +9,23 @@
       "Guardian",
       "NBC News",
       "New York Times",
-      "PBS"
+      "PBS",
+      "Reuters"
     ],
-    "metadata_only_count": 260,
+    "metadata_only_count": 264,
     "sources_cached": 0,
     "sources_failed": 0,
-    "sources_live": 283,
-    "story_count_change": 6,
+    "sources_live": 287,
+    "story_count_change": 7,
     "wrapper_only_count": 8
   },
   "freshness_summary": {
     "fallback_cache": 0,
-    "live": 283,
+    "live": 287,
     "refresh_cache": 0,
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-08-08T16:17:15",
+  "generated_at": "2026-08-08T17:17:15",
   "source_failures": []
 }
