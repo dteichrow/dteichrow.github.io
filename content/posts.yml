@@ -1,4 +1,44 @@
 posts:
+- slug: one-in-six-the-direct-and-indirect
+  title: 'One in Six: The direct and indirect toll of Iceland’s 1783 Laki eruption'
+  date: '2026-08-10'
+  canonical_url: https://theedgeofepidemiology.substack.com/p/one-in-six-the-direct-and-indirect
+  excerpt: '![Image 1](https://substackcdn.com/image/fetch/$s !1Eu9!,f auto,q auto:good,fl
+    progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4033eb4c-7061-498f-a575-025d59c40c20
+    1456x818.webp) A much smaller modern Icelandic fissure eruption near Litli-Hrútur
+    in July 2023. Laki itself last erupted in 1783–84. Photo by Anthony Quintano.jpg),
+    CC BY 2.0. In June of 1783, a fissure broke open in southern Iceland and didn’t
+    stop erupting for eight months. Accounts from the time describe what followed:
+    sulfurous rain, dark ash falling on homes, people with irritated eyes a'
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/4033eb4c-7061-498f-a575-025d59c40c20_1456x818.webp
+  source_mode: substack_reader
+  wordcount: 2461
+  status: summary_only
+  dek: ''
+  topics: []
+  series: []
+  seo_title: ''
+  seo_description: ''
+  primary_keyword: ''
+  topic_cluster: ''
+  indexing_strategy: noindex_stub
+  related_atlases: []
+  related_reference_slugs: []
+  related_story_ids: []
+  search_excerpt: '![Image 1](https://substackcdn.com/image/fetch/$s !1Eu9!,f auto,q
+    auto:good,fl progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4033eb4c-7061-498f-a575-025d59c40c20
+    1456x818.webp) A much smaller modern Icelandic fissure eruption near Litli-'
+  local_body_path: ''
+  body_synced_at: ''
+  body_source_url: ''
+  body_source_mode: ''
+  body_source_file: ''
+  body_wordcount: null
+  hero_mode: cover
+  notes: ''
+  first_seen_at: '2026-08-10T13:50:55+00:00'
+  last_synced_at: '2026-08-10T13:50:55+00:00'
+  upstream_tags: []
 - slug: the-rabies-denominator-problem
   title: The Rabies Denominator Problem
   date: '2026-08-02'
