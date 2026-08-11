@@ -2,10 +2,10 @@
   "degraded": false,
   "editor_summary": {
     "major_publisher_families_seen": [
+      "ABC News",
       "BBC",
       "CBS News",
       "CIDRAP",
-      "CNN",
       "Guardian",
       "NBC News",
       "New York Times",
@@ -27,6 +27,6 @@
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-08-11T06:17:10",
+  "generated_at": "2026-08-11T07:17:34",
   "source_failures": []
 }
