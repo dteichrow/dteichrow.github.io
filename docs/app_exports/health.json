@@ -10,24 +10,22 @@
       "Guardian",
       "NBC News",
       "New York Times",
-      "PBS",
-      "Reuters",
       "Sky News"
     ],
-    "metadata_only_count": 271,
+    "metadata_only_count": 274,
     "sources_cached": 0,
     "sources_failed": 0,
-    "sources_live": 298,
+    "sources_live": 301,
     "story_count_change": 8,
     "wrapper_only_count": 9
   },
   "freshness_summary": {
     "fallback_cache": 0,
-    "live": 298,
+    "live": 301,
     "refresh_cache": 0,
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-08-13T05:17:17",
+  "generated_at": "2026-08-13T06:17:13",
   "source_failures": []
 }
