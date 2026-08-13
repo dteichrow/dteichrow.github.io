@@ -12,30 +12,35 @@
       "NBC News",
       "New York Times",
       "PBS",
-      "Reuters",
       "Sky News"
     ],
-    "metadata_only_count": 269,
+    "metadata_only_count": 272,
     "sources_cached": 0,
-    "sources_failed": 3,
-    "sources_live": 296,
+    "sources_failed": 4,
+    "sources_live": 299,
     "story_count_change": 8,
-    "wrapper_only_count": 8
+    "wrapper_only_count": 7
   },
   "freshness_summary": {
     "fallback_cache": 0,
-    "live": 296,
+    "live": 299,
     "refresh_cache": 0,
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-08-12T16:20:46",
+  "generated_at": "2026-08-12T17:21:57",
   "source_failures": [
     {
       "error": "HTTPSConnectionPool(host='africacdc.org', port=443): Read timed out. (read timeout=20)",
       "required": true,
       "source": "Africa CDC",
       "source_type": "rss"
+    },
+    {
+      "error": "HTTPSConnectionPool(host='api.biorxiv.org', port=443): Read timed out. (read timeout=20)",
+      "required": true,
+      "source": "medRxiv Infectious Disease",
+      "source_type": "medrxiv"
     },
     {
       "error": "HTTPSConnectionPool(host='api.biorxiv.org', port=443): Read timed out. (read timeout=20)",
