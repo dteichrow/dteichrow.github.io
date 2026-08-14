@@ -1,5 +1,5 @@
 {
-  "degraded": true,
+  "degraded": false,
   "editor_summary": {
     "major_publisher_families_seen": [
       "BBC",
@@ -13,12 +13,12 @@
       "Reuters",
       "Sky News"
     ],
-    "metadata_only_count": 267,
+    "metadata_only_count": 268,
     "sources_cached": 0,
-    "sources_failed": 1,
+    "sources_failed": 0,
     "sources_live": 293,
     "story_count_change": 6,
-    "wrapper_only_count": 12
+    "wrapper_only_count": 11
   },
   "freshness_summary": {
     "fallback_cache": 0,
@@ -27,13 +27,6 @@
     "retained": 0,
     "unknown": 0
   },
-  "generated_at": "2026-08-14T03:18:48",
-  "source_failures": [
-    {
-      "error": "HTTPSConnectionPool(host='api.biorxiv.org', port=443): Read timed out. (read timeout=20)",
-      "required": true,
-      "source": "medRxiv Infectious Disease",
-      "source_type": "medrxiv"
-    }
-  ]
+  "generated_at": "2026-08-14T04:18:20",
+  "source_failures": []
 }
