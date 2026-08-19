@@ -1,4 +1,44 @@
 posts:
+- slug: supplement-labels-should-be-a-test
+  title: Supplement Labels Should Be a Test Result
+  date: '2026-08-19'
+  canonical_url: https://theedgeofepidemiology.substack.com/p/supplement-labels-should-be-a-test
+  excerpt: '![Image 1: GNC supplement aisle](https://substackcdn.com/image/fetch/$s
+    !Ctsy!,f auto,q auto:good,fl progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F87e51b59-0471-4b43-a28e-93108d6fe967
+    1920x2560.jpeg) Credit: Ser Amantio di Nicolao/Wikimedia Commons, CC BY-SA 4.0.
+    Cropped from the original. The bottle of a supplement seems like it’s giving you
+    precise information. They’ll list the various ingredients to the milligram level
+    or promise some precise-ish number of live bacteria all while containing a lot
+    number that seems to imply you could trace exactly w'
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/87e51b59-0471-4b43-a28e-93108d6fe967_1920x2560.jpeg
+  source_mode: substack_reader
+  wordcount: 3180
+  status: summary_only
+  dek: ''
+  topics: []
+  series: []
+  seo_title: ''
+  seo_description: ''
+  primary_keyword: ''
+  topic_cluster: ''
+  indexing_strategy: noindex_stub
+  related_atlases: []
+  related_reference_slugs: []
+  related_story_ids: []
+  search_excerpt: '![Image 1: GNC supplement aisle](https://substackcdn.com/image/fetch/$s
+    !Ctsy!,f auto,q auto:good,fl progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F87e51b59-0471-4b43-a28e-93108d6fe967
+    1920x2560.jpeg) Credit: Ser Amantio di Nicolao/Wikime'
+  local_body_path: ''
+  body_synced_at: ''
+  body_source_url: ''
+  body_source_mode: ''
+  body_source_file: ''
+  body_wordcount: null
+  hero_mode: cover
+  notes: ''
+  first_seen_at: '2026-08-19T13:16:01+00:00'
+  last_synced_at: '2026-08-19T13:16:01+00:00'
+  upstream_tags: []
 - slug: one-in-six-the-direct-and-indirect
   title: 'One in Six: The direct and indirect toll of Iceland’s 1783 Laki eruption'
   date: '2026-08-10'
