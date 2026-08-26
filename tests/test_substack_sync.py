@@ -78,7 +78,9 @@ URL Source: http://theedgeofepidemiology.substack.com/p/test-post
 Published Time: 2026-05-04T14:21:43+00:00
 
 Markdown Content:
-![Cover image](https://substackcdn.com/image/fetch/$s_!abc!,f_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcover_1200x800.jpeg)
+[![Cover image](https://substackcdn.com/image/fetch/$s_!abc!,f_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcover_1200x800.jpeg)](https://substackcdn.com/image/fetch/$s_!abc!,f_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcover_1200x800.jpeg)
+
+_An illustrative cover image._
 
 This is the opening paragraph of the essay. It has enough detail to form an excerpt.
 """
@@ -90,6 +92,9 @@ This is the opening paragraph of the essay. It has enough detail to form an exce
     assert record["canonical_url"] == "https://theedgeofepidemiology.substack.com/p/test-post"
     assert record["source_mode"] == "substack_reader"
     assert record["cover_image"] == "https://substack-post-media.s3.amazonaws.com/public/images/cover_1200x800.jpeg"
+    assert record["excerpt"] == "This is the opening paragraph of the essay. It has enough detail to form an excerpt."
+    assert "![" not in record["excerpt"]
+    assert "substackcdn.com" not in record["excerpt"]
 
 
 def test_incremental_sync_reader_fallback_repairs_blank_cover_images(tmp_path, monkeypatch) -> None:
@@ -296,6 +301,27 @@ def test_merge_post_record_preserves_curated_fields() -> None:
     assert merged["topics"] == ["History"]
     assert merged["related_atlases"] == ["maritime-disease-atlas"]
     assert merged["status"] == "mirrored"
+
+
+def test_merge_post_record_replaces_markdown_image_search_excerpt() -> None:
+    existing = {
+        "canonical_url": "https://theedgeofepidemiology.substack.com/p/test-post",
+        "slug": "test-post",
+        "title": "Test post",
+        "excerpt": "Old excerpt",
+        "search_excerpt": "![Cover](https://substackcdn.com/image/fetch/example)",
+    }
+    incoming = {
+        "canonical_url": "https://theedgeofepidemiology.substack.com/p/test-post",
+        "slug": "test-post",
+        "title": "Test post",
+        "excerpt": "Clean incoming excerpt.",
+        "source_mode": "substack_reader",
+    }
+
+    merged = merge_post_record(existing, incoming)
+
+    assert merged["search_excerpt"] == "Clean incoming excerpt."
 
 
 def test_incremental_sync_uses_archive_api_without_degraded_mode(tmp_path, monkeypatch) -> None:

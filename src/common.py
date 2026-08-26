@@ -291,6 +291,11 @@ def default_curated_fields(slug: str, title: str, upstream_tags: list[str], exce
     }
 
 
+def has_markdown_image_excerpt(value: Any) -> bool:
+    text = str(value or "").strip()
+    return text.startswith("![") or "substackcdn.com/image/fetch" in text
+
+
 def merge_post_record(existing: dict[str, Any] | None, incoming: dict[str, Any]) -> dict[str, Any]:
     record = dict(existing or {})
     curated_snapshot = {
@@ -328,7 +333,8 @@ def merge_post_record(existing: dict[str, Any] | None, incoming: dict[str, Any])
     record["related_reference_slugs"] = canonicalize_list(record.get("related_reference_slugs"))
     record["related_story_ids"] = canonicalize_list(record.get("related_story_ids"))
     record["slug"] = record.get("slug") or slug_from_canonical(record.get("canonical_url", ""))
-    record["search_excerpt"] = record.get("search_excerpt") or record.get("excerpt", "")
+    if not record.get("search_excerpt") or has_markdown_image_excerpt(record.get("search_excerpt")):
+        record["search_excerpt"] = str(record.get("excerpt") or "")[:280]
     return record
 
 

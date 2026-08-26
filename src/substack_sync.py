@@ -96,6 +96,9 @@ DROP_BODY_CONTENT_TAGS = {
 DROP_BODY_VOID_TAGS = {"embed", "input", "param"}
 SAFE_URL_SCHEMES = {"http", "https", "mailto"}
 MARKDOWN_IMAGE_RE = re.compile(r"!\[[^\]]*\]\((https?://[^\s)]+)\)")
+MARKDOWN_LINKED_IMAGE_RE = re.compile(
+    r"\[!\[[^\]]*\]\(https?://[^\s)]+\)\]\(https?://[^\s)]+\)",
+)
 SUBSTACK_POST_MEDIA_RE = re.compile(
     r"https://substack-post-media\.s3\.amazonaws\.com/public/images/[^\s?#)]+",
     flags=re.I,
@@ -499,9 +502,7 @@ def _extract_post_record_from_reader(reader_text: str, url: str) -> dict[str, An
     if published_match:
         published_at = parse_iso_date(published_match.group(1))
     markdown_content = content_match.group(1) if content_match else ""
-    cleaned_content = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", markdown_content)
-    cleaned_content = re.sub(r"[*_#>`]", " ", cleaned_content)
-    excerpt = clean_text(cleaned_content)[:600]
+    excerpt = reader_markdown_excerpt(markdown_content)
     return {
         "substack_id": None,
         "slug": slug_from_canonical(url),
@@ -512,7 +513,7 @@ def _extract_post_record_from_reader(reader_text: str, url: str) -> dict[str, An
         "cover_image": extract_cover_image_from_markdown(markdown_content),
         "upstream_tags": [],
         "source_mode": "substack_reader",
-        "wordcount": len(re.findall(r"[A-Za-z0-9]+(?:['-][A-Za-z0-9]+)?", cleaned_content)),
+        "wordcount": len(re.findall(r"[A-Za-z0-9]+(?:['-][A-Za-z0-9]+)?", markdown_content)),
     }
 
 
@@ -529,6 +530,42 @@ def normalize_cover_image_url(value: str) -> str:
 def extract_cover_image_from_markdown(markdown_content: str) -> str:
     match = MARKDOWN_IMAGE_RE.search(markdown_content)
     return normalize_cover_image_url(match.group(1)) if match else ""
+
+
+def reader_markdown_excerpt(markdown_content: str) -> str:
+    """Return reader fallback prose without treating a leading image as an excerpt."""
+    paragraphs = re.split(r"\n\s*\n", markdown_content.strip())
+    excerpt_parts: list[str] = []
+    skipped_leading_image = False
+
+    for paragraph in paragraphs:
+        contains_image = bool(MARKDOWN_IMAGE_RE.search(paragraph))
+        cleaned = MARKDOWN_LINKED_IMAGE_RE.sub(" ", paragraph)
+        cleaned = MARKDOWN_IMAGE_RE.sub(" ", cleaned)
+        cleaned = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", cleaned)
+        cleaned = re.sub(r"[*_#>`]", " ", cleaned)
+        text = clean_text(cleaned)
+
+        if contains_image:
+            skipped_leading_image = skipped_leading_image or not excerpt_parts
+            if not text:
+                continue
+        if skipped_leading_image and not excerpt_parts and _is_leading_image_caption(paragraph, text):
+            continue
+        if text:
+            excerpt_parts.append(text)
+
+    return clean_text(" ".join(excerpt_parts))[:600]
+
+
+def _is_leading_image_caption(paragraph: str, text: str) -> bool:
+    raw = paragraph.strip()
+    return (
+        raw.startswith("**Credit:")
+        or raw.startswith("Credit:")
+        or (raw.startswith("_") and raw.endswith("_"))
+        or text.lower().startswith("credit:")
+    )
 
 
 def enrich_missing_cover_image(url: str, source_mode: str) -> str:
