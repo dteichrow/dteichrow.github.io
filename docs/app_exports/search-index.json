@@ -625,16 +625,16 @@
   {
     "title": "Measles transmission and vaccination",
     "section": "Newsdesk",
-    "summary": "Baseline snapshot created with 143 clustered item(s) across 117 source(s).",
+    "summary": "Baseline snapshot created with 137 clustered item(s) across 107 source(s).",
     "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
     "keywords": "new_official_source suspected_case confirmed_case severity_or_death transmission_change new_geography Cross-region / unassigned Democratic Republic of the Congo / Ethiopia"
   },
   {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
-    "summary": "Baseline snapshot created with 97 clustered item(s) across 68 source(s).",
+    "summary": "Baseline snapshot created with 92 clustered item(s) across 66 source(s).",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
-    "keywords": "new_official_source suspected_case confirmed_case severity_or_death transmission_change policy_or_travel Africa Democratic Republic of the Congo / Uganda"
+    "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel Africa Democratic Republic of the Congo / Uganda"
   },
   {
     "title": "Hantavirus and cruise-ship outbreak",
@@ -646,16 +646,16 @@
   {
     "title": "Cyclosporiasis",
     "section": "Newsdesk",
-    "summary": "Baseline snapshot created with 44 clustered item(s) across 38 source(s).",
+    "summary": "Baseline snapshot created with 45 clustered item(s) across 38 source(s).",
     "url": "/stories/story_7ecd65705353b55c-cyclosporiasis.html",
-    "keywords": "new_official_source confirmed_case Cross-region / unassigned United States"
+    "keywords": "new_official_source confirmed_case new_geography Cross-region / unassigned United States"
   },
   {
     "title": "Polio and wastewater surveillance",
     "section": "Newsdesk",
-    "summary": "Baseline snapshot created with 7 clustered item(s) across 7 source(s).",
+    "summary": "Baseline snapshot created with 6 clustered item(s) across 6 source(s).",
     "url": "/stories/story_9ccdd822481fa2b6-polio-and-wastewater-surveillance.html",
-    "keywords": "new_official_source confirmed_case Africa Uganda"
+    "keywords": "new_official_source confirmed_case Africa Sierra Leone"
   },
   {
     "title": "Dengue and arboviruses",
@@ -667,9 +667,9 @@
   {
     "title": "Tuberculosis and antimicrobial resistance",
     "section": "Newsdesk",
-    "summary": "Baseline snapshot created with 3 clustered item(s) across 2 source(s).",
+    "summary": "Baseline snapshot created with 2 clustered item(s) across 2 source(s).",
     "url": "/stories/story_8b3f807bbfd61cab-tuberculosis-and-antimicrobial-resistance.html",
-    "keywords": "new_official_source severity_or_death laboratory_or_genomic Cross-region / unassigned India"
+    "keywords": "new_official_source severity_or_death laboratory_or_genomic Europe India"
   },
   {
     "title": "Ebola virus disease",
