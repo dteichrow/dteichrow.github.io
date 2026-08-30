@@ -1,10 +1,10 @@
 # Daily Infectious Disease & Epidemiology Dossier
 Date: 2026-08-29
-Generated at: 2026-08-29T14:44
+Generated at: 2026-08-29T17:17
 Search window: 7 day(s) ending 2026-08-29
 
 ## Executive scan
-- [News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....](https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius) (Texas Department of State Health Services News; 2026-08-29T21:44+00:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
+- [News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....](https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius) (Texas Department of State Health Services News; 2026-08-30T00:09+00:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
 - [Toledo-Lucas County Health Department Cyclosporiasis Update](https://lucascountyhealth.com/cyclo/) (Toledo-Lucas County Health Department Cyclosporiasis Update; 2026-08-28T00:00; Outbreaks and emerging infections; relevance 5/5)
 - [Use of Nowcasting to Estimate Real-Time Transmission Trends During a Measles Outbreak](https://tools.cdc.gov/api/embed/downloader/download.asp?m=342778&c=766319) (CDC MMWR; 2026-08-27T17:00+00:00; Occupational and environmental epidemiology; relevance 5/5)
 - [IGFBP7 induces phenotypic shift from platelet-mediated autoagglutination to rosetting of Plasmodium knowlesi-infected erythrocytes.](https://pubmed.ncbi.nlm.nih.gov/42661346/) (PubMed Infectious Disease Search; 2026-08-27T00:00; Major epidemiology studies; relevance 5/5)
@@ -12,14 +12,14 @@ Search window: 7 day(s) ending 2026-08-29
 - [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 15, Data as of 23 August 2026](https://www.afro.who.int/countries/democratic-republic-congo/publication/ebola-bundibugyo-virus-disease-outbreak-democratic) (WHO Regional Office for Africa; 2026-08-26T22:21+00:00; Outbreaks and emerging infections; relevance 5/5)
 - [The work of the World Health Organization in the African Region: Report of the Regional Director: 1 July 2025–30 June 2026](https://www.afro.who.int/publications/work-world-health-organization-african-region-report-regional-director-1-july-2025-30) (WHO Regional Office for Africa; 2026-08-25T08:40+00:00; Outbreaks and emerging infections; relevance 5/5)
 - [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News; 2026-08-21T17:36+02:00; Policy, surveillance, and public health infrastructure; relevance 5/5)
-- Category mix: Outbreaks and emerging infections (280), Policy, surveillance, and public health infrastructure (20), Major epidemiology studies (4)
+- Category mix: Outbreaks and emerging infections (282), Policy, surveillance, and public health infrastructure (20), Major epidemiology studies (4)
 - Source health: 1 source(s) failed during collection: Nigeria Centre for Disease Control.
 
 ## Ongoing stories and what changed
 ### Ebola virus disease
 - Lead item: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 15, Data as of 23 August 2026](https://www.afro.who.int/countries/democratic-republic-congo/publication/ebola-bundibugyo-virus-disease-outbreak-democratic) (WHO Regional Office for Africa)
-- Newly tracked story cluster: 87 item(s) across 64 source(s).
-- Baseline snapshot created with 87 clustered item(s) across 64 source(s).
+- Newly tracked story cluster: 91 item(s) across 65 source(s).
+- Baseline snapshot created with 91 clustered item(s) across 65 source(s).
 - WHO Regional Office for Africa now includes deaths or fatal cases in the story frame.
 - Outbreak News Today now foregrounds vaccination or vaccine policy in the story.
 
@@ -38,8 +38,8 @@ Search window: 7 day(s) ending 2026-08-29
 
 ### Cyclosporiasis
 - Lead item: [Toledo-Lucas County Health Department Cyclosporiasis Update](https://lucascountyhealth.com/cyclo/) (Toledo-Lucas County Health Department Cyclosporiasis Update)
-- Newly tracked story cluster: 50 item(s) across 41 source(s).
-- Baseline snapshot created with 50 clustered item(s) across 41 source(s).
+- Newly tracked story cluster: 49 item(s) across 40 source(s).
+- Baseline snapshot created with 49 clustered item(s) across 40 source(s).
 - Story tracking is now active for this cluster; future runs will report only new developments against this baseline.
 
 ### Polio and wastewater surveillance
@@ -59,15 +59,15 @@ Search window: 7 day(s) ending 2026-08-29
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Ebola virus disease
-- Topic size: 87 item(s) across 64 source(s); 2 official/primary-source item(s).
+- Topic size: 91 item(s) across 65 source(s); 2 official/primary-source item(s).
 - Lead item: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 15, Data as of 23 August 2026](https://www.afro.who.int/countries/democratic-republic-congo/publication/ebola-bundibugyo-virus-disease-outbreak-democratic) (WHO Regional Office for Africa, 2026-08-26T22:21+00:00)
 - Detailed note: Since External Situation Report #14, a total of 563 new confirmed cases and 302 confirmed deaths have been reported, bringing the cumulative total to 5 584 confirmed cases, including 2 680 deaths. The number of affected health zones has increased from 55 to 57 across six provinces, with Viadana in Bas-Uélé and Mutwanga in Nord-Kivu being the most recently affected health zones.
-- Evidence notes: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 15, Data as of 23 August 2026](https://www.afro.who.int/countries/democratic-republic-congo/publication/ebola-bundibugyo-virus-disease-outbreak-democratic) (WHO Regional Office for Africa); [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News); [DR Congo begins vaccinating against its largest and deadliest Ebola outbreak | AJ #shorts](https://www.modernghana.com/videonews/aljazeera/1/708167) (Modern Ghana); [WHO reports 5,794 Ebola cases and 2,786 deaths in Congo](https://www.anews.com.tr/health/2026/08/29/who-reports-5794-ebola-cases-and-2786-deaths-in-congo/amp) (A News); [Ebola Ends In Uganda As DRC Battles Fastest-Growing Outbreak On Record, Experts Stress Need For Safe Health-And-Trade Corridors](https://www.forbesafrica.com/current-affairs/2026/08/28/ebola-ends-in-uganda-as-drc-battles-fastest-growing-outbreak-on-record-experts-stress-need-for-safe-health-and-trade-corridors/) (Forbes Africa)
+- Evidence notes: [EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 15, Data as of 23 August 2026](https://www.afro.who.int/countries/democratic-republic-congo/publication/ebola-bundibugyo-virus-disease-outbreak-democratic) (WHO Regional Office for Africa); [Ebola disease outbreak in the Democratic Republic of the Congo and Uganda](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) (ECDC News); [DR Congo begins vaccinating against its largest and deadliest Ebola outbreak | AJ #shorts](https://www.modernghana.com/videonews/aljazeera/1/708167) (Modern Ghana); [Ebola outbreak sparks concern over school reopening in DR Congo](https://eastleighvoice.co.ke/regional/394494/ebola-outbreak-sparks-concern-over-school-reopening-in-dr-congo) (The Eastleigh Voice); [WHO reports 5,794 Ebola cases and 2,786 deaths in Congo](https://www.anews.com.tr/health/2026/08/29/who-reports-5794-ebola-cases-and-2786-deaths-in-congo/amp) (A News)
 - Why this topic matters now: It affects how to interpret current surveillance or outbreak detection signals. It may influence public-health messaging, travel guidance, or risk framing.
 - Caveats / uncertainty: Several entries still rely on short feed metadata rather than full-text extraction.
 
 ### Cyclosporiasis
-- Topic size: 50 item(s) across 41 source(s); 1 official/primary-source item(s).
+- Topic size: 49 item(s) across 40 source(s); 1 official/primary-source item(s).
 - Lead item: [Toledo-Lucas County Health Department Cyclosporiasis Update](https://lucascountyhealth.com/cyclo/) (Toledo-Lucas County Health Department Cyclosporiasis Update, 2026-08-28T00:00)
 - Detailed note: New data suggest cyclosporiasis cases are slowing Scientific American The health department labels these counts preliminary.
 - Evidence notes: [Toledo-Lucas County Health Department Cyclosporiasis Update](https://lucascountyhealth.com/cyclo/) (Toledo-Lucas County Health Department Cyclosporiasis Update); [Cyclospora lettuce outbreak now tied to 20 states](https://www.washingtonpost.com/health/2026/08/28/cyclospora-lettuce-outbreak-now-tied-20-states/) (The Washington Post); [Trump's pick for FDA faces scrutiny after cyclospora outbreak](https://www.bbc.com/news/articles/cvgyeen2g81o) (BBC); [Cyclospora outbreak linked to recalled iceberg lettuce tied to 3 more states, FDA says](https://www.cbsnews.com/news/cyclospora-outbreak-recalled-iceberg-lettuce-more-states/) (CBS News); [CDC adds more than 3,000 new Cyclospora cases](https://www.cidrap.umn.edu/cyclospora/cdc-adds-more-3000-new-cyclospora-cases) (CIDRAP)
@@ -338,7 +338,7 @@ Search window: 7 day(s) ending 2026-08-29
 ## Highest priority items
 ### News Release June 6, 2026 Hantavirus monitoring completed for Texas passengers from the MV Hondius The two Texas residents who were being monitored for hantavirus have successfully completed their .....
 - Source: Texas Department of State Health Services News
-- Date: 2026-08-29T21:44+00:00
+- Date: 2026-08-30T00:09+00:00
 - URL: https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius
 - Category: Policy, surveillance, and public health infrastructure
 - Summary: Denos su opinión sobre sus experiencias con las instalaciones, el personal, la comunicación y los servicios del DSHS. Provide feedback on your experience with DSHS facilities, staff, communication, and services. Learn more about the Sunset process and provide feedback.
@@ -442,6 +442,8 @@ Search window: 7 day(s) ending 2026-08-29
   Limited detail was available from feed metadata alone.
 - [DR Congo begins vaccinating against its largest and deadliest Ebola outbreak | AJ #shorts](https://www.modernghana.com/videonews/aljazeera/1/708167) | Modern Ghana | 2026-08-29T18:36+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
+- [Ebola outbreak sparks concern over school reopening in DR Congo](https://eastleighvoice.co.ke/regional/394494/ebola-outbreak-sparks-concern-over-school-reopening-in-dr-congo) | The Eastleigh Voice | 2026-08-29T14:59+00:00 | Outbreaks and emerging infections
+  Limited detail was available from feed metadata alone.
 - [WHO reports 5,794 Ebola cases and 2,786 deaths in Congo](https://www.anews.com.tr/health/2026/08/29/who-reports-5794-ebola-cases-and-2786-deaths-in-congo/amp) | A News | 2026-08-29T11:06+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Measles’ role in child’s death ignites fight between RFK Jr. and Pennsylvania governor](https://www.washingtonpost.com/health/2026/08/28/measles-death-pennsylvania-disputed-rfk-jr-josh-shapiro-feud/) | The Washington Post | 2026-08-29T04:42+00:00 | Outbreaks and emerging infections
@@ -471,8 +473,6 @@ Search window: 7 day(s) ending 2026-08-29
 - [The Ebola outbreak in DR Congo is not just a medical crisis – it is also a crisis of trust](https://news.google.com/rss/articles/CBMipwFBVV95cUxQQUtQc3pUTUtwaHZLNFlPR3ZaUmpLZWtXblAwUXVwVU1tdGljNWp4YWE3X1VuVWtGUEo1azR2TWFTdDNIUjdXbGx4TlJwNm1DRjZpQ1FVRU16V1ZQWFJGTmx0WWxUS2UtSDFTdXJJZC1EeXQ2cFN5T1V1Z0xVRWdwUDVzQVlZS05iLWR5U3RuQWV1SGhQR0dDc1NQWjBIQmRNdjdIZ1ZjRQ?oc=5) | The Independent | 2026-08-28T16:25+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Ebola Vaccine Rollout Begins In DR Congo Amid Continuing Outbreak](https://news.google.com/rss/articles/CBMivwFBVV95cUxNTzBZWFE3aXJlZXVtZEFCdHFfbmhDXzIydFoyWHVEdno0aktqQUhyMERTT2NFVmtCRGlmbmNsMnpiXzh4bUl6TmZrVllUdzRTcjBNMWFSRjhXVWlNcHNLckpWTXgxdjNmdllwMTE0OWMzOF8wclk4WVp1aTFERFlRdWYzV2lRR3Z5TldLaThJdHdzN1pnTWh5UEdZX1dZaXR0czEycnE2dFpYY0xrTk91bFF2RWdCLW5tSWpQelpsNA?oc=5) | Forbes | 2026-08-28T16:02+00:00 | Outbreaks and emerging infections
-  Limited detail was available from feed metadata alone.
-- [Ebola outbreak sparks concern over school reopening in DR Congo](https://news.google.com/rss/articles/CBMiwgFBVV95cUxOTy1mSHFGVDdCNzlxMkhBcmVRM3l4UGZMNncwQUVVT2dpM2pqc1k3amN6VV9oRGZaRkxwNWZSWEgyNVNzd0s1NmRodmprYVoxcXV3Tm52MzN5ZWlxZjh4THdBSnd6Uk82RzZQTFVYR0o5c2xVSm9kQlZpM2FhUnJfRmN6cGJtcU5PX2x0ZDYzblEyNUxZX1B1RkpsRTk2WWFKaDhKVVNpLTZBZURiMzBobUdPdjhPZXpnNFdOekhKSW04QQ?oc=5) | The EastAfrican | 2026-08-28T14:30+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
 - [Congo’s Ebola outbreak spreads to 2 new health zones](https://news.google.com/rss/articles/CBMikgFBVV95cUxNdTYzU0JzcV9pMTYwQWU2eFNkdFJyWU1KVkxyVjRpTkM4R2ZJYlZYd1RIZnZwNEI2ZjJaY2VXZmROdVZBaEJXWWZqc2ZaWllsYmJvT3Z3U21vd1lSYnJrNVhiZmNSVDF4NlFkbEY0eGtXbkplalh5QUd6ekhPSFNqYm9vQzFkdm9qbE8zWDhFLUFrZ9IBpgFBVV95cUxQcEYzWkZ3X1ZmN1dJRWlxUll3Zi1jZVhpYi15TFpCa0dpTnpyTk5hUFFENXBLUlBJUzhobU5lZ3lpSHhXT0h0VWwyRm5qWGRERDdDRkl4ZXdGajhaX0dTVHozQ09tdGZTbUY2VERYVlRVamdqU1pZVlBTOEpDaklxMjRqZzE1bWZGQ3BDWmczdjVtV1FhQWNIak0zZjVSOXZfdkVVMEp3?oc=5) | AL.com | 2026-08-28T14:03+00:00 | Outbreaks and emerging infections
   Limited detail was available from feed metadata alone.
