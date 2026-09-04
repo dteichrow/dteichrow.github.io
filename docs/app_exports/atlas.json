@@ -347,7 +347,7 @@
       "related_stories": [
         {
           "display_title": "Measles transmission and vaccination",
-          "latest_update_summary": "Baseline snapshot created with 118 clustered item(s) across 91 source(s).",
+          "latest_update_summary": "Baseline snapshot created with 121 clustered item(s) across 96 source(s).",
           "story_id": "story_0cc2d5322bc76f8f",
           "story_url": "stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
           "story_web_path": "stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html"
@@ -1446,7 +1446,15 @@
       "reference_name": "Malaria",
       "reference_url": "reference/malaria.html",
       "reference_web_path": "reference/malaria.html",
-      "related_stories": [],
+      "related_stories": [
+        {
+          "display_title": "Malaria",
+          "latest_update_summary": "Baseline snapshot created with 10 clustered item(s) across 10 source(s).",
+          "story_id": "story_bd120a908eaabacf",
+          "story_url": "stories/story_bd120a908eaabacf-malaria.html",
+          "story_web_path": "stories/story_bd120a908eaabacf-malaria.html"
+        }
+      ],
       "route_count": 3,
       "slug": "malaria",
       "spread_routes": [
@@ -1515,7 +1523,7 @@
         }
       ],
       "status": "mixed",
-      "story_count": 0,
+      "story_count": 1,
       "subtitle": "Anopheles ecologies, empire, labor, and the long retreat and return of a mosquito-borne world disease",
       "summary": "Malaria shows how vector ecology, land use, labor systems, altitude, war, and climate can redraw disease geography across centuries without a single tidy origin story.",
       "variant_count": 0,
@@ -1841,6 +1849,6 @@
       "writing_state": "adjacent"
     }
   ],
-  "generated_at": "2026-09-03T21:20:20",
-  "run_id": "run_f823f78020005bf9"
+  "generated_at": "2026-09-04T02:33:43",
+  "run_id": "run_f0448f892aad721c"
 }
