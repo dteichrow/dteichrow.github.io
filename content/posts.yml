@@ -1,4 +1,46 @@
 posts:
+- slug: project-sunshines-supply-of-human
+  title: Project SUNSHINE’s Supply of Human Bones
+  date: '2026-09-05'
+  canonical_url: https://theedgeofepidemiology.substack.com/p/project-sunshines-supply-of-human
+  excerpt: 'Project SUNSHINE Bulletin No. 11, issued by the University of Chicago’s
+    Enrico Fermi Institute for Nuclear Studies on December 1, 1955. The archival copy
+    bears later markings confirming its declassification. Source: U.S. Department
+    of Energy archives, F. C. Libby collection, via the RMI Nuclear Justice Documents
+    database. On October 26, 1953, Robert Dudley of the Atomic Energy Commission’s
+    Division of Biology and Medicine wrote a letter to Shields Warren over at Boston’s
+    New England Deaconess Hospital’s Cancer Research Institute. Warren was a pathologist
+    at Harvard Medical School and had previ'
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/1f4cca4f-3075-45f6-8887-0275407d7047_1609x2048.png
+  source_mode: substack_reader
+  wordcount: 2417
+  status: summary_only
+  dek: ''
+  topics: []
+  series: []
+  seo_title: ''
+  seo_description: ''
+  primary_keyword: ''
+  topic_cluster: ''
+  indexing_strategy: noindex_stub
+  related_atlases: []
+  related_reference_slugs: []
+  related_story_ids: []
+  search_excerpt: 'Project SUNSHINE Bulletin No. 11, issued by the University of Chicago’s
+    Enrico Fermi Institute for Nuclear Studies on December 1, 1955. The archival copy
+    bears later markings confirming its declassification. Source: U.S. Department
+    of Energy archives, F. C. Libby collection, via '
+  local_body_path: ''
+  body_synced_at: ''
+  body_source_url: ''
+  body_source_mode: ''
+  body_source_file: ''
+  body_wordcount: null
+  hero_mode: cover
+  notes: ''
+  first_seen_at: '2026-09-05T13:54:39+00:00'
+  last_synced_at: '2026-09-05T13:54:39+00:00'
+  upstream_tags: []
 - slug: college-footballs-century-long-experiment
   title: College Football’s Century-Long Experiment in Injury Prevention
   date: '2026-08-27'
