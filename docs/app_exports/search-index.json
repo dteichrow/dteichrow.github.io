@@ -625,14 +625,14 @@
   {
     "title": "Measles transmission and vaccination",
     "section": "Newsdesk",
-    "summary": "Baseline snapshot created with 139 clustered item(s) across 110 source(s).",
+    "summary": "Baseline snapshot created with 134 clustered item(s) across 101 source(s).",
     "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
     "keywords": "new_official_source confirmed_case severity_or_death transmission_change new_geography Cross-region / unassigned United States"
   },
   {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
-    "summary": "Baseline snapshot created with 88 clustered item(s) across 71 source(s).",
+    "summary": "Baseline snapshot created with 90 clustered item(s) across 73 source(s).",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
     "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel new_geography Africa Democratic Republic of the Congo"
   },
@@ -646,30 +646,30 @@
   {
     "title": "Cyclosporiasis",
     "section": "Newsdesk",
-    "summary": "Baseline snapshot created with 35 clustered item(s) across 28 source(s).",
+    "summary": "Baseline snapshot created with 34 clustered item(s) across 29 source(s).",
     "url": "/stories/story_7ecd65705353b55c-cyclosporiasis.html",
     "keywords": "new_official_source confirmed_case new_geography Cross-region / unassigned United States"
   },
   {
     "title": "Dengue and arboviruses",
     "section": "Newsdesk",
-    "summary": "Baseline snapshot created with 28 clustered item(s) across 20 source(s).",
+    "summary": "Baseline snapshot created with 26 clustered item(s) across 19 source(s).",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
-    "keywords": "new_official_source severity_or_death transmission_change new_geography South Asia Brazil"
+    "keywords": "new_official_source severity_or_death transmission_change new_geography North America "
   },
   {
     "title": "Malaria",
     "section": "Newsdesk",
-    "summary": "Baseline snapshot created with 9 clustered item(s) across 9 source(s).",
+    "summary": "Baseline snapshot created with 8 clustered item(s) across 8 source(s).",
     "url": "/stories/story_bd120a908eaabacf-malaria.html",
-    "keywords": "new_official_source suspected_case confirmed_case severity_or_death Africa United Kingdom"
+    "keywords": "new_official_source suspected_case confirmed_case severity_or_death Cross-region / unassigned "
   },
   {
     "title": "Occupational and environmental epidemiology",
     "section": "Newsdesk",
-    "summary": "Baseline snapshot created with 5 clustered item(s) across 5 source(s).",
+    "summary": "Baseline snapshot created with 4 clustered item(s) across 4 source(s).",
     "url": "/stories/story_17a354bcafcca4ce-occupational-and-environmental-epidemiology.html",
-    "keywords": "new_official_source severity_or_death new_geography healthcare_transmission laboratory_or_genomic Africa Democratic Republic of the Congo"
+    "keywords": "new_official_source severity_or_death new_geography laboratory_or_genomic Africa Democratic Republic of the Congo"
   },
   {
     "title": "Ebola virus disease",
