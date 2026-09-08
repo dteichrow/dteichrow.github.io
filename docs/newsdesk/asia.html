@@ -125,181 +125,38 @@
       @media (max-width: 620px) { .site-nav, .section-nav-links { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 2px; } .site-header-copy { min-width: 0; } .archive-row { flex-direction: column; align-items: flex-start; } .badge, .link-pill { line-height: 1.2; } .outbreak-dashboard { grid-template-columns: 1fr; } .dashboard-item { padding: 11px 12px; } .live-update-banner { right: 12px; bottom: 12px; width: calc(100vw - 24px); } .live-update-actions { justify-content: space-between; } }
     </style>
 <style id="eoe-shell-import-style">
-  body { padding-top: 112px !important; }
-  .eoe-shell-nav {
-    position: fixed;
-    inset: 0 0 auto 0;
-    z-index: 10000;
-    background: linear-gradient(180deg, rgba(15, 20, 27, 0.98), rgba(21, 29, 39, 0.98));
-    color: #efe6d6;
-    border-bottom: 1px solid rgba(214, 202, 183, 0.2);
-    box-shadow: 0 14px 34px rgba(4, 7, 10, 0.28);
-  }
-  .eoe-shell-nav-inner {
-    max-width: 1160px;
-    margin: 0 auto;
-    padding: 18px 18px 16px;
-    display: grid;
-    gap: 12px;
-    font-family: "Avenir Next", "Helvetica Neue", sans-serif;
-  }
-  .eoe-shell-brand {
-    display: inline-flex;
-    flex-wrap: wrap;
-    column-gap: 0.32em;
-    row-gap: 0.12em;
-    align-items: baseline;
-    color: #f5ecdd;
-    font: 700 clamp(1.2rem, 2vw, 1.65rem)/1.05 "Iowan Old Style", Georgia, serif;
-    text-decoration: none;
-    letter-spacing: 0;
-  }
-  .eoe-shell-byline {
-    color: #8fb8d8;
-    font: 600 0.48em/1 "Avenir Next", "Helvetica Neue", sans-serif;
-  }
-  .eoe-shell-brand:hover { text-decoration: none; }
-  .eoe-shell-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 18px;
-    padding-top: 10px;
-    border-top: 1px solid rgba(214, 202, 183, 0.18);
-  }
-  .eoe-shell-links a {
-    flex: 0 0 auto;
-    padding: 0 0 6px;
-    border-bottom: 2px solid transparent;
-    color: rgba(239, 230, 214, 0.76);
-    text-decoration: none;
-    background: transparent;
-    font-size: 0.95rem;
-    font-weight: 500;
-    white-space: nowrap;
-    transition: color 180ms ease, border-color 180ms ease;
-  }
-  .eoe-shell-links a.active {
-    border-color: rgba(201, 168, 76, 0.88);
-    color: #f8f1e6;
-    font-weight: 700;
-  }
-  .eoe-shell-links a:hover {
-    color: #f8f1e6;
-    text-decoration: none;
-    border-color: rgba(201, 168, 76, 0.52);
-  }
-  /* Cleaner fix would live in the Pathogen Dispatch renderer, but this import-layer pass
-     keeps the simplification isolated to the umbrella site. */
-  .site-header,
-  .hero,
-  .panel,
-  .section-nav {
-    background: transparent !important;
-    border: 0 !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-  }
-  .site-header {
-    padding: 0 0 12px !important;
-    gap: 12px !important;
-  }
-  .site-header-title {
-    font-size: 1rem !important;
-    color: #42515e !important;
-  }
-  .site-nav,
-  .section-nav-links {
-    gap: 14px !important;
-  }
-  .site-nav-link,
-  .section-nav-link {
-    padding: 0 0 5px !important;
-    border: 0 !important;
-    border-radius: 0 !important;
-    border-bottom: 2px solid transparent !important;
-    background: transparent !important;
-    box-shadow: none !important;
-    color: #42515e !important;
-    font-weight: 500 !important;
-  }
-  .site-nav-link:hover,
-  .section-nav-link:hover {
-    background: transparent !important;
-    color: #173046 !important;
-    text-decoration: underline !important;
-  }
-  .site-nav-link.active {
-    color: #173046 !important;
-    font-weight: 700 !important;
-    text-decoration: none !important;
-    border-color: rgba(141, 63, 47, 0.48) !important;
-  }
-  .hero {
-    padding: 0 0 6px !important;
-    overflow: visible !important;
-  }
-  .hero::before,
-  .hero::after,
-  .panel::before,
-  .panel::after,
-  .site-header::before,
-  .site-header::after {
-    display: none !important;
-  }
-  .panel,
-  .panel-grid {
-    gap: 16px !important;
-  }
-  .panel > h2:first-child,
-  .panel > .muted-note:first-child {
-    margin-top: 0 !important;
-  }
-  .section-nav {
-    display: none !important;
-  }
-  .meta-row-plain {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
-    margin-top: 10px;
-  }
-  .meta-inline,
-  .card-meta-text {
-    color: #42515e;
-    font: 500 0.86rem/1.55 "Avenir Next", "Helvetica Neue", sans-serif;
-  }
-  .card-meta-text {
-    margin: 0;
-  }
-  .atlas-status-pill,
-  .story-status-pill {
-    letter-spacing: 0.08em !important;
-    text-transform: uppercase !important;
-  }
-  .site-card .meta-row .badge {
-    max-width: none;
-  }
-  .link-pill {
-    background: rgba(255,252,245,0.92) !important;
-  }
-  @media (max-width: 760px) {
-    body { padding-top: 148px !important; }
-    .eoe-shell-links {
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      overflow-y: hidden;
-      width: 100%;
-      padding-bottom: 2px;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
-      touch-action: pan-x;
-      overscroll-behavior-x: contain;
-    }
-    .eoe-shell-links::-webkit-scrollbar { display: none; }
-  }
+body { padding-top:0 !important; margin:0; background:#f6f1e4 !important; color:#142126; }
+.eoe-shell-nav { position:relative; background:#f6f1e4; color:#142126; border-bottom:3px solid #b84a3e; }
+.eoe-shell-nav-inner { max-width:1320px; margin:auto; padding:20px 4vw; display:flex; align-items:center; justify-content:space-between; gap:24px; font-family:"Avenir Next","Helvetica Neue",Arial,sans-serif; }
+.eoe-shell-brand { display:flex; align-items:center; gap:12px; color:#142126; text-decoration:none; font:700 20px/1.05 "Iowan Old Style",Palatino,Georgia,serif; flex-shrink:0; }
+.eoe-shell-mark { border:1px solid #46545b; padding:12px 8px; font-style:italic; }
+.eoe-shell-byline { display:block; margin-top:8px; color:#46545b; font:10px/1.4 "Avenir Next","Helvetica Neue",Arial,sans-serif; text-transform:uppercase; letter-spacing:.08em; }
+.eoe-shell-links { display:flex; flex-wrap:wrap; align-items:center; gap:8px 24px; }
+.eoe-shell-links a { display:inline-flex; align-items:center; min-height:44px; color:#142126; font-size:14px; text-decoration:none; border-bottom:2px solid transparent; }
+.eoe-shell-links a:hover,.eoe-shell-links a.active { border-color:#155d66; }
+.eoe-import-skip { position:absolute; top:12px; left:12px; z-index:20000; background:#142126; color:#fff; padding:12px; }
+.eoe-import-skip:not(:focus) { clip-path:inset(50%); width:1px; height:1px; padding:0; overflow:hidden; }
+:focus-visible { outline:3px solid #b84a3e !important; outline-offset:4px; }
+.eoe-import-footer { max-width:1320px; margin:40px auto 0; padding:24px 4vw; border-top:1px solid #46545b; font-family:"Avenir Next","Helvetica Neue",Arial,sans-serif; }
+.eoe-import-footer nav { display:flex; flex-wrap:wrap; gap:12px 24px; }
+.eoe-import-footer a { color:#155d66; padding:8px 0; }
+.hero,.panel,.section-nav { background:transparent !important; border:0 !important; border-radius:0 !important; box-shadow:none !important; }
+.hero { padding:0 0 6px !important; overflow:visible !important; }
+.hero::before,.hero::after,.panel::before,.panel::after { display:none !important; }
+.section-nav { display:none !important; }
+.meta-row-plain { display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-top:10px; }
+.meta-inline,.card-meta-text { color:#46545b; font:500 .86rem/1.55 "Avenir Next","Helvetica Neue",Arial,sans-serif; }
+.card-meta-text { margin:0; }
+.site-card .meta-row .badge { max-width:none; }
+.badge.tone-major { color:#75540c !important; }
+.link-pill { background:#fffdf7 !important; }
+@media(max-width:800px) {
+ .eoe-shell-nav-inner { align-items:flex-start; flex-direction:column; gap:14px; padding:16px 5vw; }
+ .eoe-shell-links { gap:4px 20px; }
+ .eoe-shell-links a { font-size:13px; }
+}
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation:none !important; transition:none !important; scroll-behavior:auto !important; } }
 </style>
-
     <link rel="canonical" href="https://devinteichrow.com/newsdesk/asia.html" />
     <link rel="alternate" type="application/rss+xml" title="The Edge of Epidemiology RSS" href="https://theedgeofepidemiology.substack.com/feed" />
     <meta name="description" content="Asia Watch from The Pathogen Dispatch, the Edge of Epidemiology source-first infectious-disease reporting desk." />
@@ -315,9 +172,9 @@
     <meta name="twitter:image" content="https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png" />
     <script type="application/ld+json" data-eoe-seo>{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Asia Watch | The Pathogen Dispatch", "url": "https://devinteichrow.com/newsdesk/asia.html", "description": "Asia Watch from The Pathogen Dispatch, the Edge of Epidemiology source-first infectious-disease reporting desk.", "image": "https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png", "isPartOf": {"@type": "WebSite", "name": "The Edge of Epidemiology", "url": "https://devinteichrow.com/"}, "author": {"@type": "Person", "name": "Devin Teichrow", "url": "https://devinteichrow.com/about/", "sameAs": ["https://theedgeofepidemiology.substack.com", "https://x.com/edgeofepi", "https://www.instagram.com/edgeofepi/", "https://www.linkedin.com/in/devin-teichrow-msc-938942254", "https://medium.com/@EdgeofEpi"]}}</script>
 </head>
-  <body><div class="eoe-shell-nav"><div class="eoe-shell-nav-inner"><a class="eoe-shell-brand" href="/"><span>The Edge of Epidemiology</span> <span class="eoe-shell-byline">by Devin Teichrow</span></a><nav class="eoe-shell-links" aria-label="Umbrella navigation"><a class="" href="/">Home</a><a class="active" href="/newsdesk/">Newsdesk</a><a class="" href="/notebook/">Notebook</a><a class="" href="/atlases/pathogen/">Pathogen Atlas</a><a class="" href="/atlases/maritime/">Maritime Atlas</a><a class="" href="/essays/">Essays</a><a class="" href="/topics/">Topics</a><a class="" href="/historical/">Historical</a><a class="" href="/reference/">Reference</a><a class="" href="/opportunities/">Opportunities</a><a class="" href="/search/">Search</a></nav></div></div>
-    <main class="page">
-      <header class="site-header"><div class="site-header-copy"><div class="kicker">The Pathogen Dispatch</div><p class="site-header-title">Source-first newsroom desks</p></div><nav class="site-nav" aria-label="Site navigation"><a class="site-nav-link" href="/">Edge home</a><a class="site-nav-link" href="/newsdesk/">Home</a><a class="site-nav-link" href="/notebook/">Notebook</a><a class="site-nav-link" href="/atlases/pathogen/">Atlas</a><a class="site-nav-link" href="/newsdesk/outbreaks/">Outbreak terminal</a><a class="site-nav-link" href="/newsdesk/watch/">Global watch</a><a class="site-nav-link" href="/newsdesk/africa/">Africa</a><a class="site-nav-link active" href="/newsdesk/asia/" aria-current="page">Asia</a><a class="site-nav-link" href="/newsdesk/research/">Research</a><a class="site-nav-link" href="/newsdesk/official/">Official alerts</a><a class="site-nav-link" href="/newsdesk/archive/">Archive</a></nav></header>
+  <body><a class="eoe-import-skip" href="#eoe-import-main">Skip to content</a><header class="eoe-shell-nav"><div class="eoe-shell-nav-inner"><a class="eoe-shell-brand" href="/" aria-label="The Edge of Epidemiology — home"><span class="eoe-shell-mark" aria-hidden="true">E∕E</span><span>The Edge of<br>Epidemiology<small class="eoe-shell-byline">By Devin Teichrow</small></span></a><nav class="eoe-shell-links" aria-label="Primary navigation"><a class="" href="/essays/">Essays</a><a class="" href="/tools/">Exhibits</a><a class="active" href="/newsdesk/" aria-current="page">Newsdesk</a><a class="" href="/about/">About</a><a class="" href="/opportunities/">Work with me</a><a class="" href="/search/">Search</a></nav></div></header>
+    <main class="page" id="eoe-import-main" tabindex="-1">
+
       <section class="live-update-banner panel utility-panel" id="live-update-banner" hidden aria-live="polite" role="status" data-live-update-banner="true"><div class="live-update-copy"><div class="section-nav-label">New edition available</div><p class="live-update-text" id="live-update-text">An updated edition is available. Load the latest run when you are ready.</p></div><div class="live-update-actions"><button class="live-update-dismiss" id="live-update-dismiss" type="button" onclick="(function(btn){const banner=btn.closest('[data-live-update-banner]');if(banner){banner.hidden=true;banner.style.display='none';const runId=(banner.dataset&&banner.dataset.pendingRunId)||'';const key=(banner.dataset&&banner.dataset.dismissKey)||('pathogen-dispatch-live-update-dismissed:'+window.location.pathname);try{window.sessionStorage.setItem(key, window.location.pathname+'::'+(runId||'unknown'));}catch(error){}}return false;})(this)">Keep reading</button><button class="live-update-button" id="live-update-refresh" type="button" onclick="(function(btn){const banner=btn.closest('[data-live-update-banner]');if(banner){banner.hidden=true;banner.style.display='none';}const url=new URL(window.location.href);url.searchParams.set('_edition', String(Date.now()));window.location.replace(url.toString());return false;})(this)">Load latest</button></div></section>
       <section class="hero" id="desk-top">
         <p class="kicker">Source-first desk</p>
@@ -330,7 +187,7 @@
       </section>
       <section class="panel" id="latest-signals">
         <h2>Latest Signals</h2>
-        <div class="card-grid"><article class="site-card"><div class="kicker">Publisher coverage</div><h3><a href="https://www.lokmattimes.com/international/bangladesh-measles-outbreak-claims-three-more-lives-death-toll-rises-to-994/">Bangladesh: Measles outbreak claims three more lives, death toll rises to 994</a></h3><p>With the latest fatalities, the total number of suspected measles fatalities in Bangladesh has risen to 894, while confirmed deaths from measles remain unchanged at 100, United News of Bangladesh (UNB) reported. During the 24-hour period, the DGHS recorded 1,043 new suspected measles cases in Bangladesh, raising the total number of suspected cases in the country to 164,148. Referring to Expanded Programme on Immunisation (EPI) data reported by Bangladeshi daily Samakal, the GCDG noted that measles vaccination coverage fell to 56.2 per cent in 2025, the lowest level recorded between 2017 and 2025.</p><div class="meta-row meta-row-plain"><span class="meta-inline">lokmattimes.com</span></div></article><article class="site-card"><div class="kicker">Publisher coverage</div><h3><a href="https://www.aa.com.tr/en/asia-pacific/child-deaths-linked-to-measles-near-1-000-in-bangladesh/4048194">Child deaths linked to measles near 1,000 in Bangladesh</a></h3><p>Meanwhile, the Health Ministry reported 843 new cases involving measles-like symptoms and 74 new confirmed infections, bringing the totals to 163,105 symptomatic cases and 19,641 confirmed cases. Of the fatalities, 100 were confirmed measles deaths after one more child died in the past 24 hours, according to the Directorate General of Health Services (DGHS) under the Health Ministry. A total of 464 deaths were recorded in the Dhaka division alone.</p><div class="meta-row meta-row-plain"><span class="meta-inline">Anadolu Ajansı</span></div></article><article class="site-card"><div class="kicker">Brief source signal</div><h3><a href="https://www.nst.com.my/world/world/2026/09/1527939/bangladesh-dengue-outbreak-accelerates-straining-hospitals">Bangladesh dengue outbreak accelerates, straining hospitals</a></h3><p>Only a brief source description was available at publication time.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Brief source signal</span><span class="meta-inline">nst.com.my</span></div></article><article class="site-card"><div class="kicker">Brief source signal</div><h3><a href="https://outbreaknewstoday.substack.com/p/dengue-in-the-philippines-increasing">Dengue in the Philippines: Increasing trend reported in more than 100 cities</a></h3><p>Only a brief source description was available at publication time.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Brief source signal</span><span class="meta-inline">Outbreak News Today</span></div></article><article class="site-card"><div class="kicker">Brief source signal</div><h3><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBQeHRuekZMd1NKb2hQMzJmTmhrNXBkQTNpQkFxUXB0M1pqSzFPM09lNVB0VFBDSkZ5R2xxX3FXbm5pa1dCRHBiSm41blg1cy1fVG13OS15Wm1iNnZsTTNR?oc=5">Bangladesh dengue outbreak worsens with over 42,000 cases and 117 deaths</a></h3><p>Only a brief source description was available at publication time.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Brief source signal</span><span class="meta-inline">The Jerusalem Post</span></div></article><article class="site-card"><div class="kicker">Brief source signal</div><h3><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNSk81OG5mS2dVVGllZERsQlM0YkJadmI2RGhfWEFVY3ZYMHMzYkxhS19TU2hDMnNjb0tRTG5pNFRPcDl0N2FGdVB3NWhfcHY5djhkQVBjczI1ZUQ0eVlwNUpxS0RiUHpkYmhpcG9abVZGTnlNRWRGUXVMSFRqdnV5VGRtTHIyckVpTW9RWlU3MGg4aEpMeHJaNkg1WkhBNmd1Q3ZxRFV2U1RkQzJwSEZvTXFNeWg?oc=5">Bangladesh dengue outbreak accelerates as hospitals come under strain</a></h3><p>Only a brief source description was available at publication time.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Brief source signal</span><span class="meta-inline">The Straits Times</span></div></article><article class="site-card"><div class="kicker">Brief source signal</div><h3><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxNRzMtSVZLTW9zMi1wamNwVGdPNVdPOTZaVzdfY3J3SExERnNkQ19GYmpPemtIbHRWbm1Rb3JfYThJWnpXQVNZejVXaGpuckxRdERqdzU5ZHhkdFFlcEZVLXJIb0l4R280MC1JR285UDN5ejdId2tDa3JIZHNiQkZfcDB1elJLNE5DOF91Z0ROYS1HUno5cWd1OWJObmZBRkNvQU1nTUFxQVdVS0kxQng0SEt6NGlPQ0MyZklfQmZaMNIBxAFBVV95cUxQSXcxT1pYMVdOalE3M0kwUFRwRHNIcHVYNDdsVk1UWGh6TzBzZDZCV2pEcndwQ2tLMWhhWkdIVW96Vm9wZUVyY0dxcGh1TzVHYzRGcjZUSlFUMkNneWp2V3BYaFQ0NC1EWTNyd0Z0N0JoTjFIZlpQS0hrZnRFSUtneENQaUZzMlpEUlh2VWhPdi02a2llNTBjc2xqWTBrU0FVeDEwSmN0QkFGNXlPamJEQ2RmMWdXZFpYakJyV2dpbl9hcVVs?oc=5">Dengue Outbreak Escalates: Bangladesh Hospitals Strained as Cases Surge</a></h3><p>Only a brief source description was available at publication time.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Brief source signal</span><span class="meta-inline">Devdiscourse</span></div></article><article class="site-card"><div class="kicker">Brief source signal</div><h3><a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxQNjBTYW9ycWZmZlVfemNVVjFYY1VpVDRKM3BXRkhmTlNJZ2J6VnNzVUkwd2tfMXVrbGVqRFdSOUV3SWhzRnFfVlVZR3N6eEJReFh4ZWdyUlNUNlNpbk1sR2RoQmphb29wWG1UVGtvckg5YVlNOXppWDNua0ZpVEx6S0Rlb29jUHJBSEcwYzZCTld2a1VKdVAzY1pyLUZnUWo4MHZvdW1QcnFTcFVmbUM1RXU1a2dMenlhS2RoNDJBWGNsMU9pdDc2aWVpRU9mQdIBzgFBVV95cUxQeDJteGZLRW9kSWhPMTZJTDM1MlNGa1FmVVRRWXR4WEhRVDZ3RWxSekhubDJGWnBFUnZ6Rndqdk1WLVZHSEN5YjJGd05WaVZrR2YwWTZJMUctSkNXWDB0SHhpOWxaUlFoWlhmdnhmQm5ZWHAwTktLd05LbjZwQUNHbGl6Q0RjOVIxUmZ3NWZzVlBxaURfRVNqeFYwc1NKQzh5YkJ1elM0QldVS1JEdVd0NU1mdVBOSFRWWk85SUFOQ0Zrd055Ukx5ajJGaUNpUQ?oc=5">Bangladesh measles outbreak nears 1,000 child deaths as hospital wards fill</a></h3><p>Only a brief source description was available at publication time.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Brief source signal</span><span class="meta-inline">South China Morning Post</span></div></article><article class="site-card"><div class="kicker">Brief source signal</div><h3><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOMXcyTHdtaFplYzFHWXpDR3RTZjNWU3ZTTmRKUWVEa3hRaTA4MWttZnA0cE5XelRILVBISUZRSEpkTXhSTVAxUC04VzVkYXBMeE93ZU9JWGpaSm9RSjJiWGRSLXlKUGJtVEtmRUViOS1TMVlCeHpEVjRfLVVyOEkwcHpYSHZaUl9tQnV5enVTQ1B4RW5WLWpQNUxYVGNrZk5ZaWNNWQ?oc=5">Sri Lanka Dengue Outbreak 2026 - DREF Operational Update (MDRLK024)</a></h3><p>Only a brief source description was available at publication time.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Brief source signal</span><span class="meta-inline">ReliefWeb</span></div></article><article class="site-card"><div class="kicker">Brief source signal</div><h3><a href="https://outbreaknewstoday.substack.com/p/china-reports-two-additional-h9n2">China reports two additional H9N2 avian influenza cases in Anhui and Beijing provinces</a></h3><p>Only a brief source description was available at publication time.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Brief source signal</span><span class="meta-inline">Outbreak News Today</span></div></article></div>
+        <div class="card-grid"><article class="site-card"><div class="kicker">Publisher coverage</div><h3><a href="https://www.lokmattimes.com/international/bangladesh-measles-outbreak-claims-three-more-lives-death-toll-rises-to-994/">Bangladesh: Measles outbreak claims three more lives, death toll rises to 994</a></h3><p>With the latest fatalities, the total number of suspected measles fatalities in Bangladesh has risen to 894, while confirmed deaths from measles remain unchanged at 100, United News of Bangladesh (UNB) reported. During the 24-hour period, the DGHS recorded 1,043 new suspected measles cases in Bangladesh, raising the total number of suspected cases in the country to 164,148. Referring to Expanded Programme on Immunisation (EPI) data reported by Bangladeshi daily Samakal, the GCDG noted that measles vaccination coverage fell to 56.2 per cent in 2025, the lowest level recorded between 2017 and 2025.</p><div class="meta-row meta-row-plain"><span class="meta-inline">lokmattimes.com</span></div></article><article class="site-card"><div class="kicker">Publisher coverage</div><h3><a href="https://www.taipeitimes.com/News/world/archives/2026/09/06/2003863782">Bangladesh measles child toll nears 1,000</a></h3><p>At least 986 children have died since March, while suspected and confirmed cases have surged past 180,000, Bangladeshi Ministry of Health and Family Welfare figures showed. Bangladesh’s deadliest measles outbreak in decades is nearing the grim milestone of 1,000 child deaths, as a devastating epidemic sweeps through the country and crowded hospital wards fill with struggling babies. More than 1,000 suspected cases are reported daily.</p><div class="meta-row meta-row-plain"><span class="meta-inline">Taipei Times</span></div></article><article class="site-card"><div class="kicker">Brief source signal</div><h3><a href="https://www.nst.com.my/world/world/2026/09/1527939/bangladesh-dengue-outbreak-accelerates-straining-hospitals">Bangladesh dengue outbreak accelerates, straining hospitals</a></h3><p>Only a brief source description was available at publication time.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Brief source signal</span><span class="meta-inline">nst.com.my</span></div></article><article class="site-card"><div class="kicker">Brief source signal</div><h3><a href="https://outbreaknewstoday.substack.com/p/dengue-in-the-philippines-increasing">Dengue in the Philippines: Increasing trend reported in more than 100 cities</a></h3><p>Only a brief source description was available at publication time.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Brief source signal</span><span class="meta-inline">Outbreak News Today</span></div></article><article class="site-card"><div class="kicker">Brief source signal</div><h3><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBQeHRuekZMd1NKb2hQMzJmTmhrNXBkQTNpQkFxUXB0M1pqSzFPM09lNVB0VFBDSkZ5R2xxX3FXbm5pa1dCRHBiSm41blg1cy1fVG13OS15Wm1iNnZsTTNR?oc=5">Bangladesh dengue outbreak worsens with over 42,000 cases and 117 deaths</a></h3><p>Only a brief source description was available at publication time.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Brief source signal</span><span class="meta-inline">The Jerusalem Post</span></div></article><article class="site-card"><div class="kicker">Brief source signal</div><h3><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNSk81OG5mS2dVVGllZERsQlM0YkJadmI2RGhfWEFVY3ZYMHMzYkxhS19TU2hDMnNjb0tRTG5pNFRPcDl0N2FGdVB3NWhfcHY5djhkQVBjczI1ZUQ0eVlwNUpxS0RiUHpkYmhpcG9abVZGTnlNRWRGUXVMSFRqdnV5VGRtTHIyckVpTW9RWlU3MGg4aEpMeHJaNkg1WkhBNmd1Q3ZxRFV2U1RkQzJwSEZvTXFNeWg?oc=5">Bangladesh dengue outbreak accelerates as hospitals come under strain</a></h3><p>Only a brief source description was available at publication time.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Brief source signal</span><span class="meta-inline">straitstimes.com</span></div></article><article class="site-card"><div class="kicker">Brief source signal</div><h3><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxNRzMtSVZLTW9zMi1wamNwVGdPNVdPOTZaVzdfY3J3SExERnNkQ19GYmpPemtIbHRWbm1Rb3JfYThJWnpXQVNZejVXaGpuckxRdERqdzU5ZHhkdFFlcEZVLXJIb0l4R280MC1JR285UDN5ejdId2tDa3JIZHNiQkZfcDB1elJLNE5DOF91Z0ROYS1HUno5cWd1OWJObmZBRkNvQU1nTUFxQVdVS0kxQng0SEt6NGlPQ0MyZklfQmZaMNIBxAFBVV95cUxQSXcxT1pYMVdOalE3M0kwUFRwRHNIcHVYNDdsVk1UWGh6TzBzZDZCV2pEcndwQ2tLMWhhWkdIVW96Vm9wZUVyY0dxcGh1TzVHYzRGcjZUSlFUMkNneWp2V3BYaFQ0NC1EWTNyd0Z0N0JoTjFIZlpQS0hrZnRFSUtneENQaUZzMlpEUlh2VWhPdi02a2llNTBjc2xqWTBrU0FVeDEwSmN0QkFGNXlPamJEQ2RmMWdXZFpYakJyV2dpbl9hcVVs?oc=5">Dengue Outbreak Escalates: Bangladesh Hospitals Strained as Cases Surge</a></h3><p>Only a brief source description was available at publication time.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Brief source signal</span><span class="meta-inline">Devdiscourse</span></div></article><article class="site-card"><div class="kicker">Brief source signal</div><h3><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPTmtQLWluOVVnLWtTM0E4RW53clZ1RExsVGZxaGc1bHAyMGl6OWNBY1lLMy1RcUgyZmZRbXp3ZERTaGlnRDI5NFdJVzlqQ0JDOGZiNzNoZk95M0FiZm1uazF2Sk9JSmhvRmpLQWtsNlB6OGJRUDI5anRsMTE3U0xHSE1Mb3hMS2d5NThvWmZiM3o0S1N1T09jVGtyMER6bjdRLU1j?oc=5">Child deaths linked to measles near 1,000 in Bangladesh</a></h3><p>Only a brief source description was available at publication time.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Brief source signal</span><span class="meta-inline">Anadolu Ajansı</span></div></article><article class="site-card"><div class="kicker">Brief source signal</div><h3><a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxQNjBTYW9ycWZmZlVfemNVVjFYY1VpVDRKM3BXRkhmTlNJZ2J6VnNzVUkwd2tfMXVrbGVqRFdSOUV3SWhzRnFfVlVZR3N6eEJReFh4ZWdyUlNUNlNpbk1sR2RoQmphb29wWG1UVGtvckg5YVlNOXppWDNua0ZpVEx6S0Rlb29jUHJBSEcwYzZCTld2a1VKdVAzY1pyLUZnUWo4MHZvdW1QcnFTcFVmbUM1RXU1a2dMenlhS2RoNDJBWGNsMU9pdDc2aWVpRU9mQdIBzgFBVV95cUxQeDJteGZLRW9kSWhPMTZJTDM1MlNGa1FmVVRRWXR4WEhRVDZ3RWxSekhubDJGWnBFUnZ6Rndqdk1WLVZHSEN5YjJGd05WaVZrR2YwWTZJMUctSkNXWDB0SHhpOWxaUlFoWlhmdnhmQm5ZWHAwTktLd05LbjZwQUNHbGl6Q0RjOVIxUmZ3NWZzVlBxaURfRVNqeFYwc1NKQzh5YkJ1elM0QldVS1JEdVd0NU1mdVBOSFRWWk85SUFOQ0Zrd055Ukx5ajJGaUNpUQ?oc=5">Bangladesh measles outbreak nears 1,000 child deaths as hospital wards fill</a></h3><p>Only a brief source description was available at publication time.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Brief source signal</span><span class="meta-inline">South China Morning Post</span></div></article><article class="site-card"><div class="kicker">Brief source signal</div><h3><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOMXcyTHdtaFplYzFHWXpDR3RTZjNWU3ZTTmRKUWVEa3hRaTA4MWttZnA0cE5XelRILVBISUZRSEpkTXhSTVAxUC04VzVkYXBMeE93ZU9JWGpaSm9RSjJiWGRSLXlKUGJtVEtmRUViOS1TMVlCeHpEVjRfLVVyOEkwcHpYSHZaUl9tQnV5enVTQ1B4RW5WLWpQNUxYVGNrZk5ZaWNNWQ?oc=5">Sri Lanka Dengue Outbreak 2026 - DREF Operational Update (MDRLK024)</a></h3><p>Only a brief source description was available at publication time.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Brief source signal</span><span class="meta-inline">ReliefWeb</span></div></article><article class="site-card"><div class="kicker">Brief source signal</div><h3><a href="https://outbreaknewstoday.substack.com/p/china-reports-two-additional-h9n2">China reports two additional H9N2 avian influenza cases in Anhui and Beijing provinces</a></h3><p>Only a brief source description was available at publication time.</p><div class="meta-row meta-row-plain"><span class="story-status-pill">Brief source signal</span><span class="meta-inline">Outbreak News Today</span></div></article></div>
       </section>
       <section class="panel-grid">
         <section class="panel" id="reference-links">
@@ -348,8 +205,8 @@
       const liveUpdateButton = document.getElementById("live-update-refresh");
       const liveUpdateDismiss = document.getElementById("live-update-dismiss");
       const liveUpdateText = document.getElementById("live-update-text");
-      const currentRunId = 'run_7481a9657e357e1f';
-      const currentGeneratedAt = '2026-09-08T08:10:37';
+      const currentRunId = 'run_d0cdf398096886ba';
+      const currentGeneratedAt = '2026-09-08T08:50:26';
       const manifestPath = '/app_exports/manifest.json';
       const liveUpdateStorageKey = `pathogen-dispatch-live-update-dismissed:${window.location.pathname}`;
       const liveUpdateStart = Date.now();
@@ -483,5 +340,5 @@
         window.setInterval(checkForLiveUpdate, 600000);
       }
     </script>
-  </body>
+  <footer class="eoe-import-footer"><p>The Edge of Epidemiology · The Pathogen Dispatch</p><nav aria-label="Further reading"><a href="/topics/">Topics</a><a href="/historical/">Historical</a><a href="/reference/">Reference</a><a href="/methods/">Methods</a><a href="/notebook/">Notebook</a><a href="/opportunities/">Work with me</a></nav></footer></body>
 </html>

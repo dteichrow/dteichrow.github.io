@@ -925,181 +925,38 @@
       }
     </style>
 <style id="eoe-shell-import-style">
-  body { padding-top: 112px !important; }
-  .eoe-shell-nav {
-    position: fixed;
-    inset: 0 0 auto 0;
-    z-index: 10000;
-    background: linear-gradient(180deg, rgba(15, 20, 27, 0.98), rgba(21, 29, 39, 0.98));
-    color: #efe6d6;
-    border-bottom: 1px solid rgba(214, 202, 183, 0.2);
-    box-shadow: 0 14px 34px rgba(4, 7, 10, 0.28);
-  }
-  .eoe-shell-nav-inner {
-    max-width: 1160px;
-    margin: 0 auto;
-    padding: 18px 18px 16px;
-    display: grid;
-    gap: 12px;
-    font-family: "Avenir Next", "Helvetica Neue", sans-serif;
-  }
-  .eoe-shell-brand {
-    display: inline-flex;
-    flex-wrap: wrap;
-    column-gap: 0.32em;
-    row-gap: 0.12em;
-    align-items: baseline;
-    color: #f5ecdd;
-    font: 700 clamp(1.2rem, 2vw, 1.65rem)/1.05 "Iowan Old Style", Georgia, serif;
-    text-decoration: none;
-    letter-spacing: 0;
-  }
-  .eoe-shell-byline {
-    color: #8fb8d8;
-    font: 600 0.48em/1 "Avenir Next", "Helvetica Neue", sans-serif;
-  }
-  .eoe-shell-brand:hover { text-decoration: none; }
-  .eoe-shell-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 18px;
-    padding-top: 10px;
-    border-top: 1px solid rgba(214, 202, 183, 0.18);
-  }
-  .eoe-shell-links a {
-    flex: 0 0 auto;
-    padding: 0 0 6px;
-    border-bottom: 2px solid transparent;
-    color: rgba(239, 230, 214, 0.76);
-    text-decoration: none;
-    background: transparent;
-    font-size: 0.95rem;
-    font-weight: 500;
-    white-space: nowrap;
-    transition: color 180ms ease, border-color 180ms ease;
-  }
-  .eoe-shell-links a.active {
-    border-color: rgba(201, 168, 76, 0.88);
-    color: #f8f1e6;
-    font-weight: 700;
-  }
-  .eoe-shell-links a:hover {
-    color: #f8f1e6;
-    text-decoration: none;
-    border-color: rgba(201, 168, 76, 0.52);
-  }
-  /* Cleaner fix would live in the Pathogen Dispatch renderer, but this import-layer pass
-     keeps the simplification isolated to the umbrella site. */
-  .site-header,
-  .hero,
-  .panel,
-  .section-nav {
-    background: transparent !important;
-    border: 0 !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-  }
-  .site-header {
-    padding: 0 0 12px !important;
-    gap: 12px !important;
-  }
-  .site-header-title {
-    font-size: 1rem !important;
-    color: #42515e !important;
-  }
-  .site-nav,
-  .section-nav-links {
-    gap: 14px !important;
-  }
-  .site-nav-link,
-  .section-nav-link {
-    padding: 0 0 5px !important;
-    border: 0 !important;
-    border-radius: 0 !important;
-    border-bottom: 2px solid transparent !important;
-    background: transparent !important;
-    box-shadow: none !important;
-    color: #42515e !important;
-    font-weight: 500 !important;
-  }
-  .site-nav-link:hover,
-  .section-nav-link:hover {
-    background: transparent !important;
-    color: #173046 !important;
-    text-decoration: underline !important;
-  }
-  .site-nav-link.active {
-    color: #173046 !important;
-    font-weight: 700 !important;
-    text-decoration: none !important;
-    border-color: rgba(141, 63, 47, 0.48) !important;
-  }
-  .hero {
-    padding: 0 0 6px !important;
-    overflow: visible !important;
-  }
-  .hero::before,
-  .hero::after,
-  .panel::before,
-  .panel::after,
-  .site-header::before,
-  .site-header::after {
-    display: none !important;
-  }
-  .panel,
-  .panel-grid {
-    gap: 16px !important;
-  }
-  .panel > h2:first-child,
-  .panel > .muted-note:first-child {
-    margin-top: 0 !important;
-  }
-  .section-nav {
-    display: none !important;
-  }
-  .meta-row-plain {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
-    margin-top: 10px;
-  }
-  .meta-inline,
-  .card-meta-text {
-    color: #42515e;
-    font: 500 0.86rem/1.55 "Avenir Next", "Helvetica Neue", sans-serif;
-  }
-  .card-meta-text {
-    margin: 0;
-  }
-  .atlas-status-pill,
-  .story-status-pill {
-    letter-spacing: 0.08em !important;
-    text-transform: uppercase !important;
-  }
-  .site-card .meta-row .badge {
-    max-width: none;
-  }
-  .link-pill {
-    background: rgba(255,252,245,0.92) !important;
-  }
-  @media (max-width: 760px) {
-    body { padding-top: 148px !important; }
-    .eoe-shell-links {
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      overflow-y: hidden;
-      width: 100%;
-      padding-bottom: 2px;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
-      touch-action: pan-x;
-      overscroll-behavior-x: contain;
-    }
-    .eoe-shell-links::-webkit-scrollbar { display: none; }
-  }
+body { padding-top:0 !important; margin:0; background:#f6f1e4 !important; color:#142126; }
+.eoe-shell-nav { position:relative; background:#f6f1e4; color:#142126; border-bottom:3px solid #b84a3e; }
+.eoe-shell-nav-inner { max-width:1320px; margin:auto; padding:20px 4vw; display:flex; align-items:center; justify-content:space-between; gap:24px; font-family:"Avenir Next","Helvetica Neue",Arial,sans-serif; }
+.eoe-shell-brand { display:flex; align-items:center; gap:12px; color:#142126; text-decoration:none; font:700 20px/1.05 "Iowan Old Style",Palatino,Georgia,serif; flex-shrink:0; }
+.eoe-shell-mark { border:1px solid #46545b; padding:12px 8px; font-style:italic; }
+.eoe-shell-byline { display:block; margin-top:8px; color:#46545b; font:10px/1.4 "Avenir Next","Helvetica Neue",Arial,sans-serif; text-transform:uppercase; letter-spacing:.08em; }
+.eoe-shell-links { display:flex; flex-wrap:wrap; align-items:center; gap:8px 24px; }
+.eoe-shell-links a { display:inline-flex; align-items:center; min-height:44px; color:#142126; font-size:14px; text-decoration:none; border-bottom:2px solid transparent; }
+.eoe-shell-links a:hover,.eoe-shell-links a.active { border-color:#155d66; }
+.eoe-import-skip { position:absolute; top:12px; left:12px; z-index:20000; background:#142126; color:#fff; padding:12px; }
+.eoe-import-skip:not(:focus) { clip-path:inset(50%); width:1px; height:1px; padding:0; overflow:hidden; }
+:focus-visible { outline:3px solid #b84a3e !important; outline-offset:4px; }
+.eoe-import-footer { max-width:1320px; margin:40px auto 0; padding:24px 4vw; border-top:1px solid #46545b; font-family:"Avenir Next","Helvetica Neue",Arial,sans-serif; }
+.eoe-import-footer nav { display:flex; flex-wrap:wrap; gap:12px 24px; }
+.eoe-import-footer a { color:#155d66; padding:8px 0; }
+.hero,.panel,.section-nav { background:transparent !important; border:0 !important; border-radius:0 !important; box-shadow:none !important; }
+.hero { padding:0 0 6px !important; overflow:visible !important; }
+.hero::before,.hero::after,.panel::before,.panel::after { display:none !important; }
+.section-nav { display:none !important; }
+.meta-row-plain { display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-top:10px; }
+.meta-inline,.card-meta-text { color:#46545b; font:500 .86rem/1.55 "Avenir Next","Helvetica Neue",Arial,sans-serif; }
+.card-meta-text { margin:0; }
+.site-card .meta-row .badge { max-width:none; }
+.badge.tone-major { color:#75540c !important; }
+.link-pill { background:#fffdf7 !important; }
+@media(max-width:800px) {
+ .eoe-shell-nav-inner { align-items:flex-start; flex-direction:column; gap:14px; padding:16px 5vw; }
+ .eoe-shell-links { gap:4px 20px; }
+ .eoe-shell-links a { font-size:13px; }
+}
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation:none !important; transition:none !important; scroll-behavior:auto !important; } }
 </style>
-
     <link rel="canonical" href="https://devinteichrow.com/newsdesk/2026/06/2026-06-25.html" />
     <link rel="alternate" type="application/rss+xml" title="The Edge of Epidemiology RSS" href="https://theedgeofepidemiology.substack.com/feed" />
     <meta name="description" content="The Pathogen Dispatch archive for June 25, 2026, with source-first infectious-disease reporting, outbreak tracking, and daily evidence notes." />
@@ -1115,8 +972,8 @@
     <meta name="twitter:image" content="https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png" />
     <script type="application/ld+json" data-eoe-seo>{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Pathogen Dispatch for June 25, 2026 | Edge of Epidemiology", "url": "https://devinteichrow.com/newsdesk/2026/06/2026-06-25.html", "description": "The Pathogen Dispatch archive for June 25, 2026, with source-first infectious-disease reporting, outbreak tracking, and daily evidence notes.", "image": "https://devinteichrow.com/assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png", "isPartOf": {"@type": "WebSite", "name": "The Edge of Epidemiology", "url": "https://devinteichrow.com/"}, "author": {"@type": "Person", "name": "Devin Teichrow", "url": "https://devinteichrow.com/about/", "sameAs": ["https://theedgeofepidemiology.substack.com", "https://x.com/edgeofepi", "https://www.instagram.com/edgeofepi/", "https://www.linkedin.com/in/devin-teichrow-msc-938942254", "https://medium.com/@EdgeofEpi"]}}</script>
 </head>
-<body><div class="eoe-shell-nav"><div class="eoe-shell-nav-inner"><a class="eoe-shell-brand" href="/"><span>The Edge of Epidemiology</span> <span class="eoe-shell-byline">by Devin Teichrow</span></a><nav class="eoe-shell-links" aria-label="Umbrella navigation"><a class="" href="/">Home</a><a class="active" href="/newsdesk/">Newsdesk</a><a class="" href="/notebook/">Notebook</a><a class="" href="/atlases/pathogen/">Pathogen Atlas</a><a class="" href="/atlases/maritime/">Maritime Atlas</a><a class="" href="/essays/">Essays</a><a class="" href="/topics/">Topics</a><a class="" href="/historical/">Historical</a><a class="" href="/reference/">Reference</a><a class="" href="/opportunities/">Opportunities</a><a class="" href="/search/">Search</a></nav></div></div>
-<main class="page">
+<body><a class="eoe-import-skip" href="#eoe-import-main">Skip to content</a><header class="eoe-shell-nav"><div class="eoe-shell-nav-inner"><a class="eoe-shell-brand" href="/" aria-label="The Edge of Epidemiology — home"><span class="eoe-shell-mark" aria-hidden="true">E∕E</span><span>The Edge of<br>Epidemiology<small class="eoe-shell-byline">By Devin Teichrow</small></span></a><nav class="eoe-shell-links" aria-label="Primary navigation"><a class="" href="/essays/">Essays</a><a class="" href="/tools/">Exhibits</a><a class="active" href="/newsdesk/" aria-current="page">Newsdesk</a><a class="" href="/about/">About</a><a class="" href="/opportunities/">Work with me</a><a class="" href="/search/">Search</a></nav></div></header>
+<main class="page" id="eoe-import-main" tabindex="-1">
 <header class="site-nav-shell"><div class="site-nav-brand"><div class="eyebrow">The Pathogen Dispatch</div><p class="site-nav-note">Unified desk navigation</p></div><nav aria-label="Site navigation" class="site-nav-links"><a class="site-nav-link active" href="#view-briefing">Latest briefing</a><a class="site-nav-link" href="#view-tracking">Global watch</a><a class="site-nav-link" href="#view-reference">Research + reference</a><a class="site-nav-link" href="#view-archive">Archive + backfile</a><a class="site-nav-link" href="/newsdesk/">Site index</a></nav></header>
 <section class="hero">
 <div class="desk-bar">
@@ -1723,5 +1580,5 @@
     }
   })();
 </script>
-</body>
+<footer class="eoe-import-footer"><p>The Edge of Epidemiology · The Pathogen Dispatch</p><nav aria-label="Further reading"><a href="/topics/">Topics</a><a href="/historical/">Historical</a><a href="/reference/">Reference</a><a href="/methods/">Methods</a><a href="/notebook/">Notebook</a><a href="/opportunities/">Work with me</a></nav></footer></body>
 </html>
