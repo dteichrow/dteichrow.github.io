@@ -603,46 +603,11 @@
     "keywords": "american epidemics timeline public health history outbreaks exhibit timeline"
   },
   {
-    "title": "Measles transmission and vaccination",
-    "section": "Newsdesk",
-    "summary": "Monitoring: News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....",
-    "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
-    "keywords": "new_official_source suspected_case confirmed_case severity_or_death transmission_change policy_or_travel new_geography North America United States"
-  },
-  {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
     "summary": "Monitoring: Ebola disease outbreak in the Democratic Republic of the Congo",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
-    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography laboratory_or_genomic Africa Democratic Republic of the Congo / Uganda"
-  },
-  {
-    "title": "Cyclosporiasis",
-    "section": "Newsdesk",
-    "summary": "Monitoring: Toledo-Lucas County Health Department Cyclosporiasis Update",
-    "url": "/stories/story_7ecd65705353b55c-cyclosporiasis.html",
-    "keywords": "new_official_source confirmed_case policy_or_travel new_geography North America United States"
-  },
-  {
-    "title": "Dengue and arboviruses",
-    "section": "Newsdesk",
-    "summary": "Monitoring: Florida Surgeon General Reminds Floridians to Take Precautions Against Dengue Ahead of Labor Day Weekend",
-    "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
-    "keywords": "severity_or_death transmission_change new_geography North America United States"
-  },
-  {
-    "title": "Malaria",
-    "section": "Newsdesk",
-    "summary": "Monitoring: WHO São Tomé and Príncipe Newsletter for the 2nd Quarter",
-    "url": "/stories/story_bd120a908eaabacf-malaria.html",
-    "keywords": "new_official_source suspected_case confirmed_case severity_or_death North America United States"
-  },
-  {
-    "title": "Polio and wastewater surveillance",
-    "section": "Newsdesk",
-    "summary": "Monitoring: Polio Eradication in Africa: Highlights Leaflet (Q1 and Q2, 2026)",
-    "url": "/stories/story_9ccdd822481fa2b6-polio-and-wastewater-surveillance.html",
-    "keywords": "transmission_change laboratory_or_genomic Africa "
+    "keywords": "new_official_source confirmed_case severity_or_death Africa Democratic Republic of the Congo / Uganda"
   },
   {
     "title": "Ebola virus disease",
