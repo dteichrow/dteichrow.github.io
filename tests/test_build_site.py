@@ -49,9 +49,12 @@ def test_transform_imported_html_rewrites_known_paths() -> None:
     assert "const manifestPath = '/app_exports/manifest.json';" in transformed
     assert '<meta name="description"' in transformed
     assert "Edge of Epidemiology" in transformed
-    assert "touch-action: pan-x" in transformed
+    navigation = BeautifulSoup(transformed, "html.parser").select_one('.eoe-shell-links')
+    assert [a.get_text() for a in navigation.select('a')] == [
+        'Essays', 'Exhibits', 'Newsdesk', 'About', 'Work with me', 'Search'
+    ]
     assert "The Edge of Epidemiology" in transformed
-    assert "by Devin Teichrow" in transformed
+    assert "By Devin Teichrow" in transformed
     assert 'href="/opportunities/"' in transformed
     assert "On this page" not in transformed
     assert "56 item(s)" not in transformed
