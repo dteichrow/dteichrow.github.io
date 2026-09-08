@@ -6,15 +6,18 @@ import re
 from .common import link_for
 
 
+PRIMARY_NAV = [
+    ("Essays", "essays/", "essays"),
+    ("Exhibits", "tools/", "tools"),
+    ("Newsdesk", "newsdesk/", "newsdesk"),
+    ("About", "about/", "about"),
+    ("Work with me", "opportunities/", "opportunities"),
+    ("Search", "search/", "search"),
+]
+
+
 def site_nav(active: str, base_url: str) -> str:
-    links = [
-        ("Essays", "essays/", "essays"),
-        ("Exhibits", "tools/", "tools"),
-        ("Newsdesk", "newsdesk/", "newsdesk"),
-        ("About", "about/", "about"),
-        ("Work with me", "opportunities/", "opportunities"),
-        ("Search", "search/", "search"),
-    ]
+    links = PRIMARY_NAV
     items = "".join(
         f'<a class="site-nav-link{" active" if key == active else ""}" href="{html.escape(link_for(base_url, path))}"'
         + (' aria-current="page"' if key == active else "")

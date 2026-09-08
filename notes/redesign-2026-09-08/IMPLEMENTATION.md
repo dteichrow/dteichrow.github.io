@@ -12,6 +12,7 @@ The work began from website commit `42f6c794116554d8fe62c76066db20386d21a6b4` an
 | Overlong opening and competing navigation | Short headline, introductory prose, featured essay and ship preview; six primary navigation destinations. Secondary URLs remain in the footer. |
 | Repeated generic cover badges | Original, purposeful diagrams for all six exhibits; actual essay cover media retained. |
 | Viking navigation collision and missing Revolution navigation | Shared flow-based exhibit navigation; all six tested at 390, 768 and 1440 pixels. |
+| Legacy Newsdesk navigation | Imported documents now share the six primary publication links, an in-flow mobile header, skip access and contextual footer. Newsdesk and Ebola story layouts are covered at all three widths. |
 | Pathogen rotation during reading | Stable default selection, explicit start/stop; collapsible supporting sections, expandable evidence panel and selectable exposure diagram. |
 | Duplicate Revolutionary atlas search result | Canonical destination normalization and an exact-one-record regression test. |
 | SUNSHINE caption used as synopsis | Curated editorial synopsis, separately stored caption; ingestion strips figure captions from prose. Curated fields survive sync. |

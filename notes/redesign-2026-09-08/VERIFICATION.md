@@ -11,7 +11,7 @@ The isolated implementation incorporates upstream website content through `0745f
 | Evidence/source validator | Passed |
 | Public tool smoke tests | Passed |
 | Built artifact and internal destination checks | Passed; 679 files in the recorded local artifact |
-| Real Chromium browser suite | 45 passed, including 24 viewport/layout cases, eight automated WCAG scans and 13 interaction/fallback cases |
+| Real Chromium browser suite | 45 original cases passed, plus six added Newsdesk/story cases (51 total): 30 viewport/layout cases, ten automated WCAG scans across the suite, and 13 interaction/fallback cases |
 | Viewport widths | Actual 390, 768 and 1440 pixels; no page-level horizontal overflow or navigation/heading collisions in the tested pages |
 | Keyboard and motion | Visible skip/focus, timeline modal focus/return, named markers, visitor-controlled motion and reduced-motion alternatives passed |
 | Third-party/WebGL failure | Local geography and record controls remain usable; illustrated ship and supporting evidence remain accessible |
@@ -47,3 +47,7 @@ Newsdesk contract fix: [epi-dossier PR #1](https://github.com/dteichrow/epi-doss
 The website delivery uses `deploy_pages → validated-artifact → deploy`. The reusable validation job builds once, runs the checks above, records the file hashes, then uploads that exact directory. The deploy job consumes the uploaded artifact without rebuilding. GitHub retains verification reports for 30 days.
 
 Production verification, the website PR and deployment run are recorded in the final handoff after delivery. GitHub Pages hosting, existing URLs and service prices are preserved; no DNS migration is part of this change.
+
+## Production review follow-up
+
+The initial deployment at `0ed03961e3e87d7567ac3a5b0cf2820e66f7a2d5` passed its GitHub gate and all 45 live-browser cases. All 678 publicly served files matched the deployed manifest; `.nojekyll` is a deployment control file and is not publicly served by Pages. The broader live review then identified the old imported Newsdesk header. The follow-up extracts the imported shell, reuses the same primary navigation registry, adds a flowing mobile header and skip link, corrects source-badge contrast, and expands the gate to Newsdesk and an outbreak story at three widths.

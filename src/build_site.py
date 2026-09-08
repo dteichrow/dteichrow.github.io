@@ -1,4 +1,9 @@
 from __future__ import annotations
+from .site_import_shell import (
+    shell_wrapper_css,
+    imported_shell_nav,
+    imported_shell_footer,
+)
 
 import argparse
 import datetime as dt
@@ -658,216 +663,6 @@ def sync_legacy_newsdesk_app_exports(docs_dir: Path) -> None:
     shutil.copytree(source, destination)
 
 
-def shell_wrapper_css(base_url: str) -> str:
-    return f"""
-<style id="eoe-shell-import-style">
-  body {{ padding-top: 112px !important; }}
-  .eoe-shell-nav {{
-    position: fixed;
-    inset: 0 0 auto 0;
-    z-index: 10000;
-    background: linear-gradient(180deg, rgba(15, 20, 27, 0.98), rgba(21, 29, 39, 0.98));
-    color: #efe6d6;
-    border-bottom: 1px solid rgba(214, 202, 183, 0.2);
-    box-shadow: 0 14px 34px rgba(4, 7, 10, 0.28);
-  }}
-  .eoe-shell-nav-inner {{
-    max-width: 1160px;
-    margin: 0 auto;
-    padding: 18px 18px 16px;
-    display: grid;
-    gap: 12px;
-    font-family: "Avenir Next", "Helvetica Neue", sans-serif;
-  }}
-  .eoe-shell-brand {{
-    display: inline-flex;
-    flex-wrap: wrap;
-    column-gap: 0.32em;
-    row-gap: 0.12em;
-    align-items: baseline;
-    color: #f5ecdd;
-    font: 700 clamp(1.2rem, 2vw, 1.65rem)/1.05 "Iowan Old Style", Georgia, serif;
-    text-decoration: none;
-    letter-spacing: 0;
-  }}
-  .eoe-shell-byline {{
-    color: #8fb8d8;
-    font: 600 0.48em/1 "Avenir Next", "Helvetica Neue", sans-serif;
-  }}
-  .eoe-shell-brand:hover {{ text-decoration: none; }}
-  .eoe-shell-links {{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 18px;
-    padding-top: 10px;
-    border-top: 1px solid rgba(214, 202, 183, 0.18);
-  }}
-  .eoe-shell-links a {{
-    flex: 0 0 auto;
-    padding: 0 0 6px;
-    border-bottom: 2px solid transparent;
-    color: rgba(239, 230, 214, 0.76);
-    text-decoration: none;
-    background: transparent;
-    font-size: 0.95rem;
-    font-weight: 500;
-    white-space: nowrap;
-    transition: color 180ms ease, border-color 180ms ease;
-  }}
-  .eoe-shell-links a.active {{
-    border-color: rgba(201, 168, 76, 0.88);
-    color: #f8f1e6;
-    font-weight: 700;
-  }}
-  .eoe-shell-links a:hover {{
-    color: #f8f1e6;
-    text-decoration: none;
-    border-color: rgba(201, 168, 76, 0.52);
-  }}
-  /* Cleaner fix would live in the Pathogen Dispatch renderer, but this import-layer pass
-     keeps the simplification isolated to the umbrella site. */
-  .site-header,
-  .hero,
-  .panel,
-  .section-nav {{
-    background: transparent !important;
-    border: 0 !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-  }}
-  .site-header {{
-    padding: 0 0 12px !important;
-    gap: 12px !important;
-  }}
-  .site-header-title {{
-    font-size: 1rem !important;
-    color: #42515e !important;
-  }}
-  .site-nav,
-  .section-nav-links {{
-    gap: 14px !important;
-  }}
-  .site-nav-link,
-  .section-nav-link {{
-    padding: 0 0 5px !important;
-    border: 0 !important;
-    border-radius: 0 !important;
-    border-bottom: 2px solid transparent !important;
-    background: transparent !important;
-    box-shadow: none !important;
-    color: #42515e !important;
-    font-weight: 500 !important;
-  }}
-  .site-nav-link:hover,
-  .section-nav-link:hover {{
-    background: transparent !important;
-    color: #173046 !important;
-    text-decoration: underline !important;
-  }}
-  .site-nav-link.active {{
-    color: #173046 !important;
-    font-weight: 700 !important;
-    text-decoration: none !important;
-    border-color: rgba(141, 63, 47, 0.48) !important;
-  }}
-  .hero {{
-    padding: 0 0 6px !important;
-    overflow: visible !important;
-  }}
-  .hero::before,
-  .hero::after,
-  .panel::before,
-  .panel::after,
-  .site-header::before,
-  .site-header::after {{
-    display: none !important;
-  }}
-  .panel,
-  .panel-grid {{
-    gap: 16px !important;
-  }}
-  .panel > h2:first-child,
-  .panel > .muted-note:first-child {{
-    margin-top: 0 !important;
-  }}
-  .section-nav {{
-    display: none !important;
-  }}
-  .meta-row-plain {{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
-    margin-top: 10px;
-  }}
-  .meta-inline,
-  .card-meta-text {{
-    color: #42515e;
-    font: 500 0.86rem/1.55 "Avenir Next", "Helvetica Neue", sans-serif;
-  }}
-  .card-meta-text {{
-    margin: 0;
-  }}
-  .atlas-status-pill,
-  .story-status-pill {{
-    letter-spacing: 0.08em !important;
-    text-transform: uppercase !important;
-  }}
-  .site-card .meta-row .badge {{
-    max-width: none;
-  }}
-  .link-pill {{
-    background: rgba(255,252,245,0.92) !important;
-  }}
-  @media (max-width: 760px) {{
-    body {{ padding-top: 148px !important; }}
-    .eoe-shell-links {{
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      overflow-y: hidden;
-      width: 100%;
-      padding-bottom: 2px;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
-      touch-action: pan-x;
-      overscroll-behavior-x: contain;
-    }}
-    .eoe-shell-links::-webkit-scrollbar {{ display: none; }}
-  }}
-</style>
-"""
-
-
-def imported_shell_nav(active: str, base_url: str) -> str:
-    links = [
-        ("Home", ""),
-        ("Newsdesk", "newsdesk/"),
-        ("Notebook", "notebook/"),
-        ("Pathogen Atlas", "atlases/pathogen/"),
-        ("Maritime Atlas", "atlases/maritime/"),
-        ("Essays", "essays/"),
-        ("Topics", "topics/"),
-        ("Historical", "historical/"),
-        ("Reference", "reference/"),
-        ("Opportunities", "opportunities/"),
-        ("Search", "search/"),
-    ]
-    link_html = []
-    for label, path in links:
-        cls = "active" if label.lower() == active.lower() else ""
-        link_html.append(
-            f'<a class="{cls}" href="{html.escape(link_for(base_url, path))}">{html.escape(label)}</a>'
-        )
-    return (
-        '<div class="eoe-shell-nav">'
-        '<div class="eoe-shell-nav-inner">'
-        f'<a class="eoe-shell-brand" href="{html.escape(link_for(base_url, ""))}"><span>The Edge of Epidemiology</span> <span class="eoe-shell-byline">by Devin Teichrow</span></a>'
-        f'<nav class="eoe-shell-links" aria-label="Umbrella navigation">{"".join(link_html)}</nav>'
-        "</div>"
-        "</div>"
-    )
-
-
 def rewrite_imported_paths(html_text: str, base_url: str) -> str:
     replacements = {
         "./index.html": link_for(base_url, "newsdesk/"),
@@ -1162,6 +957,18 @@ def ensure_meta_description(html_text: str, description: str) -> str:
 def transform_imported_html(html_text: str, *, active: str, base_url: str) -> str:
     html_text = rewrite_imported_paths(html_text, base_url)
     html_text = remove_imported_section_nav(html_text)
+    html_text = re.sub(
+        r'<header class="site-header".*?</header>', "", html_text, flags=re.S
+    )
+    html_text = re.sub(
+        r"<main([^>]*)>",
+        r'<main\1 id="eoe-import-main" tabindex="-1">',
+        html_text,
+        count=1,
+    )
+    html_text = html_text.replace(
+        "</body>", imported_shell_footer(base_url) + "</body>", 1
+    )
     html_text = simplify_imported_cards(html_text)
     html_text = remove_imported_build_meta(html_text)
     html_text = sanitize_public_copy(html_text)
