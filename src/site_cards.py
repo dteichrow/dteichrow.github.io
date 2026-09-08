@@ -107,6 +107,10 @@ def render_post_card(
     href = link_for(base_url, f"essays/{post.get('slug', '')}/")
     date_text, utility_meta = post_folio_meta(post)
     summary = post_seo_description(post)
+    if len(summary) > 240:
+        preview = summary[:240].rsplit(" ", 1)[0]
+        sentence = re.search(r"^(.+[.!?])\s", preview)
+        summary = sentence.group(1) if sentence else preview.rstrip(" ,;:") + "…"
     feature_image = post.get("cover_image") or ""
     feature_class = " essay-card-featured" if featured and feature_image else ""
     image_class = " essay-card-has-media" if feature_image else ""

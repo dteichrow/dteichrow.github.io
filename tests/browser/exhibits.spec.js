@@ -38,6 +38,13 @@ for (const width of [390, 768, 1440])
           () => getComputedStyle(document.activeElement).outlineStyle,
         ),
       ).not.toBe("none");
+      await page.locator(".essay-card-media img,.atlas-card-visual img").evaluateAll(async (images) => {
+        images.forEach(image => image.loading = "eager");
+        await Promise.race([
+          Promise.allSettled(images.map(image => image.decode())),
+          new Promise(resolve => setTimeout(resolve, 5000)),
+        ]);
+      });
       await page.screenshot({
         path: `output/playwright/after/${width}-${route.replaceAll("/", "-") || "home"}.png`,
         fullPage: true,
@@ -146,6 +153,13 @@ test("maritime optional 3D, separation, sources, permalink and reset", async ({
   await expect(page).toHaveURL(/module-condition-filter=/);
   await page.locator("#reset-btn").click();
   await expect(page.locator("#module-condition-filter")).toHaveValue("");
+  await page.locator("#ship-3d-stage canvas").evaluate((canvas) => {
+    canvas.dispatchEvent(new Event("webglcontextlost", { cancelable: true }));
+  });
+  await expect(page.locator("#ship-svg")).toBeVisible();
+  await expect(page.locator("#ship-3d-toggle")).toBeDisabled();
+  await page.locator("[data-space=water]").click();
+  await expect(page.locator("#ship-detail-title")).toHaveText("Water storage");
 });
 test("ship survives unavailable WebGL and all external services", async ({
   page,

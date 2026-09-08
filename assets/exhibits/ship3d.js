@@ -248,6 +248,9 @@ export function createShip(container, onSelect) {
     e.preventDefault();
     document.getElementById("ship-3d-stage").hidden = true;
     document.getElementById("ship-svg").removeAttribute("hidden");
+    const toggle = document.getElementById("ship-3d-toggle");
+    toggle.disabled = true;
+    toggle.textContent = "Illustrated cutaway active";
     document.getElementById("ship-status").textContent =
       "The illustrated cutaway remains available after the 3D context was interrupted.";
   });
