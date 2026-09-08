@@ -29,389 +29,56 @@ from .common import (
     write_json,
 )
 
-
-DEFAULT_EPI_DOSSIER_REPO = "https://github.com/dteichrow/epi-dossier.git"
-PUBLIC_SITE_ORIGIN = "https://devinteichrow.com"
-PUBLIC_SITE_DOMAIN = "devinteichrow.com"
-DEFAULT_SOCIAL_IMAGE = "assets/substack-brand/edge-of-epidemiology-email-banner-1100x220.png"
-RSS_FEED_URL = "https://theedgeofepidemiology.substack.com/feed"
-AUTHOR_SAME_AS = [
-    "https://theedgeofepidemiology.substack.com",
-    "https://x.com/edgeofepi",
-    "https://www.instagram.com/edgeofepi/",
-    "https://www.linkedin.com/in/devin-teichrow-msc-938942254",
-    "https://medium.com/@EdgeofEpi",
-]
-# Legacy records can still carry `noindex_stub`; it is normalized to `summary_only` below.
-# Only explicit private or draft markers block indexing now.
-NOINDEX_POST_STRATEGIES = {"noindex", "noindex_stub_private", "private", "draft", "hidden"}
-DOI_URL_PATTERN = re.compile(r"(^|/)(10\.[0-9]{4,9}/\S+)", re.IGNORECASE)
-GENERIC_DESCRIPTIONS = {
-    "",
-    "About Edge of Epidemiology.",
-    "Edge of Epidemiology publication page.",
-    "Source-first outbreak reporting from The Pathogen Dispatch.",
-    "Interactive atlas from The Edge of Epidemiology.",
-}
-TOPIC_HUBS = [
-    {
-        "slug": "historical-epidemiology",
-        "title": "Historical Epidemiology",
-        "description": "Essays on epidemics as historical forces: ancient pathogens, colonial encounters, disease ecology, and the long memory of public health.",
-        "keywords": ["history", "historical epidemiology", "ancient", "colonial", "plague", "cocoliztli", "syphilis"],
-    },
-    {
-        "slug": "disease-and-war",
-        "title": "Disease And War",
-        "description": "War, armies, migration, logistics, barracks, ships, and the infections that move through military systems.",
-        "keywords": ["war", "military", "revolutionary", "korean", "napoleon", "soldier", "oregon trail"],
-    },
-    {
-        "slug": "disease-ecology",
-        "title": "Disease Ecology",
-        "description": "Disease stories where landscapes, reservoirs, vectors, cities, climate, and infrastructure explain more than the pathogen alone.",
-        "keywords": ["ecology", "vector", "mosquito", "climate", "environment", "raw milk", "zoonotic"],
-    },
-    {
-        "slug": "pathogen-geography",
-        "title": "Pathogen Geography",
-        "description": "Map-first work on how pathogens travel through ports, ships, animal reservoirs, water systems, roads, empires, and borders.",
-        "keywords": ["atlas", "geography", "pathogen", "maritime", "ship", "route", "port"],
-    },
-    {
-        "slug": "epidemiologic-methods",
-        "title": "Epidemiologic Methods",
-        "description": "Readable epidemiology methods, causal inference, risk communication, evidence grading, replication, and statistical thinking.",
-        "keywords": ["causal", "risk", "evidence", "baseline", "replication", "wearable", "meta-analysis", "studies"],
-    },
-    {
-        "slug": "wellness-claims",
-        "title": "Wellness Claims",
-        "description": "Evidence-first writing on supplements, nutrition, wellness panics, influencer claims, and health stories that outrun the data.",
-        "keywords": ["wellness", "supplement", "raw milk", "gluten", "creatine", "melatonin", "detox", "sweetener", "dopamine"],
-    },
-    {
-        "slug": "neuroepidemiology",
-        "title": "Neuroepidemiology",
-        "description": "Neuroepidemiology essays on migraine, cognition, epilepsy, dementia, Parkinson's disease, multiple sclerosis, and brain-health evidence.",
-        "keywords": ["migraine", "brain", "neuro", "alzheimer", "parkinson", "epilepsy", "seizure", "cognition", "ms"],
-    },
-]
-PATHOGEN_ATLAS_COLORS = {
-    "variola-smallpox": "#b56b5b",
-    "yersinia-pestis-plague": "#b9754f",
-    "vibrio-cholerae-cholera": "#5a9bd4",
-    "mycobacterium-tuberculosis-complex": "#d98e5f",
-    "influenza-a": "#b7c7df",
-    "measles-virus": "#d6c06a",
-    "yellow-fever-virus": "#d86a4f",
-    "dengue-virus": "#c9a84c",
-    "malaria-parasites": "#5abf7c",
-    "hantaviruses": "#7aa96b",
-    "hiv-1": "#d26b91",
-    "sars-cov-2": "#7b8fa8",
-    "poliovirus": "#7c9fd1",
-    "treponema-pallidum-syphilis": "#c38a65",
-    "salmonella-enterica": "#bc8f5f",
-    "rickettsia-prowazekii-epidemic-typhus": "#9a8c5f",
-    "yellow-fever": "#d86a4f",
-    "cholera": "#5a9bd4",
-    "measles": "#d6c06a",
-    "mpox": "#dd6974",
-    "avian-influenza-h5n1": "#9b7bd8",
-    "hantavirus": "#7aa96b",
-    "dengue": "#c9a84c",
-    "malaria": "#5abf7c",
-    "tuberculosis": "#d98e5f",
-    "plague": "#b9754f",
-    "zika-virus-disease": "#5fb6a6",
-    "chikungunya": "#d9a441",
-    "west-nile-virus": "#8fbf5f",
-    "japanese-encephalitis": "#6fa8dc",
-    "poliomyelitis": "#7c9fd1",
-    "hepatitis-a": "#c9b56b",
-    "typhoid-fever": "#bc8f5f",
-    "norovirus": "#9aa36b",
-    "smallpox": "#b56b5b",
-    "seasonal-influenza": "#b7c7df",
-    "covid-19": "#7b8fa8",
-    "ebola-virus-disease": "#b84646",
-    "marburg-virus-disease": "#9f3f43",
-    "nipah-virus-disease": "#7a6f4f",
-    "lassa-fever": "#b17d5a",
-    "rabies": "#9c6f3d",
-    "anthrax": "#8c7a55",
-    "mers": "#b88a55",
-    "diphtheria": "#8f9c5a",
-    "pertussis": "#c7a05a",
-    "lyme-disease": "#6f9f73",
-    "rocky-mountain-spotted-fever": "#c07b4f",
-    "crimean-congo-hemorrhagic-fever": "#b04f63",
-    "epidemic-typhus": "#b38a5a",
-    "murine-typhus": "#9a7d55",
-    "scrub-typhus": "#8da05a",
-    "salmonellosis": "#c6a15a",
-    "listeriosis": "#8fae7a",
-    "botulism": "#8d7868",
-    "tetanus": "#a88d5d",
-    "melioidosis": "#5f9c8a",
-    "coccidioidomycosis": "#c28f5a",
-    "hiv-aids": "#9d5f7a",
-    "hepatitis-b": "#b6974f",
-    "syphilis": "#aa6a58",
-    "leishmaniasis": "#d0a24a",
-    "chagas-disease": "#9f6b4d",
-    "onchocerciasis": "#6d9b83",
-    "clostridioides-difficile-infection": "#7b9f78",
-    "mrsa-infection": "#9c6d70",
-    "tick-borne-encephalitis": "#6e8f62",
-    "anaplasmosis": "#7d9b6c",
-    "ehrlichiosis": "#a27858",
-    "babesiosis": "#7e9771",
-    "shigellosis": "#b16f58",
-    "rotavirus": "#c5a65b",
-    "giardiasis": "#6f9f91",
-    "cryptosporidiosis": "#8d9f65",
-    "amebiasis": "#a47b54",
-    "campylobacteriosis": "#bd8b4d",
-    "yersiniosis": "#9b815d",
-    "shiga-toxin-producing-e-coli-infection": "#b57456",
-    "rubella": "#c27c8a",
-    "mumps": "#9c83b7",
-    "varicella": "#7c9bc6",
-    "brucellosis": "#b18a52",
-    "leptospirosis": "#6f9b8d",
-    "q-fever": "#a8835a",
-    "carbapenem-resistant-enterobacterales-infection": "#8f7668",
-    "vancomycin-resistant-enterococcus-infection": "#806f8f",
-    "rift-valley-fever": "#b88742",
-    "eastern-equine-encephalitis": "#8a9f54",
-    "la-crosse-encephalitis": "#7b9c6d",
-    "lymphatic-filariasis": "#a7a75a",
-    "ross-river-virus-disease": "#5e9f88",
-    "oropouche-virus-disease": "#c39a4e",
-    "lymphocytic-choriomeningitis": "#8f7a54",
-    "rat-bite-fever": "#9b705d",
-    "tularemia": "#8c9b62",
-    "histoplasmosis": "#a98355",
-    "blastomycosis": "#8f875e",
-    "aspergillosis": "#6f8f7a",
-    "sporotrichosis": "#b07d58",
-    "gonorrhea": "#a86770",
-    "chlamydia": "#c08a67",
-    "genital-herpes": "#9b6c94",
-    "acinetobacter-infection": "#756f8c",
-    "pseudomonas-aeruginosa-infection": "#5f9b8d",
-    "vibriosis": "#5b9fb6",
-    "trichinellosis": "#b18f55",
-    "respiratory-syncytial-virus-infection": "#9bb3c8",
-    "meningococcal-disease": "#8a9ab6",
-    "pneumococcal-disease": "#b28d6b",
-    "haemophilus-influenzae-type-b-disease": "#9c8fb8",
-    "legionnaires-disease": "#5f8f9f",
-    "candida-auris-infection": "#c08a5d",
-    "invasive-candidiasis": "#a77c68",
-    "human-papillomavirus-infection": "#b06d93",
-    "hepatitis-c": "#c49a57",
-    "scabies": "#a88957",
-    "leprosy": "#9c7d68",
-    "cyclosporiasis": "#6c9f8a",
-    "dracunculiasis": "#b5a45b",
-    "schistosomiasis": "#6f9aa6",
-    "ascariasis": "#9f875b",
-    "hookworm-disease": "#8f7b55",
-    "toxoplasmosis": "#967ab0",
-    "psittacosis": "#6f9675",
-    "human-african-trypanosomiasis": "#b59a52",
-    "echinococcosis": "#8e8f5e",
-    "adenovirus-infection": "#8fa4b8",
-    "human-parainfluenza-virus-infection": "#9eb5c2",
-    "mycoplasma-pneumoniae-infection": "#b18f6f",
-    "group-a-streptococcal-disease": "#b0786a",
-    "hand-foot-and-mouth-disease": "#b69a54",
-    "hepatitis-d": "#a78352",
-    "hepatitis-e": "#c39b59",
-    "cysticercosis": "#9f8f61",
-    "clonorchiasis": "#7f9f66",
-    "fascioliasis": "#8f9b58",
-    "paragonimiasis": "#9f7a54",
-    "anisakiasis": "#5f9ba8",
-    "strongyloidiasis": "#8e7d57",
-    "toxocariasis": "#9a865b",
-    "baylisascariasis": "#8c705f",
-    "loiasis": "#b79b52",
-    "group-b-streptococcal-disease": "#9f7a84",
-    "clostridium-perfringens-food-poisoning": "#b8874f",
-    "staphylococcal-food-poisoning": "#c08a5d",
-    "naegleria-fowleri-infection": "#4f9faa",
-    "parvovirus-b19-infection": "#b89f74",
-    "human-metapneumovirus-infection": "#9fb2c3",
-    "powassan-virus-disease": "#7c945f",
-    "colorado-tick-fever": "#b67e55",
-    "bourbon-virus-disease": "#a56f5e",
-    "heartland-virus-disease": "#8f8f5c",
-    "cytomegalovirus-infection": "#9d7ea9",
-    "epstein-barr-virus-infection": "#8f77a8",
-    "cryptococcosis": "#7f9270",
-    "mucormycosis": "#8a765f",
-    "pinworm-infection": "#b3a15f",
-    "trichomoniasis": "#8f8ab8",
-    "creutzfeldt-jakob-disease": "#777777",
-    "ringworm": "#9a8758",
-    "molluscum-contagiosum": "#b4808b",
-    "trachoma": "#b49b5a",
-    "yaws": "#aa7458",
-    "buruli-ulcer": "#6f957a",
-    "cystoisosporiasis": "#74a58d",
-    "capnocytophaga-infection": "#a17d63",
-    "acanthamoeba-keratitis": "#5f9aa5",
-    "balamuthia-mandrillaris-infection": "#8f8060",
-    "blastocystis-infection": "#7d9f74",
-    "angiostrongyliasis": "#b4935d",
-    "gnathostomiasis": "#a87856",
-    "talaromycosis": "#7f8f66",
-    "chromoblastomycosis": "#9b7a58",
-    "noma": "#8b735f",
-    "jamestown-canyon-virus-disease": "#7aa06a",
-    "bartonella-henselae-infection": "#a67c5b",
-    "cronobacter-infection": "#c29a55",
-    "sarcocystosis": "#8ca56f",
-    "fasciolopsiasis": "#6f9b86",
-    "chancroid": "#b16d62",
-    "lymphogranuloma-venereum": "#9d6f8f",
-    "donovanosis": "#a06f62",
-    "mycoplasma-genitalium-infection": "#b0777d",
-    "mycetoma": "#9f8c5f",
-    "sars": "#8ca7bd",
-    "trichuriasis": "#9b8d57",
-    "pneumocystis-pneumonia": "#8ba17f",
-    "taeniasis": "#a88f57",
-    "opisthorchiasis": "#7f9964",
-    "tungiasis": "#b58a4f",
-    "hendra-virus-disease": "#8a7b55",
-    "herpes-b-virus-infection": "#9b7aa5",
-    "orf-virus-infection": "#a78657",
-    "chapare-hemorrhagic-fever": "#a65454",
-    "nontuberculous-mycobacterial-disease": "#6f9387",
-    "elizabethkingia-infection": "#8f9270",
-    "klebsiella-infection": "#a27d72",
-    "esbl-producing-enterobacterales-infection": "#7a748f",
-    "non-polio-enterovirus-infection": "#8aa7c2",
-    "common-cold": "#9fb8c9",
-    "bacterial-vaginosis": "#b0798f",
-    "southern-tick-associated-rash-illness": "#7c9b61",
-    "head-lice-infestation": "#9a8b63",
-    "pubic-lice-infestation": "#a07b66",
-    "body-lice-infestation": "#8b765b",
-    "myiasis": "#b78b53",
-    "herpes-simplex-virus-infection": "#a86f93",
-    "human-t-lymphotropic-virus-1-infection": "#8c6fa7",
-    "shingles": "#9b7ab0",
-    "conjunctivitis": "#8fa4a8",
-    "meningitis": "#8c9ab8",
-    "impetigo": "#b18463",
-    "cellulitis": "#a9786b",
-    "necrotizing-fasciitis": "#9c5f5f",
-    "helicobacter-pylori-infection": "#a98f55",
-    "tinea-pedis": "#8d9c6a",
-    "vulvovaginal-candidiasis": "#b28aa0",
-    "nocardiosis": "#8a8264",
-    "paracoccidioidomycosis": "#8f765c",
-    "acute-flaccid-myelitis": "#7f8faa",
-    "pneumonia": "#9bb0c2",
-    "sinusitis": "#9eb6bd",
-    "acute-bronchitis": "#8faec0",
-    "otitis-media": "#b0a071",
-    "urinary-tract-infection": "#8b8f75",
-    "infectious-gastroenteritis": "#8aa66a",
-}
-PATHOGEN_ATLAS_CATEGORIES = {
-    "yellow-fever": ("mosquito-borne", "Mosquito-borne / arboviral"),
-    "cholera": ("fecal-oral-waterborne", "Fecal-oral / waterborne"),
-    "measles": ("airborne-respiratory", "Airborne / respiratory"),
-    "mpox": ("contact-sexual-bloodborne", "Contact, sexual, or bloodborne"),
-    "avian-influenza-h5n1": ("zoonotic-animal-interface", "Zoonotic / animal interface"),
-    "hantavirus": ("rodent-environmental", "Rodent-borne / environmental"),
-    "dengue": ("mosquito-borne", "Mosquito-borne / arboviral"),
-    "malaria": ("mosquito-borne", "Mosquito-borne / parasitic"),
-    "tuberculosis": ("airborne-respiratory", "Airborne / respiratory"),
-    "plague": ("flea-louse-mite-borne", "Flea, louse, and mite-borne"),
-    "zika-virus-disease": ("mosquito-borne", "Mosquito-borne / arboviral"),
-    "chikungunya": ("mosquito-borne", "Mosquito-borne / arboviral"),
-    "west-nile-virus": ("mosquito-borne", "Mosquito-borne / arboviral"),
-    "japanese-encephalitis": ("mosquito-borne", "Mosquito-borne / arboviral"),
-    "poliomyelitis": ("fecal-oral-waterborne", "Fecal-oral / waterborne"),
-    "hepatitis-a": ("fecal-oral-waterborne", "Fecal-oral / waterborne"),
-    "typhoid-fever": ("fecal-oral-waterborne", "Fecal-oral / waterborne"),
-    "norovirus": ("fecal-oral-waterborne", "Fecal-oral / waterborne"),
-    "smallpox": ("airborne-respiratory", "Airborne / respiratory"),
-    "seasonal-influenza": ("airborne-respiratory", "Airborne / respiratory"),
-    "covid-19": ("airborne-respiratory", "Airborne / respiratory"),
-    "diphtheria": ("airborne-respiratory", "Airborne / respiratory"),
-    "pertussis": ("airborne-respiratory", "Airborne / respiratory"),
-    "ebola-virus-disease": ("zoonotic-animal-interface", "Zoonotic / animal interface"),
-    "marburg-virus-disease": ("zoonotic-animal-interface", "Zoonotic / animal interface"),
-    "nipah-virus-disease": ("zoonotic-animal-interface", "Zoonotic / animal interface"),
-    "rabies": ("zoonotic-animal-interface", "Zoonotic / animal interface"),
-    "anthrax": ("zoonotic-animal-interface", "Zoonotic / animal interface"),
-    "mers": ("zoonotic-animal-interface", "Zoonotic / animal interface"),
-    "lassa-fever": ("rodent-environmental", "Rodent-borne / environmental"),
-}
-PATHOGEN_ATLAS_CATEGORY_ALIASES = {
-    "fecal-oral": ("fecal-oral-waterborne", "Fecal-oral / waterborne"),
-    "contact-sexual": ("contact-sexual-bloodborne", "Contact, sexual, or bloodborne"),
-    "zoonotic-vector": ("flea-louse-mite-borne", "Flea, louse, and mite-borne"),
-    "other": ("other-mixed", "Other / mixed transmission"),
-}
-PATHOGEN_STATUS_LABELS = {
-    "consensus": "Consensus",
-    "mixed": "Mixed / debated",
-    "contested": "Contested",
-    "weak": "Weakly supported",
-}
-PATHOGEN_WRITING_LABELS = {
-    "direct": "Written here directly",
-    "adjacent": "Adjacent writing",
-    "not_yet_written": "No dedicated post yet",
-}
-PUBLIC_COPY_REPLACEMENTS = {
-    "Mpox belongs in the atlas because it combines a geographically anchored Central/West African history with abrupt export through wildlife trade and then a very different twenty-first century global transmission pattern.": "Mpox combines a geographically anchored Central and West African history with wildlife-trade export events and a distinct twenty-first-century pattern of networked global transmission.",
-    "It forces the site to distinguish clades, transport mode, and transmission network rather than collapsing everything into one map pin.": "Mpox geography separates clades, transport events, animal reservoirs, and transmission networks instead of collapsing them into a single point of origin.",
-    "H5N1 belongs in the atlas because its contemporary geography is not a human epidemic map first; it is a bird-route, farm-system, and spillover map whose human layer remains contingent.": "H5N1 is not primarily a human epidemic map. Its geography follows bird migration, poultry systems, mammal spillover, dairy-herd events, and occupational exposure.",
-    "It creates a genuinely different map grammar from the classic human-to-human pathogens and foregrounds One Health risk.": "The spatial problem is One Health risk: animal movement, farm systems, and spillover opportunities before sustained human-to-human transmission.",
-    "It lets the atlas show how a pathogen can move with people, water storage, ships, and vector habitat rather than by human travel alone.": "Yellow fever moves with people, water storage, ships, and vector habitat, not by human travel alone.",
-    "It forces the atlas to behave like an encyclopedia rather than a single-route animation and keeps us honest about host ecology, geography, and syndrome differences.": "Hantavirus geography follows rodent-host biogeography, ecological exposure settings, and the split between Old World hemorrhagic-fever viruses and New World cardiopulmonary viruses.",
-    "Hantaviruses belong in the atlas because they break the habit of pretending every pathogen has one clean human-travel route. The real map is rodent-host biogeography, ecological exposure settings, and the split between Old World hemorrhagic-fever viruses and New World cardiopulmonary viruses.": "Hantavirus geography follows rodent-host biogeography, ecological exposure settings, and the split between Old World hemorrhagic-fever viruses and New World cardiopulmonary viruses.",
-    "It turns the atlas toward contemporary global change instead of leaving it stranded in historical imperial routes.": "Dengue shows how urbanization, climate, vector range, water storage, travel, and surveillance reshape disease geography in real time.",
-    "Malaria belongs in the atlas because it shows how vector ecology, land use, labor systems, altitude, war, and climate can redraw disease geography across centuries without one neat origin story doing all the work.": "Malaria shows how vector ecology, land use, labor systems, altitude, war, and climate can redraw disease geography across centuries without a single tidy origin story.",
-    "It keeps the atlas from becoming virus-only and forces a map grammar built around mosquitoes, species differences, and ecological receptivity.": "Its geography is built around mosquitoes, parasite species, ecological receptivity, control programs, and uneven health-system reach.",
-    "Tuberculosis belongs in the atlas because it is both ancient and modern at once: a human co-traveler that thrives in crowding, poverty, institutional confinement, and uneven public health capacity.": "Tuberculosis is ancient and modern at once: a human co-traveler that thrives in crowding, poverty, institutional confinement, migration, HIV, and uneven public-health capacity.",
-    "It turns the atlas toward chronic structural transmission instead of one spectacular frontier jump.": "Its map is chronic and structural: airborne transmission shaped by housing, labor, prisons, care access, and drug-resistance systems.",
-    "Plague belongs in the atlas because it is one of the clearest historical demonstrations that reservoir ecology, trade corridors, warfare, and maritime ports can repeatedly rewire a continent.": "Plague is one of the clearest historical demonstrations that reservoir ecology, trade corridors, warfare, and maritime ports can repeatedly rewire a continent.",
-    "It lets the atlas bridge deep historical fear, genomic reconstruction, and the very practical map logic of rodents, fleas, and ports.": "Plague links deep historical fear, genomic reconstruction, and the practical geography of rodents, fleas, and ports.",
-    "Measles is a useful atlas pathogen because its deeper origin story is partly reconstructed from molecular-clock work, while its colonial spread story is brutally visible in the Americas and Pacific.": "Measles has a partly reconstructed deeper origin story from molecular-clock work, while its colonial spread is brutally visible in the Americas and Pacific.",
-    "A durable desk file generated from the active dossier story cluster.": "A durable desk file assembled from current reporting, official updates, and source clusters.",
-    "Summary stays within source text and metadata; no outside facts were added.": "The summary stays close to the source language and should be read as an initial source note, not a final interpretation.",
-    "summary stays within source text and metadata; no outside facts were added.": "the summary stays close to the source language and should be read as an initial source note, not a final interpretation.",
-    "Limited detail was available from feed metadata alone.": "Only a brief source description was available at publication time.",
-    "limited detail was available from feed metadata alone.": "only a brief source description was available at publication time.",
-    "metadata_only_signal": "brief_source_signal",
-    "metadata_only": "brief_source",
-    "metadata-only signal": "brief source signal",
-    "Metadata-only signal": "Brief source signal",
-    "metadata-only follow-ups": "brief-source follow-ups",
-    "Metadata-only follow-ups": "Brief-source follow-ups",
-    "Metadata-only": "Brief source",
-    "metadata only": "brief source",
-    "Metadata only": "Brief source",
-    "Live fetches": "Current source checks",
-    "Live fetch": "Current source",
-    "live fetch": "current source",
-    "Wrapper-only": "Source-link only",
-    "wrapper-only": "source-link only",
-    "wrapper only": "source-link only",
-    "Wrapper only": "Source-link only",
-}
+from .site_config import *
+from .site_shell import site_nav, base_html, promote_first_hero_heading
+from .site_content import (
+    post_folio_meta,
+    public_tool_status,
+    public_tool_export,
+    public_post_export,
+    canonical_meta,
+    post_display_title,
+    post_seo_description,
+    normalize_overview_paragraph,
+    post_overview_paragraphs,
+    post_indexing_strategy,
+    post_should_index,
+    post_site_visibility,
+    is_public_essay_post,
+    public_essay_posts,
+    post_topic_cluster,
+    topic_hub_title,
+)
+from .site_cards import (
+    render_card,
+    css_token,
+    render_atlas_card,
+    render_tool_card,
+    render_post_card,
+    render_story_card,
+    render_reference_card,
+)
+from .site_seo import (
+    route_for_html_path,
+    public_url_for_route,
+    extract_html_title,
+    extract_meta_description_from_html,
+    meta_tag_content,
+    extract_primary_heading,
+    clean_seo_description,
+    title_case_slug,
+    post_route,
+    route_is_collection,
+    seo_profile_for_route,
+    ensure_head_element,
+    upsert_title,
+    remove_meta_name,
+    remove_meta_property,
+    render_json_ld,
+    apply_seo_profile,
+    finalize_seo,
+    write_sitemap_and_robots,
+)
 
 
 def is_doi_url(value: str | None) -> bool:
@@ -442,7 +109,9 @@ def sanitize_copied_app_exports(app_exports_dir: Path) -> None:
         write_json(path, sanitize_public_copy(data))
 
 
-def public_pathogen_citations(entry: dict[str, Any]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+def public_pathogen_citations(
+    entry: dict[str, Any],
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     public_citations: list[dict[str, Any]] = []
     withheld_citations: list[dict[str, Any]] = []
     for citation in entry.get("citations", []):
@@ -460,351 +129,6 @@ def public_pathogen_citations(entry: dict[str, Any]) -> tuple[list[dict[str, Any
     return public_citations, withheld_citations
 
 
-def site_nav(active: str, base_url: str) -> str:
-    links = [
-        ("Home", "", "home"),
-        ("Newsdesk", "newsdesk/", "newsdesk"),
-        ("Exhibits", "tools/", "tools"),
-        ("Essays", "essays/", "essays"),
-        ("Topics", "topics/", "topics"),
-        ("Historical", "historical/", "historical"),
-        ("Reference", "reference/", "reference"),
-        ("Methods", "methods/", "methods"),
-        ("About", "about/", "about"),
-        ("Opportunities", "opportunities/", "opportunities"),
-        ("Search", "search/", "search"),
-    ]
-    nav_links = []
-    for label, path, key in links:
-        classes = ["site-nav-link"]
-        attrs = ""
-        if active == key:
-            classes.append("active")
-            attrs = ' aria-current="page"'
-        nav_links.append(
-            f'<a class="{" ".join(classes)}" href="{html.escape(link_for(base_url, path))}"{attrs}>{html.escape(label)}</a>'
-        )
-    return (
-        '<header class="site-header">'
-        '<div class="site-header-inner">'
-        '<div class="site-header-copy">'
-        '<p class="kicker">The Edge of Epidemiology</p>'
-        '<div class="site-brand"><a href="{home}"><span>The Edge of Epidemiology</span> <span class="site-brand-byline">by Devin Teichrow</span></a></div>'
-        '<p class="site-header-title">History-haunted epidemiology, live reporting, and interactive public-health exhibits in one place.</p>'
-        "</div>"
-        '<nav class="site-nav" aria-label="Primary navigation">{links}</nav>'
-        "</div>"
-        "</header>"
-    ).format(home=html.escape(link_for(base_url, "")), links="".join(nav_links))
-
-
-def base_html(
-    *,
-    title: str,
-    description: str,
-    active: str,
-    body: str,
-    base_url: str,
-    extra_head: str = "",
-    extra_body_end: str = "",
-) -> str:
-    css_href = html.escape(link_for(base_url, "assets/site.css"))
-    js_href = html.escape(link_for(base_url, "assets/site.js"))
-    body = promote_first_hero_heading(body)
-    return f"""<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{html.escape(title)}</title>
-    <meta name="description" content="{html.escape(description)}" />
-    <link rel="stylesheet" href="{css_href}" />
-    {extra_head}
-  </head>
-  <body class="site-page page-{html.escape(active)}">
-      {site_nav(active, base_url)}
-    <main class="page">
-      {body}
-    </main>
-    <script src="{js_href}"></script>
-    {extra_body_end}
-  </body>
-</html>
-"""
-
-
-def promote_first_hero_heading(body: str) -> str:
-    return re.sub(
-        r'<h2 class="hero-title">(.*?)</h2>',
-        r'<h1 class="hero-title">\1</h1>',
-        body,
-        count=1,
-        flags=re.S,
-    )
-
-
-def render_card(title: str, href: str, kicker: str, summary: str, meta: list[str] | None = None) -> str:
-    badges = ""
-    if meta:
-        badges = '<div class="meta-row">' + "".join(f'<span class="badge">{html.escape(item)}</span>' for item in meta) + "</div>"
-    return (
-        '<article class="site-card">'
-        f'<p class="kicker">{html.escape(kicker)}</p>'
-        f'<h3><a href="{html.escape(href)}">{html.escape(title)}</a></h3>'
-        f'<p class="muted-note">{html.escape(summary)}</p>'
-        f"{badges}"
-        "</article>"
-    )
-
-
-def css_token(value: str | None, default: str = "unknown") -> str:
-    if not value:
-        return default
-    token = re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
-    return token or default
-
-
-def render_atlas_card(entry: dict[str, Any], base_url: str) -> str:
-    route = entry.get("public_route", "")
-    href = link_for(base_url, route)
-    coordinate_hint = " / ".join(keyword.upper() for keyword in entry.get("keywords", [])[:2]) or "CURATED ATLAS"
-    status = entry.get("status_label", "Atlas")
-    feature_line = entry.get("evidence_model", "")
-    atlas_token = css_token(entry.get("atlas_id"), "atlas")
-    return (
-        f'<article class="site-card atlas-card atlas-card-{html.escape(atlas_token)}">'
-        f'<a class="atlas-card-visual atlas-card-visual-{html.escape(atlas_token)}" href="{html.escape(href)}" aria-hidden="true" tabindex="-1">'
-        f'<span>{html.escape(status)}</span>'
-        "</a>"
-        '<div class="card-utility-row">'
-        '<span class="card-utility-label">Atlas</span>'
-        f'<span class="card-utility-meta">{html.escape(coordinate_hint)}</span>'
-        "</div>"
-        '<p class="kicker">Atlas family</p>'
-        f'<h3><a href="{html.escape(href)}">{html.escape(entry.get("title", "Untitled atlas"))}</a></h3>'
-        f'<p class="muted-note">{html.escape(entry.get("summary", ""))}</p>'
-        f'{f"<p class=\"card-meta-text\">{html.escape(feature_line)}</p>" if feature_line else ""}'
-        f'<div class="meta-row meta-row-plain"><span class="story-status-pill atlas-status-pill">{html.escape(status)}</span></div>'
-        "</article>"
-    )
-
-
-def render_tool_card(entry: dict[str, Any], base_url: str) -> str:
-    route = entry.get("public_route", "")
-    href = link_for(base_url, route)
-    coordinate_hint = " / ".join(keyword.upper() for keyword in entry.get("keywords", [])[:2]) or "CURATED TOOL"
-    status = public_tool_status(entry)
-    feature_line = entry.get("evidence_model", "")
-    tool_token = css_token(entry.get("tool_id") or entry.get("atlas_id"), "tool")
-    tool_type = str(entry.get("tool_type") or "tool").replace("_", " ").title()
-    return (
-        f'<article class="site-card atlas-card tool-card tool-card-{html.escape(tool_token)}">'
-        f'<a class="atlas-card-visual atlas-card-visual-{html.escape(tool_token)}" href="{html.escape(href)}" aria-hidden="true" tabindex="-1">'
-        f'<span>{html.escape(status)}</span>'
-        "</a>"
-        '<div class="card-utility-row">'
-        f'<span class="card-utility-label">{html.escape(tool_type)}</span>'
-        f'<span class="card-utility-meta">{html.escape(coordinate_hint)}</span>'
-        "</div>"
-        '<p class="kicker">Interactive exhibit</p>'
-        f'<h3><a href="{html.escape(href)}">{html.escape(entry.get("title", "Untitled tool"))}</a></h3>'
-        f'<p class="muted-note">{html.escape(entry.get("summary", ""))}</p>'
-        f'{f"<p class=\"card-meta-text\">{html.escape(feature_line)}</p>" if feature_line else ""}'
-        f'<div class="meta-row meta-row-plain"><span class="story-status-pill atlas-status-pill">{html.escape(status)}</span></div>'
-        "</article>"
-    )
-
-
-def post_folio_meta(post: dict[str, Any]) -> tuple[str, str]:
-    date_text = format_display_date(post.get("date"))
-    category_text = ""
-    if post.get("series"):
-        category_text = str(post["series"][0])
-    elif post.get("topics"):
-        category_text = str(post["topics"][0])
-    strategy = post_indexing_strategy(post)
-    if strategy == "evergreen":
-        status_label = "Evergreen"
-    elif post.get("status") == "mirrored":
-        status_label = "Full essay"
-    elif post_should_index(post):
-        status_label = "Indexed essay"
-    else:
-        status_label = "Private archive"
-    utility_meta = " · ".join(item for item in [category_text, status_label] if item)
-    return date_text, utility_meta
-
-
-def render_post_card(post: dict[str, Any], base_url: str, *, featured: bool = False) -> str:
-    href = link_for(base_url, f"essays/{post.get('slug', '')}/")
-    date_text, utility_meta = post_folio_meta(post)
-    summary = post_seo_description(post)
-    feature_image = post.get("cover_image") or ""
-    feature_class = " essay-card-featured" if featured and feature_image else ""
-    image_class = " essay-card-has-media" if feature_image else ""
-    media = (
-        f'<a class="essay-card-media" href="{html.escape(href)}" aria-hidden="true" tabindex="-1">'
-        f'<img src="{html.escape(feature_image)}" alt="" loading="lazy" decoding="async" />'
-        "</a>"
-        if feature_image
-        else ""
-    )
-    return (
-        f'<article class="site-card essay-card{feature_class}{image_class}">'
-        f"{media}"
-        '<div class="essay-card-copy">'
-        '<div class="card-utility-row">'
-        f'<span class="card-utility-label">{html.escape(date_text)}</span>'
-        f'<span class="card-utility-meta">{html.escape(utility_meta)}</span>'
-        "</div>"
-        '<p class="kicker">Essay</p>'
-        f'<h3><a href="{html.escape(href)}">{html.escape(post_display_title(post))}</a></h3>'
-        f'<p class="muted-note">{html.escape(summary)}</p>'
-        "</div>"
-        "</article>"
-    )
-
-
-def public_tool_status(entry: dict[str, Any]) -> str:
-    status = str(entry.get("status") or "").lower()
-    tool_type = str(entry.get("tool_type") or "tool").replace("_", " ").title()
-    if status == "live":
-        return "Open now"
-    if status in {"prototype", "in_build", "section"}:
-        return f"{tool_type} section"
-    return tool_type
-
-
-def public_tool_export(entry: dict[str, Any]) -> dict[str, Any]:
-    public_entry = {
-        key: value
-        for key, value in entry.items()
-        if key
-        not in {
-            "source_path",
-            "launch_priority",
-            "legacy_atlas_id",
-        }
-    }
-    public_entry["status_label"] = str(entry.get("status_label") or public_tool_status(entry))
-    public_entry["status"] = "open" if str(entry.get("status") or "").lower() == "live" else "section"
-    return public_entry
-
-
-def public_post_export(post: dict[str, Any]) -> dict[str, Any]:
-    internal_keys = {
-        "flashcards",
-        "flashcards_generated_at",
-        "flashcards_source",
-        "flashcards_source_url",
-        "local_body_path",
-        "body_synced_at",
-        "body_source_url",
-        "body_source_mode",
-        "body_source_file",
-        "body_wordcount",
-        "source_mode",
-        "indexing_strategy",
-        "first_seen_at",
-        "last_synced_at",
-        "sync_source",
-        "source_path",
-        "original_title",
-        "site_visibility",
-    }
-    return {key: value for key, value in post.items() if key not in internal_keys}
-
-
-def render_story_card(story: dict[str, Any], base_url: str) -> str:
-    href = link_for(base_url, story.get("story_web_path", ""))
-    status = story.get("status", "monitoring")
-    status_class = css_token(status)
-    status_label = str(story.get("current_status_summary") or status).replace("_", " ").title()
-    region_line = " / ".join(item for item in [story.get("primary_region", ""), story.get("country", "")] if item)
-    updated_value = story.get("latest_updated_at") or story.get("updated_at") or story.get("latest_timestamp")
-    utility_meta = f'Updated {format_display_date(updated_value)}' if updated_value else "Current file"
-    lead_source = story.get("lead_source") or ""
-    utility_label = lead_source or "Pathogen Dispatch"
-    footer = (
-        f'<p class="card-meta-text">{html.escape(region_line)}</p>'
-        if region_line
-        else ""
-    )
-    return (
-        f'<article class="site-card story-card status-{status_class}">'
-        '<div class="card-utility-row">'
-        f'<span class="card-utility-label">{html.escape(utility_label)}</span>'
-        f'<span class="card-utility-meta">{html.escape(utility_meta)}</span>'
-        "</div>"
-        f'<div class="story-status-line"><span class="story-status-pill">{html.escape(status_label)}</span></div>'
-        f'<h3><a href="{html.escape(href)}">{html.escape(story.get("display_title", "Untitled story"))}</a></h3>'
-        f'<p class="muted-note">{html.escape(story.get("latest_update_summary") or story.get("why_it_matters") or "")}</p>'
-        f"{footer}"
-        "</article>"
-    )
-
-
-def render_reference_card(reference: dict[str, Any], base_url: str) -> str:
-    href = link_for(base_url, reference.get("reference_web_path", ""))
-    taxonomic_line = " · ".join(
-        canonical_meta([reference.get("pathogen"), reference.get("evidence_type")])
-    )
-    category_line = " · ".join(canonical_meta(reference.get("categories", [])[:2]))
-    return (
-        '<article class="site-card reference-card">'
-        '<div class="card-utility-row">'
-        '<span class="card-utility-label">Reference</span>'
-        f'<span class="card-utility-meta">{html.escape(taxonomic_line or "Disease briefing")}</span>'
-        "</div>"
-        '<p class="kicker">Reference</p>'
-        f'<h3><a href="{html.escape(href)}">{html.escape(reference.get("name", "Untitled reference"))}</a></h3>'
-        f'<p class="muted-note">{html.escape(reference.get("why_reporters_care") or reference.get("atlas_summary") or "")}</p>'
-        f'{f"<p class=\"card-meta-text\">{html.escape(category_line)}</p>" if category_line else ""}'
-        "</article>"
-    )
-
-
-def canonical_meta(values: list[str]) -> list[str]:
-    return [value for value in values if value]
-
-
-def post_display_title(post: dict[str, Any]) -> str:
-    return post.get("seo_title") or post.get("title") or "Untitled post"
-
-
-def post_seo_description(post: dict[str, Any]) -> str:
-    return (
-        post.get("seo_description")
-        or post.get("dek")
-        or post.get("excerpt")
-        or post.get("search_excerpt")
-        or "Published writing from The Edge of Epidemiology."
-    )
-
-
-def normalize_overview_paragraph(value: Any) -> str:
-    return re.sub(r"\s+", " ", str(value or "")).strip()
-
-
-def post_overview_paragraphs(post: dict[str, Any]) -> list[str]:
-    candidates = [
-        post_seo_description(post),
-        post.get("excerpt") or post.get("search_excerpt") or "",
-    ]
-    paragraphs: list[str] = []
-    seen: set[str] = set()
-    for candidate in candidates:
-        paragraph = normalize_overview_paragraph(candidate)
-        if not paragraph:
-            continue
-        key = paragraph.casefold()
-        if key in seen:
-            continue
-        seen.add(key)
-        paragraphs.append(paragraph)
-    return paragraphs
-
-
 def local_post_body_html(post: dict[str, Any]) -> str:
     body_path = str(post.get("local_body_path") or "").strip()
     if not body_path:
@@ -818,109 +142,15 @@ def local_post_body_html(post: dict[str, Any]) -> str:
         return ""
     if not candidate.exists() or not candidate.is_file():
         return ""
-    return candidate.read_text()
+    from .substack_sync import sanitize_post_body_html
+
+    return sanitize_post_body_html(candidate.read_text())
 
 
-def post_indexing_strategy(post: dict[str, Any]) -> str:
-    strategy = str(post.get("indexing_strategy") or "").strip()
-    if strategy == "noindex_stub":
-        return "summary_only"
-    if strategy:
-        return strategy
-    if post.get("status") == "mirrored":
-        return "mirrored"
-    return "summary_only"
+def render_home(posts, tools, latest, base_url):
+    from .site_pages import render_home as render
 
-
-def post_should_index(post: dict[str, Any]) -> bool:
-    return post_indexing_strategy(post).lower() not in NOINDEX_POST_STRATEGIES
-
-
-def post_site_visibility(post: dict[str, Any]) -> str:
-    visibility = str(post.get("site_visibility") or "").strip().lower()
-    if visibility:
-        return visibility
-    # Existing Substack records predate site_visibility. Treat synced records
-    # that already have a publication status as public, while keeping bare
-    # tombstone/test records without status out of the essay archive.
-    if str(post.get("status") or "").strip():
-        return "public"
-    return ""
-
-
-def is_public_essay_post(post: dict[str, Any]) -> bool:
-    return post_site_visibility(post) == "public" and post_should_index(post)
-
-
-def public_essay_posts(posts: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    return [post for post in posts if is_public_essay_post(post)]
-
-
-def post_topic_cluster(post: dict[str, Any]) -> str:
-    if post.get("topic_cluster"):
-        return str(post["topic_cluster"])
-    text = " ".join(
-        [
-            str(post.get("slug", "")),
-            str(post.get("title", "")),
-            " ".join(str(topic) for topic in post.get("topics", [])),
-            " ".join(str(tag) for tag in post.get("upstream_tags", [])),
-        ]
-    ).lower()
-    for hub in TOPIC_HUBS:
-        if any(keyword in text for keyword in hub["keywords"]):
-            return str(hub["slug"])
-    return "historical-epidemiology" if "history" in text else "epidemiologic-methods"
-
-
-def topic_hub_title(slug: str) -> str:
-    for hub in TOPIC_HUBS:
-        if hub["slug"] == slug:
-            return str(hub["title"])
-    return slug.replace("-", " ").title()
-
-
-def render_home(posts: list[dict[str, Any]], tools: list[dict[str, Any]], latest: dict[str, Any], base_url: str) -> str:
-    stories = latest.get("stories", [])[:4]
-    references = latest.get("reference", [])[:3]
-    generated_at = format_display_date(latest.get("generated_at"))
-    story_count = latest.get("story_count") or len(latest.get("stories", []))
-    item_count = latest.get("item_count") or 0
-    live_count = (latest.get("freshness_summary") or {}).get("live", 0)
-    hero = f"""
-      <section class="hero hero-home hero-open">
-        <div class="hero-main">
-          <p class="kicker">Devin Teichrow</p>
-          <h2 class="hero-title">Disease follows human arrangements: ships and barracks, markets and wells, crowded rooms and delayed decisions, while mosquitoes and rodent reservoirs take advantage of the ecologies those arrangements create.</h2>
-          <div class="hero-prose">
-            <p class="subtitle">I&apos;m Devin Teichrow, a UCLA-trained epidemiologist and neuroscience researcher at UC Irvine working on migraine and Alzheimer&apos;s Disease and Related Dementias. My public science work focuses on how disease moves through populations, history, war, ecology, and infrastructure, including everything from modern outbreak reporting to historical epidemic reconstruction and interactive disease mapping.</p>
-            <p class="subtitle">The Edge of Epidemiology is my home for longform essays, live outbreak coverage, disease atlases, methodological explainers, and projects exploring the intersection of epidemiology, geography, and history.</p>
-          </div>
-          <div class="hero-actions">
-            <a class="button secondary" href="{html.escape(link_for(base_url, 'newsdesk/'))}">Open the newsdesk</a>
-            <a class="button secondary" href="{html.escape(link_for(base_url, 'tools/'))}">Browse the exhibits</a>
-            <a class="button secondary" href="{html.escape(link_for(base_url, 'essays/'))}">Read the essays</a>
-          </div>
-          <p class="hero-status-line"><span class="hero-status-label">Live desk</span> Updated {html.escape(generated_at)} · {html.escape(str(story_count))} active files · {html.escape(str(item_count))} tracked sources · {html.escape(str(live_count))} current updates</p>
-        </div>
-      </section>
-    """
-    newsdesk_cards = "".join(render_story_card(story, base_url) for story in stories)
-    tool_cards = "".join(render_tool_card(tool, base_url) for tool in tools[:4])
-    post_cards = "".join(render_post_card(post, base_url, featured=index == 0) for index, post in enumerate(posts[:6]))
-    ref_cards = "".join(render_reference_card(ref, base_url) for ref in references)
-    return base_html(
-        title="Edge of Epidemiology",
-        description="The umbrella publication for The Pathogen Dispatch, interactive public-health exhibits, historical epidemiology, and the Edge of Epidemiology writing archive.",
-        active="home",
-        base_url=base_url,
-        body=hero
-        + f'<section class="home-section opportunities-strip"><div class="section-head section-head-split"><div><p class="kicker">Opportunities</p><h2>Selected projects, collaborations, and commissions</h2><p class="muted-note">I am open to serious projects where epidemiology, data, public health, history, and technical implementation need to become one usable thing.</p></div><aside class="section-sidecar"><p class="section-sidecar-label">Contact</p><p><a href="mailto:devinteichrow@gmail.com">devinteichrow@gmail.com</a></p></aside></div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "opportunities/"))}">Work with me</a></div></section>'
-        + f'<section class="home-section newsdesk-panel"><div class="section-head section-head-split"><div><p class="kicker">Live desk</p><h2>The Pathogen Dispatch</h2><p class="muted-note">Current outbreak files, follow-up reporting, and source-first tracking for major infectious-disease stories.</p></div><aside class="section-sidecar"><p class="section-sidecar-label">Currently tracking</p><p>{html.escape(str(story_count))} active files · {html.escape(str(item_count))} tracked sources · Updated {html.escape(generated_at)}</p></aside></div><div class="card-grid three-up">{newsdesk_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "newsdesk/"))}">Go to the full newsdesk</a></div></section>'
-        + f'<section class="home-section atlas-panel"><div class="section-head"><p class="kicker">Interactive exhibits</p><h2>Public disease exhibits for learning by looking</h2><p class="muted-note">Timelines, atlases, and source-first visual work for pathogen history, outbreak geography, and epidemiologic reasoning.</p></div><div class="card-grid two-up">{tool_cards}</div></section>'
-        + f'<section class="home-section essay-panel"><div class="section-head"><p class="kicker">Published writing</p><h2>Recent essays</h2><p class="muted-note">Longer-form writing on outbreaks, evidence, history, ecology, and the politics of public health.</p></div><div class="card-grid three-up essays-grid">{post_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "essays/"))}">Browse all essays</a></div></section>'
-        + f'<section class="home-section reference-panel"><div class="section-head"><p class="kicker">Field guides</p><h2>Reference layer</h2><p class="muted-note">Practical disease briefings on transmission, diagnostics, severity, and what matters when a pathogen reappears.</p></div><div class="card-grid three-up">{ref_cards}</div><div class="section-actions"><a class="button secondary" href="{html.escape(link_for(base_url, "reference/"))}">Open the reference desk</a></div></section>',
-    )
+    return render(posts, tools, latest, base_url)
 
 
 def render_essays_index(posts: list[dict[str, Any]], base_url: str) -> str:
@@ -982,9 +212,14 @@ def render_topic_hub_index(posts: list[dict[str, Any]], base_url: str) -> str:
     )
 
 
-def render_topic_hub_page(hub: dict[str, Any], posts: list[dict[str, Any]], base_url: str) -> str:
+def render_topic_hub_page(
+    hub: dict[str, Any], posts: list[dict[str, Any]], base_url: str
+) -> str:
     selected = [post for post in posts if post_topic_cluster(post) == hub["slug"]]
-    cards = "".join(render_post_card(post, base_url, featured=index == 0) for index, post in enumerate(selected))
+    cards = "".join(
+        render_post_card(post, base_url, featured=index == 0)
+        for index, post in enumerate(selected)
+    )
     if not cards:
         cards = '<p class="muted-note">No essays are currently assigned to this topic hub.</p>'
     return base_html(
@@ -995,8 +230,8 @@ def render_topic_hub_page(hub: dict[str, Any], posts: list[dict[str, Any]], base
         body=f"""
       <section class="hero hero-open">
         <p class="kicker">Topic hub</p>
-        <h2 class="hero-title">{html.escape(str(hub['title']))}</h2>
-        <p class="subtitle">{html.escape(str(hub['description']))}</p>
+        <h2 class="hero-title">{html.escape(str(hub["title"]))}</h2>
+        <p class="subtitle">{html.escape(str(hub["description"]))}</p>
       </section>
       <section class="panel panel-soft">
         <div class="section-head">
@@ -1010,149 +245,10 @@ def render_topic_hub_page(hub: dict[str, Any], posts: list[dict[str, Any]], base
     )
 
 
-def render_post_page(post: dict[str, Any], atlases: dict[str, dict[str, Any]], posts: list[dict[str, Any]], base_url: str) -> str:
-    related_atlas_links = []
-    for atlas_id in post.get("related_atlases", []):
-        entry = atlases.get(atlas_id)
-        if not entry:
-            continue
-        related_atlas_links.append(
-            f'<li><a href="{html.escape(link_for(base_url, entry.get("public_route", "")))}">{html.escape(entry.get("title", atlas_id))}</a></li>'
-        )
-    related_block = (
-        '<div class="detail-block"><h3>Related atlases</h3><ul class="link-list">'
-        + "".join(related_atlas_links)
-        + "</ul></div>"
-        if related_atlas_links
-        else '<div class="detail-block"><h3>Related atlases</h3><p class="muted-note">No atlas links have been curated for this piece yet.</p></div>'
-    )
-    topics = "".join(f'<span class="badge">{html.escape(topic)}</span>' for topic in post.get("topics", []))
-    read_url = post.get("canonical_url", "")
-    strategy = post_indexing_strategy(post)
-    is_indexable = post_should_index(post)
-    if strategy == "evergreen":
-        status_label = "Evergreen essay"
-    elif post.get("status") == "mirrored":
-        status_label = "Full essay"
-    elif is_indexable:
-        status_label = "Indexed essay"
-    else:
-        status_label = "Private archive"
-    display_title = post_display_title(post)
-    description = post_seo_description(post)
-    overview_paragraphs = "\n          ".join(
-        f"<p>{html.escape(paragraph)}</p>" for paragraph in post_overview_paragraphs(post)
-    )
-    original_title = post.get("title") or ""
-    cluster = post_topic_cluster(post)
-    cluster_link = link_for(base_url, f"topics/{cluster}/")
-    cluster_title = topic_hub_title(cluster)
-    related_posts = [
-        item
-        for item in posts
-        if item is not post and item.get("slug") != post.get("slug") and post_topic_cluster(item) == cluster
-    ][:5]
-    related_essay_items = "".join(
-        f'<li><a href="{html.escape(link_for(base_url, f"essays/{item.get("slug", "")}/"))}">{html.escape(post_display_title(item))}</a></li>'
-        for item in related_posts
-    )
-    related_essay_block = (
-        '<div class="detail-block"><h3>Related essays</h3><ul class="link-list">'
-        + related_essay_items
-        + "</ul></div>"
-        if related_essay_items
-        else ""
-    )
-    keyword = post.get("primary_keyword") or cluster_title
-    contents_items = [
-        '<li><a href="#overview">Overview</a></li>',
-        '<li><a href="#read">Read the essay</a></li>',
-        '<li><a href="#related-work">Related work</a></li>',
-    ]
-    contents_links = "\n            ".join(contents_items)
-    body_html = local_post_body_html(post)
-    if body_html:
-        read_section = f"""
-      <section class="panel essay-body-panel" id="read">
-        <article class="prose essay-body">
-          {body_html}
-        </article>
-        <aside class="substack-origin-note">
-          <p class="kicker">Originally published</p>
-          <p>This essay was first published at The Edge of Epidemiology on Substack. The version here is a local mirror for reading, search, and preservation.</p>
-          <div class="hero-actions">
-            <a class="button secondary" href="{html.escape(read_url)}">Read original</a>
-            <a class="button secondary" href="{html.escape('https://theedgeofepidemiology.substack.com/subscribe')}">Subscribe</a>
-          </div>
-        </aside>
-      </section>
-        """
-    else:
-        read_section = f"""
-      <section class="panel detail-grid" id="read">
-        <div class="detail-block">
-          <h3>Read the full essay</h3>
-          <p><a href="{html.escape(read_url)}">{html.escape(read_url)}</a></p>
-        </div>
-        <div class="detail-block">
-          <h3>Archive note</h3>
-          <p>This page keeps the essay connected to related topics, maps, and reference pages on The Edge of Epidemiology.</p>
-        </div>
-      </section>
-        """
-    return base_html(
-        title=f"{display_title} | Edge of Epidemiology",
-        description=description,
-        active="essays",
-        base_url=base_url,
-        body=f"""
-      <section class="hero">
-        <p class="kicker">Essay</p>
-        <h2 class="hero-title">{html.escape(display_title)}</h2>
-        <p class="subtitle">{html.escape(description)}</p>
-        <div class="meta-row">
-          <span class="badge accent">{html.escape(status_label)}</span>
-          <span class="badge">{html.escape(format_display_date(post.get('date')))}</span>
-          <span class="badge">By Devin Teichrow</span>
-          {topics}
-        </div>
-        <div class="hero-actions">
-          <a class="button primary" href="{html.escape(read_url)}">Read on Substack</a>
-        </div>
-      </section>
-      <section class="panel detail-grid">
-        <div class="detail-block">
-          <h3>Contents</h3>
-          <ul class="link-list">
-            {contents_links}
-          </ul>
-        </div>
-        <div class="detail-block">
-          <h3>Topic hub</h3>
-          <p><a href="{html.escape(cluster_link)}">{html.escape(cluster_title)}</a></p>
-        </div>
-        <div class="detail-block">
-          <h3>Search focus</h3>
-          <p>{html.escape(str(keyword))}</p>
-        </div>
-        <div class="detail-block">
-          <h3>Author</h3>
-          <p>By Devin Teichrow. Published {html.escape(format_display_date(post.get('date')))}.</p>
-        </div>
-      </section>
-      <section class="panel detail-grid" id="overview">
-        <div class="detail-block">
-          <h3>Overview</h3>
-          {overview_paragraphs}
-        </div>
-      </section>
-      {read_section}
-      <section class="panel detail-grid" id="related-work">
-        {related_block}
-        {related_essay_block}
-      </section>
-    """,
-    )
+def render_post_page(post, atlases, posts, base_url):
+    from .site_pages import render_post_page as render
+
+    return render(post, atlases, posts, base_url, local_post_body_html(post))
 
 
 def render_atlas_hub(atlases: list[dict[str, Any]], base_url: str) -> str:
@@ -1197,7 +293,9 @@ def render_tools_hub(tools: list[dict[str, Any]], base_url: str) -> str:
 
 
 def render_reference_index(references: list[dict[str, Any]], base_url: str) -> str:
-    cards = "".join(render_reference_card(reference, base_url) for reference in references)
+    cards = "".join(
+        render_reference_card(reference, base_url) for reference in references
+    )
     return base_html(
         title="Reference | Edge of Epidemiology",
         description="Disease sheets and desk notes linked to the live newsdesk and atlas work.",
@@ -1265,7 +363,9 @@ def ensure_archived_story_placeholders(docs_dir: Path, base_url: str) -> None:
     story_hrefs: set[str] = set()
     for page in (docs_dir / "newsdesk").rglob("*.html"):
         page_text = page.read_text()
-        story_hrefs.update(re.findall(r'href="[^"]*/stories/([^"#?]+\.html)', page_text))
+        story_hrefs.update(
+            re.findall(r'href="[^"]*/stories/([^"#?]+\.html)', page_text)
+        )
     for filename in sorted(story_hrefs):
         dest = docs_dir / "stories" / filename
         if dest.exists():
@@ -1274,14 +374,30 @@ def ensure_archived_story_placeholders(docs_dir: Path, base_url: str) -> None:
         dest.write_text(render_archived_story_placeholder(filename, base_url))
 
 
-def render_historical_page(posts: list[dict[str, Any]], atlases: list[dict[str, Any]], base_url: str) -> str:
+def render_historical_page(
+    posts: list[dict[str, Any]], atlases: list[dict[str, Any]], base_url: str
+) -> str:
     selected = [
-        post for post in posts
+        post
+        for post in posts
         if "history" in [topic.lower() for topic in post.get("topics", [])]
-        or any(atlas_id in {"revolutionary-war-atlas", "viking-health-atlas", "maritime-disease-atlas"} for atlas_id in post.get("related_atlases", []))
+        or any(
+            atlas_id
+            in {
+                "revolutionary-war-atlas",
+                "viking-health-atlas",
+                "maritime-disease-atlas",
+            }
+            for atlas_id in post.get("related_atlases", [])
+        )
     ][:12]
     cards = "".join(render_post_card(post, base_url) for post in selected)
-    atlas_cards = "".join(render_atlas_card(entry, base_url) for entry in atlases if entry.get("atlas_id") in {"maritime-disease-atlas", "revolutionary-war-atlas", "viking-health-atlas"})
+    atlas_cards = "".join(
+        render_atlas_card(entry, base_url)
+        for entry in atlases
+        if entry.get("atlas_id")
+        in {"maritime-disease-atlas", "revolutionary-war-atlas", "viking-health-atlas"}
+    )
     return base_html(
         title="Historical | Edge of Epidemiology",
         description="Historical epidemiology essays and atlas projects from Edge of Epidemiology.",
@@ -1389,235 +505,10 @@ def render_about_page(base_url: str) -> str:
     )
 
 
-def render_opportunities_page(base_url: str) -> str:
-    referral_offers = [
-        (
-            "Lab website + auto publications",
-            "For PIs, new faculty, small labs, and research projects that need a credible public home.",
-            [
-                "Static lab or project site with home, people, research, publications, and contact pages",
-                "Optional PubMed-backed publication table that can update from author, lab, or topic queries",
-                "Copy cleanup so the work is understandable without sounding like a grant abstract",
-            ],
-        ),
-        (
-            "Research visibility package",
-            "For teams with papers, talks, grants, or projects that should be easier for people outside the lab to understand.",
-            [
-                "Plain-language summaries, publication blurbs, project descriptions, and website copy",
-                "Short posts or clip-ready text from papers, talks, webinars, or research updates",
-                "Useful for lab news pages, LinkedIn posts, center updates, and funder-facing communication",
-            ],
-        ),
-        (
-            "Data / stats / writing cleanup sprint",
-            "For teams with an analysis, figure, codebase, methods section, or results write-up that needs to be made usable.",
-            [
-                "R/Python cleanup, exploratory analysis, statistical summaries, figure polish, or reproducible reports",
-                "Methods/results/limitations language that says what the work actually supports",
-                "A fixed handoff artifact instead of an open-ended consulting arrangement",
-            ],
-        ),
-    ]
-    services = [
-        ("Evidence and analysis", "Study design, literature synthesis, epidemiologic framing, R/Python analysis, dashboards, and interpretation that keeps uncertainty visible."),
-        ("Science communication", "Essays, explainers, editorial strategy, research translation, pitch development, and historically grounded health writing."),
-        ("Interactive exhibits and atlases", "Interactive maps, outbreak trackers, disease reference layers, historical epidemiology projects, and source-first public-health exhibits."),
-        ("Academic lab and project websites", "Lightweight, maintainable public sites for labs, research groups, grants, and scientific projects that need to look credible without becoming a second job."),
-        ("Automated publication systems", "PubMed/NCBI API-backed publication tables that update from author, lab, or topic queries instead of quietly going stale by hand."),
-        ("Research presence maintenance", "Small monthly support for publication updates, people pages, recruitment copy, project summaries, broken links, and other public-facing research infrastructure."),
-        ("Evidence synthesis and question framing", "Clinical, epidemiologic, or public-health questions turned into scoped reviews, PICOT-style structures, evidence tables, and decision-ready summaries."),
-        ("R/Python analysis sprints", "Cleaning, modeling, visualization, reproducible reports, lightweight dashboards, and code review for teams that need analysis to become a usable artifact."),
-        ("Medical and science writing", "Health writing, medical education copy, research summaries, grant-adjacent language, patient-facing explanations, and editorial cleanup without flattening uncertainty."),
-        ("Policy and evidence translation", "Briefs, memos, slide-ready summaries, and public-facing explainers that connect epidemiologic evidence to institutions, incentives, and real-world constraints."),
-        ("AI-assisted research workflows", "Practical Codex-style workflows for literature triage, structured notes, coding tasks, data checks, and lab knowledge management."),
-        ("Outbreak and topic monitors", "Source-first monitoring pages, evidence trackers, pathogen or topic briefs, and update workflows for fast-moving public-health subjects."),
-    ]
-    fit_items = [
-        "infectious disease",
-        "neurology and cognition",
-        "historical epidemiology",
-        "public-health data",
-        "maps and dashboards",
-        "research translation",
-        "lab websites",
-        "publication automation",
-        "evidence synthesis",
-        "R/Python analysis",
-        "medical writing",
-        "policy briefs",
-        "AI workflows",
-        "topic monitors",
-    ]
-    packages = [
-        (
-            "Lab Website + Auto Publications",
-            "$650-$1,500",
-            "A professional public site for a PI, lab, center, or project, with an optional PubMed-backed publications table.",
-            [
-                "Home, people, research, publications, contact, and recruitment-ready pages",
-                "Configurable PubMed/NCBI query rules for author, lab, topic, or grant-linked publication lists",
-                "Copy cleanup, mobile-responsive layout, basic SEO, and GitHub Pages deployment",
-            ],
-        ),
-        (
-            "Research Visibility Package",
-            "$500-$1,500",
-            "Plain-language research communication for recent papers, grants, talks, recruitment pages, or center updates.",
-            [
-                "Publication summaries, project descriptions, lab news items, and website copy",
-                "Short posts or clip-ready text from papers, webinars, talks, or research updates",
-                "Editorial cleanup that keeps uncertainty visible instead of turning research into marketing fog",
-            ],
-        ),
-        (
-            "Data / Stats / Writing Cleanup Sprint",
-            "$400-$1,500",
-            "A fixed-scope cleanup sprint for analysis, figures, code, methods language, or results interpretation.",
-            [
-                "R or Python cleanup, exploratory analysis, statistical summaries, and figure polish",
-                "Reproducible report, dashboard, memo, or handoff notes depending on the project",
-                "Methods, results, interpretation, and limitations language for scientific or public audiences",
-            ],
-        ),
-        (
-            "Evidence Translation Sprint",
-            "$500-$1,500",
-            "A focused evidence product for a clinical, epidemiologic, policy, or research question that needs to become usable quickly.",
-            [
-                "PICOT-style question framing when useful, literature search logic, inclusion boundaries, and evidence tables",
-                "Plain-language interpretation of what the evidence can and cannot support",
-                "A brief, memo, slide-ready summary, or annotated source packet depending on the audience",
-            ],
-        ),
-        (
-            "Research Exhibit or Topic Monitor",
-            "$1,000-$3,000",
-            "A public-facing page, tracker, or mini-exhibit for a disease, dataset, topic, outbreak, grant, or research program.",
-            [
-                "Source-first structure for updates, maps, timelines, dashboards, or reference layers",
-                "Clear explanation of what is known, what is uncertain, and what would change the interpretation",
-                "A maintainable static build that can be updated without turning into custom software theater",
-            ],
-        ),
-    ]
-    process_steps = [
-        ("1", "Scope the public job", "We define who the page is for, what already exists, what has to be updated by hand, and what can be automated."),
-        ("2", "Build the durable version", "I ship a small, fast site or research-output page with clean copy, stable structure, and the right amount of automation."),
-        ("3", "Leave a usable system", "You get the deployed site, update instructions, and a maintenance option if the work needs continuing support."),
-    ]
-    social_links = [
-        ("Substack", "The Edge of Epidemiology", "https://theedgeofepidemiology.substack.com", ""),
-        ("X / Twitter", "@edgeofepi", "https://x.com/edgeofepi", ""),
-        ("Instagram", "@edgeofepi", "https://www.instagram.com/edgeofepi/", ""),
-        ("LinkedIn", "Devin Teichrow MSc", "https://www.linkedin.com/in/devin-teichrow-msc-938942254", ""),
-        ("Medium", "@EdgeofEpi", "https://medium.com/@EdgeofEpi", ""),
-    ]
-    service_cards = "".join(
-        f'<article class="opportunity-mini-card"><p class="kicker">Project lane</p><h3>{html.escape(title)}</h3><p>{html.escape(summary)}</p></article>'
-        for title, summary in services
-    )
-    referral_cards = "".join(
-        f"""
-          <article class="referral-offer-card">
-            <p class="kicker">Good first project</p>
-            <h3>{html.escape(title)}</h3>
-            <p>{html.escape(summary)}</p>
-            <ul>
-              {"".join(f"<li>{html.escape(bullet)}</li>" for bullet in bullets)}
-            </ul>
-          </article>
-        """
-        for title, summary, bullets in referral_offers
-    )
-    fit_list = "".join(f'<span class="fit-chip">{html.escape(item)}</span>' for item in fit_items)
-    package_cards = "".join(
-        f"""
-          <article class="service-package-card">
-            <div class="package-card-head">
-              <p class="kicker">Service package</p>
-              <h3>{html.escape(title)}</h3>
-              <p class="package-price">{html.escape(price)}</p>
-            </div>
-            <p>{html.escape(summary)}</p>
-            <ul>
-              {"".join(f"<li>{html.escape(bullet)}</li>" for bullet in bullets)}
-            </ul>
-          </article>
-        """
-        for title, price, summary, bullets in packages
-    )
-    process_items = "".join(
-        f"""
-          <article class="service-step">
-            <span class="service-step-number">{html.escape(number)}</span>
-            <h3>{html.escape(title)}</h3>
-            <p>{html.escape(summary)}</p>
-          </article>
-        """
-        for number, title, summary in process_steps
-    )
-    social_items = "".join(
-        (
-            f'<a class="social-link" href="{html.escape(url)}"><span class="social-label">{html.escape(label)}</span><span class="social-name">{html.escape(name)}</span></a>'
-            if url
-            else f'<div class="social-link social-link-disabled" aria-disabled="true"><span class="social-label">{html.escape(label)}</span><span class="social-name">{html.escape(name)}</span><span class="social-status">{html.escape(status)}</span></div>'
-        )
-        for label, name, url, status in social_links
-    )
-    return base_html(
-        title="Opportunities | Edge of Epidemiology",
-        description="Work with Devin Teichrow on epidemiology, evidence, disease history, science communication, data projects, and public-health exhibits.",
-        active="opportunities",
-        base_url=base_url,
-        body=f"""
-      <section class="hero hero-open opportunities-hero">
-        <p class="kicker">Opportunities</p>
-        <h2 class="hero-title">Send me research work that needs to become clearer, public, or usable.</h2>
-        <p class="subtitle">I help labs, researchers, health teams, and science communicators turn technical work into websites, summaries, data products, evidence memos, and public-facing materials that people can actually use.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="mailto:devinteichrow@gmail.com">Email me about a project</a>
-          <a class="button secondary" href="{html.escape(link_for(base_url, "assets/referral/devin-teichrow-referral-packet.pdf"))}">Download referral one-pager</a>
-          <a class="button secondary" href="https://theedgeofepidemiology.substack.com">Read The Edge of Epidemiology</a>
-        </div>
-      </section>
-      <section class="opportunities-showcase">
-        <div class="opportunities-main">
-          <div class="section-head">
-            <p class="kicker">Referral-friendly work</p>
-            <h2>Three easy ways to send work my way.</h2>
-            <p class="muted-note">If someone asks what kind of work I am looking for, start here. These are deliberately concrete: a lab site, research visibility help, or a fixed cleanup sprint for data, writing, figures, or code.</p>
-          </div>
-          <div class="referral-offer-grid">{referral_cards}</div>
-          <div class="section-head">
-            <p class="kicker">Other useful lanes</p>
-            <h2>Useful where evidence has to become public, visual, or usable.</h2>
-            <p class="muted-note">The fit is not generic consulting. It is the overlap: epidemiologic reasoning, historical imagination, data work, technical implementation, and clear public explanation.</p>
-          </div>
-          <div class="opportunity-mini-grid">{service_cards}</div>
-          <div class="fit-chip-row">{fit_list}</div>
-          <div class="services-section-head section-head">
-            <p class="kicker">Freelance services</p>
-            <h2>Fixed-scope projects are easiest to start.</h2>
-            <p class="muted-note">The cleanest first project is narrow: a site that needs launching, a paper that needs a public summary, a figure/code/results section that needs cleanup, or an evidence question that needs a short memo. Larger systems can come later.</p>
-          </div>
-          <div class="service-package-grid">{package_cards}</div>
-          <div class="service-process-row">{process_items}</div>
-          <p class="service-note">Publication automation is built around PubMed/NCBI E-utilities and structured update rules rather than brittle page scraping. Ranges are typical starting points; tighter scopes can be smaller, and multi-page research products can be larger. Light maintenance can usually be scoped separately for $100-$300/month. I am not offering expert-witness services or paid advocacy; the useful lane here is evidence, writing, analysis, public research infrastructure, and practical workflow building.</p>
-        </div>
-        <aside class="opportunities-contact-card">
-          <div>
-            <p class="kicker">Get in touch</p>
-            <h2>Send the actual shape of the problem.</h2>
-            <p>If you want to collaborate, commission a project, invite me to speak, ask about consulting, or pitch something strange but serious, send what you are trying to do, who it is for, what exists already, and the timeline or budget if relevant.</p>
-          </div>
-          <a class="button primary" href="mailto:devinteichrow@gmail.com">devinteichrow@gmail.com</a>
-          <div class="social-grid compact-social-grid">{social_items}</div>
-          <p class="domain-note">Domain direction: use devinteichrow.com as the canonical personal site when DNS is ready.</p>
-        </aside>
-      </section>
-    """,
-    )
+def render_opportunities_page(base_url):
+    from .site_services import render_opportunities_page as render
+
+    return render(base_url)
 
 
 def render_search_page(base_url: str) -> str:
@@ -1630,35 +521,41 @@ def render_search_page(base_url: str) -> str:
         body=f"""
       <section class="hero">
         <p class="kicker">Search</p>
-        <h2 class="hero-title">Search the umbrella site</h2>
-        <p class="subtitle">Essays, atlases, references, and live outbreak files share one static search index.</p>
+        <h2 class="hero-title">Find something worth reading</h2>
+        <p class="subtitle">Search essays, exhibits, reference pages, and current reporting.</p>
       </section>
       <section class="panel">
         <div class="search-shell" data-search-source="{html.escape(endpoint)}">
           <div class="search-controls">
-            <input class="filter-input" type="search" data-search-input placeholder="Search titles, tags, places, pathogens, or phrases" />
-            <select class="filter-select" data-search-filter>
+            <label class="search-label">Search<input class="filter-input" type="search" data-search-input placeholder="Search titles, tags, places, pathogens, or phrases" /></label>
+            <label class="search-label">Section<select class="filter-select" data-search-filter>
               <option value="all">All sections</option>
-              <option value="Tool">Exhibits</option>
+              <option value="Exhibit">Exhibits</option>
               <option value="Essay">Essays</option>
-              <option value="Atlas">Atlases</option>
+              <option value="Topic">Topics</option>
               <option value="Newsdesk">Newsdesk</option>
               <option value="Reference">Reference</option>
-            </select>
+            </select></label>
           </div>
-          <div class="card-grid three-up" data-search-results></div>
+          <p data-search-count role="status"></p><div class="card-grid three-up" data-search-results></div>
         </div>
       </section>
     """,
     )
 
 
-def render_curated_atlas_page(entry: dict[str, Any], posts: list[dict[str, Any]], base_url: str) -> str:
+def render_curated_atlas_page(
+    entry: dict[str, Any], posts: list[dict[str, Any]], base_url: str
+) -> str:
     related = [
-        post for post in posts
+        post
+        for post in posts
         if entry.get("atlas_id") in post.get("related_atlases", [])
     ][:8]
-    related_cards = "".join(render_post_card(post, base_url) for post in related) or '<p class="muted-note">No linked essays are curated here yet.</p>'
+    related_cards = (
+        "".join(render_post_card(post, base_url) for post in related)
+        or '<p class="muted-note">No linked essays are curated here yet.</p>'
+    )
     return base_html(
         title=f"{entry.get('title')} | Edge of Epidemiology",
         description=entry.get("summary", ""),
@@ -1666,15 +563,15 @@ def render_curated_atlas_page(entry: dict[str, Any], posts: list[dict[str, Any]]
         base_url=base_url,
         body=f"""
       <section class="hero">
-        <p class="kicker">{html.escape(entry.get('status_label', 'Atlas'))}</p>
-        <h2 class="hero-title">{html.escape(entry.get('title', 'Atlas'))}</h2>
-        <p class="subtitle">{html.escape(entry.get('summary', ''))}</p>
+        <p class="kicker">{html.escape(entry.get("status_label", "Atlas"))}</p>
+        <h2 class="hero-title">{html.escape(entry.get("title", "Atlas"))}</h2>
+        <p class="subtitle">{html.escape(entry.get("summary", ""))}</p>
       </section>
       <section class="panel prose">
         <h3>Current state</h3>
-        <p>{html.escape(entry.get('long_note', 'This atlas section is being prepared as a fuller public geography project.'))}</p>
+        <p>{html.escape(entry.get("long_note", "This atlas section is being prepared as a fuller public geography project."))}</p>
         <h3>Evidence model</h3>
-        <p>{html.escape(entry.get('evidence_model', 'Curated historical and epidemiologic sources.'))}</p>
+        <p>{html.escape(entry.get("evidence_model", "Curated historical and epidemiologic sources."))}</p>
       </section>
       <section class="panel">
         <div class="section-head"><p class="kicker">Related writing</p><h2>Connected essays</h2></div>
@@ -1684,22 +581,58 @@ def render_curated_atlas_page(entry: dict[str, Any], posts: list[dict[str, Any]]
     )
 
 
+def prepare_epidossier_docs(source_docs: Path) -> Path:
+    """Re-render upstream exports in isolation, retaining their collection dates."""
+    renderer = source_docs.parent / "src" / "rebuild_public.py"
+    if not renderer.exists():
+        return source_docs
+    import sys
+
+    output = temporary_directory("epi-dossier-public-contracts-") / "docs"
+    subprocess.run(
+        [
+            sys.executable,
+            "-m",
+            "src.rebuild_public",
+            "--source-docs",
+            str(source_docs.resolve()),
+            "--output-dir",
+            str(output.resolve()),
+        ],
+        cwd=source_docs.parent,
+        check=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+    )
+    return output
+
+
 def resolve_epidossier_docs() -> Path:
     configured_docs = os.environ.get("EOE_EPI_DOSSIER_DOCS")
     if configured_docs:
         docs_path = Path(configured_docs).expanduser()
         if not docs_path.exists():
-            raise FileNotFoundError(f"Configured epi-dossier docs path does not exist: {docs_path}")
-        return docs_path
+            raise FileNotFoundError(
+                f"Configured epi-dossier docs path does not exist: {docs_path}"
+            )
+        return prepare_epidossier_docs(docs_path)
 
     local_candidate = PROJECT_ROOT.parent / "epi-dossier" / "docs"
     if local_candidate.exists():
-        return local_candidate
+        return prepare_epidossier_docs(local_candidate)
 
     temp_root = temporary_directory("epi-dossier-import-")
     clone_dir = temp_root / "epi-dossier"
     subprocess.run(
-        ["git", "clone", "--depth", "1", os.environ.get("EOE_EPI_DOSSIER_REPO", DEFAULT_EPI_DOSSIER_REPO), str(clone_dir)],
+        [
+            "git",
+            "clone",
+            "--depth",
+            "1",
+            os.environ.get("EOE_EPI_DOSSIER_REPO", DEFAULT_EPI_DOSSIER_REPO),
+            str(clone_dir),
+        ],
         check=True,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
@@ -1708,7 +641,7 @@ def resolve_epidossier_docs() -> Path:
     docs_path = clone_dir / "docs"
     if not docs_path.exists():
         raise FileNotFoundError("Cloned epi-dossier repo did not contain docs/")
-    return docs_path
+    return prepare_epidossier_docs(docs_path)
 
 
 def import_copy(src: Path, dest: Path) -> None:
@@ -1922,7 +855,9 @@ def imported_shell_nav(active: str, base_url: str) -> str:
     link_html = []
     for label, path in links:
         cls = "active" if label.lower() == active.lower() else ""
-        link_html.append(f'<a class="{cls}" href="{html.escape(link_for(base_url, path))}">{html.escape(label)}</a>')
+        link_html.append(
+            f'<a class="{cls}" href="{html.escape(link_for(base_url, path))}">{html.escape(label)}</a>'
+        )
     return (
         '<div class="eoe-shell-nav">'
         '<div class="eoe-shell-nav-inner">'
@@ -1935,44 +870,44 @@ def imported_shell_nav(active: str, base_url: str) -> str:
 
 def rewrite_imported_paths(html_text: str, base_url: str) -> str:
     replacements = {
-        './index.html': link_for(base_url, "newsdesk/"),
-        './notebook.html': link_for(base_url, "notebook/"),
-        '../notebook.html': link_for(base_url, "notebook/"),
-        './atlas.html': link_for(base_url, "atlases/pathogen/"),
-        '../atlas.html': link_for(base_url, "atlases/pathogen/"),
-        './outbreaks.html': link_for(base_url, "newsdesk/outbreaks/"),
-        '../outbreaks.html': link_for(base_url, "newsdesk/outbreaks/"),
-        '../../outbreaks.html': link_for(base_url, "newsdesk/outbreaks/"),
-        './watch.html': link_for(base_url, "newsdesk/watch/"),
-        '../watch.html': link_for(base_url, "newsdesk/watch/"),
-        './africa.html': link_for(base_url, "newsdesk/africa/"),
-        '../africa.html': link_for(base_url, "newsdesk/africa/"),
-        './asia.html': link_for(base_url, "newsdesk/asia/"),
-        '../asia.html': link_for(base_url, "newsdesk/asia/"),
-        './research.html': link_for(base_url, "newsdesk/research/"),
-        '../research.html': link_for(base_url, "newsdesk/research/"),
-        './official.html': link_for(base_url, "newsdesk/official/"),
-        '../official.html': link_for(base_url, "newsdesk/official/"),
-        './historical.html': link_for(base_url, "newsdesk/historical/"),
-        '../historical.html': link_for(base_url, "newsdesk/historical/"),
-        './archive/index.html': link_for(base_url, "newsdesk/archive/"),
-        '../archive/index.html': link_for(base_url, "newsdesk/archive/"),
-        './stories/': link_for(base_url, "stories/"),
-        '../stories/': link_for(base_url, "stories/"),
-        '../../stories/': link_for(base_url, "stories/"),
-        './reference/': link_for(base_url, "reference/"),
-        '../reference/': link_for(base_url, "reference/"),
-        '../../reference/': link_for(base_url, "reference/"),
-        './app_exports/': link_for(base_url, "app_exports/"),
-        '../app_exports/': link_for(base_url, "app_exports/"),
-        '../../app_exports/': link_for(base_url, "app_exports/"),
-        './2026/': link_for(base_url, "newsdesk/2026/"),
-        '../2026/': link_for(base_url, "newsdesk/2026/"),
-        '../../2026/': link_for(base_url, "newsdesk/2026/"),
-        './latest.html': link_for(base_url, "newsdesk/latest.html"),
-        './latest.md': link_for(base_url, "newsdesk/latest.md"),
-        '../latest.html': link_for(base_url, "newsdesk/latest.html"),
-        '../../latest.html': link_for(base_url, "newsdesk/latest.html"),
+        "./index.html": link_for(base_url, "newsdesk/"),
+        "./notebook.html": link_for(base_url, "notebook/"),
+        "../notebook.html": link_for(base_url, "notebook/"),
+        "./atlas.html": link_for(base_url, "atlases/pathogen/"),
+        "../atlas.html": link_for(base_url, "atlases/pathogen/"),
+        "./outbreaks.html": link_for(base_url, "newsdesk/outbreaks/"),
+        "../outbreaks.html": link_for(base_url, "newsdesk/outbreaks/"),
+        "../../outbreaks.html": link_for(base_url, "newsdesk/outbreaks/"),
+        "./watch.html": link_for(base_url, "newsdesk/watch/"),
+        "../watch.html": link_for(base_url, "newsdesk/watch/"),
+        "./africa.html": link_for(base_url, "newsdesk/africa/"),
+        "../africa.html": link_for(base_url, "newsdesk/africa/"),
+        "./asia.html": link_for(base_url, "newsdesk/asia/"),
+        "../asia.html": link_for(base_url, "newsdesk/asia/"),
+        "./research.html": link_for(base_url, "newsdesk/research/"),
+        "../research.html": link_for(base_url, "newsdesk/research/"),
+        "./official.html": link_for(base_url, "newsdesk/official/"),
+        "../official.html": link_for(base_url, "newsdesk/official/"),
+        "./historical.html": link_for(base_url, "newsdesk/historical/"),
+        "../historical.html": link_for(base_url, "newsdesk/historical/"),
+        "./archive/index.html": link_for(base_url, "newsdesk/archive/"),
+        "../archive/index.html": link_for(base_url, "newsdesk/archive/"),
+        "./stories/": link_for(base_url, "stories/"),
+        "../stories/": link_for(base_url, "stories/"),
+        "../../stories/": link_for(base_url, "stories/"),
+        "./reference/": link_for(base_url, "reference/"),
+        "../reference/": link_for(base_url, "reference/"),
+        "../../reference/": link_for(base_url, "reference/"),
+        "./app_exports/": link_for(base_url, "app_exports/"),
+        "../app_exports/": link_for(base_url, "app_exports/"),
+        "../../app_exports/": link_for(base_url, "app_exports/"),
+        "./2026/": link_for(base_url, "newsdesk/2026/"),
+        "../2026/": link_for(base_url, "newsdesk/2026/"),
+        "../../2026/": link_for(base_url, "newsdesk/2026/"),
+        "./latest.html": link_for(base_url, "newsdesk/latest.html"),
+        "./latest.md": link_for(base_url, "newsdesk/latest.md"),
+        "../latest.html": link_for(base_url, "newsdesk/latest.html"),
+        "../../latest.html": link_for(base_url, "newsdesk/latest.html"),
     }
     for needle, replacement in replacements.items():
         html_text = html_text.replace(f'href="{needle}', f'href="{replacement}')
@@ -2031,7 +966,11 @@ def strip_html_tags(value: str) -> str:
 
 
 def extract_badge_texts(fragment: str) -> list[str]:
-    return [strip_html_tags(match) for match in BADGE_TEXT_RE.findall(fragment) if strip_html_tags(match)]
+    return [
+        strip_html_tags(match)
+        for match in BADGE_TEXT_RE.findall(fragment)
+        if strip_html_tags(match)
+    ]
 
 
 def looks_like_date(text: str) -> bool:
@@ -2040,7 +979,10 @@ def looks_like_date(text: str) -> bool:
 
 def is_count_text(text: str) -> bool:
     lowered = text.lower()
-    return any(token in lowered for token in ("item(s)", "source(s)", "official", "route(s)", "citation(s)"))
+    return any(
+        token in lowered
+        for token in ("item(s)", "source(s)", "official", "route(s)", "citation(s)")
+    )
 
 
 def is_noise_text(text: str) -> bool:
@@ -2079,38 +1021,60 @@ def simplify_imported_article(article_html: str) -> str:
 
     if "atlas-teaser-card" in article_html:
         status = status_text_for(badge_texts)
-        feature_text = joined_meta([text for text in badge_texts if is_count_text(text)])
-        writing_state = next((text for text in badge_texts if "writing" in text.lower() or "dedicated post" in text.lower()), "")
+        feature_text = joined_meta(
+            [text for text in badge_texts if is_count_text(text)]
+        )
+        writing_state = next(
+            (
+                text
+                for text in badge_texts
+                if "writing" in text.lower() or "dedicated post" in text.lower()
+            ),
+            "",
+        )
         if status or feature_text:
             summary_html += '<div class="meta-row meta-row-plain">'
             if status:
                 summary_html += f'<span class="story-status-pill atlas-status-pill">{html.escape(status)}</span>'
             if feature_text:
-                summary_html += f'<span class="meta-inline">{html.escape(feature_text)}</span>'
+                summary_html += (
+                    f'<span class="meta-inline">{html.escape(feature_text)}</span>'
+                )
             summary_html += "</div>"
         if writing_state:
-            summary_html += f'<p class="card-meta-text">{html.escape(writing_state)}</p>'
+            summary_html += (
+                f'<p class="card-meta-text">{html.escape(writing_state)}</p>'
+            )
     elif "feature-card" in article_html:
         status = status_text_for(badge_texts)
         geography = joined_meta(
             [
-                text for text in badge_texts
-                if text and not is_count_text(text) and not looks_like_date(text) and text.lower() not in STATUS_TEXTS
+                text
+                for text in badge_texts
+                if text
+                and not is_count_text(text)
+                and not looks_like_date(text)
+                and text.lower() not in STATUS_TEXTS
             ]
         )
         if status or geography:
             summary_html += '<div class="meta-row meta-row-plain">'
             if status:
-                summary_html += f'<span class="story-status-pill">{html.escape(status)}</span>'
+                summary_html += (
+                    f'<span class="story-status-pill">{html.escape(status)}</span>'
+                )
             if geography:
-                summary_html += f'<span class="meta-inline">{html.escape(geography)}</span>'
+                summary_html += (
+                    f'<span class="meta-inline">{html.escape(geography)}</span>'
+                )
             summary_html += "</div>"
     else:
         source = ""
         if "<strong>Source:</strong>" not in article_html:
             source = next(
                 (
-                    text for text in badge_texts
+                    text
+                    for text in badge_texts
                     if text
                     and not looks_like_date(text)
                     and not is_noise_text(text)
@@ -2122,19 +1086,28 @@ def simplify_imported_article(article_html: str) -> str:
         date_text = next((text for text in badge_texts if looks_like_date(text)), "")
         status = next(
             (
-                text for text in badge_texts
-                if text.lower() not in NOISE_TEXTS and text.lower() in STATUS_TEXTS and text.lower() != "official agency"
+                text
+                for text in badge_texts
+                if text.lower() not in NOISE_TEXTS
+                and text.lower() in STATUS_TEXTS
+                and text.lower() != "official agency"
             ),
             "",
         )
-        doi_text = next((text for text in badge_texts if text.lower().startswith("doi:")), "")
+        doi_text = next(
+            (text for text in badge_texts if text.lower().startswith("doi:")), ""
+        )
         meta_text = joined_meta([source, date_text])
         if status or meta_text:
             summary_html += '<div class="meta-row meta-row-plain">'
             if status:
-                summary_html += f'<span class="story-status-pill">{html.escape(status)}</span>'
+                summary_html += (
+                    f'<span class="story-status-pill">{html.escape(status)}</span>'
+                )
             if meta_text:
-                summary_html += f'<span class="meta-inline">{html.escape(meta_text)}</span>'
+                summary_html += (
+                    f'<span class="meta-inline">{html.escape(meta_text)}</span>'
+                )
             summary_html += "</div>"
         if doi_text:
             summary_html += f'<p class="card-meta-text">{html.escape(doi_text)}</p>'
@@ -2146,7 +1119,9 @@ def simplify_imported_article(article_html: str) -> str:
 
 
 def simplify_imported_cards(html_text: str) -> str:
-    return ARTICLE_RE.sub(lambda match: simplify_imported_article(match.group(1)), html_text)
+    return ARTICLE_RE.sub(
+        lambda match: simplify_imported_article(match.group(1)), html_text
+    )
 
 
 def remove_imported_build_meta(html_text: str) -> str:
@@ -2166,7 +1141,12 @@ def remove_imported_build_meta(html_text: str) -> str:
 
 
 def remove_imported_section_nav(html_text: str) -> str:
-    return re.sub(r'\s*<nav class="section-nav panel utility-panel".*?</nav>', "", html_text, flags=re.S)
+    return re.sub(
+        r'\s*<nav class="section-nav panel utility-panel".*?</nav>',
+        "",
+        html_text,
+        flags=re.S,
+    )
 
 
 def ensure_meta_description(html_text: str, description: str) -> str:
@@ -2192,7 +1172,9 @@ def transform_imported_html(html_text: str, *, active: str, base_url: str) -> st
     )
     html_text = ensure_meta_description(html_text, description)
     html_text = html_text.replace("</head>", f"{shell_wrapper_css(base_url)}</head>")
-    html_text = html_text.replace("<body>", f"<body>{imported_shell_nav(active, base_url)}", 1)
+    html_text = html_text.replace(
+        "<body>", f"<body>{imported_shell_nav(active, base_url)}", 1
+    )
     return re.sub(r"[ \t]+\n", "\n", html_text)
 
 
@@ -2244,7 +1226,11 @@ def live_newsdesk_redirect_html(*, title: str, target_url: str) -> str:
 
 def write_live_newsdesk_redirects(docs_dir: Path, base_url: str) -> None:
     redirects = [
-        (docs_dir / "newsdesk" / "index.html", "Opening live Newsdesk", link_for(base_url, "epi-dossier/")),
+        (
+            docs_dir / "newsdesk" / "index.html",
+            "Opening live Newsdesk",
+            link_for(base_url, "epi-dossier/"),
+        ),
         (
             docs_dir / "newsdesk" / "latest.html",
             "Opening latest Pathogen Dispatch",
@@ -2267,34 +1253,98 @@ def import_epidossier_public(docs_dir: Path, base_url: str) -> dict[str, Any]:
     sanitize_copied_app_exports(app_exports_dest)
 
     latest_html_dest = docs_dir / "newsdesk" / "latest.html"
-    latest_html = transform_imported_html((source_docs / "latest.html").read_text(), active="newsdesk", base_url=base_url)
+    latest_html = transform_imported_html(
+        (source_docs / "latest.html").read_text(), active="newsdesk", base_url=base_url
+    )
     ensure_dir(latest_html_dest.parent)
     latest_html_dest.write_text(latest_html)
     import_copy(source_docs / "latest.md", docs_dir / "newsdesk" / "latest.md")
 
     html_pages = [
         (source_docs / "index.html", docs_dir / "newsdesk" / "index.html", "newsdesk"),
-        (source_docs / "outbreaks.html", docs_dir / "newsdesk" / "outbreaks" / "index.html", "newsdesk"),
-        (source_docs / "outbreaks.html", docs_dir / "newsdesk" / "outbreaks.html", "newsdesk"),
+        (
+            source_docs / "outbreaks.html",
+            docs_dir / "newsdesk" / "outbreaks" / "index.html",
+            "newsdesk",
+        ),
+        (
+            source_docs / "outbreaks.html",
+            docs_dir / "newsdesk" / "outbreaks.html",
+            "newsdesk",
+        ),
         (source_docs / "outbreaks.html", docs_dir / "outbreaks.html", "newsdesk"),
-        (source_docs / "watch.html", docs_dir / "newsdesk" / "watch" / "index.html", "newsdesk"),
+        (
+            source_docs / "watch.html",
+            docs_dir / "newsdesk" / "watch" / "index.html",
+            "newsdesk",
+        ),
         (source_docs / "watch.html", docs_dir / "newsdesk" / "watch.html", "newsdesk"),
-        (source_docs / "africa.html", docs_dir / "newsdesk" / "africa" / "index.html", "newsdesk"),
-        (source_docs / "africa.html", docs_dir / "newsdesk" / "africa.html", "newsdesk"),
-        (source_docs / "asia.html", docs_dir / "newsdesk" / "asia" / "index.html", "newsdesk"),
+        (
+            source_docs / "africa.html",
+            docs_dir / "newsdesk" / "africa" / "index.html",
+            "newsdesk",
+        ),
+        (
+            source_docs / "africa.html",
+            docs_dir / "newsdesk" / "africa.html",
+            "newsdesk",
+        ),
+        (
+            source_docs / "asia.html",
+            docs_dir / "newsdesk" / "asia" / "index.html",
+            "newsdesk",
+        ),
         (source_docs / "asia.html", docs_dir / "newsdesk" / "asia.html", "newsdesk"),
-        (source_docs / "research.html", docs_dir / "newsdesk" / "research" / "index.html", "newsdesk"),
-        (source_docs / "research.html", docs_dir / "newsdesk" / "research.html", "newsdesk"),
-        (source_docs / "official.html", docs_dir / "newsdesk" / "official" / "index.html", "newsdesk"),
-        (source_docs / "official.html", docs_dir / "newsdesk" / "official.html", "newsdesk"),
-        (source_docs / "historical.html", docs_dir / "newsdesk" / "historical" / "index.html", "newsdesk"),
-        (source_docs / "historical.html", docs_dir / "newsdesk" / "historical.html", "newsdesk"),
-        (source_docs / "archive" / "index.html", docs_dir / "newsdesk" / "archive" / "index.html", "newsdesk"),
-        (source_docs / "notebook.html", docs_dir / "notebook" / "index.html", "notebook"),
-        (source_docs / "notebook.html", docs_dir / "newsdesk" / "notebook.html", "notebook"),
+        (
+            source_docs / "research.html",
+            docs_dir / "newsdesk" / "research" / "index.html",
+            "newsdesk",
+        ),
+        (
+            source_docs / "research.html",
+            docs_dir / "newsdesk" / "research.html",
+            "newsdesk",
+        ),
+        (
+            source_docs / "official.html",
+            docs_dir / "newsdesk" / "official" / "index.html",
+            "newsdesk",
+        ),
+        (
+            source_docs / "official.html",
+            docs_dir / "newsdesk" / "official.html",
+            "newsdesk",
+        ),
+        (
+            source_docs / "historical.html",
+            docs_dir / "newsdesk" / "historical" / "index.html",
+            "newsdesk",
+        ),
+        (
+            source_docs / "historical.html",
+            docs_dir / "newsdesk" / "historical.html",
+            "newsdesk",
+        ),
+        (
+            source_docs / "archive" / "index.html",
+            docs_dir / "newsdesk" / "archive" / "index.html",
+            "newsdesk",
+        ),
+        (
+            source_docs / "notebook.html",
+            docs_dir / "notebook" / "index.html",
+            "notebook",
+        ),
+        (
+            source_docs / "notebook.html",
+            docs_dir / "newsdesk" / "notebook.html",
+            "notebook",
+        ),
     ]
     for src, dest, active in html_pages:
-        transformed = transform_imported_html(src.read_text(), active=active, base_url=base_url)
+        transformed = transform_imported_html(
+            src.read_text(), active=active, base_url=base_url
+        )
         ensure_dir(dest.parent)
         dest.write_text(transformed)
 
@@ -2303,7 +1353,9 @@ def import_epidossier_public(docs_dir: Path, base_url: str) -> dict[str, Any]:
         ("reference", "reference", "reference"),
     ]:
         for src in sorted((source_docs / source_subdir).glob("*.html")):
-            transformed = transform_imported_html(src.read_text(), active=active, base_url=base_url)
+            transformed = transform_imported_html(
+                src.read_text(), active=active, base_url=base_url
+            )
             dest = docs_dir / dest_subdir / src.name
             ensure_dir(dest.parent)
             dest.write_text(transformed)
@@ -2319,7 +1371,9 @@ def import_epidossier_public(docs_dir: Path, base_url: str) -> dict[str, Any]:
             rel = src.relative_to(source_docs)
             dest = docs_dir / "newsdesk" / rel
             if src.suffix == ".html":
-                transformed = transform_imported_html(src.read_text(), active="newsdesk", base_url=base_url)
+                transformed = transform_imported_html(
+                    src.read_text(), active="newsdesk", base_url=base_url
+                )
                 ensure_dir(dest.parent)
                 dest.write_text(transformed)
             else:
@@ -2339,104 +1393,17 @@ ATLAS_OVERLAY_RE = re.compile(
 
 def atlas_overlay_html(
     *,
-    home_href: str,
-    tools_href: str,
-    newsdesk_href: str,
-    essays_href: str,
-    top: str = "18px",
-    links_top: str | None = None,
-    extra_css: str = "",
-) -> tuple[str, str]:
-    links_top = links_top or top
-    overlay = f"""
-<style id="eoe-atlas-overlay-style">
-  #eoe-atlas-overlay {{
-    position: fixed;
-    inset: 0;
-    z-index: 1200;
-    pointer-events: none;
-  }}
-  #eoe-atlas-overlay a {{
-    pointer-events: auto;
-  }}
-  #eoe-atlas-overlay-brand {{
-    position: fixed;
-    top: {top};
-    left: 18px;
-    display: inline-flex;
-    flex-wrap: wrap;
-    column-gap: 0.32em;
-    row-gap: 0.12em;
-    align-items: baseline;
-    padding: 7px 10px;
-    border-radius: 8px;
-    border: 1px solid rgba(255,255,255,0.18);
-    background: rgba(12, 12, 10, 0.86);
-    color: #f5ecdd;
-    text-decoration: none;
-    font: 700 clamp(15px, 1.45vw, 20px)/1 "Iowan Old Style", Georgia, serif;
-    backdrop-filter: blur(12px);
-  }}
-  #eoe-atlas-overlay-brand .byline {{
-    color: #8fb8d8;
-    font: 600 0.52em/1 "Avenir Next", "Helvetica Neue", sans-serif;
-  }}
-  #eoe-atlas-overlay-links {{
-    position: fixed;
-    top: {links_top};
-    right: 18px;
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }}
-  #eoe-atlas-overlay-links a {{
-    padding: 8px 12px;
-    border-radius: 999px;
-    border: 1px solid rgba(255,255,255,0.18);
-    background: rgba(12, 12, 10, 0.85);
-    color: #efe4d2;
-    text-decoration: none;
-    font: 700 12px/1 "Avenir Next", "Helvetica Neue", sans-serif;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    backdrop-filter: blur(12px);
-  }}
-  #eoe-atlas-overlay-links a.active {{ color: #c9a84c; border-color: rgba(201,168,76,0.38); }}
-  @media (max-width: 980px) {{
-    #eoe-atlas-overlay {{
-      position: absolute;
-      top: 14px;
-      left: 18px;
-      right: 18px;
-      display: grid;
-      grid-template-columns: 1fr;
-      justify-items: start;
-      gap: 8px;
-    }}
-    #eoe-atlas-overlay-brand,
-    #eoe-atlas-overlay-links {{
-      position: static;
-    }}
-    #eoe-atlas-overlay-links {{
-      justify-content: flex-start;
-    }}
-  }}
-  {extra_css}
-</style>
-"""
-    nav = (
-        '<div id="eoe-atlas-overlay">'
-        f'<a id="eoe-atlas-overlay-brand" href="{html.escape(home_href)}"><span>The Edge of Epidemiology</span> <span class="byline">by Devin Teichrow</span></a>'
-        '<nav id="eoe-atlas-overlay-links" aria-label="Exhibit navigation">'
-        f'<a href="{html.escape(home_href)}">Home</a>'
-        f'<a href="{html.escape(tools_href)}" class="active">Exhibits</a>'
-        f'<a href="{html.escape(newsdesk_href)}">Newsdesk</a>'
-        f'<a href="{html.escape(essays_href)}">Essays</a>'
-        "</nav>"
-        "</div>"
-    )
-    return overlay, nav
+    home_href,
+    tools_href,
+    newsdesk_href,
+    essays_href,
+    top="18px",
+    links_top=None,
+    extra_css="",
+):
+    from .site_exhibits import exhibit_nav
+
+    return "", exhibit_nav(home_href, tools_href, newsdesk_href, essays_href)
 
 
 def inject_atlas_overlay(
@@ -2450,7 +1417,9 @@ def inject_atlas_overlay(
     links_top: str | None = None,
     overlay_extra_css: str = "",
 ) -> None:
-    html_text = ATLAS_OVERLAY_RE.sub("", index_path.read_text())
+    from .site_exhibits import strip_exhibit_nav
+
+    html_text = strip_exhibit_nav(ATLAS_OVERLAY_RE.sub("", index_path.read_text()))
     html_text = ensure_meta_description(
         html_text,
         "Interactive atlas from The Edge of Epidemiology.",
@@ -2516,7 +1485,12 @@ PATHOGEN_CONFIDENCE_ALIASES = {
 
 def normalize_tool_confidence(value: Any) -> str:
     clean = str(value or "moderate").strip().lower()
-    return PATHOGEN_CONFIDENCE_ALIASES.get(clean, clean if clean in {"high", "moderate", "low", "contested", "speculative"} else "moderate")
+    return PATHOGEN_CONFIDENCE_ALIASES.get(
+        clean,
+        clean
+        if clean in {"high", "moderate", "low", "contested", "speculative"}
+        else "moderate",
+    )
 
 
 def normalize_pathogen_claims(entry: dict[str, Any]) -> None:
@@ -2543,11 +1517,19 @@ def normalize_pathogen_claims(entry: dict[str, Any]) -> None:
     for layer in entry.get("geography_layers", []):
         if isinstance(layer, dict):
             layer["confidence"] = normalize_tool_confidence(layer.get("confidence"))
-            if layer["confidence"] in {"low", "contested", "speculative"} and not (layer.get("uncertainty_note") or layer.get("evidence_note") or layer.get("note")):
-                layer["evidence_note"] = "Low-confidence or schematic geography; keep the uncertainty visible and do not treat this layer as a precise range map."
+            if layer["confidence"] in {"low", "contested", "speculative"} and not (
+                layer.get("uncertainty_note")
+                or layer.get("evidence_note")
+                or layer.get("note")
+            ):
+                layer["evidence_note"] = (
+                    "Low-confidence or schematic geography; keep the uncertainty visible and do not treat this layer as a precise range map."
+                )
 
 
-def prepared_pathogen_atlas_data(atlas_export: dict[str, Any], *, link_prefix: str) -> dict[str, Any]:
+def prepared_pathogen_atlas_data(
+    atlas_export: dict[str, Any], *, link_prefix: str
+) -> dict[str, Any]:
     raw_entries = atlas_export.get("atlas", [])
     prepared_entries = []
 
@@ -2556,22 +1538,37 @@ def prepared_pathogen_atlas_data(atlas_export: dict[str, Any], *, link_prefix: s
         prepared["color"] = color
         category, category_label = PATHOGEN_ATLAS_CATEGORIES.get(
             prepared.get("slug"),
-            (prepared.get("category") or "other", prepared.get("category_label") or "Other"),
+            (
+                prepared.get("category") or "other",
+                prepared.get("category_label") or "Other",
+            ),
         )
-        category, category_label = PATHOGEN_ATLAS_CATEGORY_ALIASES.get(category, (category, category_label))
+        category, category_label = PATHOGEN_ATLAS_CATEGORY_ALIASES.get(
+            category, (category, category_label)
+        )
         prepared["category"] = category
         prepared["category_label"] = category_label
-        prepared["transmission_group"] = prepared.get("transmission_group") or prepared["category_label"]
-        prepared["status_label"] = PATHOGEN_STATUS_LABELS.get(prepared.get("status"), "Curated")
-        prepared["writing_state_label"] = PATHOGEN_WRITING_LABELS.get(prepared.get("writing_state"), "Writing state pending")
+        prepared["transmission_group"] = (
+            prepared.get("transmission_group") or prepared["category_label"]
+        )
+        prepared["status_label"] = PATHOGEN_STATUS_LABELS.get(
+            prepared.get("status"), "Curated"
+        )
+        prepared["writing_state_label"] = PATHOGEN_WRITING_LABELS.get(
+            prepared.get("writing_state"), "Writing state pending"
+        )
         public_citations, withheld_citations = public_pathogen_citations(prepared)
         prepared["citations"] = public_citations
         prepared["citation_count"] = len(public_citations)
         if withheld_citations:
             prepared["withheld_citations"] = withheld_citations
-            prepared["citation_verification_note"] = "Some DOI citations are withheld from the public atlas until manually verified."
+            prepared["citation_verification_note"] = (
+                "Some DOI citations are withheld from the public atlas until manually verified."
+            )
         normalize_pathogen_claims(prepared)
-        reference_path = prepared.get("reference_web_path") or prepared.get("reference_url")
+        reference_path = prepared.get("reference_web_path") or prepared.get(
+            "reference_url"
+        )
         if reference_path:
             prepared["reference_href"] = f"{link_prefix}{reference_path.lstrip('/')}"
         related_stories = []
@@ -2582,7 +1579,10 @@ def prepared_pathogen_atlas_data(atlas_export: dict[str, Any], *, link_prefix: s
                 story_copy["story_href"] = f"{link_prefix}{story_path.lstrip('/')}"
             related_stories.append(story_copy)
         prepared["related_stories"] = related_stories
-        prepared["variants"] = [rewrite_entry_links(variant, color) for variant in prepared.get("variants", [])]
+        prepared["variants"] = [
+            rewrite_entry_links(variant, color)
+            for variant in prepared.get("variants", [])
+        ]
         return prepared
 
     for entry in raw_entries:
@@ -2608,7 +1608,9 @@ def prepared_pathogen_atlas_data(atlas_export: dict[str, Any], *, link_prefix: s
     return payload
 
 
-def write_pathogen_atlas_payload(target_root: Path, atlas_export: dict[str, Any], *, base_url: str, link_prefix: str) -> None:
+def write_pathogen_atlas_payload(
+    target_root: Path, atlas_export: dict[str, Any], *, base_url: str, link_prefix: str
+) -> None:
     data_dir = target_root / "data"
     ensure_dir(data_dir)
     data_payload = prepared_pathogen_atlas_data(atlas_export, link_prefix=link_prefix)
@@ -2619,7 +1621,9 @@ def write_pathogen_atlas_payload(target_root: Path, atlas_export: dict[str, Any]
     (data_dir / "pathogen_atlas_data.js").write_text(data_text)
 
 
-def merge_pathogen_atlas_overrides(atlas_export: dict[str, Any], overrides: dict[str, Any]) -> None:
+def merge_pathogen_atlas_overrides(
+    atlas_export: dict[str, Any], overrides: dict[str, Any]
+) -> None:
     """Apply local curation fields to imported atlas entries without editing generated exports."""
     scalar_fields = ("summary", "why_it_matters", "atlas_scope", "origin_claim")
     list_fields = ("modern_echoes", "framing_traps")
@@ -2638,7 +1642,9 @@ def merge_pathogen_atlas_overrides(atlas_export: dict[str, Any], overrides: dict
         if override.get("geography_layers") and not entry.get("geography_layers"):
             entry["geography_layers"] = override["geography_layers"]
         if override.get("citations"):
-            existing_ids = {citation.get("id") for citation in entry.get("citations", [])}
+            existing_ids = {
+                citation.get("id") for citation in entry.get("citations", [])
+            }
             entry.setdefault("citations", [])
             for citation in override["citations"]:
                 if citation.get("id") not in existing_ids:
@@ -2663,24 +1669,23 @@ def import_external_pathogen(docs_dir: Path, base_url: str) -> None:
             extra_export = load_json(extra_pathogens_path)
             known_slugs = {entry.get("slug") for entry in atlas_export.get("atlas", [])}
             atlas_export["atlas"] = atlas_export.get("atlas", []) + [
-                entry for entry in extra_export.get("atlas", []) if entry.get("slug") not in known_slugs
+                entry
+                for entry in extra_export.get("atlas", [])
+                if entry.get("slug") not in known_slugs
             ]
-
-    write_pathogen_atlas_payload(src_root, atlas_export, base_url="/", link_prefix="../../docs/")
-    inject_atlas_overlay(
-        src_root / "index.html",
-        home_href="../../docs/index.html",
-        tools_href="../../docs/tools/index.html",
-        newsdesk_href="../../docs/newsdesk/index.html",
-        essays_href="../../docs/essays/index.html",
-        top="8px",
-        links_top="8px",
-    )
 
     if dest_root.exists():
         shutil.rmtree(dest_root)
-    shutil.copytree(src_root, dest_root, ignore=shutil.ignore_patterns("catalog", "extra_pathogens.json", "core_geography_overrides.json"))
-    write_pathogen_atlas_payload(dest_root, atlas_export, base_url=base_url, link_prefix="../../")
+    shutil.copytree(
+        src_root,
+        dest_root,
+        ignore=shutil.ignore_patterns(
+            "catalog", "extra_pathogens.json", "core_geography_overrides.json"
+        ),
+    )
+    write_pathogen_atlas_payload(
+        dest_root, atlas_export, base_url=base_url, link_prefix="../../"
+    )
     inject_atlas_overlay(
         dest_root / "index.html",
         home_href="../../index.html",
@@ -2692,28 +1697,22 @@ def import_external_pathogen(docs_dir: Path, base_url: str) -> None:
     )
 
 
-def import_external_viking(docs_dir: Path, base_url: str) -> None:
-    src = PROJECT_ROOT / "external" / "viking-health-map.html"
-    dest = docs_dir / "atlases" / "viking" / "index.html"
-    ensure_dir(dest.parent)
-    dest.write_text(src.read_text())
-    inject_atlas_overlay(
-        dest,
-        home_href="../../index.html",
-        tools_href="../../tools/index.html",
-        newsdesk_href="../../newsdesk/index.html",
-        essays_href="../../essays/index.html",
-        top="14px",
+def import_external_viking(docs_dir, base_url):
+    from .curated_exhibits import write_record_exhibit
+
+    write_record_exhibit("viking", docs_dir / "atlases" / "viking", PROJECT_ROOT)
+
+
+def import_external_revolutionary_war_atlas(docs_dir, base_url):
+    from .curated_exhibits import write_record_exhibit
+
+    destination = docs_dir / "atlases" / "revolutionary-war"
+    shutil.copytree(
+        PROJECT_ROOT / "external" / "revolutionary_war_atlas",
+        destination,
+        dirs_exist_ok=True,
     )
-
-
-def import_external_revolutionary_war_atlas(docs_dir: Path, base_url: str) -> None:
-    _ = base_url
-    src_root = PROJECT_ROOT / "external" / "revolutionary_war_atlas"
-    dest_root = docs_dir / "atlases" / "revolutionary-war"
-    if dest_root.exists():
-        shutil.rmtree(dest_root)
-    shutil.copytree(src_root, dest_root)
+    write_record_exhibit("revolutionary", destination, PROJECT_ROOT)
 
 
 def import_external_american_epidemic_timeline(docs_dir: Path, base_url: str) -> None:
@@ -2725,16 +1724,16 @@ def import_external_american_epidemic_timeline(docs_dir: Path, base_url: str) ->
     shutil.copytree(src_root, dest_root)
 
 
-def import_external_histsearch(docs_dir: Path, base_url: str) -> None:
-    _ = base_url
-    src_root = PROJECT_ROOT / "external" / "histsearch"
-    dest_root = docs_dir / "tools" / "histsearch"
-    if dest_root.exists():
-        shutil.rmtree(dest_root)
-    shutil.copytree(src_root, dest_root)
+def import_external_histsearch(docs_dir, base_url):
+    from .curated_exhibits import write_histsearch
+
+    write_histsearch(docs_dir / "tools" / "histsearch", PROJECT_ROOT)
 
 
 def copy_static_assets(docs_dir: Path) -> None:
+    from .referral import build_referral
+
+    build_referral()
     target = docs_dir / "assets"
     if target.exists():
         shutil.rmtree(target)
@@ -2743,336 +1742,9 @@ def copy_static_assets(docs_dir: Path) -> None:
     (docs_dir / "CNAME").write_text(f"{PUBLIC_SITE_DOMAIN}\n")
 
 
-def route_for_html_path(path: Path, docs_dir: Path) -> str:
-    rel = path.relative_to(docs_dir).as_posix()
-    if rel == "index.html":
-        return ""
-    if rel.endswith("/index.html"):
-        return f"{rel[:-len('/index.html')]}/"
-    return rel
-
-
-def public_url_for_route(route: str) -> str:
-    return f"{PUBLIC_SITE_ORIGIN}/{route.lstrip('/')}" if route else f"{PUBLIC_SITE_ORIGIN}/"
-
-
-def extract_html_title(html_text: str) -> str:
-    match = re.search(r"<title>(.*?)</title>", html_text, flags=re.I | re.S)
-    return strip_html_tags(match.group(1)) if match else ""
-
-
-def extract_meta_description_from_html(html_text: str) -> str:
-    return meta_tag_content(html_text, "name", "description")
-
-
-def meta_tag_content(html_text: str, attr: str, value: str) -> str:
-    pattern = rf'<meta[^>]+{attr}=["\']{re.escape(value)}["\'][^>]+content=["\']([^"\']*)["\']'
-    match = re.search(pattern, html_text, flags=re.I | re.S)
-    return html.unescape(match.group(1)).strip() if match else ""
-
-
-def extract_primary_heading(html_text: str) -> str:
-    for tag in ("h1", "h2"):
-        match = re.search(rf"<{tag}[^>]*>(.*?)</{tag}>", html_text, flags=re.I | re.S)
-        if match:
-            heading = strip_html_tags(match.group(1))
-            if heading and heading.lower() not in {"the edge of epidemiology", "by devin teichrow"}:
-                return heading
-    return ""
-
-
-def clean_seo_description(value: str, fallback: str) -> str:
-    cleaned = re.sub(r"\s+", " ", strip_html_tags(value)).strip()
-    if cleaned in GENERIC_DESCRIPTIONS or len(cleaned) < 70:
-        cleaned = fallback
-    return cleaned[:280].rstrip()
-
-
-def title_case_slug(value: str) -> str:
-    return value.replace("-", " ").replace("_", " ").title()
-
-
-def post_route(post: dict[str, Any]) -> str:
-    return f"essays/{post.get('slug', 'untitled')}/"
-
-
-def route_is_collection(route: str) -> bool:
-    if not route or route in {"about/", "methods/", "opportunities/", "search/"}:
-        return False
-    if route.endswith("/") and not re.match(r"essays/[^/]+/$", route):
-        return True
-    return False
-
-
-def seo_profile_for_route(route: str, html_text: str, post_by_route: dict[str, dict[str, Any]]) -> dict[str, Any]:
-    title = extract_html_title(html_text)
-    heading = extract_primary_heading(html_text)
-    description = extract_meta_description_from_html(html_text)
-    image = public_url_for_route(DEFAULT_SOCIAL_IMAGE)
-    noindex = route in {"search/", "newsdesk/", "newsdesk/latest.html"}
-    schema_type = "CollectionPage" if route_is_collection(route) else "WebPage"
-    date_published = ""
-    date_modified = ""
-    source_url = ""
-
-    if route == "":
-        title = "The Edge of Epidemiology | Devin Teichrow"
-        description = "The canonical home for Devin Teichrow's Edge of Epidemiology essays, Pathogen Dispatch reporting, disease atlases, historical epidemiology, and public-health methods work."
-        schema_type = "WebSite"
-    elif route in post_by_route:
-        post = post_by_route[route]
-        title = f"{post_display_title(post)} | Edge of Epidemiology"
-        description = post_seo_description(post)
-        image = post.get("cover_image") or image
-        noindex = not post_should_index(post)
-        schema_type = "Article" if not noindex else "WebPage"
-        date_published = str(post.get("date") or "")
-        date_modified = str(post.get("last_synced_at") or post.get("date") or "")
-        source_url = str(post.get("canonical_url") or "")
-    elif route == "essays/":
-        title = "Epidemiology Essays | Edge of Epidemiology"
-        description = "The Edge of Epidemiology essay archive: historical epidemiology, infectious disease, outbreak reporting, epidemiologic methods, wellness claims, and neuroepidemiology."
-    elif route == "topics/":
-        title = "Topic Hubs | Edge of Epidemiology"
-        description = "Topic hubs for historical epidemiology, disease and war, disease ecology, pathogen geography, epidemiologic methods, wellness claims, and neuroepidemiology."
-    elif route.startswith("topics/"):
-        slug = route.strip("/").split("/", 1)[1]
-        hub = next((item for item in TOPIC_HUBS if item["slug"] == slug), None)
-        if hub:
-            title = f"{hub['title']} Topic Hub | Edge of Epidemiology"
-            description = str(hub["description"])
-    elif route == "tools/":
-        title = "Interactive Exhibits | Edge of Epidemiology"
-        description = "Interactive timelines, atlases, and source-first public-health exhibits for epidemic history, disease geography, and epidemiologic reasoning."
-        schema_type = "CollectionPage"
-    elif route.startswith("tools/american-epidemic-timeline"):
-        title = "American Epidemic Timeline | Edge of Epidemiology"
-        description = "A cinematic, source-first timeline of major U.S.-linked epidemics and disease outbreaks from colonial North America through modern public health."
-        schema_type = "CollectionPage"
-    elif route.startswith("reference/") and route != "reference/":
-        page_name = heading or title_case_slug(Path(route).stem)
-        title = f"{page_name} Reference Guide | Edge of Epidemiology"
-        description = f"{page_name} reference guide from The Pathogen Dispatch, with transmission notes, current story links, reporting context, and source caveats."
-    elif route.startswith("stories/") and route != "stories/":
-        page_name = heading or title_case_slug(Path(route).stem)
-        title = f"{page_name} Story File | Edge of Epidemiology"
-        description = f"Pathogen Dispatch story file for {page_name}, with source-first outbreak tracking, update context, and related reporting notes."
-    elif route.startswith("newsdesk/") and re.search(r"\d{4}-\d{2}-\d{2}\.html$", route):
-        match = re.search(r"(\d{4}-\d{2}-\d{2})\.html$", route)
-        date_label = format_display_date(match.group(1)) if match else "Archive"
-        title = f"Pathogen Dispatch for {date_label} | Edge of Epidemiology"
-        description = f"The Pathogen Dispatch archive for {date_label}, with source-first infectious-disease reporting, outbreak tracking, and daily evidence notes."
-        schema_type = "CollectionPage"
-    elif route.startswith("newsdesk/"):
-        page_name = heading or "The Pathogen Dispatch"
-        if route == "newsdesk/":
-            title = "The Pathogen Dispatch | Edge of Epidemiology"
-            description = "Source-first outbreak reporting from The Pathogen Dispatch, with active story files, official-source tracking, research signals, and historical epidemiology context."
-        elif route == "newsdesk/archive/":
-            title = "Pathogen Dispatch Archive | Edge of Epidemiology"
-            description = "Archive of Pathogen Dispatch daily outbreak briefings and source-first infectious-disease reporting files."
-        elif route == "newsdesk/latest.html":
-            title = "Latest Pathogen Dispatch | Edge of Epidemiology"
-            description = "The current Pathogen Dispatch briefing, with active outbreak files, source notes, and archive links."
-        else:
-            title = f"{page_name} | The Pathogen Dispatch"
-            description = f"{page_name} from The Pathogen Dispatch, the Edge of Epidemiology source-first infectious-disease reporting desk."
-        schema_type = "CollectionPage"
-    elif route.startswith("atlases/pathogen"):
-        title = "Pathogen Atlas | Edge of Epidemiology"
-        description = "Source-backed digital exhibit on pathogen origins, reservoirs, transmission ecology, historical spread, and evidentiary uncertainty."
-    elif route.startswith("atlases/maritime"):
-        title = "Maritime Disease Atlas | Edge of Epidemiology"
-        description = "Map-first digital exhibit on shipboard infection, port quarantine, sea routes, naval medicine, archival sources, and maritime disease ecology."
-    elif route.startswith("atlases/viking"):
-        title = "Viking Health Atlas | Edge of Epidemiology"
-        description = "Interactive Viking health and disease atlas connecting settlement geography, archaeology, historical demography, and epidemic uncertainty."
-    elif route.startswith("atlases/revolutionary-war"):
-        title = "Revolutionary War Disease Atlas | Edge of Epidemiology"
-        description = "Interactive Revolutionary War disease atlas mapping battles, encampments, smallpox pressure, disease deaths, and the military geography of the American Revolution."
-    elif route == "reference/":
-        title = "Disease Reference Desk | Edge of Epidemiology"
-        description = "Disease reference sheets connected to the live newsdesk, pathogen atlas, reporting caveats, transmission notes, and official background links."
-    elif route == "historical/":
-        title = "Historical Epidemiology | Edge of Epidemiology"
-        description = "Historical epidemiology essays and atlas projects about disease, empire, war, routes, ecological change, and epidemic reconstruction."
-    elif route == "methods/":
-        title = "Methods And Sourcing | Edge of Epidemiology"
-        description = "Methods, sourcing, update cadence, and editorial structure for The Edge of Epidemiology, The Pathogen Dispatch, and related atlas work."
-    elif route == "about/":
-        title = "About Devin Teichrow | Edge of Epidemiology"
-        description = "About Devin Teichrow and The Edge of Epidemiology: epidemiology, neurology research, historical disease writing, outbreak reporting, and science communication."
-    elif route == "opportunities/":
-        title = "Work With Devin Teichrow | Edge of Epidemiology"
-        description = "Collaborate with Devin Teichrow on epidemiology, public-health data, historical disease writing, science communication, outbreak tools, and disease atlas projects."
-
-    if not title:
-        fallback_name = heading or title_case_slug(Path(route.rstrip("/") or "home").name)
-        title = f"{fallback_name} | Edge of Epidemiology"
-    fallback_description = f"{heading or title.split('|')[0].strip()} from The Edge of Epidemiology by Devin Teichrow."
-    description = clean_seo_description(description, fallback_description)
-    return {
-        "route": route,
-        "url": public_url_for_route(route),
-        "title": title,
-        "description": description,
-        "image": image,
-        "noindex": noindex,
-        "schema_type": schema_type,
-        "date_published": date_published,
-        "date_modified": date_modified,
-        "source_url": source_url,
-    }
-
-
-def ensure_head_element(html_text: str) -> str:
-    if re.search(r"<head[^>]*>", html_text, flags=re.I):
-        return html_text
-    if re.search(r"<html[^>]*>", html_text, flags=re.I):
-        return re.sub(r"(<html[^>]*>)", r"\1<head></head>", html_text, count=1, flags=re.I)
-    return f"<!DOCTYPE html><html lang=\"en\"><head></head><body>{html_text}</body></html>"
-
-
-def upsert_title(html_text: str, title: str) -> str:
-    escaped = html.escape(title)
-    if re.search(r"<title>.*?</title>", html_text, flags=re.I | re.S):
-        return re.sub(r"<title>.*?</title>", f"<title>{escaped}</title>", html_text, count=1, flags=re.I | re.S)
-    return html_text.replace("</head>", f"<title>{escaped}</title>\n</head>", 1)
-
-
-def remove_meta_name(html_text: str, name: str) -> str:
-    return re.sub(rf'\s*<meta[^>]+name=["\']{re.escape(name)}["\'][^>]*>\n?', "\n", html_text, flags=re.I)
-
-
-def remove_meta_property(html_text: str, prop: str) -> str:
-    return re.sub(rf'\s*<meta[^>]+property=["\']{re.escape(prop)}["\'][^>]*>\n?', "\n", html_text, flags=re.I)
-
-
-def render_json_ld(profile: dict[str, Any]) -> str:
-    author: dict[str, Any] = {
-        "@type": "Person",
-        "name": "Devin Teichrow",
-        "url": f"{PUBLIC_SITE_ORIGIN}/about/",
-        "sameAs": AUTHOR_SAME_AS,
-    }
-    payload: dict[str, Any] = {
-        "@context": "https://schema.org",
-        "@type": profile["schema_type"],
-        "name": profile["title"],
-        "url": profile["url"],
-        "description": profile["description"],
-        "image": profile["image"],
-        "isPartOf": {
-            "@type": "WebSite",
-            "name": "The Edge of Epidemiology",
-            "url": f"{PUBLIC_SITE_ORIGIN}/",
-        },
-        "author": author,
-    }
-    if profile["schema_type"] == "WebSite":
-        payload["potentialAction"] = {
-            "@type": "SearchAction",
-            "target": f"{PUBLIC_SITE_ORIGIN}/search/?q={{search_term_string}}",
-            "query-input": "required name=search_term_string",
-        }
-        payload["publisher"] = author
-    if profile["schema_type"] == "Article":
-        payload["headline"] = profile["title"].split("|")[0].strip()
-        payload["mainEntityOfPage"] = {"@type": "WebPage", "@id": profile["url"]}
-        payload["publisher"] = author
-        if profile.get("date_published"):
-            payload["datePublished"] = profile["date_published"]
-        if profile.get("date_modified"):
-            payload["dateModified"] = profile["date_modified"]
-        if profile.get("source_url"):
-            payload["isBasedOn"] = profile["source_url"]
-            payload["sameAs"] = [profile["source_url"]]
-    return (
-        '<script type="application/ld+json" data-eoe-seo>'
-        + json.dumps(payload, ensure_ascii=False)
-        + "</script>"
-    )
-
-
-def apply_seo_profile(html_text: str, profile: dict[str, Any]) -> str:
-    html_text = ensure_head_element(html_text)
-    html_text = upsert_title(html_text, profile["title"])
-    html_text = remove_meta_name(html_text, "description")
-    html_text = remove_meta_name(html_text, "robots")
-    for name in ("twitter:card", "twitter:title", "twitter:description", "twitter:image"):
-        html_text = remove_meta_name(html_text, name)
-    for prop in ("og:type", "og:site_name", "og:title", "og:description", "og:url", "og:image"):
-        html_text = remove_meta_property(html_text, prop)
-    html_text = re.sub(r'\s*<link[^>]+rel=["\']canonical["\'][^>]*>\n?', "\n", html_text, flags=re.I)
-    html_text = re.sub(r'\s*<link[^>]+rel=["\']alternate["\'][^>]+application/rss\+xml[^>]*>\n?', "\n", html_text, flags=re.I)
-    html_text = re.sub(r'\s*<script[^>]+type=["\']application/ld\+json["\'][^>]*data-eoe-seo[^>]*>.*?</script>\n?', "\n", html_text, flags=re.I | re.S)
-
-    robots = '<meta name="robots" content="noindex,follow" />\n' if profile["noindex"] else ""
-    meta_block = f"""
-    <link rel="canonical" href="{html.escape(profile['url'])}" />
-    <link rel="alternate" type="application/rss+xml" title="The Edge of Epidemiology RSS" href="{html.escape(RSS_FEED_URL)}" />
-    {robots}<meta name="description" content="{html.escape(profile['description'])}" />
-    <meta property="og:type" content="{'article' if profile['schema_type'] == 'Article' else 'website'}" />
-    <meta property="og:site_name" content="The Edge of Epidemiology" />
-    <meta property="og:title" content="{html.escape(profile['title'])}" />
-    <meta property="og:description" content="{html.escape(profile['description'])}" />
-    <meta property="og:url" content="{html.escape(profile['url'])}" />
-    <meta property="og:image" content="{html.escape(profile['image'])}" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="{html.escape(profile['title'])}" />
-    <meta name="twitter:description" content="{html.escape(profile['description'])}" />
-    <meta name="twitter:image" content="{html.escape(profile['image'])}" />
-    {render_json_ld(profile)}
-"""
-    return html_text.replace("</head>", f"{meta_block}</head>", 1)
-
-
-def finalize_seo(docs_dir: Path, posts: list[dict[str, Any]]) -> dict[str, Any]:
-    post_by_route = {post_route(post): post for post in posts}
-    profiles: dict[str, dict[str, Any]] = {}
-    for path in sorted(docs_dir.rglob("*.html")):
-        route = route_for_html_path(path, docs_dir)
-        html_text = path.read_text()
-        profile = seo_profile_for_route(route, html_text, post_by_route)
-        path.write_text(apply_seo_profile(html_text, profile))
-        profiles[route] = profile
-    sitemap_count = write_sitemap_and_robots(docs_dir, profiles)
-    return {
-        "html_pages": len(profiles),
-        "indexable_pages": sitemap_count,
-        "noindex_pages": sum(1 for profile in profiles.values() if profile["noindex"]),
-    }
-
-
-def write_sitemap_and_robots(docs_dir: Path, profiles: dict[str, dict[str, Any]]) -> int:
-    lastmod = dt.datetime.now(dt.timezone.utc).date().isoformat()
-    indexable = [profile for _, profile in sorted(profiles.items()) if not profile["noindex"]]
-    url_entries = "\n".join(
-        "  <url>\n"
-        f"    <loc>{html.escape(profile['url'])}</loc>\n"
-        f"    <lastmod>{lastmod}</lastmod>\n"
-        "  </url>"
-        for profile in indexable
-    )
-    sitemap = (
-        '<?xml version="1.0" encoding="UTF-8"?>\n'
-        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        f"{url_entries}\n"
-        "</urlset>\n"
-    )
-    (docs_dir / "sitemap.xml").write_text(sitemap)
-    (docs_dir / "robots.txt").write_text(
-        "User-agent: *\n"
-        "Allow: /\n"
-        "Disallow: /app_exports/\n"
-        "Disallow: /search/\n"
-        f"Sitemap: {PUBLIC_SITE_ORIGIN}/sitemap.xml\n"
-    )
-    (docs_dir / "CNAME").write_text(f"{PUBLIC_SITE_DOMAIN}\n")
-    return len(indexable)
-
-
-def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -> dict[str, Any]:
+def build_site(
+    *, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL
+) -> dict[str, Any]:
     base_url = normalize_base_url(base_url)
     if docs_dir.exists():
         shutil.rmtree(docs_dir)
@@ -3098,15 +1770,21 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
     page_specs = {
         docs_dir / "index.html": render_home(public_posts, tools, latest, base_url),
         docs_dir / "essays" / "index.html": render_essays_index(public_posts, base_url),
-        docs_dir / "topics" / "index.html": render_topic_hub_index(public_posts, base_url),
+        docs_dir / "topics" / "index.html": render_topic_hub_index(
+            public_posts, base_url
+        ),
         docs_dir / "tools" / "index.html": render_tools_hub(tools, base_url),
         docs_dir / "atlases" / "index.html": render_atlas_hub(atlases, base_url),
-        docs_dir / "historical" / "index.html": render_historical_page(public_posts, atlases, base_url),
+        docs_dir / "historical" / "index.html": render_historical_page(
+            public_posts, atlases, base_url
+        ),
         docs_dir / "methods" / "index.html": render_methods_page(base_url),
         docs_dir / "about" / "index.html": render_about_page(base_url),
         docs_dir / "opportunities" / "index.html": render_opportunities_page(base_url),
         docs_dir / "search" / "index.html": render_search_page(base_url),
-        docs_dir / "reference" / "index.html": render_reference_index(references, base_url),
+        docs_dir / "reference" / "index.html": render_reference_index(
+            references, base_url
+        ),
         docs_dir / "stories" / "index.html": render_stories_index(stories, base_url),
     }
 
@@ -3161,7 +1839,11 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
                 "section": "Essay",
                 "summary": post_seo_description(post),
                 "url": link_for(base_url, f"essays/{post.get('slug')}/"),
-                "keywords": " ".join(post.get("topics", []) + post.get("upstream_tags", []) + [post.get("primary_keyword", ""), post_topic_cluster(post)]),
+                "keywords": " ".join(
+                    post.get("topics", [])
+                    + post.get("upstream_tags", [])
+                    + [post.get("primary_keyword", ""), post_topic_cluster(post)]
+                ),
             }
         )
     for hub in TOPIC_HUBS:
@@ -3191,7 +1873,9 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
                 "section": "Tool",
                 "summary": tool.get("summary"),
                 "url": link_for(base_url, tool.get("public_route", "")),
-                "keywords": " ".join(tool.get("keywords", []) + [tool.get("tool_type", "")]),
+                "keywords": " ".join(
+                    tool.get("keywords", []) + [tool.get("tool_type", "")]
+                ),
             }
         )
     for story in stories:
@@ -3199,9 +1883,13 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
             {
                 "title": story.get("display_title"),
                 "section": "Newsdesk",
-                "summary": story.get("latest_update_summary") or story.get("why_it_matters"),
+                "summary": story.get("latest_update_summary")
+                or story.get("why_it_matters"),
                 "url": link_for(base_url, story.get("story_web_path", "")),
-                "keywords": " ".join(story.get("claim_types", []) + [story.get("primary_region", ""), story.get("country", "")]),
+                "keywords": " ".join(
+                    story.get("claim_types", [])
+                    + [story.get("primary_region", ""), story.get("country", "")]
+                ),
             }
         )
     for reference in references:
@@ -3209,14 +1897,17 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
             {
                 "title": reference.get("name"),
                 "section": "Reference",
-                "summary": reference.get("why_reporters_care") or reference.get("atlas_summary"),
+                "summary": reference.get("why_reporters_care")
+                or reference.get("atlas_summary"),
                 "url": link_for(base_url, reference.get("reference_web_path", "")),
-                "keywords": " ".join(reference.get("categories", []) + reference.get("aliases", [])),
+                "keywords": " ".join(
+                    reference.get("categories", []) + reference.get("aliases", [])
+                ),
             }
         )
     search_index.append(
         {
-            "title": "Opportunities",
+            "title": "Work with me",
             "section": "About",
             "summary": "Work with Devin Teichrow on epidemiology, evidence, disease history, science communication, data projects, and public-health exhibits.",
             "url": link_for(base_url, "opportunities/"),
@@ -3227,8 +1918,16 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
     write_json(docs_dir / "app_exports" / "posts.json", posts_export)
     write_json(docs_dir / "app_exports" / "atlases.json", atlases_export)
     write_json(docs_dir / "app_exports" / "tools.json", tools_export)
-    write_json(docs_dir / "app_exports" / "search-index.json", search_index)
+    from .site_content import deduplicate_search_records
+
+    write_json(
+        docs_dir / "app_exports" / "search-index.json",
+        deduplicate_search_records(search_index),
+    )
     sync_legacy_newsdesk_app_exports(docs_dir)
+    from .site_exhibits import finalize_exhibit_shells
+
+    finalize_exhibit_shells(docs_dir, base_url)
     seo_report = finalize_seo(docs_dir, public_posts)
 
     return {
@@ -3245,7 +1944,9 @@ def build_site(*, docs_dir: Path = DOCS_DIR, base_url: str = DEFAULT_BASE_URL) -
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Build the Edge of Epidemiology umbrella site.")
+    parser = argparse.ArgumentParser(
+        description="Build the Edge of Epidemiology umbrella site."
+    )
     parser.add_argument("--docs-dir", type=Path, default=DOCS_DIR)
     parser.add_argument("--site-base-url", default=DEFAULT_BASE_URL)
     args = parser.parse_args()

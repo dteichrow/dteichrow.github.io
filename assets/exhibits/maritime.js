@@ -1,0 +1,2835 @@
+const COLORS = {
+  "Pirate Network": "#c9a84c",
+  "Scurvy and Provisions": "#a8864a",
+  "Fevers and Vectors": "#d86a4f",
+  "Malaria and Mosquitoes": "#9b7bd8",
+  "Crowding and Flux": "#5d958c",
+  "Flux and Enteric Disease": "#5a9bd4",
+  "Ship Interior": "#8f887f",
+  "Food and Water": "#7aa96b",
+  "Respiratory Viruses": "#e1bf66",
+  "Wounds and Sepsis": "#bd7b45",
+  "Extreme Burden": "#dd6974",
+};
+
+const map = L.map("map", {
+  center: [22, -43],
+  zoom: 4,
+  zoomControl: false,
+  attributionControl: false,
+});
+
+const tileOptions = {
+  attribution: "Natural Earth",
+  subdomains: "abcd",
+  maxZoom: 19,
+};
+const labelTileOptions = {
+  subdomains: "abcd",
+  maxZoom: 19,
+  opacity: 0.58,
+};
+const darkBaseLayer = EOEMaps.createBaseLayer("dark");
+const darkLabelLayer = EOEMaps.createLabelLayer("dark");
+const lightBaseLayer = EOEMaps.createBaseLayer("light");
+const lightLabelLayer = EOEMaps.createLabelLayer("light");
+darkBaseLayer.addTo(map);
+darkLabelLayer.addTo(map);
+L.control.zoom({ position: "bottomright" }).addTo(map);
+L.control
+  .attribution({ position: "bottomleft", prefix: false })
+  .addTo(map)
+  .addAttribution("Natural Earth");
+
+const atlas = window.MARITIME_DISEASE_ATLAS_GEOJSON;
+const scenarios = window.MARITIME_DISEASE_SCENARIOS;
+const moduleDataset = window.MARITIME_DISEASE_MODULES || {
+  modules: [],
+  sources: [],
+  confidence_legend: {},
+};
+const youtubeVideoPlan = window.MARITIME_YOUTUBE_VIDEO_PLAN || null;
+const maritimeModules = Array.isArray(moduleDataset.modules)
+  ? moduleDataset.modules
+  : [];
+const evidenceSources = new Map(
+  (moduleDataset.sources || []).map((source) => [source.source_id, source]),
+);
+const featureById = new Map(
+  atlas.features.map((feature) => [feature.properties.id, feature]),
+);
+const queryParams = new URLSearchParams(window.location.search);
+const requestedYouTubeMode = ["youtube", "yt"].some((name) => {
+  const value = queryParams.get(name);
+  return value === "" || value === "1" || value === "true" || value === "yes";
+});
+const SCENARIO_ORDER = [
+  "yellow_fever",
+  "malaria",
+  "scurvy",
+  "ship_fever",
+  "flux",
+  "typhoid",
+  "smallpox",
+  "measles",
+  "wounds_sepsis",
+  "middle_passage",
+  "pirate_network",
+];
+const VIDEO_TOUR = [
+  "pirate_network",
+  "yellow_fever",
+  "malaria",
+  "scurvy",
+  "ship_fever",
+  "flux",
+  "typhoid",
+  "smallpox",
+  "measles",
+  "wounds_sepsis",
+  "middle_passage",
+];
+const CONFIDENCE_LABELS = {
+  high: "High",
+  moderate: "Moderate",
+  low: "Low",
+  contested: "Contested",
+  speculative: "Speculative",
+};
+const durationScale = (() => {
+  const youtubeDefaultPace = youtubeVideoPlan?.playback?.default_pace || 2.05;
+  const raw = Number(
+    queryParams.get("pace") ||
+      queryParams.get("speed") ||
+      (requestedYouTubeMode ? youtubeDefaultPace : 1),
+  );
+  if (!Number.isFinite(raw)) return 1;
+  return Math.min(2.5, Math.max(0.35, raw));
+})();
+let geoLayer;
+let activePulse;
+let activeScenario = null;
+let runToken = 0;
+let tourToken = 0;
+let isPaused = false;
+let isRecordingMode = false;
+let isYouTubeMode = false;
+let isTourRunning = false;
+let pauseResolvers = [];
+let activeProgress = null;
+let lastPausePointerAt = 0;
+let soundDesign = null;
+let isSoundEnabled = false;
+let soundUnsupported = false;
+let currentSoundProfile = { scene: "idle", cue: null };
+let publicLayoutFrame = null;
+
+function audioContextClass() {
+  return window.AudioContext || window.webkitAudioContext || null;
+}
+
+function createNoiseBuffer(ctx, seconds = 2.4) {
+  const length = Math.floor(ctx.sampleRate * seconds);
+  const buffer = ctx.createBuffer(1, length, ctx.sampleRate);
+  const data = buffer.getChannelData(0);
+  let last = 0;
+  for (let i = 0; i < length; i++) {
+    const white = Math.random() * 2 - 1;
+    last = (last + 0.025 * white) / 1.025;
+    data[i] = last * 3.2;
+  }
+  return buffer;
+}
+
+function createSoundDesign() {
+  const ContextClass = audioContextClass();
+  if (!ContextClass) {
+    soundUnsupported = true;
+    return null;
+  }
+
+  const ctx = new ContextClass();
+  const master = ctx.createGain();
+  const compressor = ctx.createDynamicsCompressor();
+  master.gain.value = 0;
+  compressor.threshold.value = -24;
+  compressor.knee.value = 24;
+  compressor.ratio.value = 3;
+  compressor.attack.value = 0.018;
+  compressor.release.value = 0.45;
+  master.connect(compressor);
+  compressor.connect(ctx.destination);
+
+  function ramp(param, value, seconds = 0.5) {
+    const now = ctx.currentTime;
+    param.cancelScheduledValues(now);
+    param.setTargetAtTime(value, now, Math.max(0.018, seconds / 3));
+  }
+
+  function loopingNoise({ filterType, frequency, q = 0.7 }) {
+    const source = ctx.createBufferSource();
+    source.buffer = createNoiseBuffer(ctx);
+    source.loop = true;
+    const filter = ctx.createBiquadFilter();
+    filter.type = filterType;
+    filter.frequency.value = frequency;
+    filter.Q.value = q;
+    const gain = ctx.createGain();
+    gain.gain.value = 0;
+    source.connect(filter);
+    filter.connect(gain);
+    gain.connect(master);
+    source.start();
+    return { source, filter, gain };
+  }
+
+  const ocean = loopingNoise({
+    filterType: "lowpass",
+    frequency: 420,
+    q: 0.45,
+  });
+  const wind = loopingNoise({
+    filterType: "bandpass",
+    frequency: 1120,
+    q: 0.55,
+  });
+  const belowDeck = loopingNoise({
+    filterType: "lowpass",
+    frequency: 190,
+    q: 0.8,
+  });
+  const coldAir = loopingNoise({
+    filterType: "bandpass",
+    frequency: 820,
+    q: 0.38,
+  });
+
+  const sceneTargets = {
+    idle: { ocean: 0, wind: 0, below: 0, cold: 0 },
+    overview: { ocean: 0.009, wind: 0.0025, below: 0, cold: 0 },
+    port: { ocean: 0.012, wind: 0.0035, below: 0, cold: 0 },
+    provisions: { ocean: 0.01, wind: 0.002, below: 0.0035, cold: 0 },
+    below: { ocean: 0.008, wind: 0.0015, below: 0.011, cold: 0 },
+    quarantine: { ocean: 0.006, wind: 0.0025, below: 0, cold: 0.0035 },
+    route: { ocean: 0.015, wind: 0.006, below: 0, cold: 0 },
+    mechanism: { ocean: 0.004, wind: 0.0015, below: 0.0015, cold: 0 },
+    plot: { ocean: 0.002, wind: 0.0008, below: 0, cold: 0 },
+  };
+
+  function setScene(scene) {
+    const targets = sceneTargets[scene] || sceneTargets.overview;
+    ramp(ocean.gain.gain, targets.ocean, 0.9);
+    ramp(wind.gain.gain, targets.wind, 0.9);
+    ramp(belowDeck.gain.gain, targets.below, 0.8);
+    ramp(coldAir.gain.gain, targets.cold, 1.0);
+  }
+
+  function filteredNoiseHit({
+    frequency = 260,
+    gain = 0.008,
+    decay = 0.65,
+    type = "bandpass",
+    q = 0.9,
+  }) {
+    const source = ctx.createBufferSource();
+    source.buffer = createNoiseBuffer(ctx, 0.2);
+    const filter = ctx.createBiquadFilter();
+    filter.type = type;
+    filter.frequency.value = frequency;
+    filter.Q.value = q;
+    const envelope = ctx.createGain();
+    const now = ctx.currentTime;
+    envelope.gain.setValueAtTime(0.0001, now);
+    envelope.gain.exponentialRampToValueAtTime(gain, now + 0.025);
+    envelope.gain.exponentialRampToValueAtTime(0.0001, now + decay);
+    source.connect(filter);
+    filter.connect(envelope);
+    envelope.connect(master);
+    source.start(now);
+    source.stop(now + decay + 0.05);
+  }
+
+  function delayedNoiseHit(delayMs, options) {
+    window.setTimeout(() => {
+      if (isSoundEnabled && ctx.state === "running" && !isPaused)
+        filteredNoiseHit(options);
+    }, delayMs);
+  }
+
+  function cue(name) {
+    if (!isSoundEnabled || ctx.state !== "running" || isPaused) return;
+    if (name === "harbor") {
+      filteredNoiseHit({
+        frequency: 520,
+        gain: 0.0045,
+        decay: 0.75,
+        type: "bandpass",
+        q: 0.45,
+      });
+      delayedNoiseHit(220, {
+        frequency: 780,
+        gain: 0.0025,
+        decay: 0.55,
+        type: "bandpass",
+        q: 0.4,
+      });
+    } else if (name === "piratePort") {
+      filteredNoiseHit({
+        frequency: 180,
+        gain: 0.006,
+        decay: 0.42,
+        type: "lowpass",
+        q: 0.55,
+      });
+      delayedNoiseHit(180, {
+        frequency: 660,
+        gain: 0.003,
+        decay: 0.48,
+        type: "bandpass",
+        q: 0.42,
+      });
+    } else if (name === "route") {
+      filteredNoiseHit({
+        frequency: 360,
+        gain: 0.007,
+        decay: 1.45,
+        type: "lowpass",
+        q: 0.35,
+      });
+      delayedNoiseHit(520, {
+        frequency: 980,
+        gain: 0.0025,
+        decay: 1.05,
+        type: "bandpass",
+        q: 0.36,
+      });
+    } else if (name === "belowDeck") {
+      filteredNoiseHit({
+        frequency: 150,
+        gain: 0.0065,
+        decay: 0.75,
+        type: "lowpass",
+        q: 0.48,
+      });
+      delayedNoiseHit(260, {
+        frequency: 230,
+        gain: 0.0035,
+        decay: 0.52,
+        type: "lowpass",
+        q: 0.42,
+      });
+    } else if (name === "quarantine") {
+      filteredNoiseHit({
+        frequency: 880,
+        gain: 0.0035,
+        decay: 1.2,
+        type: "bandpass",
+        q: 0.32,
+      });
+    } else if (name === "provisions") {
+      filteredNoiseHit({
+        frequency: 190,
+        gain: 0.006,
+        decay: 0.32,
+        type: "lowpass",
+        q: 0.44,
+      });
+      delayedNoiseHit(160, {
+        frequency: 230,
+        gain: 0.0038,
+        decay: 0.28,
+        type: "lowpass",
+        q: 0.4,
+      });
+    } else if (name === "mechanism") {
+      filteredNoiseHit({
+        frequency: 460,
+        gain: 0.002,
+        decay: 0.35,
+        type: "bandpass",
+        q: 0.35,
+      });
+    } else if (name === "plot") {
+      filteredNoiseHit({
+        frequency: 300,
+        gain: 0.0018,
+        decay: 0.3,
+        type: "bandpass",
+        q: 0.32,
+      });
+    } else if (name === "enable") {
+      filteredNoiseHit({
+        frequency: 340,
+        gain: 0.0035,
+        decay: 0.8,
+        type: "lowpass",
+        q: 0.32,
+      });
+    }
+  }
+
+  return {
+    ctx,
+    setEnabled(enabled) {
+      ramp(
+        master.gain,
+        enabled && !isPaused ? 1 : 0.0001,
+        enabled ? 0.55 : 0.22,
+      );
+    },
+    setPaused(paused) {
+      ramp(
+        master.gain,
+        isSoundEnabled && !paused ? 1 : 0.0001,
+        paused ? 0.18 : 0.45,
+      );
+    },
+    setScene,
+    cue,
+    async resume() {
+      if (ctx.state !== "running") await ctx.resume();
+    },
+    status() {
+      return {
+        enabled: isSoundEnabled,
+        unsupported: soundUnsupported,
+        contextState: ctx.state,
+        scene: currentSoundProfile.scene,
+        cue: currentSoundProfile.cue,
+        masterGain: Number(master.gain.value.toFixed(4)),
+        oceanGain: Number(ocean.gain.gain.value.toFixed(4)),
+        windGain: Number(wind.gain.gain.value.toFixed(4)),
+        belowGain: Number(belowDeck.gain.gain.value.toFixed(4)),
+        coldGain: Number(coldAir.gain.gain.value.toFixed(4)),
+        tonalOscillators: 0,
+      };
+    },
+  };
+}
+
+function soundProfileForStep(scenarioId, step = null) {
+  if (!step) return { scene: "overview", cue: "enable" };
+  const featureId = step.featureId || "";
+  if (step.kind === "route") return { scene: "route", cue: "route" };
+  if (step.kind === "mechanism")
+    return { scene: "mechanism", cue: "mechanism" };
+  if (step.kind === "plot") return { scene: "plot", cue: "plot" };
+  if (/below_deck|brookes_middle_passage/.test(featureId))
+    return { scene: "below", cue: "belowDeck" };
+  if (/quarantine|grosse_ile|london_naval|hulks|port_arrival/.test(featureId))
+    return { scene: "quarantine", cue: "quarantine" };
+  if (/water_cask|food_water|hms_salisbury/.test(featureId))
+    return { scene: "provisions", cue: "provisions" };
+  if (/nassau|port_royal|tortuga|cape_fear/.test(featureId))
+    return {
+      scene: "port",
+      cue: scenarioId === "pirate_network" ? "piratePort" : "harbor",
+    };
+  if (
+    /philadelphia|saint_domingue|west_africa|malaria|smallpox_origin|measles_origin/.test(
+      featureId,
+    )
+  )
+    return { scene: "port", cue: "harbor" };
+  return { scene: "port", cue: "harbor" };
+}
+
+function applySoundProfile(profile, playCue = false) {
+  currentSoundProfile = profile;
+  document.documentElement.dataset.soundScene = profile.scene;
+  document.documentElement.dataset.soundCue = profile.cue || "";
+  if (!soundDesign) return;
+  soundDesign.setScene(profile.scene);
+  if (playCue && profile.cue) soundDesign.cue(profile.cue);
+}
+
+function updateSoundButton() {
+  const label = isSoundEnabled
+    ? "Atmosphere On"
+    : soundUnsupported
+      ? "Atmosphere N/A"
+      : "Atmosphere Off";
+  const soundButton = document.getElementById("sound-btn");
+  const videoButton = document.getElementById("video-sound-btn");
+  const videoLabel = document.getElementById("video-sound-label");
+  document.documentElement.classList.toggle("sound-enabled", isSoundEnabled);
+  document.documentElement.dataset.sound = isSoundEnabled ? "on" : "off";
+  document.documentElement.dataset.soundState = soundDesign
+    ? soundDesign.ctx.state
+    : soundUnsupported
+      ? "unsupported"
+      : "idle";
+  if (soundButton) {
+    soundButton.textContent = label;
+    soundButton.classList.toggle("active", isSoundEnabled);
+    soundButton.setAttribute("aria-pressed", String(isSoundEnabled));
+  }
+  if (videoButton) {
+    videoButton.setAttribute("aria-pressed", String(isSoundEnabled));
+    videoButton.classList.toggle("active", isSoundEnabled);
+  }
+  if (videoLabel) videoLabel.textContent = label;
+}
+
+async function setSoundEnabled(nextValue, { cue = true } = {}) {
+  if (nextValue && !soundDesign) soundDesign = createSoundDesign();
+  if (nextValue && !soundDesign) {
+    isSoundEnabled = false;
+    updateSoundButton();
+    return;
+  }
+  isSoundEnabled = nextValue;
+  if (soundDesign && isSoundEnabled) {
+    try {
+      await soundDesign.resume();
+    } catch (error) {
+      // Browsers may block autoplay until a real pointer/key gesture; keep the control armed.
+    }
+    soundDesign.setEnabled(true);
+    soundDesign.setPaused(isPaused);
+    applySoundProfile(currentSoundProfile, cue);
+  } else if (soundDesign) {
+    soundDesign.setEnabled(false);
+  }
+  updateSoundButton();
+}
+
+function toggleSoundFromControl(event) {
+  if (event) event.preventDefault();
+  setSoundEnabled(!isSoundEnabled);
+}
+
+function bindSoundControl(id) {
+  const button = document.getElementById(id);
+  if (!button) return;
+  button.addEventListener("click", toggleSoundFromControl);
+}
+
+function resumeArmedSoundFromGesture() {
+  if (isSoundEnabled && soundDesign && soundDesign.ctx.state !== "running") {
+    soundDesign.resume().then(updateSoundButton).catch(updateSoundButton);
+  }
+}
+
+const CONTEXT_ART = {
+  nassau: {
+    src: "assets/context/nassau_harbor.jpg",
+    title: "Nassau Harbor, Bahama Islands",
+    kicker: "Port visual",
+    credit: "Library of Congress via Wikimedia Commons, public domain",
+    position: "center 48%",
+  },
+  port_royal: {
+    src: "assets/context/port_royal_paton.jpg",
+    title: "View of Port Royal, Jamaica",
+    kicker: "Port visual",
+    credit:
+      "Richard Paton / Royal Museums Greenwich via Wikimedia Commons, public domain",
+    position: "center center",
+  },
+  tortuga: {
+    src: "assets/context/tortuga_map.jpg",
+    title: "Map of Île de la Tortue",
+    kicker: "Island visual",
+    credit: "USGS via Wikimedia Commons, public domain",
+    position: "center center",
+    fit: "contain",
+  },
+  west_africa: {
+    src: "assets/context/guinea_coast_1736.jpg",
+    title: "Guinea Coast map, 1736",
+    kicker: "Atlantic origin context",
+    credit: "Wikimedia Commons, public domain",
+    position: "center 46%",
+    fit: "contain",
+  },
+  west_africa_malaria: {
+    src: "assets/context/guinea_coast_1736.jpg",
+    title: "Guinea Coast map, 1736",
+    kicker: "Tropical ecology context",
+    credit: "Wikimedia Commons, public domain",
+    position: "center 46%",
+    fit: "contain",
+  },
+  saint_domingue: {
+    src: "assets/context/cap_francais_1728.jpg",
+    title: "Cap-Français, Saint-Domingue, 1728",
+    kicker: "Caribbean port visual",
+    credit: "Wikimedia Commons, public domain",
+    position: "center 42%",
+    fit: "contain",
+  },
+  smallpox_origin_camel: {
+    src: "assets/context/camel_from_nubia_1838.jpg",
+    title: "Dromedary camel from the coast of Nubia",
+    kicker: "Debated origin model",
+    credit: "J. R. Wellsted, 1838, via Wikimedia Commons, public domain",
+    position: "center center",
+    fit: "contain",
+  },
+  measles_origin_rinderpest: {
+    src: "assets/context/rinderpest_1896.jpg",
+    title: "Rinderpest outbreak, South Africa, 1896",
+    kicker: "Morbillivirus ancestry visual",
+    credit: "Wikimedia Commons, public domain",
+    position: "center center",
+    fit: "contain",
+  },
+  london_naval: {
+    src: "assets/context/royal_naval_hospital_greenwich_1720.jpg",
+    title: "Royal Naval Hospital, Greenwich, 1720",
+    kicker: "Naval medicine visual",
+    credit: "Wellcome Collection via Wikimedia Commons, CC BY 4.0",
+    position: "center 48%",
+    fit: "contain",
+  },
+  below_deck: {
+    src: "assets/context/emigrants_lower_deck_crowded.jpg",
+    title: "Crowded lower deck of an emigrant ship",
+    kicker: "Below-deck crowding",
+    credit: "Library of Congress via Wikimedia Commons, public domain",
+    position: "center center",
+    fit: "contain",
+  },
+  water_cask: {
+    src: "assets/cinema/barrels_on_savannah_docks_nara.jpg",
+    title: "Barrels and containers on the dock",
+    kicker: "Food-water context",
+    credit: "National Archives via Wikimedia Commons, public domain",
+    position: "center center",
+    fit: "cover",
+  },
+  food_water_typhi: {
+    src: "assets/cinema/cook_at_galley_hatch.jpg",
+    title: "The Cook at the Galley Hatch",
+    kicker: "Food-water disease visual",
+    credit: "Imperial War Museums via Wikimedia Commons, public domain",
+    position: "center 43%",
+  },
+  hms_salisbury: {
+    src: "assets/context/lind_scurvy_treatise.jpg",
+    title: "James Lind, A Treatise on the Scurvy",
+    kicker: "Source visual",
+    credit: "Wellcome Collection via Wikimedia Commons, CC BY 4.0",
+    position: "center 18%",
+    fit: "contain",
+  },
+  philadelphia_1793: {
+    src: "assets/context/philadelphia_yellow_fever_1793.gif",
+    title: "Carey's 1793 yellow-fever account",
+    kicker: "Outbreak source",
+    credit:
+      "College of Physicians of Philadelphia via Wikimedia Commons, public domain",
+    position: "center 20%",
+    fit: "contain",
+  },
+  port_arrival: {
+    src: "assets/context/quarantine_guardship_rhin_1830.jpg",
+    title: "Quarantine guardship Rhin, 1830",
+    kicker: "Quarantine visual",
+    credit: "Royal Museums Greenwich via Wikimedia Commons, public domain",
+    position: "center center",
+  },
+  smallpox_hulks: {
+    src: "assets/context/smallpox_hospital_ships_atlas_endymion.jpg",
+    title: "Smallpox hospital hulks Atlas and Endymion",
+    kicker: "Maritime isolation",
+    credit: "Wellcome Collection via Wikimedia Commons, CC BY 4.0",
+    position: "center center",
+    fit: "contain",
+  },
+  grosse_ile_quarantine: {
+    src: "assets/context/grosse_ile_quarantine_1850.jpg",
+    title: "Grosse Île quarantine station, 1850",
+    kicker: "Fever-ship endpoint",
+    credit: "Library and Archives Canada via Wikimedia Commons, public domain",
+    position: "center center",
+    fit: "contain",
+  },
+  ship_surgery: {
+    src: "assets/context/naval_surgeon_instruments.jpg",
+    title: "Naval surgeon's amputation instruments",
+    kicker: "Surgery visual",
+    credit: "Wellcome Collection via Wikimedia Commons, CC BY 4.0",
+    position: "center 46%",
+  },
+  route_wounds_sepsis: {
+    src: "assets/context/naval_surgeon_instruments.jpg",
+    title: "Naval surgeon's amputation instruments",
+    kicker: "Surgery visual",
+    credit: "Wellcome Collection via Wikimedia Commons, CC BY 4.0",
+    position: "center 46%",
+  },
+  cape_fear: {
+    src: "assets/context/cape_fear_map.jpg",
+    title: "Cape Fear River map",
+    kicker: "Coastal endpoint",
+    credit: "Library of Congress via Wikimedia Commons, public domain",
+    position: "center 48%",
+    fit: "contain",
+  },
+  brookes_middle_passage: {
+    src: "assets/context/brookes_slave_ship.jpg",
+    title: "Diagram of the Brookes slave ship",
+    kicker: "Confinement visual",
+    credit: "British Library via Wikimedia Commons, public domain",
+    position: "center center",
+    fit: "contain",
+  },
+};
+
+function cinemaPlate({
+  src,
+  title,
+  kicker = "Archival plate",
+  credit = "",
+  position = "center center",
+  origin = "68% 45%",
+  secondary = null,
+  featureId = null,
+  visual = null,
+  kind = null,
+  opacity = "0.46",
+  clearX = "42%",
+  clearY = "52%",
+  panStartX = "1.2%",
+  panStartY = "0%",
+  panEndX = "-3.2%",
+  panEndY = "-1.4%",
+}) {
+  return {
+    src,
+    title,
+    kicker,
+    credit,
+    position,
+    origin,
+    secondary,
+    featureId,
+    visual,
+    kind,
+    opacity,
+    clearX,
+    clearY,
+    panStartX,
+    panStartY,
+    panEndX,
+    panEndY,
+  };
+}
+
+const CINEMA_REELS = {
+  pirate_network: [
+    cinemaPlate({
+      featureId: "nassau",
+      src: "assets/cinema/new_providence_harbour_plan.jpg",
+      title: "New Providence made piracy infrastructural",
+      kicker: "Nassau / New Providence",
+      credit:
+        "Bibliotheque nationale de France via Wikimedia Commons, public domain",
+      position: "center 46%",
+      origin: "43% 44%",
+      opacity: "0.5",
+      clearX: "43%",
+      clearY: "52%",
+      panStartX: "0.4%",
+      panEndX: "-2.4%",
+      secondary: {
+        src: "assets/cinema/pyle_henry_morgan_recruiting.jpg",
+        title: "Henry Morgan Recruiting for the Attack",
+        position: "center 44%",
+        origin: "48% 42%",
+        opacity: "0.32",
+        panStartX: "-1.2%",
+        panEndX: "2.2%",
+      },
+    }),
+    cinemaPlate({
+      featureId: "port_royal",
+      src: "assets/cinema/port_royal_kingston_harbour_nypl.jpg",
+      title: "Port Royal was a harbor system, not a dot",
+      kicker: "Jamaica harbor",
+      credit: "New York Public Library via Wikimedia Commons, public domain",
+      position: "center 52%",
+      origin: "48% 48%",
+      opacity: "0.48",
+      clearX: "43%",
+      clearY: "55%",
+      panStartX: "-1.2%",
+      panEndX: "2.4%",
+      secondary: {
+        src: "assets/cinema/ann_bonny_mary_read.jpg",
+        title: "Ann Bonny and Mary Read before the Vice Admiralty court",
+        position: "center 43%",
+        origin: "48% 40%",
+        opacity: "0.34",
+        panStartX: "1%",
+        panEndX: "-2.2%",
+      },
+    }),
+    cinemaPlate({
+      featureId: "tortuga",
+      src: "assets/cinema/pyle_walking_plank.jpg",
+      title: "Pirate discipline and spectacle traveled with the ship",
+      kicker: "Island base",
+      credit: "Howard Pyle via Wikimedia Commons, public domain",
+      position: "center 38%",
+      origin: "50% 36%",
+      opacity: "0.5",
+      clearX: "45%",
+      clearY: "50%",
+      panStartY: "1.4%",
+      panEndY: "-2.8%",
+      secondary: {
+        src: "assets/cinema/pyle_pirate_captain.jpg",
+        title: "Pirate captain on deck",
+        position: "center 22%",
+        origin: "50% 28%",
+        opacity: "0.3",
+        panStartY: "-1%",
+        panEndY: "1.8%",
+      },
+    }),
+    cinemaPlate({
+      featureId: "cape_fear",
+      src: "assets/cinema/blackbeard_capture_ferris.jpg",
+      title: "The Carolina coast enters the violence map",
+      kicker: "Atlantic endpoint",
+      credit: "Jean Leon Gerome Ferris via Wikimedia Commons, public domain",
+      position: "center 43%",
+      origin: "48% 42%",
+      opacity: "0.54",
+      clearX: "44%",
+      clearY: "50%",
+      panStartX: "1.6%",
+      panEndX: "-2.8%",
+      secondary: {
+        src: "assets/cinema/pyle_pirates_raidship.jpg",
+        title: "A ship as mobile risk",
+        position: "center 40%",
+        origin: "58% 45%",
+        opacity: "0.28",
+        panStartX: "-1%",
+        panEndX: "2%",
+      },
+    }),
+    cinemaPlate({
+      featureId: "route_pirate_network",
+      src: "assets/cinema/pyle_pirates_approaching_ship.jpg",
+      title: "The pirate network was a ship-to-port system",
+      kicker: "Pirate network",
+      credit: "Howard Pyle via Wikimedia Commons, public domain",
+      position: "center 43%",
+      origin: "44% 45%",
+      opacity: "0.52",
+      clearX: "45%",
+      clearY: "51%",
+      panStartX: "-1%",
+      panEndX: "2.6%",
+      secondary: {
+        src: "assets/cinema/pyle_capture_of_galleon.jpg",
+        title: "Capture of the Galleon",
+        position: "center center",
+        origin: "54% 48%",
+        opacity: "0.32",
+        panStartX: "1.2%",
+        panEndX: "-2.6%",
+      },
+    }),
+  ],
+  yellow_fever: [
+    cinemaPlate({
+      featureId: "west_africa",
+      src: "assets/context/guinea_coast_1736.jpg",
+      title: "African coastal ecology anchors the route",
+      kicker: "Origin ecology",
+      credit: "Wikimedia Commons, public domain",
+      position: "center 46%",
+      origin: "54% 42%",
+      opacity: "0.48",
+      clearX: "42%",
+      clearY: "52%",
+    }),
+    cinemaPlate({
+      featureId: "route_yellow_fever",
+      src: "assets/cinema/east_indiaman_hindustan.jpg",
+      title: "Merchant sail made vector ecology mobile",
+      kicker: "Atlantic movement",
+      credit:
+        "Thomas Luny / Royal Museums Greenwich via Wikimedia Commons, public domain",
+      position: "center 50%",
+      origin: "42% 50%",
+      opacity: "0.52",
+      clearX: "42%",
+      clearY: "52%",
+    }),
+    cinemaPlate({
+      featureId: "saint_domingue",
+      src: "assets/context/cap_francais_1728.jpg",
+      title: "Caribbean ports turned exposure into amplification",
+      kicker: "Caribbean port",
+      credit: "Wikimedia Commons, public domain",
+      position: "center 42%",
+      origin: "54% 46%",
+      opacity: "0.5",
+      clearX: "43%",
+      clearY: "52%",
+    }),
+    cinemaPlate({
+      featureId: "philadelphia_1793",
+      src: "assets/context/philadelphia_yellow_fever_1793.gif",
+      title: "A port city receives the ship ecology",
+      kicker: "Port outbreak",
+      credit: "Library of Congress via Wikimedia Commons, public domain",
+      position: "center center",
+      origin: "50% 50%",
+      opacity: "0.46",
+      clearX: "44%",
+      clearY: "52%",
+    }),
+  ],
+  malaria: [
+    cinemaPlate({
+      featureId: "west_africa_malaria",
+      src: "assets/context/guinea_coast_1736.jpg",
+      title: "Tropical ecology is the first layer",
+      kicker: "Mosquito habitat",
+      credit: "Wikimedia Commons, public domain",
+      position: "center 46%",
+      origin: "54% 42%",
+      opacity: "0.47",
+      clearX: "43%",
+      clearY: "53%",
+    }),
+    cinemaPlate({
+      featureId: "port_royal",
+      src: "assets/cinema/port_royal_kingston_harbour_nypl.jpg",
+      title: "Warm harbors concentrate people, water, and work",
+      kicker: "Caribbean port",
+      credit: "New York Public Library via Wikimedia Commons, public domain",
+      position: "center 52%",
+      origin: "48% 48%",
+      opacity: "0.48",
+      clearX: "43%",
+      clearY: "55%",
+    }),
+    cinemaPlate({
+      featureId: "route_malaria",
+      src: "assets/cinema/east_indiaman_kent_off_deal.jpg",
+      title: "The route tracks climate and exposure",
+      kicker: "Tropical route",
+      credit: "Wikimedia Commons, public domain",
+      position: "center 50%",
+      origin: "48% 50%",
+      opacity: "0.5",
+      clearX: "43%",
+      clearY: "52%",
+    }),
+  ],
+  scurvy: [
+    cinemaPlate({
+      featureId: "hms_salisbury",
+      src: "assets/cinema/east_indiamen_gale.jpg",
+      title: "Long routes turned food into time",
+      kicker: "Provisioning clock",
+      credit: "Wikimedia Commons, public domain",
+      position: "center center",
+      origin: "46% 46%",
+      opacity: "0.5",
+    }),
+    cinemaPlate({
+      featureId: "route_scurvy",
+      src: "assets/cinema/east_indiaman_kent_off_deal.jpg",
+      title: "Ship time makes deficiency visible",
+      kicker: "Long-voyage route",
+      credit: "Wikimedia Commons, public domain",
+      position: "center 50%",
+      origin: "48% 50%",
+      opacity: "0.5",
+    }),
+    cinemaPlate({
+      src: "assets/context/lind_scurvy_treatise.jpg",
+      title: "The manuscript meets the voyage",
+      kicker: "Source plate",
+      credit: "Wellcome Collection via Wikimedia Commons, CC BY 4.0",
+      position: "center 18%",
+      opacity: "0.44",
+    }),
+  ],
+  ship_fever: [
+    cinemaPlate({
+      featureId: "london_naval",
+      src: "assets/cinema/quarantine_hulk_binstead.jpg",
+      title: "Quarantine was a maritime technology",
+      kicker: "Fever control",
+      credit:
+        "Arthur Wellington Fowles / Royal Museums Greenwich via Wikimedia Commons, public domain",
+      position: "center 52%",
+      origin: "46% 48%",
+      opacity: "0.5",
+      clearX: "42%",
+      clearY: "52%",
+    }),
+    cinemaPlate({
+      featureId: "below_deck",
+      src: "assets/cinema/steerage_passengers_friedrich_der_grosse.jpg",
+      title: "Below deck is a social and microbial map",
+      kicker: "Crowding plate",
+      credit: "Library of Congress via Wikimedia Commons, public domain",
+      position: "center 48%",
+      origin: "48% 46%",
+      opacity: "0.52",
+      clearX: "42%",
+      clearY: "52%",
+    }),
+    cinemaPlate({
+      featureId: "grosse_ile_quarantine",
+      src: "assets/context/grosse_ile_quarantine_1850.jpg",
+      title: "A fever ship becomes a quarantine landscape",
+      kicker: "Grosse Ile",
+      credit:
+        "Library and Archives Canada via Wikimedia Commons, public domain",
+      position: "center center",
+      origin: "52% 50%",
+      opacity: "0.5",
+      clearX: "42%",
+      clearY: "52%",
+    }),
+    cinemaPlate({
+      featureId: "route_ship_fever",
+      src: "assets/cinema/steerage_children_friedrich_der_grosse.jpg",
+      title: "The route follows families, clothing, and confinement",
+      kicker: "North Atlantic fever route",
+      credit: "Library of Congress via Wikimedia Commons, public domain",
+      position: "center 48%",
+      origin: "48% 45%",
+      opacity: "0.5",
+      clearX: "43%",
+      clearY: "52%",
+    }),
+  ],
+  flux: [
+    cinemaPlate({
+      featureId: "below_deck",
+      src: "assets/cinema/steerage_passengers_friedrich_der_grosse.jpg",
+      title: "Bodies and waste share the same architecture",
+      kicker: "Below-deck exposure",
+      credit: "Library of Congress via Wikimedia Commons, public domain",
+      position: "center 48%",
+      opacity: "0.5",
+    }),
+    cinemaPlate({
+      featureId: "water_cask",
+      src: "assets/cinema/barrels_on_savannah_docks_nara.jpg",
+      title: "The exposure object is a container",
+      kicker: "Water and provisions",
+      credit: "Library of Congress via Wikimedia Commons, public domain",
+      position: "center center",
+      origin: "50% 44%",
+      opacity: "0.48",
+    }),
+    cinemaPlate({
+      featureId: "route_flux",
+      src: "assets/cinema/east_indiaman_hindustan.jpg",
+      title: "The route is inside the ship",
+      kicker: "Exposure route",
+      credit:
+        "Thomas Luny / Royal Museums Greenwich via Wikimedia Commons, public domain",
+      position: "center 50%",
+      opacity: "0.5",
+    }),
+  ],
+  typhoid: [
+    cinemaPlate({
+      featureId: "london_naval",
+      src: "assets/cinema/quarantine_hulk_binstead.jpg",
+      title: "Hygiene begins as practical maritime control",
+      kicker: "Shared fever problem",
+      credit:
+        "Arthur Wellington Fowles / Royal Museums Greenwich via Wikimedia Commons, public domain",
+      position: "center 52%",
+      opacity: "0.48",
+    }),
+    cinemaPlate({
+      featureId: "food_water_typhi",
+      src: "assets/cinema/cook_at_galley_hatch.jpg",
+      title: "The exposure route runs through the galley",
+      kicker: "Food-water plate",
+      credit: "Imperial War Museums via Wikimedia Commons, public domain",
+      position: "center 43%",
+      opacity: "0.5",
+    }),
+    cinemaPlate({
+      featureId: "route_typhoid",
+      src: "assets/cinema/sailors_drinking_tunbridge_waters.jpg",
+      title: "Drinking water is an exposure route",
+      kicker: "Provisioning route",
+      credit: "The Metropolitan Museum of Art via Wikimedia Commons, CC0",
+      position: "center 46%",
+      opacity: "0.48",
+    }),
+  ],
+  smallpox: [
+    cinemaPlate({
+      featureId: "smallpox_origin_camel",
+      src: "assets/context/camel_from_nubia_1838.jpg",
+      title: "The origin story remains unsettled",
+      kicker: "Deep origin",
+      credit: "J. R. Wellsted via Wikimedia Commons, public domain",
+      position: "center center",
+      opacity: "0.46",
+    }),
+    cinemaPlate({
+      featureId: "below_deck",
+      src: "assets/cinema/steerage_passengers_friedrich_der_grosse.jpg",
+      title: "Bedding and close contact matter at sea",
+      kicker: "Shipboard contact",
+      credit: "Library of Congress via Wikimedia Commons, public domain",
+      position: "center 48%",
+      opacity: "0.5",
+    }),
+    cinemaPlate({
+      featureId: "smallpox_hulks",
+      src: "assets/context/smallpox_hospital_ships_atlas_endymion.jpg",
+      title: "Ships transported disease and contained it",
+      kicker: "Hospital hulks",
+      credit: "Wellcome Collection via Wikimedia Commons, CC BY 4.0",
+      position: "center center",
+      opacity: "0.5",
+    }),
+    cinemaPlate({
+      featureId: "port_arrival",
+      src: "assets/context/quarantine_guardship_rhin_1830.jpg",
+      title: "Arrival turns ship disease into port policy",
+      kicker: "Port quarantine",
+      credit: "Royal Museums Greenwich via Wikimedia Commons, public domain",
+      position: "center center",
+      opacity: "0.48",
+    }),
+    cinemaPlate({
+      featureId: "route_smallpox",
+      src: "assets/context/quarantine_guardship_rhin_1830.jpg",
+      title: "The route runs from deep origin to port control",
+      kicker: "Smallpox route",
+      credit: "Royal Museums Greenwich via Wikimedia Commons, public domain",
+      position: "center center",
+      opacity: "0.48",
+    }),
+  ],
+  measles: [
+    cinemaPlate({
+      featureId: "measles_origin_rinderpest",
+      src: "assets/context/rinderpest_1896.jpg",
+      title: "Cattle ancestry, human density, shipboard air",
+      kicker: "Morbillivirus plate",
+      credit: "Wikimedia Commons, public domain",
+      position: "center center",
+      opacity: "0.46",
+    }),
+    cinemaPlate({
+      featureId: "below_deck",
+      src: "assets/cinema/steerage_children_friedrich_der_grosse.jpg",
+      title: "At sea, measles becomes an air problem",
+      kicker: "Shipboard air",
+      credit: "Library of Congress via Wikimedia Commons, public domain",
+      position: "center 48%",
+      opacity: "0.5",
+    }),
+    cinemaPlate({
+      featureId: "port_arrival",
+      src: "assets/cinema/quarantine_hulk_binstead.jpg",
+      title: "Arrival changes the outbreak stage",
+      kicker: "Port arrival",
+      credit:
+        "Arthur Wellington Fowles / Royal Museums Greenwich via Wikimedia Commons, public domain",
+      position: "center 52%",
+      opacity: "0.48",
+    }),
+    cinemaPlate({
+      featureId: "route_measles",
+      src: "assets/cinema/east_indiaman_hindustan.jpg",
+      title: "The route links air, density, and arrival",
+      kicker: "Measles route",
+      credit:
+        "Thomas Luny / Royal Museums Greenwich via Wikimedia Commons, public domain",
+      position: "center 50%",
+      opacity: "0.5",
+    }),
+  ],
+  wounds_sepsis: [
+    cinemaPlate({
+      featureId: "below_deck",
+      src: "assets/cinema/pyle_capture_of_galleon.jpg",
+      title: "Violence turns the ship into a wound ecology",
+      kicker: "Trauma plate",
+      credit: "Howard Pyle via Wikimedia Commons, public domain",
+      position: "center center",
+      opacity: "0.52",
+    }),
+    cinemaPlate({
+      featureId: "ship_surgery",
+      src: "assets/context/naval_surgeon_instruments.jpg",
+      title: "Dirty tools, delayed care, infected tissue",
+      kicker: "Surgery plate",
+      credit: "Wellcome Collection via Wikimedia Commons, CC BY 4.0",
+      position: "center 46%",
+      opacity: "0.47",
+    }),
+    cinemaPlate({
+      featureId: "route_wounds_sepsis",
+      src: "assets/cinema/pyle_pirates_raidship.jpg",
+      title: "Everyday ship damage becomes disease ecology",
+      kicker: "Treatment route",
+      credit: "Howard Pyle via Wikimedia Commons, public domain",
+      position: "center 40%",
+      opacity: "0.52",
+    }),
+  ],
+  middle_passage: [
+    cinemaPlate({
+      featureId: "west_africa",
+      src: "assets/context/ship_deck_slavery_1861.jpg",
+      title: "Forced movement changes every risk",
+      kicker: "Forced departure",
+      credit: "Library of Congress via Wikimedia Commons, public domain",
+      position: "center center",
+      opacity: "0.48",
+    }),
+    cinemaPlate({
+      featureId: "route_middle_passage",
+      src: "assets/context/brookes_slave_ship.jpg",
+      title: "Confinement is the disease environment",
+      kicker: "Coercive ecology",
+      credit: "British Library via Wikimedia Commons, public domain",
+      position: "center center",
+      opacity: "0.46",
+    }),
+    cinemaPlate({
+      featureId: "brookes_middle_passage",
+      src: "assets/context/brookes_slave_ship.jpg",
+      title: "The diagram fixes the scale of confinement",
+      kicker: "Extreme burden",
+      credit: "British Library via Wikimedia Commons, public domain",
+      position: "center center",
+      opacity: "0.46",
+    }),
+  ],
+};
+
+const SOURCE_CREDIT_OVERRIDES = {
+  "assets/cinema/pyle_henry_morgan_recruiting.jpg":
+    "Howard Pyle via Wikimedia Commons, public domain",
+  "assets/cinema/ann_bonny_mary_read.jpg": "Wikimedia Commons, public domain",
+  "assets/cinema/pyle_pirate_captain.jpg":
+    "Howard Pyle via Wikimedia Commons, public domain",
+  "assets/cinema/pyle_pirates_raidship.jpg":
+    "Howard Pyle via Wikimedia Commons, public domain",
+  "assets/cinema/pyle_capture_of_galleon.jpg":
+    "Howard Pyle via Wikimedia Commons, public domain",
+  "assets/cinema/barrels_on_savannah_docks_nara.jpg":
+    "National Archives via Wikimedia Commons, public domain",
+};
+
+function readableAssetTitle(src) {
+  return src
+    .split("/")
+    .pop()
+    .replace(/\.[^.]+$/, "")
+    .replace(/[_-]+/g, " ");
+}
+
+function creditForSource(src, item) {
+  return (
+    item.credit ||
+    SOURCE_CREDIT_OVERRIDES[src] ||
+    "Archival source; see image filename and exhibit context"
+  );
+}
+
+function licenseFromCredit(credit) {
+  const lower = credit.toLowerCase();
+  if (lower.includes("cc0")) return "CC0";
+  if (lower.includes("cc by 4.0")) return "CC BY 4.0";
+  if (lower.includes("public domain")) return "Public domain";
+  if (lower.includes("no known restrictions")) return "No known restrictions";
+  return "Source credit listed";
+}
+
+function addSourceCatalogItem(catalog, item, where) {
+  if (!item || !item.src) return;
+  const existing = catalog.get(item.src);
+  const credit = creditForSource(item.src, item);
+  if (existing) {
+    existing.where.add(where);
+    if (item.title && existing.title === readableAssetTitle(item.src))
+      existing.title = item.title;
+    if (credit && existing.credit.startsWith("Archival source"))
+      existing.credit = credit;
+    existing.license = licenseFromCredit(existing.credit);
+    return;
+  }
+  catalog.set(item.src, {
+    src: item.src,
+    title: item.title || readableAssetTitle(item.src),
+    credit,
+    license: licenseFromCredit(credit),
+    where: new Set([where]),
+  });
+}
+
+function buildSourceCatalog() {
+  const catalog = new Map();
+  Object.values(CONTEXT_ART).forEach((item) =>
+    addSourceCatalogItem(
+      catalog,
+      item,
+      `Context plate | ${item.kicker || "Exhibit context"}`,
+    ),
+  );
+  Object.entries(CINEMA_REELS).forEach(([scenarioId, plates]) => {
+    const scenario = scenarios[scenarioId];
+    const scenarioTitle = scenario
+      ? scenario.title
+      : scenarioId.replace(/_/g, " ");
+    plates.forEach((plate) => {
+      addSourceCatalogItem(
+        catalog,
+        plate,
+        `${scenarioTitle} | ${plate.kicker || "Presentation plate"}`,
+      );
+      if (plate.secondary)
+        addSourceCatalogItem(
+          catalog,
+          plate.secondary,
+          `${scenarioTitle} | paired presentation plate`,
+        );
+    });
+  });
+  return Array.from(catalog.values())
+    .map((item) => ({ ...item, where: Array.from(item.where).sort() }))
+    .sort((a, b) => a.title.localeCompare(b.title));
+}
+
+const SOURCE_CATALOG = buildSourceCatalog();
+
+function escapeHtml(value) {
+  return String(value).replace(
+    /[&<>"']/g,
+    (char) =>
+      ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;",
+      })[char],
+  );
+}
+
+function sourceLabel(sourceId) {
+  const source = evidenceSources.get(sourceId);
+  return source ? source.short_citation : sourceId;
+}
+
+function sourceLinks(sourceIds) {
+  const ids = Array.isArray(sourceIds) ? sourceIds : [];
+  return ids
+    .map((sourceId) => {
+      const source = evidenceSources.get(sourceId);
+      if (source && source.url_or_doi) {
+        return `<a href="${escapeHtml(source.url_or_doi)}" target="_blank" rel="noreferrer">${escapeHtml(source.short_citation || sourceId)}</a>`;
+      }
+      return `<span>${escapeHtml(sourceLabel(sourceId))}</span>`;
+    })
+    .join("; ");
+}
+
+function publicClaimTypeLabel(value) {
+  const labels = {
+    "documented route": "Documented route",
+    "typical route": "Typical route",
+    "inferred route": "Inferred route",
+    "port location": "Port location",
+    "quarantine station": "Quarantine station",
+    "region only": "Regional context",
+    "map feature caption": "Map context",
+    "guided-tour step": "Tour step",
+    "illustrative model": "Interpretive model",
+  };
+  return labels[value] || value;
+}
+
+function burdenTypeLabel(value) {
+  const labels = {
+    exact: "Exact count",
+    estimated: "Estimate",
+    qualitative: "Qualitative evidence",
+    unknown: "No reliable count",
+  };
+  return labels[value] || value || "No reliable count";
+}
+
+function sourceWhere(sourceId) {
+  const appearances = [];
+  maritimeModules.forEach((module) => {
+    const fields = [
+      module.source_ids || [],
+      module.human_burden ? module.human_burden.source_ids || [] : [],
+      module.map_geometry_or_route
+        ? module.map_geometry_or_route.source_ids || []
+        : [],
+    ];
+    (module.claims || []).forEach((claim) =>
+      fields.push(claim.source_ids || []),
+    );
+    if (fields.some((ids) => ids.includes(sourceId)))
+      appearances.push(module.title);
+  });
+  return appearances;
+}
+
+function renderSourceCatalog() {
+  const list = document.getElementById("sources-list");
+  const evidenceCatalog = Array.from(evidenceSources.values())
+    .map((source) => ({ ...source, where: sourceWhere(source.source_id) }))
+    .filter((source) => source.where.length)
+    .sort((a, b) =>
+      (a.short_citation || a.source_id).localeCompare(
+        b.short_citation || b.source_id,
+      ),
+    );
+  const evidenceHtml = evidenceCatalog
+    .map(
+      (source) => `
+    <article class="source-item">
+      <h3 class="source-item-title">${escapeHtml(source.short_citation || source.source_id)}</h3>
+      <div class="source-item-meta">${escapeHtml(source.full_citation || "")}</div>
+      ${source.url_or_doi ? `<div class="source-item-where"><a href="${escapeHtml(source.url_or_doi)}" target="_blank" rel="noreferrer">${escapeHtml(source.url_or_doi)}</a></div>` : ""}
+      <span class="source-item-license">${escapeHtml(source.source_type || "source")}</span>
+      <div class="source-item-where">${escapeHtml(source.where.join(" | "))}</div>
+    </article>
+  `,
+    )
+    .join("");
+  const imageHtml = SOURCE_CATALOG.map(
+    (item) => `
+    <article class="source-item">
+      <h3 class="source-item-title">${escapeHtml(item.title)}</h3>
+      <div class="source-item-meta">${escapeHtml(item.credit)}</div>
+      <span class="source-item-license">${escapeHtml(item.license)}</span>
+      <div class="source-item-where">${escapeHtml(item.where.join(" | "))}</div>
+    </article>
+  `,
+  ).join("");
+  list.innerHTML = `
+    <h3 class="source-section-title">Evidence sources</h3>
+    ${evidenceHtml}
+    <h3 class="source-section-title">Archival image credits</h3>
+    ${imageHtml}
+  `;
+}
+
+function setSourcesOpen(nextValue) {
+  document.documentElement.classList.toggle("sources-open", nextValue);
+  document
+    .getElementById("sources-drawer")
+    .setAttribute("aria-hidden", String(!nextValue));
+  document.getElementById("sources-drawer").inert = !nextValue;
+  const button = document.getElementById("sources-btn");
+  button.classList.toggle("active", nextValue);
+  button.setAttribute("aria-expanded", String(nextValue));
+}
+
+function updatePublicExhibitLayout() {
+  if (publicLayoutFrame) cancelAnimationFrame(publicLayoutFrame);
+  publicLayoutFrame = requestAnimationFrame(() => {
+    publicLayoutFrame = null;
+    const root = document.documentElement;
+    const chrome = document.getElementById("chrome");
+    if (
+      !chrome ||
+      root.classList.contains("recording-mode") ||
+      root.classList.contains("youtube-mode")
+    ) {
+      root.style.removeProperty("--atlas-public-chrome-bottom");
+      return;
+    }
+    root.style.setProperty(
+      "--atlas-public-chrome-bottom",
+      `${Math.ceil(chrome.getBoundingClientRect().bottom)}px`,
+    );
+  });
+}
+
+function initPublicExhibitLayout() {
+  const chrome = document.getElementById("chrome");
+  if (window.ResizeObserver && chrome) {
+    new ResizeObserver(updatePublicExhibitLayout).observe(chrome);
+  }
+  window.addEventListener("resize", updatePublicExhibitLayout, {
+    passive: true,
+  });
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(updatePublicExhibitLayout).catch(() => {});
+  }
+  updatePublicExhibitLayout();
+}
+
+function setRecordingMode(nextValue) {
+  isRecordingMode = nextValue;
+  document.documentElement.classList.toggle("recording-mode", isRecordingMode);
+  const button = document.getElementById("recording-btn");
+  button.classList.toggle("active", isRecordingMode);
+  button.setAttribute("aria-pressed", String(isRecordingMode));
+  button.textContent = isRecordingMode
+    ? "Exit Presentation"
+    : "Presentation Mode";
+  if (isRecordingMode) setSourcesOpen(false);
+
+  if (isRecordingMode) {
+    map.removeLayer(darkBaseLayer);
+    map.removeLayer(darkLabelLayer);
+    lightBaseLayer.addTo(map);
+    lightLabelLayer.addTo(map);
+  } else {
+    map.removeLayer(lightBaseLayer);
+    map.removeLayer(lightLabelLayer);
+    darkBaseLayer.addTo(map);
+    darkLabelLayer.addTo(map);
+  }
+
+  if (geoLayer) geoLayer.bringToFront();
+  if (activePulse) activePulse.addTo(map);
+  map.invalidateSize();
+  updatePublicExhibitLayout();
+}
+
+function setPresentationMode(nextValue) {
+  setRecordingMode(nextValue);
+}
+
+function setYouTubeMode(nextValue) {
+  isYouTubeMode = nextValue;
+  document.documentElement.classList.toggle("youtube-mode", isYouTubeMode);
+  const brandSource = document.getElementById("video-brand-source");
+  if (brandSource) {
+    brandSource.textContent = isYouTubeMode
+      ? "YouTube guided tour | The Edge of Epidemiology"
+      : "The Edge of Epidemiology";
+  }
+  updatePublicExhibitLayout();
+}
+
+function setScenarioPlaying(nextValue) {
+  document.documentElement.classList.toggle("scenario-playing", nextValue);
+}
+
+function setTourRunning(nextValue) {
+  isTourRunning = nextValue;
+  const button = document.getElementById("tour-btn");
+  document.documentElement.classList.toggle("tour-running", isTourRunning);
+  button.classList.toggle("active", isTourRunning);
+  button.setAttribute("aria-pressed", String(isTourRunning));
+  button.textContent = isTourRunning ? "Stop Tour" : "Guided Tour";
+}
+
+function scaledMs(ms) {
+  return Math.max(500, Math.round(ms * durationScale));
+}
+
+function scenarioOverviewFitOptions(duration = 1) {
+  if (isRecordingMode) {
+    return {
+      paddingTopLeft: [90, 130],
+      paddingBottomRight: [100, 320],
+      animate: true,
+      duration,
+    };
+  }
+  return {
+    paddingTopLeft: [450, 135],
+    paddingBottomRight: [70, 70],
+    animate: true,
+    duration,
+  };
+}
+
+function routeFitOptions(duration = 1.45) {
+  if (isRecordingMode) {
+    return {
+      paddingTopLeft: [90, 130],
+      paddingBottomRight: [560, 380],
+      animate: true,
+      duration,
+    };
+  }
+  return {
+    paddingTopLeft: [460, 130],
+    paddingBottomRight: [120, 120],
+    animate: true,
+    duration,
+  };
+}
+
+function featureColor(feature) {
+  return COLORS[feature.properties.group] || "#c9a84c";
+}
+
+function pirateSvg() {
+  return `<svg viewBox="0 0 510 490" aria-hidden="true" focusable="false">
+    <path fill="#fff" stroke="#080806" stroke-width="12.5" d="M335.4 412.27l63.28 32.9c14.98 13.03 11.24 21.9 21.65 29.96 10.26 9.43 16.8 10.96 22.9 2.08 4.85-10.1 3.88-20.2 5.4-31.2 7.08-6.8 12.9-10.2 18.74-17 6.38-7.1 6.1-14.1-3.75-19.1-8.2-3.3-15.96-5-25.8-2.1-6.26 2-12.92 3.1-21.24-.4l-68.28-31.7-194-67.3c-26.1-12.7-47.78-22.2-73.6-36.5-14.02-11.1-9.5-23.8-26.48-34.1-7.47-3.7-12.87-5.4-18.85 4.8-3.82 9-3.52 18.6-4.1 27.9-6.68 7.2-14.24 11.4-19.73 20.3-7.95 12.8 4.1 17 10.6 18.6 18.44 4.6 25.1-3.7 42.1-.3 33.05 15.4 66.4 31.4 98.3 47.1z" stroke-linejoin="round"/>
+    <path fill="#fff" stroke="#080806" stroke-width="12.5" d="M349.56 354.82l94.5-44.54c17.9-7.08 20.4 2.9 36.2 0 12.08-.14 22.07-4.86 21.24-16.23-6.1-9.03-11.8-14.7-22.48-24.57.56-10.54-1.4-20.67-5.4-30.8-4.17-5.97-11.67-8.6-22.9 2.08-11.38 8.6-7.78 20.12-22.07 32.05-23.3 11.6-44.54 21.8-70.35 34.6l-196.5 67.9c-22.75 12.1-43.42 23.3-69.5 33.3-21.24 5.3-20.4-7.7-46.2.9-7.37 5.8-7.23 14.2-1.26 20.4 6.93 6.8 11.8 11.1 17.9 17.1 1.94 8.6 2.22 16 3.33 26.3 4.16 12.6 13.33 11.9 21.23 5.8 3.47-4.3 7.77-8.2 10.4-12.9 3.6-6.2 7.64-13.3 12.5-19.1l62.85-33.3z" stroke-linejoin="round"/>
+    <path fill="#fff" stroke="#080806" stroke-width="12.5" d="M128.5 221.56c-19.14-18.6-32.5-50.9-34.37-85.75-2-38.4 18.22-76.5 48.54-98.3C176.64 13.6 233.43 7 268.75 8.8c23.92.02 77.2 12.42 96.02 26.43 33 24 50.68 58.04 51.9 96.85 1.82 38.98-14.6 68.68-34.7 87.2"/>
+    <path fill="#fff" d="M130.4 215s-23.13 70.03 21.44 81.97l16.25 93.66c17.1 73.72 154.4 73.77 174.6 0l16.2-93.66c45.7-12.2 22.5-82 22.5-82z"/>
+    <path fill="none" stroke="#080806" stroke-width="12.5" d="M129.66 112.27c-7.75 6.78-6.77 16.97-5.38 32.2 1.1 11.55 8.48 22.93 8.87 33.5 2.7 22.27-3.88 44.56-6.98 62.78-2.13 20.92 3.88 38.95 11.63 45.92 7.75 6.88 17.76 9.73 28.27 12.94 9.55 2.5 14.5 6.9 21.73 12.3 8.6 9.2 10.66 16.7 10.46 26m183.8-226.1c7.75 6.8 6.77 17 5.38 32.2-1.1 11.6-8.48 23-8.87 33.5-2.7 22.3 3.88 44.6 6.98 62.8 2.13 21-3.88 39-11.63 46-7.75 6.9-21.94 10.6-28.27 12.9-7.37 2.6-14.92 7.3-21.72 12.7-8.2 7.9-10.66 16.3-10.47 25.6"/>
+    <path fill="none" stroke="#080806" stroke-width="12.5" d="M151.82 296.96c6.94 16.8 14.3 33.16 15 50.37-3.2 13.88-2.23 30.25 1.24 43.3 4.44 17.9 21.78 39.12 39.13 46.2 17.7 6.45 28.8 8.12 48.7 8.12"/>
+    <path fill="none" stroke="#080806" stroke-width="12.5" d="M358.92 296.96c-6.94 16.8-14.3 33.16-14.98 50.37 3.2 13.87 2.22 30.25-1.25 43.3-4.5 17.9-22 38.5-39.4 45.58-17.4 7.1-28.5 8.8-48.3 8.8"/>
+    <path fill="#080806" stroke="#080806" stroke-width="1.25" d="M251.9 245.7c-9.7 7.38-11.86 9.86-17.22 18.02-1.94 3.15-5.56 10.5-6.55 15.44-1 4.94-1.73 12.1-1.72 15.9.1 12.85 4.1 20.9 8.6 20.63 4-.5 9.1-4.7 16.8-14.1m7.1-55.7c9.7 7.3 11.9 9.8 17.2 18 2 3.1 5.6 10.5 6.6 15.4s1.8 12.1 1.7 15.9c0 12.8-4.1 20.9-8.5 20.6-4-.5-9.1-4.7-16.8-14.1m-89.5-112.3c13.5-2.4 26.5-3.9 40-5.4 17.6-4.5 26.5 15.6 21.7 30.8-6.1 13.4-14.7 25.2-24.5 36.6-7.6 8.6-16.7 9.9-25.4 7-7-2-13.4-6.3-20.4-16.3-3-8.6-5.6-13.1-9.5-23.7-3.02-9.9 1.7-24.6 18.3-29.2zm172.1 0c-13.4-2.4-26.5-3.9-39.9-5.4-17.6-4.5-26.5 15.6-21.6 30.8 6.1 13.4 14.7 25.2 24.6 36.6 7.7 8.6 16.8 9.9 25.4 7 7-2 13.5-6.3 20.4-16.3 3.1-8.6 5.7-13.1 9.6-23.7 3.1-9.9-1.7-24.6-18.3-29.2z"/>
+    <path fill="none" stroke="#080806" stroke-width="6.25" d="M169.23 304.53c5.7 13.34 7.45 18.4 11.55 31.72 3.5 12.3 4.8 19.8 6.95 37.26m153.37-69.7c-5.7 13.4-7.46 18.4-11.57 31.7-3.5 12.3-4.78 19.8-6.94 37.3"/>
+    <path fill="none" stroke="#080806" stroke-width="5" d="M193.52 335.73c14.7 9.03 40.16 10.42 62.95 10 25.4-.12 47.13-1.95 61.4-10.6m-119.2 24.15c16.23 10.2 35.33 13.7 57.32 12.88 22.8-.56 40.3-2.48 56-13.17"/>
+    <path fill="none" stroke="#080806" stroke-width="6.25" d="M186.9 371.64c17.36 20.95 41.6 24.6 69.17 25.32 29.5 1.08 59.16-10.65 66.8-25.3"/>
+    <path fill="#080806" stroke="#080806" stroke-width="5" d="M198.44 340.26l-.4 41.2m13.93-36.83l-.2 44.12m15.2-42.25l-.43 46.2m13.96-45.16l-.22 46.83m15.4-46.4v46.82m14.57-47.1l.2 46.8m12.92-48.1l.4 46m14.8-48.5l.2 44.1m13.53-49.6l.4 41.6"/>
+  </svg>`;
+}
+
+function pointIcon(feature, active = false, colorOverride = null) {
+  const color = colorOverride || featureColor(feature);
+  const size = active ? 46 : 25;
+  if (feature.properties.group === "Pirate Network") {
+    const pirateSize = active ? 48 : 31;
+    return L.divIcon({
+      className: "",
+      iconSize: [pirateSize, pirateSize],
+      iconAnchor: [pirateSize / 2, pirateSize / 2],
+      popupAnchor: [0, -pirateSize / 2],
+      html: `<div class="pirate-marker ${active ? "active" : ""}">${pirateSvg()}</div>`,
+    });
+  }
+  return L.divIcon({
+    className: "",
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2],
+    popupAnchor: [0, -size / 2],
+    html: active
+      ? `<div class="pulse-marker"></div>`
+      : `<div class="site-marker"></div>`,
+  });
+}
+
+function drawAtlas(scenarioId = null) {
+  if (geoLayer) geoLayer.remove();
+  const scenario = scenarioId ? scenarios[scenarioId] : null;
+  const activeIds = new Set(scenario ? scenario.featureIds : []);
+
+  geoLayer = L.geoJSON(atlas, {
+    filter: (feature) => {
+      if (!scenario) return true;
+      return (
+        activeIds.has(feature.properties.id) || feature.properties.alwaysShow
+      );
+    },
+    pointToLayer: (feature, latlng) => {
+      const active = activeIds.has(feature.properties.id);
+      const colorOverride = active && scenario ? scenario.color : null;
+      return L.marker(latlng, {
+        icon: pointIcon(feature, false, colorOverride),
+        title:
+          feature.properties.title ||
+          feature.properties.name ||
+          feature.properties.id,
+        alt:
+          feature.properties.title ||
+          feature.properties.name ||
+          feature.properties.id,
+      });
+    },
+    style: (feature) => {
+      const active = activeIds.has(feature.properties.id);
+      const color = active && scenario ? scenario.color : featureColor(feature);
+      return {
+        className: active ? "atlas-route active-route" : "atlas-route",
+        color,
+        weight:
+          feature.properties.feature_type === "route"
+            ? active
+              ? 4.8
+              : 2.2
+            : 2,
+        opacity:
+          feature.properties.feature_type === "route"
+            ? active
+              ? 0.88
+              : 0.33
+            : 0.86,
+        dashArray: feature.properties.feature_type === "route" ? "10 10" : null,
+      };
+    },
+    onEachFeature: (feature, layer) => {
+      const props = feature.properties;
+      layer.bindPopup(
+        `<div class="popup-title">${props.name}</div><div class="popup-meta">${props.caption || props.mechanism || ""}</div>`,
+      );
+      layer.on("click", () => {
+        if (props.scenario) playScenario(props.scenario);
+        else openFeature(props);
+      });
+    },
+  }).addTo(map);
+}
+
+function evidenceHtml(item) {
+  if (!item) return "";
+  const sourceIds = Array.isArray(item.source_ids) ? item.source_ids : [];
+  const confidence = item.confidence
+    ? CONFIDENCE_LABELS[item.confidence] || item.confidence
+    : "";
+  const note = item.uncertainty_note || item.evidence_note || "";
+  const claimType = item.claim_type || "";
+  const routeConfidence = item.route_confidence || "";
+  if (
+    !sourceIds.length &&
+    !confidence &&
+    !note &&
+    !claimType &&
+    !routeConfidence
+  )
+    return "";
+  return [
+    confidence
+      ? `<span><strong>Confidence</strong> ${escapeHtml(confidence)}</span>`
+      : "",
+    claimType
+      ? `<span><strong>Map context</strong> ${escapeHtml(publicClaimTypeLabel(claimType))}</span>`
+      : "",
+    routeConfidence
+      ? `<span><strong>Route confidence</strong> ${escapeHtml(CONFIDENCE_LABELS[routeConfidence] || routeConfidence)}</span>`
+      : "",
+    sourceIds.length
+      ? `<span><strong>Citations</strong> ${sourceLinks(sourceIds)}</span>`
+      : "",
+    note ? `<span><strong>Caution</strong> ${escapeHtml(note)}</span>` : "",
+  ]
+    .filter(Boolean)
+    .join("");
+}
+
+function setStory(kicker, title, copy, color, evidenceItem = null) {
+  document.getElementById("story-kicker").textContent = kicker;
+  document.getElementById("story-title").textContent = title;
+  document.getElementById("story-copy").textContent = copy;
+  const evidence = document.getElementById("story-evidence");
+  const html = evidenceHtml(evidenceItem);
+  evidence.innerHTML = html;
+  evidence.hidden = !html;
+  document.documentElement.style.setProperty(
+    "--active-color",
+    color || "var(--gold)",
+  );
+}
+
+function listValues(value) {
+  if (Array.isArray(value)) return value.filter(Boolean);
+  if (value) return [value];
+  return [];
+}
+
+function uniqueSorted(values) {
+  return Array.from(new Set(values.filter(Boolean))).sort((a, b) =>
+    String(a).localeCompare(String(b)),
+  );
+}
+
+function optionLabel(value) {
+  return value === "all"
+    ? "All"
+    : String(value).replace(/\b\w/g, (char) => char.toUpperCase());
+}
+
+function populateModuleFilter(id, values) {
+  const select = document.getElementById(id);
+  if (!select) return;
+  select.innerHTML = [`<option value="all">All</option>`]
+    .concat(
+      uniqueSorted(values).map(
+        (value) =>
+          `<option value="${escapeHtml(value)}">${escapeHtml(optionLabel(value))}</option>`,
+      ),
+    )
+    .join("");
+}
+
+function initModuleFilters() {
+  populateModuleFilter(
+    "module-setting-filter",
+    maritimeModules.flatMap((module) =>
+      listValues(module.route_or_setting).concat(module.setting_tags || []),
+    ),
+  );
+  populateModuleFilter(
+    "module-condition-filter",
+    maritimeModules.flatMap((module) => module.diseases_or_conditions || []),
+  );
+  populateModuleFilter(
+    "module-mechanism-filter",
+    maritimeModules.flatMap(
+      (module) => module.mechanism_tags || module.transmission_or_cause || [],
+    ),
+  );
+  populateModuleFilter(
+    "module-century-filter",
+    maritimeModules.flatMap((module) => module.century_tags || []),
+  );
+  populateModuleFilter(
+    "module-confidence-filter",
+    maritimeModules.map((module) => module.confidence),
+  );
+  document.querySelectorAll(".module-filters select").forEach((select) => {
+    const value = queryParams.get(select.id);
+    if (value) select.value = value;
+    select.addEventListener("change", renderModuleBrowser);
+  });
+}
+
+function selectedFilter(id) {
+  const element = document.getElementById(id);
+  return element ? element.value : "all";
+}
+
+function moduleContains(module, values, selected) {
+  if (selected === "all") return true;
+  return listValues(values).includes(selected);
+}
+
+function moduleMatchesFilters(module) {
+  return (
+    moduleContains(
+      module,
+      listValues(module.route_or_setting).concat(module.setting_tags || []),
+      selectedFilter("module-setting-filter"),
+    ) &&
+    moduleContains(
+      module,
+      module.diseases_or_conditions || [],
+      selectedFilter("module-condition-filter"),
+    ) &&
+    moduleContains(
+      module,
+      (module.mechanism_tags || []).concat(module.transmission_or_cause || []),
+      selectedFilter("module-mechanism-filter"),
+    ) &&
+    moduleContains(
+      module,
+      module.century_tags || [],
+      selectedFilter("module-century-filter"),
+    ) &&
+    moduleContains(
+      module,
+      [module.confidence],
+      selectedFilter("module-confidence-filter"),
+    )
+  );
+}
+
+function truncateText(value, length = 172) {
+  const text = String(value || "");
+  if (text.length <= length) return text;
+  return `${text.slice(0, length - 1).trim()}...`;
+}
+
+function renderModuleCard(module) {
+  const burden = module.human_burden || {};
+  const mapInfo = module.map_geometry_or_route || {};
+  const badges = [
+    module.confidence
+      ? `${CONFIDENCE_LABELS[module.confidence] || module.confidence} confidence`
+      : "",
+    mapInfo.claim_type
+      ? `Map: ${publicClaimTypeLabel(mapInfo.claim_type)}`
+      : "",
+    ...(module.mechanism_tags || []).slice(0, 3),
+  ].filter(Boolean);
+  return `
+    <article class="module-card" id="case-${escapeHtml(module.id)}" data-module-id="${escapeHtml(module.id)}">
+      <h4>${escapeHtml(module.title)}</h4>
+      <div class="module-meta">${escapeHtml(module.date_range)} | ${escapeHtml(module.route_or_setting)} | ${escapeHtml(module.geography)}</div>
+      <div class="module-line"><strong>Condition</strong> ${escapeHtml((module.diseases_or_conditions || []).join(", "))}</div>
+      <div class="module-line"><strong>Mechanism</strong> ${escapeHtml(truncateText(module.maritime_mechanism, 210))}</div>
+      <div class="module-line"><strong>Burden</strong> ${escapeHtml(burdenTypeLabel(burden.burden_type))}: ${escapeHtml(truncateText(burden.summary, 190))}</div>
+      <div class="module-line"><strong>Response</strong> ${escapeHtml(truncateText(module.public_health_response, 185))}</div>
+      <div class="module-line"><strong>Uncertainty</strong> ${escapeHtml(truncateText(module.uncertainty_note, 185))}</div>
+      <details data-case-detail="${escapeHtml(module.id)}"><summary>Read the complete case and limitations</summary><p><strong>Mechanism:</strong> ${escapeHtml(module.maritime_mechanism)}</p><p><strong>Burden:</strong> ${escapeHtml(burden.summary)}</p><p><strong>Response:</strong> ${escapeHtml(module.public_health_response)}</p><p><strong>Limitations:</strong> ${escapeHtml(module.uncertainty_note)}</p></details>
+      <div class="module-citation"><strong>Citations</strong> ${sourceLinks(module.source_ids || [])}</div>
+      <div class="module-badges">${badges.map((badge) => `<span class="module-badge">${escapeHtml(badge)}</span>`).join("")}</div>
+      ${module.scenario_id && scenarios[module.scenario_id] ? `<button class="module-open" data-scenario="${escapeHtml(module.scenario_id)}">Open station</button>` : ""}
+    </article>
+  `;
+}
+
+function renderModuleBrowser() {
+  const list = document.getElementById("module-list");
+  const count = document.getElementById("module-count");
+  if (!list || !count) return;
+  const matches = maritimeModules.filter(moduleMatchesFilters);
+  EOE.setState(
+    Object.fromEntries(
+      [...document.querySelectorAll(".module-filters select")].map((s) => [
+        s.id,
+        s.value,
+      ]),
+    ),
+  );
+  count.textContent = `${matches.length} of ${maritimeModules.length} cited case studies`;
+  list.innerHTML =
+    matches.map(renderModuleCard).join("") ||
+    `<article class="module-card"><h4>No matching case studies</h4><div class="module-line">Adjust the filters to widen the case list.</div></article>`;
+}
+
+function initModuleBrowser() {
+  initModuleFilters();
+  renderModuleBrowser();
+  document.getElementById("module-list").addEventListener(
+    "toggle",
+    (event) => {
+      if (event.target.matches("[data-case-detail]") && event.target.open)
+        EOE.setState({ case: event.target.dataset.caseDetail });
+    },
+    true,
+  );
+  const requestedCase = queryParams.get("case");
+  if (requestedCase) {
+    const detail = [...document.querySelectorAll("[data-case-detail]")].find(
+      (d) => d.dataset.caseDetail === requestedCase,
+    );
+    if (detail) {
+      detail.open = true;
+      detail.scrollIntoView({ block: "start", behavior: "instant" });
+    }
+  }
+  document.getElementById("module-list").addEventListener("click", (event) => {
+    const button = event.target.closest(".module-open");
+    if (!button) return;
+    ++tourToken;
+    setTourRunning(false);
+    playScenario(button.dataset.scenario);
+  });
+}
+
+function renderTimeline(scenario, activeIndex = -1) {
+  const timeline = document.getElementById("timeline");
+  timeline.innerHTML = scenario.steps
+    .map(
+      (step, index) => `
+    <div class="step-chip ${index === activeIndex ? "active" : ""}">
+      <span class="step-dot">${index + 1}</span>
+      <span>${step.label}</span>
+    </div>
+  `,
+    )
+    .join("");
+  const progressLabel = document.getElementById("scene-progress-label");
+  const progressFill = document.getElementById("scene-progress-fill");
+  if (activeIndex >= 0) {
+    progressLabel.textContent = `Scene ${activeIndex + 1}/${scenario.steps.length} | ${scenario.steps[activeIndex].label}`;
+  } else {
+    progressLabel.textContent = `${scenario.steps.length} scene route`;
+    progressFill.style.transition = "none";
+    progressFill.style.width = "0%";
+  }
+}
+
+function startStepProgress(scenario, activeIndex, holdMs) {
+  const progressFill = document.getElementById("scene-progress-fill");
+  const start = (activeIndex / scenario.steps.length) * 100;
+  const end = ((activeIndex + 1) / scenario.steps.length) * 100;
+  activeProgress = {
+    start,
+    end,
+    duration: holdMs,
+    startTime: performance.now(),
+    pausedDuration: 0,
+    pausedAt: null,
+  };
+  progressFill.style.transition = "none";
+  progressFill.style.width = `${start}%`;
+  progressFill.getBoundingClientRect();
+  progressFill.style.transition = `width ${holdMs}ms linear`;
+  progressFill.style.width = `${end}%`;
+}
+
+function currentProgressPercent() {
+  const progressFill = document.getElementById("scene-progress-fill");
+  const track = progressFill.parentElement;
+  const trackWidth = track ? track.getBoundingClientRect().width : 0;
+  if (!trackWidth) return Number.parseFloat(progressFill.style.width) || 0;
+  return (progressFill.getBoundingClientRect().width / trackWidth) * 100;
+}
+
+function pauseStepProgress() {
+  if (!activeProgress || activeProgress.pausedAt) return;
+  const progressFill = document.getElementById("scene-progress-fill");
+  activeProgress.pausedAt = performance.now();
+  progressFill.style.transition = "none";
+  progressFill.style.width = `${currentProgressPercent()}%`;
+}
+
+function resumeStepProgress() {
+  if (!activeProgress || !activeProgress.pausedAt) return;
+  const progressFill = document.getElementById("scene-progress-fill");
+  const pausedAt = activeProgress.pausedAt;
+  const elapsedBeforePause = Math.max(
+    0,
+    pausedAt - activeProgress.startTime - activeProgress.pausedDuration,
+  );
+  activeProgress.pausedDuration += performance.now() - pausedAt;
+  activeProgress.pausedAt = null;
+  const remaining = Math.max(80, activeProgress.duration - elapsedBeforePause);
+  progressFill.style.transition = "none";
+  progressFill.style.width = `${currentProgressPercent()}%`;
+  progressFill.getBoundingClientRect();
+  progressFill.style.transition = `width ${remaining}ms linear`;
+  progressFill.style.width = `${activeProgress.end}%`;
+}
+
+function resetStepProgress() {
+  const progressFill = document.getElementById("scene-progress-fill");
+  activeProgress = null;
+  document.getElementById("scene-progress-label").textContent = "Scene ready";
+  progressFill.style.transition = "none";
+  progressFill.style.width = "0%";
+}
+
+function mechanismArt(kind, color) {
+  const photoCard = (asset, label, options = {}) => `
+    <div class="mechanism-photo-card" role="img" aria-label="${label}" style="--photo-position:${options.position || "center center"}">
+      <img class="mechanism-photo ${options.contain ? "contain" : ""}" src="${asset}" alt="">
+    </div>`;
+
+  if (kind === "mosquito") {
+    return photoCard(
+      "assets/context/cap_francais_1728.jpg",
+      "Caribbean port map used to show warm-port vector ecology",
+      { contain: true },
+    );
+  }
+  if (kind === "louse") {
+    return photoCard(
+      "assets/context/emigrants_lower_deck_crowded.jpg",
+      "Crowded emigrant lower deck used to show body-louse and ship-fever risk",
+      { position: "center 42%" },
+    );
+  }
+  if (kind === "barrel") {
+    return photoCard(
+      "assets/cinema/barrels_on_savannah_docks_nara.jpg",
+      "Wooden barrels on docks used to show provisions and water storage as exposure infrastructure",
+      { position: "center 56%" },
+    );
+  }
+  if (kind === "rash") {
+    return photoCard(
+      "assets/context/smallpox_hospital_ships_atlas_endymion.jpg",
+      "Smallpox hospital ships used to show isolation and respiratory-virus control",
+      { contain: true },
+    );
+  }
+  if (kind === "wound") {
+    return photoCard(
+      "assets/context/naval_surgeon_instruments.jpg",
+      "Naval surgical instruments used to show wound infection risk",
+      { contain: true },
+    );
+  }
+  return photoCard(
+    "assets/context/lind_scurvy_treatise.jpg",
+    "Lind scurvy treatise used to show provisioning and nutritional deficiency",
+    { contain: true },
+  );
+}
+
+function showMechanism(step, color) {
+  const card = document.getElementById("mechanism-card");
+  document.getElementById("mechanism-art").innerHTML = mechanismArt(
+    step.visual,
+    color,
+  );
+  document.getElementById("mechanism-title").textContent = step.title;
+  document.getElementById("mechanism-copy").textContent = step.copy;
+  card.classList.add("open");
+}
+
+function hideMechanism() {
+  document.getElementById("mechanism-card").classList.remove("open");
+}
+
+function cinemaArtForStep(scenarioId, step, index, fallbackArt = null) {
+  const reel = CINEMA_REELS[scenarioId] || [];
+  const matched = reel.find(
+    (item) =>
+      (step.featureId && item.featureId === step.featureId) ||
+      (step.visual && item.visual === step.visual) ||
+      (step.kind && item.kind === step.kind),
+  );
+  const selected = matched || (reel.length ? reel[index % reel.length] : null);
+  return selected || fallbackArt;
+}
+
+function showContextArt(art, cinemaArt = art, durationMs = null) {
+  const card = document.getElementById("context-card");
+  if (isRecordingMode && cinemaArt) {
+    card.classList.remove("open");
+    showCinemaBackdrop(cinemaArt, durationMs);
+    return;
+  }
+  const image = document.getElementById("context-image");
+  image.src = art.src;
+  image.alt = art.title;
+  image.style.setProperty(
+    "--context-position",
+    art.position || "center center",
+  );
+  image.style.setProperty("--context-fit", art.fit || "cover");
+  image.style.animation = "none";
+  image.getBoundingClientRect();
+  image.style.animation = "";
+  document.getElementById("context-kicker").textContent =
+    art.kicker || "Context art";
+  document.getElementById("context-title").textContent = art.title;
+  document.getElementById("context-credit").textContent = art.credit || "";
+  card.classList.add("open");
+  showCinemaBackdrop(cinemaArt || art, durationMs);
+}
+
+function hideContextArt({ keepBackdrop = false } = {}) {
+  document.getElementById("context-card").classList.remove("open");
+  if (!keepBackdrop) hideCinemaBackdrop();
+}
+
+function showCinemaBackdrop(art, durationMs = null) {
+  const backdrop = document.getElementById("cinema-backdrop");
+  const image = document.getElementById("cinema-backdrop-image");
+  const secondary = document.getElementById("cinema-backdrop-secondary");
+  const primary = art.primary || art;
+  image.src = primary.src;
+  image.alt = primary.title || "";
+  image.style.setProperty(
+    "--cinema-position",
+    primary.position || "center center",
+  );
+  image.style.setProperty("--cinema-origin", primary.origin || "68% 45%");
+  image.style.setProperty("--cinema-opacity", primary.opacity || "0.46");
+  backdrop.style.setProperty("--cinema-clear-x", primary.clearX || "42%");
+  backdrop.style.setProperty("--cinema-clear-y", primary.clearY || "52%");
+  image.style.setProperty("--cinema-pan-start-x", primary.panStartX || "1.2%");
+  image.style.setProperty("--cinema-pan-start-y", primary.panStartY || "0%");
+  image.style.setProperty("--cinema-pan-end-x", primary.panEndX || "-3.2%");
+  image.style.setProperty("--cinema-pan-end-y", primary.panEndY || "-1.4%");
+  const duration = durationMs || scaledMs(3200);
+  document.documentElement.style.setProperty(
+    "--cinema-duration",
+    `${Math.max(900, duration)}ms`,
+  );
+  backdrop.classList.remove("open");
+  backdrop.style.animation = "none";
+  image.style.animation = "none";
+  backdrop.getBoundingClientRect();
+  image.getBoundingClientRect();
+  backdrop.style.animation = "";
+  image.style.animation = "";
+  const secondaryArt = primary.secondary || art.secondary || null;
+  if (secondaryArt && secondaryArt.src) {
+    secondary.src = secondaryArt.src;
+    secondary.alt = secondaryArt.title || "";
+    secondary.style.setProperty(
+      "--cinema-secondary-position",
+      secondaryArt.position || "center center",
+    );
+    secondary.style.setProperty(
+      "--cinema-secondary-origin",
+      secondaryArt.origin || "54% 45%",
+    );
+    secondary.style.setProperty(
+      "--cinema-secondary-opacity",
+      secondaryArt.opacity || "0.34",
+    );
+    secondary.style.setProperty(
+      "--cinema-secondary-pan-start-x",
+      secondaryArt.panStartX || "-1%",
+    );
+    secondary.style.setProperty(
+      "--cinema-secondary-pan-start-y",
+      secondaryArt.panStartY || "0%",
+    );
+    secondary.style.setProperty(
+      "--cinema-secondary-pan-end-x",
+      secondaryArt.panEndX || "2.4%",
+    );
+    secondary.style.setProperty(
+      "--cinema-secondary-pan-end-y",
+      secondaryArt.panEndY || "-1.2%",
+    );
+    secondary.classList.add("has-secondary");
+    backdrop.classList.add("has-secondary");
+    secondary.style.animation = "none";
+    secondary.getBoundingClientRect();
+    secondary.style.animation = "";
+  } else {
+    secondary.removeAttribute("src");
+    secondary.classList.remove("has-secondary");
+    backdrop.classList.remove("has-secondary");
+  }
+  document.getElementById("cinema-caption-kicker").textContent =
+    primary.kicker || "Archival plate";
+  document.getElementById("cinema-caption-title").textContent =
+    primary.title || "";
+  document.getElementById("cinema-caption-credit").textContent =
+    primary.credit || "";
+  backdrop.classList.add("open");
+}
+
+function hideCinemaBackdrop() {
+  document
+    .getElementById("cinema-backdrop")
+    .classList.remove("open", "has-secondary");
+  document
+    .getElementById("cinema-backdrop-secondary")
+    .classList.remove("has-secondary");
+}
+
+function simulateClosedShip({
+  population,
+  initial,
+  rEff,
+  latentDays,
+  infectiousDays,
+  days,
+}) {
+  let susceptible = population - initial;
+  let exposed = 0;
+  let infected = initial;
+  let removed = 0;
+  const sigma = 1 / latentDays;
+  const gamma = 1 / infectiousDays;
+  const beta = rEff * gamma;
+  const rows = [];
+
+  for (let day = 0; day <= days; day++) {
+    rows.push({ day, susceptible, exposed, infected, removed });
+    const force = (beta * infected) / population;
+    const newExposed = Math.min(
+      susceptible,
+      susceptible * (1 - Math.exp(-force)),
+    );
+    const newInfectious = exposed * sigma;
+    const newRemoved = infected * gamma;
+    susceptible -= newExposed;
+    exposed += newExposed - newInfectious;
+    infected += newInfectious - newRemoved;
+    removed += newRemoved;
+    if (exposed < 0.01) exposed = 0;
+    if (infected < 0.01) infected = 0;
+  }
+  return rows;
+}
+
+function linePath(points, key, width, height, pad, maxY) {
+  return points
+    .map((point, index) => {
+      const x =
+        pad.left +
+        (point.day / points[points.length - 1].day) *
+          (width - pad.left - pad.right);
+      const y =
+        height -
+        pad.bottom -
+        (point[key] / maxY) * (height - pad.top - pad.bottom);
+      return `${index === 0 ? "M" : "L"} ${x.toFixed(1)} ${y.toFixed(1)}`;
+    })
+    .join(" ");
+}
+
+function burnoutPlot(kind, color) {
+  const configs = {
+    smallpox_burnout: {
+      heading: "Smallpox burnout model",
+      subtitle:
+        "Closed-ship SEIR | N=120 | R_eff=4.5 | latent 12d | infectious 18d",
+      population: 120,
+      initial: 1,
+      rEff: 4.5,
+      latentDays: 12,
+      infectiousDays: 18,
+      days: 90,
+      accent: color,
+      secondary: "#d9a36c",
+    },
+    measles_burnout: {
+      heading: "Measles burnout model",
+      subtitle:
+        "Closed-ship SEIR | N=120 | R_eff=14 | latent 10d | infectious 8d",
+      population: 120,
+      initial: 1,
+      rEff: 14,
+      latentDays: 10,
+      infectiousDays: 8,
+      days: 50,
+      accent: color,
+      secondary: "#e6c86f",
+    },
+  };
+  const config = configs[kind] || configs.smallpox_burnout;
+  const rows = simulateClosedShip(config);
+  const width = 560;
+  const height = 330;
+  const pad = { top: 54, right: 34, bottom: 52, left: 54 };
+  const maxY = config.population;
+  const activePeak = rows.reduce(
+    (best, row) => (row.infected > best.infected ? row : best),
+    rows[0],
+  );
+  const finalRow = rows[rows.length - 1];
+  const attackRate = Math.round((finalRow.removed / config.population) * 100);
+  const activePath = linePath(rows, "infected", width, height, pad, maxY);
+  const exposedPath = linePath(rows, "exposed", width, height, pad, maxY);
+  const susceptiblePath = linePath(
+    rows,
+    "susceptible",
+    width,
+    height,
+    pad,
+    maxY,
+  );
+  const removedPath = linePath(rows, "removed", width, height, pad, maxY);
+
+  return `
+    <svg viewBox="0 0 ${width} ${height}" role="img" aria-label="${config.heading}">
+      <rect width="${width}" height="${height}" fill="rgba(18,16,13,0.78)"/>
+      <text x="28" y="30" fill="var(--text)" font-size="24" font-weight="700">${config.heading}</text>
+      <text x="28" y="50" fill="var(--muted)" font-size="13">${config.subtitle}</text>
+      <g stroke="rgba(255,255,255,0.12)" stroke-width="1">
+        <line x1="${pad.left}" y1="${height - pad.bottom}" x2="${width - pad.right}" y2="${height - pad.bottom}"/>
+        <line x1="${pad.left}" y1="${pad.top}" x2="${pad.left}" y2="${height - pad.bottom}"/>
+        <line x1="${pad.left}" y1="${pad.top + 56}" x2="${width - pad.right}" y2="${pad.top + 56}"/>
+        <line x1="${pad.left}" y1="${pad.top + 112}" x2="${width - pad.right}" y2="${pad.top + 112}"/>
+        <line x1="${pad.left}" y1="${pad.top + 168}" x2="${width - pad.right}" y2="${pad.top + 168}"/>
+      </g>
+      <path d="${susceptiblePath}" fill="none" stroke="rgba(239,228,210,0.52)" stroke-width="3.5"/>
+      <path d="${removedPath}" fill="none" stroke="rgba(145,136,126,0.7)" stroke-width="3.5"/>
+      <path d="${exposedPath}" fill="none" stroke="${config.secondary}" stroke-width="4" stroke-linecap="round" stroke-dasharray="7 7"/>
+      <path d="${activePath}" fill="none" stroke="${config.accent}" stroke-width="5" stroke-linecap="round"/>
+      <g font-size="12" fill="var(--muted)">
+        <text x="${pad.left}" y="${height - 18}">Day 0</text>
+        <text x="${width - pad.right - 55}" y="${height - 18}">Day ${config.days}</text>
+        <text x="16" y="${pad.top + 5}">${config.population}</text>
+        <text x="24" y="${height - pad.bottom + 4}">0</text>
+      </g>
+      <g transform="translate(322 78)" font-size="13">
+        <circle cx="0" cy="0" r="5" fill="${config.accent}"/><text x="13" y="5" fill="var(--text)">active infectious</text>
+        <circle cx="0" cy="23" r="5" fill="${config.secondary}"/><text x="13" y="28" fill="var(--text)">exposed / incubating</text>
+        <circle cx="0" cy="46" r="5" fill="rgba(239,228,210,0.52)"/><text x="13" y="51" fill="var(--text)">susceptible left</text>
+        <circle cx="0" cy="69" r="5" fill="rgba(145,136,126,0.7)"/><text x="13" y="74" fill="var(--text)">removed / no longer infectious</text>
+      </g>
+      <g transform="translate(72 82)">
+        <rect width="190" height="72" rx="14" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)"/>
+        <text x="16" y="25" fill="${config.accent}" font-size="18" font-weight="700">Peak active: ${Math.round(activePeak.infected)}</text>
+        <text x="16" y="47" fill="var(--text)" font-size="14">Peak day: ${Math.round(activePeak.day)}</text>
+        <text x="16" y="64" fill="var(--muted)" font-size="12">Final attack: about ${attackRate}%</text>
+      </g>
+    </svg>
+  `;
+}
+
+function showPlot(step, color) {
+  const card = document.getElementById("plot-card");
+  document.getElementById("plot-art").innerHTML = burnoutPlot(step.plot, color);
+  document.getElementById("plot-title").textContent = step.title;
+  document.getElementById("plot-copy").textContent = step.copy;
+  document.getElementById("plot-note").textContent =
+    step.note ||
+    "Simulated model for narration. Measured historical transmission estimates would need voyage-specific source data.";
+  card.classList.add("open");
+}
+
+function hidePlot() {
+  document.getElementById("plot-card").classList.remove("open");
+}
+
+function artForStep(step) {
+  if (step.art) return step.art;
+  if (step.featureId && CONTEXT_ART[step.featureId])
+    return CONTEXT_ART[step.featureId];
+  return null;
+}
+
+function setPulse(featureId) {
+  if (activePulse) {
+    activePulse.remove();
+    activePulse = null;
+  }
+  const feature = featureById.get(featureId);
+  if (!feature || feature.geometry.type !== "Point") return;
+  const [lon, lat] = feature.geometry.coordinates;
+  const colorOverride =
+    activeScenario && scenarios[activeScenario]
+      ? scenarios[activeScenario].color
+      : null;
+  activePulse = L.marker([lat, lon], {
+    icon: pointIcon(feature, true, colorOverride),
+    interactive: false,
+    keyboard: false,
+  }).addTo(map);
+}
+
+function boundsForFeatureIds(ids) {
+  const coords = [];
+  ids.forEach((id) => {
+    const feature = featureById.get(id);
+    if (!feature) return;
+    if (feature.geometry.type === "Point")
+      coords.push([
+        feature.geometry.coordinates[1],
+        feature.geometry.coordinates[0],
+      ]);
+    if (feature.geometry.type === "LineString")
+      feature.geometry.coordinates.forEach(([lon, lat]) =>
+        coords.push([lat, lon]),
+      );
+  });
+  return L.latLngBounds(coords);
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function updatePauseButton() {
+  const button = document.getElementById("pause-btn");
+  const videoButton = document.getElementById("video-pause-btn");
+  const videoLabel = document.getElementById("video-pause-label");
+  button.textContent = isPaused ? "Resume" : "Pause";
+  button.classList.toggle("active", isPaused);
+  button.setAttribute("aria-pressed", String(isPaused));
+  button.setAttribute("aria-disabled", String(!activeScenario));
+  if (videoButton) {
+    videoButton.setAttribute("aria-pressed", String(isPaused));
+    videoButton.setAttribute("aria-disabled", String(!activeScenario));
+  }
+  if (videoLabel) videoLabel.textContent = isPaused ? "Resume" : "Pause";
+}
+
+function setPaused(nextValue) {
+  if (!activeScenario && nextValue) return;
+  isPaused = nextValue;
+  document.documentElement.classList.toggle("paused", isPaused);
+  if (soundDesign) soundDesign.setPaused(isPaused);
+  if (isPaused) {
+    map.stop();
+    pauseStepProgress();
+  } else {
+    resumeStepProgress();
+    pauseResolvers.splice(0).forEach((resolve) => resolve());
+  }
+  updatePauseButton();
+}
+
+function waitWhilePaused(token) {
+  if (!isPaused || token !== runToken) return Promise.resolve();
+  return new Promise((resolve) => pauseResolvers.push(resolve));
+}
+
+async function pausableSleep(ms, token) {
+  let elapsed = 0;
+  while (elapsed < ms) {
+    if (token !== runToken) return;
+    if (isPaused) {
+      await waitWhilePaused(token);
+      continue;
+    }
+    const tick = Math.min(32, ms - elapsed);
+    const started = performance.now();
+    await sleep(tick);
+    elapsed += performance.now() - started;
+  }
+}
+
+function stepHoldMs(step) {
+  const base = scaledMs(step.hold || 2600);
+  if (!isRecordingMode) return base;
+  if (step.kind === "point" || step.kind === "route")
+    return Math.round(base * 1.75);
+  if (step.kind === "plot") return Math.round(base * 1.2);
+  return Math.round(base * 1.12);
+}
+
+function togglePauseFromControl(event) {
+  if (!activeScenario) return;
+  if (event) event.preventDefault();
+  setPaused(!isPaused);
+}
+
+function bindPauseControl(id) {
+  const button = document.getElementById(id);
+  button.addEventListener("pointerdown", (event) => {
+    if (event.button && event.button !== 0) return;
+    lastPausePointerAt = performance.now();
+    togglePauseFromControl(event);
+  });
+  button.addEventListener("click", (event) => {
+    if (performance.now() - lastPausePointerAt < 500) {
+      event.preventDefault();
+      return;
+    }
+    togglePauseFromControl(event);
+  });
+}
+
+async function playScenario(id) {
+  EOE.setState({ scenario: id });
+  const scenario = scenarios[id];
+  if (!scenario) return;
+  const token = ++runToken;
+  activeScenario = id;
+  setScenarioPlaying(true);
+  setPaused(false);
+  applySoundProfile(soundProfileForStep(id), false);
+  updatePauseButton();
+  if (activePulse) {
+    activePulse.remove();
+    activePulse = null;
+  }
+  document
+    .querySelectorAll(".scenario-btn")
+    .forEach((btn) =>
+      btn.classList.toggle("active", btn.dataset.scenario === id),
+    );
+  drawAtlas(id);
+  hideMechanism();
+  hideContextArt();
+  hidePlot();
+  renderTimeline(scenario);
+  setStory(
+    scenario.kicker,
+    scenario.title,
+    scenario.summary,
+    scenario.color,
+    scenario,
+  );
+  map.fitBounds(
+    boundsForFeatureIds(scenario.featureIds),
+    scenarioOverviewFitOptions(1),
+  );
+  await pausableSleep(isRecordingMode ? scaledMs(1450) : scaledMs(900), token);
+
+  for (let i = 0; i < scenario.steps.length; i++) {
+    if (token !== runToken) return;
+    await waitWhilePaused(token);
+    const step = scenario.steps[i];
+    renderTimeline(scenario, i);
+    setStory(step.kicker, step.title, step.copy, scenario.color, step);
+    const holdMs = stepHoldMs(step);
+    const isInflectionStep = step.kind === "point" || step.kind === "route";
+    const cinemaArt = isInflectionStep
+      ? cinemaArtForStep(id, step, i, artForStep(step))
+      : null;
+    applySoundProfile(soundProfileForStep(id, step), true);
+    startStepProgress(scenario, i, holdMs);
+    if (step.kind === "point") {
+      hideMechanism();
+      hidePlot();
+      const art = artForStep(step);
+      if (art) showContextArt(art, cinemaArt, holdMs);
+      else {
+        hideContextArt({ keepBackdrop: Boolean(cinemaArt) });
+        if (cinemaArt) showCinemaBackdrop(cinemaArt, holdMs);
+      }
+      setPulse(step.featureId);
+      const feature = featureById.get(step.featureId);
+      const [lon, lat] = feature.geometry.coordinates;
+      map.flyTo([lat, lon], step.zoom || 6, {
+        duration: isRecordingMode ? 1.15 : 1.45,
+      });
+    }
+    if (step.kind === "route") {
+      hideMechanism();
+      hidePlot();
+      const art = artForStep(step);
+      if (art) showContextArt(art, cinemaArt, holdMs);
+      else {
+        hideContextArt({ keepBackdrop: Boolean(cinemaArt) });
+        if (cinemaArt) showCinemaBackdrop(cinemaArt, holdMs);
+      }
+      if (activePulse) {
+        activePulse.remove();
+        activePulse = null;
+      }
+      map.fitBounds(
+        boundsForFeatureIds([step.featureId]),
+        routeFitOptions(isRecordingMode ? 1.15 : 1.45),
+      );
+    }
+    if (step.kind === "mechanism") {
+      if (activePulse) {
+        activePulse.remove();
+        activePulse = null;
+      }
+      hideContextArt();
+      hidePlot();
+      showMechanism(step, scenario.color);
+    }
+    if (step.kind === "plot") {
+      if (activePulse) {
+        activePulse.remove();
+        activePulse = null;
+      }
+      hideContextArt();
+      hideMechanism();
+      showPlot(step, scenario.color);
+    }
+    await pausableSleep(holdMs, token);
+  }
+  if (token === runToken) {
+    activeScenario = null;
+    setScenarioPlaying(false);
+    setPaused(false);
+    applySoundProfile({ scene: "idle", cue: null }, false);
+    updatePauseButton();
+    activeProgress = null;
+  }
+}
+
+function openFeature(props) {
+  setStory(
+    props.group,
+    props.name,
+    props.caption || props.mechanism || "",
+    COLORS[props.group],
+    props,
+  );
+}
+
+function resetAtlas() {
+  document.dispatchEvent(new CustomEvent("eoe:reset"));
+  EOE.setState({ scenario: null, case: null });
+  document
+    .querySelectorAll(".module-filters select")
+    .forEach((select) => (select.value = ""));
+  renderModuleBrowser();
+  ++tourToken;
+  ++runToken;
+  activeScenario = null;
+  setScenarioPlaying(false);
+  setTourRunning(false);
+  setPaused(false);
+  pauseResolvers.splice(0).forEach((resolve) => resolve());
+  if (activePulse) {
+    activePulse.remove();
+    activePulse = null;
+  }
+  hideMechanism();
+  hideContextArt();
+  hidePlot();
+  applySoundProfile({ scene: "idle", cue: null }, false);
+  setSourcesOpen(false);
+  drawAtlas();
+  document
+    .querySelectorAll(".scenario-btn")
+    .forEach((btn) => btn.classList.remove("active"));
+  document.getElementById("timeline").innerHTML = "";
+  resetStepProgress();
+  setStory(
+    "Start here | Maritime disease exhibit",
+    "A ship was a moving disease ecosystem.",
+    "This exhibit follows disease as an ecology of ships: ports, provisions, crowded berths, labor, violence, vectors, quarantine, and the routes that made local exposures move.",
+    "#c9a84c",
+  );
+  map.setView([22, -43], 4, { animate: !EOE.reducedMotion() });
+  updatePauseButton();
+}
+
+document.querySelectorAll(".scenario-btn").forEach((button) => {
+  button.addEventListener("click", () => {
+    ++tourToken;
+    setTourRunning(false);
+    playScenario(button.dataset.scenario);
+  });
+});
+bindPauseControl("pause-btn");
+bindPauseControl("video-pause-btn");
+bindSoundControl("sound-btn");
+bindSoundControl("video-sound-btn");
+document.getElementById("sources-btn").addEventListener("click", () => {
+  setSourcesOpen(!document.documentElement.classList.contains("sources-open"));
+});
+document
+  .getElementById("sources-close-btn")
+  .addEventListener("click", () => setSourcesOpen(false));
+document.getElementById("tour-btn").addEventListener("click", () => {
+  if (isTourRunning) {
+    ++tourToken;
+    ++runToken;
+    setTourRunning(false);
+    setScenarioPlaying(false);
+    activeScenario = null;
+    updatePauseButton();
+    return;
+  }
+  playTour();
+});
+document
+  .getElementById("recording-btn")
+  .addEventListener("click", () => setPresentationMode(!isRecordingMode));
+document.getElementById("reset-btn").addEventListener("click", resetAtlas);
+document.addEventListener("keydown", (event) => {
+  if (
+    event.key === "Escape" &&
+    document.documentElement.classList.contains("sources-open")
+  ) {
+    event.preventDefault();
+    setSourcesOpen(false);
+    return;
+  }
+  if (
+    (event.code === "Space" || event.key.toLowerCase() === "p") &&
+    activeScenario
+  ) {
+    event.preventDefault();
+    setPaused(!isPaused);
+  }
+  if (event.key.toLowerCase() === "s") {
+    event.preventDefault();
+    setSoundEnabled(!isSoundEnabled);
+  }
+  if (event.key.toLowerCase() === "v") {
+    setPresentationMode(!isRecordingMode);
+  }
+  if (event.key.toLowerCase() === "t") {
+    if (isTourRunning) {
+      ++tourToken;
+      ++runToken;
+      setTourRunning(false);
+      setScenarioPlaying(false);
+      activeScenario = null;
+      updatePauseButton();
+    } else {
+      playTour();
+    }
+  }
+  if (/^[1-9]$/.test(event.key)) {
+    const index = Number(event.key) - 1;
+    if (SCENARIO_ORDER[index]) {
+      ++tourToken;
+      setTourRunning(false);
+      playScenario(SCENARIO_ORDER[index]);
+    }
+  }
+});
+
+function youtubeTourOrder() {
+  const order =
+    youtubeVideoPlan &&
+    youtubeVideoPlan.playback &&
+    Array.isArray(youtubeVideoPlan.playback.scenario_order)
+      ? youtubeVideoPlan.playback.scenario_order
+      : VIDEO_TOUR;
+  return order.filter((scenarioId) => scenarios[scenarioId]);
+}
+
+function activeTourOrder() {
+  return isYouTubeMode ? youtubeTourOrder() : VIDEO_TOUR;
+}
+
+async function playTour() {
+  const order = arguments.length ? arguments[0] : null;
+  const token = ++tourToken;
+  const scenarioOrder = Array.isArray(order)
+    ? order.filter((scenarioId) => scenarios[scenarioId])
+    : activeTourOrder();
+  setTourRunning(true);
+  for (const scenarioId of scenarioOrder) {
+    if (token !== tourToken) break;
+    await playScenario(scenarioId);
+    if (token !== tourToken) break;
+    await sleep(scaledMs(700));
+  }
+  if (token === tourToken) {
+    setTourRunning(false);
+    setScenarioPlaying(false);
+    activeScenario = null;
+    updatePauseButton();
+  }
+}
+
+function playYouTubeTour() {
+  setYouTubeMode(true);
+  setPresentationMode(true);
+  return playTour(youtubeTourOrder());
+}
+
+function queryFlag(...names) {
+  return names.some((name) => {
+    const value = queryParams.get(name);
+    return value === "" || value === "1" || value === "true" || value === "yes";
+  });
+}
+
+function initializeFromQuery() {
+  const requestedScenario = queryParams.get("scenario");
+  const shouldYouTube = queryFlag("youtube", "yt");
+  if (shouldYouTube) {
+    setYouTubeMode(true);
+    setPresentationMode(true);
+  }
+  if (queryFlag("video", "recording", "record")) {
+    setPresentationMode(true);
+  }
+  if (queryFlag("sound", "audio")) {
+    setSoundEnabled(true, { cue: false });
+  }
+  const shouldTour =
+    queryFlag("tour", "autotour") || (shouldYouTube && !requestedScenario);
+  if (shouldTour || requestedScenario) {
+    window.setTimeout(() => {
+      if (shouldTour) {
+        playTour(shouldYouTube ? youtubeTourOrder() : null);
+      } else if (scenarios[requestedScenario]) {
+        playScenario(requestedScenario);
+      }
+    }, 350);
+  }
+}
+
+drawAtlas();
+initModuleBrowser();
+renderSourceCatalog();
+initPublicExhibitLayout();
+updatePauseButton();
+updateSoundButton();
+document.addEventListener("pointerdown", resumeArmedSoundFromGesture, true);
+document.addEventListener("keydown", resumeArmedSoundFromGesture, true);
+initializeFromQuery();
+window.MARITIME_ATLAS_CONTROLS = {
+  playScenario,
+  playTour,
+  playYouTubeTour,
+  youtubeTourOrder,
+  resetAtlas,
+  setRecordingMode,
+  setPresentationMode,
+  setYouTubeMode,
+  youtubeVideoPlan,
+  setSoundEnabled,
+  soundStatus: () =>
+    soundDesign
+      ? soundDesign.status()
+      : {
+          enabled: isSoundEnabled,
+          unsupported: soundUnsupported,
+          contextState: null,
+          scene: currentSoundProfile.scene,
+          cue: currentSoundProfile.cue,
+        },
+};
+
+EOE.utilities(document.getElementById("exhibit-guide"));
+document
+  .getElementById("ship-reveal")
+  .addEventListener("toggle", () => map.invalidateSize());

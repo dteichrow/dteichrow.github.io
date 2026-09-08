@@ -5,7 +5,9 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-PROFILE_PATH = PROJECT_ROOT / "external" / "pathogen_atlas" / "source_backed_profiles.json"
+PROFILE_PATH = (
+    PROJECT_ROOT / "external" / "pathogen_atlas" / "source_backed_profiles.json"
+)
 SOURCE_REGISTRY_PATH = PROJECT_ROOT / "data" / "sources" / "sources.json"
 ATLAS_HTML_PATH = PROJECT_ROOT / "external" / "pathogen_atlas" / "index.html"
 
@@ -53,10 +55,21 @@ def test_pathogen_atlas_has_curated_source_backed_profile_set() -> None:
         assert entry["source_ids"]
         used_source_ids.update(entry["source_ids"])
         assert entry["origin_claim"]["source_ids"]
-        assert entry["origin_confidence"] in {"high", "moderate", "low", "contested", "unknown"}
+        assert entry["origin_confidence"] in {
+            "high",
+            "moderate",
+            "low",
+            "contested",
+            "unknown",
+        }
         assert entry["origin_uncertainty_note"]
         assert entry["earliest_strong_evidence"]["source_ids"]
-        assert entry["ancient_dna_evidence"]["status"] in {"yes", "no", "limited", "not applicable"}
+        assert entry["ancient_dna_evidence"]["status"] in {
+            "yes",
+            "no",
+            "limited",
+            "not applicable",
+        }
         assert entry["major_historical_episodes"]
         assert entry["evidence_panel"]["major_uncertainties"]
         assert entry["claims"]
@@ -96,7 +109,15 @@ def test_pathogen_atlas_has_curated_source_backed_profile_set() -> None:
 
 
 def test_pathogen_atlas_ui_exposes_evidence_confidence_and_no_loading_shell() -> None:
-    atlas_html = ATLAS_HTML_PATH.read_text()
+    atlas_html = (
+        ATLAS_HTML_PATH.read_text()
+        + (
+            Path(__file__).resolve().parents[1] / "assets/exhibits/pathogen.js"
+        ).read_text()
+        + (
+            Path(__file__).resolve().parents[1] / "assets/exhibits/pathogen.css"
+        ).read_text()
+    )
 
     assert "What kind of evidence do we have?" in atlas_html
     assert "How to read uncertainty" in atlas_html

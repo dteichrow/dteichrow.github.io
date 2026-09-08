@@ -9,7 +9,14 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import quote, urlencode
 
-from .common import DOCS_DIR, PROJECT_ROOT, ensure_dir, fetch_json, load_json, write_json
+from .common import (
+    DOCS_DIR,
+    PROJECT_ROOT,
+    ensure_dir,
+    fetch_json,
+    load_json,
+    write_json,
+)
 
 
 ATLAS_ROOT = PROJECT_ROOT / "external" / "pathogen_atlas"
@@ -70,7 +77,14 @@ REQUIRED_ENTRY_FIELDS = {
     "category_label",
     "transmission_group",
 }
-REQUIRED_ORIGIN_FIELDS = {"label", "coordinates", "date_or_era", "confidence", "narrative", "citation_ids"}
+REQUIRED_ORIGIN_FIELDS = {
+    "label",
+    "coordinates",
+    "date_or_era",
+    "confidence",
+    "narrative",
+    "citation_ids",
+}
 REQUIRED_ROUTE_FIELDS = {
     "route_id",
     "from_label",
@@ -101,7 +115,13 @@ GEOGRAPHY_LAYER_TYPES = {
     "exposure_zone",
 }
 GEOGRAPHY_GEOMETRY_TYPES = {"world", "bbox", "polygon", "circle", "ellipse"}
-WIKIPEDIA_DOMAINS = {"wikipedia.org", "en.wikipedia.org", "m.wikipedia.org", "wikidata.org", "www.wikidata.org"}
+WIKIPEDIA_DOMAINS = {
+    "wikipedia.org",
+    "en.wikipedia.org",
+    "m.wikipedia.org",
+    "wikidata.org",
+    "www.wikidata.org",
+}
 DOI_URL_PATTERN = re.compile(r"(^|/)(10\.[0-9]{4,9}/\S+)", re.IGNORECASE)
 ACCEPTED_SOURCE_HINTS = {
     "who.int",
@@ -166,7 +186,9 @@ def is_accepted_evidence_url(url: str) -> bool:
     domain = domain_from_url(url)
     if not domain or is_wikipedia_url(url) or is_doi_url(url):
         return False
-    return any(domain == hint or domain.endswith(f".{hint}") for hint in ACCEPTED_SOURCE_HINTS)
+    return any(
+        domain == hint or domain.endswith(f".{hint}") for hint in ACCEPTED_SOURCE_HINTS
+    )
 
 
 def read_json_default(path: Path, default: Any) -> Any:
@@ -187,7 +209,11 @@ def read_jsonl(path: Path) -> list[dict[str, Any]]:
 
 def write_jsonl(path: Path, rows: Iterable[dict[str, Any]]) -> None:
     ensure_dir(path.parent)
-    path.write_text("".join(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n" for row in rows))
+    path.write_text(
+        "".join(
+            json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n" for row in rows
+        )
+    )
 
 
 def append_jsonl(path: Path, rows: Iterable[dict[str, Any]]) -> None:
@@ -203,9 +229,13 @@ def current_atlas_entries(
 ) -> list[dict[str, Any]]:
     entries: list[dict[str, Any]] = []
     if atlas_export_path.exists():
-        entries.extend(read_json_default(atlas_export_path, {"atlas": []}).get("atlas", []))
+        entries.extend(
+            read_json_default(atlas_export_path, {"atlas": []}).get("atlas", [])
+        )
     if extra_pathogens_path.exists():
-        entries.extend(read_json_default(extra_pathogens_path, {"atlas": []}).get("atlas", []))
+        entries.extend(
+            read_json_default(extra_pathogens_path, {"atlas": []}).get("atlas", [])
+        )
     return entries
 
 
@@ -213,7 +243,11 @@ def existing_slug_set(
     atlas_export_path: Path = ATLAS_EXPORT_PATH,
     extra_pathogens_path: Path = EXTRA_PATHOGENS_PATH,
 ) -> set[str]:
-    return {entry.get("slug", "") for entry in current_atlas_entries(atlas_export_path, extra_pathogens_path) if entry.get("slug")}
+    return {
+        entry.get("slug", "")
+        for entry in current_atlas_entries(atlas_export_path, extra_pathogens_path)
+        if entry.get("slug")
+    }
 
 
 def reference_names(latest_export_path: Path = LATEST_EXPORT_PATH) -> set[str]:
@@ -271,9 +305,13 @@ def transmission_guess(text: str) -> tuple[str, str]:
     return "other-mixed", CATEGORY_LABELS["other-mixed"]
 
 
-def priority_for_candidate(name: str, description: str, reference_seed_names: set[str]) -> tuple[int, str]:
+def priority_for_candidate(
+    name: str, description: str, reference_seed_names: set[str]
+) -> tuple[int, str]:
     key = name.casefold()
-    if any(key in ref.casefold() or ref.casefold() in key for ref in reference_seed_names):
+    if any(
+        key in ref.casefold() or ref.casefold() in key for ref in reference_seed_names
+    ):
         return 1, "already present in Newsdesk/reference exports"
     historical_keywords = (
         "plague",
@@ -291,7 +329,10 @@ def priority_for_candidate(name: str, description: str, reference_seed_names: se
     )
     if any(keyword in key for keyword in historical_keywords):
         return 1, "historically or outbreak-important disease family"
-    if any(word in description.casefold() for word in ("common", "major", "global", "epidemic", "pandemic", "outbreak")):
+    if any(
+        word in description.casefold()
+        for word in ("common", "major", "global", "epidemic", "pandemic", "outbreak")
+    ):
         return 2, "major human disease candidate with broad public-health relevance"
     return 3, "candidate retained for later review"
 
@@ -308,9 +349,15 @@ def candidate_record(
     reference_seed_names: set[str] | None = None,
 ) -> dict[str, Any]:
     reference_seed_names = reference_seed_names or set()
-    category, category_label = transmission_guess(" ".join([name, description, " ".join(aliases)]))
+    category, category_label = transmission_guess(
+        " ".join([name, description, " ".join(aliases)])
+    )
     tier, reason = priority_for_candidate(name, description, reference_seed_names)
-    title = wikipedia_title.replace(" ", "_") if wikipedia_title else quote(name.replace(" ", "_"))
+    title = (
+        wikipedia_title.replace(" ", "_")
+        if wikipedia_title
+        else quote(name.replace(" ", "_"))
+    )
     return {
         "slug": slugify(name),
         "name": name,
@@ -323,7 +370,9 @@ def candidate_record(
         "possible_category_label": category_label,
         "priority_tier": tier,
         "priority_reason": reason,
-        "source_seeds": unique_list([source, "wikipedia", "wikidata" if wikidata_id else ""]),
+        "source_seeds": unique_list(
+            [source, "wikipedia", "wikidata" if wikidata_id else ""]
+        ),
         "discovered_at": today_iso(),
         "review_status": "candidate",
     }
@@ -339,16 +388,29 @@ def merge_candidates(candidates: Iterable[dict[str, Any]]) -> list[dict[str, Any
             merged[slug] = dict(candidate, slug=slug)
             continue
         existing = merged[slug]
-        existing["aliases"] = unique_list(existing.get("aliases", []) + candidate.get("aliases", []))
-        existing["source_seeds"] = unique_list(existing.get("source_seeds", []) + candidate.get("source_seeds", []))
+        existing["aliases"] = unique_list(
+            existing.get("aliases", []) + candidate.get("aliases", [])
+        )
+        existing["source_seeds"] = unique_list(
+            existing.get("source_seeds", []) + candidate.get("source_seeds", [])
+        )
         if candidate.get("wikidata_id") and not existing.get("wikidata_id"):
             existing["wikidata_id"] = candidate["wikidata_id"]
-        if candidate.get("description") and len(candidate["description"]) > len(existing.get("description", "")):
+        if candidate.get("description") and len(candidate["description"]) > len(
+            existing.get("description", "")
+        ):
             existing["description"] = candidate["description"]
-        if int(candidate.get("priority_tier", 3)) < int(existing.get("priority_tier", 3)):
+        if int(candidate.get("priority_tier", 3)) < int(
+            existing.get("priority_tier", 3)
+        ):
             existing["priority_tier"] = candidate["priority_tier"]
-            existing["priority_reason"] = candidate.get("priority_reason", existing.get("priority_reason", ""))
-    return sorted(merged.values(), key=lambda item: (int(item.get("priority_tier", 3)), item.get("name", "")))
+            existing["priority_reason"] = candidate.get(
+                "priority_reason", existing.get("priority_reason", "")
+            )
+    return sorted(
+        merged.values(),
+        key=lambda item: (int(item.get("priority_tier", 3)), item.get("name", "")),
+    )
 
 
 def wikidata_candidates(limit: int = 300) -> list[dict[str, Any]]:
@@ -374,7 +436,9 @@ def wikidata_candidates(limit: int = 300) -> list[dict[str, Any]]:
         wikidata_id = disease_url.rsplit("/", 1)[-1] if disease_url else ""
         description = row.get("description", {}).get("value", "")
         article = row.get("article", {}).get("value", "")
-        wikipedia_title = article.rsplit("/", 1)[-1].replace("_", " ") if article else ""
+        wikipedia_title = (
+            article.rsplit("/", 1)[-1].replace("_", " ") if article else ""
+        )
         candidates.append(
             candidate_record(
                 name=name,
@@ -389,7 +453,9 @@ def wikidata_candidates(limit: int = 300) -> list[dict[str, Any]]:
     return candidates
 
 
-def wikipedia_category_candidates(category: str = "Category:Infectious_diseases", limit: int = 300) -> list[dict[str, Any]]:
+def wikipedia_category_candidates(
+    category: str = "Category:Infectious_diseases", limit: int = 300
+) -> list[dict[str, Any]]:
     params = {
         "action": "query",
         "list": "categorymembers",
@@ -416,14 +482,20 @@ def wikipedia_category_candidates(category: str = "Category:Infectious_diseases"
     return candidates
 
 
-def discover_candidates(limit: int = 300, include_wikipedia: bool = True, include_wikidata: bool = True) -> list[dict[str, Any]]:
+def discover_candidates(
+    limit: int = 300, include_wikipedia: bool = True, include_wikidata: bool = True
+) -> list[dict[str, Any]]:
     discovered: list[dict[str, Any]] = []
     if include_wikidata:
         discovered.extend(wikidata_candidates(limit=limit))
     if include_wikipedia:
         discovered.extend(wikipedia_category_candidates(limit=limit))
     existing = existing_slug_set()
-    candidates = [candidate for candidate in merge_candidates(discovered) if candidate.get("slug") not in existing]
+    candidates = [
+        candidate
+        for candidate in merge_candidates(discovered)
+        if candidate.get("slug") not in existing
+    ]
     return candidates
 
 
@@ -433,8 +505,14 @@ def source_queries_for(candidate: dict[str, Any]) -> list[dict[str, str]]:
         {"source": "WHO", "query": f"WHO {name} fact sheet"},
         {"source": "CDC", "query": f"CDC {name} transmission"},
         {"source": "ECDC", "query": f"ECDC {name} facts"},
-        {"source": "NCBI Bookshelf", "query": f"NCBI Bookshelf {name} transmission history"},
-        {"source": "PubMed", "query": f"PubMed {name} epidemiology history transmission origin"},
+        {
+            "source": "NCBI Bookshelf",
+            "query": f"NCBI Bookshelf {name} transmission history",
+        },
+        {
+            "source": "PubMed",
+            "query": f"PubMed {name} epidemiology history transmission origin",
+        },
     ]
 
 
@@ -461,14 +539,20 @@ def draft_shell(candidate: dict[str, Any]) -> dict[str, Any]:
 def enrich_candidates(candidates: Iterable[dict[str, Any]]) -> dict[str, Any]:
     drafts = [draft_shell(candidate) for candidate in candidates]
     return {
-        "generated_at": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat(),
+        "generated_at": dt.datetime.now(dt.timezone.utc)
+        .replace(microsecond=0)
+        .isoformat(),
         "draft_count": len(drafts),
         "drafts": drafts,
     }
 
 
 def citation_ids(entry: dict[str, Any]) -> set[str]:
-    return {citation.get("id", "") for citation in entry.get("citations", []) if citation.get("id")}
+    return {
+        citation.get("id", "")
+        for citation in entry.get("citations", [])
+        if citation.get("id")
+    }
 
 
 def validate_coordinates(value: Any, label: str, errors: list[str]) -> None:
@@ -483,14 +567,18 @@ def validate_coordinates(value: Any, label: str, errors: list[str]) -> None:
         errors.append(f"{label} is outside valid longitude/latitude bounds")
 
 
-def validate_geography_geometry(layer: dict[str, Any], label: str, errors: list[str]) -> None:
+def validate_geography_geometry(
+    layer: dict[str, Any], label: str, errors: list[str]
+) -> None:
     geometry_type = layer.get("geometry_type")
     if geometry_type == "world":
         return
     if geometry_type == "bbox":
         bounds = layer.get("bounds")
         if not isinstance(bounds, list) or len(bounds) != 2:
-            errors.append(f"{label}.bounds must contain southwest and northeast coordinates")
+            errors.append(
+                f"{label}.bounds must contain southwest and northeast coordinates"
+            )
             return
         validate_coordinates(bounds[0], f"{label}.bounds[0]", errors)
         validate_coordinates(bounds[1], f"{label}.bounds[1]", errors)
@@ -498,7 +586,9 @@ def validate_geography_geometry(layer: dict[str, Any], label: str, errors: list[
     if geometry_type == "polygon":
         coordinates = layer.get("coordinates")
         if not isinstance(coordinates, list) or len(coordinates) < 3:
-            errors.append(f"{label}.coordinates must contain at least three [longitude, latitude] points")
+            errors.append(
+                f"{label}.coordinates must contain at least three [longitude, latitude] points"
+            )
             return
         for point_index, point in enumerate(coordinates):
             validate_coordinates(point, f"{label}.coordinates[{point_index}]", errors)
@@ -519,9 +609,15 @@ def validate_geography_geometry(layer: dict[str, Any], label: str, errors: list[
             errors.append(f"{label}.rotation_degrees must be numeric when present")
 
 
-def validate_entry(entry: dict[str, Any], existing_slugs: set[str] | None = None) -> list[str]:
+def validate_entry(
+    entry: dict[str, Any], existing_slugs: set[str] | None = None
+) -> list[str]:
     errors: list[str] = []
-    missing = sorted(field for field in REQUIRED_ENTRY_FIELDS if field not in entry or entry.get(field) in ("", None, []))
+    missing = sorted(
+        field
+        for field in REQUIRED_ENTRY_FIELDS
+        if field not in entry or entry.get(field) in ("", None, [])
+    )
     if missing:
         errors.append(f"missing required field(s): {', '.join(missing)}")
     slug = entry.get("slug", "")
@@ -546,16 +642,22 @@ def validate_entry(entry: dict[str, Any], existing_slugs: set[str] | None = None
         if citation.get("id") and is_accepted_evidence_url(citation.get("url", ""))
     }
     if not non_wikipedia_citation_ids:
-        errors.append("at least one citation must be from a non-Wikipedia accepted evidence source")
-    for citation in (citations if isinstance(citations, list) else []):
+        errors.append(
+            "at least one citation must be from a non-Wikipedia accepted evidence source"
+        )
+    for citation in citations if isinstance(citations, list) else []:
         if not citation.get("id"):
             errors.append("citation missing id")
         if not citation.get("url"):
             errors.append(f"citation {citation.get('id', '<unknown>')} missing url")
         if citation.get("url") and is_wikipedia_url(citation["url"]):
-            errors.append(f"citation {citation.get('id', '<unknown>')} uses Wikipedia; use it only as a seed")
+            errors.append(
+                f"citation {citation.get('id', '<unknown>')} uses Wikipedia; use it only as a seed"
+            )
         if citation.get("url") and is_doi_url(citation["url"]):
-            errors.append(f"citation {citation.get('id', '<unknown>')} uses a DOI URL; cite a verified article/source page instead")
+            errors.append(
+                f"citation {citation.get('id', '<unknown>')} uses a DOI URL; cite a verified article/source page instead"
+            )
 
     origin = entry.get("origin_claim")
     if not isinstance(origin, dict):
@@ -564,16 +666,26 @@ def validate_entry(entry: dict[str, Any], existing_slugs: set[str] | None = None
         for field in sorted(REQUIRED_ORIGIN_FIELDS):
             if origin.get(field) in ("", None, []):
                 errors.append(f"origin_claim missing {field}")
-        validate_coordinates(origin.get("coordinates"), "origin_claim.coordinates", errors)
+        validate_coordinates(
+            origin.get("coordinates"), "origin_claim.coordinates", errors
+        )
         origin_citations = set(origin.get("citation_ids", []))
         if not origin_citations:
             errors.append("origin_claim must cite at least one source")
         if origin_citations and not origin_citations <= evidence_ids:
             errors.append("origin_claim citation_ids include unknown citation ids")
         if origin_citations and not origin_citations & non_wikipedia_citation_ids:
-            errors.append("origin_claim must cite at least one non-Wikipedia evidence source")
-        if str(origin.get("confidence", "")).lower() in {"certain", "definitive", "proven"}:
-            errors.append("origin_claim confidence is overconfident; use strong, moderate, mixed, weak, or contested")
+            errors.append(
+                "origin_claim must cite at least one non-Wikipedia evidence source"
+            )
+        if str(origin.get("confidence", "")).lower() in {
+            "certain",
+            "definitive",
+            "proven",
+        }:
+            errors.append(
+                "origin_claim confidence is overconfident; use strong, moderate, mixed, weak, or contested"
+            )
 
     routes = entry.get("spread_routes", [])
     if not isinstance(routes, list) or not routes:
@@ -585,18 +697,32 @@ def validate_entry(entry: dict[str, Any], existing_slugs: set[str] | None = None
         for field in sorted(REQUIRED_ROUTE_FIELDS):
             if route.get(field) in ("", None, []):
                 errors.append(f"spread_routes[{index}] missing {field}")
-        validate_coordinates(route.get("from_coordinates"), f"spread_routes[{index}].from_coordinates", errors)
-        validate_coordinates(route.get("to_coordinates"), f"spread_routes[{index}].to_coordinates", errors)
+        validate_coordinates(
+            route.get("from_coordinates"),
+            f"spread_routes[{index}].from_coordinates",
+            errors,
+        )
+        validate_coordinates(
+            route.get("to_coordinates"),
+            f"spread_routes[{index}].to_coordinates",
+            errors,
+        )
         route_citations = set(route.get("citation_ids", []))
         if route_citations and not route_citations <= evidence_ids:
-            errors.append(f"spread_routes[{index}] citation_ids include unknown citation ids")
+            errors.append(
+                f"spread_routes[{index}] citation_ids include unknown citation ids"
+            )
         if route_citations and not route_citations & non_wikipedia_citation_ids:
-            errors.append(f"spread_routes[{index}] must cite at least one non-Wikipedia evidence source")
+            errors.append(
+                f"spread_routes[{index}] must cite at least one non-Wikipedia evidence source"
+            )
 
     geography_layers = entry.get("geography_layers", [])
     if geography_layers and not isinstance(geography_layers, list):
         errors.append("geography_layers must be a list when present")
-    for index, layer in enumerate(geography_layers if isinstance(geography_layers, list) else []):
+    for index, layer in enumerate(
+        geography_layers if isinstance(geography_layers, list) else []
+    ):
         layer_label = f"geography_layers[{index}]"
         if not isinstance(layer, dict):
             errors.append(f"{layer_label} must be an object")
@@ -606,8 +732,13 @@ def validate_entry(entry: dict[str, Any], existing_slugs: set[str] | None = None
                 errors.append(f"{layer_label} missing {field}")
         if layer.get("layer_type") and layer["layer_type"] not in GEOGRAPHY_LAYER_TYPES:
             errors.append(f"{layer_label} unknown layer_type: {layer['layer_type']}")
-        if layer.get("geometry_type") and layer["geometry_type"] not in GEOGRAPHY_GEOMETRY_TYPES:
-            errors.append(f"{layer_label} unknown geometry_type: {layer['geometry_type']}")
+        if (
+            layer.get("geometry_type")
+            and layer["geometry_type"] not in GEOGRAPHY_GEOMETRY_TYPES
+        ):
+            errors.append(
+                f"{layer_label} unknown geometry_type: {layer['geometry_type']}"
+            )
         validate_geography_geometry(layer, layer_label, errors)
         layer_citations = set(layer.get("citation_ids", []))
         if not layer_citations:
@@ -615,20 +746,34 @@ def validate_entry(entry: dict[str, Any], existing_slugs: set[str] | None = None
         if layer_citations and not layer_citations <= evidence_ids:
             errors.append(f"{layer_label} citation_ids include unknown citation ids")
         if layer_citations and not layer_citations & non_wikipedia_citation_ids:
-            errors.append(f"{layer_label} must cite at least one non-Wikipedia evidence source")
+            errors.append(
+                f"{layer_label} must cite at least one non-Wikipedia evidence source"
+            )
 
     for field in ("modern_echoes", "framing_traps"):
-        if field in entry and (not isinstance(entry[field], list) or not all(isinstance(item, str) and item.strip() for item in entry[field])):
+        if field in entry and (
+            not isinstance(entry[field], list)
+            or not all(isinstance(item, str) and item.strip() for item in entry[field])
+        ):
             errors.append(f"{field} must be a non-empty list of strings")
     return errors
 
 
-def validate_entries(entries: Iterable[dict[str, Any]], existing_slugs: set[str] | None = None) -> dict[str, Any]:
+def validate_entries(
+    entries: Iterable[dict[str, Any]], existing_slugs: set[str] | None = None
+) -> dict[str, Any]:
     existing_slugs = existing_slugs or set()
     results = []
     for entry in entries:
         errors = validate_entry(entry, existing_slugs=existing_slugs)
-        results.append({"slug": entry.get("slug", ""), "name": entry.get("name", ""), "valid": not errors, "errors": errors})
+        results.append(
+            {
+                "slug": entry.get("slug", ""),
+                "name": entry.get("name", ""),
+                "valid": not errors,
+                "errors": errors,
+            }
+        )
     return {
         "checked": len(results),
         "valid": sum(1 for result in results if result["valid"]),
@@ -637,13 +782,24 @@ def validate_entries(entries: Iterable[dict[str, Any]], existing_slugs: set[str]
     }
 
 
-def reviewed_entries_from_drafts(drafts_payload: dict[str, Any]) -> list[dict[str, Any]]:
+def reviewed_entries_from_drafts(
+    drafts_payload: dict[str, Any],
+) -> list[dict[str, Any]]:
     raw = drafts_payload.get("drafts", drafts_payload.get("atlas", []))
     entries = []
     for draft in raw:
         if draft.get("review_status") in {"reviewed", "approved", "ready_to_promote"}:
             entry = dict(draft)
-            for staging_field in ("source_queries", "review_status", "priority_tier", "priority_reason", "drafted_at", "aliases", "wikidata_id", "wikipedia_url"):
+            for staging_field in (
+                "source_queries",
+                "review_status",
+                "priority_tier",
+                "priority_reason",
+                "drafted_at",
+                "aliases",
+                "wikidata_id",
+                "wikipedia_url",
+            ):
                 entry.pop(staging_field, None)
             entries.append(entry)
     return entries
@@ -656,12 +812,24 @@ def promote_reviewed_entries(
 ) -> dict[str, Any]:
     drafts_payload = read_json_default(drafts_path, {"drafts": []})
     entries = reviewed_entries_from_drafts(drafts_payload)
-    existing_slugs = existing_slug_set(atlas_export_path=atlas_export_path, extra_pathogens_path=extra_pathogens_path)
-    entries_to_promote = [entry for entry in entries if entry.get("slug") not in existing_slugs]
+    existing_slugs = existing_slug_set(
+        atlas_export_path=atlas_export_path, extra_pathogens_path=extra_pathogens_path
+    )
+    entries_to_promote = [
+        entry for entry in entries if entry.get("slug") not in existing_slugs
+    ]
     validation = validate_entries(entries_to_promote, existing_slugs=existing_slugs)
     invalid = [result for result in validation["results"] if not result["valid"]]
     if invalid:
-        raise ValidationError(json.dumps({"message": "promotion blocked by validation errors", "invalid": invalid}, indent=2))
+        raise ValidationError(
+            json.dumps(
+                {
+                    "message": "promotion blocked by validation errors",
+                    "invalid": invalid,
+                },
+                indent=2,
+            )
+        )
 
     extra_payload = read_json_default(extra_pathogens_path, {"atlas": []})
     extra_entries = extra_payload.get("atlas", [])
@@ -674,12 +842,22 @@ def promote_reviewed_entries(
         extra_entries.append(entry)
     if promoted:
         extra_payload["atlas"] = extra_entries
-        extra_payload["updated_at"] = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
+        extra_payload["updated_at"] = (
+            dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
+        )
         write_json(extra_pathogens_path, extra_payload)
-    return {"promoted": len(promoted), "skipped_existing": len(entries) - len(promoted), "validation": validation}
+    return {
+        "promoted": len(promoted),
+        "skipped_existing": len(entries) - len(promoted),
+        "validation": validation,
+    }
 
 
-def reject_candidates(candidates: Iterable[dict[str, Any]], reason: str, rejected_path: Path = REJECTED_PATH) -> int:
+def reject_candidates(
+    candidates: Iterable[dict[str, Any]],
+    reason: str,
+    rejected_path: Path = REJECTED_PATH,
+) -> int:
     rows = []
     for candidate in candidates:
         row = dict(candidate)
@@ -692,28 +870,42 @@ def reject_candidates(candidates: Iterable[dict[str, Any]], reason: str, rejecte
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Discover, stage, validate, and promote Pathogen Atlas disease entries.")
+    parser = argparse.ArgumentParser(
+        description="Discover, stage, validate, and promote Pathogen Atlas disease entries."
+    )
     subparsers = parser.add_subparsers(dest="command", required=True)
 
-    discover = subparsers.add_parser("discover", help="Discover candidate human infectious diseases from Wikidata/Wikipedia.")
+    discover = subparsers.add_parser(
+        "discover",
+        help="Discover candidate human infectious diseases from Wikidata/Wikipedia.",
+    )
     discover.add_argument("--limit", type=int, default=300)
     discover.add_argument("--no-wikidata", action="store_true")
     discover.add_argument("--no-wikipedia", action="store_true")
     discover.add_argument("--output", type=Path, default=CANDIDATES_PATH)
 
-    enrich = subparsers.add_parser("enrich", help="Create reviewable draft shells with official-source search templates.")
+    enrich = subparsers.add_parser(
+        "enrich",
+        help="Create reviewable draft shells with official-source search templates.",
+    )
     enrich.add_argument("--input", type=Path, default=CANDIDATES_PATH)
     enrich.add_argument("--output", type=Path, default=DRAFTS_PATH)
 
-    validate = subparsers.add_parser("validate", help="Validate reviewed draft entries or an atlas JSON file.")
+    validate = subparsers.add_parser(
+        "validate", help="Validate reviewed draft entries or an atlas JSON file."
+    )
     validate.add_argument("--input", type=Path, default=DRAFTS_PATH)
     validate.add_argument("--allow-existing", action="store_true")
 
-    promote = subparsers.add_parser("promote", help="Promote reviewed, valid drafts into extra_pathogens.json.")
+    promote = subparsers.add_parser(
+        "promote", help="Promote reviewed, valid drafts into extra_pathogens.json."
+    )
     promote.add_argument("--input", type=Path, default=DRAFTS_PATH)
     promote.add_argument("--output", type=Path, default=EXTRA_PATHOGENS_PATH)
 
-    reject = subparsers.add_parser("reject", help="Append staged candidates to the rejected audit log.")
+    reject = subparsers.add_parser(
+        "reject", help="Append staged candidates to the rejected audit log."
+    )
     reject.add_argument("--input", type=Path, default=CANDIDATES_PATH)
     reject.add_argument("--reason", required=True)
     reject.add_argument("--output", type=Path, default=REJECTED_PATH)
@@ -729,13 +921,21 @@ def main() -> None:
             include_wikidata=not args.no_wikidata,
         )
         write_jsonl(args.output, candidates)
-        print(json.dumps({"candidates": len(candidates), "output": str(args.output)}, indent=2))
+        print(
+            json.dumps(
+                {"candidates": len(candidates), "output": str(args.output)}, indent=2
+            )
+        )
         return
     if args.command == "enrich":
         candidates = read_jsonl(args.input)
         drafts = enrich_candidates(candidates)
         write_json(args.output, drafts)
-        print(json.dumps({"drafts": drafts["draft_count"], "output": str(args.output)}, indent=2))
+        print(
+            json.dumps(
+                {"drafts": drafts["draft_count"], "output": str(args.output)}, indent=2
+            )
+        )
         return
     if args.command == "validate":
         payload = read_json_default(args.input, {"drafts": []})
@@ -747,7 +947,9 @@ def main() -> None:
             raise SystemExit(1)
         return
     if args.command == "promote":
-        result = promote_reviewed_entries(drafts_path=args.input, extra_pathogens_path=args.output)
+        result = promote_reviewed_entries(
+            drafts_path=args.input, extra_pathogens_path=args.output
+        )
         print(json.dumps(result, indent=2))
         return
     if args.command == "reject":

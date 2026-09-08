@@ -1,0 +1,81 @@
+{
+  "contact": "devinteichrow@gmail.com",
+  "maintenance": "$100–$300/month",
+  "packages": [
+    {
+      "id": "lab-website",
+      "name": "Lab Website + Auto Publications",
+      "price": "$650–$1,500",
+      "problem": "Your research needs a clear public home, and your publications page needs to stay current.",
+      "deliverables": [
+        "A responsive lab or project website with people, research, publications, and contact pages.",
+        "A configurable PubMed publication feed, with query rules reviewed for false matches.",
+        "Edited page copy, deployment, and practical update instructions."
+      ],
+      "materials": "Your current site or draft copy, people and project details, publication identifiers, and any existing visual assets.",
+      "scope": "Page count, content readiness, publication-query complexity, and migration needs determine the quote.",
+      "example": "This publication’s static website and searchable archive",
+      "route": "essays/"
+    },
+    {
+      "id": "research-visibility",
+      "name": "Research Visibility Package",
+      "price": "$500–$1,500",
+      "problem": "A paper, talk, or project needs a useful explanation for people outside its immediate field.",
+      "deliverables": [
+        "Plain-language research summaries and project descriptions.",
+        "A scoped set of lab-news, website, or short-form research updates.",
+        "Source-linked copy with qualifications intact and a reusable handoff."
+      ],
+      "materials": "The papers, slides, recordings, or draft copy; the intended audience; and where the material will appear.",
+      "scope": "The number of outputs, source volume, and depth of editorial work determine the quote.",
+      "example": "The Edge of Epidemiology essay collection",
+      "route": "essays/"
+    },
+    {
+      "id": "cleanup-sprint",
+      "name": "Data / Stats / Writing Cleanup Sprint",
+      "price": "$400–$1,500",
+      "problem": "An analysis, figure, codebase, or scientific draft needs to become understandable and reproducible.",
+      "deliverables": [
+        "A defined R/Python analysis, code-cleanup, figure, or writing deliverable.",
+        "Checks of assumptions, units, denominators, and interpretation relevant to that deliverable.",
+        "A reproducible report or revised artifact with handoff notes."
+      ],
+      "materials": "A description of the research question, current code or draft, data documentation, and an appropriate shareable sample where needed.",
+      "scope": "Data condition, analysis complexity, and the size of the requested revision determine the quote.",
+      "example": "The timeline’s documented records and comparative evidence views",
+      "route": "tools/american-epidemic-timeline/"
+    },
+    {
+      "id": "evidence-translation",
+      "name": "Evidence Translation Sprint",
+      "price": "$500–$1,500",
+      "problem": "A clinical, public-health, policy, or research question needs a bounded, source-backed answer.",
+      "deliverables": [
+        "A defined question, search strategy, and inclusion boundaries.",
+        "An evidence table or annotated source packet distinguishing findings from interpretation.",
+        "A brief, memo, or slide-ready summary suited to the audience."
+      ],
+      "materials": "Your decision or question, audience, existing sources, and any constraints on the review.",
+      "scope": "Question breadth, literature volume, source access, and output format determine the quote.",
+      "example": "Histsearch’s curated research dossiers",
+      "route": "tools/histsearch/"
+    },
+    {
+      "id": "research-exhibit",
+      "name": "Research Exhibit or Topic Monitor",
+      "price": "$1,000–$3,000",
+      "problem": "A disease, dataset, historical subject, or research program would benefit from an explorable public resource.",
+      "deliverables": [
+        "A scoped map, timeline, exhibit, reference page, or monitoring interface.",
+        "Accessible record views, source links, and explicit evidence limitations.",
+        "A maintainable static build with documented data and update procedures."
+      ],
+      "materials": "The topic and intended audience, source material or dataset, desired interactions, and your update needs.",
+      "scope": "The number of views, data preparation, custom interactions, and update integration determine the quote.",
+      "example": "The Maritime Disease Atlas and Pathogen Dispatch",
+      "route": "atlases/maritime/"
+    }
+  ]
+}

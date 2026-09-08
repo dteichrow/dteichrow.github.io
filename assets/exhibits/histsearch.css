@@ -1,0 +1,136 @@
+.histsearch-description {
+  font:
+    17px/1.6 "Avenir Next",
+    Arial,
+    sans-serif !important;
+  max-width: 720px;
+}
+.record-intro h1 {
+  font-size: clamp(60px, 8vw, 110px);
+}
+.dossier {
+  border-top: 1px solid #142126;
+  padding: 35px 0 45px;
+  margin-top: 25px;
+}
+.dossier > p {
+  max-width: 820px;
+}
+.dossier h2 {
+  font-size: 38px;
+}
+.dossier-question {
+  font:
+    24px/1.4 "Iowan Old Style",
+    Palatino,
+    Georgia,
+    serif;
+}
+.editorial-note {
+  max-width: 900px;
+  border-left: 3px solid #b28b3e;
+  padding: 8px 22px;
+  background: #eeeadc;
+  margin: 25px 0;
+}
+.editorial-note h3 {
+  font:
+    600 13px "Avenir Next",
+    Arial,
+    sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 7px 0 12px;
+}
+.editorial-note p {
+  font-size: 15px;
+}
+.search-log {
+  border-block: 1px solid #c9c5b8;
+  padding: 12px 0;
+  margin: 25px 0;
+}
+.search-log summary {
+  cursor: pointer;
+  min-height: 44px;
+  padding: 8px 0;
+}
+.search-log p,
+.search-log li {
+  font-size: 14px;
+  max-width: 850px;
+}
+.search-log code {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.dossier-sources {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+}
+.dossier-source {
+  padding: 22px;
+  background: #fffdf7;
+  border-top: 2px solid #155d66;
+  min-width: 0;
+}
+.dossier-source h3 {
+  font-size: 24px;
+  margin: 5px 0 16px;
+}
+.dossier-source p {
+  font-size: 14px;
+}
+.dossier-source .record-kicker {
+  font-size: 10px;
+}
+.source-dates {
+  font-size: 11px !important;
+  color: #46545b;
+}
+.project-link {
+  font-size: 13px;
+  border-top: 1px solid #c9c5b8;
+  padding-top: 20px;
+}
+#dossier-count {
+  font-size: 13px;
+  color: #46545b;
+}
+.record-downloads a {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 700px) {
+  .dossier-sources {
+    grid-template-columns: 1fr;
+  }
+  .dossier h2 {
+    font-size: 32px;
+  }
+  .dossier-source {
+    padding: 18px;
+  }
+  .editorial-note {
+    padding: 8px 17px;
+  }
+}
+@media print {
+  .record-intro {
+    display: block !important;
+  }
+  .dossier {
+    break-before: page;
+  }
+  .dossier-sources {
+    display: block;
+  }
+  .dossier-source {
+    break-inside: avoid;
+  }
+  .record-downloads {
+    display: none;
+  }
+}

@@ -1,54 +1,30 @@
 name: deploy_pages
-
 on:
   schedule:
-    # Content producers commit throughout the hour. Publish the latest settled
-    # state twice hourly through one standard Pages delivery.
-    - cron: "23,53 * * * *"
+    - cron: '23,53 * * * *'
   workflow_dispatch:
-
 permissions:
   contents: read
   pages: write
   id-token: write
-
+concurrency:
+  group: pages-production
+  cancel-in-progress: false
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out repo
-        uses: actions/checkout@v7
-
-      - name: Set up Python
-        uses: actions/setup-python@v6
-        with:
-          python-version: "3.12"
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Build umbrella site
-        run: python -m src.build_site --site-base-url /
-
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v6
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v5
-        with:
-          path: docs
-
+  validated-artifact:
+    uses: ./.github/workflows/validate-artifact.yml
+    with:
+      upload-pages: true
   deploy:
-    needs: build
+    needs: validated-artifact
     runs-on: ubuntu-latest
     timeout-minutes: 12
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Let Pages settle before deployment
-        run: sleep 45
-
-      - name: Deploy to GitHub Pages
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v6
+      - name: Deploy the validated artifact
         id: deployment
         uses: actions/deploy-pages@v5

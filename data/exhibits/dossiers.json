@@ -1,0 +1,66 @@
+[
+  {
+    "id": "maritime-quarantine",
+    "title": "Maritime quarantine",
+    "question": "How did ships, ports, and quarantine institutions shape exposure and public-health responses?",
+    "scope": "Mediterranean and Atlantic quarantine histories, with Grosse Île as a documented institutional case. This is a selective reading collection, not a systematic review.",
+    "source_ids": ["quarantine", "grosse-ile", "lind", "booker"],
+    "search_date": "2026-09-08",
+    "strategies": [
+      "site.cdc.gov Tognotti lessons history quarantine plague influenza 2013 19 2 254",
+      "site.parks.canada.ca Grosse Ile 1847 typhus 5424",
+      "Source chaining from the existing Maritime Disease Atlas bibliography: Lind and Booker."
+    ],
+    "editorial_note": "Read the institutional history alongside the disease mechanism. A quarantine rule, a delay at anchor, and a death count describe different parts of the process. The Lind and Booker entries are metadata leads; they are not labeled as completed full-text reviews.",
+    "exhibit": "atlases/maritime/",
+    "exhibit_label": "Maritime Disease Atlas"
+  },
+  {
+    "id": "revolutionary-smallpox",
+    "title": "Revolutionary War smallpox",
+    "question": "How did smallpox change military decisions, and what does the surviving correspondence establish?",
+    "scope": "Boston, the Canada campaign, and the Continental Army’s 1777 inoculation policy, with winter encampments as comparative context.",
+    "source_ids": [
+      "adams",
+      "shippen",
+      "grier",
+      "boston",
+      "valley-forge",
+      "morristown"
+    ],
+    "search_date": "2026-09-08",
+    "strategies": [
+      "site.founders.archives.gov Washington William Shippen 6 February 1777 inoculated",
+      "site.founders.archives.gov John Adams Abigail Adams June 1776 smallpox Canada army",
+      "site.nps.gov Valley Forge 1700 2000 disease deaths Morristown winter 1779 1780 smallpox"
+    ],
+    "editorial_note": "Verify the document itself after discovery: one secondary search result described the Adams–Cooper letter as June 9; the linked National Archives transcription is dated July 2, 1776. Orders document decisions; mortality effects require additional denominators and outcome records.",
+    "exhibit": "atlases/revolutionary-war/",
+    "exhibit_label": "Revolutionary War Disease Atlas"
+  },
+  {
+    "id": "viking-paleodemography",
+    "title": "Viking paleodemography",
+    "question": "What can different skeletal and archaeological samples tell us about health, age at death, and movement?",
+    "scope": "Ribe, Birka, and Varnhem as contrasting study designs; selected North Atlantic and British sites as examples of chronology and sample selection.",
+    "source_ids": [
+      "ribe",
+      "birka",
+      "varnhem",
+      "lanse",
+      "greenland",
+      "weymouth"
+    ],
+    "search_date": "2026-09-08",
+    "strategies": [
+      "Ribe cemetery 943 skeletons 38.5 38.6 medieval lifespan study",
+      "site.journals.plos.org Varnhem 0295282 171 133 38 teeth 3293",
+      "site.onlinelibrary.wiley.com Birka female Viking warrior genomics 2017 581 Hedenstierna Jonson",
+      "site.nature.com L Anse aux Meadows 1021 2021 evidence Europeans Americas",
+      "Weymouth Ridgeway Hill 54 skeletons Oxford Archaeology Viking burial report"
+    ],
+    "editorial_note": "Cemetery age-at-death distributions, an individual genome, dental prevalence, and dated wood are different kinds of evidence. Keep Viking Age, cross-period, and later Norse material separate. Abstract review is explicitly labeled where full tables were not reviewed.",
+    "exhibit": "atlases/viking/",
+    "exhibit_label": "Viking Health Atlas"
+  }
+]

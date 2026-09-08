@@ -5,8 +5,20 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-MODULES_PATH = PROJECT_ROOT / "external" / "maritime_disease_atlas" / "data" / "maritime_disease_modules.js"
-ATLAS_DATA_PATH = PROJECT_ROOT / "external" / "maritime_disease_atlas" / "data" / "maritime_disease_atlas_data.js"
+MODULES_PATH = (
+    PROJECT_ROOT
+    / "external"
+    / "maritime_disease_atlas"
+    / "data"
+    / "maritime_disease_modules.js"
+)
+ATLAS_DATA_PATH = (
+    PROJECT_ROOT
+    / "external"
+    / "maritime_disease_atlas"
+    / "data"
+    / "maritime_disease_atlas_data.js"
+)
 HTML_PATH = PROJECT_ROOT / "external" / "maritime_disease_atlas" / "index.html"
 SOURCE_REGISTRY_PATH = PROJECT_ROOT / "data" / "sources" / "sources.json"
 
@@ -42,12 +54,23 @@ def test_maritime_modules_are_curated_source_backed_cases() -> None:
 
     for module in modules:
         assert module["source_ids"]
-        assert module["confidence"] in {"high", "moderate", "low", "contested", "speculative"}
+        assert module["confidence"] in {
+            "high",
+            "moderate",
+            "low",
+            "contested",
+            "speculative",
+        }
         assert module["uncertainty_note"]
         assert module["transmission_or_cause"]
         assert module["maritime_mechanism"]
         assert module["public_health_response"]
-        assert module["human_burden"]["burden_type"] in {"exact", "estimated", "qualitative", "unknown"}
+        assert module["human_burden"]["burden_type"] in {
+            "exact",
+            "estimated",
+            "qualitative",
+            "unknown",
+        }
         assert module["human_burden"]["source_ids"]
         route = module["map_geometry_or_route"]
         assert route["claim_type"] in {
@@ -58,7 +81,13 @@ def test_maritime_modules_are_curated_source_backed_cases() -> None:
             "quarantine station",
             "region only",
         }
-        assert route["route_confidence"] in {"high", "moderate", "low", "contested", "speculative"}
+        assert route["route_confidence"] in {
+            "high",
+            "moderate",
+            "low",
+            "contested",
+            "speculative",
+        }
         assert route["source_ids"]
 
 
@@ -91,7 +120,12 @@ def test_maritime_map_features_expose_route_claim_type() -> None:
         assert props["claim_type"]
         assert props["route_confidence"]
         if props["feature_type"] == "route":
-            assert props["claim_type"] in {"documented route", "typical route", "inferred route", "region only"}
+            assert props["claim_type"] in {
+                "documented route",
+                "typical route",
+                "inferred route",
+                "region only",
+            }
 
 
 def test_maritime_ui_has_mechanism_filters_and_no_loading_placeholders() -> None:
@@ -110,15 +144,27 @@ def test_maritime_ui_has_mechanism_filters_and_no_loading_placeholders() -> None
     ]:
         assert expected in html
 
-    for forbidden in ["Loading disease profile", "Loading evidence panel", "Source review pending"]:
+    for forbidden in [
+        "Loading disease profile",
+        "Loading evidence panel",
+        "Source review pending",
+    ]:
         assert forbidden not in html
 
 
 def test_maritime_deferred_modules_keep_thin_claims_out() -> None:
     payload = load_assignment(MODULES_PATH, "MARITIME_DISEASE_MODULES")
-    deferred_text = " ".join(item["candidate"] + " " + item["reason"] for item in payload["deferred_modules"]).lower()
+    deferred_text = " ".join(
+        item["candidate"] + " " + item["reason"] for item in payload["deferred_modules"]
+    ).lower()
 
     assert "barbary captivity" in deferred_text
     assert "convict ships" in deferred_text
     assert "hantavirus" in deferred_text
-    assert "algiers plague" in deferred_text or "algiers plague" in (PROJECT_ROOT / "notes" / "maritime-disease-atlas-source-triage.md").read_text().lower()
+    assert (
+        "algiers plague" in deferred_text
+        or "algiers plague"
+        in (PROJECT_ROOT / "notes" / "maritime-disease-atlas-source-triage.md")
+        .read_text()
+        .lower()
+    )

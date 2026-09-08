@@ -1,2 +1,6 @@
 PyYAML==6.0.2
 pytest==8.3.5
+beautifulsoup4==4.13.4
+python-dateutil==2.9.0.post0
+reportlab==5.0.1
+pillow==12.3.0
