@@ -2749,7 +2749,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "linked_blog_posts": [],
       "variants": [],
       "transmission_group": "Mosquito-borne parasite",
-      "color": "#5abf7c",
+      "color": "#bb9cdb",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "citation_count": 3
@@ -3045,7 +3045,7 @@ window.PATHOGEN_ATLAS_DATA = {
       "linked_blog_posts": [],
       "variants": [],
       "transmission_group": "Rodent / environmental",
-      "color": "#7aa96b",
+      "color": "#c99a73",
       "status_label": "Consensus",
       "writing_state_label": "No dedicated post yet",
       "citation_count": 5

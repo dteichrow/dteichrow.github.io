@@ -16,8 +16,8 @@ from .site_services import load_services, inquiry_url
 from .common import PROJECT_ROOT
 
 PAPER = colors.HexColor("#F6F1E4")
-INK = colors.HexColor("#142126")
-TEAL = colors.HexColor("#155D66")
+INK = colors.HexColor("#202127")
+INDIGO = colors.HexColor("#414b82")
 
 
 def build_referral(destination=None):
@@ -67,7 +67,7 @@ def build_referral(destination=None):
             fontName="Helvetica-Bold",
             fontSize=9,
             leading=13,
-            textColor=TEAL,
+            textColor=INDIGO,
             spaceAfter=13,
         ),
     }
@@ -80,14 +80,14 @@ def build_referral(destination=None):
 
     def link(text, url):
         return (
-            f'<a color="#155D66" href="{html.escape(url, quote=True)}">{esc(text)}</a>'
+            f'<a color="#414b82" href="{html.escape(url, quote=True)}">{esc(text)}</a>'
         )
 
     def page(canvas, doc):
         canvas.saveState()
         canvas.setFillColor(PAPER)
         canvas.rect(0, 0, 612, 792, fill=1, stroke=0)
-        canvas.setStrokeColor(TEAL)
+        canvas.setStrokeColor(INDIGO)
         canvas.line(44, 752, 568, 752)
         canvas.line(44, 42, 568, 42)
         canvas.setFillColor(INK)
@@ -126,7 +126,7 @@ def build_referral(destination=None):
         TableStyle(
             [
                 ("VALIGN", (0, 0), (-1, -1), "TOP"),
-                ("LINEBELOW", (0, 0), (-1, -1), 0.4, colors.HexColor("#BAC0B2")),
+                ("LINEBELOW", (0, 0), (-1, -1), 0.4, colors.HexColor("#b2b3c0")),
                 ("LEFTPADDING", (0, 0), (-1, -1), 0),
                 ("RIGHTPADDING", (0, 0), (-1, -1), 10),
                 ("TOPPADDING", (0, 0), (-1, -1), 8),

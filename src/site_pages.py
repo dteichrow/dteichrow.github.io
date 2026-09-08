@@ -3,6 +3,7 @@
 import html
 from .common import format_display_date, link_for
 from .site_shell import base_html
+from .site_images import render_exhibit_image
 from .site_cards import render_post_card, render_tool_card, render_story_card
 from .site_content import (
     post_display_title,
@@ -33,7 +34,7 @@ def render_home(posts, tools, latest, base_url):
     <h1 class="hero-title">Disease follows <br>human arrangements.</h1>
     <div class="hero-intro"><p>Ships and barracks. Markets and wells. The crowded room and the delayed decision. Disease moves through the worlds we build.</p><p>I’m Devin Teichrow, a UCLA-trained epidemiologist at UC Irvine. I write about the evidence disease leaves behind—and the institutions that shape its course.</p></div></section>
     <section class="opening-work" aria-label="Featured work"><div class="featured-essay"><p class="kicker">The latest essay</p>{feature}</div>
-    <article class="flagship-preview"><a href="{href("atlases/maritime/")}" aria-label="Explore the Maritime Disease Atlas"><img src="{href("assets/exhibits/covers/maritime-disease-atlas.svg")}" width="800" height="440" alt="Schematic ship cutaway showing berths, water storage, provisions, and care spaces"></a><div><p class="kicker">Enter the exhibit</p><h2><a href="{href("atlases/maritime/")}">A ship is a disease environment.</a></h2><p>Look inside the Maritime Disease Atlas. Follow a route, open a case, or inspect the spaces where infection and deprivation meet.</p><a class="text-link" href="{href("atlases/maritime/")}">Explore the ship and its history <span aria-hidden="true">→</span></a></div></article></section>
+    <article class="flagship-preview">{render_exhibit_image("maritime-disease-atlas", base_url, link_for(base_url, "atlases/maritime/"), eager=True)}<div><p class="kicker">Enter the exhibit</p><h2><a href="{href("atlases/maritime/")}">A ship is a disease environment.</a></h2><p>Look inside the Maritime Disease Atlas. Follow a route, open a case, or inspect the spaces where infection and deprivation meet.</p><a class="text-link" href="{href("atlases/maritime/")}">Explore the ship and its history <span aria-hidden="true">→</span></a></div></article></section>
     <section class="home-section"><div class="section-head section-head-split"><div><p class="kicker">Published writing</p><h2>Recent essays</h2></div><a class="text-link" href="{href("essays/")}">All essays →</a></div><div class="card-grid three-up essays-grid">{recent}</div></section>
     <section class="home-section newsdesk-panel"><div class="section-head section-head-split"><div><p class="kicker">Current reporting</p><h2>The Pathogen Dispatch</h2><p>Follow outbreak reporting back to the underlying sources.</p></div><a class="text-link" href="{href("newsdesk/")}">Open the Newsdesk →</a></div><div class="card-grid three-up">{stories}</div></section>
     <section class="home-section"><div class="section-head"><p class="kicker">The exhibit collection</p><h2>History you can inspect.</h2><p>Explore a place, compare a record, and examine what the evidence supports.</p></div><div class="card-grid three-up">{exhibits}</div></section>

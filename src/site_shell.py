@@ -48,6 +48,7 @@ def base_html(
             ("Historical", "historical/"),
             ("Reference", "reference/"),
             ("Methods", "methods/"),
+            ("Image credits", "image-credits/"),
             ("Work with me", "opportunities/"),
         ]
     )

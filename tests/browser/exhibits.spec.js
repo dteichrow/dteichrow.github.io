@@ -38,13 +38,15 @@ for (const width of [390, 768, 1440])
           () => getComputedStyle(document.activeElement).outlineStyle,
         ),
       ).not.toBe("none");
-      await page.locator(".essay-card-media img,.atlas-card-visual img").evaluateAll(async (images) => {
-        images.forEach(image => image.loading = "eager");
-        await Promise.race([
-          Promise.allSettled(images.map(image => image.decode())),
-          new Promise(resolve => setTimeout(resolve, 5000)),
-        ]);
-      });
+      await page
+        .locator(".essay-card-media img,.atlas-card-visual img")
+        .evaluateAll(async (images) => {
+          images.forEach((image) => (image.loading = "eager"));
+          await Promise.race([
+            Promise.allSettled(images.map((image) => image.decode())),
+            new Promise((resolve) => setTimeout(resolve, 5000)),
+          ]);
+        });
       await page.screenshot({
         path: `output/playwright/after/${width}-${route.replaceAll("/", "-") || "home"}.png`,
         fullPage: true,
@@ -329,6 +331,10 @@ test("shareable ship and case views reopen without loading 3D", async ({
     .locator("[data-case-detail][open]")
     .first()
     .getAttribute("data-case-detail");
+  // The native details toggle event updates URL state in a later task.
+  await expect
+    .poll(() => new URL(page.url()).searchParams.get("case"))
+    .toBe(selected);
   await page.reload();
   await expect(
     page.locator(`[data-case-detail="${selected}"]`),

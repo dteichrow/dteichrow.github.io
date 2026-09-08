@@ -1,6 +1,6 @@
 # Asset and interaction credits
 
-The publication's mark, six exhibit cover diagrams, SVG ship section, and procedural Three.js ship geometry are original work for The Edge of Epidemiology. They are explanatory illustrations. The ship combines features to make mechanisms inspectable; it is not a named vessel, scale reconstruction, or airflow simulation.
+The publication's mark, SVG ship section, and procedural Three.js ship geometry are original work for The Edge of Epidemiology. They are explanatory illustrations. The ship combines features to make mechanisms inspectable; it is not a named vessel, scale reconstruction, or airflow simulation.
 
 ## Bundled geography and software
 
@@ -21,7 +21,24 @@ The approved design research identified these useful precedents:
 - Tom Krcha's [procedural train demonstration](https://x.com/tomkrcha/status/2096082580554777041): editable geometry and mechanical relationships constructed in code. Creator-reported production/performance claims were not treated as independently verified benchmarks.
 - OpenAI's [Playco case study](https://openai.com/index/playco-game-prototyping-with-astra/): reuse a foundation across related experiences and verify the interactions in a browser.
 
-## Historical images and source records
+## Exhibit cover images
+
+The six generic cover diagrams were retired September 8, 2026. Cover images now come from item-specific public-domain or CC BY records, are served locally in responsive WebP sizes, and carry visible captions. No image has been colourised, retouched, or presented as a reconstruction of an undocumented event.
+
+The visitor-facing [image credits page](https://dteichrow.github.io/image-credits/) shows the complete, uncropped images with attribution, licence links, historical context, and source records. The authoritative registry is `assets/exhibits/image-credits.json`; it includes original download URLs, review dates, source and output hashes, dimensions, and CSS crop positions.
+
+| Exhibit | Image | Source / rights |
+|---|---|---|
+| Histsearch | British quarantine regulations, 1826 | [Wellcome Collection](https://wellcomecollection.org/works/hjebg85g), Public Domain Mark |
+| American Epidemic Timeline | Nurse taking a patient's pulse, Walter Reed influenza ward, c. 1918 | [Library of Congress](https://www.loc.gov/item/2016648028/), no known restrictions |
+| Pathogen Atlas | Smallpox virions, electron micrograph, 1975 | [CDC PHIL 1849](https://phil.cdc.gov/Details.aspx?pid=1849), public domain; CDC / Dr. Fred Murphy; Sylvia Whitfield |
+| Maritime Disease Atlas | Dreadnought hospital ship, engraving, 1870 | [Wellcome Collection](https://wellcomecollection.org/works/g3crjxqu), Public Domain Mark |
+| Revolutionary War Disease Atlas | Plan of Boston & vicinity, c. 1775 | [Library of Congress](https://www.loc.gov/item/gm71002186/), public-domain historical map |
+| Viking Health Atlas | Examination of jaw and teeth in the Varnhem study | [PLOS / EurekAlert!](https://www.eurekalert.org/multimedia/1008356), Carolina Bertilsson, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+
+The Varnhem photograph's publication is dated 2023; its capture date is not asserted. The Library of Congress dates the Boston manuscript `[1775?]`; the displayed date remains approximate. The Dreadnought engraving is identified separately from the exhibit's schematic ship model.
+
+## Other historical images and source records
 
 Existing archival images retain their per-image credit and rights statements in the timeline and maritime data. Essay cover images retain their upstream source URLs. No new archival photograph, historical observation, client, testimonial, or commercial result has been invented.
 

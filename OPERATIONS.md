@@ -80,3 +80,12 @@ Use `git revert` to undo a published source change, rerun validation, and manual
 ## Working-tree policy
 
 Use an isolated checkout when the user's working directory is dirty. Original local changes must remain intact. Generated `docs/` is tracked as a reproducible public artifact; private databases, credentials, outreach, scratch media, browser dependencies and reports remain untracked. Review `git diff --cached` before publishing.
+
+
+### Exhibit imagery and palette (September 8, 2026)
+
+`src/site_images.py` renders exhibit covers, captions, and `/image-credits/` from `assets/exhibits/image-credits.json`. Update this registry together with local WebP files when changing an image; every entry requires a source record, creator, rights statement, and image hashes. The build does not fetch cover images. Keep original colours and the full image available on the credits page; adjust card crops through `position`, not by retouching the historical object.
+
+The publication uses paper `#F6F1E4`, charcoal `#202127`, indigo `#414B82`, rust `#B84A3E`, gold `#B28B3E`, and neutral slate `#555561`. Exhibit categories also use plum and blue. Forest green and teal are retired, including their former dark backgrounds. `scripts/validate_artifact.py` checks generated styles and owned vector/script assets for the retired colour family. It does not inspect or recolour documentary photographs. The imported Newsdesk also refreshes archived embedded palettes upstream in `src/rebuild_public.py`.
+
+Run the existing build and validation commands after edits. The browser suite includes cover loading, attribution navigation, whole-image credits, 390/768/1440px layouts, accessibility, and availability without collection servers. The image registry's paths, dimensions, rights fields, and hashes are covered by Python tests.
