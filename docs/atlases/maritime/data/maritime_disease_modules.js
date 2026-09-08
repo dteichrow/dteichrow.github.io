@@ -461,7 +461,7 @@ window.MARITIME_DISEASE_MODULES = {
       "setting_tags": ["migrant ship", "quarantine island", "port inspection"],
       "diseases_or_conditions": ["epidemic typhus", "ship fever"],
       "agents": ["Rickettsia prowazekii"],
-      "transmission_or_cause": ["respiratory crowding", "quarantine exposure"],
+      "transmission_or_cause": ["vector-borne", "quarantine exposure"],
       "mechanism_tags": ["crowding", "quarantine", "ports"],
       "maritime_mechanism": "Crowding, dirty clothing, body lice, poor hygiene, and delayed landing made the ship and quarantine station one connected exposure system.",
       "historical_context": "Grosse Ile anchors ship fever in a material landscape of famine migration, fever ships, inspection, detention, and burial.",

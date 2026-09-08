@@ -1,0 +1,232 @@
+/* Common exhibit navigation is in document flow, above the exhibit controls. */
+:root {
+  --eoe-paper: #f6f1e4;
+  --eoe-ink: #142126;
+  --eoe-teal: #155d66;
+  --eoe-rust: #b84a3e;
+  --eoe-gold: #b28b3e;
+  --display: "Iowan Old Style", Palatino, Georgia, serif;
+}
+.eoe-exhibit-nav {
+  position: relative !important;
+  inset: auto !important;
+  z-index: 1200;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  padding: 15px 24px;
+  background: #f6f1e4;
+  color: #142126;
+  border-bottom: 1px solid #b1b3a6;
+  font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  box-sizing: border-box;
+}
+.eoe-exhibit-nav > a {
+  color: #142126;
+  text-decoration: none;
+  font: 22px/1.1 var(--display);
+}
+.eoe-exhibit-nav nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 22px;
+}
+.eoe-exhibit-nav nav a {
+  font:
+    13px/1.4 "Avenir Next",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  color: #155d66;
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  text-decoration: none;
+}
+.eoe-skip {
+  position: fixed;
+  left: 15px;
+  top: -90px;
+  z-index: 9000;
+  background: #f6f1e4;
+  color: #142126;
+  padding: 12px;
+}
+.eoe-skip:focus {
+  top: 12px;
+}
+a:focus-visible,
+button:focus-visible,
+select:focus-visible,
+input:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid #cf6c5c !important;
+  outline-offset: 3px !important;
+}
+button,
+select,
+input[type="search"] {
+  min-height: 44px;
+}
+a,
+button,
+summary {
+  touch-action: manipulation;
+}
+.eoe-map-label {
+  color: #b6c8c4;
+  font:
+    italic 13px Georgia,
+    serif;
+  white-space: nowrap;
+  text-align: center;
+  text-shadow: 0 1px 2px #142126;
+}
+.eoe-map-label.light {
+  color: #46545b;
+  text-shadow: none;
+}
+.leaflet-container {
+  background: #172b30 !important;
+}
+.leaflet-control-attribution {
+  font:
+    10px/1.4 Arial,
+    sans-serif !important;
+  color: #142126 !important;
+  background: #f6f1e4e8 !important;
+  max-width: 400px;
+}
+.leaflet-control-attribution a {
+  color: #155d66 !important;
+}
+.eoe-utility {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.eoe-utility button {
+  padding: 8px 12px;
+  border: 1px solid #8b9a95;
+  background: transparent;
+  color: inherit;
+  font:
+    13px Arial,
+    sans-serif;
+}
+.eoe-utility [role="status"] {
+  font-size: 12px;
+}
+.eoe-notice {
+  font:
+    13px/1.6 "Avenir Next",
+    Arial,
+    sans-serif;
+}
+.eoe-evidence-toggle {
+  border-top: 1px solid #b6b9ad;
+  margin-top: 16px;
+  padding-top: 14px;
+}
+.eoe-evidence-toggle > summary {
+  font:
+    600 15px/1.5 "Avenir Next",
+    Arial,
+    sans-serif;
+  cursor: pointer;
+  min-height: 44px;
+}
+.eoe-host-chain {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+.eoe-host-chain button {
+  background: #e7e7d8;
+  color: #155d66;
+  border: 1px solid #8ba3a0;
+  padding: 8px 10px;
+  font:
+    13px Arial,
+    sans-serif;
+}
+.eoe-host-chain button[aria-pressed="true"] {
+  background: #155d66;
+  color: #fffdf7;
+}
+.eoe-evidence-note {
+  font-size: 13px;
+  line-height: 1.6;
+}
+.eoe-guided-paths {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+.eoe-guided-paths button {
+  padding: 10px 14px;
+  border: 1px solid #155d66;
+  background: transparent;
+  color: inherit;
+}
+.eoe-guided-paths button[aria-pressed="true"] {
+  background: #155d66;
+  color: white;
+}
+[hidden] {
+  display: none !important;
+}
+@media (max-width: 600px) {
+  .eoe-exhibit-nav {
+    padding: 16px 18px;
+    gap: 10px;
+  }
+  .eoe-exhibit-nav > a {
+    font-size: 21px;
+  }
+  .eoe-exhibit-nav nav {
+    gap: 0 20px;
+  }
+  .eoe-exhibit-nav nav a {
+    font-size: 12px;
+  }
+  .leaflet-control-attribution {
+    max-width: 270px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *:before,
+  *:after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+@media print {
+  .eoe-exhibit-nav,
+  .eoe-utility,
+  .leaflet-control-container {
+    display: none !important;
+  }
+  body {
+    overflow: visible !important;
+    background: white !important;
+    color: black !important;
+  }
+  a {
+    color: inherit !important;
+  }
+}
+
+.leaflet-control-attribution a {
+  text-decoration: underline !important;
+}
+.eoe-skip:not(:focus) {clip-path:inset(50%);width:1px;height:1px;padding:0;overflow:hidden}

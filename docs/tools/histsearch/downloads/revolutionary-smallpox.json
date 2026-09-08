@@ -1,0 +1,79 @@
+{
+  "id": "revolutionary-smallpox",
+  "title": "Revolutionary War smallpox",
+  "question": "How did smallpox change military decisions, and what does the surviving correspondence establish?",
+  "scope": "Boston, the Canada campaign, and the Continental Army’s 1777 inoculation policy, with winter encampments as comparative context.",
+  "source_ids": [
+    "adams",
+    "shippen",
+    "grier",
+    "boston",
+    "valley-forge",
+    "morristown"
+  ],
+  "search_date": "2026-09-08",
+  "strategies": [
+    "site.founders.archives.gov Washington William Shippen 6 February 1777 inoculated",
+    "site.founders.archives.gov John Adams Abigail Adams June 1776 smallpox Canada army",
+    "site.nps.gov Valley Forge 1700 2000 disease deaths Morristown winter 1779 1780 smallpox"
+  ],
+  "editorial_note": "Verify the document itself after discovery: one secondary search result described the Adams–Cooper letter as June 9; the linked National Archives transcription is dated July 2, 1776. Orders document decisions; mortality effects require additional denominators and outcome records.",
+  "exhibit": "atlases/revolutionary-war/",
+  "exhibit_label": "Revolutionary War Disease Atlas",
+  "sources": [
+    {
+      "id": "adams",
+      "title": "John Adams to Samuel Cooper, 2 July 1776",
+      "url": "https://founders.archives.gov/documents/Adams/06-04-02-0145",
+      "published_date": "1776-07-02",
+      "review_status": "Reviewed transcription",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": "A contemporary appraisal of military danger is not a mortality estimate."
+    },
+    {
+      "id": "shippen",
+      "title": "George Washington to William Shippen, Jr., 6 February 1777",
+      "url": "https://founders.archives.gov/documents/Washington/03-08-02-0281",
+      "published_date": "1777-02-06",
+      "review_status": "Reviewed source text",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": ""
+    },
+    {
+      "id": "grier",
+      "title": "George Washington to David Grier, 12 March 1777: smallpox inoculation letter",
+      "url": "https://www.mountvernon.org/education/primary-source-collections/primary-source-collections/article/smallpox-inoculation-letter",
+      "published_date": "1777-03-12",
+      "review_status": "Reviewed source text",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": ""
+    },
+    {
+      "id": "boston",
+      "title": "Smallpox: George Washington’s Mount Vernon",
+      "url": "https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/smallpox",
+      "published_date": null,
+      "review_status": "Reviewed institutional historical synthesis",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": ""
+    },
+    {
+      "id": "valley-forge",
+      "title": "What Happened at Valley Forge — National Park Service",
+      "url": "https://www.nps.gov/vafo/learn/historyculture/valley-forge-history-and-significance.htm",
+      "published_date": null,
+      "review_status": "Reviewed source text",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": ""
+    },
+    {
+      "id": "morristown",
+      "title": "Winter Encampments — Morristown National Historical Park",
+      "url": "https://www.nps.gov/morr/greatest-encampment.htm",
+      "published_date": null,
+      "review_status": "Reviewed institutional summary",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": "Its roughly 100 deaths at Morristown are not classified as a disease-only count."
+    }
+  ]
+}

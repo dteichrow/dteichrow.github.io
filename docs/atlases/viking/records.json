@@ -1,0 +1,253 @@
+{
+  "title": "Viking Health Atlas",
+  "records": [
+    {
+      "id": "ribe",
+      "name": "Ribe",
+      "lat": 55.33,
+      "lon": 8.77,
+      "date": "c. AD 800–1800; separate period groups",
+      "period": "Across periods",
+      "category": "Osteology",
+      "sample_size": 943,
+      "sample_unit": "adult skeletons across three periods",
+      "finding": "The study compares adult age-at-death patterns across Viking, medieval, and post-medieval cemetery samples.",
+      "limitations": "943 is the combined sample, not the Viking-only denominator. Adult skeletal mean age at death is not life expectancy at birth. Burial selection, age estimation, and changing population structure matter.",
+      "source_ids": [
+        "ribe"
+      ],
+      "comparison": "A diachronic adult mortality sample; useful for period comparisons within the study, not a universal Viking lifespan."
+    },
+    {
+      "id": "birka",
+      "name": "Birka — grave Bj 581",
+      "lat": 59.33,
+      "lon": 17.55,
+      "date": "10th century AD",
+      "period": "Viking Age",
+      "category": "Ancient DNA",
+      "sample_size": 1,
+      "sample_unit": "individual, with two DNA samples",
+      "finding": "Genomics supported a female sex estimate for the person in grave Bj 581; the burial contained martial equipment.",
+      "limitations": "The study reports no pathological or traumatic injuries. Genomic sex and the interpretation of a social role do not establish whether an individual fought in battle. One burial supplies no population prevalence.",
+      "source_ids": [
+        "birka"
+      ],
+      "comparison": "An individual burial study. Its biological and contextual questions differ from a cemetery mortality distribution."
+    },
+    {
+      "id": "varnhem",
+      "name": "Varnhem",
+      "lat": 58.38,
+      "lon": 13.68,
+      "date": "10th–12th centuries AD",
+      "period": "Across periods",
+      "category": "Dental examination",
+      "sample_size": 171,
+      "sample_unit": "individuals; 133 permanent and 38 deciduous/mixed dentitions",
+      "finding": "83 of 171 individuals had caries (49%). Among the permanent dentitions, 424 of 3,293 examined teeth were affected (13%).",
+      "limitations": "The excavation and jaw-preservation criteria select the sample. These are different denominators, and the cemetery extends beyond the conventional Viking Age. Tooth loss can bias observed caries prevalence.",
+      "source_ids": [
+        "varnhem"
+      ],
+      "comparison": "A dental disease study with explicit individual and tooth denominators. It does not measure general mortality."
+    },
+    {
+      "id": "lanse-aux-meadows",
+      "name": "L’Anse aux Meadows",
+      "lat": 51.6,
+      "lon": -55.52,
+      "date": "AD 1021: dated wood-cutting activity",
+      "period": "Viking Age",
+      "category": "Archaeological dating",
+      "sample_size": 3,
+      "sample_unit": "worked wood pieces used for exact dating",
+      "finding": "A cosmic-ray radiocarbon marker places the cutting of the studied wood in AD 1021.",
+      "limitations": "These are wood samples, not human remains. The date documents activity at the site; it does not establish a disease introduction or a complete occupation interval.",
+      "source_ids": [
+        "lanse"
+      ],
+      "comparison": "Evidence of presence and chronology, without a skeletal health denominator."
+    },
+    {
+      "id": "greenland-eastern",
+      "name": "Eastern Settlement, Greenland",
+      "lat": 61.12,
+      "lon": -45.51,
+      "date": "Norse occupation through the 15th century",
+      "period": "Later Norse",
+      "category": "Environmental model",
+      "sample_size": null,
+      "sample_unit": "No human skeletal sample in this model",
+      "finding": "A sea-level model evaluates coastal flooding as a possible contributor to later Norse settlement abandonment.",
+      "limitations": "The geographic marker locates the settlement region, not a sampled patient or exact model cell. Environmental pressure, epidemic mortality, and a sole cause of abandonment are separate claims.",
+      "source_ids": [
+        "greenland"
+      ],
+      "comparison": "Environmental modeling concerns a later Norse setting and cannot be pooled with Viking Age health samples."
+    },
+    {
+      "id": "ridgeway-hill",
+      "name": "Ridgeway Hill, Weymouth",
+      "lat": 50.665,
+      "lon": -2.462,
+      "date": "Viking Age; see dating discussion in excavation report",
+      "period": "Viking Age",
+      "category": "Mortuary archaeology",
+      "sample_size": null,
+      "sample_unit": "Minimum number depends on the skeletal inventory; consult the report",
+      "finding": "An excavated mass burial documents decapitation and a highly selected episode of violent death.",
+      "limitations": "A mass execution is not a representative cemetery sample. The identity of the group and historical event attribution require separate arguments.",
+      "source_ids": [
+        "weymouth"
+      ],
+      "comparison": "A mortality assemblage selected by violence; unsuitable for estimating routine population survival."
+    }
+  ],
+  "sources": [
+    {
+      "id": "ribe",
+      "title": "A millennium of population change in pre-modern Danish Ribe",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31465086/",
+      "published_date": "2019",
+      "review_status": "Reviewed abstract",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": "The 943 adult skeletons span Viking, medieval, and post-medieval periods. Period-specific sample counts require the full tables."
+    },
+    {
+      "id": "birka",
+      "title": "Hedenstierna-Jonson et al. A female Viking warrior confirmed by genomics",
+      "url": "https://doi.org/10.1002/ajpa.23308",
+      "published_date": "2017-09-08",
+      "review_status": "Reviewed methods and discussion",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": "Genomic sex, grave context, and an individual’s participation in combat are different inferences."
+    },
+    {
+      "id": "varnhem",
+      "title": "Bertilsson et al. Caries prevalence and other dental pathological conditions in Vikings from Varnhem, Sweden",
+      "url": "https://doi.org/10.1371/journal.pone.0295282",
+      "published_date": "2023-12-13",
+      "review_status": "Reviewed full text",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": "Report individual and tooth denominators separately; the sample is selected by preservation of jaws."
+    },
+    {
+      "id": "lanse",
+      "title": "Kuitems et al. Evidence for European presence in the Americas in AD 1021",
+      "url": "https://doi.org/10.1038/s41586-021-03972-8",
+      "published_date": "2021-10-20",
+      "review_status": "Reviewed article",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": "A precise date for worked wood does not establish a settlement duration or disease transmission."
+    },
+    {
+      "id": "greenland",
+      "title": "Borreggine et al. Sea-level rise in Southwest Greenland as a contributor to Viking abandonment",
+      "url": "https://doi.org/10.1073/pnas.2209615120",
+      "published_date": "2023",
+      "review_status": "Reviewed abstract",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": "An environmental model concerns a potential contributor to later Norse abandonment, not an observed epidemic."
+    },
+    {
+      "id": "weymouth",
+      "title": "Loe et al. Given to the Ground: A Viking Age Mass Grave on Ridgeway Hill, Weymouth",
+      "url": "https://eprints.oxfordarchaeology.com/5870/",
+      "published_date": "2014",
+      "review_status": "Reviewed repository description and introductory chapter",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": "A mass execution is a selected mortality assemblage; it cannot estimate the population’s usual mortality."
+    },
+    {
+      "id": "shippen",
+      "title": "George Washington to William Shippen, Jr., 6 February 1777",
+      "url": "https://founders.archives.gov/documents/Washington/03-08-02-0281",
+      "published_date": "1777-02-06",
+      "review_status": "Reviewed source text",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": ""
+    },
+    {
+      "id": "grier",
+      "title": "George Washington to David Grier, 12 March 1777: smallpox inoculation letter",
+      "url": "https://www.mountvernon.org/education/primary-source-collections/primary-source-collections/article/smallpox-inoculation-letter",
+      "published_date": "1777-03-12",
+      "review_status": "Reviewed source text",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": ""
+    },
+    {
+      "id": "adams",
+      "title": "John Adams to Samuel Cooper, 2 July 1776",
+      "url": "https://founders.archives.gov/documents/Adams/06-04-02-0145",
+      "published_date": "1776-07-02",
+      "review_status": "Reviewed transcription",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": "A contemporary appraisal of military danger is not a mortality estimate."
+    },
+    {
+      "id": "boston",
+      "title": "Smallpox: George Washington’s Mount Vernon",
+      "url": "https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/smallpox",
+      "published_date": null,
+      "review_status": "Reviewed institutional historical synthesis",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": ""
+    },
+    {
+      "id": "valley-forge",
+      "title": "What Happened at Valley Forge — National Park Service",
+      "url": "https://www.nps.gov/vafo/learn/historyculture/valley-forge-history-and-significance.htm",
+      "published_date": null,
+      "review_status": "Reviewed source text",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": ""
+    },
+    {
+      "id": "morristown",
+      "title": "Winter Encampments — Morristown National Historical Park",
+      "url": "https://www.nps.gov/morr/greatest-encampment.htm",
+      "published_date": null,
+      "review_status": "Reviewed institutional summary",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": "Its roughly 100 deaths at Morristown are not classified as a disease-only count."
+    },
+    {
+      "id": "quarantine",
+      "title": "Tognotti. Lessons from the History of Quarantine, from Plague to Influenza A",
+      "url": "https://wwwnc.cdc.gov/eid/article/19/2/12-0312_article",
+      "published_date": "2013-02",
+      "review_status": "Reviewed historical review",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": ""
+    },
+    {
+      "id": "grosse-ile",
+      "title": "Grosse Île and the Irish Memorial National Historic Site — Parks Canada",
+      "url": "https://www.pc.gc.ca/apps/dfhd/page_nhs_eng.aspx?i=40029&id=616",
+      "published_date": null,
+      "review_status": "Reviewed designation record",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": "An institutional site history is distinct from a nominal death register."
+    },
+    {
+      "id": "lind",
+      "title": "James Lind. A Treatise of the Scurvy",
+      "url": "https://library.si.edu/digital-library/book/treatisescurvyt00lind",
+      "published_date": "1753",
+      "review_status": "Retrieved metadata",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": "Digitized primary work identified in the existing Maritime source registry; individual passages have not been re-reviewed for this dossier."
+    },
+    {
+      "id": "booker",
+      "title": "John Booker. Maritime Quarantine: The British Experience, c.1650–1900",
+      "url": "https://www.routledge.com/Maritime-Quarantine-The-British-Experience-c1650-1900/Booker/p/book/9781138274129",
+      "published_date": "2007",
+      "review_status": "Retrieved metadata",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": "Book identified in the existing project; this entry is a research lead, not a claim of full-text review."
+    }
+  ]
+}
