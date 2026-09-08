@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T06:20:49",
+  "generated_at": "2026-09-08T07:50:25",
   "count": 6,
   "tools": [
     {
@@ -7,9 +7,9 @@
       "title": "Histsearch",
       "tool_type": "research search",
       "status": "open",
-      "status_label": "Local research system",
-      "summary": "A historian-style source discovery interface for historical epidemiology topics, built around source logs, exportable records, and transparent search paths.",
-      "evidence_model": "Local connector runs with source logs, manual search strings, SQLite-backed storage, dossiers, CSV exports, and JSON records",
+      "status_label": "Curated research collection",
+      "summary": "Browse historical epidemiology dossiers with reviewed sources, transparent search strategies, and downloadable research records.",
+      "evidence_model": "Source links, review status, search dates, editorial notes, and CSV/JSON downloads",
       "public_route": "tools/histsearch/",
       "keywords": [
         "historical epidemiology",
@@ -19,7 +19,7 @@
         "source discovery",
         "bibliography"
       ],
-      "long_note": "The public page documents the search interface and local workflow. Live connector searches run through the local Python backend; GitHub Pages hosts the frontend but does not run Python or store private research outputs."
+      "long_note": "Maritime quarantine, Revolutionary War smallpox, and Viking paleodemography: curated collections that distinguish retrieved metadata from reviewed evidence."
     },
     {
       "tool_id": "american-epidemic-timeline",
@@ -87,7 +87,7 @@
       "tool_type": "atlas",
       "status": "section",
       "status_label": "Historical section",
-      "summary": "A historical epidemiology section focused on colonial and Revolutionary-era disease ecology, troop movement, and the public-health constraints around the founding period.",
+      "summary": "Follow smallpox, troop movements, inoculation orders, and winter encampments through a cited chronological atlas.",
       "evidence_model": "Essay-linked historical synthesis",
       "public_route": "atlases/revolutionary-war/",
       "keywords": [
@@ -105,7 +105,7 @@
       "tool_type": "atlas",
       "status": "section",
       "status_label": "Norse-world atlas",
-      "summary": "A Norse-world disease and health map that ties Greenland, Vinland, settlement ecology, and pre-Columbian contact arguments into one visual surface.",
+      "summary": "Compare cited archaeological site records, sample sizes, dates, findings, and limits across Viking Age and later Norse material.",
       "evidence_model": "Map-based historical synthesis plus linked essays",
       "public_route": "atlases/viking/",
       "keywords": [

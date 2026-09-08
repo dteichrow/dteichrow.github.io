@@ -1,85 +1,77 @@
-(function () {
-  function renderSearchResults(shell, entries, query, section) {
-    const target = shell.querySelector("[data-search-results]");
-    if (!target) return;
-    const q = (query || "").trim().toLowerCase();
-    const filtered = entries.filter((entry) => {
-      const sectionPass = section === "all" || entry.section === section;
-      if (!sectionPass) return false;
-      if (!q) return true;
-      const haystack = [
-        entry.title || "",
-        entry.summary || "",
-        entry.keywords || "",
-        entry.section || "",
-      ]
-        .join(" ")
-        .toLowerCase();
-      return haystack.includes(q);
-    });
-    if (!filtered.length) {
-      target.innerHTML = '<p class="search-empty">No results matched this search.</p>';
-      return;
-    }
-    target.innerHTML = filtered
-      .slice(0, 50)
-      .map(
-        (entry) => `
-          <article class="site-card">
-            <p class="kicker">${entry.section}</p>
-            <h3><a href="${entry.url}">${entry.title}</a></h3>
-            <p class="muted-note">${entry.summary || ""}</p>
-          </article>
-        `
-      )
-      .join("");
-  }
-
-  async function initSearchShell(shell) {
-    const source = shell.getAttribute("data-search-source");
-    if (!source) return;
+/* Static, shareable search. Text is inserted as text, never interpreted as markup. */
+(async function () {
+  for (const shell of document.querySelectorAll("[data-search-source]")) {
+    const input = shell.querySelector("[data-search-input]"),
+      filter = shell.querySelector("[data-search-filter]"),
+      target = shell.querySelector("[data-search-results]"),
+      count = shell.querySelector("[data-search-count]");
+    const params = new URLSearchParams(location.search);
+    input.value = params.get("q") || "";
+    if ([...filter.options].some((o) => o.value === params.get("section")))
+      filter.value = params.get("section");
     try {
-      const response = await fetch(source);
-      const entries = await response.json();
-      const input = shell.querySelector("[data-search-input]");
-      const filter = shell.querySelector("[data-search-filter]");
-      const refresh = function () {
-        renderSearchResults(shell, entries, input ? input.value : "", filter ? filter.value : "all");
+      const response = await fetch(shell.dataset.searchSource);
+      if (!response.ok) throw new Error(response.status);
+      const records = await response.json();
+      const render = () => {
+        const q = input.value.trim().toLowerCase();
+        const found = records.filter(
+          (e) =>
+            (filter.value === "all" || e.section === filter.value) &&
+            [e.title, e.display_title, e.summary, e.keywords]
+              .join(" ")
+              .toLowerCase()
+              .includes(q),
+        );
+        target.replaceChildren();
+        count.textContent = `${found.length} result${found.length === 1 ? "" : "s"}`;
+        for (const entry of found) {
+          const url = new URL(entry.url, location.href);
+          if (!["http:", "https:"].includes(url.protocol)) continue;
+          const card = document.createElement("article");
+          card.className = "site-card";
+          const label = document.createElement("p");
+          label.className = "kicker";
+          label.textContent = entry.section;
+          const title = document.createElement("h3"),
+            link = document.createElement("a");
+          link.href = url.href;
+          link.textContent = entry.display_title || entry.title;
+          title.append(link);
+          const summary = document.createElement("p");
+          summary.className = "muted-note";
+          summary.textContent = entry.summary || "";
+          card.append(label, title, summary);
+          target.append(card);
+        }
+        if (!found.length) {
+          const message = document.createElement("p");
+          message.className = "search-empty";
+          message.textContent =
+            "No matches. Try a place, pathogen, or shorter phrase.";
+          target.append(message);
+        }
+        const state = new URL(location.href);
+        q
+          ? state.searchParams.set("q", input.value.trim())
+          : state.searchParams.delete("q");
+        filter.value === "all"
+          ? state.searchParams.delete("section")
+          : state.searchParams.set("section", filter.value);
+        history.replaceState(null, "", state);
       };
-      if (input) input.addEventListener("input", refresh);
-      if (filter) filter.addEventListener("change", refresh);
-      refresh();
+      input.addEventListener("input", render);
+      filter.addEventListener("change", render);
+      render();
+      window.addEventListener("popstate", () => {
+        const p = new URLSearchParams(location.search);
+        input.value = p.get("q") || "";
+        filter.value = p.get("section") || "all";
+        render();
+      });
     } catch (error) {
-      const target = shell.querySelector("[data-search-results]");
-      if (target) {
-        target.innerHTML = '<p class="search-empty">Search failed to load right now.</p>';
-      }
-    }
-  }
-
-  document.querySelectorAll("[data-search-source]").forEach(initSearchShell);
-
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (!reduceMotion) {
-    const hero = document.querySelector(".hero-home");
-    if (hero) {
-      let ticking = false;
-      const updateHeroDepth = () => {
-        const offset = Math.min(36, Math.max(0, window.scrollY * 0.035));
-        hero.style.backgroundPosition = `center calc(50% + ${offset}px)`;
-        ticking = false;
-      };
-      window.addEventListener(
-        "scroll",
-        () => {
-          if (!ticking) {
-            window.requestAnimationFrame(updateHeroDepth);
-            ticking = true;
-          }
-        },
-        { passive: true }
-      );
-      updateHeroDepth();
+      count.textContent =
+        "Search could not load. Please try again, or browse Essays and Exhibits using the navigation.";
     }
   }
 })();

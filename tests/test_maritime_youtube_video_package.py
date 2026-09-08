@@ -5,13 +5,33 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-PLAN_PATH = PROJECT_ROOT / "external" / "maritime_disease_atlas" / "data" / "maritime_youtube_video_plan.js"
-MODULES_PATH = PROJECT_ROOT / "external" / "maritime_disease_atlas" / "data" / "maritime_disease_modules.js"
-ATLAS_DATA_PATH = PROJECT_ROOT / "external" / "maritime_disease_atlas" / "data" / "maritime_disease_atlas_data.js"
+PLAN_PATH = (
+    PROJECT_ROOT
+    / "external"
+    / "maritime_disease_atlas"
+    / "data"
+    / "maritime_youtube_video_plan.js"
+)
+MODULES_PATH = (
+    PROJECT_ROOT
+    / "external"
+    / "maritime_disease_atlas"
+    / "data"
+    / "maritime_disease_modules.js"
+)
+ATLAS_DATA_PATH = (
+    PROJECT_ROOT
+    / "external"
+    / "maritime_disease_atlas"
+    / "data"
+    / "maritime_disease_atlas_data.js"
+)
 HTML_PATH = PROJECT_ROOT / "external" / "maritime_disease_atlas" / "index.html"
 NOTE_PATH = PROJECT_ROOT / "notes" / "maritime-disease-atlas-youtube-guided-tour.md"
 TRIAGE_PATH = PROJECT_ROOT / "notes" / "maritime-disease-atlas-source-triage.md"
-RECORDING_PACKET_DIR = PROJECT_ROOT / "notes" / "maritime-disease-atlas-youtube-recording-packet"
+RECORDING_PACKET_DIR = (
+    PROJECT_ROOT / "notes" / "maritime-disease-atlas-youtube-recording-packet"
+)
 SOURCE_REGISTRY_PATH = PROJECT_ROOT / "data" / "sources" / "sources.json"
 
 
@@ -110,12 +130,16 @@ def test_maritime_youtube_plan_is_capture_ready_and_source_backed() -> None:
 
 
 def test_maritime_youtube_mode_is_wired_into_atlas_ui() -> None:
-    html = HTML_PATH.read_text()
+    html = (
+        HTML_PATH.read_text()
+        + (PROJECT_ROOT / "assets/exhibits/maritime.js").read_text()
+        + (PROJECT_ROOT / "assets/exhibits/maritime.css").read_text()
+    )
     note = NOTE_PATH.read_text()
     triage = TRIAGE_PATH.read_text()
 
     assert "data/maritime_youtube_video_plan.js" in html
-    assert "queryFlag(\"youtube\", \"yt\")" in html
+    assert 'queryFlag("youtube", "yt")' in html
     assert "playYouTubeTour" in html
     assert "youtubeTourOrder" in html
     assert "YouTube guided tour | The Edge of Epidemiology" in html
@@ -126,7 +150,10 @@ def test_maritime_youtube_mode_is_wired_into_atlas_ui() -> None:
     assert ".recording-mode #module-browser" in html
 
     assert "?youtube=1&tour=1&pace=2.3" in note
-    assert "Yellow Fever, Malaria, Scurvy, Flux, Typhoid, Ship Fever, Smallpox, Measles, Wounds + Sepsis, Middle Passage, Pirate Ports" in note
+    assert (
+        "Yellow Fever, Malaria, Scurvy, Flux, Typhoid, Ship Fever, Smallpox, Measles, Wounds + Sepsis, Middle Passage, Pirate Ports"
+        in note
+    )
     assert "Final narration: Devin" in note
     assert "Do not collapse Middle Passage mortality" in note
     assert "Do not turn pirate ports into disease-origin claims" in note
@@ -155,6 +182,8 @@ def test_maritime_recording_packet_is_ready_for_devin_voice() -> None:
     assert "Do not say plague decided the Barbary Wars" in script
     assert "00:11:40,000" in captions
     assert "0:45 Yellow fever: warm port ecology" in chapters
-    assert "10:15 Pirate ports: infrastructure at the end of the exhibit line" in chapters
+    assert (
+        "10:15 Pirate ports: infrastructure at the end of the exhibit line" in chapters
+    )
     assert "Do not render or publish" not in checklist
     assert "Export the final MP4 only after narration" in checklist

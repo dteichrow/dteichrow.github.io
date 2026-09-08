@@ -1,113 +1,82 @@
 # Edge Site Operations
 
-This repository is the public umbrella site for The Edge of Epidemiology. It owns the final GitHub Pages artifact for essays, tools, reference pages, Newsdesk mirrors, and app exports.
+This repository owns the final GitHub Pages artifact. Edit source records and renderers, then rebuild `docs/`.
 
-## Source Of Truth
+## Source ownership
 
-- `content/posts.yml`: authoritative essay registry.
-- `content/post_bodies/`: stored essay bodies used by generated archive pages.
-- `content/tools.yml`: public tool registry.
-- `content/atlases.yml`: atlas registry.
-- `data/sources/sources.json`: source registry for public tools.
-- `src/build_site.py`: static-site builder.
-- `src/substack_sync.py`: Substack archive and incremental sync.
-- `docs/`: generated GitHub Pages artifact.
-- `docs/newsdesk/`: mirrored Newsdesk output from `epi-dossier`.
+| Source | Responsibility |
+|---|---|
+| `content/posts.yml`, `content/post_bodies/` | Essay metadata, curated introductions and relationships, available full text |
+| `content/services.json` | All service packages, prices, scope, examples, and referral guide |
+| `content/tools.yml`, `content/atlases.yml` | Exhibit discovery metadata and preserved routes |
+| `data/exhibits/` | Reviewed Viking and Revolutionary records, Histsearch dossiers and provenance |
+| `external/american_epidemic_timeline/data/` | Timeline events, evidence, images, uncertainty |
+| `external/pathogen_atlas/source_backed_profiles.json` | Pathogen profiles and claim-specific citations |
+| `external/maritime_disease_atlas/data/` | Maritime cases, mechanisms, routes and presentation material |
+| `assets/exhibits/` | Shared navigation/styles/state, local cartography, exhibit behavior and optional ship modules |
+| `src/site_pages.py`, `site_cards.py`, `site_shell.py` | Publication rendering |
+| `src/site_content.py`, `site_seo.py` | Content normalization, canonical search destinations, SEO |
+| `src/curated_exhibits.py`, `site_exhibits.py` | Static records and shared exhibit shell |
+| `epi-dossier` upstream repository | Newsdesk collection, publication/discovery/retrieval dates, geography and public summaries |
 
-## Normal Publish Path
+## Install and build
 
-Build the public site locally:
+Python 3.12+ and Node.js 22+ are used by CI. Local verification also ran on Python 3.14.
 
-```bash
-python -m src.build_site --site-base-url /
+```sh
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+pnpm install --frozen-lockfile
+pnpm exec playwright install chromium
+.venv/bin/python -m src.build_site --site-base-url /
+.venv/bin/python -m http.server 8765 --bind 127.0.0.1 --directory docs
 ```
 
-Sync recent Substack posts only when the sync source is authoritative:
+The public build command is unchanged. It uses `EOE_EPI_DOSSIER_DOCS` when configured, a sibling checkout when available, or a temporary clone of `dteichrow/epi-dossier`. The upstream `rebuild_public` renderer processes existing exports in an isolated temporary directory. It does not fetch reports, send email, or rewrite the original upstream checkout. Collection timestamps remain the original timestamps.
 
-```bash
-python -m src.substack_sync --mode incremental
-python -m src.substack_sync --mode bodies
-python -m src.build_site --site-base-url /
+Service HTML and the three-page referral PDF are generated from the same registry. Regenerate the guide independently with `.venv/bin/python -m src.referral`. These files are intentionally public under `assets/referral/`.
+
+## Required validation
+
+```sh
+.venv/bin/python scripts/repo_doctor.py --json
+.venv/bin/python scripts/validate_tool_sources.py
+.venv/bin/python scripts/smoke_test_tool_pages.py
+.venv/bin/python -m pytest
+pnpm test:browser
+pnpm test:performance
+.venv/bin/python scripts/validate_artifact.py --write-manifest
 ```
 
-The workflow `.github/workflows/substack-sync.yml` skips rebuild and commit when the incremental sync report is degraded. That is intentional: a stale manifest is safer than republishing a partially pruned essay archive.
+Playwright starts or reuses the local preview server. The performance command requires that server to be running. `CHROME_PATH` can select a Chrome executable; otherwise tests use Chrome on macOS when available, or Playwright Chromium. `TEST_BASE_URL` changes the URL used by tests.
 
-Newsdesk import ownership is explicit. `epi-dossier` publishes its own generated `docs/` artifact, then dispatches a `newsdesk_published` event here when the cross-repo dispatch token is configured. This repo also runs `.github/workflows/deploy-pages.yml` hourly at minute `:32` UTC and imports `dteichrow/epi-dossier` directly during `src.build_site`, so the public Pages artifact does not depend on a sibling repo checkout.
+Browser verification covers 390, 768, and 1440 pixel viewports, all six exhibit interactions, URL restoration, filters, resets, source access, keyboard focus, WCAG A/AA checks, lazy 3D loading, and WebGL/third-party failure. Reports and screenshots go to `output/playwright/`. Lighthouse uses a 390×844 mobile viewport, simulated 150 ms RTT, 1638.4 Kbps throughput, and 4× CPU slowdown. It requires score ≥90, LCP ≤2500 ms and CLS ≤0.1. Reports go to `output/lighthouse/`.
 
-## Routine Health Check
+## Actual publishing triggers and gate
 
-Run the structural health check:
+- `substack_sync`: hourly at minute **27 UTC**, manual dispatch, and selected source pushes. It preserves the existing archive when discovery fails. Curated editorial summaries, captions and relationships survive synchronization.
+- `deploy_pages`: minutes **23 and 53 UTC** and manual dispatch. It does **not** run on push or `repository_dispatch`. An upstream dispatch alone is not a deployment guarantee.
+- `quality_gate`: pull requests and main-branch changes to source, assets, data, tests and validation configuration.
 
-```bash
-python scripts/repo_doctor.py
-python scripts/repo_doctor.py --json
-```
+Both deployment and quality checks call `validate-artifact.yml`. The deployment path builds once, validates sources and Python behavior, runs browser/accessibility/mobile tests and Lighthouse, records the artifact manifest, and only then uploads `docs/`. The deployment job requires this job to succeed and deploys its uploaded artifact without rebuilding. Pages runs are serialized. Failed checks leave production on its last successful deployment.
 
-Run live route checks when diagnosing drift:
+`docs/build-manifest.json` records the source commit and file hashes. Verification reports are retained as GitHub Actions artifacts for 30 days. Scheduled builds may import a later Newsdesk collection; each tested artifact records its own complete hashes.
 
-```bash
-python scripts/repo_doctor.py --check-live
-```
+## Evidence and fallback behavior
 
-## Local Validation
+- Unknown publication dates remain unknown. HTTP modification time is a separate field; discovery and retrieval dates are separately named.
+- Story country and region labels use the same underlying records. Multi-region coverage is explicit. Inferred coverage geography is not a geocoded case count.
+- Unknown, missing, estimated, not-applicable, and zero counts have different displays.
+- The four maps use bundled land geometry and locally served Leaflet. Static cited records remain readable when the map fails.
+- The ship's SVG, labeled controls, mechanism descriptions, cases and citations remain usable without WebGL. No 3D payload is requested by ordinary pages.
+- Motion starts through a visitor control. Existing explicit recording/presentation URLs remain available. Reduced-motion preferences disable visual animation.
 
-Use these before publishing changes that affect generated pages, source registries, or workflows:
+## Post-deployment verification and recovery
 
-```bash
-python scripts/repo_doctor.py --json
-python -m src.build_site --site-base-url /
-python scripts/validate_tool_sources.py
-python scripts/smoke_test_tool_pages.py
-python -m pytest
-```
+Check the successful deployment's commit and public build manifest, then visit the homepage, services, Newsdesk and all six exhibits at `https://dteichrow.github.io/`. The existing canonical domain and CNAME file are preserved; this change does not modify DNS or GitHub's custom-domain setting.
 
-## Failure Triage
+Use `git revert` to undo a published source change, rerun validation, and manually dispatch `deploy_pages`. Do not bypass a failed artifact gate. Diagnose an upstream collection problem in `epi-dossier`; diagnose page rendering, search, CSS or delivery here.
 
-Start with the source of truth that matches the symptom:
+## Working-tree policy
 
-- Missing or stale essay: inspect `content/posts.yml`, `notes/substack-sync-incremental.json`, and the `substack_sync` workflow log.
-- Live page stale but `docs/` current: inspect `deploy_pages` workflow and GitHub Pages deployment status.
-- Newsdesk mirror stale: inspect the `epi-dossier` publish run first, then the latest `deploy_pages` run here. The expected triggers are `repository_dispatch` event `newsdesk_published`, the hourly scheduled import, manual dispatch, or a push to `main`.
-- Broken tool page: run `scripts/validate_tool_sources.py`, `scripts/smoke_test_tool_pages.py`, then `pytest`.
-
-## Generated File Policy
-
-The generated `docs/` tree is intentionally tracked because GitHub Pages deploys from it. Private local work should stay out of git:
-
-- `.env` files.
-- local databases.
-- private application and outreach material.
-- browser automation output.
-- one-off scratch media.
-
-Before staging, inspect:
-
-```bash
-git status --short
-git diff --stat
-git diff --cached --stat
-```
-
-## Dirty Checkout Policy
-
-For operational fixes, use a clean clone or temporary worktree from `origin/main` when the local checkout is dirty. Keep source changes, generated-page rebuilds, and workflow fixes separable unless a single commit needs both.
-
-## Manual Verification
-
-After deployment, verify:
-
-```text
-https://dteichrow.github.io/
-https://dteichrow.github.io/essays/
-https://dteichrow.github.io/newsdesk/
-https://dteichrow.github.io/app_exports/latest.json
-```
-
-If the custom domain is unreliable, verify against `https://dteichrow.github.io/` first.
-
-## Recovery
-
-- Prefer `git revert` for a bad published commit.
-- Rebuild locally before re-running deployment.
-- Do not force a Substack sync commit when the sync report is degraded.
-- If Pages deployment is delayed, check whether a previous Pages run is still settling before dispatching another deployment.
+Use an isolated checkout when the user's working directory is dirty. Original local changes must remain intact. Generated `docs/` is tracked as a reproducible public artifact; private databases, credentials, outreach, scratch media, browser dependencies and reports remain untracked. Review `git diff --cached` before publishing.

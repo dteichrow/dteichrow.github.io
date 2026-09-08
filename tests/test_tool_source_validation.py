@@ -11,7 +11,9 @@ SOURCE_REGISTRY_PATH = PROJECT_ROOT / "data" / "sources" / "sources.json"
 
 
 def load_validator():
-    spec = importlib.util.spec_from_file_location("validate_tool_sources", VALIDATOR_PATH)
+    spec = importlib.util.spec_from_file_location(
+        "validate_tool_sources", VALIDATOR_PATH
+    )
     assert spec is not None
     module = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
@@ -23,7 +25,13 @@ def test_source_registry_has_required_backbone_fields() -> None:
     registry = json.loads(SOURCE_REGISTRY_PATH.read_text())
 
     assert registry["schema_version"] == "1.0.0"
-    assert set(registry["confidence_scale"]) == {"high", "moderate", "low", "contested", "speculative"}
+    assert set(registry["confidence_scale"]) == {
+        "high",
+        "moderate",
+        "low",
+        "contested",
+        "speculative",
+    }
     assert len(registry["sources"]) >= 400
 
     by_id = {source["source_id"]: source for source in registry["sources"]}

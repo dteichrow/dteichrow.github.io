@@ -44,7 +44,13 @@ RSS_URL = f"{SUBSTACK_BASE}/feed"
 READER_BASE_URL = "https://r.jina.ai/http://"
 READER_RSS_URL = f"{READER_BASE_URL}{urlparse(SUBSTACK_BASE).netloc}/feed"
 POST_BODIES_DIR = CONTENT_DIR / "post_bodies"
-NOINDEX_POST_STRATEGIES = {"noindex", "noindex_stub_private", "private", "draft", "hidden"}
+NOINDEX_POST_STRATEGIES = {
+    "noindex",
+    "noindex_stub_private",
+    "private",
+    "draft",
+    "hidden",
+}
 LEGACY_FLASHCARD_FIELDS = {
     "flashcards",
     "flashcards_generated_at",
@@ -168,10 +174,14 @@ class SubstackBodySanitizer(HTMLParser):
         while self.open_tags:
             self.parts.append(f"</{self.open_tags.pop()}>")
 
-    def _clean_attrs(self, tag: str, attrs: list[tuple[str, str | None]]) -> list[tuple[str, str]]:
+    def _clean_attrs(
+        self, tag: str, attrs: list[tuple[str, str | None]]
+    ) -> list[tuple[str, str]]:
         indexed = {name.lower(): value for name, value in attrs if name and value}
         if tag == "a":
             href = indexed.get("href", "").strip()
+            if re.fullmatch(r"10\.\d{4,9}/\S+", href):
+                href = "https://doi.org/" + href
             if not _is_safe_body_url(href):
                 return []
             return [
@@ -206,7 +216,9 @@ def _is_safe_body_url(value: str) -> bool:
     parsed = urlparse(value)
     if parsed.scheme and parsed.scheme.lower() not in SAFE_URL_SCHEMES:
         return False
-    if not parsed.scheme and value.startswith("//"):
+    if not parsed.scheme and (
+        value.startswith("//") or any(char.isspace() for char in unquote(value))
+    ):
         return False
     return True
 
@@ -261,10 +273,14 @@ def _post_is_public(post: dict[str, Any]) -> bool:
         strategy = "summary_only"
     if strategy in NOINDEX_POST_STRATEGIES:
         return False
-    return bool(post.get("canonical_url")) and _is_substack_post_url(str(post.get("canonical_url")))
+    return bool(post.get("canonical_url")) and _is_substack_post_url(
+        str(post.get("canonical_url"))
+    )
 
 
-def _body_dir_for_manifest(manifest_path: Path | None, body_dir: Path | None = None) -> Path:
+def _body_dir_for_manifest(
+    manifest_path: Path | None, body_dir: Path | None = None
+) -> Path:
     if body_dir is not None:
         return body_dir
     if manifest_path is None:
@@ -285,7 +301,9 @@ def _relative_body_path(path: Path) -> str:
         return resolved_path.as_posix()
 
 
-def _archive_post_to_record(post: dict[str, Any], *, source_mode: str) -> dict[str, Any] | None:
+def _archive_post_to_record(
+    post: dict[str, Any], *, source_mode: str
+) -> dict[str, Any] | None:
     canonical_url = post.get("canonical_url")
     if not canonical_url:
         return None
@@ -295,9 +313,17 @@ def _archive_post_to_record(post: dict[str, Any], *, source_mode: str) -> dict[s
         "title": post.get("title"),
         "date": parse_iso_date(post.get("post_date")),
         "canonical_url": canonical_url,
-        "excerpt": clean_text(post.get("description") or post.get("truncated_body_text") or post.get("search_engine_description")),
+        "excerpt": clean_text(
+            post.get("description")
+            or post.get("truncated_body_text")
+            or post.get("search_engine_description")
+        ),
         "cover_image": normalize_cover_image_url(str(post.get("cover_image") or "")),
-        "upstream_tags": [tag.get("name") for tag in post.get("postTags", []) if isinstance(tag, dict) and tag.get("name")],
+        "upstream_tags": [
+            tag.get("name")
+            for tag in post.get("postTags", [])
+            if isinstance(tag, dict) and tag.get("name")
+        ],
         "source_mode": source_mode,
         "wordcount": post.get("wordcount"),
     }
@@ -342,6 +368,9 @@ def _extract_post_record_from_page(html_text: str, url: str) -> dict[str, Any]:
         or meta_content(html_text, "name", "description")
         or meta_content(html_text, "property", "og:description")
     )
+    body_excerpt, image_caption = article_text_and_caption(post.get("body_html") or "")
+    if body_excerpt and not post.get("description"):
+        excerpt = body_excerpt
     tags = [tag.get("name") for tag in post.get("postTags", []) if tag.get("name")]
     canonical_url = (
         post.get("canonical_url")
@@ -355,6 +384,7 @@ def _extract_post_record_from_page(html_text: str, url: str) -> dict[str, Any]:
         "date": parse_iso_date(post.get("post_date")),
         "canonical_url": canonical_url,
         "excerpt": excerpt,
+        "image_caption": image_caption,
         "cover_image": normalize_cover_image_url(
             str(
                 post.get("cover_image")
@@ -413,7 +443,9 @@ def _parse_sitemap_entries(xml_text: str) -> list[dict[str, str]]:
             entries.append(
                 {
                     "url": url,
-                    "lastmod": parse_iso_date((lastmod.text or "").strip()) if lastmod is not None else "",
+                    "lastmod": parse_iso_date((lastmod.text or "").strip())
+                    if lastmod is not None
+                    else "",
                 }
             )
     return entries
@@ -459,8 +491,12 @@ def _reader_url(url: str) -> str:
 def _parse_reader_rss(reader_text: str) -> list[dict[str, Any]]:
     records: list[dict[str, Any]] = []
     seen_urls: set[str] = set()
-    link_pattern = re.compile(r"\]\((https://theedgeofepidemiology\.substack\.com/p/[^)\s]+)\)")
-    date_pattern = re.compile(r"(?m)^([A-Z][a-z]{2}, \d{2} [A-Z][a-z]{2} \d{4} \d{2}:\d{2}:\d{2} GMT)$")
+    link_pattern = re.compile(
+        r"\]\((https://theedgeofepidemiology\.substack\.com/p/[^)\s]+)\)"
+    )
+    date_pattern = re.compile(
+        r"(?m)^([A-Z][a-z]{2}, \d{2} [A-Z][a-z]{2} \d{4} \d{2}:\d{2}:\d{2} GMT)$"
+    )
     for match in link_pattern.finditer(reader_text):
         url = match.group(1)
         if url in seen_urls:
@@ -470,7 +506,9 @@ def _parse_reader_rss(reader_text: str) -> list[dict[str, Any]]:
         published_at = ""
         if date_match:
             try:
-                published_at = parsedate_to_datetime(date_match.group(1)).date().isoformat()
+                published_at = (
+                    parsedate_to_datetime(date_match.group(1)).date().isoformat()
+                )
             except (TypeError, ValueError):
                 pass
         records.append(
@@ -513,7 +551,9 @@ def _extract_post_record_from_reader(reader_text: str, url: str) -> dict[str, An
         "cover_image": extract_cover_image_from_markdown(markdown_content),
         "upstream_tags": [],
         "source_mode": "substack_reader",
-        "wordcount": len(re.findall(r"[A-Za-z0-9]+(?:['-][A-Za-z0-9]+)?", markdown_content)),
+        "wordcount": len(
+            re.findall(r"[A-Za-z0-9]+(?:['-][A-Za-z0-9]+)?", markdown_content)
+        ),
     }
 
 
@@ -550,7 +590,11 @@ def reader_markdown_excerpt(markdown_content: str) -> str:
             skipped_leading_image = skipped_leading_image or not excerpt_parts
             if not text:
                 continue
-        if skipped_leading_image and not excerpt_parts and _is_leading_image_caption(paragraph, text):
+        if (
+            skipped_leading_image
+            and not excerpt_parts
+            and _is_leading_image_caption(paragraph, text)
+        ):
             continue
         if text:
             excerpt_parts.append(text)
@@ -560,21 +604,44 @@ def reader_markdown_excerpt(markdown_content: str) -> str:
 
 def _is_leading_image_caption(paragraph: str, text: str) -> bool:
     raw = paragraph.strip()
-    return (
-        raw.startswith("**Credit:")
-        or raw.startswith("Credit:")
+    return bool(
+        re.match(
+            r"^(?:image|photo|photograph|illustration|figure)?\s*(?:credit|source|caption)s?\s*:",
+            text,
+            re.I,
+        )
         or (raw.startswith("_") and raw.endswith("_"))
-        or text.lower().startswith("credit:")
     )
+
+
+def article_text_and_caption(body_html: str) -> tuple[str, str]:
+    """Keep figure captions separate from article prose at ingestion."""
+    from bs4 import BeautifulSoup
+
+    soup = BeautifulSoup(body_html, "html.parser")
+    caption = soup.find("figcaption")
+    caption_text = caption.get_text(" ", strip=True) if caption else ""
+    for element in soup.select(
+        "figure, figcaption, script, style, button, nav, .image-caption"
+    ):
+        element.decompose()
+    prose = " ".join(
+        p.get_text(" ", strip=True) for p in soup.select("p") if p.get_text(strip=True)
+    )
+    return clean_text(prose)[:600], clean_text(caption_text)
 
 
 def enrich_missing_cover_image(url: str, source_mode: str) -> str:
     fetchers = (
-        (lambda: _extract_post_record_from_reader(fetch_text(_reader_url(url)), url),
-         lambda: _extract_post_record_from_page(fetch_text(url), url))
+        (
+            lambda: _extract_post_record_from_reader(fetch_text(_reader_url(url)), url),
+            lambda: _extract_post_record_from_page(fetch_text(url), url),
+        )
         if source_mode.startswith("substack_reader")
-        else (lambda: _extract_post_record_from_page(fetch_text(url), url),
-              lambda: _extract_post_record_from_reader(fetch_text(_reader_url(url)), url))
+        else (
+            lambda: _extract_post_record_from_page(fetch_text(url), url),
+            lambda: _extract_post_record_from_reader(fetch_text(_reader_url(url)), url),
+        )
     )
     last_error: Exception | None = None
     for fetch_record in fetchers:
@@ -600,7 +667,9 @@ def _report_dir_for_manifest(manifest_path: Path | None) -> Path:
     return NOTES_DIR
 
 
-def _write_report(mode: str, report: dict[str, Any], manifest_path: Path | None = None) -> None:
+def _write_report(
+    mode: str, report: dict[str, Any], manifest_path: Path | None = None
+) -> None:
     report_dir = _report_dir_for_manifest(manifest_path)
     ensure_dir(report_dir)
     write_json(report_dir / f"substack-sync-{mode}.json", report)
@@ -621,13 +690,19 @@ def _recent_posts_from_archive() -> list[dict[str, Any]]:
     return list(recent_posts.values())
 
 
-def _recent_posts_from_sitemap(existing_posts: list[dict[str, Any]]) -> list[dict[str, Any]]:
+def _recent_posts_from_sitemap(
+    existing_posts: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
     sitemap_xml = fetch_text(
         SITEMAP_URL,
         headers={"Accept": "application/xml,text/xml;q=0.9,*/*;q=0.8"},
     )
     sitemap_entries = _parse_sitemap_entries(sitemap_xml)
-    existing_urls = {post.get("canonical_url") for post in existing_posts if post.get("canonical_url")}
+    existing_urls = {
+        post.get("canonical_url")
+        for post in existing_posts
+        if post.get("canonical_url")
+    }
     existing_slugs = {post.get("slug") for post in existing_posts if post.get("slug")}
     candidates: list[dict[str, Any]] = []
     for entry in sitemap_entries:
@@ -653,11 +728,15 @@ def _recent_posts_from_sitemap(existing_posts: list[dict[str, Any]]) -> list[dic
 
 
 def _recent_posts_from_reader() -> list[dict[str, Any]]:
-    reader_text = fetch_text(READER_RSS_URL, headers={"Accept": "text/plain, text/markdown;q=0.9, */*;q=0.8"})
+    reader_text = fetch_text(
+        READER_RSS_URL, headers={"Accept": "text/plain, text/markdown;q=0.9, */*;q=0.8"}
+    )
     return _parse_reader_rss(reader_text)
 
 
-def _load_incremental_candidates(existing_posts: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], str, str | None]:
+def _load_incremental_candidates(
+    existing_posts: list[dict[str, Any]],
+) -> tuple[list[dict[str, Any]], str, str | None]:
     errors: list[str] = []
     try:
         return _recent_posts_from_archive_api(), "archive_api", None
@@ -666,13 +745,19 @@ def _load_incremental_candidates(existing_posts: list[dict[str, Any]]) -> tuple[
     try:
         rss_xml = fetch_text(
             RSS_URL,
-            headers={"Accept": "application/rss+xml, application/xml;q=0.9, text/xml;q=0.8, */*;q=0.5"},
+            headers={
+                "Accept": "application/rss+xml, application/xml;q=0.9, text/xml;q=0.8, */*;q=0.5"
+            },
         )
         return _parse_rss_feed(rss_xml), "rss", None
     except Exception as rss_exc:  # noqa: BLE001
         errors.append(f"rss={rss_exc}")
         try:
-            return _recent_posts_from_sitemap(existing_posts), "sitemap_fallback", "; ".join(errors)
+            return (
+                _recent_posts_from_sitemap(existing_posts),
+                "sitemap_fallback",
+                "; ".join(errors),
+            )
         except Exception as sitemap_exc:  # noqa: BLE001
             errors.append(f"sitemap={sitemap_exc}")
             try:
@@ -682,7 +767,9 @@ def _load_incremental_candidates(existing_posts: list[dict[str, Any]]) -> tuple[
                 return [], "manifest_only", "; ".join(errors)
 
 
-def _upstream_fields_changed(existing: dict[str, Any] | None, incoming: dict[str, Any]) -> bool:
+def _upstream_fields_changed(
+    existing: dict[str, Any] | None, incoming: dict[str, Any]
+) -> bool:
     if existing is None:
         return True
     fields_to_compare = [
@@ -699,7 +786,9 @@ def _upstream_fields_changed(existing: dict[str, Any] | None, incoming: dict[str
     for field in fields_to_compare:
         if (existing.get(field) or "") != (incoming.get(field) or ""):
             return True
-    return canonicalize_list(existing.get("upstream_tags")) != canonicalize_list(incoming.get("upstream_tags"))
+    return canonicalize_list(existing.get("upstream_tags")) != canonicalize_list(
+        incoming.get("upstream_tags")
+    )
 
 
 def backfill_posts(manifest_path: Path | None = None) -> dict[str, Any]:
@@ -736,7 +825,9 @@ def backfill_posts(manifest_path: Path | None = None) -> dict[str, Any]:
             failures.append({"url": url, "error": str(exc)})
 
     pruned = _prune_missing_substack_posts(merged, sitemap_urls)
-    final_posts = sort_posts([_strip_legacy_flashcard_fields(post) for post in merged.values()])
+    final_posts = sort_posts(
+        [_strip_legacy_flashcard_fields(post) for post in merged.values()]
+    )
     save_posts_manifest(final_posts, manifest_path)
     report = {
         "mode": "backfill",
@@ -782,13 +873,18 @@ def incremental_sync(manifest_path: Path | None = None) -> dict[str, Any]:
             and not incoming.get("cover_image")
         ):
             try:
-                cover_image = enrich_missing_cover_image(url, str(incoming.get("source_mode") or ""))
+                cover_image = enrich_missing_cover_image(
+                    url, str(incoming.get("source_mode") or "")
+                )
                 if cover_image:
                     incoming = {**incoming, "cover_image": cover_image}
                     cover_images_enriched += 1
             except Exception as exc:  # noqa: BLE001
                 failures.append({"url": url, "error": f"cover image enrichment: {exc}"})
-        if existing is not None and incoming.get("source_mode") == "substack_reader_rss":
+        if (
+            existing is not None
+            and incoming.get("source_mode") == "substack_reader_rss"
+        ):
             # Reader RSS is intentionally sparse; never let it overwrite a
             # previously captured canonical record. It can still repair a
             # record that was previously ingested without a cover image.
@@ -799,7 +895,9 @@ def incremental_sync(manifest_path: Path | None = None) -> dict[str, Any]:
         if existing is None:
             try:
                 if incoming.get("source_mode") == "substack_reader_rss":
-                    incoming = _extract_post_record_from_reader(fetch_text(_reader_url(url)), url)
+                    incoming = _extract_post_record_from_reader(
+                        fetch_text(_reader_url(url)), url
+                    )
                 else:
                     incoming = _extract_post_record_from_page(fetch_text(url), url)
                 enriched += 1
@@ -818,7 +916,9 @@ def incremental_sync(manifest_path: Path | None = None) -> dict[str, Any]:
     if current_sitemap_urls is not None:
         pruned = _prune_missing_substack_posts(merged, current_sitemap_urls)
 
-    final_posts = sort_posts([_strip_legacy_flashcard_fields(post) for post in merged.values()])
+    final_posts = sort_posts(
+        [_strip_legacy_flashcard_fields(post) for post in merged.values()]
+    )
     save_posts_manifest(final_posts, manifest_path)
     report = {
         "mode": "incremental",
@@ -827,7 +927,9 @@ def incremental_sync(manifest_path: Path | None = None) -> dict[str, Any]:
         "candidate_count": len(feed_posts),
         "archive_api_count": len(feed_posts) if source_mode == "archive_api" else 0,
         "rss_entry_count": len(feed_posts) if source_mode == "rss" else 0,
-        "sitemap_fallback_count": len(feed_posts) if source_mode == "sitemap_fallback" else 0,
+        "sitemap_fallback_count": len(feed_posts)
+        if source_mode == "sitemap_fallback"
+        else 0,
         "reader_rss_count": len(feed_posts) if source_mode == "reader_rss" else 0,
         "total_manifest_records": len(final_posts),
         "created_records": created,
@@ -848,7 +950,9 @@ def incremental_sync(manifest_path: Path | None = None) -> dict[str, Any]:
     return report
 
 
-def sync_post_bodies(manifest_path: Path | None = None, body_dir: Path | None = None) -> dict[str, Any]:
+def sync_post_bodies(
+    manifest_path: Path | None = None, body_dir: Path | None = None
+) -> dict[str, Any]:
     posts = load_posts_manifest(manifest_path)
     current_sitemap_urls = _current_sitemap_post_urls()
     target_body_dir = _body_dir_for_manifest(manifest_path, body_dir)
@@ -873,14 +977,24 @@ def sync_post_bodies(manifest_path: Path | None = None, body_dir: Path | None = 
         slug = str(record.get("slug") or slug_from_canonical(url))
         try:
             html_text = fetch_text(url)
-            raw_body_html, expected_wordcount = _extract_post_body_payload_from_page(html_text)
+            raw_body_html, expected_wordcount = _extract_post_body_payload_from_page(
+                html_text
+            )
             sanitized_body_html = sanitize_post_body_html(raw_body_html)
             wordcount = _body_wordcount(sanitized_body_html)
             if wordcount < 100:
-                raise ValueError(f"Sanitized body is unexpectedly short: {wordcount} words")
+                raise ValueError(
+                    f"Sanitized body is unexpectedly short: {wordcount} words"
+                )
             existing_wordcount = int(record.get("body_wordcount") or 0)
-            appears_truncated = expected_wordcount is not None and wordcount < int(expected_wordcount * 0.7)
-            if record.get("body_source_mode") == "local_source_file" and appears_truncated and existing_wordcount > int(wordcount * 1.1):
+            appears_truncated = expected_wordcount is not None and wordcount < int(
+                expected_wordcount * 0.7
+            )
+            if (
+                record.get("body_source_mode") == "local_source_file"
+                and appears_truncated
+                and existing_wordcount > int(wordcount * 1.1)
+            ):
                 kept_local += 1
                 updated_posts.append(record)
                 continue
@@ -893,7 +1007,12 @@ def sync_post_bodies(manifest_path: Path | None = None, body_dir: Path | None = 
             record.pop("body_source_file", None)
             record["body_wordcount"] = wordcount
             record["status"] = "mirrored"
-            if record.get("indexing_strategy") in {"", "noindex_stub", "summary_only", None}:
+            if record.get("indexing_strategy") in {
+                "",
+                "noindex_stub",
+                "summary_only",
+                None,
+            }:
                 record["indexing_strategy"] = "mirrored"
             synced += 1
             synced_slugs.append(slug)
@@ -921,8 +1040,12 @@ def sync_post_bodies(manifest_path: Path | None = None, body_dir: Path | None = 
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Sync Substack posts into the umbrella-site manifest.")
-    parser.add_argument("--mode", choices=["backfill", "incremental", "bodies"], default="incremental")
+    parser = argparse.ArgumentParser(
+        description="Sync Substack posts into the umbrella-site manifest."
+    )
+    parser.add_argument(
+        "--mode", choices=["backfill", "incremental", "bodies"], default="incremental"
+    )
     parser.add_argument("--manifest", type=Path, default=CONTENT_DIR / "posts.yml")
     parser.add_argument("--body-dir", type=Path, default=None)
     args = parser.parse_args()

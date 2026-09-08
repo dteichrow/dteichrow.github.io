@@ -3,6 +3,8 @@ from __future__ import annotations
 from collections import Counter
 import json
 import re
+import shutil
+from bs4 import BeautifulSoup
 from pathlib import Path
 
 from src import build_site
@@ -32,7 +34,9 @@ def test_transform_imported_html_rewrites_known_paths() -> None:
       </body>
     </html>
     """
-    transformed = build_site.transform_imported_html(html_text, active="newsdesk", base_url="/")
+    transformed = build_site.transform_imported_html(
+        html_text, active="newsdesk", base_url="/"
+    )
     assert 'href="/newsdesk/"' in transformed
     assert transformed.count('href="/newsdesk/outbreaks/"') == 2
     assert 'href="/newsdesk/watch/"' in transformed
@@ -55,7 +59,9 @@ def test_transform_imported_html_rewrites_known_paths() -> None:
     assert "Expanding coverage" in transformed
 
 
-def test_import_epidossier_public_keeps_wrapped_newsdesk_pages(tmp_path, monkeypatch) -> None:
+def test_import_epidossier_public_keeps_wrapped_newsdesk_pages(
+    tmp_path, monkeypatch
+) -> None:
     source_docs = tmp_path / "epi_docs"
     app_exports = source_docs / "app_exports"
     app_exports.mkdir(parents=True)
@@ -106,7 +112,10 @@ def test_import_epidossier_public_keeps_wrapped_newsdesk_pages(tmp_path, monkeyp
     result = build_site.import_epidossier_public(target_docs, "/")
 
     assert result["generated_at"] == "2026-05-27T10:50:00"
-    for route in [target_docs / "newsdesk" / "index.html", target_docs / "newsdesk" / "latest.html"]:
+    for route in [
+        target_docs / "newsdesk" / "index.html",
+        target_docs / "newsdesk" / "latest.html",
+    ]:
         text = route.read_text()
         assert "eoe-shell-nav" in text
         assert 'href="/"' in text
@@ -127,12 +136,13 @@ def test_render_post_page_deduplicates_overview_paragraphs() -> None:
         "related_atlases": [],
     }
 
-    page_text = build_site.render_post_page(post, atlases={}, posts=[post], base_url="/")
-    overview_match = re.search(r'<section class="panel detail-grid" id="overview">(.*?)</section>', page_text, flags=re.S)
-
-    assert overview_match is not None
-    assert page_text.count("<h3>Overview</h3>") == 1
-    assert overview_match.group(1).count("<p>Same overview text.</p>") == 1
+    page_text = build_site.render_post_page(
+        post, atlases={}, posts=[post], base_url="/"
+    )
+    body = BeautifulSoup(page_text, "html.parser").body.get_text(" ", strip=True)
+    assert body.count("Same overview text.") == 1
+    assert "Read the full essay" in body
+    assert "Archive note" not in body
 
 
 def test_render_post_page_omits_legacy_study_cards() -> None:
@@ -171,7 +181,9 @@ def test_render_post_page_omits_legacy_study_cards() -> None:
         }
     }
 
-    page_text = build_site.render_post_page(post, atlases=atlases, posts=[post, related_post], base_url="/")
+    page_text = build_site.render_post_page(
+        post, atlases=atlases, posts=[post, related_post], base_url="/"
+    )
 
     assert 'id="study-cards"' not in page_text
     assert '<li><a href="#study-cards">Study cards</a></li>' not in page_text
@@ -194,7 +206,9 @@ def test_render_post_page_does_not_make_metadata_flashcards() -> None:
         "related_atlases": ["revolutionary-war-atlas"],
     }
 
-    page_text = build_site.render_post_page(post, atlases={}, posts=[post], base_url="/")
+    page_text = build_site.render_post_page(
+        post, atlases={}, posts=[post], base_url="/"
+    )
 
     assert 'id="study-cards"' not in page_text
     assert "data-flashcard" not in page_text
@@ -204,7 +218,9 @@ def test_render_post_page_does_not_make_metadata_flashcards() -> None:
 def test_render_post_page_uses_local_body_when_available(tmp_path, monkeypatch) -> None:
     body_path = tmp_path / "content" / "post_bodies" / "local-body.html"
     body_path.parent.mkdir(parents=True)
-    body_path.write_text("<h2>Full local essay</h2><p>This paragraph came from the mirrored Substack body.</p>")
+    body_path.write_text(
+        "<h2>Full local essay</h2><p>This paragraph came from the mirrored Substack body.</p>"
+    )
     monkeypatch.setattr(build_site, "PROJECT_ROOT", tmp_path)
 
     post = {
@@ -219,13 +235,15 @@ def test_render_post_page_uses_local_body_when_available(tmp_path, monkeypatch) 
         "local_body_path": "content/post_bodies/local-body.html",
     }
 
-    page_text = build_site.render_post_page(post, atlases={}, posts=[post], base_url="/")
+    page_text = build_site.render_post_page(
+        post, atlases={}, posts=[post], base_url="/"
+    )
 
     assert '<article class="prose essay-body">' in page_text
     assert "Full local essay" in page_text
     assert "This paragraph came from the mirrored Substack body." in page_text
     assert "Originally published" in page_text
-    assert "Read original" in page_text
+    assert ">The Edge of Epidemiology on Substack</a>" in page_text
     assert "Subscribe" in page_text
     assert "Archive note" not in page_text
 
@@ -243,24 +261,45 @@ def test_render_post_page_keeps_substack_fallback_without_local_body() -> None:
         "local_body_path": "",
     }
 
-    page_text = build_site.render_post_page(post, atlases={}, posts=[post], base_url="/")
+    page_text = build_site.render_post_page(
+        post, atlases={}, posts=[post], base_url="/"
+    )
 
     assert '<article class="prose essay-body">' not in page_text
     assert "Read the full essay" in page_text
-    assert "Archive note" in page_text
+    assert "Archive note" not in page_text
 
 
-def test_import_epidossier_public_imports_outbreak_terminal_routes(tmp_path, monkeypatch) -> None:
+def test_import_epidossier_public_imports_outbreak_terminal_routes(
+    tmp_path, monkeypatch
+) -> None:
     source_docs = tmp_path / "source_docs"
     docs_dir = tmp_path / "docs"
     (source_docs / "app_exports").mkdir(parents=True)
     (source_docs / "archive").mkdir(parents=True)
     (source_docs / "stories").mkdir(parents=True)
     (source_docs / "reference").mkdir(parents=True)
-    (source_docs / "app_exports" / "latest.json").write_text(json.dumps({"generated_at": "2026-05-19T00:00:00", "stories": [], "reference": []}))
+    (source_docs / "app_exports" / "latest.json").write_text(
+        json.dumps(
+            {"generated_at": "2026-05-19T00:00:00", "stories": [], "reference": []}
+        )
+    )
     (source_docs / "latest.md").write_text("# Latest")
-    (source_docs / "archive" / "index.html").write_text("<html><head></head><body>Archive</body></html>")
-    for name in ["latest", "index", "outbreaks", "watch", "africa", "asia", "research", "official", "historical", "notebook"]:
+    (source_docs / "archive" / "index.html").write_text(
+        "<html><head></head><body>Archive</body></html>"
+    )
+    for name in [
+        "latest",
+        "index",
+        "outbreaks",
+        "watch",
+        "africa",
+        "asia",
+        "research",
+        "official",
+        "historical",
+        "notebook",
+    ]:
         filename = f"{name}.html"
         if name == "latest":
             body = '<a href="./outbreaks.html">Outbreak terminal</a>'
@@ -268,9 +307,15 @@ def test_import_epidossier_public_imports_outbreak_terminal_routes(tmp_path, mon
             body = '<h1>Outbreak Terminal</h1><a href="./index.html">Newsdesk home</a>'
         else:
             body = f"<h1>{name}</h1>"
-        (source_docs / filename).write_text(f"<html><head></head><body>{body}</body></html>")
-    (source_docs / "stories" / "demo-story.html").write_text('<html><head></head><body><a href="../outbreaks.html">Outbreak terminal</a></body></html>')
-    (source_docs / "reference" / "ebola-virus-disease.html").write_text('<html><head></head><body><a href="../outbreaks.html">Outbreak terminal</a></body></html>')
+        (source_docs / filename).write_text(
+            f"<html><head></head><body>{body}</body></html>"
+        )
+    (source_docs / "stories" / "demo-story.html").write_text(
+        '<html><head></head><body><a href="../outbreaks.html">Outbreak terminal</a></body></html>'
+    )
+    (source_docs / "reference" / "ebola-virus-disease.html").write_text(
+        '<html><head></head><body><a href="../outbreaks.html">Outbreak terminal</a></body></html>'
+    )
 
     monkeypatch.setattr(build_site, "resolve_epidossier_docs", lambda: source_docs)
 
@@ -280,7 +325,9 @@ def test_import_epidossier_public_imports_outbreak_terminal_routes(tmp_path, mon
     legacy_terminal_page = docs_dir / "newsdesk" / "outbreaks.html"
     root_alias = docs_dir / "outbreaks.html"
     reference_page = docs_dir / "reference" / "ebola-virus-disease.html"
-    legacy_reference_page = docs_dir / "newsdesk" / "reference" / "ebola-virus-disease.html"
+    legacy_reference_page = (
+        docs_dir / "newsdesk" / "reference" / "ebola-virus-disease.html"
+    )
     story_page = docs_dir / "stories" / "demo-story.html"
     legacy_story_page = docs_dir / "newsdesk" / "stories" / "demo-story.html"
     newsdesk_home = docs_dir / "newsdesk" / "index.html"
@@ -302,7 +349,9 @@ def test_import_epidossier_public_imports_outbreak_terminal_routes(tmp_path, mon
     assert 'http-equiv="refresh"' not in newsdesk_latest.read_text()
 
 
-def test_resolve_epidossier_docs_prefers_configured_docs_path(tmp_path, monkeypatch) -> None:
+def test_resolve_epidossier_docs_prefers_configured_docs_path(
+    tmp_path, monkeypatch
+) -> None:
     docs_path = tmp_path / "epi-docs"
     docs_path.mkdir()
 
@@ -311,7 +360,9 @@ def test_resolve_epidossier_docs_prefers_configured_docs_path(tmp_path, monkeypa
     assert build_site.resolve_epidossier_docs() == docs_path
 
 
-def test_resolve_epidossier_docs_rejects_missing_configured_docs_path(tmp_path, monkeypatch) -> None:
+def test_resolve_epidossier_docs_rejects_missing_configured_docs_path(
+    tmp_path, monkeypatch
+) -> None:
     docs_path = tmp_path / "missing-docs"
     monkeypatch.setenv("EOE_EPI_DOSSIER_DOCS", str(docs_path))
 
@@ -320,7 +371,9 @@ def test_resolve_epidossier_docs_rejects_missing_configured_docs_path(tmp_path, 
     except FileNotFoundError as exc:
         assert "Configured epi-dossier docs path does not exist" in str(exc)
     else:
-        raise AssertionError("resolve_epidossier_docs should fail on a missing configured docs path")
+        raise AssertionError(
+            "resolve_epidossier_docs should fail on a missing configured docs path"
+        )
 
 
 def test_build_site_writes_core_routes(tmp_path, monkeypatch) -> None:
@@ -466,15 +519,25 @@ atlases:
         }
         (app_exports / "latest.json").write_text(json.dumps(latest))
         (app_exports / "atlas.json").write_text(json.dumps({"atlas": []}))
-        (app_exports / "manifest.json").write_text(json.dumps({"latest_run_id": "demo"}))
+        (app_exports / "manifest.json").write_text(
+            json.dumps({"latest_run_id": "demo"})
+        )
         (target_docs / "newsdesk").mkdir(parents=True, exist_ok=True)
-        (target_docs / "newsdesk" / "index.html").write_text("<html><body>Newsdesk</body></html>")
+        (target_docs / "newsdesk" / "index.html").write_text(
+            "<html><body>Newsdesk</body></html>"
+        )
         (target_docs / "notebook").mkdir(parents=True, exist_ok=True)
-        (target_docs / "notebook" / "index.html").write_text("<html><body>Notebook</body></html>")
+        (target_docs / "notebook" / "index.html").write_text(
+            "<html><body>Notebook</body></html>"
+        )
         (target_docs / "stories").mkdir(parents=True, exist_ok=True)
-        (target_docs / "stories" / "demo-story.html").write_text("<html><body>Story</body></html>")
+        (target_docs / "stories" / "demo-story.html").write_text(
+            "<html><body>Story</body></html>"
+        )
         (target_docs / "reference").mkdir(parents=True, exist_ok=True)
-        (target_docs / "reference" / "yellow-fever.html").write_text("<html><body>Ref</body></html>")
+        (target_docs / "reference" / "yellow-fever.html").write_text(
+            "<html><body>Ref</body></html>"
+        )
         return latest
 
     def fake_import_external_pathogen(target_docs: Path, base_url: str) -> None:
@@ -492,17 +555,31 @@ atlases:
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text("<html><body>Viking</body></html>")
 
-    def fake_import_external_revolutionary_war_atlas(target_docs: Path, base_url: str) -> None:
+    def fake_import_external_revolutionary_war_atlas(
+        target_docs: Path, base_url: str
+    ) -> None:
         path = target_docs / "atlases" / "revolutionary-war" / "index.html"
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text("<html><body>Revolutionary War atlas</body></html>")
 
     monkeypatch.setattr(build_site, "copy_static_assets", fake_copy_static_assets)
-    monkeypatch.setattr(build_site, "import_epidossier_public", fake_import_epidossier_public)
-    monkeypatch.setattr(build_site, "import_external_pathogen", fake_import_external_pathogen)
-    monkeypatch.setattr(build_site, "import_external_maritime", fake_import_external_maritime)
-    monkeypatch.setattr(build_site, "import_external_viking", fake_import_external_viking)
-    monkeypatch.setattr(build_site, "import_external_revolutionary_war_atlas", fake_import_external_revolutionary_war_atlas)
+    monkeypatch.setattr(
+        build_site, "import_epidossier_public", fake_import_epidossier_public
+    )
+    monkeypatch.setattr(
+        build_site, "import_external_pathogen", fake_import_external_pathogen
+    )
+    monkeypatch.setattr(
+        build_site, "import_external_maritime", fake_import_external_maritime
+    )
+    monkeypatch.setattr(
+        build_site, "import_external_viking", fake_import_external_viking
+    )
+    monkeypatch.setattr(
+        build_site,
+        "import_external_revolutionary_war_atlas",
+        fake_import_external_revolutionary_war_atlas,
+    )
 
     result = build_site.build_site(docs_dir=docs_dir, base_url="/")
     assert result["posts"] == 2
@@ -517,9 +594,13 @@ atlases:
     assert (docs_dir / "topics" / "index.html").exists()
     assert (docs_dir / "topics" / "historical-epidemiology" / "index.html").exists()
     assert (docs_dir / "atlases" / "index.html").exists()
-    revolutionary_text = (docs_dir / "atlases" / "revolutionary-war" / "index.html").read_text()
+    revolutionary_text = (
+        docs_dir / "atlases" / "revolutionary-war" / "index.html"
+    ).read_text()
     assert "Revolutionary War atlas" in revolutionary_text
-    assert "Revolutionary War Disease Atlas | Edge of Epidemiology" in revolutionary_text
+    assert (
+        "Revolutionary War Disease Atlas | Edge of Epidemiology" in revolutionary_text
+    )
     assert (docs_dir / "tools" / "histsearch" / "index.html").exists()
     assert (docs_dir / "historical" / "index.html").exists()
     assert (docs_dir / "opportunities" / "index.html").exists()
@@ -527,7 +608,10 @@ atlases:
     posts_export = json.loads((docs_dir / "app_exports" / "posts.json").read_text())
     assert posts_export["count"] == 2
     assert posts_export["posts"][0]["slug"] == "first-post"
-    assert {post["slug"] for post in posts_export["posts"]} == {"first-post", "legacy-visible-post"}
+    assert {post["slug"] for post in posts_export["posts"]} == {
+        "first-post",
+        "legacy-visible-post",
+    }
     assert "site_visibility" not in posts_export["posts"][0]
     assert "local_body_path" not in posts_export["posts"][0]
     assert "body_synced_at" not in posts_export["posts"][0]
@@ -542,90 +626,111 @@ atlases:
     assert (docs_dir / "sitemap.xml").exists()
     home_text = (docs_dir / "index.html").read_text()
     assert "Devin Teichrow" in home_text
-    assert "Disease follows human arrangements" in home_text
+    assert (
+        "Disease follows human arrangements"
+        in BeautifulSoup(home_text, "html.parser").get_text()
+    )
     assert '<h1 class="hero-title">' in home_text
     assert '<h1 class="site-brand">' not in home_text
     assert '<link rel="canonical" href="https://devinteichrow.com/" />' in home_text
-    assert '<link rel="alternate" type="application/rss+xml" title="The Edge of Epidemiology RSS" href="https://theedgeofepidemiology.substack.com/feed" />' in home_text
-    assert '<meta property="og:title" content="The Edge of Epidemiology | Devin Teichrow" />' in home_text
+    assert (
+        '<link rel="alternate" type="application/rss+xml" title="The Edge of Epidemiology RSS" href="https://theedgeofepidemiology.substack.com/feed" />'
+        in home_text
+    )
+    assert (
+        '<meta property="og:title" content="The Edge of Epidemiology | Devin Teichrow" />'
+        in home_text
+    )
     assert '<meta name="twitter:card" content="summary_large_image" />' in home_text
     assert '<script type="application/ld+json" data-eoe-seo>' in home_text
-    assert "UCLA-trained epidemiologist and neuroscience researcher at UC Irvine" in home_text
+    assert "UCLA-trained epidemiologist at UC Irvine" in home_text
     assert "hero-notebook" not in home_text
-    assert "hero-status-line" in home_text
-    assert "hero-status-label" in home_text
+    assert "opening-work" in home_text
+    assert "The latest essay" in home_text
     assert "newsdesk-panel" in home_text
-    assert "atlas-panel" in home_text
+    assert "The exhibit collection" in home_text
     assert "story-card" in home_text
-    assert "atlas-card" in home_text
+    assert "flagship-preview" in home_text
     assert "essay-card" in home_text
     assert "essay-card-featured" in home_text
     assert "https://images.example/cover.jpg" in home_text
-    assert "reference-card" in home_text
-    assert "Read the essays" in home_text
+    assert "Current reporting" in home_text
+    assert "All essays" in home_text
     assert 'href="/opportunities/"' in home_text
     essays_index = (docs_dir / "essays" / "index.html").read_text()
     assert "<h2>2 essays</h2>" in essays_index
     assert "Legacy Visible Post" in essays_index
     assert "Removed Post" not in essays_index
-    assert "Selected projects, collaborations, and commissions" in home_text
-    assert "devinteichrow@gmail.com" in home_text
-    assert "site-brand-byline" in home_text
-    assert "by Devin Teichrow" in home_text
+    assert "See projects and prices" in home_text
+    assert 'href="/opportunities/"' in home_text
+    assert "site-brand" in home_text
+    assert "By Devin Teichrow" in home_text or "I’m Devin Teichrow" in home_text
     assert "Unified site" not in home_text
-    assert 'button primary' not in home_text
+    assert "button primary" in home_text
     assert "site-header-inner" in home_text
-    assert home_text.index('<header class="site-header">') < home_text.index('<main class="page">')
+    assert home_text.index('<header class="site-header">') < home_text.index(
+        '<main class="page"'
+    )
     essays_text = (docs_dir / "essays" / "index.html").read_text()
     assert "essay-card-featured" in essays_text
     assert "https://images.example/cover.jpg" in essays_text
     about_text = (docs_dir / "about" / "index.html").read_text()
     assert "About Devin Teichrow and The Edge of Epidemiology" in about_text
-    assert "I’m Devin Teichrow, an epidemiologist based at the University of California, Irvine" in about_text
+    assert (
+        "I’m Devin Teichrow, an epidemiologist based at the University of California, Irvine"
+        in about_text
+    )
     assert "plague outbreaks during war" in about_text
     assert "The Edge of Epidemiology on Substack" in about_text
     assert "diseases do not move only through bodies" not in about_text
     opportunities_text = (docs_dir / "opportunities" / "index.html").read_text()
-    assert "Send me research work that needs to become clearer, public, or usable." in opportunities_text
-    assert "Three easy ways to send work my way." in opportunities_text
-    assert "Download referral one-pager" in opportunities_text
+    services = BeautifulSoup(opportunities_text, "html.parser")
+    assert len(services.select(".service-package-card")) == 5
+    assert "Work with me" in services.get_text()
+    assert "Download the referral guide" in opportunities_text
+    assert "Domain direction" not in opportunities_text
+    assert "DNS" not in services.get_text()
     assert "devinteichrow@gmail.com" in opportunities_text
-    assert "https://x.com/edgeofepi" in opportunities_text
-    assert "https://www.instagram.com/edgeofepi/" in opportunities_text
-    assert "https://www.linkedin.com/in/devin-teichrow-msc-938942254" in opportunities_text
-    assert "https://medium.com/@EdgeofEpi" in opportunities_text
-    assert "The Edge of Epidemiology" in opportunities_text
-    assert "Domain direction: use devinteichrow.com" in opportunities_text
-    assert "youtube.com" not in opportunities_text
-    assert opportunities_text.count('class="opportunities-section"') == 0
-    assert opportunities_text.count('class="opportunities-showcase"') == 1
-    assert "Evidence and analysis" in opportunities_text
-    assert "Science communication" in opportunities_text
-    assert "Interactive exhibits and atlases" in opportunities_text
-    assert "Talks, workshops, and teaching" not in opportunities_text
-    assert "devinteichrow.com" in opportunities_text
+    assert "Define the deliverable" in opportunities_text
+    assert "Build and review" in opportunities_text
+    assert "Hand over the work" in opportunities_text
+    assert "Example from my own work" in opportunities_text
     post_text = (docs_dir / "essays" / "first-post" / "index.html").read_text()
     assert "First Local SEO Title" in post_text
     assert '<meta name="robots" content="noindex,follow" />' not in post_text
-    assert '<link rel="canonical" href="https://devinteichrow.com/essays/first-post/" />' in post_text
+    assert (
+        '<link rel="canonical" href="https://devinteichrow.com/essays/first-post/" />'
+        in post_text
+    )
     assert '<meta property="og:type" content="article" />' in post_text
     assert '"@type": "Article"' in post_text
-    assert '"isBasedOn": "https://theedgeofepidemiology.substack.com/p/first-post"' in post_text
-    assert "Contents" in post_text
+    assert (
+        '"isBasedOn": "https://theedgeofepidemiology.substack.com/p/first-post"'
+        in post_text
+    )
+    assert "Read the full essay" in post_text
     assert 'id="study-cards"' not in post_text
     assert "data-flashcard" not in post_text
     assert "Retain the essay" not in post_text
-    assert "Archive note" in post_text
-    assert "This page keeps the essay connected to related topics, maps, and reference pages" in post_text
-    topic_text = (docs_dir / "topics" / "historical-epidemiology" / "index.html").read_text()
-    assert '<link rel="canonical" href="https://devinteichrow.com/topics/historical-epidemiology/" />' in topic_text
+    assert "Archive note" not in post_text
+    assert "The full essay is available" in post_text
+    topic_text = (
+        docs_dir / "topics" / "historical-epidemiology" / "index.html"
+    ).read_text()
+    assert (
+        '<link rel="canonical" href="https://devinteichrow.com/topics/historical-epidemiology/" />'
+        in topic_text
+    )
     assert "First Local SEO Title" in topic_text
     robots_text = (docs_dir / "robots.txt").read_text()
     assert "Disallow: /app_exports/" in robots_text
     assert "Sitemap: https://devinteichrow.com/sitemap.xml" in robots_text
     sitemap_text = (docs_dir / "sitemap.xml").read_text()
     assert "<loc>https://devinteichrow.com/</loc>" in sitemap_text
-    assert "<loc>https://devinteichrow.com/topics/historical-epidemiology/</loc>" in sitemap_text
+    assert (
+        "<loc>https://devinteichrow.com/topics/historical-epidemiology/</loc>"
+        in sitemap_text
+    )
     assert "https://devinteichrow.com/search/" not in sitemap_text
     assert "<loc>https://devinteichrow.com/essays/first-post/</loc>" in sitemap_text
 
@@ -641,7 +746,9 @@ atlases:
         assert '<meta name="twitter:description" content="' in page_text
         assert '<script type="application/ld+json" data-eoe-seo>' in page_text
 
-        description_match = re.search(r'<meta name="description" content="([^"]+)"', page_text)
+        description_match = re.search(
+            r'<meta name="description" content="([^"]+)"', page_text
+        )
         assert description_match is not None
         assert description_match.group(1) not in build_site.GENERIC_DESCRIPTIONS
 
@@ -658,7 +765,9 @@ atlases:
         else:
             assert f"<loc>{url}</loc>" not in sitemap_text
 
-    duplicate_titles = [title for title, count in Counter(indexable_titles).items() if count > 1]
+    duplicate_titles = [
+        title for title, count in Counter(indexable_titles).items() if count > 1
+    ]
     assert duplicate_titles == []
 
 
@@ -667,7 +776,9 @@ def test_import_external_pathogen_writes_js_payload(tmp_path, monkeypatch) -> No
     src_root = project_root / "external" / "pathogen_atlas"
     docs_dir = tmp_path / "docs"
     src_root.mkdir(parents=True)
-    (src_root / "index.html").write_text("<html><head></head><body><main id='map'></main></body></html>")
+    (src_root / "index.html").write_text(
+        "<html><head></head><body><main id='map'></main></body></html>"
+    )
     (src_root / "extra_pathogens.json").write_text(json.dumps({"atlas": []}))
     (src_root / "core_geography_overrides.json").write_text(
         json.dumps(
@@ -764,23 +875,15 @@ def test_import_external_pathogen_writes_js_payload(tmp_path, monkeypatch) -> No
     source_data = src_root / "data" / "pathogen_atlas_data.js"
     assert built_index.exists()
     assert built_data.exists()
-    assert source_data.exists()
+    assert not source_data.exists(), "Builds must not rewrite source data"
     assert not (docs_dir / "atlases" / "pathogen" / "catalog").exists()
     assert not (docs_dir / "atlases" / "pathogen" / "extra_pathogens.json").exists()
     index_text = built_index.read_text()
-    assert "eoe-atlas-overlay-brand" in index_text
-    assert "by Devin Teichrow" in index_text
+    assert "eoe-exhibit-nav" in index_text
+    assert "The Edge of Epidemiology" in index_text
     assert 'href="../../index.html"' in index_text
     assert 'href="../../tools/index.html"' in index_text
     assert ">Exhibits</a>" in index_text
-    source_text = source_data.read_text()
-    assert '"reference_href": "../../docs/reference/yellow-fever.html"' in source_text
-    assert '"story_href": "../../docs/stories/demo-story.html"' in source_text
-    assert "https://doi.org/10.1234/fake-fixture" not in source_text
-    assert "DOI citations are withheld" in source_text
-    assert "https://www.cdc.gov/yellow-fever/index.html" in source_text
-    assert "official-geo-source" in source_text
-    assert "yellow-fever-fixture-zone" in source_text
     data_text = built_data.read_text()
     assert 'window.PATHOGEN_ATLAS_BASE_URL = "/"' in data_text
     assert '"reference_href": "../../reference/yellow-fever.html"' in data_text
@@ -793,25 +896,41 @@ def test_import_external_pathogen_writes_js_payload(tmp_path, monkeypatch) -> No
     assert "yellow-fever-fixture-zone" in data_text
 
 
-def test_import_external_revolutionary_war_atlas_copies_bundle(tmp_path, monkeypatch) -> None:
+def test_import_external_revolutionary_war_atlas_copies_bundle(
+    tmp_path, monkeypatch
+) -> None:
     project_root = tmp_path / "project"
     src_root = project_root / "external" / "revolutionary_war_atlas"
     docs_dir = tmp_path / "docs"
     src_root.mkdir(parents=True)
-    (src_root / "index.html").write_text("<html><body>Revolutionary War Battle & Disease Atlas</body></html>")
-    (src_root / "README.md").write_text("# Revolutionary War Disease Atlas Source Backbone\n")
+    (src_root / "index.html").write_text(
+        "<html><body>Revolutionary War Battle & Disease Atlas</body></html>"
+    )
+    (src_root / "README.md").write_text(
+        "# Revolutionary War Disease Atlas Source Backbone\n"
+    )
     (src_root / "data").mkdir()
-    (src_root / "data" / "revolutionary_war_youtube_video_plan.js").write_text("window.PLAN = {};\n")
+    (src_root / "data" / "revolutionary_war_youtube_video_plan.js").write_text(
+        "window.PLAN = {};\n"
+    )
     (src_root / "assets").mkdir()
     (src_root / "assets" / "fixture.txt").write_text("asset")
 
+    shutil.copytree(
+        build_site.PROJECT_ROOT / "data/exhibits", project_root / "data/exhibits"
+    )
     monkeypatch.setattr(build_site, "PROJECT_ROOT", project_root)
     build_site.import_external_revolutionary_war_atlas(docs_dir, "/")
 
     dest_root = docs_dir / "atlases" / "revolutionary-war"
-    assert (dest_root / "index.html").read_text() == "<html><body>Revolutionary War Battle & Disease Atlas</body></html>"
-    assert (dest_root / "README.md").read_text() == "# Revolutionary War Disease Atlas Source Backbone\n"
-    assert (dest_root / "data" / "revolutionary_war_youtube_video_plan.js").read_text() == "window.PLAN = {};\n"
+    assert "Revolutionary War Disease Atlas" in (dest_root / "index.html").read_text()
+    assert (dest_root / "records.json").exists()
+    assert (
+        dest_root / "README.md"
+    ).read_text() == "# Revolutionary War Disease Atlas Source Backbone\n"
+    assert (
+        dest_root / "data" / "revolutionary_war_youtube_video_plan.js"
+    ).read_text() == "window.PLAN = {};\n"
     assert (dest_root / "assets" / "fixture.txt").read_text() == "asset"
 
 
@@ -822,22 +941,42 @@ def test_import_external_histsearch_copies_bundle(tmp_path, monkeypatch) -> None
     src_root.mkdir(parents=True)
     (src_root / "index.html").write_text("<html><body>Histsearch</body></html>")
 
+    shutil.copytree(
+        build_site.PROJECT_ROOT / "data/exhibits", project_root / "data/exhibits"
+    )
     monkeypatch.setattr(build_site, "PROJECT_ROOT", project_root)
     build_site.import_external_histsearch(docs_dir, "/")
 
     dest_root = docs_dir / "tools" / "histsearch"
-    assert (dest_root / "index.html").read_text() == "<html><body>Histsearch</body></html>"
+    assert "Curated dossier" in (dest_root / "index.html").read_text()
+    assert len(list((dest_root / "downloads").glob("*.json"))) == 3
+    assert "localhost" not in (dest_root / "index.html").read_text()
 
 
 def test_pathogen_atlas_filters_do_not_fallback_to_all_entries() -> None:
-    atlas_html = (build_site.PROJECT_ROOT / "external" / "pathogen_atlas" / "index.html").read_text()
+    atlas_html = (
+        (
+            build_site.PROJECT_ROOT / "external" / "pathogen_atlas" / "index.html"
+        ).read_text()
+        + (build_site.PROJECT_ROOT / "assets/exhibits/pathogen.js").read_text()
+        + (build_site.PROJECT_ROOT / "assets/exhibits/pathogen.css").read_text()
+    )
     assert "return scoped.length ? scoped : ATLAS_ENTRIES" not in atlas_html
     assert "function renderTypeSelectOptions()" in atlas_html
     assert "No diseases match selected filters" in atlas_html
 
 
 def test_maritime_atlas_has_video_mode_contract() -> None:
-    atlas_html = (build_site.PROJECT_ROOT / "external" / "maritime_disease_atlas" / "index.html").read_text()
+    atlas_html = (
+        (
+            build_site.PROJECT_ROOT
+            / "external"
+            / "maritime_disease_atlas"
+            / "index.html"
+        ).read_text()
+        + (build_site.PROJECT_ROOT / "assets/exhibits/maritime.js").read_text()
+        + (build_site.PROJECT_ROOT / "assets/exhibits/maritime.css").read_text()
+    )
     assert 'id="cinema-backdrop"' in atlas_html
     assert "Guided Tour" in atlas_html
     assert "Presentation Mode" in atlas_html
@@ -862,7 +1001,10 @@ def test_maritime_atlas_has_video_mode_contract() -> None:
     assert "ann_bonny_mary_read.jpg" in atlas_html
     assert "cinemaSecondPresence" in atlas_html
     assert "cinemaPrimaryPresence" in atlas_html
-    assert ".recording-mode #cinema-backdrop.open.has-secondary #cinema-backdrop-image" in atlas_html
+    assert (
+        ".recording-mode #cinema-backdrop.open.has-secondary #cinema-backdrop-image"
+        in atlas_html
+    )
     assert "route_pirate_network" in atlas_html
     assert 'id="video-pause-btn"' in atlas_html
     assert 'id="sound-btn"' in atlas_html
@@ -893,27 +1035,54 @@ def test_maritime_atlas_has_video_mode_contract() -> None:
     assert "barrels_on_savannah_docks_nara.jpg" in atlas_html
     assert "National Archives via Wikimedia Commons, public domain" in atlas_html
     assert "typhoid_prevention_1908.jpg" not in atlas_html
-    assert "secondary:" not in atlas_html.split("yellow_fever: [", 1)[1].split("malaria: [", 1)[0]
-    assert "secondary:" not in atlas_html.split("ship_fever: [", 1)[1].split("flux: [", 1)[0]
-    assert "secondary:" not in atlas_html.split("flux: [", 1)[1].split("typhoid: [", 1)[0]
-    assert "secondary:" not in atlas_html.split("typhoid: [", 1)[1].split("smallpox: [", 1)[0]
+    assert (
+        "secondary:"
+        not in atlas_html.split("yellow_fever: [", 1)[1].split("malaria: [", 1)[0]
+    )
+    assert (
+        "secondary:"
+        not in atlas_html.split("ship_fever: [", 1)[1].split("flux: [", 1)[0]
+    )
+    assert (
+        "secondary:" not in atlas_html.split("flux: [", 1)[1].split("typhoid: [", 1)[0]
+    )
+    assert (
+        "secondary:"
+        not in atlas_html.split("typhoid: [", 1)[1].split("smallpox: [", 1)[0]
+    )
 
 
 def test_maritime_atlas_public_exhibit_metadata_and_video_package() -> None:
     tools_text = (build_site.PROJECT_ROOT / "content" / "tools.yml").read_text()
     build_text = (build_site.PROJECT_ROOT / "src" / "build_site.py").read_text()
-    video_package = (build_site.PROJECT_ROOT / "notes" / "maritime-disease-atlas-youtube-guided-tour.md").read_text()
+    video_package = (
+        build_site.PROJECT_ROOT
+        / "notes"
+        / "maritime-disease-atlas-youtube-guided-tour.md"
+    ).read_text()
     assert "map-first digital exhibit" in tools_text
     assert "guided-tour and presentation modes" in tools_text
-    assert "archival sources" in build_text
+    assert (
+        "archival sources"
+        in (build_site.PROJECT_ROOT / "src" / "site_seo.py").read_text()
+    )
     assert "Final narration: Devin" in video_package
     assert "AI voice: scratch timing only" in video_package
     assert "?youtube=1&scenario=<scenario_id>&pace=2.3" in video_package
-    assert "Yellow Fever, Malaria, Scurvy, Flux, Typhoid, Ship Fever, Smallpox, Measles, Wounds + Sepsis, Middle Passage, Pirate Ports" in video_package
+    assert (
+        "Yellow Fever, Malaria, Scurvy, Flux, Typhoid, Ship Fever, Smallpox, Measles, Wounds + Sepsis, Middle Passage, Pirate Ports"
+        in video_package
+    )
 
 
 def test_pathogen_atlas_renders_geography_layers() -> None:
-    atlas_html = (build_site.PROJECT_ROOT / "external" / "pathogen_atlas" / "index.html").read_text()
+    atlas_html = (
+        (
+            build_site.PROJECT_ROOT / "external" / "pathogen_atlas" / "index.html"
+        ).read_text()
+        + (build_site.PROJECT_ROOT / "assets/exhibits/pathogen.js").read_text()
+        + (build_site.PROJECT_ROOT / "assets/exhibits/pathogen.css").read_text()
+    )
     assert "Geographic extent" in atlas_html
     assert "Geography interpretation" in atlas_html
     assert "Reviewed geography" in atlas_html
@@ -926,7 +1095,13 @@ def test_pathogen_atlas_renders_geography_layers() -> None:
 
 
 def test_pathogen_atlas_has_map_mode_and_search_controls() -> None:
-    atlas_html = (build_site.PROJECT_ROOT / "external" / "pathogen_atlas" / "index.html").read_text()
+    atlas_html = (
+        (
+            build_site.PROJECT_ROOT / "external" / "pathogen_atlas" / "index.html"
+        ).read_text()
+        + (build_site.PROJECT_ROOT / "assets/exhibits/pathogen.js").read_text()
+        + (build_site.PROJECT_ROOT / "assets/exhibits/pathogen.css").read_text()
+    )
     assert 'id="map-mode-select"' in atlas_html
     assert '<option value="routes">Routes</option>' in atlas_html
     assert '<option value="geography">Extent</option>' in atlas_html
@@ -947,7 +1122,11 @@ def test_archived_story_placeholders_cover_stale_archive_links(tmp_path) -> None
 
     build_site.ensure_archived_story_placeholders(docs_dir, "/")
 
-    placeholder = docs_dir / "stories" / "story_abc123-tuberculosis-and-antimicrobial-resistance.html"
+    placeholder = (
+        docs_dir
+        / "stories"
+        / "story_abc123-tuberculosis-and-antimicrobial-resistance.html"
+    )
     assert placeholder.exists()
     text = placeholder.read_text()
     assert "Archived story file" in text

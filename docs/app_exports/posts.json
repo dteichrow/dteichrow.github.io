@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T06:20:49",
+  "generated_at": "2026-09-08T07:50:25",
   "count": 64,
   "posts": [
     {
@@ -11,20 +11,26 @@
       "cover_image": "https://substack-post-media.s3.amazonaws.com/public/images/1f4cca4f-3075-45f6-8887-0275407d7047_1609x2048.png",
       "wordcount": 2417,
       "status": "summary_only",
-      "dek": "",
-      "topics": [],
+      "dek": "How Project SUNSHINE built a supply of human bones to measure radioactive fallout, and what its correspondence reveals about the people and institutions behind the samples.",
+      "topics": [
+        "Historical epidemiology",
+        "Radiation",
+        "Research institutions"
+      ],
       "series": [],
       "seo_title": "",
       "seo_description": "",
       "primary_keyword": "",
-      "topic_cluster": "",
+      "topic_cluster": "historical-epidemiology",
       "related_atlases": [],
       "related_reference_slugs": [],
       "related_story_ids": [],
-      "search_excerpt": "Project SUNSHINE Bulletin No. 11, issued by the University of Chicago’s Enrico Fermi Institute for Nuclear Studies on December 1, 1955. The archival copy bears later markings confirming its declassification. Source: U.S. Department of Energy archives, F. C. Libby collection, via ",
+      "search_excerpt": "How Project SUNSHINE built a supply of human bones to measure radioactive fallout, and what its correspondence reveals about the people and institutions behind the samples.",
       "hero_mode": "cover",
       "notes": "",
-      "upstream_tags": []
+      "upstream_tags": [],
+      "image_caption": "Project SUNSHINE Bulletin No. 11, issued by the University of Chicago’s Enrico Fermi Institute for Nuclear Studies on December 1, 1955. The archival copy bears later markings confirming its declassification. Source: U.S. Department of Energy archives, F. C. Libby collection, via the RMI Nuclear Justice Documents database.",
+      "editorial_summary": "How Project SUNSHINE built a supply of human bones to measure radioactive fallout, and what its correspondence reveals about the people and institutions behind the samples."
     },
     {
       "slug": "college-footballs-century-long-experiment",

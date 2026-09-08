@@ -1,0 +1,59 @@
+{
+  "id": "maritime-quarantine",
+  "title": "Maritime quarantine",
+  "question": "How did ships, ports, and quarantine institutions shape exposure and public-health responses?",
+  "scope": "Mediterranean and Atlantic quarantine histories, with Grosse Île as a documented institutional case. This is a selective reading collection, not a systematic review.",
+  "source_ids": [
+    "quarantine",
+    "grosse-ile",
+    "lind",
+    "booker"
+  ],
+  "search_date": "2026-09-08",
+  "strategies": [
+    "site.cdc.gov Tognotti lessons history quarantine plague influenza 2013 19 2 254",
+    "site.parks.canada.ca Grosse Ile 1847 typhus 5424",
+    "Source chaining from the existing Maritime Disease Atlas bibliography: Lind and Booker."
+  ],
+  "editorial_note": "Read the institutional history alongside the disease mechanism. A quarantine rule, a delay at anchor, and a death count describe different parts of the process. The Lind and Booker entries are metadata leads; they are not labeled as completed full-text reviews.",
+  "exhibit": "atlases/maritime/",
+  "exhibit_label": "Maritime Disease Atlas",
+  "sources": [
+    {
+      "id": "quarantine",
+      "title": "Tognotti. Lessons from the History of Quarantine, from Plague to Influenza A",
+      "url": "https://wwwnc.cdc.gov/eid/article/19/2/12-0312_article",
+      "published_date": "2013-02",
+      "review_status": "Reviewed historical review",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": ""
+    },
+    {
+      "id": "grosse-ile",
+      "title": "Grosse Île and the Irish Memorial National Historic Site — Parks Canada",
+      "url": "https://www.pc.gc.ca/apps/dfhd/page_nhs_eng.aspx?i=40029&id=616",
+      "published_date": null,
+      "review_status": "Reviewed designation record",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": "An institutional site history is distinct from a nominal death register."
+    },
+    {
+      "id": "lind",
+      "title": "James Lind. A Treatise of the Scurvy",
+      "url": "https://library.si.edu/digital-library/book/treatisescurvyt00lind",
+      "published_date": "1753",
+      "review_status": "Retrieved metadata",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": "Digitized primary work identified in the existing Maritime source registry; individual passages have not been re-reviewed for this dossier."
+    },
+    {
+      "id": "booker",
+      "title": "John Booker. Maritime Quarantine: The British Experience, c.1650–1900",
+      "url": "https://www.routledge.com/Maritime-Quarantine-The-British-Experience-c1650-1900/Booker/p/book/9781138274129",
+      "published_date": "2007",
+      "review_status": "Retrieved metadata",
+      "reviewed_at": "2026-09-08",
+      "editorial_note": "Book identified in the existing project; this entry is a research lead, not a claim of full-text review."
+    }
+  ]
+}

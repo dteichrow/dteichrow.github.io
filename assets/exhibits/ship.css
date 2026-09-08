@@ -1,0 +1,233 @@
+#ship-lab {
+  background: #142126;
+  color: #f6f1e4;
+  padding: 35px 4vw;
+  grid-area: ship;
+  font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+}
+#ship-lab h2 {
+  font:
+    clamp(30px, 3.8vw, 48px) / 1.1 "Iowan Old Style",
+    Palatino,
+    Georgia,
+    serif;
+  margin: 10px 0 16px;
+  letter-spacing: -0.025em;
+}
+#ship-lab .ship-kicker {
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #d8bf78;
+}
+.ship-intro {
+  max-width: 850px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.ship-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(290px, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+.ship-drawing {
+  min-width: 0;
+}
+#ship-svg {
+  width: 100%;
+  display: block;
+  background: #1b3034;
+  margin: 15px 0;
+}
+.ship-spaces {
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+.ship-spaces button,
+#ship-lab button {
+  font:
+    13px/1.3 "Avenir Next",
+    Arial,
+    sans-serif;
+  padding: 10px 13px;
+  border: 1px solid #899b92;
+  background: transparent;
+  color: #f6f1e4;
+  cursor: pointer;
+  min-height: 44px;
+  border-radius: 0;
+}
+.ship-spaces button[aria-pressed="true"] {
+  color: #142126;
+  background: #d8bf78;
+  border-color: #d8bf78;
+}
+.ship-mode-controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 18px 0;
+}
+#ship-status {
+  font-size: 12px;
+  color: #c6d0c7;
+  min-height: 35px;
+}
+#ship-detail {
+  border-top: 1px solid #70827a;
+  margin-top: 15px;
+  padding-top: 20px;
+}
+#ship-detail h3 {
+  font:
+    28px/1.2 "Iowan Old Style",
+    Palatino,
+    Georgia,
+    serif;
+  margin: 0 0 16px;
+}
+#ship-detail p {
+  font-size: 15px;
+  line-height: 1.7;
+}
+#ship-cases details {
+  border-top: 1px solid #506566;
+  padding: 12px 0;
+}
+#ship-cases summary {
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 1.5;
+  min-height: 44px;
+  display: list-item;
+  padding: 8px 0;
+}
+#ship-cases p,
+#ship-cases li {
+  font-size: 13px;
+  line-height: 1.7;
+}
+#ship-lab a {
+  color: #ded09c;
+}
+#ship-cases ul {
+  padding-left: 18px;
+}
+.ship-credit {
+  font-size: 12px !important;
+  line-height: 1.7;
+  max-width: 950px;
+  color: #c6d0c7;
+  margin-top: 25px;
+  border-top: 1px solid #506566;
+  padding-top: 20px;
+}
+.ship-view-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+  padding: 12px 0;
+}
+.ship-view-controls label {
+  display: grid;
+  gap: 5px;
+  font-size: 12px;
+}
+.ship-view-controls input {
+  accent-color: #d8bf78;
+  min-height: 24px;
+}
+.ship-view-controls button {
+  font-size: 12px !important;
+}
+#ship-3d-stage canvas {
+  display: block;
+  max-width: 100%;
+  cursor: grab;
+}
+#ship-3d-stage canvas:active {
+  cursor: grabbing;
+}
+.ship-reveal > summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.ship-reveal > summary::after {
+  content: "Open cutaway +";
+  font:
+    13px "Avenir Next",
+    Arial,
+    sans-serif;
+  border: 1px solid #8f9e96;
+  padding: 12px;
+  white-space: nowrap;
+}
+.ship-reveal[open] > summary::after {
+  content: "Close −";
+}
+.ship-reveal > summary h2 {
+  margin: 8px 0;
+}
+.ship-reveal[open] > .ship-intro {
+  margin-top: 22px;
+}
+.ship-reveal:not([open]) .ship-kicker {
+  margin: 0;
+}
+@media (max-width: 850px) {
+  #ship-lab {
+    padding: 25px 20px;
+  }
+  .ship-workspace {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .ship-reveal > summary {
+    align-items: start;
+  }
+  .ship-reveal > summary::after {
+    font-size: 11px;
+    padding: 10px;
+  }
+  .ship-reveal > summary h2 {
+    font-size: 29px;
+  }
+  #ship-detail {
+    margin-top: 0;
+  }
+}
+@media print {
+  #ship-lab {
+    background: white;
+    color: black;
+  }
+  .ship-mode-controls,
+  .ship-spaces,
+  .ship-view-controls,
+  #ship-3d-stage,
+  #ship-status {
+    display: none !important;
+  }
+  #ship-svg {
+    display: block !important;
+  }
+  #ship-lab details > * {
+    display: block !important;
+  }
+  .ship-workspace {
+    display: block;
+  }
+  #ship-lab a {
+    color: black;
+  }
+  .ship-credit {
+    color: black;
+  }
+}

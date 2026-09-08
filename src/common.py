@@ -42,6 +42,9 @@ UPSTREAM_FIELDS = [
     "wordcount",
 ]
 CURATED_FIELDS = [
+    "editorial_summary",
+    "image_caption",
+    "related_posts",
     "status",
     "dek",
     "topics",
@@ -152,7 +155,9 @@ def fetch_json(
     attempts: int = 4,
     headers: dict[str, str] | None = None,
 ) -> Any:
-    return json.loads(fetch_text(url, timeout=timeout, attempts=attempts, headers=headers))
+    return json.loads(
+        fetch_text(url, timeout=timeout, attempts=attempts, headers=headers)
+    )
 
 
 def clean_text(value: str | None) -> str:
@@ -174,7 +179,14 @@ def _normalize_scalar(value: Any) -> Any:
 
 def normalize_post_types(post: dict[str, Any]) -> dict[str, Any]:
     normalized = {key: _normalize_scalar(value) for key, value in post.items()}
-    for field in ["upstream_tags", "topics", "series", "related_atlases", "related_reference_slugs", "related_story_ids"]:
+    for field in [
+        "upstream_tags",
+        "topics",
+        "series",
+        "related_atlases",
+        "related_reference_slugs",
+        "related_story_ids",
+    ]:
         normalized[field] = canonicalize_list(normalized.get(field))
     return normalized
 
@@ -268,19 +280,61 @@ def canonicalize_list(value: Any) -> list[str]:
 def infer_related_atlases(slug: str, title: str, upstream_tags: list[str]) -> list[str]:
     text = " ".join([slug, title, " ".join(upstream_tags)]).lower()
     atlas_ids: list[str] = []
-    if any(token in text for token in ["yellow", "cholera", "measles", "hantavirus", "mpox", "dengue", "h5n1", "mosquito", "pathogen dispatch"]):
+    if any(
+        token in text
+        for token in [
+            "yellow",
+            "cholera",
+            "measles",
+            "hantavirus",
+            "mpox",
+            "dengue",
+            "h5n1",
+            "mosquito",
+            "pathogen dispatch",
+        ]
+    ):
         atlas_ids.append("pathogen-atlas")
-    if any(token in text for token in ["maritime", "high-seas", "high seas", "sea", "ship", "port", "napoleon", "atlantic", "mosquito"]):
+    if any(
+        token in text
+        for token in [
+            "maritime",
+            "high-seas",
+            "high seas",
+            "sea",
+            "ship",
+            "port",
+            "napoleon",
+            "atlantic",
+            "mosquito",
+        ]
+    ):
         atlas_ids.append("maritime-disease-atlas")
     if any(token in text for token in ["viking", "norse", "greenland", "vinland"]):
         atlas_ids.append("viking-health-atlas")
-    if any(token in text for token in ["revolution", "colonies", "colonial", "oregon trail", "american republic", "smallpox in the colonies"]):
+    if any(
+        token in text
+        for token in [
+            "revolution",
+            "colonies",
+            "colonial",
+            "oregon trail",
+            "american republic",
+            "smallpox in the colonies",
+        ]
+    ):
         atlas_ids.append("revolutionary-war-atlas")
     seen: set[str] = set()
-    return [atlas_id for atlas_id in atlas_ids if not (atlas_id in seen or seen.add(atlas_id))]
+    return [
+        atlas_id
+        for atlas_id in atlas_ids
+        if not (atlas_id in seen or seen.add(atlas_id))
+    ]
 
 
-def default_curated_fields(slug: str, title: str, upstream_tags: list[str], excerpt: str) -> dict[str, Any]:
+def default_curated_fields(
+    slug: str, title: str, upstream_tags: list[str], excerpt: str
+) -> dict[str, Any]:
     topics = [tag for tag in upstream_tags[:6]]
     atlas_links = infer_related_atlases(slug, title, upstream_tags)
     return {
@@ -296,11 +350,12 @@ def has_markdown_image_excerpt(value: Any) -> bool:
     return text.startswith("![") or "substackcdn.com/image/fetch" in text
 
 
-def merge_post_record(existing: dict[str, Any] | None, incoming: dict[str, Any]) -> dict[str, Any]:
+def merge_post_record(
+    existing: dict[str, Any] | None, incoming: dict[str, Any]
+) -> dict[str, Any]:
     record = dict(existing or {})
     curated_snapshot = {
-        key: record.get(key, CURATED_DEFAULTS.get(key))
-        for key in CURATED_FIELDS
+        key: record.get(key, CURATED_DEFAULTS.get(key)) for key in CURATED_FIELDS
     }
 
     for field in UPSTREAM_FIELDS:
@@ -318,6 +373,9 @@ def merge_post_record(existing: dict[str, Any] | None, incoming: dict[str, Any])
         record.update(created)
         record["first_seen_at"] = record.get("first_seen_at") or now_iso()
 
+    if incoming.get("image_caption") and not (existing or {}).get("image_caption"):
+        record["image_caption"] = incoming["image_caption"]
+
     for key, value in curated_snapshot.items():
         if value not in (None, "", []):
             record[key] = value
@@ -330,10 +388,16 @@ def merge_post_record(existing: dict[str, Any] | None, incoming: dict[str, Any])
     record["topics"] = canonicalize_list(record.get("topics"))
     record["series"] = canonicalize_list(record.get("series"))
     record["related_atlases"] = canonicalize_list(record.get("related_atlases"))
-    record["related_reference_slugs"] = canonicalize_list(record.get("related_reference_slugs"))
+    record["related_reference_slugs"] = canonicalize_list(
+        record.get("related_reference_slugs")
+    )
     record["related_story_ids"] = canonicalize_list(record.get("related_story_ids"))
-    record["slug"] = record.get("slug") or slug_from_canonical(record.get("canonical_url", ""))
-    if not record.get("search_excerpt") or has_markdown_image_excerpt(record.get("search_excerpt")):
+    record["slug"] = record.get("slug") or slug_from_canonical(
+        record.get("canonical_url", "")
+    )
+    if not record.get("search_excerpt") or has_markdown_image_excerpt(
+        record.get("search_excerpt")
+    ):
         record["search_excerpt"] = str(record.get("excerpt") or "")[:280]
     return record
 
@@ -364,7 +428,9 @@ def atlas_entry_to_tool(entry: dict[str, Any]) -> dict[str, Any]:
     return tool
 
 
-def load_tool_registry(path: Path | None = None, atlas_path: Path | None = None) -> list[dict[str, Any]]:
+def load_tool_registry(
+    path: Path | None = None, atlas_path: Path | None = None
+) -> list[dict[str, Any]]:
     registry_path = path or (CONTENT_DIR / "tools.yml")
     if registry_path.exists():
         payload = read_yaml(registry_path, {"tools": []})
@@ -382,3 +448,7 @@ def temporary_directory(prefix: str = "eoe-site-") -> Path:
 
 def domain_from_url(url: str) -> str:
     return urlparse(url).netloc
+
+
+def strip_html_tags(value: str) -> str:
+    return html.unescape(re.sub(r"<[^>]+>", "", value)).strip()

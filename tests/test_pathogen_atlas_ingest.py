@@ -60,11 +60,26 @@ def valid_entry(slug: str = "test-fever") -> dict:
 
 
 def test_slugify_and_candidate_merge_are_stable() -> None:
-    assert ingest.slugify("Crimean-Congo hemorrhagic fever") == "crimean-congo-hemorrhagic-fever"
+    assert (
+        ingest.slugify("Crimean-Congo hemorrhagic fever")
+        == "crimean-congo-hemorrhagic-fever"
+    )
     merged = ingest.merge_candidates(
         [
-            {"slug": "test-fever", "name": "Test fever", "aliases": ["TF"], "source_seeds": ["wikidata"], "priority_tier": 3},
-            {"slug": "test-fever", "name": "Test fever", "aliases": ["Test fever virus"], "source_seeds": ["wikipedia"], "priority_tier": 1},
+            {
+                "slug": "test-fever",
+                "name": "Test fever",
+                "aliases": ["TF"],
+                "source_seeds": ["wikidata"],
+                "priority_tier": 3,
+            },
+            {
+                "slug": "test-fever",
+                "name": "Test fever",
+                "aliases": ["Test fever virus"],
+                "source_seeds": ["wikipedia"],
+                "priority_tier": 1,
+            },
         ]
     )
     assert len(merged) == 1
@@ -172,7 +187,9 @@ def test_validate_entry_rejects_unknown_pathogen_type() -> None:
     assert any("unknown pathogen_type" in error for error in errors)
 
 
-def test_promote_reviewed_entries_skips_existing_without_overwrite(tmp_path: Path) -> None:
+def test_promote_reviewed_entries_skips_existing_without_overwrite(
+    tmp_path: Path,
+) -> None:
     existing = valid_entry("already-live")
     incoming_existing = valid_entry("already-live")
     incoming_existing["name"] = "Changed name that should not overwrite"
