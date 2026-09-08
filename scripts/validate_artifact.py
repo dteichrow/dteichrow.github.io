@@ -2,6 +2,7 @@
 """Check the built artifact and record the exact files tested for deployment."""
 
 import argparse
+import colorsys
 import hashlib
 import json
 from pathlib import Path
@@ -13,15 +14,47 @@ from bs4 import BeautifulSoup
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def green_palette_values(text):
+    """Find retired green/teal design colours; photographs are never inspected."""
+    found = set()
+    for match in re.finditer(
+        r"#[0-9a-fA-F]{6}\b|\brgba?\(\s*\d+\s*,\s*\d+\s*,\s*\d+", text
+    ):
+        value = match[0]
+        rgb = (
+            [int(value[i : i + 2], 16) for i in (1, 3, 5)]
+            if value.startswith("#")
+            else [int(x) for x in re.findall(r"\d+", value)]
+        )
+        hue, _, saturation = colorsys.rgb_to_hls(*(c / 255 for c in rgb))
+        if (65 <= hue * 360 <= 195 and saturation > 0.02) or value.lower() == "#142126":
+            found.add(value)
+    found.update(
+        re.findall(
+            r"\b(?:forestgreen|darkgreen|seagreen|darkslategray|teal)\b", text, re.I
+        )
+    )
+    return sorted(found)
+
+
 def validate(docs):
     errors = []
     for path in docs.rglob("*.html"):
         text = path.read_text()
         if re.search(r"(?:basemaps\.cartocdn\.com|API KEY REQUIRED)", text, re.I):
             errors.append(f"{path.relative_to(docs)}: retired map dependency")
+    for path in (docs / "assets").rglob("*"):
+        if path.suffix not in {".css", ".js", ".svg"} or "vendor" in path.parts:
+            continue
+        if colours := green_palette_values(path.read_text()):
+            errors.append(f"{path.relative_to(docs)}: retired palette {colours}")
     missing = set()
     for page in docs.rglob("*.html"):
         soup = BeautifulSoup(page.read_text(), "html.parser")
+        styles = "\n".join(node.get_text() for node in soup.select("style"))
+        styles += "\n".join(node["style"] for node in soup.select("[style]"))
+        if colours := green_palette_values(styles):
+            errors.append(f"{page.relative_to(docs)}: retired palette {colours}")
         for element in soup.select("a[href],script[src],img[src],link[rel=stylesheet]"):
             value = element.get("href") or element.get("src")
             parsed = urlsplit(value)

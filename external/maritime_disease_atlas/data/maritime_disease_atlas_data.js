@@ -2015,7 +2015,7 @@ window.MARITIME_DISEASE_SCENARIOS = {
     "title": "Ship Fever: lice, clothes, crowding",
     "kicker": "Crowding disease",
     "summary": "Rickettsia prowazekii, infected body lice, below-deck crowding, and dirty clothing.",
-    "color": "#5d958c",
+    "color": "#959bcc",
     "featureIds": [
       "london_naval",
       "below_deck",
@@ -2330,7 +2330,7 @@ window.MARITIME_DISEASE_SCENARIOS = {
     "title": "Typhoid: food and water fever",
     "kicker": "Enteric fever",
     "summary": "Salmonella Typhi, fecally contaminated food or water, overlapping fever symptoms, and pre-germ-theory hygiene.",
-    "color": "#7aa96b",
+    "color": "#c99a73",
     "featureIds": [
       "london_naval",
       "food_water_typhi",

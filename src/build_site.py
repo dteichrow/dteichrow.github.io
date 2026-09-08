@@ -287,8 +287,8 @@ def render_tools_hub(tools: list[dict[str, Any]], base_url: str) -> str:
         body=f"""
       <section class="hero hero-open">
         <p class="kicker">Interactive exhibits</p>
-        <h2 class="hero-title">Interactive epidemiology exhibits for disease history, outbreak geography, and public-health reasoning</h2>
-        <p class="subtitle">Timelines, atlases, ledgers, and visual public-health exhibits for exploring epidemic history, pathogen geography, and epidemiologic reasoning.</p>
+        <h2 class="hero-title">The exhibit collection.</h2>
+        <p class="subtitle">Follow an epidemic through time, examine a ship’s spaces, or read the sources behind a historical claim.</p>
       </section>
       <section class="panel panel-soft">
         <div class="card-grid two-up">{cards}</div>
@@ -1574,7 +1574,10 @@ def build_site(
     references = latest.get("reference", [])
     stories = latest.get("stories", [])
 
+    from .site_images import render_image_credits
+
     page_specs = {
+        docs_dir / "image-credits" / "index.html": render_image_credits(base_url),
         docs_dir / "index.html": render_home(public_posts, tools, latest, base_url),
         docs_dir / "essays" / "index.html": render_essays_index(public_posts, base_url),
         docs_dir / "topics" / "index.html": render_topic_hub_index(

@@ -5,6 +5,7 @@ import html
 import re
 from typing import Any
 from .common import format_display_date, link_for
+from .site_images import render_exhibit_image
 
 from .site_content import (
     canonical_meta,
@@ -56,9 +57,7 @@ def render_atlas_card(entry: dict[str, Any], base_url: str) -> str:
     atlas_token = css_token(entry.get("atlas_id"), "atlas")
     return (
         f'<article class="site-card atlas-card atlas-card-{html.escape(atlas_token)}">'
-        f'<a class="atlas-card-visual atlas-card-visual-{html.escape(atlas_token)}" href="{html.escape(href)}" aria-hidden="true" tabindex="-1">'
-        f'<img src="{html.escape(link_for(base_url, "assets/exhibits/covers/" + atlas_token + ".svg"))}" width="800" height="440" alt="" loading="lazy" />'
-        "</a>"
+        f"{render_exhibit_image(atlas_token, base_url, href)}"
         '<div class="card-utility-row">'
         '<span class="card-utility-label">Atlas</span>'
         f'<span class="card-utility-meta">{html.escape(coordinate_hint)}</span>'
@@ -85,9 +84,7 @@ def render_tool_card(entry: dict[str, Any], base_url: str) -> str:
     tool_type = str(entry.get("tool_type") or "tool").replace("_", " ").title()
     return (
         f'<article class="site-card atlas-card tool-card tool-card-{html.escape(tool_token)}">'
-        f'<a class="atlas-card-visual atlas-card-visual-{html.escape(tool_token)}" href="{html.escape(href)}" aria-hidden="true" tabindex="-1">'
-        f'<img src="{html.escape(link_for(base_url, "assets/exhibits/covers/" + tool_token + ".svg"))}" width="800" height="440" alt="" loading="lazy" />'
-        "</a>"
+        f"{render_exhibit_image(tool_token, base_url, href)}"
         '<div class="card-utility-row">'
         f'<span class="card-utility-label">{html.escape(tool_type)}</span>'
         f'<span class="card-utility-meta">{html.escape(coordinate_hint)}</span>'

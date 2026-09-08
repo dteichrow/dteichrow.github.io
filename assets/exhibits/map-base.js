@@ -6,9 +6,9 @@ window.EOEMaps = {
       interactive: false,
       smoothFactor: 0.5,
       style: {
-        color: light ? "#8a958e" : "#68827f",
+        color: light ? "#99928a" : "#7b8297",
         weight: 0.7,
-        fillColor: light ? "#d7dacb" : "#283e40",
+        fillColor: light ? "#ddd6c9" : "#373a49",
         fillOpacity: 1,
       },
       attribution:

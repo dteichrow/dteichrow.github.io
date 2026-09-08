@@ -9,7 +9,7 @@
   font-size: clamp(60px, 8vw, 110px);
 }
 .dossier {
-  border-top: 1px solid #142126;
+  border-top: 1px solid #202127;
   padding: 35px 0 45px;
   margin-top: 25px;
 }
@@ -72,7 +72,7 @@
 .dossier-source {
   padding: 22px;
   background: #fffdf7;
-  border-top: 2px solid #155d66;
+  border-top: 2px solid #414b82;
   min-width: 0;
 }
 .dossier-source h3 {
@@ -87,7 +87,7 @@
 }
 .source-dates {
   font-size: 11px !important;
-  color: #46545b;
+  color: #555561;
 }
 .project-link {
   font-size: 13px;
@@ -96,7 +96,7 @@
 }
 #dossier-count {
   font-size: 13px;
-  color: #46545b;
+  color: #555561;
 }
 .record-downloads a {
   min-height: 44px;

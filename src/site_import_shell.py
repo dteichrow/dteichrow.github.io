@@ -7,27 +7,27 @@ from .site_shell import PRIMARY_NAV
 
 def shell_wrapper_css(base_url: str) -> str:
     return """<style id="eoe-shell-import-style">
-body { padding-top:0 !important; margin:0; background:#f6f1e4 !important; color:#142126; }
-.eoe-shell-nav { position:relative; background:#f6f1e4; color:#142126; border-bottom:3px solid #b84a3e; }
+body { padding-top:0 !important; margin:0; background:#f6f1e4 !important; color:#202127; }
+.eoe-shell-nav { position:relative; background:#f6f1e4; color:#202127; border-bottom:3px solid #b84a3e; }
 .eoe-shell-nav-inner { max-width:1320px; margin:auto; padding:20px 4vw; display:flex; align-items:center; justify-content:space-between; gap:24px; font-family:"Avenir Next","Helvetica Neue",Arial,sans-serif; }
-.eoe-shell-brand { display:flex; align-items:center; gap:12px; color:#142126; text-decoration:none; font:700 20px/1.05 "Iowan Old Style",Palatino,Georgia,serif; flex-shrink:0; }
-.eoe-shell-mark { border:1px solid #46545b; padding:12px 8px; font-style:italic; }
-.eoe-shell-byline { display:block; margin-top:8px; color:#46545b; font:10px/1.4 "Avenir Next","Helvetica Neue",Arial,sans-serif; text-transform:uppercase; letter-spacing:.08em; }
+.eoe-shell-brand { display:flex; align-items:center; gap:12px; color:#202127; text-decoration:none; font:700 20px/1.05 "Iowan Old Style",Palatino,Georgia,serif; flex-shrink:0; }
+.eoe-shell-mark { border:1px solid #555561; padding:12px 8px; font-style:italic; }
+.eoe-shell-byline { display:block; margin-top:8px; color:#555561; font:10px/1.4 "Avenir Next","Helvetica Neue",Arial,sans-serif; text-transform:uppercase; letter-spacing:.08em; }
 .eoe-shell-links { display:flex; flex-wrap:wrap; align-items:center; gap:8px 24px; }
-.eoe-shell-links a { display:inline-flex; align-items:center; min-height:44px; color:#142126; font-size:14px; text-decoration:none; border-bottom:2px solid transparent; }
-.eoe-shell-links a:hover,.eoe-shell-links a.active { border-color:#155d66; }
-.eoe-import-skip { position:absolute; top:12px; left:12px; z-index:20000; background:#142126; color:#fff; padding:12px; }
+.eoe-shell-links a { display:inline-flex; align-items:center; min-height:44px; color:#202127; font-size:14px; text-decoration:none; border-bottom:2px solid transparent; }
+.eoe-shell-links a:hover,.eoe-shell-links a.active { border-color:#414b82; }
+.eoe-import-skip { position:absolute; top:12px; left:12px; z-index:20000; background:#202127; color:#fff; padding:12px; }
 .eoe-import-skip:not(:focus) { clip-path:inset(50%); width:1px; height:1px; padding:0; overflow:hidden; }
 :focus-visible { outline:3px solid #b84a3e !important; outline-offset:4px; }
-.eoe-import-footer { max-width:1320px; margin:40px auto 0; padding:24px 4vw; border-top:1px solid #46545b; font-family:"Avenir Next","Helvetica Neue",Arial,sans-serif; }
+.eoe-import-footer { max-width:1320px; margin:40px auto 0; padding:24px 4vw; border-top:1px solid #555561; font-family:"Avenir Next","Helvetica Neue",Arial,sans-serif; }
 .eoe-import-footer nav { display:flex; flex-wrap:wrap; gap:12px 24px; }
-.eoe-import-footer a { color:#155d66; padding:8px 0; }
+.eoe-import-footer a { color:#414b82; padding:8px 0; }
 .hero,.panel,.section-nav { background:transparent !important; border:0 !important; border-radius:0 !important; box-shadow:none !important; }
 .hero { padding:0 0 6px !important; overflow:visible !important; }
 .hero::before,.hero::after,.panel::before,.panel::after { display:none !important; }
 .section-nav { display:none !important; }
 .meta-row-plain { display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-top:10px; }
-.meta-inline,.card-meta-text { color:#46545b; font:500 .86rem/1.55 "Avenir Next","Helvetica Neue",Arial,sans-serif; }
+.meta-inline,.card-meta-text { color:#555561; font:500 .86rem/1.55 "Avenir Next","Helvetica Neue",Arial,sans-serif; }
 .card-meta-text { margin:0; }
 .site-card .meta-row .badge { max-width:none; }
 .badge.tone-major { color:#75540c !important; }
@@ -66,6 +66,7 @@ def imported_shell_footer(base_url: str) -> str:
             ("Historical", "historical/"),
             ("Reference", "reference/"),
             ("Methods", "methods/"),
+            ("Image credits", "image-credits/"),
             ("Notebook", "notebook/"),
             ("Work with me", "opportunities/"),
         ]

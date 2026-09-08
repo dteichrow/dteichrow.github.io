@@ -1,0 +1,227 @@
+{
+  "reviewed_on": "2026-09-08",
+  "images": [
+    {
+      "id": "histsearch",
+      "title": "Abstract of Quarantine Regulations",
+      "caption": "The paperwork of quarantine. British regulations, 1826.",
+      "alt": "A broadside headed Abstract of Quarantine Regulations, with six closely printed columns of instructions for ships.",
+      "creator": "British government",
+      "collection": "Wellcome Collection",
+      "date": "1826",
+      "source": "https://wellcomecollection.org/works/hjebg85g",
+      "download": "https://iiif.wellcomecollection.org/image/B16797632.JP2/full/1600,/0/default.jpg",
+      "license": "Public Domain Mark",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "rights_note": "Wellcome image record rtwc97vd identifies this digitisation as public domain.",
+      "position": "50% 0%",
+      "context": "Instructions for ships arriving in British waters. The cover introduces the maritime-quarantine dossier; it is a historical document, not current guidance.",
+      "original_dimensions": [
+        1601,
+        978
+      ],
+      "original_sha256": "a42efff587e20c4c9a65996874841af94e5a9676647a36ee8edaae6684eb2190",
+      "reviewed_on": "2026-09-08",
+      "changes": "Resized and encoded as WebP; cover presentation crops through CSS. No colourisation or retouching. The full uncropped image is shown on the credits page.",
+      "variants": [
+        {
+          "path": "assets/exhibits/images/histsearch-640.webp",
+          "width": 640,
+          "height": 391,
+          "sha256": "7c1247d36b11f437d205d886d1f8a4d8c7180f91803580e11b2f84b90fd18d10"
+        },
+        {
+          "path": "assets/exhibits/images/histsearch-1280.webp",
+          "width": 1280,
+          "height": 782,
+          "sha256": "d6b70cc4c750cdb47feac85e9e70d35d5103363eed0c70399fb893a6a176525a"
+        }
+      ]
+    },
+    {
+      "id": "american-epidemic-timeline",
+      "title": "Influenza ward, Walter Reed Hospital, Washington, D.C.",
+      "caption": "A nurse takes a patient’s pulse. Walter Reed, c. 1918.",
+      "alt": "A masked nurse takes a patient’s pulse beside a line of hospital beds on a long open-sided ward.",
+      "creator": "Harris & Ewing",
+      "collection": "Library of Congress",
+      "date": "c. 1918",
+      "source": "https://www.loc.gov/item/2016648028/",
+      "download": "https://tile.loc.gov/storage-services/master/pnp/cph/3a30000/3a39000/3a39500/3a39569u.tif",
+      "license": "No known restrictions",
+      "license_url": "https://www.loc.gov/item/2016648028/#rights-and-access",
+      "rights_note": "The Library of Congress states “No known restrictions on publication.” The catalogue dates the photograph c. 1918, Nov. 1, and cautions that its older caption-card data is unverified.",
+      "position": "50% 58%",
+      "context": "A clinical scene from the 1918 influenza pandemic, one event within the much longer timeline.",
+      "original_dimensions": [
+        1536,
+        1049
+      ],
+      "original_sha256": "bdf3a909a0bbedf956ae2f5117d9d236245df6364d79376a2fb5d7287f6a2389",
+      "reviewed_on": "2026-09-08",
+      "changes": "Resized and encoded as WebP; cover presentation crops through CSS. No colourisation or retouching. The full uncropped image is shown on the credits page.",
+      "variants": [
+        {
+          "path": "assets/exhibits/images/american-epidemic-timeline-640.webp",
+          "width": 640,
+          "height": 437,
+          "sha256": "b471859cd8440f42b51b8db3515cfb4585e3079e3f8a367b03d2221a1c44ae99"
+        },
+        {
+          "path": "assets/exhibits/images/american-epidemic-timeline-1280.webp",
+          "width": 1280,
+          "height": 874,
+          "sha256": "313baad08d83e385d692d92dee7a4777ea92f0a3daba97936f63262e608b3341"
+        }
+      ]
+    },
+    {
+      "id": "pathogen-atlas",
+      "title": "Smallpox virus virions, transmission electron micrograph",
+      "caption": "Smallpox virions under an electron microscope, 1975.",
+      "alt": "Black-and-white transmission electron micrograph of smallpox virions, including a particle with its internal viral core visible.",
+      "creator": "CDC / Dr. Fred Murphy; Sylvia Whitfield",
+      "collection": "CDC Public Health Image Library",
+      "date": "1975",
+      "source": "https://phil.cdc.gov/Details.aspx?pid=1849",
+      "download": "https://wwwn.cdc.gov/phil/PHIL_Images/1849/1849_lores.jpg",
+      "license": "Public domain",
+      "license_url": "https://phil.cdc.gov/Details.aspx?pid=1849",
+      "rights_note": "PHIL 1849 explicitly identifies this image as public domain, free of copyright restrictions.",
+      "position": "50% 53%",
+      "context": "The image depicts smallpox virus, one of the atlas’s pathogen profiles. The resized detail is not a calibrated measurement image.",
+      "original_dimensions": [
+        700,
+        923
+      ],
+      "original_sha256": "4455a6838af52c3f90b49c148c59c4a94440d7c9d4585c3d906b20fefe953978",
+      "reviewed_on": "2026-09-08",
+      "changes": "Resized and encoded as WebP; cover presentation crops through CSS. No colourisation or retouching. The full uncropped image is shown on the credits page.",
+      "variants": [
+        {
+          "path": "assets/exhibits/images/pathogen-atlas-640.webp",
+          "width": 640,
+          "height": 844,
+          "sha256": "8733105d5ff565361d19c06ededed5f7ffdbd1f2c1e2181765672ae25b10ee6d"
+        },
+        {
+          "path": "assets/exhibits/images/pathogen-atlas-700.webp",
+          "width": 700,
+          "height": 923,
+          "sha256": "7efa3a2a7b953163b4b7ee422c29418367d67cf7da250cfa40166dc9e3ecb5c8"
+        }
+      ]
+    },
+    {
+      "id": "maritime-disease-atlas",
+      "title": "The Dreadnought, hospital ship for seamen, at Greenwich",
+      "caption": "A floating hospital. Dreadnought at Greenwich, 1870.",
+      "alt": "An 1870 engraving of the large Dreadnought hospital ship moored off Greenwich, with small rowing boats alongside.",
+      "creator": "The Illustrated London News; engraver not identified",
+      "collection": "Wellcome Collection",
+      "date": "1870",
+      "source": "https://wellcomecollection.org/works/g3crjxqu",
+      "download": "https://iiif.wellcomecollection.org/image/V0013350/full/1600,/0/default.jpg",
+      "license": "Public Domain Mark",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "rights_note": "Wellcome image record hubucktr, image V0013350, marks this digitisation as public domain.",
+      "position": "50% 55%",
+      "context": "A documented hospital ship. The interactive cutaway inside the exhibit remains a separate schematic teaching model and does not reconstruct this vessel.",
+      "original_dimensions": [
+        1600,
+        1142
+      ],
+      "original_sha256": "4d2c5a20f4a839d0493d376436faac124f88e7241922f24addc0292508b698cc",
+      "reviewed_on": "2026-09-08",
+      "changes": "Resized and encoded as WebP; cover presentation crops through CSS. No colourisation or retouching. The full uncropped image is shown on the credits page.",
+      "variants": [
+        {
+          "path": "assets/exhibits/images/maritime-disease-atlas-640.webp",
+          "width": 640,
+          "height": 457,
+          "sha256": "c66a2060e7213ac95438080a30b82a5ee1d9a8017a9f902d15b289d2c2080649"
+        },
+        {
+          "path": "assets/exhibits/images/maritime-disease-atlas-1280.webp",
+          "width": 1280,
+          "height": 914,
+          "sha256": "6d5756545d4e9a4f941f07e0f5836d59f7b68e4483038f2abb28a19a32c43b54"
+        }
+      ]
+    },
+    {
+      "id": "revolutionary-war-atlas",
+      "title": "Plan of Boston & vicinity",
+      "caption": "Boston and its entrenchments. Manuscript map, c. 1775.",
+      "alt": "A hand-drawn map of Boston and surrounding waterways, with buildings and entrenchments marked on aged paper.",
+      "creator": "Cartographer unidentified",
+      "collection": "Library of Congress",
+      "date": "c. 1775",
+      "source": "https://www.loc.gov/item/gm71002186/",
+      "download": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd376:g3764:g3764b:ar091900/full/pct:25/0/default.jpg",
+      "license": "Public domain",
+      "license_url": "https://www.loc.gov/item/gm71002186/#rights-and-access",
+      "rights_note": "Eighteenth-century manuscript map. Library of Congress Geography and Map Division; the catalogue dates it [1775?] and the download is unrestricted.",
+      "position": "50% 48%",
+      "context": "Geographic context for movement and encampments. The map does not itself record disease cases. North is to the left in the original.",
+      "original_dimensions": [
+        1204,
+        1120
+      ],
+      "original_sha256": "71cf9071f7f84c6eeb67a09f685c5c46039ba3507e4a817451d43754c2277f1f",
+      "reviewed_on": "2026-09-08",
+      "changes": "Resized and encoded as WebP; cover presentation crops through CSS. No colourisation or retouching. The full uncropped image is shown on the credits page.",
+      "variants": [
+        {
+          "path": "assets/exhibits/images/revolutionary-war-atlas-640.webp",
+          "width": 640,
+          "height": 595,
+          "sha256": "b3b9ddb422a87c491425a4870e656162a67606164d78119d583098cdf1a417d9"
+        },
+        {
+          "path": "assets/exhibits/images/revolutionary-war-atlas-1204.webp",
+          "width": 1204,
+          "height": 1120,
+          "sha256": "dc53706deeb810b2bda244cf575c97d45442e33c25e7eefa91b514406eb894b5"
+        }
+      ]
+    },
+    {
+      "id": "viking-health-atlas",
+      "title": "Examination of Viking jaw and teeth",
+      "caption": "Examining the evidence. Teeth and jaw from Varnhem.",
+      "alt": "Gloved hands hold a skull during examination of the jaw and teeth in the Varnhem dental research project.",
+      "creator": "Carolina Bertilsson",
+      "collection": "PLOS / EurekAlert!",
+      "date": "Published 2023; photograph date unspecified",
+      "source": "https://www.eurekalert.org/multimedia/1008356",
+      "download": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/34df39a2-8f0e-4696-8a7a-042acac7ff05/Rendition/low-res/Content/Public",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "rights_note": "The PLOS media record credits Carolina Bertilsson and explicitly licenses this photograph CC BY 4.0.",
+      "position": "50% 68%",
+      "context": "Photograph released with the 2023 Varnhem dental study cited in the exhibit. The Varnhem sample is distinct from the Ribe and Birka samples.",
+      "original_dimensions": [
+        700,
+        637
+      ],
+      "original_sha256": "133009998775c26f769e2e01cae1fe84d11be6012620ea6d3c9135728e6ef446",
+      "reviewed_on": "2026-09-08",
+      "changes": "Resized and encoded as WebP; cover presentation crops through CSS. No colourisation or retouching. The full uncropped image is shown on the credits page.",
+      "variants": [
+        {
+          "path": "assets/exhibits/images/viking-health-atlas-640.webp",
+          "width": 640,
+          "height": 582,
+          "sha256": "57f363a44b91ac39e249348dad44f8129c8bc60a49256556de4cf243a9e37028"
+        },
+        {
+          "path": "assets/exhibits/images/viking-health-atlas-700.webp",
+          "width": 700,
+          "height": 637,
+          "sha256": "32b56f97f83b25e9cb271dbcd3cabecdd8eb59f4a8145e2dcdf1fbc98c48179b"
+        }
+      ]
+    }
+  ]
+}
