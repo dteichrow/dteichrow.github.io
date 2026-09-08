@@ -2,10 +2,10 @@
 import * as THREE from "../vendor/three/three.module.js";
 export function createShip(container, onSelect) {
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color("#142126");
+  scene.background = new THREE.Color("#202127");
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
   renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
-  renderer.setClearColor("#142126");
+  renderer.setClearColor("#202127");
   renderer.domElement.setAttribute(
     "aria-label",
     "Schematic ship cutaway. Use the labeled space buttons and view controls for keyboard access.",
@@ -15,7 +15,7 @@ export function createShip(container, onSelect) {
   const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 100);
   const group = new THREE.Group();
   scene.add(group);
-  scene.add(new THREE.HemisphereLight("#fff8de", "#263f48", 3));
+  scene.add(new THREE.HemisphereLight("#fff8de", "#303347", 3));
   const key = new THREE.DirectionalLight("#fff2d4", 3);
   key.position.set(-3, 8, 5);
   scene.add(key);
@@ -30,7 +30,7 @@ export function createShip(container, onSelect) {
     });
   const timber = material("#9b7850"),
     deck = material("#b99b69"),
-    hullMaterial = material("#38585a", { side: THREE.DoubleSide });
+    hullMaterial = material("#4c5067", { side: THREE.DoubleSide });
   const hullShape = new THREE.Shape();
   hullShape.moveTo(-5, 1.1);
   hullShape.lineTo(5.25, 1.1);
@@ -70,10 +70,10 @@ export function createShip(container, onSelect) {
   }
   const colors = {
     berths: "#c97562",
-    ventilation: "#b9d1cd",
-    water: "#6ba7b8",
+    ventilation: "#b9bbd1",
+    water: "#7378b0",
     provisions: "#d3b557",
-    care: "#85b7a3",
+    care: "#8589b7",
   };
   function part(id) {
     const g = new THREE.Group();

@@ -4,11 +4,11 @@
 <style>/* Publication system. Reading surfaces stay quiet; exhibits carry the spatial detail. */
 :root {
   --paper: #f6f1e4;
-  --ink: #142126;
-  --teal: #155d66;
+  --ink: #202127;
+  --indigo: #414b82;
   --rust: #b84a3e;
   --gold: #b28b3e;
-  --slate: #46545b;
+  --slate: #555561;
   --line: #c9c5b8;
   --white: #fffdf7;
   --display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
@@ -30,7 +30,7 @@ body {
   overflow-wrap: break-word;
 }
 a {
-  color: var(--teal);
+  color: var(--indigo);
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
 }
@@ -218,7 +218,7 @@ small {
   font: 700 11px/1.5 var(--utility);
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--teal);
+  color: var(--indigo);
   margin-bottom: 16px;
 }
 .hero-intro {
@@ -256,18 +256,18 @@ small {
   justify-content: center;
   min-height: 46px;
   padding: 10px 18px;
-  border: 1px solid var(--teal);
+  border: 1px solid var(--indigo);
   font-size: 14px;
   line-height: 1.4;
   text-decoration: none;
 }
 .button.primary {
-  background: var(--teal);
+  background: var(--indigo);
   color: var(--white);
 }
 .button.secondary {
   background: transparent;
-  color: var(--teal);
+  color: var(--indigo);
 }
 .button:hover {
   background: var(--ink);
@@ -403,11 +403,12 @@ small {
   color: var(--slate);
 }
 .atlas-card-visual {
-  height: 190px;
+  aspect-ratio: 8 / 5;
+  height: auto;
   display: block;
   overflow: hidden;
   background: var(--ink);
-  margin-bottom: 18px;
+  margin-bottom: 0;
 }
 .atlas-card-visual img {
   width: 100%;
@@ -619,7 +620,7 @@ small {
 }
 .package-price {
   font: 27px var(--display);
-  color: var(--teal);
+  color: var(--indigo);
 }
 .package-card-head p:last-child {
   max-width: 450px;
@@ -958,6 +959,55 @@ th {
   outline: 3px solid #b84a3e;
   outline-offset: 3px;
 }
+
+/* Archival covers keep their captions outside the image. No overlays or tinting. */
+.exhibit-image {
+  margin: 0 0 22px;
+}
+.exhibit-image figcaption {
+  margin-top: 10px;
+  color: var(--slate);
+  font: 12px/1.6 var(--utility);
+}
+.exhibit-image figcaption a {
+  white-space: normal;
+}
+.flagship-preview .exhibit-image {
+  margin: 0;
+}
+.flagship-preview .atlas-card-visual {
+  aspect-ratio: 8 / 5;
+  height: auto;
+}
+.flagship-preview .exhibit-image figcaption {
+  padding: 0 28px;
+  color: #d4d0c8;
+}
+.image-credit-record {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 40px;
+  padding: 40px 0;
+  border-top: 1px solid var(--line);
+  scroll-margin-top: 24px;
+}
+.image-credit-record figure {
+  margin: 0;
+}
+.image-credit-record img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.image-credit-record h2 {
+  font-size: clamp(1.6rem, 2.7vw, 2.5rem);
+}
+@media (max-width: 700px) {
+  .image-credit-record {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
 </style>
     <link rel="canonical" href="https://devinteichrow.com/assets/referral/devin-teichrow-referral-packet.html" />
     <link rel="alternate" type="application/rss+xml" title="The Edge of Epidemiology RSS" href="https://theedgeofepidemiology.substack.com/feed" />
@@ -980,5 +1030,5 @@ th {
 <nav aria-label="Primary navigation" class="site-nav"><a class="site-nav-link" href="https://dteichrow.github.io/essays/">Essays</a><a class="site-nav-link" href="https://dteichrow.github.io/tools/">Exhibits</a><a class="site-nav-link" href="https://dteichrow.github.io/newsdesk/">Newsdesk</a><a class="site-nav-link" href="https://dteichrow.github.io/about/">About</a><a aria-current="page" class="site-nav-link active" href="https://dteichrow.github.io/opportunities/">Work with me</a><a class="site-nav-link" href="https://dteichrow.github.io/search/">Search</a></nav>
 </div></header>
 <main class="page" id="main" tabindex="-1"><section class="hero opportunities-hero"><p class="kicker">Work with me</p><h1 class="hero-title">Make your research <br/>easier to use.</h1><div class="hero-intro"><p>I help researchers, labs, health teams, and editors turn technical work into clear writing, useful analysis, and public websites.</p><p>I’m a UCLA-trained epidemiologist working in neurology at UC Irvine and the writer and builder behind The Edge of Epidemiology.</p></div><div class="hero-actions"><a class="button primary" href="mailto:devinteichrow@gmail.com?subject=Project+inquiry%3A+Research+project&amp;body=Problem+or+deliverable%3A%0A%0AAudience%3A%0A%0AExisting+materials%3A%0A%0ADeadline%3A%0A%0ABudget+range%3A%0A">Tell me about your project ↗</a><a class="text-link" href="https://dteichrow.github.io/assets/referral/devin-teichrow-referral-packet.pdf">Download the referral guide ↓</a></div></section><p class="service-intro">Choose a starting point below. Each range covers a defined project; we agree on the deliverable and scope before work begins. The examples are my own projects, provided to show the approach.</p><section aria-label="Project packages" class="service-packages"><article class="service-package-card" id="lab-website"><div class="package-card-head"><p class="kicker">01 / Project package</p><h2>Lab Website + Auto Publications</h2><p class="package-price">$650–$1,500</p><p>Your research needs a clear public home, and your publications page needs to stay current.</p></div><div class="package-detail"><h3>What you receive</h3><ul><li>A responsive lab or project website with people, research, publications, and contact pages.</li><li>A configurable PubMed publication feed, with query rules reviewed for false matches.</li><li>Edited page copy, deployment, and practical update instructions.</li></ul><details><summary>What to send, and how scope affects the quote</summary><p><strong>To begin:</strong> Your current site or draft copy, people and project details, publication identifiers, and any existing visual assets.</p><p>Page count, content readiness, publication-query complexity, and migration needs determine the quote.</p></details><p class="work-example"><span>Example from my own work</span><a href="https://dteichrow.github.io/essays/">This publication’s static website and searchable archive →</a></p><a class="button secondary" href="mailto:devinteichrow@gmail.com?subject=Project+inquiry%3A+Lab+Website+%2B+Auto+Publications&amp;body=Problem+or+deliverable%3A%0A%0AAudience%3A%0A%0AExisting+materials%3A%0A%0ADeadline%3A%0A%0ABudget+range%3A%0A">Ask about this package ↗</a></div></article><article class="service-package-card" id="research-visibility"><div class="package-card-head"><p class="kicker">02 / Project package</p><h2>Research Visibility Package</h2><p class="package-price">$500–$1,500</p><p>A paper, talk, or project needs a useful explanation for people outside its immediate field.</p></div><div class="package-detail"><h3>What you receive</h3><ul><li>Plain-language research summaries and project descriptions.</li><li>A scoped set of lab-news, website, or short-form research updates.</li><li>Source-linked copy with qualifications intact and a reusable handoff.</li></ul><details><summary>What to send, and how scope affects the quote</summary><p><strong>To begin:</strong> The papers, slides, recordings, or draft copy; the intended audience; and where the material will appear.</p><p>The number of outputs, source volume, and depth of editorial work determine the quote.</p></details><p class="work-example"><span>Example from my own work</span><a href="https://dteichrow.github.io/essays/">The Edge of Epidemiology essay collection →</a></p><a class="button secondary" href="mailto:devinteichrow@gmail.com?subject=Project+inquiry%3A+Research+Visibility+Package&amp;body=Problem+or+deliverable%3A%0A%0AAudience%3A%0A%0AExisting+materials%3A%0A%0ADeadline%3A%0A%0ABudget+range%3A%0A">Ask about this package ↗</a></div></article><article class="service-package-card" id="cleanup-sprint"><div class="package-card-head"><p class="kicker">03 / Project package</p><h2>Data / Stats / Writing Cleanup Sprint</h2><p class="package-price">$400–$1,500</p><p>An analysis, figure, codebase, or scientific draft needs to become understandable and reproducible.</p></div><div class="package-detail"><h3>What you receive</h3><ul><li>A defined R/Python analysis, code-cleanup, figure, or writing deliverable.</li><li>Checks of assumptions, units, denominators, and interpretation relevant to that deliverable.</li><li>A reproducible report or revised artifact with handoff notes.</li></ul><details><summary>What to send, and how scope affects the quote</summary><p><strong>To begin:</strong> A description of the research question, current code or draft, data documentation, and an appropriate shareable sample where needed.</p><p>Data condition, analysis complexity, and the size of the requested revision determine the quote.</p></details><p class="work-example"><span>Example from my own work</span><a href="https://dteichrow.github.io/tools/american-epidemic-timeline/">The timeline’s documented records and comparative evidence views →</a></p><a class="button secondary" href="mailto:devinteichrow@gmail.com?subject=Project+inquiry%3A+Data+%2F+Stats+%2F+Writing+Cleanup+Sprint&amp;body=Problem+or+deliverable%3A%0A%0AAudience%3A%0A%0AExisting+materials%3A%0A%0ADeadline%3A%0A%0ABudget+range%3A%0A">Ask about this package ↗</a></div></article><article class="service-package-card" id="evidence-translation"><div class="package-card-head"><p class="kicker">04 / Project package</p><h2>Evidence Translation Sprint</h2><p class="package-price">$500–$1,500</p><p>A clinical, public-health, policy, or research question needs a bounded, source-backed answer.</p></div><div class="package-detail"><h3>What you receive</h3><ul><li>A defined question, search strategy, and inclusion boundaries.</li><li>An evidence table or annotated source packet distinguishing findings from interpretation.</li><li>A brief, memo, or slide-ready summary suited to the audience.</li></ul><details><summary>What to send, and how scope affects the quote</summary><p><strong>To begin:</strong> Your decision or question, audience, existing sources, and any constraints on the review.</p><p>Question breadth, literature volume, source access, and output format determine the quote.</p></details><p class="work-example"><span>Example from my own work</span><a href="https://dteichrow.github.io/tools/histsearch/">Histsearch’s curated research dossiers →</a></p><a class="button secondary" href="mailto:devinteichrow@gmail.com?subject=Project+inquiry%3A+Evidence+Translation+Sprint&amp;body=Problem+or+deliverable%3A%0A%0AAudience%3A%0A%0AExisting+materials%3A%0A%0ADeadline%3A%0A%0ABudget+range%3A%0A">Ask about this package ↗</a></div></article><article class="service-package-card" id="research-exhibit"><div class="package-card-head"><p class="kicker">05 / Project package</p><h2>Research Exhibit or Topic Monitor</h2><p class="package-price">$1,000–$3,000</p><p>A disease, dataset, historical subject, or research program would benefit from an explorable public resource.</p></div><div class="package-detail"><h3>What you receive</h3><ul><li>A scoped map, timeline, exhibit, reference page, or monitoring interface.</li><li>Accessible record views, source links, and explicit evidence limitations.</li><li>A maintainable static build with documented data and update procedures.</li></ul><details><summary>What to send, and how scope affects the quote</summary><p><strong>To begin:</strong> The topic and intended audience, source material or dataset, desired interactions, and your update needs.</p><p>The number of views, data preparation, custom interactions, and update integration determine the quote.</p></details><p class="work-example"><span>Example from my own work</span><a href="https://dteichrow.github.io/atlases/maritime/">The Maritime Disease Atlas and Pathogen Dispatch →</a></p><a class="button secondary" href="mailto:devinteichrow@gmail.com?subject=Project+inquiry%3A+Research+Exhibit+or+Topic+Monitor&amp;body=Problem+or+deliverable%3A%0A%0AAudience%3A%0A%0AExisting+materials%3A%0A%0ADeadline%3A%0A%0ABudget+range%3A%0A">Ask about this package ↗</a></div></article></section><section class="home-section"><p class="kicker">How we work</p><h2>A clear scope, a usable handoff.</h2><ol class="service-process"><li><h3>Define the deliverable</h3><p>We agree on the audience, source material, output, scope, and review points.</p></li><li><h3>Build and review</h3><p>I develop the work and incorporate the agreed review.</p></li><li><h3>Hand over the work</h3><p>You receive the finished artifact, relevant source files, and instructions for using or updating it.</p></li></ol><p class="maintenance-note"><strong>Ongoing maintenance: $100–$300/month.</strong> Separately scoped support for publication updates, page changes, broken links, and similar upkeep.</p></section><section class="commission-strip"><div><h2>Have a project in mind?</h2><p>Send the problem, audience, existing materials, deadline, and budget range.</p></div><a href="mailto:devinteichrow@gmail.com?subject=Project+inquiry%3A+Research+project&amp;body=Problem+or+deliverable%3A%0A%0AAudience%3A%0A%0AExisting+materials%3A%0A%0ADeadline%3A%0A%0ABudget+range%3A%0A">devinteichrow@gmail.com ↗</a></section></main>
-<footer class="site-footer"><div><p class="footer-title">The Edge of Epidemiology</p><p>Essays, evidence, and the history disease leaves behind.</p><p>Written and built by Devin Teichrow.</p></div><nav aria-label="Further reading"><a href="https://dteichrow.github.io/topics/">Topics</a><a href="https://dteichrow.github.io/historical/">Historical</a><a href="https://dteichrow.github.io/reference/">Reference</a><a href="https://dteichrow.github.io/methods/">Methods</a><a href="https://dteichrow.github.io/opportunities/">Work with me</a><a href="https://theedgeofepidemiology.substack.com/subscribe">Subscribe on Substack ↗</a></nav></footer>
+<footer class="site-footer"><div><p class="footer-title">The Edge of Epidemiology</p><p>Essays, evidence, and the history disease leaves behind.</p><p>Written and built by Devin Teichrow.</p></div><nav aria-label="Further reading"><a href="https://dteichrow.github.io/topics/">Topics</a><a href="https://dteichrow.github.io/historical/">Historical</a><a href="https://dteichrow.github.io/reference/">Reference</a><a href="https://dteichrow.github.io/methods/">Methods</a><a href="https://dteichrow.github.io/image-credits/">Image credits</a><a href="https://dteichrow.github.io/opportunities/">Work with me</a><a href="https://theedgeofepidemiology.substack.com/subscribe">Subscribe on Substack ↗</a></nav></footer>
 </body></html>

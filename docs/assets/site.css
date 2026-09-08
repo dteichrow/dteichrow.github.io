@@ -1,11 +1,11 @@
 /* Publication system. Reading surfaces stay quiet; exhibits carry the spatial detail. */
 :root {
   --paper: #f6f1e4;
-  --ink: #142126;
-  --teal: #155d66;
+  --ink: #202127;
+  --indigo: #414b82;
   --rust: #b84a3e;
   --gold: #b28b3e;
-  --slate: #46545b;
+  --slate: #555561;
   --line: #c9c5b8;
   --white: #fffdf7;
   --display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
@@ -27,7 +27,7 @@ body {
   overflow-wrap: break-word;
 }
 a {
-  color: var(--teal);
+  color: var(--indigo);
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
 }
@@ -215,7 +215,7 @@ small {
   font: 700 11px/1.5 var(--utility);
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--teal);
+  color: var(--indigo);
   margin-bottom: 16px;
 }
 .hero-intro {
@@ -253,18 +253,18 @@ small {
   justify-content: center;
   min-height: 46px;
   padding: 10px 18px;
-  border: 1px solid var(--teal);
+  border: 1px solid var(--indigo);
   font-size: 14px;
   line-height: 1.4;
   text-decoration: none;
 }
 .button.primary {
-  background: var(--teal);
+  background: var(--indigo);
   color: var(--white);
 }
 .button.secondary {
   background: transparent;
-  color: var(--teal);
+  color: var(--indigo);
 }
 .button:hover {
   background: var(--ink);
@@ -400,11 +400,12 @@ small {
   color: var(--slate);
 }
 .atlas-card-visual {
-  height: 190px;
+  aspect-ratio: 8 / 5;
+  height: auto;
   display: block;
   overflow: hidden;
   background: var(--ink);
-  margin-bottom: 18px;
+  margin-bottom: 0;
 }
 .atlas-card-visual img {
   width: 100%;
@@ -616,7 +617,7 @@ small {
 }
 .package-price {
   font: 27px var(--display);
-  color: var(--teal);
+  color: var(--indigo);
 }
 .package-card-head p:last-child {
   max-width: 450px;
@@ -954,4 +955,53 @@ th {
 [tabindex="-1"]:focus-visible {
   outline: 3px solid #b84a3e;
   outline-offset: 3px;
+}
+
+/* Archival covers keep their captions outside the image. No overlays or tinting. */
+.exhibit-image {
+  margin: 0 0 22px;
+}
+.exhibit-image figcaption {
+  margin-top: 10px;
+  color: var(--slate);
+  font: 12px/1.6 var(--utility);
+}
+.exhibit-image figcaption a {
+  white-space: normal;
+}
+.flagship-preview .exhibit-image {
+  margin: 0;
+}
+.flagship-preview .atlas-card-visual {
+  aspect-ratio: 8 / 5;
+  height: auto;
+}
+.flagship-preview .exhibit-image figcaption {
+  padding: 0 28px;
+  color: #d4d0c8;
+}
+.image-credit-record {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 40px;
+  padding: 40px 0;
+  border-top: 1px solid var(--line);
+  scroll-margin-top: 24px;
+}
+.image-credit-record figure {
+  margin: 0;
+}
+.image-credit-record img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.image-credit-record h2 {
+  font-size: clamp(1.6rem, 2.7vw, 2.5rem);
+}
+@media (max-width: 700px) {
+  .image-credit-record {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 }

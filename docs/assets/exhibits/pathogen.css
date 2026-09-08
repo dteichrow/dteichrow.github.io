@@ -138,7 +138,7 @@ a {
   letter-spacing: 0.04em;
 }
 .mode-select {
-  border-color: rgba(140, 201, 181, 0.24);
+  border-color: rgba(170, 182, 232, 0.24);
 }
 #atlas-controls {
   display: flex;
@@ -256,18 +256,18 @@ a {
   color: var(--text);
 }
 .badge.reviewed {
-  color: #8cc9b5;
-  border-color: rgba(140, 201, 181, 0.3);
-  background: rgba(140, 201, 181, 0.1);
+  color: #aab6e8;
+  border-color: rgba(170, 182, 232, 0.3);
+  background: rgba(170, 182, 232, 0.1);
 }
 .badge.layer-global_distribution {
-  color: #9eb4b2;
+  color: #9ea0b4;
 }
 .badge.layer-endemic_zone {
   color: var(--gold);
 }
 .badge.layer-reservoir_ecology {
-  color: #9dcf8d;
+  color: #d3b4e4;
 }
 .badge.layer-outbreak_region {
   color: #d8876d;
@@ -276,7 +276,7 @@ a {
   color: #8fb8d8;
 }
 .badge.layer-exposure_zone {
-  color: #8cc9b5;
+  color: #aab6e8;
 }
 #route-list,
 #knowledge-status,
@@ -340,9 +340,9 @@ a {
   background: rgba(216, 135, 109, 0.1);
 }
 .badge.vector {
-  color: #9dcf8d;
-  border-color: rgba(157, 207, 141, 0.28);
-  background: rgba(157, 207, 141, 0.09);
+  color: #d3b4e4;
+  border-color: rgba(211, 180, 228, 0.28);
+  background: rgba(211, 180, 228, 0.09);
 }
 .badge.eradicated {
   color: #8fb8d8;
@@ -543,7 +543,7 @@ a {
   filter: saturate(0.8);
 }
 .atlas-geography-layer.layer-reservoir_ecology {
-  filter: drop-shadow(0 0 5px rgba(157, 207, 141, 0.18));
+  filter: drop-shadow(0 0 5px rgba(211, 180, 228, 0.18));
 }
 .atlas-geography-layer.layer-outbreak_region {
   filter: drop-shadow(0 0 7px rgba(216, 135, 109, 0.28));
@@ -659,7 +659,7 @@ body {
   grid-template-columns: minmax(0, 1fr) minmax(320px, 390px);
   grid-template-areas: "nav nav" "chrome chrome" "map story" "legend story" "evidence evidence";
   background: #f6f1e4;
-  color: #142126;
+  color: #202127;
   gap: 0;
 }
 .eoe-exhibit-nav {
@@ -673,7 +673,7 @@ body {
   position: static;
   display: block;
   padding: 24px;
-  background: #142126;
+  background: #202127;
   box-shadow: none;
   color: #f6f1e4;
 }
@@ -721,11 +721,11 @@ body {
   background: #f6f1e4;
   border: 0;
   box-shadow: none;
-  color: #142126;
-  --text: #142126;
-  --muted: #46545b;
-  --faint: #46545b;
-  --gold: #155d66;
+  color: #202127;
+  --text: #202127;
+  --muted: #555561;
+  --faint: #555561;
+  --gold: #414b82;
   --border: #c9c5b8;
 }
 #story-title {
@@ -741,18 +741,18 @@ body {
 #story-panel .panel-copy,
 #story-panel .route-copy,
 #story-panel .note-text {
-  color: #46545b;
+  color: #555561;
   font-size: 14px;
   line-height: 1.6;
 }
 #story-panel .detail-card,
 #story-panel .route-step {
   background: #edeadd;
-  color: #142126;
+  color: #202127;
   border-color: #c9c5b8;
 }
 #story-panel .source-link {
-  color: #155d66;
+  color: #414b82;
 }
 #story-panel #story-meta {
   display: none;
@@ -760,15 +760,15 @@ body {
 #inspect-evidence {
   margin: 18px 0;
   padding: 10px;
-  border: 1px solid #155d66;
-  color: #155d66;
+  border: 1px solid #414b82;
+  color: #414b82;
   background: transparent;
 }
 #host-chain h3 {
   font-size: 19px;
 }
 #rotation-state {
-  color: #46545b;
+  color: #555561;
   font-size: 12px;
 }
 #evidence-panel {
@@ -779,13 +779,13 @@ body {
   max-height: none;
   overflow: visible;
   background: #edeadd;
-  color: #142126;
+  color: #202127;
   padding: 24px;
-  --text: #142126;
-  --muted: #46545b;
-  --faint: #46545b;
+  --text: #202127;
+  --muted: #555561;
+  --faint: #555561;
   --border: #c9c5b8;
-  --gold: #155d66;
+  --gold: #414b82;
 }
 #evidence-panel > summary {
   font:
@@ -801,11 +801,11 @@ body {
 }
 #evidence-panel .panel-copy,
 #evidence-panel .note-text {
-  color: #46545b;
+  color: #555561;
   font-size: 15px;
 }
 #evidence-panel a {
-  color: #155d66;
+  color: #414b82;
 }
 #evidence-panel .detail-card,
 #evidence-panel .evidence-card,
@@ -824,7 +824,7 @@ body {
   position: static;
   width: auto;
   transform: none;
-  background: #142126;
+  background: #202127;
   padding: 16px;
   height: auto;
   align-self: start;
@@ -900,7 +900,7 @@ body {
 }
 
 #filter-count {
-  color: #c9d0c7;
+  color: #c7c8d0;
 }
 .profile-fold > summary {
   cursor: pointer;

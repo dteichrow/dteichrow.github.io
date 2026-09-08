@@ -126,7 +126,7 @@
     const uncertaintyText =
       `${event.uncertainty_note || ""} ${event.pathogen_or_agent || ""}`.toLowerCase();
     const badges = [
-      `<span class="badge green">${esc(confidenceLabel(event))}</span>`,
+      `<span class="badge supported">${esc(confidenceLabel(event))}</span>`,
     ];
     if (event.confidence === "high") {
       badges.push('<span class="badge blue">High confidence</span>');

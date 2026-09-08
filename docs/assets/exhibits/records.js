@@ -8,10 +8,10 @@ const search = document.getElementById("record-search"),
   category = document.getElementById("category-filter");
 const palette = [
   "#c87564",
-  "#79aaa3",
+  "#797daa",
   "#d7bc73",
   "#a996bc",
-  "#a1b77f",
+  "#7f84b7",
   "#85b5ce",
 ];
 const cats = [...new Set(records.map((r) => r.category))],

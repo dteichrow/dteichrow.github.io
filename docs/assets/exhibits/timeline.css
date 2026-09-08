@@ -6,13 +6,13 @@
   --paper: #efe3cf;
   --charcoal: #111416;
   --coal: #07090b;
-  --panel: rgba(23, 27, 28, 0.88);
-  --panel-solid: #171b1c;
+  --panel: rgba(23, 23, 28, 0.88);
+  --panel-solid: #17171c;
   --line: rgba(239, 227, 207, 0.18);
   --strong-line: rgba(239, 227, 207, 0.34);
   --red: #b64d45;
   --gold: #d5a856;
-  --green: #5d8f72;
+  --plum: #9189b0;
   --blue: #6e91aa;
   --shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
   --radius: 8px;
@@ -186,7 +186,7 @@ select {
   min-height: 0;
   overflow: hidden;
   border: 1px solid rgba(239, 227, 207, 0.14);
-  background: #171b1c;
+  background: #17171c;
 }
 
 .hero-collage figure:first-child {
@@ -377,7 +377,7 @@ select {
   width: 100%;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: #0c0f10;
+  background: #0c0c10;
   color: var(--ink);
   padding: 0.62rem 0.72rem;
 }
@@ -454,7 +454,7 @@ select {
   inset: 0;
   background:
     linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.78)),
-    linear-gradient(90deg, rgba(182, 77, 69, 0.16), rgba(93, 143, 114, 0.08));
+    linear-gradient(90deg, rgba(182, 77, 69, 0.16), rgba(145, 137, 176, 0.08));
 }
 
 #stageImage {
@@ -515,9 +515,9 @@ select {
   color: #f4d59a;
 }
 
-.badge.green {
-  border-color: rgba(93, 143, 114, 0.68);
-  color: #bde1c8;
+.badge.supported {
+  border-color: rgba(145, 137, 176, 0.68);
+  color: #c2c4dc;
 }
 
 .badge.red {
@@ -623,7 +623,7 @@ select {
     180deg,
     var(--red),
     var(--gold),
-    var(--green),
+    var(--plum),
     var(--blue)
   );
 }
@@ -666,7 +666,7 @@ select {
   position: relative;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: rgba(20, 23, 24, 0.84);
+  background: rgba(20, 20, 24, 0.84);
   overflow: hidden;
 }
 
@@ -1044,14 +1044,14 @@ td {
 /* Quiet reading surface with a dark archival visual stage. */
 :root {
   color-scheme: light;
-  --ink: #142126;
-  --muted: #46545b;
-  --faint: #46545b;
+  --ink: #202127;
+  --muted: #555561;
+  --faint: #555561;
   --paper: #f6f1e4;
   --panel: #f6f1e4;
   --panel-solid: #f6f1e4;
   --line: #c9c5b8;
-  --strong-line: #8b9690;
+  --strong-line: #8b8c96;
   --gold: #86641f;
   --shadow: none;
 }
@@ -1108,44 +1108,44 @@ body {
   font-family: "Iowan Old Style", Palatino, Georgia, serif;
 }
 .visual-stage {
-  background: #142126;
+  background: #202127;
   color: #f6f1e4;
   --ink: #f6f1e4;
-  --muted: #d0d5cb;
-  --faint: #d0d5cb;
-  --line: #596968;
+  --muted: #cbccd5;
+  --faint: #cbccd5;
+  --line: #595a69;
   --gold: #d8be76;
 }
 .event-media {
-  background: #142126;
+  background: #202127;
 }
 .filter-input,
 input,
 select {
-  color: #142126 !important;
+  color: #202127 !important;
   background: #fffdf7 !important;
 }
 .button,
 .small-button {
-  color: #155d66;
+  color: #414b82;
   background: transparent;
-  border-color: #859d97;
+  border-color: #85879d;
 }
 .button.primary,
 .mode-button[aria-pressed="true"] {
-  background: #155d66;
+  background: #414b82;
   color: #fffdf7;
 }
 .badge {
-  color: #46545b;
+  color: #555561;
   background: #e8e5d9;
 }
 .source-pill {
-  color: #155d66;
+  color: #414b82;
 }
 .drawer {
   background: #f6f1e4 !important;
-  color: #142126;
+  color: #202127;
 }
 .table-wrap {
   max-width: 100%;
@@ -1236,17 +1236,17 @@ select {
 
 /* Reading surfaces and stage badges have independent color contracts. */
 .badge.gold,
-.badge.green,
+.badge.supported,
 .badge.blue,
 .badge.red,
 .badge.warning {
-  color: #34484b;
+  color: #34364b;
   background: #e8e5d9;
 }
 .detail-drawer,
 .drawer-top {
   background: #f6f1e4;
-  color: #142126;
+  color: #202127;
 }
 .detail-drawer[aria-hidden="true"] {
   visibility: hidden;

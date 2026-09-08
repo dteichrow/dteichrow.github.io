@@ -15,8 +15,8 @@ const PALETTE = {
   "measles-virus": "#d6c06a",
   "yellow-fever-virus": "#d86a4f",
   "dengue-virus": "#c9a84c",
-  "malaria-parasites": "#5abf7c",
-  hantaviruses: "#7aa96b",
+  "malaria-parasites": "#bb9cdb",
+  hantaviruses: "#c99a73",
   "hiv-1": "#d26b91",
   "sars-cov-2": "#7b8fa8",
   poliovirus: "#7c9fd1",
@@ -28,9 +28,9 @@ const PALETTE = {
   measles: "#d6c06a",
   mpox: "#dd6974",
   "avian-influenza-h5n1": "#9b7bd8",
-  hantavirus: "#7aa96b",
+  hantavirus: "#c99a73",
   dengue: "#c9a84c",
-  malaria: "#5abf7c",
+  malaria: "#bb9cdb",
   tuberculosis: "#d98e5f",
   plague: "#b9754f",
 };
@@ -432,12 +432,12 @@ function geographyOpacity(confidence) {
 function geographyTypeColor(layer, fallbackColor) {
   return (
     {
-      global_distribution: "#9eb4b2",
+      global_distribution: "#9ea0b4",
       endemic_zone: fallbackColor,
-      reservoir_ecology: "#9dcf8d",
+      reservoir_ecology: "#d3b4e4",
       outbreak_region: "#d8876d",
       surveillance_region: "#8fb8d8",
-      exposure_zone: "#8cc9b5",
+      exposure_zone: "#aab6e8",
     }[layer?.layer_type] || fallbackColor
   );
 }

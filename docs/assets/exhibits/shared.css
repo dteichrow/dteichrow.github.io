@@ -1,8 +1,8 @@
 /* Common exhibit navigation is in document flow, above the exhibit controls. */
 :root {
   --eoe-paper: #f6f1e4;
-  --eoe-ink: #142126;
-  --eoe-teal: #155d66;
+  --eoe-ink: #202127;
+  --eoe-accent: #414b82;
   --eoe-rust: #b84a3e;
   --eoe-gold: #b28b3e;
   --display: "Iowan Old Style", Palatino, Georgia, serif;
@@ -18,13 +18,13 @@
   gap: 12px 24px;
   padding: 15px 24px;
   background: #f6f1e4;
-  color: #142126;
-  border-bottom: 1px solid #b1b3a6;
+  color: #202127;
+  border-bottom: 1px solid #a6a7b3;
   font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
   box-sizing: border-box;
 }
 .eoe-exhibit-nav > a {
-  color: #142126;
+  color: #202127;
   text-decoration: none;
   font: 22px/1.1 var(--display);
 }
@@ -39,7 +39,7 @@
     "Helvetica Neue",
     Arial,
     sans-serif;
-  color: #155d66;
+  color: #414b82;
   display: inline-flex;
   align-items: center;
   min-height: 36px;
@@ -51,7 +51,7 @@
   top: -90px;
   z-index: 9000;
   background: #f6f1e4;
-  color: #142126;
+  color: #202127;
   padding: 12px;
 }
 .eoe-skip:focus {
@@ -77,31 +77,31 @@ summary {
   touch-action: manipulation;
 }
 .eoe-map-label {
-  color: #b6c8c4;
+  color: #b6b8c8;
   font:
     italic 13px Georgia,
     serif;
   white-space: nowrap;
   text-align: center;
-  text-shadow: 0 1px 2px #142126;
+  text-shadow: 0 1px 2px #202127;
 }
 .eoe-map-label.light {
-  color: #46545b;
+  color: #555561;
   text-shadow: none;
 }
 .leaflet-container {
-  background: #172b30 !important;
+  background: #1a1b2d !important;
 }
 .leaflet-control-attribution {
   font:
     10px/1.4 Arial,
     sans-serif !important;
-  color: #142126 !important;
+  color: #202127 !important;
   background: #f6f1e4e8 !important;
   max-width: 400px;
 }
 .leaflet-control-attribution a {
-  color: #155d66 !important;
+  color: #414b82 !important;
 }
 .eoe-utility {
   display: flex;
@@ -111,7 +111,7 @@ summary {
 }
 .eoe-utility button {
   padding: 8px 12px;
-  border: 1px solid #8b9a95;
+  border: 1px solid #8b8c9a;
   background: transparent;
   color: inherit;
   font:
@@ -128,7 +128,7 @@ summary {
     sans-serif;
 }
 .eoe-evidence-toggle {
-  border-top: 1px solid #b6b9ad;
+  border-top: 1px solid #adaeb9;
   margin-top: 16px;
   padding-top: 14px;
 }
@@ -148,15 +148,15 @@ summary {
 }
 .eoe-host-chain button {
   background: #e7e7d8;
-  color: #155d66;
-  border: 1px solid #8ba3a0;
+  color: #414b82;
+  border: 1px solid #8b8da3;
   padding: 8px 10px;
   font:
     13px Arial,
     sans-serif;
 }
 .eoe-host-chain button[aria-pressed="true"] {
-  background: #155d66;
+  background: #414b82;
   color: #fffdf7;
 }
 .eoe-evidence-note {
@@ -172,12 +172,12 @@ summary {
 }
 .eoe-guided-paths button {
   padding: 10px 14px;
-  border: 1px solid #155d66;
+  border: 1px solid #414b82;
   background: transparent;
   color: inherit;
 }
 .eoe-guided-paths button[aria-pressed="true"] {
-  background: #155d66;
+  background: #414b82;
   color: white;
 }
 [hidden] {

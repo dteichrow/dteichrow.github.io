@@ -9,11 +9,11 @@
   --gold: #c9a84c;
   --brass: #a8864a;
   --fever: #d86a4f;
-  --teal: #5d958c;
+  --indigo: #959bcc;
   --blue: #5a9bd4;
   --rose: #dd6974;
   --violet: #9b7bd8;
-  --green: #7aa96b;
+  --plum: #c99a73;
   --copper: #bd7b45;
   --display: Georgia, "Times New Roman", serif;
 }
@@ -239,7 +239,7 @@ body {
   background: rgba(255, 255, 255, 0.018);
 }
 .station-group-label {
-  color: rgba(214, 200, 174, 0.62);
+  color: #c3c4cd;
   font: 800 10px/1 var(--display);
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -286,7 +286,7 @@ body {
   color: var(--gold);
 }
 #tour-btn {
-  color: #6d9f91;
+  color: #b4b9e5;
 }
 #recording-btn {
   color: #88a7bd;
@@ -1204,7 +1204,7 @@ html:not(.recording-mode):not(.youtube-mode) #plot-card {
   display: flex;
 }
 .youtube-mode #video-brand-source {
-  color: #4f6f64;
+  color: #4f526f;
 }
 .youtube-mode #chrome {
   transform: translateY(-112%);
@@ -1550,7 +1550,7 @@ html:not(.recording-mode):not(.youtube-mode) #chrome {
   position: static;
   grid-area: chrome;
   padding: 25px;
-  background: #142126;
+  background: #202127;
   display: block;
   box-shadow: none;
 }
@@ -1587,14 +1587,14 @@ html:not(.recording-mode):not(.youtube-mode) #story-panel {
   max-height: none;
   overflow: visible;
   background: #f6f1e4;
-  color: #142126;
+  color: #202127;
   border: 0;
   border-radius: 0;
   box-shadow: none;
   padding: 28px;
-  --text: #142126;
-  --muted: #46545b;
-  --gold: #155d66;
+  --text: #202127;
+  --muted: #555561;
+  --gold: #414b82;
   --border: #c9c5b8;
 }
 html:not(.recording-mode):not(.youtube-mode) #story-title {
@@ -1607,20 +1607,20 @@ html:not(.recording-mode):not(.youtube-mode) #story-title {
 html:not(.recording-mode):not(.youtube-mode) #story-copy {
   font-size: 16px;
   line-height: 1.6;
-  color: #46545b;
+  color: #555561;
 }
 html:not(.recording-mode):not(.youtube-mode) #story-kicker {
-  color: #155d66;
+  color: #414b82;
 }
 html:not(.recording-mode):not(.youtube-mode) .module-card {
   background: #fffdf7;
   border-color: #c9c5b8;
-  color: #142126;
+  color: #202127;
 }
 html:not(.recording-mode):not(.youtube-mode) .module-meta,
 html:not(.recording-mode):not(.youtube-mode) .module-line,
 html:not(.recording-mode):not(.youtube-mode) .module-citation {
-  color: #46545b;
+  color: #555561;
 }
 html:not(.recording-mode):not(.youtube-mode) .module-card h4 {
   font:
@@ -1628,22 +1628,22 @@ html:not(.recording-mode):not(.youtube-mode) .module-card h4 {
     Palatino,
     Georgia,
     serif;
-  color: #142126;
+  color: #202127;
 }
 html:not(.recording-mode):not(.youtube-mode) .module-citation a {
-  color: #155d66;
+  color: #414b82;
 }
 html:not(.recording-mode):not(.youtube-mode) .module-filters select {
   background: #fffdf7;
-  color: #142126;
-  border-color: #8da09a;
+  color: #202127;
+  border-color: #8d8fa0;
 }
 html:not(.recording-mode):not(.youtube-mode) .module-filters label {
-  color: #155d66;
+  color: #414b82;
 }
 html:not(.recording-mode):not(.youtube-mode) .module-open {
-  border-color: #155d66;
-  color: #155d66;
+  border-color: #414b82;
+  color: #414b82;
 }
 html:not(.recording-mode):not(.youtube-mode) .module-badges {
   display: none;
@@ -1655,7 +1655,7 @@ html:not(.recording-mode):not(.youtube-mode) #legend-bar {
   width: auto;
   transform: none;
   height: auto;
-  background: #142126;
+  background: #202127;
   align-self: start;
   padding: 18px;
 }
@@ -1668,16 +1668,16 @@ html:not(.recording-mode):not(.youtube-mode) #timeline {
   flex-wrap: wrap;
   transform: none;
   align-self: start;
-  background: #142126;
+  background: #202127;
 }
 html:not(.recording-mode):not(.youtube-mode) #exhibit-guide {
-  color: #46545b;
+  color: #555561;
 }
 html:not(.recording-mode):not(.youtube-mode) #exhibit-guide summary {
-  color: #155d66;
+  color: #414b82;
 }
 html:not(.recording-mode):not(.youtube-mode) #module-count {
-  color: #46545b;
+  color: #555561;
 }
 #exhibit-main {
   position: absolute;
@@ -1750,7 +1750,7 @@ html:not(.recording-mode):not(.youtube-mode) #module-count {
 
 .exhibit-controls > .station-group-label,
 #reset-btn {
-  color: #c6cdc3;
+  color: #c3c4cd;
 }
 #sources-drawer[aria-hidden="true"] {
   visibility: hidden;
