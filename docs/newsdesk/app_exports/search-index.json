@@ -621,21 +621,21 @@
     "section": "Newsdesk",
     "summary": "Monitoring: Toledo-Lucas County Health Department Cyclosporiasis Update",
     "url": "/stories/story_7ecd65705353b55c-cyclosporiasis.html",
-    "keywords": "new_official_source confirmed_case policy_or_travel new_geography North America United States"
+    "keywords": "new_official_source confirmed_case new_geography North America United States"
   },
   {
     "title": "Dengue and arboviruses",
     "section": "Newsdesk",
     "summary": "Monitoring: Florida Surgeon General Reminds Floridians to Take Precautions Against Dengue Ahead of Labor Day Weekend",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
-    "keywords": "severity_or_death new_geography North America United States"
+    "keywords": "severity_or_death transmission_change new_geography North America United States"
   },
   {
     "title": "Malaria",
     "section": "Newsdesk",
     "summary": "Monitoring: WHO São Tomé and Príncipe Newsletter for the 2nd Quarter",
     "url": "/stories/story_bd120a908eaabacf-malaria.html",
-    "keywords": "new_official_source suspected_case confirmed_case severity_or_death Multi-region "
+    "keywords": "new_official_source suspected_case severity_or_death Multi-region "
   },
   {
     "title": "Polio and wastewater surveillance",
