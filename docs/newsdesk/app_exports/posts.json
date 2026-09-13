@@ -1,7 +1,34 @@
 {
-  "generated_at": "2026-09-09T02:37:04",
-  "count": 64,
+  "generated_at": "2026-09-13T08:20:52",
+  "count": 65,
   "posts": [
+    {
+      "slug": "the-nuclear-fallout-recorded-in-baby",
+      "title": "The Nuclear Fallout Recorded in Baby Teeth",
+      "date": "2026-09-09",
+      "canonical_url": "https://theedgeofepidemiology.substack.com/p/the-nuclear-fallout-recorded-in-baby",
+      "excerpt": "Tommy Blumenthal, a seven-year-old donor from Clayton, Missouri, participates in the Baby Tooth Survey. Credit: State Historical Society of Missouri, Arthur Witman 120mm Photograph Collection, S0732. On July 15, 1960, a kid from Coventry, Rhode Island, named Gerald Allen wrote “I Would Like To Donate My tooth to Science.” His adorable letter was an offer to send in a tooth for a project investigating what the fallout from nuclear weapon testing had left in the developing bodies of children. It was sent to the Baby Tooth Survey, a research study that had been started by the dental schools at St",
+      "cover_image": "https://substack-post-media.s3.amazonaws.com/public/images/c48dc3b1-7f96-45ea-851e-57a3d2c283a7_800x902.png",
+      "wordcount": 1837,
+      "editorial_summary": "",
+      "image_caption": "",
+      "related_posts": [],
+      "status": "summary_only",
+      "dek": "",
+      "topics": [],
+      "series": [],
+      "seo_title": "",
+      "seo_description": "",
+      "primary_keyword": "",
+      "topic_cluster": "",
+      "related_atlases": [],
+      "related_reference_slugs": [],
+      "related_story_ids": [],
+      "search_excerpt": "Tommy Blumenthal, a seven-year-old donor from Clayton, Missouri, participates in the Baby Tooth Survey. Credit: State Historical Society of Missouri, Arthur Witman 120mm Photograph Collection, S0732. On July 15, 1960, a kid from Coventry, Rhode Island, named Gerald Allen wrote “I",
+      "hero_mode": "cover",
+      "notes": "",
+      "upstream_tags": []
+    },
     {
       "slug": "project-sunshines-supply-of-human",
       "title": "Project SUNSHINE’s Supply of Human Bones",
@@ -30,7 +57,8 @@
       "notes": "",
       "upstream_tags": [],
       "image_caption": "Project SUNSHINE Bulletin No. 11, issued by the University of Chicago’s Enrico Fermi Institute for Nuclear Studies on December 1, 1955. The archival copy bears later markings confirming its declassification. Source: U.S. Department of Energy archives, F. C. Libby collection, via the RMI Nuclear Justice Documents database.",
-      "editorial_summary": "How Project SUNSHINE built a supply of human bones to measure radioactive fallout, and what its correspondence reveals about the people and institutions behind the samples."
+      "editorial_summary": "How Project SUNSHINE built a supply of human bones to measure radioactive fallout, and what its correspondence reveals about the people and institutions behind the samples.",
+      "related_posts": []
     },
     {
       "slug": "college-footballs-century-long-experiment",
@@ -54,7 +82,8 @@
       "search_excerpt": "It’s college football season, my favorite time of year. Another year of rivalries, institutional histories, and loyal fans keeping ancient grievances alive. Not that you care, but I’m a UCLA fan. With new head coach Bob Chesney taking over fresh off of getting James Madison to th",
       "hero_mode": "cover",
       "notes": "",
-      "upstream_tags": []
+      "upstream_tags": [],
+      "related_posts": []
     },
     {
       "slug": "supplement-labels-should-be-a-test",
@@ -78,7 +107,8 @@
       "search_excerpt": "Why every supplement batch should be verified before sale",
       "hero_mode": "cover",
       "notes": "",
-      "upstream_tags": []
+      "upstream_tags": [],
+      "related_posts": []
     },
     {
       "slug": "one-in-six-the-direct-and-indirect",
@@ -102,7 +132,8 @@
       "search_excerpt": "In June of 1783, a fissure broke open in southern Iceland and didn’t stop erupting for eight months.",
       "hero_mode": "cover",
       "notes": "",
-      "upstream_tags": []
+      "upstream_tags": [],
+      "related_posts": []
     },
     {
       "slug": "the-rabies-denominator-problem",
@@ -132,7 +163,8 @@
         "epidemiology"
       ],
       "substack_id": 209500725,
-      "cover_image": "https://substack-post-media.s3.amazonaws.com/public/images/c0a204df-34f3-403a-a834-39c9812a3547_2920x1866.jpeg"
+      "cover_image": "https://substack-post-media.s3.amazonaws.com/public/images/c0a204df-34f3-403a-a834-39c9812a3547_2920x1866.jpeg",
+      "related_posts": []
     },
     {
       "slug": "before-the-odyssey-apollo-sent-a",
@@ -162,7 +194,8 @@
         "Iliad"
       ],
       "substack_id": 208503211,
-      "cover_image": "https://substack-post-media.s3.amazonaws.com/public/images/d64e095d-615c-47b4-9342-e3e2336c0a22_960x767.jpeg"
+      "cover_image": "https://substack-post-media.s3.amazonaws.com/public/images/d64e095d-615c-47b4-9342-e3e2336c0a22_960x767.jpeg",
+      "related_posts": []
     },
     {
       "slug": "the-group-prohibition-helped-most",
@@ -193,7 +226,8 @@
         "epidemiology"
       ],
       "substack_id": 207572671,
-      "cover_image": "https://substack-post-media.s3.amazonaws.com/public/images/139232bd-330a-43e3-9767-a33bcfe99c30_1427x1759.jpeg"
+      "cover_image": "https://substack-post-media.s3.amazonaws.com/public/images/139232bd-330a-43e3-9767-a33bcfe99c30_1427x1759.jpeg",
+      "related_posts": []
     },
     {
       "substack_id": 206517724,
@@ -228,7 +262,8 @@
       "related_story_ids": [],
       "search_excerpt": "Across much of the West, thinner supply systems and weaker administration made bad years harder to survive.",
       "hero_mode": "cover",
-      "notes": ""
+      "notes": "",
+      "related_posts": []
     },
     {
       "substack_id": 203888402,
@@ -265,7 +300,8 @@
       "related_story_ids": [],
       "search_excerpt": "Policing is not one exposure. Homicide prevention, traffic stops, arrests, and police violence need separate causal accounting.",
       "hero_mode": "cover",
-      "notes": ""
+      "notes": "",
+      "related_posts": []
     },
     {
       "substack_id": 202975620,
@@ -304,7 +340,8 @@
       "related_story_ids": [],
       "search_excerpt": "Occupational disease starts with a boring question that can change the whole diagnosis.",
       "hero_mode": "cover",
-      "notes": ""
+      "notes": "",
+      "related_posts": []
     },
     {
       "substack_id": 201672365,
@@ -339,7 +376,8 @@
       "related_story_ids": [],
       "search_excerpt": "The ongoing Ebola outbreak in Central Africa had me wanting to better understand the answer to a question I hadn’t really considered beyond surface level curiosity: “how do researchers get anything resembling real-world data in the areas controlled by rebel forces?” How do they g",
       "hero_mode": "cover",
-      "notes": ""
+      "notes": "",
+      "related_posts": []
     },
     {
       "substack_id": 200849173,
@@ -376,7 +414,8 @@
       "related_story_ids": [],
       "search_excerpt": "On June 3rd, 2026, the USDA confirmed that Cochliomyia hominivorax, indigenous New World screwworm (NWS) fly, was detected on American soil for the first time in 60 years in a three-week-old calf in Zavala County, Texas (roughly 90 miles southwest of San Antonio and about 50 mile",
       "hero_mode": "cover",
-      "notes": ""
+      "notes": "",
+      "related_posts": []
     },
     {
       "substack_id": 199208467,
@@ -413,7 +452,8 @@
       "related_story_ids": [],
       "search_excerpt": "I need to start this piece with a small caveat.",
       "hero_mode": "cover",
-      "notes": ""
+      "notes": "",
+      "related_posts": []
     },
     {
       "substack_id": 198344681,
@@ -453,7 +493,8 @@
       "related_story_ids": [],
       "search_excerpt": "I’ll keep updates at the top of this post; you can expect two or three updates per day.",
       "hero_mode": "cover",
-      "notes": ""
+      "notes": "",
+      "related_posts": []
     },
     {
       "substack_id": 197437573,
@@ -493,7 +534,8 @@
       "seo_title": "Korean War Hantavirus: Hemorrhagic Fever History",
       "seo_description": "How Korean War trench warfare, rodent ecology, and Hantaan virus turned a mysterious military outbreak into hantavirus history.",
       "primary_keyword": "Korean War hantavirus",
-      "topic_cluster": "disease-and-war"
+      "topic_cluster": "disease-and-war",
+      "related_posts": []
     },
     {
       "substack_id": 196425690,
@@ -533,7 +575,8 @@
       "seo_title": "MV Hondius Hantavirus Outbreak: What We Know",
       "seo_description": "A source-first guide to the MV Hondius hantavirus outbreak, Andes virus, cruise-ship exposure, travel risk, and what investigators could know.",
       "primary_keyword": "MV Hondius hantavirus outbreak",
-      "topic_cluster": "pathogen-geography"
+      "topic_cluster": "pathogen-geography",
+      "related_posts": []
     },
     {
       "substack_id": 196225500,
@@ -572,7 +615,8 @@
       "seo_title": "New Fungal STI: Epidemiology and Transmission Risk",
       "seo_description": "A source-aware look at a newly reported sexually transmitted fungal infection, including MSM networks, case evidence, transmission questions, and reporting limits.",
       "primary_keyword": "fungal STI",
-      "topic_cluster": "epidemiologic-methods"
+      "topic_cluster": "epidemiologic-methods",
+      "related_posts": []
     },
     {
       "substack_id": 195413363,
@@ -611,7 +655,8 @@
       "seo_title": "Ancient DNA and Disease Selection in West Eurasia",
       "seo_description": "How ancient DNA, infectious disease pressure, immunity, and changing environments help explain genomic selection in West Eurasian populations.",
       "primary_keyword": "ancient DNA disease selection",
-      "topic_cluster": "historical-epidemiology"
+      "topic_cluster": "historical-epidemiology",
+      "related_posts": []
     },
     {
       "substack_id": 193856306,
@@ -650,7 +695,8 @@
       "seo_title": "Big Epidemiology: Disease at the Scale of Civilization",
       "seo_description": "What happens when you stop treating disease as background and start treating it as one of history's operating forces.",
       "primary_keyword": "big epidemiology",
-      "topic_cluster": "historical-epidemiology"
+      "topic_cluster": "historical-epidemiology",
+      "related_posts": []
     },
     {
       "substack_id": 193176173,
@@ -691,7 +737,8 @@
       "seo_title": "1793 Philadelphia Yellow Fever: America’s First Epidemic Crisis",
       "seo_description": "The 1793 Philadelphia yellow fever epidemic as an early American public-health crisis shaped by urban ecology, politics, race, and mosquito-borne disease.",
       "primary_keyword": "1793 Philadelphia yellow fever",
-      "topic_cluster": "historical-epidemiology"
+      "topic_cluster": "historical-epidemiology",
+      "related_posts": []
     },
     {
       "substack_id": 192444219,
@@ -733,7 +780,8 @@
       "seo_title": "Did Vikings Spread Plague Across the North Sea?",
       "seo_description": "A careful look at Viking movement, North Sea disease ecology, plague evidence, Norse voyages, and the limits of reconstructing medieval pathogen spread.",
       "primary_keyword": "Viking plague North Sea",
-      "topic_cluster": "historical-epidemiology"
+      "topic_cluster": "historical-epidemiology",
+      "related_posts": []
     },
     {
       "substack_id": 192334500,
@@ -770,7 +818,8 @@
       "seo_title": "Is the White Plague Returning?",
       "seo_description": "TB never really left. The question is why public health keeps giving it room to come back.",
       "primary_keyword": "tuberculosis public health",
-      "topic_cluster": "disease-ecology"
+      "topic_cluster": "disease-ecology",
+      "related_posts": []
     },
     {
       "substack_id": 191686346,
@@ -810,7 +859,8 @@
       "seo_title": "Disease in the American Revolutionary War: Who Died of What?",
       "seo_description": "Disease mortality in the American Revolutionary War, including battle deaths, smallpox, camp disease, military medicine, and eighteenth-century survival.",
       "primary_keyword": "disease in the American Revolutionary War",
-      "topic_cluster": "disease-and-war"
+      "topic_cluster": "disease-and-war",
+      "related_posts": []
     },
     {
       "substack_id": 191075721,
@@ -850,7 +900,8 @@
       "seo_title": "Disease on the Oregon Trail: Cholera, Dysentery, and Death",
       "seo_description": "Disease on the Oregon Trail, from cholera and dysentery to overland migration, sanitation, graves, and nineteenth-century westward travel.",
       "primary_keyword": "disease on the Oregon Trail",
-      "topic_cluster": "disease-and-war"
+      "topic_cluster": "disease-and-war",
+      "related_posts": []
     },
     {
       "substack_id": 190210122,
@@ -893,7 +944,8 @@
       "seo_title": "Yellow Fever and Napoleon’s American Empire",
       "seo_description": "How yellow fever, mosquitoes, Saint-Domingue, military failure, and disease ecology helped destroy Napoleon’s North American empire plans.",
       "primary_keyword": "yellow fever Napoleon",
-      "topic_cluster": "disease-and-war"
+      "topic_cluster": "disease-and-war",
+      "related_posts": []
     },
     {
       "substack_id": 189373631,
@@ -932,7 +984,8 @@
       "seo_title": "The American Revolution Was Nearly Lost to Smallpox",
       "seo_description": "Before the Revolution was won on the battlefield, Washington had to solve a smallpox problem inside the army.",
       "primary_keyword": "smallpox American Revolution",
-      "topic_cluster": "disease-and-war"
+      "topic_cluster": "disease-and-war",
+      "related_posts": []
     },
     {
       "substack_id": 187959272,
@@ -970,7 +1023,8 @@
       "seo_title": "Disease in the Early Colonies: Pre-Revolutionary War Disease Ecology and Outbreaks",
       "seo_description": "Before the Revolution, British North America was already being shaped by smallpox, measles, enteric disease, mosquitoes, war, trade, and settlement.",
       "primary_keyword": "colonial disease ecology",
-      "topic_cluster": "disease-and-war"
+      "topic_cluster": "disease-and-war",
+      "related_posts": []
     },
     {
       "substack_id": 186425026,
@@ -1012,7 +1066,8 @@
       "seo_title": "Why the Columbian Exchange Did Not Run in Reverse",
       "seo_description": "The usual story breaks when you look at childhood exposure, vectors, cities, empire, and where Europeans actually died abroad.",
       "primary_keyword": "New World diseases Europeans",
-      "topic_cluster": "pathogen-geography"
+      "topic_cluster": "pathogen-geography",
+      "related_posts": []
     },
     {
       "substack_id": 184989953,
@@ -1049,7 +1104,8 @@
       "seo_title": "Plague, Steppe Migrations, and the Diseases Written Into European DNA",
       "seo_description": "Ancient DNA lets us ask what migration, livestock, plague, and immune trade-offs left behind.",
       "primary_keyword": "plague steppe migrations",
-      "topic_cluster": "historical-epidemiology"
+      "topic_cluster": "historical-epidemiology",
+      "related_posts": []
     },
     {
       "substack_id": 184243719,
@@ -1088,7 +1144,8 @@
       "seo_title": "When Worlds Collided: Disease and Population Collapse in the Americas After 1492",
       "seo_description": "The collapse after 1492 was real, but the usual story is too flat. Ecology, labor, war, and institutions mattered too.",
       "primary_keyword": "disease population collapse Americas",
-      "topic_cluster": "pathogen-geography"
+      "topic_cluster": "pathogen-geography",
+      "related_posts": []
     },
     {
       "substack_id": 183258463,
@@ -1131,7 +1188,8 @@
       "seo_title": "Scourges of the High Seas",
       "seo_description": "Ships carried more than cargo. They moved crowding, hunger, rats, mosquitoes, bad water, and disease across the world.",
       "primary_keyword": "maritime disease ecology",
-      "topic_cluster": "pathogen-geography"
+      "topic_cluster": "pathogen-geography",
+      "related_posts": []
     },
     {
       "substack_id": 182976217,
@@ -1170,7 +1228,8 @@
       "seo_title": "Cocoliztli: Mexico’s 16th-Century Mystery Epidemic",
       "seo_description": "Cocoliztli and Mexico’s sixteenth-century mystery epidemics, including retrospective diagnosis, colonial records, ancient DNA, and pathogen uncertainty.",
       "primary_keyword": "cocoliztli epidemic",
-      "topic_cluster": "historical-epidemiology"
+      "topic_cluster": "historical-epidemiology",
+      "related_posts": []
     },
     {
       "substack_id": 182520634,
@@ -1211,7 +1270,8 @@
       "seo_title": "Inherited Infections: What Our Oldest Diseases Reveal About Human Prehistory",
       "seo_description": "Ancient pathogens killed people, but they also left clues about migration, settlement, immunity, and the disease history carried in bodies.",
       "primary_keyword": "oldest human diseases",
-      "topic_cluster": "historical-epidemiology"
+      "topic_cluster": "historical-epidemiology",
+      "related_posts": []
     },
     {
       "substack_id": 181844122,
@@ -1251,7 +1311,8 @@
       "seo_title": "The Disease Ecology of the Pre-Contact Americas (Part 2: South America)",
       "seo_description": "Altitude, settlement, parasites, animal reservoirs, and the limits of the evidence make South America harder than the simple version.",
       "primary_keyword": "pre-contact South America disease",
-      "topic_cluster": "pathogen-geography"
+      "topic_cluster": "pathogen-geography",
+      "related_posts": []
     },
     {
       "substack_id": 181195168,
@@ -1290,7 +1351,8 @@
       "seo_title": "The Disease Ecology of Pre-Contact Americas (Part 1: North and Central America)",
       "seo_description": "Before 1492, the Americas were not disease-free. Their disease ecology was different, uneven, and badly served by easy summaries.",
       "primary_keyword": "pre-contact Americas disease ecology",
-      "topic_cluster": "pathogen-geography"
+      "topic_cluster": "pathogen-geography",
+      "related_posts": []
     },
     {
       "substack_id": 180554125,
@@ -1327,7 +1389,8 @@
       "seo_title": "When Did Syphilis Enter Europe? The Origins Debate",
       "seo_description": "Everyone wants a clean origin story. The bones, genomes, and old chronicles keep refusing to give one.",
       "primary_keyword": "syphilis origins debate",
-      "topic_cluster": "historical-epidemiology"
+      "topic_cluster": "historical-epidemiology",
+      "related_posts": []
     },
     {
       "substack_id": 179321195,
@@ -1368,7 +1431,8 @@
       "seo_title": "Ancient Hookworm in the Americas",
       "seo_description": "Ancient hookworm in the Americas, parasite geography, archaeology, migration, and why a tropical helminth complicates disease-history origin stories.",
       "primary_keyword": "ancient hookworm Americas",
-      "topic_cluster": "historical-epidemiology"
+      "topic_cluster": "historical-epidemiology",
+      "related_posts": []
     },
     {
       "substack_id": 178663608,
@@ -1403,7 +1467,8 @@
       "seo_title": "The Ghosts of Meals Past: What We've Learned from Fossilized Poop",
       "seo_description": "It is fossilized poop, yes. It is also one of the better archives we have for diet, parasites, and ordinary life.",
       "primary_keyword": "fossilized poop coprolites",
-      "topic_cluster": "historical-epidemiology"
+      "topic_cluster": "historical-epidemiology",
+      "related_posts": []
     },
     {
       "substack_id": 177940071,
@@ -1442,7 +1507,8 @@
       "seo_title": "Oldest Diseases in the Fossil Record",
       "seo_description": "A deep-time disease essay on the oldest known evidence for infection, cancer, parasites, and what paleopathology can reveal.",
       "primary_keyword": "oldest diseases",
-      "topic_cluster": "historical-epidemiology"
+      "topic_cluster": "historical-epidemiology",
+      "related_posts": []
     },
     {
       "substack_id": 177329295,
@@ -1481,7 +1547,8 @@
       "seo_title": "Humanity's Deadliest Companions: Checking the Till on the Deadliest Microbes in History",
       "seo_description": "Ranking history's deadliest microbes sounds simple until the denominator, timescale, diagnosis, and archives start fighting back.",
       "primary_keyword": "deadliest microbes",
-      "topic_cluster": "historical-epidemiology"
+      "topic_cluster": "historical-epidemiology",
+      "related_posts": []
     },
     {
       "substack_id": 176802554,
@@ -1521,7 +1588,8 @@
       "seo_title": "Islands of Affliction: Leprosy and Empire in the South Pacific",
       "seo_description": "Isolation was never just medical. It was stigma, empire, surveillance, exile, and disease control forced onto islands.",
       "primary_keyword": "leprosy South Pacific",
-      "topic_cluster": "historical-epidemiology"
+      "topic_cluster": "historical-epidemiology",
+      "related_posts": []
     },
     {
       "substack_id": 176091810,
@@ -1556,7 +1624,8 @@
       "seo_title": "The Night Staten Island Burned Its Hospital: Fear, Fire, and the Forgotten Quarantine War of 1858",
       "seo_description": "In 1858, quarantine policy met local panic, and Staten Island answered with fire.",
       "primary_keyword": "Staten Island quarantine",
-      "topic_cluster": "historical-epidemiology"
+      "topic_cluster": "historical-epidemiology",
+      "related_posts": []
     },
     {
       "substack_id": 175470298,
@@ -1595,7 +1664,8 @@
       "seo_title": "When Diabetes Drugs Start Treating Headaches: GLP-1 Agonists and the Migraine Connection",
       "seo_description": "GLP-1 drugs keep escaping the box they were built for. Migraine might be another place metabolism and neurology overlap.",
       "primary_keyword": "GLP-1 migraine",
-      "topic_cluster": "neuroepidemiology"
+      "topic_cluster": "neuroepidemiology",
+      "related_posts": []
     },
     {
       "substack_id": 174580810,
@@ -1628,7 +1698,8 @@
       "seo_title": "The U.S. Life Expectancy Gap Sounds Worse Than It Is and (Hypothetically) Easier to Fix Than You Think",
       "seo_description": "America's life expectancy gap is real. The shape of the problem matters if you want to fix it instead of just despair over it.",
       "primary_keyword": "US life expectancy gap",
-      "topic_cluster": "epidemiologic-methods"
+      "topic_cluster": "epidemiologic-methods",
+      "related_posts": []
     },
     {
       "substack_id": 173900942,
@@ -1665,7 +1736,8 @@
       "seo_title": "Psychedelics for Anxiety: What the New LSD Trial Does and Doesn't Change",
       "seo_description": "The LSD trial is interesting. The boring questions still matter: comparator, blinding, durability, harms, and who actually benefits.",
       "primary_keyword": "psychedelics anxiety trial",
-      "topic_cluster": "epidemiologic-methods"
+      "topic_cluster": "epidemiologic-methods",
+      "related_posts": []
     },
     {
       "substack_id": 173324414,
@@ -1700,7 +1772,8 @@
       "seo_title": "Body-Snatching, the Doctors' Riot, and How Cadavers Built American Medicine",
       "seo_description": "Anatomy needed bodies. Poverty, graveyards, the law, and medical ambition decided whose bodies were taken.",
       "primary_keyword": "Doctors Riot body snatching",
-      "topic_cluster": "historical-epidemiology"
+      "topic_cluster": "historical-epidemiology",
+      "related_posts": []
     },
     {
       "substack_id": 172614829,
@@ -1735,7 +1808,8 @@
       "seo_title": "Heat Exposure and Unequal Aging Risk",
       "seo_description": "Why heat exposure may not age everyone equally, including climate risk, social vulnerability, occupational exposure, and epidemiologic measurement.",
       "primary_keyword": "heat aging risk",
-      "topic_cluster": "disease-ecology"
+      "topic_cluster": "disease-ecology",
+      "related_posts": []
     },
     {
       "substack_id": 172135919,
@@ -1774,7 +1848,8 @@
       "seo_title": "Finding Risk Where History Put It",
       "seo_description": "Some medical risk is inherited through DNA. Some is inherited through history.",
       "primary_keyword": "founder effects rare disease",
-      "topic_cluster": "epidemiologic-methods"
+      "topic_cluster": "epidemiologic-methods",
+      "related_posts": []
     },
     {
       "substack_id": 171521367,
@@ -1811,7 +1886,8 @@
       "seo_title": "Infectious Diseases on the Move",
       "seo_description": "Disease ranges are changing, but not every outbreak is a climate story. The details still matter.",
       "primary_keyword": "climate infectious disease risk",
-      "topic_cluster": "disease-ecology"
+      "topic_cluster": "disease-ecology",
+      "related_posts": []
     },
     {
       "substack_id": 171024347,
@@ -1848,7 +1924,8 @@
       "seo_title": "Does Lithium Lower Alzheimer's Risk?",
       "seo_description": "The dementia signal is interesting. It is not strong enough to turn a trace exposure story into a prevention claim.",
       "primary_keyword": "lithium Alzheimer’s risk",
-      "topic_cluster": "neuroepidemiology"
+      "topic_cluster": "neuroepidemiology",
+      "related_posts": []
     },
     {
       "substack_id": 170328251,
@@ -1883,7 +1960,8 @@
       "seo_title": "Paper Mills Are Poisoning Science",
       "seo_description": "Fake papers clutter journals, poison reviews and guidelines, reward bad incentives, and leave trash in the scientific record.",
       "primary_keyword": "paper mills scientific fraud",
-      "topic_cluster": "epidemiologic-methods"
+      "topic_cluster": "epidemiologic-methods",
+      "related_posts": []
     },
     {
       "substack_id": 169716392,
@@ -1920,7 +1998,8 @@
       "seo_title": "Eric Topol's Super Agers and the Medical System We Ought to Build",
       "seo_description": "The super-ager story starts with lucky biology and ends at a harder question: what would medicine look like if prevention were infrastructure?",
       "primary_keyword": "super agers preventive medicine",
-      "topic_cluster": "epidemiologic-methods"
+      "topic_cluster": "epidemiologic-methods",
+      "related_posts": []
     },
     {
       "substack_id": 169015790,
@@ -1957,7 +2036,8 @@
       "seo_title": "Migraine Brain Fog and Cognition",
       "seo_description": "Migraine brain fog, cognition, medication trade-offs, attack phases, and how cognitive symptoms complicate the lived burden of migraine.",
       "primary_keyword": "migraine brain fog",
-      "topic_cluster": "neuroepidemiology"
+      "topic_cluster": "neuroepidemiology",
+      "related_posts": []
     },
     {
       "substack_id": 168528776,
@@ -1994,7 +2074,8 @@
       "seo_title": "Memetics After Memetics",
       "seo_description": "Why the word memetics faded while viral ideas, imitation, information spread, and cultural transmission kept shaping public life.",
       "primary_keyword": "memetics viral ideas",
-      "topic_cluster": "epidemiologic-methods"
+      "topic_cluster": "epidemiologic-methods",
+      "related_posts": []
     },
     {
       "substack_id": 167965967,
@@ -2031,7 +2112,8 @@
       "seo_title": "Shrooms vs. Antidepressants: A Meta-Analysis Calls It a Tie",
       "seo_description": "Psychedelic hype makes the results feel cleaner than they are. Design, dose, expectancy, and follow-up still matter.",
       "primary_keyword": "psilocybin antidepressants meta-analysis",
-      "topic_cluster": "epidemiologic-methods"
+      "topic_cluster": "epidemiologic-methods",
+      "related_posts": []
     },
     {
       "substack_id": 167544796,
@@ -2066,7 +2148,8 @@
       "seo_title": "The Poison Nobody Could Agree On",
       "seo_description": "One French town got sick in 1951, and the diagnosis has been argued over ever since.",
       "primary_keyword": "Pont-Saint-Esprit outbreak",
-      "topic_cluster": "historical-epidemiology"
+      "topic_cluster": "historical-epidemiology",
+      "related_posts": []
     },
     {
       "substack_id": 167022011,
@@ -2103,7 +2186,8 @@
       "seo_title": "Migraine Epidemiology: Who Gets Hit Hardest",
       "seo_description": "Migraine is disabling and unevenly treated. Here is what the data says about who gets it, who lacks help, and why uncertainty remains.",
       "primary_keyword": "migraine epidemiology",
-      "topic_cluster": "neuroepidemiology"
+      "topic_cluster": "neuroepidemiology",
+      "related_posts": []
     },
     {
       "substack_id": 166858843,
@@ -2134,7 +2218,8 @@
       "seo_title": "American Headache Society Conference Notes",
       "seo_description": "A short migraine research note from the American Headache Society meeting, focused on clinical questions, evidence gaps, and field direction.",
       "primary_keyword": "American Headache Society migraine",
-      "topic_cluster": "neuroepidemiology"
+      "topic_cluster": "neuroepidemiology",
+      "related_posts": []
     },
     {
       "substack_id": 164702703,
@@ -2171,7 +2256,8 @@
       "seo_title": "Snort This to Tan: The Bizarre and Dangerous Barbie Drug",
       "seo_description": "A black-market peptide promises a tan and a libido boost. The evidence is messier and uglier than the marketing.",
       "primary_keyword": "melanotan Barbie drug",
-      "topic_cluster": "wellness-claims"
+      "topic_cluster": "wellness-claims",
+      "related_posts": []
     },
     {
       "substack_id": 166112010,
@@ -2208,7 +2294,8 @@
       "seo_title": "How Accurate Is Your Apple Watch?",
       "seo_description": "Fitness trackers are useful. They are also only as good as the signal, algorithm, body, and question being measured.",
       "primary_keyword": "Apple Watch accuracy",
-      "topic_cluster": "epidemiologic-methods"
+      "topic_cluster": "epidemiologic-methods",
+      "related_posts": []
     },
     {
       "substack_id": 165597582,
@@ -2247,7 +2334,8 @@
       "seo_title": "Justinianic Plague and War Epidemiology",
       "seo_description": "A War Epidemiology chapter draft on the Justinianic Plague, military stress, empire, logistics, and disease pressure in 541 CE.",
       "primary_keyword": "Justinianic Plague war",
-      "topic_cluster": "disease-and-war"
+      "topic_cluster": "disease-and-war",
+      "related_posts": []
     },
     {
       "substack_id": 164856375,
@@ -2282,7 +2370,8 @@
       "seo_title": "Melatonin Is Misunderstood",
       "seo_description": "Melatonin is treated like a harmless sleep switch. Timing, dose, circadian rhythm, and biology make it stranger than that.",
       "primary_keyword": "melatonin sleep evidence",
-      "topic_cluster": "wellness-claims"
+      "topic_cluster": "wellness-claims",
+      "related_posts": []
     },
     {
       "substack_id": 164052573,
@@ -2321,7 +2410,8 @@
       "seo_title": "When the Influencer's Claims Are Stronger Than the Evidence",
       "seo_description": "Vitamin D has real biology behind it. That does not mean the dementia claim is as strong as the clip makes it sound.",
       "primary_keyword": "vitamin D dementia Rhonda Patrick",
-      "topic_cluster": "wellness-claims"
+      "topic_cluster": "wellness-claims",
+      "related_posts": []
     },
     {
       "substack_id": 163752277,
@@ -2360,7 +2450,8 @@
       "seo_title": "Creatine Is Underrated",
       "seo_description": "Creatine is not magic. It is just better supported than a lot of people still seem to think.",
       "primary_keyword": "creatine benefits evidence",
-      "topic_cluster": "wellness-claims"
+      "topic_cluster": "wellness-claims",
+      "related_posts": []
     }
   ]
 }
