@@ -1,7 +1,7 @@
 """Publication landing and reading pages; no build or filesystem side effects."""
 
 import html
-from .common import format_display_date, link_for
+from .common import format_display_date, link_for, normalize_post_types
 from .site_shell import base_html
 from .site_images import render_exhibit_image
 from .site_cards import render_post_card, render_tool_card, render_story_card
@@ -43,6 +43,9 @@ def render_home(posts, tools, latest, base_url):
 
 
 def render_post_page(post, atlases, posts, base_url, body_html):
+    # Preview callers may provide raw records rather than a loaded manifest.
+    post = normalize_post_types(post)
+    posts = [normalize_post_types(p) for p in posts]
     title = post_display_title(post)
     description = post_seo_description(post)
     url = html.escape(post.get("canonical_url", ""))
