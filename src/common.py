@@ -68,6 +68,9 @@ CURATED_FIELDS = [
     "notes",
 ]
 CURATED_DEFAULTS = {
+    "editorial_summary": "",
+    "image_caption": "",
+    "related_posts": [],
     "status": "summary_only",
     "dek": "",
     "topics": [],
@@ -183,6 +186,7 @@ def normalize_post_types(post: dict[str, Any]) -> dict[str, Any]:
         "upstream_tags",
         "topics",
         "series",
+        "related_posts",
         "related_atlases",
         "related_reference_slugs",
         "related_story_ids",
@@ -384,14 +388,6 @@ def merge_post_record(
 
     record["last_synced_at"] = now_iso()
     record["status"] = record.get("status") or "summary_only"
-    record["upstream_tags"] = canonicalize_list(record.get("upstream_tags"))
-    record["topics"] = canonicalize_list(record.get("topics"))
-    record["series"] = canonicalize_list(record.get("series"))
-    record["related_atlases"] = canonicalize_list(record.get("related_atlases"))
-    record["related_reference_slugs"] = canonicalize_list(
-        record.get("related_reference_slugs")
-    )
-    record["related_story_ids"] = canonicalize_list(record.get("related_story_ids"))
     record["slug"] = record.get("slug") or slug_from_canonical(
         record.get("canonical_url", "")
     )
@@ -399,7 +395,7 @@ def merge_post_record(
         record.get("search_excerpt")
     ):
         record["search_excerpt"] = str(record.get("excerpt") or "")[:280]
-    return record
+    return normalize_post_types(record)
 
 
 def load_posts_manifest(path: Path | None = None) -> list[dict[str, Any]]:

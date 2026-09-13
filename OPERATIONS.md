@@ -62,6 +62,8 @@ Both deployment and quality checks call `validate-artifact.yml`. The deployment 
 
 `docs/build-manifest.json` records the source commit and file hashes. Verification reports are retained as GitHub Actions artifacts for 30 days. Scheduled builds may import a later Newsdesk collection; each tested artifact records its own complete hashes.
 
+Optional essay relationships (`related_posts`, `related_atlases`, and the other list fields) are normalized by `src/common.py` during merging and manifest loading/saving. New essays have an empty `related_posts` list; existing curated selections remain intact. Reading-page previews also normalize raw records. Keep `tests/test_post_relationships.py` in the quality gate: it exercises incremental discovery through rendering, because building only the committed manifest did not expose the September 2026 failure when the importer created `related_posts: null`.
+
 ## Evidence and fallback behavior
 
 - Unknown publication dates remain unknown. HTTP modification time is a separate field; discovery and retrieval dates are separately named.
