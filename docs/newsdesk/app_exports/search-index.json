@@ -611,6 +611,13 @@
     "keywords": "american epidemics timeline public health history outbreaks exhibit timeline"
   },
   {
+    "title": "Measles transmission and vaccination",
+    "section": "Newsdesk",
+    "summary": "Monitoring: Measles as tracer and tugboat: Why eradication can strengthen immunization systems.",
+    "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
+    "keywords": "new_official_source suspected_case confirmed_case severity_or_death policy_or_travel new_geography laboratory_or_genomic North America United States"
+  },
+  {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
     "summary": "Monitoring: Ebola disease outbreak in the Democratic Republic of the Congo",
@@ -618,18 +625,11 @@
     "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel laboratory_or_genomic Africa Democratic Republic of the Congo / Uganda"
   },
   {
-    "title": "Measles transmission and vaccination",
-    "section": "Newsdesk",
-    "summary": "Monitoring: Bangladesh deaths linked to suspected measles cases reach nearly 1,000",
-    "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
-    "keywords": "confirmed_case severity_or_death laboratory_or_genomic South Asia "
-  },
-  {
     "title": "Cyclosporiasis",
     "section": "Newsdesk",
     "summary": "Monitoring: Toledo-Lucas County Health Department Cyclosporiasis Update",
     "url": "/stories/story_7ecd65705353b55c-cyclosporiasis.html",
-    "keywords": "new_official_source confirmed_case severity_or_death new_geography North America United States"
+    "keywords": "new_official_source severity_or_death new_geography North America United States"
   },
   {
     "title": "Dengue and arboviruses",
@@ -643,7 +643,7 @@
     "section": "Newsdesk",
     "summary": "Monitoring: Caregiving experiences, challenges and needs of mothers for their young children who are HIV exposed and uninfected from Worcester, South Africa - A qualitative exploration through the nurturing care framework.",
     "url": "/stories/story_17a354bcafcca4ce-occupational-and-environmental-epidemiology.html",
-    "keywords": "new_official_source confirmed_case severity_or_death transmission_change new_geography laboratory_or_genomic Africa Democratic Republic of the Congo / Uganda"
+    "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission laboratory_or_genomic Africa Democratic Republic of the Congo / Uganda"
   },
   {
     "title": "Ebola virus disease",
