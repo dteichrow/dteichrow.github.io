@@ -629,12 +629,12 @@
     "section": "Newsdesk",
     "summary": "Monitoring: Toledo-Lucas County Health Department Cyclosporiasis Update",
     "url": "/stories/story_7ecd65705353b55c-cyclosporiasis.html",
-    "keywords": "new_official_source severity_or_death new_geography North America United States"
+    "keywords": "new_official_source confirmed_case severity_or_death new_geography North America United States"
   },
   {
     "title": "Dengue and arboviruses",
     "section": "Newsdesk",
-    "summary": "Monitoring: Florida Surgeon General Reminds Floridians to Take Precautions Against Dengue Ahead of Labor Day Weekend",
+    "summary": "Monitoring: Florida Surgeon General Reminds Floridians to Take Steps Against Dengue Ahead of Labor Day Weekend",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
     "keywords": "new_official_source confirmed_case severity_or_death new_geography North America United States"
   },
@@ -643,7 +643,7 @@
     "section": "Newsdesk",
     "summary": "Monitoring: Caregiving experiences, challenges and needs of mothers for their young children who are HIV exposed and uninfected from Worcester, South Africa - A qualitative exploration through the nurturing care framework.",
     "url": "/stories/story_17a354bcafcca4ce-occupational-and-environmental-epidemiology.html",
-    "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission laboratory_or_genomic Africa Democratic Republic of the Congo / Uganda"
+    "keywords": "new_official_source confirmed_case severity_or_death transmission_change new_geography laboratory_or_genomic Africa Democratic Republic of the Congo / Uganda"
   },
   {
     "title": "Ebola virus disease",
