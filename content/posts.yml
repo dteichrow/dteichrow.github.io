@@ -1,4 +1,49 @@
 posts:
+- slug: the-missing-evidence-in-the-case
+  title: The Missing Evidence in the Case Against Food Stamps
+  date: '2026-09-16'
+  canonical_url: https://theedgeofepidemiology.substack.com/p/the-missing-evidence-in-the-case
+  excerpt: On August 29th, RealClearScience published an essay by Edward Archer, PhD,
+    MS, titled “The Scientific and Ethical Arguments for Ending Food Stamps” in which
+    he blames governmental food assistance programs for contributing to obesity, diabetes,
+    and heart disease in poorer Americans, arguing that ending the Supplemental Nutrition
+    Assistance Program and imposing work requirements for able-bodied adults would
+    further improve current recipients’ health through getting them to eat less and
+    move more. To support his proposal, Archer cites research into physical activity,
+    caloric restriction, trends f
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/8da73535-67ba-4f01-8cd9-35f7a3d884a7_750x752.png
+  source_mode: substack_reader
+  wordcount: 2570
+  editorial_summary: ''
+  image_caption: ''
+  related_posts: []
+  status: summary_only
+  dek: ''
+  topics: []
+  series: []
+  seo_title: ''
+  seo_description: ''
+  primary_keyword: ''
+  topic_cluster: ''
+  indexing_strategy: noindex_stub
+  related_atlases: []
+  related_reference_slugs: []
+  related_story_ids: []
+  search_excerpt: On August 29th, RealClearScience published an essay by Edward Archer,
+    PhD, MS, titled “The Scientific and Ethical Arguments for Ending Food Stamps”
+    in which he blames governmental food assistance programs for contributing to obesity,
+    diabetes, and heart disease in poorer American
+  local_body_path: ''
+  body_synced_at: ''
+  body_source_url: ''
+  body_source_mode: ''
+  body_source_file: ''
+  body_wordcount: null
+  hero_mode: cover
+  notes: ''
+  first_seen_at: '2026-09-16T17:08:36+00:00'
+  last_synced_at: '2026-09-16T17:08:36+00:00'
+  upstream_tags: []
 - slug: the-nuclear-fallout-recorded-in-baby
   title: The Nuclear Fallout Recorded in Baby Teeth
   date: '2026-09-09'
