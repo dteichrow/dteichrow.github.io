@@ -623,7 +623,7 @@
     "section": "Newsdesk",
     "summary": "Monitoring: News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....",
     "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
-    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography North America United States"
+    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography laboratory_or_genomic North America United States"
   },
   {
     "title": "Ebola virus disease",
@@ -637,7 +637,7 @@
     "section": "Newsdesk",
     "summary": "Monitoring: Toledo-Lucas County Health Department Cyclosporiasis Update",
     "url": "/stories/story_7ecd65705353b55c-cyclosporiasis.html",
-    "keywords": "new_official_source confirmed_case severity_or_death new_geography North America United States"
+    "keywords": "new_official_source severity_or_death new_geography North America United States"
   },
   {
     "title": "Dengue and arboviruses",
@@ -659,6 +659,13 @@
     "summary": "Monitoring: Renal and Functional Vulnerability in Hansen Disease: A Framework for Chronic Infectious Disability in Endemic Settings.",
     "url": "/stories/story_b461b8ac8c062700-historical-epidemiology-and-ancient-pathogens.html",
     "keywords": "severity_or_death policy_or_travel laboratory_or_genomic North America United States"
+  },
+  {
+    "title": "Tuberculosis and antimicrobial resistance",
+    "section": "Newsdesk",
+    "summary": "Monitoring: Inhalable Dry Powders of Antimicrobial Agents in Respiratory Diseases.",
+    "url": "/stories/story_8b3f807bbfd61cab-tuberculosis-and-antimicrobial-resistance.html",
+    "keywords": "laboratory_or_genomic Cross-region / unassigned "
   },
   {
     "title": "Ebola virus disease",
