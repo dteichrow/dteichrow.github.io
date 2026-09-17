@@ -623,14 +623,14 @@
     "section": "Newsdesk",
     "summary": "Monitoring: News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....",
     "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
-    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography laboratory_or_genomic North America United States"
+    "keywords": "new_official_source suspected_case confirmed_case severity_or_death policy_or_travel new_geography laboratory_or_genomic North America United States"
   },
   {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
     "summary": "Monitoring: Postcard from the field: Supporting outbreak preparedness in South Sudan - two EPIET fellows in the field",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
-    "keywords": "new_official_source suspected_case confirmed_case severity_or_death transmission_change policy_or_travel laboratory_or_genomic Africa Democratic Republic of the Congo / South Sudan / Uganda"
+    "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel laboratory_or_genomic Africa Democratic Republic of the Congo / South Sudan / Uganda"
   },
   {
     "title": "Cyclosporiasis",
@@ -644,7 +644,7 @@
     "section": "Newsdesk",
     "summary": "Monitoring: Florida Surgeon General Reminds Floridians to Take Steps Against Dengue Ahead of Labor Day Weekend",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
-    "keywords": "new_official_source severity_or_death North America United States"
+    "keywords": "new_official_source severity_or_death new_geography North America United States"
   },
   {
     "title": "Occupational and environmental epidemiology",
@@ -652,13 +652,6 @@
     "summary": "Monitoring: EARLY RELEASE: Notes from the Field: The First 100 Days of Five Ebola Outbreaks - Democratic Republic of the Congo, Uganda, and West Africa, 2007-2026",
     "url": "/stories/story_17a354bcafcca4ce-occupational-and-environmental-epidemiology.html",
     "keywords": "new_official_source confirmed_case severity_or_death transmission_change new_geography Africa Democratic Republic of the Congo / Uganda"
-  },
-  {
-    "title": "Historical epidemiology and ancient pathogens",
-    "section": "Newsdesk",
-    "summary": "Monitoring: Renal and Functional Vulnerability in Hansen Disease: A Framework for Chronic Infectious Disability in Endemic Settings.",
-    "url": "/stories/story_b461b8ac8c062700-historical-epidemiology-and-ancient-pathogens.html",
-    "keywords": "severity_or_death policy_or_travel laboratory_or_genomic North America United States"
   },
   {
     "title": "Tuberculosis and antimicrobial resistance",
