@@ -623,7 +623,7 @@
     "section": "Newsdesk",
     "summary": "Monitoring: News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....",
     "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
-    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography North America United States"
+    "keywords": "new_official_source suspected_case confirmed_case severity_or_death policy_or_travel new_geography North America United States"
   },
   {
     "title": "Ebola virus disease",
@@ -640,18 +640,18 @@
     "keywords": "new_official_source severity_or_death policy_or_travel new_geography North America United States"
   },
   {
-    "title": "Occupational and environmental epidemiology",
-    "section": "Newsdesk",
-    "summary": "Monitoring: EARLY RELEASE: Notes from the Field: The First 100 Days of Five Ebola Outbreaks - Democratic Republic of the Congo, Uganda, and West Africa, 2007-2026",
-    "url": "/stories/story_17a354bcafcca4ce-occupational-and-environmental-epidemiology.html",
-    "keywords": "new_official_source confirmed_case severity_or_death transmission_change new_geography Africa Democratic Republic of the Congo / Uganda"
-  },
-  {
     "title": "Dengue and arboviruses",
     "section": "Newsdesk",
     "summary": "Monitoring: Florida Surgeon General Reminds Floridians to Take Steps Against Dengue Ahead of Labor Day Weekend",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
     "keywords": "new_official_source severity_or_death new_geography North America United States"
+  },
+  {
+    "title": "Occupational and environmental epidemiology",
+    "section": "Newsdesk",
+    "summary": "Monitoring: EARLY RELEASE: Notes from the Field: The First 100 Days of Five Ebola Outbreaks - Democratic Republic of the Congo, Uganda, and West Africa, 2007-2026",
+    "url": "/stories/story_17a354bcafcca4ce-occupational-and-environmental-epidemiology.html",
+    "keywords": "new_official_source confirmed_case severity_or_death new_geography Africa Democratic Republic of the Congo / Uganda"
   },
   {
     "title": "Tuberculosis and antimicrobial resistance",
