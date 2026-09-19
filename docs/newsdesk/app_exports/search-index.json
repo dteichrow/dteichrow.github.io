@@ -630,7 +630,7 @@
     "section": "Newsdesk",
     "summary": "Monitoring: Ebola disease outbreak in the Democratic Republic of the Congo",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
-    "keywords": "new_official_source suspected_case confirmed_case severity_or_death transmission_change policy_or_travel laboratory_or_genomic Africa Democratic Republic of the Congo / South Sudan / Uganda"
+    "keywords": "new_official_source suspected_case confirmed_case severity_or_death transmission_change policy_or_travel healthcare_transmission laboratory_or_genomic Africa Democratic Republic of the Congo / South Sudan / Uganda"
   },
   {
     "title": "Dengue and arboviruses",
@@ -644,7 +644,7 @@
     "section": "Newsdesk",
     "summary": "Monitoring: Toledo-Lucas County Health Department Cyclosporiasis Update",
     "url": "/stories/story_7ecd65705353b55c-cyclosporiasis.html",
-    "keywords": "new_official_source severity_or_death new_geography North America United States"
+    "keywords": "new_official_source confirmed_case severity_or_death new_geography North America United States"
   },
   {
     "title": "Occupational and environmental epidemiology",
@@ -656,7 +656,7 @@
   {
     "title": "Tuberculosis and antimicrobial resistance",
     "section": "Newsdesk",
-    "summary": "Monitoring: Anaerobic bacteria: a neglected reservoir of mobile oxazolidinone resistance genes.",
+    "summary": "Monitoring: Annual trends in Mycobacterium tuberculosis detection and rifampicin resistance at a regional referral hospital in Northern Ghana, 2019-2024.",
     "url": "/stories/story_8b3f807bbfd61cab-tuberculosis-and-antimicrobial-resistance.html",
     "keywords": "severity_or_death laboratory_or_genomic Multi-region Ghana / India / United States"
   },
