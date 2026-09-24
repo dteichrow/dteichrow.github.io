@@ -1,5 +1,13 @@
 [
   {
+    "title": "Medical Error Kills 251,000 per year? Rogan and Huberman Bring Back a Zombie Statistic",
+    "display_title": "Medical Error Kills 251,000 per year? Rogan and Huberman Bring Back a Zombie Statistic",
+    "section": "Essay",
+    "summary": "Joe Rogan and Andrew Huberman discuss the disputed estimate that medical error causes 251,000 U.S. deaths a year. Screenshot from YouTube. Rogan and Huberman both have millions of listeners, so whenever they come together for a conversation at least one clip goes viral on social media. Inthe conversation that came out last week, the viral clip I’ve been seeing has been about a medical-error death toll of 251,000 per year. It’s a sticky number to repeat and comes from a peer-reviewed paperin a legitimate journal ( BMJ ). The problem is, the estimate has been heavily disputed due to methodologic",
+    "url": "/essays/medical-error-kills-251000-per-year/",
+    "keywords": " epidemiologic-methods"
+  },
+  {
     "title": "The Missing Evidence in the Case Against Food Stamps",
     "display_title": "The Missing Evidence in the Case Against Food Stamps",
     "section": "Essay",
@@ -623,7 +631,7 @@
     "section": "Newsdesk",
     "summary": "Monitoring: News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....",
     "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
-    "keywords": "new_official_source suspected_case confirmed_case severity_or_death policy_or_travel new_geography North America United States"
+    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography North America United States"
   },
   {
     "title": "Ebola virus disease",
@@ -644,7 +652,7 @@
     "section": "Newsdesk",
     "summary": "Monitoring: Florida Surgeon General Reminds Floridians to Take Steps Against Dengue Ahead of Labor Day Weekend",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
-    "keywords": "new_official_source severity_or_death new_geography North America United States"
+    "keywords": "new_official_source severity_or_death transmission_change new_geography North America United States"
   },
   {
     "title": "Cyclosporiasis",
