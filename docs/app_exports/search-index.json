@@ -652,7 +652,7 @@
     "section": "Newsdesk",
     "summary": "Monitoring: Florida Surgeon General Reminds Floridians to Take Steps Against Dengue Ahead of Labor Day Weekend",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
-    "keywords": "new_official_source severity_or_death transmission_change new_geography North America United States"
+    "keywords": "new_official_source severity_or_death new_geography North America United States"
   },
   {
     "title": "Cyclosporiasis",
@@ -666,14 +666,14 @@
     "section": "Newsdesk",
     "summary": "Monitoring: Notes from the Field: The First 100 Days of Five Ebola Outbreaks - Democratic Republic of the Congo, Uganda, and West Africa, 2007-2026",
     "url": "/stories/story_17a354bcafcca4ce-occupational-and-environmental-epidemiology.html",
-    "keywords": "new_official_source confirmed_case severity_or_death new_geography healthcare_transmission Africa Democratic Republic of the Congo / Uganda"
+    "keywords": "new_official_source new_geography Africa Democratic Republic of the Congo / Uganda"
   },
   {
     "title": "Historical epidemiology and ancient pathogens",
     "section": "Newsdesk",
-    "summary": "Monitoring: BVD Safe and Dignified Burials (SDB) Community Perceptions in the Democratic Republic of the Congo (DRC)",
+    "summary": "Monitoring: Bayesian Parameter Estimation and Stochastic Extinction Analysis in a Seasonal Bubonic Plague Transmission Model.",
     "url": "/stories/story_b461b8ac8c062700-historical-epidemiology-and-ancient-pathogens.html",
-    "keywords": "transmission_change Africa Democratic Republic of the Congo"
+    "keywords": "severity_or_death transmission_change Africa Democratic Republic of the Congo"
   },
   {
     "title": "Ebola virus disease",
