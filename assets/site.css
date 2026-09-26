@@ -470,6 +470,13 @@ small {
 .commission-strip > a {
   flex-shrink: 0;
 }
+.home-commission-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex-shrink: 0;
+}
 .writing-grid .writing-card h3 a {
   color: var(--ink);
   text-decoration-thickness: 1px;

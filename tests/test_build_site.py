@@ -742,6 +742,11 @@ atlases:
     assert "Removed Post" not in essays_index
     assert "See projects and prices" in home_text
     assert 'href="/opportunities/"' in home_text
+    assert 'href="/writing/#role-contact"' in home_text
+    writing_text = (docs_dir / "writing" / "index.html").read_text()
+    assert 'id="role-contact"' in writing_text
+    assert "Role+or+position+title%3A" in writing_text
+    assert "Budget+range" not in writing_text
     assert "site-brand" in home_text
     assert "By Devin Teichrow" in home_text or "I’m Devin Teichrow" in home_text
     assert "Unified site" not in home_text
