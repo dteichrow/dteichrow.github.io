@@ -646,7 +646,8 @@ atlases:
     )
     assert '<meta name="twitter:card" content="summary_large_image" />' in home_text
     assert '<script type="application/ld+json" data-eoe-seo>' in home_text
-    assert "UCLA-trained epidemiologist at UC Irvine" in home_text
+    assert "UCLA-trained epidemiologist and science writer" in home_text
+    assert "UCLA-trained epidemiologist at UC Irvine" not in home_text
     assert "hero-notebook" not in home_text
     assert "opening-work" in home_text
     assert "The latest essay" in home_text
@@ -679,14 +680,15 @@ atlases:
     assert "https://images.example/cover.jpg" in essays_text
     about_text = (docs_dir / "about" / "index.html").read_text()
     assert "About Devin Teichrow and The Edge of Epidemiology" in about_text
-    assert (
-        "I’m Devin Teichrow, an epidemiologist based at the University of California, Irvine"
-        in about_text
-    )
+    assert "I’m Devin Teichrow, an epidemiologist and science writer." in about_text
+    assert "University of California, Irvine" not in about_text
+    assert "My other writing outlets include The Viking Herald, The Age of Exploration, RealClearScience, and Knock LA." in about_text
     assert "plague outbreaks during war" in about_text
     assert "The Edge of Epidemiology on Substack" in about_text
     assert "diseases do not move only through bodies" not in about_text
     opportunities_text = (docs_dir / "opportunities" / "index.html").read_text()
+    assert "UCLA-trained epidemiologist and science writer with neurology research experience" in opportunities_text
+    assert "working in neurology at UC Irvine" not in opportunities_text
     services = BeautifulSoup(opportunities_text, "html.parser")
     assert len(services.select(".service-package-card")) == 5
     assert "Work with me" in services.get_text()

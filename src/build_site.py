@@ -466,9 +466,9 @@ def render_about_page(base_url: str) -> str:
         <div class="about-block">
           <p class="kicker">Bio</p>
           <h3>Research and public work</h3>
-          <p>I’m Devin Teichrow, an epidemiologist based at the University of California, Irvine, where I am an epidemiology specialist in the lab of Dr. Ali Ezzati. My public science work sits at the intersection of infectious disease, historical analysis, and evidence communication.</p>
-          <p>I received my training in epidemiology at UCLA and currently work in neurology research, where my projects have focused on cognition, migraine, aging, ecological momentary assessment, and digital health methods. Alongside my academic work, I’ve developed a growing interest in how disease moves through populations beyond the clinic or dataset: through war, migration, infrastructure, ecology, trade, and geography.</p>
-          <p>That broader perspective is what led to my <a href="https://theedgeofepidemiology.substack.com">Substack, The Edge of Epidemiology</a>. My writing can also currently be found in The Viking Herald and The Age of Exploration.</p>
+          <p>I’m Devin Teichrow, an epidemiologist and science writer. My public science work sits at the intersection of infectious disease, historical analysis, and evidence communication.</p>
+          <p>I received my training in epidemiology at UCLA. My neurology research has focused on cognition, migraine, aging, ecological momentary assessment, and digital health methods. Alongside my research, I’ve developed a growing interest in how disease moves through populations beyond the clinic or dataset: through war, migration, infrastructure, ecology, trade, and geography.</p>
+          <p>That broader perspective is what led to my <a href="https://theedgeofepidemiology.substack.com">Substack, The Edge of Epidemiology</a>. My other writing outlets include The Viking Herald, The Age of Exploration, RealClearScience, and Knock LA.</p>
         </div>
         <div class="about-block">
           <p class="kicker">Project</p>

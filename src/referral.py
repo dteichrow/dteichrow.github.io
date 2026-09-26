@@ -100,7 +100,7 @@ def build_referral(destination=None):
         para("RESEARCH / WRITING / PUBLIC EXHIBITS", "kicker"),
         para("Make your research<br/>easier to use.", "title"),
         para(
-            "Devin Teichrow, MSc<br/>UCLA-trained epidemiologist working in neurology at UC Irvine; writer and builder behind The Edge of Epidemiology."
+            "Devin Teichrow, MSc<br/>UCLA-trained epidemiologist with neurology research experience; writer and builder behind The Edge of Epidemiology."
         ),
         para(
             "I help researchers, labs, health teams, and editors turn technical work into clear writing, useful analysis, and public websites."
