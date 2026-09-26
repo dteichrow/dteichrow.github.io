@@ -202,6 +202,17 @@ def build_referral(destination=None):
     from bs4 import BeautifulSoup
 
     portable = BeautifulSoup(render_opportunities_page("/"), "html.parser")
+    # This portable HTML companion repeats the canonical services page. Keep
+    # the stable referral URL usable while directing search engines to the
+    # maintained, interactive source of truth.
+    portable.head.append(
+        portable.new_tag("meta", attrs={"name": "robots", "content": "noindex,follow"})
+    )
+    canonical = portable.new_tag(
+        "link",
+        attrs={"rel": "canonical", "href": "https://devinteichrow.com/opportunities/"},
+    )
+    portable.head.append(canonical)
     stylesheet = portable.select_one('link[rel="stylesheet"]')
     style = portable.new_tag("style")
     style.string = (PROJECT_ROOT / "assets/site.css").read_text()

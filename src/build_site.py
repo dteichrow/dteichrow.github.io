@@ -158,6 +158,12 @@ def render_home(posts, tools, latest, base_url):
     return render(posts, tools, latest, base_url)
 
 
+def render_writing_page(base_url):
+    from .site_pages import render_writing_page as render
+
+    return render(base_url)
+
+
 def render_essays_index(posts: list[dict[str, Any]], base_url: str) -> str:
     cards = "".join(
         render_post_card(post, base_url, featured=index % 6 == 0)
@@ -344,23 +350,10 @@ def title_from_story_filename(filename: str) -> str:
 
 
 def render_archived_story_placeholder(filename: str, base_url: str) -> str:
-    story_title = title_from_story_filename(filename)
-    return base_html(
-        title=f"{story_title} | Archived story file",
-        description="Archived Pathogen Dispatch story reference.",
-        active="newsdesk",
-        base_url=base_url,
-        body=f"""
-      <section class="hero">
-        <p class="kicker">Archived story file</p>
-        <h2 class="hero-title">{html.escape(story_title)}</h2>
-        <p class="subtitle">Earlier Pathogen Dispatch coverage retained for archive continuity.</p>
-        <div class="hero-actions">
-          <a class="button secondary" href="{html.escape(link_for(base_url, "stories/"))}">Current story files</a>
-          <a class="button secondary" href="{html.escape(link_for(base_url, "newsdesk/archive/"))}">Newsdesk archive</a>
-        </div>
-      </section>
-    """,
+    _ = filename
+    return live_newsdesk_redirect_html(
+        title="Archived Pathogen Dispatch coverage",
+        target_url=link_for(base_url, "newsdesk/archive/"),
     )
 
 
@@ -468,7 +461,7 @@ def render_about_page(base_url: str) -> str:
           <h3>Research and public work</h3>
           <p>I’m Devin Teichrow, an epidemiologist and science writer. My public science work sits at the intersection of infectious disease, historical analysis, and evidence communication.</p>
           <p>I received my training in epidemiology at UCLA. My neurology research has focused on cognition, migraine, aging, ecological momentary assessment, and digital health methods. Alongside my research, I’ve developed a growing interest in how disease moves through populations beyond the clinic or dataset: through war, migration, infrastructure, ecology, trade, and geography.</p>
-          <p>That broader perspective is what led to my <a href="https://theedgeofepidemiology.substack.com">Substack, The Edge of Epidemiology</a>. My other writing outlets include The Viking Herald, The Age of Exploration, RealClearScience, and Knock LA.</p>
+          <p>That broader perspective is what led to my <a href="https://theedgeofepidemiology.substack.com">Substack, The Edge of Epidemiology</a>. My other writing outlets include The Viking Herald, The Age of Exploration, RealClearScience, and Knock LA. <a href="{html.escape(link_for(base_url, "writing/"))}">Browse selected work</a>.</p>
         </div>
         <div class="about-block">
           <p class="kicker">Project</p>
@@ -958,6 +951,19 @@ def transform_imported_html(html_text: str, *, active: str, base_url: str) -> st
     html_text = rewrite_imported_paths(html_text, base_url)
     html_text = remove_imported_section_nav(html_text)
     html_text = re.sub(
+        r'<style id="eoe-shell-import-style">.*?</style>',
+        "",
+        html_text,
+        flags=re.S,
+    )
+    html_text = re.sub(
+        r'<a class="eoe-import-skip".*?</header>', "", html_text, flags=re.S
+    )
+    html_text = re.sub(
+        r'<footer class="eoe-import-footer">.*?</footer>', "", html_text, flags=re.S
+    )
+    html_text = html_text.replace(' id="eoe-import-main" tabindex="-1"', "")
+    html_text = re.sub(
         r'<header class="site-header".*?</header>', "", html_text, flags=re.S
     )
     html_text = re.sub(
@@ -983,6 +989,56 @@ def transform_imported_html(html_text: str, *, active: str, base_url: str) -> st
         "<body>", f"<body>{imported_shell_nav(active, base_url)}", 1
     )
     return re.sub(r"[ \t]+\n", "\n", html_text)
+
+
+def compact_newsdesk_landing(html_text: str, base_url: str) -> str:
+    """Keep the Newsdesk landing focused; its full desk modules have routes."""
+    from bs4 import BeautifulSoup
+
+    soup = BeautifulSoup(html_text, "html.parser")
+    main = soup.select_one("main#eoe-import-main")
+    if main is None or main.select_one("#lead-outbreak-files") is None:
+        return html_text
+
+    keep_ids = {
+        "top",
+        "live-update-banner",
+        "source-health-notice",
+        "lead-outbreak-files",
+    }
+    for section in main.select("section[id]"):
+        if section.get("id") not in keep_ids:
+            section.decompose()
+
+    routes = [
+        ("Outbreak terminal", "newsdesk/outbreaks/"),
+        ("What changed today", "newsdesk/watch/"),
+        ("Africa watch", "newsdesk/africa/"),
+        ("Asia watch", "newsdesk/asia/"),
+        ("Reporter’s notebook", "notebook/"),
+        ("Research brief", "newsdesk/research/"),
+        ("Pathogen atlas", "atlases/pathogen/"),
+        ("Disease reference desk", "reference/"),
+        ("Archive and backfile", "newsdesk/archive/"),
+    ]
+    section = soup.new_tag("section", attrs={"class": "panel newsdesk-hub-links"})
+    heading = soup.new_tag("h2")
+    heading.string = "Explore the desk"
+    section.append(heading)
+    nav = soup.new_tag(
+        "nav",
+        attrs={
+            "class": "newsdesk-link-grid",
+            "aria-label": "Pathogen Dispatch sections",
+        },
+    )
+    for label, route in routes:
+        anchor = soup.new_tag("a", href=link_for(base_url, route))
+        anchor.string = label
+        nav.append(anchor)
+    section.append(nav)
+    main.append(section)
+    return str(soup)
 
 
 def live_newsdesk_redirect_html(*, title: str, target_url: str) -> str:
@@ -1152,8 +1208,31 @@ def import_epidossier_public(docs_dir: Path, base_url: str) -> dict[str, Any]:
         transformed = transform_imported_html(
             src.read_text(), active=active, base_url=base_url
         )
+        if dest == docs_dir / "newsdesk" / "index.html":
+            transformed = compact_newsdesk_landing(transformed, base_url)
         ensure_dir(dest.parent)
         dest.write_text(transformed)
+
+    section_aliases = {
+        "newsdesk/outbreaks.html": "newsdesk/outbreaks/",
+        "outbreaks.html": "newsdesk/outbreaks/",
+        "newsdesk/watch.html": "newsdesk/watch/",
+        "newsdesk/africa.html": "newsdesk/africa/",
+        "newsdesk/asia.html": "newsdesk/asia/",
+        "newsdesk/research.html": "newsdesk/research/",
+        "newsdesk/official.html": "newsdesk/official/",
+        "newsdesk/historical.html": "newsdesk/historical/",
+        "newsdesk/notebook.html": "notebook/",
+    }
+    for alias, target in section_aliases.items():
+        alias_path = docs_dir / alias
+        ensure_dir(alias_path.parent)
+        alias_path.write_text(
+            live_newsdesk_redirect_html(
+                title="Pathogen Dispatch section",
+                target_url=link_for(base_url, target),
+            )
+        )
 
     for source_subdir, dest_subdir, active in [
         ("stories", "stories", "newsdesk"),
@@ -1168,7 +1247,12 @@ def import_epidossier_public(docs_dir: Path, base_url: str) -> dict[str, Any]:
             dest.write_text(transformed)
             legacy_dest = docs_dir / "newsdesk" / source_subdir / src.name
             ensure_dir(legacy_dest.parent)
-            legacy_dest.write_text(transformed)
+            legacy_dest.write_text(
+                live_newsdesk_redirect_html(
+                    title="Pathogen Dispatch story or reference file",
+                    target_url=link_for(base_url, f"{dest_subdir}/{src.name}"),
+                )
+            )
 
     dated_source_root = source_docs / "2026"
     if dated_source_root.exists():
@@ -1580,6 +1664,7 @@ def build_site(
         docs_dir / "image-credits" / "index.html": render_image_credits(base_url),
         docs_dir / "index.html": render_home(public_posts, tools, latest, base_url),
         docs_dir / "essays" / "index.html": render_essays_index(public_posts, base_url),
+        docs_dir / "writing" / "index.html": render_writing_page(base_url),
         docs_dir / "topics" / "index.html": render_topic_hub_index(
             public_posts, base_url
         ),
@@ -1722,6 +1807,15 @@ def build_site(
             "summary": "Work with Devin Teichrow on epidemiology, evidence, disease history, science communication, data projects, and public-health exhibits.",
             "url": link_for(base_url, "opportunities/"),
             "keywords": "consulting collaboration epidemiology data science communication atlases public health",
+        }
+    )
+    search_index.append(
+        {
+            "title": "Selected writing",
+            "section": "Writing",
+            "summary": "Selected essays and reporting by Devin Teichrow, published by The Viking Herald, The Age of Exploration, RealClearScience, and Knock LA.",
+            "url": link_for(base_url, "writing/"),
+            "keywords": "writing portfolio published articles bylines science communication journalism",
         }
     )
 

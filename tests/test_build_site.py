@@ -8,6 +8,48 @@ from bs4 import BeautifulSoup
 from pathlib import Path
 
 from src import build_site
+from src import site_pages
+
+
+def test_homepage_curates_three_recent_essays_and_three_public_exhibits(monkeypatch):
+    monkeypatch.setattr(
+        site_pages,
+        "render_post_card",
+        lambda post, base_url, featured=False: (
+            f'<article data-post="{post["slug"]}"></article>'
+        ),
+    )
+    monkeypatch.setattr(
+        site_pages,
+        "render_tool_card",
+        lambda tool, base_url: f'<article data-tool="{tool["tool_id"]}"></article>',
+    )
+    posts = [{"slug": f"post-{index}"} for index in range(8)]
+    tools = [
+        {"tool_id": tool_id}
+        for tool_id in [
+            "histsearch",
+            "american-epidemic-timeline",
+            "pathogen-atlas",
+            "maritime-disease-atlas",
+            "revolutionary-war-atlas",
+            "viking-health-atlas",
+        ]
+    ]
+
+    page = BeautifulSoup(
+        site_pages.render_home(posts, tools, {"stories": []}, "/"), "html.parser"
+    )
+    assert [item["data-post"] for item in page.select(".essays-grid article")] == [
+        "post-1",
+        "post-2",
+        "post-3",
+    ]
+    assert {item["data-tool"] for item in page.select(".home-exhibit-grid article")} == {
+        "american-epidemic-timeline",
+        "pathogen-atlas",
+        "viking-health-atlas",
+    }
 
 
 def test_transform_imported_html_rewrites_known_paths() -> None:
@@ -51,15 +93,42 @@ def test_transform_imported_html_rewrites_known_paths() -> None:
     assert "Edge of Epidemiology" in transformed
     navigation = BeautifulSoup(transformed, "html.parser").select_one('.eoe-shell-links')
     assert [a.get_text() for a in navigation.select('a')] == [
-        'Essays', 'Exhibits', 'Newsdesk', 'About', 'Work with me', 'Search'
+        'Essays', 'Writing', 'Exhibits', 'Newsdesk', 'About', 'Work with me', 'Search'
     ]
     assert "The Edge of Epidemiology" in transformed
     assert "By Devin Teichrow" in transformed
     assert 'href="/opportunities/"' in transformed
+
+    transformed_twice = build_site.transform_imported_html(
+        transformed, active="newsdesk", base_url="/"
+    )
+    assert transformed_twice.count('class="eoe-shell-nav"') == 1
+    assert transformed_twice.count('id="eoe-shell-import-style"') == 1
+    assert transformed_twice.count('class="eoe-import-footer"') == 1
     assert "On this page" not in transformed
     assert "56 item(s)" not in transformed
     assert "26 source(s)" not in transformed
     assert "Expanding coverage" in transformed
+
+
+def test_compact_newsdesk_landing_keeps_the_summary_and_links_to_full_sections():
+    html_text = '''<html><body><main id="eoe-import-main">
+      <section id="top"><h1>The Pathogen Dispatch</h1></section>
+      <section id="source-health-notice">A source refresh is degraded.</section>
+      <section id="lead-outbreak-files"><h2>Lead Outbreak Files</h2><p>Four files.</p></section>
+      <section id="outbreak-terminal"><h2>Outbreak Terminal</h2><p>Ten cards.</p></section>
+      <section id="what-changed-today"><h2>What Changed Today</h2><p>Eight cards.</p></section>
+    </main></body></html>'''
+
+    compacted = build_site.compact_newsdesk_landing(html_text, "/")
+    page = BeautifulSoup(compacted, "html.parser")
+    assert page.select_one("#top")
+    assert page.select_one("#source-health-notice")
+    assert page.select_one("#lead-outbreak-files")
+    assert not page.select_one("#outbreak-terminal")
+    assert not page.select_one("#what-changed-today")
+    assert page.select_one('a[href="/newsdesk/outbreaks/"]')
+    assert page.select_one('a[href="/newsdesk/watch/"]')
 
 
 def test_import_epidossier_public_keeps_wrapped_newsdesk_pages(
@@ -340,12 +409,12 @@ def test_import_epidossier_public_imports_outbreak_terminal_routes(
     assert root_alias.exists()
     assert (docs_dir / "newsdesk" / "app_exports" / "latest.json").exists()
     assert "Outbreak Terminal" in terminal_page.read_text()
-    assert "Outbreak Terminal" in legacy_terminal_page.read_text()
+    assert 'http-equiv="refresh" content="0; url=/newsdesk/outbreaks/"' in legacy_terminal_page.read_text()
     assert 'href="/newsdesk/outbreaks/"' in reference_page.read_text()
     assert 'href="/newsdesk/outbreaks/"' in story_page.read_text()
-    assert 'href="/newsdesk/outbreaks/"' in legacy_reference_page.read_text()
-    assert 'href="/newsdesk/outbreaks/"' in legacy_story_page.read_text()
-    assert 'href="/newsdesk/"' in root_alias.read_text()
+    assert 'http-equiv="refresh" content="0; url=/reference/ebola-virus-disease.html"' in legacy_reference_page.read_text()
+    assert 'http-equiv="refresh" content="0; url=/stories/demo-story.html"' in legacy_story_page.read_text()
+    assert 'http-equiv="refresh" content="0; url=/newsdesk/outbreaks/"' in root_alias.read_text()
     assert 'href="/"' in newsdesk_home.read_text()
     assert 'href="/"' in newsdesk_latest.read_text()
     assert "window.location.replace" not in newsdesk_home.read_text()
@@ -493,6 +562,7 @@ atlases:
         (target_docs / "assets").mkdir(parents=True, exist_ok=True)
         (target_docs / "assets" / "site.css").write_text("body{}")
         (target_docs / "assets" / "site.js").write_text("console.log('ok');")
+        (target_docs / "assets" / "favicon.svg").write_text("<svg></svg>")
         (target_docs / ".nojekyll").write_text("")
 
     def fake_import_epidossier_public(target_docs: Path, base_url: str) -> dict:
@@ -652,7 +722,7 @@ atlases:
     assert "opening-work" in home_text
     assert "The latest essay" in home_text
     assert "newsdesk-panel" in home_text
-    assert "The exhibit collection" in home_text
+    assert "Selected exhibits" in home_text
     assert "story-card" in home_text
     assert "flagship-preview" in home_text
     assert "essay-card" in home_text
@@ -660,6 +730,11 @@ atlases:
     assert "https://images.example/cover.jpg" in home_text
     assert "Current reporting" in home_text
     assert "All essays" in home_text
+    assert "All exhibits" in home_text
+    assert 1 <= len(BeautifulSoup(home_text, "html.parser").select(".essays-grid article")) <= 3
+    assert len(BeautifulSoup(home_text, "html.parser").select(".home-exhibit-grid article")) <= 3
+    assert '<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">' in home_text
+    assert (docs_dir / "assets" / "favicon.svg").is_file()
     assert 'href="/opportunities/"' in home_text
     essays_index = (docs_dir / "essays" / "index.html").read_text()
     assert "<h2>2 essays</h2>" in essays_index
@@ -1134,5 +1209,6 @@ def test_archived_story_placeholders_cover_stale_archive_links(tmp_path) -> None
     )
     assert placeholder.exists()
     text = placeholder.read_text()
-    assert "Archived story file" in text
-    assert "Tuberculosis And Antimicrobial Resistance" in text
+    assert 'http-equiv="refresh" content="0; url=/newsdesk/archive/"' in text
+    assert '<meta name="robots" content="noindex,follow" />' in text
+    assert "Earlier Pathogen Dispatch coverage retained" not in text

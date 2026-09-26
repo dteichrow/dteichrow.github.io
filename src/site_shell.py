@@ -8,6 +8,7 @@ from .common import link_for
 
 PRIMARY_NAV = [
     ("Essays", "essays/", "essays"),
+    ("Writing", "writing/", "writing"),
     ("Exhibits", "tools/", "tools"),
     ("Newsdesk", "newsdesk/", "newsdesk"),
     ("About", "about/", "about"),
@@ -54,6 +55,7 @@ def base_html(
     )
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{html.escape(title)}</title><meta name="description" content="{html.escape(description)}">
+    <link rel="icon" type="image/svg+xml" href="{html.escape(link_for(base_url, "assets/favicon.svg"))}">
     <link rel="stylesheet" href="{html.escape(link_for(base_url, "assets/site.css"))}">{extra_head}</head>
     <body class="site-page page-{html.escape(active)}">{site_nav(active, base_url)}
     <main class="page" id="main" tabindex="-1">{promote_first_hero_heading(body)}</main>

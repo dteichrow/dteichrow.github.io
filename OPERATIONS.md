@@ -7,6 +7,7 @@ This repository owns the final GitHub Pages artifact. Edit source records and re
 | Source | Responsibility |
 |---|---|
 | `content/posts.yml`, `content/post_bodies/` | Essay metadata, curated introductions and relationships, available full text |
+| `content/writing.yml` | Curated external bylines and publication status; omit an article URL until it is public |
 | `content/services.json` | All service packages, prices, scope, examples, and referral guide |
 | `content/tools.yml`, `content/atlases.yml` | Exhibit discovery metadata and preserved routes |
 | `data/exhibits/` | Reviewed Viking and Revolutionary records, Histsearch dossiers and provenance |
@@ -82,6 +83,14 @@ Use `git revert` to undo a published source change, rerun validation, and manual
 ## Working-tree policy
 
 Use an isolated checkout when the user's working directory is dirty. Original local changes must remain intact. Generated `docs/` is tracked as a reproducible public artifact; private databases, credentials, outreach, scratch media, browser dependencies and reports remain untracked. Review `git diff --cached` before publishing.
+
+### Writing portfolio and legacy Newsdesk routes
+
+`content/writing.yml` is the source for `/writing/` and the homepage's external-work preview. Keep article titles and URLs linked to the publisher; forthcoming entries have no article URL and must be labeled with the confirmed publication status/date. The About page links readers to this portfolio. Essay pages with only a synced summary remain previews that point to Substack; they are not full-text mirrors.
+
+Prefer the directory routes for Newsdesk sections, `/stories/<file>.html` for story files, and `/reference/<file>.html` for disease references. The build retains legacy `.html` and nested Newsdesk URLs as noindex redirects with canonical targets, preserving inbound links while avoiding duplicate indexed pages. Archived story links without a current story record forward to the Newsdesk archive.
+
+The Newsdesk landing retains the live-edition notice, source-health disclosure, and lead outbreak files, then links to the full terminal, watch, notebook, research, reference, regional, atlas, and archive pages. Keep repeated dashboards on their dedicated routes rather than restoring every imported card wall to the landing page. The shared shell serves `assets/favicon.svg` as the site icon.
 
 
 ### Exhibit imagery and palette (September 8, 2026)
