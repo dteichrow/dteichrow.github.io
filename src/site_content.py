@@ -20,7 +20,7 @@ def post_folio_meta(post: dict[str, Any]) -> tuple[str, str]:
     elif post.get("status") == "mirrored":
         status_label = "Full essay"
     elif post_should_index(post):
-        status_label = "On Substack"
+        status_label = "Read on Substack"
     else:
         status_label = "Private archive"
     utility_meta = " · ".join(item for item in [category_text, status_label] if item)

@@ -769,7 +769,12 @@ atlases:
     assert "I’m Devin Teichrow, an epidemiologist and science writer." in about_text
     assert "University of California, Irvine" not in about_text
     assert "My other writing outlets include The Viking Herald, The Age of Exploration, RealClearScience, and Knock LA." in about_text
-    assert "plague outbreaks during war" in about_text
+    about_soup = BeautifulSoup(about_text, "html.parser")
+    focus_items = about_soup.select(".about-topic-list li")
+    assert len(focus_items) == 3
+    assert "Historical epidemiology." in focus_items[0].get_text(" ", strip=True)
+    assert "Outbreaks and disease geography." in focus_items[1].get_text(" ", strip=True)
+    assert "Evidence and communication." in focus_items[2].get_text(" ", strip=True)
     assert "The Edge of Epidemiology on Substack" in about_text
     assert "diseases do not move only through bodies" not in about_text
     opportunities_text = (docs_dir / "opportunities" / "index.html").read_text()

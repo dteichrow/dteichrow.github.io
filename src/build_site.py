@@ -474,13 +474,9 @@ def render_about_page(base_url: str) -> str:
           <p class="kicker">Interests</p>
           <h3>Current areas of focus</h3>
           <ul class="link-list about-topic-list">
-            <li>plague outbreaks during war</li>
-            <li>vector-borne disease and climate</li>
-            <li>misinformation and risk communication</li>
-            <li>ancient infectious disease</li>
-            <li>neuroscience and cognition</li>
-            <li>outbreak surveillance and preparedness</li>
-            <li>the hidden ecological consequences of conflict and migration</li>
+            <li><strong>Historical epidemiology.</strong> Epidemics shaped by war, migration, and changing landscapes.</li>
+            <li><strong>Outbreaks and disease geography.</strong> Surveillance, preparedness, vector ecology, and how pathogens move through people and infrastructure.</li>
+            <li><strong>Evidence and communication.</strong> How health claims are measured, disputed, and explained, including risk communication and brain health.</li>
           </ul>
         </div>
         <div class="about-block">

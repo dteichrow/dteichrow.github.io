@@ -3,6 +3,7 @@ from __future__ import annotations
 from src.build_site import live_newsdesk_redirect_html, render_archived_story_placeholder
 from src.site_pages import render_home, render_hiring_page, render_writing_page
 from src.site_seo import seo_profile_for_route
+from src.site_content import post_folio_meta
 
 
 def test_writing_portfolio_links_published_work_and_labels_knock_la_as_scheduled():
@@ -41,6 +42,14 @@ def test_linkedin_image_index_remains_noindex():
     )
 
     assert profile["noindex"] is True
+
+
+def test_essay_folio_labels_distinguish_site_mirrors_from_substack_reads():
+    summary = {"date": "2026-09-16", "indexing_strategy": "summary_only"}
+    mirrored = {"date": "2026-09-15", "status": "mirrored"}
+
+    assert post_folio_meta(summary)[1] == "Read on Substack"
+    assert post_folio_meta(mirrored)[1] == "Full essay"
 
 
 def test_archived_newsdesk_story_links_forward_to_the_archive():
