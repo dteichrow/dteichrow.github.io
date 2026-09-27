@@ -662,20 +662,6 @@
     "keywords": "new_official_source new_geography Africa Democratic Republic of the Congo / Uganda"
   },
   {
-    "title": "Historical epidemiology and ancient pathogens",
-    "section": "Newsdesk",
-    "summary": "Monitoring: Bayesian Parameter Estimation and Stochastic Extinction Analysis in a Seasonal Bubonic Plague Transmission Model.",
-    "url": "/stories/story_b461b8ac8c062700-historical-epidemiology-and-ancient-pathogens.html",
-    "keywords": "severity_or_death transmission_change Africa Democratic Republic of the Congo"
-  },
-  {
-    "title": "COVID-19 and SARS-CoV-2",
-    "section": "Newsdesk",
-    "summary": "Monitoring: Strategic health policy and health system resilience in protracted crisis settings: policymaker perspectives from Yemen.",
-    "url": "/stories/story_afd8f5934e291e02-covid-19-and-sars-cov-2.html",
-    "keywords": "laboratory_or_genomic Africa Uganda"
-  },
-  {
     "title": "Ebola virus disease",
     "section": "Reference",
     "summary": "Ebola remains a defining outbreak-desk disease because healthcare transmission, funeral practices, laboratory capacity, community trust, and international alarm can all move faster than the confirmed count.",
@@ -856,6 +842,13 @@
     "summary": "Zika matters because congenital outcomes, pregnancy guidance, travel messaging, and mosquito ecology can turn a mild-adult disease story into a major public-health communications event.",
     "url": "/reference/zika-virus-disease.html",
     "keywords": "Vector-borne Congenital risk Emerging zika"
+  },
+  {
+    "title": "For hiring teams",
+    "section": "About",
+    "summary": "Epidemiology, research, data analysis, and science communication experience from Devin Teichrow.",
+    "url": "/hiring/",
+    "keywords": "hiring employment epidemiology research statistics analysis science communication digital health"
   },
   {
     "title": "Work with me",
