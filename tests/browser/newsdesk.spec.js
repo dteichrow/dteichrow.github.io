@@ -5,8 +5,15 @@ for (const route of ['/newsdesk/', '/stories/story_56666e9c6c86e976-ebola-virus-
     test(`imported publication ${width}px ${route}`,async({page})=>{
       await page.setViewportSize({width,height:1000});
       await page.goto(route);
+      if(route==='/newsdesk/'){
+        await expect(page.getByRole('heading',{name:'Lead Outbreak Files'})).toBeVisible();
+        await expect(page.getByRole('heading',{name:'Explore the desk'})).toBeVisible();
+        await expect(page.getByRole('link',{name:'Outbreak terminal'})).toHaveAttribute('href','/newsdesk/outbreaks/');
+        await expect(page.locator('.newsdesk-link-grid a')).toHaveCount(9);
+        await expect(page.locator('#outbreak-terminal')).toHaveCount(0);
+      }
       const navigation=page.locator('.eoe-shell-nav');
-      await expect(navigation.locator('nav a')).toHaveText(['Essays','Exhibits','Newsdesk','About','Work with me','Search']);
+      await expect(navigation.locator('nav a')).toHaveText(['Essays','Writing','Exhibits','Newsdesk','About','Work with me','Search']);
       expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
       const header=await navigation.boundingBox(),title=await page.locator('h1').first().boundingBox();
       expect(header.y+header.height).toBeLessThanOrEqual(title.y);

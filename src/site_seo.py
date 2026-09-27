@@ -7,6 +7,7 @@ import json
 import re
 from pathlib import Path
 from typing import Any
+from urllib.parse import urljoin
 from .common import format_display_date
 from .site_config import (
     AUTHOR_SAME_AS,
@@ -82,7 +83,13 @@ def post_route(post: dict[str, Any]) -> str:
 
 
 def route_is_collection(route: str) -> bool:
-    if not route or route in {"about/", "methods/", "opportunities/", "search/"}:
+    if not route or route in {
+        "about/",
+        "hiring/",
+        "methods/",
+        "opportunities/",
+        "search/",
+    }:
         return False
     if route.endswith("/") and not re.match(r"essays/[^/]+/$", route):
         return True
@@ -96,7 +103,21 @@ def seo_profile_for_route(
     heading = extract_primary_heading(html_text)
     description = extract_meta_description_from_html(html_text)
     image = public_url_for_route(DEFAULT_SOCIAL_IMAGE)
-    noindex = route in {"search/", "newsdesk/", "newsdesk/latest.html"}
+    refresh_match = re.search(
+        r'<meta[^>]+http-equiv=["\']refresh["\'][^>]+content=["\'][^"\']*url=([^"\']+)',
+        html_text,
+        flags=re.I,
+    )
+    redirect_url = (
+        urljoin(PUBLIC_SITE_ORIGIN + "/", html.unescape(refresh_match.group(1)))
+        if refresh_match
+        else ""
+    )
+    noindex = (
+        route in {"search/", "newsdesk/", "newsdesk/latest.html"}
+        or route.startswith("assets/linkedin/recent-20/")
+        or bool(redirect_url)
+    )
     schema_type = "CollectionPage" if route_is_collection(route) else "WebPage"
     date_published = ""
     date_modified = ""
@@ -119,6 +140,12 @@ def seo_profile_for_route(
     elif route == "essays/":
         title = "Epidemiology Essays | Edge of Epidemiology"
         description = "The Edge of Epidemiology essay archive: historical epidemiology, infectious disease, outbreak reporting, epidemiologic methods, wellness claims, and neuroepidemiology."
+    elif route == "writing/":
+        title = "Selected Writing | Devin Teichrow"
+        description = "Selected essays and reporting by Devin Teichrow, published by The Viking Herald, The Age of Exploration, RealClearScience, and Knock LA."
+    elif route == "hiring/":
+        title = "For Hiring Teams | Devin Teichrow"
+        description = "Epidemiology, research, data analysis, and science communication experience from Devin Teichrow."
     elif route == "topics/":
         title = "Topic Hubs | Edge of Epidemiology"
         description = "Topic hubs for historical epidemiology, disease and war, disease ecology, pathogen geography, epidemiologic methods, wellness claims, and neuroepidemiology."
@@ -152,6 +179,7 @@ def seo_profile_for_route(
         title = f"Pathogen Dispatch for {date_label} | Edge of Epidemiology"
         description = f"The Pathogen Dispatch archive for {date_label}, with source-first infectious-disease reporting, outbreak tracking, and daily evidence notes."
         schema_type = "CollectionPage"
+        noindex = True
     elif route.startswith("newsdesk/"):
         page_name = heading or "The Pathogen Dispatch"
         if route == "newsdesk/":
@@ -194,6 +222,11 @@ def seo_profile_for_route(
     elif route == "opportunities/":
         title = "Work With Devin Teichrow | Edge of Epidemiology"
         description = "Collaborate with Devin Teichrow on epidemiology, public-health data, historical disease writing, science communication, outbreak tools, and disease atlas projects."
+    elif route == "assets/referral/devin-teichrow-referral-packet.html":
+        title = "Work With Devin Teichrow | Edge of Epidemiology"
+        description = "Portable referral copy for Devin Teichrow's research services. Visit the canonical opportunities page for current packages and contact information."
+        noindex = True
+        redirect_url = f"{PUBLIC_SITE_ORIGIN}/opportunities/"
 
     if not title:
         fallback_name = heading or title_case_slug(
@@ -204,7 +237,7 @@ def seo_profile_for_route(
     description = clean_seo_description(description, fallback_description)
     return {
         "route": route,
-        "url": public_url_for_route(route),
+        "url": redirect_url or public_url_for_route(route),
         "title": title,
         "description": description,
         "image": image,

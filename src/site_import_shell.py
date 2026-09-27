@@ -32,6 +32,9 @@ body { padding-top:0 !important; margin:0; background:#f6f1e4 !important; color:
 .site-card .meta-row .badge { max-width:none; }
 .badge.tone-major { color:#75540c !important; }
 .link-pill { background:#fffdf7 !important; }
+.newsdesk-hub-links .newsdesk-link-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:0 24px; margin-top:16px; }
+.newsdesk-hub-links .newsdesk-link-grid a { display:block; padding:12px 0; border-top:1px solid #c8c6ba; color:#414b82; font-weight:700; text-decoration-thickness:1px; text-underline-offset:.18em; }
+.newsdesk-hub-links .newsdesk-link-grid a:hover,.newsdesk-hub-links .newsdesk-link-grid a:focus-visible { color:#b84a3e; }
 @media(max-width:800px) {
  .eoe-shell-nav-inner { align-items:flex-start; flex-direction:column; gap:14px; padding:16px 5vw; }
  .eoe-shell-links { gap:4px 20px; }

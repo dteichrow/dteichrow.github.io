@@ -2,6 +2,9 @@ import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 for (const route of [
   "/",
+  "/about/",
+  "/writing/",
+  "/hiring/",
   "/opportunities/",
   "/tools/american-epidemic-timeline/",
   "/atlases/pathogen/",
