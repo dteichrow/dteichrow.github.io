@@ -526,6 +526,42 @@ small {
 .writing-portfolio + .role-contact {
   margin-top: 40px;
 }
+.hiring-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 44px;
+  max-width: 1060px;
+  padding: 8px 0 36px;
+}
+.hiring-layout h2 {
+  font-size: clamp(1.7rem, 2.8vw, 2.5rem);
+}
+.about-josie {
+  width: min(100%, 360px);
+  margin: 0 0 42px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+.about-layout {
+  max-width: 1040px;
+}
+.about-josie img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+.about-josie figcaption {
+  margin-top: 8px;
+  color: var(--slate);
+  font-size: 12px;
+}
+@media (max-width: 700px) {
+  .hiring-layout {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
 .newsdesk-hub-links .newsdesk-link-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));

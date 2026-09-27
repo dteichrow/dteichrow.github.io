@@ -677,7 +677,12 @@ atlases:
     assert (docs_dir / "tools" / "histsearch" / "index.html").exists()
     assert (docs_dir / "historical" / "index.html").exists()
     assert (docs_dir / "opportunities" / "index.html").exists()
+    assert (docs_dir / "hiring" / "index.html").exists()
     assert (docs_dir / "app_exports" / "posts.json").exists()
+    search_index = json.loads(
+        (docs_dir / "app_exports" / "search-index.json").read_text()
+    )
+    assert any(entry.get("url") == "/hiring/" for entry in search_index)
     posts_export = json.loads((docs_dir / "app_exports" / "posts.json").read_text())
     assert posts_export["count"] == 2
     assert posts_export["posts"][0]["slug"] == "first-post"
@@ -742,10 +747,9 @@ atlases:
     assert "Removed Post" not in essays_index
     assert "See projects and prices" in home_text
     assert 'href="/opportunities/"' in home_text
-    assert 'href="/writing/#role-contact"' in home_text
+    assert 'href="/hiring/"' in home_text
     writing_text = (docs_dir / "writing" / "index.html").read_text()
-    assert 'id="role-contact"' in writing_text
-    assert "Role+or+position+title%3A" in writing_text
+    assert 'href="/hiring/"' in writing_text
     assert "Budget+range" not in writing_text
     assert "site-brand" in home_text
     assert "By Devin Teichrow" in home_text or "I’m Devin Teichrow" in home_text
@@ -759,7 +763,9 @@ atlases:
     assert "essay-card-featured" in essays_text
     assert "https://images.example/cover.jpg" in essays_text
     about_text = (docs_dir / "about" / "index.html").read_text()
-    assert "About Devin Teichrow and The Edge of Epidemiology" in about_text
+    assert "About Devin and The Edge" in about_text
+    assert 'assets/about/josie.webp' in about_text
+    assert "Josie, the home-office supervisor." in about_text
     assert "I’m Devin Teichrow, an epidemiologist and science writer." in about_text
     assert "University of California, Irvine" not in about_text
     assert "My other writing outlets include The Viking Herald, The Age of Exploration, RealClearScience, and Knock LA." in about_text
@@ -780,6 +786,9 @@ atlases:
     assert "Build and review" in opportunities_text
     assert "Hand over the work" in opportunities_text
     assert "Example from my own work" in opportunities_text
+    hiring_text = (docs_dir / "hiring" / "index.html").read_text()
+    assert "Have a role in mind?" in hiring_text
+    assert 'href="/writing/"' in hiring_text
     post_text = (docs_dir / "essays" / "first-post" / "index.html").read_text()
     assert "First Local SEO Title" in post_text
     assert '<meta name="robots" content="noindex,follow" />' not in post_text

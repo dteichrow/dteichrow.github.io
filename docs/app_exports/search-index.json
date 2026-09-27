@@ -629,23 +629,16 @@
   {
     "title": "Measles transmission and vaccination",
     "section": "Newsdesk",
-    "summary": "Monitoring: News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....",
+    "summary": "Monitoring: Measles as tracer and tugboat: Why eradication can strengthen immunization systems.",
     "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
-    "keywords": "new_official_source suspected_case confirmed_case severity_or_death new_geography North America United States"
+    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography laboratory_or_genomic North America United States"
   },
   {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
     "summary": "Monitoring: Ebola disease outbreak in the Democratic Republic of the Congo",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
-    "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission Africa Democratic Republic of the Congo / South Sudan / Uganda"
-  },
-  {
-    "title": "Dengue and arboviruses",
-    "section": "Newsdesk",
-    "summary": "Monitoring: Florida Surgeon General Reminds Floridians to Take Steps Against Dengue Ahead of Labor Day Weekend",
-    "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
-    "keywords": "new_official_source severity_or_death transmission_change new_geography North America United States"
+    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel laboratory_or_genomic Africa Democratic Republic of the Congo / Uganda"
   },
   {
     "title": "Cyclosporiasis",
@@ -655,25 +648,18 @@
     "keywords": "new_official_source severity_or_death policy_or_travel new_geography North America United States"
   },
   {
+    "title": "Dengue and arboviruses",
+    "section": "Newsdesk",
+    "summary": "Monitoring: Florida Surgeon General Reminds Floridians to Take Precautions Against Dengue Ahead of Labor Day Weekend",
+    "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
+    "keywords": "new_official_source confirmed_case severity_or_death new_geography North America United States"
+  },
+  {
     "title": "Occupational and environmental epidemiology",
     "section": "Newsdesk",
-    "summary": "Monitoring: Notes from the Field: The First 100 Days of Five Ebola Outbreaks - Democratic Republic of the Congo, Uganda, and West Africa, 2007-2026",
+    "summary": "Monitoring: Caregiving experiences, challenges and needs of mothers for their young children who are HIV exposed and uninfected from Worcester, South Africa - A qualitative exploration through the nurturing care framework.",
     "url": "/stories/story_17a354bcafcca4ce-occupational-and-environmental-epidemiology.html",
-    "keywords": "new_official_source new_geography Africa Democratic Republic of the Congo / Uganda"
-  },
-  {
-    "title": "Historical epidemiology and ancient pathogens",
-    "section": "Newsdesk",
-    "summary": "Monitoring: Bayesian Parameter Estimation and Stochastic Extinction Analysis in a Seasonal Bubonic Plague Transmission Model.",
-    "url": "/stories/story_b461b8ac8c062700-historical-epidemiology-and-ancient-pathogens.html",
-    "keywords": "severity_or_death transmission_change Africa Democratic Republic of the Congo"
-  },
-  {
-    "title": "COVID-19 and SARS-CoV-2",
-    "section": "Newsdesk",
-    "summary": "Monitoring: Strategic health policy and health system resilience in protracted crisis settings: policymaker perspectives from Yemen.",
-    "url": "/stories/story_afd8f5934e291e02-covid-19-and-sars-cov-2.html",
-    "keywords": "laboratory_or_genomic Africa Uganda"
+    "keywords": "new_official_source confirmed_case severity_or_death transmission_change new_geography laboratory_or_genomic Africa Democratic Republic of the Congo / Uganda"
   },
   {
     "title": "Ebola virus disease",
@@ -856,6 +842,13 @@
     "summary": "Zika matters because congenital outcomes, pregnancy guidance, travel messaging, and mosquito ecology can turn a mild-adult disease story into a major public-health communications event.",
     "url": "/reference/zika-virus-disease.html",
     "keywords": "Vector-borne Congenital risk Emerging zika"
+  },
+  {
+    "title": "For hiring teams",
+    "section": "About",
+    "summary": "Epidemiology, research, data analysis, and science communication experience from Devin Teichrow.",
+    "url": "/hiring/",
+    "keywords": "hiring employment epidemiology research statistics analysis science communication digital health"
   },
   {
     "title": "Work with me",

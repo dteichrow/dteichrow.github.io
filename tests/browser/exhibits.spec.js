@@ -2,6 +2,10 @@ import { test, expect } from "@playwright/test";
 const routes = [
   "/",
   "/writing/",
+  "/about/",
+  "/hiring/",
+  "/essays/project-sunshines-supply-of-human/",
+  "/essays/medical-error-kills-251000-per-year/",
   "/opportunities/",
   "/tools/american-epidemic-timeline/",
   "/atlases/pathogen/",
@@ -96,6 +100,15 @@ test("timeline guided paths, evidence, comparison, permalink and reset", async (
   await expect(page.locator("#compareView")).toBeVisible();
   await page.locator("[data-mode=table]").click();
   expect(await page.locator("#tableWrap tbody tr").count()).toBeGreaterThan(0);
+});
+
+test("timeline hero title and secondary actions remain legible over the archival collage", async ({ page }) => {
+  await page.goto("/tools/american-epidemic-timeline/");
+  await expect(page.locator("#pageTitle")).toHaveCSS("color", "rgb(255, 253, 247)");
+  await expect(page.getByRole("button", { name: "Open ledger table" })).toHaveCSS(
+    "color",
+    "rgb(255, 253, 247)",
+  );
 });
 test("pathogen stable profile, filters, evidence diagram and reset", async ({
   page,

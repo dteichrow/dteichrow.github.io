@@ -83,7 +83,13 @@ def post_route(post: dict[str, Any]) -> str:
 
 
 def route_is_collection(route: str) -> bool:
-    if not route or route in {"about/", "methods/", "opportunities/", "search/"}:
+    if not route or route in {
+        "about/",
+        "hiring/",
+        "methods/",
+        "opportunities/",
+        "search/",
+    }:
         return False
     if route.endswith("/") and not re.match(r"essays/[^/]+/$", route):
         return True
@@ -137,6 +143,9 @@ def seo_profile_for_route(
     elif route == "writing/":
         title = "Selected Writing | Devin Teichrow"
         description = "Selected essays and reporting by Devin Teichrow, published by The Viking Herald, The Age of Exploration, RealClearScience, and Knock LA."
+    elif route == "hiring/":
+        title = "For Hiring Teams | Devin Teichrow"
+        description = "Epidemiology, research, data analysis, and science communication experience from Devin Teichrow."
     elif route == "topics/":
         title = "Topic Hubs | Edge of Epidemiology"
         description = "Topic hubs for historical epidemiology, disease and war, disease ecology, pathogen geography, epidemiologic methods, wellness claims, and neuroepidemiology."
@@ -170,6 +179,7 @@ def seo_profile_for_route(
         title = f"Pathogen Dispatch for {date_label} | Edge of Epidemiology"
         description = f"The Pathogen Dispatch archive for {date_label}, with source-first infectious-disease reporting, outbreak tracking, and daily evidence notes."
         schema_type = "CollectionPage"
+        noindex = True
     elif route.startswith("newsdesk/"):
         page_name = heading or "The Pathogen Dispatch"
         if route == "newsdesk/":

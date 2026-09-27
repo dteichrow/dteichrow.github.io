@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from src.build_site import live_newsdesk_redirect_html, render_archived_story_placeholder
-from src.site_pages import render_home, render_writing_page
+from src.site_pages import render_home, render_hiring_page, render_writing_page
 from src.site_seo import seo_profile_for_route
 
 
@@ -23,6 +23,16 @@ def test_homepage_has_a_direct_path_to_selected_writing():
     assert 'href="/writing/"' in page
     assert "Writing beyond this site" in page
     assert "The Missing Evidence in the Case Against Food Stamps" in page
+
+
+def test_hiring_page_has_role_specific_summary_and_contact_path():
+    page = render_hiring_page("/")
+
+    assert "For hiring teams" in page
+    assert "MSc training in epidemiology at UCLA" in page
+    assert "Neurology research experience" in page
+    assert 'href="mailto:devinteichrow@gmail.com?' in page
+    assert 'href="/writing/"' in page
 
 
 def test_linkedin_image_index_remains_noindex():
@@ -49,6 +59,16 @@ def test_legacy_newsdesk_redirect_is_noindex_and_canonicalizes_to_its_target():
 
     assert profile["noindex"] is True
     assert profile["url"] == "https://devinteichrow.com/newsdesk/africa/"
+
+
+def test_dated_newsdesk_archives_are_noindex_but_remain_self_canonical():
+    page = "<html><head><title>Pathogen Dispatch</title></head><body></body></html>"
+    profile = seo_profile_for_route("newsdesk/2026/06/2026-06-30.html", page, {})
+    archive_profile = seo_profile_for_route("newsdesk/archive/", page, {})
+
+    assert profile["noindex"] is True
+    assert profile["url"] == "https://devinteichrow.com/newsdesk/2026/06/2026-06-30.html"
+    assert archive_profile["noindex"] is False
 
 
 def test_legacy_newsdesk_redirect_is_noindex_and_canonicalizes_to_its_target():

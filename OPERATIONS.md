@@ -88,6 +88,8 @@ Use an isolated checkout when the user's working directory is dirty. Original lo
 
 `content/writing.yml` is the source for `/writing/` and the homepage's external-work preview. Keep article titles and URLs linked to the publisher; forthcoming entries have no article URL and must be labeled with the confirmed publication status/date. The About page links readers to this portfolio. Essay pages with only a synced summary remain previews that point to Substack; they are not full-text mirrors.
 
+The role-search page at `/hiring/` is rendered from `src/site_pages.py`, registered in `src/build_site.py`, and linked from the homepage and writing portfolio. It summarizes relevant experience and uses the contact address in `content/services.json`; résumés are shared for a specific opening rather than published as a public asset.
+
 Prefer the directory routes for Newsdesk sections, `/stories/<file>.html` for story files, and `/reference/<file>.html` for disease references. The build retains legacy `.html` and nested Newsdesk URLs as noindex redirects with canonical targets, preserving inbound links while avoiding duplicate indexed pages. Archived story links without a current story record forward to the Newsdesk archive.
 
 The Newsdesk landing retains the live-edition notice, source-health disclosure, and lead outbreak files, then links to the full terminal, watch, notebook, research, reference, regional, atlas, and archive pages. Keep repeated dashboards on their dedicated routes rather than restoring every imported card wall to the landing page. The shared shell serves `assets/favicon.svg` as the site icon.

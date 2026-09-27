@@ -4,6 +4,7 @@ for (const route of [
   "/",
   "/about/",
   "/writing/",
+  "/hiring/",
   "/opportunities/",
   "/tools/american-epidemic-timeline/",
   "/atlases/pathogen/",

@@ -49,7 +49,7 @@ def render_home(posts, tools, latest, base_url):
     <section class="home-section"><div class="section-head section-head-split"><div><p class="kicker">Selected work</p><h2>Writing beyond this site</h2><p>Bylines on historical disease, public health evidence, and the lives shaped by both.</p></div><a class="text-link" href="{href("writing/")}">Full portfolio →</a></div><div class="card-grid three-up writing-grid">{writing_cards}</div></section>
     <section class="home-section newsdesk-panel"><div class="section-head section-head-split"><div><p class="kicker">Current reporting</p><h2>The Pathogen Dispatch</h2><p>Follow outbreak reporting back to the underlying sources.</p></div><a class="text-link" href="{href("newsdesk/")}">Open the Newsdesk →</a></div><div class="card-grid three-up">{stories}</div></section>
     <section class="home-section home-exhibits"><div class="section-head section-head-split"><div><p class="kicker">Selected exhibits</p><h2>History you can inspect.</h2><p>Explore a place, compare a record, and examine what the evidence supports.</p></div><a class="text-link" href="{href("tools/")}">All exhibits →</a></div><div class="card-grid three-up home-exhibit-grid">{exhibits}</div></section>
-    <section class="commission-strip"><div><p class="kicker">Work with me</p><h2>Research into something people can use.</h2><p>Websites, evidence briefs, analysis, science writing, and interactive exhibits.</p></div><div class="home-commission-actions"><a class="button primary" href="{href("opportunities/")}">See projects and prices →</a><a class="text-link" href="{href("writing/#role-contact")}">Hiring for a role? →</a></div></section>''',
+    <section class="commission-strip"><div><p class="kicker">Work with me</p><h2>Research into something people can use.</h2><p>Websites, evidence briefs, analysis, science writing, and interactive exhibits.</p></div><div class="home-commission-actions"><a class="button primary" href="{href("opportunities/")}">See projects and prices →</a><a class="text-link" href="{href("hiring/")}">Hiring for a role? →</a></div></section>''',
     )
 
 
@@ -91,16 +91,38 @@ def render_writing_cards(entries, base_url, limit=None):
 
 
 def render_writing_page(base_url):
-    from .site_services import inquiry_url, load_services
-
     entries = load_writing()
-    services = load_services()
     return base_html(
         title="Selected Writing | Devin Teichrow",
         description="Selected essays and reporting by Devin Teichrow, published by The Viking Herald, The Age of Exploration, RealClearScience, and Knock LA.",
         active="writing",
         base_url=base_url,
-        body=f'''<section class="hero"><p class="kicker">Writing portfolio</p><h1 class="hero-title">Selected work</h1><p class="subtitle">Reporting and essays on disease, evidence, history, and the structures that shape health.</p><p>For writing published on The Edge of Epidemiology, see the <a href="{html.escape(link_for(base_url, "essays/"))}">essay archive</a>. The links below take you to articles published by other outlets.</p></section><section class="home-section writing-portfolio"><div class="card-grid three-up writing-grid">{render_writing_cards(entries, base_url)}</div></section><section class="commission-strip role-contact" id="role-contact"><div><p class="kicker">For hiring teams</p><h2>Looking for epidemiology, research, or science communication experience?</h2><p>My work spans epidemiologic research, evidence synthesis, data analysis, public writing, and digital health communication.</p></div><a class="button primary" href="{html.escape(inquiry_url("Staff or research position", services["contact"], subject_prefix="Role inquiry", body="Role or position title:\n\nOrganization:\n\nRelevant experience or question:\n\nHow best to follow up:\n"))}">Discuss a role ↗</a></section>''',
+        body=f'''<section class="hero"><p class="kicker">Writing portfolio</p><h1 class="hero-title">Selected work</h1><p class="subtitle">Reporting and essays on disease, evidence, history, and the structures that shape health.</p><p>For writing published on The Edge of Epidemiology, see the <a href="{html.escape(link_for(base_url, "essays/"))}">essay archive</a>. The links below take you to articles published by other outlets.</p></section><section class="home-section writing-portfolio"><div class="card-grid three-up writing-grid">{render_writing_cards(entries, base_url)}</div></section><section class="commission-strip role-contact" id="role-contact"><div><p class="kicker">For hiring teams</p><h2>Looking for epidemiology, research, or science communication experience?</h2><p>My work spans epidemiologic research, evidence synthesis, data analysis, public writing, and digital health communication.</p></div><a class="button primary" href="{html.escape(link_for(base_url, "hiring/"))}">See my background and get in touch ↗</a></section>''',
+    )
+
+
+def render_hiring_page(base_url):
+    from .site_services import inquiry_url, load_services
+
+    contact = load_services()["contact"]
+    role_inquiry = inquiry_url(
+        "Staff or research position",
+        contact,
+        subject_prefix="Role inquiry",
+        body=(
+            "Role or position title:\n\nOrganization:\n\n"
+            "Relevant experience or question:\n\nHow best to follow up:\n"
+        ),
+    )
+    return base_html(
+        title="For Hiring Teams | Devin Teichrow",
+        description=(
+            "Epidemiology, research, data analysis, and science communication "
+            "experience from Devin Teichrow."
+        ),
+        active="hiring",
+        base_url=base_url,
+        body=f'''<section class="hero"><p class="kicker">For hiring teams</p><h1 class="hero-title">Epidemiology, research, and science communication.</h1><p class="subtitle">I’m interested in staff and research roles where epidemiologic training, careful analysis, and clear communication work together.</p></section><section class="hiring-layout"><div class="about-block"><h2>What I bring</h2><ul class="link-list"><li>MSc training in epidemiology at UCLA</li><li>Neurology research experience spanning cognition, migraine, aging, ecological momentary assessment, and digital health methods</li><li>Statistical analysis, evidence synthesis, research writing, and science communication</li><li>Public-facing web projects and interactive exhibits that make technical material easier to use</li></ul></div><div class="about-block"><h2>Selected work</h2><p>My work moves between research, public-health evidence, historical epidemiology, and digital communication.</p><p><a href="{html.escape(link_for(base_url, "writing/"))}">Read selected reporting and essays →</a></p><p><a href="{html.escape(link_for(base_url, "tools/"))}">Explore interactive exhibits →</a></p></div></section><section class="role-contact"><div><p class="kicker">Start a conversation</p><h2>Have a role in mind?</h2><p>Send the position title and organization, and I’ll follow up. I can share a résumé for a specific opening.</p></div><a class="button primary" href="{html.escape(role_inquiry)}">Discuss a role ↗</a></section>''',
     )
 
 

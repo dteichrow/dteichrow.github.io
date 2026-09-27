@@ -452,7 +452,7 @@ def render_about_page(base_url: str) -> str:
         body=f"""
       <section class="hero hero-open about-hero">
         <p class="kicker">About</p>
-        <h2 class="hero-title">About Devin Teichrow and The Edge of Epidemiology</h2>
+        <h2 class="hero-title">About Devin and The Edge</h2>
         <p class="subtitle">An epidemiology project built around outbreak reporting, disease geography, historical epidemiology, and science communication.</p>
       </section>
       <section class="about-layout">
@@ -463,6 +463,7 @@ def render_about_page(base_url: str) -> str:
           <p>I received my training in epidemiology at UCLA. My neurology research has focused on cognition, migraine, aging, ecological momentary assessment, and digital health methods. Alongside my research, I’ve developed a growing interest in how disease moves through populations beyond the clinic or dataset: through war, migration, infrastructure, ecology, trade, and geography.</p>
           <p>That broader perspective is what led to my <a href="https://theedgeofepidemiology.substack.com">Substack, The Edge of Epidemiology</a>. My other writing outlets include The Viking Herald, The Age of Exploration, RealClearScience, and Knock LA. <a href="{html.escape(link_for(base_url, "writing/"))}">Browse selected work</a>.</p>
         </div>
+        <figure class="about-josie"><img src="{html.escape(link_for(base_url, "assets/about/josie.webp"))}" alt="Josie, a gray tabby cat lounging beside a laptop." loading="lazy" width="900" height="600"><figcaption>Josie, the home-office supervisor.</figcaption></figure>
         <div class="about-block">
           <p class="kicker">Project</p>
           <h3>What the project became</h3>
@@ -505,6 +506,12 @@ def render_about_page(base_url: str) -> str:
 
 def render_opportunities_page(base_url):
     from .site_services import render_opportunities_page as render
+
+    return render(base_url)
+
+
+def render_hiring_page(base_url):
+    from .site_pages import render_hiring_page as render
 
     return render(base_url)
 
@@ -1665,6 +1672,7 @@ def build_site(
         docs_dir / "index.html": render_home(public_posts, tools, latest, base_url),
         docs_dir / "essays" / "index.html": render_essays_index(public_posts, base_url),
         docs_dir / "writing" / "index.html": render_writing_page(base_url),
+        docs_dir / "hiring" / "index.html": render_hiring_page(base_url),
         docs_dir / "topics" / "index.html": render_topic_hub_index(
             public_posts, base_url
         ),
@@ -1800,6 +1808,15 @@ def build_site(
                 ),
             }
         )
+    search_index.append(
+        {
+            "title": "For hiring teams",
+            "section": "About",
+            "summary": "Epidemiology, research, data analysis, and science communication experience from Devin Teichrow.",
+            "url": link_for(base_url, "hiring/"),
+            "keywords": "hiring employment epidemiology research statistics analysis science communication digital health",
+        }
+    )
     search_index.append(
         {
             "title": "Work with me",
