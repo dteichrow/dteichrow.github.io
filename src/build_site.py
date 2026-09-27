@@ -463,7 +463,7 @@ def render_about_page(base_url: str) -> str:
           <p>I received my training in epidemiology at UCLA. My neurology research has focused on cognition, migraine, aging, ecological momentary assessment, and digital health methods. Alongside my research, I’ve developed a growing interest in how disease moves through populations beyond the clinic or dataset: through war, migration, infrastructure, ecology, trade, and geography.</p>
           <p>That broader perspective is what led to my <a href="https://theedgeofepidemiology.substack.com">Substack, The Edge of Epidemiology</a>. My other writing outlets include The Viking Herald, The Age of Exploration, RealClearScience, and Knock LA. <a href="{html.escape(link_for(base_url, "writing/"))}">Browse selected work</a>.</p>
         </div>
-        <figure class="about-josie"><img src="{html.escape(link_for(base_url, "assets/about/josie.webp"))}" alt="Josie, a gray tabby cat lounging beside a laptop." loading="lazy" width="900" height="600"><figcaption>Josie, the home-office supervisor.</figcaption></figure>
+        <figure class="about-josie"><img src="{html.escape(link_for(base_url, "assets/about/josie.webp"))}" alt="Josie, a gray tabby peeking out from under the desk." loading="lazy" width="900" height="600"><figcaption>Josie, the home-office supervisor.</figcaption></figure>
         <div class="about-block">
           <p class="kicker">Project</p>
           <h3>What the project became</h3>

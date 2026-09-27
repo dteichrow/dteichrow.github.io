@@ -82,7 +82,7 @@ test("archival covers remain available when collection servers cannot be reached
 
 test("About page shows the optimized Josie portrait with descriptive alt text", async ({ page }) => {
   await page.goto("/about/");
-  const josie = page.getByRole("img", { name: "Josie, a gray tabby cat lounging beside a laptop." });
+  const josie = page.getByRole("img", { name: "Josie, a gray tabby peeking out from under the desk." });
   await expect(josie).toBeVisible();
   await expect(josie).toHaveJSProperty("naturalWidth", 900);
   await page.screenshot({ path: "output/playwright/imagery/about-josie.png", fullPage: true });
