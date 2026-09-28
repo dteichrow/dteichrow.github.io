@@ -631,7 +631,7 @@
     "section": "Newsdesk",
     "summary": "Monitoring: News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....",
     "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
-    "keywords": "new_official_source confirmed_case severity_or_death new_geography North America United States"
+    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography North America United States"
   },
   {
     "title": "Ebola virus disease",
@@ -662,18 +662,18 @@
     "keywords": "new_official_source new_geography Africa Democratic Republic of the Congo / Uganda"
   },
   {
+    "title": "COVID-19 and SARS-CoV-2",
+    "section": "Newsdesk",
+    "summary": "Monitoring: Strategic health policy and health system resilience in protracted crisis settings: policymaker perspectives from Yemen.",
+    "url": "/stories/story_afd8f5934e291e02-covid-19-and-sars-cov-2.html",
+    "keywords": "new_official_source new_geography laboratory_or_genomic Africa Uganda"
+  },
+  {
     "title": "Historical epidemiology and ancient pathogens",
     "section": "Newsdesk",
     "summary": "Monitoring: Bayesian Parameter Estimation and Stochastic Extinction Analysis in a Seasonal Bubonic Plague Transmission Model.",
     "url": "/stories/story_b461b8ac8c062700-historical-epidemiology-and-ancient-pathogens.html",
     "keywords": "severity_or_death transmission_change Africa Democratic Republic of the Congo"
-  },
-  {
-    "title": "COVID-19 and SARS-CoV-2",
-    "section": "Newsdesk",
-    "summary": "Monitoring: Strategic health policy and health system resilience in protracted crisis settings: policymaker perspectives from Yemen.",
-    "url": "/stories/story_afd8f5934e291e02-covid-19-and-sars-cov-2.html",
-    "keywords": "new_official_source laboratory_or_genomic Africa Uganda"
   },
   {
     "title": "Ebola virus disease",
