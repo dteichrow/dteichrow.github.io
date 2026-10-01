@@ -15,6 +15,8 @@ try {
   for (const route of [
     "/",
     "/opportunities/",
+    "/about/",
+    "/about/cv/",
     "/essays/",
     "/essays/project-sunshines-supply-of-human/",
   ]) {

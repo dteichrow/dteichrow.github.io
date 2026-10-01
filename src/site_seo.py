@@ -85,6 +85,7 @@ def post_route(post: dict[str, Any]) -> str:
 def route_is_collection(route: str) -> bool:
     if not route or route in {
         "about/",
+        "about/cv/",
         "hiring/",
         "methods/",
         "opportunities/",
@@ -216,6 +217,10 @@ def seo_profile_for_route(
     elif route == "methods/":
         title = "Methods And Sourcing | Edge of Epidemiology"
         description = "Methods, sourcing, update cadence, and editorial structure for The Edge of Epidemiology, The Pathogen Dispatch, and related atlas work."
+    elif route == "about/cv/":
+        title = "Devin Teichrow, MSc — Curriculum Vitae"
+        description = "Curriculum vitae of Devin Teichrow, MSc: epidemiology, clinical research, data analysis, publications, and science communication. Read online or download the PDF."
+        schema_type = "ProfilePage"
     elif route == "about/":
         title = "About Devin Teichrow | Edge of Epidemiology"
         description = "About Devin Teichrow and The Edge of Epidemiology: epidemiology, neurology research, historical disease writing, outbreak reporting, and science communication."
@@ -313,6 +318,8 @@ def render_json_ld(profile: dict[str, Any]) -> str:
         },
         "author": author,
     }
+    if profile["schema_type"] == "ProfilePage":
+        payload["mainEntity"] = author
     if profile["schema_type"] == "WebSite":
         payload["potentialAction"] = {
             "@type": "SearchAction",

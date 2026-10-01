@@ -1,0 +1,161 @@
+{
+  "name": "Devin Teichrow, MSc",
+  "updated": "2026-10-01",
+  "location": "Irvine, California",
+  "email": "devinteichrow@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/devin-teichrow-msc-938942254/",
+  "profile": "Epidemiologist and clinical research specialist with an MS in Epidemiology from UCLA and experience spanning neuroepidemiology, migraine, ADRD and cognitive aging, clinical trial data management, environmental epidemiology, health-services research, and public science communication. Brings applied quantitative analysis, protocol and IRB support, participant-facing research operations, manuscript and abstract writing, and clear translation of complex findings for clinical, research, and public audiences.",
+  "skills": [
+    "Study design and epidemiologic methods",
+    "regression modeling",
+    "longitudinal data analysis",
+    "cohort characterization",
+    "sensitivity analyses",
+    "g-methods",
+    "marginal means",
+    "literature review",
+    "PubMed and Embase searching",
+    "clinical research operations",
+    "clinical data management",
+    "IRB and protocol materials",
+    "GCP/FDA-aware documentation",
+    "participant recruitment",
+    "REDCap",
+    "R",
+    "Python",
+    "SAS",
+    "SQL",
+    "Stata",
+    "Microsoft Access",
+    "Qualtrics",
+    "Excel",
+    "PowerPoint",
+    "Word"
+  ],
+  "experience": [
+    {
+      "title": "Assistant Specialist",
+      "organization": "Neuroinformatics Lab, University of California, Irvine",
+      "location": "Irvine, CA",
+      "dates": "2025 - 2026",
+      "bullets": [
+        "Supported migraine, headache, digital cognitive testing, ecological momentary assessment, Alzheimer disease, and dementia-related research as an epidemiology and biostatistics analyst in Ali Ezzati, MD's Neuroinformatics Lab.",
+        "Analyzed real-world migraine and cognition data in R and Python, producing regression models, marginal-means estimates, g-method analyses, cohort summaries, manuscript-ready tables, figures, and investigator-facing reports.",
+        "Contributed analyses to four American Headache Society abstracts and multiple migraine manuscripts, including a first-author pharmacoepidemiology manuscript on real-world acute prescription migraine therapy outcomes.",
+        "Supported longitudinal cohort development, recruitment, progress tracking, data-quality review, and documentation for the Migraine and Cognition in Daily Life Study, including two completed recruitment phases.",
+        "Drafted and maintained protocols, IRB-related materials, consent and study-primer language, participant education, lab websites, research-output records, and public-facing UCI MIND communication.",
+        "Developed and presented \"Digital Dementia: Is Technology Making Us Forgetful?\" for the Alzheimer's Orange County Brain Health Conference, translating cognitive-aging evidence for public and professional audiences."
+      ]
+    },
+    {
+      "title": "Clinical Research Data Manager",
+      "organization": "Hematology/Oncology, UCLA Health",
+      "location": "Los Angeles, CA",
+      "dates": "November 2024 - February 2025",
+      "bullets": [
+        "Managed data collection, cleaning, maintenance, query resolution, quality assurance, and monitoring documentation for antifungal rezafungin clinical trials in bone marrow transplant patients.",
+        "Produced data-quality summaries, visualizations, and query-resolution materials for clinical-team review while supporting FDA, IRB, GCP, and study-protocol requirements.",
+        "Designed and maintained secure study databases and standardized data-management workflows to improve consistency, auditability, and analysis readiness."
+      ]
+    },
+    {
+      "title": "Food Rx and Related Research Master's Intern",
+      "organization": "Kaiser Permanente Research and Evaluation",
+      "location": "Pasadena, CA",
+      "dates": "June 2024 - November 2024",
+      "bullets": [
+        "Supported applied population-health and health-services research through data preparation, statistical analysis, project planning, reporting, and dissemination.",
+        "Prepared analyses, manuscript material, figures, presentations, and collaborator-facing summaries for research on nutrition, weight management, restaurant portions, and cardiovascular outcomes.",
+        "Developed intervention-facing nutrition materials and a dissemination-focused cookbook, including nutrition analysis, layout planning, and plain-language health communication."
+      ]
+    },
+    {
+      "title": "Graduate Student Researcher",
+      "organization": "Ritz Environmental Epidemiology Lab, UCLA",
+      "location": "Los Angeles, CA",
+      "dates": "September 2022 - June 2024",
+      "bullets": [
+        "Completed an epidemiology master's thesis on maternal exposure to airport-related particulate matter and risk of childhood cerebral palsy and epilepsy using a dataset with more than 200,000 participants and 50 variables.",
+        "Cleaned and analyzed data in R using logistic regression, sensitivity analyses, and visualization; supported literature review, protocol documentation, IRB-related form revisions, staff training, and onboarding.",
+        "Supported Parkinson's Environment and Genes research through participant interviews, recruitment, outreach, and data entry; completed MoCA certification/training and administered cognitive assessments in Parkinson's disease research."
+      ]
+    },
+    {
+      "title": "Undergraduate Research Assistant",
+      "organization": "UC Davis Alzheimer's Research Center",
+      "location": "Davis, CA",
+      "dates": "March 2021 - June 2022",
+      "bullets": [
+        "Supported longitudinal dementia-prevention research involving diet and exercise interventions, cognitive-health outcomes, older-adult participants, REDCap data entry, and participant-facing documentation.",
+        "Conducted strength and flexibility assessments in retirement-community settings and maintained real-time study records."
+      ]
+    },
+    {
+      "title": "Undergraduate Student Researcher and Thesis Advisee",
+      "organization": "Personality, Self, and Emotion Lab, UC Davis",
+      "location": "Davis, CA",
+      "dates": "September 2020 - June 2022",
+      "bullets": [
+        "Used R to estimate latent growth-curve and structural-equation models for longitudinal developmental psychology research; contributed to a published study and completed an honors thesis on personality development and childhood cognitive ability."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science, Epidemiology",
+      "institution": "UCLA Fielding School of Public Health",
+      "date": "June 2024",
+      "detail": "Thesis: Maternal particulate-matter exposure from airport-related air pollution and risk of childhood cerebral palsy and epilepsy."
+    },
+    {
+      "degree": "Bachelor of Arts, Psychology",
+      "institution": "University of California, Davis",
+      "date": "June 2022",
+      "detail": "Undergraduate Research Award, Department of Psychology; honors thesis on longitudinal personality development and childhood cognitive ability."
+    }
+  ],
+  "communication": [
+    {
+      "text": "The Edge of Epidemiology: Founder and writer of an independent public-science publication on epidemiology, public health, disease ecology, infectious disease history, and the historical roots of modern health systems.",
+      "url": "https://theedgeofepidemiology.substack.com/"
+    },
+    {
+      "text": "UCI MIND: Public-facing ADRD research translation, including \"Personality Before Memory? When Subtle Changes Signal the Earliest Stages of Dementia.\"",
+      "url": "https://mind.uci.edu/personality-before-memory-when-subtle-changes-signal-the-earliest-stages-of-dementia/"
+    },
+    {
+      "text": "Alzheimer's Orange County: Developed and presented \"Digital Dementia: Is Technology Making Us Forgetful?\" on dementia, technology, brain health, cognitive aging, and research literacy."
+    },
+    {
+      "text": "The Age of Exploration: Published \"Slow collapse: How Eurasian diseases devastated the Americas\" and developed interactive historical epidemiology maps, including the Norse Travels Health Map and American Revolution Health Atlas.",
+      "url": "https://theageofexploration.com/slow-collapse-how-eurasian-diseases-devastated-the-americas/"
+    }
+  ],
+  "publications": [
+    {
+      "citation": "Ezzati A, Fanning KM, Teichrow D, Urani A, Cadiou F, Lipton RB. Headache Assessment via Digital Platform in United States: Baseline study characteristics, diagnosis, and treatment patterns. Headache. 2025;65(8):1428-1438.",
+      "url": "https://doi.org/10.1111/head.15016",
+      "status": "Journal article"
+    },
+    {
+      "citation": "Teichrow D, Khorsand B, Fanning KM, Urani A, Cadiou F, Lipton RB, Ezzati A. Comparative Analysis of Real-World Acute Prescription Migraine Therapy Outcomes: Insights from the HeAD-US Study. Headache. 2026;66(7):1537-1547.",
+      "url": "https://doi.org/10.1111/head.70113",
+      "status": "Journal article"
+    },
+    {
+      "citation": "Cohen DA, Shonkoff E, Robinson B, Voorhees A, Teichrow D, Paz S, Han B. When more isn't more: Diners' feelings of fullness after consuming restaurant portions with fewer than 700 calories. Nutrition and Health. OnlineFirst 2026.",
+      "url": "https://doi.org/10.1177/02601060261425472",
+      "status": "Journal article"
+    },
+    {
+      "citation": "Lawson KM, Barrett BL, Cerny RJ, Enrici KE, Garcia-Cardenas JE, Gonzales CE, Hernandez ID, Iacobacci CP, Lin T, Martinez Urieta NY, Moreno P, Rivera MG, Teichrow DJ, Vizcarra A, Hostinar CE, Robins RW. The Development of Shyness from Late Childhood to Adolescence: A Longitudinal Study of Mexican-Origin Youth. Social Psychological and Personality Science. 2023;14(1).",
+      "url": "https://doi.org/10.1177/19485506211070674",
+      "status": "Journal article"
+    },
+    {
+      "citation": "Khorsand B, Teichrow D, Lipton RB, Ezzati A. The MIND Study: Design, Feasibility, and Baseline Characteristics of a Smartphone-Based Migraine Cohort. medRxiv. 2026. Preprint; not peer reviewed.",
+      "url": "https://doi.org/10.64898/2026.04.14.26350866",
+      "status": "Preprint"
+    }
+  ]
+}

@@ -8,6 +8,7 @@ This repository owns the final GitHub Pages artifact. Edit source records and re
 |---|---|
 | `content/posts.yml`, `content/post_bodies/` | Essay metadata, curated introductions and relationships, available full text |
 | `content/writing.yml` | Curated external bylines and publication status; omit an article URL until it is public |
+| `content/cv.json`, `src/site_cv.py` | Public CV content, accessible HTML, and matching selectable-text PDF |
 | `content/services.json` | All service packages, prices, scope, examples, and referral guide |
 | `content/tools.yml`, `content/atlases.yml` | Exhibit discovery metadata and preserved routes |
 | `data/exhibits/` | Reviewed Viking and Revolutionary records, Histsearch dossiers and provenance |
@@ -88,7 +89,7 @@ Use an isolated checkout when the user's working directory is dirty. Original lo
 
 `content/writing.yml` is the source for `/writing/` and the homepage's external-work preview. Keep article titles and URLs linked to the publisher; forthcoming entries have no article URL and must be labeled with the confirmed publication status/date. The About page links readers to this portfolio. Essay pages with only a synced summary remain previews that point to Substack; they are not full-text mirrors.
 
-The role-search page at `/hiring/` is rendered from `src/site_pages.py`, registered in `src/build_site.py`, and linked from the homepage and writing portfolio. It summarizes relevant experience and uses the contact address in `content/services.json`; résumés are shared for a specific opening rather than published as a public asset.
+The role-search page at `/hiring/` is rendered from `src/site_pages.py`, registered in `src/build_site.py`, and linked from the homepage and writing portfolio. It summarizes relevant experience and uses the contact address in `content/services.json`; the general CV is public at `/about/cv/`, with a matching PDF at `/assets/cv/devin-teichrow-cv.pdf`. Tailored résumés can still be shared for a specific opening.
 
 Essay mirrors contain full text when a complete local body is available and the author controls republication. Keep the Substack canonical URL and attribution for those mirrors. When an entry is summary-only, make the destination explicit and link readers to Substack for the full essay. Do not copy an external outlet's full article onto this site unless republication rights are clear.
 
@@ -104,3 +105,13 @@ The Newsdesk landing retains the live-edition notice, source-health disclosure, 
 The publication uses paper `#F6F1E4`, charcoal `#202127`, indigo `#414B82`, rust `#B84A3E`, gold `#B28B3E`, and neutral slate `#555561`. Exhibit categories also use plum and blue. Forest green and teal are retired, including their former dark backgrounds. `scripts/validate_artifact.py` checks generated styles and owned vector/script assets for the retired colour family. It does not inspect or recolour documentary photographs. The imported Newsdesk also refreshes archived embedded palettes upstream in `src/rebuild_public.py`.
 
 Run the existing build and validation commands after edits. The browser suite includes cover loading, attribution navigation, whole-image credits, 390/768/1440px layouts, accessibility, and availability without collection servers. The image registry's paths, dimensions, rights fields, and hashes are covered by Python tests.
+
+### Public CV and author portrait
+
+Edit `content/cv.json` and rebuild using the standard command. `src/site_cv.py` generates the HTML and the three-page PDF from the same record. Update `updated` when reviewing the content; verify all pages after changes so the PDF has no sparse overflow page or missing role. Preserve preprint labels separately from journal publications. A PubMed record alone does not establish peer review.
+
+The initial public edition uses `Devin_Teichrow_CV_Research_Clinical_Science_Communication_2026-09-06.docx` from the owner's active application materials. It preserves the experience, skills, education and communication entries; UCI duties are past tense, the obsolete current-employment date is removed, and public contact details are email and LinkedIn. Bibliographic corrections were checked on October 1, 2026 against DOI records: `10.1111/head.15016`, `10.1111/head.70113`, `10.1177/02601060261425472`, `10.1177/19485506211070674`, and `10.64898/2026.04.14.26350866`. The HeAD-US comparative-analysis paper is a published article; MIND remains a preprint. The shyness paper uses its actual author order. Keep private originals outside the public repository.
+
+`assets/about/devin-teichrow.png` is the existing portrait identified by the Devin Teichrow heading on the [UCI Neuroinformatics Lab team page](https://faculty.sites.uci.edu/neuroinformatics/lab-members/), obtained at the owner's request. The [292×300 image](https://faculty.sites.uci.edu/neuroinformatics/files/2025/02/download-292x300.png) is hosted locally, unchanged; no generative edit or recolouring is applied. No open licence is asserted. Josie's separate photo remains in place.
+
+Browser checks exercise the CV with JavaScript disabled, section links from the keyboard, PDF download, portrait loading, search discovery, and 390/768/1440-pixel layouts. About and CV are included in the accessibility and mobile performance gates. If another preview owns port 8765, use `TEST_PORT=8768 pnpm test:browser`; use the corresponding `TEST_BASE_URL` for the performance command.
