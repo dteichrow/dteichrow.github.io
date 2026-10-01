@@ -444,6 +444,7 @@ def render_methods_page(base_url: str) -> str:
 
 
 def render_about_page(base_url: str) -> str:
+    from .site_cv import render_cv_actions
     return base_html(
         title="About | Edge of Epidemiology",
         description="About Edge of Epidemiology.",
@@ -451,9 +452,12 @@ def render_about_page(base_url: str) -> str:
         base_url=base_url,
         body=f"""
       <section class="hero hero-open about-hero">
-        <p class="kicker">About</p>
+        <div class="about-introduction"><div><p class="kicker">About</p>
         <h2 class="hero-title">About Devin and The Edge</h2>
         <p class="subtitle">An epidemiology project built around outbreak reporting, disease geography, historical epidemiology, and science communication.</p>
+        <p class="about-cv-intro">Looking for my professional background? Read my CV online or download a copy to share.</p>
+        {render_cv_actions(base_url)}
+        </div><img class="about-portrait" src="{html.escape(link_for(base_url, "assets/about/devin-teichrow.png"))}" alt="Devin Teichrow" width="292" height="300" fetchpriority="high"></div>
       </section>
       <section class="about-layout">
         <div class="about-block">
@@ -1645,6 +1649,8 @@ def build_site(
     ensure_dir(docs_dir)
 
     copy_static_assets(docs_dir)
+    from .site_cv import build_cv_pdf, render_cv_page, PDF_ROUTE
+    build_cv_pdf(docs_dir / PDF_ROUTE)
     latest = import_epidossier_public(docs_dir, base_url)
     import_external_pathogen(docs_dir, base_url)
     import_external_maritime(docs_dir, base_url)
@@ -1679,6 +1685,7 @@ def build_site(
         ),
         docs_dir / "methods" / "index.html": render_methods_page(base_url),
         docs_dir / "about" / "index.html": render_about_page(base_url),
+        docs_dir / "about" / "cv" / "index.html": render_cv_page(base_url),
         docs_dir / "opportunities" / "index.html": render_opportunities_page(base_url),
         docs_dir / "search" / "index.html": render_search_page(base_url),
         docs_dir / "reference" / "index.html": render_reference_index(
@@ -1804,6 +1811,13 @@ def build_site(
                 ),
             }
         )
+    search_index.append({
+        "title": "Devin Teichrow — Curriculum vitae",
+        "section": "About",
+        "summary": "Education, research experience, methods, publications, and public science communication. Read online or download the CV.",
+        "url": link_for(base_url, "about/cv/"),
+        "keywords": "CV curriculum vitae resume résumé hiring employment qualifications education publications",
+    })
     search_index.append(
         {
             "title": "For hiring teams",

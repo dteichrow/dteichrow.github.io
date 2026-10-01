@@ -1,5 +1,7 @@
 import { defineConfig } from "@playwright/test";
 import fs from "node:fs";
+const previewPort = process.env.TEST_PORT || "8765";
+const previewURL = `http://127.0.0.1:${previewPort}`;
 const localChrome =
   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
 export default defineConfig({
@@ -14,7 +16,7 @@ export default defineConfig({
     ["html", { open: "never" }],
   ],
   use: {
-    baseURL: process.env.TEST_BASE_URL || "http://127.0.0.1:8765",
+    baseURL: process.env.TEST_BASE_URL || previewURL,
     viewport: { width: 1440, height: 1000 },
     reducedMotion: "reduce",
     trace: "retain-on-failure",
@@ -27,9 +29,9 @@ export default defineConfig({
   },
   webServer: {
     command: process.env.CI
-      ? "python -m http.server 8765 --bind 127.0.0.1 --directory docs"
-      : ".venv/bin/python -m http.server 8765 --bind 127.0.0.1 --directory docs",
-    url: "http://127.0.0.1:8765",
+      ? `python -m http.server ${previewPort} --bind 127.0.0.1 --directory docs`
+      : `.venv/bin/python -m http.server ${previewPort} --bind 127.0.0.1 --directory docs`,
+    url: previewURL,
     reuseExistingServer: !process.env.CI,
   },
 });

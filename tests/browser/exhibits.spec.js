@@ -3,6 +3,7 @@ const routes = [
   "/",
   "/writing/",
   "/about/",
+  "/about/cv/",
   "/hiring/",
   "/essays/project-sunshines-supply-of-human/",
   "/essays/medical-error-kills-251000-per-year/",

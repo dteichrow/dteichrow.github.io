@@ -7,6 +7,7 @@ The site combines long-form science writing, outbreak monitoring, disease refere
 ## What To Look At First
 
 - [Public site](https://dteichrow.github.io/): umbrella home page for essays, tools, reference pages, and the newsdesk.
+- [Curriculum vitae](https://dteichrow.github.io/about/cv/): accessible professional background and a downloadable PDF, also linked from About and the hiring page.
 - [Essays](https://dteichrow.github.io/essays/): public archive of epidemiology, infectious-disease history, neuroepidemiology, and evidence-methods writing.
 - [Virtual Teaching Tools](https://dteichrow.github.io/tools/): interactive maps, timelines, atlases, and evidence exhibits.
 - [Pathogen and disease reference pages](https://dteichrow.github.io/reference/): concise pages organized around outbreak and disease-literacy needs.

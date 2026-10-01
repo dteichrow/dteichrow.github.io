@@ -3,6 +3,7 @@ import AxeBuilder from "@axe-core/playwright";
 for (const route of [
   "/",
   "/about/",
+  "/about/cv/",
   "/writing/",
   "/hiring/",
   "/opportunities/",
