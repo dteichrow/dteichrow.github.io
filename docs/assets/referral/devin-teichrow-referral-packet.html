@@ -1124,6 +1124,49 @@ th {
     gap: 24px;
   }
 }
+
+/* A readable professional record, with the same content in the PDF download. */
+.about-introduction { display: grid; grid-template-columns: minmax(0, 1fr) 240px; gap: 56px; align-items: start; }
+.about-portrait { display: block; width: 100%; height: auto; border-radius: 3px; margin-top: 8px; }
+.about-cv-intro { max-width: 48ch; margin-top: 24px; }
+.cv-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0 0; }
+.cv-document { max-width: 860px; }
+.cv-document p, .cv-document li { overflow-wrap: anywhere; }
+.cv-hero { padding-bottom: 28px; }
+.cv-hero .hero-title { font-size: clamp(2.4rem, 5vw, 4.7rem); }
+.cv-contact { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+.cv-meta, .cv-source, .cv-back { color: var(--slate); font-size: 0.92rem; }
+.cv-back { margin-top: 20px; }
+.cv-sections { display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 16px 0; border-block: 1px solid var(--line); }
+.cv-sections a { padding: 6px 0; }
+.cv-section { padding-top: 36px; scroll-margin-top: 24px; }
+.cv-section h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); margin: 0 0 20px; }
+.cv-entry { margin: 0 0 28px; }
+.cv-entry h3 { font-size: 1.35rem; margin: 0 0 4px; }
+.cv-entry p { margin: 4px 0; }
+.cv-entry .cv-organization { font-weight: 600; }
+.cv-section ul, .cv-publications { padding-left: 24px; }
+.cv-section li { padding-left: 4px; margin-bottom: 10px; }
+.cv-publications li { margin-bottom: 24px; }
+.cv-publications p { margin: 6px 0; }
+@media (max-width: 700px) {
+  .about-introduction { grid-template-columns: 1fr; gap: 28px; }
+  .about-portrait { width: 180px; }
+  .cv-actions .button { text-align: center; }
+}
+@media print {
+  body:has(.cv-document) { background: white; color: black; }
+  body:has(.cv-document) .site-header, body:has(.cv-document) .site-footer,
+  body:has(.cv-document) .skip-link, .cv-actions, .cv-sections, .cv-back { display: none; }
+  .cv-document { max-width: none; font-size: 10pt; }
+  .cv-document .hero { padding: 0; }
+  .cv-document .hero-title { font-size: 26pt; }
+  .cv-section { padding-top: 16px; }
+  .cv-section h2, .cv-entry h3, .cv-organization, .cv-meta { break-after: avoid; }
+  .cv-section h2 { font-size: 16pt; }
+  .cv-entry h3 { font-size: 12pt; }
+  .cv-section li { break-inside: avoid; }
+}
 </style>
 
     <link rel="canonical" href="https://devinteichrow.com/opportunities/" />
