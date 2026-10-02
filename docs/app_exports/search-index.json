@@ -653,7 +653,7 @@
     "section": "Newsdesk",
     "summary": "Monitoring: Unannounced Drills Using Patient Actors to Evaluate Health Care Facility Readiness for Infectious Disease Outbreaks - New Jersey, New York, and U.S. Virgin Islands, January-June 2026",
     "url": "/stories/story_28a91c6d89267872-avian-influenza-and-h5n1.html",
-    "keywords": "confirmed_case severity_or_death North America United States"
+    "keywords": "North America United States"
   },
   {
     "title": "Dengue and arboviruses",
@@ -667,7 +667,7 @@
     "section": "Newsdesk",
     "summary": "Monitoring: Toledo-Lucas County Health Department Cyclosporiasis Update",
     "url": "/stories/story_7ecd65705353b55c-cyclosporiasis.html",
-    "keywords": "new_official_source confirmed_case severity_or_death new_geography North America United States"
+    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography North America United States"
   },
   {
     "title": "Occupational and environmental epidemiology",
