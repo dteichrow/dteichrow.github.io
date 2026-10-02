@@ -646,14 +646,14 @@
     "section": "Newsdesk",
     "summary": "Monitoring: Ebola disease outbreak in the Democratic Republic of the Congo",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
-    "keywords": "new_official_source suspected_case confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission Africa Democratic Republic of the Congo / Uganda"
+    "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission Africa Democratic Republic of the Congo / Uganda"
   },
   {
     "title": "Avian influenza and H5N1",
     "section": "Newsdesk",
     "summary": "Monitoring: Unannounced Drills Using Patient Actors to Evaluate Health Care Facility Readiness for Infectious Disease Outbreaks - New Jersey, New York, and U.S. Virgin Islands, January-June 2026",
     "url": "/stories/story_28a91c6d89267872-avian-influenza-and-h5n1.html",
-    "keywords": "North America United States"
+    "keywords": "confirmed_case severity_or_death North America United States"
   },
   {
     "title": "Dengue and arboviruses",
@@ -682,6 +682,13 @@
     "summary": "Monitoring: A Genetic Risk Variant Associated With the Risk of Primary Biliary Cholangitis Is Inherited From Neanderthals.",
     "url": "/stories/story_b461b8ac8c062700-historical-epidemiology-and-ancient-pathogens.html",
     "keywords": "Africa Democratic Republic of the Congo"
+  },
+  {
+    "title": "Tuberculosis and antimicrobial resistance",
+    "section": "Newsdesk",
+    "summary": "Monitoring: Antimicrobial Resistance in Somalia: Policy Without Implementation in a Fragile Health System.",
+    "url": "/stories/story_8b3f807bbfd61cab-tuberculosis-and-antimicrobial-resistance.html",
+    "keywords": "severity_or_death healthcare_transmission laboratory_or_genomic Multi-region "
   },
   {
     "title": "Ebola virus disease",
