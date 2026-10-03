@@ -660,14 +660,14 @@
     "section": "Newsdesk",
     "summary": "Monitoring: Risk to general population remains very low following fourth imported Ebola case in Europe",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
-    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography healthcare_transmission Multi-region Democratic Republic of the Congo / United States"
+    "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission Multi-region Democratic Republic of the Congo / United States"
   },
   {
     "title": "Cyclosporiasis",
     "section": "Newsdesk",
     "summary": "Monitoring: Toledo-Lucas County Health Department Cyclosporiasis Update",
     "url": "/stories/story_7ecd65705353b55c-cyclosporiasis.html",
-    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography North America United States"
+    "keywords": "new_official_source confirmed_case severity_or_death new_geography North America United States"
   },
   {
     "title": "Occupational and environmental epidemiology",
