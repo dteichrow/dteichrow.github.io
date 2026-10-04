@@ -639,42 +639,35 @@
     "section": "Newsdesk",
     "summary": "Monitoring: Zimbabwe’s Expanded Programme on Immunization (EPI) Q1-Q2 2026 Bulletin",
     "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
-    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography healthcare_transmission laboratory_or_genomic North America United States"
+    "keywords": "new_official_source severity_or_death North America United States"
   },
   {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
     "summary": "Monitoring: Ebola disease outbreak in the Democratic Republic of the Congo",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
-    "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission Africa Democratic Republic of the Congo / Uganda"
-  },
-  {
-    "title": "Avian influenza and H5N1",
-    "section": "Newsdesk",
-    "summary": "Monitoring: Unannounced Drills Using Patient Actors to Evaluate Health Care Facility Readiness for Infectious Disease Outbreaks - New Jersey, New York, and U.S. Virgin Islands, January-June 2026",
-    "url": "/stories/story_28a91c6d89267872-avian-influenza-and-h5n1.html",
-    "keywords": "North America United States"
+    "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel Africa Democratic Republic of the Congo / Uganda"
   },
   {
     "title": "Dengue and arboviruses",
     "section": "Newsdesk",
     "summary": "Monitoring: Risk to general population remains very low following fourth imported Ebola case in Europe",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
-    "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission Multi-region Democratic Republic of the Congo / United States"
+    "keywords": "new_official_source confirmed_case policy_or_travel healthcare_transmission Multi-region Democratic Republic of the Congo / United States"
   },
   {
-    "title": "Cyclosporiasis",
+    "title": "Tuberculosis and antimicrobial resistance",
     "section": "Newsdesk",
-    "summary": "Monitoring: Toledo-Lucas County Health Department Cyclosporiasis Update",
-    "url": "/stories/story_7ecd65705353b55c-cyclosporiasis.html",
-    "keywords": "new_official_source severity_or_death policy_or_travel new_geography North America United States"
+    "summary": "Monitoring: Antimicrobial resistance and social inequity: Why the one health approach must centre poverty.",
+    "url": "/stories/story_8b3f807bbfd61cab-tuberculosis-and-antimicrobial-resistance.html",
+    "keywords": "severity_or_death healthcare_transmission laboratory_or_genomic Multi-region "
   },
   {
     "title": "Occupational and environmental epidemiology",
     "section": "Newsdesk",
     "summary": "Monitoring: Surveillance Summaries: Surveillance for Violent Deaths - National Violent Death Reporting System, 50 States, the District of Columbia, and Puerto Rico, 2023",
     "url": "/stories/story_17a354bcafcca4ce-occupational-and-environmental-epidemiology.html",
-    "keywords": "new_official_source severity_or_death policy_or_travel North America United States"
+    "keywords": "new_official_source severity_or_death North America United States"
   },
   {
     "title": "Historical epidemiology and ancient pathogens",
