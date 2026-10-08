@@ -653,7 +653,7 @@
     "section": "Newsdesk",
     "summary": "Monitoring: Chikungunya virus disease worldwide overview",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
-    "keywords": "new_official_source confirmed_case policy_or_travel new_geography healthcare_transmission Multi-region Democratic Republic of the Congo / United States"
+    "keywords": "new_official_source confirmed_case policy_or_travel healthcare_transmission Multi-region Democratic Republic of the Congo / United States"
   },
   {
     "title": "Mpox",
@@ -661,6 +661,13 @@
     "summary": "Monitoring: Health Emergency Intelligence and Surveillance",
     "url": "/stories/story_5681bc9ce748c463-mpox.html",
     "keywords": "new_official_source Africa Guinea / South Sudan"
+  },
+  {
+    "title": "COVID-19 and SARS-CoV-2",
+    "section": "Newsdesk",
+    "summary": "Monitoring: Collaborative surveillance implementation guide",
+    "url": "/stories/story_afd8f5934e291e02-covid-19-and-sars-cov-2.html",
+    "keywords": "new_official_source laboratory_or_genomic Cross-region / unassigned "
   },
   {
     "title": "Ebola virus disease",
