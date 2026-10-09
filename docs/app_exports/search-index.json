@@ -639,7 +639,7 @@
     "section": "Newsdesk",
     "summary": "Monitoring: Zimbabwe’s Expanded Programme on Immunization (EPI) Q1-Q2 2026 Bulletin",
     "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
-    "keywords": "new_official_source confirmed_case severity_or_death new_geography North America United States"
+    "keywords": "new_official_source confirmed_case severity_or_death transmission_change new_geography North America United States"
   },
   {
     "title": "Ebola virus disease",
@@ -647,6 +647,13 @@
     "summary": "Monitoring: EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 21, Data as of 04 October 2026",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
     "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission medical_countermeasure_gap Africa Democratic Republic of the Congo / Kenya / Uganda"
+  },
+  {
+    "title": "Avian influenza and H5N1",
+    "section": "Newsdesk",
+    "summary": "Monitoring: Avian Flu H5N1 Case in Cambodia",
+    "url": "/stories/story_28a91c6d89267872-avian-influenza-and-h5n1.html",
+    "keywords": "Multi-region "
   },
   {
     "title": "Dengue and arboviruses",
@@ -660,7 +667,7 @@
     "section": "Newsdesk",
     "summary": "Monitoring: Health Emergency Intelligence and Surveillance",
     "url": "/stories/story_5681bc9ce748c463-mpox.html",
-    "keywords": "new_official_source Africa Guinea / South Sudan"
+    "keywords": "new_official_source Africa South Sudan"
   },
   {
     "title": "COVID-19 and SARS-CoV-2",
