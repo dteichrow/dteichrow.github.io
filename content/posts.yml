@@ -1,4 +1,49 @@
 posts:
+- slug: mental-healths-missing-middle
+  title: Mental Health’s Missing Middle
+  date: '2026-10-10'
+  canonical_url: https://theedgeofepidemiology.substack.com/p/mental-healths-missing-middle
+  excerpt: In the United States, the common cultural shorthand for asylums could be
+    best described by One Flew Over the Cuckoo’s Nest , with the tyrannical Nurse
+    Ratched in charge of enforcing rules as treatments and an emphasis on control
+    over care. The decline of psychiatric institutions had begun long before the 1975
+    release of the film in the wake of legal changes, new medications, and ever-shrinking
+    state budgets for these types of institutions, as well as exposés like The Shame
+    of the States by Albert Deutsch and Bedlam 1946 by Albert Maisel. Historian LauraHirshbein
+    is of the opinion that there we
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/8e99540a-5b91-4be0-b394-617ceff9db40_2048x1296.png
+  source_mode: substack_reader
+  wordcount: 6118
+  editorial_summary: ''
+  image_caption: ''
+  related_posts: []
+  status: summary_only
+  dek: ''
+  topics: []
+  series: []
+  seo_title: ''
+  seo_description: ''
+  primary_keyword: ''
+  topic_cluster: ''
+  indexing_strategy: noindex_stub
+  related_atlases: []
+  related_reference_slugs: []
+  related_story_ids: []
+  search_excerpt: 'In the United States, the common cultural shorthand for asylums
+    could be best described by One Flew Over the Cuckoo’s Nest , with the tyrannical
+    Nurse Ratched in charge of enforcing rules as treatments and an emphasis on control
+    over care. The decline of psychiatric institutions '
+  local_body_path: ''
+  body_synced_at: ''
+  body_source_url: ''
+  body_source_mode: ''
+  body_source_file: ''
+  body_wordcount: null
+  hero_mode: cover
+  notes: ''
+  first_seen_at: '2026-10-10T18:42:43+00:00'
+  last_synced_at: '2026-10-10T18:42:43+00:00'
+  upstream_tags: []
 - slug: months-after-la-county-cut-clinical
   title: Months After LA County Cut Clinical Services at Seven Public Health Sites,
     It Has Not Shown Whether Patients Found Replacement Care
