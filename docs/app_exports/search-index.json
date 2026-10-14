@@ -1,5 +1,13 @@
 [
   {
+    "title": "“Fabricated” Deaths and RFK Jr.’s Latest Disgrace",
+    "display_title": "“Fabricated” Deaths and RFK Jr.’s Latest Disgrace",
+    "section": "Essay",
+    "summary": "Robert F. Kennedy Jr. at his Senate HELP Committee confirmation hearing, January 30, 2025. I’m also doing watchdog reporting on public-health governance in Los Angeles. Political affiliation won’t determine which failures I investigate. When Pennsylvania health officials announced two measles-associated deaths on August 25th, Robert F. Kennedy Jr. later suggested that they might’ve been “altogether fabricated by one of the Governor’s hopeful staffers.” It’s the kind of conspiratorial nonsense that has defined his working life and his tenure as Health and Human Services secretary. He cited the ",
+    "url": "/essays/fabricated-deaths-and-rfk-jrs-latest/",
+    "keywords": " epidemiologic-methods"
+  },
+  {
     "title": "Mental Health’s Missing Middle",
     "display_title": "Mental Health’s Missing Middle",
     "section": "Essay",
@@ -652,9 +660,9 @@
   {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
-    "summary": "Monitoring: Ebola disease outbreak in the Democratic Republic of the Congo",
+    "summary": "Monitoring: EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo Weekly External Situation Report 15, Data as of 23 August 2026",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
-    "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission Africa Democratic Republic of the Congo / Kenya / Uganda"
+    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography healthcare_transmission laboratory_or_genomic Africa Democratic Republic of the Congo"
   },
   {
     "title": "Dengue and arboviruses",
@@ -664,18 +672,11 @@
     "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography healthcare_transmission Multi-region Democratic Republic of the Congo / United States"
   },
   {
-    "title": "Mpox",
-    "section": "Newsdesk",
-    "summary": "Monitoring: Health Emergency Intelligence and Surveillance",
-    "url": "/stories/story_5681bc9ce748c463-mpox.html",
-    "keywords": "new_official_source Africa South Sudan"
-  },
-  {
     "title": "COVID-19 and SARS-CoV-2",
     "section": "Newsdesk",
-    "summary": "Monitoring: Visual Biopolitics in Crisis: Multimodal Analysis of Tuberculosis in the Early Republican Period and COVID-19 Health Communication in Turkey.",
+    "summary": "Monitoring: Respiratory virus surveillance in the WHO African Region Epidemiological Week 39 September 21 to 27 2026",
     "url": "/stories/story_afd8f5934e291e02-covid-19-and-sars-cov-2.html",
-    "keywords": "new_official_source severity_or_death Cross-region / unassigned "
+    "keywords": "new_official_source confirmed_case severity_or_death laboratory_or_genomic Cross-region / unassigned "
   },
   {
     "title": "Ebola virus disease",
