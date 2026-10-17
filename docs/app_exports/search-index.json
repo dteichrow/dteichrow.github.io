@@ -655,14 +655,14 @@
     "section": "Newsdesk",
     "summary": "Monitoring: News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....",
     "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
-    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography North America United States"
+    "keywords": "new_official_source confirmed_case severity_or_death new_geography North America United States"
   },
   {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
     "summary": "Monitoring: Ebola disease outbreak in the Democratic Republic of the Congo",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
-    "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission Africa Democratic Republic of the Congo"
+    "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel new_geography Africa Democratic Republic of the Congo"
   },
   {
     "title": "Dengue and arboviruses",
@@ -677,6 +677,13 @@
     "summary": "Monitoring: Effectiveness of Diphtheria and Tetanus Toxoids and Acellular Pertussis Vaccine in Children Aged 6 Months-6 Years During a Statewide Pertussis Outbreak",
     "url": "/stories/story_afd8f5934e291e02-covid-19-and-sars-cov-2.html",
     "keywords": "new_official_source severity_or_death North America United States"
+  },
+  {
+    "title": "Tuberculosis and antimicrobial resistance",
+    "section": "Newsdesk",
+    "summary": "Monitoring: Bayesian Estimates of Prevalence and Likelihood Ratio for Four Carcinosin Symptoms across Varied Clinical Conditions.",
+    "url": "/stories/story_8b3f807bbfd61cab-tuberculosis-and-antimicrobial-resistance.html",
+    "keywords": "new_official_source new_geography laboratory_or_genomic North America Canada"
   },
   {
     "title": "Ebola virus disease",
