@@ -1,5 +1,13 @@
 [
   {
+    "title": "An Epidemic of Advice During the English Sweat in 1529 Germany",
+    "display_title": "An Epidemic of Advice During the English Sweat in 1529 Germany",
+    "section": "Essay",
+    "summary": "In August of 1529, Martin Luther was worrying that the printed remedy for English sweating sickness going around was terrifying people who were just sweating for ordinary reasons. He claimed the pamphlet in question, meant to give people the information needed to identify the disease if it came around, could in reality turn that recognition into alarm bells. The sickness, and the information about it, was quickly making its way from one German city to the next. You likely remember a similar phenomenon from the early COVID-19 pandemic which the World Health Organization deemed an infodemic in r",
+    "url": "/essays/an-epidemic-of-advice-during-the/",
+    "keywords": " epidemiologic-methods"
+  },
+  {
     "title": "“Fabricated” Deaths and RFK Jr.’s Latest Disgrace",
     "display_title": "“Fabricated” Deaths and RFK Jr.’s Latest Disgrace",
     "section": "Essay",
@@ -655,14 +663,14 @@
     "section": "Newsdesk",
     "summary": "Monitoring: News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....",
     "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
-    "keywords": "new_official_source confirmed_case severity_or_death new_geography North America United States"
+    "keywords": "new_official_source confirmed_case severity_or_death new_geography laboratory_or_genomic North America United States"
   },
   {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
     "summary": "Monitoring: Ebola disease outbreak in the Democratic Republic of the Congo",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
-    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography Africa Democratic Republic of the Congo"
+    "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission Africa Democratic Republic of the Congo"
   },
   {
     "title": "Dengue and arboviruses",
