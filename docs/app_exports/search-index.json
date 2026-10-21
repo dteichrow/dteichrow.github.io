@@ -668,44 +668,30 @@
   {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
-    "summary": "Monitoring: Ebola disease outbreak in the Democratic Republic of the Congo",
+    "summary": "Monitoring: WHO Botswana Newsletter July",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
-    "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission Africa Democratic Republic of the Congo"
+    "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission Africa Democratic Republic of the Congo / Kenya"
   },
   {
     "title": "Dengue and arboviruses",
     "section": "Newsdesk",
     "summary": "Monitoring: Notes from the Field: Dengue Outbreak - U.S. Virgin Islands, January 2024-June 2025",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
-    "keywords": "new_official_source confirmed_case policy_or_travel new_geography Multi-region Democratic Republic of the Congo / United States"
-  },
-  {
-    "title": "Polio and wastewater surveillance",
-    "section": "Newsdesk",
-    "summary": "Monitoring: Polio Eradication in Africa: Highlights Leaflet (Jan-Sept 2026)",
-    "url": "/stories/story_9ccdd822481fa2b6-polio-and-wastewater-surveillance.html",
-    "keywords": "transmission_change laboratory_or_genomic Africa "
+    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography Multi-region Democratic Republic of the Congo / United States"
   },
   {
     "title": "COVID-19 and SARS-CoV-2",
     "section": "Newsdesk",
-    "summary": "Monitoring: Visual Biopolitics in Crisis: Multimodal Analysis of Tuberculosis in the Early Republican Period and COVID-19 Health Communication in Turkey.",
+    "summary": "Monitoring: Effectiveness of Diphtheria and Tetanus Toxoids and Acellular Pertussis Vaccine in Children Aged 6 Months-6 Years During a Statewide Pertussis Outbreak",
     "url": "/stories/story_afd8f5934e291e02-covid-19-and-sars-cov-2.html",
     "keywords": "new_official_source severity_or_death North America United States"
   },
   {
-    "title": "Occupational and environmental epidemiology",
+    "title": "Polio and wastewater surveillance",
     "section": "Newsdesk",
-    "summary": "Monitoring: From environmental exposure to disease burden: Institutional capacity, structural vulnerability, and global malaria inequality, 2000-2023.",
-    "url": "/stories/story_17a354bcafcca4ce-occupational-and-environmental-epidemiology.html",
-    "keywords": "new_official_source new_geography North America "
-  },
-  {
-    "title": "Tuberculosis and antimicrobial resistance",
-    "section": "Newsdesk",
-    "summary": "Monitoring: Bayesian Estimates of Prevalence and Likelihood Ratio for Four Carcinosin Symptoms across Varied Clinical Conditions.",
-    "url": "/stories/story_8b3f807bbfd61cab-tuberculosis-and-antimicrobial-resistance.html",
-    "keywords": "new_official_source new_geography laboratory_or_genomic North America Canada"
+    "summary": "Monitoring: WHO Zambia Newsletter – 3rd Quarter 2026 (Jul- Sept)",
+    "url": "/stories/story_9ccdd822481fa2b6-polio-and-wastewater-surveillance.html",
+    "keywords": "new_official_source severity_or_death transmission_change healthcare_transmission laboratory_or_genomic Africa "
   },
   {
     "title": "Ebola virus disease",
