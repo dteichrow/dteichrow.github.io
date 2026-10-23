@@ -1,11 +1,11 @@
 # The Pathogen Dispatch
-Collection: 2026-10-22T13:38:09
-
-## Ebola virus disease
-Monitoring: EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 23, Data as of 19 October 2026
+Collection: 2026-10-22T16:39:03
 
 ## Measles transmission and vaccination
 Monitoring: News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....
+
+## Ebola virus disease
+Monitoring: EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 23, Data as of 19 October 2026
 
 ## Dengue and arboviruses
 Monitoring: Record-high West Nile virus infections reported amid spread to new parts of Europe
@@ -26,6 +26,11 @@ Publication date not established · Retrieved Oct 22, 2026
 Learn more about the Sunset process and provide feedback. Limited detail was available from feed metadata alone.
 https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius
 
+### WHO Warns Of ‘Complex’ Ebola Outbreak In Africa
+Published Oct 22, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://www.tvcnews.tv/who-warns-of-complex-ebola-outbreak-in-africa/
+
 ### WHO says Ebola outbreak has become more complex in three African countries — Al Jazeera
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
@@ -35,11 +40,6 @@ https://ua.news/en/health/vooz-zaiavila-pro-skladnishii-spalakh-eboli-u-trokh-kr
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://www.miragenews.com/dr-congo-ebola-outbreak-expands-responders-1765163/
-
-### Ongoing issue: Africa faces 'complex' Ebola outbreak after spread to Nigeria: WHO
-Published Oct 22, 2026 · Retrieved Oct 22, 2026
-Limited detail was available from feed metadata alone.
-https://today.rtl.lu/news/world/africa-faces-complex-ebola-outbreak-after-spread-to-nigeria-who-706075477
 
 ### Ebola: Africa CDC threatens to blacklist partners over unaccounted outbreak funds
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
@@ -61,15 +61,15 @@ Published Oct 22, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://www.nytimes.com/2026/10/22/health/ebola-nigeria-congo-kenya.html
 
-### Ebola: Africa CDC warns African leaders against politicising outbreak, finger-pointing
-Published Oct 22, 2026 · Retrieved Oct 22, 2026
-Limited detail was available from feed metadata alone.
-https://www.premiumtimesng.com/health/health-news/919289-ebola-africa-cdc-warns-african-leaders-against-politicising-outbreak-finger-pointing.html
-
 ### Africa faces ‘complex’ Ebola outbreak after spread to Nigeria
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://www.freemalaysiatoday.com/category/world/2026/10/22/africa-faces-complex-ebola-outbreak-after-spread-to-nigeria
+
+### Africa faces most geographically widespread Ebola outbreak on record as DR Congo cases near 10,000
+Published Oct 22, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://english.news.cn/20261022/68de6c3fd6a74f1d86d99fbb0cf49d30/c.html
 
 ### Respiratory infections season
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
@@ -105,6 +105,11 @@ https://streamlinefeed.co.ke/news/ghana-and-south-sudan-tighten-airport-screenin
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://eastleighvoice.co.ke/africa/414851/ghana-steps-up-ebola-surveillance-after-cases-are-reported-in-kenya-drc-and-nigeria?amp\=1
+
+### Africa faces its widest-ever Ebola outbreak as DR Congo cases near 10,000 and new infections emerge
+Published Oct 21, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://eastleighvoice.co.ke/africa/414737/africa-faces-its-widest-ever-ebola-outbreak-as-dr-congo-cases-near-10000-and-new-infections-emerge?amp\=1
 
 ### Four African countries with reported Ebola cases
 Published Oct 21, 2026 · Retrieved Oct 22, 2026
@@ -159,12 +164,12 @@ https://www.ndtv.com/health/first-ebola-case-in-nigeria-confirmed-as-bundibugyo-
 ### Nigeria reports Ebola case, fourth African country affected by outbreak
 Published Oct 21, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
-https://www.straitstimes.com/world/nigeria-reports-ebola-case-fourth-african-country-affected-by-outbreak
+https://news.google.com/rss/articles/CBMiqAFBVV95cUxQR2pRTHItZXk3WE5jTkVfY3VCeC1pTjBNVGNMUmtTd2VtV0lKVTBZZDJMX1dxZGVIbGdkNlRrSGgyY2xnTVFpLUhQcmlhRHZkMkVrS2R0WW4wN2kzXzJOQlpiQUNHVHZEQ2tvd21PYTMtN2I2Y2VqWkxtaTBqSnpkSktCM0dnbUNUdUlTWmt4ZVdEX2x1SG5UZnJ6bkFPSHVpXzZycmMta3E?oc=5
 
 ### Nigeria reports Ebola case as outbreak reaches West Africa
 Published Oct 21, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
-https://www.reuters.com/business/healthcare-pharmaceuticals/nigeria-reports-ebola-case-fourth-african-country-affected-by-outbreak-2026-10-21/
+https://news.google.com/rss/articles/CBMi2gFBVV95cUxNLThxQVROTTg1R0EtTk1DanNTSlhETExGNl9ZQXMxOXZZWk93VnFRejBueWNMSy0tS2NIZF9VVTdXT0xDQy11dUU4OXRtVVYwcUZEaVpkeklSdU02NXQtcW5rR3VlYXRnOC1Ic2hPQzdOSjFQNzByNHpqMXE5WGhycnVKdDdtcVE0RlJsYnlqWjFwdDdZNElWaU94azgxVDZWelVSOVRLVHU3cTB4SjBmLTl0NnJTQVBwaFI5QUFheHhLemlFaEp0Tm5wTXNPS2J0ejdBLTBTWHp0UQ?oc=5
 
 ### Is Ebola under control in Kenya after nine cases confirmed?
 Published Oct 21, 2026 · Retrieved Oct 22, 2026
@@ -261,6 +266,11 @@ Published Oct 20, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMitAFBVV95cUxORzZaemRDdXl4R0h4QTdnb09nVVRhNThsVW5LeTVDRmlWT1lyenZ0TTdhQzhKbTZfN0xlMHFIdnAyalRUdHNKd1k3UTlNQV83c1I4SFQyM1BDMHNMVlVWODZpbHVCWjh6TVRRRkZ4SE9yZjZrb0Z1Rzk4VklYOXR6NWYyTndTNmFhcFREcTVlY0RiMmxYZEUzZmpjWnJtbWZweGJ4SHZ1d1RKRFlXVWdjTFBGZ1I?oc=5
 
+### Pakistan's Khyber Pakhtunkhwa reports 100 dengue cases in 24 hours
+Published Oct 20, 2026 · Retrieved Oct 22, 2026
+The total number of dengue cases in Khyber Pakhtunkhwa in 2026 rose to 4,091 after 99 new cases were reported, according to a report by the Integrated Disease Surveillance and Response System (IDSRS), leading Pakistani daily Dawn reported. As many as 32 cases were reported in rural areas, while 10 were reported in urban areas of Islamabad from January 1 to October 16, according to the data. Kohat has reported 80 cases since October 1, followed by Bannu with 24 and Peshawar with 18.
+https://ianslive.in/pakistans-khyber-pakhtunkhwa-reports-100-dengue-cases-in-24-hours--20261020180858
+
 ### Ebola posters for Kenya in English and Kiswahili
 Published Oct 20, 2026 · Retrieved Oct 22, 2026
 The posters explain how Ebola spreads and its early symptoms, correct common myths, and cover contact tracing, safe and dignified burials, and the role of health workers, community health promoters and faith and community leaders. They also encourage people to stop stigma and to check facts before sharing information.
@@ -325,6 +335,11 @@ https://news.google.com/rss/articles/CBMilAFBVV95cUxQakU1OE9HWmJFbnpBT1NjZTBGczd
 Published Oct 19, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMilwFBVV95cUxNMktaUXQ2RExSZng4NEphTmk0dUlqZ2pTVmZXMUFwOGZCUEpTQ1ctOUtjQmM5RGQwbmxZazliejRSeHNUcEp6cmkteHY4eEkySDFQYUFIMkIzODBLdTNJS29nei0zU25KX1oxYnhFQjNjVHVpN25hb2RWQ2huMVJhTGRUQTFselZ4ODNOR1pJMFU2R2poR1ZV?oc=5
+
+### Kenya Confirms More New Ebola Cases
+Published Oct 19, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMia0FVX3lxTE9RODczSWlZWmFmSFZIQnh1Mmg0WmYyb3FoLXBxQ0cyUGxNNTRkVzkxcWpUNkR4TWhYejV4ODVtc0ZlbDJEbXhYRW04ZmpEVmFZNFVKNDVTc2RJZWtBZWdWWXkzS3RuZ2Rzb1dv?oc=5
 
 ### Congo Confirms Ebola Outbreak Has Spread to Eighth Province
 Published Oct 19, 2026 · Retrieved Oct 22, 2026
@@ -411,6 +426,11 @@ Published Oct 18, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMiY0FVX3lxTE9OZE5HOHBvTzBEcUh6eDF3bG8yeUhKZG1GbkxQY2M2cWJ3QWdsMUZIMmJObnBnZ0JFcVZyRFRDemM1YjRFUEFNUUs5UGd2bUR6UGpxdWtOYVNpN3NVQ1ZsWEY0Z9IBaEFVX3lxTE01WEQ1WmY5dTlWeWdTUThvclRIZ3VxMVVUeEhCQlFmcHk3di1DeXBzV3g3cXd5bExjZmNObkx1TndvaTMwU05HOG5VcFg4djhESUxhcWF1QkI4SU1IaE1NUEc0OE90a0Nq?oc=5
 
+### Bangladesh is battling measles. It's a 'real warning' to other nations
+Published Oct 18, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://www.reuters.com/world/bangladesh-is-battling-measles-its-real-warning-other-nations-2026-10-17/
+
 ### Over 4,400 Killed in the Ebola Outbreak: What to Know
 Published Oct 18, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
@@ -435,6 +455,11 @@ https://news.google.com/rss/articles/CBMiUEFVX3lxTE8zU1hVal9JR0xfb2xSZVJ3bERJbTd
 Published Oct 16, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMihwFBVV95cUxOQjl2eXQzcjJsS2RWRmhuNkJmRXJoTmFpbVdnTjBDaDhZNS0tc1c2dl9vRnVQeE1XMlN5V1BqdW91TFozV0x4XzhhWWtiWm9rNnNPYWd5ZUVIcW9pMHpZZWlQdklUa19rSXpaVWp2QURXd3pfQUM3ZFc2WWtFN2RlSDhibjJsc00?oc=5
+
+### US measles cases grow by 8% in 1 week, for a total of 4,410
+Published Oct 16, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMiggFBVV95cUxOeWxNQ2tKRnF0YVR6YWlZOEpJdTd4UTRxVk1uU2VjSGxNbmdWZFB0b2pJUlZFQnhVblk0VXlUZl85OXJVWXdndXFWUGlHMjNHREhfTjBzVmRpNlM3aHRHQmd6TkZ5Wk8wdkg1T3VLNFl4ODZJX1M2UnlhSHFsal9ZTXlR?oc=5
 
 ### Kenya records third Ebola case, linked to first patient who died
 Published Oct 16, 2026 · Retrieved Oct 22, 2026
@@ -486,6 +511,11 @@ Published Oct 14, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMijgFBVV95cUxNSHBJU3JEMURSdWUzd2JYVW1IcXN3R0l0N2t4NFc2Z0VGV1dDbWx6c0EyTG5fZ1pvZ1BBdjNNU0h4S0sta0RiMlZURDVUNjRfV1JrbnNtR2haOWN5RzJ5UzJEZndlRjdQUFRQTk1mbmdrbzU5LXNFQmZ5eU82X2Q3OXpZQzcwMzJhLVRzTUd3?oc=5
 
+### Pennsylvania announces sixth death in measles outbreak as case numbers rise
+Published Oct 13, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMihwFBVV95cUxQclNMUjBGVmx4QjBVdXI4WHh4VmYwaFVBbXNpb2d5SWxzM1BPY3BHYnphXzJFbkd3TEJYaUIzcXRRVk9MZWF0NWpoTTVCMVRibWNWd0FUeTV4eWJzM2NkMXoyeEk3NE1TcWxoTktNYjM3dDFsQjJpendKcV9QZVBvQXVrelJ1MGs?oc=5
+
 ### CDC to deploy additional support to Pennsylvania to probe measles outbreak
 Published Oct 13, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
@@ -500,6 +530,11 @@ https://news.google.com/rss/articles/CBMivAFBVV95cUxOYVNoNGFzVWhtQVRKclZkZXlsWkN
 Published Oct 12, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMi0AFBVV95cUxPU1hkem51SHpPNDg4SWNWZ3c4WmFTVEV6MUNKSVlOUWEzRi03RFNRSzdkeVVxLVItc2xPR3NfV0dIMVZxMHNpZ1BYSFlGbW42aG1JQUV4NFVMOVZtVEtJMmlIY0tSZlMyc1JvaWRmbUpqbTMxNHRUalYwY1k0emtDRnNTNUFRQUVOelZtTDJWYzdCMU8tWkc4aFY2eGYtVmh3bmpES3RkQzhvd215UXplNkhxWnVEMHJubk5QYVRIOXBCR3B0YWN5ZUxTOFlCam1T?oc=5
+
+### With Pennsylvania leading the way, US measles cases top 4,000
+Published Oct 9, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMijgFBVV95cUxNMW5HMi04SXU1WGlEbUJFbzY3QXNGcWVZdlE0T01kWEV3ZzRoOEZfMW03dF93cFFaRzJEb09MRHBETGNYaEsyMElfQ2ttQjZabmJ5YzdwLW5aWkdkU2dMeXU1Nmx2QTlocjVKM3lvWS1xMVl5U3IzUHEwbUhaMGM4Z25mRVZBYk83UmUwbTJR?oc=5
 
 ### Possible measles exposures reported in Chester County, Pennsylvania, as outbreak grows
 Published Oct 9, 2026 · Retrieved Oct 22, 2026
@@ -516,30 +551,15 @@ Published Sep 4, 2026 · Retrieved Oct 22, 2026
 To date, 59 locally acquired dengue infections have been reported to the Florida Department of Health in Hillsborough County . Ladapo joined local officials in Hillsborough County to urge Floridians to take precautions against mosquito-borne illnesses as families prepare to spend more time outdoors over Labor Day weekend. Hillsborough County is currently experiencing an unusual increase in locally acquired dengue infections .
 https://www.floridahealth.gov/2026/09/04/florida-surgeon-general-reminds-floridians-to-take-precautions-against-dengue-ahead-of-labor-day-weekend/
 
-### APC Campaign Council: Atiku politicising Ebola outbreak, ₦10bn emergency fund remains untouched
-Published Oct 22, 2026 · Retrieved Oct 22, 2026
-Limited detail was available from feed metadata alone.
-https://www.vanguardngr.com/2026/10/apc-campaign-council-atiku-politicising-ebola-outbreak-%E2%82%A610bn-emergency-fund-remains-untouched/
-
 ### Moi Referral hospital Eldoret clarifies status of woman quarantined over Ebola concerns
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
-https://peopledaily.digital/news/moi-referral-hospital-eldoret-clarifies-status-of-woman-quarantined-over-ebola-concerns
+https://news.google.com/rss/articles/CBMivAFBVV95cUxOZlhfRlMzeXg0ZUpJTFh0R0x1MEdrdTNQWFFvM3pXSjNTOVZRelVZVHVnMVZMclNTSmZ3TExWRzVNVjFwenBtLVhyRDFSNXQ1TGhsMG1Ld0hBbFMxTGNhaWNtd0w2eXdCYjl2dTVfeXhRSGVJX2lIMHl3UUJxY1I2V09NUUd0M3BxV3FndXd5Y0tmRVgyVnAxTHVUMjhvcmpfMEhXR3hfR242RGdsZUZjSzNPT1hQU0p5R2hYbQ?oc=5
 
 ### Ebola outbreak rebounds in DRC as cross-border spread heightens concerns
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZXc2dWZNNlVhWWU1RjFVUTR1VXZ0ZlFLNk9oMnFpNFVhSmNEZExMLV9yQkljQzlrMkt0Slp6a3Jaa214bHhCVF9uMzVTenhSMGlNTWVjQy1scXF3cS1hckM3cklrY1VCSUlDaVNKeGtzNlpzNVgwb3BPN3NCdFF3RFBGU3UydUdRNGlTalAyczNkTE1jTC1uZWVRWXZNa0RhS0lWM3ZDdUh2cEl4RTNMV1V4X2xkRWRn?oc=5
-
-### Outbreak of Ebola taking mental toll
-Published Oct 22, 2026 · Retrieved Oct 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMijgFBVV95cUxOUTQwaEVDMlBVdnh0UWlUMmMxRTFmMEJrOWc4dm9ja0daYmdhaFRfUXRTZXE1UVI5cmgzRDlLOC1YeG1mMGhZdTNFTWJZZ3ByYlRXcTJKSnM4M3RMOUlvTmsyaWV3MHA2Rnh4YV9lejVtVFIwZEZBN2F6c3pSYjFMOG81MXlJenhPZXNRQXV3?oc=5
-
-### Pinellas County Begins Aerial Mosquito Spraying Amid Dengue Outbreak
-Published Oct 21, 2026 · Retrieved Oct 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMi1AFBVV95cUxObkVpbFB0NlFxZkN1dkRQb1RDbUoySGJjU3pRZ3JYbDhLQ0JTWjRfVWw4VW55dGxNVjBIbmVLT1otWk02YWU1cENkNFVXeGc3OVVpTEswaXdIUTZUNWFybFNqbFhWcUhyT3h6cVo1RUJSMGJDakI3RW85bktYWldVR2xoQzFLR0U5Uk1Ma2VXd1lOWmlQOWl1bDhMajdqcmhyZDBXOGh1cTktb0d5Ni12UGFfeVBaN1g2RUVuTWphWS1rNnhYMzhOdjFITkpZYmZFeHU1Uw?oc=5
 
 ### Lasting impression: Some Amish recall COVID dictates amid measles outbreak
 Published Oct 21, 2026 · Retrieved Oct 22, 2026
@@ -606,6 +626,11 @@ Published Oct 13, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMilwJBVV95cUxNcE1vWTVYOXdrUlEzUEJ0eUtfb2ItV1RnaHl5Z19nMUJFQUFPTEU4VlE5TGJoakM4M0hWMzdza3dsMHZKc25DZUtJeUd4aXRWSElIbGFSRzJGaHhkUUJ0Q19Sb3ZHbzZHZnpXbE94UlNNREUxV09NN1NLTGIyUHlIS0JBMXh3WjZQSnlFdndmVTJoSzJsenIxR0Z4ZDNTTjZJSDNUWGVQZ2xJYUh1b3dfWjFfYXdzZjNILTJQcGpuOGQ1RXRoY0NiUkkwZmxDbGtKV0dEdTRxbXRhNXZYM0EtWHUtYTJCWTNsejV2N09ORThlUUQ4bGYwQnI0T1ZnZlRzQWdSTXZxU2VaT2xPSVNJcUptbTQ4ckU?oc=5
 
+### Global Measles Outbreaks - Centers for Disease Control and Prevention | CDC (.gov)
+Published Oct 13, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMinAFBVV95cUxOd2cyVktrSnlXRmg4VTg0bUJ1azB0RENCSFIxTXd4cmU4alMwdmVxcW00VWtrRmNRbUN1bDlXV1JORkRXbFJpcXZ1U3ByaUhhM2hWczQ1S1l0dVVrNmlUMFl4ZlMzQ21CTEMzMXBaTXZGTTFDVnV3YVNIMWRjTWtRYTVnTmZ2TWhnZnJxMHZLemtQZm05UnlBZWFTdTY?oc=5
+
 ### Orange County dengue numbers grow slightly, as state's outbreak continues
 Published Oct 12, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
@@ -646,20 +671,10 @@ Published Oct 9, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMiuAFBVV95cUxPdklnaTFJLVN3eHRSZzJXRmh3S1NiX1BMemhTU29xWnlzT2VRbHY0VlVYQk9GcG5fc0pwN2pGY1NpaDA0OTVKMHdNUGxCbzMwSEh3d2V6OW1mMmttWTZCbEVSWXlsZFc2dkpOWm9pRXA2bURZZ2dmRTFXcGpuMnU5MmRUU3dDOFRGSnA0UmtGTG0xTndOQy1lNDZaS1ZtY0ZneHNQTEU3eE9VY1Y1ZnJJYUVTSEZNb3pW?oc=5
 
-### Kentucky measles outbreak hits 100 cases with seven reported in Laurel County this week
-Published Oct 9, 2026 · Retrieved Oct 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMi0gFBVV95cUxQaXJZOUtPQUlfeUc5aXFBWVdISDZDZFlyUmptanNvNzhydlJoWVFvUVFVcVppNXI1WWtJUHNnRmRrY0tjOW9PUGFFRnVXOW8wOUFRdXdLaEYyT1BHS2JwMjl1OGRuTTlOZ0FiUzEzS2tTUEpYQ0pSRmM1d1lWbURqcnZ1SUswOExFd3pBbFlnejNudzZ2ejlCZzE3cjZCcHRuc2JndVFaaWpqMFBKUmluT1p0NzBqOWRZcEJnUnp4eUEtT2R6QTJWWEx0ZDRUWVBwSFE?oc=5
-
 ### Measles exposure in Georgia’s Macon County raises outbreak concerns: What we know so far | Hindustan Times
 Published Oct 19, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMi9AFBVV95cUxPZDkwdXdpNkRyMXI2NGd5UlgwajFoMGJqclVRYzBQOVV5NFBkQThNZDliVlVjV1RuMjNkekM1UDBjS2NPQjVMYUhiWlRIUFpFNFhGbGstNG5aWXV4VDNnbk5oaEMyUWh0a2NBaHExOU5WVm5ORm45VW93bC0yanlwTTk0aU5GSHlISlZwTllqVjhmYVJQX0FLNEl2Q3htNDBVRS02OHJsUW5Wem13S0VwWG0zQXBmVkwwblp3dmp2bnZWdG11TzMzQnNFazlRZVRMUmpGWDhaUjhtUURFMmNVcWJIVF9IQmNJUnlsS1oxZ2ZmaHRs0gH0AUFVX3lxTE9kOTB1d2k2RHIxcjY0Z3lSWDBqMWgwYmpyVVFjMFA5VXk0UGRBOE1kOWJWVWNXVG4yM2R6QzVQMGNLY09CNUxhSGJaVEhQWkU0WEZsay00blpZdXhUM2duTmhoQzJRaHRrY0FocTE5TlZWbk5GbjlVb3dsLTJqeXBNOTRpTkZIeUhKVnBOWWpWOGZhUlBfQUs0SXZDeG00MFVFLTY4cmxRblZ6bXdLRXBYbTNBcGZWTDBuWnd2anZudlZ0bXVPMzNCc0VrOVFlVExSakZYOFpSOG1RREUyY1VxYkhUX0hCY0lSeWxLWjFnZmZodGw?oc=5
-
-### 202,000 cases, 1,147 deaths: Bangladesh battles deadly measles outbreak amid warning to other nations
-Published Oct 17, 2026 · Retrieved Oct 22, 2026
-Limited detail was available from feed metadata alone.
-https://timesofindia.indiatimes.com/world/south-asia/202000-cases-1147-deaths-bangladesh-battles-deadly-measles-outbreak-amid-warning-to-other-nations/articleshow/135006165.cms
 
 ### WHO warns ‘more complex’ Ebola outbreak now present in 3 African countries
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
@@ -684,42 +699,22 @@ https://www.dw.com/en/nigeria-on-alert-after-traveler-tests-positive-for-ebola/v
 ### DR Congo: Ebola responders under pressure as outbreak expands
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
-https://news.un.org/en/story/2026/10/1168647
+https://news.google.com/rss/articles/CBMiV0FVX3lxTE5XU0ZtbkZyVkNBOG5qcFhvTTgydEUyeDJ1ZWpNTVNqQkFnOS1Ed3MwUlF2UzRyT0tjNDhCNHA4RDU4R01acGhFQmN5X3N5SEx2Zm9ucF9uUQ?oc=5
 
 ### WHO warns of complex Ebola outbreak as virus reaches Nigeria
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
-https://sharjah24.ae/en/Articles/2026/10/22/WHO-warns-of-complex-Ebola-outbreak-as-virus-reaches-Nigeria
+https://news.google.com/rss/articles/CBMipwFBVV95cUxOUWlkUlNxLTNjSnBmR0FNQmhIQms0dVpVU0JNTjZjTDRIbGd4cjBma19jdnZOejVhQ0tKblFWU1o1ZGhiSW1PeWFxYUpCMGFXbnBFME9McGY1ak5LakFrTGhNVzhyajZoMV9BQ2dGUWpIbmZrTVBWcXJZX2lVVThxcFIyMDBoWFYxcUxJX2J2UEVRcTREbV9VV1dBbjVISGJpcnZ3NDV6aw?oc=5
 
-### Kenya reports zero new Ebola cases as Gov’t says end of outbreak ‘within reach’
+### Ebola: Africa CDC warns African leaders against politicising outbreak, finger-pointing
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
-https://citizen.digital/article/kenya-reports-zero-new-ebola-cases-as-govt-says-end-of-outbreak-within-reach-n392534
-
-### Africa faces 'complex' Ebola outbreak after virus spread to Nigeria: WHO Africa chief - Africa - World
-Published Oct 22, 2026 · Retrieved Oct 22, 2026
-Limited detail was available from feed metadata alone.
-https://english.ahram.org.eg/News/580654.aspx
+https://news.google.com/rss/articles/CBMi3wFBVV95cUxOb3V2NWlOd2RpS0tVWm84LUl1ZXZVZGNnR0tMcmdTUzFFWVotQ0dzR1NRSk9PMjlyLUxxdDQ0S3lPR0h4QjJHZzRORldrZXUtUllBeWpReDdTWjBMRmZWN2JTMlNnQ04wSGxjYkhzMk90TUlmR0FLX2syZ29Wczk5dGJNNklYZFNlTXB2VENNOUZ0eTZGLTN3Nlhja3FaTnR5bk96aXNXSFlwZjZGLTFBeEl4TWlYUGlOeEs1SXVNSTlPVGRMRm0tMWY5NWZXTUN2cENPTm0tVEphRzBXT1Q0?oc=5
 
 ### Ebola: Africa CDC urges African ownership, accountability in outbreak response
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
-https://www.premiumtimesng.com/health/health-news/919252-ebola-africa-cdc-urges-african-ownership-accountability-in-outbreak-response.html
-
-### Bangladesh Measles - DREF Operation Update (MDRBD039) - October 2026
-Published Oct 22, 2026 · Retrieved Oct 22, 2026
-Limited detail was available from feed metadata alone.
-https://reliefweb.int/report/bangladesh/bangladesh-measles-dref-operation-update-mdrbd039-october-2026
-
-### No vaccine for current Ebola outbreak – Africa CDC gives shocking reason
-Published Oct 22, 2026 · Retrieved Oct 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMiU0FVX3lxTFAwMXFsNklpVWJrUGx4OW1XSjBmV0xYUk5QN1dJb011ZDg4SHhTMkI0dnJTWTg0alIyMzRGZXMtNk81elMwZ2sxTE81MXMzRGV0S2dz?oc=5
-
-### No vaccine for current Ebola outbreak - Africa CDC gives shocking reason
-Published Oct 22, 2026 · Retrieved Oct 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMiqwFBVV95cUxNVTVFZEtfYWJNSUo4VXZRb3c0a2V5Ujc2STZMbE91M0hmLXFnSW9lbUdDTmVPT212a056M29Scmlrd1hlaDV2bXU3b29ETTNnQWN4UTlpVzk3SWtyeTRqXzBpTUpucmNoRnZaOEcwZGh2QjJRXzFFdGJlSlBFMF85WmhyZzh3UGhqTzVpWkt1aVZrZ3JEUEd4dlpUNEZNdVkzY1pRY2hWcFdNNWM?oc=5
+https://news.google.com/rss/articles/CBMi1AFBVV95cUxNb1I2YWI3VFBYM2hrVjZwN1cxOVYyQWFFQ25UbjdnY25penRGdnp5QVhwc2lDM3FVbkZBbmNBV3p0ekJ6WUQwR1paa1M3R2xXVlpfUjJJcFlQWWxnM2o4ckVJWUs2WjU5VWk3ZG45RHF4em5oTzMwUVVNbU5HWHhOUXZwZmJiVGFWTU5NSGZPemFxQjgxWENpb1VqYWlEMjFvVjJyMmpoTkdZNzZkQUQxd0tXVU5xSnN0aVpHWm00R1kzVW9VVTI0WW5zaVpXOGd3Sm1GVQ?oc=5
 
 ### Opinion: Measles outbreak was completely unnecessary
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
@@ -731,35 +726,20 @@ Published Oct 22, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMi1wFBVV95cUxPbGllOFpOMDJGNFAwODlwdThjbDN3dXlwRnVpczJyLVZTMDU3eFEzNVVQclcxRDJzdjRYMlpvTG9UbnQwYVlVeFBaMlhaRFJyYnhKcVpOR3Rrbjk0cnc2bzVCUGkwMGtRNm9mNVR5LUVSQUthYWdNSG9tdEYzZmMtdS0yTGR1SzR2NFNyYkdvQUNSZzRWXzMxSVpCdkdkbmFnN0JRQkhEVDl0c1kxWGxsSzZ3YWczTVh1bGE4Y1c4aTB4LUp2UnBNam5xdWk1bzJmNFozdFFSa9IB1wFBVV95cUxPbGllOFpOMDJGNFAwODlwdThjbDN3dXlwRnVpczJyLVZTMDU3eFEzNVVQclcxRDJzdjRYMlpvTG9UbnQwYVlVeFBaMlhaRFJyYnhKcVpOR3Rrbjk0cnc2bzVCUGkwMGtRNm9mNVR5LUVSQUthYWdNSG9tdEYzZmMtdS0yTGR1SzR2NFNyYkdvQUNSZzRWXzMxSVpCdkdkbmFnN0JRQkhEVDl0c1kxWGxsSzZ3YWczTVh1bGE4Y1c4aTB4LUp2UnBNam5xdWk1bzJmNFozdFFSaw?oc=5
 
-### Africa faces its widest-ever Ebola outbreak as DR Congo cases near 10,000 and new infections emerge
-Published Oct 21, 2026 · Retrieved Oct 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMi2AFBVV95cUxNSEN5UGR1WGdkQkpSNTk1NTQ0eGF6RXllOEN4TUwzcW16OXprdHVfSnB0TWJjbzFNNnhaU3RCcEpOUDFJZzEtQndtZFJCUm5nLXJYUl9UYkNCajFwMHBpeGZYWGdyQ3dUOHJxSUZsX2pKYVFuNGNTdlNSOFJiQkRxTVNicDFuQTRpWWVNN29Hak5kMlg0anZXbjJ4Sk1EdmgxTXJNSTBmMXotMDNIN3JkWktaemxZTFlfdTJpUjFkSDY2SThPNWVVWDhRZi1Yb2NiM0c0dndZbDA?oc=5
-
-### Concerted Efforts: The Race to Contain Africa's Fastest-Spreading Ebola Outbreak
-Published Oct 21, 2026 · Retrieved Oct 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMirAFBVV95cUxOSzhrU3ZZSEFSVjNzek5paV9FNEVhZTI0cEcxbllPSkNiZlprU2psRHFSUVNJa1BsMk5Xc0dubm50bUFDOHRxM1N3b0lwbVlCRE16c3NCQWZPRDlQSkNkSTZ2Y3VRSGhxeW9ibzB1VVRoQlNGcGlfTHFhTzd1QXBveXVDamRrc1N3RkJHazY4cGNLQkpZeGNacktVcUVfbUtTMHI2dnFRREZ4OVFM?oc=5
-
-### Africa CDC summons health ministers as Ebola outbreak hits Kenya, DR Congo and Nigeria
-Published Oct 21, 2026 · Retrieved Oct 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMixwFBVV95cUxNU3U3MFZUakZ2TG9SSDVSbWVfWEJQNGRwOXNwZXpLNU8wRFM3LWN0MWhHbTlaYVJEZ2ZhX0drak96Y1c5SU41Nm9sNFZJSDl5Z05IZHk0ajc3Vm9LamtxWnpxckNsQ3FfU1F6elU5TWZvZmRwb1ExS3lfU1JvcTRLa3ZUUEI2b09yczdNN1NRTXlYcl9hd0UxMmVhQXlHZk9wd29Kck9QV253Z2pfRzBFWG95bXJPME5xbFY3bHhqOTBaVkdnVGtN?oc=5
-
 ### Nigeria Confirms Imported Ebola Case in Abuja; Health Authorities Trace 44 Contacts
 Published Oct 21, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMingFBVV95cUxQazVTTThPLXBGS3AyVkpfXy1hcmcwSTVnQVVubjAzMDQ2VjBqNWFSeUpZNWI1NkFZMFZVczVwY1ZwTUdXRFJrbTM4OU5oeXQyWEFBWUdPdEEtN2t1N2JsX21hRU5yVERZZXY3RnZkaVlDS2hERm5ENW5nX1pZTEJ0LVV2QkxLZzlRb1I1Mlh1bGFpQWlPRU13QWJOVkhrQQ?oc=5
 
-### Africa faces most geographically widespread Ebola outbreak on record as DR Congo cases near 10,000
+### Ebola: Africa CDC Convenes African Ministers of Health as Ebola Outbreak Spreads Across Three Regions
 Published Oct 21, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMizgFBVV95cUxOQkx5aU10RTczVGNjOFM0YkZZMEl6bGMtbmdSdkxTNHh1RVhjVWNrMlpWc3VZSkY5cFBkeTEwZTBRRm45ZEdFOVY4bHRSUjZHNFM0VTVpMDhUcDdFemxNazgtSE83NEFjLUV4NlE0eHp6RHA5NnUzal9jeGlBU011QWJtWW1QTHR4aGdlLXQ4RTRYWUE0LUF5cmFESG9NRmkxd1NBZW8wX3ZycDkwY2o1cDc3SzlkQVBuQkJFUmlET3E1a3p6MlJFWWN0Yl8xdw?oc=5
+https://news.google.com/rss/articles/CBMixgFBVV95cUxQYkgyYVljbUpWMHo1dkY1cVdBdW1sdUlIZW1RZUJYWV9FOGl0eG5TYXBHWkpyMHNVZ1FOYzB0aUxXLUNXeFBMQndjTTI5alcwVDNFcDg5Q2F3eWg1Q1lvMmJkNnpxLUROYmZKdjFHMllfby1NTFJiTjFub21OVVlETkc2LTNiTzNJYU9lZjFfSFRHdEtIR1ZVQVhad1I1eG96SUkzcjBuV09HZ0FjN2J4ckJLOWVoald0RUhDcmtoc0YxZW5zVGc?oc=5
 
-### Uganda Debunks Claims Of Ebola Outbreak After Nigeria Confirmed Infection
+### Florida's Citrus County Issues Mosquito-Borne Illness Alert After Two Confirmed Dengue Cases Spread by Local Mosquitoes
 Published Oct 21, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMisgFBVV95cUxOaGZTMFFBYUIzeEs1MWdBRXZ6ZG9iUmJfanp5YnBkcXBwNmZwMWo5Y3FrdFJrX1ctSTNuc0UxR01ueTRGM09GQTNxREM1STRpd1Naemo3Ym8tOVA1OExPNDd2M2NLTFI5RktnZEIwRXNZckJ2aElFaXZyU3FRcHJXTGJhNVhlc3lYTUZSLVVVdkpxalRCWjlVYUp6SHk5cGNSckVZd1Z4SjhaRGQzNjZQOUFB?oc=5
+https://news.google.com/rss/articles/CBMihAFBVV95cUxQVzFPc2RQeVpNQmdhVnlMYVItQV9KTnpkbkhvdkhBZzdranVQUmt6SnhGN2JmcHBvQ2lnM3RjY2QzOE5MSGZxM2ZqZ25Qb0JIVURNTnpscERoOW9hRjBZLUJGOE1pTmVIT0VPSzRvbF9xbUEzRG5vbWFwcUR1X2NqX0NLd2w?oc=5
 
 ### Nigeria confirms Ebola case, as Congo outbreak spreads
 Published Oct 21, 2026 · Retrieved Oct 22, 2026
@@ -791,10 +771,65 @@ Published Oct 20, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMilwFBVV95cUxPTlo3eDhmOWFzaFFpaG9HaDBMUkRFQXRyWEFhS1lCaVV3V00xaTcwbTVhbTZWTjI3UGhsaVJIMDdLMjZiTkV1MDlxWjlidGJMTGhjOG9KUXIzUnJGVTFEVnVWUHVucmJMQy1xTHlYZUg3bHBoQnhvRTgwcmxsSE10LWE0ODhCcHRzMUdIYmVXMUltTElfWnI4?oc=5
 
+### Philippines logs 205,347 dengue cases from January to October 2026
+Published Oct 20, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://mb.com.ph/2026/10/20/philippines-logs-205347-dengue-cases-from-january-to-october-2026
+
 ### U.S. Measles Cases Reach 4,410 After 330 New Infections in One Week, Highest Yearly Total Since 1991
 Published Oct 18, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMiwgFBVV95cUxPaEVta1NKVjNRM0QxdTc5N3MycFZjR1VORFNqTW5rdzZXNnJPSUluenk1UXd2ODhjVVhadHlIYWszNHpqaU1LV01CMVFqbVRaR1IzeDg2YkhTeFpHSnlEOTdzSWYyLVNkTGVEMVdMalViZ2UyX3pUbndFYW84SVVSRGMzOTBTaFFmb0Qwd05PcS1fVl9WTURHWFVpUUlCZVhkeU12MkxOT0RuRlZJVTVJY2RyZnRnWkZvb0sxWC1lbFJZdw?oc=5
+
+### 202,000 cases, 1,147 deaths: Bangladesh battles deadly measles outbreak amid warning to other nations
+Published Oct 17, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMihwJBVV95cUxNdWdTYTBFdjVGZExBM2QycUY2OFVuVVYwNEZaZG1qM2Jrc0xvSXFkUU9ReGo1azNQX2hpQVZGVloyYV9SemJaeTNaV2VudzJtUGxveTN5TVFRX0VKbjdRNlRYT256eFpuVDRsWUI4RFlwSW1KNHN1QUtEVWdNSlNQOW5UbXdFODhBT3ZhcFJwMU80cWU3YnExTGs5MEhxcFlRb0tNcEdaTHBlc0lDbVFIZXVzcW5SUUkyMDdVdi1WQVFNc0RzTGVzd3hOME1OTDZpWmQzZldmaHZoNmhuajBVaWY2dEtET1JUUEhuekVzVDNHT1pyRnY5VXpOTEQ4SEstNk8zVlhvUdIBjAJBVV95cUxOYUdFSS1Ub1A4dlhlM2E4bnJ3anBkNktVLUppZGhJV2VtbHhxSWJPZzN4NjZUcnpZRGwxSW5YN3NnOWdTeXBxR3R5WUVxekRfaU9DNHhSS1o4ZWJQckVIZmZ1V01XbHNrSVJpVWI5SnZXM2pEMXpCY2RaaGJRb2xSTUQtSTB0LXdSY0s2SEpjbFdNM2F2Q29ISnF6OTVSbU1tQzRVUWo4emUzdFItNkd0ZlhCNVhRLW1KX1pwYlJCdlV0bU9RYnhYTElWYlJuRS1FYTBPTGZ0Vnl6X1hVNGo0Rl9iZXJlZXVNY0dPOGw4THctQ1RxcmpVbF9qb3E3UWk0dWpSVFIxVTVwdkJv?oc=5
+
+### Medina County confirms 3 new measles cases
+Published Oct 22, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://www.wkyc.com/video/news/health/medina-county-confirms-3-new-measles-cases/95-69e41f6e-13cc-4140-b87e-e05d80e5883e
+
+### Kentucky's measles outbreak nears 200 reported cases this year, up from 13 in 2025
+Published Oct 22, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://www.newschannel5.com/news/local-news/kentuckys-measles-outbreak-nears-200-reported-cases-this-year-up-from-13-in-2025
+
+### Florida Dengue Cases Continue to Climb
+Published Oct 22, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://www.wfla.com/video/florida-dengue-cases-continue-to-climb/12296703/
+
+### Hillsborough, Pinellas extend states of emergency due to rise in dengue cases
+Published Oct 22, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://www.wtsp.com/article/news/health/hillsborough-pinellas-state-of-emergency-dengue-cases/67-eaf6dc36-ea3a-46ec-9a76-df8ad13c373d
+
+### Bath County measles cases rise from one to 11 as outbreak spreads across Kentucky
+Published Oct 22, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://www.lex18.com/news/covering-kentucky/bath-county-measles-cases-rise-from-one-to-11-as-outbreak-spreads-across-kentucky
+
+### Ebola outbreak update through October 20
+Published Oct 22, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://outbreaknewstoday.substack.com/p/ebola-outbreak-update-through-october-63b
+
+### Why measles outbreak in Pennsylvania poses risks beyond US borders
+Published Oct 22, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://www.yahoo.com/news/us/articles/why-measles-outbreak-pennsylvania-poses-210230655.html
+
+### Pune Dengue Cases Cross 2,000 as Congress Warns of Civic Protest
+Published Oct 22, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://urbanacres.in/pune-dengue-cases-cross-2000-as-congress-warns-of-civic-protest-2/
+
+### CDC Issues Emergency Response for Florida Dengue Outbreak
+Published Oct 22, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://www.medpagetoday.com/infectiousdisease/generalinfectiousdisease/123530
 
 ### Kentucky measles cases rise to over 190 so far this year
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
@@ -806,15 +841,10 @@ Published Oct 22, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://ozarkradionews.com/local-news/video-health-officials-urge-caution-and-vaccination-as-measles-cases-inch-closer-to-the-region
 
-### CDC Issues Emergency Response for Florida Dengue Outbreak
-Published Oct 22, 2026 · Retrieved Oct 22, 2026
-Limited detail was available from feed metadata alone.
-https://www.medpagetoday.com/infectiousdisease/generalinfectiousdisease/123530
-
 ### Dengue fever cases surpass 400 across Tampa Bay: See county-by-county numbers
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
-https://www.yahoo.com/news/us/articles/dengue-fever-cases-surpass-400-182547134.html
+https://www.wtsp.com/article/news/health/dengue-fever-cases-break-400-across-tampa-bay-county-numbers-update/67-004e4303-e2b2-45b9-af92-0c8fbcdbb915
 
 ### Hospital steps up screening as measles cluster widens in central Minnesota
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
@@ -830,6 +860,16 @@ https://www.wzzm13.com/article/news/health/michigan-confirmed-measles-cases-uppe
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://www.voanews.com/a/8214068.html
+
+### Pennsylvania warns of congenital measles amid ‘increase of measles cases during pregnancy’
+Published Oct 22, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://www.abc27.com/pennsylvania/pennsylvania-warns-of-congenital-measles-amid-increase-of-measles-cases-during-pregnancy/
+
+### Childhood Measles Cases Surge Worldwide as Vaccination Rates Decline
+Published Oct 22, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://greekreporter.com/2026/10/22/childhood-measles-cases-surge/
 
 ### 3 measles infections confirmed in Michigan’s Upper Peninsula
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
@@ -849,47 +889,67 @@ https://www.heraldtribune.com/story/news/state/2026/10/22/florida-dengue-jump-fl
 ### Latest Florida dengue fever case confirmed in Seminole County
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
-https://www.clickorlando.com/video/news/2026/10/22/latest-florida-dengue-fever-case-confirmed-in-seminole-county/
+https://news.google.com/rss/articles/CBMiswFBVV95cUxNQTBwQUlrVGg5VWI5NHBCNDB4Tnp3Q3FGTFVLYzlWTjZHYVFKV1lFTHNLcTZtQzdfeWt5WDFBWG1BUnVCdzNCcGhkaXVQRGpoQnY0S29FbDI3ZzMzZXNjYUpUVjJEMlFQbmM1azBwOXlUV3FrWm1PcW1iYmt2bG5tOVBBZXpHTGlrcXF6TUFiUk5RM2pjZHhyTWJjaWdVM0hqVzkxNVRpY2tObjF1Tkd6Y0V2NA?oc=5
+
+### Islamabad reports seven dengue cases in 2026, National Assembly told
+Published Oct 22, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMiogFBVV95cUxQeXdwR3E3bjQ5M3Q0SVEyc3hreUFiSnEwSEdLWkM3MHRIZmI2eUVmNTBvNDlzNGZ0VWdibHFfOVg0dXNxb3ZrYktKZl8yeDhEVkhjSWxlSXphMk5OcUJCeGxwbFZtMUp1d3N3S3hjRVhzcF9jOVZCWk1ZbTZPdEtMZm1ZRFVYcWRGLXhTa08ySkNoLUJLSHNnZW9ib1VUbWllSkE?oc=5
 
 ### Measles cases at 35-year high
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
-https://www.kxly.com/video/measles-cases-at-35-year-high/video_1eb8dcd1-8d0b-5054-9a44-948dcb984d1a.html
+https://news.google.com/rss/articles/CBMipwFBVV95cUxOV3FTVVp4MXN1bGwtblROMTlKR0lhSXpKVGJ6aWZMMVBwWWNaYmUtemxmV3FSUktfOTVZMVBjTzZJS04zS1ppZGtSRmlhdTRjcTZZT2loNUVFellZU1JLVFFTNTdIWUFXbUZUSXJUOEJOdUFwdHowVFhTQTNuMDdIakF2bVZBanBKLXpzamhFSDVGUEx1bTBTdm5obmExTHhRRmlMU3N3MA?oc=5
 
 ### Is the measles outbreak slowing? Experts have differing opinions
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
-https://lancasteronline.com/news/health/is-the-measles-outbreak-slowing-experts-have-differing-opinions/article_0199ab2e-d14f-4089-829d-c72336e835f7.html
+https://news.google.com/rss/articles/CBMi6AFBVV95cUxORXhZZ0p6Wjl4S1hGNE9Bb2xJWmptbm9kbDFkaUgwaHZFeU9ld1drbVZVc21vcnNYV19OWUUtckxRNjl0TTUxRlNaYjh2T3dDN0wwWWRvUWlpMGFHeFJjNDhZSE9WWXBUYkQwX1BXeVlUZFR4Q0ZueGVnRXhrczZkZHRZOTZUYm1aOFZaRFh6QmZIcHMxTlBfUVRMR1BpemE3RDZlSnVWWWNzNV9zaGVqcm1IV04tRUlFMU5USlVaTThPdGM4RUN0MUJTVnN4N3FaRTFvOXJhYzN6TGtXNm43ZVI2cFF4NzRC?oc=5
 
 ### Medina County monitoring 18 measles cases
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMickFVX3lxTFBDUDlxdnlhZ1NpVHp3UnJtN3l3QlVCUjlIV3VCVE54aHBLenpSMGhpZnozLTU2V29PTV9WcU9OSFFDeW9abkV5M0ZYYllyZ0hTTzdQV2VYUFFHZng3WDJwTGhPM0tDNmVtMW9UUHVtdEkwUdIBd0FVX3lxTE0tcV9qLU9hRlp5Znh6Qlh3ZVpuM2F2eUZKT1FlT3lDU1htai1zOGFPNDg0bkNrc0E3b3NsU1lybjFReHJGeXdTVGFXM0d0NDUzV29NeVpYWFpodXBWLWh2dXFoUURJdloxaGMwMVk2RE0xV2k2eWww?oc=5
 
-### PHDM: Three measles cases confirmed in Delta County
+### Pune Dengue Outbreak: Congress Gives PMC 48 Hours
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMi0AFBVV95cUxONnhYekt2RDJQSkRmME04dXdvbUVWMjdVOTlUTGFZYnllczFRTGVEamdEd3pLWEQ2SVRoMXB0VkJaR2FuSlgwaTFrNmRrN2JJbHNfaDZDRU1aSGNWVVVHa2VLQmRKU2ROLWVLaDQ2eXgxMVRlcVVNME1ZaE1RVGN4Q1lXaU02LTFSNjlqSDEyczJUOXdMMFQ3MEJ0RGJUS2lmdS02TVBicVFkOTZYcEFtcFVJRWtzRk41YTEtM3VHcTV0WGh4QlUzaU1UV2NUSXBv?oc=5
+https://news.google.com/rss/articles/CBMigwFBVV95cUxNSjJrY21wa1NvVkY4Nkk4dExMQ2xlZHNlV1ZDRGQ4T2paVGdlcFpXVnlraGNBSWRtR19QLVI5M3RvbWpZbXJzU2s5aGZvcFV1MzA4VkYwQzVHcmN0WWI2Rko4VFlQaWxCdHk0dDR4SjRzYmlXRTRRRE5aQ0l6SDdYMmhjcw?oc=5
 
 ### Scoping review maps antimalarial resistance markers across Southeast Asia
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://bioengineer.org/scoping-review-maps-antimalarial-resistance-markers-across-southeast-asia/
 
+### Adults make up two-thirds of Pa. measles cases | Morning Newsletter
+Published Oct 22, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMirwFBVV95cUxPT09XUmIwbzVDZEk2OEhEYWV0SFI1ZEVGQ3ZiTzJ0dzdSQ2NEdXlhallaWWpncXZ1MkVvRW11QWZ3SGlvNXl0VWhRWWRrTXk5SXlsdF95S216bzh3ZUZhRHF4NFRESHhnekxsQUQ5QTlva042OFpYSEloQVBIYW4yaUxQSmNtd1l6RjR3aWZDbmlSTk1Qdm8tdHdwX2tqcWg4X1JBcmpmMWQ1djhWcXJr?oc=5
+
+### Kohat records 2,659 dengue cases as KP reports 120 new infections
+Published Oct 22, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMimwFBVV95cUxQVngyeWk2ZEQtM1BlbVMwTjNid2Jla0Rjb2VNeTF1SVFjb003VlYwNkNYUXN3bTZCMV9CUlpQT3RUQm5scWI1aDd0Tm9oMW45WENSSU1GNkZUMlgzLWc5SUxqa3BRTDZpbklhWldrU3ZrWGo5UTlkT08tZUtJT3FZUEJ4Y0xRbHFnMVFTZFZIZzVMM3VtV09SZmlQYw?oc=5
+
+### Pennsylvania surpasses 900 measles cases with 13 new confirmed infections: Officials - ABC News - Breaking News, Latest News and Videos
+Published Oct 22, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMipgFBVV95cUxQRzlvdkY1WS12MEJoZUx3MVA2ZXlVbmRGWVd3MUp6dVNUV0l6MTAyTmNDRVhIR0FfUzFLa0ZFS0RFRTZEWjVXTGV6LUFzVnJDeGxaNmlUUklLS1V4Ym5lNFR5MXlQSEc4d2M4amxZRkJBREdINDdxR3h2aHRyS3k4dkZHUDVyWlNUVWJGaWxRRUpiMmhLMlVyUjQ3QnFRdDI3WkR1U3FR0gGrAUFVX3lxTE9rZEtzTTdpOVkwMjRMYzI0V1VydHFJWHg3Z3dXT1BCSWVBYnpUaVJCa2FieEZ0SDNfR3lFYXp2eTgtRFNLY1U5WllNQVlfdkQ5S1pGUUlFUWl4RXg5MzFXeFRDOWdnOHdDSkVyYnBnQzA5NGZnZEY1NlhSVTVTNjdCa2JFMDBJOTNRZUxMRjNFYTkyWDNDUU04TzN4UE4xdmdKV3Y0LU5sTHR0cw?oc=5
+
 ### It’s seventy years since the polio epidemic of 1956 – could an outbreak happen again?
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMivAFBVV95cUxNSm1JelJacEJCZ0ZxZ0dhSFh2SVBkNnpQSjh4R2FWaHp5bzcwT2lzMUtrTmF4dGtGUXRTXzdtMFNDMzZiampYampJRmw5ejRfamR1b1o0TUNEZ2VaeldVR2k5dXE5OHNiaUp4UXZrWnBGWFFBTjlWalQ2YWFTeVhCd1lfbDdydlVHdWFOWmd6WW9wQUk4MXItMkJIbkNGdEFwUVlEajZjSTlIbVF3MHRXSjViTGZkR3hTUlhXag?oc=5
 
-### Medina County reports 3 confirmed, 15 probable measles cases: Here's what health officials want you to know
+### Pune Dengue Outbreak Congress Gives PMC 48-Hour Ultimatum
 Published Oct 22, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMi9gFBVV95cUxQdVdrWjlGMkZUdElMTFVucVFRVlJ0dWRQYXY3OWlFZHBydURnRTZYNS11Mkp0czBaQlNhRmlxMmNjRFF1WlJvZ2RDeHVmLVBaUVY3SVVVSzYtNmZya1I1ZkRwMHVMRUtJR0tCR1VjX3FvOHM3VTBoa3VhaFNIWFF1N3E3VVlqR3BiRG9XRE1reWtpZ0w1VGdiQ2JtQ0kzd2otdUhYblUybHFrUzJMWTNIa2JKR3R5UzRUQ2dsdDZZWTUyT2gzcW80ajhXRGpteUoxaFBfb1VPNFdPZVZ6dTdaUWMwMHFoaHFZaTg3Q3hGaDh2MklsM0E?oc=5
+https://news.google.com/rss/articles/CBMijgFBVV95cUxNVC1xVjE2S2o5SVBYY2c4WnBOOUd2bWZsV2pUNVR4MVFLUERZTkhuVlBWSm5hUS1VVzAzeld5RnJhUnd2SnRNS3l1dUlGOHFacTR6LVpsYWlPbEt1RkdCRnRjLVBvRDZfTEFxM2ZXeVRzTk4wdk92YVdDcE9leERmcTNxazNmZEVjY3JNMVhB?oc=5
 
-### Pennsylvania warns of congenital measles risk as cases rise
-Published Oct 21, 2026 · Retrieved Oct 22, 2026
+### Medina County reports 3 confirmed, 15 probable measles cases as Ohio outbreak persists
+Published Oct 22, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMimgFBVV95cUxNbXNCc3RoYmFQMk1uNjYtWHRrY3pVT0FDUkx6MEpHODRwZW9HNTNuSElpRjhjZTZEQkhrZU1pNkxCZDZleENHZEtlVkh2akxJVmZ5bC1pUGIzcU5TRFE4eWhzS1pualBpY0VsZjluVjI1NE9STVhEMHdVQ2I5RkFHUzVGZW9MZkRNclV3STZ5d0hXRUY3WENySFpB0gGfAUFVX3lxTE4tRlBYRU5iWnoyOTNFVmh6aEVBM0dqOGxra3VjUEZ5MmFNWDV0NXQzeUo2bXgxV2txbGl5UVo5ZGJZNTdlb29BN0R2OHFYbVZWQlZOSm1Kd214bFVMMG1ZemltWHFZRU1JeVk3T0tqV2I1U3duWlZDQ2k0N0RYT2tlSXFyeGE1UWw0aVZkUTNpOVFaZ0gxNGYzN0hsNVhoMA?oc=5
+https://news.google.com/rss/articles/CBMikAFBVV95cUxQTzNaUS05d1huRFlSeW1SbS15OU5oUjlOV3FTU19TWmF4YzlhUWVFaDd1OW05YzFLMGw5S19oeThLbUNIMWIxdkhETFpTNWl1bXdUQjA3OWFVczVubUx5VTlnOExOSXdIekx4Nk1VaHFkbUdpOWF2dnlEcGRYN3JFRUYyZlpRRmJmRW11UzJvT24?oc=5
 
 ### Scientists investigate deadly measles outbreak in Pennsylvania
 Published Oct 21, 2026 · Retrieved Oct 22, 2026
@@ -921,6 +981,11 @@ Published Oct 21, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMiqgFBVV95cUxQLXlmRXNaWEJRYzJhYXZHT2tST3NfUTRYRjhhR0FkR2c0T3hnVTFVaUpxNm91Z3Y2VzRKbG5GX3JYbHpPdEF2Tm1nWHQ4MGNZQm5nbGh5QnFycUxwYVFQZHJmLS01QTY1ODdvbjZzSFl2ekd1dE1POEdUZVUtaXdYTkN4akRoN05GNC1yb1FRRlVkbnhIU0ZpNFBtRXZsWWktbGhvWDlOX0FOQQ?oc=5
 
+### 3 measles cases confirmed in Delta County
+Published Oct 21, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMikAFBVV95cUxPU2tWdWgwdm9MbmNMYk1Lc1dDU2k0RFhqcnVHdEdGb3pvOUJBanpUU1lfaS1ISXJTWFVYYWhlM00yRU5ZVE1INDdzcVpJakFGbm4tMHFtZ0t6S1FDeFZHR1NzOUh0bUFPLU14SFhpYVhwVzdKa1lGMzdRdTd3N09RVU1mZEVWM3FBb1UxeXEzVmrSAaQBQVVfeXFMUGpqWktyTkpVVWZyYmt5bHJVRTV3OU5yLVVac2RmWWlNbW0zVExRZVV3WndKYUNfR29mQVprQTlLQ2NWOGgtbXNPaFdtaXhSaGFraDBrNUxjSUU1enlONjBlVGVDUXVNdWxodFVYc1hXWVhYX1BNbFV2NGZkYi05SkdSQW1GeTlucFZxbzVGcS1US0xKU2pCR3YxblN1Q09udzdTU3A?oc=5
+
 ### DPH continues dengue surveillance, school environments in focus
 Published Oct 21, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
@@ -941,10 +1006,20 @@ Published Oct 21, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMirAFBVV95cUxOTHZDS0lkMG9vXy1JNkZWOTkxQnktRHdiLVRMUDA2V3llcWNwUFR3VHdERFpLcmFOWjhUWWlnYmJlX0VlMHhOMkZ4dWh2NThfTkk4SDBnMWN6SUVQNUNLM0VRRXI4V051VkQwc2hyV2NlY0FwTFcxSWY2Q1VxcEQyNDNGRy11RFdKY0F4LWpkNWVTOGtna093bEtwZngxeE1Rck96NVd1VzhGekZh?oc=5
 
-### How a 30-minute test could help contain measles outbreaks
+### 3 dead in suspected hantavirus outbreak aboard a cruise ship: What to know - ABC News - Breaking News, Latest News and Videos
 Published Oct 21, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMikwFBVV95cUxQaS1jOXRRM3ZuS3J4ZnlqR21Nc0k3NlI5aURpN2FXSEJDb3g5M0M2SVlfeW1pVzdxZXEyX1RfVVU5LXVOMThOUWs1THlLUlkza1Nzd2o1dFVEc2lJOU1Jdy1NWFN0Qk1SWUxvdVpfT1dBTElpRXl0aEszSmZZaXU3Z1Z4M1E5ZnNSTk1TS256cUdLV0E?oc=5
+https://news.google.com/rss/articles/CBMiowFBVV95cUxPaVFxQTZQbEFJdm9jTU5qVFFlbUh1Z2tCRDhCZHBlY3NneVhwN0VEV1lJOUlZVjVoNUxfMGVsbmVpcGkwVTF6TWVRWTlhb0xSamJaZU5QMFJoZ0lNME1BT0FoRlJCSmNnWW81cXN0QVBqb2RhSWhJTDRmYWE4eW4tcUdMVlFjcTBVVTVCMGFKOF9RMjhUX2ZJTFRnTzVyLW0zbk930gGoAUFVX3lxTE50VnEwRi1SSDJvaTZ0Z2VjVjZaNWlrZGlZa3BneElvZjJzcUZoRWlIZ0hXTzV4QW1TY21oVVRuMVRGZHB5X09fU3NFVWhtVVpNN3Q2aWR3UkpUM3lOamItODI2R2VWdnhjRnhQNC1ub1hqQzhmUUVRVG5idWt1Q0VIcVQ2NzRVWUF4N1NWclk4ZVZqSEF4RHBFYUpzNnl5SHZMbDhYdHlRMw?oc=5
+
+### 7 more deaths from dengue, 1,373 hospitalized
+Published Oct 21, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMiW0FVX3lxTE9EZ21DSkpZRTJNazBiUldOSnNCNWFsQXMwUlZQWWFWRkxMU3ZoTHhPdllWRkhwZncxUG5HYkJnZmZvQnNJTl90ZlJwcTJHUjZ5bXh1SmJOMFpMaVk?oc=5
+
+### Pinellas County Begins Aerial Mosquito Spraying Amid Dengue Outbreak
+Published Oct 21, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMi1AFBVV95cUxObkVpbFB0NlFxZkN1dkRQb1RDbUoySGJjU3pRZ3JYbDhLQ0JTWjRfVWw4VW55dGxNVjBIbmVLT1otWk02YWU1cENkNFVXeGc3OVVpTEswaXdIUTZUNWFybFNqbFhWcUhyT3h6cVo1RUJSMGJDakI3RW85bktYWldVR2xoQzFLR0U5Uk1Ma2VXd1lOWmlQOWl1bDhMajdqcmhyZDBXOGh1cTktb0d5Ni12UGFfeVBaN1g2RUVuTWphWS1rNnhYMzhOdjFITkpZYmZFeHU1Uw?oc=5
 
 ### Pa. ramps up measles vaccinations as it warns of infections among pregnant women and congenital cases
 Published Oct 21, 2026 · Retrieved Oct 22, 2026
@@ -1006,11 +1081,6 @@ Published Oct 20, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMiqwFBVV95cUxQaG81SV9NdWdFMUt1MXdPUDZHY2ppNE5zN21adk4tVTlPRGVVN3h1QU51bnoxeHhhT0VpMzBnT195SkVqRXF1akRBWjh4WHZmQkc2YUl5Ym1zd2JEN25veXo3RFVvb3hyV3ZVV0dONjJ4VkZRdnN0V2VSUkd4VTQzby1QRG5tLXVKNmVpZzdYcHF4ZElPb2NEVEhQMW12YW9rZWFhWHlSY0NaZ3M?oc=5
 
-### CDC recognizes third measles death, still short of Pennsylvania count
-Published Oct 20, 2026 · Retrieved Oct 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMihgFBVV95cUxPSWhaNkNBMUhRYU9Rbk0xaGIwYklxMXBBRGZLM1pTb2NlZm9GX1FDMmpJUExQc3RZamkzTDlNQ1Q4QlZQUUU3SW9kQ21BTXpvX0V5TGFxWmt4a3hzNVNlSktiZ1FVUnFBYmI5V1I0d09zVnlnckp6VHBmcUMyQ1N0dkdDY1lBd9IBiwFBVV95cUxNSkxhcWhmTDhfRGowSkh1S1dqSGFnNGVXaUdMRTVkUElzQzhfZzVMaHBkS18wQTExbmUwdDZkQXFBTHFUZW1NNjdUVVZhTE5RSTVwY2E0RUVBTXhmS0xLdElkOVRxYW9TS01td2c4d05JOGo1R182emNCem5odWYxWmpjWmRldDZRUzJr?oc=5
-
 ### CDC reports third measles death in the United States this year
 Published Oct 20, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
@@ -1025,6 +1095,11 @@ https://news.google.com/rss/articles/CBMi5gFBVV95cUxNQ2RQZ0hvQUVNZnhhMk5ZTTVoaU1
 Published Oct 20, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMipgFBVV95cUxNdUJMNGlmN21zOC10N0ZUQXg5NU9QV2tUb2pGcGd4WHp2ZTBISkVfZXMtX01HczZKamxYb0xqN1lLYjJ6ZjVISk0tUnFnSUlLQ0JJYjd1Y1YtMklvZ2ZBWHlKZWFMMm9aUWNlaHV6MlBmSms0WEdFSTdqRHhObU1sVkw0aUhjTE1GOExNTDJRX0p1SEJja0RYWWloTjF1eTBVYktVakln?oc=5
+
+### Dengue cases in KP cross 4,000 as province records highest daily rise of the year
+Published Oct 20, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMitwFBVV95cUxQOEpIb3I3UHhqTm9ma21GTElyM2pUS2FzOVNkMDlSQm02SzFfNV8wSFQ1dTQyNkI0Z1MxSk1fSW1CQ3hSdnQxSkpOMWpWZGRrMlcxWVB0R1RzbVNUMTVyNlo0a1FkdWpuR0xNSHp4UzFhbE5DWnJVVlozOHliSjRhbjdpRVF5bkJMZkxWSUZGc2NyMmROb0dGMmgwMXNHbWZvcmlxVFNXRmdzcW1XazdoNmdmMmxSNGs?oc=5
 
 ### Kentucky measles outbreak grows
 Published Oct 20, 2026 · Retrieved Oct 22, 2026
@@ -1041,10 +1116,10 @@ Published Oct 20, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMif0FVX3lxTE41RTdRZ1ZiRWpQNGszakJPZjdvS3RYNGRvSU1PSTV5bUd1Y09vbGdzMG1pc193Y25HVXhWQXluaEdxbGpkMHo3Uzl2dFRzRi1BRVFuVS1ycG5vUnFiT0RzNFBFbjJ5V3ZDbEhjVnVTR2FKRUlKNkVON21ncTgzQzA?oc=5
 
-### Measles Outbreak Continues To Grow
+### Third measles case confirmed in Cayuga County
 Published Oct 20, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMibkFVX3lxTFBGOFZzMWtRelZqNWltSE1aeklLenducTdfN2FrTnV1cnB6bDVPLWJMWm9sazZYbUtmZFYwREEtbGV1RjBpeFp6M0l3b2tXX1hFSXJkRWw2RWN3WkVrWmpudHQtSlpha3NWQ3NfUENn?oc=5
+https://news.google.com/rss/articles/CBMihgFBVV95cUxPVUt0eXhHamxJeFhITm92OHFGZDY4MW5jUGZKa21nWWdEUjlWNG81MGxSWURPOHp6NThGWGpxWjBWWHRJN2ZxQ1NGMFRCNXZWV3RHamV4Y0I3aUhjWFNNM3ZDN01BMml5X2pSc1VzYTVrNmN1bU5lc0JYRmdwd0d5NDAwTkRmQQ?oc=5
 
 ### Inside Pa.’s measles vaccination efforts as statewide outbreak infects over 1,200
 Published Oct 20, 2026 · Retrieved Oct 22, 2026
@@ -1055,6 +1130,11 @@ https://news.google.com/rss/articles/CBMilwFBVV95cUxOREpWd3Z2MWVBOUw0SW9hekdpdWh
 Published Oct 20, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMingFBVV95cUxQc2dBbkFpcmotOUhqbmJGSG5NZ2dhV0V5NWJiLWlUbXR5WnRiMWFBSHdOQ1ZYZFdQTVZqcmo0a1ZWMi13ODVqdk5FQlllQ3lOSkxGVlhFLUNhT2lMN3VoTkdYRndwRnVSbjU0WkpHWXVwdnRqTEpXUEE1Y0JnMVo5U1VIRFc4RGRsUFdDSDVjVloxQWFSM3Y2Tm1wLWpkZ9IBowFBVV95cUxQb3liWUE5MkNvd05WSTYwWWlid3VhTkxvckZHS2V6ZkUyYWpETjlSZjVkOHhVV2diMUxPNUY4alFJMWdseFcxX1FIRG5UU0RoTTZEUjVCbVlqLXNqbEM1c3lxTDIyYWdZOXZ3NzZqMDhLVlRqSGNDLTBXU1BEUWJyTmxCLXJTSkxoMGJaUDY3ZXEweG1Rb0tMb3kta1lGV0xqQ3lB?oc=5
+
+### 26 new measles cases reported in Pennsylvania since Friday, DOH says
+Published Oct 20, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMieEFVX3lxTE9BUm42aWI0WTRkUWlQR25nSDJXbzZKbXJFeERNaXNkWXVvR1Q5ZGdnSElyTFEydnNIaWpQd0M4ZEEwbFhMLVNuMFgtZ3Y4RVV2Zi05M3ZxOGczQ0RsbzJZVGFSZ3Jubmp3cHVBeWFOcXlmMWpENTJmSw?oc=5
 
 ### CDC begins providing aid to Pennsylvania amid measles outbreak
 Published Oct 20, 2026 · Retrieved Oct 22, 2026
@@ -1076,6 +1156,16 @@ Published Oct 19, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMi9wFBVV95cUxNVGp0RTFoZXVadnN0TjRHR1ZmTGlZXzFZTVJMaEpfSkI4aG1mWk1OQXQzTm1QS2duZHJMUk1kZXFGb3FlMmVYMXZreVJVSUR1N29uTTFTOFNNM0Yzd1hDRElUNWw4SUlaQXJlM3RHekdkR2UxOFlVaTkzOHVIZXdFT0htMFJVN2dSNTVjVFc5Tnl0TUdBamp3NmpVdUVGRklKRk5sdE9xQkZKczI5cFlVWlV0RUI3Z1Y4RzVRSG1CbnJNWE51Rm55MjhNa1cwQUZmOUlkbkdaNnYzNE9sMkVuQVhiN2g4eWxwbkJWLUgyM2llTU1ZdGtV?oc=5
 
+### Dengue Outbreak Prompts Low-Flying Mosquito Spray Planes Over Pasco County Tonight
+Published Oct 19, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVnZ3OGFCZ2J5eWtWUTNXa3lNU1FUUnhPTHI1YWZHU1FqSW5Ick1LVThESjhqVF95Snl1aExNejlEYnJSdC1tQ1JGZGV6VTJWRTY4LUQ1ZVNOZGY3UkdRT0p6OWVOTFR5Z3VJNC1nTjdhNW1ZcWRfY0NqaHpBZ0Y4Z0FYb1UtQlpqY0pUUDdGVnpvWW0tUTJ6YUpBZ2dkb0hEXzBPUTcxU1hOZ1U?oc=5
+
+### Dengue Outbreak Worsens in KP
+Published Oct 19, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMic0FVX3lxTE5VUmRpV2UzSWR5X2QyLVFwVlZ4b2VGd0JWSVp2R2wxOUhWZjZGbzR3dXdRbl9WS3BxcFZQc2hTcnBkdXFNX3llOG9LcmZQVnZjZERPSVVpVnkycmpnUmhCR2p0ZXU0bk1OM2JlME1LTHg5SWfSAXhBVV95cUxNenVBWmNKQ084QVphNkxCVXphekVpX2hWTGVHQkJiNmVFNnRzU3FIV2VlbWxKSXN2SlJWcHNpVnE5YmloYjZFdzI1SEVQUFM5dk9Fd0MwQ0Z5WkZsNWVvTTIzRmVtMDRsWm1JSVpIOUxpX244eDk2V0Q?oc=5
+
 ### Florida Dengue Outbreak Reinforces Importance of Collaborative Control Efforts
 Published Oct 19, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
@@ -1085,6 +1175,11 @@ https://news.google.com/rss/articles/CBMinAFBVV95cUxOZ19SalNsdzJ3a3ltakdLOHhGQ2R
 Published Oct 19, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMi0gFBVV95cUxNRWNLS0JXbzFPbE14TjBkeTJVWjByUmNPbWIwWnZ5YTRfRENEcnpja01hMVdqZnR1d2RtaG5lZGxSQUJWbm9mbXRNTWdyNm9tVWEtN1ByVVpHNjhLXzNlZ0ZNWE14TzJEemhvZHNnTFhvTWgxSVlQVk00aWZRU0hVS3RLSjhBMTFUWGx4SjZlTGU0bXpibm9lYkVVSk9LYlZIT3RLXzdyX0t5ME9EV3hTd2k4SC1Bc3RSUmRxN2pNcVoxRWM5Y0RFdktmaDc3UUVPLUE?oc=5
+
+### Dengue death toll reaches 352 as 4 more die
+Published Oct 19, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMingFBVV95cUxPdHZ3M25wLXFjVHJmckJjZUhXVWpOaWRlNkEwNGlVMHgxTWt3MDRtU1ZyUXREaDhCZkJwTUNFNHUzS0JSaWg0d3ZOWEhWOGNDYU1EcEhNWDdBZzdzcWo4RFZSNGRua3Vxcm1SSi1PQ3dFMWpnaU9sMTVLQXBWWGFfZkhld0FNU3l0LXA2d1ZfZkNFaUU4MENGdkZ5YVlDZ9IBowFBVV95cUxONVU2elBEVDdieFhTNHVreVpWNVNlMW1UWXg0SUZ3Y1h6OHlpUkRxaS10ZFVGTk44SGhob21SaTFTYU56cjgtRTdRZFFNb2VYUVlzWmx3QjRWVDRVU0NZaTdvam1UMzk3cWx2S09TY3FkRVhFenFITEpyZG9NaFJzdGlmUkloMlBLNTNRYmNndTBBbTJKSXEwRDNCbjBiMUVGMFNF?oc=5
 
 ### Ohio: Measles cases up big in 2026
 Published Oct 19, 2026 · Retrieved Oct 22, 2026
@@ -1096,10 +1191,15 @@ Published Oct 19, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMi8gFBVV95cUxPVjVqUEdDVlBTSXRmRENFT202WHFNUFVob09ubWptaHVvTzlTbmczN1FzRFlkbWVnUEE4TXFVV3FUU3Y1b1p6aWZiZXVGeWo2WUZINXkxX0lXY0M2M2UxaEI3UkNWRDlZYWRJQ0MtZU5zUkRsN0FSRkNQQURtQlY4amNvTXU4dTZzQ0Y3ajlyS2UtaDV3SHNma1Y1d2cyeE9YRUlWRUdrRGthcGc2WkpvQ3lmaTE3T2s0bF9GclpvWmR5RWY4OHJ4SFNfSjg1TXE4Mkc5SGtoOXBXaEg5LVpJcGFGNkZaSS1pNjZCZEpfNGtVZw?oc=5
 
-### Dengue Outbreak Update in Florida: 368 Cases and 72 New in One Week
-Published Oct 16, 2026 · Retrieved Oct 22, 2026
+### CDC sends a ‘disease detective’ to Pennsylvania amid measles outbreak
+Published Oct 18, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMinwFBVV95cUxNbC01dFllbzBqekpkdTFjbkJkM3FGZjI1ZUxFa2ktTndZRmdla016ZVlxcl94dEpzc05XRUhsRWhKV19OeWU2Mkg4QUhrcjRMeFMySEV2NE96TU9kYUJ2VGo0cEhUYVU4S2JnVkluMEYwQ3k2ZENsVG9EMTRMZEdFU2xxZ2JLRWVtYm9WakhienJ0VzNCdGswU191NkNMcmM?oc=5
+https://news.google.com/rss/articles/CBMikgFBVV95cUxPUDZaS2RYWTFoTFd5cUJRbmdJLVhCWE5RNVA5U2tYMmxLSDVKRGx0NlBNM0F5OUR6RHRxYlZJeEdzd1FIWVJXakJGeUxXZzBZRElrU1BaWG9oZi11a194MFg3b1VEZEEyWjZrQUxpUnJrWVo4Z0FxNGF3WWpZM2ZZckw1UWtrYUNXVnJSUEpfaHFyZ9IBlwFBVV95cUxOcmdYODZJekYxeUtfbF9uV1JpNzBSSTNiNTdBOTJBbkloMGJ1eDJGNUNpR2pqYlFkVlpRRWU3RkJWeHpnRG5KZ3k3YlFjbFduY2dEVEZ6cnpsenJkU3hKeU9vamdrRWkzbkNzMGZQSVQ5U2ZCdVBzcUNlaFV0V1NQMHVWeHFPQktFU0xWU3hkVjBsT0tfbnY4?oc=5
+
+### Ebola Outbreak in DRC Tops 9235 Confirmed Cases, CDC Reports
+Published Oct 17, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMimgFBVV95cUxPYXRqZmh5NUV2MEhWME9SWUNkTXYwamhMU2Q0dTN1eEFxQnd0T2RrRFVNY3RRS0xLQlV6anJxTHduU1VfVkdFUVI1THVMTk5uaENIUERBQTlQUld0VnU4ZnlqY3NVR3ZNZWdhTXY4Z3ZhN09CU19uQ3FBTjkwRUhxenJBYkFyNHFmRS05dU0waFpOVlNzNFU4SEJn?oc=5
 
 ### Measles cases surge past 250 in Ohio, most in any year in over a decade
 Published Oct 16, 2026 · Retrieved Oct 22, 2026
@@ -1111,30 +1211,30 @@ Published Oct 16, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMisAFBVV95cUxQM0JxWGtCaEpWcE5kQnphelNoVVQ5UVA1UVg2TGQ3TnJUUGstV0dnMUh1QV8wenJfaEkzVGJqSk40OXUxcFhhSjNiLTVWV0ZDWGZVS0Zrc25lVGlyekRMX1RzVDl3eU1Nb3VxZkNFeGNxbExSV2thalNDVldFbk81R0Y3QVpqcXU2S1dNNEFrLVhYczBHT0tmZVpqU1dMa0xtN19pZGVtU040WU1RWW15NA?oc=5
 
+### CDC to send 'disease detective' to Pennsylvania as measles outbreak soars
+Published Oct 16, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMimwFBVV95cUxOTWc3cDRCVzlaM212WGVZa0NxcnZtOHNjQndaR1pBZUNuR3pLUVptMEEwWmtZOTcydUJXQVh0NG9hYkpIUGd5WTAxSHVpUEtQU252V1p6SWR5U3lvSl9HV2hlLUJPVFRsLXR6ckN4S01hazd1OVJCYVJqbXhhQ3FrZ1R2cE9iOTU5X2hJZW83X1lvRGRvSC00NmxEc9IBoAFBVV95cUxNaF95b3VHYWtEajJ1cnB1a1BOQkZxQjhuMmlid0VLU2dKdXVWbE5ES0VrbXNSa3NObmJtUHYwOVlWbXBlMWFYWVE1ejhQeFFGUFJhd0FPb2YxVGNWeFR3dVBaMVhmMTZPbmhveUthcnZjblBzam55MGlVYi1EaWpSVGxBbkgyOGlLbWxPUEs2WVE1ak9hTU9iNmFuY29qR0Nu?oc=5
+
+### Responding to the Ebola Outbreak
+Published Oct 16, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMiV0FVX3lxTE1sdzBvLWxBN3hCdEJ2MWQyam9Nem9JWFhEbk5EbzJVZHFSWWFuRTVtakl6TklSbXlIYm50QjJHaGxxU0x4a0VOeTVBeTc0MjdyU2U0S1F6NA?oc=5
+
 ### RFK Jr.: “People of Pennsylvania suffered” because Shapiro politicized measles outbreak
 Published Oct 15, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMixwFBVV95cUxORVVaUm1kWk9nMFRSNmJCcGVodnV0ZGFQeTd4X3JvQUNlalg3b3FxekdQakptZHJZaXJLcWQxWjZHaE5wQTZ6WVdCbE9GM3g1UlR1M1F0RUtCcjg0dU5Bc2s0Z3pFNnJBUXZVQ2tOblhsSHJHelp2Q2ZrSlJiVDFHSXpzTGtUeDl5bmdWRm1lMldNWUdvS21CckFad0pydkNwaUYyS04telhtUjI5RFEtR3lxdDhwaE5ReHVYRndSRm93Z1hpNVNZ0gHMAUFVX3lxTE95bE1CVFBsenFqZGF2dE9fSjRMM2RULTRqdjROWlZvYk9YeXdLQS1lVFlZcHVMX0VIWENNMnluaFF6enBURTgyU01GSnlFclY1ai11VjN4a0NjcmNBQ2xZMWZsdlNGOTNGRl9tdGU0VFRWQ0NIeG1IdXo4ZUpSUlg2RUEwNElzQTRnNTA5UHo4VW9uSjJvSXlmSHFDWUEyZ1JlRFV5VDdmMmVwZFVOWVhaQjN2RjhlWjhwNE5oV1hBVmltblNnS1dwNWtlOA?oc=5
 
-### As Florida Confronts Hundreds of Local Dengue Cases, Tampa Health Organizations Respond
+### Pennsylvania measles cases reach 1,222 in ongoing statewide outbreak
 Published Oct 15, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMijwFBVV95cUxNVFI2WUNMaktLZ0JwTTVaTDF0TlNCMkVrd1E5Rmk3dURaY0pEQzlveDFZd2s1czhFeXFEdXoya0NEd3A4U0luUnhkMm1EVlNBc0FYb0dXSzlDWEFtOGRCNmZ4SVdUN0s3TUtKRUk4YVNsdHJ6dWFfZzdNSW5DNWk5MnVlTFowZFlBZk00cTBmcw?oc=5
+https://news.google.com/rss/articles/CBMic0FVX3lxTE50RzMzUkJLWVRJdzRYdnMzSUxackdrTE1TNXRwckwyV3h0enJ0QUp5U1M5RWRtZWx2ZXM1ZXJkeThxYjR6NUtEcnRJeWNuWXVETXh4eFkxR2k3by1TTjBkMllSODdOdW5zTVJYZko0Y2JEU1E?oc=5
 
 ### Kentucky health officials urge vaccination amid worst measles outbreak in years
 Published Oct 14, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMigwFBVV95cUxQM0Z1Vi1QMEx5WFllcENTMllWMGdLTnJJSGxEY3R2ZWQ0MXhwbG1KX2hFd3h3T0JpMzhPamF0NkVmbnVjUGpzdlB3RU5yTERnSm8xRFhweGpjcWdrQmtqTzQzZG5MY28xWDZPRGpPemVOclh0VU1kWEZUTHVLTEQ5dDYyNA?oc=5
-
-### Florida-based Sawyer shares Bite-prevention Guidance as Dengue Outbreak prompts Florida Emergencies
-Published Oct 14, 2026 · Retrieved Oct 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMi3AFBVV95cUxQWjdBLTVCV0UyMXJRUUlwY2l0aFQ4MVFOUk9KZnpVWWhVZDJjdjZadno3cmFnS3NqV1d0Q0N1REppT284SU83NXpuY201Z0txRlRyNm5ua1FSNWxWcjJjUzNTX0dXSkNQTERaUWYtRWlRU0ZHVzM5NHprblI1MzRfV2dRRDFWeC1SX2RybXp6NVVFZWl5UGlfb1V1cXhxWXdFMVJhbHZqdy16b1lFRzhPYVl5cjJVN2RRUnFDTlJsQjdzUUtZN29aS0FrbWFDVmRKQkc4RWZrTTN2ZFRM?oc=5
-
-### Global Measles Outbreaks - Centers for Disease Control and Prevention | CDC (.gov)
-Published Oct 13, 2026 · Retrieved Oct 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMinAFBVV95cUxOd2cyVktrSnlXRmg4VTg0bUJ1azB0RENCSFIxTXd4cmU4alMwdmVxcW00VWtrRmNRbUN1bDlXV1JORkRXbFJpcXZ1U3ByaUhhM2hWczQ1S1l0dVVrNmlUMFl4ZlMzQ21CTEMzMXBaTXZGTTFDVnV3YVNIMWRjTWtRYTVnTmZ2TWhnZnJxMHZLemtQZm05UnlBZWFTdTY?oc=5
 
 ### New measles cases in Wayne and Morrow counties as Ohio outbreak grows
 Published Oct 12, 2026 · Retrieved Oct 22, 2026
@@ -1151,17 +1251,12 @@ Published Oct 11, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMiiAFBVV95cUxNRnBQbkpRdnBwUENhOUJQRHhzYW1BS1Y1VGFaN0Z6Q2pLMzVUU2VRQktoU3dzYUFYU2xDUXNoSHZOZG42TGhPN210a01sdlJyNzhtQXBDTkxmSkNNLXBlbktuUkxYU1pIRi1qR3lmMU1PbnJMS19RVmlOLWVhQ3RZM3YzUHVScy1N?oc=5
 
-### Health officials intensify neighborhood outreach as dengue outbreak continues in Hillsborough County
-Published Oct 9, 2026 · Retrieved Oct 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMijAJBVV95cUxNQUhWRUdOSVpRcmJXOUpuVFUxLTJKelB1MDVSM29jNUNqM09xeXVQSUJkUkNJMFVWUzViVWkyY2RDT2pLVXVsLVl5SU5IUVc1VEFsYjc1Mjh1ZzZUUmFSR0Z0UHFXcGVpa1hoSUVIQXR4SDdtbUZvbjlDbUktalhVVVdnVjlicW1PRkpDUmtvUDN0aUR2cEpTLVhrT3Z5eE9JRG1KUjBXVHoyVnVELUJuRms3bDh0UVpTRHo2V2R2Wi1NcjNFZ3ZLUTJJbTdHdDZkMkFYUHdYeHYxWVBBRnhQLUc4dnJHWVE0UkI2UjI5T0tGVEk5bXJLb3RVamJVNUljS1BhSVpPbTNXUkpk?oc=5
-
-### Florida's dengue outbreak is now the largest in a US state in decades
-Published Oct 9, 2026 · Retrieved Oct 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMigAJBVV95cUxNRTItUjVHODhuR3ZBQXdxTllmYkhaenVua202VVhfYklaWlpRYTVJSG41VGExcUZxa3NiUnFxV1hHdG1uem9ock0xWVUzZ0lheVhJZnBvLUMzR1NUU1FkYTlweEx0V3JhaDRLMG5RSTZaZ0Vpc1dreUNrOUVlM3BtYnRmMXhlMHRDeVE3WXUweVNYZXNTOWhSd18yWFlPR0lsQlMzMzZpY092LUd0dlc2U0lXcEdvYklqTEFxUW1MUFlDVUJJbGR6Z1E2ZDlmS0lrVm9weVJuOVZmaE1nWnA1QVJrZURJWnNKV3k5dGJpdk1YV3k2U0tOTXpZZzBHNzRo?oc=5
-
 ### School district reviewing staff vaccination records after measles case confirmed at Oxford Area High School
 Published Oct 9, 2026 · Retrieved Oct 22, 2026
 Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMiwAFBVV95cUxOd2ExUTA2a2dYWWE2cVpFZ3BCR0R2MEszdnVMTkxrQ0YyUzdiZ1FNUXZ4eWV0QThjNWR1Q0VCeExCS2JpUkhmb2RvSXE1UnlFY0hFRjZ6RW1WNkg1M2ppcWc1NEIyVFFWTEtNaGlTUjNiYjI2b19jQ01mSHpZTGpTUkZ2a08tb3pYUlhCM1JIbmFBWVBvUEhnenB0VXB4dVRidWw5b1dBWmVIakhGLUNFQy04VkExaVNBX0daY09pS3HSAcYBQVVfeXFMT0lZRzdXTHlZMUFqU0taUVkzQmVWNDYtcW9mS2ZCMXl4WG42ZG1hcEU2bWVia1VtSElkYTBJMEk2LUptSzdPU09fRG1DWlpXTG5OQVh1dzdiQUpaNzlZeDM3UjMyVTZwSGUyUmpzOHFoelVleXF3Vjd2dGxNN3ZMQi03ZWdEQ29obUg5eEZrQjB6djJYcEJzWnpUT0ZEMGtDLTlTSEIxdGt2R0NxMWN1WWxIUVBPNnBIUHYyWlZSTUw3TW9TZUdn?oc=5
+https://news.google.com/rss/articles/CBMiwAFBVV95cUxOd2ExUTA2a2dYWWE2cVpFZ3BCR0R2MEszdnVMTkxrQ0YyUzdiZ1FNUXZ4eWV0QThjNWR1Q0VCeExCS2JpUkhmb2RvSXE1UnlFY0hFRjZ6RW1WNkg1M2ppcWc1NEIyVFFWTEtNaGlTUjNiYjI2b19jQ01mSHpZTGpTUkZ2a08tb3pYUlhCM1JIbmFBWVBvUEhnenB0VXB4dVRidWw5b1dBWmVIakhGLUNFQy04VkExaVNBX0daY09pS3E?oc=5
+
+### 41 measles cases in Ashtabula County, ODH says
+Published Oct 9, 2026 · Retrieved Oct 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMixgFBVV95cUxQTF9Ja2hRLVFkMUI2RnJqWEtaOVlZWWVKWXNTNlNGQXlYTENOR09iVW0zWU4ydmkxajcwR0hERDdWV2RWZjZqblBCZXM3N192YzVkc1RqQzJ5OEt3RGNTYlZsNDBoZDRLWEphTEliWnktZWpiM1ZwYkJRdXhzajZqTDVqTE9vckdFUkU3TjkzV2lnMEU1OWZpVkRlSmFvdlhqdHVOZFZURDZ6VGhhak01ZVY0dVF5WEt3a1d4cFJPanpmMkxOV3c?oc=5
