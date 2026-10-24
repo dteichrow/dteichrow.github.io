@@ -659,6 +659,13 @@
     "keywords": "american epidemics timeline public health history outbreaks exhibit timeline"
   },
   {
+    "title": "Measles transmission and vaccination",
+    "section": "Newsdesk",
+    "summary": "Monitoring: News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....",
+    "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
+    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography laboratory_or_genomic North America United States"
+  },
+  {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
     "summary": "Monitoring: EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 23, Data as of 19 October 2026",
@@ -666,11 +673,11 @@
     "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission Africa Democratic Republic of the Congo / Kenya / Uganda"
   },
   {
-    "title": "Measles transmission and vaccination",
+    "title": "Avian influenza and H5N1",
     "section": "Newsdesk",
-    "summary": "Monitoring: News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....",
-    "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
-    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography North America United States"
+    "summary": "Monitoring: Ancient disease and One Health: Integrating ancient -omics and paleopathology to address contemporary infectious disease risks within One Paleopathology.",
+    "url": "/stories/story_28a91c6d89267872-avian-influenza-and-h5n1.html",
+    "keywords": "severity_or_death new_geography laboratory_or_genomic North America United States"
   },
   {
     "title": "Dengue and arboviruses",
@@ -678,6 +685,13 @@
     "summary": "Monitoring: Importation of Ebola cases to Kenya and Nigeria: ECDC assesses the threat",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
     "keywords": "new_official_source confirmed_case new_geography Multi-region Kenya / Nigeria / United States"
+  },
+  {
+    "title": "Polio and wastewater surveillance",
+    "section": "Newsdesk",
+    "summary": "Monitoring: WHO Zambia Newsletter – 3rd Quarter 2026 (Jul- Sept)",
+    "url": "/stories/story_9ccdd822481fa2b6-polio-and-wastewater-surveillance.html",
+    "keywords": "new_official_source severity_or_death healthcare_transmission South Asia India"
   },
   {
     "title": "COVID-19 and SARS-CoV-2",
