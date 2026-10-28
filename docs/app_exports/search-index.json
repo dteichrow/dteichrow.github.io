@@ -1,5 +1,13 @@
 [
   {
+    "title": "The Ordinary Deaths of the Romans",
+    "display_title": "The Ordinary Deaths of the Romans",
+    "section": "Essay",
+    "summary": "In a first-century BCE letter written in verse to his wealthy Roman patron Maecenas, the poet Horace explained why his planned five days away in the country had ended up extending through the rest of August. According to Horace, Rome was entering a season of death. One where the undertakers did well and parents worried about their children, while having business in the city could end up in the worker getting sick. Horace argued that if Maecenas wanted him to remain alive and healthy, the excuse of his fear of the illness should be accepted just as the illness itself would. Here, I’ll be using ",
+    "url": "/essays/the-ordinary-deaths-of-the-romans/",
+    "keywords": " epidemiologic-methods"
+  },
+  {
     "title": "An Epidemic of Advice During the English Sweat in 1529 Germany",
     "display_title": "An Epidemic of Advice During the English Sweat in 1529 Germany",
     "section": "Essay",
@@ -663,7 +671,7 @@
     "section": "Newsdesk",
     "summary": "Monitoring: ECDC to deploy experts as Ebola cases emerge in Kenya and Nigeria",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
-    "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission medical_countermeasure_gap Africa Democratic Republic of the Congo / Kenya / Nigeria / Uganda"
+    "keywords": "new_official_source suspected_case confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission Africa Democratic Republic of the Congo / Kenya / Nigeria"
   },
   {
     "title": "Measles transmission and vaccination",
@@ -689,16 +697,16 @@
   {
     "title": "Polio and wastewater surveillance",
     "section": "Newsdesk",
-    "summary": "Monitoring: WHO Zambia Newsletter – 3rd Quarter 2026 (Jul- Sept)",
+    "summary": "Monitoring: The Q3 Newsletter for 2026",
     "url": "/stories/story_9ccdd822481fa2b6-polio-and-wastewater-surveillance.html",
-    "keywords": "new_official_source severity_or_death healthcare_transmission Multi-region India / South Sudan"
+    "keywords": "new_official_source severity_or_death healthcare_transmission Africa South Sudan"
   },
   {
     "title": "COVID-19 and SARS-CoV-2",
     "section": "Newsdesk",
     "summary": "Monitoring: Travel route of Kenya’s first Ebola case",
     "url": "/stories/story_afd8f5934e291e02-covid-19-and-sars-cov-2.html",
-    "keywords": "new_official_source confirmed_case transmission_change policy_or_travel laboratory_or_genomic Multi-region Democratic Republic of the Congo / Ethiopia / Kenya / South Sudan / United States"
+    "keywords": "new_official_source confirmed_case transmission_change policy_or_travel laboratory_or_genomic Multi-region Democratic Republic of the Congo / Ethiopia / Kenya / United States"
   },
   {
     "title": "Ebola virus disease",

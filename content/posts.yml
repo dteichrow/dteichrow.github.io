@@ -1,4 +1,49 @@
 posts:
+- slug: the-ordinary-deaths-of-the-romans
+  title: The Ordinary Deaths of the Romans
+  date: '2026-10-28'
+  canonical_url: https://theedgeofepidemiology.substack.com/p/the-ordinary-deaths-of-the-romans
+  excerpt: 'In a first-century BCE letter written in verse to his wealthy Roman patron
+    Maecenas, the poet Horace explained why his planned five days away in the country
+    had ended up extending through the rest of August. According to Horace, Rome was
+    entering a season of death. One where the undertakers did well and parents worried
+    about their children, while having business in the city could end up in the worker
+    getting sick. Horace argued that if Maecenas wanted him to remain alive and healthy,
+    the excuse of his fear of the illness should be accepted just as the illness itself
+    would. Here, I’ll be using '
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/5e4a601c-6afe-4e28-b862-10eb66df5374_2048x1682.png
+  source_mode: substack_reader
+  wordcount: 2768
+  editorial_summary: ''
+  image_caption: ''
+  related_posts: []
+  status: summary_only
+  dek: ''
+  topics: []
+  series: []
+  seo_title: ''
+  seo_description: ''
+  primary_keyword: ''
+  topic_cluster: ''
+  indexing_strategy: noindex_stub
+  related_atlases: []
+  related_reference_slugs: []
+  related_story_ids: []
+  search_excerpt: 'In a first-century BCE letter written in verse to his wealthy Roman
+    patron Maecenas, the poet Horace explained why his planned five days away in the
+    country had ended up extending through the rest of August. According to Horace,
+    Rome was entering a season of death. One where the '
+  local_body_path: ''
+  body_synced_at: ''
+  body_source_url: ''
+  body_source_mode: ''
+  body_source_file: ''
+  body_wordcount: null
+  hero_mode: cover
+  notes: ''
+  first_seen_at: '2026-10-28T18:56:10+00:00'
+  last_synced_at: '2026-10-28T18:56:10+00:00'
+  upstream_tags: []
 - slug: an-epidemic-of-advice-during-the
   title: An Epidemic of Advice During the English Sweat in 1529 Germany
   date: '2026-10-19'
