@@ -667,25 +667,32 @@
     "keywords": "american epidemics timeline public health history outbreaks exhibit timeline"
   },
   {
+    "title": "Measles transmission and vaccination",
+    "section": "Newsdesk",
+    "summary": "Monitoring: Population level immunity to measles and rubella 5 years before and after the MR campaign in urban Vellore, South India.",
+    "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
+    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography North America United States"
+  },
+  {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
     "summary": "Monitoring: ECDC to deploy experts as Ebola cases emerge in Kenya and Nigeria",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
-    "keywords": "new_official_source suspected_case confirmed_case severity_or_death transmission_change policy_or_travel healthcare_transmission laboratory_or_genomic Africa Democratic Republic of the Congo / Kenya / Nigeria"
-  },
-  {
-    "title": "Measles transmission and vaccination",
-    "section": "Newsdesk",
-    "summary": "Monitoring: ESWATINI LAUNCHES NATIONAL ACTION PLAN FOR HEALTH SECURITY",
-    "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
-    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography North America United States"
+    "keywords": "new_official_source suspected_case confirmed_case severity_or_death policy_or_travel new_geography Africa Democratic Republic of the Congo / Kenya / Nigeria"
   },
   {
     "title": "Dengue and arboviruses",
     "section": "Newsdesk",
     "summary": "Monitoring: Toward a co-designed dengue early warning system in Vietnam: Stakeholder mapping and expectations in the Mekong Delta Region.",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
-    "keywords": "new_official_source severity_or_death new_geography North America United States"
+    "keywords": "new_official_source severity_or_death North America United States"
+  },
+  {
+    "title": "Occupational and environmental epidemiology",
+    "section": "Newsdesk",
+    "summary": "Monitoring: Notes from the Field: Use of Enhanced Surveillance to Detect Severe Group A Streptococcus Infections Among Persons Experiencing Homelessness - Missoula County, Montana, July 2024-September 2025",
+    "url": "/stories/story_17a354bcafcca4ce-occupational-and-environmental-epidemiology.html",
+    "keywords": "new_official_source severity_or_death policy_or_travel new_geography healthcare_transmission Multi-region Democratic Republic of the Congo / Nigeria / United Kingdom / United States"
   },
   {
     "title": "Polio and wastewater surveillance",
@@ -693,13 +700,6 @@
     "summary": "Monitoring: The Q3 Newsletter for 2026",
     "url": "/stories/story_9ccdd822481fa2b6-polio-and-wastewater-surveillance.html",
     "keywords": "new_official_source severity_or_death Africa South Sudan"
-  },
-  {
-    "title": "Occupational and environmental epidemiology",
-    "section": "Newsdesk",
-    "summary": "Monitoring: Assessing policy readiness for climate-informed infectious disease early warning systems in Vietnam: a scoping review and stakeholder consultation.",
-    "url": "/stories/story_17a354bcafcca4ce-occupational-and-environmental-epidemiology.html",
-    "keywords": "severity_or_death new_geography healthcare_transmission Multi-region Democratic Republic of the Congo / Nigeria / United States"
   },
   {
     "title": "COVID-19 and SARS-CoV-2",
