@@ -683,16 +683,9 @@
   {
     "title": "Dengue and arboviruses",
     "section": "Newsdesk",
-    "summary": "Monitoring: Toward a co-designed dengue early warning system in Vietnam: Stakeholder mapping and expectations in the Mekong Delta Region.",
+    "summary": "Monitoring: Florida Surgeon General Reminds Floridians to Take Steps Against Dengue Ahead of Labor Day Weekend",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
     "keywords": "new_official_source severity_or_death North America United States"
-  },
-  {
-    "title": "Occupational and environmental epidemiology",
-    "section": "Newsdesk",
-    "summary": "Monitoring: Notes from the Field: Use of Enhanced Surveillance to Detect Severe Group A Streptococcus Infections Among Persons Experiencing Homelessness - Missoula County, Montana, July 2024-September 2025",
-    "url": "/stories/story_17a354bcafcca4ce-occupational-and-environmental-epidemiology.html",
-    "keywords": "new_official_source severity_or_death policy_or_travel healthcare_transmission Multi-region Democratic Republic of the Congo / Nigeria / United Kingdom / United States"
   },
   {
     "title": "Polio and wastewater surveillance",
@@ -700,6 +693,13 @@
     "summary": "Monitoring: The Q3 Newsletter for 2026",
     "url": "/stories/story_9ccdd822481fa2b6-polio-and-wastewater-surveillance.html",
     "keywords": "new_official_source severity_or_death policy_or_travel Africa South Sudan"
+  },
+  {
+    "title": "Occupational and environmental epidemiology",
+    "section": "Newsdesk",
+    "summary": "Monitoring: Notes from the Field: Use of Enhanced Surveillance to Detect Severe Group A Streptococcus Infections Among Persons Experiencing Homelessness - Missoula County, Montana, July 2024-September 2025",
+    "url": "/stories/story_17a354bcafcca4ce-occupational-and-environmental-epidemiology.html",
+    "keywords": "new_official_source severity_or_death policy_or_travel new_geography healthcare_transmission Multi-region Democratic Republic of the Congo / Nigeria / United Kingdom / United States"
   },
   {
     "title": "COVID-19 and SARS-CoV-2",
