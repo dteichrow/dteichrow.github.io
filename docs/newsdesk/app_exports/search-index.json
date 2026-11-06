@@ -676,7 +676,7 @@
   {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
-    "summary": "Monitoring: ECDC to deploy experts as Ebola cases emerge in Kenya and Nigeria",
+    "summary": "Monitoring: 31st October 2026 | NCDC Working With Adamawa State To Investigate Suspected Ebola Disease Cases",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
     "keywords": "new_official_source suspected_case confirmed_case severity_or_death transmission_change policy_or_travel healthcare_transmission Africa Democratic Republic of the Congo / Kenya / Nigeria"
   },
@@ -692,21 +692,21 @@
     "section": "Newsdesk",
     "summary": "Monitoring: Toward a co-designed dengue early warning system in Vietnam: Stakeholder mapping and expectations in the Mekong Delta Region.",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
-    "keywords": "new_official_source severity_or_death new_geography North America United States"
+    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography North America United States"
   },
   {
     "title": "Polio and wastewater surveillance",
     "section": "Newsdesk",
     "summary": "Monitoring: The Q3 Newsletter for 2026",
     "url": "/stories/story_9ccdd822481fa2b6-polio-and-wastewater-surveillance.html",
-    "keywords": "new_official_source severity_or_death policy_or_travel Africa South Sudan"
+    "keywords": "new_official_source severity_or_death policy_or_travel healthcare_transmission Africa South Sudan"
   },
   {
-    "title": "COVID-19 and SARS-CoV-2",
+    "title": "Historical epidemiology and ancient pathogens",
     "section": "Newsdesk",
-    "summary": "Monitoring: Respiratory virus surveillance in the WHO African Region Epidemiological Week 43, October 19 to 25 2026",
-    "url": "/stories/story_afd8f5934e291e02-covid-19-and-sars-cov-2.html",
-    "keywords": "new_official_source confirmed_case policy_or_travel laboratory_or_genomic Multi-region Ethiopia / Kenya / United States"
+    "summary": "Monitoring: Stakeholder perspectives on implementing geographic information systems for leprosy elimination in Pakistan: A qualitative study.",
+    "url": "/stories/story_b461b8ac8c062700-historical-epidemiology-and-ancient-pathogens.html",
+    "keywords": "new_official_source confirmed_case policy_or_travel Multi-region Democratic Republic of the Congo / United Kingdom"
   },
   {
     "title": "Ebola virus disease",
