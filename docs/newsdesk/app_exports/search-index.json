@@ -699,7 +699,7 @@
     "section": "Newsdesk",
     "summary": "Monitoring: The Q3 Newsletter for 2026",
     "url": "/stories/story_9ccdd822481fa2b6-polio-and-wastewater-surveillance.html",
-    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel healthcare_transmission Africa South Sudan"
+    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel healthcare_transmission Multi-region South Sudan / United States"
   },
   {
     "title": "Historical epidemiology and ancient pathogens",
@@ -707,6 +707,13 @@
     "summary": "Monitoring: Stakeholder perspectives on implementing geographic information systems for leprosy elimination in Pakistan: A qualitative study.",
     "url": "/stories/story_b461b8ac8c062700-historical-epidemiology-and-ancient-pathogens.html",
     "keywords": "new_official_source confirmed_case policy_or_travel Multi-region Democratic Republic of the Congo / United Kingdom"
+  },
+  {
+    "title": "COVID-19 and SARS-CoV-2",
+    "section": "Newsdesk",
+    "summary": "Monitoring: Real-world safety outcomes of COVID-19 mRNA vaccine: A result from Korea post-marketing surveillance.",
+    "url": "/stories/story_afd8f5934e291e02-covid-19-and-sars-cov-2.html",
+    "keywords": "new_official_source confirmed_case new_geography laboratory_or_genomic Cross-region / unassigned "
   },
   {
     "title": "Ebola virus disease",
