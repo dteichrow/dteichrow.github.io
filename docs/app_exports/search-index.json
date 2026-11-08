@@ -671,14 +671,14 @@
     "section": "Newsdesk",
     "summary": "Monitoring: News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....",
     "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
-    "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel new_geography North America United States"
+    "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel new_geography healthcare_transmission North America United States"
   },
   {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
     "summary": "Monitoring: BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Kenya | Nigeria - Weekly External Situation Report 24, Data as of 1 November 2026",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
-    "keywords": "new_official_source suspected_case confirmed_case severity_or_death policy_or_travel Africa Democratic Republic of the Congo / Kenya / Nigeria"
+    "keywords": "new_official_source suspected_case confirmed_case severity_or_death policy_or_travel new_geography Africa Democratic Republic of the Congo / Kenya / Nigeria"
   },
   {
     "title": "Hantavirus and cruise-ship outbreak",
@@ -699,7 +699,7 @@
     "section": "Newsdesk",
     "summary": "Monitoring: The Q3 Newsletter for 2026",
     "url": "/stories/story_9ccdd822481fa2b6-polio-and-wastewater-surveillance.html",
-    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel Africa South Sudan"
+    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel Multi-region "
   },
   {
     "title": "Historical epidemiology and ancient pathogens",
