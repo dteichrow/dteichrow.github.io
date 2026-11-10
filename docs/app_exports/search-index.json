@@ -1,5 +1,13 @@
 [
   {
+    "title": "Who Counted Plague Deaths in Late-Medieval Cairo?",
+    "display_title": "Who Counted Plague Deaths in Late-Medieval Cairo?",
+    "section": "Essay",
+    "summary": "By April 1460, the inheritance bureau (Dīwān al-Mawārīth) in Cairo under the rule of the Mamluk Sultanate had reported 280 deaths. The funeral prayer ground near Bab al-Nasr, the gate on the northern wall of the city, had seen prayers said over 570 bodies on one Friday alone, the same day the inheritance bureau reported its tally. Mamluk historian Ibn Taghribirdi, son of a senior commander in the Sultanate, entered the two numbers in his records, noting that one prayer ground’s tally was already more than twice the bureau’s, even without the counts from any other prayer grounds. Bab al-Nasr, C",
+    "url": "/essays/who-counted-plague-deaths-in-late/",
+    "keywords": " historical-epidemiology"
+  },
+  {
     "title": "The Ordinary Deaths of the Romans",
     "display_title": "The Ordinary Deaths of the Romans",
     "section": "Essay",
@@ -690,16 +698,9 @@
   {
     "title": "Dengue and arboviruses",
     "section": "Newsdesk",
-    "summary": "Monitoring: Toward a co-designed dengue early warning system in Vietnam: Stakeholder mapping and expectations in the Mekong Delta Region.",
+    "summary": "Monitoring: Florida Surgeon General Reminds Floridians to Take Steps Against Dengue Ahead of Labor Day Weekend",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
     "keywords": "new_official_source severity_or_death North America United States"
-  },
-  {
-    "title": "Polio and wastewater surveillance",
-    "section": "Newsdesk",
-    "summary": "Monitoring: The Q3 Newsletter for 2026",
-    "url": "/stories/story_9ccdd822481fa2b6-polio-and-wastewater-surveillance.html",
-    "keywords": "new_official_source confirmed_case Multi-region "
   },
   {
     "title": "Historical epidemiology and ancient pathogens",
@@ -709,11 +710,25 @@
     "keywords": "new_official_source confirmed_case policy_or_travel Multi-region Democratic Republic of the Congo / India / United Kingdom"
   },
   {
+    "title": "Polio and wastewater surveillance",
+    "section": "Newsdesk",
+    "summary": "Monitoring: The Q3 Newsletter for 2026",
+    "url": "/stories/story_9ccdd822481fa2b6-polio-and-wastewater-surveillance.html",
+    "keywords": "new_official_source Multi-region "
+  },
+  {
     "title": "COVID-19 and SARS-CoV-2",
     "section": "Newsdesk",
     "summary": "Monitoring: Respiratory virus surveillance in the WHO African Region Epidemiological Week 43, October 19 to 25 2026",
     "url": "/stories/story_afd8f5934e291e02-covid-19-and-sars-cov-2.html",
     "keywords": "new_official_source confirmed_case new_geography laboratory_or_genomic Cross-region / unassigned "
+  },
+  {
+    "title": "Tuberculosis and antimicrobial resistance",
+    "section": "Newsdesk",
+    "summary": "Monitoring: Changing Patterns of Extrapulmonary Tuberculosis Over 60 Years in a Brazilian University Hospital.",
+    "url": "/stories/story_8b3f807bbfd61cab-tuberculosis-and-antimicrobial-resistance.html",
+    "keywords": "severity_or_death East Asia "
   },
   {
     "title": "Ebola virus disease",
