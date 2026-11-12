@@ -700,21 +700,14 @@
     "section": "Newsdesk",
     "summary": "Monitoring: Florida Surgeon General Reminds Floridians to Take Steps Against Dengue Ahead of Labor Day Weekend",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
-    "keywords": "new_official_source severity_or_death North America United States"
-  },
-  {
-    "title": "Polio and wastewater surveillance",
-    "section": "Newsdesk",
-    "summary": "Monitoring: The Q3 Newsletter for 2026",
-    "url": "/stories/story_9ccdd822481fa2b6-polio-and-wastewater-surveillance.html",
-    "keywords": "new_official_source Multi-region "
+    "keywords": "new_official_source severity_or_death transmission_change North America United States"
   },
   {
     "title": "Tuberculosis and antimicrobial resistance",
     "section": "Newsdesk",
     "summary": "Monitoring: Zoonotic tuberculosis at the cattle-human-captive wildlife interface in Bangladesh: A systematic evidence map.",
     "url": "/stories/story_8b3f807bbfd61cab-tuberculosis-and-antimicrobial-resistance.html",
-    "keywords": "confirmed_case severity_or_death laboratory_or_genomic Multi-region "
+    "keywords": "confirmed_case severity_or_death laboratory_or_genomic South Asia "
   },
   {
     "title": "Ebola virus disease",
