@@ -25,6 +25,8 @@ This repository owns the final GitHub Pages artifact. Edit source records and re
 
 Python 3.12+ and Node.js 22+ are used by CI. Local verification also ran on Python 3.14.
 
+The shared artifact-validation job runs on **Ubuntu 24.04**, pinned explicitly in `.github/workflows/validate-artifact.yml`. Playwright is locked to version 1.55.0 and cannot install Chromium on Ubuntu 26.04. GitHub's migration of `ubuntu-latest` to 26.04 caused publishing to fail during dependency installation in November 2026. Review the runner image together with the browser dependencies when upgrading them, and verify the complete browser/performance gate before changing this pin. Both pull-request checks and production deployment use this shared job.
+
 ```sh
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
