@@ -679,7 +679,7 @@
     "section": "Newsdesk",
     "summary": "Monitoring: News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....",
     "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
-    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography North America United States"
+    "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel new_geography North America United States"
   },
   {
     "title": "Ebola virus disease",
@@ -705,9 +705,9 @@
   {
     "title": "Tuberculosis and antimicrobial resistance",
     "section": "Newsdesk",
-    "summary": "Monitoring: Multiple Sclerosis Relapses Are Associated With EBV-Specific T-Cell Expansion Amid Broad Immune Activation.",
+    "summary": "Monitoring: Geographical targeting of active case-finding for tuberculosis in Pakistan using artificial intelligence software (SPOT-TB): a pragmatic, stepped wedge, cluster-randomised control trial.",
     "url": "/stories/story_8b3f807bbfd61cab-tuberculosis-and-antimicrobial-resistance.html",
-    "keywords": "new_official_source confirmed_case severity_or_death laboratory_or_genomic Multi-region "
+    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel laboratory_or_genomic Multi-region "
   },
   {
     "title": "Ebola virus disease",
