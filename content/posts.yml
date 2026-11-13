@@ -7,13 +7,10 @@ posts:
     the rule of the Mamluk Sultanate had reported 280 deaths. The funeral prayer ground
     near Bab al-Nasr, the gate on the northern wall of the city, had seen prayers
     said over 570 bodies on one Friday alone, the same day the inheritance bureau
-    reported its tally. Mamluk historian Ibn Taghribirdi, son of a senior commander
-    in the Sultanate, entered the two numbers in his records, noting that one prayer
-    ground’s tally was already more than twice the bureau’s, even without the counts
-    from any other prayer grounds. Bab al-Nasr, C
+    reported its tally. Mamluk historian
   cover_image: https://substack-post-media.s3.amazonaws.com/public/images/e7edceac-fc8e-4c0d-b1fd-24858be851ed_807x1024.jpeg
-  source_mode: substack_reader
-  wordcount: 1998
+  source_mode: substack_archive_api
+  wordcount: 1609
   editorial_summary: ''
   image_caption: ''
   related_posts: []
@@ -42,23 +39,23 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-11-10T17:58:28+00:00'
-  last_synced_at: '2026-11-10T17:58:28+00:00'
-  upstream_tags: []
+  last_synced_at: '2026-11-13T22:43:01+00:00'
+  upstream_tags:
+  - History
+  - Black Death
+  - Medical History
+  - Egypt
+  substack_id: 224326207
 - slug: the-ordinary-deaths-of-the-romans
   title: The Ordinary Deaths of the Romans
   date: '2026-10-28'
   canonical_url: https://theedgeofepidemiology.substack.com/p/the-ordinary-deaths-of-the-romans
-  excerpt: 'In a first-century BCE letter written in verse to his wealthy Roman patron
+  excerpt: In a first-century BCE letter written in verse to his wealthy Roman patron
     Maecenas, the poet Horace explained why his planned five days away in the country
-    had ended up extending through the rest of August. According to Horace, Rome was
-    entering a season of death. One where the undertakers did well and parents worried
-    about their children, while having business in the city could end up in the worker
-    getting sick. Horace argued that if Maecenas wanted him to remain alive and healthy,
-    the excuse of his fear of the illness should be accepted just as the illness itself
-    would. Here, I’ll be using '
-  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/5e4a601c-6afe-4e28-b862-10eb66df5374_2048x1682.png
-  source_mode: substack_reader
-  wordcount: 2768
+    had ended up extending through the rest of August.
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/360ac880-b6ab-41d8-9694-459595c22920_2048x1265.png
+  source_mode: substack_archive_api
+  wordcount: 2193
   editorial_summary: ''
   image_caption: ''
   related_posts: []
@@ -87,23 +84,22 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-10-28T18:56:10+00:00'
-  last_synced_at: '2026-10-28T18:56:10+00:00'
-  upstream_tags: []
+  last_synced_at: '2026-11-13T22:43:01+00:00'
+  upstream_tags:
+  - science
+  - History
+  - Ancient Rome
+  - paleopathology
+  substack_id: 222505560
 - slug: an-epidemic-of-advice-during-the
   title: An Epidemic of Advice During the English Sweat in 1529 Germany
   date: '2026-10-19'
   canonical_url: https://theedgeofepidemiology.substack.com/p/an-epidemic-of-advice-during-the
-  excerpt: In August of 1529, Martin Luther was worrying that the printed remedy for
-    English sweating sickness going around was terrifying people who were just sweating
-    for ordinary reasons. He claimed the pamphlet in question, meant to give people
-    the information needed to identify the disease if it came around, could in reality
-    turn that recognition into alarm bells. The sickness, and the information about
-    it, was quickly making its way from one German city to the next. You likely remember
-    a similar phenomenon from the early COVID-19 pandemic which the World Health Organization
-    deemed an infodemic in r
-  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/d1ce123f-f2b2-45b4-a962-3c7a0f4e8179_360x480.jpeg
-  source_mode: substack_reader
-  wordcount: 1184
+  excerpt: A review of Christopher Hutchinson’s ‘Medical Misinformation in Early Modern
+    Germany’ (University of Delaware Press, 2026).
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/36b96f83-9de8-45b4-bf58-26794de83192_500x717.jpeg
+  source_mode: substack_archive_api
+  wordcount: 1022
   editorial_summary: ''
   image_caption: ''
   related_posts: []
@@ -132,23 +128,24 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-10-19T13:38:11+00:00'
-  last_synced_at: '2026-10-19T13:38:11+00:00'
-  upstream_tags: []
+  last_synced_at: '2026-11-13T22:43:01+00:00'
+  upstream_tags:
+  - science
+  - History
+  - epidemiology
+  - history of medicine
+  - Medical History
+  - English Sweat
+  substack_id: 221032936
 - slug: fabricated-deaths-and-rfk-jrs-latest
   title: “Fabricated” Deaths and RFK Jr.’s Latest Disgrace
   date: '2026-10-14'
   canonical_url: https://theedgeofepidemiology.substack.com/p/fabricated-deaths-and-rfk-jrs-latest
-  excerpt: 'Robert F. Kennedy Jr. at his Senate HELP Committee confirmation hearing,
-    January 30, 2025. I’m also doing watchdog reporting on public-health governance
-    in Los Angeles. Political affiliation won’t determine which failures I investigate.
-    When Pennsylvania health officials announced two measles-associated deaths on
-    August 25th, Robert F. Kennedy Jr. later suggested that they might’ve been “altogether
-    fabricated by one of the Governor’s hopeful staffers.” It’s the kind of conspiratorial
-    nonsense that has defined his working life and his tenure as Health and Human
-    Services secretary. He cited the '
+  excerpt: I’m also doing watchdog reporting on public-health governance in Los Angeles.
+    Political affiliation won’t determine which failures I investigate.
   cover_image: https://substack-post-media.s3.amazonaws.com/public/images/a5bf6265-2b3e-4d52-ae0e-2f88bf17f622_1633x893.png
-  source_mode: substack_reader
-  wordcount: 1862
+  source_mode: substack_archive_api
+  wordcount: 1469
   editorial_summary: ''
   image_caption: ''
   related_posts: []
@@ -177,23 +174,22 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-10-14T13:51:05+00:00'
-  last_synced_at: '2026-10-14T13:51:05+00:00'
-  upstream_tags: []
+  last_synced_at: '2026-11-13T22:43:01+00:00'
+  upstream_tags:
+  - science
+  - RFK
+  - Politics
+  - HHS
+  - measles
+  substack_id: 220274365
 - slug: mental-healths-missing-middle
   title: Mental Health’s Missing Middle
   date: '2026-10-10'
   canonical_url: https://theedgeofepidemiology.substack.com/p/mental-healths-missing-middle
-  excerpt: In the United States, the common cultural shorthand for asylums could be
-    best described by One Flew Over the Cuckoo’s Nest , with the tyrannical Nurse
-    Ratched in charge of enforcing rules as treatments and an emphasis on control
-    over care. The decline of psychiatric institutions had begun long before the 1975
-    release of the film in the wake of legal changes, new medications, and ever-shrinking
-    state budgets for these types of institutions, as well as exposés like The Shame
-    of the States by Albert Deutsch and Bedlam 1946 by Albert Maisel. Historian LauraHirshbein
-    is of the opinion that there we
+  excerpt: A history of American asylums and the case for humane care that lasts.
   cover_image: https://substack-post-media.s3.amazonaws.com/public/images/8e99540a-5b91-4be0-b394-617ceff9db40_2048x1296.png
-  source_mode: substack_reader
-  wordcount: 6118
+  source_mode: substack_archive_api
+  wordcount: 5206
   editorial_summary: ''
   image_caption: ''
   related_posts: []
@@ -222,24 +218,25 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-10-10T18:42:43+00:00'
-  last_synced_at: '2026-10-10T18:42:43+00:00'
-  upstream_tags: []
+  last_synced_at: '2026-11-13T22:43:01+00:00'
+  upstream_tags:
+  - asylums
+  - health policy
+  - History
+  - mental health
+  - history of medicine
+  substack_id: 219748424
 - slug: months-after-la-county-cut-clinical
   title: Months After LA County Cut Clinical Services at Seven Public Health Sites,
     It Has Not Shown Whether Patients Found Replacement Care
   date: '2026-09-29'
   canonical_url: https://theedgeofepidemiology.substack.com/p/months-after-la-county-cut-clinical
-  excerpt: Notice of the Torrance, CA clinic moving and differences in how services
-    will be provided going forward. Picture taken by the author. This piece was originally
-    written for and published in Knock LA. I thank them for their excellent editorial
-    guidance and for taking a shot on me as a first time journalist. Measure ER starts
-    on October 1, and a county-affiliated nonprofit is soliciting pledges. However,
-    the county still hasn’t publicly shown which services have been replaced or whether
-    referred patients received them. In February, Los Angeles County’s Department
-    of Public Health announced the en
+  excerpt: This is Part 1 of the first Edge Investigation piece into the L.A. County
+    Department of Public Health concerning funding and service cuts and impacts on
+    patients.
   cover_image: https://substack-post-media.s3.amazonaws.com/public/images/0cc758b5-2ea9-4159-936a-5ce8c7e6449a_1024x768.jpeg
-  source_mode: substack_reader
-  wordcount: 1792
+  source_mode: substack_archive_api
+  wordcount: 1607
   editorial_summary: ''
   image_caption: ''
   related_posts: []
@@ -268,24 +265,22 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-09-29T15:59:36+00:00'
-  last_synced_at: '2026-09-29T15:59:36+00:00'
-  upstream_tags: []
+  last_synced_at: '2026-11-13T22:43:01+00:00'
+  upstream_tags:
+  - public health
+  - medicine
+  - Los Angeles
+  substack_id: 217831564
 - slug: medical-error-kills-251000-per-year
   title: Medical Error Kills 251,000 per year? Rogan and Huberman Bring Back a Zombie
     Statistic
   date: '2026-09-24'
   canonical_url: https://theedgeofepidemiology.substack.com/p/medical-error-kills-251000-per-year
-  excerpt: Joe Rogan and Andrew Huberman discuss the disputed estimate that medical
-    error causes 251,000 U.S. deaths a year. Screenshot from YouTube. Rogan and Huberman
-    both have millions of listeners, so whenever they come together for a conversation
-    at least one clip goes viral on social media. Inthe conversation that came out
-    last week, the viral clip I’ve been seeing has been about a medical-error death
-    toll of 251,000 per year. It’s a sticky number to repeat and comes from a peer-reviewed
-    paperin a legitimate journal ( BMJ ). The problem is, the estimate has been heavily
-    disputed due to methodologic
+  excerpt: Rogan and Huberman both have millions of listeners, so whenever they come
+    together for a conversation at least one clip goes viral on social media.
   cover_image: https://substack-post-media.s3.amazonaws.com/public/images/dccc3013-d6a2-4fb1-970b-533c60ce2d47_876x604.png
-  source_mode: substack_reader
-  wordcount: 1395
+  source_mode: substack_archive_api
+  wordcount: 1196
   editorial_summary: ''
   image_caption: ''
   related_posts: []
@@ -314,23 +309,23 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-09-24T22:32:09+00:00'
-  last_synced_at: '2026-09-24T22:32:09+00:00'
-  upstream_tags: []
+  last_synced_at: '2026-11-13T22:43:01+00:00'
+  upstream_tags:
+  - science
+  - Huberman
+  - Joe Rogan
+  - science communication
+  - Medical Error
+  substack_id: 217299211
 - slug: the-missing-evidence-in-the-case
   title: The Missing Evidence in the Case Against Food Stamps
   date: '2026-09-16'
   canonical_url: https://theedgeofepidemiology.substack.com/p/the-missing-evidence-in-the-case
-  excerpt: On August 29th, RealClearScience published an essay by Edward Archer, PhD,
-    MS, titled “The Scientific and Ethical Arguments for Ending Food Stamps” in which
-    he blames governmental food assistance programs for contributing to obesity, diabetes,
-    and heart disease in poorer Americans, arguing that ending the Supplemental Nutrition
-    Assistance Program and imposing work requirements for able-bodied adults would
-    further improve current recipients’ health through getting them to eat less and
-    move more. To support his proposal, Archer cites research into physical activity,
-    caloric restriction, trends f
+  excerpt: This piece was originally published at RealClearScience as a reply/rebuttal
+    to Edward Archer’s call to end SNAP.
   cover_image: https://substack-post-media.s3.amazonaws.com/public/images/8da73535-67ba-4f01-8cd9-35f7a3d884a7_750x752.png
-  source_mode: substack_reader
-  wordcount: 2570
+  source_mode: substack_archive_api
+  wordcount: 2281
   editorial_summary: ''
   image_caption: ''
   related_posts: []
@@ -359,23 +354,24 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-09-16T17:08:36+00:00'
-  last_synced_at: '2026-09-16T17:08:36+00:00'
-  upstream_tags: []
+  last_synced_at: '2026-11-13T22:43:01+00:00'
+  upstream_tags:
+  - health policy
+  - SNAP
+  - epidemiology
+  - science communication
+  - nutrition
+  - debate
+  substack_id: 215988704
 - slug: the-nuclear-fallout-recorded-in-baby
   title: The Nuclear Fallout Recorded in Baby Teeth
   date: '2026-09-09'
   canonical_url: https://theedgeofepidemiology.substack.com/p/the-nuclear-fallout-recorded-in-baby
-  excerpt: 'Tommy Blumenthal, a seven-year-old donor from Clayton, Missouri, participates
-    in the Baby Tooth Survey. Credit: State Historical Society of Missouri, Arthur
-    Witman 120mm Photograph Collection, S0732. On July 15, 1960, a kid from Coventry,
-    Rhode Island, named Gerald Allen wrote “I Would Like To Donate My tooth to Science.”
-    His adorable letter was an offer to send in a tooth for a project investigating
-    what the fallout from nuclear weapon testing had left in the developing bodies
-    of children. It was sent to the Baby Tooth Survey, a research study that had been
-    started by the dental schools at St'
+  excerpt: The St. Louis-based citizen science project where parents sent in kids’
+    baby teeth to measure fallout
   cover_image: https://substack-post-media.s3.amazonaws.com/public/images/c48dc3b1-7f96-45ea-851e-57a3d2c283a7_800x902.png
-  source_mode: substack_reader
-  wordcount: 1837
+  source_mode: substack_archive_api
+  wordcount: 1537
   editorial_summary: ''
   image_caption: ''
   related_posts: []
@@ -404,23 +400,21 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-09-13T16:10:59+00:00'
-  last_synced_at: '2026-09-13T16:10:59+00:00'
-  upstream_tags: []
+  last_synced_at: '2026-11-13T22:43:01+00:00'
+  upstream_tags:
+  - science
+  - american history
+  - public health
+  - nuclear testing
+  substack_id: 214746860
 - slug: project-sunshines-supply-of-human
   title: Project SUNSHINE’s Supply of Human Bones
   date: '2026-09-05'
   canonical_url: https://theedgeofepidemiology.substack.com/p/project-sunshines-supply-of-human
-  excerpt: 'Project SUNSHINE Bulletin No. 11, issued by the University of Chicago’s
-    Enrico Fermi Institute for Nuclear Studies on December 1, 1955. The archival copy
-    bears later markings confirming its declassification. Source: U.S. Department
-    of Energy archives, F. C. Libby collection, via the RMI Nuclear Justice Documents
-    database. On October 26, 1953, Robert Dudley of the Atomic Energy Commission’s
-    Division of Biology and Medicine wrote a letter to Shields Warren over at Boston’s
-    New England Deaconess Hospital’s Cancer Research Institute. Warren was a pathologist
-    at Harvard Medical School and had previ'
-  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/1f4cca4f-3075-45f6-8887-0275407d7047_1609x2048.png
-  source_mode: substack_reader
-  wordcount: 2417
+  excerpt: How researchers got human tissue to measure nuclear fallout
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/9fe7101e-86dd-4f42-8434-c76ea2179159_1536x1024.png
+  source_mode: substack_archive_api
+  wordcount: 1990
   status: summary_only
   dek: How Project SUNSHINE built a supply of human bones to measure radioactive fallout,
     and what its correspondence reveals about the people and institutions behind the
@@ -450,8 +444,12 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-09-05T13:54:39+00:00'
-  last_synced_at: '2026-09-05T13:54:39+00:00'
-  upstream_tags: []
+  last_synced_at: '2026-11-13T22:43:01+00:00'
+  upstream_tags:
+  - science
+  - History
+  - public health
+  - nuclear testing
   image_caption: 'Project SUNSHINE Bulletin No. 11, issued by the University of Chicago’s
     Enrico Fermi Institute for Nuclear Studies on December 1, 1955. The archival copy
     bears later markings confirming its declassification. Source: U.S. Department
@@ -461,21 +459,17 @@ posts:
     radioactive fallout, and what its correspondence reveals about the people and
     institutions behind the samples.
   related_posts: []
+  substack_id: 214226160
 - slug: college-footballs-century-long-experiment
   title: College Football’s Century-Long Experiment in Injury Prevention
   date: '2026-08-27'
   canonical_url: https://theedgeofepidemiology.substack.com/p/college-footballs-century-long-experiment
   excerpt: It’s college football season, my favorite time of year. Another year of
     rivalries, institutional histories, and loyal fans keeping ancient grievances
-    alive. Not that you care, but I’m a UCLA fan. With new head coach Bob Chesney
-    taking over fresh off of getting James Madison to the College Football Playoff,
-    we’ve finally seen the kind of institutional backing from university leadership
-    to compete in today’s CFB landscape. But I won’t drone on too long about why I
-    love the sport or am excited for this year. That said, having that kind of interest
-    in the game made me very curious how it came to b
+    alive.
   cover_image: https://substack-post-media.s3.amazonaws.com/public/images/ae5ab1f7-8d5c-47eb-beb5-4750433eaad6_1600x1264.jpeg
-  source_mode: substack_reader
-  wordcount: 4548
+  source_mode: substack_archive_api
+  wordcount: 4003
   status: summary_only
   dek: ''
   topics: []
@@ -501,17 +495,24 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-08-27T20:36:15+00:00'
-  last_synced_at: '2026-08-27T20:36:15+00:00'
-  upstream_tags: []
+  last_synced_at: '2026-11-13T22:43:01+00:00'
+  upstream_tags:
+  - History
+  - Football
+  - epidemiology
+  - sports medicine
   related_posts: []
+  substack_id: 212931789
+  editorial_summary: ''
+  image_caption: ''
 - slug: supplement-labels-should-be-a-test
   title: Supplement Labels Should Be a Test Result
   date: '2026-08-19'
   canonical_url: https://theedgeofepidemiology.substack.com/p/supplement-labels-should-be-a-test
   excerpt: Why every supplement batch should be verified before sale
   cover_image: https://substack-post-media.s3.amazonaws.com/public/images/87e51b59-0471-4b43-a28e-93108d6fe967_1920x2560.jpeg
-  source_mode: substack_reader
-  wordcount: 3180
+  source_mode: substack_archive_api
+  wordcount: 3155
   status: summary_only
   dek: ''
   topics: []
@@ -534,9 +535,16 @@ posts:
   hero_mode: cover
   notes: ''
   first_seen_at: '2026-08-19T13:16:01+00:00'
-  last_synced_at: '2026-08-19T13:16:01+00:00'
-  upstream_tags: []
+  last_synced_at: '2026-11-13T22:43:01+00:00'
+  upstream_tags:
+  - science
+  - History
+  - supplements
+  - Health Misinformation
   related_posts: []
+  substack_id: 211780470
+  editorial_summary: ''
+  image_caption: ''
 - slug: one-in-six-the-direct-and-indirect
   title: 'One in Six: The direct and indirect toll of Iceland’s 1783 Laki eruption'
   date: '2026-08-10'
