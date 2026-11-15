@@ -698,9 +698,9 @@
   {
     "title": "Dengue and arboviruses",
     "section": "Newsdesk",
-    "summary": "Monitoring: Genomic epidemiology of CHIKV during the largest outbreak in Mainland China",
+    "summary": "Monitoring: Notes from the Field: Dengue Outbreak",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
-    "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel new_geography laboratory_or_genomic North America United States"
+    "keywords": "new_official_source suspected_case confirmed_case severity_or_death policy_or_travel new_geography North America United States"
   },
   {
     "title": "Tuberculosis and antimicrobial resistance",
@@ -708,6 +708,13 @@
     "summary": "Monitoring: Geographical targeting of active case-finding for tuberculosis in Pakistan using artificial intelligence software (SPOT-TB): a pragmatic, stepped wedge, cluster-randomised control trial.",
     "url": "/stories/story_8b3f807bbfd61cab-tuberculosis-and-antimicrobial-resistance.html",
     "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel laboratory_or_genomic Multi-region "
+  },
+  {
+    "title": "Polio and wastewater surveillance",
+    "section": "Newsdesk",
+    "summary": "Monitoring: Weak healthcare system keeping polio alive in Pakistan: Report",
+    "url": "/stories/story_9ccdd822481fa2b6-polio-and-wastewater-surveillance.html",
+    "keywords": "South Asia India"
   },
   {
     "title": "Ebola virus disease",
