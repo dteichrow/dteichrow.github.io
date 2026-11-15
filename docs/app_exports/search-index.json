@@ -679,14 +679,14 @@
     "section": "Newsdesk",
     "summary": "Monitoring: News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....",
     "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
-    "keywords": "new_official_source confirmed_case severity_or_death new_geography North America United States"
+    "keywords": "new_official_source suspected_case confirmed_case severity_or_death new_geography North America United States"
   },
   {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
     "summary": "Monitoring: Six months on, accessing hard-to-reach communities key to halting Ebola outbreak",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
-    "keywords": "new_official_source confirmed_case severity_or_death transmission_change new_geography Multi-region Democratic Republic of the Congo / Kenya / Nigeria / United States"
+    "keywords": "new_official_source confirmed_case severity_or_death new_geography Multi-region Democratic Republic of the Congo / Kenya / Nigeria / United States"
   },
   {
     "title": "Hantavirus and cruise-ship outbreak",
@@ -708,13 +708,6 @@
     "summary": "Monitoring: Geographical targeting of active case-finding for tuberculosis in Pakistan using artificial intelligence software (SPOT-TB): a pragmatic, stepped wedge, cluster-randomised control trial.",
     "url": "/stories/story_8b3f807bbfd61cab-tuberculosis-and-antimicrobial-resistance.html",
     "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel laboratory_or_genomic Multi-region "
-  },
-  {
-    "title": "Polio and wastewater surveillance",
-    "section": "Newsdesk",
-    "summary": "Monitoring: Weak healthcare system keeping polio alive in Pakistan: Report",
-    "url": "/stories/story_9ccdd822481fa2b6-polio-and-wastewater-surveillance.html",
-    "keywords": "South Asia India"
   },
   {
     "title": "Ebola virus disease",
