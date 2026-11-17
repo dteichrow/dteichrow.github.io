@@ -675,18 +675,18 @@
     "keywords": "american epidemics timeline public health history outbreaks exhibit timeline"
   },
   {
-    "title": "Ebola virus disease",
-    "section": "Newsdesk",
-    "summary": "Monitoring: Six months on, accessing hard-to-reach communities key to halting Ebola outbreak",
-    "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
-    "keywords": "new_official_source confirmed_case severity_or_death transmission_change new_geography Multi-region Democratic Republic of the Congo / Kenya / Nigeria / United States"
-  },
-  {
     "title": "Measles transmission and vaccination",
     "section": "Newsdesk",
     "summary": "Monitoring: Changes in full vaccination coverage and in the gap between poor and non-poor households among children aged 12-23 months in the Democratic Republic of the Congo, 2013-14 to 2023-24: a comparison of two Demographic and Health surveys.",
     "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
     "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography North America United States"
+  },
+  {
+    "title": "Ebola virus disease",
+    "section": "Newsdesk",
+    "summary": "Monitoring: Six months on, accessing hard-to-reach communities key to halting Ebola outbreak",
+    "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
+    "keywords": "new_official_source confirmed_case severity_or_death transmission_change new_geography Multi-region Democratic Republic of the Congo / Kenya / Nigeria / United States"
   },
   {
     "title": "Hantavirus and cruise-ship outbreak",
@@ -700,21 +700,21 @@
     "section": "Newsdesk",
     "summary": "Monitoring: Notes from the Field: Dengue Outbreak",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
-    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel North America United States"
+    "keywords": "new_official_source confirmed_case severity_or_death transmission_change policy_or_travel North America United States"
   },
   {
     "title": "Polio and wastewater surveillance",
     "section": "Newsdesk",
     "summary": "Monitoring: Report of the Regional Immunization Technical Advisory Group meeting, Addis Ababa, July 2026",
     "url": "/stories/story_9ccdd822481fa2b6-polio-and-wastewater-surveillance.html",
-    "keywords": "new_official_source severity_or_death policy_or_travel Africa Democratic Republic of the Congo / Uganda"
+    "keywords": "new_official_source policy_or_travel Africa Democratic Republic of the Congo / Uganda"
   },
   {
     "title": "Tuberculosis and antimicrobial resistance",
     "section": "Newsdesk",
     "summary": "Monitoring: Geographical targeting of active case-finding for tuberculosis in Pakistan using artificial intelligence software (SPOT-TB): a pragmatic, stepped wedge, cluster-randomised control trial.",
     "url": "/stories/story_8b3f807bbfd61cab-tuberculosis-and-antimicrobial-resistance.html",
-    "keywords": "new_official_source confirmed_case policy_or_travel laboratory_or_genomic Multi-region "
+    "keywords": "new_official_source policy_or_travel laboratory_or_genomic Multi-region "
   },
   {
     "title": "COVID-19 and SARS-CoV-2",
