@@ -209,11 +209,11 @@ small {
 }
 .hero-home {
   max-width: none;
-  padding: 55px 0 40px;
+  padding: 38px 0 32px;
 }
 .hero-home .hero-title {
-  font-size: clamp(3.3rem, 6.4vw, 6rem);
-  max-width: 1000px;
+  font-size: clamp(3rem, 5.4vw, 5rem);
+  text-wrap: initial;
 }
 .kicker {
   font: 700 11px/1.5 var(--utility);
@@ -223,20 +223,9 @@ small {
   margin-bottom: 16px;
 }
 .hero-intro {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5vw;
-  max-width: 990px;
-}
-.hero-intro p {
-  font-size: 17px;
-  line-height: 1.6;
-  margin: 0;
-}
-.hero-intro p:first-child {
-  font-family: var(--display);
-  font-size: 23px;
-  line-height: 1.4;
+  max-width: 65ch;
+  font: clamp(1.12rem, 2vw, 1.38rem)/1.45 var(--display);
+  margin-bottom: 0;
 }
 .subtitle {
   max-width: 820px;
@@ -281,7 +270,7 @@ small {
 }
 .opening-work {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
   gap: 4vw;
   border-top: 1px solid var(--ink);
   padding: 28px 0 55px;
@@ -291,12 +280,13 @@ small {
 }
 .featured-essay .site-card {
   border: 0;
+  padding-top: 0;
 }
 .featured-essay .essay-card h3 {
   font-size: clamp(2rem, 2.8vw, 2.8rem);
 }
 .featured-essay .essay-card-media {
-  max-height: 260px;
+  height: clamp(210px, 21vw, 300px);
 }
 .featured-essay .essay-card-media img {
   object-position: center 28%;
@@ -313,7 +303,6 @@ small {
   display: block;
   width: 100%;
 }
-.flagship-preview .kicker,
 .flagship-preview a {
   color: #e0c786;
 }
@@ -322,9 +311,7 @@ small {
 }
 .flagship-preview p {
   font-size: 15px;
-}
-.flagship-preview .kicker {
-  font-size: 11px;
+  margin-bottom: 0;
 }
 .home-section {
   border-top: 1px solid var(--ink);
@@ -389,6 +376,23 @@ small {
   height: 100%;
   object-fit: cover;
 }
+.essay-card-illustrated .essay-card-media {
+  position: relative;
+  margin-bottom: 3px;
+}
+.essay-card-illustrated .essay-card-media img {
+  position: absolute;
+  right: 0;
+  width: 277%;
+  max-width: none;
+  object-position: right center;
+}
+.essay-art-credit {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: var(--slate);
+  font-size: 0.75rem;
+}
 .card-utility-row {
   display: flex;
   gap: 10px;
@@ -452,6 +456,13 @@ small {
   background: #ebe9de;
   padding-left: 25px;
   padding-right: 25px;
+}
+.dispatch-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+  margin: 0;
+  padding-left: 20px;
 }
 .commission-strip {
   border-block: 1px solid var(--ink);
@@ -541,19 +552,22 @@ small {
   font-size: clamp(1.7rem, 2.8vw, 2.5rem);
 }
 .about-josie {
-  width: min(100%, 420px);
-  margin: 0 0 42px;
-  padding-top: 18px;
-  border-top: 1px solid var(--line);
+  margin: 0;
 }
 .about-layout {
-  max-width: 1040px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 24px 56px;
+  border-top: 1px solid var(--line);
+  padding-top: 28px;
+}
+.about-layout h2 {
+  font-size: clamp(1.5rem, 3vw, 2.15rem);
 }
 .about-josie img {
   display: block;
   width: 100%;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
+  height: auto;
 }
 .about-josie figcaption {
   margin-top: 8px;
@@ -868,9 +882,6 @@ th {
   .opening-work {
     gap: 25px;
   }
-  .hero-intro {
-    gap: 30px;
-  }
   .commission-strip {
     align-items: start;
     flex-direction: column;
@@ -927,7 +938,6 @@ th {
   .hero-title {
     font-size: 2.8rem;
   }
-  .hero-intro,
   .opening-work,
   .three-up,
   .two-up,
@@ -935,15 +945,6 @@ th {
   .service-package-card,
   .service-process {
     grid-template-columns: 1fr;
-  }
-  .hero-intro {
-    gap: 17px;
-  }
-  .hero-intro p:first-child {
-    font-size: 22px;
-  }
-  .hero-intro p {
-    font-size: 15px;
   }
   .opening-work {
     gap: 25px;
@@ -1126,9 +1127,11 @@ th {
 }
 
 /* A readable professional record, with the same content in the PDF download. */
-.about-introduction { display: grid; grid-template-columns: minmax(0, 1fr) 240px; gap: 56px; align-items: start; }
-.about-portrait { display: block; width: 100%; height: auto; border-radius: 3px; margin-top: 8px; }
-.about-cv-intro { max-width: 48ch; margin-top: 24px; }
+.about-introduction { display: grid; grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr); gap: clamp(28px, 5vw, 64px); align-items: start; }
+.about-name { display: flex; gap: 18px; align-items: center; margin-bottom: 21px; }
+.about-name .hero-title { font-size: clamp(2.4rem, 4.1vw, 4rem); margin: 0; text-wrap: initial; }
+.about-portrait { display: block; width: clamp(72px, 9vw, 112px); height: auto; border-radius: 3px; }
+.about-bio > p { max-width: 53ch; }
 .cv-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0 0; }
 .cv-document { max-width: 860px; }
 .cv-document p, .cv-document li { overflow-wrap: anywhere; }
@@ -1151,7 +1154,7 @@ th {
 .cv-publications p { margin: 6px 0; }
 @media (max-width: 700px) {
   .about-introduction { grid-template-columns: 1fr; gap: 28px; }
-  .about-portrait { width: 180px; }
+  .about-layout { grid-template-columns: 1fr; gap: 18px; }
   .cv-actions .button { text-align: center; }
 }
 @media print {
