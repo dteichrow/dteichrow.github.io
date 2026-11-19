@@ -5,7 +5,7 @@ from .common import format_display_date, link_for, normalize_post_types
 from .site_shell import base_html
 from .site_cv import render_cv_actions
 from .site_images import render_exhibit_image
-from .site_cards import render_post_card, render_tool_card, render_story_card
+from .site_cards import render_post_card, render_tool_card
 from .site_content import (
     post_display_title,
     post_seo_description,
@@ -19,10 +19,12 @@ def render_home(posts, tools, latest, base_url):
         return html.escape(link_for(base_url, route))
 
     featured = posts[0] if posts else None
-    feature = render_post_card(featured, base_url, featured=True) if featured else ""
+    feature = render_post_card(featured, base_url, featured=True, eager=True) if featured else ""
     recent = "".join(render_post_card(p, base_url) for p in posts[1:4])
     stories = "".join(
-        render_story_card(p, base_url) for p in latest.get("stories", [])[:3]
+        f'<li><a href="{href(story["story_web_path"])}">{html.escape(story["display_title"])}</a></li>'
+        for story in latest.get("stories", [])[:3]
+        if story.get("story_web_path") and story.get("display_title")
     )
     featured_exhibit_ids = {
         "american-epidemic-timeline",
@@ -41,16 +43,16 @@ def render_home(posts, tools, latest, base_url):
         active="home",
         base_url=base_url,
         body=f'''
-    <section class="hero hero-home"><p class="kicker">History · Disease · Human arrangements</p>
-    <h1 class="hero-title">Disease follows <br>human arrangements.</h1>
-    <div class="hero-intro"><p>Ships and barracks. Markets and wells. The crowded room and the delayed decision. Disease moves through the worlds we build.</p><p>I’m Devin Teichrow, a UCLA-trained epidemiologist and science writer. I write about the evidence disease leaves behind—and the institutions that shape its course.</p></div></section>
+    <section class="hero hero-home">
+    <h1 class="hero-title">Disease follows human arrangements.</h1>
+    <p class="hero-intro">I’m Devin Teichrow, a UCLA-trained epidemiologist and science writer. I follow outbreaks through the records people leave behind, from medieval Cairo to health departments today.</p></section>
     <section class="opening-work" aria-label="Featured work"><div class="featured-essay"><p class="kicker">The latest essay</p>{feature}</div>
-    <article class="flagship-preview">{render_exhibit_image("maritime-disease-atlas", base_url, link_for(base_url, "atlases/maritime/"), eager=True)}<div><p class="kicker">Enter the exhibit</p><h2><a href="{href("atlases/maritime/")}">A ship is a disease environment.</a></h2><p>Look inside the Maritime Disease Atlas. Follow a route, open a case, or inspect the spaces where infection and deprivation meet.</p><a class="text-link" href="{href("atlases/maritime/")}">Explore the ship and its history <span aria-hidden="true">→</span></a></div></article></section>
-    <section class="home-section"><div class="section-head section-head-split"><div><p class="kicker">Published writing</p><h2>Recent essays</h2></div><a class="text-link" href="{href("essays/")}">All essays →</a></div><div class="card-grid three-up essays-grid">{recent}</div></section>
-    <section class="home-section"><div class="section-head section-head-split"><div><p class="kicker">Selected work</p><h2>Writing beyond this site</h2><p>Bylines on historical disease, public health evidence, and the lives shaped by both.</p></div><a class="text-link" href="{href("writing/")}">Full portfolio →</a></div><div class="card-grid three-up writing-grid">{writing_cards}</div></section>
-    <section class="home-section newsdesk-panel"><div class="section-head section-head-split"><div><p class="kicker">Current reporting</p><h2>The Pathogen Dispatch</h2><p>Follow outbreak reporting back to the underlying sources.</p></div><a class="text-link" href="{href("newsdesk/")}">Open the Newsdesk →</a></div><div class="card-grid three-up">{stories}</div></section>
-    <section class="home-section home-exhibits"><div class="section-head section-head-split"><div><p class="kicker">Selected exhibits</p><h2>History you can inspect.</h2><p>Explore a place, compare a record, and examine what the evidence supports.</p></div><a class="text-link" href="{href("tools/")}">All exhibits →</a></div><div class="card-grid three-up home-exhibit-grid">{exhibits}</div></section>
-    <section class="commission-strip"><div><p class="kicker">Work with me</p><h2>Research into something people can use.</h2><p>Websites, evidence briefs, analysis, science writing, and interactive exhibits.</p></div><div class="home-commission-actions"><a class="button primary" href="{href("opportunities/")}">See projects and prices →</a><a class="text-link" href="{href("hiring/")}">Hiring for a role? →</a></div></section>''',
+    <article class="flagship-preview">{render_exhibit_image("maritime-disease-atlas", base_url, link_for(base_url, "atlases/maritime/"), eager=True)}<div><h2><a href="{href("atlases/maritime/")}">Maritime Disease Atlas</a></h2><p>Where did sailors sleep, store water, and care for the sick? Explore the cutaway, then follow the ships and outbreaks on the map.</p></div></article></section>
+    <section class="home-section"><div class="section-head section-head-split"><h2>Recent essays</h2><a class="text-link" href="{href("essays/")}">All essays →</a></div><div class="card-grid three-up essays-grid">{recent}</div></section>
+    <section class="home-section home-exhibits"><div class="section-head section-head-split"><h2>Exhibits</h2><a class="text-link" href="{href("tools/")}">All exhibits →</a></div><div class="card-grid three-up home-exhibit-grid">{exhibits}</div></section>
+    <section class="home-section newsdesk-panel"><div class="section-head section-head-split"><h2>The Pathogen Dispatch</h2><a class="text-link" href="{href("newsdesk/")}">Open the Newsdesk →</a></div>{f'<ul class="dispatch-topics" aria-label="Tracked topics">{stories}</ul>' if stories else ''}</section>
+    <section class="home-section"><div class="section-head section-head-split"><h2>Writing elsewhere</h2><a class="text-link" href="{href("writing/")}">Full portfolio →</a></div><div class="card-grid three-up writing-grid">{writing_cards}</div></section>
+    <section class="commission-strip"><div><h2>Work with me</h2><p>I take on research websites, evidence reviews, data analysis, and interactive exhibits.</p></div><div class="home-commission-actions"><a class="button primary" href="{href("opportunities/")}">See projects and prices →</a><a class="text-link" href="{href("hiring/")}">Hiring for a role? →</a></div></section>''',
     )
 
 
@@ -68,13 +70,10 @@ def render_writing_cards(entries, base_url, limit=None):
         title = html.escape(str(item.get("title", "")))
         publication = html.escape(str(item.get("publication", "")))
         description = html.escape(str(item.get("description", "")))
-        status = html.escape(str(item.get("status", "Published")))
         url = item.get("url")
-        link = (
-            f'<a class="text-link" href="{html.escape(str(url), quote=True)}" '
-            'target="_blank" rel="noopener noreferrer">Read at publisher ↗</a>'
-            if url
-            else '<span class="text-link writing-pending">Publication forthcoming</span>'
+        status = html.escape(str(item.get("status") or "Forthcoming"))
+        status_markup = (
+            f'<span class="card-utility-meta">{status}</span>' if not url else ""
         )
         title_markup = (
             f'<a href="{html.escape(str(url), quote=True)}" target="_blank" '
@@ -85,8 +84,8 @@ def render_writing_cards(entries, base_url, limit=None):
         cards.append(
             f'<article class="site-card writing-card"><div class="essay-card-copy">'
             f'<div class="card-utility-row"><span class="card-utility-label">{publication}</span>'
-            f'<span class="card-utility-meta">{status}</span></div>'
-            f'<h3>{title_markup}</h3><p>{description}</p>{link}</div></article>'
+            f"{status_markup}</div>"
+            f"<h3>{title_markup}</h3><p>{description}</p></div></article>"
         )
     return "".join(cards)
 

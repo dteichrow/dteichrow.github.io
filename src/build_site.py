@@ -176,16 +176,10 @@ def render_essays_index(posts: list[dict[str, Any]], base_url: str) -> str:
         base_url=base_url,
         body=f"""
       <section class="hero hero-open">
-        <p class="kicker">Writing archive</p>
-        <h2 class="hero-title">Published work from The Edge of Epidemiology</h2>
-        <p class="subtitle">Essays on outbreaks, evidence, disease history, ecology, neuroepidemiology, and the public arguments that gather around health.</p>
+        <h1 class="hero-title">Essays</h1>
+        <p class="subtitle">{len(posts)} pieces from The Edge of Epidemiology, newest first.</p>
       </section>
       <section class="panel panel-soft">
-        <div class="section-head">
-          <p class="kicker">Archive</p>
-          <h2>{len(posts)} essays</h2>
-          <p class="muted-note">Each entry keeps the essay connected to topic hubs, disease maps, and related work across the site.</p>
-        </div>
         <div class="card-grid three-up essays-grid">{cards}</div>
       </section>
     """,
@@ -292,9 +286,8 @@ def render_tools_hub(tools: list[dict[str, Any]], base_url: str) -> str:
         base_url=base_url,
         body=f"""
       <section class="hero hero-open">
-        <p class="kicker">Interactive exhibits</p>
-        <h2 class="hero-title">The exhibit collection.</h2>
-        <p class="subtitle">Follow an epidemic through time, examine a ship’s spaces, or read the sources behind a historical claim.</p>
+        <h1 class="hero-title">Exhibits</h1>
+        <p class="subtitle">Maps, timelines, and source collections on the history of disease.</p>
       </section>
       <section class="panel panel-soft">
         <div class="card-grid two-up">{cards}</div>
@@ -445,58 +438,46 @@ def render_methods_page(base_url: str) -> str:
 
 def render_about_page(base_url: str) -> str:
     from .site_cv import render_cv_actions
+
+    def href(route):
+        return html.escape(link_for(base_url, route))
+
     return base_html(
         title="About | Edge of Epidemiology",
-        description="About Edge of Epidemiology.",
+        description="Devin Teichrow, epidemiologist and writer behind The Edge of Epidemiology.",
         active="about",
         base_url=base_url,
         body=f"""
       <section class="hero hero-open about-hero">
-        <div class="about-introduction"><div><p class="kicker">About</p>
-        <h2 class="hero-title">About Devin and The Edge</h2>
-        <p class="subtitle">An epidemiology project built around outbreak reporting, disease geography, historical epidemiology, and science communication.</p>
-        <p class="about-cv-intro">Looking for my professional background? Read my CV online or download a copy to share.</p>
-        {render_cv_actions(base_url)}
-        </div><img class="about-portrait" src="{html.escape(link_for(base_url, "assets/about/devin-teichrow.png"))}" alt="Devin Teichrow" width="292" height="300" fetchpriority="high"></div>
+        <div class="about-introduction">
+          <div class="about-bio">
+            <div class="about-name">
+              <img class="about-portrait" src="{href("assets/about/devin-teichrow.png")}" alt="Devin Teichrow" width="292" height="300">
+              <h1 class="hero-title">Devin Teichrow</h1>
+            </div>
+            <p>I’m an epidemiologist and the writer behind <a href="https://theedgeofepidemiology.substack.com">The Edge of Epidemiology</a>. I trained at UCLA, and my neurology research has focused on migraine, cognition, and aging.</p>
+            <p>My writing has appeared in The Viking Herald, The Age of Exploration, and RealClearScience. <a href="{href("writing/")}">See my writing portfolio</a>.</p>
+            {render_cv_actions(base_url)}
+          </div>
+          <figure class="about-josie">
+            <img src="{href("assets/about/josie.webp")}" alt="Josie, a gray tabby peeking out from under the desk." width="900" height="600" fetchpriority="high">
+            <figcaption>Josie, under my desk.</figcaption>
+          </figure>
+        </div>
       </section>
       <section class="about-layout">
         <div class="about-block">
-          <p class="kicker">Bio</p>
-          <h3>Research and public work</h3>
-          <p>I’m Devin Teichrow, an epidemiologist and science writer. My public science work sits at the intersection of infectious disease, historical analysis, and evidence communication.</p>
-          <p>I received my training in epidemiology at UCLA. My neurology research has focused on cognition, migraine, aging, ecological momentary assessment, and digital health methods. Alongside my research, I’ve developed a growing interest in how disease moves through populations beyond the clinic or dataset: through war, migration, infrastructure, ecology, trade, and geography.</p>
-          <p>That broader perspective is what led to my <a href="https://theedgeofepidemiology.substack.com">Substack, The Edge of Epidemiology</a>. My other writing outlets include The Viking Herald, The Age of Exploration, RealClearScience, and Knock LA. <a href="{html.escape(link_for(base_url, "writing/"))}">Browse selected work</a>.</p>
-        </div>
-        <figure class="about-josie"><img src="{html.escape(link_for(base_url, "assets/about/josie.webp"))}" alt="Josie, a gray tabby peeking out from under the desk." loading="lazy" width="900" height="600"><figcaption>Josie, the home-office supervisor.</figcaption></figure>
-        <div class="about-block">
-          <p class="kicker">Project</p>
-          <h3>What the project became</h3>
-          <p>The Edge of Epidemiology began as a place to write about historical epidemics and overlooked disease stories, but it has gradually expanded into something wider: a hybrid of outbreak reporting, historical epidemiology, disease atlases, methodological explainers, and longform essays about how pathogens shape societies over time.</p>
-          <p>Much of modern disease reporting treats outbreaks as isolated events. I’m more interested in the long view of how epidemics recur, how institutions respond, how public fear evolves, and how the same epidemiologic patterns reappear across centuries under different names. I’m also interested in the biological, genetic, and societal changes that occur as a result of infectious disease epidemics.</p>
+          <h2>Why I started The Edge</h2>
+          <p>I started the publication to write about epidemics that rarely get more than a few lines in a history book. I wanted to know what the people keeping the records could actually see. What did a burial register count? What could a physician infer from the patients who reached the ward?</p>
+          <p>I bring the same questions to contemporary outbreak reporting. With the exhibits, you can follow a ship’s route, compare archaeological sites, or open the source behind a point on a map.</p>
         </div>
         <div class="about-block">
-          <p class="kicker">Interests</p>
-          <h3>Current areas of focus</h3>
-          <ul class="link-list about-topic-list">
-            <li><strong>Historical epidemiology.</strong> Epidemics shaped by war, migration, and changing landscapes.</li>
-            <li><strong>Outbreaks and disease geography.</strong> Surveillance, preparedness, vector ecology, and how pathogens move through people and infrastructure.</li>
-            <li><strong>Evidence and communication.</strong> How health claims are measured, disputed, and explained, including risk communication and brain health.</li>
-          </ul>
-        </div>
-        <div class="about-block">
-          <p class="kicker">Framing</p>
-          <h3>Why geography matters here</h3>
-          <p>The site’s atlas projects and interactive maps grew out of a belief that epidemiology is fundamentally geographic. Disease is biological, spatial, political, ecological, economic, cultural, and historical. Pathogens move along trade routes, through armies, across borders, inside housing systems, and within the infrastructure societies build for themselves.</p>
-          <p>My goal is to make epidemiology feel legible, historically grounded, and intellectually honest for a broader audience without flattening uncertainty or complexity. Outside of research and writing, I build interactive disease atlases, epidemiology exhibits, and science communication projects focused on making complex public health topics more understandable and visually intuitive.</p>
-        </div>
-        <div class="about-block">
-          <p class="kicker">Links</p>
-          <h3>Elsewhere</h3>
+          <h2>Explore the work</h2>
           <ul class="link-list about-links">
-            <li><a href="https://theedgeofepidemiology.substack.com">The Edge of Epidemiology on Substack</a></li>
-            <li><a href="{html.escape(link_for(base_url, "methods/"))}">Methods</a></li>
-            <li><a href="{html.escape(link_for(base_url, "atlases/"))}">Atlas family</a></li>
-            <li><a href="{html.escape(link_for(base_url, "newsdesk/"))}">The Pathogen Dispatch</a></li>
+            <li><a href="{href("essays/")}">Essays</a></li>
+            <li><a href="{href("tools/")}">Exhibits</a></li>
+            <li><a href="{href("newsdesk/")}">The Pathogen Dispatch</a></li>
+            <li><a href="{href("methods/")}">Methods and sources</a></li>
           </ul>
         </div>
       </section>

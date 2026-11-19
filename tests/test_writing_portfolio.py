@@ -1,7 +1,12 @@
 from __future__ import annotations
 
+from bs4 import BeautifulSoup
+
 from src.build_site import live_newsdesk_redirect_html, render_archived_story_placeholder
-from src.site_pages import render_home, render_hiring_page, render_writing_page
+from src.common import ASSETS_DIR
+from src.site_cards import render_post_card
+from src.site_images import ESSAY_ILLUSTRATIONS, render_image_credits
+from src.site_pages import render_home, render_hiring_page, render_post_page, render_writing_page
 from src.site_seo import seo_profile_for_route
 from src.site_content import post_folio_meta
 
@@ -22,8 +27,23 @@ def test_homepage_has_a_direct_path_to_selected_writing():
     page = render_home([], [], {}, "/")
 
     assert 'href="/writing/"' in page
-    assert "Writing beyond this site" in page
+    assert "Writing elsewhere" in page
     assert "The Missing Evidence in the Case Against Food Stamps" in page
+
+
+def test_essay_card_art_has_a_credit_and_keeps_the_original_reading_page_cover():
+    credits = BeautifulSoup(render_image_credits("/preview/"), "html.parser")
+    for slug, illustration in ESSAY_ILLUSTRATIONS.items():
+        original_cover = "https://example.test/upstream-image.jpg"
+        post = {"slug": slug, "title": illustration["title"], "cover_image": original_cover}
+        card = BeautifulSoup(render_post_card(post, "/preview/"), "html.parser")
+        assert card.select_one("img")["src"] == f'/preview/{illustration["asset"]}'
+        assert (ASSETS_DIR.parent / illustration["asset"]).is_file()
+        credit = card.find("a", string="AI illustration")
+        assert credit["href"] == f"/preview/image-credits/#{slug}"
+        assert credits.find(id=slug)
+        reading_page = BeautifulSoup(render_post_page(post, {}, [], "/preview/", ""), "html.parser")
+        assert reading_page.select_one(".reading-cover img")["src"] == original_cover
 
 
 def test_hiring_page_has_role_specific_summary_and_contact_path():

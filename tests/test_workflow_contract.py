@@ -23,6 +23,8 @@ def test_deployment_requires_the_exact_validated_artifact():
     commands = "\n".join(step.get("run", "") for step in steps)
     assert commands.count("python -m src.build_site --site-base-url /") == 1
     for gate in [
+        "check_secrets.sh --index",
+        "check_secrets.sh docs",
         "validate_tool_sources.py",
         "smoke_test_tool_pages.py",
         "python -m pytest",
@@ -40,6 +42,19 @@ def test_deployment_requires_the_exact_validated_artifact():
         i for i, s in enumerate(steps) if "validate_artifact.py" in s.get("run", "")
     )
     assert upload > gate
+    credential_scan = next(
+        i for i, step in enumerate(steps) if step.get("run") == "bash scripts/check_secrets.sh docs"
+    )
+    build = next(i for i, step in enumerate(steps) if "src.build_site" in step.get("run", ""))
+    assert build < credential_scan < upload
+
+
+def test_substack_sync_scans_staged_files_before_push():
+    workflow = load_workflow(".github/workflows/substack-sync.yml")
+    steps = workflow["jobs"]["sync-and-build"]["steps"]
+    commit = next(step["run"] for step in steps if step.get("name") == "Commit changes")
+    assert commit.index("git add ") < commit.index("scripts/check_secrets.sh --index")
+    assert commit.index("scripts/check_secrets.sh --index") < commit.index("git commit ")
 
 
 def test_quality_gate_covers_shared_assets_and_browser_configuration():

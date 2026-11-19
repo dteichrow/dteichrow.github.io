@@ -87,6 +87,8 @@ Use `git revert` to undo a published source change, rerun validation, and manual
 
 Use an isolated checkout when the user's working directory is dirty. Original local changes must remain intact. Generated `docs/` is tracked as a reproducible public artifact; private databases, credentials, outreach, scratch media, browser dependencies and reports remain untracked. Review `git diff --cached` before publishing.
 
+The repository uses GitHub secret scanning and push protection. The shared validation workflow also uses a checksum-pinned Gitleaks release to scan the Git index and the built site. Substack sync scans its staged snapshot before committing. To check a staged change locally, run `bash scripts/check_secrets.sh --index`. Store credentials in the local environment or GitHub Actions secrets when a server-side workflow needs them. Anything placed in `docs/` or bundled into client-side JavaScript is public.
+
 ### Writing portfolio and legacy Newsdesk routes
 
 `content/writing.yml` is the source for `/writing/` and the homepage's external-work preview. Keep article titles and URLs linked to the publisher; forthcoming entries have no article URL and must be labeled with the confirmed publication status/date. The About page links readers to this portfolio. Essay pages with only a synced summary remain previews that point to Substack; they are not full-text mirrors.

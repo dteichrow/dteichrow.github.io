@@ -1,0 +1,9 @@
+[extend]
+useDefault = true
+
+[[rules]]
+id = "openai-prefixed-key"
+description = "OpenAI project, service account, or admin API key"
+regex = '''\b(sk-(?:proj-|svcacct-|admin-)[A-Za-z0-9_-]{32,})(?:[^A-Za-z0-9_-]|$)'''
+secretGroup = 1
+keywords = ["sk-proj-", "sk-svcacct-", "sk-admin-"]

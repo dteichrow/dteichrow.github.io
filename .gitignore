@@ -8,6 +8,15 @@ __pycache__/
 .python-version
 .env
 .env.*
+.netrc
+.pypirc
+credentials.json
+*.pem
+*.key
+*.p12
+*.pfx
+.aws/
+.ssh/
 
 # Generated sync reports and local media/test artifacts.
 notes/substack-sync-*.json
