@@ -5,14 +5,13 @@ import html
 import re
 from typing import Any
 from .common import format_display_date, link_for
-from .site_images import render_exhibit_image
+from .site_images import ESSAY_ILLUSTRATIONS, render_exhibit_image
 
 from .site_content import (
     canonical_meta,
     post_display_title,
     post_folio_meta,
     post_seo_description,
-    public_tool_status,
 )
 
 
@@ -74,59 +73,58 @@ def render_atlas_card(entry: dict[str, Any], base_url: str) -> str:
 def render_tool_card(entry: dict[str, Any], base_url: str) -> str:
     route = entry.get("public_route", "")
     href = link_for(base_url, route)
-    coordinate_hint = (
-        " / ".join(keyword.upper() for keyword in entry.get("keywords", [])[:2])
-        or "CURATED TOOL"
-    )
-    status = public_tool_status(entry)
-    feature_line = entry.get("evidence_model", "")
     tool_token = css_token(entry.get("tool_id") or entry.get("atlas_id"), "tool")
-    tool_type = str(entry.get("tool_type") or "tool").replace("_", " ").title()
     return (
         f'<article class="site-card atlas-card tool-card tool-card-{html.escape(tool_token)}">'
         f"{render_exhibit_image(tool_token, base_url, href)}"
-        '<div class="card-utility-row">'
-        f'<span class="card-utility-label">{html.escape(tool_type)}</span>'
-        f'<span class="card-utility-meta">{html.escape(coordinate_hint)}</span>'
-        "</div>"
-        '<p class="kicker">Interactive exhibit</p>'
         f'<h3><a href="{html.escape(href)}">{html.escape(entry.get("title", "Untitled tool"))}</a></h3>'
         f'<p class="muted-note">{html.escape(entry.get("summary", ""))}</p>'
-        f"{f'<p class="card-meta-text">{html.escape(feature_line)}</p>' if feature_line else ''}"
-        f'<div class="meta-row meta-row-plain"><span class="story-status-pill atlas-status-pill">{html.escape(status)}</span></div>'
         "</article>"
     )
 
 
 def render_post_card(
-    post: dict[str, Any], base_url: str, *, featured: bool = False
+    post: dict[str, Any], base_url: str, *, featured: bool = False, eager: bool = False
 ) -> str:
-    href = link_for(base_url, f"essays/{post.get('slug', '')}/")
+    slug = post.get("slug", "")
+    href = link_for(base_url, f"essays/{slug}/")
     date_text, utility_meta = post_folio_meta(post)
     summary = post_seo_description(post)
     if len(summary) > 240:
         preview = summary[:240].rsplit(" ", 1)[0]
         sentence = re.search(r"^(.+[.!?])\s", preview)
         summary = sentence.group(1) if sentence else preview.rstrip(" ,;:") + "…"
-    feature_image = post.get("cover_image") or ""
+    illustration = ESSAY_ILLUSTRATIONS.get(slug)
+    feature_image = (
+        link_for(base_url, illustration["asset"])
+        if illustration
+        else post.get("cover_image") or ""
+    )
     feature_class = " essay-card-featured" if featured and feature_image else ""
     image_class = " essay-card-has-media" if feature_image else ""
+    image_dimensions = ' width="1632" height="544"' if illustration else ""
+    loading = "eager" if eager and illustration else "lazy"
     media = (
         f'<a class="essay-card-media" href="{html.escape(href)}" aria-hidden="true" tabindex="-1">'
-        f'<img src="{html.escape(feature_image)}" alt="" loading="lazy" decoding="async" />'
+        f'<img src="{html.escape(feature_image)}" alt="" loading="{loading}" decoding="async"{image_dimensions} />'
         "</a>"
         if feature_image
         else ""
     )
+    illustration_class = " essay-card-illustrated" if illustration else ""
+    illustration_credit = (
+        f'<a class="essay-art-credit" href="{html.escape(link_for(base_url, "image-credits/#" + slug))}" '
+        f'aria-label="AI illustration credit for {html.escape(post_display_title(post))}">AI illustration</a>'
+        if illustration else ""
+    )
     return (
-        f'<article class="site-card essay-card{feature_class}{image_class}">'
-        f"{media}"
+        f'<article class="site-card essay-card{feature_class}{image_class}{illustration_class}">'
+        f"{media}{illustration_credit}"
         '<div class="essay-card-copy">'
         '<div class="card-utility-row">'
         f'<span class="card-utility-label">{html.escape(date_text)}</span>'
         f'<span class="card-utility-meta">{html.escape(utility_meta)}</span>'
         "</div>"
-        '<p class="kicker">Essay</p>'
         f'<h3><a href="{html.escape(href)}">{html.escape(post_display_title(post))}</a></h3>'
         f'<p class="muted-note">{html.escape(summary)}</p>'
         "</div>"

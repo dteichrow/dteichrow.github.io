@@ -15,7 +15,7 @@ def test_homepage_curates_three_recent_essays_and_three_public_exhibits(monkeypa
     monkeypatch.setattr(
         site_pages,
         "render_post_card",
-        lambda post, base_url, featured=False: (
+        lambda post, base_url, featured=False, eager=False: (
             f'<article data-post="{post["slug"]}"></article>'
         ),
     )
@@ -727,13 +727,13 @@ atlases:
     assert "opening-work" in home_text
     assert "The latest essay" in home_text
     assert "newsdesk-panel" in home_text
-    assert "Selected exhibits" in home_text
-    assert "story-card" in home_text
+    assert '<h2>Exhibits</h2>' in home_text
+    assert 'aria-label="Tracked topics"' in home_text
     assert "flagship-preview" in home_text
     assert "essay-card" in home_text
     assert "essay-card-featured" in home_text
     assert "https://images.example/cover.jpg" in home_text
-    assert "Current reporting" in home_text
+    assert "The Pathogen Dispatch" in home_text
     assert "All essays" in home_text
     assert "All exhibits" in home_text
     assert 1 <= len(BeautifulSoup(home_text, "html.parser").select(".essays-grid article")) <= 3
@@ -742,7 +742,7 @@ atlases:
     assert (docs_dir / "assets" / "favicon.svg").is_file()
     assert 'href="/opportunities/"' in home_text
     essays_index = (docs_dir / "essays" / "index.html").read_text()
-    assert "<h2>2 essays</h2>" in essays_index
+    assert "2 pieces from The Edge of Epidemiology" in essays_index
     assert "Legacy Visible Post" in essays_index
     assert "Removed Post" not in essays_index
     assert "See projects and prices" in home_text
@@ -763,19 +763,14 @@ atlases:
     assert "essay-card-featured" in essays_text
     assert "https://images.example/cover.jpg" in essays_text
     about_text = (docs_dir / "about" / "index.html").read_text()
-    assert "About Devin and The Edge" in about_text
-    assert 'assets/about/josie.webp' in about_text
-    assert "Josie, the home-office supervisor." in about_text
-    assert "I’m Devin Teichrow, an epidemiologist and science writer." in about_text
-    assert "University of California, Irvine" not in about_text
-    assert "My other writing outlets include The Viking Herald, The Age of Exploration, RealClearScience, and Knock LA." in about_text
     about_soup = BeautifulSoup(about_text, "html.parser")
-    focus_items = about_soup.select(".about-topic-list li")
-    assert len(focus_items) == 3
-    assert "Historical epidemiology." in focus_items[0].get_text(" ", strip=True)
-    assert "Outbreaks and disease geography." in focus_items[1].get_text(" ", strip=True)
-    assert "Evidence and communication." in focus_items[2].get_text(" ", strip=True)
-    assert "The Edge of Epidemiology on Substack" in about_text
+    assert about_soup.select_one("h1").get_text(strip=True) == "Devin Teichrow"
+    assert about_soup.select_one('.about-introduction .about-josie img')["src"] == "/assets/about/josie.webp"
+    assert "Josie, under my desk." in about_text
+    assert "University of California, Irvine" not in about_text
+    assert "The Viking Herald, The Age of Exploration, and RealClearScience" in about_text
+    assert about_soup.select_one('.about-bio a[href="/about/cv/"]')
+    assert about_soup.select_one('.about-bio a[href="https://theedgeofepidemiology.substack.com"]')
     assert "diseases do not move only through bodies" not in about_text
     opportunities_text = (docs_dir / "opportunities" / "index.html").read_text()
     assert "UCLA-trained epidemiologist and science writer with neurology research experience" in opportunities_text

@@ -9,6 +9,22 @@ from .common import link_for
 from .site_shell import base_html
 
 
+# WebP copies of the matching Obsidian note banners. The cards frame the
+# illustration at the right edge, leaving the note title outside the crop.
+ESSAY_ILLUSTRATIONS = {
+    "who-counted-plague-deaths-in-late": {
+        "asset": "assets/essays/cairo-plague-counting.webp",
+        "title": "Who Counted Plague Deaths in Late-Medieval Cairo?",
+        "description": "An imagined city gate and a tally sheet.",
+    },
+    "the-ordinary-deaths-of-the-romans": {
+        "asset": "assets/essays/ordinary-deaths-romans.webp",
+        "title": "The Ordinary Deaths of the Romans",
+        "description": "An imagined Roman street with a lamp, a sandal, and a clay pipe.",
+    },
+}
+
+
 @lru_cache(maxsize=1)
 def image_records():
     path = Path(__file__).resolve().parents[1] / "assets/exhibits/image-credits.json"
@@ -69,9 +85,14 @@ def render_image_credits(base_url):
             f'<a class="text-link" href="{html.escape(record["source"])}">Open the collection record ↗</a>'
             "</div></article>"
         )
+    essay_credits = "".join(
+        f'<li id="{html.escape(slug)}"><cite>{html.escape(art["title"])}</cite>. '
+        f'{html.escape(art["description"])}</li>'
+        for slug, art in ESSAY_ILLUSTRATIONS.items()
+    )
     return base_html(
         title="Image credits | The Edge of Epidemiology",
-        description="The photographs, historical documents, and scientific images used for the exhibit collection, with sources and reuse rights.",
+        description="Sources and reuse rights for exhibit images, and credits for essay illustrations.",
         active="credits",
         base_url=base_url,
         body='<header class="hero"><p class="kicker">Behind the images</p>'
@@ -80,5 +101,10 @@ def render_image_credits(base_url):
         "Here are the complete images, their creators, and the records that establish how they can be reused.</p>"
         "<p>Rights records checked September 8, 2026. "
         f'<a href="{html.escape(link_for(base_url, "assets/exhibits/image-credits.json"))}">Download the image catalogue (JSON)</a>.</p></header>'
-        + "".join(records),
+        + "".join(records)
+        + '<section class="home-section prose" id="essay-illustrations">'
+        '<h2>Essay illustrations</h2>'
+        '<p>These AI-generated illustrations first appeared as covers for my research notes. '
+        'The essay cards show a crop of the artwork.</p>'
+        f'<ul>{essay_credits}</ul></section>',
     )
