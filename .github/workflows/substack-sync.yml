@@ -89,5 +89,6 @@ jobs:
             echo "No content or docs changes to commit"
             exit 0
           fi
+          bash scripts/check_secrets.sh --index
           git commit -m "Sync Substack posts and rebuild site"
           git push
