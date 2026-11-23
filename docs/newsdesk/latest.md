@@ -1,5 +1,5 @@
 # The Pathogen Dispatch
-Collection: 2026-11-22T09:07:12
+Collection: 2026-11-22T14:29:14
 
 ## Measles transmission and vaccination
 Monitoring: Changes in full vaccination coverage and in the gap between poor and non-poor households among children aged 12-23 months in the Democratic Republic of the Congo, 2013-14 to 2023-24: a comparison of two Demographic and Health surveys.
@@ -32,10 +32,20 @@ Publication date not established · Retrieved Nov 22, 2026
 Learn more about the Sunset process and provide feedback. Limited detail was available from feed metadata alone.
 https://www.dshs.texas.gov/news-alerts/hantavirus-monitoring-completed-texas-passengers-mv-hondius
 
-### Ooni of Ife’s wife attends malaria elimination dialogue in Botswana, meets President
+### WHO chief pleads for peace in Ebola-hit DR Congo area
 Published Nov 22, 2026 · Retrieved Nov 22, 2026
-Olori Temitope Enitan-Ogunwusi expressed profound appreciation for the exceptional hospitality extended to her, describing the experience as memorable and reflective of the warmth, friendship and spirit of African solidarity. HRM’s participation provided an opportunity to contribute perspectives on community ownership, grassroots accountability, cultural leadership, gender inclusion and public trust in health interventions. Michael Adekunle Charles, Chief Executive Officer of the RBM Partnership to End Malaria, and the RBM team for the invitation and for convening this important dialogue.
-https://thesun.ng/ooni-of-ifes-wife-attends-malaria-elimination-dialogue-in-botswana-meets-president/
+He said medical staff had been sheltering for their lives in a maternity ward in the facility for more than 24 hours. “Heavy fighting has been ongoing since yesterday in the vicinity of a hospital in Ituri – in an area close to where the Ebola outbreak first emerged,” the UN health agency chief said on X. Limited detail was available from feed metadata alone.
+https://www.freemalaysiatoday.com/category/highlight/2026/11/23/who-chief-pleads-for-peace-in-ebola-hit-dr-congo-area
+
+### WHO Chief Says Fighting Near Congo Ebola Outbreak Area Disrupts Response Efforts
+Published Nov 22, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://www.usnews.com/news/world/articles/2026-11-22/who-chief-says-fighting-near-congo-ebola-outbreak-area-disrupts-response-efforts
+
+### Measles cases in Michigan are still on the rise, the CDC reports
+Published Nov 22, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://www.cbsnews.com/detroit/news/measles-cases-michigan-on-the-rise-cdc-reports/
 
 ### Experts say ‘trusted messengers’ critical as Amish grapple with measles outbreak
 Published Nov 22, 2026 · Retrieved Nov 22, 2026
@@ -52,10 +62,10 @@ Published Nov 22, 2026 · Retrieved Nov 22, 2026
 Yasser Al-Farouh, director of the ministry’s Department of Communicable and Non-Communicable Diseases, gave a technical briefing on the epidemiological situation, the latest reported cases and response plans. He also outlined measures to detect suspected cases early and carry out vaccination campaigns . 22 (SANA) The Ministry of Health held an expanded coordination meeting in Damascus with representatives of nine ministries to strengthen the response to a polio outbreak in Deir Ezzor, and coordinate government measures to contain the virus and prevent its spread.
 https://sana.sy/en/health/2360831/
 
-### Congo Ebola Outbreak Linked to Spillover Clustered Near 1976 Lineage
+### Health: Uganda sets up fourth Ebola treatment centre in DR C
 Published Nov 22, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
-https://bioengineer.org/congo-ebola-outbreak-linked-to-spillover-clustered-near-1976-lineage/
+https://www.newvision.co.ug/category/health/uganda-sets-up-fourth-ebola-treatment-centre-NV_244568_112026
 
 ### Virginia reports young child has died of measles, first since 1978
 Published Nov 22, 2026 · Retrieved Nov 22, 2026
@@ -77,6 +87,11 @@ Published Nov 21, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMikgFBVV95cUxNaE11WTl4T2g3a2ppa2t3bjFIVFpueFlTeDM4VHpRTERGb01DUnU2UzRjMW5qLWhibUM3QnpHZ0M1eE80SFBpN0Q4SHZIRFVuN183ajJ1MU9jTmZkUHZtM0ZrQy1NaDNFQWpoMy16X2FzTC1ObnZBU2RIU2tSTURHblg3VWZzMjNLbl9vQ2tRS2pKQdIBlwFBVV95cUxNTVg2YTJMc1VlRXMyU3JrWnUzczAwYy14VjBkd3dCc0ZTQ0IwbjBINFVoOGhHWURwRFkwckxQLVlINE1GNXE4d0lrUEVZQkNEWTlqMzJhdU9OX0tzbmVmV25DTEtCc1BFMDdmY29FMDdFR2J3aXNpRks5cmM1bEI2QVZqZmMyRU1KdG1Vd1lmUmlDTkJyV2Jv?oc=5
 
+### Uganda Commissions Fourth Ebola Treatment Centre in DR Congo
+Published Nov 21, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://nilepost.co.ug/health-2/389387/uganda-commissions-fourth-ebola-treatment-centre-in-dr-congo
+
 ### South Korea Confirms First Domestic Cholera Case in Decade
 Published Nov 21, 2026 · Retrieved Nov 22, 2026
 South Korean health authorities reported the country's first confirmed cholera case in a decade on Friday, November 20, 2026, after a patient in the southeastern port city of Changwon tested positive without any recent history of foreign travel. While the patient has already recovered, confirming where the infection originated matters for food safety and disease surveillance across a region that reported zero cholera outbreaks in May 2026. According to the Korea Disease Control and Prevention Agency (KDCA), as reported by the Associated Press, the unidentified patient sought care at a hospital emergency room in Changwon earlier this month with vomiting and diarrhoea.
@@ -92,11 +107,6 @@ Published Nov 21, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://sana.sy/en/health/2360416/
 
-### WHO warns of high child death rate in DR Congo Ebola outbreak
-Published Nov 21, 2026 · Retrieved Nov 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMioAFBVV95cUxOa1JBUUVETEUtT2RGc0dXWFVXbTRKNldKVnZfZjNBVGdxd0pCVjVlWVhzRGNlZ1hvS0Y2cVhJVWFQM1g1cVJMZWRpeU9kRzRoTUhBcFc0VnRFeUc3OTZKelNIMTBfZ0VmU0pkVXU0akhJVG5ra0UzeWZjM2xWY1Z6RnFOd09BNEFWeDh0X2FURXI0Mk9iUWNsQTJJOHRRaWVq?oc=5
-
 ### Wisconsin sees triple-digit measles increase as US nears 6,000 cases
 Published Nov 20, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
@@ -107,6 +117,11 @@ Published Nov 20, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://www.cidrap.umn.edu/ebola/uganda-south-sudan-intensify-efforts-keep-ebola-out-amid-burgeoning-dr-congo-outbreak
 
+### U.S. measles cases are at a 35-year high. Here’s how to protect yourself.
+Published Nov 20, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMisgFBVV95cUxPUGNoR2JFQ1FlN0pEUXh5Um9sVDVrelhyLVdObHctZnJHUUpGeWpWUU5uWmU1eUdQOXJKNElIRWJLTEFtUDRKY0pYSDN0QmdSR05CblVHUUszc0RBSUNQdEhSbmpFbmwwbHFucmt1aGRnSzgyWUlnd1MzVHRoRnNTbXAxd2RFQkgzWnJsTDFzYXF5Q0ZLSEtTTXNUTFFuSE9Ja1JQYkVTTHJOR1BOSGpBZWpB?oc=5
+
 ### Measles outbreak hits Indiana. Here’s where the confirmed cases are
 Published Nov 20, 2026 · Retrieved Nov 22, 2026
 Here’s where the confirmed cases are Indiana Public Radio
@@ -116,11 +131,6 @@ https://news.google.com/rss/articles/CBMirwFBVV95cUxQeUhFYXdIb2N1VHRXM0ZfWWtPTml
 Published Nov 20, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://www.independent.co.uk/news/world/africa/congo-ebola-outbreak-africa-chidlren-b3088643.html
-
-### Congo’s Bundibugyo Ebola Outbreak Tops 10,000 Cases, Travel Rules Tighten
-Published Nov 20, 2026 · Retrieved Nov 22, 2026
-Limited detail was available from feed metadata alone.
-https://www.thetraveler.org/congos-bundibugyo-ebola-outbreak-tops-10-000-cases-travel-rules-tighten/
 
 ### Shivraj Singh Chouhan To Dedicate India’s First Indigenous H5N1 Bird Flu Vaccine For Poultry To Nation Today
 Published Nov 20, 2026 · Retrieved Nov 22, 2026
@@ -141,11 +151,6 @@ https://pubmed.ncbi.nlm.nih.gov/43065133/
 Published Nov 19, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://tanzaniatimes.net/why-did-kenya-and-uganda-see-onward-ebola-transmission-while-nigeria-had-no-secondary-cases/
-
-### Caritas Congo Urges Governments and Aid Agencies to Sustain Relief as Ebola Outbreak Continues
-Published Nov 19, 2026 · Retrieved Nov 22, 2026
-Limited detail was available from feed metadata alone.
-https://www.aciafrica.org/news/25437/caritas-congo-urges-governments-and-aid-agencies-to-sustain-relief-as-ebola-outbreak-continues
 
 ### Transmission dynamics of pertussis in China (2015-2024): A SEIARV compartmental model with waning immunity, annual parameter fitting, and stochastic forecasting for 2025-2027.
 Published Nov 19, 2026 · Retrieved Nov 22, 2026
@@ -170,22 +175,27 @@ https://www.afro.who.int/countries/kenya/publication/ebola-bundibugyo-virus-dise
 ### India to launch its first domestically developed H5N1 chicken vaccine on 20 November 2026
 Published Nov 18, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
-https://dairynews.today/news/india_to_launch_its_first_domestically_developed_h5n1_chicken_vaccine_on_20_november_2026_2733243.html
+https://dairynews.today/global/news/india_to_launch_its_first_domestically_developed_h5n1_chicken_vaccine_on_20_november_2026_2733243.html
 
 ### Análise da situação da resistência aos antimicrobianos em Angola no contexto “Uma Só Saúde”
 Published Nov 18, 2026 · Retrieved Nov 22, 2026
 Analysis of the situation regarding antimicrobial resistance in Angola within the ‘One Health’ framework gamboo@who.int Wed, 18/11/2026 - 17:00 Antimicrobial resistance (AMR) poses a growing threat to public health in Angola, a situation exacerbated by various factors, notably unequal access to healthcare, limited access to water, basic sanitation and hygiene practices, low vaccination coverage, and the inappropriate use of antibiotics. This analysis, which adopts the ‘One Health’ approach, assesses the AMR situation across the human, animal and environmental health sectors, identifying key gaps and setting out strategic recommendations to strengthen prevention, surveillance, communication, governance and the responsible use of antimicrobials in the country. The report advocates a coordinated response across various sectors to protect lives, strengthen health systems and reduce the impact of AMR on Angola’s sustainable development.
 https://www.afro.who.int/pt/countries/angola/publication/analise-da-situacao-da-resistencia-aos-antimicrobianos-em-angola-no-contexto-uma-so-saude
 
-### WHO says Ebola outbreak in DR Congo remains public health emergency of international concern
+### Why are measles cases soaring in the US?
 Published Nov 18, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
-https://www.aa.com.tr/en/life/who-says-ebola-outbreak-in-dr-congo-remains-public-health-emergency-of-international-concern/4129534
+https://news.google.com/rss/articles/CBMiigFBVV95cUxPMm9mdDV2RVVCN194TjNVNzdwR1RqUHlyTnRWb2hyd3ZoaUdvZFVXaEJPMDJua1dZaFlSVUxldm5ZOXhvMlFwYldPSWtvVWxYSnRQelRwbmZNNkthZk5DcWxjWDZOMHRIakh0ZVNHN2t3T25ESUxhMFptTjhVMWFoRnBqV0ZRVm5mUHc?oc=5
 
-### Congo Bundibugyo Ebola Outbreak Surpasses Seven Thousand Cases Across Seven Provinces
+### How AI is helping reinforce polio surveillance in Africa - WHO | Regional Office for Africa
 Published Nov 18, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
-https://bioengineer.org/congo-bundibugyo-ebola-outbreak-surpasses-seven-thousand-cases-across-seven-provinces/
+https://news.google.com/rss/articles/CBMihwFBVV95cUxQTEtDWXRRMGN6TWR4RldRTm9nYVprR1hvRXk1OXhhTkxySDVDLTdKRHhzWUZucFZoREdJX3lWamM4YkllWlRyMTZjMFQyNlVwd01oOEtaM0NOTmIyamgxME8wTVpIb1JlNWNoMXctZjdtUEhKeGJuUU5NVFE2VkcxdFFvLVluazA?oc=5
+
+### Death Toll Surges as Congo's Ebola Outbreak Spreads
+Published Nov 18, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://www.newsmax.com/newsfront/ebola-congo-outbreak/2026/11/18/id/1276697/
 
 ### US loses measles-free status amid worst outbreak in 35 years
 Published Nov 18, 2026 · Retrieved Nov 22, 2026
@@ -207,16 +217,6 @@ Published Nov 17, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMihwFBVV95cUxPc2JJck9aQ3Fxckx3ck5sYnViZ1ZCd2l4ZWlzWkM4VUF6eVhOZm5BdkJyV1lfbDhXQmVUaUIydGhmTW0ySHZsQ1B1c2ZWWEg0SllaNHJMbnhGRWs3VElFSEY0RGI4akw4SHNSVUNkRmJaUEhpXzdXZlJSYjRJZERvME40V1lwLUk?oc=5
 
-### Congo’s Ebola outbreak is spreading and killing at a record pace
-Published Nov 17, 2026 · Retrieved Nov 22, 2026
-Limited detail was available from feed metadata alone.
-https://www.cnbcafrica.com/2026/congos-ebola-outbreak-is-spreading-and-killing-at-a-record-pace
-
-### Human travel drove Ebola spread in DR Congo, outbreak reconstruction suggests
-Published Nov 17, 2026 · Retrieved Nov 22, 2026
-Limited detail was available from feed metadata alone.
-https://www.cidrap.umn.edu/ebola/human-travel-drove-ebola-spread-dr-congo-outbreak-reconstruction-suggests
-
 ### Ebola Cases Double in DR Congo, Türk Warns on EU-Rwanda Plan
 Published Nov 17, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
@@ -227,15 +227,15 @@ Published Nov 17, 2026 · Retrieved Nov 22, 2026
 Since May 2026, an Ebola virus disease outbreak caused by Bundibugyo virus has been ongoing in the Democratic Republic of the Congo (DRC).
 https://www.ecdc.europa.eu/en/ebola-disease-multi-country-outbreak-2026
 
-### U.S. and Mexico officially lose measles-elimination status
-Published Nov 17, 2026 · Retrieved Nov 22, 2026
-Limited detail was available from feed metadata alone.
-https://www.pbs.org/newshour/health/u-s-and-mexico-officially-lose-measles-elimination-status
-
 ### US loses measles elimination status amid worst outbreak since 1991
 Published Nov 17, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMijwFBVV95cUxNLWJWZWI0Z0hHdVNYdHpHcXdvY0dZQTBiTG5ORUxsWld6S0pKZFM2UE1jZlhpang5Zmowdll6V0NfTDRvdlR3RzJaVE9ENDBlMWI4UzdkYVZzLUJWOUNxSVBRRGJVVjBqVVBzbFVyeVFPYk5zWUQ5QTkwM0F0ZngybGNicTJLdjZmS2xkMXNnRQ?oc=5
+
+### Congo's Ebola outbreak is spreading and killing at a record pace
+Published Nov 17, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://www.daily-sun.com/world/909720/congo-s-ebola-outbreak-is-spreading-and-killing-at-a-record-pace
 
 ### 6 months of the Ebola outbreak in the Congo: War, hunger, disease and profit
 Published Nov 17, 2026 · Retrieved Nov 22, 2026
@@ -245,12 +245,22 @@ https://www.wsws.org/en/articles/2026/11/17/drid-n17.html
 ### UNICEF: Children make up 35% of Ebola deaths in DR Congo outbreak
 Published Nov 16, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMikAFBVV95cUxQVW1takkzV1p6RG9GbUVieTBQcDRGemhyTG96TXpCS2lDdG85d0xDRWJnLU02RGxDX0VVbXlXOWdGV3JIdWQwXzN2ZzM4Y1VfYW5CWjJBcXN5SURuOTFzRTVxNlJoUkY2UVlQTEc3OEJTZTFwMDFKVVdwU1N5TXI0QzVlQ0FKeHRZNTg0MGxSZTE?oc=5
+https://www.cidrap.umn.edu/ebola/unicef-children-make-35-ebola-deaths-dr-congo-outbreak
 
 ### DRC Ebola outbreak still 'out of control' six months on, Africa CDC warns
 Published Nov 16, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://www.rfi.fr/en/africa/20261116-ebola-crisis-at-6-monthsi
+
+### Africa CDC chief warns DRC's Ebola outbreak remains out of control after six months
+Published Nov 16, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://www.latintimes.com/africa-cdc-warns-drc-ebola-outbreak-continental-crisis-601395
+
+### Congo Ebola Outbreak Still Surging out of Control 6 Months On
+Published Nov 16, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://www.breitbart.com/africa/2026/11/16/congo-ebola-outbreak-still-surging-out-of-control-6-months-on/
 
 ### South Sudan urges vigilance after Ebola outbreaks in DRC, Uganda
 Published Nov 16, 2026 · Retrieved Nov 22, 2026
@@ -267,10 +277,30 @@ Published Nov 16, 2026 · Retrieved Nov 22, 2026
 The July 2026 meeting of the RITAG for the WHO African Region was held against the backdrop of the ongoing Bundibugyo virus outbreak in the Democratic Republic of the Congo (DRC) and Uganda, and the release in mid-July of the WHO and UNICEF Estimates of National Immunization Coverage (WUENIC) for 2025. The meeting included updates on global and regional immunization progress; key vaccine-preventable diseases (polio, measles, yellow fever and meningitis); the Bundibugyo virus outbreak; and vaccine manufacturing in Africa. It was attended by RITAG members, the technical secretariat from the WHO Regional Office for Africa, colleagues from Africa CDC, and the Chair of the Ethiopian National Immunization Technical Advisory Group (NITAG).
 https://www.afro.who.int/publications/report-regional-immunization-technical-advisory-group-meeting-addis-ababa-july-2026
 
+### Africa CDC says Congo’s Ebola outbreak remains out of control
+Published Nov 16, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://nairametrics.com/2026/11/16/africa-cdc-says-congos-ebola-outbreak-remains-out-of-control/
+
+### Reaching Remote Communities Key to Ending Ebola Outbreak
+Published Nov 16, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://allafrica.com/view/group/main/main/id/00098813.html
+
 ### Changes in full vaccination coverage and in the gap between poor and non-poor households among children aged 12-23 months in the Democratic Republic of the Congo, 2013-14 to 2023-24: a comparison of two Demographic and Health surveys.
 Published Nov 16, 2026 · Retrieved Nov 22, 2026
 Full vaccination fell from 45.3% (95% CI 42.1-48.5) to 21.0% (18.5-23.4), BCG from 83.4% to 69.2%, and DPT3 from 60.6% to 46.3%; children with no DPT dose rose from 18.9% to 33.5%. The full-vaccination gap was 16.0 points in 2013-14 and 12.4 in 2023-24 (change +3.6; 95% CI - 2.8 to +10.1; inconclusive). In secondary analyses, poor children's relative coverage fell more (ratio of ratios 0.77; 0.59-0.99), BCG, DPT3 and measles gaps widened by 7.8-11.7 points and changes differed across provinces ( p = 0.015).
 https://pubmed.ncbi.nlm.nih.gov/43036303/
+
+### Ebola outbreak remains out of control in Congo 6 months into response
+Published Nov 15, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMipwFBVV95cUxNZjdfMnFpTDlROXp5T2MwaVB5d1hCZHdRWDhrNnozRVZrVXJOcHBnSFJHdVkyVlZVVldTMnNGOFBQMXVPTEdWYktVVGgzRGFRWl9RXzQ0Ymh4U3VrNTd1UEJUZTRTdGF0T2cwdWtvLW5fTkRoRkJHbHJUVDZ1WUg3czJQeVlDZ0pGbXUxRHZPRmkzSTYzd3JDLVVfdHFkUUJDUHNNNGZmRdIBrAFBVV95cUxOVzJqSWxEdFVlLW5aemZVZGlfSklmNUJKWERlOHY2dm13V3N1Qkk4aGpJbXN3NGlrQnE2NkhWNXFDczhZd01KaEQwNVBYU3hBYVJ1Z2I4OGVub2hSVmpMQkN1TkpmNW93MXZFX0V6V2ZNMjJIZlV2MmFnMlpZOFJObERJbGRrLXdGVURhSUlPT21oc2VsUnhGZFNBQ3JiWG9XVGxrZHpIZDg2UlIw?oc=5
+
+### Six months of the Ebola epidemic: they warn that it may become an outbreak that affects all of Africa
+Published Nov 15, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMi4gFBVV95cUxOZDhNWXcya3Nkb255RmFYOXRtZVYxYlZhTThxRDBIOVRobERKLXNaSW5OOVNQUzNDd1d6ZjZHVWNDMVA0MlhGVmI1d085TEhzQno0UTdVbHhyQ3FrVTVFN3I0cHNXQXVLLTFYN1JfaEc0ZlBzRVRsX1gzdDhxWDNxak5pRHFWUUJuelNaRHB4cjNXcWIxMm5yVGhkeXY1bU5OcnB2VVBHYVZyTlh4RmJWQWJ6Z3k1NzR0TmphWC1DRFRna1hQRkZQWlZvUFdGaFRPOGZ6S2hSOWJvODg2MUdic1BB?oc=5
 
 ### Africa CDC says Ebola outbreak still out of control six months since it was declared
 Published Nov 15, 2026 · Retrieved Nov 22, 2026
@@ -280,42 +310,52 @@ https://news.google.com/rss/articles/CBMi3AFBVV95cUxQU25FZUdud21zOGRwcHdZRTZESUh
 ### Six embassies warn South Sudan of high Ebola outbreak risk
 Published Nov 15, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
-https://www.channelafrica.co.za/channelafrica/news/six-embassies-warn-south-sudan-of-high-ebola-outbreak-risk/
+https://news.google.com/rss/articles/CBMirwFBVV95cUxOdmVvejlyVG5kdGhwSkw3QVRwM2RGSFQ1SVFmRFIyZHNTQXI0R0VCTFhjZEJucUZHSzNZcXh4ZEU3Y2dzRl9hUnlWeF9CSk4zOGdRbm04Q3ZtQlUzekNURkN1bjVja0RjZlJkd0F4bWdnb0R4Z09PLUZmVlhKeEI5OWVZT3IzeEp5UnI0Vzg0cWkxS2J5alREMmdCSnlGOXVOaGhuRmRuTUJJWG9rUDBB?oc=5
 
 ### Six months on, accessing hard-to-reach communities key to halting Ebola outbreak
 Published Nov 15, 2026 · Retrieved Nov 22, 2026
 15 November 2026 | Addis Ababa, Geneva, Kinshasa, New York, Rome Six months into the Ebola outbreak caused by Bundibugyo virus in the Democratic Republic of the Congo, significant progress has been made in bringing lifesaving services closer to affected communities, despite immense challenges.
 https://africacdc.org/news-item/six-months-on-accessing-hard-to-reach-communities-key-to-halting-ebola-outbreak/
 
+### Democratic Republic of the (DR) Congo Ebola outbreak: Unrest fuelled by armed groups holds back response
+Published Nov 13, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMiwgFBVV95cUxONHh2R3hyeHZMc2pXZW5TQ2xWXzBkeE02RHpreHdmdU14MWFXMlZmam85S2ZNMVhjdkpIUEU0eVg4R2pEcWVMVERBdFFlQ3NtYkdYNlkzaURzVENYaE40bWgtalpDYlJzcUtGaGU0SXVCWDFXRWRCbGRHVk5UUDVReW9DV2RDbXN5WUxmSTkyQVNBaEtIRDB5djc5TFFUT1h3UGVOQ0xyeGNsMHQxc1MtWXcxNm0yM0l5QVFCMHVXUmtqdw?oc=5
+
+### Ebola cases top 11,000 at six-month mark, challenges remain: Africa CDC - India Tribune
+Published Nov 13, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMiogFBVV95cUxOZ3ltLXVFS1VxT1FHM1RWR3FNUHRlT2tQYkhOejRqaVRkcmpZRkIteUpJd0pyWjR3dkZQMkszVFZnWkdUYmVOZFl6R29pS2tkZTFHdnMxRFhkd040QmdwTXhZWmNrVjlDZzFNUjlIZVY1c1dQaW9VbVdLVVJPcUJFLVdJQlVpMGlMMUVsQWJldDhaUEpDNHNISm96Ylh2RmVQd0E?oc=5
+
+### Ebola cases cross 11,000, death toll rises to 5,437 in Africa
+Published Nov 13, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMiakFVX3lxTE9CaGxBdUFfaFBpN0FJZWxuZTU1QTlzVFVTM2llZ1F6WXlpTWpmUlI3X0dhd095YnpuUzNLZHFBQlRxbU5FWHVnRkd1eEtRTm5icl9MLUY3ZjNQejZOaWppNmRfb1NveXFhQWc?oc=5
+
 ### The New York Times. . The Ebola outbreak in the eastern Democratic Republic of the Congo has a new epicenter, one largely isolated from aid by an armed group that has killed and kidnapped aid workers. Declan Walsh, our chief Africa correspondent, report
 Published Nov 13, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
-https://www.facebook.com/nytimes/videos/the-ebola-outbreak-in-the-eastern-democratic-republic-of-the-congo-has-a-new-epi/2156164984980033/
+https://news.google.com/rss/articles/CBMi1AFBVV95cUxON0NtRWlYdTJiSHN4VkNndzdDQjd6N01mc3E5emJrVmtodkIzYkJnUWViSElaWlZwVzJGQkhSdUdJc3Y1QVo2Nm5WZFFScF9JVVZMZndvZm5qN1ctbkFSY0R1ak1GcDQzcDVlanY5SDBOakhwOEhHZTZCNS1EOHBnX3o3NUZIWFhBb0RDeEs1dkJLWFlQRzhpY1BOTGF4T0x1azN2cV80TnBEb1dvXy1KNnBSV0RTQXY1TzJNdy1uWDduLTBuelZmVTNxcXduSmJJaTVKSg?oc=5
 
-### Quick takes: E coli death tied to pumpkin farm, US Salmonella outbreaks, 18 more polio cases
-Published Nov 13, 2026 · Retrieved Nov 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMivAFBVV95cUxPVXpWWmJtUkxKOUhXSFlXNWNEOXVEMEh4NmhVWGhvNUQwX005TG44RFh0cTktMTZZU3VFZlF1cWhuUEpSLTFKRkllQ3BsR2dXNlV4QjlxY1BDM2pqWVY0SHhxdDZveTJpVEhHaElnd3ZHbDBqWVlCcnNMaThfSVAtWm5HSVlUYVVJMHdRSkFHdy1KUnlpSHU3Um90aHRxYkxQQ0txVDhpMUJxZ2VidTh4Zk0ydVhMMTV6blE2Zg?oc=5
-
-### Multi-country Bundibugyo Ebola Virus Disease Outbreak Situation Report No. 26 (2 – 8 November 2026)
-Published Nov 13, 2026 · Retrieved Nov 22, 2026
-26 (2 – 8 November 2026) ReliefWeb
-https://news.google.com/rss/articles/CBMi4wFBVV95cUxPZDRGd1VydXdtczlEMFlUVlRRZmRQYzh4NF9rWXJYcE1uQjA3VHl6UkZhbXNQQWFUaWhuZVZKenBjcUxNWnJzckE1V1FhTWJHSVVSRlE1YnRxanZuOEdwZy1NX0RRTWx3blA5UnBWb1RxQWJkbjZuS255SmZWbW9OTEVmdk1ZQzRvQWFzSmtVSFkyUi1RaFh2UzZ3Si0waUkySnVRSmRYR3A3SlB2LXJDTUZSZ19DdUkzUEl1YnRpcjMtbjQ5Rm5nZGpUTEtOUmlDY2hYTlVLNW9jb3dUdGhUakUwSQ?oc=5
-
-### Ebola outbreak in DR Congo remains out of control, six months into the response
+### WHO warns Ebola outbreak in DR Congo amid rising infections, violence
 Published Nov 12, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMirAFBVV95cUxNNVVYb3ZBeWV4OVZnVzVMRWMySlZ1ZnpaaHJRMzZyVXR2dndnbE5rT0UtMjF0UEkwOGVsR2JRNktTQmg0cTRTZTRHQUE5a2tZZ2ZmOEdLY25FQTJMOFcyckctYm5udGNJQWpEWFVWM1BzZ3l0UFFmV0ViWGdBY3lJQ29BYmhKSHB4TG1FdEhSaTlmMzkwY3N3d3BYeVZmcnk1YWk0X0ZoNkszbm1B?oc=5
+https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWQ1BnWEt1S2x0Uy1MUXJmNW95Skg2RVFuNk9fWmQwQ3lwRldFT25TTWJKNVpCcnJ4SXZRVm5adEZNcFBWTDZxdzNPaXEwZ3Rqc2NaQjBWRW9HZw?oc=5
 
-### CDC reports six measles deaths in 2026 as US battles worst outbreak in 35 years
-Published Nov 12, 2026 · Retrieved Nov 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMidEFVX3lxTFBROTRrdm55TzlLU2F4aU1FeFd2dDduM0hWNTNyZTFPRDRQMnRRMm13SERhTnB5a2EwM1p3NG1kb25jUWNlTW1HWU1TTjNvOGNsQ29RUzJSMFhXdU5nbVlSeG9odFowUHNlYThIdGw5UGFJWHVq?oc=5
-
-### Kenya Contains Ebola Outbreak as Last Patient Leaves Hospital
+### Ebola in the DRC: 66 civilians killed, more than 1,000 contacts escape health monitoring
 Published Nov 11, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMif0FVX3lxTFBaT2NKUHdPaXFybmRJRUp4bDRkR0xiZlAyOGJIaU5CSmxSMmtqamtOMExORXRhSERFS1cxOFZlSC1TbnQ0Z0otZzd6UnJpeEVCLTI4YkRoUDRsM001N2pTcnJtOENDcVhUUUduWlN1ZE91VzhjT1FCLWdKNVFibm8?oc=5
+https://news.google.com/rss/articles/CBMisgFBVV95cUxNR09nb0hPNTlRSm9CR3dacnQ1ZmpCcUFaODhWOGF3cWNqYzRxR19Wb2V4QUtHU0VIalJnVENZQnRVV0czS2w2S2x0d09kVUdPdzY3Qk5CMXVacEc3QUpsYVNMOWRpN1pJS2haT2dYTnlGbjdHLTJMb2RESnhGa3VfVDdrVUd6RmNBY2NNcUZHWkFFQ0JZeGFfd0lwZnBrcENub1doQnNQM3czTnpOZmc5M2l3?oc=5
+
+### DR Congo suffers the worst Ebola outbreak in its history
+Published Nov 11, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcElUTFJ6a2QyT0tLX2RPTlkwa01mazRuVVl0elZpTXp3ODlBWVlzU1lCUGFZbFQ4ZmpqVkx2LVZoQWVCMklCMjVmNVllYlFySEFpWThhckdOZXd2RlNPeDRsLXRZMnZ2QVBMWUVJTnpZQXJCbWd0VEFoTUJPVUVXVUNFSXBFdHExdGVtUHlnaUYzblMxOURScUpDd2ZvUE1vTUFPdmxiM1o?oc=5
+
+### The Ebola epidemic in Congo has caused 11,042 cases and 5,387 deaths
+Published Nov 11, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMimwFBVV95cUxOazctWXY1NDZkc1hyWl95T3FLODNWVVdNWmVMVTFNWGJGTElKUWJWVXFLVFZRaW1hTzl2LUhhRUtZR09JY3lyYzZPb0hhT2haV1VLRTVrXzgzb0VJakNWWnoyVE5RTERGd1RjS1hVeXhjUmo5YlBFTFBsYnBvWURRTVZ3S0RrX2xxZHBtLUh0U21zaDQ1Xy11MEZaSQ?oc=5
 
 ### Ebola: Nigeria records no new cases 21 days after imported infection – NCDC
 Published Nov 11, 2026 · Retrieved Nov 22, 2026
@@ -327,10 +367,20 @@ Published Nov 11, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMiywFBVV95cUxQWlgyVzQ3RjdyYjR2bzBoMTFpZGNuTDFyS251Wnp1aXJHQklVMnpTdFV6NXZzT3ZjTXlmSjdSLTlmUnpvbkNjQkdyaDZSNlB5VjZwU2JJNExiX1J4UnAtY0x5QWlEXzJ5MFY2UDAwZGN6d3RqZ08wc3VZNG1zSHFJclVSeDFkRVVhcHA4dWdNc2hNbHpWcjNsTE0zeXk5M2ItbVpFM0pCVjA5U1NXVS03TjJocUxTNXRnRTlmM2t5MHhobkotYVJnNWtaOA?oc=5
 
-### Measles cases explode amid declining vaccination rates
-Published Nov 10, 2026 · Retrieved Nov 22, 2026
+### Congo’s Ebola cases surpass 11,000, government data show
+Published Nov 11, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMirwFBVV95cUxObXJwVXA2MUJHcDZTaW9memR0XzhUZlBLUGVGM2pIaTZFeHdkYVBXb0xoTG1rLVBPckx5R3NwVzNKZldUQjNfRzJCWUJuSVByaWlRek16ODIzUmdId0JfS3FGemVTa0tWWGdqS0tkdW0talN4WW91Ry1HZUxJWXUxT1NHM19QZHl0bjJBZ0NlX0VsY2hkcnM3OUhvbDlTUmFTc0ltODJEV0lzTHMyd0Zv?oc=5
+https://news.google.com/rss/articles/CBMijgFBVV95cUxNcUZpQy1rWVFPUF9McUNlOXVXWFRfanp6UjZHYldxemhrR3JmNWl0MlhMUFZ1SkJ3dG9QSk1tamtkaE1DMFRPalBaMHQwdDM3dlVucUNJRDNCYW1xMi1tSjVDSmRJekRNQVIzNVFoVFdnV1YzZ2F0Sm5kcXlvYVRfUnYwcmV4cjRac2tVNG9R?oc=5
+
+### DR Congo Ebola outbreak exceeds 11,000 cases
+Published Nov 11, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMihwFBVV95cUxQeThpTXN1U2FiTW02X1VDUENJWjVjQVFOTkR2NXp0MWxoOXduOXc1RjVOaWVqeU5nbDVERll0QVZCN0ZTU1Q0VklNek1GdkljVFlvTXV5dzFKMHphdDZuZEt4YnEzWFNvSEtUeDN1U1lyQk5uTHVUMjVRdGstUHgza28wSEdybTTSAYwBQVVfeXFMTU92X1FDSzZPM1BnSE9nMlVSaW5GNlZwVFNaQm1helEwVVdlb2tOOHo1akFHLU45NTNLS0NFbUJIcUlNeTV3U3F4UkhjMlN2UEZqMFREWmRBQjVFSjI0aUpOd1p5VDZoSkZEVVpOLXg0Tm9RTGV6SHFpYzFCV05qZ2U4V3RXQzYwemJXV18?oc=5
+
+### Congo’s Ebola cases surpass 11,000, more than 5,300 deaths
+Published Nov 11, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMikgFBVV95cUxPNlFlVGtmZkJpT3BHQ0VROXlqUndYSVNHN0dWdmdQRXhjbnFkekJQVnh4VVdFVFl2QURfSHVLMUhLa2JQRTVCa3pHNVlxU1JWYjlZRnVNWlRKcGowQjlySzlob0IycF9sSWZqSDl1OGpBYk15Y01tek1XdlJSZzUtcmc0UktrdVQtSmNzUXE4ZTBKZw?oc=5
 
 ### No New Ebola Case In Nigeria, 28 Contacts Still Under Watch – NCDC
 Published Nov 10, 2026 · Retrieved Nov 22, 2026
@@ -392,11 +442,6 @@ Published Nov 20, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMizgFBVV95cUxQX25aN3JhbzVmY3RrNTFRczFYdkx2VkFrQ3JRR2hnNGUyaVJnY1IxdXFIT2Nwa1RWZHZqSUtyUHJwZHRPTjFUYWtxbTNxNTZudkg4SkkzMk9hc1R1dkVBVnpaMEx0TFpoWjhNS2dDVFFDWUx1MG1RUk9zQ2UzbnVRX0NJWG1SeFprdDY0S0hwai1JcmZqRTdNVVlMVGJaem1KeW0zQ1lUYWhpczJiUTZkazVsbjVseFRIekt3ZFlkby1DLTNsVjBLWnl6aEt3Zw?oc=5
 
-### Hong Kong Reports New Dengue and Chikungunya Cases; Public Urged to Prevent Mosquito Bites
-Published Nov 20, 2026 · Retrieved Nov 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMi2AFBVV95cUxQOEtlRlhGc1pnSXpMNUluRXhvTjJjNTJ2ZHRSTFg2bVRrcEhxS2s3SkthTnVJTnFhYzJFckc4ZXRRNm9vdENBR3JYTTNSZWhobTN6LXZaekIxRkdLc05pXzU3dHFwYjRKd3FMNjNyQmhWVDJwQTVaV2VNTU9HbmNUNzQ2OGVpM1N2LUtlWjZiaVEzN1RCRVJwUGJWYlNHSXJkRmw2LTFSRFlabmFwSzNoX2I5bnpoZm5Kc1lCUWxfZnNzZjVQbjlGOGpUUnlFWHdvSlNoU3hjSlI?oc=5
-
 ### Ebola Outbreak: Current Situation - Centers for Disease Control and Prevention | CDC (.gov)
 Published Nov 20, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
@@ -422,20 +467,20 @@ Published Nov 19, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVnlVbXREM09HdnNsUmdxM3dlRVZ6OGNmajRqX2NickpJODctYlhLdXZmMlBOVVJlNU5zT1hNMUo1dHpkZ0tJT3pjODQwQy1LUG5HX2hoOXlYdmY0M1ExM2ZMSER1MFlwUU1HQTBRdjdlSnB4TlhhNUE5aTFVOXJLb2Nja1gzbElxUDBtT2VIbERxQnFTakIyZ1pjdFZpcnhzMEtLVmtidVBBSzJCNEtXU2ZRODZvMWFCWmRz?oc=5
 
-### Pennsylvania confirms eighth measles-related death amid US outbreak
-Published Nov 18, 2026 · Retrieved Nov 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMiywFBVV95cUxOanhyZ29EVGFvcVBKd0k1Wk9QU1ZqS3BGMG4ySkJrR2tYeEw5al9JT3BabnN1VWRSZnJZT1R3MXdxOHpEMWRoa0NHR0RKM19PS1p4VWR3c3JmU19LTjZvNXFKdUdVSDVNUVYwbzhCNVdQdFJNSV9VOUR2MHBzclFIZ21kTnBBNngxQk15ZG9ESktvenBYbzRnMFZzbm5FTUxpOFpPSERqMjZTSkRNd2RpY0cxa3Ricmo5dWZfZ19veHVQX2hCOTkwOUU4UQ?oc=5
-
-### Why Is the DRC Ebola Outbreak Continuing? Conflict, Contact Tracing Gaps, and Community Trust
-Published Nov 18, 2026 · Retrieved Nov 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMiwwFBVV95cUxQVkwxeWgzclRSelIyeTA4UXg1ZTFXTW5nSTYwMkItN01wTDg0QlAwbUN6Xy1Cc0UyTjFmSk50bkNrZ0ZGWU5hb0N5NEctNDZPeEVmTldWSUFoSFZVYUlGaVZYTnFUdGJYZ0pTd1l4LW1OR1ZzTWJnbUp4dUJhbHNoZ0Z5Z1Zkd1RJVlRsYXpfVWJnajYwdEpzUkJSNUJUanZ1c2pQMXItajhWTGpXNHhYMzFpSnJXdUFERjE3X1ctSWo2NFk?oc=5
-
 ### As US loses measles elimination status, local outbreak a ‘matter of when’ Cape County public health director says
 Published Nov 18, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMiXEFVX3lxTE9vVnNYRm05a2l2Mk5xempmWnlEd2ZTU0RhVDF2TUVweEFnelZTODFtcmpLdjNfTlJ1a0ZDVkxHVFdHVm9NZ1NvV0RvYlBLenNPMWwwUmxlYnJiTTNm?oc=5
+
+### Pennsylvania DOH confirms 8th measles-related death amid growing outbreak
+Published Nov 18, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMiugFBVV95cUxPTFNkMnB0MXRnekZLOHZiOXZ6dmdLY1RSaGZuTEZFTHRsQ3hRVnQ2OXZGYWpucS1YSjVKV2tCZFRQbVdwYnhoNmstSFZKNTBhcDBMMWQxRFRjbjYwQ3pUTllyVFhScE1ZZnp1ZnhmT2o4U2xEYlJyQ0NFck0zTHNiY3lhUWU0WHJhaF9Sclk1UTBfeXpkU0NWLVVROWpMeERVMTY1cU1SMWVFOWJhRUt5QUtRcUFMc0lUWUE?oc=5
+
+### Ebola burial teams in DRC work through health risks and prejudice
+Published Nov 18, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVDZJRmp4cERBZUZLMUtybEdhdk5KZE1UeUdGS1VqZjRsbGtsMTZEWTJkV0lJb0Z5ajdGeUc1RlRhMkUwYm52Q003b19DRmpvek55aFJLOGRyYmwxT1ZZQVAtTEFITVZ3emF5VTFEUEs2Zk43YUQ1d3hYODJOcHZWWmFzaVdxMjZ2cVpQb2NDU2h3UEFtVDFqVVA2Z01jUDcyNG9NbWo0RzBTaG1IZEQyaEljdFhvdG5YR01v?oc=5
 
 ### Number of confirmed measles cases in Kentucky climbs to 222
 Published Nov 18, 2026 · Retrieved Nov 22, 2026
@@ -447,20 +492,30 @@ Published Nov 18, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMikwFBVV95cUxQTEdBZDRhRmxfTTB3YmZiUUpXdzB4VjVWOENCb0VKRmxkeEZ6bmFTQjZkRmF0WFdZV29MNXFmZ3Q3VU1IbnAxUGtqTlc0OGVOZnRLYkp2OUdxa1RQMWdSRFJGazl3X3hVTk42WkV5WTYtdHZLREhJUC1XanNsTnZaUVNlaG1JM0ZlM3RMOEJJa1ZGd1E?oc=5
 
-### Ebola burial teams in DRC work through health risks and prejudice
+### US loses measles elimination status after nearly three decades; Mexico, Bolivia also lose designation
 Published Nov 18, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMipwFBVV95cUxQVHdkZVBZaVJxc3NOTGpTbFhRSzZQMThPNXBUYnNFbERpQnlSbzlXZHcweTZKZGs3NjJjYVBPRTBBNjIyaW4wdEZNby0zZ28za1VMa0t5MHRyUlVEQ2M2TmczTmxKN1IzM0szVTZMaGxhaDBqcFBoWFlKRXMyRV9OLU9QQ212ZG52bGp4OG14YmRIRE1qZmNJeXZFak9Pb2dQQXhXVDJsZ9IBrAFBVV95cUxOMkZCZ25NaUVNQW9CWHVXaWNuOGgzdnZNeU9FUU5UbTY1YkJfLV9LNF9hY2ZYZ0xSYmROZ2ZrME1GODU4dHEwbXFKYmJkcDBoY0lmMGE5UmNFaDY1QXNjZ2tYY09pN3JJMFRVWjI1R3BvcVpaemtwa1djVUxDLW1tWEJ3TmdwbmlfdDFablNqeEJvVEFjRkNaRG8zQ0MzaFo3M0ZNRUlIM3dFajJN?oc=5
+https://www.newstribune.com/news/2026/nov/18/us-loses-measles-elimination-status-after-nearly/
 
 ### Amid U.S. measles outbreak, LA County touts high vaccination rates in fighting virus
 Published Nov 17, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMivAFBVV95cUxOdVF5dFlJVTZkajhIdENWbzN0SWU1dkNybGNTbW5lZUNaUWxjOGo2ZGlaRFlxUEVhVERJUDVobmpHTFBwaWRfZ2lCWkpaSGxZM1k1OTNyS2c1SUVFRmpfYnU4UEN4aVhNWTI3N2hOeFNlRlhlUU55WnBldWlHcC1fNmlhaGdJcURCdEo4aEZKeVZyRzNYeWZhX0NEZ3BoY2hBazhFRHI2QzVkVjZNU25ZTE5CUVZ4emJYQzNvUA?oc=5
 
-### Ebola outbreak defies control as war and hunger fuel crisis six months in
-Published Nov 16, 2026 · Retrieved Nov 22, 2026
+### Measles outbreak reported in St. Joseph County; health officials urge vaccination
+Published Nov 17, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMioAFBVV95cUxQalZtYm1XOGNEZmhtekIyaUZIYUlCMEJJUllBRmtwR18yaFJWeVZpRmFDU09kOU1SSnFubDVrYXB3blpXMzk4Wlo4WUJjTzBBc1hkQlk4U1VxSDVQZnB3cXhuNThON2NEZDVlMXlEQ3o5SXdrSU9kbnFHMXNXSmh5Zlp3UzdRcm5rRW1JVHd1bEo0ZHlwVmd1R0tjckF2RUNB?oc=5
+https://news.google.com/rss/articles/CBMi4wFBVV95cUxOM0IydmFhRUZ0X3A0dTFTcFk3QzA1WVJHT1VvNUluQ1NEcUNuVVBQLTdBaXBuS05pZ3V5Q1FreDNNYjUzREl0LUx3WjhwaDdBQ3JFdVJIbzRZeE5QM1IzbHNmelowSWw3Q2VudUI4OF9xb1VwZ19HWUZaZ0MyNjhaMXZrTVM3MmtRcVp3QlgxZXVIZ2pQNVFuTUEzX2piSUliZU90TERiM0Y5U0RWY0lYWHdTUmhmbVB2QTdzUmZ0dHBBUDI5d1NuM0NvVVV0SkkzWXBhQUptQnltbWNVSDdETFAtUQ?oc=5
+
+### Multi-country Bundibugyo Ebola Virus Disease Outbreak Situation Report No. 26 (2 – 8 November 2026)
+Published Nov 13, 2026 · Retrieved Nov 22, 2026
+26 (2 – 8 November 2026) ReliefWeb
+https://news.google.com/rss/articles/CBMi4wFBVV95cUxPZDRGd1VydXdtczlEMFlUVlRRZmRQYzh4NF9rWXJYcE1uQjA3VHl6UkZhbXNQQWFUaWhuZVZKenBjcUxNWnJzckE1V1FhTWJHSVVSRlE1YnRxanZuOEdwZy1NX0RRTWx3blA5UnBWb1RxQWJkbjZuS255SmZWbW9OTEVmdk1ZQzRvQWFzSmtVSFkyUi1RaFh2UzZ3Si0waUkySnVRSmRYR3A3SlB2LXJDTUZSZ19DdUkzUEl1YnRpcjMtbjQ5Rm5nZGpUTEtOUmlDY2hYTlVLNW9jb3dUdGhUakUwSQ?oc=5
+
+### Congo Ebola Outbreak Linked to Spillover Clustered Near 1976 Lineage
+Published Nov 22, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://bioengineer.org/congo-ebola-outbreak-linked-to-spillover-clustered-near-1976-lineage/
 
 ### 370,000 children to be vaccinated after polio alert in Syria
 Published Nov 20, 2026 · Retrieved Nov 22, 2026
@@ -470,7 +525,7 @@ https://www.arabnews.pk/middle-east/370000-children-to-be-vaccinated-after-polio
 ### Nat Geo greenlights docs on Unabomber, ship hijacking and hantavirus outbreak
 Published Nov 20, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMilAFBVV95cUxQMXB2RGFYQ3NKM1FBMkg0NDd1TjRDV2NyZWwxUlI0elR0c2ZiVENNRVRVS1lMcWh3YVBIbzJhU0dKd2RhRXZYRWozR1FEeTBEY2JIRjFlLUpaNHF0Rmw5WUNGYTAzdDRlUFdGSG9yc2lzTnFWZFNhT0lHY3ZsZHliUUtQSFhNaXVYT3hHTGZzQnRnSlZJ?oc=5
+https://news.google.com/rss/articles/CBMiqwFBVV95cUxQal9qWTNaLXJSSEp4bHlRTERXWHlHYVlMZnNTNFQtd3RxT1FNVUZzTHNWNy1GTTZLRi1rbjhaVHJWejFYcVFudkFNSzJzOW5fY18xYjJQaTRpS1JBNTdpZjFNTXdvWjdkS0NuX09QTmRlTkpyWDVxTERQM29wV3lUNEdhcmNzb3UtbmxqVEgwNm9VbDlxTlU3V3BzMnRFdDFYZ2Jhb3VXbUR6M1E?oc=5
 
 ### Opinion: African Ebola outbreak affects the world
 Published Nov 19, 2026 · Retrieved Nov 22, 2026
@@ -487,15 +542,30 @@ Published Nov 22, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://www.thehawk.in/news/world/south-asia/bangladesh-dengue-outbreak-claims-two-more-lives-2026-death-toll-rises-to-518
 
+### WHO to Begin Ebola Vaccine Trials in DR Congo Outbreak Zone Next Week
+Published Nov 22, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://africa.dailynewsegypt.com/who-to-begin-ebola-vaccine-trials-in-dr-congo-outbreak-zone-next-week/
+
 ### Indiana reports over 200 measles cases as US loses elimination status
 Published Nov 21, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
-https://www.chicagotribune.com/2026/11/21/indiana-reports-over-200-measles-cases/
+https://news.google.com/rss/articles/CBMiiAFBVV95cUxPam1kVllaZEU1amZWR0xkTE11dnFTZFpSZVRiWEpzZjZodDBqdFV1Si1QdFlIa3dhQTZSVlBXaXdOakJuUTRKQ2MtTk9ueWpWaE9VNFY1R1RIdzJIbmc2bmhaaUJ0YVJDTE0zZ3V2cVNoa2N5RlF4OU9SRWpnTFAtOVNDdWdNT2xY?oc=5
 
 ### Virginia reports first measles death in 48 years amid rising cases
 Published Nov 21, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMilwFBVV95cUxNaU91ZDVmeHdvNTVrVm9TMy1yNVNEUUdMWGdXa2ZhSmhiLV93SUs0YWFRdFZlUGhvejEzNllUUGpkT2hnUnNzT3JBT01Bdm9YSG5oY29qRldKVmh1MzlKVUp1T1dGNXREeFFKcTJldnVCOXdlRnJ0eVNXWkFhV1piTVQyX1gweTJncUFiVXVhb19rc3lZUHJz?oc=5
+
+### WHO keeps Bundibugyo Ebola a global health emergency as DR Congo cases pass 11,600
+Published Nov 21, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMikAFBVV95cUxNQUxyQ3ZJbUhRd2JGUVBXeVU3eWFMX3dVT3k3Z0kxckhSc0ZfQlNNa3pWSmtCZjBLQWw3Z0Rkc1MxdDBrMEVUT1FjeXFaY05XbkpUVTE1Z1hwSkhvRWkzMklFOFBJR0tRZ0U0TXc3cGVsY3NKM1NwSHZxVExrNnBySXVENlhDbHQtVUpqekUyNU8?oc=5
+
+### WHO warns of high child death rate in DR Congo Ebola outbreak
+Published Nov 21, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMioAFBVV95cUxOa1JBUUVETEUtT2RGc0dXWFVXbTRKNldKVnZfZjNBVGdxd0pCVjVlWVhzRGNlZ1hvS0Y2cVhJVWFQM1g1cVJMZWRpeU9kRzRoTUhBcFc0VnRFeUc3OTZKelNIMTBfZ0VmU0pkVXU0akhJVG5ra0UzeWZjM2xWY1Z6RnFOd09BNEFWeDh0X2FURXI0Mk9iUWNsQTJJOHRRaWVq?oc=5
 
 ### U.S. Loses Measles Elimination Status Amid Rising Cases
 Published Nov 20, 2026 · Retrieved Nov 22, 2026
@@ -512,11 +582,6 @@ Published Nov 18, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMimgFBVV95cUxQcEpuWjlSNkRzUUE3R3RsS2x2dEltVUtsTU04cGY0OGxXLXpNT3ZhcnhtY1ZTSEpia1pKOVF3TVYyRlhUUEhhZkFtajJPNEU0ZVZoM29kSklJQm50SUdmeS1LR3VMbFYyRHlUWUxObHhId3ZWc0h1YUFWLVQtY2VYMFNvaU5lLTFpZWl6VVZzRUVkUUZoTXNxd1Fn0gGuAUFVX3lxTFBJSEptTmM0TmFvaHZhNkhCRWZCS0Fsa3ZlTUQxT2xkM0EzWktoa1Z1cG53eGFNbGt2V2ROajBUNFdGRmRVLTJna2dqaUJXTkU4aDNRUno2SndvTkhWYUpVelZyREpHM05FbDRRMTlTa00zT01GZ2VBQ2tjTC1sWThvdlNhVFdwRzFHZ1c5U3FnMGM0cjBPRlE1RG81LThFYlltSEMxVHlYTk1YU3RCZw?oc=5
 
-### How AI is helping reinforce polio surveillance in Africa - WHO | Regional Office for Africa
-Published Nov 18, 2026 · Retrieved Nov 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMihwFBVV95cUxQTEtDWXRRMGN6TWR4RldRTm9nYVprR1hvRXk1OXhhTkxySDVDLTdKRHhzWUZucFZoREdJX3lWamM4YkllWlRyMTZjMFQyNlVwd01oOEtaM0NOTmIyamgxME8wTVpIb1JlNWNoMXctZjdtUEhKeGJuUU5NVFE2VkcxdFFvLVluazA?oc=5
-
 ### US loses measles elimination status as cases and deaths surge
 Published Nov 18, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
@@ -527,15 +592,20 @@ Published Nov 17, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMi1AFBVV95cUxOckYyQ2N1a2diREUwOHdwYnpkaWdLY2dlQi1PWW5Ya0VVU2lWQUxNeERaaXA2ZXl2UEdxdWhmcjdaOHM0NDhCN29NZW5hdVpRWktrQTU4UElmRzNfblJtRzhhVS1Edjl1cF9VUUEtUDl5UllXNkp2MUZIQjVMZTMtUDk4T2hvNG1USjhGZG5vUnl6azhLR2NLaGRTY1VhcVY5THhNaUNMRFBia2dLRUowcGwzaXVxNUdESWVabWhQY3ZGWnB3WTNYUGNPanJyRjQzODliUQ?oc=5
 
-### Africa CDC says Ebola outbreak in DR Congo ‘still not under control’
-Published Nov 15, 2026 · Retrieved Nov 22, 2026
+### Ebola Outbreak Ravages Congo As Hunger, Insecurity And Fear Hamper Response
+Published Nov 16, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMirAFBVV95cUxONWdWQ1pwSURBT2NIcjhsRkpvZmNMbHlHeDM1STlUamVyMURWWkRDMWJ0Q1AtMGY4cHcxaldOSkROYzYyMjFVUXNfTEhpMnE3WDhkLWk5MUd6MFBJMDRwbWx3NDhGM1I4Y3A2VmhENkREYW5IcVZ0d0puMWZpVEZCdnVldHBuV2s3ZXRNNmNpQTVCNjl5eUlQcVczOEl6RURrdFZkd0JyQ1Judmtw0gGyAUFVX3lxTE1pelhfM2hCR3BubDlDcDVRYWhINlRJczFRWTVLbkpFWW50UTVBZWlISG5IZEVjZ2xSOWV6ZDc2MHBoVDVxRWt1d3E3SlFzVnBudWpaWGpIZVkyalRtWmJxakZIZWpmNFRfaV9hbTBoLUxPRDlRQzFGSWJuMWFzMkpGMGoyMVZHLTlHOVlodE84T01PeElJdVNfX0NMVGR6OG9fNm93UVB4S3lHZkFpamRFZ0E?oc=5
+https://news.google.com/rss/articles/CBMirwFBVV95cUxPZ2V3MFlPSi03Y2xLeC1CTEt2dlFxMzVMSVRuR00wZUFpcjg5Zk9TQjFRNDlXa1UyUVZITWVDNkVvWHV0LUNUTFJ5VDVhU2ZHVGpCQlVvYWQ1VmprZlhjV0ZaUXR3bnRScXk5LWFNa2RPb0VBcWt6ZmxHYWxuMnhXNUZBRjdjOUdjMWdxQS1IZUhLcW9QSTFNYU5KRU1LYmtqbWxqMTZJR0NyT1J1VlNN0gG8AUFVX3lxTE10dWRuMHl5SzhQXzM3bjFhZTM4ZVJQeGN6bHYxN0FMdzVlT0dpcU1jTFNzMFk3UjBXWXVHTEpqdXRPeHVtVktOX2ViRmpYWHd1LTBCeHVsLXZlYXZPM05RY3lHN2V2SnoxT1lHNWZZVWVtSmVXclpoclBfQmZ0WllvVlV5bUVqVTFGTmdKSDNZMjRNblRxay1GdUZpTWkxWGJjUFpRamhrdmZhUEtUSjk3VXhnV05wU0NySmlv?oc=5
 
-### Young child in Virginia dies after testing positive for measles, state's first measles death of 2026
+### Virginia reports first measles-linked death of 2026 in child younger than 5
 Published Nov 22, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
-https://www.wtvr.com/news/local-news/a-young-child-in-virginia-has-died-of-measles-the-states-first-measles-death-of-2026
+https://www.aljazeera.com/news/2026/11/22/virginia-reports-first-measles-linked-death-of-2026-in-child-younger-than-5
+
+### Virginia reports its first measles-associated death since 1978 as cases reach 220
+Published Nov 22, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://www.medicaldaily.com/virginia-child-measles-death-first-since-1978-481586
 
 ### Arkansas reports probable measles cases
 Published Nov 22, 2026 · Retrieved Nov 22, 2026
@@ -545,9 +615,9 @@ https://outbreaknewstoday.substack.com/p/arkansas-reports-probable-measles
 ### Ebola Outbreak Climbs to 11,645 Cases as Deaths Near 5700
 Published Nov 22, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMijwFBVV95cUxPam1aZkJ1TXBTMjlKRFgtT09XYzNVbEE0R3hFdGlpWlJvczhpUmNGTWkwMzI1WmNXWGNWTGNIemNZRVY5Wm9ibHpjSEdpZERoUWIxVGlQZTVJX3l3aDI3d0p3amtWRFdVVFVzQ3ZUb0xKUDQwVDE2Vnp1eTVoX2l6TFJIdWtDVXlwcEJaZ1Bwbw?oc=5
+https://www.contagionlive.com/view/ebola-outbreak-climbs-11-645-cases-deaths-near-5700
 
-### Virginia child who tested positive for measles has died, state officials report
+### Child who tested positive for measles has died, Virginia health officials report
 Published Nov 22, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://www.9news.com/article/news/nation-world/virginia-child-measles-death/507-228702d1-9552-4f39-bd35-5add0d90aaf9
@@ -556,6 +626,11 @@ https://www.9news.com/article/news/nation-world/virginia-child-measles-death/507
 Published Nov 22, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://draxe.com/health/wire-scientists-report-strong-new-evidence-specially-bred-mosquitoes-1-715277df8dc5/
+
+### 9 children killed in measles outbreak in 24hrs
+Published Nov 22, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://www.daily-sun.com/bangladesh/910633/9-children-killed-in-measles-outbreak-highest-daily-toll-in-two-months
 
 ### Hyderabad Hospitals Report Viral Fever Surge As Dengue And Flu Cases Rise Together
 Published Nov 22, 2026 · Retrieved Nov 22, 2026
@@ -577,20 +652,15 @@ Published Nov 22, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://nkytribune.com/2026/11/kentuckys-measles-outbreak-crosses-200-cases-in-16-counties-17-have-requires-hospitalization/
 
-### Virginia reports first measles-associated death since 1978
+### Virginia reports young child is the state’s first measles death in 2026
 Published Nov 22, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
-https://wjla.com/news/local/virginia-first-measles-death-since-1978-child-dies-measle-cases-health-sickness-outbreak-deaths-virginians-fever-rash-symptoms
+https://www.latimes.com/world-nation/story/2026-11-21/virginia-reports-young-child-is-states-first-measles-death-in-2026
 
 ### Young child dies in Virginia's first measles death of 2026
 Published Nov 22, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://www.yahoo.com/news/us/articles/young-child-dies-virginias-first-000051664.html
-
-### Virginia reports young child is the state's first measles death in 2026
-Published Nov 21, 2026 · Retrieved Nov 22, 2026
-Limited detail was available from feed metadata alone.
-https://www.alexandriabrief.com/virginia-reports-young-child-is-the-states-first-measles-death-in-2026/
 
 ### Viral fevers, dengue cases surge in Hyderabad; doctors urge early medical attention
 Published Nov 21, 2026 · Retrieved Nov 22, 2026
@@ -605,17 +675,22 @@ https://www.thedailystar.net/news/healthcare/disease/news/rains-may-prolong-deng
 ### Virginia reports measles-associated death
 Published Nov 21, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
-https://outbreaknewstoday.substack.com/p/virginia-reports-measles-associated
+https://news.google.com/rss/articles/CBMiggFBVV95cUxNb0NZaWpBRHZpaUk2ZWdlLVc0dDVGZTJSb3IwNlJkeWNhY3g0Z1ktZUdva18xMjU5WlFSOGlJVW00cFJEN3BDdEJsanUxSm5jRFlZQ3FuQi0wZlpjV3l1SlRsRlNTclVUbXBnNi1veEVhbzlySl9WZWtlWnd1SklmQUd3?oc=5
 
 ### 5 measles cases reported in northeast Arkansas, state Health Department says
 Published Nov 21, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
-https://www.eldoradonews.com/news/2026/nov/21/5-measles-cases-reported-in-northeast-arkansas/
+https://news.google.com/rss/articles/CBMimAFBVV95cUxPTUVWY0dYbzJEXzRfZlh6eVFKbDVUQThCLVpxZlZOdlBDcThmRkJDcjY5TDRrNlBqdGJTOEhlbk9idFRHYjJxNE9Qb2V5bml6NlU1Q0tySTJMcGNwTndEZmRUbWxrN0c1azNfT1VJenl5SUNEemlHQXg0dksyRXVDRFdMNEh5WG5YZ3NCNDV3ODV3b25iRlFJOA?oc=5
 
 ### Child dead of measles in Virginia, its first such death since 1978
 Published Nov 21, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
-https://www.washingtontimes.com/news/2026/nov/21/child-dead-measles-virginia-first-death-since-1978/
+https://news.google.com/rss/articles/CBMiogFBVV95cUxNX2t2QTZNQTdHQUE5MFFFTU9EZFNQeEtjRkxqUW5TOEpnMHpxMmtTbG5FcHZ4aklnMHJzS3ZFMUpTNzNxWTZUYUxNNWotU2UtOGpkamRJaUpfZXFhaGxvQ0U5bTkySmc1RjczYktCMkRneWZSb0F0WXVyOElXbW9WZlEteWRuY2E3bWlaY1g5YjNVOGNLZjJzb29ZYU5aLXk3ZVE?oc=5
+
+### Health alert | Measles cases in the U.S. top 5,800 in 2026, the highest total since 1991, as states report 10 deaths
+Published Nov 21, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMi3AFBVV95cUxQOTEtUVBld2RYeF80ZkxCbmt6N0k2LUUtTTlCZFFReGIyX19fOW1hdjNfWk5WckZjdXJCdlU1bGdWVGY2QXkwTXNGRDZmUGJQenVSVkVvSHAwMUlYQ3A3QVUxYUE2eWx0czZBa3pSN0Zuc2xKaGxiTzlnOGc1S0xpd3BOclFEa3BUNC15SUo2akdxRk5ORjUtUmdGUmVTTHlxM3ZtTjh6ZFZwa2dEaVZWR0JNczhldjZjX29VYTRrOElfSTd3bnhFcDlDdnpGbklrZ3lrVFM5aWJPVENT?oc=5
 
 ### Scientists probe new method to prevent dengue as Florida cases spike
 Published Nov 21, 2026 · Retrieved Nov 22, 2026
@@ -656,6 +731,11 @@ https://news.google.com/rss/articles/CBMizAFBVV95cUxNaERqTnA3SXFqU0w1TzhId2lGU2l
 Published Nov 21, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMi3wFBVV95cUxQaUEwT2xTel9uSDNYOWRHTnBmcFRHTU80TjlKRkJkV2xvM0s0T2JqVWpINThXS2c3QlkyODZkNWJHTXJxdnpqU0lnT3ZnYU1fblhOclphX1lNcHNVNE5uZHdCVmE1eUg3M3JpVHN2bWRmNk5ubEF3NXdpWFJ5SlBBOFNxZTBoeHBJRzBxaFRQY1V4MHlnbGt3REtPWUJteVRuZ1RpRUVUVVZjdXFlVVV2elRJMi1XY0FoX0FqcHhaU1pZSVl3MVlSdG81bUZsY0dLWEMwNEo5MTl1S3NGRWww?oc=5
+
+### Virginia child dies as measles outbreak in U.S. worsens
+Published Nov 21, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMitAFBVV95cUxOUnd4MVNGLWlTOEF3d2hGRF91Vm13d0tVYzJmYVpZY29KTVhMaTV4YWFnQXRodjRsMmFzWG1NRkwxdE04emJwSGM3VWwtS1pkQTd0RXlVeVUxdDAzYVpHa0ltVVlIRnNEdkQ0dDctYjVmeFBXQm42dWs2T3JtbjFTWGtXUm50WlpVZDJ2aDF1OW1mZGtUSlpZRHRfZWtKb19lN1pFWFVBbjhIaUxTaGlXb2NuYVXSAbsBQVVfeXFMTjlZc29ubnV4WmhlY3UyaWNLd2xKamotVEVxQVB1LVhXdzIzZTRCZ3c1SVdERXZrdW5rUmtONDc5bEFfa0dUYklzWEl2cXNOc3dHZ3g3aTc3eDhGcFdyOXc5QlgwVFBDdDJfc0FKOFh2RXpOU2s2eURSMThSdXgtNUh6LS1McmhVczVCeDRnTE5BdVRpZlgxcmFWM0Z4XzhnQkRmZ0Z0cUpyUjE1R1RNVEdPWnhrNGM5Nloxaw?oc=5
 
 ### As measles outbreaks continue, do adults need to get a vaccine booster? Here’s what health experts say.
 Published Nov 21, 2026 · Retrieved Nov 22, 2026
@@ -727,15 +807,10 @@ Published Nov 20, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMifkFVX3lxTFBZNmtmSkdublMxSDQ3anZxaXItRC00N3J4QzhHN012S3k4LXR4RFM0VDRjS3Bkajd1MTl6TWIyazc3TjVKT0tqV2MyU1VKVGhBZy1CNldYTVJhRHlkYUphMzZSOEt5X0hJekZjbC1MZGx1cEg2aFNGNmJBY3Bfd9IBgwFBVV95cUxOeDRSWTFHN3VBNWllTl8xMkVNSTNwSU4yY3B0VFE0VTlpOElCdHFpbmVxT1daZHV3SjNBTWw3TVRWU0d3UlYxVlVCUnJqaGhpemozeG4yRnpwczVBeXdybVU4OXFabGZEZTVQeUpXYjhqTUZkQzJVT0V0bFl2Z2ZJbFZ3aw?oc=5
 
-### Virginia Department of Health announces first Measles-associated death in 2026
+### Young child in Virginia dies after testing positive for measles, state's first measles death of 2026
 Published Nov 20, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMivwFBVV95cUxOX1BtSnRMV3h3YUtGYk9jZFJJVEViRFl4bGFqcW5GV2tsNl9KemlGd2w3anRtMUZ5UGlaMmxFaGtXelpUNFFSUm9TWFhpNnU1SEd3VFB1dHdCWjItQWJ1bkg5dkREcFFrNVkyZlhvSFJLN2ttejhyYThsaWp2d3p3cDQ2c1hGczlBV1h2VWcwWXFsM0JubVZ3WkpEN2pQNWhQa1pMWVMycjNkNG12eE1nLTlGQUpmMWJfRXNoYU5Vcw?oc=5
-
-### Week In Review: Measles cases in Georgia spike and Atlanta police not overseeing all license plate readers
-Published Nov 20, 2026 · Retrieved Nov 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMixgFBVV95cUxQUThHMlNxODJCWUFxajFPUWhCa3NJSDAxWjlZOWRHS2ktSTRGMnBmZEN4czF0UDN1R0RIM3hxYkJFUzF4dElueldabFZxUDg3NjBCX3JEMjJKQTI0Z01OQXFNZXZHclZoNDREU3pWZ3dXWUZoZDI0S2VkLVlFUExScnVzZjJTOVQwS05uRzBBemxiN1FPQWs4V2FSM0ZFWklkZTY5bnJwSzNuTWxXa2pteVJmZFlvSWsxSFdyLVJ1Y0IwT3NVOFE?oc=5
+https://news.google.com/rss/articles/CBMivgFBVV95cUxPV2NkOVhEbGh0R0xveFZUa2FTTUNEeHRFWjE0Z21BaUNFTjdKNWdkRnZDSmJGazZJbHBZMkoyM1lGVUgyaGVKOE9aZlp1MndhSE4tVV9WQnVYYmhDNm1KWE9KT0ZkNlYtOWxORHZYUU9GbzR4bnh0bS1VVld3MGVEV3V5S2lwb0tlV2pfQjZMNXNIalhVd0x4WHlGN3l3NmRhZ3Z3ODV4MXdjbTdLRDNOSVllcFlhQW9hakFpMzJn?oc=5
 
 ### Florida’s dengue outbreak mirrors a global trend
 Published Nov 20, 2026 · Retrieved Nov 22, 2026
@@ -777,6 +852,11 @@ Published Nov 20, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMiugFBVV95cUxQbDE5V3B1bmtWbVFYcm9iZTBCQUN0Y1VMVjFpell6V1VGZllzdGNJempoX0J5cWZmZ3FOMzg1aXZ3azVpTTdrMlhPWVlSWGQ5NFc0QkpPUTdtQnNYQXhjRC0zS0NiaFFLWUVuOUpwYks4RV8xXzNLeUp3OGlTcm55Q204RlF4SkpTYlN5N01BRTFjNjhFTWR4RGtlcTUtZHI1bzNMbkZGc200NUhjZWVmUmlQZmcySk1OSWc?oc=5
 
+### RFK Jr. spent YEARS pushing vaccine falsehoods before measles outbreak
+Published Nov 20, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMiX0FVX3lxTE8wbUZIUzNhdDdQNVphclBMY3JJYlA1UEZ4akJjbDNnZmZBTXRKdGFLQ0R6VXB4QW01MThjWl85bUQ0dTBGdTQ4a2ROUlp0VzU5MXZGaW9QYm51NURkNGRB0gFcQVVfeXFMTXVRbGsyVVAyWlF4d21MMjBENDkwQWRvT0I4SlFvc250aTVLYTBPV0psZ3NWQmRRQnNLbFY1ajljVFJwVjJMSTBpakVjRl83czBLQWozMVQ0eXhmeEM?oc=5
+
 ### Editorial Cartoon: Measles outbreak defense
 Published Nov 20, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
@@ -786,16 +866,6 @@ https://news.google.com/rss/articles/CBMirgFBVV95cUxOOWx3dVpGRzBsbU12ZlI0VjVOaDV
 Published Nov 20, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMiowFBVV95cUxPUXhXZnNXZmhpekFEVEtEbkRLb0FhWVhjc1RlazF4cjNLSGlSQzNJQjlCeHFERXhnX3psX1NSd01ZQmlmUmNQUWJrWE83U056ZUVzaUlPLUlxS25kQWdTUVFhSktlWWZpcFVXdGN0X3AwcFJHQUQ0U3VUOE4wUnVsNXRlZWpFOGZPRkNpUlhWVFBzTGVTWWVyZ0tJNndLU3UtVm1Z?oc=5
-
-### Pennsylvania taxpayers hit with $17M measles outbreak bill — and one economist warns the next step could be higher taxes or to ‘stop responding’
-Published Nov 20, 2026 · Retrieved Nov 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMiigFBVV95cUxPaHZuT3E4MGQ0dXY2ZWsyVjRSWUJETmF3RWk1MXBvcldQQVZNQUlmQnBNeU8zdHl2cGhFVlN3TEd5NW9na3RTRWFDWHB2TlFTZXpDQ3hDdzZmRGNxSkR5VnRHUDBsZURmb3lJZjRJZzFYUEFwd3NLcUZrdkhTSENSaEF1RV9nQmpwR3c?oc=5
-
-### Measles Cases and Outbreaks - Centers for Disease Control and Prevention | CDC (.gov)
-Published Nov 20, 2026 · Retrieved Nov 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMiYkFVX3lxTE9kU2puTzAxZ3ktbE1vNzU0RU9xZTlMYzIyb3JRaENuSnJJdnllQUJDeWs3TElwZmJmYU84dkFsc1ZKaEw0N2dTUHFVSlktVE91ejM0TG10YkRVellCcXo2X3VR?oc=5
 
 ### Unvaccinated Pennsylvania Resident Dies of Measles as US Struggles with Outbreak
 Published Nov 20, 2026 · Retrieved Nov 22, 2026
@@ -817,11 +887,6 @@ Published Nov 20, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMi4wFBVV95cUxOdXlCckN2eXk5VWJxY3MtZ2Z1UTVuZEJiQjVSd09Va0daQWwtM2xkVkhHQ0s4X2xTS2RScEN0TTY3VXltSDhsdk9YbnN5VW5XR3BjXzYwODlNNUR1ZXBnck9Ed3Ezbjg3M0tqcDBnMGdLV1gwSFdHUTRYV2ZQc3o3cWd5YzhsZnJLZVpSRl9FVlc5VC1ZRUo4NFB2ZWkwZjVQendrRW9Ub3VKTklEUWozOThFX0xrUTFBRmJzMVIxNnRFN1VLTy1KQkFDZmFQWWpBSFR5RnFHaDV3anczVDdFUXUwaw?oc=5
 
-### Dartmouth Health physician says they've been 'gearing up' for measles; no NH cases yet
-Published Nov 19, 2026 · Retrieved Nov 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMivwFBVV95cUxNR3pieVhaLXhOeTl5b250eEtnb0o5NVNncEtLNTlDVWpBbTNaZWNIZmFTbGNkdWt3MFFBc0tVaUZ3U3hwd19uVW80ZWZuRXNfdkIyU3VxUmRqUE01VndsczlNWmppWDhSdWdYTnpHbnlLbnViRnl1czNRWWdkUmhPRDJVQnF6azVpd0xaTC1HOEpzaFZ6clR5UVdGNk9FNmY4RGJmazdIYmp0QS1xUW9RR2hrY3I5bXdSajNLMUxxTQ?oc=5
-
 ### Pennsylvania sees surge in measles cases, health officials urge vaccination
 Published Nov 19, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
@@ -832,15 +897,15 @@ Published Nov 19, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMizwFBVV95cUxQeVFyU1Fyek5KZllhdGh6NUxMRDJHOU9vMDVsdlhnYWF4SGJNNncyU1YyRUNNbGYwZ0tQSXZra0UyeG44Nnp4ajJfTUcyaGVkQVhzU2RGSU9IaERtYUdmeTQtYVh2ZzFtNHZuVjhwQTQ4SFhGYnBzeXJSRHpqN09PSGdLR0VmZUVOV09Gblg0OTJKZVJJaFFYRlh2ODhXdFBzOWl3Q1o5MEpkNUtsOFdHWGRoRWxEU2tOYkFISklUb0NzTzlCT0hDcmpfVmRVanM?oc=5
 
+### U.S. loses measles elimination status as Minnesota cases rise
+Published Nov 19, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMinwFBVV95cUxQclNSMS1IcVRoeTNDUElHeDZXZktiWmpDMjBZWmxrOUtGVS1ON1J3STJpZ3M0Y0I2OVh5eUVleUtLYU1jd050eC10aEoyUU5vOHRmdTEwcE9KcHVUT1dGV215VmYwdk0yT0NQRll1R3FzOVExcV9TazdXOVk0cHd1UlFYMkxWLWk2YW9HeUtNU0lnNWdvcF9SeEd5UXhRRDg?oc=5
+
 ### Wisconsin's measles outbreak: Here's what it means for Dane County - Public Health Madison & Dane County
 Published Nov 19, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRGVoTXI5N3U4Z3NaRWRIZy1QYi1SNnlSSmlwbkp5bk1FdEtkeFJGTEhIV3cxeHhJdnBKQ0lkZlNNSFRtMGJXQ2FiN3RfOVZSeEh3d2g0T3IxWlJZRHc5VnBGbzFNUzRsa1VoNXRTMU1qc3cxdFF3VV90M0I2cUdDLVl1VVYyZDlTVmlidVVqVXkzcW10ajY2VHNVa3JsOEIwUm5NOUhvOEdGYVU?oc=5
-
-### Measles outbreak in southwest Michigan reaches 12 cases
-Published Nov 19, 2026 · Retrieved Nov 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMimAFBVV95cUxPVTlBRjNhN0h0M0ZpSHotSWN1XzhzZVZ3eURWUFpmNzE3eldPc0ZXMl9wWEYxWE1zcVQ5OEtRVnlkWDdXd1Vvdi1LUktvTjd3SXBaQkg3cERjVm1wN19vWElBUWEyT0hXakZ0TjlyMXNZUXVpR1lKazdRQW14TnNKVW9yMVg2NWNCbnFlcEJDYjY2cWxzb0tNaw?oc=5
 
 ### Measles outbreak in southwest Michigan reaches 12 cases; all patients were unvaccinated or partly vaccinated
 Published Nov 19, 2026 · Retrieved Nov 22, 2026
@@ -851,6 +916,11 @@ https://news.google.com/rss/articles/CBMihwFBVV95cUxPcEh6d2ZHS1c3UTNuMWJoVVVyaXg
 Published Nov 19, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMitgFBVV95cUxQbVJ2WDRLV2VDc2Y4S0JpQktIc051UzVWd3ZnZkQwQlJvUHZ4YWx1a05DR0R1Tmw5Q1ptU051VHJDNkduN09SUktRRWNWa3lTSHFnUmZ4TmVDdWR6dnUxZDZWV3NlRWVuaFA3MVVQSHdndGNnbWlCNE9KSWMxUlVRNUJlNDV0R2p5c1ljT3M0LUhPS0dYWkdoazlpZUE5X21ueVFPZEMtRERSeHRJelVJSEwxQXdXUQ?oc=5
+
+### Why Is the DRC Ebola Outbreak Continuing? Conflict, Contact Tracing Gaps, and Community Trust
+Published Nov 18, 2026 · Retrieved Nov 22, 2026
+Limited detail was available from feed metadata alone.
+https://news.google.com/rss/articles/CBMiwwFBVV95cUxQVkwxeWgzclRSelIyeTA4UXg1ZTFXTW5nSTYwMkItN01wTDg0QlAwbUN6Xy1Cc0UyTjFmSk50bkNrZ0ZGWU5hb0N5NEctNDZPeEVmTldWSUFoSFZVYUlGaVZYTnFUdGJYZ0pTd1l4LW1OR1ZzTWJnbUp4dUJhbHNoZ0Z5Z1Zkd1RJVlRsYXpfVWJnajYwdEpzUkJSNUJUanZ1c2pQMXItajhWTGpXNHhYMzFpSnJXdUFERjE3X1ctSWo2NFk?oc=5
 
 ### Florida’s dengue outbreak just topped 600 cases. What travelers need to know
 Published Nov 18, 2026 · Retrieved Nov 22, 2026
@@ -882,37 +952,22 @@ Published Nov 17, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMinAFBVV95cUxQbDJRWUV3Zl9CaUJrdWZXYjlIY2txdlRRSGtNUWNkUEtmZXFGNWg3LWl4a0M0VnVuejRFWUlrTHhPbWdUZ194Nzg3bFEzSXB5b0Q5VXQwS3cxZTA4MXpSNzc2X0xVcTd0TFZBYTRJNGxZOWxINFRmY0NXU0w0VHhpdGJieVlRT1VSR0o2WUpmaVVaMDMxVHdXQ0I0eWc?oc=5
 
-### Measles outbreak reported in St. Joseph County; health officials urge vaccination
-Published Nov 17, 2026 · Retrieved Nov 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMi4wFBVV95cUxOM0IydmFhRUZ0X3A0dTFTcFk3QzA1WVJHT1VvNUluQ1NEcUNuVVBQLTdBaXBuS05pZ3V5Q1FreDNNYjUzREl0LUx3WjhwaDdBQ3JFdVJIbzRZeE5QM1IzbHNmelowSWw3Q2VudUI4OF9xb1VwZ19HWUZaZ0MyNjhaMXZrTVM3MmtRcVp3QlgxZXVIZ2pQNVFuTUEzX2piSUliZU90TERiM0Y5U0RWY0lYWHdTUmhmbVB2QTdzUmZ0dHBBUDI5d1NuM0NvVVV0SkkzWXBhQUptQnltbWNVSDdETFAtUQ?oc=5
-
 ### PAHO urges countries to step up efforts to stop measles outbreaks and move towards elimination in the Americas
 Published Nov 17, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMiswFBVV95cUxPZEdGZ3lDalUxZnFVT1FYR3ZXSUp4Uk51b2x5QlJkNHdBVDB3RlBOcElEX0ZpdzdvU0Z6dTVueXdCRG1NdDRGTHdVV0xNdUhsajFaQmdYMUFHS1BBcjVRNTZDUExGYkxJR3Jkc2pwb1g3OVpGc05QaUhxMEJJZ2xjZk8zXzJZenRIWlV5bV9jRVZJRTRQOU9LMlFDYmMyYUJXNjRWY2s4VjBXMWx1YXNwMTRrdw?oc=5
-
-### Local daycares monitor Wisconsin measles outbreak
-Published Nov 16, 2026 · Retrieved Nov 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMiigFBVV95cUxNQjlGZVhuTFlkaTBfYnJwMzZCb3NJelRZVm5PRlg3S0gya2hteFdDcm5ZZzF1Mng3MHUzd3lSMFgxOE5jZFR1ckZtdDgtdzhmNWxWMnlpaFpNZXpnV2lxckdRWVJQVFpwMTJwNXJfcGhDaHVadWYwZV84RkV3QTRJNDJab0Q3bk00UGfSAZ4BQVVfeXFMTi1YSGVpMTFkVWVMOTQxdV9nWkZzSjl2b0pINjRla0tsSHR2QVZBWkE1UThWYlh5ekRmeGtaNkRzVU5SdGFJcGhGTTI4S0dLd2o4Nk9FTElEbkxhY1UtTF9JcXZYX0hOU1pBZDFHRmkzSzZYQmpDYVdHU2t2b1pMSFVSbkN4WkEwRjFwM3BrdkYwQ3N2ZTI0T1gycFBWMkE?oc=5
 
 ### As Ohio battles one of its largest measles outbreaks in years, health officials urge vaccinations
 Published Nov 16, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMi2wFBVV95cUxOSy16TGNOM3NWNzRkSW9ZNnFnVGw1SjNJZ19aMUx5ZjlCWGRUR0tSNUY1RmZIaW5xSjBoX0o5X0ZmWWlUQkEzUl9aT1FrekNRT1RISlg2eWdTX3BYbTB0WTZrLUVhdWVuRzg4MUlYUmtHSjNVM0RUUk5FcUo2ZDlHeWx4LW5IRGRYSEpqeHUzOGszY2RnY0tETXJoYk1LU0VPcTBGenNDLVNNWWVMbXZOUUo3TVJiVkxRejNscVF6WW0wVkNjcE15X2NwOG5RTndCWFZ0a2p0ZDQwX1E?oc=5
 
-### What to know about measles vaccination as cases rise
-Published Nov 16, 2026 · Retrieved Nov 22, 2026
-Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUkt3MlhBelhBX0FGaXVYZFFEc1d3SmxaQjl2NVpXTThHMHdOX0ZoRzQzN3BqVmVtTTRYSVlZWFdRRXhOY3pyRW9lZDBwNG1EU09VUEhmTzdObmZYYmt0Mi0tSkk2Um1icFlOa3hXNl9mWmN1NklsR1VqSUVMTFBqZ1FGQzY2QUZM0gGOAUFVX3lxTE16WjI5Q1NTRjREbFpLNzJmaXNGWHl5TVp0SkczdmlhREYySzVObmtVWDJqYXc5azdJVHZYUzd2a3Q5Wk5LZENVRlpnMWdia3dVTVQ3UHRyY0lHb01pczhOVFFRME1NVURuUzlGem84OGktemtHZGVNSGp5S0dmSTgzTTMwN2ZERmhoQ3NKR0E?oc=5
-
 ### Florida dengue map: Where cases are growing, how to stay safe
 Published Nov 16, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
 https://news.google.com/rss/articles/CBMilgFBVV95cUxPZXg1dE9DSWdTaUlHbnRjSFJldjhrR3owZjUzb09QU0hyWm95WDBUY1lSMTVCdFFfaUhjdmgzbDZVTl8ySndhNlBZbkZFMjZwbzNYLTNiZWhRTlJ1anpMTWYtRl9menFERnpyYkpMNEJQYS1KUjR5WVNjN2pzbUNKdmtYRGF6N3NjLUgyZ0pjakQxdzRra1E?oc=5
 
-### Wisconsin health officials advise early measles vaccination for some infants amid outbreak
-Published Nov 11, 2026 · Retrieved Nov 22, 2026
+### Global Measles Outbreaks - Centers for Disease Control and Prevention | CDC (.gov)
+Published Nov 12, 2026 · Retrieved Nov 22, 2026
 Limited detail was available from feed metadata alone.
-https://news.google.com/rss/articles/CBMimgFBVV95cUxPX2ItaHAzU2RLRDl2U3A0NDJLbVJubnBXR21vWkQ1NFNGYU5SNTdrQ2xMMWxGUXhhZ0V6bDhXb3U0TW9ZdmNQdTBZVjRvWWRteXhFdGJUS01zUmRva2Y3RWZvYmd2WFlLTW1DcmM2Mk5Kb3B6SXpibmdINHNYMDQ5RF9HM3kwYjdrbjZzQnJSWFZ4U2xWd0h5aUNR?oc=5
+https://news.google.com/rss/articles/CBMinAFBVV95cUxOd2cyVktrSnlXRmg4VTg0bUJ1azB0RENCSFIxTXd4cmU4alMwdmVxcW00VWtrRmNRbUN1bDlXV1JORkRXbFJpcXZ1U3ByaUhhM2hWczQ1S1l0dVVrNmlUMFl4ZlMzQ21CTEMzMXBaTXZGTTFDVnV3YVNIMWRjTWtRYTVnTmZ2TWhnZnJxMHZLemtQZm05UnlBZWFTdTY?oc=5
