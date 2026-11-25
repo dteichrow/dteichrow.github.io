@@ -679,14 +679,14 @@
     "section": "Newsdesk",
     "summary": "Monitoring: News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....",
     "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
-    "keywords": "new_official_source suspected_case confirmed_case severity_or_death policy_or_travel new_geography healthcare_transmission North America United States"
+    "keywords": "new_official_source suspected_case confirmed_case severity_or_death policy_or_travel new_geography North America United States"
   },
   {
     "title": "Ebola virus disease",
     "section": "Newsdesk",
     "summary": "Monitoring: EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 27, Data as of 15 November 2026",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
-    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography Multi-region Democratic Republic of the Congo / Uganda / United States"
+    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography healthcare_transmission Multi-region Democratic Republic of the Congo / Uganda / United States"
   },
   {
     "title": "Dengue and arboviruses",
@@ -700,21 +700,14 @@
     "section": "Newsdesk",
     "summary": "Monitoring: Report of the Regional Immunization Technical Advisory Group meeting, Addis Ababa, July 2026",
     "url": "/stories/story_9ccdd822481fa2b6-polio-and-wastewater-surveillance.html",
-    "keywords": "new_official_source suspected_case confirmed_case severity_or_death policy_or_travel laboratory_or_genomic Africa Democratic Republic of the Congo / Uganda"
+    "keywords": "new_official_source suspected_case severity_or_death policy_or_travel Africa Democratic Republic of the Congo / Uganda"
   },
   {
     "title": "Tuberculosis and antimicrobial resistance",
     "section": "Newsdesk",
-    "summary": "Monitoring: A novel patient with inherited TNF deficiency and tuberculosis.",
+    "summary": "Monitoring: Innovations in Tuberculosis Treatment Using Differentiated Service Delivery, North Central Nigeria, 2021-2022.",
     "url": "/stories/story_8b3f807bbfd61cab-tuberculosis-and-antimicrobial-resistance.html",
-    "keywords": "new_official_source Multi-region "
-  },
-  {
-    "title": "Hepatitis A",
-    "section": "Newsdesk",
-    "summary": "Monitoring: FDA outbreak investigation 1143: Hepatitis A Virus linked to Frozen Strawberries",
-    "url": "/stories/story_7d73f3a0252609da-hepatitis-a.html",
-    "keywords": "policy_or_travel Cross-region / unassigned "
+    "keywords": "new_official_source confirmed_case Africa Nigeria"
   },
   {
     "title": "Ebola virus disease",
