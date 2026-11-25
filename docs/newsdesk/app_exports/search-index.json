@@ -700,7 +700,7 @@
     "section": "Newsdesk",
     "summary": "Monitoring: Report of the Regional Immunization Technical Advisory Group meeting, Addis Ababa, July 2026",
     "url": "/stories/story_9ccdd822481fa2b6-polio-and-wastewater-surveillance.html",
-    "keywords": "new_official_source policy_or_travel laboratory_or_genomic Africa Democratic Republic of the Congo / Uganda"
+    "keywords": "new_official_source suspected_case confirmed_case severity_or_death policy_or_travel laboratory_or_genomic Africa Democratic Republic of the Congo / Uganda"
   },
   {
     "title": "Tuberculosis and antimicrobial resistance",
@@ -708,6 +708,13 @@
     "summary": "Monitoring: A novel patient with inherited TNF deficiency and tuberculosis.",
     "url": "/stories/story_8b3f807bbfd61cab-tuberculosis-and-antimicrobial-resistance.html",
     "keywords": "new_official_source Multi-region "
+  },
+  {
+    "title": "Hepatitis A",
+    "section": "Newsdesk",
+    "summary": "Monitoring: FDA outbreak investigation 1143: Hepatitis A Virus linked to Frozen Strawberries",
+    "url": "/stories/story_7d73f3a0252609da-hepatitis-a.html",
+    "keywords": "policy_or_travel Cross-region / unassigned "
   },
   {
     "title": "Ebola virus disease",
