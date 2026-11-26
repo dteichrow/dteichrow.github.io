@@ -1,4 +1,50 @@
 posts:
+- slug: disease-and-survival-in-early-plymouth
+  title: Disease and Survival in Early Plymouth (Happy Thanksgiving)
+  date: '2026-11-26'
+  canonical_url: https://theedgeofepidemiology.substack.com/p/disease-and-survival-in-early-plymouth
+  excerpt: 'It’s March 16th, 1621, and you and your fellow English settlers at Plymouth
+    are meeting to discuss the military rules of the new colony when you notice someone
+    walking along the houses toward the meeting. As a group, you go over and see what
+    they want. You’re stunned to hear the visitor, a Native American from the area,
+    ask for beer in imperfect English. Instead, you give him “strong water” and some
+    food. The surviving account notes them having given him a biscuit, butter, cheese,
+    pudding, and some duck. His name was Samoset. He’d learned English through his
+    contact with the fishing crews off '
+  cover_image: https://substack-post-media.s3.amazonaws.com/public/images/47c15775-ddc3-4372-a68c-b1458ccab316_1824x1368.png
+  source_mode: substack_reader
+  wordcount: 2487
+  editorial_summary: ''
+  image_caption: ''
+  related_posts: []
+  status: summary_only
+  dek: ''
+  topics: []
+  series: []
+  seo_title: ''
+  seo_description: ''
+  primary_keyword: ''
+  topic_cluster: ''
+  indexing_strategy: noindex_stub
+  related_atlases:
+  - maritime-disease-atlas
+  related_reference_slugs: []
+  related_story_ids: []
+  search_excerpt: 'It’s March 16th, 1621, and you and your fellow English settlers
+    at Plymouth are meeting to discuss the military rules of the new colony when you
+    notice someone walking along the houses toward the meeting. As a group, you go
+    over and see what they want. You’re stunned to hear the '
+  local_body_path: ''
+  body_synced_at: ''
+  body_source_url: ''
+  body_source_mode: ''
+  body_source_file: ''
+  body_wordcount: null
+  hero_mode: cover
+  notes: ''
+  first_seen_at: '2026-11-26T19:09:14+00:00'
+  last_synced_at: '2026-11-26T19:09:14+00:00'
+  upstream_tags: []
 - slug: who-counted-plague-deaths-in-late
   title: Who Counted Plague Deaths in Late-Medieval Cairo?
   date: '2026-11-10'
