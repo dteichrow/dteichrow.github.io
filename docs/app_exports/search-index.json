@@ -694,21 +694,21 @@
     "section": "Newsdesk",
     "summary": "Monitoring: EBOLA BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Uganda Weekly External Situation Report 27, Data as of 15 November 2026",
     "url": "/stories/story_56666e9c6c86e976-ebola-virus-disease.html",
-    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography healthcare_transmission medical_countermeasure_gap Africa Democratic Republic of the Congo / Uganda"
+    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography healthcare_transmission Africa Democratic Republic of the Congo / Uganda"
   },
   {
     "title": "Dengue and arboviruses",
     "section": "Newsdesk",
     "summary": "Monitoring: Florida Surgeon General Reminds Floridians to Take Steps Against Dengue Ahead of Labor Day Weekend",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
-    "keywords": "new_official_source severity_or_death North America United States"
+    "keywords": "new_official_source severity_or_death policy_or_travel North America United States"
   },
   {
     "title": "Polio and wastewater surveillance",
     "section": "Newsdesk",
     "summary": "Monitoring: Report of the Regional Immunization Technical Advisory Group meeting, Addis Ababa, July 2026",
     "url": "/stories/story_9ccdd822481fa2b6-polio-and-wastewater-surveillance.html",
-    "keywords": "new_official_source severity_or_death transmission_change policy_or_travel laboratory_or_genomic Africa Democratic Republic of the Congo / Uganda"
+    "keywords": "new_official_source transmission_change policy_or_travel healthcare_transmission laboratory_or_genomic Africa Democratic Republic of the Congo / Uganda"
   },
   {
     "title": "Tuberculosis and antimicrobial resistance",
