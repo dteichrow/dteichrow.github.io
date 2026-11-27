@@ -687,7 +687,7 @@
     "section": "Newsdesk",
     "summary": "Monitoring: News Release July 29, 2026 DSHS alerts clinicians, public about Montgomery County measles outbreak The Texas Department of State Health Services issued a health alert after four cases of measles were .....",
     "url": "/stories/story_0cc2d5322bc76f8f-measles-transmission-and-vaccination.html",
-    "keywords": "new_official_source confirmed_case severity_or_death policy_or_travel new_geography North America United States"
+    "keywords": "new_official_source confirmed_case severity_or_death new_geography North America United States"
   },
   {
     "title": "Ebola virus disease",
@@ -701,14 +701,14 @@
     "section": "Newsdesk",
     "summary": "Monitoring: Florida Surgeon General Reminds Floridians to Take Steps Against Dengue Ahead of Labor Day Weekend",
     "url": "/stories/story_ccfeaff28d46baf6-dengue-and-arboviruses.html",
-    "keywords": "new_official_source severity_or_death policy_or_travel North America United States"
+    "keywords": "new_official_source severity_or_death transmission_change North America United States"
   },
   {
     "title": "Polio and wastewater surveillance",
     "section": "Newsdesk",
-    "summary": "Monitoring: Report of the Regional Immunization Technical Advisory Group meeting, Addis Ababa, July 2026",
+    "summary": "Monitoring: WHO AFRO Polio Eradication Programme Bulletin (Q2, 2026)",
     "url": "/stories/story_9ccdd822481fa2b6-polio-and-wastewater-surveillance.html",
-    "keywords": "new_official_source transmission_change policy_or_travel healthcare_transmission laboratory_or_genomic Africa Democratic Republic of the Congo / Uganda"
+    "keywords": "new_official_source transmission_change policy_or_travel laboratory_or_genomic Africa Democratic Republic of the Congo / Uganda"
   },
   {
     "title": "Tuberculosis and antimicrobial resistance",
@@ -716,6 +716,13 @@
     "summary": "Monitoring: Innovations in Tuberculosis Treatment Using Differentiated Service Delivery, North Central Nigeria, 2021-2022.",
     "url": "/stories/story_8b3f807bbfd61cab-tuberculosis-and-antimicrobial-resistance.html",
     "keywords": "new_official_source confirmed_case Africa Nigeria"
+  },
+  {
+    "title": "COVID-19 and SARS-CoV-2",
+    "section": "Newsdesk",
+    "summary": "Monitoring: Zero-code deep learning platform for diagnosing tuberculosis and COVID-19 via chest X-ray findings.",
+    "url": "/stories/story_afd8f5934e291e02-covid-19-and-sars-cov-2.html",
+    "keywords": "new_official_source confirmed_case laboratory_or_genomic Cross-region / unassigned "
   },
   {
     "title": "Ebola virus disease",
