@@ -5,7 +5,7 @@ import html
 import re
 from typing import Any
 from .common import format_display_date, link_for
-from .site_images import ESSAY_ILLUSTRATIONS, render_exhibit_image
+from .site_images import ESSAY_COVERS, ESSAY_ILLUSTRATIONS, essay_cover_tag, render_exhibit_image
 
 from .site_content import (
     canonical_meta,
@@ -100,15 +100,26 @@ def render_post_card(
         if illustration
         else post.get("cover_image") or ""
     )
-    feature_class = " essay-card-featured" if featured and feature_image else ""
-    image_class = " essay-card-has-media" if feature_image else ""
+    cover = ESSAY_COVERS.get(slug) if not illustration else None
+    has_media = cover or feature_image
+    feature_class = " essay-card-featured" if featured and has_media else ""
+    image_class = " essay-card-has-media" if has_media else ""
     image_dimensions = ' width="1632" height="544"' if illustration else ""
     loading = "eager" if eager and illustration else "lazy"
+    cover_tag = (
+        essay_cover_tag(
+            cover, base_url,
+            sizes="(max-width: 760px) calc(100vw - 44px), " + ("62vw" if featured else "30vw"),
+            eager=eager,
+        )
+        if cover
+        else f'<img src="{html.escape(feature_image)}" alt="" loading="{loading}" decoding="async"{image_dimensions} />'
+    )
     media = (
         f'<a class="essay-card-media" href="{html.escape(href)}" aria-hidden="true" tabindex="-1">'
-        f'<img src="{html.escape(feature_image)}" alt="" loading="{loading}" decoding="async"{image_dimensions} />'
+        f"{cover_tag}"
         "</a>"
-        if feature_image
+        if has_media
         else ""
     )
     illustration_class = " essay-card-illustrated" if illustration else ""

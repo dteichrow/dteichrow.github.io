@@ -40,6 +40,6 @@ The Varnhem photograph's publication is dated 2023; its capture date is not asse
 
 ## Other historical images and source records
 
-Existing archival images retain their per-image credit and rights statements in the timeline and maritime data. Essay cover images retain their upstream source URLs. No new archival photograph, historical observation, client, testimonial, or commercial result has been invented.
+Existing archival images retain their per-image credit and rights statements in the timeline and maritime data. Essay cover images retain their upstream source URLs in the synced manifest. The Plymouth cover uses local 480, 720, and 960 px WebP derivatives of the [published cover](https://substack-post-media.s3.amazonaws.com/public/images/47c15775-ddc3-4372-a68c-b1458ccab316_1824x1368.png): Samuel de Champlain, *Port St Louis*, *Les Voyages* (1613), fol. K4v ([BnF catalog](https://catalogue.bnf.fr/ark:/12148/cb38495058j)). The derivatives are resized and re-encoded only. No new archival photograph, historical observation, client, testimonial, or commercial result has been invented.
 
 The curated record exhibits and Histsearch share `data/exhibits/sources.json`. Each entry distinguishes source publication date, review date, review status, and an editorial note. “Retrieved metadata” is not a claim that the underlying text was reviewed.

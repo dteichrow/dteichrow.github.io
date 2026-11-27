@@ -166,7 +166,7 @@ def render_writing_page(base_url):
 
 def render_essays_index(posts: list[dict[str, Any]], base_url: str) -> str:
     cards = "".join(
-        render_post_card(post, base_url, featured=index % 6 == 0)
+        render_post_card(post, base_url, featured=index % 6 == 0, eager=index == 0)
         for index, post in enumerate(posts)
     )
     return base_html(

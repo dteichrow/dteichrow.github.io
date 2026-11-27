@@ -1,4 +1,4 @@
-"""Locally hosted exhibit photographs and their visitor-facing attribution."""
+"""Locally hosted exhibit and essay images and their attribution."""
 
 import html
 import json
@@ -23,6 +23,32 @@ ESSAY_ILLUSTRATIONS = {
         "description": "An imagined Roman street with a lamp, a sandal, and a clay pipe.",
     },
 }
+
+
+# Keep these variants outside the Substack-synced post manifest.
+ESSAY_COVERS = {
+    "disease-and-survival-in-early-plymouth": {
+        "variants": [
+            (width, f"assets/essays/plymouth-champlain-{width}.webp")
+            for width in (480, 720, 960)
+        ],
+        "credit": "Samuel de Champlain, Port St Louis (Plymouth Harbor), in Les Voyages (1613), fol. K4v.",
+        "record": "https://catalogue.bnf.fr/ark:/12148/cb38495058j",
+    },
+}
+
+
+def essay_cover_tag(cover, base_url, *, sizes, eager=False):
+    variants = cover["variants"]
+    width, path = variants[-1]
+    srcset = ", ".join(f"{link_for(base_url, asset)} {w}w" for w, asset in variants)
+    priority = ' fetchpriority="high"' if eager else ""
+    return (
+        f'<img src="{html.escape(link_for(base_url, path))}" '
+        f'srcset="{html.escape(srcset)}" sizes="{html.escape(sizes)}" '
+        f'width="{width}" height="{width * 3 // 4}" alt="" '
+        f'loading="{"eager" if eager else "lazy"}" decoding="async"{priority}>'
+    )
 
 
 @lru_cache(maxsize=1)

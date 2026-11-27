@@ -4,7 +4,7 @@ import html
 from .common import format_display_date, link_for, normalize_post_types
 from .site_shell import base_html
 from .site_cv import render_cv_actions
-from .site_images import render_exhibit_image
+from .site_images import ESSAY_COVERS, essay_cover_tag, render_exhibit_image
 from .site_cards import render_post_card, render_tool_card
 from .site_content import (
     post_display_title,
@@ -161,6 +161,17 @@ def render_post_page(post, atlases, posts, base_url, body_html):
         if cover
         else ""
     )
+    local_cover = ESSAY_COVERS.get(post.get("slug", ""))
+    if local_cover:
+        credit = html.escape(local_cover["credit"])
+        source = html.escape(local_cover["record"])
+        caption = html.escape(post.get("image_caption") or "")
+        media = (
+            '<figure class="reading-cover">'
+            + essay_cover_tag(local_cover, base_url, sizes="(max-width: 760px) 90vw, 960px")
+            + f'<figcaption>{caption + " " if caption else ""}{credit} '
+            + f'<a href="{source}">BnF catalog record</a></figcaption></figure>'
+        )
     if body_html:
         read = f'<section id="read" class="essay-body-panel"><article class="prose essay-body">{body_html}</article><p class="substack-origin-note">Originally published on <a href="{url}">The Edge of Epidemiology on Substack</a>.</p></section>'
         action = '<a class="text-link" href="#read">Read the essay ↓</a>'
